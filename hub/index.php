@@ -85,28 +85,28 @@
                     
             </article><!-- .entry -->
 
-            <article class="entry entry-future">
+            <article class="entry entry-latest">
             
                 <h1 class="entry-title">Kickoff prep</h1>
                 <p class="entry-date">March 11, 2016<?php echo timeFromNow('2016-03-11'); ?></p>
                     
             </article><!-- .entry -->
 
-            <article class="entry entry-future">
+            <article class="entry">
             
                 <h1 class="entry-title">Persona creation</h1>
                 <p class="entry-date">March 2, 2016<?php echo timeFromNow('2016-03-02'); ?></p>
                     
             </article><!-- .entry -->
 
-            <article class="entry entry-future">
+            <article class="entry">
             
                 <h1 class="entry-title">Collating research findings</h1>
                 <p class="entry-date">March 2, 2016<?php echo timeFromNow('2016-03-02'); ?></p>
                     
             </article><!-- .entry -->
 
-            <article class="entry entry-latest">
+            <article class="entry">
 
                 <h1 class="entry-title">GAiN Conference</h1>
                 <p class="entry-date">Februrary 26, 2016<?php echo timeFromNow('2016-02-26'); ?></p>
