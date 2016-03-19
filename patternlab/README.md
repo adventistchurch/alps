@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/pattern-lab/patternlab-node.png?branch=master)](https://travis-ci.org/pattern-lab/patternlab-node)
+## Overview
+This repository contains the front-end code for the Seventh Day Adventist project. [Pattern Lab](http://patternlab.io/) is the tool used for pattern template building and pattern library compilation.
 
 ## About the Node Version of Pattern Lab
 
@@ -6,59 +7,44 @@ The Node version of [Pattern Lab](http://patternlab.io/) is, at its core, a stat
 
 This repository contains the vanilla builder logic, grunt and gulp configurations, and some sample template/css/data to illustrate the power and flexibility of the tool.
 
-###### Core Team
-
-* [@bmuenzenmeyer](https://github.com/bmuenzenmeyer) - Lead Maintainer
-* [@geoffp](https://github.com/geoffp) - Core Contributor
-
 ### Prerequisites
 
 Make sure Node and npm are installed. A great guide can be found here: [https://docs.npmjs.com/getting-started/installing-node](https://docs.npmjs.com/getting-started/installing-node)
 
-### Download
+### Getting Started
 
-* Download the [latest release of patternlab-node](https://github.com/pattern-lab/patternlab-node/releases/latest) from Github
-* Via npm, run `npm install patternlab-node` (Note this will auto install the grunt version currently. see below)
-* **NOTE** Node version 4.X and 5.X have tentative support, citing [a lot of Windows issues](https://github.com/nodejs/node-gyp/issues/629), including [mine](https://github.com/pattern-lab/patternlab-node/issues/162). Upgrade node at your own risk until otherwise stated. I've tried to catalog some issues and troubleshooting steps on the [wiki](https://github.com/pattern-lab/patternlab-node/wiki/Windows-Issues).
+To run patternlab-node using gulp, you need to swap out the default grunt configuration. Do the following in the directory you downloaded and extracted the zipped release:
+
+1. Clone the repository.
+2. Run `npm install` from the command line (may require `sudo` access.)
+3. Run `gulp serve` from the command line
+
+This creates all patterns, the styleguide, and the pattern lab site. 
+
+## Project Standards
+
+### Front-End General Best Practices
+1. Separation of presentation, content, and behavior.
+2. Markup should be well-formed, semantically correct, and generally valid (if possible).
+3. Javascript should progressively enhance the experience.
+4. Always keep performance at top of mind when coding.
+
+### CSS Coding Standards
+The CSS in this project follows [Harry Robert's](http://csswizardry.com/) [itcss](http://itcss.io/) architecture. [CSS/SCSS Coding Best Practices](http://cssguidelin.es/) should be the referenced standards guide when writing sane, manageable, scalable CSS.
+
+### Git Commit Messages
+All commit messages should abide by the following criteria:
+
+* Begin with a one line summary. It should be short (50 chars or less).
+* This should be followed by a longer description if necessary.
+* The first two items should be separated by an empty line.
+* All lines should be wrapped at approximately 72 characters.
+* Reference an issue in your commits whenever possible. Use the [Github standard](https://help.github.com/articles/closing-issues-via-commit-messages/) ```gh-34``` for ticket ```#34```.
+* If you forget to reference the issue in your commit, and the commit has already been pushed, reference the commit hash in a comment on the ticket.
 
 ### Troubleshooting Installs
 
 Make sure you are running your terminal/command line session as administrator. This could mean `sudo`, or opening the window with a right-click option.
-
-### Choose Your Adventure! Now Vanilla, Grunt & Gulp
-
-This repository ships with two `package.json` files, a `Gruntfile.js`, and a `gulpfile.js`. The default is grunt currently. The core builder is not dependent on either.
-
-### Getting Started - Grunt
-
-To run patternlab-node using grunt, do the following in the directory you downloaded and extracted the zipped release:
-
-1. Run `npm install` from the command line
-2. Optionally, delete `package.gulp.json`, `gulpfile.js`, and `core/lib/patternlab_gulp.js` files if you are certain you don't need it.
-* Not deleting `core/lib/patternlab_gulp.js` may cause a harmless error when running grunt. Delete it.
-3. Run `grunt` or `grunt serve` from the command line
-
-This creates all patterns, the styleguide, and the pattern lab site. It's strongly recommended to run `grunt serve` to have BrowserSync spin up and serve the files to you.
-
-### Getting Started - Gulp
-
-To run patternlab-node using gulp, you need to swap out the default grunt configuration. Do the following in the directory you downloaded and extracted the zipped release:
-
-1. Rename `package.json` to `package.grunt.json` or delete it if you don't intend on going back
-2. Rename `package.gulp.json` to `package.json`
-3. Run `npm install` from the command line
-4. Run `gulp` or `gulp serve` from the command line
-
-This creates all patterns, the styleguide, and the pattern lab site. It's strongly recommended to run `gulp serve` to have BrowserSync spin up and serve the files to you.
-
-### There and Back Again, or Switching Between Grunt and Gulp
-
-It's not expected to toggle between the two build systems, but for those migrating between the two configs, here's some general guidelines:
-
-* Make sure your `package.json` files are correct per the Getting Started sections.
-* Run `npm cache clear` before installation
-* Delete the contents of `./node_modules` if you want a cleaner installation.
-* Regarding speed, Gulp is faster. BrowserSync takes a bit longer than the old static server to spin up, but its capabilities far outweigh the startup cost.
 
 ### Upgrading
 
@@ -83,7 +69,7 @@ Get more information about patternlab-node, pattern lab in general, and where to
 ### Further Configuration
 
 ##### Watching Changes
-To have patternlab-node watch for changes to either a mustache template, data, or stylesheets, run `grunt|gulp watch` or `grunt|gulp serve`. The `Gruntfile|Gulpfile` governs what is watched. It should be easy to add scss or whatever preprocessor you fancy.
+To have patternlab-node watch for changes to either a mustache template, data, or stylesheets, run `gulp watch` or `gulp serve`. The `Gulpfile` governs what is watched. It should be easy to add scss or whatever preprocessor you fancy.
 
 ##### Configurable Paths
 Pattern Lab Node ships with a particular source and public workflow intended to separate the code you work on with the code generated for consumption elsewhere. If you wish to change any paths, you may do so within `patternlab-config.json`. The contents are here:
@@ -114,7 +100,7 @@ Pattern Lab Node ships with a particular source and public workflow intended to 
 }
 ```
 
-Note the intentional repitition of the nested structure, made this way for maximum flexibility. Relative paths are default but absolute paths should work too. You may also use these paths within Grunt or Gulp files by referring to the paths() object.
+Note the intentional repitition of the nested structure, made this way for maximum flexibility. Relative paths are default but absolute paths should work too. You may also use these paths within Gulp files by referring to the paths() object.
 
 ##### Nav Bar Controls
 If you don't have a need for some of the nav-bar tools in the Pattern Lab frontend, you can turn them off in `patternlab-config.json`.
