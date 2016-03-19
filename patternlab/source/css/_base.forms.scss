@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+form ol, form ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+legend {
+  margin-bottom: rem(6);
+  font-weight: bold;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+label {}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input[type=text], input[type=email], input[type=search], input[type=url], input[type=number], textarea {
+  width: 100%;
+  border: none;
+  padding: rem(15);
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.3em;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Form Field Container
+ */
+.field-container {
+  margin-bottom: $space;
+}
+
+/**
+ * Validation
+ */
+.has-error {
+  border-color: $error;
+}
+.is-valid {
+  border-color: $valid;
+}
+

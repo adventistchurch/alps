@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    $DISPLAY STATES
+\*------------------------------------*/
+
+/**
+ * Display Classes
+ */
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dt {
+  display: table;
+}
+.dtc {
+  display: table-cell;
+}
+.hide--s {
+  @include mq($px800, max) {
+    display: none;
+  }
+}
+.hide--m {
+  @media all and (min-width: $px800) and (max-width: $px1100) {
+    display: none;
+  }
+}
+.hide--l {
+  @media all and (min-width: $px1100) and (max-width: $px1200) {
+    display: none;
+  }
+}
+.hide--xl {
+  @media all and (min-width: $px1200) {
+    display: none;
+  }
+}
+
+// Specific Widths - visible less than #
+.vis-lt--800 {
+  @include mq($px800) {
+    display: none;
+  }
+}
+.vis-lt--1200 {
+  @include mq($px1200) {
+    display: none;
+  }
+}
+
+// Specific Widths - visible greater than #
+.vis-gt--800 {
+  @include mq($px800, max) {
+    display: none;
+  }
+}
+.vis-gt--1200 {
+  @include mq($px1200, max) {
+    display: none;
+  }
+}

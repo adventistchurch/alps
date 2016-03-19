@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+.btn,
+button,
+input[type="submit"] {
+  display: inline-block;
+  text-align: center;
+  font-size: rem(14);
+  padding: rem(17) rem(23);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: rgba($black, 0);
+  color: $white;
+  border: $border-style-white;
+  cursor: pointer;
+  transition: all .6s ease-out;
+  overflow: hidden;
+  strong {
+    @include trans;
+  }
+  &:hover,
+  &:focus {
+    background-color: rgba($black, .4);
+    border-color: rgba($white, .5);
+    color: $white;
+    strong {
+      transform: translate(0, 5px);
+    }
+  }
+}
+
+/**
+ * Button Sizing
+ */
+.btn--xs {
+ padding: rem(6) rem(10) rem(4);
+ font-size: rem(14);
+}
+.btn--s {
+  padding: $pad-half $pad-half rem(8);
+  font-size: rem(16);
+}
+.btn--m {
+  padding: rem(14) rem(16) rem(12);
+  font-size: rem(16);
+}
+.btn--l {
+  padding: rem(17) $pad-and-half rem(15);
+}

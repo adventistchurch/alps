@@ -1,0 +1,149 @@
+@import "tools.mixins";
+
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+/**
+ * Grid & Baseline Setup
+ */
+$column: 92px;
+$gutter: 10px;
+$grid-columns: 12;
+$fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
+$defaultpx: 16; // Browser default px used for media queries
+$rembase: 16; // 16px = 1.00rem
+$max-width-px: 1295;
+$max-width: rem($max-width-px) !default;
+$inner-max-width: (910/$fontpx) + 0em;
+$inner-max-small: (740/$defaultpx) + 0em;
+
+/**
+ * Colors
+ */
+$gray: #bfbfbf;
+$gray-light: #efefef;
+$gray-med: #a7a7a7;
+$gray-dark: #222222;
+$white: #fff;
+$black: #000;
+$error: #f00;
+$valid: #089e00;
+$warning: #fff664;
+$information: #000db5;
+$overlay: rgba($black, .9);
+$overlay-light: rgba($black, .76);
+
+/**
+ * Style Colors
+ */
+$body-color: $black;
+$blue: #00A2B4;
+$red: #ef3d25;
+
+/**
+ * Social Colors
+ */
+$twitter-blue: #13C4F8;
+$facebook-blue: #4A66A3;
+$instagram-blue: #48769F;
+$instagram-brown: #5f4132;
+$pinterest-red: #FF423E;
+$youtube-red: #b31217;
+$google-red: $youtube-red;
+
+/**
+ * Typography
+ */
+$font: "jaf-bernino-sans", "Helvetica", "Arial", sans-serif;
+$font-secondary: "abril-display", "bodoni-urw", Georgia, Times, "Times New Roman", serif;
+$sans: "Helvetica", "Arial", sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+$monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
+
+/**
+ * Amimation
+ */
+$cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+/**
+ * Default Spacing/Padding
+ */
+$space: rem(20);
+$space-and-half: $space*1.5;
+$space-double: $space*2;
+$space-quad: $space*4;
+$space-half: $space/2;
+$pad: rem(20);
+$pad-and-half: $pad*1.5;
+$pad-double: $pad*2;
+$pad-half: $pad/2;
+$pad-quarter: $pad/4;
+
+// uses verticalSpacing(key) function
+$verticalSpacing: (
+  mobile: 15,
+  desktop: 30
+);
+
+/**
+ * Border Styles
+ */
+$border-med: 6px;
+$border-thick: 8px;
+$border-opacity: 1px solid rgba($white, .2);
+$border-style: 1px solid $gray-light;
+$border-style-thick: 3px solid $gray-light;
+$border-style-white: 1px solid $white;
+$border-style-dark: 1px solid $black;
+
+/**
+ * Breakpoints
+ */
+$px200: (200/$defaultpx) + 0em;
+$px250: (250/$defaultpx) + 0em;
+$px300: (300/$defaultpx) + 0em;
+$px320: (320/$defaultpx) + 0em;
+$px330: (330/$defaultpx) + 0em;
+$px350: (350/$defaultpx) + 0em;
+$px400: (400/$defaultpx) + 0em;
+$px450: (450/$defaultpx) + 0em;
+$px500: (500/$defaultpx) + 0em;
+$px550: (550/$defaultpx) + 0em;
+$px600: (600/$defaultpx) + 0em;
+$px650: (650/$defaultpx) + 0em;
+$px700: (700/$defaultpx) + 0em;
+$px750: (750/$defaultpx) + 0em;
+$px760: (760/$defaultpx) + 0em;
+$px800: (800/$defaultpx) + 0em;
+$px850: (850/$defaultpx) + 0em;
+$px900: (900/$defaultpx) + 0em;
+$px950: (950/$defaultpx) + 0em;
+$px1000: (1000/$defaultpx) + 0em;
+$px1050: (1050/$defaultpx) + 0em;
+$px1100: (1100/$defaultpx) + 0em;
+$px1150: (1150/$defaultpx) + 0em;
+$px1200: (1200/$defaultpx) + 0em;
+$px1250: (1250/$defaultpx) + 0em;
+$px1300: (1300/$defaultpx) + 0em;
+$px1400: (1400/$defaultpx) + 0em;
+$px1450: (1450/$defaultpx) + 0em;
+$px1500: (1500/$defaultpx) + 0em;
+
+/**
+ * Icon Sizing
+ */
+$icon-xsmall: rem(13);
+$icon-small: rem(24);
+$icon-medium: rem(40);
+$icon-large: rem(50);
+$icon-big: rem(65);
+
+/**
+ * Element Specific Dimensions
+ */
+$sidebar-width: 320;
+$small-header-height: 53;
+$wide-header-height: 82;
+$split-col1: (354/$defaultpx) + 0em; // Right padding for split layout with fixed sidebar
+$split-col2: (300/$defaultpx) + 0em; // Fixed width of right column

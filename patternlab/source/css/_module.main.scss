@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+
+.main {
+  overflow: hidden;
+}
+
+/**
+ * Browser Update message
+ */
+.buorg {
+  z-index: 60000000; // Appear over header
+}
+

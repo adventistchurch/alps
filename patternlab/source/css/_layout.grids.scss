@@ -1,0 +1,105 @@
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+/**
+ * Grid Container
+ */
+.g {
+  //overflow: hidden;
+}
+
+/**
+ * Grid Item
+ */
+.gi {
+  width: 100%;
+  img {
+    display: block;
+  }
+}
+
+/**
+ * Grid Item Held - Check the specific grids below for how long it's held.
+ */
+@mixin gi-hold {
+  width: 100%;
+  float: none;
+  clear: both;
+}
+
+/**
+ * Grid 1up
+ */
+.g-1up {
+  .gi {
+    width: 100%;
+  }
+}
+
+/**
+ * Grid 2up
+ */
+.g-2up {
+  @include mq($px400) {
+    > .gi {
+      float: left;
+      width: 50%;
+      &:nth-of-type(odd) {
+        clear: left;
+      }
+    }
+    &.with-dividers {
+      > .gi {
+        &:nth-of-type(odd) {
+          padding-right: $pad;
+          border-right: $border-style;
+        }
+        &:nth-of-type(even) {
+          padding-left: $pad;
+        }
+      }
+    }
+    &.g--with-pad {
+      > .gi {
+        &:nth-of-type(odd) {
+          padding-right: $pad-half;
+        }
+        &:nth-of-type(even) {
+          padding-left: $pad-half;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Grid 4up
+ */
+.g-4up {
+  > .gi {
+    margin-bottom: $space;
+  }
+  @include mq($px450) {
+    display: flex;
+    margin-left: -$pad-half;
+    margin-right: -$pad-half;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    > .gi {
+      float: left;
+      padding-left: $pad-half;
+      padding-right: $pad-half;
+      width: 50%;
+      display: flex;
+
+    }
+  }
+  @include mq($px800) {
+    > .gi {
+      width: 25%;
+      margin-bottom: $space-double;
+    }
+  }
+}

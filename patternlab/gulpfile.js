@@ -12,6 +12,12 @@ var pkg = require('./package.json'),
     eslint = require('gulp-eslint'),
     browserSync = require('browser-sync').create();
 
+var sass = require('gulp-sass');
+var cssmin = require('gulp-cssmin');
+var autoprefixer = require('gulp-autoprefixer');
+var bourbon = require('node-bourbon');
+bourbon.includePaths // Array of Bourbon paths
+
 require('gulp-load')(gulp);
 var banner = [ '/** ',
   ' * <%= pkg.name %> - v<%= pkg.version %> - <%= today %>',
@@ -59,6 +65,28 @@ gulp.task('banner', function () {
     .pipe(gulp.dest('./core/lib'));
 });
 
+// Task: Handle Sass and CSS
+gulp.task('sass', function() {
+  return gulp.src('**/*.scss', {cwd: path.resolve(paths().source.css)})
+    .pipe(sass({
+      outputStyle: 'compressed',
+      includePaths: require('node-bourbon').includePaths
+    }))
+    .pipe(autoprefixer({
+      browsers: [
+        'last 2 versions',
+        'ie 8',
+        'ie 9',
+        'android 2.3',
+        'android 4',
+        'opera 12'
+      ]
+    }))
+    .pipe(cssmin())
+    .pipe(gulp.dest(path.resolve(paths().public.css)))
+    .pipe(browserSync.stream());
+});
+
 
 // COPY TASKS
 
@@ -90,7 +118,7 @@ gulp.task('cp:data', function () {
 
 // CSS Copy
 gulp.task('cp:css', function () {
-  return gulp.src(path.resolve(paths().source.css, 'style.css'))
+  return gulp.src(path.resolve(paths().source.css, 'main.css'))
     .pipe(gulp.dest(path.resolve(paths().public.css)))
     .pipe(browserSync.stream());
 });
@@ -133,7 +161,7 @@ gulp.task('connect', ['lab'], function () {
       ]
     }
   });
-  gulp.watch(path.resolve(paths().source.css, '**/*.css'), ['cp:css']);
+  gulp.watch(path.resolve(paths().source.css, '**/*.scss'), ['sass']);
 
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), ['cp:styleguide']);
 
@@ -174,7 +202,7 @@ gulp.task('lab-pipe', ['lab'], function (cb) {
 
 gulp.task('default', ['lab']);
 
-gulp.task('assets', ['cp:js', 'cp:img', 'cp:font', 'cp:data', 'cp:css', 'cp:styleguide' ]);
+gulp.task('assets', ['cp:js', 'cp:img', 'cp:font', 'cp:data', 'sass', 'cp:css', 'cp:styleguide' ]);
 gulp.task('prelab', ['clean', 'assets']);
 gulp.task('lab', ['prelab', 'patternlab'], function (cb) { cb(); });
 gulp.task('patterns', ['patternlab:only_patterns']);
