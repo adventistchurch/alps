@@ -73,11 +73,25 @@
 
             <article class="entry entry-future">
             
+<<<<<<< HEAD
+                <h1 class="entry-title">Site code refactoring</h1>
+=======
                 <h1 class="entry-title">Pattern-izing site code</h1>
+>>>>>>> 000734aabc8760c422ab272c59e5136a531c4a4d
                 <p class="entry-date">March 30, 2016<?php echo timeFromNow('2016-03-30'); ?></p>
                     
             </article><!-- .entry -->
 
+<<<<<<< HEAD
+            <article class="entry entry-future">
+            
+                <h1 class="entry-title">Kickoff</h1>
+                <p class="entry-date">March 16, 2016<?php echo timeFromNow('2016-03-16'); ?></p>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry entry-latest">
+=======
             <article class="entry entry-latest">
             
                 <h1 class="entry-title">Creative Brief</h1>
@@ -102,6 +116,7 @@
             
 
             <article class="entry">
+>>>>>>> 000734aabc8760c422ab272c59e5136a531c4a4d
             
                 <h1 class="entry-title">Kickoff prep</h1>
                 <p class="entry-date">March 11, 2016<?php echo timeFromNow('2016-03-11'); ?></p>
