@@ -101,8 +101,8 @@
                 <ul>
                     <li><a href="../presentations/Kickoff Presentation - Research Insights.pdf">Research Insights</a> (<abbr title="Portable Document Format">PDF</abbr>, 3.3 <abbr title="Megabyte">MB</abbr>)</li>
                     <li><a href="../presentations/emergent-themes.pdf">Emergent Themes</a> (<abbr title="Portable Document Format">PDF</abbr>, 2.6 <abbr title="Megabyte">MB</abbr>)</li>
-                    <li><a href="../presentations/evangelizing-governing-design-systems.pdf">Pattern Primer</a> (<abbr>PDF</abbr>, 25 <abbr>KB</abbr>)</a></li>
-                    <li><a href="../presentations/pattern-primer.pdf">Evangelizing &amp; Governing Design Systems</a>  (<abbr>PDF</abbr>, 13.7 <abbr>MB</abbr>)</li>
+                    <li><a href="../presentations/pattern-primer.pdf">Pattern Primer</a> (<abbr>PDF</abbr>, 25 <abbr>KB</abbr>)</a></li>
+                    <li><a href="../presentations/evangelizing-governing-design-systems.pdf">Evangelizing &amp; Governing Design Systems</a>  (<abbr>PDF</abbr>, 13.7 <abbr>MB</abbr>)</li>
                 </ul>
                     
             </article><!-- .entry -->
