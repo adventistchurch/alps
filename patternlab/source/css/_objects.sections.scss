@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    $PAGE SECTIONS
+\*------------------------------------*/
+
+.section {
+  position: relative;
+  margin-bottom: $space-double;
+  @include mq($px800) {
+    margin-bottom: rem(55);
+  }
+}

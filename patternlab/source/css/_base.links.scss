@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: $gray-dark;
+  path {
+    //fill: $red;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $blue;
+  }
+  p {
+    color: $gray-dark;
+  }
+}

@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    $FILTER STYLES
+\*------------------------------------*/
+
+/**
+ * Filters
+ */
+.filter--saturate {
+  @include filter(saturate, 100%);
+  @include trans;
+  &:hover {
+    @include filter(saturate, 150%);
+  }
+}
+.filter--saturate-x2 {
+  &:hover {
+    @include filter(saturate, 250%);
+  }
+}
+.filter--grayscale {
+  @include filter(grayscale, 100%);
+}
+.filter--sepia {
+  @include filter(sepia, 100%);
+}

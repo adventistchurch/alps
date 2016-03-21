@@ -1,0 +1,79 @@
+/*------------------------------------*\
+    $LIST TYPES
+\*------------------------------------*/
+
+.inline-list {
+  li {
+    display: inline-block;
+  }
+}
+
+/**
+ * Headline list-style
+ */
+.headline-list {
+  li {
+    text-align: left;
+    clear: both;
+    margin-bottom: $space;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h4 {
+    font-weight: normal;
+  }
+  .hl {
+    display: block;
+    font-size: rem(18);
+    font-weight: 600;
+    margin-bottom: rem(4);
+  }
+  .byline,
+  .byline a {
+    font-size: rem(12);
+    margin-bottom: rem(4);
+  }
+  a:hover {
+    color: $blue;
+    @include underline;
+  }
+}
+
+/**
+ * Bullet List
+ */
+ul.bullet-list,
+.bullet-list ul {
+  li {
+    position: relative;
+    overflow: visible;
+    padding-left: rem(16);
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      top: rem(-6);
+      z-index: 0;
+      font-size: rem(24);
+      color: $gray;
+    }
+  }
+}
+.color-bullet span {
+  color: $body-color;
+}
+
+/**
+ * Text List
+ */
+.text-list {
+  margin: 0 0 1em;
+  line-height: 1.3;
+  li {
+    margin-bottom: $space;
+  }
+}

@@ -73,11 +73,16 @@
 
             <article class="entry entry-future">
             
+<<<<<<< HEAD
                 <h1 class="entry-title">Site code refactoring</h1>
+=======
+                <h1 class="entry-title">Pattern-izing site code</h1>
+>>>>>>> 000734aabc8760c422ab272c59e5136a531c4a4d
                 <p class="entry-date">March 30, 2016<?php echo timeFromNow('2016-03-30'); ?></p>
                     
             </article><!-- .entry -->
 
+<<<<<<< HEAD
             <article class="entry entry-future">
             
                 <h1 class="entry-title">Kickoff</h1>
@@ -86,6 +91,22 @@
             </article><!-- .entry -->
 
             <article class="entry entry-latest">
+=======
+            <article class="entry entry-latest">
+            
+                <h1 class="entry-title">Kickoff</h1>
+                <p class="entry-date">March 16&ndash;17, 2016<?php echo timeFromNow('2016-03-16'); ?></p>
+                <ul>
+                    <li><a href="../presentations/Kickoff Presentation - Research Insights.pdf">Research Insights</a> (<abbr title="Portable Document Format">PDF</abbr>, 3.3 <abbr title="Megabyte">MB</abbr>)</li>
+                    <li><a href="../presentations/emergent-themes.pdf">Emergent Themes</a> (<abbr title="Portable Document Format">PDF</abbr>, 2.6 <abbr title="Megabyte">MB</abbr>)</li>
+                    <li><a href="../presentations/evangelizing-governing-design-systems.pdf">Pattern Primer</a> (<abbr>PDF</abbr>, 25 <abbr>KB</abbr>)</a></li>
+                    <li><a href="../presentations/pattern-primer.pdf">Evangelizing &amp; Governing Design Systems</a>  (<abbr>PDF</abbr>, 13.7 <abbr>MB</abbr>)</li>
+                </ul>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry">
+>>>>>>> 000734aabc8760c422ab272c59e5136a531c4a4d
             
                 <h1 class="entry-title">Kickoff prep</h1>
                 <p class="entry-date">March 11, 2016<?php echo timeFromNow('2016-03-11'); ?></p>

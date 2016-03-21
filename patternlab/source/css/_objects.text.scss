@@ -1,0 +1,279 @@
+/*------------------------------------*\
+    $TEXT TYPES
+\*------------------------------------*/
+
+/**
+ * Dek
+ */
+.dek {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Kicker/Eyebrow
+ */
+.kicker {
+  font-size: rem(11);
+  line-height: 1;
+  margin-bottom: rem(8);
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: $blue;
+  text-transform: uppercase;
+}
+.kicker--large {
+  font-size: rem(14);
+  @include mq($px1000) {
+    font-size: rem(16);
+  }
+}
+
+/**
+ * Tags
+ */
+.tags {
+  font-size: rem(14);
+}
+.tag {
+  color: $white;
+  padding: rem(5) rem(6) rem(4);
+  margin-left: rem(8);
+  border-radius: 3px;
+  background-color: $red;
+  &:hover {
+    color: $white;
+    background-color: darken($red, 10%);
+  }
+}
+
+/**
+ * Citation
+ */
+.citation {
+  display: block;
+  font-style: normal;
+}
+
+/**
+ * Text Alignment
+ */
+ .align--right {
+   text-align: right;
+ }
+ .center,
+ .align--center {
+   text-align: center;
+ }
+ .align--left {
+   text-align: left;
+ }
+
+/**
+ * Caption
+ */
+.caption {
+  line-height: 1.35;
+}
+
+/**
+ * Byline
+ */
+.byline {
+}
+
+/**
+ * Credits Section
+ */
+.credits {
+}
+
+/**
+ * No Wrapping
+ */
+.no-wrap {
+  white-space: nowrap;
+}
+
+/**
+ * Font Families
+ */
+.font--primary,
+.font--sans {
+  font-family: $sans;
+}
+.font--secondary,
+.font--serif {
+  font-family: $serif;
+}
+// When fonts are loaded.
+.wf-active {
+  .font--primary {
+    font-family: $font;
+  }
+  .font--secondary {
+    font-family: $font-secondary;
+  }
+}
+
+/**
+ * Text Sizing
+ */
+.font--xs {
+  font-size: rem(10);
+}
+.font--s {
+  font-size: rem(12);
+}
+.font--m {
+  font-size: rem(14);
+}
+.font--ml {
+  font-size: rem(16);
+}
+.font--ml2 {
+  font-size: rem(18);
+}
+.font--l {
+  font-size: rem(22);
+}
+.font--xl {
+  font-size: rem(28);
+}
+.font--xxl {
+  font-size: rem(35);
+}
+
+/**
+ * Font Weights
+ */
+.fw--900 {
+ font-weight: 900;
+}
+.fw--800 {
+ font-weight: 800;
+}
+.fw--600 {
+  font-weight: 600;
+}
+.fw--400 {
+  font-weight: 400;
+}
+
+/**
+ * Text Transforms
+ */
+.upper {
+  text-transform: uppercase;
+}
+.lower {
+  text-transform: lowercase;
+}
+.small-caps {
+  font-variant: small-caps;
+}
+
+/**
+ * Text Decorations
+ */
+.td--u {
+  text-decoration: underline;
+}
+
+/**
+ * Passages of Text
+ */
+.text {
+  font-family: $serif;
+  .wf-active & {
+    font-family: $font-secondary;
+  }
+  > p a,
+  > ul a,
+  > ol a,
+  > dl a {
+    color: $blue;
+    box-shadow: inset -2px -5px 0px -2px $blue;
+    @include transition(box-shadow .3s $cubic-bezier);
+    &:hover {
+      box-shadow: inset -2px -20px 0px -3px $blue;
+    }
+  }
+  > h1 {
+    font-size: rem(36);
+    margin-bottom: $space-and-half;
+  }
+  > h3,
+  > h3,
+  > h4,
+  > h5 {
+    margin-bottom: $space;
+  }
+  > ul {
+    list-style: disc;
+    margin: 0 0 $space $space;
+    li {
+      margin-bottom: $space-half;
+    }
+    ul {
+      list-style: disc;
+      padding-top: rem(6);
+      margin-bottom: 0;
+      margin-left: $space;
+    }
+  }
+  > ol {
+    list-style: decimal;
+    margin: 0 0 $space $space;
+    li {
+      margin-bottom: $space-half;
+    }
+    ol {
+      list-style: decimal;
+      padding-top: rem(6);
+      margin-bottom: 0;
+      margin-left: $space;
+    }
+  }
+  .pullquote {
+    p {
+      font-size: rem(28);
+      font-weight: 300;
+      font-style: normal;
+      font-family: $font;
+      @include mq($px900) {
+        font-size: rem(38);
+      }
+    }
+  }
+}
+
+/**
+ * Larger Text Version (non-article body)
+ */
+.text--l {
+  > p,
+  > ul,
+  > ol,
+  > dl {
+    font-size: 110%;
+  }
+}
+
+/**
+ * Letter Spacing
+ */
+.ls {
+  letter-spacing: 1px;
+}
+
+/**
+ * Line Heights
+ */
+.lh--1 {
+  line-height: 1;
+}
+.lh--0 {
+  line-height: 0;
+}

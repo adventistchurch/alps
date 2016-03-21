@@ -1,0 +1,137 @@
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+
+/**
+ * Flexible Media
+ */
+img, video, object, svg, iframe {
+  max-width: 100%;
+  border: none;
+}
+svg {
+  max-height: 100%;
+}
+picture,
+picture img {
+  display: block;
+}
+.figure {
+  position: relative;
+  display: inline-block;
+}
+.figcaption {
+  position: absolute;
+  width: 100%;
+  padding: rem(7) rem(7) rem(5);
+  bottom: 0;
+  color: $white;
+  left: 0;
+  background-color: rgba($black, .8);
+  z-index: 10;
+  a {
+    display: block;
+  }
+}
+.no-touch {
+  .figure {
+    &:hover {
+      .figcaption {
+        opacity: 1;
+      }
+    }
+  }
+  .figcaption {
+    opacity: 0;
+    @include trans;
+  }
+}
+.mfp-arrow {
+  height: auto;
+}
+
+/**
+ * Custom Responsive Video Player
+ */
+.custom-fitvid {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-player {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/*------------------------------------*\
+    $PRINT STYLES
+\*------------------------------------*/
+
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  .no-print,
+  #header,
+  #footer,
+  .ad {
+    display: none;
+  }
+}
+

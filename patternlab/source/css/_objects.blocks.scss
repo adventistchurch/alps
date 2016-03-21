@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    $BLOCKS
+\*------------------------------------*/
+
+// Block
+.block {
+  font-family: $sans;
+  .wf-active & {
+    font-family: $font;
+  }
+  img {
+    display: inline-block;
+  }
+}
+

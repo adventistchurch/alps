@@ -1,0 +1,130 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+/**
+ * Navigation Toggler
+ */
+.nav-toggler {
+  display: block;
+  position: absolute;
+  right: $space-half;
+  top: rem(5);
+  padding: rem(10) rem(8);
+  height: rem(42);
+  width: rem(42);
+  max-height: rem(42);
+  max-width: rem(42);
+  z-index: 20;
+  overflow: hidden;
+  border-radius: 50%;
+  border: rem(2) solid $white;
+  @include mq($px800) {
+    display: none;
+  }
+}
+.nav-toggler__inner {
+  width: rem(22);
+  height: rem(22);
+  position: absolute;
+  @include transform(rotate(0deg));
+  @include transition(.5s ease-in-out);
+  cursor: pointer;
+  display: block;
+}
+// Hamburger Contents
+$slice-height: 3.5;
+.nt-span {
+  display: block;
+  position: absolute;
+  height: rem($slice-height);
+  width: 100%;
+  background-color: $white;
+  opacity: 1;
+  left: 0;
+  @include transform(rotate(0deg));
+  @include transition(.25s ease-in-out);
+}
+.nt-span--1 {
+  top: 0px;
+}
+.nt-span--2,
+.nt-span--3 {
+  top: rem($slice-height * 2);
+}
+.nt-span--4 {
+  top: rem($slice-height * 4);
+}
+// Active Hamburger
+.main-nav-is-active {
+  .nt-span--1 {
+    top: rem($slice-height * 2);
+    width: 0%;
+    left: 50%;
+  }
+  .nt-span--2 {
+    @include transform(rotate(45deg));
+  }
+  .nt-span--3 {
+    @include transform(rotate(-45deg));
+  }
+  .nt-span--4 {
+    top: rem($slice-height * 2);
+    width: 0%;
+    left: 50%;
+  }
+}
+
+
+/**
+ * Primary Nav
+ */
+.main-nav {
+  padding: $pad-half;
+}
+.nav__primary {
+  position: relative;
+  z-index: 100;
+  @include mq($px800) {
+    float: right;
+    margin-top: rem(-4);
+    &:hover {
+      a {
+        color: rgba($white, .5);
+      }
+    }
+  }
+  a {
+    color: $white;
+    display: block;
+    padding: $pad-half rem(6);
+    font-size: rem(14);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    @include mq($px800) {
+      padding: $pad-half rem(15);
+      font-size: rem(16);
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .menu-item {
+    margin-bottom: 0;
+    @include mq($px800) {
+      display: inline-block;
+      margin-right: $space;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @include mq($px1100) {
+      display: inline-block;
+      margin-right: $space-and-half;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

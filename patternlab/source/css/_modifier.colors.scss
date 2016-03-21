@@ -1,0 +1,80 @@
+/*------------------------------------*\
+    $COLOR MODIFIERS
+\*------------------------------------*/
+
+/**
+ * Text Colors
+ */
+.gray {
+  color: $gray;
+}
+.gray--med {
+  color: $gray-med;
+}
+.gray--light {
+  color: $gray-light;
+}
+.gray--dark,
+.gray--dark a {
+  color: $gray-dark;
+}
+.black,
+.black a {
+  color: $black;
+}
+.black--trans {
+  color: rgba($black, .7);;
+}
+.white {
+  color: $white;
+}
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
+}
+
+/**
+ * Background Colors
+ */
+.no-bg {
+  background: none;
+}
+.bg--white {
+  background-color: $white;
+}
+.bg--black {
+  background-color: $black;
+}
+.bg--blue {
+  background-color: $blue;
+}
+.bg--gray {
+  background-color: $gray;
+}
+.bg--light-gray {
+  background-color: $gray-light;
+}
+.bg--dark-gray {
+  background-color: $gray-dark;
+}
+.bg--red {
+  background-color: $red;
+}
+
+/**
+ * States
+ */
+.valid {
+  color: $valid;
+}
+.error {
+  color: $error;
+}
+.warning {
+  color: $warning;
+}
+.information {
+  color: $information;
+}

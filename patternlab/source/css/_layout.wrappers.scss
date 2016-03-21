@@ -1,0 +1,176 @@
+/*------------------------------------*\
+    $WRAPPERS & CONTAINERS
+\*------------------------------------*/
+
+/**
+ * Layout containers - keep content centered and within a maximum width. Also
+ * adjusts left and right padding as the viewport widens.
+ */
+ .lc {
+  max-width: $max-width;
+  margin: 0 auto;
+  position: relative;
+  padding-left: $pad;
+  padding-right: $pad;
+  @include mq($px500) {
+    padding-left: $pad;
+    padding-right: $pad;
+  }
+  @include mq($px1000) {
+    padding-left: $pad-and-half;
+    padding-right: $pad-and-half;
+  }
+  @include mq($px1300) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/**
+ * Wrapping element to keep content contained and centered.
+ */
+.wrap {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+/**
+ * Wrapping element to keep content contained and centered at narrower widths.
+ */
+.narrow {
+  max-width: rem(726);
+  @include center-block;
+  &.narrow--s {
+    max-width: rem(650);
+  }
+  &.narrow--s-m {
+    max-width: rem(700);
+  }
+  &.narrow--m {
+    max-width: rem(800);
+  }
+  &.narrow--l {
+    max-width: rem(1000);
+  }
+  &.narrow--xl {
+    max-width: rem(1250);
+  }
+}
+
+
+/*------------------------------------*\
+    $LAYOUTS
+\*------------------------------------*/
+
+/**
+ * Fluid left content column with static right rail
+ */
+.primary {
+  width: 100%;
+  @include mq($px500) {
+    float: left;
+    margin-right: rem(-$sidebar-width - 50);
+  }
+  @include mq($px900) {
+    margin-right: rem(-$sidebar-width - 80);
+  }
+  @include mq($px1300) {
+    margin-right: rem(-$sidebar-width - 100);
+  }
+}
+.primary-inner {
+  @include mq($px500) {
+    padding-bottom: rem(30);
+    margin-right: rem($sidebar-width + 50);
+  }
+  @include mq($px900) {
+    margin-right: rem($sidebar-width + 80);
+  }
+  @include mq($px1300) {
+    margin-right: rem($sidebar-width + 100);
+  }
+}
+.secondary {
+  max-width: rem(650);
+  @include center-block;
+  @include mq($px500) {
+    float: right;
+    width: rem($sidebar-width);
+  }
+}
+
+
+/*------------------------------------*\
+    $LAYOUT SHIFTERS
+\*------------------------------------*/
+
+/**
+ * Shift at 900px
+ */
+.shift-left--900 {
+  width: 100%;
+  @include mq($px900) {
+    float: left;
+    margin-right: rem(-300);
+  }
+}
+.shift-left--inner--900 {
+  @include mq($px900) {
+    margin-right: rem(330);
+  }
+}
+.shift-right--900 {
+  @include mq($px900) {
+    float: right;
+    width: rem(300);
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/**
+ * Shift at 700
+ */
+.shift-left--700 {
+ width: 100%;
+ @include mq($px700) {
+   float: left;
+   margin-right: rem(-300);
+ }
+}
+.shift-left--inner--700 {
+ @include mq($px700) {
+   margin-right: rem(350);
+ }
+}
+.shift-right--700 {
+ @include mq($px700) {
+   float: right;
+   width: rem(300);
+ }
+}
+
+/**
+ * Shift at 1200
+ */
+.shift-left--1200 {
+  width: 100%;
+  @include mq($px1200) {
+    float: left;
+    margin-right: rem(-300);
+  }
+}
+.shift-left--inner--1200 {
+  @include mq($px1200) {
+    margin-right: rem(330);
+  }
+}
+.shift-right--1200 {
+  @include mq($px1200) {
+    float: right;
+    width: rem(300);
+    position: relative;
+    z-index: 1;
+  }
+}
+
