@@ -80,6 +80,13 @@
 
             <article class="entry entry-latest">
             
+                <h1 class="entry-title">Creative Brief</h1>
+                <p class="entry-date">March 26, 2016<?php echo timeFromNow('2016-03-26'); ?></p>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry entry-latest">
+            
                 <h1 class="entry-title">Kickoff</h1>
                 <p class="entry-date">March 16&ndash;17, 2016<?php echo timeFromNow('2016-03-16'); ?></p>
                 <ul>
