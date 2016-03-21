@@ -26,7 +26,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 <head>    
-    <title>Adventist.org Fancy Project Hub</title>
+    <title>Adventist.org Project Hub</title>
    
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -58,45 +58,39 @@
 
         <section role="main" class="main">
 
+<article class="entry entry-future">
+            
+                <h1 class="entry-title">Handoff</h1>
+                <p class="entry-date">April 19, 2016<?php echo timeFromNow('2016-04-19'); ?></p>
+                    
+            </article><!-- .entry -->
+
             <article class="entry entry-future">
             
-                <h1 class="entry-title">Style guide front-end files creation</h1>
-                <p class="entry-date">April 15, 2016<?php echo timeFromNow('2016-04-15'); ?></p>
+                <h1 class="entry-title">Style Guide + Final Pattern Creation</h1>
+                <p class="entry-date">April 4&ndash;15, 2016<?php echo timeFromNow('2016-04-15'); ?></p>
                     
             </article><!-- .entry -->
 
             <article class="entry entry-future">
             
                 <h1 class="entry-title">Design exploration</h1>
-                <p class="entry-date">April 7, 2016<?php echo timeFromNow('2016-04-07'); ?></p>
+                <p class="entry-date">March 21&ndash;30, 2016<?php echo timeFromNow('2016-03-30'); ?></p>
                     
             </article><!-- .entry -->
 
             <article class="entry entry-future">
-            
-<<<<<<< HEAD
-                <h1 class="entry-title">Site code refactoring</h1>
-=======
-                <h1 class="entry-title">Pattern-izing site code</h1>
->>>>>>> 000734aabc8760c422ab272c59e5136a531c4a4d
-                <p class="entry-date">March 30, 2016<?php echo timeFromNow('2016-03-30'); ?></p>
-                    
-            </article><!-- .entry -->
 
-<<<<<<< HEAD
-            <article class="entry entry-future">
-            
-                <h1 class="entry-title">Kickoff</h1>
-                <p class="entry-date">March 16, 2016<?php echo timeFromNow('2016-03-16'); ?></p>
-                    
-            </article><!-- .entry -->
+                <h1 class="entry-title">Pattern Audit + Pattern Creation</h1>
 
-            <article class="entry entry-latest">
-=======
+                <p class="entry-date">March 21&ndash;April 1, 2016<?php echo timeFromNow('2016-04-01'); ?></p>
+                    
+            </article><!-- .entry -->            
+             
             <article class="entry entry-latest">
             
                 <h1 class="entry-title">Creative Brief</h1>
-                <p class="entry-date">March 26, 2016<?php echo timeFromNow('2016-03-26'); ?></p>
+                <p class="entry-date">March 25, 2016<?php echo timeFromNow('2016-03-25'); ?></p>
                     
             </article><!-- .entry -->
 
@@ -117,7 +111,6 @@
             
 
             <article class="entry">
->>>>>>> 000734aabc8760c422ab272c59e5136a531c4a4d
             
                 <h1 class="entry-title">Kickoff prep</h1>
                 <p class="entry-date">March 11, 2016<?php echo timeFromNow('2016-03-11'); ?></p>
