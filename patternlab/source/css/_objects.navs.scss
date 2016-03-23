@@ -32,9 +32,10 @@
   cursor: pointer;
   display: block;
 }
+
 // Hamburger Contents
 $slice-height: 3.5;
-.nt-span {
+.nav-toggle__segment {
   display: block;
   position: absolute;
   height: rem($slice-height);
@@ -45,30 +46,30 @@ $slice-height: 3.5;
   @include transform(rotate(0deg));
   @include transition(.25s ease-in-out);
 }
-.nt-span--1 {
+.nav-toggle__segment--1 {
   top: 0px;
 }
-.nt-span--2,
-.nt-span--3 {
+.nav-toggle__segment--2,
+.nav-toggle__segment--3 {
   top: rem($slice-height * 2);
 }
-.nt-span--4 {
+.nav-toggle__segment--4 {
   top: rem($slice-height * 4);
 }
 // Active Hamburger
 .main-nav-is-active {
-  .nt-span--1 {
+  .nav-toggle__segment--1 {
     top: rem($slice-height * 2);
     width: 0%;
     left: 50%;
   }
-  .nt-span--2 {
+  .nav-toggle__segment--2 {
     @include transform(rotate(45deg));
   }
-  .nt-span--3 {
+  .nav-toggle__segment--3 {
     @include transform(rotate(-45deg));
   }
-  .nt-span--4 {
+  .nav-toggle__segment--4 {
     top: rem($slice-height * 2);
     width: 0%;
     left: 50%;

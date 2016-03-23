@@ -7,16 +7,11 @@
 /**
  * Grid & Baseline Setup
  */
-$column: 92px;
-$gutter: 10px;
-$grid-columns: 12;
 $fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
 $rembase: 16; // 16px = 1.00rem
-$max-width-px: 1295;
+$max-width-px: 1300;
 $max-width: rem($max-width-px) !default;
-$inner-max-width: (910/$fontpx) + 0em;
-$inner-max-small: (740/$defaultpx) + 0em;
 
 /**
  * Colors
@@ -37,9 +32,10 @@ $overlay-light: rgba($black, .76);
 /**
  * Style Colors
  */
-$body-color: $black;
-$blue: #00A2B4;
+$body-color: #575a5c;
+$blue: #438390;
 $red: #ef3d25;
+$orange: #f9b000;
 
 /**
  * Social Colors
@@ -55,8 +51,10 @@ $google-red: $youtube-red;
 /**
  * Typography
  */
-$font: "jaf-bernino-sans", "Helvetica", "Arial", sans-serif;
-$font-secondary: "abril-display", "bodoni-urw", Georgia, Times, "Times New Roman", serif;
+$font: "Merriweather", Georgia, Times, "Times New Roman", serif;
+$font-serif: $font;
+$font-secondary: "Montserrat", "Helvetica", "Arial", sans-serif;
+$font-sans: $font-secondary;
 $sans: "Helvetica", "Arial", sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
 $monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
@@ -107,10 +105,12 @@ $px320: (320/$defaultpx) + 0em;
 $px330: (330/$defaultpx) + 0em;
 $px350: (350/$defaultpx) + 0em;
 $px400: (400/$defaultpx) + 0em;
+$small: $px400;
 $px450: (450/$defaultpx) + 0em;
 $px500: (500/$defaultpx) + 0em;
 $px550: (550/$defaultpx) + 0em;
 $px600: (600/$defaultpx) + 0em;
+$medium: $px600;
 $px650: (650/$defaultpx) + 0em;
 $px700: (700/$defaultpx) + 0em;
 $px750: (750/$defaultpx) + 0em;
@@ -118,17 +118,21 @@ $px760: (760/$defaultpx) + 0em;
 $px800: (800/$defaultpx) + 0em;
 $px850: (850/$defaultpx) + 0em;
 $px900: (900/$defaultpx) + 0em;
+$large: $px900;
 $px950: (950/$defaultpx) + 0em;
 $px1000: (1000/$defaultpx) + 0em;
 $px1050: (1050/$defaultpx) + 0em;
 $px1100: (1100/$defaultpx) + 0em;
+$xlarge: $px1100;
 $px1150: (1150/$defaultpx) + 0em;
 $px1200: (1200/$defaultpx) + 0em;
 $px1250: (1250/$defaultpx) + 0em;
 $px1300: (1300/$defaultpx) + 0em;
+$xxlarge: $px1300;
 $px1400: (1400/$defaultpx) + 0em;
 $px1450: (1450/$defaultpx) + 0em;
 $px1500: (1500/$defaultpx) + 0em;
+$xxxlarge: $px1500;
 
 /**
  * Icon Sizing

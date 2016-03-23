@@ -99,15 +99,9 @@ gulp.task('cp:js', function () {
 // Images copy
 gulp.task('cp:img', function () {
   return gulp.src(
-    ['**/*.gif', '**/*.png', '**/*.jpg', '**/*.jpeg'],
+    ['**/*.svg', '**/*.gif', '**/*.png', '**/*.jpg', '**/*.jpeg'],
     {cwd: path.resolve(paths().source.images)})
     .pipe(gulp.dest(path.resolve(paths().public.images)));
-});
-
-// Fonts copy
-gulp.task('cp:font', function () {
-  return gulp.src('*', {cwd: path.resolve(paths().source.fonts)})
-    .pipe(gulp.dest(path.resolve(paths().public.fonts)));
 });
 
 // Data copy
@@ -126,10 +120,10 @@ gulp.task('cp:css', function () {
 // Styleguide Copy
 gulp.task('cp:styleguide', function () {
   return gulp.src(
-      ['**/*'],
-      {cwd: path.resolve(paths().source.styleguide)})
-      .pipe(gulp.dest(path.resolve(paths().public.styleguide)))
-      .pipe(browserSync.stream());
+    ['**/*'],
+    {cwd: path.resolve(paths().source.styleguide)})
+    .pipe(gulp.dest(path.resolve(paths().public.styleguide)))
+    .pipe(browserSync.stream());
 });
 
 // server and watch tasks
@@ -170,7 +164,6 @@ gulp.task('connect', ['lab'], function () {
       path.resolve(paths().source.patterns, '**/*.mustache'),
       path.resolve(paths().source.patterns, '**/*.json'),
       path.resolve(paths().source.data, '*.json'),
-      path.resolve(paths().source.fonts + '/*'),
       path.resolve(paths().source.images + '/*'),
       path.resolve(paths().source.data + '*.json')
     ],
@@ -202,7 +195,7 @@ gulp.task('lab-pipe', ['lab'], function (cb) {
 
 gulp.task('default', ['lab']);
 
-gulp.task('assets', ['cp:js', 'cp:img', 'cp:font', 'cp:data', 'sass', 'cp:css', 'cp:styleguide' ]);
+gulp.task('assets', ['cp:js', 'cp:img', 'cp:data', 'sass', 'cp:css', 'cp:styleguide' ]);
 gulp.task('prelab', ['clean', 'assets']);
 gulp.task('lab', ['prelab', 'patternlab'], function (cb) { cb(); });
 gulp.task('patterns', ['patternlab:only_patterns']);

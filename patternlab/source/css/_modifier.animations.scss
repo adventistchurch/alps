@@ -6,7 +6,7 @@
  * Transitions
  */
 .trans {
-  @include trans;
+  transition: all .4s ease-in-out;
 }
 .trans--fast {
   transition: all .1s ease-in-out;
@@ -33,7 +33,7 @@
 }
 
 
-/* fade image in after load */
+// Fade image in after load.
 .lazyload,
 .lazyloading {
   opacity: 0;

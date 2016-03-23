@@ -8,7 +8,6 @@
       "patternlabFiles" : "./core/",
       "js" : "./source/js",
       "images" : "./source/images",
-      "fonts" : "./source/fonts",
       "css" : "./source/css/"
     },
     "public" : {
@@ -18,7 +17,6 @@
       "styleguide" : "./public/styleguide/",
       "js" : "./public/js",
       "images" : "./public/images",
-      "fonts" : "./public/fonts",
       "css" : "./public/css"
     }
   },
@@ -35,9 +33,9 @@
     "m": true,
     "l": true,
     "full": true,
-    "random": true,
-    "disco": true,
-    "hay": true,
+    "random": false,
+    "disco": false,
+    "hay": false,
     "mqs": true,
     "find": true,
     "views-all": true,
@@ -57,6 +55,6 @@
   },
   "patternExportKeys": [],
   "patternExportDirectory": "./pattern_exports/",
-  "baseurl" : "",
+  "baseurl" : "/",
   "cacheBust": true
 }

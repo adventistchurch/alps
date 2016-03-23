@@ -2,6 +2,72 @@
     $SPACING
 \*------------------------------------*/
 
+// For more information on this spacing technique, please see:
+// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls.
+
+.spacing {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile));
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop));
+    }
+  }
+}
+.spacing--quarter {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)/4);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)/4);
+    }
+  }
+}
+.spacing--half {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)/2);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)/2);
+    }
+  }
+}
+.spacing--one-and-half {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*1.5);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*1.5);
+    }
+  }
+}
+.spacing--double {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*2);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*2);
+    }
+  }
+}
+.spacing--triple {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*3);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*3);
+    }
+  }
+}
+.spacing--quad {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*4);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*4);
+    }
+  }
+}
+.spacing--zero {
+  & > * + * {
+    margin-top: 0;
+  }
+}
+
+
 /**
  * Spacing/Padding
  */
@@ -122,146 +188,3 @@
 .space-double--top {
   margin-top: $space-double;
 }
-
-/**
- * Remove spacing/padding
- */
-.noSpace {
-  margin: 0;
-}
-.noSpace--btm {
-  margin-bottom: 0;
-}
-.noSpace--top {
-  margin-top: 0;
-}
-.noSpace--right {
-  margin-right: 0;
-}
-.noSpace--left {
-  margin-left: 0;
-}
-.no-pad {
-  padding: 0;
-}
-.no-pad--right {
-  padding-right: 0;
-}
-.no-pad--left {
-  padding-left: 0;
-}
-.no-pad--btm {
-  padding-bottom: 0;
-}
-.no-pad--top {
-  padding-top: 0;
-}
-
-
-/**
- * Lobotomized Owl approach to consistent margins.
- * Reference: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
- */
-.spacing {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile));
-    @include mq($px750) {
-      margin-top: rem(verticalSpacing(desktop));
-    }
-  }
-}
-.spacing--quarter {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)/4);
-    @include mq($px750) {
-      margin-top: rem(verticalSpacing(desktop)/4);
-    }
-  }
-}
-.spacing--half {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)/2);
-    @include mq($px750) {
-      margin-top: rem(verticalSpacing(desktop)/2);
-    }
-  }
-}
-.spacing--one-and-half {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*1.5);
-    @include mq($px750) {
-      margin-top: rem(verticalSpacing(desktop)*1.5);
-    }
-  }
-}
-.spacing--double {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*2);
-    @include mq($px750) {
-      margin-top: rem(verticalSpacing(desktop)*2);
-    }
-  }
-}
-.spacing--triple {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*3);
-    @include mq($px750) {
-      margin-top: rem(verticalSpacing(desktop)*3);
-    }
-  }
-}
-.spacing--quad {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*4);
-    @include mq($px750) {
-      margin-top: rem(verticalSpacing(desktop)*4);
-    }
-  }
-}
-
-/*
- * Breakpoint spacing
- */
-.spacing--top-quarter {
-  margin-top: rem(verticalSpacing(mobile)/4);
-  @include mq($px750) {
-    margin-top: rem(verticalSpacing(desktop)/4);
-  }
-}
-.spacing--top-half {
-  margin-top: rem(verticalSpacing(mobile)/2);
-  @include mq($px750) {
-    margin-top: rem(verticalSpacing(desktop)/2);
-  }
-}
-.spacing--top {
-  margin-top: rem(verticalSpacing(mobile));
-  @include mq($px750) {
-    margin-top: rem(verticalSpacing(desktop));
-  }
-}
-.spacing--top-one-and-half {
-  margin-top: rem(verticalSpacing(mobile)*1.5);
-  @include mq($px750) {
-    margin-top: rem(verticalSpacing(desktop)*1.5);
-  }
-}
-.spacing--top-double {
-  margin-top: rem(verticalSpacing(mobile)*2);
-  @include mq($px750) {
-    margin-top: rem(verticalSpacing(desktop)*2);
-  }
-}
-.spacing--top-triple {
-  margin-top: rem(verticalSpacing(mobile)*3);
-  @include mq($px750) {
-    margin-top: rem(verticalSpacing(desktop)*3);
-  }
-}
-.spacing--bottom {
-  margin-bottom: rem(verticalSpacing(mobile));
-  @include mq($px750) {
-    margin-bottom: rem(verticalSpacing(desktop));
-  }
-}
-

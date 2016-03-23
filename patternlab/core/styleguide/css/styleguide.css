@@ -558,7 +558,7 @@ span.sg-pattern-state:before {
 /* Section Head */
 .sg-pattern-head {
   margin: 2em 0;
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 70%;
   font-weight: normal;
   padding: 1em 0;
@@ -578,7 +578,7 @@ span.sg-pattern-state:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.4;
   font-size: 90%;
   background: #222;

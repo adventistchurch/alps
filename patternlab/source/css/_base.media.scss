@@ -33,41 +33,6 @@ picture img {
     display: block;
   }
 }
-.no-touch {
-  .figure {
-    &:hover {
-      .figcaption {
-        opacity: 1;
-      }
-    }
-  }
-  .figcaption {
-    opacity: 0;
-    @include trans;
-  }
-}
-.mfp-arrow {
-  height: auto;
-}
-
-/**
- * Custom Responsive Video Player
- */
-.custom-fitvid {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-.video-player {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100% !important;
-  height: 100% !important;
-}
-
 
 /*------------------------------------*\
     $PRINT STYLES

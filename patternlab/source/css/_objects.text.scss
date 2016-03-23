@@ -23,12 +23,6 @@
   color: $blue;
   text-transform: uppercase;
 }
-.kicker--large {
-  font-size: rem(14);
-  @include mq($px1000) {
-    font-size: rem(16);
-  }
-}
 
 /**
  * Tags
@@ -99,58 +93,158 @@
 /**
  * Font Families
  */
-.font--primary,
-.font--sans {
-  font-family: $sans;
-}
-.font--secondary,
 .font--serif {
-  font-family: $serif;
+  font-family: $font;
 }
-// When fonts are loaded.
-.wf-active {
-  .font--primary {
-    font-family: $font;
-  }
-  .font--secondary {
-    font-family: $font-secondary;
-  }
+.font--sans {
+  font-family: $font-secondary;
 }
 
+
 /**
- * Text Sizing
+ * Serif type styles
  */
-.font--xs {
-  font-size: rem(10);
+// XX-Large Type - Serif
+@mixin font--serif--xxl() {
+  font-family: $font;
+  font-size: rem(26);
+  line-height: 1;
+  font-weight: normal;
+  @include mq($large) {
+    font-size: rem(60);
+    line-height: rem(64);
+  }
 }
-.font--s {
-  font-size: rem(12);
+.font--serif--xxl {
+  @include font--serif--xxl;
 }
-.font--m {
-  font-size: rem(14);
+
+// X-Large Type - Serif
+@mixin font--serif--xl() {
+  font-family: $font;
+  font-size: rem(26);
+  line-height: 1;
+  font-weight: normal;
+  @include mq($large) {
+    font-size: rem(36);
+    line-height: rem(40);
+  }
 }
-.font--ml {
-  font-size: rem(16);
+.font--serif--xl {
+  @include font--serif--xl;
 }
-.font--ml2 {
-  font-size: rem(18);
-}
-.font--l {
+
+// Large Type - Serif
+@mixin font--serif--l() {
+  font-family: $font;
   font-size: rem(22);
+  line-height: rem(26);
+  font-weight: normal;
+  @include mq($large) {
+    font-size: rem(30);
+    line-height: rem(36);
+  }
 }
-.font--xl {
-  font-size: rem(28);
+.font--serif--l {
+  @include font--serif--l;
 }
-.font--xxl {
-  font-size: rem(35);
+
+// Medium Type - Serif
+@mixin font--serif--m() {
+  font-family: $font;
+  font-size: rem(18);
+  line-height: rem(22);
+  font-weight: normal;
+  @include mq($large) {
+    font-size: rem(22);
+    line-height: rem(26);
+  }
 }
+.font--serif--m {
+  @include font--serif--m;
+}
+
+// Small Type - Serif
+@mixin font--serif--s() {
+  font-family: $font;
+  font-size: rem(16);
+  line-height: rem(20);
+  font-weight: 500;
+}
+.font--serif--s {
+  @include font--serif--s;
+}
+
+// X-Small Type - Serif
+@mixin font--serif--s() {
+  font-family: $font;
+  font-size: rem(16);
+  line-height: rem(20);
+  font-weight: 500;
+}
+.font--serif--xs {
+  @include font--serif--s;
+}
+
+
+/**
+ * Sans type styles
+ */
+// Large type - Sans
+@mixin font--sans--l() {
+  font-family: $font-secondary;
+  font-size: rem(18);
+  line-height: rem(24);
+  font-weight: normal;
+}
+.font--sans--l {
+  @include font--sans--l;
+}
+
+// Medium type - Sans
+@mixin font--sans--m() {
+  font-family: $font-secondary;
+  font-size: rem(13);
+  line-height: rem(16);
+  font-weight: normal;
+  @include mq($large) {
+    font-size: rem(15);
+    line-height: rem(24);
+  }
+}
+.font--sans--m {
+  @include font--sans--m;
+}
+
+// Small type - Sans
+@mixin font--sans--s() {
+  font-family: $font-secondary;
+  font-size: rem(11);
+  line-height: rem(14);
+  font-weight: normal;
+  @include mq($large) {
+    font-size: rem(15);
+    line-height: rem(24);
+  }
+}
+.font--sans--s {
+  @include font--sans--s;
+}
+
+// X-Small type - Sans
+@mixin font--sans--xs() {
+  font-family: $font-secondary;
+  font-size: rem(10);
+  line-height: rem(14);
+}
+.font--sans--xs {
+  @include font--sans--xs;
+}
+
 
 /**
  * Font Weights
  */
-.fw--900 {
- font-weight: 900;
-}
 .fw--800 {
  font-weight: 800;
 }
@@ -169,9 +263,6 @@
 }
 .lower {
   text-transform: lowercase;
-}
-.small-caps {
-  font-variant: small-caps;
 }
 
 /**
@@ -242,7 +333,7 @@
       font-weight: 300;
       font-style: normal;
       font-family: $font;
-      @include mq($px900) {
+      @include mq($large) {
         font-size: rem(38);
       }
     }

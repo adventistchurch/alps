@@ -1,0 +1,12 @@
+<picture class="picture">
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  {{# img-break-xl }}
+    <source srcset="{{ img.src-xl }}" media="(min-width: {{ img-break-xl }}px)">
+  {{/ img-break-xl }}
+  {{# img-break-l }}
+    <source srcset="{{ img.src-l }}" media="(min-width: {{ img-break-l }}px)">
+  {{/ img-break-l }}
+  <source srcset="{{ img.src-m }}" media="(min-width: {{ img-break-m }}px)">
+  <!--[if IE 9]></video><![endif]-->
+  <img itemprop="image" srcset="{{ img.src-s }}" alt="{{ img.alt }}">
+</picture>
