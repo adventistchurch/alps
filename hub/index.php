@@ -27,6 +27,7 @@
 
 <head>    
     <title>Adventist.org Project Hub</title>
+   
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="" />
@@ -57,24 +58,39 @@
 
         <section role="main" class="main">
 
+<article class="entry entry-future">
+            
+                <h1 class="entry-title">Handoff</h1>
+                <p class="entry-date">April 19, 2016<?php echo timeFromNow('2016-04-19'); ?></p>
+                    
+            </article><!-- .entry -->
+
             <article class="entry entry-future">
             
-                <h1 class="entry-title">Style guide front-end files creation</h1>
-                <p class="entry-date">April 15, 2016<?php echo timeFromNow('2016-04-15'); ?></p>
+                <h1 class="entry-title">Style Guide + Final Pattern Creation</h1>
+                <p class="entry-date">April 4&ndash;15, 2016<?php echo timeFromNow('2016-04-15'); ?></p>
                     
             </article><!-- .entry -->
 
             <article class="entry entry-future">
             
                 <h1 class="entry-title">Design exploration</h1>
-                <p class="entry-date">April 7, 2016<?php echo timeFromNow('2016-04-07'); ?></p>
+                <p class="entry-date">March 21&ndash;30, 2016<?php echo timeFromNow('2016-03-30'); ?></p>
                     
             </article><!-- .entry -->
 
             <article class="entry entry-future">
+
+                <h1 class="entry-title">Pattern Audit + Pattern Creation</h1>
+
+                <p class="entry-date">March 21&ndash;April 1, 2016<?php echo timeFromNow('2016-04-01'); ?></p>
+                    
+            </article><!-- .entry -->            
+             
+            <article class="entry entry-latest">
             
-                <h1 class="entry-title">Pattern-izing site code</h1>
-                <p class="entry-date">March 30, 2016<?php echo timeFromNow('2016-03-30'); ?></p>
+                <h1 class="entry-title">Creative Brief</h1>
+                <p class="entry-date">March 25, 2016<?php echo timeFromNow('2016-03-25'); ?></p>
                     
             </article><!-- .entry -->
 
@@ -85,11 +101,14 @@
                 <ul>
                     <li><a href="../presentations/Kickoff Presentation - Research Insights.pdf">Research Insights</a> (<abbr title="Portable Document Format">PDF</abbr>, 3.3 <abbr title="Megabyte">MB</abbr>)</li>
                     <li><a href="../presentations/emergent-themes.pdf">Emergent Themes</a> (<abbr title="Portable Document Format">PDF</abbr>, 2.6 <abbr title="Megabyte">MB</abbr>)</li>
-                    <li><a href="../presentations/evangelizing-governing-design-systems.pdf">Pattern Primer</a> (<abbr>PDF</abbr>, 25 <abbr>KB</abbr>)</a></li>
-                    <li><a href="../presentations/pattern-primer.pdf">Evangelizing &amp; Governing Design Systems</a>  (<abbr>PDF</abbr>, 13.7 <abbr>MB</abbr>)</li>
+                    <li><a href="../presentations/pattern-primer.pdf">Pattern Primer</a> (<abbr>PDF</abbr>, 25 <abbr>KB</abbr>)</a></li>
+                    <li><a href="../presentations/evangelizing-governing-design-systems.pdf">Evangelizing &amp; Governing Design Systems</a>  (<abbr>PDF</abbr>, 13.7 <abbr>MB</abbr>)</li>
                 </ul>
                     
             </article><!-- .entry -->
+
+
+            
 
             <article class="entry">
             
