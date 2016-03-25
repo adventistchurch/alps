@@ -126,17 +126,6 @@
 }
 
 /**
- * Transition all the things
- */
-@mixin trans {
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-/**
  * Remove the unit from a number
  */
 @function strip-unit($num) {
@@ -170,13 +159,16 @@
  * General Text Styles
  */
 @mixin text-styles {
-  font-size: rem(16);
-  line-height: 1.5;
-  a {
-    color: $blue;
-    &:hover {
-      color: darken($blue, 10);
-    }
+  font-family: $font;
+  font-size: rem(12);
+  line-height: rem(15);
+  @include mq($px900) {
+    font-size: rem(15);
+    line-height: rem(24);
+  }
+  @media print {
+    font-size: rem(12);
+    line-height: rem(15);
   }
 }
 
@@ -204,22 +196,33 @@
 /**
  * Maintain aspect ratio
  */
- @mixin aspect-ratio($width, $height) {
-   position: relative;
-   &:before {
-     display: block;
-     content: "";
-     width: 100%;
-     padding-top: ($height / $width) * 100%;
-   }
-   > .ratio-content {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-   }
- }
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .ratio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/**
+ * Transition all the things
+ */
+@mixin trans {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
 
 /**
  * Function to access $verticalSpacing map
@@ -228,7 +231,6 @@
    @if map-has-key($verticalSpacing, $key) {
      @return map-get($verticalSpacing, $key);
    }
-
    @warn "Unknown `#{$key}` in $verticalSpacing.";
    @return null;
  }

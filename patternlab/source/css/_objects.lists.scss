@@ -9,38 +9,6 @@
 }
 
 /**
- * Headline list-style
- */
-.headline-list {
-  li {
-    text-align: left;
-    clear: both;
-    margin-bottom: $space;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  h4 {
-    font-weight: normal;
-  }
-  .hl {
-    display: block;
-    font-size: rem(18);
-    font-weight: 600;
-    margin-bottom: rem(4);
-  }
-  .byline,
-  .byline a {
-    font-size: rem(12);
-    margin-bottom: rem(4);
-  }
-  a:hover {
-    color: $blue;
-    @include underline;
-  }
-}
-
-/**
  * Bullet List
  */
 ul.bullet-list,

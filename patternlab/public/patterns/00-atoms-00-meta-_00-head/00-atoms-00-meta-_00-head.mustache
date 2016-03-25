@@ -1,0 +1,23 @@
+&lt;!DOCTYPE html&gt;
+&lt;html class=&quot;{{ head.htmlClass }} no-js&quot; lang=&quot;{{ head.language }}&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;{{ head.charset }}&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;title&gt;{{ head.title }}&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;{{ head.description }}&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;{{ head.viewportConfig }}&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//fonts.googleapis.com/css?family=Montserrat&quot; media=&quot;all&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//fonts.googleapis.com/css?family=Merriweather&quot; media=&quot;all&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//fonts.googleapis.com/css?family=Abril+Fatface&quot; media=&quot;all&quot;&gt;
+    &lt;link data-locale-stylesheet=&quot;0&quot; rel=&quot;stylesheet&quot; href=&quot;{{ head.screenCSS }}?{{ cacheBuster }}&quot; media=&quot;all&quot; /&gt;
+
+    &lt;script&gt;document.createElement(&quot;picture&quot;);&lt;/script&gt;
+    &lt;script src=&quot;{{ head.javascript }}?{{ cacheBuster }}&quot; async&gt;&lt;/script&gt;
+
+    &lt;!-- Begin Pattern Lab (Required for Pattern Lab to run properly) --&gt;
+    {% pattern-lab-head %}
+    &lt;!-- End Pattern Lab --&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body class=&quot;{{ head.bodyClass }}&quot;&gt;

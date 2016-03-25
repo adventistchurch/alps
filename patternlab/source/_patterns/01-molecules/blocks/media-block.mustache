@@ -1,0 +1,21 @@
+{{# mediaBlockDefault }}
+<div class="media-block default spacing">
+  <a class="media-block__img-wrap" href="#"><img class="media-block__img" src="{{ imgSrc }}" /></a>
+  <div class="media-block__content spacing--half">
+    <div class="spacing--half">
+    {{# title }}
+      <h2 class="media-block__content__title"><a href="#" class="media-block__content__title__link text-decoration--none">{{ title }}</a></h2>
+    {{/ title }}
+    {{# date }}
+      <p class="">{{ date }}</p>
+    {{/ date }}
+    </div>
+    {{# description }}
+      <p class="description">{{ description }}</p>
+    {{/ description }}
+    {{# callToAction }}
+      <p><a class="media-block_content__cta" href="#">{{ callToAction }}&nbsp;&gt;</a></p>
+    {{/ callToAction }}
+</div><!-- media-block__content -->
+</div>
+{{/ mediaBlockDefault }}

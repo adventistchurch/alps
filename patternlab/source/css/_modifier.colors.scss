@@ -31,8 +31,15 @@
 .blue {
   color: $blue;
 }
-.red {
-  color: $red;
+
+/**
+ * Link Colors
+ */
+.link--dark-gray-orange {
+  color: $gray-dark;
+  &:hover {
+    color: $orange;
+  }
 }
 
 /**
@@ -77,4 +84,14 @@
 }
 .information {
   color: $information;
+}
+
+/**
+ * SVG Fill Colors
+ */
+.fill--gray {
+  fill: $body-color;
+}
+.fill--blue {
+  fill: $blue;
 }
