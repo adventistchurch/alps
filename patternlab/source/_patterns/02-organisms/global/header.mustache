@@ -1,9 +1,13 @@
 <header class="header" role="banner" id="header">
-  <div class="layout-container position--relative">
-    <a href="/" class="logo-link">{{> atoms-logo }}</a>
-    {{> molecules-navigation-toggle }}
-    {{# navigation }}
+  {{> molecules-navigation-toggle }}
+  <div class="header__inner">
+    <div class="header__unify-logo-nav">
+      <a href="/" class="logo__link">{{> atoms-logo }}</a>
       {{> molecules-primary-navigation }}
-    {{/ navigation }}
-  </div> <!-- /.layout-container -->
+    </div> <!-- /.header__unify-logo-nav -->
+    <div class="header__utility">
+      {{> molecules-secondary-navigation }}
+      {{> molecules-search }}
+    </div> <!-- /.header__utility -->
+  </div> <!-- /.header__inner -->
 </header> <!-- .header -->

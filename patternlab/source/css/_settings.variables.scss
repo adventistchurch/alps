@@ -10,7 +10,7 @@
 $fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
 $rembase: 16; // 16px = 1.00rem
-$max-width-px: 1300;
+$max-width-px: 1150;
 $max-width: rem($max-width-px) !default;
 
 /**
@@ -18,8 +18,8 @@ $max-width: rem($max-width-px) !default;
  */
 $gray: #bfbfbf;
 $gray-light: #efefef;
-$gray-med: #a7a7a7;
-$gray-dark: #222222;
+$gray-med: #ccc;
+$gray-dark: #575a5c;
 $white: #fff;
 $black: #000;
 $error: #f00;
@@ -34,8 +34,10 @@ $overlay-light: rgba($black, .76);
  */
 $body-color: #575a5c;
 $blue: #438390;
+$brown: #7e7667;
 $red: #ef3d25;
 $orange: #f9b000;
+$neutral-gray: #918d82;
 
 /**
  * Social Colors
@@ -90,7 +92,7 @@ $verticalSpacing: (
 $border-med: 6px;
 $border-thick: 8px;
 $border-opacity: 1px solid rgba($white, .2);
-$border-style: 1px solid $gray-light;
+$border-style: 1px solid $gray;
 $border-style-thick: 3px solid $gray-light;
 $border-style-white: 1px solid $white;
 $border-style-dark: 1px solid $black;
@@ -110,8 +112,8 @@ $px450: (450/$defaultpx) + 0em;
 $px500: (500/$defaultpx) + 0em;
 $px550: (550/$defaultpx) + 0em;
 $px600: (600/$defaultpx) + 0em;
-$medium: $px600;
 $px650: (650/$defaultpx) + 0em;
+$medium: $px650;
 $px700: (700/$defaultpx) + 0em;
 $px750: (750/$defaultpx) + 0em;
 $px760: (760/$defaultpx) + 0em;
@@ -137,7 +139,7 @@ $xxxlarge: $px1500;
 /**
  * Icon Sizing
  */
-$icon-xsmall: rem(13);
+$icon-xsmall: rem(12);
 $icon-small: rem(24);
 $icon-medium: rem(40);
 $icon-large: rem(50);

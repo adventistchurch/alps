@@ -3,10 +3,114 @@
 \*------------------------------------*/
 
 .header {
+  padding-top: rem(5);
+  padding-bottom: rem(5);
+  @include mq($medium) {
+    padding-top: 0;
+  }
+  .toggled-element {
+    @include mq($medium, max) {
+      display: none;
+    }
+  }
+}
+// Navigation is open
+.header.is-active {
+  .toggled-element {
+    display: block;
+  }
 }
 .header__inner {
+  text-align: center;
+  border-bottom: $border-style;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  .is-active & {
+    padding-bottom: rem(14);
+  }
+  @include mq($medium) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: rem(14);
+  }
+  @include mq($large) {
+    padding: $pad;
+  }
+}
+.header__utility {
+  @include mq($medium) {
+    display: flex;
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: $medium) and (max-width: $large) {
+    background-color: $neutral-gray;
+    padding-bottom: $pad-half;
+    padding-top: $pad-half;
+    margin-bottom: $space-half;
+  }
+  @include mq($large) {
+    justify-content: flex-end;
+  }
+}
+.logo {
+  display: block;
 }
 .logo__link {
+  display: block;
+  width: rem(200);
+  height: rem(50);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $space-half;
+  @include mq($medium) {
+    min-width: rem(250);
+    height: rem(61);
+    margin-bottom: rem(22);
+  }
+  @include mq($large) {
+    margin: 0 0 -1px;
+  }
+  @include mq($px1000) {
+    min-width: rem(325);
+    height: rem(79);
+  }
 }
-.logo__image {
+.header__unify-logo-nav {
+  width: 100%;
+  @include mq($medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+  }
+  @include mq($large) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+/**
+ * Search
+ */
+.search-form {
+  width: rem(200);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq($medium) {
+    margin: 0;
+  }
+  @media (min-width: $medium) and (max-width: $large) {
+    width: rem(150);
+  }
+}
+.search-form__input[type="search"] {
+  border: $border-style;
+  border-radius: rem(25);
+  padding: rem(5) rem(12);
+  width: 100%;
 }

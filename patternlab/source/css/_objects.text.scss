@@ -156,8 +156,8 @@
   line-height: rem(22);
   font-weight: normal;
   @include mq($large) {
-    font-size: rem(22);
-    line-height: rem(26);
+    font-size: rem(20);
+    line-height: rem(24);
   }
 }
 .font--serif--m {
@@ -167,20 +167,18 @@
 // Small Type - Serif
 @mixin font--serif--s() {
   font-family: $font;
-  font-size: rem(16);
-  line-height: rem(20);
-  font-weight: 500;
+  font-size: rem(15);
+  line-height: rem(19);
 }
 .font--serif--s {
   @include font--serif--s;
 }
 
 // X-Small Type - Serif
-@mixin font--serif--s() {
+@mixin font--serif--xs() {
   font-family: $font;
-  font-size: rem(16);
-  line-height: rem(20);
-  font-weight: 500;
+  font-size: rem(13);
+  line-height: rem(17);
 }
 .font--serif--xs {
   @include font--serif--s;
@@ -234,8 +232,8 @@
 // X-Small type - Sans
 @mixin font--sans--xs() {
   font-family: $font-secondary;
-  font-size: rem(10);
-  line-height: rem(14);
+  font-size: rem(13);
+  line-height: rem(16);
 }
 .font--sans--xs {
   @include font--sans--xs;

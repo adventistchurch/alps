@@ -39,7 +39,7 @@
 }
 
 // Specific Widths - visible less than #
-.vis-lt--800 {
+.show-at---800 {
   @include mq($px800) {
     display: none;
   }
@@ -51,8 +51,8 @@
 }
 
 // Specific Widths - visible greater than #
-.vis-gt--800 {
-  @include mq($px800, max) {
+.show-at--large {
+  @include mq($large, max) {
     display: none;
   }
 }
