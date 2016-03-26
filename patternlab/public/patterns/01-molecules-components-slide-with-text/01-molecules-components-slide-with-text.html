@@ -30,13 +30,27 @@
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body class="body">
-<select name="select" id="select">
-	<option value="1">Option 1</option>
-	<option value="2">Option 2</option>
-	<option value="3">Option 3</option>
-	<option value="4">Option 4</option>
-	<option value="5">Option 5</option>
-</select>
+<div class="carousel__item rel ">
+<picture class="picture">
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="http://placehold.it/1300x700" media="(min-width: 900px)">
+    <source srcset="http://placehold.it/900x500" media="(min-width: 700px)">
+  <source srcset="http://placehold.it/700x500" media="(min-width: 500px)">
+  <!--[if IE 9]></video><![endif]-->
+  <img itemprop="image" srcset="http://placehold.it/500x500" alt="Alt Text">
+</picture>
+
+
+    <div class="carousel__item-text spacing--half ">
+      <h2 class="carousel__item-heading font--serif--xxl">Lorem Ipsum</h2>
+      <h2 class="carousel__item-subtitle font--serif--m">Fusce nec urna ut tellus accumsan fermentum.</h2>
+      <div class="carousel__item-dek pad-half--btm">
+        <p>Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue. Curabitur eleifend ligula ut arcu finibus posuere.</p>
+      </div> <!-- /.carousel__item-dek -->
+      <a href="" class="carousel__item-cta btn btn--white">Mec cursus mi</a>
+    </div> <!-- /.carousel__item-text -->
+
+</div> <!-- /.carousel__item -->
 
     <script src="/js/jquery-2.0.0b2.js" type="text/javascript"></script>
     <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" type="text/javascript"></script>
@@ -49,8 +63,8 @@
 <!-- DO NOT MODIFY -->
 <script>
   // handle injection of items from Node
-  var patternPartial = "atoms-select";
-  var lineage = [];
+  var patternPartial = "molecules-slide-with-text";
+  var lineage = [{"lineagePattern":"atoms-picture","lineagePath":"../../patterns/00-atoms-images-picture/00-atoms-images-picture.html"}];
   var lineageR = [];
   var patternState = "";
   var baseurl = "";

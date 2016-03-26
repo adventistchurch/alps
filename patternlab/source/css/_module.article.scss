@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .page--pad {
-  @include mq($px330, max) {
+  @include mq($px350, max) {
     padding-left: rem(10);
     padding-right: rem(10);
   }

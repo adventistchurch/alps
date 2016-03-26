@@ -7,10 +7,9 @@ button,
 input[type="submit"] {
   display: inline-block;
   text-align: center;
-  font-size: rem(12);
-  padding: rem(8) rem(12);
+  font-size: rem(14);
+  padding: rem(12) rem(15);
   line-height: 1;
-  background-color: $white;
   color: $orange;
   border: rem(2) solid $orange;
   cursor: pointer;
@@ -27,4 +26,20 @@ input[type="submit"] {
 /**
  * Button Sizing
  */
+.btn--small {
+  padding: rem(8) rem(12);
+  font-size: rem(12);
+}
 
+
+/**
+ * Button Themes
+ */
+.btn--white {
+  border-color: $white;
+  color: $white;
+  &:hover {
+    border-color: $orange;
+    color: $orange;
+  }
+}

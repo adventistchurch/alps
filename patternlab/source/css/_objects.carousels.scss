@@ -25,3 +25,28 @@
 .carousel__arrow--next {
   right: $space-half;
 }
+
+/**
+ * Carousel with Text
+ */
+.carousel__item-text {
+  padding: $pad;
+  @media (max-width: $large-max) {
+    color: $white;
+    background-color: $blue;
+  }
+  @include mq($medium) {
+    padding: $pad-and-half;
+  }
+  @include mq($large) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: rem(650);
+  }
+}
+.carousel__item-heading {
+  @include mq($large) {
+    color: $blue;
+  }
+}
