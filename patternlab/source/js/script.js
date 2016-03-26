@@ -93,7 +93,21 @@
   $('.js-toggle-parent').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
+    $this.toggleClass('is-active');
     $this.parent().toggleClass('is-active');
+  });
+
+
+  $('.js-carousel__single-item').slick({
+    speed: 300,
+    mobileFirst: true,
+    //autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: 'ease-out',
+    adaptiveHeight: true,
+    nextArrow: '.arrow__next',
+    prevArrow: '.arrow__prev',
+    touchThreshold: 11
   });
 
 })(jQuery); // Fully reference jQuery after this point.

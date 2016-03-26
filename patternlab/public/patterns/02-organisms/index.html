@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html class="{{ head.htmlClass }} no-js" lang="{{ head.language }}">
+<html class="{{ head.html-class }} no-js" lang="{{ head.language }}">
   <head>
     <meta charset="{{ head.charset }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ head.title }}</title>
     <meta name="description" content="{{ head.description }}">
-    <meta name="viewport" content="{{ head.viewportConfig }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat" media="all">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" media="all">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" media="all">
-    <link data-locale-stylesheet="0" rel="stylesheet" href="{{ head.screenCSS }}?{{ cacheBuster }}" media="all" />
+    <link data-locale-stylesheet="0" rel="stylesheet" href="/css/main.css?{{ cacheBuster }}" media="all" />
 
     <script>document.createElement("picture");</script>
-    <script src="{{ head.javascript }}?{{ cacheBuster }}" async></script>
+    <script src="/js/head-scripts.js?{{ cacheBuster }}" async></script>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -29,7 +29,7 @@
     <!-- End Pattern Lab -->
     <link rel="icon" href="/favicon.ico" />
   </head>
-  <body class="{{ head.bodyClass }}">
+  <body class="{{ head.body-class }}">
 
     <!-- View All Patterns in a Pattern Sub-Type -->
     <div class="sg-main" role="main">
@@ -184,6 +184,22 @@
               </div>
             </div>
           </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-sections-hero-carousel&#x2F;02-organisms-sections-hero-carousel.html" class="patternLink" data-patternpartial="">Hero Carousel</a></h2>
+            <div class="sg-pattern-body">
+              
+
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
       </div> <!--end #sg-patterns-->
 
     </div><!--end .sg-main-->
@@ -195,6 +211,13 @@
       var lineage = "";
       var baseurl = "";
     </script>
+
+    <script src="/js/jquery-2.0.0b2.js" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" type="text/javascript"></script>
+    <script src="/js/plugins.js" type="text/javascript"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <!-- <script src="/js/script.min.js" type="text/javascript"></script> -->
+
     <!-- PATTERN LAB SCRIPTS // DO NOT REMOVE FOR PATTERN LAB -->
     
 	<script src="../../styleguide/js/vendor/jwerty.js?{{ cacheBuster }}"></script>
@@ -204,10 +227,5 @@
 	<script src="../../styleguide/js/code-pattern.js?{{ cacheBuster }}"></script>
 
     <!-- / END PATTERN LAB SCRIPTS -->
-
-    <script src="/js/jquery-2.0.0b2.js" type="text/javascript"></script>
-    <script src="/js/plugins.js" type="text/javascript"></script>
-    <script src="/js/script.js" type="text/javascript"></script>
-    <!-- <script src="/js/script.min.js" type="text/javascript"></script> -->
   </body>
 </html>

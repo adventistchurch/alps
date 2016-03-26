@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    $CAROUSELS
+\*------------------------------------*/
+
+.carousel__item {
+  img {
+    width: 100%;
+  }
+}
+.carousel__controls {
+  width: 100%;
+}
+.carousel__arrow {
+  width: rem(44);
+  height: rem(44);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.carousel__arrow--prev {
+  left: $space-half;
+}
+.carousel__arrow--next {
+  right: $space-half;
+}
