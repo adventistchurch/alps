@@ -75,7 +75,7 @@
             <article class="entry entry-future">
             
                 <h1 class="entry-title">Design exploration</h1>
-                <p class="entry-date">March 21&ndash;30, 2016<?php echo timeFromNow('2016-03-30'); ?></p>
+                <p class="entry-date">March 21&ndash;April 1, 2016<?php echo timeFromNow('2016-04-01'); ?></p>
                     
             </article><!-- .entry -->
 
@@ -90,7 +90,7 @@
             <article class="entry entry-latest">
             
                 <h1 class="entry-title">Creative Brief</h1>
-                <p class="entry-date">March 25, 2016<?php echo timeFromNow('2016-03-25'); ?></p>
+                <p class="entry-date">March 28, 2016<?php echo timeFromNow('2016-03-28'); ?></p>
                     
             </article><!-- .entry -->
 
@@ -103,6 +103,10 @@
                     <li><a href="../presentations/emergent-themes.pdf">Emergent Themes</a> (<abbr title="Portable Document Format">PDF</abbr>, 2.6 <abbr title="Megabyte">MB</abbr>)</li>
                     <li><a href="../presentations/pattern-primer.pdf">Pattern Primer</a> (<abbr>PDF</abbr>, 25 <abbr>KB</abbr>)</a></li>
                     <li><a href="../presentations/evangelizing-governing-design-systems.pdf">Evangelizing &amp; Governing Design Systems</a>  (<abbr>PDF</abbr>, 13.7 <abbr>MB</abbr>)</li>
+                    <li><a href="http://demo.patternlab.io/">Demo Pattern Lab</a></li>
+                    <li><a href="http://bit.ly/1TXarCb">A Design System Isn't a Project - It's a Product</a></li>
+                    <li><a href="http://bit.ly/1Pjg3Pl">Design System Ops</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=1OKZOV-iLj4">Harry Roberts - Managing CSS Projects w ITCSS</a></li>
                 </ul>
                     
             </article><!-- .entry -->
