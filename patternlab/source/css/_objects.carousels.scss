@@ -41,8 +41,14 @@
   @include mq($large) {
     position: absolute;
     left: 0;
-    max-width: rem(650);
-    top: rem(160);
+    max-width: rem(680);
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-bottom: 0;
+    padding-top: rem(60);
+  }
+  @include mq($xlarge) {
+    padding-top: rem(80);
   }
 }
 .carousel__item-heading {

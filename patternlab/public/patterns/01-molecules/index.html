@@ -256,7 +256,7 @@
 </picture>
 
 
-    <div class="carousel__item-text spacing--half ">
+    <div class="carousel__item-text spacing--half carousel__item--right">
       <h2 class="carousel__item-heading font--serif--xxl">Lorem Ipsum</h2>
       <h3 class="carousel__item-subtitle font--serif--m">Fusce nec urna ut tellus accumsan fermentum.</h3>
       <div class="carousel__item-dek pad-half--btm">
@@ -282,7 +282,7 @@
 &lt;&#x2F;picture&gt;
 
 
-    &lt;div class&#x3D;&quot;carousel__item-text spacing--half &quot;&gt;
+    &lt;div class&#x3D;&quot;carousel__item-text spacing--half carousel__item--right&quot;&gt;
       &lt;h2 class&#x3D;&quot;carousel__item-heading font--serif--xxl&quot;&gt;Lorem Ipsum&lt;&#x2F;h2&gt;
       &lt;h3 class&#x3D;&quot;carousel__item-subtitle font--serif--m&quot;&gt;Fusce nec urna ut tellus accumsan fermentum.&lt;&#x2F;h3&gt;
       &lt;div class&#x3D;&quot;carousel__item-dek pad-half--btm&quot;&gt;
@@ -380,6 +380,90 @@
     &lt;&#x2F;button&gt; &lt;!-- &#x2F;.search-form__submit --&gt;
   &lt;&#x2F;fieldset&gt;
 &lt;&#x2F;form&gt; &lt;!-- &#x2F;.search-form --&gt;
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-layouts-layout-2-column-fluid&#x2F;01-molecules-layouts-layout-2-column-fluid.html" class="patternLink" data-patternpartial="">Layout 2 Column Fluid</a></h2>
+            <div class="sg-pattern-body">
+              <div class="pad">
+  <h1>Standard two column layout</h1>
+  <p>Fluid left and right columns.</p>
+</div>
+<div class="cf">
+  <div class="shift-left--fluid pad-double bg--brown">
+    <h3 class="white">Primary Content</h3>
+  </div> <!-- /.shift-left--fluid -->
+  <div class="shift-right--fluid pad-double bg--blue">
+    <aside class="aside">
+      <h3 class="white">Secondary Content</h3>
+    </aside>
+  </div> <!-- /.shift-right--fluid -->
+</div> <!-- /.cf -->
+
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;div class&#x3D;&quot;pad&quot;&gt;
+  &lt;h1&gt;Standard two column layout&lt;&#x2F;h1&gt;
+  &lt;p&gt;Fluid left and right columns.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class&#x3D;&quot;cf&quot;&gt;
+  &lt;div class&#x3D;&quot;shift-left--fluid pad-double bg--brown&quot;&gt;
+    &lt;h3 class&#x3D;&quot;white&quot;&gt;Primary Content&lt;&#x2F;h3&gt;
+  &lt;&#x2F;div&gt; &lt;!-- &#x2F;.shift-left--fluid --&gt;
+  &lt;div class&#x3D;&quot;shift-right--fluid pad-double bg--blue&quot;&gt;
+    &lt;aside class&#x3D;&quot;aside&quot;&gt;
+      &lt;h3 class&#x3D;&quot;white&quot;&gt;Secondary Content&lt;&#x2F;h3&gt;
+    &lt;&#x2F;aside&gt;
+  &lt;&#x2F;div&gt; &lt;!-- &#x2F;.shift-right--fluid --&gt;
+&lt;&#x2F;div&gt; &lt;!-- &#x2F;.cf --&gt;
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-layouts-layout-2-column-static-right&#x2F;01-molecules-layouts-layout-2-column-static-right.html" class="patternLink" data-patternpartial="">Layout 2 Column Static Right</a></h2>
+            <div class="sg-pattern-body">
+              <div class="pad">
+  <h1>Two columns with static aside</h1>
+  <p>Fluid left content column with static 300px right rail.</p>
+</div>
+<div class="shift-left--static">
+  <div class="shift-left--inner--static pad-double bg--brown">
+    <h3 class="white">Primary Content</h3>
+  </div> <!-- /.shift-left-inner -->
+</div> <!-- /.shift-left--static -->
+<div class="shift-right--static pad-double bg--blue">
+  <aside class="aside">
+    <h3 class="white">Secondary Content</h3>
+  </aside>
+</div> <!-- /.shift-right--static -->
+
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;div class&#x3D;&quot;pad&quot;&gt;
+  &lt;h1&gt;Two columns with static aside&lt;&#x2F;h1&gt;
+  &lt;p&gt;Fluid left content column with static 300px right rail.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class&#x3D;&quot;shift-left--static&quot;&gt;
+  &lt;div class&#x3D;&quot;shift-left--inner--static pad-double bg--brown&quot;&gt;
+    &lt;h3 class&#x3D;&quot;white&quot;&gt;Primary Content&lt;&#x2F;h3&gt;
+  &lt;&#x2F;div&gt; &lt;!-- &#x2F;.shift-left-inner --&gt;
+&lt;&#x2F;div&gt; &lt;!-- &#x2F;.shift-left--static --&gt;
+&lt;div class&#x3D;&quot;shift-right--static pad-double bg--blue&quot;&gt;
+  &lt;aside class&#x3D;&quot;aside&quot;&gt;
+    &lt;h3 class&#x3D;&quot;white&quot;&gt;Secondary Content&lt;&#x2F;h3&gt;
+  &lt;&#x2F;aside&gt;
+&lt;&#x2F;div&gt; &lt;!-- &#x2F;.shift-right--static --&gt;
 
                   </code>
                 </pre>

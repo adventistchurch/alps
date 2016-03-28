@@ -104,6 +104,7 @@
     //autoplay: true,
     autoplaySpeed: 4000,
     cssEase: 'ease-out',
+    fade: true,
     adaptiveHeight: true,
     nextArrow: '.arrow__next',
     prevArrow: '.arrow__prev',

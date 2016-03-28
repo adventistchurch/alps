@@ -1,7 +1,19 @@
 <div class="content cf has-aside" role="document">
   {{> organisms-header }}
-  <main class="main" role="main">
+  <main class="main bg--beige" role="main">
     {{> organisms-hero-carousel }}
+
+    <div class="layout-container">
+      <div class="cf bg--white">
+        <div class="shift-left--fluid column__primary">
+          {{> organisms-body-content }}
+        </div> <!-- /.shift-left--fluid -->
+        <div class="shift-right--fluid column__secondary bg--beige">
+          {{> organisms-aside }}
+        </div> <!-- /.shift-right--fluid -->
+      </div> <!-- /.cf -->
+    </div> <!-- /.layout-container -->
+
   </main> <!-- /.main -->
   {{!> organisms-footer }}
 </div> <!-- /.content -->

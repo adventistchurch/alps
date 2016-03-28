@@ -1,10 +1,10 @@
-<div class="carousel__item rel {{ carousel-item-class }}">
+<div class="carousel__item rel {{ carousel_item_class }}">
   {{> atoms-picture }}
 
   {{# has_slide_text }}
-    <div class="carousel__item-text spacing--half {{ carousel-text-class }}">
+    <div class="carousel__item-text spacing--half {{ carousel_text_class }}">
       <h2 class="carousel__item-heading font--serif--xxl">{{{ slide_heading }}}</h2>
-      <h3 class="carousel__item-subtitle font--serif--m">{{{ slide_subtitle }}}</h3>
+      {{# slide_subtitle }}<h3 class="carousel__item-subtitle font--serif--m">{{{ slide_subtitle }}}</h3>{{/ slide_subtitle }}
       <div class="carousel__item-dek pad-half--btm">
         <p>{{{ slide_dek }}}</p>
       </div> <!-- /.carousel__item-dek -->

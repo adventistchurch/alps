@@ -1,0 +1,18 @@
+<div class="spacing--double">
+  <div>&nbsp;</div>
+  <div class="pad--primary spacing">
+    <h2 class="blue font--sans--l">{{{ text.heading }}}</h2>
+    <p class="intro blue font--serif--m">{{{ text.intro }}}</p>
+  </div>
+
+  <hr>
+
+  {{# content_blocks }}
+  <div class="pad--primary spacing--half text">
+    <h3 class="brown font--sans--m">{{{ text.heading }}}</h3>
+    <p>{{{ text.description }}} {{# text.cta }} <a href="{{ url }}" class="font--sans--s upper"><strong>{{{ text.cta }}}</strong></a> {{/ text.cta }}</p>
+  </div>
+
+  <hr>
+  {{/ content_blocks }}
+</div>
