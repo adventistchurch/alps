@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    $CAROUSELS
+\*------------------------------------*/
+
+.carousel__item {
+  img {
+    width: 100%;
+  }
+}
+.carousel__controls {
+  width: 100%;
+}
+.carousel__arrow {
+  width: rem(44);
+  height: rem(44);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.carousel__arrow--prev {
+  left: $space-half;
+}
+.carousel__arrow--next {
+  right: $space-half;
+}
+
+/**
+ * Carousel with Text
+ */
+.carousel__item-text {
+  padding: $pad;
+  @media (max-width: $large-max) {
+    color: $white;
+    background-color: $blue;
+  }
+  @include mq($medium) {
+    padding: $pad-and-half;
+  }
+  @include mq($large) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: rem(650);
+  }
+}
+.carousel__item-heading {
+  @include mq($large) {
+    color: $blue;
+  }
+}

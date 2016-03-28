@@ -19,7 +19,8 @@ $max-width: rem($max-width-px) !default;
 $gray: #bfbfbf;
 $gray-light: #efefef;
 $gray-med: #ccc;
-$gray-dark: #575a5c;
+//$gray-dark: #575a5c;
+$gray-dark: #242626;
 $white: #fff;
 $black: #000;
 $error: #f00;
@@ -56,6 +57,7 @@ $google-red: $youtube-red;
 $font: "Merriweather", Georgia, Times, "Times New Roman", serif;
 $font-serif: $font;
 $font-secondary: "Montserrat", "Helvetica", "Arial", sans-serif;
+$font-tertiary: "Abril Fatface", Georgia, Times, "Times New Roman", serif;
 $font-sans: $font-secondary;
 $sans: "Helvetica", "Arial", sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
@@ -100,41 +102,52 @@ $border-style-dark: 1px solid $black;
 /**
  * Breakpoints
  */
-$px200: (200/$defaultpx) + 0em;
-$px250: (250/$defaultpx) + 0em;
-$px300: (300/$defaultpx) + 0em;
-$px320: (320/$defaultpx) + 0em;
-$px330: (330/$defaultpx) + 0em;
 $px350: (350/$defaultpx) + 0em;
 $px400: (400/$defaultpx) + 0em;
-$small: $px400;
+$px401: (401/$defaultpx) + 0em;
 $px450: (450/$defaultpx) + 0em;
 $px500: (500/$defaultpx) + 0em;
 $px550: (550/$defaultpx) + 0em;
 $px600: (600/$defaultpx) + 0em;
 $px650: (650/$defaultpx) + 0em;
-$medium: $px650;
+$px651: (651/$defaultpx) + 0em;
 $px700: (700/$defaultpx) + 0em;
 $px750: (750/$defaultpx) + 0em;
-$px760: (760/$defaultpx) + 0em;
 $px800: (800/$defaultpx) + 0em;
 $px850: (850/$defaultpx) + 0em;
 $px900: (900/$defaultpx) + 0em;
-$large: $px900;
+$px901: (901/$defaultpx) + 0em;
 $px950: (950/$defaultpx) + 0em;
 $px1000: (1000/$defaultpx) + 0em;
 $px1050: (1050/$defaultpx) + 0em;
 $px1100: (1100/$defaultpx) + 0em;
-$xlarge: $px1100;
+$px1101: (1101/$defaultpx) + 0em;
 $px1150: (1150/$defaultpx) + 0em;
 $px1200: (1200/$defaultpx) + 0em;
 $px1250: (1250/$defaultpx) + 0em;
 $px1300: (1300/$defaultpx) + 0em;
-$xxlarge: $px1300;
+$px1301: (1301/$defaultpx) + 0em;
 $px1400: (1400/$defaultpx) + 0em;
 $px1450: (1450/$defaultpx) + 0em;
 $px1500: (1500/$defaultpx) + 0em;
+$px1501: (1501/$defaultpx) + 0em;
+
+/**
+ * Common Breakpoints
+ */
+$small: $px400;
+$small-max: $px401;
+$medium: $px650;
+$medium-max: $px651;
+$large: $px900;
+$large-max: $px901;
+$xlarge: $px1100;
+$xlarge-max: $px1101;
+$xxlarge: $px1300;
+$xxlarge-max: $px1301;
 $xxxlarge: $px1500;
+$xxxlarge-max: $px1501;
+
 
 /**
  * Icon Sizing

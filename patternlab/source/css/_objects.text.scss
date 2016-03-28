@@ -106,13 +106,21 @@
  */
 // XX-Large Type - Serif
 @mixin font--serif--xxl() {
-  font-family: $font;
-  font-size: rem(26);
+  font-family: $font-tertiary;
+  font-size: rem(34);
   line-height: 1;
   font-weight: normal;
+  @include mq($medium) {
+    font-size: rem(44);
+    line-height: rem(48);
+  }
   @include mq($large) {
-    font-size: rem(60);
-    line-height: rem(64);
+    font-size: rem(55);
+    line-height: rem(59);
+  }
+  @include mq($xlarge) {
+    font-size: rem(68);
+    line-height: rem(72);
   }
 }
 .font--serif--xxl {

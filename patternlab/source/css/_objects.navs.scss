@@ -59,7 +59,7 @@ $slice-height: 3.5;
   top: rem($slice-height * 4);
 }
 // Active Hamburger
-.header.is-active {
+.is-active {
   .nav-toggle__segment--1 {
     top: rem($slice-height * 2);
     width: 0%;
@@ -106,6 +106,13 @@ $slice-height: 3.5;
     margin-right: $space;
   }
   @include mq($large) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @include mq($xlarge) {
+    margin-left: rem(16);
+    margin-right: rem(16);
     &:last-child {
       margin-right: 0;
     }

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html class="{{ head.htmlClass }} no-js" lang="{{ head.language }}">
+<html class="{{ head.html-class }} no-js" lang="{{ head.language }}">
   <head>
     <meta charset="{{ head.charset }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ head.title }}</title>
     <meta name="description" content="{{ head.description }}">
-    <meta name="viewport" content="{{ head.viewportConfig }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat" media="all">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" media="all">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" media="all">
-    <link data-locale-stylesheet="0" rel="stylesheet" href="{{ head.screenCSS }}?{{ cacheBuster }}" media="all" />
+    <link data-locale-stylesheet="0" rel="stylesheet" href="/css/main.css?{{ cacheBuster }}" media="all" />
 
     <script>document.createElement("picture");</script>
-    <script src="{{ head.javascript }}?{{ cacheBuster }}" async></script>
+    <script src="/js/head-scripts.js?{{ cacheBuster }}" async></script>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -29,7 +29,7 @@
     <!-- End Pattern Lab -->
     <link rel="icon" href="/favicon.ico" />
   </head>
-  <body class="{{ head.bodyClass }}">
+  <body class="{{ head.body-class }}">
 
     <!-- View All Patterns in a Pattern Sub-Type -->
     <div class="sg-main" role="main">
@@ -241,23 +241,55 @@
           <div class="sg-pattern">
             <h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-global-fonts&#x2F;00-atoms-global-fonts.html" class="patternLink" data-patternpartial="">Fonts</a></h2>
             <div class="sg-pattern-body">
-              <p class="font--serif">Alpha font: Montserrat</p><!-- needs more thought-->
-<p class="font--serif"><em>Primary font italic: Montserrat</em></p>
-<p class="font--serif"><strong>Primary font bold: Montserrat</strong></p>
-<p class="font--sans">Secondary font: Merriweather</p>
-<p class="font--sans"><em>Secondary font italic: Merriweather</em></p>
-<p class="font--sans"><strong>Secondary font bold: Merriweather</strong></p>
+              <p class="font--serif">Alpha font: </p><!-- needs more thought-->
+<p class="font--serif"><em>Primary font italic: </em></p>
+<p class="font--serif"><strong>Primary font bold: </strong></p>
+<p class="font--sans">Secondary font: </p>
+<p class="font--sans"><em>Secondary font italic: </em></p>
+<p class="font--sans"><strong>Secondary font bold: </strong></p>
 
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
-                    &lt;p class&#x3D;&quot;font--serif&quot;&gt;Alpha font: Montserrat&lt;&#x2F;p&gt;&lt;!-- needs more thought--&gt;
-&lt;p class&#x3D;&quot;font--serif&quot;&gt;&lt;em&gt;Primary font italic: Montserrat&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
-&lt;p class&#x3D;&quot;font--serif&quot;&gt;&lt;strong&gt;Primary font bold: Montserrat&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;p class&#x3D;&quot;font--sans&quot;&gt;Secondary font: Merriweather&lt;&#x2F;p&gt;
-&lt;p class&#x3D;&quot;font--sans&quot;&gt;&lt;em&gt;Secondary font italic: Merriweather&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
-&lt;p class&#x3D;&quot;font--sans&quot;&gt;&lt;strong&gt;Secondary font bold: Merriweather&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+                    &lt;p class&#x3D;&quot;font--serif&quot;&gt;Alpha font: &lt;&#x2F;p&gt;&lt;!-- needs more thought--&gt;
+&lt;p class&#x3D;&quot;font--serif&quot;&gt;&lt;em&gt;Primary font italic: &lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p class&#x3D;&quot;font--serif&quot;&gt;&lt;strong&gt;Primary font bold: &lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p class&#x3D;&quot;font--sans&quot;&gt;Secondary font: &lt;&#x2F;p&gt;
+&lt;p class&#x3D;&quot;font--sans&quot;&gt;&lt;em&gt;Secondary font italic: &lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p class&#x3D;&quot;font--sans&quot;&gt;&lt;strong&gt;Secondary font bold: &lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-icons-icon-arrow-left&#x2F;00-atoms-icons-icon-arrow-left.html" class="patternLink" data-patternpartial="">Icon Arrow Left</a></h2>
+            <div class="sg-pattern-body">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>Left arrow icon</title><path d="M0,25A25,25,0,1,0,25,0,25,25,0,0,0,0,25Zm15.07,0L28.31,11.75l3.43,3.43L21.93,25l9.82,9.82-3.43,3.43Z" class="fill--gray" fill="#438390"/></svg>
+
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;svg xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox&#x3D;&quot;0 0 50 50&quot;&gt;&lt;title&gt;Left arrow icon&lt;&#x2F;title&gt;&lt;path d&#x3D;&quot;M0,25A25,25,0,1,0,25,0,25,25,0,0,0,0,25Zm15.07,0L28.31,11.75l3.43,3.43L21.93,25l9.82,9.82-3.43,3.43Z&quot; class&#x3D;&quot;fill--gray&quot; fill&#x3D;&quot;#438390&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-icons-icon-arrow-right&#x2F;00-atoms-icons-icon-arrow-right.html" class="patternLink" data-patternpartial="">Icon Arrow Right</a></h2>
+            <div class="sg-pattern-body">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>Right arrow icon</title><path d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0ZM21.69,38.25l-3.43-3.43L28.07,25l-9.82-9.82,3.43-3.43L34.93,25Z" class="fill--gray" fill="#438390"/></svg>
+
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;svg xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox&#x3D;&quot;0 0 50 50&quot;&gt;&lt;title&gt;Right arrow icon&lt;&#x2F;title&gt;&lt;path d&#x3D;&quot;M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0ZM21.69,38.25l-3.43-3.43L28.07,25l-9.82-9.82,3.43-3.43L34.93,25Z&quot; class&#x3D;&quot;fill--gray&quot; fill&#x3D;&quot;#438390&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
 
                   </code>
                 </pre>
@@ -321,9 +353,11 @@
             <div class="sg-pattern-body">
               <picture class="picture">
   <!--[if IE 9]><video style="display: none;"><![endif]-->
-  <source srcset="" media="(min-width: px)">
+    <source srcset="http://placehold.it/1300x700" media="(min-width: 900px)">
+    <source srcset="http://placehold.it/900x500" media="(min-width: 700px)">
+  <source srcset="http://placehold.it/700x500" media="(min-width: 500px)">
   <!--[if IE 9]></video><![endif]-->
-  <img itemprop="image" srcset="" alt="">
+  <img itemprop="image" srcset="http://placehold.it/500x500" alt="Alt Text">
 </picture>
 
               <div class="sg-code" style="display: none">
@@ -332,9 +366,11 @@
                   <code>
                     &lt;picture class&#x3D;&quot;picture&quot;&gt;
   &lt;!--[if IE 9]&gt;&lt;video style&#x3D;&quot;display: none;&quot;&gt;&lt;![endif]--&gt;
-  &lt;source srcset&#x3D;&quot;&quot; media&#x3D;&quot;(min-width: px)&quot;&gt;
+    &lt;source srcset&#x3D;&quot;http:&#x2F;&#x2F;placehold.it&#x2F;1300x700&quot; media&#x3D;&quot;(min-width: 900px)&quot;&gt;
+    &lt;source srcset&#x3D;&quot;http:&#x2F;&#x2F;placehold.it&#x2F;900x500&quot; media&#x3D;&quot;(min-width: 700px)&quot;&gt;
+  &lt;source srcset&#x3D;&quot;http:&#x2F;&#x2F;placehold.it&#x2F;700x500&quot; media&#x3D;&quot;(min-width: 500px)&quot;&gt;
   &lt;!--[if IE 9]&gt;&lt;&#x2F;video&gt;&lt;![endif]--&gt;
-  &lt;img itemprop&#x3D;&quot;image&quot; srcset&#x3D;&quot;&quot; alt&#x3D;&quot;&quot;&gt;
+  &lt;img itemprop&#x3D;&quot;image&quot; srcset&#x3D;&quot;http:&#x2F;&#x2F;placehold.it&#x2F;500x500&quot; alt&#x3D;&quot;Alt Text&quot;&gt;
 &lt;&#x2F;picture&gt;
 
                   </code>
@@ -807,6 +843,13 @@
       var lineage = "";
       var baseurl = "";
     </script>
+
+    <script src="/js/jquery-2.0.0b2.js" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" type="text/javascript"></script>
+    <script src="/js/plugins.js" type="text/javascript"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <!-- <script src="/js/script.min.js" type="text/javascript"></script> -->
+
     <!-- PATTERN LAB SCRIPTS // DO NOT REMOVE FOR PATTERN LAB -->
     
 	<script src="../../styleguide/js/vendor/jwerty.js?{{ cacheBuster }}"></script>
@@ -816,10 +859,5 @@
 	<script src="../../styleguide/js/code-pattern.js?{{ cacheBuster }}"></script>
 
     <!-- / END PATTERN LAB SCRIPTS -->
-
-    <script src="/js/jquery-2.0.0b2.js" type="text/javascript"></script>
-    <script src="/js/plugins.js" type="text/javascript"></script>
-    <script src="/js/script.js" type="text/javascript"></script>
-    <!-- <script src="/js/script.min.js" type="text/javascript"></script> -->
   </body>
 </html>

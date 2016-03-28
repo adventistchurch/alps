@@ -160,10 +160,10 @@
  */
 @mixin text-styles {
   font-family: $font;
-  font-size: rem(12);
-  line-height: rem(15);
+  font-size: rem(14);
+  line-height: rem(20);
   @include mq($px900) {
-    font-size: rem(15);
+    font-size: rem(16);
     line-height: rem(24);
   }
   @media print {
