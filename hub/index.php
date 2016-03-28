@@ -89,8 +89,11 @@
              
             <article class="entry entry-latest">
             
-                <h1 class="entry-title">Creative Brief</h1>
+                <h1 class="entry-title">Seventh-day Adventist Manifesto</h1>
                 <p class="entry-date">March 28, 2016<?php echo timeFromNow('2016-03-28'); ?></p>
+                <ul>
+                    <li><a href="../review/sda_manifesto_v1.pdf">SDA Manifesto</a> (<abbr title="Portable Document Format">PDF</abbr>, 104 <abbr title="Kilobyte">KB</abbr>)</li>
+                </ul>
                     
             </article><!-- .entry -->
 
@@ -125,7 +128,10 @@
             
                 <h1 class="entry-title">Persona creation</h1>
                 <p class="entry-date">March 2, 2016<?php echo timeFromNow('2016-03-02'); ?></p>
-                    
+                <ul>
+                    <li><a href="../personas/Personas_AdventistOrg.pdf">User Personas</a> (<abbr title="Portable Document Format">PDF</abbr>, 112 <abbr title="Kilobyte">KB</abbr>)</li>
+                </ul>
+
             </article><!-- .entry -->
 
             <article class="entry">
