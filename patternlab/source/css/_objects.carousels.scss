@@ -29,7 +29,8 @@
 /**
  * Carousel with Text
  */
-.carousel__item-text {
+
+.carousel__item-text__wrap {
   padding: $pad;
   @media (max-width: $large-max) {
     color: $white;
@@ -41,13 +42,23 @@
   @include mq($large) {
     position: absolute;
     left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    .layout-container {
+      height: 100%;
+    }
+  }
+}
+.carousel__item-text {
+  @include mq($large) {
     max-width: rem(680);
+    position: absolute;
     top: 50%;
+    left: 0;
+    width: 100%;
     transform: translate(0, -50%);
     padding-bottom: 0;
-    padding-top: rem(60);
-  }
-  @include mq($xlarge) {
     padding-top: rem(80);
   }
 }
@@ -58,9 +69,11 @@
 }
 // Right align slide text
 .carousel__item--right {
-  right: 0;
-  left: auto;
-  text-align: right;
+  @include mq($large) {
+    right: 0;
+    left: auto;
+    text-align: right;
+  }
 }
 
 // Carousel pagination
@@ -70,11 +83,11 @@
   left: 50%;
   transform: translate(-50%, 0);
   padding: $pad;
+  width: 100%;
+  max-width: $max-width;
   @include mq($large) {
     top: auto;
-    left: 0;
     bottom: 0;
-    transform: translate(0, 0);
   }
   li {
     display: inline-block;
