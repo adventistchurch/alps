@@ -41,12 +41,49 @@
   @include mq($large) {
     position: absolute;
     left: 0;
-    bottom: 0;
     max-width: rem(650);
+    top: rem(160);
   }
 }
 .carousel__item-heading {
   @include mq($large) {
     color: $blue;
+  }
+}
+// Right align slide text
+.carousel__item--right {
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+
+// Carousel pagination
+.slick-dots {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: $pad;
+  @include mq($large) {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 0);
+  }
+  li {
+    display: inline-block;
+    border-radius: 50%;
+    border: rem(3) solid $white;
+    background-color: transparent;
+    width: rem(15);
+    height: rem(15);
+    margin-left: $space-half;
+    cursor: pointer;
+  }
+  .slick-active {
+    background-color: $white;
+  }
+  button {
+    display: none;
   }
 }

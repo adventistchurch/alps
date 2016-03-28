@@ -8,6 +8,13 @@
   @include mq($medium) {
     padding-top: 0;
   }
+  @include mq($large) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
   .toggled-element {
     @include mq($medium, max) {
       display: none;
@@ -22,7 +29,6 @@
 }
 .header__inner {
   text-align: center;
-  border-bottom: $border-style;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
@@ -109,7 +115,7 @@
   }
 }
 .search-form__input[type="search"] {
-  border: $border-style;
+  border: $border-style-blue;
   border-radius: rem(25);
   padding: rem(5) rem(12);
   width: 100%;

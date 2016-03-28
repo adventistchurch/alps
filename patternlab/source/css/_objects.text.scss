@@ -116,11 +116,11 @@
   }
   @include mq($large) {
     font-size: rem(55);
-    line-height: rem(59);
+    line-height: rem(58);
   }
   @include mq($xlarge) {
     font-size: rem(68);
-    line-height: rem(72);
+    line-height: rem(70);
   }
 }
 .font--serif--xxl {

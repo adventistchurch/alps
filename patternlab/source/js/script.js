@@ -107,7 +107,8 @@
     adaptiveHeight: true,
     nextArrow: '.arrow__next',
     prevArrow: '.arrow__prev',
-    touchThreshold: 11
+    touchThreshold: 11,
+    dots: true
   });
 
 })(jQuery); // Fully reference jQuery after this point.

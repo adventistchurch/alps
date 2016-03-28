@@ -30,34 +30,27 @@
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body class="body">
-<nav class="secondary-nav toggled-element" id="secondary-nav" role="navigation">
-  <ul class="secondary-nav__list">
-    <li class="secondary-nav__list-item"><a class="secondary-nav__link" href="">
-      
-      <strong>English</strong>
-    </a></li>
-    <li class="secondary-nav__list-item"><a class="secondary-nav__link" href="">
-      
-      <strong>Search</strong>
-    </a></li>
-    <li class="secondary-nav__list-item"><a class="secondary-nav__link" href="">
-      
-      <strong>Sitemap</strong>
-    </a></li>
-    <li class="secondary-nav__list-item"><a class="secondary-nav__link" href="">
-      
-      <strong>Find a Church</strong>
-    </a></li>
-    <li class="secondary-nav__list-item"><a class="secondary-nav__link" href="">
-      
-      <strong>Contact</strong>
-    </a></li>
-    <li class="secondary-nav__list-item"><a class="secondary-nav__link" href="">
-      
-      <strong>Press Inquiries</strong>
-    </a></li>
-  </ul> <!-- /.secondary-nav__list -->
-</nav> <!-- /.secondary-nav -->
+<div class="carousel__item rel ">
+<picture class="picture">
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="http://placehold.it/1300x700" media="(min-width: 900px)">
+    <source srcset="http://placehold.it/900x500" media="(min-width: 700px)">
+  <source srcset="http://placehold.it/700x500" media="(min-width: 500px)">
+  <!--[if IE 9]></video><![endif]-->
+  <img itemprop="image" srcset="http://placehold.it/500x500" alt="Alt Text">
+</picture>
+
+
+    <div class="carousel__item-text spacing--half ">
+      <h2 class="carousel__item-heading font--serif--xxl">Lorem Ipsum</h2>
+      <h3 class="carousel__item-subtitle font--serif--m">Fusce nec urna ut tellus accumsan fermentum.</h3>
+      <div class="carousel__item-dek pad-half--btm">
+        <p>Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue. Curabitur eleifend ligula ut arcu finibus posuere.</p>
+      </div> <!-- /.carousel__item-dek -->
+      <a href="" class="carousel__item-cta btn btn--white">Mec cursus mi</a>
+    </div> <!-- /.carousel__item-text -->
+
+</div> <!-- /.carousel__item -->
 
     <script src="/js/jquery-2.0.0b2.js" type="text/javascript"></script>
     <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" type="text/javascript"></script>
@@ -70,9 +63,9 @@
 <!-- DO NOT MODIFY -->
 <script>
   // handle injection of items from Node
-  var patternPartial = "molecules-secondary-navigation";
-  var lineage = [];
-  var lineageR = [{"lineagePattern":"organisms-header","lineagePath":"../../patterns/02-organisms-global-header/02-organisms-global-header.html"}];
+  var patternPartial = "molecules-slide-with-right-text";
+  var lineage = [{"lineagePattern":"atoms-picture","lineagePath":"../../patterns/00-atoms-images-picture/00-atoms-images-picture.html"}];
+  var lineageR = [];
   var patternState = "";
   var baseurl = "";
   var cssEnabled = false; //TODO
