@@ -84,10 +84,12 @@
   transform: translate(-50%, 0);
   padding: $pad;
   width: 100%;
+  text-align: center;
   max-width: $max-width;
   @include mq($large) {
     top: auto;
     bottom: 0;
+    text-align: left;
   }
   li {
     display: inline-block;
