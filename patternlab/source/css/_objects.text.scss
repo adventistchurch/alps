@@ -230,12 +230,11 @@
 // Small type - Sans
 @mixin font--sans--s() {
   font-family: $font-secondary;
-  font-size: rem(11);
-  line-height: rem(14);
+  font-size: rem(13);
+  line-height: rem(20);
   font-weight: normal;
   @include mq($large) {
     font-size: rem(15);
-    line-height: rem(24);
   }
 }
 .font--sans--s {
@@ -245,7 +244,7 @@
 // X-Small type - Sans
 @mixin font--sans--xs() {
   font-family: $font-secondary;
-  font-size: rem(13);
+  font-size: rem(11);
   line-height: rem(16);
 }
 .font--sans--xs {

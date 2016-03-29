@@ -10,12 +10,8 @@
   max-width: $max-width;
   margin: 0 auto;
   position: relative;
-  padding-left: $pad;
-  padding-right: $pad;
-  @include mq($px500) {
-    padding-left: $pad;
-    padding-right: $pad;
-  }
+  //padding-left: $pad;
+  //padding-right: $pad;
   @include mq($px1000) {
     padding-left: $pad-and-half;
     padding-right: $pad-and-half;
@@ -62,8 +58,8 @@
   }
 }
 .pad--primary {
-  padding-left: $pad-half;
-  padding-right: $pad-half;
+  padding-left: $pad;
+  padding-right: $pad;
   @include mq($large) {
     padding-left: rem(60);
     padding-right: rem(60);
@@ -74,8 +70,8 @@
   }
 }
 .pad--secondary {
-  padding-left: $pad-half;
-  padding-right: $pad-half;
+  padding-left: $pad;
+  padding-right: $pad;
   @include mq($large) {
     padding-left: $pad-double;
     padding-right: $pad-double;
@@ -90,6 +86,12 @@
 /**
  * Shift at 900px (large breakpoint) with fluid left and right columns.
  */
+.flex-container {
+  @include mq($large) {
+    display: flex;
+    align-items: stretch;
+  }
+}
 .shift-left--fluid {
   width: 100%;
   @include mq($large) {

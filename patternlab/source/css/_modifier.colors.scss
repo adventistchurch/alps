@@ -37,16 +37,26 @@
 .brown {
   color: $brown;
 }
+.brown--light {
+  color: $brown-light;
+}
 
 /**
  * Link Colors
  */
+ .link--white {
+   color: $white;
+   &:hover {
+     color: $brown-light;
+   }
+ }
 .link--dark-gray-orange {
   color: $gray-dark;
   &:hover {
     color: $orange;
   }
 }
+
 
 /**
  * Background Colors
@@ -78,6 +88,9 @@
 .bg--brown {
   background-color: $brown;
 }
+.bg--medium-brown {
+  background-color: $brown-med;
+}
 .bg--beige {
   background-color: $beige;
 }
@@ -106,4 +119,7 @@
 }
 .fill--blue {
   fill: $blue;
+}
+.fill--light-brown {
+  fill: $brown-light;
 }

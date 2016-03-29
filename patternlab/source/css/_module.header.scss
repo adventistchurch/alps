@@ -16,7 +16,7 @@
     z-index: 100;
   }
   .toggled-element {
-    @include mq($medium, max) {
+    @include mq($medium-max, max) {
       display: none;
     }
   }
@@ -52,8 +52,8 @@
     justify-content: center;
     align-items: center;
   }
-  @media (min-width: $medium) and (max-width: $large) {
-    background-color: $neutral-gray;
+  @media (min-width: $medium) and (max-width: $large-max) {
+    background-color: $brown-light;
     padding-bottom: $pad-half;
     padding-top: $pad-half;
     margin-bottom: $space-half;
@@ -110,7 +110,7 @@
   @include mq($medium) {
     margin: 0;
   }
-  @media (min-width: $medium) and (max-width: $large) {
+  @media (min-width: $medium) and (max-width: $large-max) {
     width: rem(150);
   }
 }
