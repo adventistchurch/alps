@@ -1,0 +1,9 @@
+<aside class="aside spacing--double">
+  <div>&nbsp;</div>
+  {{# content_blocks }}
+    <div class="pad--secondary spacing--half text">
+      <h3 class="brown font--sans--m">{{{ text.heading }}}</h3>
+      <p>{{{ text.description }}} {{# text.cta }} <a href="{{ url }}" class="font--sans--s upper"><strong>{{{ text.cta }}}</strong></a> {{/ text.cta }}</p>
+    </div>
+  {{/ content_blocks }}
+</aside>

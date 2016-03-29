@@ -13,6 +13,13 @@
     }
   }
 }
+.spacing--until-large {
+  & > * + * {
+    @include mq($large-max, max) {
+      margin-top: rem(verticalSpacing(mobile));
+    }
+  }
+}
 .spacing--quarter {
   & > * + * {
     margin-top: rem(verticalSpacing(mobile)/4);
@@ -21,11 +28,25 @@
     }
   }
 }
+.spacing--quarter--until-large {
+  & > * + * {
+    @include mq($large-max, max) {
+      margin-top: rem(verticalSpacing(mobile)/4);
+    }
+  }
+}
 .spacing--half {
   & > * + * {
     margin-top: rem(verticalSpacing(mobile)/2);
     @include mq($large) {
       margin-top: rem(verticalSpacing(desktop)/2);
+    }
+  }
+}
+.spacing--half-until-large {
+  @include mq($large-max, max) {
+    & > * + * {
+      margin-top: rem(verticalSpacing(mobile)/2);
     }
   }
 }
@@ -187,4 +208,38 @@
 }
 .space-double--top {
   margin-top: $space-double;
+}
+
+/**
+ * Remove spacing/padding
+ */
+.no-space {
+  margin: 0;
+}
+.no-space--btm {
+  margin-bottom: 0;
+}
+.no-space--top {
+  margin-top: 0;
+}
+.no-space--right {
+  margin-right: 0;
+}
+.no-space--left {
+  margin-left: 0;
+}
+.no-pad {
+  padding: 0;
+}
+.no-pad--right {
+  padding-right: 0;
+}
+.no-pad--left {
+  padding-left: 0;
+}
+.no-pad--btm {
+  padding-bottom: 0;
+}
+.no-pad--top {
+  padding-top: 0;
 }

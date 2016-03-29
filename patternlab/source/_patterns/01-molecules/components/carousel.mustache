@@ -1,14 +1,18 @@
 {{# carousel }}
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 <div class="carousel rel">
-  <div class="carousel__slides {{ css-class }}">
+  <div class="carousel__slides {{ carousel_class }}">
     {{# slides }}
       {{> molecules-slide }}
     {{/ slides }}
   </div> <!-- /.carousel__slides -->
+
+  {{^ no_arrows }}
   <div class="carousel__controls">
     <span class="arrow__prev"><span class="carousel__arrow carousel__arrow--prev icon round">{{> atoms-icon-arrow-left }}</span></span>
     <span class="arrow__next"><span class="carousel__arrow carousel__arrow--next icon round">{{> atoms-icon-arrow-right }}</span></span>
   </div> <!-- /.carousel__controls -->
+  {{/ no_arrows }}
+
 </div> <!-- /.carousel -->
 {{/ carousel }}

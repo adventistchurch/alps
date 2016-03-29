@@ -1,14 +1,18 @@
 {{# carousel }}
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css&quot;/&gt;
 &lt;div class=&quot;carousel rel&quot;&gt;
-  &lt;div class=&quot;carousel__slides {{ css-class }}&quot;&gt;
+  &lt;div class=&quot;carousel__slides {{ carousel_class }}&quot;&gt;
     {{# slides }}
       {{&gt; molecules-slide }}
     {{/ slides }}
   &lt;/div&gt; &lt;!-- /.carousel__slides --&gt;
+
+  {{^ no_arrows }}
   &lt;div class=&quot;carousel__controls&quot;&gt;
     &lt;span class=&quot;arrow__prev&quot;&gt;&lt;span class=&quot;carousel__arrow carousel__arrow--prev icon round&quot;&gt;{{&gt; atoms-icon-arrow-left }}&lt;/span&gt;&lt;/span&gt;
     &lt;span class=&quot;arrow__next&quot;&gt;&lt;span class=&quot;carousel__arrow carousel__arrow--next icon round&quot;&gt;{{&gt; atoms-icon-arrow-right }}&lt;/span&gt;&lt;/span&gt;
   &lt;/div&gt; &lt;!-- /.carousel__controls --&gt;
+  {{/ no_arrows }}
+
 &lt;/div&gt; &lt;!-- /.carousel --&gt;
 {{/ carousel }}

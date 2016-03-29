@@ -1,0 +1,10 @@
+{
+  "has_slide_text": {
+    "carousel_text_class": "carousel__item--right",
+    "slide_heading": "Lorem Ipsum",
+    "slide_subtitle": "Fusce nec urna ut tellus accumsan fermentum.",
+    "slide_dek": "Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue. Curabitur eleifend ligula ut arcu finibus posuere.",
+    "slide_cta": "Mec cursus mi",
+    "btn_class": "btn--white"
+  }
+}

@@ -2,37 +2,29 @@
     $LIST TYPES
 \*------------------------------------*/
 
-.inline-list {
-  li {
-    display: inline-block;
-  }
+.inline-list__item {
+  display: inline-block;
 }
 
 /**
  * Bullet List
  */
-ul.bullet-list,
-.bullet-list ul {
-  li {
-    position: relative;
-    overflow: visible;
-    padding-left: rem(16);
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &:before {
-      content: '•';
-      position: absolute;
-      left: 0;
-      top: rem(-6);
-      z-index: 0;
-      font-size: rem(24);
-      color: $gray;
-    }
+.bullet-list__item {
+  position: relative;
+  overflow: visible;
+  padding-left: rem(16);
+  &:last-child {
+    margin-bottom: 0;
   }
-}
-.color-bullet span {
-  color: $body-color;
+  &:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: rem(-6);
+    z-index: 0;
+    font-size: rem(24);
+    color: $gray;
+  }
 }
 
 /**
@@ -41,7 +33,7 @@ ul.bullet-list,
 .text-list {
   margin: 0 0 1em;
   line-height: 1.3;
-  li {
-    margin-bottom: $space;
-  }
+}
+.text-list__item {
+  margin-bottom: $space;
 }

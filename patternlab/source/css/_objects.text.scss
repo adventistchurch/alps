@@ -116,11 +116,11 @@
   }
   @include mq($large) {
     font-size: rem(55);
-    line-height: rem(59);
+    line-height: rem(58);
   }
   @include mq($xlarge) {
     font-size: rem(68);
-    line-height: rem(72);
+    line-height: rem(65);
   }
 }
 .font--serif--xxl {
@@ -161,11 +161,11 @@
 @mixin font--serif--m() {
   font-family: $font;
   font-size: rem(18);
-  line-height: rem(22);
+  line-height: rem(24);
   font-weight: normal;
   @include mq($large) {
-    font-size: rem(20);
-    line-height: rem(24);
+    font-size: rem(22);
+    line-height: rem(30);
   }
 }
 .font--serif--m {
@@ -199,9 +199,14 @@
 // Large type - Sans
 @mixin font--sans--l() {
   font-family: $font-secondary;
-  font-size: rem(18);
-  line-height: rem(24);
-  font-weight: normal;
+  font-size: rem(22);
+  line-height: rem(26);
+  font-weight: 600;
+  text-transform: uppercase;
+  @include mq($large) {
+    font-size: rem(28);
+    line-height: rem(32);
+  }
 }
 .font--sans--l {
   @include font--sans--l;
@@ -210,11 +215,11 @@
 // Medium type - Sans
 @mixin font--sans--m() {
   font-family: $font-secondary;
-  font-size: rem(13);
-  line-height: rem(16);
-  font-weight: normal;
+  font-size: rem(18);
+  line-height: rem(22);
+  font-weight: 600;
   @include mq($large) {
-    font-size: rem(15);
+    font-size: rem(20);
     line-height: rem(24);
   }
 }
@@ -225,12 +230,11 @@
 // Small type - Sans
 @mixin font--sans--s() {
   font-family: $font-secondary;
-  font-size: rem(11);
-  line-height: rem(14);
+  font-size: rem(13);
+  line-height: rem(20);
   font-weight: normal;
   @include mq($large) {
     font-size: rem(15);
-    line-height: rem(24);
   }
 }
 .font--sans--s {
@@ -240,7 +244,7 @@
 // X-Small type - Sans
 @mixin font--sans--xs() {
   font-family: $font-secondary;
-  font-size: rem(13);
+  font-size: rem(11);
   line-height: rem(16);
 }
 .font--sans--xs {
@@ -291,10 +295,8 @@
   > ol a,
   > dl a {
     color: $blue;
-    box-shadow: inset -2px -5px 0px -2px $blue;
-    @include transition(box-shadow .3s $cubic-bezier);
     &:hover {
-      box-shadow: inset -2px -20px 0px -3px $blue;
+      color: $orange;
     }
   }
   > h1 {

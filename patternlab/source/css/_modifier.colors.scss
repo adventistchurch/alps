@@ -31,16 +31,32 @@
 .blue {
   color: $blue;
 }
+.orange {
+  color: $orange;
+}
+.brown {
+  color: $brown;
+}
+.brown--light {
+  color: $brown-light;
+}
 
 /**
  * Link Colors
  */
+ .link--white {
+   color: $white;
+   &:hover {
+     color: $brown-light;
+   }
+ }
 .link--dark-gray-orange {
   color: $gray-dark;
   &:hover {
     color: $orange;
   }
 }
+
 
 /**
  * Background Colors
@@ -69,6 +85,15 @@
 .bg--red {
   background-color: $red;
 }
+.bg--brown {
+  background-color: $brown;
+}
+.bg--medium-brown {
+  background-color: $brown-med;
+}
+.bg--beige {
+  background-color: $beige;
+}
 
 /**
  * States
@@ -94,4 +119,7 @@
 }
 .fill--blue {
   fill: $blue;
+}
+.fill--light-brown {
+  fill: $brown-light;
 }

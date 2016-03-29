@@ -29,7 +29,8 @@
 /**
  * Carousel with Text
  */
-.carousel__item-text {
+
+.carousel__item-text__wrap {
   padding: $pad;
   @media (max-width: $large-max) {
     color: $white;
@@ -41,12 +42,69 @@
   @include mq($large) {
     position: absolute;
     left: 0;
-    bottom: 0;
-    max-width: rem(650);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    .layout-container {
+      height: 100%;
+    }
+  }
+}
+.carousel__item-text {
+  @include mq($large) {
+    max-width: rem(680);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -50%);
+    padding-bottom: 0;
+    padding-top: rem(80);
   }
 }
 .carousel__item-heading {
   @include mq($large) {
     color: $blue;
+  }
+}
+// Right align slide text
+.carousel__item--right {
+  @include mq($large) {
+    right: 0;
+    left: auto;
+    text-align: right;
+  }
+}
+
+// Carousel pagination
+.slick-dots {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: $pad;
+  width: 100%;
+  text-align: center;
+  max-width: $max-width;
+  @include mq($large) {
+    top: auto;
+    bottom: 0;
+    text-align: left;
+  }
+  li {
+    display: inline-block;
+    border-radius: 50%;
+    border: rem(3) solid $white;
+    background-color: transparent;
+    width: rem(15);
+    height: rem(15);
+    margin-left: $space-half;
+    cursor: pointer;
+  }
+  .slick-active {
+    background-color: $white;
+  }
+  button {
+    display: none;
   }
 }

@@ -10,12 +10,8 @@
   max-width: $max-width;
   margin: 0 auto;
   position: relative;
-  padding-left: $pad;
-  padding-right: $pad;
-  @include mq($px500) {
-    padding-left: $pad;
-    padding-right: $pad;
-  }
+  //padding-left: $pad;
+  //padding-right: $pad;
   @include mq($px1000) {
     padding-left: $pad-and-half;
     padding-right: $pad-and-half;
@@ -54,40 +50,31 @@
     $LAYOUTS
 \*------------------------------------*/
 
-/**
- * Fluid left content column with static right rail
- */
-.primary {
-  width: 100%;
-  @include mq($px500) {
-    float: left;
-    margin-right: rem(-$sidebar-width - 50);
-  }
-  @include mq($px900) {
-    margin-right: rem(-$sidebar-width - 80);
-  }
-  @include mq($px1300) {
-    margin-right: rem(-$sidebar-width - 100);
+.column__primary,
+.column__secondary {
+  padding-bottom: $pad;
+  @include mq($large) {
+    padding-bottom: $pad-double;
   }
 }
-.primary-inner {
-  @include mq($px500) {
-    padding-bottom: rem(30);
-    margin-right: rem($sidebar-width + 50);
+.pad--primary {
+  padding-left: $pad;
+  padding-right: $pad;
+  @include mq($large) {
+    padding-left: rem(60);
+    padding-right: rem(60);
   }
-  @include mq($px900) {
-    margin-right: rem($sidebar-width + 80);
-  }
-  @include mq($px1300) {
-    margin-right: rem($sidebar-width + 100);
+  @include mq($xlarge) {
+    padding-left: rem(80);
+    padding-right: rem(80);
   }
 }
-.secondary {
-  max-width: rem(650);
-  @include center-block;
-  @include mq($px500) {
-    float: right;
-    width: rem($sidebar-width);
+.pad--secondary {
+  padding-left: $pad;
+  padding-right: $pad;
+  @include mq($large) {
+    padding-left: $pad-double;
+    padding-right: $pad-double;
   }
 }
 
@@ -97,72 +84,48 @@
 \*------------------------------------*/
 
 /**
- * Shift at 900px
+ * Shift at 900px (large breakpoint) with fluid left and right columns.
  */
-.shift-left--900 {
+.flex-container {
+  @include mq($large) {
+    display: flex;
+    align-items: stretch;
+  }
+}
+.shift-left--fluid {
   width: 100%;
-  @include mq($px900) {
+  @include mq($large) {
+    float: left;
+    width: 68%;
+  }
+}
+.shift-right--fluid {
+  @include mq($large) {
+    float: right;
+    width: 32%;
+  }
+}
+
+/**
+ * Shift at 900px (large breakpoint) with static right rail.
+ */
+.shift-left--static {
+  width: 100%;
+  @include mq($large) {
     float: left;
     margin-right: rem(-300);
   }
 }
-.shift-left--inner--900 {
-  @include mq($px900) {
-    margin-right: rem(330);
+.shift-left--inner--static {
+  @include mq($large) {
+    margin-right: rem(300);
   }
 }
-.shift-right--900 {
-  @include mq($px900) {
+.shift-right--static {
+  @include mq($large) {
     float: right;
     width: rem(300);
     position: relative;
     z-index: 1;
   }
 }
-
-/**
- * Shift at 700
- */
-.shift-left--700 {
- width: 100%;
- @include mq($px700) {
-   float: left;
-   margin-right: rem(-300);
- }
-}
-.shift-left--inner--700 {
- @include mq($px700) {
-   margin-right: rem(350);
- }
-}
-.shift-right--700 {
- @include mq($px700) {
-   float: right;
-   width: rem(300);
- }
-}
-
-/**
- * Shift at 1200
- */
-.shift-left--1200 {
-  width: 100%;
-  @include mq($px1200) {
-    float: left;
-    margin-right: rem(-300);
-  }
-}
-.shift-left--inner--1200 {
-  @include mq($px1200) {
-    margin-right: rem(330);
-  }
-}
-.shift-right--1200 {
-  @include mq($px1200) {
-    float: right;
-    width: rem(300);
-    position: relative;
-    z-index: 1;
-  }
-}
-
