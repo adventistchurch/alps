@@ -30,31 +30,17 @@
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body class="body">
-<div class="carousel__item rel ">
-<picture class="picture">
-  <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="http://placehold.it/1300x700" media="(min-width: 900px)">
-    <source srcset="http://placehold.it/900x500" media="(min-width: 700px)">
-  <source srcset="http://placehold.it/700x500" media="(min-width: 500px)">
-  <!--[if IE 9]></video><![endif]-->
-  <img itemprop="image" srcset="http://placehold.it/500x500" alt="Alt Text">
-</picture>
-
-
-  <div class="carousel__item-text__wrap">
-    <div class="layout-container">
-      <div class="carousel__item-text spacing--half carousel__item--right">
-        <h2 class="carousel__item-heading font--serif--xxl">Lorem Ipsum</h2>
-        <h3 class="carousel__item-subtitle font--serif--m">Fusce nec urna ut tellus accumsan fermentum.</h3>
-        <div class="carousel__item-dek pad-half--btm">
-          <p>Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue. Curabitur eleifend ligula ut arcu finibus posuere.</p>
-        </div> <!-- /.carousel__item-dek -->
-        <a href="" class="carousel__item-cta btn btn--white">Mec cursus mi</a>
-      </div> <!-- /.carousel__item-text -->
-    </div>
-  </div>
-
-</div> <!-- /.carousel__item -->
+<div class="media-block block spacing--quarter block__row">
+  <a class="media-block__image-wrap block__image-wrap db" href="">
+    
+    <div class="rounded dib"><img class="media-block__image block__image" src="http:&#x2F;&#x2F;placehold.it&#x2F;300x300" alt="Media Block Image Alt Left" /></div>
+  </a> <!-- /.media-block__image-wrap -->
+  <div class="media-block__content block__content spacing--quarter">
+    <h2 class="media-block__title block__title font--serif--m"><a href="" class="block__title-link link--blue">Fusce interdum purus est</a></h2>
+      <p class="media-block__description block__description font--serif--s">Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.</p>
+      <p><a class="media-block__cta block__cta btn" href="">Mauris sit amet</a></p>
+  </div> <!-- media-block__content -->
+</div> <!-- /.media-block -->
 
     <script src="../../js/jquery-2.0.0b2.js" type="text/javascript"></script>
     <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" type="text/javascript"></script>
@@ -67,8 +53,8 @@
 <!-- DO NOT MODIFY -->
 <script>
   // handle injection of items from Node
-  var patternPartial = "molecules-slide-with-right-text";
-  var lineage = [{"lineagePattern":"atoms-picture","lineagePath":"../../patterns/00-atoms-images-picture/00-atoms-images-picture.html"}];
+  var patternPartial = "molecules-media-block-row";
+  var lineage = [];
   var lineageR = [];
   var patternState = "";
   var baseurl = "";

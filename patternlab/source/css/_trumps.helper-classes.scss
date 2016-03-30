@@ -161,7 +161,8 @@
   border-radius: 100%;
 }
 .rounded {
-  border-radius: 3px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .br--none {
   border-radius: 0;

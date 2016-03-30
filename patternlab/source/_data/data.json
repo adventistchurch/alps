@@ -14,6 +14,11 @@
   "logo": "sda-logo.svg",
   "image_path": "../../images/",
 
+  "img": {
+    "src": "http://placehold.it/500x400",
+    "alt": "Image Alt"
+  },
+
   "picture": {
     "img_break_m": "500",
     "img": {
@@ -101,6 +106,19 @@
     "intro": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet."
   },
 
+  "media_block_default": {
+    "title": "Proin venenatis maximus dui",
+    "block_img_class": "rounded",
+    "img": {
+      "src": "http://placehold.it/500x400",
+      "alt": "Media Block Image Alt"
+    },
+    "datetime": "2016-12-12",
+    "date": "Mar 28, 2016",
+    "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+    "cta": "Donec volutpat libero"
+  },
+
   "content_blocks": [
     {
       "text": {
@@ -115,20 +133,80 @@
         "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Donec volutpat libero"
       }
-    },
+    }
+  ],
+
+  "row_blocks": [
     {
-      "text": {
-        "heading": "Pellentesque",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi lectus, mattis quis eros et, placerat maximus lacus. Pellentesque feugiat nibh eu risus porttitor, quis ornare odio ultricies. Integer ut condimentum ipsum. Fusce non molestie arcu, nec condimentum urna. Nullam ornare efficitur ex non venenatis.",
-        "cta": "Ut mollis risus"
+      "media_block_default": {
+        "block_class": "block__row",
+        "kicker": "Tincidunt",
+        "title": "Cras at sem at felis rhoncus",
+        "block_img_class": "round ",
+        "img": {
+          "src": "http://placehold.it/150x150",
+          "alt": "Media Block Image Alt Left Round"
+        },
+        "datetime": false,
+        "date": false,
+        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
+        "cta": "Cras at sem"
       }
     },
     {
-        "text": {
-        "heading": "Vivamus",
-        "description": "Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum. Mauris commodo quis mauris sed tempor. Vestibulum interdum tempor mauris eget convallis. Phasellus non iaculis quam, interdum vulputate justo.",
-        "cta": "Mauris in dignissim velit"
+      "media_block_default": {
+        "block_class": "block__row",
+        "title": "Fusce interdum purus est",
+        "img": {
+          "src": "http://placehold.it/300x350",
+          "alt": "Media Block Image Alt Left"
+        },
+        "datetime": false,
+        "date": false,
+        "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
+        "cta": "Mauris sit amet"
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "block__row",
+        "title": "Sed neque odio, iaculis iaculis rutrum quis",
+        "img": {
+          "src": "http://placehold.it/300x200",
+          "alt": "Media Block Image Alt Left Round"
+        },
+        "datetime": false,
+        "date": false,
+        "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in."
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "block__row",
+        "kicker": "Aenean arcu",
+       "title": "Pellentesque semper",
+        "img": {
+          "src": "http://placehold.it/300x300",
+          "alt": "Media Block Image Alt Left Round"
+        },
+        "datetime": false,
+        "date": false,
+        "description": "Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut.",
+        "cta": "Cras at sem"
       }
     }
+  ],
+
+  "aside_content": [
+    {
+      "aside_heading": "News",
+      "aside_blocks": [
+        { },
+        { },
+        { },
+        { }
+      ]
+    }
   ]
+
 }
