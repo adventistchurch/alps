@@ -78,7 +78,7 @@
                 <p class="entry-date">March 21&ndash;April 8, 2016<?php echo timeFromNow('2016-04-08'); ?></p>
                 <ul>
                     <li><a href="../review/palettes.png">Color Palettes</a> (<abbr title="Portable Network Graphics">PNG</abbr>, 201 <abbr title="Kilobyte">KB</abbr>)</li>
-                    <li><a href="../review/07-emperor.png">Color Presets - Emperor</a> (<abbr title="Portable Network Graphics">PNG</abbr>, 7.3 <abbr title="Megabyte">MB</abbr>)</li>
+                    <li><a href="../review/07-emperor.png">Color Presets Example - Emperor</a> (<abbr title="Portable Network Graphics">PNG</abbr>, 7.3 <abbr title="Megabyte">MB</abbr>)</li>
                 </ul>
                     
             </article><!-- .entry -->
