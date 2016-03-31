@@ -1,0 +1,22 @@
+<div class="content cf has-aside" role="document">
+  {{> organisms-header }}
+  <main class="main bg--beige" role="main">
+    <header class="header__swath bg--blue pad-double--top">
+      <div class="layout-container">
+        <h1 class="font--serif--xxl white">Lorem Ipsum</h1>
+      </div>
+    </header> <!-- /.header__swath -->
+    <div class="layout-container">
+      <div class="flex-container cf bg--white">
+        <div class="shift-left--fluid column__primary">
+          {{> organisms-body-content }}
+        </div> <!-- /.shift-left--fluid -->
+        <div class="shift-right--fluid column__secondary bg--beige">
+          {{> organisms-aside }}
+        </div> <!-- /.shift-right--fluid -->
+      </div> <!-- /.flex-container -->
+    </div> <!-- /.layout-container -->
+
+  </main> <!-- /.main -->
+  {{> organisms-footer }}
+</div> <!-- /.content -->

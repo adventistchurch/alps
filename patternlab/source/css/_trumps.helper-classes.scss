@@ -108,6 +108,15 @@
 .abs {
   position: absolute;
 }
+.abs--at-large {
+  @include mq($large) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
 .fixed {
   position: fixed;
 }
