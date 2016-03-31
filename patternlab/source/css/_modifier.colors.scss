@@ -44,12 +44,18 @@
 /**
  * Link Colors
  */
- .link--white {
-   color: $white;
-   &:hover {
-     color: $brown-light;
-   }
- }
+.link--white {
+  color: $white;
+  &:hover {
+    color: $brown-light;
+  }
+}
+.link--blue {
+  color: $blue;
+  &:hover {
+    color: $orange;
+  }
+}
 .link--dark-gray-orange {
   color: $gray-dark;
   &:hover {

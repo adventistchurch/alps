@@ -6,13 +6,18 @@
   &lt;/div&gt;
 
   &lt;hr&gt;
+  {{# row_blocks }}
+  &lt;div class=&quot;pad--primary spacing--half&quot;&gt;
+    {{&gt; molecules-media-block }}
+  &lt;/div&gt;
+  &lt;hr&gt;
+  {{/ row_blocks }}
 
   {{# content_blocks }}
   &lt;div class=&quot;pad--primary spacing--half text&quot;&gt;
     &lt;h3 class=&quot;brown font--sans--m&quot;&gt;{{{ text.heading }}}&lt;/h3&gt;
     &lt;p&gt;{{{ text.description }}} {{# text.cta }} &lt;a href=&quot;{{ url }}&quot; class=&quot;font--sans--s upper&quot;&gt;&lt;strong&gt;{{{ text.cta }}}&lt;/strong&gt;&lt;/a&gt; {{/ text.cta }}&lt;/p&gt;
   &lt;/div&gt;
-
   &lt;hr&gt;
   {{/ content_blocks }}
 &lt;/div&gt;

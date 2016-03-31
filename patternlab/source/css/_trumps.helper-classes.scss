@@ -108,6 +108,15 @@
 .abs {
   position: absolute;
 }
+.abs--at-large {
+  @include mq($large) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
 .fixed {
   position: fixed;
 }
@@ -161,7 +170,8 @@
   border-radius: 100%;
 }
 .rounded {
-  border-radius: 3px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .br--none {
   border-radius: 0;

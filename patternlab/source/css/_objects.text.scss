@@ -175,8 +175,12 @@
 // Small Type - Serif
 @mixin font--serif--s() {
   font-family: $font;
-  font-size: rem(15);
-  line-height: rem(19);
+  font-size: rem(13);
+  line-height: rem(17);
+  @include mq($large) {
+    font-size: rem(15);
+    line-height: rem(21);
+  }
 }
 .font--serif--s {
   @include font--serif--s;

@@ -8,15 +8,8 @@
   @include mq($medium) {
     padding-top: 0;
   }
-  @include mq($large) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
   .toggled-element {
-    @include mq($medium-max, max) {
+    @media (max-width: 650px) {
       display: none;
     }
   }

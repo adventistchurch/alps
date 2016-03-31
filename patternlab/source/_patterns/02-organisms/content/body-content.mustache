@@ -6,13 +6,18 @@
   </div>
 
   <hr>
+  {{# row_blocks }}
+  <div class="pad--primary spacing--half">
+    {{> molecules-media-block }}
+  </div>
+  <hr>
+  {{/ row_blocks }}
 
   {{# content_blocks }}
   <div class="pad--primary spacing--half text">
     <h3 class="brown font--sans--m">{{{ text.heading }}}</h3>
     <p>{{{ text.description }}} {{# text.cta }} <a href="{{ url }}" class="font--sans--s upper"><strong>{{{ text.cta }}}</strong></a> {{/ text.cta }}</p>
   </div>
-
   <hr>
   {{/ content_blocks }}
 </div>

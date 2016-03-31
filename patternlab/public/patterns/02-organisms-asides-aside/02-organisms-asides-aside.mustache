@@ -1,9 +1,11 @@
 &lt;aside class=&quot;aside spacing--double&quot;&gt;
   &lt;div&gt;&amp;nbsp;&lt;/div&gt;
-  {{# content_blocks }}
-    &lt;div class=&quot;pad--secondary spacing--half text&quot;&gt;
-      &lt;h3 class=&quot;brown font--sans--m&quot;&gt;{{{ text.heading }}}&lt;/h3&gt;
-      &lt;p&gt;{{{ text.description }}} {{# text.cta }} &lt;a href=&quot;{{ url }}&quot; class=&quot;font--sans--s upper&quot;&gt;&lt;strong&gt;{{{ text.cta }}}&lt;/strong&gt;&lt;/a&gt; {{/ text.cta }}&lt;/p&gt;
-    &lt;/div&gt;
-  {{/ content_blocks }}
+  &lt;div class=&quot;pad--secondary spacing--one-and-half&quot;&gt;
+    {{# aside_content }}
+      &lt;h3 class=&quot;font--sans--m upper brown&quot;&gt;{{ aside_heading }}&lt;/h3&gt;
+      {{# aside_blocks }}
+        {{&gt; molecules-media-block }}
+      {{/ aside_blocks }}
+    {{/ aside_content }}
+  &lt;/div&gt;
 &lt;/aside&gt;

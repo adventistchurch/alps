@@ -3,13 +3,25 @@
 \*------------------------------------*/
 
 // Block
-.block {
-  font-family: $sans;
-  .wf-active & {
-    font-family: $font;
-  }
-  img {
-    display: inline-block;
-  }
+.block__image {
+  display: block;
 }
 
+/**
+ * Block row (block with left thumb and right text when space allows)
+ */
+.block__row {
+  @include mq($small) {
+    display: flex;
+    align-items: center;
+    .block__image-wrap {
+      width: 30%;
+      max-width: 300px;
+      text-align: right;
+    }
+    .block__content {
+      width: 70%;
+      padding-left: $pad;
+    }
+  }
+}
