@@ -74,10 +74,11 @@
 
             <article class="entry entry-latest">
             
-                <h1 class="entry-title">Design exploration</h1>
+                <h1 class="entry-title">Design Exploration</h1>
                 <p class="entry-date">March 21&ndash;April 8, 2016<?php echo timeFromNow('2016-04-08'); ?></p>
                 <ul>
-                    <li><a href="../review/palettes.png">Color Presets - Palettes</a> (<abbr title="Portable Network Graphics">PNG</abbr>, 201 <abbr title="Kilobyte">KB</abbr>)</li>
+                    <li><a href="../review/palettes.png">Color Palettes</a> (<abbr title="Portable Network Graphics">PNG</abbr>, 201 <abbr title="Kilobyte">KB</abbr>)</li>
+                    <li><a href="../review/07-emperor.png">Color Presets - Emperor</a> (<abbr title="Portable Network Graphics">PNG</abbr>, 7.3 <abbr title="Megabyte">MB</abbr>)</li>
                 </ul>
                     
             </article><!-- .entry -->
@@ -87,6 +88,9 @@
                 <h1 class="entry-title">Pattern Audit + Pattern Creation</h1>
 
                 <p class="entry-date">March 21&ndash;April 1, 2016<?php echo timeFromNow('2016-04-01'); ?></p>
+                <ul>
+                   <li><a href="http://adventist.superfriend.ly/patternlab/public/">Adventist Living Pattern System</a></li> 
+                </ul>
                     
             </article><!-- .entry -->            
              
