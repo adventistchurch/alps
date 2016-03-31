@@ -72,14 +72,17 @@
                     
             </article><!-- .entry -->
 
-            <article class="entry entry-future">
+            <article class="entry entry-latest">
             
                 <h1 class="entry-title">Design exploration</h1>
-                <p class="entry-date">March 21&ndash;April 1, 2016<?php echo timeFromNow('2016-04-01'); ?></p>
+                <p class="entry-date">March 21&ndash;April 8, 2016<?php echo timeFromNow('2016-04-08'); ?></p>
+                <ul>
+                    <li><a href="../review/palettes.png">Color Presets - Palettes</a> (<abbr title="Portable Network Graphics">PNG</abbr>, 201 <abbr title="Kilobyte">KB</abbr>)</li>
+                </ul>
                     
             </article><!-- .entry -->
 
-            <article class="entry entry-future">
+            <article class="entry entry-latest">
 
                 <h1 class="entry-title">Pattern Audit + Pattern Creation</h1>
 
@@ -94,6 +97,7 @@
                 <ul>
                     <li><a href="../review/sda_manifesto_v1.pdf">SDA Manifesto</a> (<abbr title="Portable Document Format">PDF</abbr>, 104 <abbr title="Kilobyte">KB</abbr>)</li>
                     <li><a href="../personas/Personas_AdventistOrg.pdf">User Personas</a> (<abbr title="Portable Document Format">PDF</abbr>, 112 <abbr title="Kilobyte">KB</abbr>)</li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1OVPAw5wqr22ViRcLPcDPEo9T7p-3QOUAlX7Y80ZvP2c/edit?usp=sharing">OKR Spreadsheet</a></li>
                 </ul>
                     
             </article><!-- .entry -->
