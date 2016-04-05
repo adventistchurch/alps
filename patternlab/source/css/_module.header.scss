@@ -3,9 +3,9 @@
 \*------------------------------------*/
 
 .header {
-  padding-top: rem(5);
   padding-bottom: rem(5);
-  @include mq($medium) {
+  //height: rem($small-header-height);
+  @include media('>medium') {
     padding-top: 0;
   }
   .toggled-element {
@@ -20,25 +20,39 @@
     display: block;
   }
 }
+.header__top-hat {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -3px;
+    height: 3px;
+    background-color: rgba($black, .2);
+    z-index: 20;
+  }
+}
 .header__inner {
   text-align: center;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   .is-active & {
     padding-bottom: rem(14);
   }
-  @include mq($medium) {
+  @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: rem(14);
   }
-  @include mq($large) {
+  @include media('>large') {
     padding: $pad;
   }
 }
 .header__utility {
-  @include mq($medium) {
+  @include media('>medium') {
     display: flex;
     order: 1;
     width: 100%;
@@ -49,10 +63,13 @@
     background-color: $brown-med;
     padding-bottom: $pad-half;
     padding-top: $pad-half;
-    margin-bottom: $space-half;
   }
-  @include mq($large) {
+  @include media('>large') {
     justify-content: flex-end;
+    margin-bottom: $space;
+  }
+  @include media('>xlarge') {
+    margin-bottom: $space-and-half;
   }
 }
 .logo {
@@ -60,33 +77,38 @@
 }
 .logo__link {
   display: block;
-  width: rem(200);
-  height: rem(50);
+  width: rem(100);
   margin-left: auto;
   margin-right: auto;
+  padding: rem(6) rem(10) rem(10);
   margin-bottom: $space-half;
-  @include mq($medium) {
-    min-width: rem(250);
-    height: rem(61);
-    margin-bottom: rem(22);
+  background-color: $orange;
+  position: relative;
+  z-index: 10;
+  @include media('>medium') {
+    margin-bottom: $space;
+    width: rem(130);
   }
-  @include mq($large) {
-    margin: 0 0 -1px;
+  @include media('>large') {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: rem(150);
+    padding: rem(18);
   }
-  @include mq($px1000) {
-    min-width: rem(325);
-    height: rem(79);
+  @include media('>xlarge') {
+    width: rem(170);
   }
 }
 .header__unify-logo-nav {
   width: 100%;
-  @include mq($medium) {
+  @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     order: 2;
   }
-  @include mq($large) {
+  @include media('>large') {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
@@ -100,15 +122,13 @@
   width: rem(200);
   margin-left: auto;
   margin-right: auto;
-  @include mq($medium) {
+  @include media('>medium') {
     margin: 0;
-  }
-  @include media('>medium', '<=large') {
     width: rem(150);
   }
 }
 .search-form__input[type="search"] {
-  border: $border-style-blue;
+  border: $border-style;
   border-radius: rem(25);
   padding: rem(5) rem(12);
   width: 100%;

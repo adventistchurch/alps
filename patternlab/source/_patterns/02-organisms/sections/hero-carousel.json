@@ -4,7 +4,6 @@
     "slides": [
       {
         "has_slide_text": {
-          "carousel_text_class": "carousel__item--right",
           "slide_heading": "Proin dapibus",
           "slide_subtitle": "Fusce nec urna ut tellus accumsan fermentum.",
           "slide_dek": "Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue.",
@@ -14,7 +13,6 @@
       },
       {
         "has_slide_text": {
-          "carousel_text_class": "carousel__item--right",
           "slide_heading": "Quisque",
           "slide_dek": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
           "slide_cta": "Aenean tempor dolor",
@@ -25,14 +23,13 @@
         "has_slide_text": {
           "slide_heading": "Donec a gravida tellus",
           "slide_subtitle": "Ut mollis risus a ipsum maximus ullamcorper.",
-          "slide_dek": "Fusce rhoncus commodo lectus eu pretium. Donec interdum erat ut felis iaculis, id auctor elit mattis. Pellentesque tincidunt eros eu ipsum imperdiet molestie. Nam in sollicitudin neque. Curabitur ornare at leo ut lacinia. Nunc gravida eros eu dolor commodo, ut rutrum lorem malesuada.",
+          "slide_dek": "Fusce rhoncus commodo lectus eu pretium. Donec interdum erat ut felis iaculis, id auctor elit mattis.",
           "slide_cta": "Mauris vel ornare metus",
           "btn_class": "btn--white"
         }
       },
       {
         "has_slide_text": {
-          "carousel_text_class": "carousel__item--right",
           "slide_heading": "Donec interdum erat",
           "slide_subtitle": "Nulla rhoncus semper dolor et placerat.",
           "slide_dek": "Mauris vel ornare metus. Donec rutrum arcu at erat pellentesque, vel euismod mi scelerisque. Nunc faucibus urna vel tristique volutpat. Praesent non libero sit amet neque feugiat condimentum.",

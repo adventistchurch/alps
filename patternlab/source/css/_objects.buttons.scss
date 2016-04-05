@@ -8,18 +8,19 @@ input[type="submit"] {
   display: inline-block;
   text-align: center;
   font-size: rem(14);
-  padding: rem(12) rem(15);
+  padding: rem(13) rem(16) rem(12);
   line-height: 1;
-  color: $orange;
-  border: rem(2) solid $orange;
+  color: $white;
+  background-color: $orange;
   cursor: pointer;
   transition: all .6s ease-out;
   overflow: hidden;
-  border-radius: rem(5);
+  font-family: $font-secondary;
+  text-transform: uppercase;
   &:hover,
   &:focus {
-    border-color: darken($orange, 10);
-    color: darken($orange, 10);
+    background-color: darken($orange, 10);
+    color: $white;
   }
 }
 

@@ -12,11 +12,11 @@
   position: relative;
   //padding-left: $pad;
   //padding-right: $pad;
-  @include mq($px1000) {
-    padding-left: $pad-and-half;
-    padding-right: $pad-and-half;
+  @include media('>large') {
+    padding-left: $pad;
+    padding-right: $pad;
   }
-  @include mq($px1300) {
+  @include media('>xxlarge') {
     padding-left: 0;
     padding-right: 0;
   }

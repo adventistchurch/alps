@@ -8,8 +8,8 @@
 .nav-toggle {
   display: block;
   position: absolute;
-  right: rem(5);
-  top: rem(12);
+  right: rem(7);
+  top: rem(7);
   padding: rem(9) rem(8);
   height: rem(40);
   width: rem(40);
@@ -20,7 +20,7 @@
   border-radius: 50%;
   border: rem(2) solid $gray-dark;
   .header & {
-    @include mq($medium) {
+    @include media('>medium') {
       display: none;
     }
   }
@@ -83,29 +83,29 @@ $slice-height: 3.5;
  * Primary Nav
  */
 .primary-nav {
-  @include mq($medium) {
+  @include media('>medium') {
     width: 100%;
   }
 }
 .primary-nav__list {
-  @include mq($medium) {
+  @include media('>medium') {
     display: flex;
     justify-content: center;
   }
-  @include mq($large) {
+  @include media('>large') {
     justify-content: flex-end;
   }
 }
 .primary-nav__list-item {
-  @include mq($medium) {
+  @include media('>medium') {
     margin-left: $space-half;
     margin-right: $space-half;
   }
   @include media('>medium', '<=large') {
-    margin-left: $space;
-    margin-right: $space;
+    margin-left: rem(15);
+    margin-right: rem(15);
   }
-  @include mq($large) {
+  @include media('>large') {
     &:last-child {
       margin-right: 0;
     }
@@ -121,7 +121,7 @@ $slice-height: 3.5;
 .primary-nav__link {
   display: block;
   white-space: nowrap;
-  @include mq($medium, max) {
+  @include media('<=medium') {
     padding: rem(7);
     border-top: $border-style;
   }
@@ -132,23 +132,23 @@ $slice-height: 3.5;
  */
 .secondary-nav {
   margin-bottom: rem(14);
-  @include mq($medium) {
+  @include media('>medium') {
     margin: 0 $space 0 0;
   }
-  @include mq($large) {
+  @include media('>large') {
     margin-bottom: 0;
   }
 }
 .secondary-nav__list {
   border-top: $border-style;
-  @include mq($medium) {
+  @include media('>medium') {
     display: flex;
     border-top: none;
   }
 }
 .secondary-nav__list-item {
   display: block;
-  @include mq($medium) {
+  @include media('>medium') {
     padding: rem(4);
     margin-left: rem(6);
     margin-right: rem(6);
@@ -159,7 +159,7 @@ $slice-height: 3.5;
   font-size: rem(14);
   white-space: nowrap;
   color: $blue;
-  @include mq($medium, max) {
+  @include media('<=medium') {
     padding: rem(8) rem(6);
     border-bottom: $border-style;
     background-color: $gray-light;
@@ -169,7 +169,7 @@ $slice-height: 3.5;
     font-size: rem(11);
     color: $white;
   }
-  @include mq($large) {
+  @include media('>large') {
     font-size: rem(12)
   }
 }

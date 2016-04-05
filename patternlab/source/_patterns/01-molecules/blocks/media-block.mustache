@@ -1,16 +1,16 @@
 {{# media_block_default }}
 <div class="media-block block spacing--quarter {{ block_class }}">
   <a class="media-block__image-wrap block__image-wrap db" href="{{ url }}">
-    {{# kicker }}<span class="kicker font--sans--m upper orange db align--left">{{ kicker }}</span>{{/ kicker }}
+    {{# kicker }}<span class="kicker font--secondary--m upper orange db align--left">{{ kicker }}</span>{{/ kicker }}
     <div class="{{ block_img_class }} dib"><img class="media-block__image block__image" src="{{ img.src }}" alt="{{ img.alt }}" /></div>
   </a> <!-- /.media-block__image-wrap -->
   <div class="media-block__content block__content spacing--quarter">
-    <h2 class="media-block__title block__title font--serif--m"><a href="{{ url }}" class="block__title-link link--blue">{{{ title }}}</a></h2>
+    <h2 class="media-block__title block__title font--secondary--m"><a href="{{ url }}" class="block__title-link link--blue">{{{ title }}}</a></h2>
     {{# date }}
-      <time class="block__date font--sans--xs brown space-half--btm" datetime="{{ datetime }}">{{{ date }}}</time>
+      <time class="block__date font--secondary--xs brown space-half--btm" datetime="{{ datetime }}">{{{ date }}}</time>
     {{/ date }}
     {{# description }}
-      <p class="media-block__description block__description font--serif--s">{{ description }}</p>
+      <p class="media-block__description block__description font--primary--s">{{ description }}</p>
     {{/ description }}
     {{# cta }}
       <p><a class="media-block__cta block__cta btn" href="{{ url }}">{{ cta }}</a></p>

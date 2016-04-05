@@ -51,13 +51,13 @@
 }
 
 // Specific Widths - visible greater than #
-.show-at--large {
-  @include mq($large, max) {
+.show-at--medium {
+  @include media('<=medium') {
     display: none;
   }
 }
-.vis-gt--1200 {
-  @include mq($px1200, max) {
+.show-at--large {
+  @include media('<=large') {
     display: none;
   }
 }
