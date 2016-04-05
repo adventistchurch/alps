@@ -32,7 +32,7 @@
 
 .carousel__item-text__wrap {
   padding: $pad;
-  @media (max-width: $large-max) {
+  @include media('<=large') {
     color: $white;
     background-color: $blue;
   }

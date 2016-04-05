@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
   }
-  @media (min-width: $medium) and (max-width: $large-max) {
+  @include media('>medium', '<=large') {
     background-color: $brown-med;
     padding-bottom: $pad-half;
     padding-top: $pad-half;
@@ -103,7 +103,7 @@
   @include mq($medium) {
     margin: 0;
   }
-  @media (min-width: $medium) and (max-width: $large-max) {
+  @include media('>medium', '<=large') {
     width: rem(150);
   }
 }

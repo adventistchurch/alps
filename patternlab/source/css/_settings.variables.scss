@@ -139,18 +139,22 @@ $px1501: (1501/$defaultpx) + 0em;
  * Common Breakpoints
  */
 $small: $px400;
-$small-max: $px401;
 $medium: $px650;
-$medium-max: $px651;
 $large: $px900;
-$large-max: $px901;
 $xlarge: $px1100;
-$xlarge-max: $px1101;
 $xxlarge: $px1300;
-$xxlarge-max: $px1301;
 $xxxlarge: $px1500;
-$xxxlarge-max: $px1501;
 
+// uses px width / base font width to return a value in em units
+$breakpoints: (
+  xsmall:   $px350,
+  small:    $small,
+  medium:   $medium,
+  large:    $large,
+  xlarge:   $xlarge,
+  xxlarge:  $xxlarge,
+  xxxlarge: $xxxlarge
+);
 
 /**
  * Icon Sizing

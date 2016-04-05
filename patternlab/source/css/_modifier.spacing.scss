@@ -15,7 +15,7 @@
 }
 .spacing--until-large {
   & > * + * {
-    @include mq($large-max, max) {
+    @include media('<=large') {
       margin-top: rem(verticalSpacing(mobile));
     }
   }
@@ -30,7 +30,7 @@
 }
 .spacing--quarter--until-large {
   & > * + * {
-    @include mq($large-max, max) {
+    @include media('<=large') {
       margin-top: rem(verticalSpacing(mobile)/4);
     }
   }
@@ -44,7 +44,7 @@
   }
 }
 .spacing--half-until-large {
-  @include mq($large-max, max) {
+  @include media('<=large') {
     & > * + * {
       margin-top: rem(verticalSpacing(mobile)/2);
     }

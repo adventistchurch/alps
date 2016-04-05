@@ -101,7 +101,7 @@ $slice-height: 3.5;
     margin-left: $space-half;
     margin-right: $space-half;
   }
-  @media (min-width: $px800) and (max-width: $large) {
+  @include media('>medium', '<=large') {
     margin-left: $space;
     margin-right: $space;
   }
@@ -164,7 +164,7 @@ $slice-height: 3.5;
     border-bottom: $border-style;
     background-color: $gray-light;
   }
-  @media (min-width: $medium) and (max-width: $large) {
+  @include media('>medium', '<=large') {
     padding: rem(3) 0;
     font-size: rem(11);
     color: $white;
