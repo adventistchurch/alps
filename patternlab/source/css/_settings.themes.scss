@@ -46,11 +46,14 @@
       fill: $secondary-color;
     }
 
-    p, li {
-      a {
-        color: $secondary-color;
-        &:hover {
-          color: darken($secondary-color, 10);
+    // Bodies of text
+    .text {
+      p, li {
+        a {
+          color: $secondary-color;
+          &:hover {
+            color: darken($secondary-color, 10);
+          }
         }
       }
     }
