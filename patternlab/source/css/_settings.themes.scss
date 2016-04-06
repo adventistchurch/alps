@@ -86,9 +86,9 @@
 .theme-swatches {
   margin-bottom: 5px;
   display: inline-block;
-  &:first-child {
-    margin-right: $space-half;
-  }
+}
+.theme-swatches--primary {
+  margin-right: $space-half;
 }
 .swatch {
   height: 15px;
@@ -104,8 +104,12 @@
     transition: all .3s ease-out;
   }
 }
-.theme-heading {
+.theme-switcher-heading {
   font-size: 10px;
+  margin-bottom: 8px;
+}
+.theme-heading {
+  font-size: 9px;
   margin-bottom: 4px;
   text-transform: uppercase;
 }
