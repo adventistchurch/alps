@@ -56,5 +56,5 @@
   "patternExportKeys": [],
   "patternExportDirectory": "./pattern_exports/",
   "baseurl" : "/",
-  "cacheBust": true
+  "cacheBust": false
 }

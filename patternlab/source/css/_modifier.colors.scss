@@ -101,6 +101,36 @@
   background-color: $beige;
 }
 
+// Theme colors
+.bg--emperor {
+  background-color: $emperor;
+}
+.bg--earth {
+  background-color: $earth;
+}
+.bg--grapevine {
+  background-color: $grapevine;
+}
+.bg--denim {
+  background-color: $denim;
+}
+.bg--campfire {
+  background-color: $campfire;
+}
+.bg--treefrog {
+  background-color: $treefrog;
+}
+.bg--ming {
+  background-color: $ming;
+}
+.bg--cool {
+  background-color: $cool;
+}
+.bg--warm {
+  background-color: $warm;
+}
+
+
 /**
  * States
  */
@@ -122,6 +152,9 @@
  */
 .fill--gray {
   fill: $body-color;
+}
+.fill--white {
+  fill: $white;
 }
 .fill--blue {
   fill: $blue;

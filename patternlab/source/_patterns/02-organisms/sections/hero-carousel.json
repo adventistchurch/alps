@@ -1,6 +1,7 @@
 {
   "carousel": {
     "carousel_class": "js-carousel__single-item",
+    "no_arrows": true,
     "slides": [
       {
         "has_slide_text": {

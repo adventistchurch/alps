@@ -97,19 +97,48 @@
     $this.parent().toggleClass('is-active');
   });
 
+  // Slick carousel
+  if ($('.js-carousel__single-item').length) {
+    $('.js-carousel__single-item').slick({
+      speed: 300,
+      mobileFirst: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      cssEase: 'ease-out',
+      fade: true,
+      adaptiveHeight: true,
+      nextArrow: '.arrow__next',
+      prevArrow: '.arrow__prev',
+      touchThreshold: 11,
+      dots: true
+    });
+  }
 
-  $('.js-carousel__single-item').slick({
-    speed: 300,
-    mobileFirst: true,
-    //autoplay: true,
-    autoplaySpeed: 4000,
-    cssEase: 'ease-out',
-    fade: true,
-    adaptiveHeight: true,
-    nextArrow: '.arrow__next',
-    prevArrow: '.arrow__prev',
-    touchThreshold: 11,
-    dots: true
+
+  // Theme switcher for primary colors
+  $('.theme-swatches--primary .swatch').click(function(){
+    var thisColor = $(this).data('color');
+
+    $('.theme-swatches--primary .swatch').removeClass('active');
+    $(this).addClass('active');
+
+    // Remove any class that starts with "theme--"
+    $('html').removeClass(function(index, css) {
+      return (css.match (/(^|\s)theme--\S+/g) || []).join(' ');
+    }).addClass('theme--' + thisColor);
+  });
+
+  // Theme switcher for secondary colors
+  $('.theme-swatches--secondary .swatch').click(function(){
+    var thisColor = $(this).data('color');
+
+    $('.theme-swatches--secondary .swatch').removeClass('active');
+    $(this).addClass('active');
+
+    // Remove any class that starts with "theme--"
+    $('body').removeClass(function(index, css) {
+      return (css.match (/(^|\s)theme--\S+/g) || []).join(' ');
+    }).addClass('theme--' + thisColor);
   });
 
 })(jQuery); // Fully reference jQuery after this point.

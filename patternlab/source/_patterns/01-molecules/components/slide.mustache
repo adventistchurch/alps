@@ -4,16 +4,17 @@
   {{# has_slide_text }}
   <div class="carousel__item-text__wrap">
     <div class="layout-container">
-      <div class="carousel__item-text {{ carousel_text_class }}">
-        <h2 class="carousel__item-heading font--tertiary--xl">{{{ slide_heading }}}</h2>
-        {{# slide_subtitle }}<h3 class="carousel__item-subtitle font--secondary--m">{{{ slide_subtitle }}}</h3>{{/ slide_subtitle }}
-        <div class="carousel__item-dek pad-half--btm">
-          <p>{{{ slide_dek }}}</p>
-        </div> <!-- /.carousel__item-dek -->
-        <a href="{{ url }}" class="carousel__item-cta btn {{ btn_class }}">{{{ slide_cta }}}</a>
+      <div class="carousel__item-text {{ carousel_text_class }} spacing--half">
+        <div>
+          <h2 class="carousel__item-heading font--tertiary--xl theme--primary-transparent-background-color">{{{ slide_heading }}}</h2>
+          {{# slide_subtitle }}<br><h3 class="carousel__item-subtitle font--secondary--m theme--primary-transparent-background-color">{{{ slide_subtitle }}}</h3>{{/ slide_subtitle }}
+          <div class="carousel__item-dek pad-half--btm theme--primary-transparent-background-color">
+            <p>{{{ slide_dek }}}</p>
+          </div> <!-- /.carousel__item-dek -->
+        </div>
+        <a href="{{ url }}" class="carousel__item-cta btn theme--secondary-background-color">{{{ slide_cta }}}</a>
       </div> <!-- /.carousel__item-text -->
     </div>
   </div>
   {{/ has_slide_text }}
-
 </div> <!-- /.carousel__item -->

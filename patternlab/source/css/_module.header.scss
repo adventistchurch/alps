@@ -4,9 +4,10 @@
 
 .header {
   padding-bottom: rem(5);
-  //height: rem($small-header-height);
+  height: rem($small-header-height);
   @include media('>medium') {
     padding-top: 0;
+    height: auto;
   }
   .toggled-element {
     @media (max-width: 650px) {
@@ -31,6 +32,13 @@
     height: 3px;
     background-color: rgba($black, .2);
     z-index: 20;
+  }
+  .icon__logo {
+    width: rem(20);
+    height: rem(20);
+    position: absolute;
+    left: $pad-half;
+    top: rem(8);
   }
 }
 .header__inner {
@@ -60,7 +68,7 @@
     align-items: center;
   }
   @include media('>medium', '<=large') {
-    background-color: $brown-med;
+    background-color: darken($gray-light, 5);
     padding-bottom: $pad-half;
     padding-top: $pad-half;
   }
@@ -82,7 +90,6 @@
   margin-right: auto;
   padding: rem(6) rem(10) rem(10);
   margin-bottom: $space-half;
-  background-color: $orange;
   position: relative;
   z-index: 10;
   @include media('>medium') {
@@ -125,6 +132,10 @@
   @include media('>medium') {
     margin: 0;
     width: rem(150);
+  }
+  @include media('>large') {
+    margin: 0;
+    width: rem(180);
   }
 }
 .search-form__input[type="search"] {

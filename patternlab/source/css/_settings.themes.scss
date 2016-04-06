@@ -1,0 +1,108 @@
+/*------------------------------------*\
+    $THEMES
+\*------------------------------------*/
+
+// Primary color themed elements.
+@mixin theme-primary($name, $primary-color) {
+  .#{$name} {
+    // Text colors
+    .theme--primary-text-color {
+      color: $primary-color;
+    }
+
+    // Background colors
+    .theme--primary-background-color {
+      background-color: $primary-color;
+    }
+    .theme--primary-transparent-background-color {
+      background-color: rgba($primary-color, .8);
+    }
+
+    // SVG fill colors
+    .theme--primary-fill-color {
+      fill: $primary-color;
+    }
+  }
+}
+
+// Secondary color themed elements.
+@mixin theme-secondary($name, $secondary-color) {
+  .#{$name} {
+    // Text colors
+    .theme--secondary-text-color {
+      color: $secondary-color;
+    }
+
+    // Background colors
+    .theme--secondary-background-color {
+      background-color: $secondary-color;
+    }
+    .theme--secondary-transparent-background-color {
+      background-color: rgba($secondary-color, .8);
+    }
+
+    // SVG fill colors
+    .theme--secondary-fill-color {
+      fill: $secondary-color;
+    }
+
+    p, li {
+      a {
+        color: $secondary-color;
+        &:hover {
+          color: darken($secondary-color, 10);
+        }
+      }
+    }
+  }
+}
+
+// Generate primary color palettes.
+@include theme-primary(theme--emperor, $emperor);
+@include theme-primary(theme--earth, $earth);
+@include theme-primary(theme--grapevine, $grapevine);
+@include theme-primary(theme--denim, $denim);
+@include theme-primary(theme--campfire, $campfire);
+@include theme-primary(theme--treefrog, $treefrog);
+@include theme-primary(theme--ming, $ming);
+
+// Generate secondary color palettes.
+@include theme-secondary(theme--warm, $warm);
+@include theme-secondary(theme--cool, $cool);
+
+
+// Theme switcher
+.theme-switcher {
+  position: fixed;
+  left: 0;
+  background-color: $white;
+  bottom: 0;
+  box-shadow: 0 0 3px rgba($black, .2);
+  border-top-right-radius: 3px;
+}
+.theme-swatches {
+  margin-bottom: 5px;
+  display: inline-block;
+  &:first-child {
+    margin-right: $space-half;
+  }
+}
+.swatch {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba($black, 0);
+  outline: 1px solid rgba($white, 0);
+  transition: all .3s ease-out;
+  &.active {
+    box-shadow: 0 3px 5px rgba($black, .5);
+    outline: 1px solid $white;
+    transition: all .3s ease-out;
+  }
+}
+.theme-heading {
+  font-size: 10px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}

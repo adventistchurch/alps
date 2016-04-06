@@ -200,9 +200,13 @@
 // Medium type - secondary
 @mixin font--secondary--m() {
   font-family: $font-secondary;
-  font-size: rem(18);
-  line-height: rem(22);
-  font-weight: 600;
+  font-size: rem(16);
+  line-height: rem(20);
+  font-weight: normal;
+  @include media('>medium') {
+    font-size: rem(18);
+    line-height: rem(22);
+  }
   @include media('>large') {
     font-size: rem(20);
     line-height: rem(24);
@@ -244,7 +248,7 @@
 // X-Large Type - tertiary
 @mixin font--tertiary--xl() {
   font-family: $font-tertiary;
-  font-size: rem(34);
+  font-size: rem(28);
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;

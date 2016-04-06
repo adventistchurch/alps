@@ -157,7 +157,7 @@ gulp.task('connect', ['lab'], function () {
   });
   gulp.watch(path.resolve(paths().source.css, '**/*.scss'), ['sass']);
 
-  gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), ['cp:styleguide']);
+  //gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), ['cp:styleguide']);
 
   gulp.watch(
     [
@@ -199,7 +199,7 @@ gulp.task('assets', ['cp:js', 'cp:img', 'cp:data', 'sass', 'cp:css', 'cp:stylegu
 gulp.task('prelab', ['clean', 'assets']);
 gulp.task('lab', ['prelab', 'patternlab'], function (cb) { cb(); });
 gulp.task('patterns', ['patternlab:only_patterns']);
-gulp.task('serve', ['lab', 'connect']);
+gulp.task('serve', ['connect']);
 gulp.task('build', ['eslint', 'nodeunit', 'banner']);
 
 gulp.task('version', ['patternlab:version']);

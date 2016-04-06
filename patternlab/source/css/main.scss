@@ -4,6 +4,7 @@
  * SETTINGS
  * Bourbon..............Simple/lighweight SASS library - http://bourbon.io/
  * Variables............Globally-available variables and config.
+ * Themes...............Theme settings for different color treatments.
  *
  * TOOLS
  * Mixins...............Useful mixins.
@@ -64,7 +65,8 @@
     $SETTINGS
 \*------------------------------------*/
 @import "bourbon";
-@import "settings.variables.scss";
+@import "settings.variables";
+@import "settings.themes";
 
 
 /*------------------------------------*\
