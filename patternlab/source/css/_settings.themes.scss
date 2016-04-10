@@ -9,6 +9,9 @@
     .theme--primary-text-color {
       color: $primary-color;
     }
+    a.theme--primary-text-color:hover {
+      color: darken($primary-color, 30);
+    }
 
     // Background colors
     .theme--primary-background-color {
@@ -31,6 +34,9 @@
     // Text colors
     .theme--secondary-text-color {
       color: $secondary-color;
+    }
+    a.theme--secondary-text-color:hover {
+      color: darken($secondary-color, 30);
     }
 
     // Background colors

@@ -42,10 +42,9 @@
 </span>
     <p class="font--secondary--xs gray--med">This is an official website of the Seventh-day Adventist Church. <a class="link--white" href="">Learn More about Adventists</a>.</p>
   </div> <!-- /.header__top-hat -->
-  <div class="layout-container">
-    <div class="header__inner">
-      <div class="header__unify-logo-nav">
-        <a href="/" class="logo__link theme--primary-background-color"><img src="..&#x2F;..&#x2F;images&#x2F;sda-logo.svg" class="logo" alt="The Official Site of the Seventh-day Adventist world church logo" />
+  <div class="header__inner">
+    <div class="header__unify-logo-nav">
+      <a href="/" class="logo__link theme--primary-background-color"><img src="..&#x2F;..&#x2F;images&#x2F;sda-logo.svg" class="logo" alt="The Official Site of the Seventh-day Adventist world church logo" />
 </a>
 <nav class="primary-nav toggled-element" id="primary-nav" role="navigation" data-active-target="primary-nav">
   <ul class="primary-nav__list">
@@ -59,8 +58,9 @@
   </ul> <!-- /.primary-nav__list -->
 </nav> <!-- /.primary-nav -->
 
-      </div> <!-- /.header__unify-logo-nav -->
-      <div class="header__utility">
+    </div> <!-- /.header__unify-logo-nav -->
+    <div class="header__utility">
+      <div class="layout-container header__utility__inner full--until-large">
 <nav class="secondary-nav toggled-element" id="secondary-nav" role="navigation">
   <ul class="secondary-nav__list">
     <li class="secondary-nav__list-item"><a class="secondary-nav__link theme--secondary-text-color" href="">
@@ -100,9 +100,9 @@
   </fieldset>
 </form> <!-- /.search-form -->
 
-      </div> <!-- /.header__utility -->
-    </div> <!-- /.header__inner -->
-  </div> <!-- /.layout-container -->
+      </div>
+    </div> <!-- /.header__utility -->
+  </div> <!-- /.header__inner -->
 </header> <!-- .header -->
 
     <div class="theme-switcher pad">
@@ -138,7 +138,7 @@
   // handle injection of items from Node
   var patternPartial = "organisms-header";
   var lineage = [{"lineagePattern":"molecules-navigation-toggle","lineagePath":"../../patterns/01-molecules-navigation-navigation-toggle/01-molecules-navigation-navigation-toggle.html"},{"lineagePattern":"atoms-icon-logo","lineagePath":"../../patterns/00-atoms-icons-icon-logo/00-atoms-icons-icon-logo.html"},{"lineagePattern":"atoms-logo","lineagePath":"../../patterns/00-atoms-images-logo/00-atoms-images-logo.html"},{"lineagePattern":"molecules-primary-navigation","lineagePath":"../../patterns/01-molecules-navigation-primary-navigation/01-molecules-navigation-primary-navigation.html"},{"lineagePattern":"molecules-secondary-navigation","lineagePath":"../../patterns/01-molecules-navigation-secondary-navigation/01-molecules-navigation-secondary-navigation.html"},{"lineagePattern":"molecules-search","lineagePath":"../../patterns/01-molecules-forms-search/01-molecules-forms-search.html"}];
-  var lineageR = [{"lineagePattern":"templates-channel-main","lineagePath":"../../patterns/03-templates-channel-main/03-templates-channel-main.html"},{"lineagePattern":"templates-home","lineagePath":"../../patterns/03-templates-home/03-templates-home.html"}];
+  var lineageR = [{"lineagePattern":"templates-basic-page","lineagePath":"../../patterns/03-templates-basic-page/03-templates-basic-page.html"},{"lineagePattern":"templates-channel-main","lineagePath":"../../patterns/03-templates-channel-main/03-templates-channel-main.html"},{"lineagePattern":"templates-home","lineagePath":"../../patterns/03-templates-home/03-templates-home.html"}];
   var patternState = "";
   var baseurl = "";
   var cssEnabled = false; //TODO

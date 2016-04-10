@@ -1,16 +1,19 @@
 {{# media_block_default }}
 &lt;div class=&quot;media-block block spacing--quarter {{ block_class }}&quot;&gt;
-  &lt;a class=&quot;media-block__image-wrap block__image-wrap db&quot; href=&quot;{{ url }}&quot;&gt;
-    {{# kicker }}&lt;span class=&quot;kicker font--secondary--m upper theme--secondary-text-color db align--left&quot;&gt;{{ kicker }}&lt;/span&gt;{{/ kicker }}
-    &lt;div class=&quot;{{ block_img_class }} dib&quot;&gt;&lt;img class=&quot;media-block__image block__image&quot; src=&quot;{{ img.src }}&quot; alt=&quot;{{ img.alt }}&quot; /&gt;&lt;/div&gt;
-  &lt;/a&gt; &lt;!-- /.media-block__image-wrap --&gt;
+  {{# block_heading }}&lt;h2 class=&quot;font--tertiary--m theme--primary-text-color pad--btm&quot;&gt;{{# heading_icon }}&lt;div class=&quot;icon icon--s&quot;&gt;{{{ heading_icon }}}&lt;/div&gt; {{/ heading_icon }} {{{ block_heading }}}&lt;/h2&gt;{{/ block_heading }}
+  {{# img }}
+    &lt;a class=&quot;media-block__image-wrap block__image-wrap db&quot; href=&quot;{{ url }}&quot;&gt;
+      {{# kicker }}&lt;span class=&quot;kicker font--secondary--m upper theme--secondary-text-color db align--left&quot;&gt;{{ kicker }}&lt;/span&gt;{{/ kicker }}
+      &lt;div class=&quot;{{ block_img_class }} dib&quot;&gt;&lt;img class=&quot;media-block__image block__image&quot; src=&quot;{{ img.src }}&quot; alt=&quot;{{ img.alt }}&quot; /&gt;&lt;/div&gt;
+    &lt;/a&gt; &lt;!-- /.media-block__image-wrap --&gt;
+  {{/ img }}
   &lt;div class=&quot;media-block__content block__content spacing--quarter&quot;&gt;
-    &lt;h2 class=&quot;media-block__title block__title font--secondary--m&quot;&gt;&lt;a href=&quot;{{ url }}&quot; class=&quot;block__title-link theme--primary-text-color&quot;&gt;{{{ title }}}&lt;/a&gt;&lt;/h2&gt;
+    {{# title }}&lt;h3 class=&quot;media-block__title block__title font--secondary--m&quot;&gt;&lt;a href=&quot;{{ url }}&quot; class=&quot;block__title-link theme--primary-text-color&quot;&gt;{{{ title }}}&lt;/a&gt;&lt;/h3&gt;{{/ title }}
     {{# date }}
       &lt;time class=&quot;block__date font--secondary--xs brown space-half--btm&quot; datetime=&quot;{{ datetime }}&quot;&gt;{{{ date }}}&lt;/time&gt;
     {{/ date }}
     {{# description }}
-      &lt;p class=&quot;media-block__description block__description font--primary--s&quot;&gt;{{ description }}&lt;/p&gt;
+      &lt;p class=&quot;media-block__description block__description font--primary--xs&quot;&gt;{{ description }}&lt;/p&gt;
     {{/ description }}
     {{# cta }}
       &lt;p&gt;&lt;a class=&quot;media-block__cta block__cta btn theme--secondary-background-color&quot; href=&quot;{{ url }}&quot;&gt;{{ cta }}&lt;/a&gt;&lt;/p&gt;

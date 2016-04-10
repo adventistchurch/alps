@@ -5,3 +5,21 @@
 .section {
   position: relative;
 }
+
+/**
+ * Page headings
+ */
+.header__swath {
+  padding-top: rem(70);
+  @include media('>large') {
+    padding-top: rem(100);
+  }
+}
+// Headers with background images
+.header-swath--with-image {
+  background-size: cover;
+  padding-top: rem(120);
+  @include media('>large') {
+    padding-top: rem(200);
+  }
+}

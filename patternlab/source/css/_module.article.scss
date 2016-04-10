@@ -54,46 +54,12 @@
 
 .article__body,
 .article__flow {
-  max-width: rem(650);
-  > p,
-  > ul li,
-  > ol li,
-  > dl dd,
-  > dl dt,
-  > blockquote p {
-    font-size: rem(16);
-    line-height: 1.65;
-    @include mq($px800) {
-      font-size: rem(18);
-      line-height: 1.8;
-    }
-  }
-  > ul,
-  > ol {
-    @include mq($px800, max) {
-      margin-left: $space;
-    }
-  }
-  > p:empty,
-  > h2:empty,
-  > h3:empty {
-    display: none;
-  }
+  max-width: rem(750);
+  padding-bottom: $pad-double;
   > figure:first-child {
     margin-top: 0;
-    @include mq($px600) {
+    @include media('>medium') {
       margin-top: $space-half;
-    }
-  }
-  > blockquote {
-    clear: both;
-    margin-top: $space-double;
-    margin-bottom: $space-double;
-    font-size: rem(22);
-    p {
-      line-height: 1.3;
-      font-size: rem(28);
-      font-weight: 600;
     }
   }
 }
@@ -109,7 +75,7 @@
 .alignright {
   float: none;
   padding-left: 0;
-  @include mq($px600) {
+  @include media('>medium') {
     float: right;
     max-width: rem(400);
     width: 50%;
@@ -121,11 +87,11 @@
   padding-right: 0;
   width: 100%;
   clear: left;
-  @include mq($px600) {
+  @include media('>medium') {
     float: left;
     max-width: rem(400);
     width: 50%;
-    margin-right: $pad-and-half;
+    margin-right: $space-and-half;
   }
 }
 .alignleft,
@@ -133,7 +99,7 @@
 .aligncenter {
   margin-top: $space-half;
   margin-bottom: $space-and-half;
-  @include mq($px600, max) {
+  @include media('<=medium') {
     margin-top: $space;
     width: auto;
   }
@@ -152,7 +118,7 @@
   .img-wrap {
     display: block;
   }
-  @media (max-width: $px600) {
+  @include media('<=medium') {
     margin-left: auto;
     margin-right: auto;
   }
@@ -161,18 +127,18 @@
   max-width: rem(250);
 }
 .size--medium {
-  @media (max-width: $px600) {
+  @include media('<=medium') {
     max-width: rem(400);
     margin-left: auto;
     margin-right: auto;
   }
-  @media (min-width: $px600) {
+  @include media('>medium') {
     width: 40%;
     max-width: rem(320);
   }
 }
 .size--large {
-  @media (min-width: $px600) {
+  @include media('>medium') {
     width: 100%;
   }
 }

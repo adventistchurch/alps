@@ -30,35 +30,18 @@
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body class="body theme--cool">
-<div>
-	<ol>
-		<li>This is a list item in an ordered list</li>
-		<li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
-		<li>
-			Lists can be nested inside of each other
-			<ol>
-				<li>This is a nested list item</li>
-				<li>This is another nested list item in an ordered list</li>
-			</ol>
-		</li>
-		<li>This is the last list item</li>
-	</ol>
-</div>
-
-<div class="longform">
-	<ol>
-		<li>This is a list item in an ordered list</li>
-		<li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
-		<li>
-			Lists can be nested inside of each other
-			<ol>
-				<li>This is a nested list item</li>
-				<li>This is another nested list item in an ordered list</li>
-			</ol>
-		</li>
-		<li>This is the last list item</li>
-	</ol>
-</div>
+<ol>
+  <li>This is a list item in an ordered list</li>
+  <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+  <li>
+    Lists can be nested inside of each other
+    <ol>
+      <li>This is a nested list item</li>
+      <li>This is another nested list item in an ordered list</li>
+    </ol>
+  </li>
+  <li>This is the last list item</li>
+</ol>
 
     <div class="theme-switcher pad">
       <h3 class="theme-switcher-heading">Select primary and secondary colors.</h3>
@@ -93,7 +76,7 @@
   // handle injection of items from Node
   var patternPartial = "atoms-ordered";
   var lineage = [];
-  var lineageR = [];
+  var lineageR = [{"lineagePattern":"organisms-page-content","lineagePath":"../../patterns/02-organisms-content-page-content/02-organisms-content-page-content.html"}];
   var patternState = "";
   var baseurl = "";
   var cssEnabled = false; //TODO

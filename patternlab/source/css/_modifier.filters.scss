@@ -23,3 +23,11 @@
 .filter--sepia {
   @include filter(sepia, 100%);
 }
+
+
+/**
+ * Blend Modes
+ */
+.blend-mode--multiply {
+  background-blend-mode: multiply;
+}

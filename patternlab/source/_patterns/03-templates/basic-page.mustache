@@ -1,0 +1,22 @@
+<div class="content cf has-aside" role="document">
+  {{> organisms-header }}
+  <main class="main bg--beige" role="main">
+    {{> organisms-page-header }}
+    <div class="layout-container">
+      <div class="flex-container cf bg--white">
+        <div class="shift-left--fluid column__primary">
+          {{> organisms-page-content }}
+        </div> <!-- /.shift-left--fluid -->
+        <div class="shift-right--fluid bg--beige">
+          {{# breakout_block }}
+            {{> molecules-media-block }}
+          {{/ breakout_block }}
+          <div class="column__secondary">
+            {{> organisms-aside }}
+          </div>
+        </div> <!-- /.shift-right--fluid -->
+      </div> <!-- /.flex-container -->
+    </div> <!-- /.layout-container -->
+  </main> <!-- /.main -->
+  {{> organisms-footer }}
+</div> <!-- /.content -->

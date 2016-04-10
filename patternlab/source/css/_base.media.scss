@@ -16,19 +16,12 @@ picture,
 picture img {
   display: block;
 }
-.figure {
+figure {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
-.figcaption {
-  position: absolute;
-  width: 100%;
-  padding: rem(7) rem(7) rem(5);
-  bottom: 0;
-  color: $white;
-  left: 0;
-  background-color: rgba($black, .8);
-  z-index: 10;
+figcaption {
   a {
     display: block;
   }

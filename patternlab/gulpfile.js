@@ -167,7 +167,7 @@ gulp.task('connect', ['lab'], function () {
       path.resolve(paths().source.images + '/*'),
       path.resolve(paths().source.data + '*.json')
     ],
-    ['lab-pipe'],
+    ['lab-pipe', ['sass']],
     function () { browserSync.reload(); }
   );
 
@@ -195,7 +195,7 @@ gulp.task('lab-pipe', ['lab'], function (cb) {
 
 gulp.task('default', ['lab']);
 
-gulp.task('assets', ['cp:js', 'cp:img', 'cp:data', 'sass', 'cp:css', 'cp:styleguide' ]);
+gulp.task('assets', ['cp:js', 'cp:img', 'cp:data', 'cp:css', 'sass']);
 gulp.task('prelab', ['clean', 'assets']);
 gulp.task('lab', ['prelab', 'patternlab'], function (cb) { cb(); });
 gulp.task('patterns', ['patternlab:only_patterns']);

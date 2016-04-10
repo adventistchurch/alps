@@ -15,7 +15,7 @@
   width: rem(40);
   max-height: rem(40);
   max-width: rem(40);
-  z-index: 20;
+  z-index: 1010;
   overflow: hidden;
   border-radius: 50%;
   border: rem(2) solid $gray-dark;
@@ -122,7 +122,7 @@ $slice-height: 3.5;
   display: block;
   white-space: nowrap;
   @include media('<=medium') {
-    padding: rem(7);
+    padding: rem(10);
     border-top: $border-style;
   }
 }

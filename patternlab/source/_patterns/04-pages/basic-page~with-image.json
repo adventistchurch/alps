@@ -1,0 +1,14 @@
+{
+  "head": {
+    "title": "Home - The Official Site of the Seventh-day Adventist world church"
+  },
+
+  "page_header": {
+    "has_image": true,
+    "kicker": "Maecenas",
+    "page_header_class": "header-swath--with-image blend-mode--multiply",
+    "img_url_s": "https://placeimg.com/600/300/nature",
+    "img_url_m": "https://placeimg.com/900/400/nature",
+    "img_url_l": "https://placeimg.com/1400/500/nature"
+  }
+}

@@ -107,9 +107,48 @@
     "intro": "Fusce interdum purus est, <a href=\"\">vel semper ex tristique</a> ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet."
   },
 
+  "pullquote": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+  "pullquote_author": "Alvin Brodus",
+
+  "caption": "Proin dictum lobortis luctus.",
+
+  "byline": "Michael Smith",
+
+  "fig_medium": {
+      "figure_class": "alignleft size--medium",
+      "img": {
+        "src": "http://placehold.it/400x400",
+        "alt": "Image Alt"
+      },
+      "caption": "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+  },
+  "fig_right": {
+      "figure_class": "alignright size--medium",
+      "img": {
+        "src": "http://placehold.it/400x300",
+        "alt": "Image Alt"
+      },
+      "caption": "Wllamco laboris nisi ut aliquip ex."
+  },
+  "fig_center": {
+      "figure_class": "fitcenter",
+      "img": {
+        "src": "http://placehold.it/800x400",
+        "alt": "Image Alt"
+      },
+      "caption": "Duis aute irure dolor in reprehenderit in voluptate velit esse."
+  },
+  "fig_large": {
+      "figure_class": "size--large",
+      "img": {
+        "src": "http://placehold.it/800x500",
+        "alt": "Image Alt"
+      },
+      "caption": "Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+  },
+
   "media_block_default": {
-    "title": "Proin venenatis maximus dui",
-    "block_img_class": "rounded",
+    "title": "Proin venenatis maximus",
     "img": {
       "src": "http://placehold.it/500x400",
       "alt": "Media Block Image Alt"
@@ -185,7 +224,7 @@
       "media_block_default": {
         "block_class": "block__row",
         "kicker": "Aenean arcu",
-       "title": "Pellentesque semper",
+        "title": "Pellentesque semper",
         "img": {
           "src": "http://placehold.it/300x300",
           "alt": "Media Block Image Alt Left Round"
@@ -198,16 +237,27 @@
     }
   ],
 
+  "breakout_block": {
+    "media_block_default": {
+      "block_class": "bg--tan block--breakout pad--secondary--for-breakouts",
+      "heading_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 77.22 99.29\"><title>List Icon</title><path d=\"M34.68,54.8H65.57V44.87H34.68V54.8ZM77.58,0.36H22.42a11.06,11.06,0,0,0-11,11V88.61a11.06,11.06,0,0,0,11,11H77.58a11.06,11.06,0,0,0,11-11V11.39A11.06,11.06,0,0,0,77.58.36Zm0,88.26H22.42V11.39H77.58V88.61ZM65.44,23.35H34.56V33H65.44V23.35Zm0,43.3H34.56v9.65H65.44V66.66Z\" transform=\"translate(-11.39 -0.36)\" fill=\"#010101\" class=\"theme--primary-fill-color\"/></svg>",
+      "block_heading": "Nulla facilisi",
+      "img": false,
+      "description": "Fusce porta sed odio eu dignissim. Vivamus imperdiet libero mattis orci aliquam imperdiet. Vivamus sit amet tortor nec magna tincidunt faucibus sit amet ac sem. Maecenas mattis nibh at urna feugiat posuere. Pellentesque blandit condimentum eros, fermentum ornare diam facilisis eget.",
+      "cta": "Vestibulum non lectus"
+    }
+  },
+
   "aside_content": [
     {
       "aside_heading": "News",
       "aside_blocks": [
         { },
-        { },
-        { },
         { }
       ]
     }
-  ]
+  ],
+
+  "page_header": true
 
 }

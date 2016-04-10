@@ -47,8 +47,11 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  z-index: 1000;
   .is-active & {
     padding-bottom: rem(14);
+    background-color: $white;
+    box-shadow: 0 0 rem(3) rgba($black, .5);
   }
   @include media('>medium') {
     display: flex;
@@ -78,6 +81,17 @@
   }
   @include media('>xlarge') {
     margin-bottom: $space-and-half;
+  }
+}
+.header__utility__inner {
+  @include media('>medium') {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  @include media('>large') {
+    justify-content: flex-end;
   }
 }
 .logo {

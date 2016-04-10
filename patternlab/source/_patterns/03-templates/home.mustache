@@ -8,8 +8,13 @@
         <div class="shift-left--fluid column__primary">
           {{> organisms-body-content }}
         </div> <!-- /.shift-left--fluid -->
-        <div class="shift-right--fluid column__secondary bg--beige">
-          {{> organisms-aside }}
+        <div class="shift-right--fluid bg--beige">
+          {{# breakout_block }}
+            {{> molecules-media-block }}
+          {{/ breakout_block }}
+          <div class="column__secondary">
+            {{> organisms-aside }}
+          </div>
         </div> <!-- /.shift-right--fluid -->
       </div> <!-- /.flex-container -->
     </div> <!-- /.layout-container -->

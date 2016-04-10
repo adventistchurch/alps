@@ -4,16 +4,16 @@
     <span class="icon icon__logo">{{> atoms-icon-logo(fill_class: 'fill--white') }}</span>
     <p class="font--secondary--xs gray--med">This is an official website of the Seventh-day Adventist Church. <a class="link--white" href="">Learn More about Adventists</a>.</p>
   </div> <!-- /.header__top-hat -->
-  <div class="layout-container">
-    <div class="header__inner">
-      <div class="header__unify-logo-nav">
-        <a href="/" class="logo__link theme--primary-background-color">{{> atoms-logo }}</a>
-        {{> molecules-primary-navigation }}
-      </div> <!-- /.header__unify-logo-nav -->
-      <div class="header__utility">
+  <div class="header__inner">
+    <div class="header__unify-logo-nav">
+      <a href="/" class="logo__link theme--primary-background-color">{{> atoms-logo }}</a>
+      {{> molecules-primary-navigation }}
+    </div> <!-- /.header__unify-logo-nav -->
+    <div class="header__utility">
+      <div class="layout-container header__utility__inner full--until-large">
         {{> molecules-secondary-navigation }}
         {{> molecules-search }}
-      </div> <!-- /.header__utility -->
-    </div> <!-- /.header__inner -->
-  </div> <!-- /.layout-container -->
+      </div>
+    </div> <!-- /.header__utility -->
+  </div> <!-- /.header__inner -->
 </header> <!-- .header -->

@@ -48,6 +48,9 @@
 .citation {
   display: block;
   font-style: normal;
+  text-transform: uppercase;
+  font-family: $font-tertiary;
+  float: right;
 }
 
 /**
@@ -156,7 +159,7 @@
 // Small Type - primary
 @mixin font--primary--s() {
   font-family: $font;
-  font-size: rem(13);
+  font-size: rem(14);
   line-height: rem(17);
   @include media('>large') {
     font-size: rem(15);
@@ -249,16 +252,14 @@
 @mixin font--tertiary--xl() {
   font-family: $font-tertiary;
   font-size: rem(28);
-  line-height: 1;
+  line-height: .9;
   font-weight: normal;
   text-transform: uppercase;
   @include media('>medium') {
     font-size: rem(44);
-    line-height: rem(48);
   }
   @include media('>large') {
     font-size: rem(55);
-    line-height: rem(58);
   }
 }
 .font--tertiary--xl {
@@ -333,24 +334,36 @@
  */
 .text {
   font-family: $font;
-  > p a,
-  > ul a,
-  > ol a,
-  > dl a {
-    color: $blue;
-    &:hover {
-      color: $orange;
-    }
+  > p,
+  > ul li,
+  > ol li,
+  > dl dd,
+  > dl dt,
+  > blockquote p {
+    font-size: rem(16);
+    line-height: 1.6;
   }
-  > h1 {
-    font-size: rem(36);
-    margin-bottom: $space-and-half;
-  }
-  > h3,
+  > h1,
+  > h2,
   > h3,
   > h4,
   > h5 {
-    margin-bottom: $space;
+    padding-top: $pad;
+    font-family: $font-secondary;
+    font-weight: 600;
+    color: $brown;
+  }
+  > h1,
+  > h2 {
+    font-size: rem(26);
+  }
+  > h3 {
+    font-size: rem(22);
+  }
+  > p:empty,
+  > h2:empty,
+  > h3:empty {
+    display: none;
   }
   > ul {
     list-style: disc;
@@ -378,14 +391,31 @@
       margin-left: $space;
     }
   }
+  > ul,
+  > ol {
+    @include mq($px800, max) {
+      margin-left: $space;
+    }
+  }
+  > blockquote {
+    clear: both;
+    font-size: rem(22);
+    p {
+      line-height: 1.3;
+      font-size: rem(28);
+      font-weight: 600;
+    }
+  }
   .pullquote {
+    padding-top: $pad;
+    padding-bottom: $pad;
     p {
       font-size: rem(28);
       font-weight: 300;
       font-style: normal;
       font-family: $font;
       @include media('>large') {
-        font-size: rem(38);
+        font-size: rem(32);
       }
     }
   }

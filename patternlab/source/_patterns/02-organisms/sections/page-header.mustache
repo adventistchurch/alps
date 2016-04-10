@@ -1,0 +1,27 @@
+{{# page_header }}
+{{# has_image }}
+  <style type="text/css">
+    .header-swath--with-image {
+      background-image: url({{{ img_url_s }}});
+    }
+    @media (min-width: 900px) {
+      .header-swath--with-image {
+        background-image: url({{{ img_url_m }}});
+      }
+    }
+    @media (min-width: 1100px) {
+      .header-swath--with-image {
+        background-image: url({{{ img_url_l }}});
+      }
+    }
+  </style>
+{{/ has_image }}
+<header class="header__swath theme--primary-background-color {{ page_header_class }}">
+  <div class="layout-container">
+    <div class="pad--primary">
+      {{# kicker }}<span class="kicker white">{{{ kicker }}}</span>{{/ kicker }}
+      <h1 class="font--tertiary--xl white">Lorem Ipsum</h1>
+    </div>
+  </div>
+</header> <!-- /.header__swath -->
+{{/ page_header }}
