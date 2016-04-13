@@ -5,6 +5,7 @@
 .header {
   padding-bottom: rem(5);
   height: rem($small-header-height);
+  position: relative;
   @include media('>medium') {
     padding-top: 0;
     height: auto;
@@ -48,15 +49,16 @@
   margin-right: auto;
   position: relative;
   z-index: 1000;
-  .is-active & {
-    padding-bottom: rem(14);
-    background-color: $white;
-    box-shadow: 0 0 rem(3) rgba($black, .5);
+  @include media('<=medium') {
+    .is-active & {
+      padding-bottom: rem(14);
+      border-bottom: rem(5) solid rgba($black, .3);
+      background-color: $white;
+    }
   }
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: rem(14);
   }
   @include media('>large') {
     padding: $pad;
@@ -99,17 +101,21 @@
 }
 .logo__link {
   display: block;
-  width: rem(100);
-  margin-left: auto;
-  margin-right: auto;
-  padding: rem(6) rem(10) rem(10);
   margin-bottom: $space-half;
   position: relative;
   z-index: 10;
+}
+.logo__link--horiz {
+  width: rem(220);
+  height: rem(67);
+  padding: rem(7) rem(17) rem(10);
+  margin-left: rem(6);
   @include media('>medium') {
-    margin-bottom: $space;
-    width: rem(130);
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+.logo__link--square {
   @include media('>large') {
     position: absolute;
     left: 0;
@@ -153,8 +159,12 @@
   }
 }
 .search-form__input[type="search"] {
-  border: $border-style;
+  border: rem(2) solid $gray-med;
   border-radius: rem(25);
-  padding: rem(5) rem(12);
+  padding: rem(7) rem(12);
   width: 100%;
+  @include media('>medium', '<=large') {
+    padding: rem(4) rem(10);
+    font-size: rem(12);
+  }
 }

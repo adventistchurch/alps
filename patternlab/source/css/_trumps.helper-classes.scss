@@ -219,24 +219,24 @@
   display: inline-block;
 }
 .arrow--up {
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid $black;
+  border-left: rem(5) solid transparent;
+  border-right: rem(5) solid transparent;
+  border-bottom: rem(5) solid $black;
 }
 .arrow--down {
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid $black;
+  border-left: rem(5) solid transparent;
+  border-right: rem(5) solid transparent;
+  border-top: rem(5) solid $black;
 }
 .arrow--right {
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid $black;
+  border-top: rem(5) solid transparent;
+  border-bottom: rem(5) solid transparent;
+  border-left: rem(5) solid $black;
 }
 .arrow--left {
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-right: 8px solid $black;
+  border-top: rem(5) solid transparent;
+  border-bottom: rem(5) solid transparent;
+  border-right: rem(5) solid $black;
 }
 .arrow--small {
   border-width: 5px;

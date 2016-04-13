@@ -224,7 +224,6 @@
   font-family: $font-secondary;
   font-size: rem(13);
   line-height: rem(20);
-  font-weight: normal;
   @include media('>large') {
     font-size: rem(15);
   }

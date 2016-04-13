@@ -66,7 +66,6 @@
 \*------------------------------------*/
 @import "bourbon";
 @import "settings.variables";
-@import "settings.themes";
 
 
 /*------------------------------------*\
@@ -76,6 +75,8 @@
 @import "tools.include-media";
 $tests: true;
 @import "tools.mq-tests";
+
+@import "settings.themes";
 
 
 /*------------------------------------*\

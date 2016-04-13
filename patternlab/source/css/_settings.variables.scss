@@ -175,19 +175,10 @@ $breakpoints: (
 );
 
 /**
- * Icon Sizing
- */
-$icon-xsmall: rem(12);
-$icon-small: rem(24);
-$icon-medium: rem(40);
-$icon-large: rem(50);
-$icon-big: rem(65);
-
-/**
  * Element Specific Dimensions
  */
 $sidebar-width: 320;
-$small-header-height: 53;
+$small-header-height: 60;
 $wide-header-height: 82;
 $split-col1: (354/$defaultpx) + 0em; // Right padding for split layout with fixed sidebar
 $split-col2: (300/$defaultpx) + 0em; // Fixed width of right column

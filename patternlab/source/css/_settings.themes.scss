@@ -21,6 +21,11 @@
       background-color: rgba($primary-color, .8);
     }
 
+    // Border colors
+    .theme--primary-border-color {
+      border-color: $primary-color;
+    }
+
     // SVG fill colors
     .theme--primary-fill-color {
       fill: $primary-color;
@@ -50,6 +55,34 @@
     // SVG fill colors
     .theme--secondary-fill-color {
       fill: $secondary-color;
+    }
+
+    // Border colors
+    .theme--secondary-border-top-color {
+      border-top-color: $secondary-color;
+    }
+    .theme--secondary-border-bottom-color {
+      border-bottom-color: $secondary-color;
+    }
+
+    // Links
+    .theme--secondary-background-hover-color--at-medium {
+      color: $white;
+      background-color: $secondary-color;
+      @include media('>medium') {
+        color: $secondary-color;
+        background-color: $white;
+        &:hover {
+          color: $white;
+          background-color: $secondary-color;
+          path {
+            fill: $white;
+          }
+        }
+        path {
+          fill: $secondary-color;
+        }
+      }
     }
 
     // Bodies of text
