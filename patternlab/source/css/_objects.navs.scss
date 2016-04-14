@@ -250,3 +250,124 @@ $slice-height: 3;
   }
 }
 
+/**
+ * Article Navigation
+ */
+.article-nav__inner {
+  @include media('>medium') {
+    padding-left: $pad-and-half;
+  }
+  @include media('>large') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: rem(80);
+  }
+  @include media('>xlarge') {
+    padding-left: rem(100);
+  }
+}
+.article-nav__list {
+  @include media('>large') {
+    margin-left: rem(-12);
+  }
+}
+.article-nav__list-item {
+  @include media('>large') {
+    display: inline-block;
+  }
+}
+.article-nav__link {
+  display: block;
+  padding: rem(15);
+  font-family: $font;
+  @include media('>large') {
+    margin-right: $space;
+    font-size: rem(16);
+  }
+  &:hover {
+    background-color: rgba($black, .1);
+    color: $white;
+  }
+}
+.article-nav__search {
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  text-align: right;
+  .search-form {
+    width: rem(150);
+    float: right;
+    @include media('>xlarge') {
+      width: rem(200);
+    }
+  }
+  .search-form__input[type="search"] {
+    border: none;
+    border-radius: rem(25);
+    padding: rem(5) rem(34) rem(5) rem(12);
+    width: 100%;
+    color: $white;
+    box-shadow: inset 1px 1px 1px rgba($black, .1);
+    background: rgba($black, .08) url('../../images/icons/icon-search.svg') no-repeat center right 12px;
+    background-size: rem(12);
+    @include placeHolder($white);
+  }
+}
+
+/**
+ * Dropdown Menus
+ */
+.dropdown {
+  @include media('<=large') {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    &.is-active {
+      .dropdown__arrow {
+        transform: rotate(180deg);
+      }
+      .dropdown__options {
+        margin-bottom: rem(10);
+      }
+      .dropdown__options {
+        display: block;
+      }
+    }
+  }
+}
+.dropdown__label {
+  display: none;
+  @include media('<=large') {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    min-width: rem(150);
+    padding: $pad-half;
+  }
+}
+span.dropdown__arrow {
+  @include media('<=large') {
+    transform: rotate(0deg);
+    margin-left: rem(5);
+    transition: all .15s ease-out;
+    border-top-color: $white;
+  }
+}
+.dropdown__options {
+  @include media('<=large') {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: rem(35);
+    z-index: 100;
+    min-width: rem(200);
+  }
+}
+.dropdown__item-link {
+  @include media('<=large') {
+    padding: $pad-half;
+    font-size: rem(14);
+  }
+}

@@ -19,6 +19,11 @@
 }
 
 // Specific Widths - visible greater than #
+.show-at--small {
+  @include media('<=small') {
+    display: none;
+  }
+}
 .show-at--medium {
   @include media('<=medium') {
     display: none;

@@ -1,0 +1,15 @@
+{{# article_nav }}
+<nav class="article-nav theme--secondary-background-color">
+  <div class="article-nav__inner layout-container">
+    <div class="dropdown">
+      <div class="dropdown__label font--secondary--s upper js-toggle-parent white">News Menu <span class="dropdown__arrow dib arrow--down border-top--white va--middle"></span></div>
+      <ul class="article-nav__list dropdown__options theme--secondary-background-color">
+        {{# items }}
+          <li class="article-nav__list-item dropdown__item"><a class="article-nav__link dropdown__item-link white" href="{{ url }}">{{{ text }}}</a></li>
+        {{/ items }}
+      </ul> <!-- /.article-nav__list -->
+    </div>
+    <div class="article-nav__search cf">{{> molecules-search }}</div>
+  </div>
+</nav> <!-- /.article-nav -->
+{{/ article_nav }}

@@ -20,6 +20,9 @@
     .theme--primary-transparent-background-color {
       background-color: rgba($primary-color, .8);
     }
+    .theme--primary-transparent-background-color--30 {
+      background-color: rgba($primary-color, .3);
+    }
 
     // Border colors
     .theme--primary-border-color {

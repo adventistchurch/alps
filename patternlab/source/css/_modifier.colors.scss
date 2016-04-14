@@ -28,6 +28,9 @@
 .white {
   color: $white;
 }
+.white--trans {
+  color: rgba($white, .7);
+}
 .blue {
   color: $blue;
 }

@@ -2,17 +2,15 @@
   {{&gt; organisms-header }}
   &lt;main class=&quot;main bg--beige&quot; role=&quot;main&quot;&gt;
     {{&gt; organisms-page-header }}
+    {{&gt; molecules-article-navigation }}
     &lt;div class=&quot;layout-container&quot;&gt;
-      &lt;div class=&quot;flex-container cf bg--white&quot;&gt;
-        &lt;div class=&quot;shift-left--fluid column__primary&quot;&gt;
+      &lt;div class=&quot;flex-container cf&quot;&gt;
+        &lt;div class=&quot;shift-left--fluid column__primary bg--white&quot;&gt;
           {{&gt; organisms-page-content }}
         &lt;/div&gt; &lt;!-- /.shift-left--fluid --&gt;
         &lt;div class=&quot;shift-right--fluid bg--beige&quot;&gt;
-          {{# breakout_block }}
-            {{&gt; molecules-media-block }}
-          {{/ breakout_block }}
           &lt;div class=&quot;column__secondary&quot;&gt;
-            {{&gt; organisms-aside }}
+            {{&gt; molecules-aside-navigation }}
           &lt;/div&gt;
         &lt;/div&gt; &lt;!-- /.shift-right--fluid --&gt;
       &lt;/div&gt; &lt;!-- /.flex-container --&gt;

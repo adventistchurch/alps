@@ -56,8 +56,7 @@ hr {
   height: 1px;
   border: none;
   background-color: $gray-light;
-  margin-top: $space-double;
-  margin-bottom: $space-double;
+  margin: 0;
   @include center-block;
 }
 
