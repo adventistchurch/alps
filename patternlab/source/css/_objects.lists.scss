@@ -9,21 +9,14 @@
 /**
  * Bullet List
  */
-.bullet-list__item {
-  position: relative;
-  overflow: visible;
-  padding-left: rem(16);
-  &:last-child {
-    margin-bottom: 0;
-  }
-  &:before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    top: rem(-6);
-    z-index: 0;
-    font-size: rem(24);
-    color: $gray;
+.bullet-list {
+  list-style-type: disc;
+  padding-left: rem(14);
+  li {
+    overflow: visible;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

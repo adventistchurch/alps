@@ -17,6 +17,7 @@ input[type="submit"] {
   overflow: hidden;
   font-family: $font-secondary;
   text-transform: uppercase;
+  border: none;
   &:hover,
   &:focus {
     background-color: darken($orange, 10);

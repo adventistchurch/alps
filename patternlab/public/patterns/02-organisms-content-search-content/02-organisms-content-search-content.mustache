@@ -1,0 +1,35 @@
+&lt;div class=&quot;search__results spacing--one-and-half&quot;&gt;
+  &lt;div class=&quot;search__options pad--primary no-pad--btm spacing--half&quot;&gt;
+    &lt;form action=&quot;&quot; role=&quot;search&quot; method=&quot;get&quot; class=&quot;search__results__form &quot;&gt;
+      &lt;fieldset&gt;
+        &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;/legend&gt;
+        &lt;div class=&quot;field-container field-container--inline&quot;&gt;
+          &lt;input type=&quot;search&quot; name=&quot;s&quot; class=&quot;search__results__input font--secondary--s&quot; value=&quot;Keyword&quot; /&gt;
+          &lt;button class=&quot;search__submit font--secondary--s upper theme--secondary-background-color&quot;&gt;Search&lt;/button&gt; &lt;!-- /.search-form__submit --&gt;
+        &lt;/div&gt; &lt;!-- /.field-container --&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt; &lt;!-- /.search-form --&gt;
+    &lt;div class=&quot;search__filters spacing--half&quot;&gt;
+      &lt;h3 class=&quot;font--secondary--m upper&quot;&gt;Narrow Search&lt;/h3&gt;
+      &lt;ul class=&quot;bullet-list spacing--quarter&quot;&gt;
+        &lt;li class=&quot;font--primary--s&quot;&gt;&lt;a href=&quot;&quot;&gt;News&lt;/a&gt; (1326)&lt;/li&gt;
+        &lt;li class=&quot;font--primary--s&quot;&gt;&lt;a href=&quot;&quot;&gt;Articles&lt;/a&gt; (18)&lt;/li&gt;
+        &lt;li class=&quot;font--primary--s&quot;&gt;&lt;a href=&quot;&quot;&gt;Pages&lt;/a&gt; (16)&lt;/li&gt;
+        &lt;li class=&quot;font--primary--s&quot;&gt;&lt;a href=&quot;&quot;&gt;Video Episodes&lt;/a&gt; (4)&lt;/li&gt;
+        &lt;li class=&quot;font--primary--s&quot;&gt;&lt;a href=&quot;&quot;&gt;Photos&lt;/a&gt; (122)&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt; &lt;!-- /.search__filters --&gt;
+  &lt;/div&gt;
+  &lt;hr&gt;
+  &lt;div class=&quot;spacing--one-and-half&quot;&gt;
+    {{# search_results }}
+      &lt;div class=&quot;pad--primary no-pad--top no-pad--btm spacing--half text&quot;&gt;
+        &lt;h3 class=&quot;brown font--tertiary--l&quot;&gt;{{{ text.heading }}}&lt;/h3&gt;
+        &lt;p&gt;{{{ text.description }}}&lt;/p&gt;
+        {{# text.cta }}&lt;a href=&quot;{{ url }}&quot; class=&quot;btn font--secondary--s upper theme--secondary-background-color&quot;&gt;&lt;strong&gt;{{{ text.cta }}}&lt;/strong&gt;&lt;/a&gt; {{/ text.cta }}
+      &lt;/div&gt;
+      &lt;hr&gt;
+    {{/ search_results }}
+  &lt;/div&gt;
+&lt;/div&gt; &lt;!-- /.search__results --&gt;
+

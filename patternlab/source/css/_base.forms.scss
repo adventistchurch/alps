@@ -26,9 +26,9 @@ button, input, select, textarea {
   font-size: 100%;
 }
 
-input[type=text], input[type=email], input[type=search], input[type=url], input[type=number], textarea {
+input[type=text], input[type=password], input[type=email], input[type=search], input[type=url], input[type=number], textarea {
   width: 100%;
-  border: none;
+  border: $border-style;
   padding: rem(15);
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
@@ -55,6 +55,27 @@ input[type="search"]::-webkit-search-decoration {
  */
 .field-container {
   margin-bottom: $space;
+}
+.field-container--inline {
+  @include media('>small') {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  > input {
+    width: 100%;
+    @include media('>small') {
+      width: calc(80% - 20px);
+    }
+  }
+  > button {
+    width: 100%;
+    @include media('>small') {
+      width: 20%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 /**
