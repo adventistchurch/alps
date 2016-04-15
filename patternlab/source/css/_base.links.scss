@@ -16,6 +16,9 @@ a {
   p {
     color: $gray-dark;
   }
+  > .icon {
+    margin-right: 4px;
+  }
 }
 .hover {
   text-decoration: underline;

@@ -64,13 +64,13 @@
     $LAYOUTS
 \*------------------------------------*/
 
-.column__primary,
-.column__secondary {
-  padding-bottom: $pad;
-  @include media('>large') {
-    padding-bottom: $pad-double;
-  }
-}
+// .column__primary,
+// .column__secondary {
+//   padding-bottom: $pad;
+//   @include media('>large') {
+//     padding-bottom: $pad-double;
+//   }
+// }
 .pad--primary {
   padding: $pad;
   @include media('>large') {

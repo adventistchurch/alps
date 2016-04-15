@@ -17,4 +17,20 @@
     </div>
   </div>
   {{/ has_slide_text }}
+
+  {{# is_carousel_block }}
+    <div class="carousel-block__content block__content spacing--quarter pad {{ block_content_class }}">
+      {{# title }}<h3 class="carousel-block__title block__title {{ block_title_class }}"><a href="{{ url }}" class="block__title-link theme--primary-text-color">{{{ title }}}</a></h3>{{/ title }}
+      {{# date }}
+        <time class="block__date font--secondary--xs brown space-half--btm" datetime="{{ datetime }}">{{{ date }}}</time>
+      {{/ date }}
+      {{# description }}
+        <div class="text pad-half--btm"><p class="carousel-block__description block__description"><span class="font--primary--xs">{{ description }}</span></p></div>
+      {{/ description }}
+      {{# cta }}
+        <p><a class="carousel-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ cta }}</a></p>
+      {{/ cta }}
+    </div> <!-- carousel-block__content -->
+  {{/ is_carousel_block }}
+
 </div> <!-- /.carousel__item -->

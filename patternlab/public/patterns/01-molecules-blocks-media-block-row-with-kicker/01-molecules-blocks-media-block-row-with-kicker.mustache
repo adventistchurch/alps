@@ -7,8 +7,11 @@
       &lt;div class=&quot;{{ block_img_class }} dib&quot;&gt;&lt;img class=&quot;media-block__image block__image&quot; src=&quot;{{ img.src }}&quot; alt=&quot;{{ img.alt }}&quot; /&gt;&lt;/div&gt;
     &lt;/a&gt; &lt;!-- /.media-block__image-wrap --&gt;
   {{/ img }}
-  &lt;div class=&quot;media-block__content block__content spacing--quarter&quot;&gt;
-    {{# title }}&lt;h3 class=&quot;media-block__title block__title font--secondary--m&quot;&gt;&lt;a href=&quot;{{ url }}&quot; class=&quot;block__title-link theme--primary-text-color&quot;&gt;{{{ title }}}&lt;/a&gt;&lt;/h3&gt;{{/ title }}
+  {{# video }}
+    &lt;div class=&quot;fitvid media-block__video&quot;&gt;{{&gt; atoms-video }}&lt;/div&gt;
+  {{/ video }}
+  &lt;div class=&quot;media-block__content block__content spacing--quarter {{ block_content_class }}&quot;&gt;
+    {{# title }}&lt;h3 class=&quot;media-block__title block__title {{ block_title_class }}&quot;&gt;&lt;a href=&quot;{{ url }}&quot; class=&quot;block__title-link theme--primary-text-color&quot;&gt;{{{ title }}}&lt;/a&gt;&lt;/h3&gt;{{/ title }}
     {{# date }}
       &lt;time class=&quot;block__date font--secondary--xs brown space-half--btm&quot; datetime=&quot;{{ datetime }}&quot;&gt;{{{ date }}}&lt;/time&gt;
     {{/ date }}

@@ -263,9 +263,6 @@ $slice-height: 3;
     align-items: center;
     padding-left: rem(80);
   }
-  @include media('>xlarge') {
-    padding-left: rem(100);
-  }
 }
 .article-nav__list {
   @include media('>large') {

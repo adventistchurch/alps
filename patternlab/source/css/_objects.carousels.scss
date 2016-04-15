@@ -18,6 +18,18 @@
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
+  z-index: 100;
+  &:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: $white;
+    z-index: -50;
+  }
 }
 .carousel__arrow--prev {
   left: $space-half;
@@ -60,7 +72,7 @@
   line-height: 1.5;
   padding: rem(8) $pad-half;
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: -.5px;
 }
 .carousel__item-dek {
   padding-top: rem(5);
@@ -103,4 +115,7 @@
   button {
     display: none;
   }
+}
+.no-dots .slick-dots {
+  display: none !important;
 }

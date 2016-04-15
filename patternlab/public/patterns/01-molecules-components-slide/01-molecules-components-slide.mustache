@@ -17,4 +17,20 @@
     &lt;/div&gt;
   &lt;/div&gt;
   {{/ has_slide_text }}
+
+  {{# is_carousel_block }}
+    &lt;div class=&quot;carousel-block__content block__content spacing--quarter pad {{ block_content_class }}&quot;&gt;
+      {{# title }}&lt;h3 class=&quot;carousel-block__title block__title {{ block_title_class }}&quot;&gt;&lt;a href=&quot;{{ url }}&quot; class=&quot;block__title-link theme--primary-text-color&quot;&gt;{{{ title }}}&lt;/a&gt;&lt;/h3&gt;{{/ title }}
+      {{# date }}
+        &lt;time class=&quot;block__date font--secondary--xs brown space-half--btm&quot; datetime=&quot;{{ datetime }}&quot;&gt;{{{ date }}}&lt;/time&gt;
+      {{/ date }}
+      {{# description }}
+        &lt;div class=&quot;text pad-half--btm&quot;&gt;&lt;p class=&quot;carousel-block__description block__description&quot;&gt;&lt;span class=&quot;font--primary--xs&quot;&gt;{{ description }}&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+      {{/ description }}
+      {{# cta }}
+        &lt;p&gt;&lt;a class=&quot;carousel-block__cta block__cta btn theme--secondary-background-color&quot; href=&quot;{{ url }}&quot;&gt;{{ cta }}&lt;/a&gt;&lt;/p&gt;
+      {{/ cta }}
+    &lt;/div&gt; &lt;!-- carousel-block__content --&gt;
+  {{/ is_carousel_block }}
+
 &lt;/div&gt; &lt;!-- /.carousel__item --&gt;

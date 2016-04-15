@@ -7,8 +7,11 @@
       <div class="{{ block_img_class }} dib"><img class="media-block__image block__image" src="{{ img.src }}" alt="{{ img.alt }}" /></div>
     </a> <!-- /.media-block__image-wrap -->
   {{/ img }}
-  <div class="media-block__content block__content spacing--quarter">
-    {{# title }}<h3 class="media-block__title block__title font--secondary--m"><a href="{{ url }}" class="block__title-link theme--primary-text-color">{{{ title }}}</a></h3>{{/ title }}
+  {{# video }}
+    <div class="fitvid media-block__video">{{> atoms-video }}</div>
+  {{/ video }}
+  <div class="media-block__content block__content spacing--quarter {{ block_content_class }}">
+    {{# title }}<h3 class="media-block__title block__title {{ block_title_class }}"><a href="{{ url }}" class="block__title-link theme--primary-text-color">{{{ title }}}</a></h3>{{/ title }}
     {{# date }}
       <time class="block__date font--secondary--xs brown space-half--btm" datetime="{{ datetime }}">{{{ date }}}</time>
     {{/ date }}
