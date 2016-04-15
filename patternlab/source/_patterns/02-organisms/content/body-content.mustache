@@ -7,14 +7,14 @@
 
   <hr>
   {{# row_blocks }}
-  <div class="pad--primary spacing--half">
+  <div class="pad--primary no-pad--btm no-pad--top spacing--half">
     {{> molecules-media-block }}
   </div>
   <hr>
   {{/ row_blocks }}
 
   {{# content_blocks }}
-  <div class="pad--primary spacing--half text">
+  <div class="pad--primary no-pad--btm no-pad--top spacing--half text">
     <h3 class="brown font--tertiary--l">{{{ text.heading }}}</h3>
     <p>{{{ text.description }}} {{# text.cta }} <a href="{{ url }}" class="font--secondary--s upper"><strong>{{{ text.cta }}}</strong></a> {{/ text.cta }}</p>
   </div>
