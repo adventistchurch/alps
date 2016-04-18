@@ -58,10 +58,20 @@
 
         <section role="main" class="main">
 
-<article class="entry entry-future">
+            <article class="entry entry-future">
             
                 <h1 class="entry-title">Handoff</h1>
                 <p class="entry-date">April 19, 2016<?php echo timeFromNow('2016-04-19'); ?></p>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry entry-latest">
+            
+                <h1 class="entry-title">Tech Approach Document</h1>
+                <p class="entry-date">April 18, 2016<?php echo timeFromNow('2016-04-18'); ?></p>
+                <ul>
+                    <li><a href="../presentations/sda-techApproach.pdf">Tech Approach Document</a> (<abbr title="Portable Document Format">PDF</abbr>, 59 <abbr title="Kilobyte">KB</abbr>)</li>
+                </ul>
                     
             </article><!-- .entry -->
 
@@ -72,7 +82,43 @@
                     
             </article><!-- .entry -->
 
-            <article class="entry entry-latest">
+            <article class="entry">
+            
+                <h1 class="entry-title">Blog Post</h1>
+                <p class="entry-date">April 15, 2016<?php echo timeFromNow('2016-04-15'); ?></p>
+                
+                <p><a href="https://www.adventist.io/2016/04/measuring-what-we-do/">Measuring What We Do</a>, by Brent Hardinge</p>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry">
+            
+                <h1 class="entry-title">Blog Post</h1>
+                <p class="entry-date">April 7, 2016<?php echo timeFromNow('2016-04-07'); ?></p>
+                
+                <p><a href="https://www.adventist.io/2016/04/adventist-living-pattern-system/">Adventist Living Pattern System</a>, by Brent Hardinge</p>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry">
+            
+                <h1 class="entry-title">Blog Post</h1>
+                <p class="entry-date">April 1, 2016<?php echo timeFromNow('2016-04-01'); ?></p>
+                
+                <p><a href="https://www.adventist.io/2016/04/who-we-are-building-for/">Who We Are Building For</a>, by Brent Hardinge</p>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry">
+            
+                <h1 class="entry-title">Blog Post</h1>
+                <p class="entry-date">March 28, 2016<?php echo timeFromNow('2016-03-28'); ?></p>
+                
+                <p><a href="https://www.adventist.io/2016/03/its-happening/">It&rsquo;s Happening</a>, by Brent Hardinge</p>
+                    
+            </article><!-- .entry -->
+
+            <article class="entry">
             
                 <h1 class="entry-title">Design Exploration</h1>
                 <p class="entry-date">March 21&ndash;April 8, 2016<?php echo timeFromNow('2016-04-08'); ?></p>
