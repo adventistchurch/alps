@@ -41,7 +41,6 @@
 /**
  * Carousel with Text
  */
-
 .carousel__item-text__wrap {
   padding: $pad;
   color: $white;
@@ -78,6 +77,13 @@
   padding-top: rem(5);
   @include media('<=medium') {
     display: none;
+  }
+}
+
+// Hero
+.hero-carousel {
+  .carousel__item {
+    max-height: rem(600);
   }
 }
 
