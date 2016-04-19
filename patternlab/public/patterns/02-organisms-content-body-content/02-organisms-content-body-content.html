@@ -31,10 +31,15 @@
   </head>
   <body class="body theme--cool">
 <div class="spacing--double">
-  <div class="pad--primary spacing text">
+  <div class="pad--primary spacing text no-pad--btm">
     <h2 class="font--tertiary--l theme--primary-text-color">Donec volutpat libero</h2>
     <p class="intro font--primary--m">Fusce interdum purus est, <a href="">vel semper ex tristique</a> ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet.</p>
-    <iframe src="https://player.vimeo.com/video/137487821?color=ffffff&title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <figure class="figure size--large">
+  <div class="img-wrap fitvid">
+<iframe src="https://player.vimeo.com/video/137487821?color=ffffff&title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div> <!-- /.img-wrap -->
+<figcaption class="figcaption"><p class="font--secondary--xs">Proin dictum lobortis luctus.</p></figcaption>
+</figure> <!-- /.figure -->
 
   </div>
 
@@ -147,7 +152,7 @@
 <script>
   // handle injection of items from Node
   var patternPartial = "organisms-body-content";
-  var lineage = [{"lineagePattern":"atoms-video","lineagePath":"../../patterns/00-atoms-media-video/00-atoms-media-video.html"},{"lineagePattern":"molecules-media-block","lineagePath":"../../patterns/01-molecules-blocks-media-block/01-molecules-blocks-media-block.html"}];
+  var lineage = [{"lineagePattern":"molecules-video-figure-with-caption","lineagePath":"../../patterns/01-molecules-media-video-figure-with-caption/01-molecules-media-video-figure-with-caption.html"},{"lineagePattern":"molecules-media-block","lineagePath":"../../patterns/01-molecules-blocks-media-block/01-molecules-blocks-media-block.html"}];
   var lineageR = [{"lineagePattern":"templates-channel-main","lineagePath":"../../patterns/03-templates-channel-main/03-templates-channel-main.html"},{"lineagePattern":"templates-home","lineagePath":"../../patterns/03-templates-home/03-templates-home.html"}];
   var patternState = "";
   var baseurl = "";

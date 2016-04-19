@@ -30,7 +30,14 @@
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body class="body theme--cool">
-<iframe src="https://player.vimeo.com/video/137487821?color=ffffff&title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<figure class="figure ">
+  <div class="img-wrap fitvid">
+    <iframe src="https://player.vimeo.com/video/137487821?color=ffffff&title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  </div> <!-- /.img-wrap -->
+  <figcaption class="figcaption"><p class="font--secondary--xs">Proin dictum lobortis luctus.</p></figcaption>
+
+</figure> <!-- /.figure -->
 
     <div class="theme-switcher pad">
       <h3 class="theme-switcher-heading">Select primary and secondary colors.</h3>
@@ -63,9 +70,9 @@
 <!-- DO NOT MODIFY -->
 <script>
   // handle injection of items from Node
-  var patternPartial = "atoms-video";
-  var lineage = [];
-  var lineageR = [{"lineagePattern":"molecules-media-block","lineagePath":"../../patterns/01-molecules-blocks-media-block/01-molecules-blocks-media-block.html"},{"lineagePattern":"molecules-media-block-breakout","lineagePath":"../../patterns/01-molecules-blocks-media-block-breakout/01-molecules-blocks-media-block-breakout.html"},{"lineagePattern":"molecules-media-block-row-with-kicker","lineagePath":"../../patterns/01-molecules-blocks-media-block-row-with-kicker/01-molecules-blocks-media-block-row-with-kicker.html"},{"lineagePattern":"molecules-media-block-row","lineagePath":"../../patterns/01-molecules-blocks-media-block-row/01-molecules-blocks-media-block-row.html"},{"lineagePattern":"molecules-video-figure-with-caption","lineagePath":"../../patterns/01-molecules-media-video-figure-with-caption/01-molecules-media-video-figure-with-caption.html"}];
+  var patternPartial = "molecules-video-figure-with-caption";
+  var lineage = [{"lineagePattern":"atoms-video","lineagePath":"../../patterns/00-atoms-media-video/00-atoms-media-video.html"},{"lineagePattern":"molecules-figcaption","lineagePath":"../../patterns/01-molecules-media-01-figcaption/01-molecules-media-01-figcaption.html"}];
+  var lineageR = [{"lineagePattern":"organisms-body-content","lineagePath":"../../patterns/02-organisms-content-body-content/02-organisms-content-body-content.html"},{"lineagePattern":"organisms-page-content","lineagePath":"../../patterns/02-organisms-content-page-content/02-organisms-content-page-content.html"}];
   var patternState = "";
   var baseurl = "";
   var cssEnabled = false; //TODO
