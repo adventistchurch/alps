@@ -38,7 +38,7 @@
 }
 
 /**
- * Grid 2up at medium width
+ * Grid 2up at medium width.
  */
 .g-2up--at-medium {
   @include media('>medium') {
@@ -67,6 +67,32 @@
           height: 100%;
           z-index: 10;
         }
+      }
+    }
+  }
+}
+
+/**
+ * Grid 2up at medium width with 70/30 split.
+ */
+.g-2up--70-30--at-medium {
+  @include media('>medium') {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    > .gi {
+      float: left;
+      align-items: stretch;
+      display: flex;
+      * { // Slick slider hack for when a carousel is contained within a flexed element.
+        min-height: 0;
+        min-width: 0;
+      }
+      &:first-child {
+        width: 70%;
+      }
+      &:last-child {
+        width: 30%;
       }
     }
   }

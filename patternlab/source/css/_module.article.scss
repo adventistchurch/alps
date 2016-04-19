@@ -97,10 +97,7 @@
 .alignleft,
 .alignright,
 .aligncenter {
-  margin-top: $space-half;
-  margin-bottom: $space-and-half;
   @include media('<=medium') {
-    margin-top: $space;
     width: auto;
   }
   &:first-child {
@@ -113,8 +110,6 @@
 .size--small,
 .size--medium,
 .size--large {
-  margin-top: $space-half;
-  margin-bottom: $space-and-half;
   .img-wrap {
     display: block;
   }
@@ -144,5 +139,4 @@
 }
 .size-full {
   display: block;
-  margin-bottom: rem(-6);
 }
