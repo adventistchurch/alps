@@ -122,6 +122,7 @@
     top: 0;
     width: rem(150);
     padding: rem(18);
+    box-shadow: 3px 3px 0 0 rgba($black, .25);
   }
   @include media('>xlarge') {
     width: rem(170);
