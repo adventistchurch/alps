@@ -2,6 +2,9 @@
     $FORMS
 \*------------------------------------*/
 
+form {
+  font-family: $font-secondary;
+}
 form ol, form ul {
   list-style: none;
   margin-left: 0;
@@ -24,6 +27,7 @@ label {}
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
+  font-family: $font-secondary;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=search], input[type=url], input[type=number], textarea {
@@ -82,8 +86,8 @@ input[type="search"]::-webkit-search-decoration {
  * Validation
  */
 .has-error {
-  border-color: $error;
+  border-color: $error !important;
 }
 .is-valid {
-  border-color: $valid;
+  border-color: $valid !important;
 }

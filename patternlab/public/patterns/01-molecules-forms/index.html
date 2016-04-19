@@ -39,29 +39,117 @@
           <div class="sg-pattern">
             <h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-forms-sample-form&#x2F;01-molecules-forms-sample-form.html" class="patternLink" data-patternpartial="">Sample Form</a></h2>
             <div class="sg-pattern-body">
-              <form action="" id="search" role="search" method="get" class="search-form toggled-element">
-  <fieldset>
-    <legend class="is-vishidden">Search</legend>
-    <input type="search" name="s" placeholder="Search&hellip;" class="search-form__input font--secondary--s" required />
-    <button class="search-form__submit is-vishidden">
-      <span class="is-vishidden">Submit</span>
-    </button> <!-- /.search-form__submit -->
-  </fieldset>
-</form> <!-- /.search-form -->
+              
+<div class="layout-container layout-container--s pad-double">
+<form class="spacing" action="index.html" method="post">
+    <div class="spacing--quarter">
+        <h2 class="font--secondary--l theme--primary-text-color">Form header</h2>
+        <hr />
+    </div>
+    <p class="spacing--quarter">
+      <label class="font--secondary--s" for="">Name</label>
+      <input type="text" name="name" value="">
+    </p>
+    <p class="spacing--quarter">
+      <label class="font--secondary--s" for="">Form <span class="type-alpha--s text-color--gray">(Optional)</span></label>
+      <input type="text" name="name" value="">
+    </p>
+    <p class="spacing--quarter">
+        <label class="font--secondary--s red" for="">Error Label</label>
+        <input class="has-error" type="text" name="name" value=""> <br>
+        <small class="font--secondary--s red">This field is required</small>
+    </p>
+    <p class="spacing--quarter">
+        <label class="font--secondary--s" for="">Your Comments</label>
+        <textarea name="name" rows="8" cols="40">Enter a comment.</textarea>
+    </p>
+    <div class="form__checkbox spacing--quarter">
+    <p class="font--secondary--s">Select many options</p>
+
+    <p class="inline-form-element--row"><input type="checkbox" name="option" value="one"> <label class="font--secondary--s" for="">Option 1</label></p>
+    <p class="inline-form-element--row"><input type="checkbox" name="option" value="two"> <label class="font--secondary--s" for="">Option 2</label></p>
+    <p class="inline-form-element--row"><input type="checkbox" name="option" value="three"> <label class="font--secondary--s" for="">Option 3</label></p>
+  </div>
+
+  <div class="form__radio spacing--quarter">
+    <p class="font--secondary--s">Select one option</p>
+
+    <p class="inline-form-element--row"><input type="radio" name="option" value="one" checked> <label class="font--secondary--s" for="">Option 1</label></p>
+    <p class="inline-form-element--row"><input type="radio" name="option" value="two"> <label class="font--secondary--s" for="">Option 2</label></p>
+    <p class="inline-form-element--row"><input type="radio" name="option" value="three"> <label class="font--secondary--s" for="">Option 3</label></p>
+  </div>
+
+  <div class="form__select spacing--half">
+    <label class=" font--secondary--s" for="">Select from this list</label>
+    <select>
+        <option value="one">Option 1</option>
+        <option value="two">Option 2</option>
+        <option value="three">Option 3</option>
+        <option value="four">Option 4</option>
+    </select>
+  </div>
+
+    <input type="submit" value="Submit form" />
+    <input class="btn bg--gray" type="reset" value="Cancel" />
+</form>
 
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
-                    &lt;form action&#x3D;&quot;&quot; id&#x3D;&quot;search&quot; role&#x3D;&quot;search&quot; method&#x3D;&quot;get&quot; class&#x3D;&quot;search-form toggled-element&quot;&gt;
-  &lt;fieldset&gt;
-    &lt;legend class&#x3D;&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;legend&gt;
-    &lt;input type&#x3D;&quot;search&quot; name&#x3D;&quot;s&quot; placeholder&#x3D;&quot;Search&amp;hellip;&quot; class&#x3D;&quot;search-form__input font--secondary--s&quot; required &#x2F;&gt;
-    &lt;button class&#x3D;&quot;search-form__submit is-vishidden&quot;&gt;
-      &lt;span class&#x3D;&quot;is-vishidden&quot;&gt;Submit&lt;&#x2F;span&gt;
-    &lt;&#x2F;button&gt; &lt;!-- &#x2F;.search-form__submit --&gt;
-  &lt;&#x2F;fieldset&gt;
-&lt;&#x2F;form&gt; &lt;!-- &#x2F;.search-form --&gt;
+                    
+&lt;div class&#x3D;&quot;layout-container layout-container--s pad-double&quot;&gt;
+&lt;form class&#x3D;&quot;spacing&quot; action&#x3D;&quot;index.html&quot; method&#x3D;&quot;post&quot;&gt;
+    &lt;div class&#x3D;&quot;spacing--quarter&quot;&gt;
+        &lt;h2 class&#x3D;&quot;font--secondary--l theme--primary-text-color&quot;&gt;Form header&lt;&#x2F;h2&gt;
+        &lt;hr &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+    &lt;p class&#x3D;&quot;spacing--quarter&quot;&gt;
+      &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Name&lt;&#x2F;label&gt;
+      &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; value&#x3D;&quot;&quot;&gt;
+    &lt;&#x2F;p&gt;
+    &lt;p class&#x3D;&quot;spacing--quarter&quot;&gt;
+      &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Form &lt;span class&#x3D;&quot;type-alpha--s text-color--gray&quot;&gt;(Optional)&lt;&#x2F;span&gt;&lt;&#x2F;label&gt;
+      &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; value&#x3D;&quot;&quot;&gt;
+    &lt;&#x2F;p&gt;
+    &lt;p class&#x3D;&quot;spacing--quarter&quot;&gt;
+        &lt;label class&#x3D;&quot;font--secondary--s red&quot; for&#x3D;&quot;&quot;&gt;Error Label&lt;&#x2F;label&gt;
+        &lt;input class&#x3D;&quot;has-error&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; value&#x3D;&quot;&quot;&gt; &lt;br&gt;
+        &lt;small class&#x3D;&quot;font--secondary--s red&quot;&gt;This field is required&lt;&#x2F;small&gt;
+    &lt;&#x2F;p&gt;
+    &lt;p class&#x3D;&quot;spacing--quarter&quot;&gt;
+        &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Your Comments&lt;&#x2F;label&gt;
+        &lt;textarea name&#x3D;&quot;name&quot; rows&#x3D;&quot;8&quot; cols&#x3D;&quot;40&quot;&gt;Enter a comment.&lt;&#x2F;textarea&gt;
+    &lt;&#x2F;p&gt;
+    &lt;div class&#x3D;&quot;form__checkbox spacing--quarter&quot;&gt;
+    &lt;p class&#x3D;&quot;font--secondary--s&quot;&gt;Select many options&lt;&#x2F;p&gt;
+
+    &lt;p class&#x3D;&quot;inline-form-element--row&quot;&gt;&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;option&quot; value&#x3D;&quot;one&quot;&gt; &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Option 1&lt;&#x2F;label&gt;&lt;&#x2F;p&gt;
+    &lt;p class&#x3D;&quot;inline-form-element--row&quot;&gt;&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;option&quot; value&#x3D;&quot;two&quot;&gt; &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Option 2&lt;&#x2F;label&gt;&lt;&#x2F;p&gt;
+    &lt;p class&#x3D;&quot;inline-form-element--row&quot;&gt;&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;option&quot; value&#x3D;&quot;three&quot;&gt; &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Option 3&lt;&#x2F;label&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class&#x3D;&quot;form__radio spacing--quarter&quot;&gt;
+    &lt;p class&#x3D;&quot;font--secondary--s&quot;&gt;Select one option&lt;&#x2F;p&gt;
+
+    &lt;p class&#x3D;&quot;inline-form-element--row&quot;&gt;&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;option&quot; value&#x3D;&quot;one&quot; checked&gt; &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Option 1&lt;&#x2F;label&gt;&lt;&#x2F;p&gt;
+    &lt;p class&#x3D;&quot;inline-form-element--row&quot;&gt;&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;option&quot; value&#x3D;&quot;two&quot;&gt; &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Option 2&lt;&#x2F;label&gt;&lt;&#x2F;p&gt;
+    &lt;p class&#x3D;&quot;inline-form-element--row&quot;&gt;&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;option&quot; value&#x3D;&quot;three&quot;&gt; &lt;label class&#x3D;&quot;font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Option 3&lt;&#x2F;label&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;div&gt;
+
+  &lt;div class&#x3D;&quot;form__select spacing--half&quot;&gt;
+    &lt;label class&#x3D;&quot; font--secondary--s&quot; for&#x3D;&quot;&quot;&gt;Select from this list&lt;&#x2F;label&gt;
+    &lt;select&gt;
+        &lt;option value&#x3D;&quot;one&quot;&gt;Option 1&lt;&#x2F;option&gt;
+        &lt;option value&#x3D;&quot;two&quot;&gt;Option 2&lt;&#x2F;option&gt;
+        &lt;option value&#x3D;&quot;three&quot;&gt;Option 3&lt;&#x2F;option&gt;
+        &lt;option value&#x3D;&quot;four&quot;&gt;Option 4&lt;&#x2F;option&gt;
+    &lt;&#x2F;select&gt;
+  &lt;&#x2F;div&gt;
+
+    &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;Submit form&quot; &#x2F;&gt;
+    &lt;input class&#x3D;&quot;btn bg--gray&quot; type&#x3D;&quot;reset&quot; value&#x3D;&quot;Cancel&quot; &#x2F;&gt;
+&lt;&#x2F;form&gt;
 
                   </code>
                 </pre>
