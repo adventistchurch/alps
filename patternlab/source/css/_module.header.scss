@@ -32,7 +32,7 @@
     bottom: -3px;
     height: 3px;
     background-color: rgba($black, .2);
-    z-index: 20;
+    z-index: 1020;
   }
   .icon__logo {
     width: rem(20);
@@ -122,6 +122,7 @@
     top: 0;
     width: rem(150);
     padding: rem(18);
+    z-index: 0;
     box-shadow: 3px 3px 0 0 rgba($black, .25);
   }
   @include media('>xlarge') {
