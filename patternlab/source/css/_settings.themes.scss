@@ -6,10 +6,12 @@
 @mixin theme-primary($name, $primary-color) {
   .#{$name} {
     // Text colors
-    .theme--primary-text-color {
+    .theme--primary-text-color,
+    .theme--primary-text-color a {
       color: $primary-color;
     }
-    a.theme--primary-text-color:hover {
+    a.theme--primary-text-color:hover,
+    .theme--primary-text-color a:hover {
       color: darken($primary-color, 30);
     }
 
@@ -40,10 +42,12 @@
 @mixin theme-secondary($name, $secondary-color) {
   .#{$name} {
     // Text colors
-    .theme--secondary-text-color {
+    .theme--secondary-text-color,
+    .theme--secondary-text-color a {
       color: $secondary-color;
     }
-    a.theme--secondary-text-color:hover {
+    a.theme--secondary-text-color:hover,
+    .theme--secondary-text-color a:hover {
       color: darken($secondary-color, 30);
     }
 

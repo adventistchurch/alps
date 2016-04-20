@@ -13,10 +13,10 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-htmlhint": "0.9.12-fix",
-    "grunt-pixrem": "^0.1.2",
     "grunt-sass": "^1.0.0",
     "grunt-shell": "^1.1.2",
     "matchdep": "*",
+    "node-bourbon": "^4.2.8",
     "node-sass": "^2.1.1",
     "patternlab-md2json": "^0.1.1"
   },

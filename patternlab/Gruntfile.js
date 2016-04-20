@@ -24,27 +24,13 @@ module.exports = function(grunt) {
                 outputStyle: 'nested',
                 imagePath: 'source/images',
                 precision: 5,
-                includePaths: [
-                    'components'
-                ]
+                sourceMap: true,
+                includePaths: require('node-bourbon').includePaths
             },
             dev: {
                 files: {
-                    'public/css/main.css': 'source/sass/main.scss'
+                    'public/css/main.css': 'source/css/main.scss'
                 }
-            }
-        },
-
-        pixrem: {
-            dist: {
-                options: {
-                    replace: false
-                },
-                files: [{
-                    src: 'public/css/main.css',
-                    dest: 'public/css/main.css'
-                }]
-
             }
         },
 
@@ -100,14 +86,8 @@ module.exports = function(grunt) {
             options: {
                 browsers: ['last 2 version', 'ie 9']
             },
-            prod: {
-                src: 'public/**/*.css'
-            },
             dev: {
-                src: 'public/**/*.css'
-            },
-            public: {
-                src: 'public/**/*.css'
+                src: 'public/css/*.css'
             }
         },
 
@@ -130,7 +110,7 @@ module.exports = function(grunt) {
                 }
             },
             images: {
-                files: ['source/**/*.{png,jpg,gif}'],
+                files: ['source/images/*.{png,jpg,gif}'],
                 tasks: ['images']
             },
             copy: {
@@ -143,10 +123,10 @@ module.exports = function(grunt) {
         browserSync: {
             bsFiles: {
                 src: [
-                    'public/**/*.css',
-                    'public/**/*.html',
-                    'public/**/*.js',
-                    'public/**/*.{svg,png,jpg,gif}'
+                    'public/css/*.css',
+                    'public/patterns/*.html',
+                    'public/js/*.js',
+                    'public/images/*.{svg,png,jpg,gif}'
                 ]
             },
             options: {
@@ -162,9 +142,7 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('css', [
         'sass',
-        'autoprefixer:dev',
-        'autoprefixer:public',
-        'pixrem'
+        'autoprefixer:dev'
     ]);
 
     /**
