@@ -114,6 +114,28 @@
     });
   }
 
+  // Show/ Hide main nav on scroll.
+  var orgTop = 80;
+  $(window).scroll(function() {
+    if (getWidth() < 700) {
+      var currentTop = $(this).scrollTop(),
+          $navBar = $('.header');
+
+      if (currentTop > orgTop && !$('.header.is-active').length) {
+        $navBar.addClass('hide-nav');
+      } else {
+        $navBar.removeClass('hide-nav');
+      }
+
+      // Be sure not to hide it too soon.
+      if (currentTop < 80) {
+        $navBar.removeClass('hide-nav');
+      } else {
+        orgTop = currentTop;
+      }
+    }
+  });
+
   // Responsive videos
   $('.article__body, .text, .fitvid').fitVids();
 
