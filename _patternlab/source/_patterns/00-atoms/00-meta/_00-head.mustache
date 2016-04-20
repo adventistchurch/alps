@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="{{ head.html_class }} no-js" lang="{{ head.language }}">
+  <head>
+    <meta charset="{{ head.charset }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ head.title }}</title>
+    <meta name="description" content="{{ head.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat" media="all">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" media="all">
+    <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Oswald' media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css?{{ cacheBuster }}" media="all">
+
+    <script>document.createElement("picture");</script>
+    <script src="../../js/head-scripts.js?{{ cacheBuster }}" async></script>
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    {% pattern-lab-head %}
+    <!-- End Pattern Lab -->
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="{{ head.body_class }}">

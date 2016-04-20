@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+.btn,
+button,
+input[type="submit"] {
+  display: inline-block;
+  text-align: center;
+  font-size: rem(14);
+  padding: rem(13) rem(16) rem(12);
+  line-height: 1;
+  color: $white;
+  background-color: $orange;
+  cursor: pointer;
+  transition: all .6s ease-out;
+  overflow: hidden;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: darken($orange, 10);
+    color: $white;
+  }
+}
+
+/**
+ * Button Sizing
+ */
+.btn--small {
+  padding: rem(8) rem(12);
+  font-size: rem(12);
+}
+
+
+/**
+ * Button Themes
+ */
+

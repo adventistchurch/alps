@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    $DISPLAY STATES
+\*------------------------------------*/
+
+/**
+ * Display Classes
+ */
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dt {
+  display: table;
+}
+.dtc {
+  display: table-cell;
+}
+
+// Specific Widths - visible greater than #
+.show-at--small {
+  @include media('<=small') {
+    display: none;
+  }
+}
+.show-at--medium {
+  @include media('<=medium') {
+    display: none;
+  }
+}
+.show-at--large {
+  @include media('<=large') {
+    display: none;
+  }
+}
+
+// Specific Widths - hide greater than #
+.show-until--large {
+  @include media('>large') {
+    display: none;
+  }
+}

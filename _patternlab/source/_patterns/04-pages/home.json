@@ -1,0 +1,128 @@
+{
+  "head": {
+    "title": "Home - The Official Site of the Seventh-day Adventist world church"
+  },
+
+  "carousel": {
+    "carousel_class": "js-carousel__single-item",
+    "no_arrows": true,
+    "slides": [
+      {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "https://unsplash.it/500/500/?random",
+            "src_m": "https://unsplash.it/700/400/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+              "src_l": "https://unsplash.it/900/400/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "900",
+            "img": {
+              "src_xl": "https://unsplash.it/1300/500/?random"
+            }
+          }
+        },
+        "has_slide_text": {
+          "slide_heading": "Adventist Beliefs",
+          "slide_subtitle": "We believe that God creates",
+          "slide_dek": "From neurons to nebulae, DNA to distant galaxies, we are surrounded by wonder. Yet the beauty is broken.",
+          "slide_cta": "Find out more",
+          "btn_class": "btn--white"
+        }
+      },
+      {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "https://unsplash.it/500/500/",
+            "src_m": "https://unsplash.it/700/400/"
+          },
+          "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+              "src_l": "https://unsplash.it/900/400/"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "900",
+            "img": {
+              "src_xl": "https://unsplash.it/1300/500/"
+            }
+          }
+        },
+        "has_slide_text": {
+          "slide_heading": "Service",
+          "slide_subtitle": "Religious Liberty - The Freedom to Believe",
+          "slide_dek": "A person’s conscience, not government, should dictate his or her choice to worship—or not.",
+          "slide_cta": "Learn more",
+          "btn_class": "btn--white"
+        }
+      },
+      {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "https://unsplash.it/g/500/500/",
+            "src_m": "https://unsplash.it/g/700/400/"
+          },
+          "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+              "src_l": "https://unsplash.it/g/900/400/"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "900",
+            "img": {
+              "src_xl": "https://unsplash.it/g/1300/500/"
+            }
+          }
+        },
+        "has_slide_text": {
+          "slide_heading": "Vitality",
+          "slide_subtitle": "Family - God's Love Illustrated",
+          "slide_dek": "God established the first family in the Garden of Eden. Since then, families have formed the basic unit of society.",
+          "slide_cta": "Read more about Vitality",
+          "btn_class": "btn--white"
+        }
+      },
+      {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "https://unsplash.it/500/500/",
+            "src_m": "https://unsplash.it/700/400/"
+          },
+          "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+              "src_l": "https://unsplash.it/900/400/"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "900",
+            "img": {
+              "src_xl": "https://unsplash.it/1300/500/"
+            }
+          }
+        },
+        "has_slide_text": {
+          "slide_heading": "Spirituality",
+          "slide_subtitle": "Have a conversation with God",
+          "slide_dek": "God hears every prayer. Our heavenly Father always wants to hear from his children. Prayer gives you an instant and direct connection to your Creator and Redeemer.",
+          "slide_cta": "Find out more",
+          "btn_class": "btn--white"
+        }
+      }
+    ]
+  }
+}

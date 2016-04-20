@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    $BORDERS
+\*------------------------------------*/
+
+/**
+ * Borders/Dividers
+ */
+.border {
+  border: $border-style;
+  &--top {
+    border-top: $border-style;
+  }
+  &--bottom {
+    border-bottom: $border-style;
+  }
+  &--red {
+    border: 1px solid red;
+  }
+}
+
+.divider {
+  display: inline-block;
+  border-right: $border-style;
+  margin-left: rem(2);
+  margin-right: rem(5);
+  color: transparent;
+  height: rem(16);
+  width: 1px;
+  overflow: hidden;
+  text-indent: -10px;
+  vertical-align: middle;
+}
+
+.border--rounded-square {
+  border: $border-style;
+  border-radius: 3px;
+}
+
+.no-border {
+  border: none !important;
+}

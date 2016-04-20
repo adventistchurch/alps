@@ -1,0 +1,173 @@
+/*------------------------------------*\
+    $COLOR MODIFIERS
+\*------------------------------------*/
+
+/**
+ * Text Colors
+ */
+.gray {
+  color: $gray;
+}
+.gray--med {
+  color: $gray-med;
+}
+.gray--light {
+  color: $gray-light;
+}
+.gray--dark,
+.gray--dark a {
+  color: $gray-dark;
+}
+.black,
+.black a {
+  color: $black;
+}
+.black--trans {
+  color: rgba($black, .7);;
+}
+.white {
+  color: $white;
+}
+.white--trans {
+  color: rgba($white, .7);
+}
+.blue {
+  color: $blue;
+}
+.orange {
+  color: $orange;
+}
+.red {
+  color: red;
+}
+.brown {
+  color: $brown;
+}
+.brown--light {
+  color: $brown-light;
+}
+
+/**
+ * Link Colors
+ */
+.link--white {
+  color: $white;
+  &:hover {
+    color: $brown-light;
+  }
+}
+.link--blue {
+  color: $blue;
+  &:hover {
+    color: $orange;
+  }
+}
+.link--dark-gray-orange {
+  color: $gray-dark;
+  &:hover {
+    color: $orange;
+  }
+}
+
+
+/**
+ * Background Colors
+ */
+.no-bg {
+  background: none;
+}
+.bg--white {
+  background-color: $white;
+}
+.bg--black {
+  background-color: $black;
+}
+.bg--blue {
+  background-color: $blue;
+}
+.bg--gray {
+  background-color: $gray;
+}
+.bg--light-gray {
+  background-color: $gray-light;
+}
+.bg--dark-gray {
+  background-color: $gray-dark;
+}
+.bg--red {
+  background-color: $red;
+}
+.bg--brown {
+  background-color: $brown;
+}
+.bg--medium-brown {
+  background-color: $brown-med;
+}
+.bg--beige {
+  background-color: $beige;
+}
+.bg--tan {
+  background-color: $tan;
+}
+
+// Theme colors
+.bg--emperor {
+  background-color: $emperor;
+}
+.bg--earth {
+  background-color: $earth;
+}
+.bg--grapevine {
+  background-color: $grapevine;
+}
+.bg--denim {
+  background-color: $denim;
+}
+.bg--campfire {
+  background-color: $campfire;
+}
+.bg--treefrog {
+  background-color: $treefrog;
+}
+.bg--ming {
+  background-color: $ming;
+}
+.bg--cool {
+  background-color: $cool;
+}
+.bg--warm {
+  background-color: $warm;
+}
+
+
+/**
+ * States
+ */
+.valid {
+  color: $valid;
+}
+.error {
+  color: $error;
+}
+.warning {
+  color: $warning;
+}
+.information {
+  color: $information;
+}
+
+/**
+ * SVG Fill Colors
+ */
+.fill--gray {
+  fill: $body-color;
+}
+.fill--white {
+  fill: $white;
+}
+.fill--blue {
+  fill: $blue;
+}
+.fill--light-brown {
+  fill: $brown-light;
+}

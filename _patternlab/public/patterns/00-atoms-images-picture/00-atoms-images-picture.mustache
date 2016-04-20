@@ -1,0 +1,14 @@
+{{# picture }}
+&lt;picture class=&quot;picture&quot;&gt;
+  &lt;!--[if IE 9]&gt;&lt;video style=&quot;display: none;&quot;&gt;&lt;![endif]--&gt;
+  {{# has_break_xl }}
+    &lt;source srcset=&quot;{{{ img.src_xl }}}&quot; media=&quot;(min-width: {{ img_break_xl }}px)&quot;&gt;
+  {{/ has_break_xl }}
+  {{# has_break_l }}
+    &lt;source srcset=&quot;{{{ img.src_l }}}&quot; media=&quot;(min-width: {{ img_break_l }}px)&quot;&gt;
+  {{/ has_break_l }}
+  &lt;source srcset=&quot;{{{ img.src_m }}}&quot; media=&quot;(min-width: {{ img_break_m }}px)&quot;&gt;
+  &lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt;
+  &lt;img itemprop=&quot;image&quot; srcset=&quot;{{{ img.src_s }}}&quot; alt=&quot;{{ img.alt }}&quot;&gt;
+&lt;/picture&gt;
+{{/ picture }}

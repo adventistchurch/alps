@@ -1,0 +1,147 @@
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+/**
+ * Grid Container
+ */
+.g {
+  //overflow: hidden;
+}
+
+/**
+ * Grid Item
+ */
+.gi {
+  width: 100%;
+  img {
+    display: block;
+  }
+}
+
+/**
+ * Grid Item Held - Check the specific grids below for how long it's held.
+ */
+@mixin gi-hold {
+  width: 100%;
+  float: none;
+  clear: both;
+}
+
+/**
+ * Grid 1up
+ */
+.g-1up {
+  .gi {
+    width: 100%;
+  }
+}
+
+/**
+ * Grid 2up at medium width.
+ */
+.g-2up--at-medium {
+  @include media('>medium') {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    > .gi {
+      float: left;
+      width: 50%;
+      align-items: stretch;
+      display: flex;
+      * { // Slick slider hack for when a carousel is contained within a flexed element.
+        min-height: 0;
+        min-width: 0;
+      }
+    }
+    &.with-divider {
+      > .gi:nth-child(odd) {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 1px;
+          border-right: $border-style-light;
+          height: 100%;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Grid 2up at medium width with 70/30 split.
+ */
+.g-2up--70-30--at-medium {
+  @include media('>medium') {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    > .gi {
+      float: left;
+      align-items: stretch;
+      display: flex;
+      * { // Slick slider hack for when a carousel is contained within a flexed element.
+        min-height: 0;
+        min-width: 0;
+      }
+      &:first-child {
+        width: 70%;
+      }
+      &:last-child {
+        width: 30%;
+      }
+    }
+  }
+}
+
+
+/**
+ * Grid always 2 columns even
+ */
+.g-2-split {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  > .gi {
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/**
+ * Grid 4up
+ */
+.g-4up {
+  > .gi {
+    margin-bottom: $space;
+  }
+  @include mq($px450) {
+    display: flex;
+    margin-left: -$pad-half;
+    margin-right: -$pad-half;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    > .gi {
+      float: left;
+      padding-left: $pad-half;
+      padding-right: $pad-half;
+      width: 50%;
+      display: flex;
+
+    }
+  }
+  @include mq($px800) {
+    > .gi {
+      width: 25%;
+      margin-bottom: $space-double;
+    }
+  }
+}

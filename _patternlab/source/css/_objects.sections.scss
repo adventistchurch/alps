@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    $PAGE SECTIONS
+\*------------------------------------*/
+
+.section {
+  position: relative;
+}
+
+/**
+ * Page headings
+ */
+.header__swath {
+  padding-top: rem(70);
+  padding-bottom: rem(4);
+  @include media('>large') {
+    padding-top: rem(100);
+  }
+}
+// Headers with background images
+.header-swath--with-image {
+  background-size: cover;
+  padding-top: rem(120);
+  @include media('>large') {
+    padding-top: rem(200);
+  }
+}
+
+// Headers with inner text
+.header-swath--with-text {
+  padding-top: 0;
+  @include media('>medium') {
+    padding-top: $pad;
+  }
+}
+.header__text {
+  padding-top: $pad;
+  padding-bottom: $pad;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  .unify {
+    padding-right: $space;
+    align-self: center;
+  }
+  @include media('>small') {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  @include media('>medium') {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}

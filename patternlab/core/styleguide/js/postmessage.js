@@ -43,7 +43,8 @@ if (self != top) {
 	for (var i = 0; i < keys.length; i++) {
 		jwerty.key('ctrl+shift+'+keys[i],  function (k,t) {
 			return function(e) {
-				parent.postMessage({ "keyPress": "ctrl+shift+"+k },t);
+				var obj = JSON.stringify({ "keyPress": "ctrl+shift+"+k });
+				parent.postMessage(obj,t);
 				return false;
 			}
 		}(keys[i],targetOrigin));
@@ -55,7 +56,8 @@ if (self != top) {
 		jwerty.key('ctrl+shift+'+i, function (k,t) {
 			return function(e) {
 				var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-				parent.postMessage({ "keyPress": "ctrl+shift+"+k },t);
+				var obj = JSON.stringify({ "keyPress": "ctrl+shift+"+k });
+				parent.postMessage(obj,t);
 				return false;
 			}
 		}(i,targetOrigin));
@@ -68,7 +70,8 @@ if (self != top) {
 var body = document.getElementsByTagName('body');
 body[0].onclick = function() {
 	var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-	parent.postMessage({ "bodyclick": "bodyclick" },targetOrigin);
+	var obj = JSON.stringify({ "bodyclick": "bodyclick" });
+	parent.postMessage(obj,targetOrigin);
 };
 
 // watch the iframe source so that it can be sent back to everyone else.
@@ -86,26 +89,10 @@ function receiveIframeMessage(event) {
 	if (data.path !== undefined) {
 		
 		if (patternPartial !== "") {
-
-			if(baseurl){
-        // create main site url
-        var siteurl = window.location.protocol+"//"+window.location.host;
-        // add a trailing slash if it doesn't exist
-        siteurl = siteurl.replace(/\/?$/, '/');
-        // remove a begining slash for baseurl if it exists
-        baseurl = baseurl.replace(/^\//, '');
-        // connect baseurl to siteurl
-        siteurl = siteurl + baseurl;
-        // add a trailing slash if it doesn't exist
-        siteurl = siteurl.replace(/\/?$/, '/');
-        // build our final path
-        path = siteurl+data.path+'?'+Date.now();
-      } else {
+			
 			// handle patterns and the view all page
-        var re = /patterns\/(.*)$/;
-        path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+data.path+'?'+Date.now();
-      }
-      
+			var re = /patterns\/(.*)$/;
+			path = window.location.protocol+"//"+window.location.host+window.location.pathname.replace(re,'')+data.path+'?'+Date.now();
 			window.location.replace(path);
 			
 		} else {
