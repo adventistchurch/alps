@@ -1390,7 +1390,7 @@ body > svg {
  */
 .bullet-list {
   list-style-type: disc;
-  padding-left: 0.875rem; }
+  padding-left: 1.125rem; }
   .bullet-list li {
     overflow: visible; }
     .bullet-list li:last-child {

@@ -124,9 +124,9 @@ module.exports = function(grunt) {
             bsFiles: {
                 src: [
                     'public/css/*.css',
-                    'public/patterns/*.html',
-                    'public/js/*.js',
-                    'public/images/*.{svg,png,jpg,gif}'
+                    'public/**/*.html',
+                    'public/**/*.js',
+                    'public/**/*.{svg,png,jpg,gif}'
                 ]
             },
             options: {
