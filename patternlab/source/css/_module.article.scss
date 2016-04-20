@@ -133,9 +133,7 @@
   }
 }
 .size--large {
-  @include media('>medium') {
-    width: 100%;
-  }
+  width: 100%;
 }
 .size-full {
   display: block;

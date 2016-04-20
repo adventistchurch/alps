@@ -2405,9 +2405,8 @@ body > svg {
     width: 40%;
     max-width: 20rem; } }
 
-@media (min-width: 43.76em) {
-  .size--large {
-    width: 100%; } }
+.size--large {
+  width: 100%; }
 
 .size-full {
   display: block; }
