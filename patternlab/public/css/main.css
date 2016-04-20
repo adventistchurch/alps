@@ -2619,10 +2619,8 @@ body > svg {
   display: block;
   margin-bottom: 0.625rem;
   position: relative;
-  z-index: 10; }
-  @media (max-width: 43.75em) {
-    .logo__link {
-      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25); } }
+  z-index: 10;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25); }
 
 .logo__link--horiz {
   width: 13.75rem;
@@ -2632,7 +2630,8 @@ body > svg {
   @media (min-width: 43.76em) {
     .logo__link--horiz {
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      box-shadow: none; } }
 
 @media (min-width: 56.26em) {
   .logo__link--square {
