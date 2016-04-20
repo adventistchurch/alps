@@ -581,30 +581,36 @@
       "media_block_default": {
         "block_title_class": "font--secondary--s",
         "title": "Nunc a ullamcorper lectus",
-        "img": false,
-        "video": true,
         "datetime": "2016-12-12",
-        "date": "Mar 28, 2016"
+        "date": "Mar 28, 2016",
+        "img": {
+          "src": "https://unsplash.it/500/280/?random",
+          "alt": "Media Block Image Alt"
+        }
       }
     },
     {
       "media_block_default": {
         "block_title_class": "font--secondary--s",
         "title": "Nunc a ullamcorper lectus",
-        "img": false,
-        "video": true,
         "datetime": "2016-12-12",
-        "date": "Mar 28, 2016"
+        "date": "Mar 28, 2016",
+        "img": {
+          "src": "https://unsplash.it/500/280/?random",
+          "alt": "Media Block Image Alt"
+        }
       }
     },
     {
       "media_block_default": {
         "block_title_class": "font--secondary--s",
         "title": "Nunc a ullamcorper lectus",
-        "img": false,
-        "video": true,
         "datetime": "2016-12-12",
-        "date": "Mar 28, 2016"
+        "date": "Mar 28, 2016",
+        "img": {
+          "src": "https://unsplash.it/500/280/?random",
+          "alt": "Media Block Image Alt"
+        }
       }
     }
   ]
