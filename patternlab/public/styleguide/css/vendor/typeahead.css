@@ -1,10 +1,10 @@
 #sg-find {
-  color: #000;
-  text-transform: lowercase;
+	color: #000;
+	text-transform: lowercase;
 }
 
 .show-overflow {
-  overflow: visible;
+	overflow: visible;
 }
 
 .typeahead,

@@ -1,7 +1,7 @@
 {
-  "name": "Motivate",
+  "name": "APLS",
   "version": "0.0.1",
-  "description": "Motivate development framework",
+  "description": "Adventist Living Pattern System",
   "devDependencies": {
     "bs-html-injector": "^3.0.0",
     "csswring": "^4.0.0",
@@ -22,14 +22,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "mkdir -p patternlab/public && cp -r patternlab/core/styleguide/ patternlab/public/styleguide/"
+    "postinstall": "mkdir -p public && cp -r core/styleguide/ public/styleguide/"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:happycog/motivate-web.git"
+    "url": "git@github.com:SuperFriendly/adventist.git"
   },
-  "author": "Happy Cog",
+  "author": "SuperFriendly & Southleft",
   "license": "none",
-  "homepage": "https://motivateco.com",
+  "homepage": "http://adventist.org",
   "compileTemplates": false
 }
