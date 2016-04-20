@@ -36,7 +36,6 @@ module.exports = function(grunt) {
 
         jsFiles: [
             // Include:
-            'source/js/jquery-2.0.0b2.js',
             'source/js/plugins.js',
             'source/js/script.js'
         ],
