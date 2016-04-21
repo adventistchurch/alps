@@ -2,7 +2,7 @@
   "carousel": {
     "carousel_class": "js-carousel__single-item",
     "no_arrows": true,
-    "slides2column":false,
+    "slides2column":true,
     "slides": [
       {
         "has_slide_text": {
