@@ -916,6 +916,13 @@ abbr {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   cursor: help; }
 
+h1, h2, h3, h4, h5, h6 {
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
 /*------------------------------------*    $GRIDS
@@ -2191,7 +2198,7 @@ body > svg {
 .font--tertiary--xl {
   font-family: "Oswald", "Trade Gothic", "Helvetica", "Arial", sans-serif;
   font-size: 1.75rem;
-  line-height: .9;
+  line-height: 1;
   font-weight: normal;
   text-transform: uppercase; }
   @media (min-width: 43.76em) {

@@ -251,7 +251,7 @@
 @mixin font--tertiary--xl() {
   font-family: $font-tertiary;
   font-size: rem(28);
-  line-height: .9;
+  line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
   @include media('>medium') {
