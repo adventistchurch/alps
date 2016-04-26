@@ -65,10 +65,12 @@
 \*------------------------------------*/
 
 .column__primary {
-  padding-top: $pad-double;
+  padding-top: $pad-and-half;
   padding-bottom: $pad;
-  @include media('>large') {
+  @include media('>medium') {
     padding-top: $pad-double;
+  }
+  @include media('>large') {
     padding-bottom: $pad-double;
   }
   @include media('>xlarge') {
@@ -76,16 +78,25 @@
   }
 }
 .column__secondary {
+  padding-top: $pad-and-half;
   padding-bottom: $pad;
-  padding-top: $pad;
-  @include media('>large') {
+  margin-left: -$pad;
+  margin-right: -$pad;
+  background-color: $beige;
+  @include media('>medium') {
     padding-top: $pad-double;
+  }
+  @include media('>large') {
     padding-bottom: $pad-double;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .pad--primary {
-  padding-left: $pad;
-  padding-right: $pad;
+  @include media('>medium') {
+    padding-left: $pad;
+    padding-right: $pad;
+  }
   @include media('>large') {
     padding-left: rem(60);
     padding-right: rem(60);

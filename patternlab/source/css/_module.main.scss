@@ -4,6 +4,9 @@
 
 .main {
   overflow: hidden;
+  @include media('>medium') {
+    background-color: $beige;
+  }
 }
 
 /**

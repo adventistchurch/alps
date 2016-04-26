@@ -405,15 +405,15 @@
     }
   }
   .pullquote {
-    padding-top: $pad;
-    padding-bottom: $pad;
+    padding-top: $pad-half;
+    padding-bottom: $pad-double;
     p {
-      font-size: rem(28);
+      font-size: rem(24);
       font-weight: 300;
       font-style: normal;
       font-family: $font;
-      @include media('>large') {
-        font-size: rem(32);
+      @include media('>medium') {
+        font-size: rem(28);
       }
     }
   }
