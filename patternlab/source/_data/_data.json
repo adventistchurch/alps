@@ -44,7 +44,22 @@
   "primary_nav": {
     "items": [
       {
-        "text": "Spirituality"
+        "text": "Spirituality",
+        "has_subnav": true,
+        "sub_items": [
+          {
+            "text": "Life Hope Centers"
+          },
+          {
+            "text": "Global Mission"
+          },
+          {
+            "text": "Mission Spotlight"
+          },
+          {
+            "text": "Church Mission Offerings"
+          }
+        ]
       },
       {
         "is_active": true,
@@ -255,7 +270,8 @@
   "carousel_block_default": {
     "block_heading": "Mauris sit",
     "carousel": {
-      "carousel_class": "js-carousel__single-item no-dots",
+      "carousel_class": "js-carousel__single-item",
+      "no_arrows": true,
       "slides": [
         {
           "picture": {

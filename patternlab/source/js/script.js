@@ -97,6 +97,12 @@
     $this.parent().toggleClass('is-active');
   });
 
+  // Toggle hovered classes
+  $('.js-hover').on('mouseenter mouseleave', function(e) {
+    e.preventDefault();
+    toggleClasses($(this));
+  });
+
   // Slick carousel
   if ($('.js-carousel__single-item').length) {
     $('.js-carousel__single-item').slick({
@@ -121,7 +127,7 @@
       var currentTop = $(this).scrollTop(),
           $navBar = $('.header');
 
-      if (currentTop > orgTop && !$('.header.is-active').length) {
+      if (currentTop > orgTop && !$('.header.nav-is-active').length) {
         $navBar.addClass('hide-nav');
       } else {
         $navBar.removeClass('hide-nav');

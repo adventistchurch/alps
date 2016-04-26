@@ -2,7 +2,16 @@
 &lt;nav class=&quot;primary-nav toggled-element&quot; id=&quot;primary-nav&quot; role=&quot;navigation&quot; data-active-target=&quot;primary-nav&quot;&gt;
   &lt;ul class=&quot;primary-nav__list&quot;&gt;
     {{# items }}
-      &lt;li class=&quot;primary-nav__list-item&quot;&gt;&lt;a class=&quot;primary-nav__link theme--primary-text-color {{# is_active }} theme--secondary-text-color active {{/ is_active }}&quot; href=&quot;{{ url }}&quot;&gt;{{{ text }}}&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;primary-nav__list-item {{# has_subnav }} primary-nav--with-subnav js-hover {{/ has_subnav }}&quot;&gt;
+        &lt;a class=&quot;primary-nav__link theme--primary-text-color {{# is_active }} theme--secondary-text-color active {{/ is_active }}&quot; href=&quot;{{ url }}&quot;&gt;{{{ text }}}&lt;/a&gt;
+        {{# has_subnav }}
+          &lt;ul class=&quot;primary-nav__subnav&quot;&gt;
+            {{# sub_items }}
+              &lt;li class=&quot;primary-nav__subnav__list-item&quot;&gt;&lt;a class=&quot;primary-nav__subnav__link theme--primary-text-color&quot; href=&quot;{{ url }}&quot;&gt;{{{ text }}}&lt;/a&gt;&lt;/li&gt;
+            {{/ sub_items }}
+          &lt;/ul&gt; &lt;!-- /.primary-nav__subnav --&gt;
+        {{/ has_subnav }}
+      &lt;/li&gt;
     {{/ items }}
   &lt;/ul&gt; &lt;!-- /.primary-nav__list --&gt;
 &lt;/nav&gt; &lt;!-- /.primary-nav --&gt;

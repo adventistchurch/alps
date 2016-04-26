@@ -16,11 +16,6 @@ $max-width: rem($max-width-px) !default;
 /**
  * Colors
  */
-$gray: #bfbfbf;
-$gray-light: #efefef;
-$gray-med: #ccc;
-//$gray-dark: #575a5c;
-$gray-dark: #242626;
 $white: #fff;
 $black: #000;
 $error: #f00;
@@ -29,6 +24,11 @@ $warning: #fff664;
 $information: #000db5;
 $overlay: rgba($black, .9);
 $overlay-light: rgba($black, .76);
+$gray: rgba($black, .5);
+$gray-light: rgba($black, .1);
+$gray-med: rgba($black, .6);
+//$gray-dark: #575a5c;
+$gray-dark: rgba($black, .8);
 
 /**
  * Style Colors

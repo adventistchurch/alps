@@ -34,7 +34,7 @@
   }
 }
 // Navigation is open
-.header.is-active {
+.header.nav-is-active {
   .toggled-element {
     display: block;
   }
@@ -70,7 +70,9 @@
   position: relative;
   z-index: 1000;
   @include media('<=medium') {
-    .is-active & {
+    .nav-is-active & {
+      max-height: 100vh;
+      overflow: scroll;
       padding-bottom: rem(14);
       border-bottom: rem(5) solid rgba($black, .3);
       background-color: $white;
