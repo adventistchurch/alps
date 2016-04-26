@@ -28,9 +28,9 @@
 
 // Blocks that breakout of of their layout.
 .block--breakout {
-  margin-left: -$space;
-  margin-right: -$space;
   @include media('>large') {
     margin-top: -$space;
+    margin-left: -$space;
+    margin-right: -$space;
   }
 }

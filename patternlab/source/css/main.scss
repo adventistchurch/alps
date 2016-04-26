@@ -46,6 +46,7 @@
  * Article..............Post-type pages with styled text.
  * Footer...............The main page footer.
  * Header...............The main page header.
+ * Sidebar..............The secondary column items.
  * Main.................Content area styles.
  *
  * MODIFIERS
@@ -131,6 +132,7 @@ $tests: true;
 @import "module.article";
 @import "module.footer";
 @import "module.header";
+@import "module.sidebar";
 @import "module.main";
 
 

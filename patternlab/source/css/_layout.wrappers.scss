@@ -56,7 +56,7 @@
 
 // 16:9
 .intrinsic-ratio--16-9 {
-  @include aspect-ratio(16, 9)
+  @include aspect-ratio(16, 9);
 }
 
 
@@ -80,23 +80,18 @@
 .column__secondary {
   padding-top: $pad-and-half;
   padding-bottom: $pad;
-  margin-left: -$pad;
-  margin-right: -$pad;
   background-color: $beige;
   @include media('>medium') {
     padding-top: $pad-double;
   }
   @include media('>large') {
     padding-bottom: $pad-double;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
+// Padding for main content column
 .pad--primary {
-  @include media('>medium') {
-    padding-left: $pad;
-    padding-right: $pad;
-  }
+  padding-left: $pad;
+  padding-right: $pad;
   @include media('>large') {
     padding-left: rem(60);
     padding-right: rem(60);
@@ -106,6 +101,7 @@
     padding-right: rem(80);
   }
 }
+// Padding for secondary column
 .pad--secondary {
   padding-left: $pad;
   padding-right: $pad;

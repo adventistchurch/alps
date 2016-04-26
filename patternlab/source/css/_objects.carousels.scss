@@ -125,3 +125,17 @@
 .no-dots .slick-dots {
   display: none !important;
 }
+
+/**
+ * Carousel as block (always assums 4:3 images)
+ */
+.carousel-block__carousel {
+  .slick-dots {
+    top: 0;
+    bottom: auto;
+    left: 0;
+    padding: rem(10);
+    padding-top: calc(75% - 28px);
+    transform: translate(0, 0);
+  }
+}

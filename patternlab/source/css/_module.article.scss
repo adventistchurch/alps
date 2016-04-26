@@ -54,7 +54,9 @@
 
 .article__body,
 .article__flow {
-  max-width: rem(750);
+  max-width: rem(700);
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: $pad-double;
   > figure:first-child {
     margin-top: 0;

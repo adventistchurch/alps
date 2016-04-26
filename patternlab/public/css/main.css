@@ -47,6 +47,7 @@
  * Article..............Post-type pages with styled text.
  * Footer...............The main page footer.
  * Header...............The main page header.
+ * Sidebar..............The secondary column items.
  * Main.................Content area styles.
  *
  * MODIFIERS
@@ -1131,32 +1132,25 @@ h1, h2, h3, h4, h5, h6 {
 .column__secondary {
   padding-top: 1.875rem;
   padding-bottom: 1.25rem;
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
   background-color: #fbf9f3; }
   @media (min-width: 43.76em) {
     .column__secondary {
       padding-top: 2.5rem; } }
   @media (min-width: 56.26em) {
     .column__secondary {
-      padding-bottom: 2.5rem;
-      margin-left: 0;
-      margin-right: 0; } }
+      padding-bottom: 2.5rem; } }
 
-@media (min-width: 43.76em) {
-  .pad--primary {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; } }
-
-@media (min-width: 56.26em) {
-  .pad--primary {
-    padding-left: 3.75rem;
-    padding-right: 3.75rem; } }
-
-@media (min-width: 68.76em) {
-  .pad--primary {
-    padding-left: 5rem;
-    padding-right: 5rem; } }
+.pad--primary {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem; }
+  @media (min-width: 56.26em) {
+    .pad--primary {
+      padding-left: 3.75rem;
+      padding-right: 3.75rem; } }
+  @media (min-width: 68.76em) {
+    .pad--primary {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
 
 .pad--secondary {
   padding-left: 1.25rem;
@@ -1241,12 +1235,11 @@ h1, h2, h3, h4, h5, h6 {
       width: 70%;
       padding-left: 1.25rem; } }
 
-.block--breakout {
-  margin-left: -1.25rem;
-  margin-right: -1.25rem; }
-  @media (min-width: 56.26em) {
-    .block--breakout {
-      margin-top: -1.25rem; } }
+@media (min-width: 56.26em) {
+  .block--breakout {
+    margin-top: -1.25rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem; } }
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
@@ -1970,6 +1963,19 @@ body > svg {
 .no-dots .slick-dots {
   display: none !important; }
 
+/**
+ * Carousel as block (always assums 4:3 images)
+ */
+.carousel-block__carousel .slick-dots {
+  top: 0;
+  bottom: auto;
+  left: 0;
+  padding: 0.625rem;
+  padding-top: calc(75% - 28px);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }
+
 /*------------------------------------*    $PAGE SECTIONS
 \*------------------------------------*/
 .section {
@@ -2408,7 +2414,9 @@ body > svg {
 \*------------------------------------*/
 .article__body,
 .article__flow {
-  max-width: 46.875rem;
+  max-width: 43.75rem;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 2.5rem; }
   .article__body > figure:first-child,
   .article__flow > figure:first-child {
@@ -2777,6 +2785,13 @@ body > svg {
   .search-form__input[type="search"] {
     padding: 0.25rem 0.625rem;
     font-size: 0.75rem; } }
+
+/*------------------------------------*    $SIDEBAR
+\*------------------------------------*/
+.aside {
+  max-width: 43.75rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*------------------------------------*    $MAIN CONTENT AREA
 \*------------------------------------*/

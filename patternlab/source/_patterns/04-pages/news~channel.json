@@ -23,5 +23,8 @@
     }
   },
 
-  "carousel": false
+  "carousel": false,
+
+  "news_home": false,
+  "news_channel": true
 }

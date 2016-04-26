@@ -3,10 +3,15 @@
   <main class="main" role="main">
     {{> organisms-page-header }}
     {{> molecules-article-navigation }}
-    <div class="layout-container">
+    <div class="layout-container full--until-large">
       <div class="flex-container cf">
-        <div class="shift-left--fluid column__primary bg--white no-pad--top">
-          {{> organisms-news-content }}
+        <div class="shift-left--fluid column__primary bg--white no-pad--top no-pad--btm">
+          {{# news_home }}
+            {{> organisms-news-content }}
+          {{/ news_home }}
+          {{# news_channel }}
+            {{> organisms-news-channel-content }}
+          {{/ news_channel}}
         </div> <!-- /.shift-left--fluid -->
         <div class="shift-right--fluid bg--beige">
           {{> molecules-aside-navigation }}
