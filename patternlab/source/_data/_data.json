@@ -584,7 +584,7 @@
   "video_block": {
     "media_block_default": {
       "block_class": "no-space--top",
-      "block_content_class": "pad-half--top pad--left pad--right",
+      "block_inner_class": "spacing--quarter",
       "kicker": "Suspendisse",
       "title": "Duis nulla arcu, malesuada - fringilla eu",
       "img": false,
