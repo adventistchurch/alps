@@ -1108,19 +1108,24 @@ abbr {
 
 /*------------------------------------*    $LAYOUTS
 \*------------------------------------*/
-.column__primary,
+.column__primary {
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem; }
+  @media (min-width: 56.26em) {
+    .column__primary {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem; } }
+  @media (min-width: 68.76em) {
+    .column__primary {
+      padding-top: 5rem; } }
+
 .column__secondary {
   padding-bottom: 1.25rem;
   padding-top: 1.25rem; }
   @media (min-width: 56.26em) {
-    .column__primary,
     .column__secondary {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem; } }
-
-@media (min-width: 68.76em) {
-  .column__primary {
-    padding-top: 5rem; } }
 
 .pad--primary {
   padding-left: 1.25rem;
