@@ -150,9 +150,9 @@ $slice-height: 3;
 }
 // Submenu from primary navigation
 .primary-nav__subnav {
-  display: none;
   background-color: $gray-light;
   @include media('>medium') {
+    display: none;
     position: absolute;
     text-align: left;
     background-color: $white;

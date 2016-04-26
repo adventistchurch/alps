@@ -1569,10 +1569,10 @@ body > svg {
       display: block; } }
 
 .primary-nav__subnav {
-  display: none;
   background-color: rgba(0, 0, 0, 0.1); }
   @media (min-width: 43.76em) {
     .primary-nav__subnav {
+      display: none;
       position: absolute;
       text-align: left;
       background-color: #fff;
