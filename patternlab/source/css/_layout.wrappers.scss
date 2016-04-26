@@ -70,9 +70,9 @@
 }
 .pad--primary {
   padding: $pad;
+  padding-top: $pad-double;
   @include media('>large') {
     padding: rem(60);
-    padding-top: $pad-double;
   }
   @include media('>xlarge') {
     padding: rem(80);
@@ -81,6 +81,7 @@
 }
 .pad--secondary {
   padding: $pad;
+  padding-top: $pad-double;
   @include media('>large') {
     padding: $pad-double;
   }

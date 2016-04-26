@@ -1113,18 +1113,19 @@ abbr {
   padding-bottom: 1.25rem; }
 
 .pad--primary {
-  padding: 1.25rem; }
+  padding: 1.25rem;
+  padding-top: 2.5rem; }
   @media (min-width: 56.26em) {
     .pad--primary {
-      padding: 3.75rem;
-      padding-top: 2.5rem; } }
+      padding: 3.75rem; } }
   @media (min-width: 68.76em) {
     .pad--primary {
       padding: 5rem;
       padding-top: 3.75rem; } }
 
 .pad--secondary {
-  padding: 1.25rem; }
+  padding: 1.25rem;
+  padding-top: 2.5rem; }
   @media (min-width: 56.26em) {
     .pad--secondary {
       padding: 2.5rem; } }
