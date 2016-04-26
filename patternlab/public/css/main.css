@@ -1186,7 +1186,7 @@ abbr {
 /**
  * Block row (block with left thumb and right text when space allows)
  */
-@media (min-width: 25em) {
+@media (min-width: 25.01em) {
   .block__row {
     display: -ms-flexbox;
     display: flex;
@@ -1201,8 +1201,12 @@ abbr {
       padding-left: 1.25rem; } }
 
 .block--breakout {
-  margin: -1.25rem;
-  margin-bottom: 0; }
+  margin-left: -1.25rem;
+  margin-right: -1.25rem; }
+  @media (min-width: 56.26em) {
+    .block--breakout {
+      margin-top: -1.25rem;
+      margin-bottom: -1.25rem; } }
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/

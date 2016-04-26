@@ -11,7 +11,7 @@
  * Block row (block with left thumb and right text when space allows)
  */
 .block__row {
-  @include mq($small) {
+  @include media('>small') {
     display: flex;
     align-items: center;
     .block__image-wrap {
@@ -28,6 +28,10 @@
 
 // Blocks that breakout of of their layout.
 .block--breakout {
-  margin: -$space;
-  margin-bottom: 0;
+  margin-left: -$space;
+  margin-right: -$space;
+  @include media('>large') {
+    margin-top: -$space;
+    margin-bottom: -$space;
+  }
 }
