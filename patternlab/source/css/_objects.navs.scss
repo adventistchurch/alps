@@ -368,3 +368,12 @@ span.dropdown__arrow {
     font-size: rem(14);
   }
 }
+
+/**
+ * Pagination
+ */
+.pagination__page {
+  display: inline-block;
+  padding: rem(6) $pad-half;
+  margin: rem(2);
+}

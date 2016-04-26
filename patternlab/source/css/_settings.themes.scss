@@ -55,6 +55,10 @@
     .theme--secondary-background-color {
       background-color: $secondary-color;
     }
+    a.theme--secondary-background-color:hover {
+      background-color: darken($secondary-color, 30);
+      color: $white;
+    }
     .theme--secondary-transparent-background-color {
       background-color: rgba($secondary-color, .8);
     }

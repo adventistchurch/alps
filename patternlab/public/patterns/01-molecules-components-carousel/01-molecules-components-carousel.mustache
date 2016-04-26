@@ -3,7 +3,12 @@
 &lt;div class=&quot;carousel rel&quot;&gt;
   &lt;div class=&quot;carousel__slides {{ carousel_class }}&quot;&gt;
     {{# slides }}
-      {{&gt; molecules-slide }}
+      {{^ slides2column}}
+        {{&gt; molecules-slide }}
+      {{/ slides2column}}
+      {{# slides2column}}
+        {{&gt; molecules-slide-2-column }}
+      {{/ slides2column}}
     {{/ slides }}
   &lt;/div&gt; &lt;!-- /.carousel__slides --&gt;
 
