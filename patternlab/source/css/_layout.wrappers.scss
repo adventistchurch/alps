@@ -67,23 +67,35 @@
 .column__primary,
 .column__secondary {
   padding-bottom: $pad;
+  padding-top: $pad;
+  @include media('>large') {
+    padding-top: $pad-double;
+    padding-bottom: $pad-double;
+  }
+}
+.column__primary {
+  @include media('>xlarge') {
+    padding-top: rem(80);
+  }
 }
 .pad--primary {
-  padding: $pad;
-  padding-top: $pad-double;
+  padding-left: $pad;
+  padding-right: $pad;
   @include media('>large') {
-    padding: rem(60);
+    padding-left: rem(60);
+    padding-right: rem(60);
   }
   @include media('>xlarge') {
-    padding: rem(80);
-    padding-top: rem(60);
+    padding-left: rem(80);
+    padding-right: rem(80);
   }
 }
 .pad--secondary {
-  padding: $pad;
-  padding-top: $pad-double;
+  padding-left: $pad;
+  padding-right: $pad;
   @include media('>large') {
-    padding: $pad-double;
+    padding-left: $pad-double;
+    padding-right: $pad-double;
   }
 }
 .pad--secondary--for-breakouts {
