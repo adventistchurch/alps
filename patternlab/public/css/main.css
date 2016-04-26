@@ -1108,6 +1108,10 @@ abbr {
 
 /*------------------------------------*    $LAYOUTS
 \*------------------------------------*/
+.column__primary,
+.column__secondary {
+  padding-bottom: 1.25rem; }
+
 .pad--primary {
   padding: 1.25rem; }
   @media (min-width: 56.26em) {
@@ -1205,8 +1209,7 @@ abbr {
   margin-right: -1.25rem; }
   @media (min-width: 56.26em) {
     .block--breakout {
-      margin-top: -1.25rem;
-      margin-bottom: -1.25rem; } }
+      margin-top: -1.25rem; } }
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
