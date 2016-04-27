@@ -7,22 +7,38 @@
   display: block;
 }
 
+@mixin block-row {
+  display: flex;
+  .block__image-wrap {
+    width: 30%;
+    max-width: 300px;
+    text-align: right;
+  }
+  .block__content {
+    width: 70%;
+    padding-left: $pad;
+    align-self: center;
+  }
+}
+
 /**
  * Block row (block with left thumb and right text when space allows)
  */
 .block__row {
   @include media('>small') {
-    display: flex;
-    align-items: center;
-    .block__image-wrap {
-      width: 30%;
-      max-width: 300px;
-      text-align: right;
-    }
-    .block__content {
-      width: 70%;
-      padding-left: $pad;
-    }
+    @include block-row;
+  }
+}
+// Horizontal block between 'small' and 'medium' viewports.
+.block__row--small-to-medium {
+  @include media('>small', '<=medium') {
+    @include block-row;
+  }
+}
+// Horizontal block between 'small' and 'large' viewports.
+.block__row--small-to-large {
+  @include media('>small', '<=large') {
+    @include block-row;
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "media_block_default": {
-    "block_class": "block__row",
+    "block_inner_class": "block__row",
     "kicker": "Tincidunt",
     "title": "Cras at sem at felis rhoncus",
     "block_img_class": "round ",

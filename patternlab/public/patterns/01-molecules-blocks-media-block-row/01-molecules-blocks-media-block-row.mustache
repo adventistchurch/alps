@@ -9,7 +9,7 @@
     &lt;span class=&quot;kicker font--secondary--m upper theme--secondary-text-color db&quot;&gt;{{ kicker }}&lt;/span&gt;
   {{/ kicker }}
 
-  &lt;div class=&quot;media-block__inner {{ block_inner_class }}&quot;&gt;
+  &lt;div class=&quot;media-block__inner spacing--quarter {{ block_inner_class }}&quot;&gt;
     {{# img }}
       &lt;a class=&quot;media-block__image-wrap block__image-wrap db&quot; href=&quot;{{ url }}&quot;&gt;
         &lt;div class=&quot;{{ block_img_class }} dib&quot;&gt;&lt;img class=&quot;media-block__image block__image&quot; src=&quot;{{ img.src }}&quot; alt=&quot;{{ img.alt }}&quot; /&gt;&lt;/div&gt;
@@ -30,13 +30,15 @@
         &lt;time class=&quot;block__date font--secondary--xs brown space-half--btm&quot; datetime=&quot;{{ datetime }}&quot;&gt;{{{ date }}}&lt;/time&gt;
       {{/ date }}
 
-      {{# description }}
-        &lt;div class=&quot;text pad-half--btm&quot;&gt;&lt;p class=&quot;media-block__description block__description&quot;&gt;&lt;span class=&quot;font--primary--xs&quot;&gt;{{ description }}&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
-      {{/ description }}
+      &lt;div class=&quot;spacing--half&quot;&gt;
+        {{# description }}
+          &lt;div class=&quot;text text--s pad-half--btm&quot;&gt;&lt;p class=&quot;media-block__description block__description&quot;&gt;&lt;span class=&quot;font--primary--xs&quot;&gt;{{ description }}&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        {{/ description }}
 
-      {{# cta }}
-        &lt;p&gt;&lt;a class=&quot;media-block__cta block__cta btn theme--secondary-background-color&quot; href=&quot;{{ url }}&quot;&gt;{{ cta }}&lt;/a&gt;&lt;/p&gt;
-      {{/ cta }}
+        {{# cta }}
+          &lt;p&gt;&lt;a class=&quot;media-block__cta block__cta btn theme--secondary-background-color&quot; href=&quot;{{ url }}&quot;&gt;{{ cta }}&lt;/a&gt;&lt;/p&gt;
+        {{/ cta }}
+      &lt;/div&gt; &lt;!-- /.spacing --&gt;
 
     &lt;/div&gt; &lt;!-- media-block__content --&gt;
   &lt;/div&gt; &lt;!-- /.media-block__inner --&gt;

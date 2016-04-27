@@ -423,16 +423,19 @@
 }
 
 /**
- * Larger Text Version (non-article body)
+ * Smaller Text Version (non-article body, mostly for block deks)
  */
-.text--l {
+.text--s {
   > p,
-  > ul,
-  > ol,
-  > dl {
-    font-size: 110%;
+  > ul li,
+  > ol li,
+  > dl dd,
+  > dl dt,
+  > blockquote p {
+    line-height: 1.4;
   }
 }
+
 
 /**
  * Letter Spacing

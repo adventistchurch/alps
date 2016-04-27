@@ -96,10 +96,6 @@
     padding-left: rem(60);
     padding-right: rem(60);
   }
-  @include media('>xlarge') {
-    padding-left: rem(80);
-    padding-right: rem(80);
-  }
 }
 // Padding for secondary column
 .pad--secondary {

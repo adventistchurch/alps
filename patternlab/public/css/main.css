@@ -1153,10 +1153,6 @@ h1, h2, h3, h4, h5, h6 {
     .pad--primary {
       padding-left: 3.75rem;
       padding-right: 3.75rem; } }
-  @media (min-width: 68.76em) {
-    .pad--primary {
-      padding-left: 5rem;
-      padding-right: 5rem; } }
 
 .pad--secondary {
   padding-left: 1.25rem;
@@ -1230,16 +1226,44 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 25.01em) {
   .block__row {
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
+    display: flex; }
     .block__row .block__image-wrap {
       width: 30%;
       max-width: 300px;
       text-align: right; }
     .block__row .block__content {
       width: 70%;
-      padding-left: 1.25rem; } }
+      padding-left: 1.25rem;
+      -ms-flex-item-align: center;
+          align-self: center; } }
+
+@media (min-width: 25.01em) and (max-width: 43.75em) {
+  .block__row--small-to-medium {
+    display: -ms-flexbox;
+    display: flex; }
+    .block__row--small-to-medium .block__image-wrap {
+      width: 30%;
+      max-width: 300px;
+      text-align: right; }
+    .block__row--small-to-medium .block__content {
+      width: 70%;
+      padding-left: 1.25rem;
+      -ms-flex-item-align: center;
+          align-self: center; } }
+
+@media (min-width: 25.01em) and (max-width: 56.25em) {
+  .block__row--small-to-large {
+    display: -ms-flexbox;
+    display: flex; }
+    .block__row--small-to-large .block__image-wrap {
+      width: 30%;
+      max-width: 300px;
+      text-align: right; }
+    .block__row--small-to-large .block__content {
+      width: 70%;
+      padding-left: 1.25rem;
+      -ms-flex-item-align: center;
+          align-self: center; } }
 
 @media (min-width: 56.26em) {
   .block--breakout {
@@ -2370,13 +2394,15 @@ body > svg {
     margin-bottom: 0; }
 
 /**
- * Larger Text Version (non-article body)
+ * Smaller Text Version (non-article body, mostly for block deks)
  */
-.text--l > p,
-.text--l > ul,
-.text--l > ol,
-.text--l > dl {
-  font-size: 110%; }
+.text--s > p,
+.text--s > ul li,
+.text--s > ol li,
+.text--s > dl dd,
+.text--s > dl dt,
+.text--s > blockquote p {
+  line-height: 1.4; }
 
 /**
  * Letter Spacing

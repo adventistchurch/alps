@@ -1,0 +1,14 @@
+{
+  "media_block_default": {
+    "block_inner_class": "block__row--small-to-large",
+    "title": "Cras purus turpis, mattis et risus ac",
+    "img": {
+      "src": "http://placehold.it/400x300",
+      "alt": "Media Block Image Alt Left"
+    },
+    "datetime": false,
+    "date": false,
+    "description": "Aenean rhoncus sollicitudin tempor. Aliquam in sem nec mi sodales fringilla. Phasellus eu consequat erat.",
+    "cta": "Call to Action"
+  }
+}

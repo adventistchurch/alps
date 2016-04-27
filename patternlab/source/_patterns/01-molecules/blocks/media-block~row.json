@@ -1,6 +1,6 @@
 {
   "media_block_default": {
-    "block_class": "block__row",
+    "block_inner_class": "block__row",
     "title": "Fusce interdum purus est",
     "img": {
       "src": "http://placehold.it/300x300",

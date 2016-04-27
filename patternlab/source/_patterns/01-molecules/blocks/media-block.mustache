@@ -9,7 +9,7 @@
     <span class="kicker font--secondary--m upper theme--secondary-text-color db">{{ kicker }}</span>
   {{/ kicker }}
 
-  <div class="media-block__inner {{ block_inner_class }}">
+  <div class="media-block__inner spacing--quarter {{ block_inner_class }}">
     {{# img }}
       <a class="media-block__image-wrap block__image-wrap db" href="{{ url }}">
         <div class="{{ block_img_class }} dib"><img class="media-block__image block__image" src="{{ img.src }}" alt="{{ img.alt }}" /></div>
@@ -30,13 +30,15 @@
         <time class="block__date font--secondary--xs brown space-half--btm" datetime="{{ datetime }}">{{{ date }}}</time>
       {{/ date }}
 
-      {{# description }}
-        <div class="text pad-half--btm"><p class="media-block__description block__description"><span class="font--primary--xs">{{ description }}</span></p></div>
-      {{/ description }}
+      <div class="spacing--half">
+        {{# description }}
+          <div class="text text--s pad-half--btm"><p class="media-block__description block__description"><span class="font--primary--xs">{{ description }}</span></p></div>
+        {{/ description }}
 
-      {{# cta }}
-        <p><a class="media-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ cta }}</a></p>
-      {{/ cta }}
+        {{# cta }}
+          <p><a class="media-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ cta }}</a></p>
+        {{/ cta }}
+      </div> <!-- /.spacing -->
 
     </div> <!-- media-block__content -->
   </div> <!-- /.media-block__inner -->
