@@ -13,7 +13,7 @@
     a.theme--primary-text-color:hover,
     .theme--primary-text-color a:hover,
     .this-is-active > .theme--primary-text-color {
-      color: darken($primary-color, 30);
+      color: complement($primary-color);
     }
 
     // Background colors
@@ -49,7 +49,7 @@
     }
     a.theme--secondary-text-color:hover,
     .theme--secondary-text-color a:hover {
-      color: darken($secondary-color, 30);
+      color: complement($secondary-color);
     }
 
     // Background colors
@@ -57,7 +57,7 @@
       background-color: $secondary-color;
     }
     a.theme--secondary-background-color:hover {
-      background-color: darken($secondary-color, 30);
+      background-color: complement($secondary-color);
       color: $white;
     }
     .theme--secondary-transparent-background-color {
@@ -102,8 +102,11 @@
       p, li {
         a {
           color: $secondary-color;
+          box-shadow: inset 0 rem(-3) 0 rgba($secondary-color, .25);
+          transition: all .2s ease-out;
           &:hover {
-            color: darken($secondary-color, 10);
+            color: complement($secondary-color);
+            box-shadow: inset 0 rem(-10) 0 rgba($secondary-color, .15);
           }
         }
       }

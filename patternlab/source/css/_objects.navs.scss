@@ -128,10 +128,23 @@ $slice-height: 3;
 }
 .primary-nav--with-subnav {
   @include media('>medium') {
+    &:before {
+      content: "";
+      border-left: rem(5) solid transparent;
+      border-right: rem(5) solid transparent;
+      border-top: rem(5) solid $gray;
+      position: absolute;
+      left: 0;
+      top: calc(50%);
+      transform: translate(0, -50%);
+    }
     &:hover {
       box-shadow: 0 0 2px rgba($black, .3);
       background-color: $white;
       z-index: 15;
+      &:before {
+        display: none;
+      }
       &:after {
         content: "";
         position: absolute;
