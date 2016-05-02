@@ -5,7 +5,8 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 ### Getting Started
 
-- Install node globally via the command line
+- Set up your local dev url to be `sda.dev`
+- [Install node globally](https://docs.npmjs.com/getting-started/installing-node)
 - run `npm install` (may need to be run as `sudo`)
 - run `grunt`
 - get mamp working and point toward the patternlab/public folder
