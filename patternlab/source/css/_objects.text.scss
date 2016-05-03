@@ -184,6 +184,26 @@
 /**
  * Secondary type styles
  */
+
+// XLarge type - secondary
+@mixin font--secondary--xl() {
+  font-family: $font-secondary;
+  font-size: rem(24);
+  font-weight: 600;
+  line-height: rem(28);
+  @include media('>medium') {
+    font-size: rem(30);
+    line-height: rem(34);
+  }
+  @include media('>large') {
+    font-size: rem(38);
+    line-height: rem(42);
+  }
+}
+.font--secondary--xl {
+  @include font--secondary--xl;
+}
+
 // Large type - secondary
 @mixin font--secondary--l() {
   font-family: $font-secondary;

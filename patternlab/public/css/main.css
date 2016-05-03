@@ -2259,6 +2259,20 @@ body > svg {
 /**
  * Secondary type styles
  */
+.font--secondary--xl {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.75rem; }
+  @media (min-width: 43.76em) {
+    .font--secondary--xl {
+      font-size: 1.875rem;
+      line-height: 2.125rem; } }
+  @media (min-width: 56.26em) {
+    .font--secondary--xl {
+      font-size: 2.375rem;
+      line-height: 2.625rem; } }
+
 .font--secondary--l {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 1.375rem;
