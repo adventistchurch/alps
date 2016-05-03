@@ -130,7 +130,7 @@ module.exports = function(grunt) {
             },
             options: {
                 watchTask: true,
-                proxy: "sda.dev"
+                proxy: "alps.dev"
             }
         }
 

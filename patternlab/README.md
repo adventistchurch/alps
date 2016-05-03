@@ -5,7 +5,7 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 ### Getting Started
 
-- Set up your local dev url to be `sda.dev`
+- Set up your local dev url to be `alps.dev`
 - [Install node globally](https://docs.npmjs.com/getting-started/installing-node)
 - run `npm install` (may need to be run as `sudo`)
 - run `grunt`
