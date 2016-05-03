@@ -1618,14 +1618,22 @@ body > svg {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
 
+@media (max-width: 43.75em) {
+  .primary-nav--with-subnav.is-active .primary-nav__subnav {
+    display: block; }
+  .primary-nav--with-subnav.is-active .arrow--down {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); } }
+
 @media (min-width: 43.76em) {
   .primary-nav--with-subnav:before {
     content: "";
     border-left: 0.3125rem solid transparent;
     border-right: 0.3125rem solid transparent;
-    border-top: 0.3125rem solid rgba(0, 0, 0, 0.5);
+    border-top: 0.3125rem solid rgba(0, 0, 0, 0.6);
     position: absolute;
-    left: 0;
+    right: 0;
     top: calc(50%);
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
@@ -1648,11 +1656,35 @@ body > svg {
     .primary-nav--with-subnav:hover .primary-nav__subnav {
       display: block; } }
 
+@media (min-width: 43.76em) and (max-width: 68.75em) {
+  .primary-nav--with-subnav {
+    padding-right: 0.125rem; } }
+
+.primary-nav__subnav__arrow {
+  display: none; }
+  @media (max-width: 43.75em) {
+    .primary-nav__subnav__arrow {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 3rem;
+      width: 2.75rem;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      cursor: pointer; }
+      .primary-nav__subnav__arrow .arrow--down {
+        border-top-color: #fff;
+        margin-left: auto;
+        margin-right: auto; } }
+
 .primary-nav__subnav {
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none; }
   @media (min-width: 43.76em) {
     .primary-nav__subnav {
-      display: none;
       position: absolute;
       text-align: left;
       background-color: #fff;
@@ -1681,6 +1713,8 @@ body > svg {
   @media (min-width: 56.26em) {
     .secondary-nav {
       margin-bottom: 0; } }
+  .secondary-nav .subnav__arrow {
+    border-top: 0.3125rem solid rgba(0, 0, 0, 0.6); }
 
 @media (min-width: 43.76em) {
   .secondary-nav__list {
@@ -2783,6 +2817,16 @@ body > svg {
   .logo__link--square {
     width: 10.625rem; } }
 
+.logo__subbrand {
+  width: 3.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3125rem; }
+
+.logo__subbrand-text {
+  font-family: "Oswald", "Trade Gothic", "Helvetica", "Arial", sans-serif; }
+
 .header__unify-logo-nav {
   width: 100%; }
   @media (min-width: 43.76em) {
@@ -3810,3 +3854,11 @@ body > svg {
 
 .no-min-h {
   min-height: 0; }
+
+/*------------------------------------*    $STYLEGUIDE UPDATES
+\*------------------------------------*/
+.sg-main {
+  max-width: 71.875rem;
+  padding: 1.25rem;
+  margin-left: auto;
+  margin-right: auto; }

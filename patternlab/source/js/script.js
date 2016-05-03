@@ -145,6 +145,11 @@
   // Responsive videos
   $('.article__body, .text, .fitvid').fitVids();
 
+  // FitText for logo subbrands.
+  $('.js-logo-fit .line1').fitText(.55);
+  $('.js-logo-fit .line2').fitText(.9);
+  $('.js-logo-fit .line3').fitText(.79);
+
 
   // Theme switcher for primary colors
   $('.theme-swatches--primary .swatch').click(function(){

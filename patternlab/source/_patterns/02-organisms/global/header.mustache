@@ -7,7 +7,15 @@
     {{> molecules-navigation-toggle }}
     <div class="header__unify-logo-nav">
       <a href="/" class="logo__link logo__link--horiz theme--primary-background-color show-until--large">{{> atoms-logo-horiz }}</a>
-      <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large">{{> atoms-logo-square }}</a>
+      <!-- <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large">{{> atoms-logo-square }}</a> -->
+      <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large">
+        <div class="logo__subbrand">{{> atoms-icon-logo(fill_class: 'fill--white') }}</div>
+        <div class="js-logo-fit upper white logo__subbrand-text">
+          <div class="line1">Life &amp; Health</div>
+          <div class="line2">Romainian Adventist</div>
+          <div class="line3">Publishing House</div>
+        </div>
+      </a>
       {{> molecules-primary-navigation }}
     </div> <!-- /.header__unify-logo-nav -->
     <div class="header__utility">

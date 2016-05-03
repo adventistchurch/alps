@@ -2,9 +2,10 @@
 &lt;nav class=&quot;primary-nav toggled-element&quot; id=&quot;primary-nav&quot; role=&quot;navigation&quot; data-active-target=&quot;primary-nav&quot;&gt;
   &lt;ul class=&quot;primary-nav__list&quot;&gt;
     {{# items }}
-      &lt;li class=&quot;primary-nav__list-item {{# has_subnav }} primary-nav--with-subnav js-hover {{/ has_subnav }}&quot;&gt;
+      &lt;li class=&quot;primary-nav__list-item {{# has_subnav }} primary-nav--with-subnav js-hover {{/ has_subnav }}&quot; {{# has_subnav }} data-prefix=&quot;hover&quot; {{/ has_subnav }}&gt;
         &lt;a class=&quot;primary-nav__link theme--primary-text-color {{# is_active }} theme--secondary-text-color active {{/ is_active }}&quot; href=&quot;{{ url }}&quot;&gt;{{{ text }}}&lt;/a&gt;
         {{# has_subnav }}
+          &lt;div class=&quot;primary-nav__subnav__arrow va--middle js-toggle-parent theme--primary-background-color&quot;&gt;&lt;span class=&quot;arrow--down&quot;&gt;&lt;/span&gt;&lt;/div&gt;
           &lt;ul class=&quot;primary-nav__subnav&quot;&gt;
             {{# sub_items }}
               &lt;li class=&quot;primary-nav__subnav__list-item&quot;&gt;&lt;a class=&quot;primary-nav__subnav__link theme--primary-text-color&quot; href=&quot;{{ url }}&quot;&gt;{{{ text }}}&lt;/a&gt;&lt;/li&gt;

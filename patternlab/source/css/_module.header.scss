@@ -152,6 +152,16 @@
     width: rem(170);
   }
 }
+.logo__subbrand {
+  width: rem(60);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(5);
+}
+.logo__subbrand-text {
+  font-family: $font-tertiary;
+}
 .header__unify-logo-nav {
   width: 100%;
   @include media('>medium') {
