@@ -1,33 +1,76 @@
-<div class="text article__body pad--primary spacing column__primary">
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":{
+    "@type": "WebPage",
+    "@id": "https://google.com/article"
+  },
+  "headline": "The Headline of this Article",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://placehold.it/800x600",
+    "height": 600,
+    "width": 800
+  },
+  "datePublished": "2015-02-05T08:00:00+08:00",
+  "dateModified": "2015-02-05T09:20:00+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "TJ Pitre"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Seventh Day Adventists",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://placehold.it/100x100",
+      "width": 100,
+      "height": 60
+    }
+  },
+  "description": "Mauris vulputate scelerisque feugiat ras a erat a diam venenatis aliquam sed tempus."
+}
+</script>
 
-  {{> molecules-video-figure-with-caption(figure_class: "size--large") }}
+<div class="pad--primary spacing column__primary">
 
-  <p><a href="#">Aliquam erat volutpat.</a> Mauris vulputate scelerisque feugiat ras a erat a diam venenatis aliquam sed tempus, <strong>purus ac pretium</strong> varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum <a href="">sociis natoque penatibus et</a> magnis dis parturient montes, nascetur ridiculus mus.</p>
+  {{> organisms-article-header }}
 
-  <p>Maecenas eros dolor, <em>rutrum eu sollicitudin</em> eu, commodo at leo suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus maecenas eu urna adipiscing neque dictum mollis suscipit in augue.</p>
+  <div class="text article__body spacing">
 
-  <h2>Header Two</h2>
+    {{> molecules-video-figure-with-caption(figure_class: "size--large") }}
 
-  <p>In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.</p>
+    <p><a href="#">Aliquam erat volutpat.</a> Mauris vulputate scelerisque feugiat ras a erat a diam venenatis aliquam sed tempus, <strong>purus ac pretium</strong> varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum <a href="">sociis natoque penatibus et</a> magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-  <p>Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.</p>
+    <p>Maecenas eros dolor, <em>rutrum eu sollicitudin</em> eu, commodo at leo suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus maecenas eu urna adipiscing neque dictum mollis suscipit in augue.</p>
 
-  {{# fig_large }}
-    {{> molecules-figure-with-caption }}
-  {{/ fig_large }}
+    <h2>Header Two</h2>
 
-  <p>Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium deserunt sed explicabo voluptate sapiente ratione inventore molestiae nihil earum repellat quia odit vitae perspiciatis aliquam amet?</p>
+    <p>In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.</p>
 
-  <h2>Header Three</h2>
+    <p>Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.</p>
 
-  <p>Sodales tortor et porta convallis. Donec dignissim sed risus egestas pharetra. Sed leo nulla, posuere quis ultrices et, pharetra in neque. Aliquam odio quam, suscipit eu dapibus sed, bibendum ac sapien.</p>
+    {{# fig_large }}
+      {{> molecules-figure-with-caption }}
+    {{/ fig_large }}
 
-  {{# fig_center }}
-    {{> molecules-figure-with-caption }}
-  {{/ fig_center }}
+    <p>Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium deserunt sed explicabo voluptate sapiente ratione inventore molestiae nihil earum repellat quia odit vitae perspiciatis aliquam amet?</p>
 
-  <p>Aenean pretium dui eget purus gravida, vitae fringilla diam ultricies. Integer quis pellentesque risus, non maximus mauris. Fusce eu ipsum faucibus, feugiat lorem in, mattis sapien. Curabitur sodales lacus eu mi aliquam convallis. Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.</p>
-</div>
+    <h2>Header Three</h2>
+
+    <p>Sodales tortor et porta convallis. Donec dignissim sed risus egestas pharetra. Sed leo nulla, posuere quis ultrices et, pharetra in neque. Aliquam odio quam, suscipit eu dapibus sed, bibendum ac sapien.</p>
+
+    {{# fig_center }}
+      {{> molecules-figure-with-caption }}
+    {{/ fig_center }}
+
+    <p>Aenean pretium dui eget purus gravida, vitae fringilla diam ultricies. Integer quis pellentesque risus, non maximus mauris. Fusce eu ipsum faucibus, feugiat lorem in, mattis sapien. Curabitur sodales lacus eu mi aliquam convallis. Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.</p>
+  </div>
+
+  {{> molecules-pagination }}
+
+</div> <!-- /.spacing -->
 
 <hr>
 
