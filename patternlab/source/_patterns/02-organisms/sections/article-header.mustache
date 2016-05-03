@@ -1,25 +1,10 @@
 {{# article_header }}
-<header class="article__header spacing--quarter">
+<header class="article__header article__flow spacing--quarter">
   <h1 class="font--secondary--l theme--secondary-text-color">{{{ heading }}}</h1>
   <div class="spacing--half">
     {{# subheading }}<h1 class="font--secondary--m">{{{ subheading }}}</h1>{{/ subheading }}
-
-    <div class="share-tools">
-      <div class="addthis_toolbox addthis_default_style" addthis:url="{{ share_url }}">
-        <a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed4fc0e60966005" class="addthis_button_compact">Share</a>
-        <span class="addthis_separator">|</span>
-        <a class="addthis_button_facebook" g:plusone:count="false"></a>
-        <a class="addthis_button_twitter" g:plusone:count="false"></a>
-        <a class="addthis_button_google_plusone" g:plusone:count="false"></a>
-        <a class="addthis_button_email" g:plusone:count="false"></a>
-      </div>
-    </div> <!-- /.share-tools -->
+    {{> molecules-share-tools }}
   </div>
-
-  <div class="article__meta">
-    <span class="pub_date font--secondary--s gray">April 19, 2016</span> <span class="divider">|</span>
-    <span class="pub_region font--secondary--s gray">Pedernales, Ecuador</span> <span class="divider">|</span>
-    <span class="byline font--secondary--s gray">Andrew McChesney, news editor, Adventist Review/ ADRA International Staff/ ANN Staff</span>
-  </div>
+  {{> molecules-article-meta }}
 </header> <!-- /.article__header -->
 {{/ article_header }}

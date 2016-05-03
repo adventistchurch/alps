@@ -36,17 +36,6 @@
 
 
 
-/*------------------------------------*\
-    $ARTICLE META
-\*------------------------------------*/
-
-
-
-/*------------------------------------*\
-    $ARTICLE SOCIAL
-\*------------------------------------*/
-
-
 
 /*------------------------------------*\
     $BODY OF ARTICLE
@@ -57,6 +46,8 @@
   max-width: rem(700);
   margin-left: auto;
   margin-right: auto;
+}
+.article__body {
   padding-bottom: $pad-double;
   > figure:first-child {
     margin-top: 0;

@@ -1,25 +1,10 @@
 {{# article_header }}
-&lt;header class=&quot;article__header spacing--quarter&quot;&gt;
+&lt;header class=&quot;article__header article__flow spacing--quarter&quot;&gt;
   &lt;h1 class=&quot;font--secondary--l theme--secondary-text-color&quot;&gt;{{{ heading }}}&lt;/h1&gt;
   &lt;div class=&quot;spacing--half&quot;&gt;
     {{# subheading }}&lt;h1 class=&quot;font--secondary--m&quot;&gt;{{{ subheading }}}&lt;/h1&gt;{{/ subheading }}
-
-    &lt;div class=&quot;share-tools&quot;&gt;
-      &lt;div class=&quot;addthis_toolbox addthis_default_style&quot; addthis:url=&quot;{{ share_url }}&quot;&gt;
-        &lt;a href=&quot;http://www.addthis.com/bookmark.php?v=250&amp;amp;pubid=ra-4ed4fc0e60966005&quot; class=&quot;addthis_button_compact&quot;&gt;Share&lt;/a&gt;
-        &lt;span class=&quot;addthis_separator&quot;&gt;|&lt;/span&gt;
-        &lt;a class=&quot;addthis_button_facebook&quot; g:plusone:count=&quot;false&quot;&gt;&lt;/a&gt;
-        &lt;a class=&quot;addthis_button_twitter&quot; g:plusone:count=&quot;false&quot;&gt;&lt;/a&gt;
-        &lt;a class=&quot;addthis_button_google_plusone&quot; g:plusone:count=&quot;false&quot;&gt;&lt;/a&gt;
-        &lt;a class=&quot;addthis_button_email&quot; g:plusone:count=&quot;false&quot;&gt;&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt; &lt;!-- /.share-tools --&gt;
+    {{&gt; molecules-share-tools }}
   &lt;/div&gt;
-
-  &lt;div class=&quot;article__meta&quot;&gt;
-    &lt;span class=&quot;pub_date font--secondary--s gray&quot;&gt;April 19, 2016&lt;/span&gt; &lt;span class=&quot;divider&quot;&gt;|&lt;/span&gt;
-    &lt;span class=&quot;pub_region font--secondary--s gray&quot;&gt;Pedernales, Ecuador&lt;/span&gt; &lt;span class=&quot;divider&quot;&gt;|&lt;/span&gt;
-    &lt;span class=&quot;byline font--secondary--s gray&quot;&gt;Andrew McChesney, news editor, Adventist Review/ ADRA International Staff/ ANN Staff&lt;/span&gt;
-  &lt;/div&gt;
+  {{&gt; molecules-article-meta }}
 &lt;/header&gt; &lt;!-- /.article__header --&gt;
 {{/ article_header }}
