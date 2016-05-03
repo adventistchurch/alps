@@ -1,7 +1,9 @@
 .DS_Store
+/node_modules
+.sass-cache/
+*.css.map
 
 # Ignore IDE-specific files
 *.sublime-project
 *.sublime-workspace
-.sass-cache/
-*.css.map
+
