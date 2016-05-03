@@ -1675,10 +1675,20 @@ body > svg {
       -ms-flex-align: center;
           align-items: center;
       cursor: pointer; }
+      .primary-nav__subnav__arrow:before {
+        content: "";
+        position: absolute;
+        left: 0.4375rem;
+        right: 0.4375rem;
+        top: 0.5625rem;
+        bottom: 0.5625rem;
+        background-color: rgba(0, 0, 0, 0.3); }
       .primary-nav__subnav__arrow .arrow--down {
         border-top-color: #fff;
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        position: relative;
+        z-index: 10; } }
 
 .primary-nav__subnav {
   background-color: rgba(0, 0, 0, 0.1);

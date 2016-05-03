@@ -186,10 +186,21 @@ $slice-height: 3;
     text-align: center;
     align-items: center;
     cursor: pointer;
+    &:before {
+      content: "";
+      position: absolute;
+      left: rem(7);
+      right: rem(7);
+      top: rem(9);
+      bottom: rem(9);
+      background-color: rgba($black, .3);
+    }
     .arrow--down {
       border-top-color: $white;
       margin-left: auto;
       margin-right: auto;
+      position: relative;
+      z-index: 10;
     }
   }
 }
