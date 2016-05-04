@@ -143,12 +143,27 @@
   });
 
   // Responsive videos
-  $('.article__body, .text, .fitvid').fitVids();
+  if ($.fn.fitVids) {
+    $('.article__body, .text, .fitvid').fitVids();
+  }
 
   // FitText for logo subbrands.
-  $('.js-logo-fit .line1').fitText(.55);
-  $('.js-logo-fit .line2').fitText(.9);
-  $('.js-logo-fit .line3').fitText(.79);
+  // $('.js-logo-fit .line1').fitText(.55);
+  // $('.js-logo-fit .line2').fitText(.9);
+  // $('.js-logo-fit .line3').fitText(.79);
+
+
+  /**
+   * Modaal functionality
+   * Reference:
+   */
+  if ($.fn.modaal) {
+    $('.js-modal-image').modaal({
+      type: 'image'
+    });
+  }
+
+
 
 
   // Theme switcher for primary colors

@@ -57,6 +57,9 @@
  * Filters..............CSS filters styles.
  * Spacings.............Padding and margins in classes.
  *
+ * THIRD PARTY
+ * Modaal...............Modal plugin - https://github.com/humaan/Modaal
+ *
  * TRUMPS
  * Helper Classes.......Helper classes loaded last in the cascade.
  */
@@ -145,6 +148,12 @@ $tests: true;
 @import "modifier.display";
 @import "modifier.filters";
 @import "modifier.spacing";
+
+
+/*------------------------------------*\
+    $THIRD PARTY
+\*------------------------------------*/
+@import "vendor.modaal";
 
 
 /*------------------------------------*\

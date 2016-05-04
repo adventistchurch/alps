@@ -256,6 +256,16 @@
       "caption": "Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
   },
 
+  "fig_with_modal": {
+    "large_image_url": "http://placehold.it/1200x800",
+    "figure_class": "size--medium",
+    "img": {
+      "src": "http://placehold.it/400x300",
+      "alt": "Image Alt"
+    },
+    "caption": "Wllamco laboris nisi ut aliquip ex."
+  },
+
   "media_block_default": {
     "block_title_class": "font--secondary--m",
     "title": "Proin venenatis maximus",
