@@ -408,6 +408,47 @@
     }
   },
 
+  "heading_block_default": {
+    "block_heading": "General Conference",
+    "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
+    "cta": "Find out more"
+  },
+
+  "heading_blocks": [
+    {
+      "heading_block_default": {
+        "block_class": "has-border--left has-border--left--emperor",
+        "block_heading": "General Conference",
+        "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
+        "cta": "Find out more"
+      }
+    },
+    {
+      "heading_block_default": {
+        "block_class": "has-border--left has-border--left--red",
+        "block_heading": "East-Central Africa",
+        "description": "The East-Central Africa Division (ECD) is comprised of 11 countries. Amid a population of about 307 million, the Seventh-day Adventist Church counts more than 2.5 million members worshiping at more than 11,000 churches.",
+        "cta": "Find out more"
+      }
+    },
+    {
+      "heading_block_default": {
+        "block_class": "has-border--left has-border--left--ming",
+        "block_heading": "Euro-Asia",
+        "description": "The Euro-Asia Division spans 11 time zones across northern Asia. Adventists worship at almost 2,000 churches across the region, which is comprised of 13 countries.",
+        "cta": "Find out more"
+      }
+    },
+    {
+      "heading_block_default": {
+        "block_class": "has-border--left has-border--left--denim",
+        "block_heading": "Middle East and North Africa",
+        "description": "The Middle East and North Africa Union is comprised of 20 countries. The region is bordered by Morocco to the west, Iran to the east, Turkey to the north and Sudan to the south. The population of the region is about 500 million people.",
+        "cta": "Find out more"
+      }
+    }
+  ],
+
   "aside_content": [
     {
       "aside_heading": "News",

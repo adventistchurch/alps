@@ -1010,6 +1010,27 @@ h1, h2, h3, h4, h5, h6 {
         width: 30%; } }
 
 /**
+ * Grid 2up at medium width with 30/70 split.
+ */
+@media (min-width: 43.76em) {
+  .g-2up--70-30--at-medium {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+    .g-2up--70-30--at-medium > .gi {
+      float: left;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+      display: -ms-flexbox;
+      display: flex; }
+      .g-2up--70-30--at-medium > .gi:first-child {
+        width: 30%; }
+      .g-2up--70-30--at-medium > .gi:last-child {
+        width: 70%; } }
+
+/**
  * Grid always 2 columns even
  */
 .g-2-split {
@@ -2179,6 +2200,10 @@ body > svg {
 .align--left {
   text-align: left; }
 
+@media (min-width: 43.76em) {
+  .align--right--at-medium {
+    text-align: right; } }
+
 /**
  * Caption
  */
@@ -3129,6 +3154,45 @@ body > svg {
 
 .bg--warm {
   background-color: #ffa92d; }
+
+/**
+ * Colored Left Borders
+ */
+.has-border--left {
+  position: relative;
+  padding-left: 1.25rem; }
+  .has-border--left:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.9375rem;
+    background-color: #438390; }
+  .has-border--left--emperor:before {
+    background-color: #4b207f; }
+  .has-border--left--earth:before {
+    background-color: #5e3929; }
+  .has-border--left--grapevine:before {
+    background-color: #7f264a; }
+  .has-border--left--denim:before {
+    background-color: #2f557f; }
+  .has-border--left--campfire:before {
+    background-color: #e36520; }
+  .has-border--left--treefrog:before {
+    background-color: #448d21; }
+  .has-border--left--ming:before {
+    background-color: #3e8391; }
+  .has-border--left--cool:before {
+    background-color: #4d7549; }
+  .has-border--left--warm:before {
+    background-color: #ffa92d; }
+  .has-border--left--blue:before {
+    background-color: #438390; }
+  .has-border--left--brown:before {
+    background-color: #7e7667; }
+  .has-border--left--red:before {
+    background-color: #ef3d25; }
 
 /**
  * States

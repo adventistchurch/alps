@@ -142,6 +142,59 @@
   background-color: $warm;
 }
 
+/**
+ * Colored Left Borders
+ */
+.has-border--left {
+  position: relative;
+  padding-left: $pad;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: rem(15);
+    background-color: $blue;
+  }
+  &--emperor:before {
+    background-color: $emperor;
+  }
+  &--earth:before {
+    background-color: $earth;
+  }
+  &--grapevine:before {
+    background-color: $grapevine;
+  }
+  &--denim:before {
+    background-color: $denim;
+  }
+  &--campfire:before {
+    background-color: $campfire;
+  }
+  &--treefrog:before {
+    background-color: $treefrog;
+  }
+  &--ming:before {
+    background-color: $ming;
+  }
+  &--cool:before {
+    background-color: $cool;
+  }
+  &--warm:before {
+    background-color: $warm;
+  }
+  &--blue:before {
+    background-color: $blue;
+  }
+  &--brown:before {
+    background-color: $brown;
+  }
+  &--red:before {
+    background-color: $red;
+  }
+}
+
 
 /**
  * States

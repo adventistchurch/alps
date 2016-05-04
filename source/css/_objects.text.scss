@@ -56,16 +56,21 @@
 /**
  * Text Alignment
  */
- .align--right {
-   text-align: right;
- }
- .center,
- .align--center {
-   text-align: center;
- }
- .align--left {
-   text-align: left;
- }
+.align--right {
+  text-align: right;
+}
+.center,
+.align--center {
+  text-align: center;
+}
+.align--left {
+  text-align: left;
+}
+.align--right--at-medium {
+  @include media('>medium') {
+    text-align: right;
+  }
+}
 
 /**
  * Caption

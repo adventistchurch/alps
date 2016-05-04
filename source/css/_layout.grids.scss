@@ -98,6 +98,28 @@
   }
 }
 
+/**
+ * Grid 2up at medium width with 30/70 split.
+ */
+.g-2up--70-30--at-medium {
+  @include media('>medium') {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    > .gi {
+      float: left;
+      align-items: stretch;
+      display: flex;
+      &:first-child {
+        width: 30%;
+      }
+      &:last-child {
+        width: 70%;
+      }
+    }
+  }
+}
+
 
 /**
  * Grid always 2 columns even
