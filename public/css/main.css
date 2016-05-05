@@ -927,8 +927,6 @@ abbr {
   cursor: help; }
 
 h1, h2, h3, h4, h5, h6 {
-  word-break: break-all;
-  word-break: break-word;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto; }
@@ -1013,25 +1011,25 @@ h1, h2, h3, h4, h5, h6 {
         width: 30%; } }
 
 /**
- * Grid 2up at medium width with 30/70 split.
+ * Grid 2up at medium width with 35/65 split.
  */
 @media (min-width: 43.76em) {
-  .g-2up--70-30--at-medium {
+  .g-2up--35-65--at-medium {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%; }
-    .g-2up--70-30--at-medium > .gi {
+    .g-2up--35-65--at-medium > .gi {
       float: left;
       -ms-flex-align: stretch;
           align-items: stretch;
       display: -ms-flexbox;
       display: flex; }
-      .g-2up--70-30--at-medium > .gi:first-child {
-        width: 30%; }
-      .g-2up--70-30--at-medium > .gi:last-child {
-        width: 70%; } }
+      .g-2up--35-65--at-medium > .gi:first-child {
+        width: 35%; }
+      .g-2up--35-65--at-medium > .gi:last-child {
+        width: 65%; } }
 
 /**
  * Grid always 2 columns even
