@@ -2,29 +2,24 @@
     $STYLEGUIDE UPDATES
 \*------------------------------------*/
 
-.sg-main {
-  max-width: $max-width;
-  padding: $pad;
-  margin-left: auto;
-  margin-right: auto;
+.pl {
+  .sg-main {
+    max-width: $max-width;
+    padding: $pad;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sg-colors {
+    width: 100%;
+    li {
+      width: rem(120);
+    }
+  }
+
+  .sg-colors-swatch {
+    display: block;
+    height: rem(70);
+  }
 }
 
-.sg-colors{
-	max-width: 90%;
-	padding: $pad;
-	margin-left: 1em;
-	margin-right: 1em;
-
-	li {
-		border: 2px solid black;
-		padding: 1.3em;
-		margin: 3 1.2em 1.2em 3;
-	}	
-}
-
-.sg-colors-swatch {
-	display: block;
-	height: 4em;
-	width: 90%;
-	margin: .2em auto;
-}	
