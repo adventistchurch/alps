@@ -4535,8 +4535,17 @@ body > svg {
 
 /*------------------------------------*    $STYLEGUIDE UPDATES
 \*------------------------------------*/
-.sg-main {
+.pl .sg-main {
   max-width: 71.875rem;
   padding: 1.25rem;
   margin-left: auto;
   margin-right: auto; }
+
+.pl .sg-colors {
+  width: 100%; }
+  .pl .sg-colors li {
+    width: 7.5rem; }
+
+.pl .sg-colors-swatch {
+  display: block;
+  height: 4.375rem; }
