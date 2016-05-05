@@ -4540,3 +4540,19 @@ body > svg {
   padding: 1.25rem;
   margin-left: auto;
   margin-right: auto; }
+
+.sg-colors {
+  max-width: 90%;
+  padding: 1.25rem;
+  margin-left: 1em;
+  margin-right: 1em; }
+  .sg-colors li {
+    border: 2px solid black;
+    padding: 1.3em;
+    margin: 3 1.2em 1.2em 3; }
+
+.sg-colors-swatch {
+  display: block;
+  height: 4em;
+  width: 90%;
+  margin: .2em auto; }
