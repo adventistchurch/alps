@@ -3,5 +3,4 @@
  * above, which is before the header() call */
 header('Location: /public/');
 exit;
-
 ?>
