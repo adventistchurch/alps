@@ -164,8 +164,6 @@
   }
 
 
-
-
   // Theme switcher for primary colors
   $('.theme-swatches--primary .swatch').click(function(){
     var thisColor = $(this).data('color');
