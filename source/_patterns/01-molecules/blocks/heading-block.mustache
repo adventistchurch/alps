@@ -1,19 +1,15 @@
 {{# heading_block_default }}
 <div class="heading-block block {{ block_class }}">
-  <div class="g g-2up--35-65--at-medium pad">
-    <div class="gi">
-      <h2 class="pad no-pad--btm heading-block__heading font--secondary--l w--100p theme--secondary-text-color align--right--at-medium">{{{ block_heading }}}</h2>
-    </div>
-    <div class="gi">
-      <div class="pad heading-block__content block__content {{ block_content_class }}">
-        <div class="spacing">
-          <div class="text"><p class="heading-block__description block__description">{{ description }}</p></div>
-          {{# cta }}
-            <p><a class="heading-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ cta }}</a></p>
-          {{/ cta }}
-        </div> <!-- /.spacing -->
-      </div> <!-- heading-block__content -->
-    </div>
-  </div> <!-- /.g-2up--35-65--at-medium -->
+  <div class="pad">
+    <h2 class="pad no-pad--btm heading-block__heading font--secondary--l theme--secondary-text-color">{{{ block_heading }}}</h2>
+    <div class="pad heading-block__content block__content {{ block_content_class }}">
+      <div class="spacing">
+        <div class="text"><p class="heading-block__description block__description">{{ description }}</p></div>
+        {{# cta }}
+          <p><a class="heading-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ cta }}</a></p>
+        {{/ cta }}
+      </div> <!-- /.spacing -->
+    </div> <!-- heading-block__content -->
+  </div> <!-- /.pad -->
 </div> <!-- /.heading-block -->
 {{/ heading_block_default }}

@@ -190,4 +190,10 @@
     }).addClass('theme--' + thisColor);
   });
 
+  // Theme switcher for dark colors
+  $('.theme-swatches--dark .swatch').click(function() {
+    $('body').toggleClass('dark');
+    $(this).toggleClass('active');
+  });
+
 })(jQuery); // Fully reference jQuery after this point.

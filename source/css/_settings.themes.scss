@@ -36,6 +36,17 @@
     .theme--primary-fill-color {
       fill: $primary-color;
     }
+
+    // Bodies of text
+    .text {
+      > h1,
+      > h2,
+      > h3,
+      > h4,
+      > h5 {
+        color: $primary-color;
+      }
+    }
   }
 }
 
@@ -114,6 +125,7 @@
   }
 }
 
+
 // Generate primary color palettes.
 @include theme-primary(theme--emperor, $emperor);
 @include theme-primary(theme--earth, $earth);
@@ -127,6 +139,29 @@
 @include theme-secondary(theme--warm, $warm);
 @include theme-secondary(theme--cool, $cool);
 
+/**
+ * Dark Theme
+ */
+.dark {
+  color: $white;
+  background-color: $dark-dark;
+  hr {
+    background-color: rgba($white, .2);
+  }
+  .g-2up--at-medium.with-divider > .gi:nth-child(odd):after {
+    border-right-color: rgba($white, .2);
+  }
+  .can-be--dark-light {
+    background-color: $dark-light;
+  }
+  .can-be--dark-dark {
+    background-color: $dark-dark;
+    .arrow--down,
+    .primary-nav--with-subnav:before {
+      border-top-color: $white;
+    }
+  }
+}
 
 // Theme switcher
 .theme-switcher {
@@ -161,9 +196,11 @@
 .theme-switcher-heading {
   font-size: 10px;
   margin-bottom: 8px;
+  color: $black;
 }
 .theme-heading {
   font-size: 9px;
   margin-bottom: 4px;
   text-transform: uppercase;
+  color: $black;
 }
