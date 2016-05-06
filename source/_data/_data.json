@@ -530,6 +530,7 @@
 
   "media_blocks": [
     {
+      "column_heading": "In the Media",
       "media_block_default": {
         "block_class": "",
         "title": "Cras at sem at felis rhoncus",
@@ -544,6 +545,7 @@
       }
     },
     {
+      "column_heading": "Videos",
       "media_block_default": {
         "block_class": "",
         "title": "Fusce interdum purus est",
@@ -571,7 +573,6 @@
       }
     },
     {
-      "has_hr": false,
       "media_block_default": {
         "block_class": "",
         "kicker": "Aenean arcu",
@@ -633,7 +634,6 @@
       }
     },
     {
-      "has_hr": false,
       "media_block_default": {
         "block_class": "",
         "title": "Morbi accumsan imperdiet nisl non consectetur",
