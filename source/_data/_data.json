@@ -279,6 +279,23 @@
     "cta": "Donec volutpat libero"
   },
 
+  "story_block_default": {
+    "is_video": true,
+    "bg_img": "https://unsplash.it/g/1100/1100?blur",
+    "title": "Bestseller",
+    "subtitle": "The Clifford Goldstein Story",
+    "img": {
+      "src": "https://unsplash.it/200/200/?random",
+      "alt": "Story Block Image Alt"
+    },
+    "text_img": {
+      "src": "https://unsplash.it/350/200/?random",
+      "alt": "Text Image Alt"
+    },
+    "description": "<p>Clifford Goldstein didn’t believe in much, but one thing he did believe in was Truth. He just didn't know what it was or where to find it. As the fiery writer traveled Europe and Israel in search of his novel's soul, his quest for meaning of life continued, leading him to a different kind of altar.</p><p>Little did he know that one dark night in the summer of 1979, his search would end with a decision that would change his life forever.</p>",
+    "cta": "Find out more"
+  },
+
   "carousel_block_default": {
     "block_heading": "Mauris sit",
     "carousel": {

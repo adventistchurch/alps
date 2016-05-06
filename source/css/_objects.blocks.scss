@@ -51,3 +51,30 @@
   }
 }
 
+/**
+ * Story Block
+ */
+.story-block__image-wrap {
+  width: rem(130);
+  height: rem(130);
+  @include media('>small') {
+    float: left;
+  }
+}
+.story-block__content {
+  @include media('>small') {
+    padding-left: rem(150);
+  }
+  @include media('>medium') {
+    padding-left: rem(160);
+  }
+}
+.story-block__text-image-wrap {
+  max-width: rem(200);
+  line-height: 1;
+  display: block;
+  @include media('>medium') {
+    float: right;
+    margin-left: $space;
+  }
+}

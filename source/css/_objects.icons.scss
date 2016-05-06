@@ -65,6 +65,33 @@ $icon-big: rem(65);
   }
 }
 
+/**
+ * Play icon overlay
+ */
+.is-video {
+  position: relative;
+  transition: all .3s ease-out;
+  border-bottom: 4px solid rgba($black, 0);
+  display: block;
+  &:hover {
+    border-bottom-color: rgba($black, .2);
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: rem(40);
+    width: rem(40);
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/icons/icon-play.svg);
+  }
+}
+
 
 /*------------------------------------*\
     $SOCIAL SPECIFIC

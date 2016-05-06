@@ -1365,6 +1365,33 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -1.25rem;
     margin-right: -1.25rem; } }
 
+/**
+ * Story Block
+ */
+.story-block__image-wrap {
+  width: 8.125rem;
+  height: 8.125rem; }
+  @media (min-width: 25.01em) {
+    .story-block__image-wrap {
+      float: left; } }
+
+@media (min-width: 25.01em) {
+  .story-block__content {
+    padding-left: 9.375rem; } }
+
+@media (min-width: 43.76em) {
+  .story-block__content {
+    padding-left: 10rem; } }
+
+.story-block__text-image-wrap {
+  max-width: 12.5rem;
+  line-height: 1;
+  display: block; }
+  @media (min-width: 43.76em) {
+    .story-block__text-image-wrap {
+      float: right;
+      margin-left: 1.25rem; } }
+
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
 .btn,
@@ -1501,6 +1528,32 @@ input[type="submit"] {
   padding: 0.25rem; }
   .touchevents .t-icon.add-pad {
     padding: 0.625rem; }
+
+/**
+ * Play icon overlay
+ */
+.is-video {
+  position: relative;
+  transition: all .3s ease-out;
+  border-bottom: 4px solid transparent;
+  display: block; }
+  .is-video:hover {
+    border-bottom-color: rgba(0, 0, 0, 0.2); }
+  .is-video:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/icons/icon-play.svg); }
 
 /*------------------------------------*    $SOCIAL SPECIFIC
 \*------------------------------------*/
