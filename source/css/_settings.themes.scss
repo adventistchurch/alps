@@ -148,6 +148,9 @@
   hr {
     background-color: rgba($white, .2);
   }
+  .can-be--white {
+    color: $white;
+  }
   .g-2up--at-medium.with-divider > .gi:nth-child(odd):after {
     border-right-color: rgba($white, .2);
   }

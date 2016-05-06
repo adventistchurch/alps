@@ -603,6 +603,8 @@ body:after {
   background-color: #252525; }
   .dark hr {
     background-color: rgba(255, 255, 255, 0.2); }
+  .dark .can-be--white {
+    color: #fff; }
   .dark .g-2up--at-medium.with-divider > .gi:nth-child(odd):after {
     border-right-color: rgba(255, 255, 255, 0.2); }
   .dark .can-be--dark-light {
