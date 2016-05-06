@@ -466,3 +466,27 @@ span.dropdown__arrow {
   padding: rem(6) $pad-half;
   margin: rem(2);
 }
+
+/**
+ * Search suggest
+ */
+.ui-autocomplete {
+  background: $white;
+  border: 1px solid $gray-light;
+  border-top: none;
+  max-width: rem(300);
+}
+.ui-menu-item {
+  a {
+    display: block;
+    padding: rem(8);
+    color: $gray;
+    font-family: $font-secondary;
+    font-size: rem(14);
+  }
+  &.ui-state-focus,
+  a:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+}

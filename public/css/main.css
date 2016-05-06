@@ -2084,6 +2084,27 @@ body > svg {
   padding: 0.375rem 0.625rem;
   margin: 0.125rem; }
 
+/**
+ * Search suggest
+ */
+.ui-autocomplete {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+  max-width: 18.75rem; }
+
+.ui-menu-item a {
+  display: block;
+  padding: 0.5rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 0.875rem; }
+
+.ui-menu-item.ui-state-focus,
+.ui-menu-item a:hover {
+  color: #438390;
+  cursor: pointer; }
+
 /*------------------------------------*    $CAROUSELS
 \*------------------------------------*/
 .carousel__item img {
