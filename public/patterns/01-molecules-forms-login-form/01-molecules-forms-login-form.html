@@ -34,32 +34,20 @@
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body class="body theme--cool">
-<div class="media-block block spacing--quarter ">
-
-
-    <span class="kicker font--secondary--m upper theme--secondary-text-color db">Tincidunt</span>
-
-  <div class="media-block__inner spacing--quarter block__row">
-      <a class="media-block__image-wrap block__image-wrap db" href="">
-        <div class="round  dib"><img class="media-block__image block__image" src="http://placehold.it/150x150" alt="Media Block Image Alt Left Round" /></div>
-      </a> <!-- /.media-block__image-wrap -->
-
-
-    <div class="media-block__content block__content ">
-
-        <h3 class="media-block__title block__title "><a href="" class="block__title-link theme--primary-text-color">Cras at sem at felis rhoncus</a></h3>
-
-
-      <div class="spacing--half">
-          <div class="text text--s pad-half--btm"><p class="media-block__description block__description"><span class="font--primary--xs">Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.</span></p></div>
-
-          <p><a class="media-block__cta block__cta btn theme--secondary-background-color" href="">Cras at sem</a></p>
-      </div> <!-- /.spacing -->
-
-    </div> <!-- media-block__content -->
-  </div> <!-- /.media-block__inner -->
-
-</div> <!-- /.media-block -->
+<div class="layout-container layout-container--s pad-double">
+  <form class="spacing" action="index.html" method="post">
+    <div class="spacing--quarter">
+      <h2 class="font--secondary--l theme--secondary-text-color">Login</h2>
+      <hr />
+      <div class="messaging pad white theme--primary-background-color"><span class="font--secondary--s">Logging you in...</span></div>
+    </div>
+    <div class="spacing--quarter mw--400">
+      <input type="text" name="name" value="" placeholder="Username*">
+      <input type="password" name="name" value="" placeholder="Password*">
+      <input class="theme--secondary-background-color" type="submit" value="Login" />
+    </div>
+    <p><a class="font--secondary--s theme--secondary-text-color" href="">Forgot Password?</a></p>
+</form>
 
     <div class="theme-switcher pad">
       <h3 class="theme-switcher-heading">Select primary and secondary colors.</h3>
@@ -98,8 +86,8 @@
     	
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-media-block-row-with-kicker";
-		var lineage        = [{"lineagePattern":"atoms-video","lineagePath":"..\/..\/patterns\/00-atoms-media-video\/00-atoms-media-video.html"}];
+		var patternPartial = "molecules-login-form";
+		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;

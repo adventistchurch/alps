@@ -13,10 +13,10 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 
-    <link rel="stylesheet" type="text/css" href="../../css/main.css?1462497296" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css?1462497902" media="all">
 
     <script>document.createElement("picture");</script>
-    <script src="../../js/head-scripts.js?1462497296" async></script>
+    <script src="../../js/head-scripts.js?1462497902" async></script>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     		<!-- never cache patterns -->
@@ -26,8 +26,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1462497296" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1462497296" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1462497902" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1462497902" media="all" />
 		
 
     <!-- End Pattern Lab -->
@@ -40,47 +40,88 @@
 			
 			<!-- Patterns -->
 			<div id="sg-patterns">
+					<div id="molecules-login-form" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-forms-login-form/01-molecules-forms-login-form.html" class="patternLink" data-patternpartial="molecules-login-form">Login Form</a></h2>
+						<div class="sg-pattern-body">
+							<div class="layout-container layout-container--s pad-double">
+  <form class="spacing" action="index.html" method="post">
+    <div class="spacing--quarter">
+      <h2 class="font--secondary--l theme--secondary-text-color">Login</h2>
+      <hr />
+      <div class="messaging pad white theme--primary-background-color"><span class="font--secondary--s">Logging you in...</span></div>
+    </div>
+    <div class="spacing--quarter mw--400">
+      <input type="text" name="name" value="" placeholder="Username*">
+      <input type="password" name="name" value="" placeholder="Password*">
+      <input class="theme--secondary-background-color" type="submit" value="Login" />
+    </div>
+    <p><a class="font--secondary--s theme--secondary-text-color" href="">Forgot Password?</a></p>
+</form>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;layout-container layout-container--s pad-double&quot;&gt;
+  &lt;form class=&quot;spacing&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+    &lt;div class=&quot;spacing--quarter&quot;&gt;
+      &lt;h2 class=&quot;font--secondary--l theme--secondary-text-color&quot;&gt;Login&lt;/h2&gt;
+      &lt;hr /&gt;
+      &lt;div class=&quot;messaging pad white theme--primary-background-color&quot;&gt;&lt;span class=&quot;font--secondary--s&quot;&gt;Logging you in...&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacing--quarter mw--400&quot;&gt;
+      &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot; placeholder=&quot;Username*&quot;&gt;
+      &lt;input type=&quot;password&quot; name=&quot;name&quot; value=&quot;&quot; placeholder=&quot;Password*&quot;&gt;
+      &lt;input class=&quot;theme--secondary-background-color&quot; type=&quot;submit&quot; value=&quot;Login&quot; /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;a class=&quot;font--secondary--s theme--secondary-text-color&quot; href=&quot;&quot;&gt;Forgot Password?&lt;/a&gt;&lt;/p&gt;
+&lt;/form&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="molecules-sample-form" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-forms-sample-form/01-molecules-forms-sample-form.html" class="patternLink" data-patternpartial="molecules-sample-form">Sample Form</a></h2>
 						<div class="sg-pattern-body">
-							
-<div class="layout-container layout-container--s pad-double">
-<form class="spacing" action="index.html" method="post">
+							<div class="layout-container layout-container--s pad-double">
+  <form class="spacing" action="index.html" method="post">
     <div class="spacing--quarter">
-        <h2 class="font--secondary--l theme--primary-text-color">Form header</h2>
-        <hr />
+      <h2 class="font--secondary--l theme--secondary-text-color">Form header</h2>
+      <hr />
     </div>
-    <p class="spacing--quarter">
+    <div class="spacing--quarter">
       <label class="font--secondary--s" for="">Name</label>
       <input type="text" name="name" value="">
-    </p>
-    <p class="spacing--quarter">
+    </div>
+    <div class="spacing--quarter">
       <label class="font--secondary--s" for="">Form <span class="type-alpha--s text-color--gray">(Optional)</span></label>
       <input type="text" name="name" value="">
-    </p>
-    <p class="spacing--quarter">
+    </div>
+    <div class="spacing--quarter">
         <label class="font--secondary--s red" for="">Error Label</label>
         <input class="has-error" type="text" name="name" value=""> <br>
         <small class="font--secondary--s red">This field is required</small>
-    </p>
-    <p class="spacing--quarter">
+    </div>
+    <div class="spacing--quarter">
         <label class="font--secondary--s" for="">Your Comments</label>
         <textarea name="name" rows="8" cols="40">Enter a comment.</textarea>
-    </p>
+    </div>
     <div class="form__checkbox spacing--quarter">
-    <p class="font--secondary--s">Select many options</p>
+    <div class="font--secondary--s">Select many options</div>
 
-    <p class="inline-form-element--row"><input type="checkbox" name="option" value="one"> <label class="font--secondary--s" for="">Option 1</label></p>
-    <p class="inline-form-element--row"><input type="checkbox" name="option" value="two"> <label class="font--secondary--s" for="">Option 2</label></p>
-    <p class="inline-form-element--row"><input type="checkbox" name="option" value="three"> <label class="font--secondary--s" for="">Option 3</label></p>
+    <div class="inline-form-element--row"><input type="checkbox" name="option" value="one"> <label class="font--secondary--s" for="">Option 1</label></div>
+    <div class="inline-form-element--row"><input type="checkbox" name="option" value="two"> <label class="font--secondary--s" for="">Option 2</label></div>
+    <div class="inline-form-element--row"><input type="checkbox" name="option" value="three"> <label class="font--secondary--s" for="">Option 3</label></div>
   </div>
 
   <div class="form__radio spacing--quarter">
-    <p class="font--secondary--s">Select one option</p>
+    <div class="font--secondary--s">Select one option</div>
 
-    <p class="inline-form-element--row"><input type="radio" name="option" value="one" checked> <label class="font--secondary--s" for="">Option 1</label></p>
-    <p class="inline-form-element--row"><input type="radio" name="option" value="two"> <label class="font--secondary--s" for="">Option 2</label></p>
-    <p class="inline-form-element--row"><input type="radio" name="option" value="three"> <label class="font--secondary--s" for="">Option 3</label></p>
+    <div class="inline-form-element--row"><input type="radio" name="option" value="one" checked> <label class="font--secondary--s" for="">Option 1</label></div>
+    <div class="inline-form-element--row"><input type="radio" name="option" value="two"> <label class="font--secondary--s" for="">Option 2</label></div>
+    <div class="inline-form-element--row"><input type="radio" name="option" value="three"> <label class="font--secondary--s" for="">Option 3</label></div>
   </div>
 
   <div class="form__select spacing--half">
@@ -101,44 +142,43 @@
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										
-&lt;div class=&quot;layout-container layout-container--s pad-double&quot;&gt;
-&lt;form class=&quot;spacing&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+										&lt;div class=&quot;layout-container layout-container--s pad-double&quot;&gt;
+  &lt;form class=&quot;spacing&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
     &lt;div class=&quot;spacing--quarter&quot;&gt;
-        &lt;h2 class=&quot;font--secondary--l theme--primary-text-color&quot;&gt;Form header&lt;/h2&gt;
-        &lt;hr /&gt;
+      &lt;h2 class=&quot;font--secondary--l theme--secondary-text-color&quot;&gt;Form header&lt;/h2&gt;
+      &lt;hr /&gt;
     &lt;/div&gt;
-    &lt;p class=&quot;spacing--quarter&quot;&gt;
+    &lt;div class=&quot;spacing--quarter&quot;&gt;
       &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Name&lt;/label&gt;
       &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
-    &lt;/p&gt;
-    &lt;p class=&quot;spacing--quarter&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacing--quarter&quot;&gt;
       &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Form &lt;span class=&quot;type-alpha--s text-color--gray&quot;&gt;(Optional)&lt;/span&gt;&lt;/label&gt;
       &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
-    &lt;/p&gt;
-    &lt;p class=&quot;spacing--quarter&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacing--quarter&quot;&gt;
         &lt;label class=&quot;font--secondary--s red&quot; for=&quot;&quot;&gt;Error Label&lt;/label&gt;
         &lt;input class=&quot;has-error&quot; type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot;&gt; &lt;br&gt;
         &lt;small class=&quot;font--secondary--s red&quot;&gt;This field is required&lt;/small&gt;
-    &lt;/p&gt;
-    &lt;p class=&quot;spacing--quarter&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacing--quarter&quot;&gt;
         &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Your Comments&lt;/label&gt;
         &lt;textarea name=&quot;name&quot; rows=&quot;8&quot; cols=&quot;40&quot;&gt;Enter a comment.&lt;/textarea&gt;
-    &lt;/p&gt;
+    &lt;/div&gt;
     &lt;div class=&quot;form__checkbox spacing--quarter&quot;&gt;
-    &lt;p class=&quot;font--secondary--s&quot;&gt;Select many options&lt;/p&gt;
+    &lt;div class=&quot;font--secondary--s&quot;&gt;Select many options&lt;/div&gt;
 
-    &lt;p class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;option&quot; value=&quot;one&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 1&lt;/label&gt;&lt;/p&gt;
-    &lt;p class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;option&quot; value=&quot;two&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 2&lt;/label&gt;&lt;/p&gt;
-    &lt;p class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;option&quot; value=&quot;three&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 3&lt;/label&gt;&lt;/p&gt;
+    &lt;div class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;option&quot; value=&quot;one&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 1&lt;/label&gt;&lt;/div&gt;
+    &lt;div class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;option&quot; value=&quot;two&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 2&lt;/label&gt;&lt;/div&gt;
+    &lt;div class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;option&quot; value=&quot;three&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 3&lt;/label&gt;&lt;/div&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;form__radio spacing--quarter&quot;&gt;
-    &lt;p class=&quot;font--secondary--s&quot;&gt;Select one option&lt;/p&gt;
+    &lt;div class=&quot;font--secondary--s&quot;&gt;Select one option&lt;/div&gt;
 
-    &lt;p class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;option&quot; value=&quot;one&quot; checked&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 1&lt;/label&gt;&lt;/p&gt;
-    &lt;p class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;option&quot; value=&quot;two&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 2&lt;/label&gt;&lt;/p&gt;
-    &lt;p class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;option&quot; value=&quot;three&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 3&lt;/label&gt;&lt;/p&gt;
+    &lt;div class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;option&quot; value=&quot;one&quot; checked&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 1&lt;/label&gt;&lt;/div&gt;
+    &lt;div class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;option&quot; value=&quot;two&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 2&lt;/label&gt;&lt;/div&gt;
+    &lt;div class=&quot;inline-form-element--row&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;option&quot; value=&quot;three&quot;&gt; &lt;label class=&quot;font--secondary--s&quot; for=&quot;&quot;&gt;Option 3&lt;/label&gt;&lt;/div&gt;
   &lt;/div&gt;
 
   &lt;div class=&quot;form__select spacing--half&quot;&gt;
@@ -270,10 +310,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1462497296">
+	<script id="pl-js-polyfill-insert-1462497902">
 		(function() {
 			if (self != top) {
-				var cb = '1462497296';
+				var cb = '1462497902';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -282,10 +322,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1462497296">
+	<script id="pl-js-insert-1462497902">
 		(function() {
 			if (self != top) {
-				var cb = '1462497296';
+				var cb = '1462497902';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
