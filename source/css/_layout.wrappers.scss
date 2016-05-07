@@ -79,12 +79,10 @@
 }
 .column__secondary {
   padding-top: $pad-and-half;
-  padding-bottom: $pad;
+  padding-bottom: $pad-and-half;
   background-color: $beige;
   @include media('>medium') {
     padding-top: $pad-double;
-  }
-  @include media('>large') {
     padding-bottom: $pad-double;
   }
 }

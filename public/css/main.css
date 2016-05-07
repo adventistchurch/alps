@@ -1233,13 +1233,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .column__secondary {
   padding-top: 1.875rem;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.875rem;
   background-color: #fbf9f3; }
   @media (min-width: 43.76em) {
     .column__secondary {
-      padding-top: 2.5rem; } }
-  @media (min-width: 56.26em) {
-    .column__secondary {
+      padding-top: 2.5rem;
       padding-bottom: 2.5rem; } }
 
 .pad--primary {
@@ -3450,7 +3448,16 @@ body > svg {
  * Blend Modes
  */
 .blend-mode--multiply {
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  position: relative; }
+  .no-backgroundblendmode .blend-mode--multiply:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /*------------------------------------*    $SPACING
 \*------------------------------------*/

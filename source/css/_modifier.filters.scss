@@ -30,4 +30,16 @@
  */
 .blend-mode--multiply {
   background-blend-mode: multiply;
+  position: relative;
+  .no-backgroundblendmode & {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, .5);
+    }
+  }
 }
