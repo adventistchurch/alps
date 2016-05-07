@@ -1,0 +1,40 @@
+{
+  "head": {
+    "title": "News Channel - The Official Site of the Seventh-day Adventist world church",
+    "html_class": "pl theme--emperor",
+    "body_class": "body theme--cool"
+  },
+
+  "page_header": {
+    "has_image": true,
+    "kicker": "Maecenas",
+    "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
+    "img_url_s": "https://unsplash.it/600/300/?random",
+    "img_url_m": "https://unsplash.it/900/400/?random",
+    "img_url_l": "https://unsplash.it/1400/500/?random"
+  },
+
+  "header_text": {
+    "heading": "إيبسوم ولايزال",
+    "subhead": "على الشكل الخارجي للنص على الشكل الخارجي للنص",
+    "img": {
+      "src": "http://placehold.it/80x80",
+      "alt": "Image Alt"
+    }
+  },
+
+  "article_header": {
+    "heading": "ببساطة نص شكلي (بمعنى أن الغاية",
+    "subheading": " ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما",
+    "pub_date": "April 19, 2016",
+    "pub_region": "كان لوريم إيبسوم و",
+    "byline": "ودور النشر"
+  },
+
+  "is_rtl": true,
+  "caption": "النشر. كان لوريم إيبسوم ولايزال المعيار",
+
+  "carousel": false,
+
+  "news_home": false
+}

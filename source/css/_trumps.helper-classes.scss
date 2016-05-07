@@ -28,6 +28,14 @@
 }
 
 /**
+ * Right to left languages
+ */
+.rtl {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+/**
  * Clear Floats
  */
 .cb {

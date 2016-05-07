@@ -15,6 +15,9 @@
           {{# news_article }}
             {{&gt; organisms-news-article-content }}
           {{/ news_article }}
+          {{# is_rtl }}
+            {{&gt; organisms-news-article-content-rtl }}
+          {{/ is_rtl }}
         &lt;/div&gt; &lt;!-- /.shift-left--fluid --&gt;
         &lt;div class=&quot;shift-right--fluid bg--beige can-be--dark-dark&quot;&gt;
           {{&gt; molecules-aside-navigation }}
