@@ -21,6 +21,10 @@
       display: none;
     }
   }
+  .rtl & {
+    left: rem(15);
+    right: auto;
+  }
 }
 .nav-toggle__inner {
   width: rem(15);
@@ -64,6 +68,11 @@ $slice-height: 3;
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
+  .rtl & {
+    left: 0;
+    right: auto;
+  }
+
 }
 // Active Hamburger
 .nav-is-active {

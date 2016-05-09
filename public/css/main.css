@@ -1654,6 +1654,9 @@ body > svg {
   @media (min-width: 43.76em) {
     .header .nav-toggle {
       display: none; } }
+  .rtl .nav-toggle {
+    left: 0.9375rem;
+    right: auto; }
 
 .nav-toggle__inner {
   width: 0.9375rem;
@@ -1702,6 +1705,9 @@ body > svg {
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%); }
+  .rtl .nav-toggle__text {
+    left: 0;
+    right: auto; }
 
 .nav-is-active .nav-toggle__segment--1 {
   top: 0.375rem;
