@@ -18,21 +18,22 @@
 {{/ has_image }}
 <header class="header__swath theme--primary-background-color {{ page_header_class }}">
   <div class="layout-container cf">
-    <!-- <div class="pad--primary no-pad--btm no-pad--top"> -->
-      {{# header_text }}
-        <div class="header__text">
-          <div class="unify show-at--small">
-            <h2 class="font--secondary--l upper white">{{ heading }}</h2>
-            <h3 class="font--secondary--m white--trans">{{ subhead }}</h3>
-          </div>
-          <div class="header__logo">{{> atoms-image }}</div>
-        </div> <!-- /.header__text -->
-      {{/ header_text }}
+    {{# header_text }}
+      <div class="header__text">
+        <div class="unify show-at--small">
+          <h2 class="font--secondary--l upper white">{{ heading }}</h2>
+          <h3 class="font--secondary--m white--trans">{{ subhead }}</h3>
+        </div>
+        <div class="header__logo">{{> atoms-image }}</div>
+      </div> <!-- /.header__text -->
+    {{/ header_text }}
+    <div class="flex-container cf">
       <div class="shift-left--fluid">
         {{# kicker }}<span class="kicker white">{{{ kicker }}}</span>{{/ kicker }}
         <h1 class="font--tertiary--xl white">{{ heading }}</h1>
       </div>
-    <!-- </div> -->
+      <div class="shift-right--fluid"></div> <!-- /.shift-right--fluid -->
+    </div>
   </div>
 </header> <!-- /.header__swath -->
 {{/ page_header }}

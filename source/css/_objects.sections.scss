@@ -42,6 +42,12 @@
     padding-right: $space;
     align-self: center;
   }
+  .rtl & {
+    .unify {
+      padding-right: 0;
+      padding-left: $space;
+    }
+  }
   @include media('>small') {
     flex-wrap: nowrap;
     flex-direction: row;

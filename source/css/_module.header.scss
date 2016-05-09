@@ -147,6 +147,10 @@
     width: rem(150);
     padding: rem(18);
     z-index: 0;
+    .rtl & {
+      left: auto;
+      right: 0;
+    }
   }
   @include media('>xlarge') {
     width: rem(170);

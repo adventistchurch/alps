@@ -2272,6 +2272,9 @@ body > svg {
     padding-right: 1.25rem;
     -ms-flex-item-align: center;
         align-self: center; }
+  .rtl .header__text .unify {
+    padding-right: 0;
+    padding-left: 1.25rem; }
   @media (min-width: 25.01em) {
     .header__text {
       -ms-flex-wrap: nowrap;
@@ -3002,7 +3005,10 @@ body > svg {
     top: 0;
     width: 9.375rem;
     padding: 1.125rem;
-    z-index: 0; } }
+    z-index: 0; }
+    .rtl .logo__link--square {
+      left: auto;
+      right: 0; } }
 
 @media (min-width: 68.76em) {
   .logo__link--square {
