@@ -8,7 +8,7 @@ If you want to make changes, feel free to fork the repository and create a pull 
 ## Questions or Issues?
 Questions or issues can be [filed as tickets on this repository](https://github.com/adventistchurch/alps/issues) and will be handled using the GitHub system.
 
-## Seventh Day Adventist Pattern Lab
+## Seventh-day Adventist Pattern Lab
 
 ## Overview
 This repository contains the front-end code for the Seventh Day Adventist project. [Pattern Lab](http://patternlab.io/) is the tool used for pattern template building and pattern library compilation.
