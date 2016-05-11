@@ -2,7 +2,9 @@
   "head": {
     "title": "أسئلة تتعلق - مصدر الإجابات عن مواضيع ",
     "html_class": "pl theme--ming",
-    "body_class": "body theme--cool rtl"
+    "body_class": "body theme--cool rtl",
+    "language": "ar",
+    "attr": "dir=\"rtl\""
   },
 
   "page_header": {
