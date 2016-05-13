@@ -404,6 +404,11 @@ $slice-height: 3;
     @include media('>xlarge') {
       width: rem(200);
     }
+    .rtl & {
+      @include media('<large') {
+        float: left;
+      }
+    }
   }
   .search-form__input[type="search"] {
     border: none;
@@ -449,6 +454,11 @@ $slice-height: 3;
     transform: translate(0, -50%);
     min-width: rem(150);
     padding: $pad-half;
+
+    .rtl & {
+      right: 0;
+
+    }
   }
 }
 span.dropdown__arrow {
