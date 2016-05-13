@@ -51,9 +51,9 @@
   @include media('>small') {
     flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: flex-end;
   }
   @include media('>medium') {
-    justify-content: flex-end;
     text-align: right;
   }
 }
