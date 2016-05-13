@@ -156,6 +156,10 @@ $slice-height: 3;
       right: 0;
       top: calc(50%);
       transform: translate(0, -50%);
+      .rtl & {
+        left: 0;
+        right: inherit;
+      }
     }
     &:hover {
       box-shadow: 0 0 2px rgba($black, .3);
@@ -225,6 +229,11 @@ $slice-height: 3;
     min-width: rem(200);
     box-shadow: 0 0 2px rgba($black, .3);
     z-index: 10;
+
+    .rtl & {
+      text-align: right;
+      right: 0;
+    }
   }
 }
 .primary-nav__subnav__link {
