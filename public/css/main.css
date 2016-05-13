@@ -1791,6 +1791,9 @@ body > svg {
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%); }
+    .rtl .primary-nav--with-subnav:before {
+      left: 0;
+      right: inherit; }
   .primary-nav--with-subnav:hover {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     background-color: #fff;
@@ -1854,7 +1857,10 @@ body > svg {
       left: 0;
       min-width: 12.5rem;
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-      z-index: 10; } }
+      z-index: 10; }
+      .rtl .primary-nav__subnav {
+        text-align: right;
+        right: 0; } }
 
 .primary-nav__subnav__link {
   display: block;
