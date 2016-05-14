@@ -622,6 +622,8 @@ body:after {
   bottom: 0;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   border-top-right-radius: 3px; }
+  .rtl .theme-switcher {
+    direction: ltr; }
 
 .theme-swatches {
   margin-bottom: 5px;
@@ -2018,6 +2020,9 @@ body > svg {
     @media (min-width: 68.76em) {
       .article-nav__search .search-form {
         width: 12.5rem; } }
+    @media (max-width: 56.24em) {
+      .rtl .article-nav__search .search-form {
+        float: left; } }
   .article-nav__search .search-form__input[type="search"] {
     border: none;
     border-radius: 1.5625rem;
@@ -2061,7 +2066,9 @@ body > svg {
           -ms-transform: translate(0, -50%);
               transform: translate(0, -50%);
       min-width: 9.375rem;
-      padding: 0.625rem; } }
+      padding: 0.625rem; }
+      .rtl .dropdown__label {
+        right: 0; } }
 
 @media (max-width: 56.25em) {
   span.dropdown__arrow {
@@ -2292,11 +2299,11 @@ body > svg {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row;
+      -ms-flex-pack: end;
+          justify-content: flex-end; } }
   @media (min-width: 43.76em) {
     .header__text {
-      -ms-flex-pack: end;
-          justify-content: flex-end;
       text-align: right; } }
 
 /*------------------------------------*    $SPECIFIC FORMS
