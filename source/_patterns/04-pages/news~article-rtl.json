@@ -11,9 +11,9 @@
     "has_image": true,
     "kicker": "أخطــــــــاء",
     "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
-    "img_url_s": "https://unsplash.it/600/300/?random",
-    "img_url_m": "https://unsplash.it/900/400/?random",
-    "img_url_l": "https://unsplash.it/1400/500/?random"
+    "img_url_s": "http://unsplash.it/600/300/?random",
+    "img_url_m": "http://unsplash.it/900/400/?random",
+    "img_url_l": "http://unsplash.it/1400/500/?random"
   },
 
   "heading": "ولايزال المعيار للنص",

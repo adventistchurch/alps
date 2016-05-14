@@ -9,9 +9,9 @@
     "has_image": true,
     "kicker": "Maecenas",
     "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
-    "img_url_s": "https://unsplash.it/600/300/?random",
-    "img_url_m": "https://unsplash.it/900/400/?random",
-    "img_url_l": "https://unsplash.it/1400/500/?random"
+    "img_url_s": "http://unsplash.it/600/300/?random",
+    "img_url_m": "http://unsplash.it/900/400/?random",
+    "img_url_l": "http://unsplash.it/1400/500/?random"
   },
 
   "header_text": {
@@ -32,8 +32,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://unsplash.it/500/400/?random",
-            "src_m": "https://unsplash.it/800/600/?random"
+            "src_s": "http://unsplash.it/500/400/?random",
+            "src_m": "http://unsplash.it/800/600/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -51,8 +51,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://unsplash.it/500/400/",
-            "src_m": "https://unsplash.it/800/600/"
+            "src_s": "http://unsplash.it/500/400/",
+            "src_m": "http://unsplash.it/800/600/"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -69,8 +69,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://unsplash.it/g/500/400/?random",
-            "src_m": "https://unsplash.it/g/800/600/?random"
+            "src_s": "http://unsplash.it/g/500/400/?random",
+            "src_m": "http://unsplash.it/g/800/600/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -88,8 +88,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://unsplash.it/500/400/",
-            "src_m": "https://unsplash.it/800/600/"
+            "src_s": "http://unsplash.it/500/400/",
+            "src_m": "http://unsplash.it/800/600/"
           },
           "has_break_l": false,
           "has_break_xl": false

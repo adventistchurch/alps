@@ -283,15 +283,15 @@
 
   "story_block_default": {
     "is_video": true,
-    "bg_img": "https://unsplash.it/g/1100/1100?blur",
+    "bg_img": "http://unsplash.it/g/1100/1100?blur",
     "title": "Bestseller",
     "subtitle": "The Clifford Goldstein Story",
     "img": {
-      "src": "https://unsplash.it/200/200/?random",
+      "src": "http://unsplash.it/200/200/?random",
       "alt": "Story Block Image Alt"
     },
     "text_img": {
-      "src": "https://unsplash.it/350/200/?random",
+      "src": "http://unsplash.it/350/200/?random",
       "alt": "Text Image Alt"
     },
     "description": "<p>Clifford Goldstein didn’t believe in much, but one thing he did believe in was Truth. He just didn't know what it was or where to find it. As the fiery writer traveled Europe and Israel in search of his novel's soul, his quest for meaning of life continued, leading him to a different kind of altar.</p><p>Little did he know that one dark night in the summer of 1979, his search would end with a decision that would change his life forever.</p>",
@@ -309,8 +309,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "https://unsplash.it/500/375/?random",
-              "src_m": "https://unsplash.it/800/600/?random"
+              "src_s": "http://unsplash.it/500/375/?random",
+              "src_m": "http://unsplash.it/800/600/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -329,8 +329,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "https://unsplash.it/500/375/",
-              "src_m": "https://unsplash.it/800/600/"
+              "src_s": "http://unsplash.it/500/375/",
+              "src_m": "http://unsplash.it/800/600/"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -536,7 +536,7 @@
         "block_class": "",
         "title": "Cras at sem at felis rhoncus",
         "img": {
-          "src": "https://unsplash.it/500/400/?random",
+          "src": "http://unsplash.it/500/400/?random",
           "alt": ""
         },
         "datetime": "2016-12-12",
@@ -550,7 +550,7 @@
         "block_class": "",
         "title": "Fusce interdum purus est",
         "img": {
-          "src": "https://unsplash.it/500/380/?random",
+          "src": "http://unsplash.it/500/380/?random",
           "alt": "Alt"
         },
         "datetime": false,
@@ -564,7 +564,7 @@
         "block_class": "",
         "title": "Sed neque odio, iaculis iaculis rutrum quis",
         "img": {
-          "src": "https://unsplash.it/500/350/?random",
+          "src": "http://unsplash.it/500/350/?random",
           "alt": "Media Block Image"
         },
         "datetime": "2016-12-12",
@@ -578,7 +578,7 @@
         "kicker": "Aenean arcu",
         "title": "Pellentesque semper",
         "img": {
-          "src": "https://unsplash.it/500/300/?random",
+          "src": "http://unsplash.it/500/300/?random",
           "alt": "Media Block Image Alt"
         },
         "datetime": false,
@@ -596,7 +596,7 @@
         "kicker": "Suspendisse",
         "title": "Cras efficitur nibh eget tortor consequat posuere",
         "img": {
-          "src": "https://unsplash.it/500/300/?random",
+          "src": "http://unsplash.it/500/300/?random",
           "alt": ""
         },
         "datetime": "2016-12-12",
@@ -610,7 +610,7 @@
         "block_class": "",
         "title": "Fusce interdum purus est",
         "img": {
-          "src": "https://unsplash.it/500/360/?random",
+          "src": "http://unsplash.it/500/360/?random",
           "alt": "Alt"
         },
         "datetime": "2016-12-12",
@@ -624,7 +624,7 @@
         "block_class": "",
         "title": "Phasellus ac volutpat urna",
         "img": {
-          "src": "https://unsplash.it/500/250/?random",
+          "src": "http://unsplash.it/500/250/?random",
           "alt": "Media Block Image"
         },
         "datetime": false,
@@ -638,7 +638,7 @@
         "block_class": "",
         "title": "Morbi accumsan imperdiet nisl non consectetur",
         "img": {
-          "src": "https://unsplash.it/500/280/?random",
+          "src": "http://unsplash.it/500/280/?random",
           "alt": "Media Block Image Alt"
         },
         "datetime": false,
@@ -670,7 +670,7 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "img": {
-          "src": "https://unsplash.it/500/280/?random",
+          "src": "http://unsplash.it/500/280/?random",
           "alt": "Media Block Image Alt"
         }
       }
@@ -682,7 +682,7 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "img": {
-          "src": "https://unsplash.it/500/280/?random",
+          "src": "http://unsplash.it/500/280/?random",
           "alt": "Media Block Image Alt"
         }
       }
@@ -694,7 +694,7 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "img": {
-          "src": "https://unsplash.it/500/280/?random",
+          "src": "http://unsplash.it/500/280/?random",
           "alt": "Media Block Image Alt"
         }
       }
