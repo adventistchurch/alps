@@ -2095,7 +2095,9 @@ body > svg {
     left: 0;
     top: 2.1875rem;
     z-index: 100;
-    min-width: 12.5rem; } }
+    min-width: 12.5rem; }
+    .rtl .dropdown__options {
+      right: 0; } }
 
 @media (max-width: 56.25em) {
   .dropdown__item-link {
