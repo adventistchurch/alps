@@ -2214,6 +2214,10 @@ body > svg {
 .hero-carousel .carousel__item {
   max-height: 37.5rem; }
 
+@media (max-width: 56.24em) {
+  .hero-carousel-2column .carousel__slides {
+    padding-bottom: 3em; } }
+
 .carousel__item--right {
   right: 0;
   left: auto;
@@ -2240,8 +2244,14 @@ body > svg {
     height: 0.9375rem;
     margin-left: 0.625rem;
     cursor: pointer; }
+    @media (max-width: 56.24em) {
+      .hero-carousel-2column .slick-dots li {
+        border-color: #908c81; } }
   .slick-dots .slick-active {
     background-color: #fff; }
+    @media (max-width: 56.24em) {
+      .hero-carousel-2column .slick-dots .slick-active {
+        background-color: #908c81; } }
   .slick-dots button {
     display: none; }
 
