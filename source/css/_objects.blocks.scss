@@ -18,6 +18,10 @@
     width: 70%;
     padding-left: $pad;
     align-self: center;
+    .rtl & {
+      padding-left: 0;
+      padding-right: $pad;
+    }
   }
 }
 
