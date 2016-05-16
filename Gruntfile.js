@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                         maxBuffer: 1024 * 1024 * 64,
                     },
                 },
-                command: "php core/builder.php -g"
+                command: "php /core/builder.php -g"
             },
             go: {
                 command: "php -S localhost:4000 -t public"
