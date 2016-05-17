@@ -2,6 +2,7 @@
 /node_modules
 .sass-cache/
 *.css.map
+/public
 
 # Ignore IDE-specific files
 *.sublime-project
