@@ -87,6 +87,14 @@
   }
 }
 
+.hero-carousel-2column {
+  @include media('<large') {
+    .carousel__slides{
+      padding-bottom: 3em;
+    }
+  }
+}
+
 // Right align slide text
 .carousel__item--right {
   right: 0;
@@ -114,9 +122,20 @@
     height: rem(15);
     margin-left: $space-half;
     cursor: pointer;
+    @include media('<large') {
+      .hero-carousel-2column & {
+        border-color: $brown-med;
+      }
+    }
+
   }
   .slick-active {
     background-color: $white;
+    @include media('<large') {
+      .hero-carousel-2column & {
+        background-color: $brown-med;
+      }
+    }
   }
   button {
     display: none;
