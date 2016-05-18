@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                 command: "php core/builder.php -g"
             },
             go: {
-                command: "php -S localhost:4000 -t public"
+                // command: "php -S localhost:4000 -t public"
             }
         },
 
