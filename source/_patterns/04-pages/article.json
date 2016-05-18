@@ -5,6 +5,9 @@
     "body_class": "body theme--cool"
   },
 
+  "logo_square": "logo__adra--square.svg",
+  "logo_horiz": "logo__adra--horiz.svg",
+
   "page_header": {
     "page_header_class": "header-swath--with-text"
   },

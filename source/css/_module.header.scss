@@ -118,11 +118,18 @@
     justify-content: flex-end;
   }
 }
+
+/**
+ * Logos & Sub-Brands
+ */
 .logo {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo__link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: $space-half;
   position: relative;
   z-index: 10;
@@ -145,6 +152,7 @@
     left: 0;
     top: 0;
     width: rem(150);
+    height: rem(150);
     padding: rem(18);
     z-index: 0;
     .rtl & {
@@ -154,18 +162,37 @@
   }
   @include media('>xlarge') {
     width: rem(170);
+    height: rem(170);
   }
 }
-.logo__subbrand {
-  width: rem(60);
+.logo--with-text.logo__link--horiz {
+  padding-bottom: rem(23);
+}
+.logo--with-text.logo__link--square {
+  padding-top: rem(10);
+  padding-bottom: rem(35);
+}
+.logo__text {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: rem(5);
+  width: 100%;
+  padding: rem(4) rem(8);
+  background-color: rgba($black, .15);
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-.logo__subbrand-text {
-  font-family: $font-tertiary;
+.logo__link--horiz {
+  .logo__text {
+    height: rem(18);
+  }
 }
+.logo__link--square {
+  .logo__text {
+    height: rem(26);
+  }
+}
+
+
 .header__unify-logo-nav {
   width: 100%;
   @include media('>medium') {
