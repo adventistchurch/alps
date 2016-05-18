@@ -2,6 +2,7 @@
 
 This is the future home of the ALPS codebase. The pattern library is built off of [Pattern Lab](http://patternlab.io/), and a tool based on atomic design.
 
+
 [![Deployment status from DeployBot](https://adventistchurch.deploybot.com/badge/77558060106370/73245.svg)](http://deploybot.com)
 
 ## Want to make changes?
