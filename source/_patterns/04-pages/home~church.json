@@ -16,19 +16,19 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://placeimg.com/500/500/nature",
-            "src_m": "https://placeimg.com/700/400/nature"
+            "src_s": "http://placeimg.com/500/500/nature",
+            "src_m": "http://placeimg.com/700/400/nature"
           },
           "has_break_l": {
             "img_break_l": "700",
             "img": {
-              "src_l": "https://placeimg.com/900/400/nature"
+              "src_l": "http://placeimg.com/900/400/nature"
             }
           },
           "has_break_xl": {
             "img_break_xl": "900",
             "img": {
-              "src_xl": "https://placeimg.com/1300/600/nature"
+              "src_xl": "http://placeimg.com/1300/600/nature"
             }
           }
         },
@@ -45,19 +45,19 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://placeimg.com/500/500/people",
-            "src_m": "https://placeimg.com/700/400/people"
+            "src_s": "http://placeimg.com/500/500/people",
+            "src_m": "http://placeimg.com/700/400/people"
           },
           "has_break_l": {
             "img_break_l": "700",
             "img": {
-              "src_l": "https://placeimg.com/900/400/people"
+              "src_l": "http://placeimg.com/900/400/people"
             }
           },
           "has_break_xl": {
             "img_break_xl": "900",
             "img": {
-              "src_xl": "https://placeimg.com/1300/600/people"
+              "src_xl": "http://placeimg.com/1300/600/people"
             }
           }
         },
@@ -74,19 +74,19 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://placeimg.com/500/500/architecture",
-            "src_m": "https://placeimg.com/700/400/architecture"
+            "src_s": "http://placeimg.com/500/500/architecture",
+            "src_m": "http://placeimg.com/700/400/architecture"
           },
           "has_break_l": {
             "img_break_l": "700",
             "img": {
-              "src_l": "https://placeimg.com/900/400/architecture"
+              "src_l": "http://placeimg.com/900/400/architecture"
             }
           },
           "has_break_xl": {
             "img_break_xl": "900",
             "img": {
-              "src_xl": "https://placeimg.com/1300/600/architecture"
+              "src_xl": "http://placeimg.com/1300/600/architecture"
             }
           }
         },
@@ -103,19 +103,19 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "https://placeimg.com/500/500/animals",
-            "src_m": "https://placeimg.com/700/400/animals"
+            "src_s": "http://placeimg.com/500/500/animals",
+            "src_m": "http://placeimg.com/700/400/animals"
           },
           "has_break_l": {
             "img_break_l": "700",
             "img": {
-              "src_l": "https://placeimg.com/900/400/animals"
+              "src_l": "http://placeimg.com/900/400/animals"
             }
           },
           "has_break_xl": {
             "img_break_xl": "900",
             "img": {
-              "src_xl": "https://placeimg.com/1300/600/animals"
+              "src_xl": "http://placeimg.com/1300/600/animals"
             }
           }
         },
