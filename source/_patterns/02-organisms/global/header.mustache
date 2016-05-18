@@ -6,18 +6,18 @@
   <div class="header__inner">
     {{> molecules-navigation-toggle }}
     <div class="header__unify-logo-nav">
-      <a href="/" class="logo__link logo__link--horiz theme--primary-background-color show-until--large">{{> atoms-logo-horiz }}</a>
-      <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large">{{> atoms-logo-square }}</a>
-      {{# nope }}
-      <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large">
-        <div class="logo__subbrand">{{> atoms-icon-logo(fill_class: 'fill--white') }}</div>
-        <div class="js-logo-fit upper white logo__subbrand-text">
-          <div class="line1">Life &amp; Health</div>
-          <div class="line2">Romainian Adventist</div>
-          <div class="line3">Publishing House</div>
-        </div>
+      <a href="/" class="logo__link logo__link--horiz theme--primary-background-color show-until--large {{# logo_bottom_text }} logo--with-text {{/ logo_bottom_text }}">
+        {{> atoms-logo-horiz }}
+        {{# logo_bottom_text }}
+          <span class="logo__text"><img src="{{ image_path }}{{ logo_text }}" class="logo__text" alt="{{ head.title }} logo" /></span>
+        {{/ logo_bottom_text }}
       </a>
-      {{/ nope }}
+      <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large {{# logo_bottom_text }} logo--with-text {{/ logo_bottom_text }}">
+        {{> atoms-logo-square }}
+        {{# logo_bottom_text }}
+          <span class="logo__text"><img src="{{ image_path }}{{ logo_text }}" class="logo__text" alt="{{ head.title }} logo" /></span>
+        {{/ logo_bottom_text }}
+      </a>
       {{> molecules-primary-navigation }}
     </div> <!-- /.header__unify-logo-nav -->
     <div class="header__utility">

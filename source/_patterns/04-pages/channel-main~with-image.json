@@ -5,6 +5,12 @@
     "body_class": "body theme--cool"
   },
 
+  "logo_horiz": "logo__church--no-logo--horiz.svg",
+  "logo_square": "logo__church--no-logo--square.svg",
+  "logo_bottom_text": {
+    "logo_text": "logo-text--inter-european-division.svg"
+  },
+
   "page_header": {
     "has_image": true,
     "kicker": "Maecenas",
