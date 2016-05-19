@@ -24,11 +24,11 @@ $warning: #fff664;
 $information: #000db5;
 $overlay: rgba($black, .9);
 $overlay-light: rgba($black, .76);
-$gray: rgba($black, .5);
-$gray-light: rgba($black, .1);
-$gray-med: rgba($black, .6);
+$gray: lighten($black, 50);
+$gray-light: lighten($black, 90);
+$gray-med: lighten($black, 70);
 //$gray-dark: #575a5c;
-$gray-dark: rgba($black, .8);
+$gray-dark: lighten($black, 20);
 
 /**
  * Style Colors

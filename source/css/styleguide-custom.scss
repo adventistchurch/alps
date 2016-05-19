@@ -1,0 +1,131 @@
+@import "bourbon";
+@import "settings.variables";
+@import "tools.mixins";
+@import "tools.include-media";
+
+
+/*------------------------------------*\
+    $CUSTOM PATTERN LAB STYLEGUIDE
+\*------------------------------------*/
+
+#patternlab-html, #patternlab-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/**
+ * Header
+ */
+.sg-header {
+  font-family: "Arial", sans-serif;
+  order: 1;
+  z-index: 10000;
+  a {
+    color: $white;
+  }
+}
+.sg-acc-handle {
+  vertical-align: middle;
+  &:after {
+    width: rem(14);
+    color: $gray-med;
+    margin-left: 2px;
+    display: inline-block;
+    font-size: 100%;
+  }
+}
+
+#sg-vp-wrap {
+  position: relative;
+  height: rem(800);
+  order: 3;
+  top: 0;
+}
+
+#sg-code-close {
+  display: none;
+}
+
+#sg-gen-container {
+}
+#sg-rightpull {
+  background-color: $ming;
+  position: relative;
+  &:hover {
+    background-color: $treefrog;
+  }
+  &:after {
+    content: "|||";
+    position: absolute;
+    font-size: rem(14);
+    color: rgba($white, .8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/**
+ * View Containers
+ */
+.sg-view-container {
+  position: static;
+  background-color: $white;
+  max-width: rem(1130);
+  margin-left: 0;
+}
+
+/**
+ * Annotations
+ */
+#sg-annotation-container {
+  order: 2;
+  margin-bottom: $space-double;
+}
+#sg-comments-container {
+  max-width: none;
+}
+.sg-comment-container {
+  padding-bottom: $pad-half;
+  color: $black;
+  h2 {
+    padding-bottom: rem(6);
+    border-bottom: 1px solid $black;
+    font-size: rem(28);
+  }
+  > div {
+    font-family: $serif;
+    font-size: rem(18);
+  }
+}
+
+/**
+ * Code Container
+ */
+#sg-code-container {
+  order: 4;
+  margin-top: $space-double;
+}
+#sg-code-tabs {
+  li {
+    font-size: rem(14);
+    letter-spacing: 1px;
+    border-top: none;
+    background-color: $white;
+    padding: $pad-half $pad;
+    border: 1px solid $gray-light;
+    border-bottom: none;
+    margin-right: rem(6);
+  }
+  .sg-code-title-active {
+    background-color: $ming !important;
+    color: $white;
+    border-color: transparent;
+  }
+}
+pre[class*="language-"] {
+  border-radius: 0;
+}
+
