@@ -297,6 +297,10 @@ $max-width: rem(1130);
 #sg-code-container {
   order: 4;
   margin-top: $space-double;
+  display: none;
+  &[style="bottom: 0px;"] {
+    display: block;
+  }
 }
 #sg-code-tabs {
   li {
