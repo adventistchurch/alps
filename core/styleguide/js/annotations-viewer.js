@@ -5,12 +5,11 @@
  * Licensed under the MIT license
  *
  */
-
 var annotationsViewer = {
 
 	// set-up default sections
-	commentsActive:          false,
-	commentsViewAllActive:   false,
+	commentsActive:          true,
+	commentsViewAllActive:   true,
 	targetOrigin:            (window.location.protocol === "file:") ? "*" : window.location.protocol+"//"+window.location.host,
 	moveToOnInit:            0,
 
@@ -21,6 +20,11 @@ var annotationsViewer = {
 
 		// not sure this is used anymore...
 		$('body').addClass('comments-ready');
+
+		// Remove intro if not home page
+		if (window.location.href.indexOf("?p") > -1) {
+			$('.sg-intro').hide();
+		}
 
 		$(window).resize(function() {
 			if(!annotationsViewer.commentsActive) {
@@ -86,6 +90,7 @@ var annotationsViewer = {
 		// note that it's turned on in the viewer
 		annotationsViewer.commentsActive = true;
 		$('#sg-t-annotations').addClass('active');
+
 	},
 
 	/**
@@ -151,6 +156,9 @@ var annotationsViewer = {
 		if (commentsContainer.innerHTML !== "") {
 			commentsContainer.innerHTML = "";
 		}
+
+		// Hide intro if commetns are showing
+		$('.sg-intro').hide();
 
 		// see how many comments this pattern might have. if more than zero write them out. if not alert the user to the fact their aren't any
 		var count = Object.keys(comments).length;

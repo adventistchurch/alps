@@ -9,7 +9,7 @@
 var codeViewer = {
 
 	// set up some defaults
-	codeActive:   false,
+	codeActive:   true,
 	tabActive:    "e",
 	encoded:      "",
 	mustache:     "",
@@ -271,7 +271,7 @@ var codeViewer = {
 			for (var i = 0; i < lineage.length; i++) {
 				lineageList += (i === 0) ? "" : ", ";
 				var cssClass  = (lineage[i].lineageState != undefined) ? "sg-pattern-state "+lineage[i].lineageState : "";
-				lineageList += "<a href='"+lineage[i].lineagePath+"' class='"+cssClass+"' data-patternPartial='"+lineage[i].lineagePattern+"'>"+lineage[i].lineagePattern+"</a>";
+				lineageList += "<a href='"+lineage[i].lineagePath+"' class='"+cssClass+"' data-patternPartial='"+lineage[i].lineagePattern+"'>"+lineage[i].lineagePattern.split('-').join(' ')+"</a>";
 			}
 			$("#sg-code-lineage-fill").html(lineageList);
 		} else {
@@ -285,7 +285,7 @@ var codeViewer = {
 			for (var i = 0; i < lineageR.length; i++) {
 				lineageRList += (i === 0) ? "" : ", ";
 				var cssClass  = (lineageR[i].lineageState != undefined) ? "sg-pattern-state "+lineageR[i].lineageState : "";
-				lineageRList += "<a href='"+lineageR[i].lineagePath+"' class='"+cssClass+"' data-patternPartial='"+lineageR[i].lineagePattern+"'>"+lineageR[i].lineagePattern+"</a>";
+				lineageRList += "<a href='"+lineageR[i].lineagePath+"' class='"+cssClass+"' data-patternPartial='"+lineageR[i].lineagePattern+"'>"+lineageR[i].lineagePattern.split('-').join(' ')+"</a>";
 			}
 			$("#sg-code-lineager-fill").html(lineageRList);
 		} else {
