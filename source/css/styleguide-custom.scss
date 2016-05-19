@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  background-color: $white;
 }
 
 /**
@@ -22,6 +23,12 @@
   font-family: "Arial", sans-serif;
   order: 1;
   z-index: 10000;
+  width: rem(220);
+  font-weight: 600;
+  right: $space;
+  top: $space;
+  left: auto;
+  position: absolute;
   a {
     color: $white;
   }
@@ -37,6 +44,84 @@
   }
 }
 
+/**
+ * Nav
+ */
+.sg-header .sg-nav-toggle {
+  display: block;
+  background-color: $white;
+  color: $black;
+  width: 100%;
+  height: rem(60);
+  padding-top: rem(25);
+  text-align: right;
+  padding-right: rem(65);
+  background: $white url("http://d.pr/i/1iAbU+") no-repeat center right;
+  &:hover,
+  &:focus {
+    background: $white url("http://d.pr/i/1iAbU+") no-repeat center right;
+    color: $ming;
+  }
+}
+.sg-nav-container {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+.sg-nav > li {
+  border-bottom: 1px solid rgba($white, .2);
+  border-right: none;
+  float: none;
+}
+.sg-controls {
+  position: relative;
+}
+.sg-control > li,
+.sg-current-size,
+.sg-size-options {
+  float: none;
+}
+.sg-find,
+.sg-view,
+.sg-tools {
+  display: none; // hide for now.
+}
+.sg-nav > li > ol {
+  position: relative;
+  top: 0;
+  > li a {
+    display: block;
+    padding-left: $pad;
+    text-transform: capitalize;
+  }
+}
+.sg-acc-panel {
+  height: auto !important;
+  .sg-sub-nav.active {
+    a {
+      padding-left: $pad-and-half;
+    }
+  }
+}
+.sg-nav-atoms {
+  @include scrollbar(8px, rgba($gray-light, .5), rgba($ming, .2));
+}
+.sg-header a.active,
+.sg-acc-handle.active {
+  background-color: rgba($white, .35);
+}
+.sg-nav-blocks {
+  .sg-acc-handle.active {
+    background-color: rgba($ming, .5);
+  }
+}
+.sg-header a:hover,
+.sg-header a:focus {
+  background-color: rgba($white, .15);
+}
+
+
 #sg-vp-wrap {
   position: relative;
   height: rem(800);
@@ -44,11 +129,13 @@
   top: 0;
 }
 
-#sg-code-close {
+.sg-view-close {
   display: none;
 }
 
 #sg-gen-container {
+  border: 2px solid $gray-light;
+  border-right: none;
 }
 #sg-rightpull {
   background-color: $ming;
