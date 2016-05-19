@@ -21,10 +21,20 @@
 
 	<script src="styleguide/js/vendor/jquery.js"></script>
 </head>
-<body  id="patternlab-body">
+<body id="patternlab-body">
+
+	<div class="layout-container spacing">
+		<div class="alps-logo-wrap">
+			<a href="/" class="alps-logo"><img src="/images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
+		</div>
+		<div class="sg-intro">
+			<p>Donec mi ipsum, varius nec fermentum vitae, maximus at ipsum. Praesent ante nulla, tincidunt id dui ac, efficitur volutpat ante. Proin quis mauris et tellus vestibulum porta. Nulla venenatis lacus ut laoreet rutrum. Ut ac lobortis diam. Nam ac dolor consectetur, feugiat augue a, consequat libero.</p>
+		</div>
+	</div>
+
 	<!--Style Guide Header-->
 	<header class="sg-header" role="banner">
-		<a href="#sg-nav-container" class="sg-nav-toggle"><span class="icon-menu"></span>Menu</a>
+		<a href="#sg-nav-container" class="sg-nav-toggle"><span class="icon-menu"></span></a>
 		<div class="sg-nav-container" id="sg-nav-container">
 			{{> patternNav }}
 			{{> ishControls }}
@@ -46,27 +56,9 @@
 
 	<!-- the template for the code view slider -->
 	<script type="text/html" id="code-template">
-		<div id="sg-code-close" class="sg-view-close">
-			<a href="#" id="sg-code-close-btn" class="sg-view-close-btn">Close</a>
-		</div>
 		<div id="sg-code-loader">
 			<div class="spinner"></div>
 			Loading pattern...
-		</div>
-		<div id="sg-code-patternstate" style="display: none;">
-			<p>
-				The state of the <span id="sg-code-patternstate-patternname" class="sg-code-patternname"></span> pattern is: <span id="sg-code-patternstate-fill"></span>
-			</p>
-		</div>
-		<div id="sg-code-lineage" style="display: none;">
-			<p>
-				The <span id="sg-code-lineager-patternname" class="sg-code-patternname"></span> pattern contains the following patterns: <span id="sg-code-lineage-fill"></span>
-			</p>
-		</div>
-		<div id="sg-code-lineager" style="display: none;">
-			<p>
-				The <span id="sg-code-lineager-patternname" class="sg-code-patternname"></span> pattern is included in the following patterns: <span id="sg-code-lineager-fill"></span>
-			</p>
 		</div>
 		<div id="sg-code-markup">
 			<ul id="sg-code-tabs">
@@ -82,10 +74,30 @@
 
 	<!-- the template for the annotations viewer slider -->
 	<script type="text/html" id="annotations-template">
-		<div id="sg-annotation-close" class="sg-view-close">
-			<a href="#" id="sg-annotation-close-btn" class="sg-view-close-btn">Close</a>
+		<div class="sg-comments-code-wrap">
+			<code class="sg-code-patternname" id="sg-code-patternstate-patternname"></code>
+			<div id="sg-comments-container" class="sg-comments-container"></div>
+			<div class="sg-code-details spacing">
+				<div id="sg-code-patternstate" class="spacing--quarter" style="display: none;">
+					<h3 class="sg-code-heading">State</h3>
+					<p>
+						<!-- The state of the <span id="sg-code-patternstate-patternname" class="sg-code-patternname"></span> pattern is:  --><span id="sg-code-patternstate-fill"></span>
+					</p>
+				</div>
+				<div id="sg-code-lineage" class="spacing--quarter" style="display: none;">
+					<h3 class="sg-code-heading">Contains</h3>
+					<p>
+						<!-- The <span id="sg-code-lineager-patternname" class="sg-code-patternname"></span> pattern contains the following patterns:  --><span id="sg-code-lineage-fill"></span>
+					</p>
+				</div>
+				<div id="sg-code-lineager" class="spacing--quarter" style="display: none;">
+					<h3 class="sg-code-heading">Included In</h3>
+					<p>
+						<!-- The <span id="sg-code-lineager-patternname" class="sg-code-patternname"></span> pattern is included in the following patterns:  --><span id="sg-code-lineager-fill"></span>
+					</p>
+				</div>
+			</div>
 		</div>
-		<div id="sg-comments-container"></div>
 	</script>
 
 	<!-- Included JavaScript that makes everything work -->
