@@ -7,11 +7,11 @@ module.exports = function(grunt) {
         pkg: pkg,
         shell: {
             patternlab: {
-                options: {
-                    execOptions: {
-                        maxBuffer: 1024 * 1024 * 64,
-                    },
-                },
+                // options: {
+                //     execOptions: {
+                //         maxBuffer: 1024 * 1024 * 64,
+                //     },
+                // },
                 command: "php core/builder.php -g"
             },
             go: {
@@ -164,9 +164,9 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'css',
         'javascript',
-        'shell:patternlab'
-        // 'images',
-        // 'copy'
+        'shell:patternlab',
+        'images',
+        'copy'
     ]);
 
     /**
