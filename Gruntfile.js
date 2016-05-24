@@ -165,7 +165,7 @@ module.exports = function(grunt) {
         'css',
         'javascript',
         'shell:patternlab',
-        'images',
+        // 'images',
         'copy'
     ]);
 
