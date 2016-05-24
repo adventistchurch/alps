@@ -1,8 +1,5 @@
 <?php
 
-error_reporting(E_ALL & ~E_NOTICE);
-
-
 /*!
  * Pattern Lab Builder Class - v0.7.12
  *
@@ -18,6 +15,9 @@ namespace PatternLab;
 use \Mustache_Engine as Engine;
 use \Mustache_Loader_PatternLoader as PatternLoader;
 use \Mustache_Loader_FilesystemLoader as FilesystemLoader;
+
+error_reporting(E_ALL & ~E_NOTICE);
+
 
 class Builder {
 
