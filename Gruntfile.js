@@ -7,11 +7,12 @@ module.exports = function(grunt) {
         pkg: pkg,
         shell: {
             patternlab: {
-                // options: {
-                //     execOptions: {
-                //         maxBuffer: 1024 * 1024 * 64,
-                //     },
-                // },
+                options: {
+                    execOptions: {
+                        maxBuffer: 1024 * 1024 * 64
+                        // maxBuffer: Infinity
+                    },
+                },
                 command: "php core/builder.php -g"
             },
             go: {
