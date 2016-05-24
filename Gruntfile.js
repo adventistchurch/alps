@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                         // maxBuffer: Infinity
                     },
                 },
-                command: "php core/builder.php -g"
+                command: "php core/builder.php -g",
             },
             go: {
                 // command: "php -S localhost:4000 -t public"
@@ -166,7 +166,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'css',
         'javascript',
-        // 'shell:patternlab',
+        'shell:patternlab',
         'images',
         'copy'
     ]);
