@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         shell: {
             patternlab: {
                 options: {
-                    failOnError: false
+                    failOnError: false,
                     execOptions: {
                         maxBuffer: 1024 * 1024 * 64
                         // maxBuffer: Infinity
