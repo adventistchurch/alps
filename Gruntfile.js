@@ -166,10 +166,24 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'css',
         'javascript',
-        // 'shell:patternlab',
+        'shell:patternlab',
         'images',
         'copy'
     ]);
+
+
+
+    /**
+     * DeployBot Task
+     */
+    grunt.registerTask('deploybot', [
+        'css',
+        'javascript',
+        'images',
+        'copy'
+    ]);
+
+
 
     /**
      * Default Tasks
