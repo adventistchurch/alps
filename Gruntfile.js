@@ -10,8 +10,8 @@ module.exports = function(grunt) {
                 options: {
                     failOnError: false,
                     execOptions: {
-                        maxBuffer: 1024 * 1024 * 64
-                        // maxBuffer: Infinity
+                        // maxBuffer: 1024 * 1024 * 64
+                        maxBuffer: Infinity
                     },
                 },
                 command: "php core/builder.php -g",
