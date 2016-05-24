@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL & ~E_NOTICE);
+
+
 /*!
  * Pattern Lab Builder Class - v0.7.12
  *
