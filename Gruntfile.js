@@ -164,11 +164,11 @@ module.exports = function(grunt) {
      * Dev task
      */
     grunt.registerTask('dev', [
-        // 'css',
-        // 'javascript',
-        'shell:patternlab'
-        // 'images',
-        // 'copy'
+        'css',
+        'javascript',
+        'shell:patternlab',
+        'images',
+        'copy'
     ]);
 
     /**
