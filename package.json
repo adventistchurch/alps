@@ -1,5 +1,5 @@
 {
-  "name": "APLS",
+  "name": "ALPS",
   "version": "0.0.1",
   "description": "Adventist Living Pattern System",
   "devDependencies": {
@@ -29,7 +29,7 @@
     "url": "git@github.com:adventistchurch/alps.git"
   },
   "author": "SuperFriendly & Southleft",
-  "license": "none",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "homepage": "http://adventist.org",
   "compileTemplates": false
 }
