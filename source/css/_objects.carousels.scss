@@ -87,10 +87,14 @@
   }
 }
 
-.hero-carousel-2column {
-  @include media('<large') {
-    .carousel__slides{
-      padding-bottom: 3em;
+// Hero w/ two columns
+.hero-carousel--2-column {
+  .carousel__item {
+    max-height: none;
+  }
+  .shift-right--fluid {
+    @include media('>large') {
+      padding-left: $pad-double;
     }
   }
 }
@@ -123,16 +127,15 @@
     margin-left: $space-half;
     cursor: pointer;
     @include media('<large') {
-      .hero-carousel-2column & {
+      .hero-carousel--2-column & {
         border-color: $brown-med;
       }
     }
-
   }
   .slick-active {
     background-color: $white;
     @include media('<large') {
-      .hero-carousel-2column & {
+      .hero-carousel--2-column & {
         background-color: $brown-med;
       }
     }
@@ -146,9 +149,9 @@
 }
 
 /**
- * Carousel as block (always assums 4:3 images)
+ * Carousel as block (always assumes 4:3 images)
  */
-.carousel-block__carousel {
+@mixin carousel-nav--4-3() {
   .slick-dots {
     top: 0;
     bottom: auto;
@@ -156,5 +159,13 @@
     padding: rem(10);
     padding-top: calc(75% - 28px);
     transform: translate(0, 0);
+  }
+}
+.carousel-nav--4-3 {
+  @include carousel-nav--4-3;
+}
+.carousel-nav--4-3--until-large {
+  @include media('<large') {
+    @include carousel-nav--4-3;
   }
 }
