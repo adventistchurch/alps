@@ -109,8 +109,9 @@ $max-width: rem(1130);
   border-right: none;
   float: none;
 }
-.sg-controls {
+.sg-controls, {
   position: relative;
+  padding-bottom: rem(35);
 }
 .sg-control > li,
 .sg-current-size,
@@ -118,9 +119,43 @@ $max-width: rem(1130);
   float: none;
 }
 .sg-find,
-.sg-view,
 .sg-tools {
   display: none; // hide for now.
+}
+.sg-view {
+  position: static;
+  .sg-icon-eye {
+    display: none;
+  }
+  .sg-view {
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    min-width: 0;
+    max-height: none;
+    overflow: visible;
+    li {
+      display: none;
+      &:last-child {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        border-top: 1px solid rgba($white, .2);
+        a {
+          font-family: $sans;
+          font-weight: 600;
+          &:before {
+            font-family: 'icomoon';
+          }
+        }
+      }
+    }
+  }
 }
 .sg-nav > li > ol {
   position: relative;
