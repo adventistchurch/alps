@@ -195,9 +195,9 @@ $max-width: rem(1130);
   width: 25%;
 }
 // Hide "View All"
-[data-patternpartial^="viewall"] {
-  display: none !important;
-}
+// [data-patternpartial^="viewall"] {
+//   display: none !important;
+// }
 
 #sg-vp-wrap {
   position: relative;
