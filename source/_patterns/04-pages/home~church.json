@@ -6,37 +6,27 @@
   },
 
   "carousel": {
+    "carousel_outer_class": "carousel-nav--4-3--until-large",
     "carousel_class": "js-carousel__single-item",
     "no_arrows": true,
-    "slides2column":true,
-
+    "slides2column": true,
     "slides": [
       {
         "picture": {
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://placeimg.com/500/500/nature",
-            "src_m": "http://placeimg.com/700/400/nature"
+            "src_s": "http://unsplash.it/500/375/?random",
+            "src_m": "http://unsplash.it/800/600/?random"
           },
-          "has_break_l": {
-            "img_break_l": "700",
-            "img": {
-              "src_l": "http://placeimg.com/900/400/nature"
-            }
-          },
-          "has_break_xl": {
-            "img_break_xl": "900",
-            "img": {
-              "src_xl": "http://placeimg.com/1300/600/nature"
-            }
-          }
+          "has_break_l": false,
+          "has_break_xl": false
         },
         "has_slide_text": {
-          "slide_heading": "Adventist Beliefs",
-          "slide_subtitle": "We believe that God creates",
-          "slide_dek": "From neurons to nebulae, DNA to distant galaxies, we are surrounded by wonder. Yet the beauty is broken.",
-          "slide_cta": "Find out more",
+          "slide_heading": "Proin dapibus",
+          "slide_subtitle": "Fusce nec urna ut tellus accumsan fermentum.",
+          "slide_dek": "Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue.",
+          "slide_cta": "Mec cursus mi",
           "btn_class": "btn--white"
         }
       },
@@ -45,27 +35,16 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://placeimg.com/500/500/people",
-            "src_m": "http://placeimg.com/700/400/people"
+            "src_s": "http://unsplash.it/500/375/",
+            "src_m": "http://unsplash.it/800/600/"
           },
-          "has_break_l": {
-            "img_break_l": "700",
-            "img": {
-              "src_l": "http://placeimg.com/900/400/people"
-            }
-          },
-          "has_break_xl": {
-            "img_break_xl": "900",
-            "img": {
-              "src_xl": "http://placeimg.com/1300/600/people"
-            }
-          }
+          "has_break_l": false,
+          "has_break_xl": false
         },
         "has_slide_text": {
-          "slide_heading": "Service",
-          "slide_subtitle": "Religious Liberty - The Freedom to Believe",
-          "slide_dek": "A person’s conscience, not government, should dictate his or her choice to worship—or not.",
-          "slide_cta": "Learn more",
+          "slide_heading": "Quisque",
+          "slide_dek": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
+          "slide_cta": "Aenean tempor dolor",
           "btn_class": "btn--white"
         }
       },
@@ -74,27 +53,17 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://placeimg.com/500/500/architecture",
-            "src_m": "http://placeimg.com/700/400/architecture"
+            "src_s": "http://unsplash.it/g/500/375/?random",
+            "src_m": "http://unsplash.it/g/800/600/?random"
           },
-          "has_break_l": {
-            "img_break_l": "700",
-            "img": {
-              "src_l": "http://placeimg.com/900/400/architecture"
-            }
-          },
-          "has_break_xl": {
-            "img_break_xl": "900",
-            "img": {
-              "src_xl": "http://placeimg.com/1300/600/architecture"
-            }
-          }
+          "has_break_l": false,
+          "has_break_xl": false
         },
         "has_slide_text": {
-          "slide_heading": "Vitality",
-          "slide_subtitle": "Family - God's Love Illustrated",
-          "slide_dek": "God established the first family in the Garden of Eden. Since then, families have formed the basic unit of society.",
-          "slide_cta": "Read more about Vitality",
+          "slide_heading": "Donec a gravida tellus",
+          "slide_subtitle": "Ut mollis risus a ipsum maximus ullamcorper.",
+          "slide_dek": "Fusce rhoncus commodo lectus eu pretium. Donec interdum erat ut felis iaculis, id auctor elit mattis.",
+          "slide_cta": "Mauris vel ornare metus",
           "btn_class": "btn--white"
         }
       },
@@ -103,27 +72,17 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://placeimg.com/500/500/animals",
-            "src_m": "http://placeimg.com/700/400/animals"
+            "src_s": "http://unsplash.it/g/500/375/",
+            "src_m": "http://unsplash.it/g/800/600/"
           },
-          "has_break_l": {
-            "img_break_l": "700",
-            "img": {
-              "src_l": "http://placeimg.com/900/400/animals"
-            }
-          },
-          "has_break_xl": {
-            "img_break_xl": "900",
-            "img": {
-              "src_xl": "http://placeimg.com/1300/600/animals"
-            }
-          }
+          "has_break_l": false,
+          "has_break_xl": false
         },
         "has_slide_text": {
-          "slide_heading": "Spirituality",
-          "slide_subtitle": "Have a conversation with God",
-          "slide_dek": "God hears every prayer. Our heavenly Father always wants to hear from his children. Prayer gives you an instant and direct connection to your Creator and Redeemer.",
-          "slide_cta": "Find out more",
+          "slide_heading": "Donec interdum erat",
+          "slide_subtitle": "Nulla rhoncus semper dolor et placerat.",
+          "slide_dek": "Mauris vel ornare metus. Donec rutrum arcu at erat pellentesque, vel euismod mi scelerisque. Nunc faucibus urna vel tristique volutpat. Praesent non libero sit amet neque feugiat condimentum.",
+          "slide_cta": "Mec cursus mi",
           "btn_class": "btn--white"
         }
       }
