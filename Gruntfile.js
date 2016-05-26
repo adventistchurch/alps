@@ -8,11 +8,13 @@ module.exports = function(grunt) {
         shell: {
             patternlab: {
                 options: {
+                    failOnError: false,
                     execOptions: {
-                        maxBuffer: 1024 * 1024 * 64,
+                        maxBuffer: 1024 * 1024 * 64
+                        // maxBuffer: Infinity
                     },
                 },
-                command: "php core/builder.php -g"
+                command: "php core/builder.php -g",
             },
             go: {
                 // command: "php -S localhost:4000 -t public"
@@ -169,6 +171,20 @@ module.exports = function(grunt) {
         'images',
         'copy'
     ]);
+
+
+
+    /**
+     * DeployBot Task
+     */
+    grunt.registerTask('deploybot', [
+        'css',
+        'javascript',
+        'images',
+        'copy'
+    ]);
+
+
 
     /**
      * Default Tasks

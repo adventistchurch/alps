@@ -16,6 +16,9 @@ use \Mustache_Engine as Engine;
 use \Mustache_Loader_PatternLoader as PatternLoader;
 use \Mustache_Loader_FilesystemLoader as FilesystemLoader;
 
+error_reporting(E_ALL & ~E_NOTICE);
+
+
 class Builder {
 
   /**
