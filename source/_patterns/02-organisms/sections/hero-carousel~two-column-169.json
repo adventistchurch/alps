@@ -1,12 +1,6 @@
 {
-  "head": {
-    "title": "Home - The Official Site of the Seventh-day Adventist world church",
-    "html_class": "pl theme--emperor",
-    "body_class": "body theme--cool"
-  },
-
   "carousel": {
-    "carousel_outer_class": "carousel-nav--4-3--until-large",
+    "carousel_outer_class": "carousel-nav--16-9--until-large",
     "carousel_class": "js-carousel__single-item",
     "no_arrows": true,
     "slides2column": true,
@@ -16,8 +10,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/500/375/?random",
-            "src_m": "http://unsplash.it/800/600/?random"
+            "src_s": "http://unsplash.it/500/282/?random",
+            "src_m": "http://unsplash.it/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -35,8 +29,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/500/375/",
-            "src_m": "http://unsplash.it/800/600/"
+            "src_s": "http://unsplash.it/500/282/",
+            "src_m": "http://unsplash.it/800/450/"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -53,8 +47,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/g/500/375/?random",
-            "src_m": "http://unsplash.it/g/800/600/?random"
+            "src_s": "http://unsplash.it/g/500/282/?random",
+            "src_m": "http://unsplash.it/g/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -72,8 +66,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/g/500/375/",
-            "src_m": "http://unsplash.it/g/800/600/"
+            "src_s": "http://unsplash.it/g/500/282/",
+            "src_m": "http://unsplash.it/g/800/450/"
           },
           "has_break_l": false,
           "has_break_xl": false

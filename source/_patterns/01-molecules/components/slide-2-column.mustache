@@ -1,39 +1,20 @@
-
-<div class="carousel__item cf rel {{ carousel_item_class }}">
+<div class="carousel__item carousel__slide cf spacing rel {{ carousel_item_class }}">
   <div class="shift-left--fluid">
     {{> atoms-picture }}
   </div> <!-- /.shift-left--fluid -->
 
   {{# has_slide_text }}
-  <div class="shift-right--fluid pad">
-    <div class="layout-container">
+    <div class="shift-right--fluid">
       <div class="{{ carousel_text_class }} spacing--half">
-        <div>
-          <h2 class="carousel__item-heading font--tertiary--l theme--primary-text-color">{{{ slide_heading }}}</h2>
-          {{# slide_subtitle }}<br><h3 class="carousel__item-subtitle font--secondary--m">{{{ slide_subtitle }}}</h3>{{/ slide_subtitle }}
-          <div class="carousel__item-dek pad-half--btm">
-            <p>{{{ slide_dek }}}</p>
-          </div> <!-- /.carousel__item-dek -->
-        </div>
-        <a href="{{ url }}" class="carousel__item-cta btn theme--secondary-background-color">{{{ slide_cta }}}</a>
-      </div> <!-- /.carousel__item-text -->
+        <h2 class="carousel__slide-heading font--tertiary--l theme--primary-text-color">{{{ slide_heading }}}</h2>
+        {{# slide_subtitle }}
+          <h3 class="carousel__slide-subtitle font--secondary--m">{{{ slide_subtitle }}}</h3>
+        {{/ slide_subtitle }}
+        <div class="carousel__slide-dek pad-half--btm">
+          <p>{{{ slide_dek }}}</p>
+        </div> <!-- /.carousel__slide-dek -->
+        <a href="{{ url }}" class="carousel__slide-cta btn theme--secondary-background-color">{{{ slide_cta }}}</a>
+      </div> <!-- /.carousel__slide-text -->
     </div>
-  </div>
   {{/ has_slide_text }}
-
-  {{# is_carousel_block }}
-    <div class="carousel-block__content block__content spacing--quarter pad {{ block_content_class }}">
-      {{# title }}<h3 class="carousel-block__title block__title {{ block_title_class }}"><a href="{{ url }}" class="block__title-link theme--primary-text-color">{{{ title }}}</a></h3>{{/ title }}
-      {{# date }}
-        <time class="block__date font--secondary--xs brown space-half--btm" datetime="{{ datetime }}">{{{ date }}}</time>
-      {{/ date }}
-      {{# description }}
-        <div class="text pad-half--btm"><p class="carousel-block__description block__description"><span class="font--primary--xs">{{ description }}</span></p></div>
-      {{/ description }}
-      {{# cta }}
-        <p><a class="carousel-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ cta }}</a></p>
-      {{/ cta }}
-    </div> <!-- carousel-block__content -->
-  {{/ is_carousel_block }}
-
-</div> <!-- /.carousel__item -->
+</div> <!-- /.carousel__slide -->

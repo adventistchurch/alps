@@ -87,10 +87,14 @@
   }
 }
 
-.hero-carousel-2column {
-  @include media('<large') {
-    .carousel__slides{
-      padding-bottom: 3em;
+// Hero w/ two columns
+.hero-carousel--2-column {
+  .carousel__item {
+    max-height: none;
+  }
+  .shift-right--fluid {
+    @include media('>large') {
+      padding-left: $pad-double;
     }
   }
 }
@@ -122,20 +126,9 @@
     height: rem(15);
     margin-left: $space-half;
     cursor: pointer;
-    @include media('<large') {
-      .hero-carousel-2column & {
-        border-color: $brown-med;
-      }
-    }
-
   }
   .slick-active {
     background-color: $white;
-    @include media('<large') {
-      .hero-carousel-2column & {
-        background-color: $brown-med;
-      }
-    }
   }
   button {
     display: none;
@@ -146,15 +139,36 @@
 }
 
 /**
- * Carousel as block (always assums 4:3 images)
+ * Carousel as block
+ * Include a calculation for the intrinic ratio: 4:3 = 75% - 28px, 16:9 = 56.25% - 28px)
+ * http://alistapart.com/article/creating-intrinsic-ratios-for-video
  */
-.carousel-block__carousel {
+@mixin carousel-nav--adjustment($ratio) {
   .slick-dots {
     top: 0;
     bottom: auto;
     left: 0;
     padding: rem(10);
-    padding-top: calc(75% - 28px);
+    padding-top: calc($ratio);
     transform: translate(0, 0);
   }
 }
+
+.carousel-nav--4-3 {
+  @include carousel-nav--adjustment('75% - 28px');
+}
+.carousel-nav--4-3--until-large {
+  @include media('<large') {
+    @include carousel-nav--adjustment('75% - 28px');
+  }
+}
+
+.carousel-nav--16-9 {
+  @include carousel-nav--adjustment('56.25% - 28px');
+}
+.carousel-nav--16-9--until-large {
+  @include media('<large') {
+    @include carousel-nav--adjustment('56.25% - 28px');
+  }
+}
+

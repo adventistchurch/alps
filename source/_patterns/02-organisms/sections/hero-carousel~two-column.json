@@ -1,10 +1,21 @@
 {
   "carousel": {
+    "carousel_outer_class": "carousel-nav--4-3--until-large",
     "carousel_class": "js-carousel__single-item",
     "no_arrows": true,
-    "slides2column":true,
+    "slides2column": true,
     "slides": [
       {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "http://unsplash.it/500/375/?random",
+            "src_m": "http://unsplash.it/800/600/?random"
+          },
+          "has_break_l": false,
+          "has_break_xl": false
+        },
         "has_slide_text": {
           "slide_heading": "Proin dapibus",
           "slide_subtitle": "Fusce nec urna ut tellus accumsan fermentum.",
@@ -14,6 +25,16 @@
         }
       },
       {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "http://unsplash.it/500/375/",
+            "src_m": "http://unsplash.it/800/600/"
+          },
+          "has_break_l": false,
+          "has_break_xl": false
+        },
         "has_slide_text": {
           "slide_heading": "Quisque",
           "slide_dek": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
@@ -22,6 +43,16 @@
         }
       },
       {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "http://unsplash.it/g/500/375/?random",
+            "src_m": "http://unsplash.it/g/800/600/?random"
+          },
+          "has_break_l": false,
+          "has_break_xl": false
+        },
         "has_slide_text": {
           "slide_heading": "Donec a gravida tellus",
           "slide_subtitle": "Ut mollis risus a ipsum maximus ullamcorper.",
@@ -31,6 +62,16 @@
         }
       },
       {
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "http://unsplash.it/g/500/375/",
+            "src_m": "http://unsplash.it/g/800/600/"
+          },
+          "has_break_l": false,
+          "has_break_xl": false
+        },
         "has_slide_text": {
           "slide_heading": "Donec interdum erat",
           "slide_subtitle": "Nulla rhoncus semper dolor et placerat.",
