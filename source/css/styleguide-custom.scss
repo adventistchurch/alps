@@ -364,6 +364,7 @@ pre[class*="language-"] {
   color: $white;
 }
 .sg-code {
+  display: none !important;
   color: lighten(#e6db74, 10);
   background-color: #272822;
   pre {
