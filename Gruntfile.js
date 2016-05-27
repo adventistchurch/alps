@@ -31,7 +31,8 @@ module.exports = function(grunt) {
             },
             dev: {
                 files: {
-                    'public/css/main.css': 'source/css/main.scss'
+                    'public/css/main.css': 'source/css/main.scss',
+                    'public/css/styleguide-custom.css': 'source/css/styleguide-custom.scss'
                 }
             }
         },
