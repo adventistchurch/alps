@@ -408,7 +408,7 @@ class Builder {
     // }
 
     $this->remoteJson = false;
-    $this->remoteJsonUrl = 'http://motivate-cms.cogclient.com/api/motivate/init';
+    $this->remoteJsonUrl = false;
 
     // gather data from json url
     if ($this->remoteJson) {

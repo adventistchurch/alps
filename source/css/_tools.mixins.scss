@@ -225,12 +225,35 @@
 }
 
 /**
+ * Mixin scrollbar
+ */
+@mixin scrollbar($size, $primary, $secondary: lighten($primary, 25%)) {
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+  ::-webkit-scrollbar-track {
+    background: $secondary;
+  }
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $primary;
+    scrollbar-track-color: $secondary;
+  }
+}
+
+/**
  * Function to access $verticalSpacing map
  */
- @function verticalSpacing($key: mobile) {
-   @if map-has-key($verticalSpacing, $key) {
-     @return map-get($verticalSpacing, $key);
-   }
-   @warn "Unknown `#{$key}` in $verticalSpacing.";
-   @return null;
- }
+@function verticalSpacing($key: mobile) {
+  @if map-has-key($verticalSpacing, $key) {
+    @return map-get($verticalSpacing, $key);
+  }
+  @warn "Unknown `#{$key}` in $verticalSpacing.";
+  @return null;
+}
+
+
