@@ -375,3 +375,25 @@ pre[class*="language-"] {
     padding-bottom: 0;
   }
 }
+
+/**
+ *  * Color Containers
+ */
+.colorset {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorset--color {
+  flex: 0 1 20%;
+  flex-direction: column;
+}
+
+.sg-lable--color{
+  display: block;
+}
+
+
+
+
+
