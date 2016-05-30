@@ -73,6 +73,43 @@
 }
 
 /**
+ * Grid 3up at medium width.
+ */
+.g-3up--at-medium {
+  @include media('>medium') {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    > .gi {
+      float: left;
+      width: 33%;
+      align-items: stretch;
+      display: flex;
+      * { // Slick slider hack for when a carousel is contained within a flexed element.
+        min-height: 0;
+        min-width: 0;
+      }
+    }
+    &.with-divider {
+      > .gi:nth-child(1n) {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 1px;
+          border-right: $border-style-light;
+          height: 100%;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+
+
+
+/**
  * Grid 2up at medium width with 70/30 split.
  */
 .g-2up--70-30--at-medium {
