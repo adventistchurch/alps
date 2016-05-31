@@ -25,6 +25,7 @@ $max-width: rem(1130);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  position: relative;
 }
 .alps-logo-wrap {
   border-bottom: 1px solid $gray-light;
@@ -41,7 +42,7 @@ $max-width: rem(1130);
  * Header
  */
 .sg-header {
-  font-family: "Arial", sans-serif;
+  font-family: $sans;
   order: 1;
   z-index: 10000;
   width: rem(230);
@@ -244,6 +245,7 @@ $max-width: rem(1130);
   display: none;
   &.anim-ready {
     display: block;
+    transition: none;
   }
 }
 
@@ -251,9 +253,62 @@ $max-width: rem(1130);
  * Annotations
  */
 #sg-annotation-container {
+  position: relative;
   order: 2;
+  overflow: visible;
+  &.active {
+    display: none;
+  }
   &[style="bottom: 0px;"] {
     margin-bottom: $space;
+  }
+}
+.sg-annotation-toggle {
+  font-family: $sans;
+  text-transform: uppercase;
+  font-size: rem(10);
+  font-weight: bold;
+  margin-top: 0;
+  position: relative;
+  text-align: right;
+  padding-right: rem(48);
+  .show-annotations {
+    display: none;
+  }
+  &:after {
+    content: "-";
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    background-color: $ming;
+    color: $white;
+    padding: rem(8);
+    font-size: rem(16);
+    font-weight: bold;
+    right: 0;
+    bottom: rem(-13);
+    border: 2px solid $white;
+    box-shadow: 0 0 3px rgba($black, .3);
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 100;
+  }
+  &:hover:after {
+    background-color: darken($ming, 10);
+  }
+  &.active {
+    margin-bottom: $space;
+    .show-annotations {
+      display: block;
+    }
+    .hide-annotations {
+      display: none;
+    }
+    &:after {
+      content: "+";
+    }
   }
 }
 .sg-comments-code-wrap {
@@ -275,8 +330,8 @@ $max-width: rem(1130);
 }
 .sg-code-patternname {
   position: absolute;
-  right: rem(90);
-  top: rem(40);
+  left: 1em;
+  top: -1em;
   font-size: rem(18);
 }
 #sg-comments-container {

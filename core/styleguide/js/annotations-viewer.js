@@ -21,6 +21,13 @@ var annotationsViewer = {
 		// not sure this is used anymore...
 		$('body').addClass('comments-ready');
 
+		// Show/hide annotations.
+		$('.sg-annotation-toggle').on("click", function(e){
+			e.preventDefault();
+			$(this).toggleClass('active');
+			$("#sg-annotation-container").toggleClass('active');
+		});
+
 		// Remove intro if not home page
 		if (window.location.href.indexOf("?p") > -1) {
 			$('.sg-intro').hide();
