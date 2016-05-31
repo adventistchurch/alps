@@ -91,7 +91,7 @@
       }
     }
     &.with-divider {
-      > .gi:nth-child(1n) {
+      > .gi:nth-child(3n+1), > .gi:nth-child(3n+2) {
         position: relative;
         &:after {
           content: "";
