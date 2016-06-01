@@ -11,6 +11,10 @@
 
 $max-width: rem(1130);
 
+.rel {
+  position: relative;
+}
+
 #patternlab-html,
 #patternlab-body {
   display: flex;
@@ -20,12 +24,24 @@ $max-width: rem(1130);
   background-color: $white;
 }
 
+.sg-annotation-toggle {
+  display: none;
+}
+.pre-header {
+  &.active {
+    .sg-intro {
+      display: none;
+    }
+    .sg-annotation-toggle {
+      display: block;
+    }
+  }
+}
 .layout-container {
   max-width: rem(1104);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  position: relative;
 }
 .alps-logo-wrap {
   border-bottom: 1px solid $gray-light;
@@ -330,8 +346,8 @@ $max-width: rem(1130);
 }
 .sg-code-patternname {
   position: absolute;
-  left: 1em;
-  top: -1em;
+  right: rem(90);
+  top: rem(14);
   font-size: rem(18);
 }
 #sg-comments-container {

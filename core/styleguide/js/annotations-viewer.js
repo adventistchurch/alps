@@ -30,7 +30,7 @@ var annotationsViewer = {
 
 		// Remove intro if not home page
 		if (window.location.href.indexOf("?p") > -1) {
-			$('.sg-intro').hide();
+			$('.pre-header').addClass('active');
 		}
 
 		$(window).resize(function() {
@@ -118,7 +118,7 @@ var annotationsViewer = {
 
 		// the bulk of this template is in core/templates/index.mustache
 		if (document.getElementById("sg-annotation-container") === null) {
-			$('<div id="sg-annotation-container" class="sg-view-container"></div>').html($("#annotations-template").html()).appendTo('body').css('bottom',-$(document).outerHeight());
+			$('<div id="sg-annotation-container" class="sg-view-container"></div>').html($("#annotations-template").html()).appendTo('body');
 			setTimeout(function(){ $('#sg-annotation-container').addClass('anim-ready'); },50); //Add animation class once container is positioned out of frame
 		}
 
@@ -138,7 +138,7 @@ var annotationsViewer = {
 	* slides the panel
 	*/
 	slideComment: function(pos) {
-		$('#sg-annotation-container').css('bottom',-pos);
+		//$('#sg-annotation-container').css('bottom',-pos);
 	},
 
 	/**
@@ -165,7 +165,7 @@ var annotationsViewer = {
 		}
 
 		// Hide intro if commetns are showing
-		$('.sg-intro').hide();
+		$('.pre-header').addClass('active');
 
 		// see how many comments this pattern might have. if more than zero write them out. if not alert the user to the fact their aren't any
 		var count = Object.keys(comments).length;
