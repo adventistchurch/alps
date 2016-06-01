@@ -104,6 +104,16 @@ var comments = {
 		"el": ".top",
 		"title" : "Back to Top Link",
 		"comment": "<p>Back to top links are simple yet underrated. They provide users with an easy way back up to the top of the page with minimum effort. This is especially helpful on mobile devices, which tend to have long scrolling pages.</p><p>We're using an HTML character for the back to top arrow in order to reduce image elements and keep things looking crisp on high res displays.</p>"
+	},
+	{
+		"el": ".primary-colors",
+		"title" : "Primary Colors",
+		"comment" : "<p>ALPS includes seven built-in color themes listed below. Each one, when mixed with the secondary colors, allows for a varity of customizable theme options.</p>"
+	},
+	{
+		"el": ".secondary-colors",
+		"title" : "Secondary Colors",
+		"comment" : "<p>The two secondary colors, 'Warm' and 'Cool' allow some further customization to secondary links and color bars throughout the templates.</p>"
 	}
 ]
 };
