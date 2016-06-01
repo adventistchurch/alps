@@ -24,6 +24,7 @@ var annotationsViewer = {
 		// Show/hide annotations.
 		$('.sg-annotation-toggle').on("click", function(e){
 			e.preventDefault();
+			annotationsViewer.toggleComments();
 			$(this).toggleClass('active');
 			$("#sg-annotation-container").toggleClass('active');
 		});
