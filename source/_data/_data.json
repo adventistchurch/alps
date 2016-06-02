@@ -707,6 +707,11 @@
     "pub_date": "April 19, 2016",
     "pub_region": "Pedernales, Ecuador",
     "byline": "Andrew McChesney, news editor, Adventist Review/ ADRA International Staff/ ANN Staff"
+  },
+
+  "pager": {
+    "next": "Next &rarr;",
+    "prev": "&larr; Previous"
   }
 
 }

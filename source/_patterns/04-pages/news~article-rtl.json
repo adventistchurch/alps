@@ -45,6 +45,10 @@
 
   "search": "بحث",
 
+  "pager": {
+    "next": "التالى &larr;",
+    "prev": "&rarr; سابق"
+  },
 
 
   "primary_nav": {
