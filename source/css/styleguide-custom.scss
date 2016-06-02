@@ -399,6 +399,12 @@ $max-width: rem(1130);
   padding-top: 1px;
   border: 2px solid $white;
 }
+.has-annotation {
+  box-shadow: none;
+  &:hover {
+    box-shadow: 0 0 rem(10) $ming;
+  }
+}
 
 /**
  * Code Container
