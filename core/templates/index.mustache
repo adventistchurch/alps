@@ -21,17 +21,20 @@
 </head>
 <body id="patternlab-body">
 
-	<div class="layout-container spacing">
+	<div class="layout-container spacing pre-header">
 		<div class="alps-logo-wrap">
 			<a href="/" class="alps-logo"><img src="./images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
 		</div>
-		<div class="sg-intro">
-			<h2>Welcome to the Adventist Living Pattern System</h2>
-			<p>Donec mi ipsum, varius nec fermentum vitae, maximus at ipsum. Praesent ante nulla, tincidunt id dui ac, efficitur volutpat ante. Proin quis mauris et tellus vestibulum porta. Nulla venenatis lacus ut laoreet rutrum. Ut ac lobortis diam. Nam ac dolor consectetur, feugiat augue a.</p>
+		<code class="sg-code-patternname" id="sg-code-patternstate-patternname"></code>
+		<div class="rel">
+			<div class="sg-intro">
+				<h2>Welcome to the Adventist Living Pattern System</h2>
+				<p>Donec mi ipsum, varius nec fermentum vitae, maximus at ipsum. Praesent ante nulla, tincidunt id dui ac, efficitur volutpat ante. Proin quis mauris et tellus vestibulum porta. Nulla venenatis lacus ut laoreet rutrum. Ut ac lobortis diam. Nam ac dolor consectetur, feugiat augue a.</p>
+			</div>
+			<div class="sg-annotation-toggle"><span class="show-annotations">Show Annotations</span><span class="hide-annotations">Hide Annotations</span></div>
 		</div>
 	</div>
 
-	<!--Style Guide Header-->
 	<header class="sg-header" role="banner">
 		<a href="#sg-nav-container" class="sg-nav-toggle"><span class="icon-menu"></span></a>
 		<div class="sg-nav-container" id="sg-nav-container">
@@ -39,7 +42,6 @@
 			{{> ishControls }}
 		</div>
 	</header>
-	<!--End Style Guide Header-->
 
 	<!-- Iframe -->
 	<div id="sg-vp-wrap">
@@ -74,7 +76,6 @@
 	<!-- the template for the annotations viewer slider -->
 	<script type="text/html" id="annotations-template">
 		<div class="sg-comments-code-wrap">
-			<code class="sg-code-patternname" id="sg-code-patternstate-patternname"></code>
 			<div id="sg-comments-container" class="sg-comments-container"></div>
 			<div class="sg-code-details spacing">
 				<div id="sg-code-patternstate" class="spacing--quarter" style="display: none;">
