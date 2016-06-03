@@ -1,0 +1,122 @@
+{
+  "head": {
+    "title": "Adventist Family Ministries - The Official Site of the Seventh-day Adventist world church",
+    "html_class": "pl theme--earth",
+    "body_class": "body theme--warm"
+  },
+
+  "logo_square": "logo__family--square.svg",
+  "logo_horiz": "logo__family--horiz.svg",
+
+
+
+  "primary_nav": {
+    "items": [
+      {
+        "is_active": true,
+
+        "text": "Who We Are"
+      },
+      {
+        "text": "Individuals"
+      },
+      {
+        "text": "Couples"
+      },
+      {
+        "text": "Parents"
+      },
+      {
+        "text": "Real Answers"
+      },
+      {
+        "text": "Family Talk Blog"
+      }
+    ]
+  },
+
+  "secondary_nav": {
+    "items": [
+      {
+        "text": "Search"
+      },
+      {
+        "text": "Contact Us"
+      }
+    ]
+  },
+
+  "breakout_block": {
+    "media_block_default": {
+      "block_class": "bg--tan can-be--dark-dark block--breakout pad--secondary--for-breakouts",
+      "heading_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 77.22 99.29\"><title>List Icon</title><path d=\"M34.68,54.8H65.57V44.87H34.68V54.8ZM77.58,0.36H22.42a11.06,11.06,0,0,0-11,11V88.61a11.06,11.06,0,0,0,11,11H77.58a11.06,11.06,0,0,0,11-11V11.39A11.06,11.06,0,0,0,77.58.36Zm0,88.26H22.42V11.39H77.58V88.61ZM65.44,23.35H34.56V33H65.44V23.35Zm0,43.3H34.56v9.65H65.44V66.66Z\" transform=\"translate(-11.39 -0.36)\" fill=\"#010101\" class=\"theme--primary-fill-color\"/></svg>",
+      "block_heading": "Family to Family",
+        "img": {
+          "src": "/images/samples/family_GCSessionMat-covers.png",
+          "alt": ""
+        },
+      "description": "Family Ministries joins the Seventh-day Adventist Church's emphasis on sharing the love of Jesus and the hope of His soon return with people in some of the world's largest cities. By using the Family to Family resources each Adventist family can reach others and help them become disciples of Jesus.",
+      "cta": "Download the Book"
+    }
+  },
+
+  "aside_content": [
+    {
+      "aside_heading": "More Resources",
+      "aside_blocks": [
+        {
+          "media_block_default": {
+            "block_class": "",
+            "title": "Healthy Families for Eternity",
+            "img": {
+              "src": "/images/samples/family_FM_Planbook2016tb.png",
+              "alt": "Alt"
+            },
+            "datetime": false,
+            "date": false,
+            "description": "The 2016 Family Ministries Planbook - World Edition is available now for download!",
+            "cta": "Get the Planbook Now"
+          }
+        },
+        {
+          "media_block_default": {
+            "block_class": "",
+            "title": "Now on the Hope Channel",
+            "img": {
+              "src": "/images/samples/family_familytalkhopetv.png",
+              "alt": "Alt"
+            },
+            "datetime": false,
+            "date": false,
+            "description": "Real Family Talk with Willie & Elaine Oliver is a weekly 30-minute TV show on The Hope Channel! Watch past episodes or find a station online!",
+            "cta": "Find out More"
+          }
+        },
+        {
+          "media_block_default": {
+            "block_class": "",
+            "title": "Let Us Pray for You…",
+            "img": {
+              "src": "/images/samples/family_pray-blocks.jpg",
+              "alt": "Alt"
+            },
+            "datetime": false,
+            "date": false,
+            "cta": "Submit Your Prayer Requests Here"
+          }
+        }
+      ]
+    }
+  ],
+
+  "page_header": {
+    "has_image": true,
+    "kicker": "Adventist Family Ministries",
+    "heading": "Who We Are",
+    "page_header_class": "header-swath--with-image blend-mode--multiply",
+    "img_url_s": "/images/samples/family_banner.jpg",
+    "img_url_m": "/images/samples/family_banner.jpg",
+    "img_url_l": "/images/samples/family_banner.jpg"
+  }
+
+}
