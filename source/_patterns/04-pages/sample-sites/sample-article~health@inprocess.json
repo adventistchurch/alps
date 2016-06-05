@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Adventist Family Ministries - The Official Site of the Seventh-day Adventist world church",
-    "html_class": "pl theme--earth",
-    "body_class": "body theme--cool"
+    "title": "Adventist Health Ministries - The Official Site of the Seventh-day Adventist world church",
+    "html_class": "pl theme--denim",
+    "body_class": "body theme--warm"
   },
 
-  "logo_square": "logo__family--square.svg",
-  "logo_horiz": "logo__family--horiz.svg",
+  "logo_square": "logo__health--square.svg",
+  "logo_horiz": "logo__health--horiz.svg",
 
 
 
@@ -15,22 +15,19 @@
       {
         "is_active": true,
 
-        "text": "Who We Are"
+        "text": "News"
       },
       {
-        "text": "Individuals"
+        "text": "Events"
       },
       {
-        "text": "Couples"
+        "text": "Articles"
       },
       {
-        "text": "Parents"
+        "text": "Resources"
       },
       {
-        "text": "Real Answers"
-      },
-      {
-        "text": "Family Talk Blog"
+        "text": "Newsletter"
       }
     ]
   },
@@ -38,10 +35,10 @@
   "secondary_nav": {
     "items": [
       {
-        "text": "Search"
+        "text": "About"
       },
       {
-        "text": "Contact Us"
+        "text": "Contact"
       }
     ]
   },
@@ -50,9 +47,9 @@
     "media_block_default": {
       "block_class": "bg--tan can-be--dark-dark block--breakout pad--secondary--for-breakouts",
       "heading_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 77.22 99.29\"><title>List Icon</title><path d=\"M34.68,54.8H65.57V44.87H34.68V54.8ZM77.58,0.36H22.42a11.06,11.06,0,0,0-11,11V88.61a11.06,11.06,0,0,0,11,11H77.58a11.06,11.06,0,0,0,11-11V11.39A11.06,11.06,0,0,0,77.58.36Zm0,88.26H22.42V11.39H77.58V88.61ZM65.44,23.35H34.56V33H65.44V23.35Zm0,43.3H34.56v9.65H65.44V66.66Z\" transform=\"translate(-11.39 -0.36)\" fill=\"#010101\" class=\"theme--primary-fill-color\"/></svg>",
-      "block_heading": "Family to Family",
+      "block_heading": "My Vegetarian Plate",
         "img": {
-          "src": "/images/samples/family_GCSessionMat-covers.png",
+          "src": "/images/samples/health_my-veg-plate.jpg",
           "alt": ""
         },
       "description": "Family Ministries joins the Seventh-day Adventist Church's emphasis on sharing the love of Jesus and the hope of His soon return with people in some of the world's largest cities. By using the Family to Family resources each Adventist family can reach others and help them become disciples of Jesus.",
@@ -109,14 +106,27 @@
     }
   ],
 
+  "article_header": {
+    "heading": "UCC Dedicates Exercise Trail to the Memory of Dr. Jay R Sloop",
+    "subheading": "Church members, humanitarians gather donations to assist those affected by the tragedy.",
+    "pub_date": "April 6, 2016",
+    "pub_region": "Spokane, WA, United States of America",
+    "byline": "Fred Hardinge, DrPH, Associate Director of Health Ministries for the General Conference of Seventh-day Adventists"
+  },
+  "fig_with_modal": {
+    "large_image_url": "/images/samples/health_sloop-trail.jpg",
+    "figure_class": "size--medium",
+    "img": {
+      "src": "/images/samples/health_sloop-trail.jpg",
+      "alt": "Image Alt"
+    },
+    "caption": "Family members and office friends ready to cut the ribbon."
+  },
+
+
   "page_header": {
-    "has_image": true,
-    "kicker": "Adventist Family Ministries",
-    "heading": "Who We Are",
-    "page_header_class": "header-swath--with-image blend-mode--multiply",
-    "img_url_s": "/images/samples/family_banner.jpg",
-    "img_url_m": "/images/samples/family_banner.jpg",
-    "img_url_l": "/images/samples/family_banner.jpg"
-  }
+    "has_image": false,
+    "heading": "News"
+   }
 
 }
