@@ -259,6 +259,8 @@ $max-width: rem(1130);
   max-width: $max-width;
   margin-left: 0;
   display: none;
+  height: auto;
+  margin-bottom: $space-half;
   &.anim-ready {
     display: block;
     transition: none;
@@ -469,8 +471,3 @@ pre[class*="language-"] {
 .sg-lable--color{
   display: block;
 }
-
-
-
-
-
