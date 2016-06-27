@@ -8,6 +8,7 @@ module.exports = function(grunt) {
      *
      * @description
      * Increase this number to the desired version for css and javascript files.
+     * this will also create a version directory in the css and js folders.
      */
     var version = "1.0.0";
 
