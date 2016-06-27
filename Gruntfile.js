@@ -3,8 +3,17 @@ module.exports = function(grunt) {
 
     var pkg = grunt.file.readJSON('package.json');
 
+    /**
+     * Version Number
+     *
+     * @description
+     * Increase this number to the desired version for css and javascript files.
+     */
+    var version = "1.0.0";
+
     grunt.initConfig({
         pkg: pkg,
+        version: version,
         shell: {
             patternlab: {
                 options: {
@@ -21,18 +30,38 @@ module.exports = function(grunt) {
             }
         },
 
+        mkdir: {
+            prod: {
+                options: {
+                    mode: 0777,
+                    create: ['public/css/<%= version %>', 'public/js/<%= version %>']
+                }
+            }
+        },
+
         sass: {
             options: {
-                outputStyle: 'nested',
                 imagePath: 'source/images',
                 precision: 5,
-                sourceMap: true,
                 includePaths: require('node-bourbon').includePaths
             },
             dev: {
+                options: {
+                    outputStyle: 'nested',
+                    sourceMap: true,
+                },
                 files: {
                     'public/css/main.css': 'source/css/main.scss',
                     'public/css/styleguide-custom.css': 'source/css/styleguide-custom.scss'
+                }
+            },
+            prod: {
+                options: {
+                    outputStyle: 'compressed',
+                    sourceMap: false,
+                },
+                files: {
+                    'public/css/<%= version %>/main.css': 'source/css/main.scss',
                 }
             }
         },
@@ -52,6 +81,16 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'public/js/script.min.js': ['<%= jsFiles %>']
+                }
+            },
+            prod: {
+                options: {
+                    beautify: false,
+                    mangle: true,
+                    compress: true
+                },
+                files: {
+                    'public/js/<%= version %>/script.min.js': ['<%= jsFiles %>']
                 }
             }
         },
@@ -90,6 +129,9 @@ module.exports = function(grunt) {
             },
             dev: {
                 src: 'public/css/*.css'
+            },
+            prod: {
+                src: 'public/css/<%= version %>/*.css'
             }
         },
 
@@ -172,7 +214,18 @@ module.exports = function(grunt) {
         'copy'
     ]);
 
-
+    /**
+     * Production task
+     */
+    grunt.registerTask('prod', [
+        'mkdir:prod',
+        'sass:prod',
+        'autoprefixer:prod',
+        'uglify:prod',
+        'shell:patternlab',
+        'images',
+        'copy'
+    ]);
 
     /**
      * DeployBot Task

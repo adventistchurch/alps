@@ -77,7 +77,7 @@
 \*------------------------------------*/
 @import "tools.mixins";
 @import "tools.include-media";
-$tests: true;
+$tests: false;
 @import "tools.mq-tests";
 
 @import "settings.themes";

@@ -13,6 +13,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-htmlhint": "0.9.12-fix",
+    "grunt-mkdir": "^1.0.0",
     "grunt-sass": "^1.2.0",
     "grunt-shell": "^1.1.2",
     "matchdep": "*",
