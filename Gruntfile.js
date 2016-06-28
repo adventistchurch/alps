@@ -10,7 +10,7 @@ module.exports = function(grunt) {
      * Increase this number to the desired version for css and javascript files.
      * this will also create a version directory in the css and js folders.
      */
-    var version = "1.0.0";
+    var version = "2.0.0";
 
     grunt.initConfig({
         pkg: pkg,
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
             prod: {
                 options: {
                     mode: 0777,
-                    create: ['public/css/<%= version %>', 'public/js/<%= version %>']
+                    create: ['production/<%= version %>/css', 'production/<%= version %>/js']
                 }
             }
         },
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                     sourceMap: false,
                 },
                 files: {
-                    'public/css/<%= version %>/main.css': 'source/css/main.scss',
+                    'production/<%= version %>/css/main.css': 'source/css/main.scss',
                 }
             }
         },
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'public/js/<%= version %>/script.min.js': ['<%= jsFiles %>']
+                    'production/<%= version %>/js/script.min.js': ['<%= jsFiles %>']
                 }
             }
         },
@@ -132,7 +132,7 @@ module.exports = function(grunt) {
                 src: 'public/css/*.css'
             },
             prod: {
-                src: 'public/css/<%= version %>/*.css'
+                src: 'production/<%= version %>/css/*.css'
             }
         },
 
