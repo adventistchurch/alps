@@ -54,7 +54,7 @@ module.exports = function(grunt) {
                     sourceMap: true,
                 },
                 files: {
-                    'public/css/main.css': 'source/css/main.scss',
+                    'public/css/dev.css': 'source/css/dev.scss',
                     'public/css/styleguide-custom.css': 'source/css/styleguide-custom.scss'
                 }
             },
