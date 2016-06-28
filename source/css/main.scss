@@ -77,9 +77,6 @@
 \*------------------------------------*/
 @import "tools.mixins";
 @import "tools.include-media";
-$tests: false;
-@import "tools.mq-tests";
-
 @import "settings.themes";
 
 
@@ -160,5 +157,3 @@ $tests: false;
     $TRUMPS
 \*------------------------------------*/
 @import "trumps.helper-classes";
-
-@import "tools.sg-updates"
