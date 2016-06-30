@@ -125,14 +125,13 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        // Symlink creates a cdn/latest
         symlink: {
           expanded: {
             files: [
               // All child directories in "source" will be symlinked into the "build"
               // directory, with the leading "source" stripped off.
               {
-                // expand: true,
-                // overwrite: false,
                 src: ['cdn/<%= major_version %>/<%= version %>'],
                 dest: 'cdn/<%= major_version %>/latest',
                 filter: 'isDirectory'
