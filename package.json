@@ -11,6 +11,7 @@
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-copy": "~0.6.0",
     "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-symlink": "^1.0.0",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-htmlhint": "0.9.12-fix",
