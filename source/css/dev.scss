@@ -7,6 +7,8 @@
 /*------------------------------------*\
     $SETTINGS
 \*------------------------------------*/
+@import "settings.theme-switcher";
+
 $tests: true;
 @import "tools.mq-tests";
 @import "tools.sg-updates"
