@@ -70,9 +70,16 @@ module.exports = function(grunt) {
             }
         },
 
-        jsFiles: [
+        jsHeadFiles: [
             // Include:
+            'source/js/head-scripts.js'
+        ],
+
+        jsFootFiles: [
+            // Include:
+            'source/js/jquery-2.0.0b2.js',
             'source/js/plugins.js',
+            'source/js/modaal.js',
             'source/js/script.js'
         ],
 
@@ -84,7 +91,8 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'public/js/script.min.js': ['<%= jsFiles %>']
+                    'public/js/head-script.min.js': ['<%= jsHeadFiles %>'],
+                    'public/js/script.min.js': ['<%= jsFootFiles %>']
                 }
             },
             prod: {
@@ -94,7 +102,8 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'cdn/<%= major_version %>/<%= version %>/js/script.min.js': ['<%= jsFiles %>']
+                    'cdn/<%= major_version %>/<%= version %>/js/head-script.min.js': ['<%= jsHeadFiles %>'],
+                    'cdn/<%= major_version %>/<%= version %>/js/script.min.js': ['<%= jsFootFiles %>']
                 }
             }
         },
@@ -111,6 +120,7 @@ module.exports = function(grunt) {
         },
 
         copyFiles: '**/*.{eot,svg,ttf,woff,pdf}',
+
         copy: {
             target: {
                 files: [
@@ -125,6 +135,7 @@ module.exports = function(grunt) {
                 ]
             }
         },
+
         // Symlink creates a cdn/latest
         symlink: {
           expanded: {
@@ -139,6 +150,7 @@ module.exports = function(grunt) {
             ]
           },
         },
+
         add_comment: {
             prod: {
                 options: {
