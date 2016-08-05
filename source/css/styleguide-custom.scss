@@ -466,8 +466,45 @@ pre[class*="language-"] {
 .colorset--color {
   flex: 0 1 20%;
   flex-direction: column;
+
+  border: 1px $gray-light solid;
+  padding: 5px;
 }
 
-.sg-lable--color{
+.sg-label--color{
   display: block;
+  color: $gray;
 }
+.sg-label--block{
+      display: inline-block;
+    margin-right: .25em;
+    background: $gray-light;
+    padding: 4px;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+
+/*
+ Flexbox Grid
+ */
+
+.sg-grid{
+  display: flex;
+  flex-direction: row;
+
+  .sg-grid-1of2{
+    max-width: 50%;
+    flex-basis: 50%;
+
+  }
+}
+
+code.sg-codesample{
+      background-color: $gray-light;
+    display: block;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+
+}
+

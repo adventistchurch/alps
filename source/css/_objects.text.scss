@@ -110,7 +110,9 @@
 .font--tertiary {
   font-family: $font-tertiary;
 }
-
+.font--monospace {
+  font-family: $monospace;
+}
 
 /**
  * Primary type styles
@@ -322,6 +324,84 @@
   @include font--tertiary--m;
 }
 
+
+/**
+ * Monospace  type styles
+ */
+
+// X-Large Type - monospace
+@mixin font--monospace--xl() {
+  font-family: $font-monospace;
+  font-size: rem(28);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(44);
+  }
+  @include media('>large') {
+    font-size: rem(55);
+  }
+}
+.font--monospace--xl {
+  @include font--monospace--xl;
+}
+
+// Large Type - monospace
+@mixin font--monospace--l() {
+  font-family: $font-monospace;
+  font-size: rem(24);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(28);
+    line-height: rem(32);
+  }
+}
+.font--monospace--l {
+  @include font--monospace--l;
+}
+
+// Medium Type - monospace
+@mixin font--monospace--m() {
+  font-family: $font-monospace;
+  font-size: rem(20);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(24);
+    line-height: rem(28);
+  }
+}
+.font--monospace--m {
+  @include font--monospace--m;
+}
+
+
+// Small type - monospace
+@mixin font--monospace--s() {
+  font-family: $font-monospace;
+  font-size: rem(13);
+  line-height: rem(20);
+  @include media('>large') {
+    font-size: rem(15);
+  }
+}
+.font--monospace--s {
+  @include font--monospace--s;
+}
+
+// X-Small type - monospace
+@mixin font--monospace--xs() {
+  font-family: $font-monospace;
+  font-size: rem(11);
+  line-height: rem(16);
+}
+.font--monospace--xs {
+  @include font--monospace--xs;
+}
 
 /**
  * Font Weights
