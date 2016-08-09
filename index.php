@@ -52,7 +52,9 @@
           <p>Here are the links you need to make it happen.</p>
           <h3 class="pad-half--btm font--secondary--m">Header</h3>
           <p>Include this code in the <code>&lt;head&gt;</code> of your page. This include the fonts, ALPS css, and the Javascript needed to start the page.</p>
-          <code class="sg-codesample pad" id="head_code" onclick="this.focus();this.select()">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//fonts.googleapis.com/css?family=Montserrat&quot; media=&quot;all&quot;&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//fonts.googleapis.com/css?family=Merriweather&quot; media=&quot;all&quot;&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href='//fonts.googleapis.com/css?family=Oswald' media=&quot;all&quot;&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://cdn.adventist.io/alps/2/latest/css/main.css&quot; media=&quot;all&quot;&gt;<br/><br/>&lt;script src=&quot;http://cdn.adventist.io/alps/2/latest/js/head-script.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
+          <code class="sg-codesample pad" id="head_code">&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;//fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat|Oswald&#x22; media=&#x22;all&#x22;&#x3E;<br />
+&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;http://cdn.adventist.io/alps/2/latest/css/main.css&#x22; media=&#x22;all&#x22;&#x3E;<br /> <br />
+&#x3C;script src=&#x22;http://cdn.adventist.io/alps/2/latest/js/head-script.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;</code>
 
           <h3 class="pad-half--btm font--secondary--m">Footer</h3>
           <p>Include this code in the footer of your page, right before the closing <code>&lt;/body&gt;</code> tag.</p>
