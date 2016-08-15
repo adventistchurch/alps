@@ -149,9 +149,9 @@ $slice-height: 3;
   @include media('>medium') {
     &:before {
       content: "";
-      border-left: rem(5) solid transparent;
-      border-right: rem(5) solid transparent;
-      border-top: rem(5) solid rgba($black, .6);
+      border-left: rem(4) solid transparent;
+      border-right: rem(4) solid transparent;
+      border-top: rem(4) solid rgba($black, .6);
       position: absolute;
       right: 0;
       top: calc(50%);

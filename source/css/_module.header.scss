@@ -128,8 +128,7 @@
   margin-right: auto;
 }
 .logo__link {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   margin-bottom: $space-half;
   position: relative;
   z-index: 10;
@@ -144,6 +143,10 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: none;
+    .logo {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 .logo__link--square {
@@ -158,6 +161,10 @@
     .rtl & {
       left: auto;
       right: 0;
+    }
+    .logo {
+      width: 100%;
+      height: 100%;
     }
   }
   @include media('>xlarge') {
@@ -198,7 +205,6 @@
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     order: 2;
   }
   @include media('>large') {
