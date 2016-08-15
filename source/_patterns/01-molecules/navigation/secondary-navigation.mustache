@@ -6,9 +6,9 @@
       {{# link_before }}<span class="secondary-nav__before-link">{{{ link_before }}}</span>{{/ link_before }}
       <strong>{{{ text }}}</strong> {{# subnav }}<span class="subnav__arrow dib arrow--down va--middle"></span>{{/ subnav }}</a>
       {{# subnav }}
-        <ul class="subnav__list theme--secondary-background-color">
+        <ul class="secondary-nav__subnav__list theme--secondary-background-color">
           {{# items }}
-            <li class="subnav__list-item"><a class="subnav__link theme--secondary-background-hover-color--at-medium {{# active_link }} active {{/ active_link }}" href="{{ url }}">{{# active_link }}<span class="icon icon--xs icon__check">{{> atoms-icon-check }}</span>{{/ active_link }} {{{ text }}}</a></li>
+            <li class="secondary-nav__subnav__list-item"><a class="secondary-nav__subnav__link theme--secondary-background-hover-color--at-medium {{# active_link }} active {{/ active_link }}" href="{{ url }}">{{# active_link }}<span class="icon icon--xs icon__check">{{> atoms-icon-check }}</span>{{/ active_link }} {{{ text }}}</a></li>
           {{/ items }}
         </ul> <!-- /.subnav -->
       {{/ subnav }}
