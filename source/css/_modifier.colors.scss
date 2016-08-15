@@ -47,6 +47,7 @@
   color: $brown-light;
 }
 
+
 /**
  * Link Colors
  */
@@ -54,6 +55,12 @@
   color: $white;
   &:hover {
     color: $brown-light;
+  }
+}
+.link--brown-light {
+  color: $brown-light;
+  &:hover {
+    color: $white;
   }
 }
 .link--blue {
