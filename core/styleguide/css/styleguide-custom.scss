@@ -1,8 +1,55 @@
 @import "bourbon";
-@import "settings.variables";
-@import "tools.mixins";
-@import "tools.include-media";
-@import "modifier.spacing";
+
+/**
+ * Colors
+ */
+$white: #fff;
+$black: #000;
+$gray: lighten($black, 50);
+$gray-light: lighten($black, 90);
+$gray-med: lighten($black, 70);
+$ming: #3e8391;
+
+/**
+ * Default Spacing/Padding
+ */
+$space: rem(20);
+$space-and-half: $space*1.5;
+$space-double: $space*2;
+$space-quad: $space*4;
+$space-half: $space/2;
+$pad: rem(20);
+$pad-and-half: $pad*1.5;
+$pad-double: $pad*2;
+$pad-half: $pad/2;
+$pad-quarter: $pad/4;
+
+/**
+ * Typography
+ */
+$sans: "Helvetica", "Arial", sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+
+/**
+ * Mixin scrollbar
+ */
+@mixin scrollbar($size, $primary, $secondary: lighten($primary, 25%)) {
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+  ::-webkit-scrollbar-track {
+    background: $secondary;
+  }
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $primary;
+    scrollbar-track-color: $secondary;
+  }
+}
 
 
 /*------------------------------------*\
@@ -24,9 +71,6 @@ $max-width: rem(1130);
   background-color: $white;
 }
 
-.sg-annotation-toggle {
-  display: none;
-}
 .pre-header {
   &.active {
     .sg-intro {
@@ -42,6 +86,8 @@ $max-width: rem(1130);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  padding-left: $pad;
+  padding-right: $pad;
 }
 .alps-logo-wrap {
   border-bottom: 1px solid $gray-light;
@@ -330,18 +376,18 @@ $max-width: rem(1130);
   }
 }
 .sg-comments-code-wrap {
-  @include media('>large') {
+  @media (min-width: rem(900)) {
     display: flex;
   }
 }
 .sg-comments-container {
-  @include media('>large') {
+  @media (min-width: rem(900)) {
     width: 70%;
     padding-right: rem(60);
   }
 }
 .sg-code-details {
-  @include media('>large') {
+  @media (min-width: rem(900)) {
     width: 30%;
     margin-top: rem(-6);
   }
@@ -349,7 +395,7 @@ $max-width: rem(1130);
 .sg-code-patternname {
   position: absolute;
   right: rem(90);
-  top: rem(14);
+  top: rem(40);
   font-size: rem(18);
 }
 #sg-comments-container {
@@ -439,21 +485,6 @@ $max-width: rem(1130);
 pre[class*="language-"] {
   border-radius: 0;
 }
-.sg-code-head {
-  color: $white;
-}
-.sg-code {
-  display: none !important;
-  color: lighten(#e6db74, 10);
-  background-color: #272822;
-  pre {
-    border-color: $white;
-    font-size: rem(18);
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-}
 
 /**
  *  * Color Containers
@@ -507,4 +538,3 @@ code.sg-codesample{
     border-radius: 0.5em;
 
 }
-
