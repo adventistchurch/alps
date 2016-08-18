@@ -67,10 +67,40 @@
       },
       {
         "is_active": true,
-        "text": "Vitality"
+        "text": "Vitality",
+        "has_subnav": true,
+        "sub_items": [
+          {
+            "text": "Life Hope Centers"
+          },
+          {
+            "text": "Global Mission"
+          },
+          {
+            "text": "Mission Spotlight"
+          },
+          {
+            "text": "Church Mission Offerings"
+          }
+        ]
       },
       {
-        "text": "Service"
+        "text": "Service",
+        "has_subnav": true,
+        "sub_items": [
+          {
+            "text": "Life Hope Centers"
+          },
+          {
+            "text": "Global Mission"
+          },
+          {
+            "text": "Mission Spotlight"
+          },
+          {
+            "text": "Church Mission Offerings"
+          }
+        ]
       },
       {
         "text": "Beliefs"
@@ -82,7 +112,22 @@
         "text": "Information"
       },
       {
-        "text": "News"
+        "text": "News",
+        "has_subnav": true,
+        "sub_items": [
+          {
+            "text": "Life Hope Centers"
+          },
+          {
+            "text": "Global Mission"
+          },
+          {
+            "text": "Mission Spotlight"
+          },
+          {
+            "text": "Church Mission Offerings"
+          }
+        ]
       }
     ]
   },
