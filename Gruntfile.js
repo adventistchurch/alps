@@ -49,14 +49,24 @@ module.exports = function(grunt) {
                 precision: 5,
                 includePaths: require('node-bourbon').includePaths
             },
+            sg: {
+                options: {
+                    outputStyle: 'nested',
+                    sourceMap: true,
+                },
+                files: {
+                    'public/styleguide/css/styleguide.css': 'core/styleguide/css/styleguide.scss',
+                    'public/styleguide/css/styleguide-specific.css': 'core/styleguide/css/styleguide-specific.scss',
+                    'public/styleguide/css/styleguide-custom.css': 'core/styleguide/css/styleguide-custom.scss'
+                }
+            },
             dev: {
                 options: {
                     outputStyle: 'nested',
                     sourceMap: true,
                 },
                 files: {
-                    'public/css/dev.css': 'source/css/dev.scss',
-                    'public/css/styleguide-custom.css': 'source/css/styleguide-custom.scss'
+                    'public/css/dev.css': 'source/css/dev.scss'
                 }
             },
             prod: {
@@ -270,7 +280,15 @@ module.exports = function(grunt) {
     ]);
 
     /**
-     * Dev task
+     * Styleguide specific tasks
+     */
+    grunt.registerTask('sg', [
+        'sass:sg',
+        'shell:patternlab'
+    ]);
+
+    /**
+     * Dev tasks
      */
     grunt.registerTask('dev', [
         'css',
@@ -282,7 +300,7 @@ module.exports = function(grunt) {
     ]);
 
     /**
-     * Production task
+     * Production tasks
      */
     grunt.registerTask('prod', [
         'mkdir:prod',
