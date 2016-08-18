@@ -7,9 +7,9 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
- 
 
-/* Style Guide Interface Colors */ 
+
+/* Style Guide Interface Colors */
 $sg-primary : #222;
 $sg-secondary : #808080;
 $sg-tertiary : #ddd;
@@ -56,16 +56,16 @@ $animate-quick: 0.2s;
 	text-align: center;
 	margin-bottom: $sg-pad-half;
 	padding: 1em !important;
-	
+
 	&:nth-of-type(2n) {
 		color: $sg-tertiary;
 		background: $sg-secondary;
 	}
-	
+
 	.gi {
 		background: $sg-tone;
 		color: $sg-tertiary;
-		
+
 		&:nth-of-type(2n) {
 			background: $sg-tone-2;
 		}
@@ -80,7 +80,7 @@ $animate-quick: 0.2s;
 	text-align: center;
 }
 
-//Animate Demo to show 
+//Animate Demo to show
 .animate-move {
 	position: relative;
 
@@ -122,7 +122,7 @@ $animate-quick: 0.2s;
 	display: block;
 	height: 1.5em;
 	width: 50%;
-	
+
 	@media all and (max-width: $sg-bp-small-2) {
 		float: left;
 		margin-right: 0.3em;
@@ -133,9 +133,28 @@ $animate-quick: 0.2s;
 		height: 4em;
 		margin-bottom: 0.2em;
 	}
-	
+
 }
 
 .sg-label {
 	line-height: 1;
+}
+
+.sg-annotation-toggle {
+  display: none;
+}
+.sg-code-head {
+  color: $sg-quaternary;
+}
+.sg-code {
+  display: none !important;
+  color: lighten(#e6db74, 10);
+  background-color: #272822;
+  pre {
+    border-color: $sg-quaternary;
+    font-size: rem(18);
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
