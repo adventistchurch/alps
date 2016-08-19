@@ -531,3 +531,26 @@ span.dropdown__arrow {
     cursor: pointer;
   }
 }
+
+/**
+ * Breadcrumbs
+ */
+.breadcrumbs__list-item {
+  margin-right: rem(2);
+  padding-right: rem(8);
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 4px solid $gray;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}

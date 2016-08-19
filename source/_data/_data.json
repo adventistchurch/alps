@@ -246,6 +246,20 @@
     ]
   },
 
+  "breadcrumbs": {
+    "items": [
+      {
+        "text": "Home"
+      },
+      {
+        "text": "Vitality"
+      },
+      {
+        "text": "Photos"
+      }
+    ]
+  },
+
   "has_carousel": true,
 
   "carousel": {
