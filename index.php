@@ -9,9 +9,7 @@
     <meta name="description" content="Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat" media="all">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" media="all">
-    <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Oswald' media="all">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat|Oswald" media="all">
     <link rel="stylesheet" type="text/css" href="http://cdn.adventist.io/alps/2/latest/css/main.css" media="all">
 
     <script>document.createElement("picture");</script>
@@ -23,7 +21,7 @@
     <link rel="stylesheet" href="/public/styleguide/css/styleguide-specific.css" media="all" />
 
     <!-- Custom styles for Pattern Lab -->
-    <link rel="stylesheet" href="/public/css/styleguide-custom.css" media="all" />
+    <link rel="stylesheet" href="/public/styleguide/css/styleguide-custom.css" media="all" />
 
     <!-- End Pattern Lab -->
     <link rel="icon" href="/public/favicon.ico" />
