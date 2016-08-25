@@ -141,6 +141,12 @@ module.exports = function(grunt) {
                         src: ['<%= copyFiles %>'],
                         dest: 'public/',
                         filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'source/',
+                        src: ['<%= copyFiles %>'],
+                        dest: 'cdn/<%= major_version %>/<%= version %>/'
                     }
                 ]
             }
