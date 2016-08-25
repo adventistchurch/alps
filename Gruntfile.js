@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             prod: {
                 options: {
                     mode: 0777,
-                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js']
+                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images']
                 }
             }
         },
