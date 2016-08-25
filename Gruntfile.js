@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             prod: {
                 options: {
                     mode: 0777,
-                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js']
+                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images']
                 }
             }
         },
@@ -141,6 +141,12 @@ module.exports = function(grunt) {
                         src: ['<%= copyFiles %>'],
                         dest: 'public/',
                         filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'source/',
+                        src: ['<%= copyFiles %>'],
+                        dest: 'cdn/<%= major_version %>/<%= version %>/'
                     }
                 ]
             }

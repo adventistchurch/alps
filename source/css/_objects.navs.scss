@@ -427,7 +427,7 @@ $slice-height: 3;
     width: 100%;
     color: $white;
     box-shadow: inset 1px 1px 1px rgba($black, .1);
-    background: rgba($black, .08) url('../../images/icons/icon-search.svg') no-repeat center right 12px;
+    background: rgba($black, .08) url('../images/icons/icon-search.svg') no-repeat center right 12px;
     background-size: rem(12);
     @include placeHolder($white);
   }
