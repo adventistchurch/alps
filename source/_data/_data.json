@@ -45,6 +45,8 @@
 
   "search": "Search",
 
+  "facet-filter": "Filter the Results",
+
   "primary_nav": {
     "items": [
       {

@@ -2,6 +2,12 @@
   <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">{{heading}}</h2>
   <hr>
 </div>
+<div class="spacing--half">
+  <div class="pad">
+    {{> molecules-facet-filter }}
+  </div>
+  <hr>
+</div>
 <div class="g g-2up--at-medium with-divider">
   {{# media_blocks }}
     <div class="gi">
@@ -20,3 +26,7 @@
     </div> <!-- /.gi -->
   {{/ media_blocks_2 }}
 </div> <!-- /.2up--at-medium -->
+<hr>
+<div class="pad spacing">
+  {{> molecules-pagination }}
+</div>
