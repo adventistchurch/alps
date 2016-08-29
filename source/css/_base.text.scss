@@ -6,7 +6,6 @@
  * Text-Related Elements
  */
 p {
-  margin-bottom: $space;
   @include text-styles;
   &:last-child {
     margin-bottom: 0;

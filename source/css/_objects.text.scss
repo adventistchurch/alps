@@ -454,6 +454,11 @@
   > h5 {
     font-family: $font-secondary;
     font-weight: 600;
+    margin-bottom: rem(-5);
+    padding-top: $pad-half;
+    @include mq($large) {
+      margin-bottom: rem(-15);
+    }
   }
   > h1,
   > h2 {
@@ -523,6 +528,9 @@
   }
   p:last-of-type {
     margin-bottom: 0;
+  }
+  .btn {
+    margin-top: rem(15);
   }
 }
 
