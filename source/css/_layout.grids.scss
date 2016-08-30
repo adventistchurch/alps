@@ -17,6 +17,26 @@
   img {
     display: block;
   }
+  @include media('>medium') {
+    &.left-gutter--l { padding-left: rem(30); }
+    &.right-gutter--l { padding-right: rem(30); }
+    &.left-gutter--xl { padding-left: rem(60); }
+    &.right-gutter--xl { padding-right: rem(60); }
+  }
+}
+
+/**
+ * Flip column order
+ */
+.flip-columns {
+  @include media('>medium') {
+    & > .gi:nth-child(1) {
+      order: 2;
+    }
+    & > .gi:nth-child(2) {
+      order: 1;
+    }
+  }
 }
 
 /**
@@ -50,6 +70,7 @@
       width: 50%;
       align-items: stretch;
       display: flex;
+      margin-top: 0;
       * { // Slick slider hack for when a carousel is contained within a flexed element.
         min-height: 0;
         min-width: 0;
@@ -85,9 +106,22 @@
       width: 33%;
       align-items: stretch;
       display: flex;
+      margin-top: 0;
       * { // Slick slider hack for when a carousel is contained within a flexed element.
         min-height: 0;
         min-width: 0;
+      }
+    }
+    &.with-gutters {
+      > .gi:nth-child(3n+1) {
+        padding-right: $pad;
+      }
+      > .gi:nth-child(3n+2) {
+        padding-left: $pad-half;
+        padding-right: $pad-half;
+      }
+      > .gi:nth-child(3n+3) {
+        padding-left: $pad;
       }
     }
     &.with-divider {
@@ -121,6 +155,7 @@
       float: left;
       align-items: stretch;
       display: flex;
+      margin-top: 0;
       * { // Slick slider hack for when a carousel is contained within a flexed element.
         min-height: 0;
         min-width: 0;
@@ -147,6 +182,7 @@
       float: left;
       align-items: stretch;
       display: flex;
+      margin-top: 0;
       &:first-child {
         width: 35%;
       }
@@ -170,6 +206,7 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0;
   }
 }
 

@@ -98,6 +98,17 @@
 }
 
 /**
+ * Stretch media full browser width.
+ */
+.breakout {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  img {
+    width: 100%;
+  }
+}
+
+/**
  * Floats
  */
 .right {
@@ -391,4 +402,14 @@
 
 .no-min-h {
   min-height: 0;
+}
+
+/**
+ * Example purposes for pattern.
+ */
+.breakout-image {
+  min-height: rem(400);
+  @include mq($large) {
+    min-height: rem(500);
+  }
 }

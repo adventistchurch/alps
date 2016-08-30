@@ -147,6 +147,54 @@
     $('.article__body, .text, .fitvid').fitVids();
   }
 
+  // Apply parallax effect to background images.
+  function parallaxIt() {
+    var $fwindow = $(window),
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // On window scroll event.
+    $fwindow.on('scroll resize', function() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    });
+
+    // Apply parallax effect to inner content (if applicable).
+    $('[data-type="content"]').each(function (index, e) {
+      var $contentObj = $(this),
+          fgOffset = parseInt($contentObj.offset().top),
+          yPos,
+          speed = ($contentObj.data('speed') || 1 );
+
+      $fwindow.on('scroll resize', function (){
+        yPos = fgOffset - scrollTop / speed;
+        $contentObj.css('top', yPos);
+      });
+    });
+
+    // Parallax the background image.
+    $('[data-type="background"]').each(function(){
+      var $backgroundObj = $(this),
+          bgOffset = parseInt($backgroundObj.offset().top),
+          yPos,
+          coords,
+          speed = ($backgroundObj.data('speed') || 0 );
+
+      $fwindow.on('scroll resize', function() {
+        yPos = - ((scrollTop - bgOffset) / speed);
+        coords = '50% '+ yPos + 'px';
+        $backgroundObj.css({ backgroundPosition: coords });
+      });
+    });
+
+    // Triggers winodw scroll for refresh,
+    $fwindow.trigger('scroll');
+  };
+
+  // Init parallax
+  if ($('.has-parallax').length) {
+    parallaxIt()
+  }
+
+
   // FitText for logo subbrands.
   // $('.js-logo-fit .line1').fitText(.55);
   // $('.js-logo-fit .line2').fitText(.9);
