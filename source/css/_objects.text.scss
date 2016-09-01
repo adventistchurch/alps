@@ -25,24 +25,6 @@
 }
 
 /**
- * Tags
- */
-.tags {
-  font-size: rem(14);
-}
-.tag {
-  color: $white;
-  padding: rem(5) rem(6) rem(4);
-  margin-left: rem(8);
-  border-radius: 3px;
-  background-color: $red;
-  &:hover {
-    color: $white;
-    background-color: darken($red, 10%);
-  }
-}
-
-/**
  * Citation
  */
 .citation {
@@ -564,4 +546,8 @@
 }
 .lh--0 {
   line-height: 0;
+}
+
+.token {
+  line-height: 1.5;
 }
