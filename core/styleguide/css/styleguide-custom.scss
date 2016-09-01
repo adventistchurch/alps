@@ -485,3 +485,22 @@ $max-width: rem(1130);
 pre[class*="language-"] {
   border-radius: 0;
 }
+
+/*
+ Flexbox Grid
+ */
+.sg-grid {
+  display: flex;
+  flex-direction: row;
+}
+.sg-grid .sg-grid-1of2 {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+code.sg-codesample {
+  background-color: #e6e6e6;
+  display: block;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+}
