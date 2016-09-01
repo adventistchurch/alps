@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat|Oswald" media="all">
-    <link rel="stylesheet" type="text/css" href="/public/css/dev.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/cdn/2/latest/css/main.css" media="all">
     <script>document.createElement("picture");</script>
     <script src="http://cdn.adventist.io/alps/2/latest/js/head-script.min.js" type="text/javascript"></script>
 
