@@ -66,6 +66,13 @@
             <a class="github-button" href="https://github.com/adventistchurch/alps" data-icon="octicon-star" data-style="mega" data-count-href="/adventistchurch/alps/stargazers" data-count-api="/repos/adventistchurch/alps#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star adventistchurch/alps on GitHub">Star</a>
             <a class="github-button" href="https://github.com/adventistchurch/alps/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/adventistchurch/alps/network" data-count-api="/repos/adventistchurch/alps#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork adventistchurch/alps on GitHub">Fork</a>
             <a class="github-button" href="https://github.com/adventistchurch/alps/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/adventistchurch/alps#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue adventistchurch/alps on GitHub">Issue</a></p>
+
+            <h3 class="font--tertiary--m">Connect with Us</h3>
+            <p class="font--primary--xs">Do you have questions about ALPS? I'd love to hear from you and help make it work for your Adventist website.</p>
+            <p class="font--primary--xs"><a href="http://gain.adventist.org/slack">
+              <img src="public/images/slack_rgb.png" alt="Connect to the GAiN Slack Channel" />
+              Join us on the free GAiN Slack channel in #designsystem.
+            </a></p>
           </div>
         </div> <!-- /.g-2up--70-30--at-medium -->
       </div>
@@ -75,10 +82,10 @@
         <div class="footer__legal bg--brown  can-be--dark-light">
           <div class="footer__legal__inner layout-container spacing--quarter--until-large">
             <div class="footer__unify-copyright-address spacing--quarter--until-large">
-              <p class="footer__copyright font--secondary--xs brown--light no-space--btm">Copyright &copy; <?php date('Y'); ?>, General Conference of Seventh-day Adventists</p>
+              <p class="footer__copyright font--secondary--xs brown--light no-space--btm">Copyright &copy; 2016, General Conference of Seventh-day Adventists</p>
               <address class="footer__address font--secondary--xs brown--light">12501 Old Columbia Pike, Silver Spring, MD 20904, USA 301-680-6000</address>
             </div> <!-- /.footer__unify-copyright-address -->
-            <div class="footer__legal-links font--secondary--xs"><a class="hover brown--light space-half--right" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a> <a class="hover brown--light" href="https://www.adventist.org/en/copyright/legal-notice/">Legal Notice</a></div>
+            <div class="footer__legal-links font--secondary--xs"><a class="hover brown--light space-half--right link--brown-light" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a> <a class="hover brown--light link--brown-light" href="https://www.adventist.org/en/copyright/legal-notice/">Legal Notice</a></div>
           </div> <!-- /.layout-container -->
         </div> <!-- /.legal -->
       </div> <!-- /.footer__inner -->
@@ -86,31 +93,6 @@
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="/public/styleguide/js/vendor/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-    <script>
-    /* from clipboard.js example */
-
-    // var clipboard = new Clipboard('.copyIt');
-
-    // clipboard.on('success', function(e) {
-    //     console.info('Action:', e.action);
-    //     console.info('Text:', e.text);
-    //     console.info('Trigger:', e.trigger);
-
-    //     console.log('success! you got it.');
-
-    //     e.clearSelection();
-    // });
-
-    // clipboard.on('error', function(e) {
-    //     console.error('Action:', e.action);
-    //     console.error('Trigger:', e.trigger);
-    // });
-
-    // var clipboard = new Clipboard('.btn');
-    // clipboard.destroy();
-
-    </script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
     <script src="http://cdn.adventist.io/alps/2/latest/js/script.min.js" type="text/javascript"></script>
 
