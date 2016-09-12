@@ -441,10 +441,6 @@
     @include mq($large) {
       margin-bottom: rem(-15);
     }
-    + ul , + ol{
-      margin:  $space;
-      margin-top: inherit;
-    }
   }
   > h1,
   > h2 {
@@ -460,7 +456,8 @@
   }
   > ul {
     list-style: disc;
-    margin: 0 0 $space $space;
+    margin-left: $space;
+    margin-bottom: $space;
     li {
       margin-bottom: $space-half;
     }
@@ -473,7 +470,8 @@
   }
   > ol {
     list-style: decimal;
-    margin: 0 0 $space $space;
+    margin-left: $space;
+    margin-bottom: $space;
     li {
       margin-bottom: $space-half;
     }
