@@ -441,6 +441,10 @@
     @include mq($large) {
       margin-bottom: rem(-15);
     }
+    + ul , + ol{
+      margin:  $space;
+      margin-top: inherit;
+    }
   }
   > h1,
   > h2 {
