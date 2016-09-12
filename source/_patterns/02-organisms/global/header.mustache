@@ -1,8 +1,5 @@
 <header class="header {{ header_class }} can-be--dark-dark" role="banner" id="header">
-  <div class="header__top-hat show-at--large bg--black pad-half align--right">
-    <span class="icon icon__logo">{{> atoms-icon-logo(fill_class: 'fill--white') }}</span>
-    <p class="font--secondary--xs gray--med">This is an official website of the Seventh-day Adventist Church. <a class="link--white" href="">Learn More about Adventists</a>.</p>
-  </div> <!-- /.header__top-hat -->
+  {{> organisms-tophat}}
   <div class="header__inner">
     {{> molecules-navigation-toggle }}
     <div class="header__unify-logo-nav">
