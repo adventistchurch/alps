@@ -456,7 +456,8 @@
   }
   > ul {
     list-style: disc;
-    margin: 0 0 $space $space;
+    margin-left: $space;
+    margin-bottom: $space;
     li {
       margin-bottom: $space-half;
     }
@@ -469,7 +470,8 @@
   }
   > ol {
     list-style: decimal;
-    margin: 0 0 $space $space;
+    margin-left: $space;
+    margin-bottom: $space;
     li {
       margin-bottom: $space-half;
     }
