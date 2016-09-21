@@ -408,8 +408,8 @@
  * Example purposes for pattern.
  */
 .breakout-image {
-  min-height: rem(400);
+  min-height: rem(300);
   @include mq($large) {
-    min-height: rem(500);
+    min-height: rem(400);
   }
 }
