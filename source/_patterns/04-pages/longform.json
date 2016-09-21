@@ -108,40 +108,6 @@
         }
       }
     }
-  },
-
-  "map": {
-    "img": {
-      "src": "http://d.pr/i/HbiG+",
-      "alt": "Image Alt"
-    }
-  },
-
-  "contact_1": {
-    "address": {
-      "org": "Newport Seventh-day Adventist Church",
-      "street_address": "37 Concord Ave.",
-      "locality": "Newport",
-      "region": "VT",
-      "postal_code": "05855-5390"
-    }
-  },
-
-  "contact_2": {
-    "address": {
-      "first_name": "Pastor Cornel",
-      "family-name": "Preda",
-      "tel": "802-334-3299",
-      "email": "pastorcornel@gmail.com"
-    }
-  },
-
-  "contact_3": {
-    "address": {
-      "org": "Church Office",
-      "tel": "802-334-5466",
-      "email": "chuchoffice@gmail.com"
-    }
   }
 
 }
