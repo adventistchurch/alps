@@ -158,7 +158,8 @@
   p,
   ul, ol,
   h1, h2, h3, h4, h5, h6,
-  .size--large {
+  .size--large,
+  .size--half {
     max-width: rem(700);
     margin-left: auto;
     margin-right: auto;
@@ -168,6 +169,24 @@
     @include media('>large') {
       width: auto;
       max-width: rem(450);
+    }
+  }
+  .size--half {
+    @include media('>large') {
+      float: left;
+      width: 49%;
+      clear: left;
+      margin-bottom: $space-and-half;
+      + .size--half {
+        float: right;
+        clear: right;
+        + p,
+        + ul, + ol,
+        + h1, + h2, + h3, + h4, + h5, + h6,
+        .size--large {
+          clear: both;
+        }
+      }
     }
   }
 }

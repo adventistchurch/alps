@@ -51,6 +51,24 @@
     "caption": "Phasellus at sem eros, ac suscipit neque fusce fringilla lectus vel risus."
   },
 
+  "fig_4": {
+    "figure_class": "size--half",
+    "img": {
+      "src": "https://unsplash.it/600/400",
+      "alt": "Image Alt"
+    },
+    "caption": "Maecenas eget diam nunc."
+  },
+
+  "fig_5": {
+    "figure_class": "size--half",
+    "img": {
+      "src": "https://unsplash.it/600/400?random",
+      "alt": "Image Alt"
+    },
+    "caption": "Gatto sem eros, ac suscipit neque fusce fringilla."
+  },
+
   "picture_1": {
     "picture": {
       "img_break_m": "500",
