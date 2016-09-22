@@ -332,6 +332,7 @@ $slice-height: 3;
     padding: 0;
     min-width: rem(110);
     box-shadow: 0 0 rem(2) rgba($black, .3);
+    z-index: 10;
   }
 }
 .secondary-nav__subnav__list-item:last-child {
