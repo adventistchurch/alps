@@ -111,7 +111,7 @@
     // Bodies of text
     .text {
       p, li {
-        a {
+        a:not(.btn) {
           color: $secondary-color;
           box-shadow: inset 0 rem(-3) 0 rgba($secondary-color, .25);
           transition: all .2s ease-out;
@@ -165,5 +165,3 @@
     }
   }
 }
-
-

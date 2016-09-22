@@ -456,7 +456,7 @@
   }
   > ul {
     list-style: disc;
-    margin-left: $space;
+    padding-left: $space;
     margin-bottom: $space;
     li {
       margin-bottom: $space-half;
@@ -465,12 +465,12 @@
       list-style: disc;
       padding-top: rem(6);
       margin-bottom: 0;
-      margin-left: $space;
+      padding-left: $space;
     }
   }
   > ol {
     list-style: decimal;
-    margin-left: $space;
+    padding-left: $space;
     margin-bottom: $space;
     li {
       margin-bottom: $space-half;
@@ -479,28 +479,22 @@
       list-style: decimal;
       padding-top: rem(6);
       margin-bottom: 0;
-      margin-left: $space;
+      padding-left: $space;
     }
   }
   > ul,
   > ol {
     @include mq($px800, max) {
-      margin-left: $space;
+      padding-left: $space;
     }
   }
   > blockquote {
     clear: both;
     font-size: rem(22);
+    padding-top: $pad;
+    padding-bottom: $pad;
     p {
       line-height: 1.3;
-      font-size: rem(28);
-      font-weight: 600;
-    }
-  }
-  .pullquote {
-    padding-top: $pad-half;
-    padding-bottom: $pad-double;
-    p {
       font-size: rem(24);
       font-weight: 300;
       font-style: normal;
