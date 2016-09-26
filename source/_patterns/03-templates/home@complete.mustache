@@ -5,7 +5,12 @@
     <div class="layout-container full--until-large">
       <div class="flex-container cf">
         <div class="shift-left--fluid column__primary bg--white can-be--dark-light no-pad--btm">
-          {{> organisms-body-content }}
+          {{# has_short_body }}
+            {{> organisms-body-content-short }}
+          {{/ has_short_body }}
+          {{^ has_short_body }}
+            {{> organisms-body-content }}
+          {{/ has_short_body }}
         </div> <!-- /.shift-left--fluid -->
         <div class="shift-right--fluid bg--beige can-be--dark-dark">
           {{# breakout_block }}
