@@ -6,7 +6,7 @@
   },
 
   "carousel": {
-    "carousel_class": "js-carousel__single-item",
+    "carousel_class": "js-carousel__single-item carousel--full-bleed",
     "no_arrows": true,
     "slides": [
       {
@@ -39,6 +39,7 @@
         }
       },
       {
+        "is_lazy": true,
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -68,6 +69,7 @@
         }
       },
       {
+        "is_lazy": true,
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -97,6 +99,7 @@
         }
       },
       {
+        "is_lazy": true,
         "picture": {
           "img_break_m": "500",
           "img": {

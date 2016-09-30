@@ -37,6 +37,9 @@
 .carousel__arrow--next {
   right: $space-half;
 }
+.carousel--full-bleed {
+}
+
 
 /**
  * Carousel with Text
@@ -171,4 +174,3 @@
     @include carousel-nav--adjustment('56.25% - 28px');
   }
 }
-

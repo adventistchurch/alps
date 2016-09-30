@@ -9,6 +9,11 @@
   {{/ has_break_l }}
   <source srcset="{{{ img.src_m }}}" media="(min-width: {{ img_break_m }}px)">
   <!--[if IE 9]></video><![endif]-->
-  <img itemprop="image" srcset="{{{ img.src_s }}}" alt="{{ img.alt }}">
+  {{^ is_lazy_slide }}
+    <img itemprop="image" srcset="{{{ img.src_s }}}" alt="{{ img.alt }}">
+  {{/ is_lazy_slide }}
+  {{# is_lazy_slide }}
+    <img itemprop="image" data-lazy="{{{ img.src_s }}}" alt="{{ img.alt }}">
+  {{/ is_lazy_slide }}
 </picture>
 {{/ picture }}
