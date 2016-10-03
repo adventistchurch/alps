@@ -49,6 +49,16 @@
 }
 
 /**
+ * Grid Uniform - For grids that should line up evenly (these grids should not
+ * use <hr>'s to separate individual grid items).
+ */
+.grid--uniform {
+  > .gi {
+    border-bottom: $border-style-light;
+  }
+}
+
+/**
  * Grid 1up
  */
 .g-1up {
@@ -103,7 +113,7 @@
     width: 100%;
     > .gi {
       float: left;
-      width: 33%;
+      width: 33.3333%;
       align-items: stretch;
       display: flex;
       margin-top: 0;
@@ -140,8 +150,6 @@
     }
   }
 }
-
-
 
 /**
  * Grid 2up at medium width with 70/30 split.

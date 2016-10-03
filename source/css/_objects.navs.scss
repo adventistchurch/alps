@@ -123,6 +123,14 @@ $slice-height: 3;
     margin-left: rem(2);
     margin-right: rem(2);
   }
+  &:last-child {
+    @include media('>medium', '<=xxxlarge') {
+      .primary-nav__subnav {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
 }
 .primary-nav__link {
   display: block;
