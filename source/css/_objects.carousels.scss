@@ -37,7 +37,40 @@
 .carousel__arrow--next {
   right: $space-half;
 }
+
+// Push carousel container open relative to the slide image ratio.
 .carousel--full-bleed {
+  position: relative;
+  padding-top: (500 / 500) * 100%;
+  @include media('>500px') {
+    padding-top: (400 / 700) * 100%;
+  }
+  @include media('>700px') {
+    padding-top: (400 / 900) * 100%;
+  }
+  @include media('>900px') {
+    padding-top: (500 / 1300) * 100%;
+  }
+  &:not(.slick-initialized) {
+    .carousel__item {
+      position: absolute;
+      padding-top: 55%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      visibility: hidden;
+    }
+  }
+}
+.carousel__slides {
+  .slick-list {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
 }
 
 
