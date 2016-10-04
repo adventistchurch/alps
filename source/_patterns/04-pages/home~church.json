@@ -7,7 +7,7 @@
 
   "carousel": {
     "carousel_outer_class": "carousel-nav--4-3--until-large",
-    "carousel_class": "js-carousel__single-item",
+    "carousel_class": "js-carousel__single-item carousel--large carousel--with-height",
     "no_arrows": true,
     "slides2column": true,
     "slides": [
@@ -31,6 +31,7 @@
         }
       },
       {
+        "is_lazy": true,
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -49,6 +50,7 @@
         }
       },
       {
+        "is_lazy": true,
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -68,6 +70,7 @@
         }
       },
       {
+        "is_lazy": true,
         "picture": {
           "img_break_m": "500",
           "img": {

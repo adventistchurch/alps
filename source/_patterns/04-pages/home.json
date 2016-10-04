@@ -6,7 +6,7 @@
   },
 
   "carousel": {
-    "carousel_class": "js-carousel__single-item carousel--full-bleed",
+    "carousel_class": "js-carousel__single-item carousel--full-bleed carousel--with-height",
     "no_arrows": true,
     "slides": [
       {

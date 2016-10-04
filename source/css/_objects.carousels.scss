@@ -39,8 +39,31 @@
 }
 
 // Push carousel container open relative to the slide image ratio.
-.carousel--full-bleed {
+// For any carousel that fills in the height before slides load.
+.carousel--with-height {
   position: relative;
+  width: 100%;
+  .slick-list {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  &:not(.slick-initialized) {
+    .carousel__item {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+// Full-browser width carousel (currently used on adventist.org home page)
+.carousel--full-bleed {
   padding-top: (500 / 500) * 100%;
   @include media('>500px') {
     padding-top: (400 / 700) * 100%;
@@ -51,27 +74,26 @@
   @include media('>900px') {
     padding-top: (500 / 1300) * 100%;
   }
+}
+
+// Large format carousels. Mostly with the slide copy to the right at large
+// viewport widths.
+.carousel--large {
   &:not(.slick-initialized) {
-    .carousel__item {
-      position: absolute;
-      padding-top: 55%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      visibility: hidden;
+    padding-top: (375 / 500) * 100%;
+    @include media('>500px') {
+      padding-top: (600 / 800) * 100%;
+    }
+    @include media('>large') {
+      padding-top: (600 / 800) * 68%; // 68% is the new container width at this media query
     }
   }
-}
-.carousel__slides {
   .slick-list {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
+    position: relative;
   }
 }
+
+
 
 
 /**
@@ -185,7 +207,7 @@
     bottom: auto;
     left: 0;
     padding: rem(10);
-    padding-top: calc($ratio);
+    padding-top: calc(#{$ratio});
     transform: translate(0, 0);
   }
 }

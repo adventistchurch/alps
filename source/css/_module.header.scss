@@ -142,7 +142,6 @@
   @include media('>medium') {
     margin-left: auto;
     margin-right: auto;
-    box-shadow: none;
     .logo {
       width: 100%;
       height: 100%;
@@ -173,7 +172,8 @@
   }
 }
 .logo--with-text.logo__link--horiz {
-  padding-bottom: rem(23);
+  padding-bottom: rem(22);
+  height: auto;
 }
 .logo--with-text.logo__link--square {
   padding-top: rem(10);
