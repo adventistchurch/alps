@@ -106,13 +106,13 @@
   // Slick carousel
   if ($('.js-carousel__single-item').length) {
     $('.js-carousel__single-item').slick({
+      lazyLoad: 'ondemand',
       speed: 300,
       mobileFirst: true,
       autoplay: true,
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
       fade: true,
-      adaptiveHeight: true,
       nextArrow: '.arrow__next',
       prevArrow: '.arrow__prev',
       touchThreshold: 11,

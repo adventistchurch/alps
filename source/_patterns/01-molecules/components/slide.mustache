@@ -1,5 +1,11 @@
 <div class="carousel__item rel {{ carousel_item_class }}">
-  {{> atoms-picture }}
+
+  {{# is_lazy }}
+    {{> atoms-picture(is_lazy_slide: true) }}
+  {{/ is_lazy }}
+  {{^ is_lazy }}
+    {{> atoms-picture }}
+  {{/ is_lazy }}
 
   {{# has_slide_text }}
   <div class="carousel__item-text__wrap">
