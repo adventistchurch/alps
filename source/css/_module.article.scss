@@ -119,6 +119,12 @@
 .aligncenter {
   width: 100%;
 }
+blockquote.aligncenter {
+  text-align: center;
+  p:before {
+    position: static;  
+  }
+}
 .size--small,
 .size--medium,
 .size--large {
