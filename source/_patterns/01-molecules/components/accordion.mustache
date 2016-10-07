@@ -1,0 +1,10 @@
+{{# accordion }}
+<div class="accordion rel spacing--half {{ accordion_class }}">
+  {{# accordion_list }}
+  <div class="accordion__item spacing--quarter">
+    <div class="accordion__heading js-toggle-parent va--middle"><span class="icon icon--m accordion__arrow">{{> atoms-icon-arrow-right(fill_class: "fill--blue") }}</span> <span class="font--secondary--m dib">{{ accordion_heading }}</span></div>
+    <div class="accordion__content">{{> molecules-media-block(block_inner_class: "block__row") }}</div>
+  </div>
+  {{/ accordion_list }}
+</div> <!-- /.accordion -->
+{{/ accordion }}

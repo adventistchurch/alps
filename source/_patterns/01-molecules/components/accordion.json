@@ -1,0 +1,20 @@
+{
+  "accordion": true,
+  "accordion_list": [
+    {
+      "accordion_heading": "Episode 1: This is the Accordion"
+    },
+    {
+      "accordion_heading": "Episode 2: Accordion Strikes Back"
+    },
+    {
+      "accordion_heading": "Episode 3: Return of the Accordion"
+    },
+    {
+      "accordion_heading": "Episode 4: Revenge of the Accordion"
+    },
+    {
+      "accordion_heading": "Episode 5: The Accordion Awakens"
+    }
+  ]
+}
