@@ -184,9 +184,12 @@
     height: rem(15);
     margin-left: $space-half;
     cursor: pointer;
+    box-shadow: 0 0 rem(3) rgba($black, .3),
+                inset 0 0 rem(3) rgba($black, .3);
   }
   .slick-active {
     background-color: $white;
+    box-shadow: 0 0 rem(3) rgba($black, .3);
   }
   button {
     display: none;
