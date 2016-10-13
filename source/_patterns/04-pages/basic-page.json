@@ -9,5 +9,24 @@
     "has_image": true,
     "kicker": "Maecenas",
     "heading": "Unabhaeng Freundschaftsbezeigungen Zeigungen"
-  }
+  },
+
+  "accordion": true,
+  "accordion_list": [
+    {
+      "accordion_heading": "Commodo at leo suspendisse:"
+    },
+    {
+      "accordion_heading": "Phasellus at sem eros:"
+    },
+    {
+      "accordion_heading": "Aliquam purus nulla:"
+    },
+    {
+      "accordion_heading": "Sodales tortor et porta convallis:"
+    },
+    {
+      "accordion_heading": "Donec dignissim sed risus egestas:"
+    }
+  ]
 }

@@ -563,3 +563,28 @@ span.dropdown__arrow {
     display: none;
   }
 }
+
+/**
+ * Accordion
+ */
+.accordion__heading {
+  position: relative;
+  padding: rem(5) 0 rem(5) rem(30);
+  cursor: pointer;
+}
+.accordion__arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0);
+  @include trans;
+  .is-active & {
+    transform: translateY(-50%) rotate(90deg);
+  }
+}
+.accordion__content {
+  display: none;
+  .is-active & {
+    display: block;
+  }
+}
