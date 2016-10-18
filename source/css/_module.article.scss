@@ -36,13 +36,27 @@
 
 // Longform header
 .longform__header {
-  position: relative;
   padding-top: $pad-double;
+  padding-bottom: $pad-double;
+  background-color: $beige;
   @include media('>medium') {
     padding-top: rem(80);
+    padding-bottom: rem(80);
   }
   @include media('>xlarge') {
     padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+.longform__header--with-hero {
+  position: relative;
+  padding-bottom: 0;
+  background-color: transparent;
+  @include media('>medium') {
+    padding-bottom: 0;
+  }
+  @include media('>xlarge') {
+    padding-bottom: 0;
   }
   &:before {
     content: '';
@@ -54,6 +68,9 @@
     z-index: 0;
     background-color: $beige;
   }
+}
+.longform__header__text {
+  max-width: rem(650);
 }
 
 /*------------------------------------*\
@@ -122,7 +139,7 @@
 blockquote.aligncenter {
   text-align: center;
   p:before {
-    position: static;  
+    position: static;
   }
 }
 .size--small,
