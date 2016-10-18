@@ -20,7 +20,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  flex-direction: column;
 }
 .header,
 .main {
@@ -28,7 +29,7 @@ body {
   align-self: flex-start;
 }
 .footer {
-  align-self: flex-end;
+  margin-top: auto;
   width: 100%;
 }
 
