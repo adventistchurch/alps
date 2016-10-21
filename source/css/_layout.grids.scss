@@ -17,6 +17,9 @@
   img {
     display: block;
   }
+  > * {
+    width: 100%;
+  }
   @include media('>medium') {
     &.left-gutter--l { padding-left: rem(30); }
     &.right-gutter--l { padding-right: rem(30); }
