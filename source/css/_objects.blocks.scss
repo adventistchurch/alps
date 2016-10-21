@@ -6,6 +6,14 @@
 .block__image {
   display: block;
 }
+.block__image-wrap {
+  > * {
+    width: 100%;
+  }
+  .round {
+    width: auto;
+  }
+}
 
 @mixin block-row {
   display: flex;
