@@ -461,11 +461,14 @@
     li {
       margin-bottom: $space-half;
     }
-    ul {
+    ul, ol {
       list-style: disc;
       padding-top: rem(6);
       margin-bottom: 0;
       padding-left: $space;
+    }
+    ol {
+      list-style: decimal;
     }
   }
   > ol {
@@ -475,11 +478,14 @@
     li {
       margin-bottom: $space-half;
     }
-    ol {
+    ol, ul {
       list-style: decimal;
       padding-top: rem(6);
       margin-bottom: 0;
       padding-left: $space;
+    }
+    ul {
+      list-style: disc;
     }
   }
   > ul,
