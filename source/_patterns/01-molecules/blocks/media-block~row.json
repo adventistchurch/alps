@@ -3,7 +3,7 @@
     "block_inner_class": "block__row",
     "title": "Fusce interdum purus est",
     "img": {
-      "src": "http://placehold.it/300x300",
+      "src": "//placehold.it/300x300",
       "alt": "Media Block Image Alt Left"
     },
     "datetime": false,

@@ -10,8 +10,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/500/282/?random",
-            "src_m": "http://unsplash.it/800/450/?random"
+            "src_s": "//unsplash.it/500/282/?random",
+            "src_m": "//unsplash.it/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -29,8 +29,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/500/282/",
-            "src_m": "http://unsplash.it/800/450/"
+            "src_s": "//unsplash.it/500/282/",
+            "src_m": "//unsplash.it/800/450/"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -47,8 +47,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/g/500/282/?random",
-            "src_m": "http://unsplash.it/g/800/450/?random"
+            "src_s": "//unsplash.it/g/500/282/?random",
+            "src_m": "//unsplash.it/g/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -66,8 +66,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/g/500/282/",
-            "src_m": "http://unsplash.it/g/800/450/"
+            "src_s": "//unsplash.it/g/500/282/",
+            "src_m": "//unsplash.it/g/800/450/"
           },
           "has_break_l": false,
           "has_break_xl": false

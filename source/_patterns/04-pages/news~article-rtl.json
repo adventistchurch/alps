@@ -11,9 +11,9 @@
     "has_image": true,
     "kicker": "أخطــــــــاء",
     "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
-    "img_url_s": "http://unsplash.it/600/300/?random",
-    "img_url_m": "http://unsplash.it/900/400/?random",
-    "img_url_l": "http://unsplash.it/1400/500/?random"
+    "img_url_s": "//unsplash.it/600/300/?random",
+    "img_url_m": "//unsplash.it/900/400/?random",
+    "img_url_l": "//unsplash.it/1400/500/?random"
   },
 
   "heading": "ولايزال المعيار للنص",
@@ -23,7 +23,7 @@
     "heading": "إيبسوم ولايزال",
     "subhead": "على الشكل الخارجي للنص على الشكل الخارجي للنص",
     "img": {
-      "src": "http://placehold.it/80x80",
+      "src": "//placehold.it/80x80",
       "alt": "Image Alt"
     }
   },
@@ -208,7 +208,7 @@
     "block_title_class": "font--secondary--m",
     "title": "ومختلفة من نص",
     "img": {
-      "src": "http://placehold.it/500x400",
+      "src": "//placehold.it/500x400",
       "alt": "Media Block Image Alt"
     },
     "datetime": "2016-12-12",

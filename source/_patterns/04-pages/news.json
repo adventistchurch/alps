@@ -9,16 +9,16 @@
     "has_image": true,
     "kicker": "Maecenas",
     "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
-    "img_url_s": "http://unsplash.it/600/300/?random",
-    "img_url_m": "http://unsplash.it/900/400/?random",
-    "img_url_l": "http://unsplash.it/1400/500/?random"
+    "img_url_s": "//unsplash.it/600/300/?random",
+    "img_url_m": "//unsplash.it/900/400/?random",
+    "img_url_l": "//unsplash.it/1400/500/?random"
   },
 
   "header_text": {
     "heading": "Nunc malesuada mauris",
     "subhead": "Maecenas semper, odio et gravida rhoncus, dui nunc mollis tortor",
     "img": {
-      "src": "http://placehold.it/80x80",
+      "src": "//placehold.it/80x80",
       "alt": "Image Alt"
     }
   },
@@ -32,8 +32,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/500/400/?random",
-            "src_m": "http://unsplash.it/800/600/?random"
+            "src_s": "//unsplash.it/500/400/?random",
+            "src_m": "//unsplash.it/800/600/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -51,8 +51,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/500/400/",
-            "src_m": "http://unsplash.it/800/600/"
+            "src_s": "//unsplash.it/500/400/",
+            "src_m": "//unsplash.it/800/600/"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -69,8 +69,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/g/500/400/?random",
-            "src_m": "http://unsplash.it/g/800/600/?random"
+            "src_s": "//unsplash.it/g/500/400/?random",
+            "src_m": "//unsplash.it/g/800/600/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -88,8 +88,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "http://unsplash.it/500/400/",
-            "src_m": "http://unsplash.it/800/600/"
+            "src_s": "//unsplash.it/500/400/",
+            "src_m": "//unsplash.it/800/600/"
           },
           "has_break_l": false,
           "has_break_xl": false

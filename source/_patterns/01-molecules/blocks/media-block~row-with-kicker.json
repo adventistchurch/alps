@@ -5,7 +5,7 @@
     "title": "Cras at sem at felis rhoncus",
     "block_img_class": "round ",
     "img": {
-      "src": "http://placehold.it/150x150",
+      "src": "//placehold.it/150x150",
       "alt": "Media Block Image Alt Left Round"
     },
     "datetime": false,
