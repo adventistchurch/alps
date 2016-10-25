@@ -61,6 +61,7 @@
           }
         },
         "has_slide_text": {
+          "carousel_text_class": "carousel__item--right",
           "slide_heading": "Service",
           "slide_subtitle": "Religious Liberty - The Freedom to Believe",
           "slide_dek": "A person’s conscience, not government, should dictate his or her choice to worship—or not.",
