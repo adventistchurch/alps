@@ -30,6 +30,10 @@
     background-color: $white;
     z-index: -50;
   }
+  &--s {
+    width: rem(35);
+    height: rem(35);
+  }
 }
 .carousel__arrow--prev {
   left: $space-half;
@@ -197,6 +201,18 @@
 }
 .no-dots .slick-dots {
   display: none !important;
+}
+
+/**
+ * Pad the left and right to allow room for outside placed prev/next arrows.
+ */
+.carousel-nav--outside {
+  padding-left: rem(60);
+  padding-right: rem(60);
+  .carousel {
+    margin-left: -$space;
+    margin-right: -$space;
+  }
 }
 
 /**

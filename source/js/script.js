@@ -103,7 +103,7 @@
     toggleClasses($(this));
   });
 
-  // Slick carousel
+  // Slick carousel (single item)
   if ($('.js-carousel__single-item').length) {
     $('.js-carousel__single-item').slick({
       lazyLoad: 'ondemand',
@@ -117,6 +117,39 @@
       prevArrow: '.arrow__prev',
       touchThreshold: 11,
       dots: true
+    });
+  }
+
+  // Slick carousel (multiple items)
+  if ($('.js-carousel__multi-item').length) {
+    $('.js-carousel__multi-item').slick({
+      speed: 300,
+      mobileFirst: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      cssEase: 'ease-out',
+      nextArrow: '.arrow__next',
+      prevArrow: '.arrow__prev',
+      touchThreshold: 11,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        }
+      ]
     });
   }
 

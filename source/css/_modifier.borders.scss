@@ -16,6 +16,9 @@
   &--red {
     border: 1px solid red;
   }
+  &--light {
+    border-color: $gray-light;
+  }
 }
 
 .divider {
