@@ -12,7 +12,7 @@ module.exports = function(grunt) {
      * of /cdn/<major_version/<version>/ that contains the javascript and css.
      */
     var major_version = "2";
-    var version = "2.0.1b";
+    var version = "2.0.2";
 
     grunt.initConfig({
         pkg: pkg,
@@ -154,6 +154,9 @@ module.exports = function(grunt) {
 
         // Symlink creates a cdn/latest
         symlink: {
+            options: {
+                overwrite: true
+            },
           expanded: {
             files: [
               // All child directories in "source" will be symlinked into the "build"
