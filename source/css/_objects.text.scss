@@ -494,7 +494,7 @@
       padding-left: $space;
     }
   }
-  > blockquote {
+  > blockquote:not([class*="quote--"]) {
     clear: both;
     font-size: rem(22);
     padding-top: $pad;
@@ -510,11 +510,52 @@
       }
     }
   }
+  > [class*="quote--"] {
+    & > * + * {
+      margin-top: rem(verticalSpacing(mobile));
+      @include mq($large) {
+        margin-top: rem(verticalSpacing(desktop));
+      }
+    }
+    p {
+      display: block;
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  > .quote--inline {
+    border-left-width: rem(6);
+    border-left-style: solid;
+  }
+  > .quote--extended {
+    background-color: $beige;
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+    padding-left: 0;
+    padding-right: 0;
+    @include media('>medium') {
+      padding-top: rem(50);
+      padding-bottom: rem(50);
+    }
+    @include media('>xlarge') {
+      padding-top: rem(70);
+      padding-bottom: rem(70);
+    }
+    h2, h3, h4, h5 {
+      @include font--secondary--m;
+    }
+    p {
+      font-style: normal;
+    }
+  }
   p:last-of-type {
     margin-bottom: 0;
   }
-  .btn {
-    margin-top: rem(15);
+  code,
+  pre {
+    font-size: 125%;
   }
 }
 
