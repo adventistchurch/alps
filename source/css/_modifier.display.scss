@@ -36,6 +36,16 @@
 }
 
 // Specific Widths - hide greater than #
+.show-until--small {
+  @include media('>small') {
+    display: none;
+  }
+}
+.show-until--medium {
+  @include media('>medium') {
+    display: none;
+  }
+}
 .show-until--large {
   @include media('>large') {
     display: none;
