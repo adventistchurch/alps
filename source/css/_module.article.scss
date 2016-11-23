@@ -182,7 +182,8 @@ blockquote.aligncenter {
   ul, ol,
   h1, h2, h3, h4, h5, h6,
   .size--large,
-  .size--half {
+  .size--half,
+  .quote--inline {
     max-width: rem(700);
     margin-left: auto;
     margin-right: auto;

@@ -64,7 +64,8 @@
     }
 
     // Background colors
-    .theme--secondary-background-color {
+    .theme--secondary-background-color,
+    .text .btn {
       background-color: $secondary-color;
     }
     a.theme--secondary-background-color:hover {
@@ -86,6 +87,10 @@
     }
     .theme--secondary-border-bottom-color {
       border-bottom-color: $secondary-color;
+    }
+    .quote--inline,
+    .theme--secondary-border-left-color {
+      border-left-color: $secondary-color;
     }
 
     // Links

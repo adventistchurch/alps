@@ -510,6 +510,25 @@
       }
     }
   }
+  > [class*="quote--"] {
+    & > * + * {
+      margin-top: rem(verticalSpacing(mobile));
+      @include mq($large) {
+        margin-top: rem(verticalSpacing(desktop));
+      }
+    }
+    p {
+      display: block;
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  > .quote--inline {
+    border-left-width: rem(6);
+    border-left-style: solid;
+  }
   > .quote--extended {
     background-color: $beige;
     padding-top: rem(30);
@@ -524,29 +543,15 @@
       padding-top: rem(70);
       padding-bottom: rem(70);
     }
-    & > * + * {
-      margin-top: rem(verticalSpacing(mobile));
-      @include mq($large) {
-        margin-top: rem(verticalSpacing(desktop));
-      }
-    }
     h2, h3, h4, h5 {
       @include font--secondary--m;
     }
     p {
-      display: block;
       font-style: normal;
-      &:before,
-      &:after {
-        display: none;
-      }
     }
   }
   p:last-of-type {
     margin-bottom: 0;
-  }
-  .btn {
-    margin-top: rem(15);
   }
   code,
   pre {
