@@ -327,7 +327,10 @@ module.exports = function(grunt) {
      * DeployBot Task
      */
     grunt.registerTask('deploybot', [
-        'css',
+        // 'css',
+        'sass:sg',
+        'sass:dev',
+        'autoprefixer:dev',
         'javascript',
         'images',
         'copy',
