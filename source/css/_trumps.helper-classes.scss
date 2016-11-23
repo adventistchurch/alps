@@ -293,11 +293,20 @@
 .flex--wrap {
   flex-wrap: wrap;
 }
+.flex--nowrap {
+  flex-wrap: nowrap;
+}
 .flex--align-center {
   align-items: center;
 }
+.flex--align-end {
+  align-items: flex-end;
+}
 .flex--justify-center {
   justify-content: center;
+}
+.flex--justify-between {
+  justify-content: space-between;
 }
 
 /**
