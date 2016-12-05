@@ -263,6 +263,7 @@
   },
 
   "has_carousel": true,
+  "carousel_heading_class": "font--tertiary--xl",
 
   "carousel": {
     "carousel_class": "js-carousel__single-item",
