@@ -50,26 +50,7 @@
   "primary_nav": {
     "items": [
       {
-        "text": "Spirituality",
-        "has_subnav": true,
-        "sub_items": [
-          {
-            "text": "Life Hope Centers"
-          },
-          {
-            "text": "Global Mission"
-          },
-          {
-            "text": "Mission Spotlight"
-          },
-          {
-            "text": "Church Mission Offerings"
-          }
-        ]
-      },
-      {
-        "is_active": true,
-        "text": "Vitality",
+        "text": "Leadership Certification",
         "has_subnav": true,
         "sub_items": [
           {

@@ -238,9 +238,9 @@ $slice-height: 3;
     background-color: $white;
     left: 0;
     min-width: rem(200);
+    width: 100%;
     box-shadow: 0 0 2px rgba($black, .3);
     z-index: 10;
-
     .rtl & {
       text-align: right;
       right: 0;
