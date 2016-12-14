@@ -4,6 +4,7 @@
     "html_class": "pl theme--emperor",
     "body_class": "body theme--cool"
   },
+  "breakout_block": false,
 
   "carousel": {
     "carousel_outer_class": "carousel-nav--4-3--until-large",
