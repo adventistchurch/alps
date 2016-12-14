@@ -54,7 +54,7 @@
         "has_subnav": true,
         "sub_items": [
           {
-            "text": "Life Hope Centers"
+            "text": "Assistant to the President for Evangelism"
           },
           {
             "text": "Global Mission"
@@ -794,6 +794,9 @@
         "description": "Maecenas interdum est eget blandit posuere. Pellentesque lacus sem, feugiat non porttitor eget commodo magna."
       }
     ]
+  },
+  "button_default": {
+    "button_text": "Button Text"
   }
 
 }
