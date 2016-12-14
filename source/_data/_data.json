@@ -794,6 +794,9 @@
         "description": "Maecenas interdum est eget blandit posuere. Pellentesque lacus sem, feugiat non porttitor eget commodo magna."
       }
     ]
+  },
+  "button_default": {
+    "button_text": "Button Text"
   }
 
 }
