@@ -138,6 +138,9 @@
   }
 }
 
+/**
+ * Reverse the column and row of any shift layout.
+ */
 .shift--reversed {
   display: flex;
   flex-wrap: wrap;
