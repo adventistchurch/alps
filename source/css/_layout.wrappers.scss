@@ -128,15 +128,22 @@
 .shift-left--fluid {
   width: 100%;
   @include media('>large') {
-    float: left;
     width: 68%;
   }
 }
 .shift-right--fluid {
   width: 100%;
   @include media('>large') {
-    float: right;
     width: 32%;
+  }
+}
+
+.shift--reversed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  @include media('>large') {
+    flex-direction: row-reverse;
   }
 }
 
@@ -146,7 +153,6 @@
 .shift-left--static {
   width: 100%;
   @include media('>large') {
-    float: left;
     margin-right: rem(-300);
   }
 }
@@ -158,7 +164,6 @@
 .shift-right--static {
   width: 100%;
   @include media('>large') {
-    float: right;
     width: rem(300);
     position: relative;
     z-index: 1;
