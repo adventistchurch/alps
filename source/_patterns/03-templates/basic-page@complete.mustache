@@ -3,7 +3,7 @@
   <main class="main can-be--dark-dark" role="main">
     {{> organisms-page-header }}
     <div class="layout-container full--until-large">
-      <div class="flex-container cf">
+      <div class="flex-container cf {{# page_reversed }} shift--reversed {{/ page_reversed }}">
         <div class="shift-left--fluid column__primary bg--white can-be--dark-light">
           {{> organisms-page-content }}
         </div> <!-- /.shift-left--fluid -->
