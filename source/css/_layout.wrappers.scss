@@ -144,7 +144,6 @@
 .shift--reversed {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
   @include media('>large') {
     flex-direction: row-reverse;
   }

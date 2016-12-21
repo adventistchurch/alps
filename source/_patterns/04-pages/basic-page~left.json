@@ -1,7 +1,7 @@
 {
   "head": {
-    "title": "Basic Page - The Official Site of the Seventh-day Adventist world church",
-    "html_class": "pl theme--emperor",
+    "title": "Basic Page – Left - The Official Site of the Seventh-day Adventist world church",
+    "html_class": "pl theme--grapevine",
     "body_class": "body theme--cool"
   },
 
@@ -10,7 +10,7 @@
     "kicker": "Maecenas",
     "heading": "Unabhaeng Freundschaftsbezeigungen Zeigungen"
   },
-    "page_reversed": false,
+  "page_reversed": true,
 
   "accordion_list": [
     {

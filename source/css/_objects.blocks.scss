@@ -61,6 +61,10 @@
     margin-left: -$space;
     margin-right: -$space;
   }
+  .shift--reversed & {
+    margin-top: 0;
+  }
+
 }
 
 /**
