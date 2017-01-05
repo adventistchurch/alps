@@ -32,7 +32,7 @@
         <a href="/" class="alps-logo"><img src="/public/images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
       </div>
       <div class="sg-introduction rel">
-        <div class="cf">
+        <div class="cf flex-container">
           <div class="shift-left--fluid pad-double">
             <div class="text spacing">
               <h1 class="font--tertiary--l">Welcome to the Adventist Living Pattern System</h1>
