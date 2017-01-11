@@ -1,12 +1,22 @@
 {{# article_nav }}
-<nav class="article-nav theme--secondary-background-color">
+<nav id="article-nav" class="article-nav theme--secondary-background-color toggled-element" data-active-target="article-nav">
   <div class="layout-container">
     <div class="article-nav__inner">
       <div class="dropdown">
         <div class="dropdown__label font--secondary--s upper js-toggle-parent white">News Menu <span class="dropdown__arrow dib arrow--down border-top--white va--middle"></span></div>
         <ul class="article-nav__list dropdown__options theme--secondary-background-color">
           {{# items }}
-            <li class="article-nav__list-item dropdown__item"><a class="article-nav__link dropdown__item-link white" href="{{ url }}">{{{ text }}}</a></li>
+            <li class="article-nav__list-item dropdown__item {{# has_subnav }} article-nav--with-subnav js-hover {{/ has_subnav }}" {{# has_subnav }} data-prefix="hover" {{/ has_subnav }}>
+              <a class="article-nav__link dropdown__item-link white {{# is_active }} active {{/ is_active }}" href="{{ url }}">{{{ text }}}</a>
+              {{# has_subnav }}
+                <div class="article-nav__subnav__arrow va--middle js-toggle-parent"><span class="arrow--down"></span></div>
+                <ul class="article-nav__subnav theme--secondary-background-color">
+                  {{# sub_items }}
+                    <li class="article-nav__subnav__list-item"><a class="article-nav__subnav__link {{# sub_items_is_active }} active {{/ sub_items_is_active }}" href="{{ url }}">{{{ text }}}</a></li>
+                  {{/ sub_items }}
+                </ul> <!-- /.primary-nav__subnav -->
+              {{/ has_subnav }}
+            </li>
           {{/ items }}
         </ul> <!-- /.article-nav__list -->
       </div>
@@ -15,3 +25,12 @@
   </div> <!-- /.layout-container -->
 </nav> <!-- /.article-nav -->
 {{/ article_nav }}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt fringilla ligula quis aliquam. Donec sodales tempus aliquam. Integer tincidunt ligula quis neque euismod, quis rhoncus tellus gravida. Donec semper quam a mattis blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed leo ante, aliquet nec semper at, pulvinar at leo. Duis luctus ultrices turpis id fringilla. Vestibulum a placerat enim. Nulla in dolor felis. Donec quis dignissim massa, feugiat venenatis leo. Vestibulum venenatis finibus finibus. Phasellus vitae convallis ex, a scelerisque sem. Duis id ultrices nibh. Aenean ultricies faucibus nulla, non porttitor nibh vulputate a.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget dui laoreet est elementum pellentesque sed sit amet sapien. Donec tempor bibendum eleifend. Ut in felis at turpis laoreet dapibus. Nulla sollicitudin finibus leo ac convallis. Sed efficitur mauris libero, nec pharetra felis cursus eu. In suscipit condimentum nulla et malesuada. Vestibulum id diam sed enim tempor ornare. Nulla a metus vel sapien tristique vestibulum nec eu elit. Vestibulum eleifend, massa id sodales volutpat, orci ligula scelerisque elit, at varius lorem eros eu nisl. Nulla iaculis eu erat quis mollis. Nulla ac tincidunt tellus. Nunc accumsan consectetur est sed venenatis.
+
+Fusce luctus orci et urna condimentum aliquam. Etiam luctus lacus et nisi pellentesque accumsan. Nulla porta elit dolor, sit amet dapibus nisi tristique ut. Donec eget purus urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ut ligula sagittis, dictum nisl ac, lacinia erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Phasellus egestas nunc sit amet nunc consectetur semper. Donec sollicitudin faucibus imperdiet. Pellentesque et luctus eros. Quisque mollis quam eu mi lobortis, pulvinar faucibus neque volutpat. Cras quis dolor auctor orci tristique interdum in eget ipsum. Nunc id fermentum tellus, sit amet condimentum justo. Morbi eros leo, viverra eu vulputate eu, accumsan quis lacus. Nullam facilisis, eros sed hendrerit imperdiet, erat magna iaculis justo, id laoreet tortor risus et nisi. Ut porta euismod interdum. Nullam sagittis, libero sed pharetra posuere, nunc diam hendrerit tellus, vel viverra enim sem vitae tortor. Sed tempor pulvinar justo ut pellentesque. Nam vel felis congue urna elementum auctor. Vestibulum placerat quis eros vel elementum.
+
+Ut enim libero, faucibus sed nisl quis, vulputate molestie elit. Maecenas tempus quam vel libero laoreet pellentesque. Suspendisse pulvinar mauris risus, sit amet blandit diam sagittis quis. Nam ac gravida metus, ut feugiat felis. Donec tristique eu ligula ac blandit. Cras lacinia orci a tincidunt fermentum. Quisque interdum mollis risus, at pulvinar lacus condimentum facilisis. Cras aliquam eros ut viverra convallis. Curabitur sit amet placerat elit, interdum accumsan nisl. Fusce vel dolor est. Mauris mollis tincidunt dignissim. In suscipit mi in pretium imperdiet.

@@ -215,7 +215,22 @@
   "article_nav": {
     "items": [
       {
-        "text": "News"
+        "text": "News",
+        "has_subnav": true,
+        "sub_items": [
+          {
+            "text": "Life Hope Centers"
+          },
+          {
+            "text": "Global Mission"
+          },
+          {
+            "text": "Mission Spotlight"
+          },
+          {
+            "text": "Church Mission Offerings"
+          }
+        ]
       },
       {
         "text": "ANN Videos"
