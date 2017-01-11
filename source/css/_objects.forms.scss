@@ -1,3 +1,44 @@
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
+input[type=radio],
+input[type=checkbox] {
+  outline: none;
+  border: none;
+  margin: 0;
+  margin-right: rem(5);
+  height: rem(20);
+  width: rem(20);
+  line-height: rem(20);
+  background-size: rem(20);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  background-color: $white;
+}
+input[type=radio]:checked,
+input[type=checkbox]:checked {
+  background-color: $gray-light;
+}
+input[type=radio] + label,
+input[type=checkbox] + label {
+  display: inline-block;
+  margin-top: rem(1);
+  cursor: pointer;
+}
+input[type=radio],
+input[type=checkbox] {
+  border: 1px solid $blue;
+}
+input[type=radio] {
+  border-radius: rem(50);
+}
