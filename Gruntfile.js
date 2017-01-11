@@ -338,7 +338,6 @@ module.exports = function(grunt) {
     ]);
 
 
-
     /**
      * Default Tasks
      */
@@ -348,5 +347,23 @@ module.exports = function(grunt) {
      * Staging Tasks
      */
     grunt.registerTask('staging', ['dev']);
+
+    /**
+     * Staging Tasks
+     */
+    grunt.registerTask('staging', ['dev']);
+
+    /**
+     *
+     * Production Tasks
+     *
+     */
+    grunt.registerTask('prod', [
+        'css',
+        'javascript',
+        'copy'
+    ]);
+
+
 
 };
