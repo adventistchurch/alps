@@ -1,0 +1,40 @@
+{{# comments }}
+<section class="comments spacing padding-bottom">
+  <h3 class="font--tertiary--l theme--primary-text-color">3 comments</h3>
+  <hr>
+  {{# comment }}
+  <div class="comment">
+    <div class="comment__avatar">
+      <img alt="" src="{{{ comment_avatar }}}" class="avatar" height="32" width="32">
+    </div>
+    <div class="comment__body">
+      <div class="comment__meta">
+        <span class="byline font--secondary--s gray can-be--white">{{{ comment_name }}}</span>
+        <span class="divider">|</span>
+        <span class="pub_date font--secondary--s gray can-be--white">{{{ comment_byline }}}</span>
+      </div>
+      <p class="comment__text">{{{ comment_text }}}</p>
+    </div>
+  </div>
+  {{/ comment }}
+  <hr>
+
+  <div class="comment__form text">
+    <div class="comment-respond">
+      <h3 class="comment-reply-title">Leave a Reply</h3>
+      <form action="" method="post" class="comment-form" novalidate="">
+        <p class="logged-in-as">
+          <a href="" aria-label="">Logged in as John Doe</a>. <a href="">Log out?</a>
+        </p>
+        <p class="comment-form-comment">
+          <label for="comment">Comment</label>
+          <textarea name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>
+        </p>
+        <p class="form-submit">
+          <input name="submit" type="submit" class="submit" value="Post Comment">
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+{{/ comments }}

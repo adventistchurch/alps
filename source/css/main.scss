@@ -105,6 +105,11 @@
 @import "layout.grids";
 @import "layout.wrappers";
 
+/*------------------------------------*\
+    $TEXT
+\*------------------------------------*/
+@import "objects.text";
+
 
 /*------------------------------------*\
     $COMPONENTS
@@ -118,12 +123,6 @@
 @import "objects.carousels";
 @import "objects.sections";
 @import "objects.forms";
-
-
-/*------------------------------------*\
-    $TEXT
-\*------------------------------------*/
-@import "objects.text";
 
 
 /*------------------------------------*\

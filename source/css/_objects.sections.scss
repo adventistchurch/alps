@@ -57,3 +57,21 @@
     text-align: right;
   }
 }
+
+// Comments
+.comment {
+  display: flex;
+  align-items: flex-start;
+}
+.comment__form {
+  .comment-reply-title {
+    @include font--tertiary--m;
+    margin-bottom: $space;
+  }
+}
+.comment__avatar {
+  margin-right: $space-half;
+  img {
+    max-width: rem(32);
+  }
+}
