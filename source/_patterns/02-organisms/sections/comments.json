@@ -3,17 +3,21 @@
     "comment": [
       {
         "comment_avatar": "//placeimg.com/32/32/people",
-        "comment_date": "header-swath--with-image blend-mode--multiply",
-        "comment_byline": "9 days ag0",
-        "comment_name": "Jane Smith",
+        "comment_date": "9 days ago",
+        "comment_byline": "Bob Smith",
         "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim. "
       },
       {
         "comment_avatar": "//placeimg.com/32/32/people",
-        "comment_date": "header-swath--with-image blend-mode--multiply",
-        "comment_byline": "5 days ago",
-        "comment_name": "John Doe",
+        "comment_date": "5 days ago",
+        "comment_byline": "John Doe",
         "comment_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, mauris quis fermentum mattis, tellus nisl dapibus neque, sed feugiat tellus lacus tincidunt justo."
+      },
+      {
+        "comment_avatar": "//placeimg.com/32/32/people",
+        "comment_date": "3 days ago",
+        "comment_byline": "Jane Doe",
+        "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, mauris quis fermentum mattis, tellus nisl dapibus neque, sed feugiat tellus lacus tincidunt justo."
       }
     ]
   }
