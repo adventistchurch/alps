@@ -27,7 +27,7 @@ input[type=checkbox] {
 }
 input[type=radio]:checked,
 input[type=checkbox]:checked {
-  background-color: $gray-light;
+  background-color: $gray;
 }
 input[type=radio] + label,
 input[type=checkbox] + label {
@@ -37,8 +37,13 @@ input[type=checkbox] + label {
 }
 input[type=radio],
 input[type=checkbox] {
-  border: 1px solid $blue;
+  border: 1px solid $gray;
 }
 input[type=radio] {
   border-radius: rem(50);
+}
+
+.form-group {
+  display: block;
+  width: 100%;
 }

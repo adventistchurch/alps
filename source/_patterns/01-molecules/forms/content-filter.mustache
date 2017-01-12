@@ -1,0 +1,22 @@
+{{# content_filter }}
+  <form class="content-filter-form filter spacing">
+    <div class="filter-items filter-items__checkbox spacing--quarter">
+        <h3 class="font--secondary--m upper theme--primary-text-color">Filter</h3>
+      {{# checkbox }}
+        <div class="filter-item__checkbox form-group">
+          <input id="checkbox-{{{ id }}}" type="checkbox" name="checkbox" value="{{{ label }}}" />
+          <label for="checkbox-{{{ id }}}" class="theme--primary-text-color">{{{ label }}}</label>
+        </div>
+      {{/ checkbox }}
+    </div>
+    <div class="filter-items filter-items__radio spacing--quarter">
+      <h3 class="font--secondary--m upper theme--primary-text-color">Sort by</h3>
+      {{# radio }}
+        <div class="filter-item__radio form-group">
+          <input id="radio-{{{ id }}}" type="radio" name="radio" value="{{{ label }}}" />
+          <label for="radio-{{{ id }}}" class="theme--primary-text-color">{{{ label }}}</label>
+        </div>
+      {{/ radio }}
+    </div>
+  <form>
+{{/ content_filter }}

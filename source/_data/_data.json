@@ -812,5 +812,27 @@
   },
   "button_default": {
     "button_text": "Button Text"
+  },
+  "content_filter": {
+    "radio": [
+      {
+        "id": "1",
+        "label": "Option 1"
+      },
+      {
+        "id": "2",
+        "label": "Option 2"
+      }
+    ],
+    "checkbox": [
+      {
+        "id": "1",
+        "label": "Option 1"
+      },
+      {
+        "id": "2",
+        "label": "Option 2"
+      }
+    ]
   }
 }
