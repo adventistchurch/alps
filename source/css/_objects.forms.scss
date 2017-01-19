@@ -66,9 +66,10 @@ input[type=radio] {
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  padding-bottom: $pad-and-half;
+  padding-bottom: $pad-half;
   @include media('>medium') {
     flex-flow: column;
+    padding-bottom: 0;
   }
 }
 .filter-items {
