@@ -59,19 +59,62 @@
 }
 
 // Comments
-.comment {
+// .comment {
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .comment__form {
+//   .comment-reply-title {
+//     @include font--tertiary--m;
+//     margin-bottom: $space;
+//   }
+// }
+// .comment__avatar {
+//   margin-right: $space-half;
+//   img {
+//     max-width: rem(32);
+//   }
+// }
+.comment-list {
+  > li {
+    border-top: 1px solid $gray-light;
+    margin-top: $space;
+    padding-top: $space;
+
+    .comment-respond,
+    .children li {
+      margin-top: $space;
+      margin-left: rem(50);
+      padding-left: $space-half;
+      border-left: 1px solid $gray-light;
+    }
+  }
+}
+.comment-form {
+  .comment-reply-title {
+    margin-bottom: $space;
+  }
+  label {
+    display: none;
+  }
+}
+.comment--inner {
   display: flex;
   align-items: flex-start;
 }
-.comment__form {
-  .comment-reply-title {
-    @include font--tertiary--m;
-    margin-bottom: $space;
+.comment__meta {
+  margin-bottom: rem(5);
+  .divider {
+    margin-left: rem(5);
+    margin-right: rem(5);
   }
+}
+.comment__edit-link {
+  margin-left: rem(5);
 }
 .comment__avatar {
   margin-right: $space-half;
-  img {
-    max-width: rem(32);
-  }
+  display: flex;
+  min-width: rem(50);
+  min-height: rem(50);
 }

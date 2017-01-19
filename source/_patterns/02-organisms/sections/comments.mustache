@@ -1,11 +1,20 @@
 {{# comments }}
 <section class="comments spacing padding-bottom">
-  <h3 class="font--tertiary--l theme--primary-text-color">3 comments</h3>
-  <hr>
-  {{# comment }}
-    {{> molecules-comment }}
-  {{/ comment }}
-  <hr>
+  <h2 class="font--tertiary--l theme--primary-text-color">4 comments</h2>
+  <ul class="comment-list spacing">
+    {{# comment }}
+      <li class="comment">
+        {{> molecules-comment }}
+        {{# comment_children }}
+          <ul class="children">
+            <li class="comment">
+              {{> molecules-comment }}
+            </li>
+          </ul>
+        {{/ comment_children }}
+      </li>
+    {{/ comment }}
+  </ul>
   {{> molecules-comment-form }}
 </section>
 {{/ comments }}
