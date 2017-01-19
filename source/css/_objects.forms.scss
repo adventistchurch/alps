@@ -6,11 +6,11 @@ input[type=checkbox] {
   outline: none;
   border: none;
   margin: 0;
-  margin-right: rem(5);
-  height: rem(20);
-  width: rem(20);
-  line-height: rem(20);
-  background-size: rem(20);
+  margin-right: rem(8);
+  height: rem(15);
+  width: rem(15);
+  line-height: rem(15);
+  background-size: rem(15);
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
@@ -25,20 +25,19 @@ input[type=checkbox] {
   -webkit-appearance: none;
   background-color: $white;
 }
-input[type=radio]:checked,
-input[type=checkbox]:checked {
-  background-color: $gray;
+input[type=radio],
+input[type=checkbox] {
+  border-width: 2px;
+  border-style: solid;
 }
 input[type=radio] + label,
 input[type=checkbox] + label {
   display: inline-block;
-  margin-top: rem(1);
+  top: rem(-2);
   cursor: pointer;
+  position: relative;
 }
-input[type=radio],
-input[type=checkbox] {
-  border: 1px solid $gray;
-}
+
 input[type=radio] {
   border-radius: rem(50);
 }
@@ -46,4 +45,38 @@ input[type=radio] {
 .form-group {
   display: block;
   width: 100%;
+}
+
+// Search filter
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid $gray-med;
+  padding-bottom: $space-half;
+}
+.filter-is-active {
+  cursor: pointer;
+  .filter-form {
+    display: flex;
+  }
+}
+.filter-form {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: $pad-and-half;
+  @include media('>medium') {
+    flex-flow: column;
+  }
+}
+.filter-items {
+  margin-right: $space-double;
+  @include media('>medium') {
+    margin-right: 0;
+    &:last-child {
+      margin-top: $space;
+    }
+  }
 }

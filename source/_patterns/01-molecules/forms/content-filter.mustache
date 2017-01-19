@@ -1,7 +1,12 @@
 {{# content_filter }}
-  <form class="content-filter-form filter spacing">
+<div class="filter spacing">
+  <div class="filter-options">
+    <h3 class="font--secondary--l upper theme--primary-text-color">Search</h3>
+    <div class="js-toggle font--secondary--m upper theme--primary-text-color" data-toggled="filter" data-prefix="filter">Show Options</div>
+  </div>
+  <form class="content-filter-form filter-form">
     <div class="filter-items filter-items__checkbox spacing--quarter">
-        <h3 class="font--secondary--m upper theme--primary-text-color">Filter</h3>
+        <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Filter</h3>
       {{# checkbox }}
         <div class="filter-item__checkbox form-group">
           <input id="checkbox-{{{ id }}}" type="checkbox" name="checkbox" value="{{{ label }}}" />
@@ -10,7 +15,7 @@
       {{/ checkbox }}
     </div>
     <div class="filter-items filter-items__radio spacing--quarter">
-      <h3 class="font--secondary--m upper theme--primary-text-color">Sort By</h3>
+      <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Sort By</h3>
       {{# radio }}
         <div class="filter-item__radio form-group">
           <input id="radio-{{{ id }}}" type="radio" name="radio" value="{{{ label }}}" />
@@ -18,5 +23,15 @@
         </div>
       {{/ radio }}
     </div>
-  <form>
+  </form>
+  <form action="" role="search" method="get" class="filter-search search__results__form">
+    <fieldset>
+      <legend class="is-vishidden">Search</legend>
+      <div class="field-container field-container--inline">
+        <input type="search" name="s" class="search__results__input font--secondary--s" value="Keyword" />
+        <button class="search__submit font--secondary--s upper theme--secondary-background-color">Search</button> <!-- /.search-form__submit -->
+      </div> <!-- /.field-container -->
+    </fieldset>
+  </form> <!-- /.search-form -->
+</div>
 {{/ content_filter }}
