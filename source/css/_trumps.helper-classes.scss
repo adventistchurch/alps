@@ -278,6 +278,7 @@
  */
 .flex {
   display: flex;
+  display: -webkit-box; // Safari support
   flex-wrap: wrap;
   align-items: stretch;
   > .block {
