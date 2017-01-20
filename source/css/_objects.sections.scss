@@ -58,41 +58,28 @@
   }
 }
 
-// Comments
-// .comment {
-//   display: flex;
-//   align-items: flex-start;
-// }
-// .comment__form {
-//   .comment-reply-title {
-//     @include font--tertiary--m;
-//     margin-bottom: $space;
-//   }
-// }
-// .comment__avatar {
-//   margin-right: $space-half;
-//   img {
-//     max-width: rem(32);
-//   }
-// }
+/**
+ * Comments
+ */
 .comment-list {
+  padding-top: $space-half;
+  margin-bottom: $space-double;
   > li {
-    border-top: 1px solid $gray-light;
-    margin-top: $space;
-    padding-top: $space;
+    border-top: 2px solid $gray-light;
+    padding-top: $pad;
 
     .comment-respond,
     .children li {
-      margin-top: $space;
+      margin-top: $space-and-half;
       margin-left: rem(50);
       padding-left: $space-half;
-      border-left: 1px solid $gray-light;
+      border-left: 3px solid $gray-light;
     }
   }
 }
 .comment-form {
   .comment-reply-title {
-    margin-bottom: $space;
+    margin-bottom: $space-half;
   }
   label {
     display: none;

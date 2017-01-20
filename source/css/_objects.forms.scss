@@ -47,7 +47,9 @@ input[type=radio] {
   width: 100%;
 }
 
-// Search filter
+/**
+ * Search filter
+ */
 .filter-options {
   display: flex;
   justify-content: space-between;
