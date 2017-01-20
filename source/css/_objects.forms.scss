@@ -61,7 +61,14 @@ input[type=radio] {
   cursor: pointer;
   .filter-form {
     display: flex;
+    padding-bottom: $space;
   }
+  .filter-toggle:before {
+    content: "Hide ";
+  }
+}
+.filter-toggle:before {
+  content: "Show ";
 }
 .filter-form {
   display: none;
@@ -69,14 +76,14 @@ input[type=radio] {
   justify-content: flex-start;
   width: 100%;
   padding-bottom: $pad-half;
-  @include media('>medium') {
+  @include media('>large') {
     flex-flow: column;
     padding-bottom: 0;
   }
 }
 .filter-items {
   margin-right: $space-double;
-  @include media('>medium') {
+  @include media('>large') {
     margin-right: 0;
     &:last-child {
       margin-top: $space;
