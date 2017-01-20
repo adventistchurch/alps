@@ -10,7 +10,7 @@
 }
 .cf:before, .cf:after {
   content: " "; // 1
-  display: table; // 2
+  display: flex; // 2
 }
 .cf:after {
   clear: both;
@@ -278,6 +278,7 @@
  */
 .flex {
   display: flex;
+  display: -webkit-box; // Safari support
   flex-wrap: wrap;
   align-items: stretch;
   > .block {
