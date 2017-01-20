@@ -10,7 +10,7 @@
 }
 .cf:before, .cf:after {
   content: " "; // 1
-  display: flex; // 2
+  display: table; // 2
 }
 .cf:after {
   clear: both;
