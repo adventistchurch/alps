@@ -32,11 +32,20 @@ figcaption {
 \*------------------------------------*/
 
 @media print {
+  @page {
+    margin: 1in 0.5in 0.5in;
+    orphans: 4;
+    widows: 3;
+  }
   *,
   *:before,
   *:after,
   *:first-letter,
   *:first-line {
+    .logo__link {
+      background-color: #000!important;
+      margin: 0 auto;
+    }
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
@@ -44,26 +53,24 @@ figcaption {
   }
   a,
   a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+    text-decoration: none;
   }
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
+  }
+  p, li, pre, figure, blockquote, h1, h2, h3, h4, h5  {
+    page-break-inside: avoid;
+  }
+  section {
+    page-break-before: always;
+  }
+  body,
+  article {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   /*
    * Printing Tables:
@@ -86,10 +93,44 @@ figcaption {
     page-break-after: avoid;
   }
   .no-print,
-  #header,
-  #footer,
   .ad {
     display: none;
   }
+  #header {
+    position: relative;
+    display: block!important;
+  }
+  p:first-letter,
+  span:first-letter{
+    font-size: 100%!important;
+    display: flex;
+  }
+  .kicker,
+  .article__meta,
+  .block__description span {
+    display: flex;
+    line-height: 1.6;
+  }
+  .divider {
+    padding-left: 15px;
+    padding-right: 10px;
+    margin: 0;
+    text-align: center;
+    border: none;
+  }
+  .hero-carousel,
+  .footer__unify-nav-desc,
+  .nav-toggle,
+  .at-cv-lightbox,
+  .share-tools,
+  #comments,
+  .fitvid,
+  .breakout,
+  .article-nav__search,
+  .article-nav {
+    display: none;
+  }
+  .btn {
+    border:1px solid #000;
+  }
 }
-
