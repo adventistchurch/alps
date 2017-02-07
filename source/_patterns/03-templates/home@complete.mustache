@@ -3,7 +3,9 @@
   <main class="main can-be--dark-dark" role="main">
     {{> organisms-hero-carousel }}
     <div class="layout-container full--until-large">
+    {{#split-callout }}
       {{> organisms-split-callout }}
+    {{/ split-callout}}
       <div class="flex-container cf">
         <div class="shift-left--fluid column__primary bg--white can-be--dark-light no-pad--btm">
           {{# has_short_body }}
