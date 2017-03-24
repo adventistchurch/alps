@@ -107,7 +107,7 @@
   @include media('>medium') {
     float: right;
     max-width: rem(400);
-    width: 50%;
+    width: auto;
     margin: rem(5) 0 $space $space-and-half;
   }
 }
@@ -119,13 +119,14 @@
   @include media('>medium') {
     float: left;
     max-width: rem(400);
-    width: 50%;
+    width: auto;
     margin: rem(5) $space-and-half $space 0;
   }
 }
 .alignleft,
 .alignright,
 .aligncenter {
+  display: block;
   @include media('<=medium') {
     width: auto;
   }
