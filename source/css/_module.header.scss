@@ -133,6 +133,10 @@
   position: relative;
   z-index: 10;
   box-shadow: 3px 3px 0 0 rgba($black, .25);
+  img {
+    max-height: rem(135);
+    width: auto;
+  }
 }
 .logo__link--horiz {
   width: rem(220);
