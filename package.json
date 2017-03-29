@@ -24,8 +24,7 @@
     "patternlab-md2json": "^0.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "mkdir -p public && cp -r core/styleguide/ public/styleguide/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
