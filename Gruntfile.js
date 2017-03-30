@@ -35,10 +35,16 @@ module.exports = function(grunt) {
         },
 
         mkdir: {
+            dev: {
+                options: {
+                    mode: 0750,
+                    create: ['public/styleguide']
+                }
+            },
             prod: {
                 options: {
                     mode: 0777,
-                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images']
+                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images', 'cdn/<%= major_version %>/<%= version %>/styleguide']
                 }
             }
         },
@@ -147,7 +153,19 @@ module.exports = function(grunt) {
                         cwd: 'source/',
                         src: ['<%= copyFiles %>'],
                         dest: 'cdn/<%= major_version %>/<%= version %>/'
-                    }
+                    },
+                    {
+                        expand: true,
+                        cwd: 'core/styleguide',
+                        src: '**',
+                        dest: 'public/styleguide/',
+                    },
+                    {
+                        expand: true,
+                        cwd: 'core/styleguide',
+                        src: '**',
+                        dest: 'cdn/<%= major_version %>/<%= version %>/styleguide/',
+                    }  
                 ]
             }
         },
@@ -300,11 +318,12 @@ module.exports = function(grunt) {
      * Dev tasks
      */
     grunt.registerTask('dev', [
+        'mkdir:dev',
+        'copy',
         'css',
         'javascript',
         'shell:patternlab',
         'images',
-        'copy',
         'add_comment:dev'
     ]);
 
@@ -313,12 +332,12 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('prod', [
         'mkdir:prod',
+        'copy',
         'sass:prod',
         'autoprefixer:prod',
         'uglify:prod',
         'shell:patternlab',
         'images',
-        'copy',
         'symlink',
         'add_comment'
     ]);
