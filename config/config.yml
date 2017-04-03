@@ -1,0 +1,35 @@
+v: 2.6.0
+overrideConfig: q
+ie:
+    - DS_Store
+    - less
+    - scss
+id:
+    - scss
+    - .svn
+    - .sass-cache
+cleanPublic: 'true'
+patternStates:
+    - inprogress
+    - inreview
+    - complete
+styleGuideExcludes: ''
+cacheBusterOn: 'true'
+exportDir: export
+publicDir: public
+sourceDir: source
+defaultPattern: all
+defaultShowPatternInfo: false
+plugins:
+    reload:
+        enabled: true
+ishMinimum: '240'
+ishMaximum: '2600'
+ishControlsHide:
+    - hay
+lineageMatch: '{{>([ ]+)?([A-Za-z0-9-_]+)(?:\:[A-Za-z0-9-]+)?(?:(| )\(.*)?([ ]+)?}}'
+lineageMatchKey: 2
+patternExtension: mustache
+mustacheHelperExt: helper.php
+styleguideKit: pattern-lab/styleguidekit-mustache-default
+styleguideKitPath: vendor/pattern-lab/styleguidekit-mustache-default
