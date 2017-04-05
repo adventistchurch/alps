@@ -8,3 +8,23 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.sg-alps-logo-wrap {
+  border-bottom: 1px solid $gray-light;
+  margin-bottom: $space;
+  padding-left: $pad-half;
+}
+.sg-alps-logo {
+  width: rem(250);
+  display: block;
+  padding: rem(15) $pad $pad-half 0;
+}
+
+.sg-introduction {
+  .text {
+    code,
+    pre {
+      font-size: 100%;
+    }
+  }
+}

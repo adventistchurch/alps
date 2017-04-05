@@ -8,18 +8,18 @@ id:
     - scss
     - .svn
     - .sass-cache
-cleanPublic: 'true'
+cleanPublic: 'false'
 patternStates:
     - inprogress
     - inreview
     - complete
-styleGuideExcludes: ''
+styleGuideExcludes: 'templates,pages'
 cacheBusterOn: 'true'
 exportDir: export
 publicDir: public
 sourceDir: source
-defaultPattern: all
-defaultShowPatternInfo: false
+defaultPattern: pages-start-page
+defaultShowPatternInfo: true
 plugins:
     reload:
         enabled: true
@@ -27,6 +27,8 @@ ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
     - hay
+    - disco
+    - rand
 lineageMatch: '{{>([ ]+)?([A-Za-z0-9-_]+)(?:\:[A-Za-z0-9-]+)?(?:(| )\(.*)?([ ]+)?}}'
 lineageMatchKey: 2
 patternExtension: mustache

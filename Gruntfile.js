@@ -35,16 +35,10 @@ module.exports = function(grunt) {
         },
 
         mkdir: {
-            dev: {
-                options: {
-                    mode: 0750,
-                    create: ['public/styleguide']
-                }
-            },
             prod: {
                 options: {
                     mode: 0777,
-                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images', 'cdn/<%= major_version %>/<%= version %>/styleguide']
+                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images']
                 }
             }
         },
@@ -54,17 +48,6 @@ module.exports = function(grunt) {
                 imagePath: 'source/images',
                 precision: 5,
                 includePaths: require('node-bourbon').includePaths
-            },
-            sg: {
-                options: {
-                    outputStyle: 'nested',
-                    sourceMap: true,
-                },
-                files: {
-                    'public/styleguide/css/styleguide.css': 'core/styleguide/css/styleguide.scss',
-                    'public/styleguide/css/styleguide-specific.css': 'core/styleguide/css/styleguide-specific.scss',
-                    'public/styleguide/css/styleguide-custom.css': 'core/styleguide/css/styleguide-custom.scss'
-                }
             },
             dev: {
                 options: {
@@ -153,18 +136,6 @@ module.exports = function(grunt) {
                         cwd: 'source/',
                         src: ['<%= copyFiles %>'],
                         dest: 'cdn/<%= major_version %>/<%= version %>/'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'core/styleguide',
-                        src: '**',
-                        dest: 'public/styleguide/',
-                    },
-                    {
-                        expand: true,
-                        cwd: 'core/styleguide',
-                        src: '**',
-                        dest: 'cdn/<%= major_version %>/<%= version %>/styleguide/',
                     }
                 ]
             }
@@ -241,6 +212,13 @@ module.exports = function(grunt) {
         // Watch options: what tasks to run when changes to files are saved
         watch: {
             options: {},
+            html: {
+                files: ['source/**/*.mustache', 'source/**/*.json', 'source/_data/*.json'], // Watch for changes to these html files to run htmlhint (validation) task
+                tasks: ['shell:patternlab', 'css', 'javascript'],
+                options: {
+                    spawn: false
+                }
+            },
             css: {
                 files: ['source/css/*.scss'],
                 tasks: ['css'] // Compile with Compass when Sass changes are saved
@@ -248,13 +226,6 @@ module.exports = function(grunt) {
             js: {
                 files: ['source/js/*.js'], // Watch for changes in JS files
                 tasks: ['javascript']
-            },
-            html: {
-                files: ['source/_patterns/**/*.mustache', 'source/_patterns/**/*.json', 'source/_data/*.json'], // Watch for changes to these html files to run htmlhint (validation) task
-                tasks: ['shell:patternlab'],
-                options: {
-                    spawn: false
-                }
             },
             images: {
                 files: ['source/images/*.{png,jpg,gif}'],
@@ -307,23 +278,14 @@ module.exports = function(grunt) {
     ]);
 
     /**
-     * Styleguide specific tasks
-     */
-    grunt.registerTask('sg', [
-        'sass:sg',
-        'shell:patternlab'
-    ]);
-
-    /**
      * Dev tasks
      */
     grunt.registerTask('dev', [
-        'mkdir:dev',
         'copy',
-        'css',
-        'javascript',
         'shell:patternlab',
         'images',
+        'javascript',
+        'css',
         'add_comment:dev'
     ]);
 
@@ -347,7 +309,6 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('deploybot', [
         // 'css',
-        'sass:sg',
         'sass:dev',
         'autoprefixer:dev',
         'javascript',

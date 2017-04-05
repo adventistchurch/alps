@@ -173,7 +173,6 @@ $animate-quick: 0.2s;
 .colorset--color {
   flex: 0 1 20%;
   flex-direction: column;
-
   border: 1px $gray-light solid;
   padding: 5px;
 }
@@ -183,7 +182,7 @@ $animate-quick: 0.2s;
   color: $gray;
 }
 .sg-label--block{
-      display: inline-block;
+    display: inline-block;
     margin-right: .25em;
     background: $gray-light;
     padding: 4px;
@@ -208,9 +207,8 @@ $animate-quick: 0.2s;
 }
 
 code.sg-codesample{
-      background-color: $gray-light;
-    display: block;
-    margin-bottom: 1em;
-    border-radius: 0.5em;
-
+  background-color: $gray-light;
+  display: block;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
 }
