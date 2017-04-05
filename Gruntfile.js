@@ -200,7 +200,7 @@ module.exports = function(grunt) {
         // Will Automatically insert the correct prefixes for CSS properties. Just write plain CSS.
         autoprefixer: {
             options: {
-                browsers: ['last 2 version', 'ie 9']
+                browsers: ['last 4 versions', 'ie 9']
             },
             dev: {
                 src: 'public/css/*.css'

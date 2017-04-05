@@ -45,6 +45,11 @@
       background-color: darken($earth, 10);
     }
   }
+
+  // Remove start page from pattern list.
+  [data-patternpartial="pages-start-page"] {
+    display: none;
+  }
 }
 .sg-acc-panel {
   li {
