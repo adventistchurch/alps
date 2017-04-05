@@ -28,3 +28,49 @@
     }
   }
 }
+
+
+/**
+ * Styleguide Chrome Styles (Wrapper Controls)
+ */
+.sg-header,
+.sg-tools-toggle {
+  background-color: $ming;
+  a {
+    color: $white;
+    &.active {
+      background-color: $earth;
+    }
+    &:hover {
+      background-color: darken($earth, 10);
+    }
+  }
+}
+.sg-acc-panel {
+  li {
+    background-color: $earth;
+    a:hover {
+      background-color: darken($earth, 10);
+    }
+  }
+}
+.sg-input {
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: $earth;
+  color: $gray-light;
+}
+.sg-current-size {
+  color: $white;
+}
+.sg-tools-toggle {
+  path {
+    fill: $white;
+  }
+}
+.sg-acc-handle {
+  &:after,
+  &.active:after {
+    color: rgba($white, .75);
+  }
+}
