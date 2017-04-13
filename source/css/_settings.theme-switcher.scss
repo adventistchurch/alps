@@ -42,3 +42,8 @@
   text-transform: uppercase;
   color: $black;
 }
+.alps-start-page {
+  .theme-switcher {
+    display: none;
+  }
+}

@@ -12,7 +12,7 @@ module.exports = function(grunt) {
      * of /cdn/<major_version/<version>/ that contains the javascript and css.
      */
     var major_version = "2";
-    var version = "2.0.4";
+    var version = "2.0.5";
 
     grunt.initConfig({
         pkg: pkg,
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                             // maxBuffer: Infinity
                     },
                 },
-                command: "php core/builder.php -g",
+                command: "php core/console --generate",
             },
             go: {
                 // command: "php -S localhost:4000 -t public"
@@ -35,16 +35,10 @@ module.exports = function(grunt) {
         },
 
         mkdir: {
-            dev: {
-                options: {
-                    mode: 0750,
-                    create: ['public/styleguide']
-                }
-            },
             prod: {
                 options: {
                     mode: 0777,
-                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images', 'cdn/<%= major_version %>/<%= version %>/styleguide']
+                    create: ['cdn/<%= major_version %>/<%= version %>/css', 'cdn/<%= major_version %>/<%= version %>/js', 'cdn/<%= major_version %>/<%= version %>/images']
                 }
             }
         },
@@ -55,24 +49,14 @@ module.exports = function(grunt) {
                 precision: 5,
                 includePaths: require('node-bourbon').includePaths
             },
-            sg: {
-                options: {
-                    outputStyle: 'nested',
-                    sourceMap: true,
-                },
-                files: {
-                    'public/styleguide/css/styleguide.css': 'core/styleguide/css/styleguide.scss',
-                    'public/styleguide/css/styleguide-specific.css': 'core/styleguide/css/styleguide-specific.scss',
-                    'public/styleguide/css/styleguide-custom.css': 'core/styleguide/css/styleguide-custom.scss'
-                }
-            },
             dev: {
                 options: {
                     outputStyle: 'nested',
                     sourceMap: true,
                 },
                 files: {
-                    'public/css/dev.css': 'source/css/dev.scss'
+                    'public/css/dev.css': 'source/css/dev.scss',
+                    'public/styleguide/css/styleguide.min.css': 'source/css/styleguide.scss'
                 }
             },
             prod: {
@@ -138,7 +122,7 @@ module.exports = function(grunt) {
         copyFiles: '**/*.{eot,svg,ttf,woff,pdf}',
 
         copy: {
-            target: {
+            dev: {
                 files: [
                     // includes files within path
                     {
@@ -147,24 +131,16 @@ module.exports = function(grunt) {
                         src: ['<%= copyFiles %>'],
                         dest: 'public/',
                         filter: 'isFile'
-                    },
+                    }
+                ]
+            },
+            prod: {
+                files: [
                     {
                         expand: true,
                         cwd: 'source/',
                         src: ['<%= copyFiles %>'],
                         dest: 'cdn/<%= major_version %>/<%= version %>/'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'core/styleguide',
-                        src: '**',
-                        dest: 'public/styleguide/',
-                    },
-                    {
-                        expand: true,
-                        cwd: 'core/styleguide',
-                        src: '**',
-                        dest: 'cdn/<%= major_version %>/<%= version %>/styleguide/',
                     }
                 ]
             }
@@ -175,37 +151,20 @@ module.exports = function(grunt) {
             options: {
                 overwrite: true
             },
-          expanded: {
-            files: [
-              // All child directories in "source" will be symlinked into the "build"
-              // directory, with the leading "source" stripped off.
-              {
-                src: ['cdn/<%= major_version %>/<%= version %>'],
-                dest: 'cdn/<%= major_version %>/latest',
-                filter: 'isDirectory'
-              }
-            ]
-          },
+            expanded: {
+                files: [
+                    // All child directories in "source" will be symlinked into the "build"
+                    // directory, with the leading "source" stripped off.
+                    {
+                        src: ['cdn/<%= major_version %>/<%= version %>'],
+                        dest: 'cdn/<%= major_version %>/latest',
+                        filter: 'isDirectory'
+                    }
+                ]
+            },
         },
 
         add_comment: {
-            prod: {
-                options: {
-                    comments: ['Autogenerated, do not edit. All changes will be undone.', 'Version: <%= version %>', new Date()],
-                    carriageReturn: "\n",
-                    prepend: true,
-                    syntaxes: {
-                        '.js': '//',
-                        '.css': ['/*', '*/']
-                    }
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'cdn/<%= major_version %>/<%= version %>',
-                    src: ['**/*.js', '**/*.css'],
-                    dest: 'cdn/<%= major_version %>/<%= version %>'
-                }]
-            },
             dev: {
                 options: {
                     comments: ['Autogenerated, do not edit. All changes will be undone.', new Date()],
@@ -221,6 +180,23 @@ module.exports = function(grunt) {
                     cwd: 'public',
                     src: ['**/*.js', '**/*.css'],
                     dest: 'public'
+                }]
+            },
+            prod: {
+                options: {
+                    comments: ['Autogenerated, do not edit. All changes will be undone.', 'Version: <%= version %>', new Date()],
+                    carriageReturn: "\n",
+                    prepend: true,
+                    syntaxes: {
+                        '.js': '//',
+                        '.css': ['/*', '*/']
+                    }
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'cdn/<%= major_version %>/<%= version %>',
+                    src: ['**/*.js', '**/*.css'],
+                    dest: 'cdn/<%= major_version %>/<%= version %>'
                 }]
             }
         },
@@ -241,6 +217,13 @@ module.exports = function(grunt) {
         // Watch options: what tasks to run when changes to files are saved
         watch: {
             options: {},
+            html: {
+                files: ['source/**/*.mustache', 'source/**/*.json', 'source/_data/*.json'], // Watch for changes to these html files to run htmlhint (validation) task
+                tasks: ['shell:patternlab', 'css', 'javascript'],
+                options: {
+                    spawn: false
+                }
+            },
             css: {
                 files: ['source/css/*.scss'],
                 tasks: ['css'] // Compile with Compass when Sass changes are saved
@@ -248,13 +231,6 @@ module.exports = function(grunt) {
             js: {
                 files: ['source/js/*.js'], // Watch for changes in JS files
                 tasks: ['javascript']
-            },
-            html: {
-                files: ['source/_patterns/**/*.mustache', 'source/_patterns/**/*.json', 'source/_data/*.json'], // Watch for changes to these html files to run htmlhint (validation) task
-                tasks: ['shell:patternlab'],
-                options: {
-                    spawn: false
-                }
             },
             images: {
                 files: ['source/images/*.{png,jpg,gif}'],
@@ -288,7 +264,7 @@ module.exports = function(grunt) {
      * CSS tasks
      */
     grunt.registerTask('css', [
-        'sass',
+        'sass:dev',
         'autoprefixer:dev'
     ]);
 
@@ -307,23 +283,14 @@ module.exports = function(grunt) {
     ]);
 
     /**
-     * Styleguide specific tasks
-     */
-    grunt.registerTask('sg', [
-        'sass:sg',
-        'shell:patternlab'
-    ]);
-
-    /**
      * Dev tasks
      */
     grunt.registerTask('dev', [
-        'mkdir:dev',
-        'copy',
-        'css',
-        'javascript',
+        'copy:dev',
         'shell:patternlab',
         'images',
+        'javascript',
+        'css',
         'add_comment:dev'
     ]);
 
@@ -332,14 +299,14 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('prod', [
         'mkdir:prod',
-        'copy',
         'sass:prod',
         'autoprefixer:prod',
         'uglify:prod',
         'shell:patternlab',
         'images',
         'symlink',
-        'add_comment'
+        'copy:prod',
+        'add_comment:prod'
     ]);
 
     /**
@@ -347,7 +314,6 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('deploybot', [
         // 'css',
-        'sass:sg',
         'sass:dev',
         'autoprefixer:dev',
         'javascript',
