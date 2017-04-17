@@ -126,14 +126,11 @@
   width: 100%;
   transform: translate(0, -50%);
   padding-bottom: 0;
-  > div {
+  > .carousel__item-text--inner {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
-  }
-  br {
-    display: none;
   }
 }
 
@@ -173,10 +170,10 @@
 
 // Right align slide text
 .carousel__item--right {
-  right: 0; 
+  right: 0;
   left: auto;
   text-align: right;
-  > div {
+  > .carousel__item-text--inner {
     justify-content: flex-end;
     flex-direction: column;
     align-items: flex-end;
