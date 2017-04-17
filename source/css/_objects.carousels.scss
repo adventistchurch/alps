@@ -126,7 +126,17 @@
   width: 100%;
   transform: translate(0, -50%);
   padding-bottom: 0;
+  > div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  br {
+    display: none;
+  }
 }
+
 .carousel__item-heading,
 .carousel__item-subtitle,
 .carousel__item-dek {
@@ -163,9 +173,14 @@
 
 // Right align slide text
 .carousel__item--right {
-  right: 0;
+  right: 0; 
   left: auto;
   text-align: right;
+  > div {
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 // Carousel pagination
