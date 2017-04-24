@@ -1,0 +1,191 @@
+@import "tools.mixins";
+
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+/**
+ * Grid & Baseline Setup
+ */
+$fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
+$defaultpx: 16; // Browser default px used for media queries
+$rembase: 16; // 16px = 1.00rem
+$max-width-px: 1150;
+$max-width: rem($max-width-px) !default;
+
+/**
+ * Colors
+ */
+$white: #fff;
+$black: #000;
+$error: #f00;
+$valid: #089e00;
+$warning: #fff664;
+$information: #000db5;
+$overlay: rgba($black, .9);
+$overlay-light: rgba($black, .76);
+$gray: lighten($black, 50);
+$gray-light: lighten($black, 90);
+$gray-med: lighten($black, 70);
+//$gray-dark: #575a5c;
+$gray-dark: lighten($black, 20);
+
+/**
+ * Style Colors
+ */
+$body-color: #575a5c;
+$blue: #438390;
+$brown: #7e7667;
+$brown-med: #908c81;
+$brown-light: #d6d1c2;
+$red: #ef3d25;
+$orange: #f9b000;
+$beige: #fbf9f3;
+$tan: #efe9d7;
+
+/**
+ * Theme Colors (Primary)
+ */
+$emperor: #4b207f;
+$earth: #5e3929;
+$grapevine: #7f264a;
+$denim: #2f557f;
+$campfire: #e36520;
+$treefrog: #448d21;
+$ming: #3e8391;
+
+/**
+ * Theme Colors (Secondary)
+ */
+$cool: #4d7549;
+$warm: #ffa92d;
+
+/**
+ * Theme Colors (Dark)
+ */
+$dark-light: #303030;
+$dark-dark: #252525;
+
+/**
+ * Social Colors
+ */
+$twitter-blue: #13C4F8;
+$facebook-blue: #4A66A3;
+$instagram-blue: #48769F;
+$instagram-brown: #5f4132;
+$pinterest-red: #FF423E;
+$youtube-red: #b31217;
+$google-red: $youtube-red;
+
+/**
+ * Typography
+ */
+$font: "Merriweather", Georgia, Times, "Times New Roman", serif;
+$font-serif: $font;
+$font-secondary: "Montserrat", "Helvetica", "Arial", sans-serif;
+$font-tertiary: "Oswald", "Trade Gothic", "Helvetica", "Arial", sans-serif;
+$font-sans: $font-secondary;
+$sans: "Helvetica", "Arial", sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+$monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
+$font-monospace: $monospace;
+
+/**
+ * Amimation
+ */
+$cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+/**
+ * Default Spacing/Padding
+ */
+$space: rem(20);
+$space-and-half: $space*1.5;
+$space-double: $space*2;
+$space-quad: $space*4;
+$space-half: $space/2;
+$pad: rem(20);
+$pad-and-half: $pad*1.5;
+$pad-double: $pad*2;
+$pad-half: $pad/2;
+$pad-quarter: $pad/4;
+
+// uses verticalSpacing(key) function
+$verticalSpacing: (
+  mobile: 20,
+  desktop: 30
+);
+
+/**
+ * Border Styles
+ */
+$border-med: 6px;
+$border-thick: 8px;
+$border-opacity: 1px solid rgba($white, .2);
+$border-style: 1px solid $gray;
+$border-style-blue: 1px solid $blue;
+$border-style-thick: 3px solid $gray-light;
+$border-style-light: 1px solid $gray-light;
+$border-style-dark: 1px solid $black;
+
+/**
+ * Breakpoints
+ */
+$px350: (350/$defaultpx) + 0em;
+$px400: (400/$defaultpx) + 0em;
+$px401: (401/$defaultpx) + 0em;
+$px450: (450/$defaultpx) + 0em;
+$px500: (500/$defaultpx) + 0em;
+$px550: (550/$defaultpx) + 0em;
+$px600: (600/$defaultpx) + 0em;
+$px650: (650/$defaultpx) + 0em;
+$px651: (651/$defaultpx) + 0em;
+$px700: (700/$defaultpx) + 0em;
+$px750: (750/$defaultpx) + 0em;
+$px800: (800/$defaultpx) + 0em;
+$px850: (850/$defaultpx) + 0em;
+$px900: (900/$defaultpx) + 0em;
+$px901: (901/$defaultpx) + 0em;
+$px950: (950/$defaultpx) + 0em;
+$px1000: (1000/$defaultpx) + 0em;
+$px1050: (1050/$defaultpx) + 0em;
+$px1100: (1100/$defaultpx) + 0em;
+$px1101: (1101/$defaultpx) + 0em;
+$px1150: (1150/$defaultpx) + 0em;
+$px1200: (1200/$defaultpx) + 0em;
+$px1250: (1250/$defaultpx) + 0em;
+$px1300: (1300/$defaultpx) + 0em;
+$px1301: (1301/$defaultpx) + 0em;
+$px1400: (1400/$defaultpx) + 0em;
+$px1450: (1450/$defaultpx) + 0em;
+$px1500: (1500/$defaultpx) + 0em;
+$px1501: (1501/$defaultpx) + 0em;
+
+/**
+ * Common Breakpoints
+ */
+$small: $px400;
+$medium: $px700;
+$large: $px900;
+$xlarge: $px1100;
+$xxlarge: $px1300;
+$xxxlarge: $px1500;
+
+// uses px width / base font width to return a value in em units
+$breakpoints: (
+  xsmall:   $px350,
+  small:    $small,
+  medium:   $medium,
+  large:    $large,
+  xlarge:   $xlarge,
+  xxlarge:  $xxlarge,
+  xxxlarge: $xxxlarge
+);
+
+/**
+ * Element Specific Dimensions
+ */
+$sidebar-width: 320;
+$small-header-height: 60;
+$wide-header-height: 82;
+$split-col1: (354/$defaultpx) + 0em; // Right padding for split layout with fixed sidebar
+$split-col2: (300/$defaultpx) + 0em; // Fixed width of right column

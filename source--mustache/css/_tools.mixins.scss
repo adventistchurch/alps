@@ -1,0 +1,257 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+// ============================================================
+//
+// @source: http://alwaystwisted.com/post.php?s=2013-04-01-my-media-query-mixin
+//
+// @mixin mq($point, $IE9: false, $query1: min, $query2: width)
+// - Outputs media query with fallback no media query support
+//
+// @param $point       : pixel value for your major or minor breakpoint
+// @param $query1      : this is for either min, max, min-device, or max-device
+//                       defining the first part of the media query. Predefined
+//                       as min.
+// @param $query2      : this if for either width or height defining the second
+//                       part of the media query. Predefined as max
+// @param $IE9         : predefined as false, changing this to true would
+//                       include the IE9 conditional class of CSS
+//
+//===================================
+//
+// Example:
+//
+// .example {
+//   @include mq(320) {
+//     width: 100%;
+//   }
+// }
+//
+// ============================================================
+@mixin mq($point, $query1: min, $query2: width, $IE9: false) {
+  @if $IE9 == true{
+    .lt-ie9 & {
+      @content;
+    }
+  }
+  @media (#{$query1}-#{$query2}: $point) {
+    @content;
+  }
+}
+
+// ============================================================
+//
+// @mixin rem($property, $sizeValue)
+// -Outputs rem and fallback px values
+//
+// @param property       : font-size, padding-bottom, (any property that accepts 1 value)
+// @param sizeValue      : value in px
+//
+//===================================
+//
+// Example, rembase size is 14px:
+//
+// @include rem('font-size', 16);
+//  => font-size: 16px;
+//     font-size: 1.14286rem;
+//
+// ============================================================
+@mixin rem($property, $sizeValue: $rembase) {
+  $length: length($sizeValue);
+  @if type-of($sizeValue) == "number" {
+    #{$property}: strip-unit($sizeValue) + px;
+    #{$property}: (strip-unit($sizeValue)/$rembase) + rem;
+  } @else {
+    // Create list to append values to.
+    $allvalues: ();
+    $allvaluespx: ();
+    @each $singleValue in $sizeValue {
+      @if $singleValue == 0 or type-of($singleValue) != "number" {
+        // Append 0 as is or strings such as 'auto'.
+        $allvaluespx: append($allvaluespx, $singleValue);
+        $allvalues: append($allvalues, $singleValue);
+      } @else {
+        $allvaluespx: append($allvaluespx, $singleValue + 0px);
+        $allvalues: append($allvalues, ( strip-unit($singleValue) / $rembase) + 0rem);
+      }
+    }
+    #{$property}: $allvaluespx;
+    #{$property}: $allvalues;
+  }
+}
+
+/**
+ * Mixin for placeholder styling
+ */
+@mixin placeHolder($color) {
+  &::-webkit-input-placeholder { color: $color; }
+  &:-moz-placeholder { color: $color; }
+}
+
+/**
+ * Center-align a block level element
+ */
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
+ * Convert px to ems
+ */
+@function em($target, $context: $fontpx) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}
+
+/**
+ * Background gradient
+ */
+@mixin bg-gradient($height: 150, $top: auto, $bottom: 0, $color1: rgba(black, 0), $color2: black) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: 0;
+    @include rem(height, $height);
+    @include background-image(linear-gradient($color1, $color2 100%));
+  }
+}
+
+/**
+ * Remove the unit from a number
+ */
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+/**
+ * Better Underlines
+ */
+@mixin underline($color: $gray, $line-offset: 1.2, $line-size: 23, $bg-color: $gray) {
+  background-repeat: repeat-x;
+  background-size: #{$line-size}px #{$line-size}px;
+  //background-position: 0 #{$line-offset}em;
+  background-position: left bottom;
+  text-decoration: none;
+  //text-shadow: 3px 0 $bg-color, 2px 0 $bg-color, 1px 0 $bg-color, -1px 0 $bg-color, -2px 0 $bg-color, -3px 0 $bg-color;
+  @include linear-gradient(to top, $color 50%, rgba($color, 0) 50%);
+  background-color: transparent;
+  &:hover {
+    color: $blue;
+    @include linear-gradient(to top, darken($color, 15) 50%, rgba($color, 0) 50%);
+    background-color: transparent;
+  }
+  .lt-ie10 & { // Because old IE can't handle it
+    background: none;
+    text-decoration: underline;
+  }
+}
+
+/**
+ * General Text Styles
+ */
+@mixin text-styles {
+  font-family: $font;
+  font-size: rem(14);
+  line-height: rem(20);
+  @include mq($px900) {
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+  @media print {
+    font-size: rem(12);
+    line-height: rem(15);
+  }
+}
+
+/**
+ * Various filters
+ * https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html
+ *
+ * grayscale      ex: filter: grayscale(100%);
+ * sepia          ex: filter: sepia(100%);
+ * saturate       ex: filter: saturate(0%);
+ * hue-rotate     ex: filter: hue-rotate(45deg);
+ * invert         ex: filter: invert(100%);
+ * brightness     ex: filter: brightness(15%);
+ * contrast       ex: filter: contrast(200%);
+ * blur           ex: filter: blur(2px);
+ */
+@mixin filter($filter-type, $filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+/**
+ * Maintain aspect ratio
+ */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .ratio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/**
+ * Transition all the things
+ */
+@mixin trans {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/**
+ * Mixin scrollbar
+ */
+@mixin scrollbar($size, $primary, $secondary: lighten($primary, 25%)) {
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+  ::-webkit-scrollbar-track {
+    background: $secondary;
+  }
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $primary;
+    scrollbar-track-color: $secondary;
+  }
+}
+
+/**
+ * Function to access $verticalSpacing map
+ */
+@function verticalSpacing($key: mobile) {
+  @if map-has-key($verticalSpacing, $key) {
+    @return map-get($verticalSpacing, $key);
+  }
+  @warn "Unknown `#{$key}` in $verticalSpacing.";
+  @return null;
+}

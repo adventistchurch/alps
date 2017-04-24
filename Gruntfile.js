@@ -218,7 +218,7 @@ module.exports = function(grunt) {
         watch: {
             options: {},
             html: {
-                files: ['source/**/*.mustache', 'source/**/*.json', 'source/_data/*.json'], // Watch for changes to these html files to run htmlhint (validation) task
+                files: ['source/**/*.twig', 'source/**/*.json', 'source/_data/*.json'], // Watch for changes to these html files to run htmlhint (validation) task
                 tasks: ['shell:patternlab', 'css', 'javascript'],
                 options: {
                     spawn: false

@@ -3,7 +3,7 @@
 /*!
  * Pattern Lab Builder CLI
  *
- * Copyright (c) 2016 Dave Olsen, http://dmolsen.com
+ * Copyright (c) 2013-2014 Dave Olsen, http://dmolsen.com
  * Licensed under the MIT license
  *
  */
@@ -15,8 +15,8 @@ use \PatternLab\Timer;
 
 // check to see if json_decode exists. might be disabled in installs of PHP 5.5
 if (!function_exists("json_decode")) {
-  print "Please check that your version of PHP includes the JSON extension. It's required for Pattern Lab to run. Aborting.\n";
-  exit;
+	print "Please check that your version of PHP includes the JSON extension. It's required for Pattern Lab to run. Aborting.\n";
+	exit;
 }
 
 // set-up the project base directory
@@ -24,11 +24,11 @@ $baseDir = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR;
 
 // auto-load classes
 if (file_exists($baseDir."vendor".DIRECTORY_SEPARATOR."autoload.php")) {
-  require($baseDir."vendor".DIRECTORY_SEPARATOR."autoload.php");
+	require($baseDir."vendor".DIRECTORY_SEPARATOR."autoload.php");
 } else {
-  print "it doesn't appear that pattern lab has been set-up yet...\n";
-  print "please install pattern lab's dependencies by typing: composer install...\n";
-  exit;
+	print "it doesn't appear that pattern lab has been set-up yet...\n";
+	print "please install pattern lab's dependencies by typing: composer install...\n";
+	exit;
 }
 
 // start the timer
