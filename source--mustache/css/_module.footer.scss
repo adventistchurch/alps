@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+
+.footer {
+  text-align: center;
+}
+.footer__unify-nav-desc,
+.footer__legal {
+  padding: $pad;
+  @include mq($xlarge) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.footer__unify-nav-desc {
+  @include mq($medium) {
+    padding-top: $pad-and-half;
+    padding-bottom: $pad-and-half;
+  }
+  @include mq($xlarge) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.footer__nav-link,
+.footer__desc-text {
+  font-size: rem(13);
+  @include mq($xlarge) {
+    font-size: rem(12);
+  }
+}
+.footer__logo {
+  @include mq($large) {
+    margin-right: $space-half;
+  }
+}
+.footer__desc {
+  @include mq($large) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer__logo {
+  width: rem(50);
+  height: rem(45);
+}
+.footer__nav-item {
+  margin: rem(5);
+}
+.footer__legal__inner {
+  @include mq($large) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer__unify-copyright-address {
+  @include mq($large) {
+    text-align: left;
+  }
+}
+.footer__copyright {
+  @include mq($xlarge) {
+    display: inline-block;
+    margin-right: $space;
+  }
+}
+.footer__address {
+  @include mq($xlarge) {
+    display: inline-block;
+  }
+}

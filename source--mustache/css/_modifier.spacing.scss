@@ -1,0 +1,284 @@
+/*------------------------------------*\
+    $SPACING
+\*------------------------------------*/
+
+/**
+ * Spacing/Padding
+ */
+.pad {
+  padding: $pad;
+}
+.pad-half {
+  padding: $pad-half;
+}
+.pad-5 {
+  padding: rem(5);
+}
+.pad-5--top {
+  padding-top: rem(5);
+}
+.pad-5--btm {
+  padding-bottom: rem(5);
+}
+.pad-half--top {
+  padding-top: $pad-half;
+}
+.pad-half--btm {
+  padding-bottom: $pad-half;
+}
+.pad-half--left {
+  padding-left: $pad-half;
+}
+.pad-half--right {
+  padding-right: $pad-half;
+}
+.pad--left {
+  padding-left: $pad;
+}
+.pad--right {
+  padding-right: $pad;
+}
+.pad--btm {
+  padding-bottom: $pad;
+}
+.pad--top {
+  padding-top: $pad;
+}
+.pad-and-half {
+  padding: $pad-and-half;
+}
+.pad-and-half--btm {
+  padding-bottom: $pad-and-half;
+}
+.pad-and-half--top {
+  padding-top: $pad-and-half;
+}
+.pad-double--btm {
+  padding-bottom: $pad-double;
+}
+.pad-double--top {
+  padding-top: $pad-double;
+}
+.pad-double {
+  padding: $pad-double;
+}
+.space {
+  margin: $space;
+}
+.space-half {
+  margin: $space-half;
+}
+.space-5--btm {
+  margin-bottom: rem(5);
+}
+.space-5--top {
+  margin-top: rem(5);
+}
+.space-5--right {
+  margin-right: rem(5);
+}
+.space-5--left {
+  margin-left: rem(5);
+}
+.space--btm {
+  margin-bottom: $space;
+}
+.space--top {
+  margin-top: $space;
+}
+.space--right {
+  margin-right: $space;
+}
+.space--left {
+  margin-left: $space;
+}
+.space-half--right {
+  margin-right: $space-half;
+}
+.space-half--left {
+  margin-left: $space-half;
+}
+.space-half--btm {
+  margin-bottom: $space-half;
+}
+.space-half--top {
+  margin-top: $space-half;
+}
+.space-and-half--btm {
+  margin-bottom: $space-and-half;
+}
+.space-and-half--top {
+  margin-top: $space-and-half;
+}
+.space-and-half--left {
+  margin-left: $space-and-half;
+}
+.space-and-half--right {
+  margin-right: $space-and-half;
+}
+.space-double--btm {
+  margin-bottom: $space-double;
+}
+.space-double--top {
+  margin-top: $space-double;
+}
+
+// For more information on this spacing technique, please see:
+// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls.
+
+.spacing {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile));
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop));
+    }
+  }
+}
+.spacing--until-large {
+  & > * + * {
+    @include media('<=large') {
+      margin-top: rem(verticalSpacing(mobile));
+    }
+  }
+}
+.spacing--quarter {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)/4);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)/4);
+    }
+  }
+}
+.spacing--quarter--until-large {
+  & > * + * {
+    @include media('<=large') {
+      margin-top: rem(verticalSpacing(mobile)/4);
+    }
+  }
+}
+.spacing--half {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)/2);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)/2);
+    }
+  }
+}
+.spacing--half-until-large {
+  @include media('<=large') {
+    & > * + * {
+      margin-top: rem(verticalSpacing(mobile)/2);
+    }
+  }
+}
+.spacing--one-and-half {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*1.5);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*1.5);
+    }
+  }
+}
+.spacing--double {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*2);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*2);
+    }
+  }
+}
+.spacing--triple {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*3);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*3);
+    }
+  }
+}
+.spacing--quad {
+  & > * + * {
+    margin-top: rem(verticalSpacing(mobile)*4);
+    @include mq($large) {
+      margin-top: rem(verticalSpacing(desktop)*4);
+    }
+  }
+}
+.spacing--zero {
+  & > * + * {
+    margin-top: 0;
+  }
+}
+
+/**
+ * Padding
+ */
+.padding {
+  padding: rem(verticalSpacing(mobile));
+  @include media('>large') {
+    padding: rem(verticalSpacing(desktop));
+  }
+}
+.padding-top {
+    padding-top: rem(verticalSpacing(mobile));
+    @include media('>large') {
+        padding-top: rem(verticalSpacing(desktop));
+    }
+}
+.padding-top--double {
+    padding-top: rem(verticalSpacing(mobile)*2);
+    @include media('>large') {
+        padding-top: rem(verticalSpacing(desktop)*2);
+    }
+}
+.padding-bottom {
+    padding-bottom: rem(verticalSpacing(mobile));
+    @include media('>large') {
+        padding-bottom: rem(verticalSpacing(desktop));
+    }
+}
+.padding--half {
+    padding: rem(verticalSpacing(mobile)/2);
+    @include media('>large') {
+        padding: rem(verticalSpacing(desktop)/2);
+    }
+}
+.padding--double {
+    padding: rem(verticalSpacing(mobile)*2);
+    @include media('>large') {
+        padding: rem(verticalSpacing(desktop)*2);
+    }
+}
+
+/**
+ * Remove spacing/padding
+ */
+.no-space {
+  margin: 0;
+}
+.no-space--btm {
+  margin-bottom: 0;
+}
+.no-space--top {
+  margin-top: 0;
+}
+.no-space--right {
+  margin-right: 0;
+}
+.no-space--left {
+  margin-left: 0;
+}
+.no-pad {
+  padding: 0;
+}
+.no-pad--right {
+  padding-right: 0;
+}
+.no-pad--left {
+  padding-left: 0;
+}
+.no-pad--btm {
+  padding-bottom: 0;
+}
+.no-pad--top {
+  padding-top: 0;
+}

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    $SITE MAIN
+\*------------------------------------*/
+
+body {
+  background: $white;
+  font: 400 100%/1.3 $font-sans;
+  -webkit-text-size-adjust: 100%;
+  color: $body-color;
+  overflow-x: hidden;
+}
+// When fonts are loaded.
+// .wf-active body {
+//   font-family: $font;
+// }

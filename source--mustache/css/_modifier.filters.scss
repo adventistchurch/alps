@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    $FILTER STYLES
+\*------------------------------------*/
+
+/**
+ * Filters
+ */
+.filter--saturate {
+  @include filter(saturate, 100%);
+  @include trans;
+  &:hover {
+    @include filter(saturate, 150%);
+  }
+}
+.filter--saturate-x2 {
+  &:hover {
+    @include filter(saturate, 250%);
+  }
+}
+.filter--grayscale {
+  @include filter(grayscale, 100%);
+}
+.filter--sepia {
+  @include filter(sepia, 100%);
+}
+
+
+/**
+ * Blend Modes
+ */
+.blend-mode--multiply {
+  background-blend-mode: multiply;
+  position: relative;
+  .no-backgroundblendmode & {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, .5);
+    }
+  }
+}

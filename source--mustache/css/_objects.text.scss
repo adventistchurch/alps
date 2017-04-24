@@ -1,0 +1,596 @@
+/*------------------------------------*\
+    $TEXT TYPES
+\*------------------------------------*/
+
+/**
+ * Dek
+ */
+.dek {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Kicker/Eyebrow
+ */
+.kicker {
+  font-size: rem(11);
+  line-height: 1;
+  margin-bottom: rem(8);
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: $blue;
+  text-transform: uppercase;
+}
+
+/**
+ * Citation
+ */
+.citation {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: $font-tertiary;
+  float: right;
+}
+
+/**
+ * Text Alignment
+ */
+.align--right {
+  text-align: right;
+}
+.center,
+.align--center {
+  text-align: center;
+}
+.align--left {
+  text-align: left;
+}
+.align--right--at-medium {
+  @include media('>medium') {
+    text-align: right;
+  }
+}
+
+/**
+ * Caption
+ */
+.caption {
+  line-height: 1.35;
+}
+
+/**
+ * Byline
+ */
+.byline {
+}
+
+/**
+ * Credits Section
+ */
+.credits {
+}
+
+/**
+ * No Wrapping
+ */
+.no-wrap {
+  white-space: nowrap;
+}
+
+/**
+ * Font Families
+ */
+.font--primary {
+  font-family: $font;
+}
+.font--secondary {
+  font-family: $font-secondary;
+}
+.font--tertiary {
+  font-family: $font-tertiary;
+}
+.font--monospace {
+  font-family: $monospace;
+}
+
+/**
+ * Primary type styles
+ */
+
+// X-Large Type - primary
+@mixin font--primary--xl() {
+  font-family: $font;
+  font-size: rem(26);
+  line-height: 1;
+  font-weight: normal;
+  @include media('>large') {
+    font-size: rem(36);
+    line-height: rem(40);
+  }
+}
+.font--primary--xl {
+  @include font--primary--xl;
+}
+
+// Large Type - primary
+@mixin font--primary--l() {
+  font-family: $font;
+  font-size: rem(22);
+  line-height: rem(26);
+  font-weight: normal;
+  @include media('>large') {
+    font-size: rem(30);
+    line-height: rem(36);
+  }
+}
+.font--primary--l {
+  @include font--primary--l;
+}
+
+// Medium Type - primary
+@mixin font--primary--m() {
+  font-family: $font;
+  font-size: rem(18);
+  line-height: rem(24);
+  font-weight: normal;
+  @include media('>large') {
+    font-size: rem(22);
+    line-height: rem(30);
+  }
+}
+.font--primary--m {
+  @include font--primary--m;
+}
+
+// Small Type - primary
+@mixin font--primary--s() {
+  font-family: $font;
+  font-size: rem(14);
+  line-height: rem(17);
+  @include media('>large') {
+    font-size: rem(15);
+    line-height: rem(21);
+  }
+}
+.font--primary--s {
+  @include font--primary--s;
+}
+
+// X-Small Type - primary
+@mixin font--primary--xs() {
+  font-family: $font;
+  font-size: rem(13);
+  line-height: rem(17);
+}
+.font--primary--xs {
+  @include font--primary--xs;
+}
+
+
+/**
+ * Secondary type styles
+ */
+
+// XLarge type - secondary
+@mixin font--secondary--xl() {
+  font-family: $font-secondary;
+  font-size: rem(24);
+  font-weight: 600;
+  line-height: rem(28);
+  @include media('>medium') {
+    font-size: rem(30);
+    line-height: rem(34);
+  }
+  @include media('>large') {
+    font-size: rem(38);
+    line-height: rem(42);
+  }
+}
+.font--secondary--xl {
+  @include font--secondary--xl;
+}
+
+// Large type - secondary
+@mixin font--secondary--l() {
+  font-family: $font-secondary;
+  font-size: rem(22);
+  line-height: rem(26);
+  font-weight: 600;
+  text-transform: uppercase;
+  @include media('>large') {
+    font-size: rem(28);
+    line-height: rem(32);
+  }
+}
+.font--secondary--l {
+  @include font--secondary--l;
+}
+
+// Medium type - secondary
+@mixin font--secondary--m() {
+  font-family: $font-secondary;
+  font-size: rem(16);
+  line-height: rem(20);
+  font-weight: normal;
+  @include media('>medium') {
+    font-size: rem(18);
+    line-height: rem(22);
+  }
+  @include media('>large') {
+    font-size: rem(20);
+    line-height: rem(24);
+  }
+}
+.font--secondary--m {
+  @include font--secondary--m;
+}
+
+// Small type - secondary
+@mixin font--secondary--s() {
+  font-family: $font-secondary;
+  font-size: rem(13);
+  line-height: rem(20);
+  @include media('>large') {
+    font-size: rem(15);
+  }
+}
+.font--secondary--s {
+  @include font--secondary--s;
+}
+
+// X-Small type - secondary
+@mixin font--secondary--xs() {
+  font-family: $font-secondary;
+  font-size: rem(11);
+  line-height: rem(16);
+}
+.font--secondary--xs {
+  @include font--secondary--xs;
+}
+
+
+/**
+ * Tertiary type styles
+ */
+
+// X-Large Type - tertiary
+@mixin font--tertiary--xl() {
+  font-family: $font-tertiary;
+  font-size: rem(28);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(44);
+  }
+  @include media('>large') {
+    font-size: rem(55);
+  }
+}
+.font--tertiary--xl {
+  @include font--tertiary--xl;
+}
+
+// Large Type - tertiary
+@mixin font--tertiary--l() {
+  font-family: $font-tertiary;
+  font-size: rem(24);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(28);
+    line-height: rem(32);
+  }
+}
+.font--tertiary--l {
+  @include font--tertiary--l;
+}
+
+// Medium Type - tertiary
+@mixin font--tertiary--m() {
+  font-family: $font-tertiary;
+  font-size: rem(20);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(24);
+    line-height: rem(28);
+  }
+}
+.font--tertiary--m {
+  @include font--tertiary--m;
+}
+
+
+/**
+ * Monospace  type styles
+ */
+
+// X-Large Type - monospace
+@mixin font--monospace--xl() {
+  font-family: $font-monospace;
+  font-size: rem(28);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(44);
+  }
+  @include media('>large') {
+    font-size: rem(55);
+  }
+}
+.font--monospace--xl {
+  @include font--monospace--xl;
+}
+
+// Large Type - monospace
+@mixin font--monospace--l() {
+  font-family: $font-monospace;
+  font-size: rem(24);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(28);
+    line-height: rem(32);
+  }
+}
+.font--monospace--l {
+  @include font--monospace--l;
+}
+
+// Medium Type - monospace
+@mixin font--monospace--m() {
+  font-family: $font-monospace;
+  font-size: rem(20);
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  @include media('>medium') {
+    font-size: rem(24);
+    line-height: rem(28);
+  }
+}
+.font--monospace--m {
+  @include font--monospace--m;
+}
+
+
+// Small type - monospace
+@mixin font--monospace--s() {
+  font-family: $font-monospace;
+  font-size: rem(13);
+  line-height: rem(20);
+  @include media('>large') {
+    font-size: rem(15);
+  }
+}
+.font--monospace--s {
+  @include font--monospace--s;
+}
+
+// X-Small type - monospace
+@mixin font--monospace--xs() {
+  font-family: $font-monospace;
+  font-size: rem(11);
+  line-height: rem(16);
+}
+.font--monospace--xs {
+  @include font--monospace--xs;
+}
+
+/**
+ * Font Weights
+ */
+.fw--800 {
+ font-weight: 800;
+}
+.fw--600 {
+  font-weight: 600;
+}
+.fw--400 {
+  font-weight: 400;
+}
+
+/**
+ * Text Transforms
+ */
+.upper {
+  text-transform: uppercase;
+}
+.lower {
+  text-transform: lowercase;
+}
+
+/**
+ * Text Decorations
+ */
+.td--u {
+  text-decoration: underline;
+}
+
+/**
+ * Passages of Text
+ */
+.text {
+  font-family: $font;
+  > p,
+  > ul li,
+  > ol li,
+  > dl dd,
+  > dl dt,
+  > blockquote p {
+    font-size: rem(16);
+    line-height: 1.6;
+  }
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5 {
+    font-family: $font-secondary;
+    font-weight: 600;
+    margin-bottom: rem(-5);
+    padding-top: $pad-half;
+    @include mq($large) {
+      margin-bottom: rem(-15);
+    }
+  }
+  > h1,
+  > h2 {
+    font-size: rem(26);
+  }
+  > h3 {
+    font-size: rem(22);
+  }
+  > p:empty,
+  > h2:empty,
+  > h3:empty {
+    display: none;
+  }
+  > ul {
+    list-style: disc;
+    padding-left: $space;
+    margin-bottom: $space;
+    li {
+      margin-bottom: $space-half;
+    }
+    ul, ol {
+      list-style: disc;
+      padding-top: rem(6);
+      margin-bottom: 0;
+      padding-left: $space;
+    }
+    ol {
+      list-style: decimal;
+    }
+  }
+  > ol {
+    list-style: decimal;
+    padding-left: $space;
+    margin-bottom: $space;
+    li {
+      margin-bottom: $space-half;
+    }
+    ol, ul {
+      list-style: decimal;
+      padding-top: rem(6);
+      margin-bottom: 0;
+      padding-left: $space;
+    }
+    ul {
+      list-style: disc;
+    }
+  }
+  > ul,
+  > ol {
+    @include mq($px800, max) {
+      padding-left: $space;
+    }
+  }
+  > blockquote:not([class*="quote--"]) {
+    clear: both;
+    font-size: rem(22);
+    padding-top: $pad;
+    padding-bottom: $pad;
+    p {
+      line-height: 1.3;
+      font-size: rem(24);
+      font-weight: 300;
+      font-style: normal;
+      font-family: $font;
+      @include media('>medium') {
+        font-size: rem(28);
+      }
+    }
+  }
+  > [class*="quote--"] {
+    & > * + * {
+      margin-top: rem(verticalSpacing(mobile));
+      @include mq($large) {
+        margin-top: rem(verticalSpacing(desktop));
+      }
+    }
+    p {
+      display: block;
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  > .quote--inline {
+    border-left-width: rem(6);
+    border-left-style: solid;
+  }
+  > .quote--extended {
+    background-color: $beige;
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+    padding-left: 0;
+    padding-right: 0;
+    @include media('>medium') {
+      padding-top: rem(50);
+      padding-bottom: rem(50);
+    }
+    @include media('>xlarge') {
+      padding-top: rem(70);
+      padding-bottom: rem(70);
+    }
+    h2, h3, h4, h5 {
+      @include font--secondary--m;
+    }
+    p {
+      font-style: normal;
+    }
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  code,
+  pre {
+    font-size: 125%;
+  }
+}
+
+/**
+ * Smaller Text Version (non-article body, mostly for block deks)
+ */
+.text--s {
+  > p,
+  > ul li,
+  > ol li,
+  > dl dd,
+  > dl dt,
+  > blockquote p {
+    line-height: 1.4;
+  }
+}
+
+
+/**
+ * Letter Spacing
+ */
+.ls {
+  letter-spacing: 1px;
+}
+
+/**
+ * Line Heights
+ */
+.lh--1 {
+  line-height: 1;
+}
+.lh--0 {
+  line-height: 0;
+}
+
+.token {
+  line-height: 1.5;
+}

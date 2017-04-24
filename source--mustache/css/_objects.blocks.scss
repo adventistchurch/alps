@@ -1,0 +1,96 @@
+/*------------------------------------*\
+    $BLOCKS
+\*------------------------------------*/
+
+// Block
+.block__image {
+  display: block;
+}
+.block__image-wrap {
+  > * {
+    width: 100%;
+  }
+  .round {
+    width: auto;
+  }
+}
+
+@mixin block-row {
+  display: flex;
+  .block__image-wrap {
+    width: 30%;
+    max-width: 300px;
+    text-align: right;
+  }
+  .block__content {
+    width: 70%;
+    padding-left: $pad;
+    align-self: center;
+    .rtl & {
+      padding-left: 0;
+      padding-right: $pad;
+    }
+  }
+}
+
+/**
+ * Block row (block with left thumb and right text when space allows)
+ */
+.block__row {
+  @include media('>small') {
+    @include block-row;
+  }
+}
+// Horizontal block between 'small' and 'medium' viewports.
+.block__row--small-to-medium {
+  @include media('>small', '<=medium') {
+    @include block-row;
+  }
+}
+// Horizontal block between 'small' and 'large' viewports.
+.block__row--small-to-large {
+  @include media('>small', '<=large') {
+    @include block-row;
+  }
+}
+
+// Blocks that breakout of of their layout.
+.block--breakout {
+  @include media('>large') {
+    margin-top: -$space;
+    margin-left: -$space;
+    margin-right: -$space;
+  }
+  .shift--reversed & {
+    margin-top: 0;
+  }
+
+}
+
+/**
+ * Story Block
+ */
+.story-block__image-wrap {
+  width: rem(130);
+  height: rem(130);
+  @include media('>small') {
+    float: left;
+  }
+}
+.story-block__content {
+  @include media('>small') {
+    padding-left: rem(150);
+  }
+  @include media('>medium') {
+    padding-left: rem(160);
+  }
+}
+.story-block__text-image-wrap {
+  max-width: rem(200);
+  line-height: 1;
+  display: block;
+  @include media('>medium') {
+    float: right;
+    margin-left: $space;
+  }
+}
