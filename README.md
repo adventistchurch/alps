@@ -55,6 +55,7 @@ Make sure you are running your terminal/command line session as administrator. T
 - [About Pattern Lab](http://patternlab.io/about.html)
 - [Documentation](http://patternlab.io/docs/index.html)
 - [Demo](http://demo.patternlab.io/)
+
 ![license](https://img.shields.io/github/license/pattern-lab/patternlab-php.svg)
 [![Packagist](https://img.shields.io/packagist/v/pattern-lab/edition-mustache-standard.svg)](https://packagist.org/packages/pattern-lab/edition-mustache-standard) [![Gitter](https://img.shields.io/gitter/room/pattern-lab/php.svg)](https://gitter.im/pattern-lab/php)
 
