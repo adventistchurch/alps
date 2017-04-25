@@ -1,0 +1,535 @@
+/*------------------------------------*\
+    $NET-ADVENTIST-OVERRIDES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    Basic overrides
+\*------------------------------------*/
+
+li ul {
+  margin: 0;
+}
+
+address {
+  margin: 0;
+}
+
+h3.widgettitle {
+  padding: 0;
+}
+.widgetdiv4 div {
+  padding: 0;
+}
+.widgetdiv1 {
+  width: auto;
+}
+
+a {
+  @extend .theme--secondary-text-color;
+}
+
+ul li.media_asset {
+  height: auto;
+  padding-bottom: 4px;
+}
+
+
+
+/*------------------------------------*\
+    Header (main menu, etc)
+\*------------------------------------*/
+
+#site-search {
+  @extend .search-form;
+  #search {
+    @extend .search-form__input[type="search"];
+    @extend .font--secondary--s;
+    margin-bottom: 2px;
+  }
+}
+
+
+.logo__link--square,
+.logo__link--horiz {
+  height: auto;
+  padding: 0;
+  img {
+    padding: 0 1.125rem;
+  }
+}
+
+.logo__link--square img {
+  min-height: 127px;
+}
+
+.logo--with-text.logo__link--square,
+.logo--with-text.logo__link--horiz {
+  padding-bottom: 0;
+}
+.logo__link--square .logo__text,
+.logo__link--horiz .logo__text {
+  color: #fff;
+  height: auto;
+  position: relative;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 43.76em) {
+  .logo__link--horiz .logo {
+    height: auto;
+  }
+}
+.header.hide-nav {
+  top: -12rem;
+}
+
+
+
+/*------------------------------------*\
+    Adventist ID styles
+\*------------------------------------*/
+
+
+.widget-adventist-id-adventist-beliefs {
+
+  h3.widgettitle {
+    background-image: url(../images/icon-list.svg);
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 28px;
+  }
+}
+
+.widget-adventist-id-living-the-adventist-life,
+.widget-adventist-id-adventist-beliefs  {
+  h3.widgettitle {
+    @extend .font--tertiary--l;
+  }
+  .go {
+    display: block;
+    text-indent: -9999px;
+    width: 19px;
+    height: 16px;
+    background: url(../images/icon-go.svg);
+    background-size: 19px 16px;
+    margin: 0.46875rem auto 0;
+  }
+  .btn-go {
+    background-image: url(../images/icon-go.svg);
+    background-size: 19px 16px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 28px;
+    .theme--warm & {
+      border-right: solid 16px #ffa92d;
+      &:hover {
+        border-right: solid 16px #2d83ff;
+      }
+    }
+    .theme--cool & {
+      border-right: solid 16px #4d7549;
+      &:hover {
+        border-right: solid 16px #714975;
+      }
+    }
+  }
+
+  .btn {
+    @extend .btn;
+    @extend .theme--secondary-background-color;
+  }
+
+
+  .widgetcontent {
+
+    > * {
+      margin-top: 0.9375rem;
+    }
+
+    li a {
+      background-size: 38px;
+      background-position: top center;
+      background-repeat: no-repeat;
+      padding-top: 48px;
+      display: block;
+      @extend p;
+    }
+  }
+
+  #adventistSpirituality a {
+    .theme--warm & {
+      background-image: url(../images/icon-spirituality--warm.svg);
+    }
+    .theme--cool & {
+      background-image: url(../images/icon-spirituality--cool.svg);
+    }
+  }
+  #adventistVitality a {
+    .theme--warm & {
+      background-image: url(../images/icon-vitality--warm.svg);
+    }
+    .theme--cool & {
+      background-image: url(../images/icon-vitality--cool.svg);
+    }
+  }
+  #adventistService a {
+    .theme--warm & {
+      background-image: url(../images/icon-service--warm.svg);
+    }
+    .theme--cool & {
+      background-image: url(../images/icon-service--cool.svg);
+    }
+  }
+
+  .adventist-life-callout {
+    text-align: center;
+
+    margin-top: 0;
+
+    @extend .pad;
+
+    a, a:hover {
+      @extend .white;
+    }
+
+    strong {
+      display: block;
+      margin: 0.46875rem 0;
+
+      @extend .theme--secondary-text-color;
+      @extend .font--secondary--m;
+      @extend .upper;
+    }
+  }
+
+  @media (min-width: 43.76em) {
+    .adventist-life-callout {
+      float: left;
+      width: 33.3333%;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 0;
+    }
+  }
+
+}
+
+
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.creds {
+  a {
+    @extend .hover;
+    @extend .link--brown-light;
+  }
+  p {
+    font-size: .6875rem;
+  }
+}
+
+
+
+/*------------------------------------*\
+    Widgets
+\*------------------------------------*/
+
+h3.widgettitle {
+  border: none;
+  @extend .theme--secondary-text-color;
+  @extend .font--tertiary--m;
+}
+
+.default .WidgetContainer {
+  // every div that is a direct decendent of .WidgetContiner is an individual widget
+  > div {
+    margin-top: 2em;
+    @extend .can-be--dark-dark;
+  }
+  .widgetdiv4 {
+    @extend .spacing;
+  }
+  h4 a {
+    @extend .font--secondary--m;
+  }
+  a {
+    @extend .font--secondary--s;
+    @extend .theme--secondary-text-color;
+  }
+}
+
+
+
+/*------------------------------------*\
+    Sidebars
+\*------------------------------------*/
+
+#rightsidebar,
+#leftsidebar {
+  // every div that is a direct decendent of a WidgetContiner (#rightsidebar, #leftsidebar) is an individual widget
+  > div {
+    @extend .pad--secondary;
+  }
+}
+&#sidebar_breakout {
+  >div {
+    @extend .pad--secondary;
+    @extend .column__secondary;
+    @extend .bg--tan;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    &:first-child {
+      padding-top: 2.5rem;
+    }
+    &:last-child {
+      padding-bottom: 2.5rem;
+    }
+  }
+  @extend .block--breakout;
+  margin-bottom: 1.25rem;
+}
+&#hero_unit {
+  > div {
+    padding: 0;
+  }
+}
+.dark #sidebar_breakout {
+  background-color: $dark-dark;
+}
+
+#hero_unit {
+  .widgetdiv1 {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/*------------------------------------*\
+    Home callout - displays above
+    the main content area in the
+    home layouts.
+\*------------------------------------*/
+
+#home-callout {
+  color: #fff;
+
+  .two-thirds-left {
+    @extend .bg--medium-brown;
+    > * > * {
+      @extend .pad-double;
+    }
+  }
+  .third-right {
+    @extend .bg--brown;
+    > * > * {
+      @extend .pad-double;
+    }
+  }
+  h3.widgettitle {
+    color: #fff;
+  }
+
+  @media (min-width: 43.76em) {
+    .two-thirds-left {
+      float: left;
+      width: 68%;
+    }
+    .third-right {
+      float: left;
+      width: 32%;
+    }
+  }
+}
+
+
+
+/*------------------------------------*\
+    Main page layouts
+\*------------------------------------*/
+
+.no--containers,
+.home--no--sidebar,
+.full-width-hero {
+  .article__body {
+    max-width: none;
+  }
+}
+
+#article {
+  @extend .text;
+  @extend .spacing;
+  p {
+    @extend p;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+
+
+/*------------------------------------*\
+    Slideshow - thirds
+\*------------------------------------*/
+
+.thirds-hero {
+  .ss-slide-scroller {
+    float: left;
+    width: 68%;
+  }
+  .ss-text-scroller {
+    float: right;
+    width: 32%;
+    left: auto;
+  }
+
+  .ss-link-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .ss-text-box {
+    background: transparent;
+    padding-left: 2.5rem;
+  }
+  .ss-slide-title {
+    @extend .theme--primary-text-color;
+    @extend .font--tertiary--l;
+  }
+  .ss-slide-description {
+    @extend p;
+    color: #575a5c !important;
+  }
+
+  .ss-controls-wrapper {
+    bottom: 1.25rem;
+    left: 2rem;
+  }
+
+  .ss-controls {
+    left: 0;
+  }
+
+  .ss-button {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0.1875rem solid #fff;
+    background-color: transparent;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    margin-left: 0.625rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3), inset 0 0 0.1875rem rgba(0, 0, 0, 0.3);
+    margin-right: 0;
+  }
+  .ss-button.active {
+    background-color: #fff;
+    box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+}
+
+
+
+/*------------------------------------*\
+    Slideshow - full-width
+\*------------------------------------*/
+
+.full-width-hero #hero_unit {
+
+  .ss-controls-wrapper {
+    left: auto;
+    width: 100%
+  }
+  .ss-controls {
+    left: 0;
+    max-width: 71.875rem;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  .ss-text-box {
+    background: transparent;
+  }
+
+
+
+  .widgetdiv1 {
+    margin-bottom: 0;
+  }
+  .ss-slide-scroller {
+    width: 100%;
+  }
+  .ss-text-scroller {
+    width: 100%;
+
+    .ss-content {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .ss-link-wrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin: 0 auto;
+
+    max-width: 71.875rem;
+
+    .ss-text-box {
+      max-width: 37.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .ss-slide-title {
+    @extend .theme--primary-transparent-background-color;
+    color: #fff;
+    padding: 0.5rem 0.625rem;
+    margin: 0;
+    display: inline-block;
+
+    font-family: "Oswald", "Trade Gothic", "Helvetica", "Arial", sans-serif;
+    font-size: 1.75rem;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  @media (min-width: 43.76em) {
+    .ss-slide-title {
+      font-size: 2.75rem;
+    }
+  }
+  @media (min-width: 56.26em) {
+    .ss-slide-title {
+      font-size: 3.4375rem;
+    }
+  }
+  .ss-slide-description {
+    color: #fff !important;
+    padding: 0.5rem 0.625rem;
+    @extend .theme--primary-transparent-background-color;
+  }
+  .ss-slide-title,
+  .ss-slide-description {
+    &:empty {
+      padding: 0;
+    }
+  }
+
+}
