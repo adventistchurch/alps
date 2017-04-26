@@ -1,0 +1,14 @@
+{
+  "media_block_default": {
+    "block_inner_class": "block__row",
+    "title": "Fusce interdum purus est",
+    "img": {
+      "src": "//placehold.it/300x300",
+      "alt": "Media Block Image Alt Left"
+    },
+    "datetime": false,
+    "date": false,
+    "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
+    "cta": "Mauris sit amet"
+  }
+}

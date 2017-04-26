@@ -813,6 +813,9 @@
   "button_default": {
     "button_text": "Button Text"
   },
+  "button_submit": {
+    "button_text": "Submit"
+  },
   "content_filter": {
     "radio": [
       {

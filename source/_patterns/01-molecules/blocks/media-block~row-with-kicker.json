@@ -1,0 +1,16 @@
+{
+  "media_block_default": {
+    "block_inner_class": "block__row",
+    "kicker": "Tincidunt",
+    "title": "Cras at sem at felis rhoncus",
+    "block_img_class": "round ",
+    "img": {
+      "src": "//placehold.it/150x150",
+      "alt": "Media Block Image Alt Left Round"
+    },
+    "datetime": false,
+    "date": false,
+    "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
+    "cta": "Cras at sem"
+  }
+}

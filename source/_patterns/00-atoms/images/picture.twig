@@ -1,19 +1,19 @@
-{{# picture }}
+{% if picture %}
 <picture class="picture">
   <!--[if IE 9]><video style="display: none;"><![endif]-->
-  {{# has_break_xl }}
-    <source srcset="{{{ img.src_xl }}}" media="(min-width: {{ img_break_xl }}px)">
-  {{/ has_break_xl }}
-  {{# has_break_l }}
-    <source srcset="{{{ img.src_l }}}" media="(min-width: {{ img_break_l }}px)">
-  {{/ has_break_l }}
-  <source srcset="{{{ img.src_m }}}" media="(min-width: {{ img_break_m }}px)">
+  {% if picture.has_break_xl %}
+    <source srcset="{{ picture.img.src_xl }}" media="(min-width: {{ picture.img_break_xl }}px)">
+  {% endif %}
+  {% if picture.has_break_l %}
+    <source srcset="{{ picture.img.src_l }}" media="(min-width: {{ picture.img_break_l }}px)">
+  {% endif %}
+  <source srcset="{{ picture.img.src_m }}" media="(min-width: {{ picture.img_break_m }}px)">
   <!--[if IE 9]></video><![endif]-->
-  {{^ is_lazy_slide }}
-    <img itemprop="image" srcset="{{{ img.src_s }}}" alt="{{ img.alt }}">
-  {{/ is_lazy_slide }}
-  {{# is_lazy_slide }}
-    <img itemprop="image" data-lazy="{{{ img.src_s }}}" alt="{{ img.alt }}">
-  {{/ is_lazy_slide }}
+
+  {% if picture.is_lazy_slide %}
+    <img itemprop="image" data-lazy="{{ picture.img.src_s }}" alt="{{ picture.img.alt }}">
+  {% else %}
+    <img itemprop="image" srcset="{{ picture.img.src_s }}" alt="{{ picture.img.alt }}">
+  {% endif %}
 </picture>
-{{/ picture }}
+{% endif %}
