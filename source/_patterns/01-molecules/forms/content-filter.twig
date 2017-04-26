@@ -1,4 +1,4 @@
-{{# content_filter }}
+{% if content_filter %}
 <div class="filter spacing--half">
   <div class="filter-options">
     <h3 class="font--tertiary--m theme--secondary-text-color upper">Search</h3>
@@ -7,21 +7,21 @@
   <form class="content-filter-form filter-form">
     <div class="filter-items filter-items__checkbox spacing--quarter">
         <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Filter</h3>
-      {{# checkbox }}
+      {% if content_filter.checkbox %}
         <div class="filter-item__checkbox form-group">
-          <input id="checkbox-{{{ id }}}" type="checkbox" name="checkbox" value="{{{ label }}}" />
-          <label for="checkbox-{{{ id }}}" class="theme--primary-text-color">{{{ label }}}</label>
+          <input id="checkbox-{{{ content_filter.checkbox.id }}}" type="checkbox" name="checkbox" value="{{{ content_filter.checkbox.label }}}" />
+          <label for="checkbox-{{{ content_filter.checkbox.id }}}" class="theme--primary-text-color">{{{ content_filter.checkbox.label }}}</label>
         </div>
-      {{/ checkbox }}
+      {% endif %}
     </div>
     <div class="filter-items filter-items__radio spacing--quarter">
       <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Sort By</h3>
-      {{# radio }}
+      {% if content_filter.radio %}
         <div class="filter-item__radio form-group">
-          <input id="radio-{{{ id }}}" type="radio" name="radio" value="{{{ label }}}" />
-          <label for="radio-{{{ id }}}" class="theme--primary-text-color">{{{ label }}}</label>
+          <input id="radio-{{ content_filter.radio.id }}" type="radio" name="radio" value="{{ content_filter.radio.label }}" />
+          <label for="radio-{{ content_filter.radio.id }}" class="theme--primary-text-color">{{ content_filter.radio.label }}</label>
         </div>
-      {{/ radio }}
+      {% endif %}
     </div>
   </form>
   <form action="" role="search" method="get" class="filter-search">
@@ -33,4 +33,4 @@
     </fieldset>
   </form> <!-- /.search-form -->
 </div>
-{{/ content_filter }}
+{% endif %}
