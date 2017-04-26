@@ -1,14 +1,14 @@
 {% if content_carousel %}
 <div class="carousel content-carousel ovh">
   <div class="carousel__inner content-carousel__slides {{ content_carousel.content_carousel_class }}">
-    {% if content_carousel.content_carousel_slides %}
+    {% for content_carousel_slides in content_carousel %}
       <div class="content-carousel__item spacing--half pad">
-        <h3 class="content-carousel__heading font--secondary--m theme--primary-text-color">{{ content_carousel.heading }}</h3>
+        <h3 class="content-carousel__heading font--secondary--m theme--primary-text-color">{{ content_carousel_slides.heading }}</h3>
         <div class="content-carousel__description">
-          <p>{{ content_carousel.description }}</p>
+          <p>{{ content_carousel_slides.description }}</p>
         </div>
       </div> <!-- /.content-carousel__item -->
-    {% endif %}
+    {% endfor %}
   </div> <!-- /.content-carousel__slides -->
 
   {% if not no_arrows %}
