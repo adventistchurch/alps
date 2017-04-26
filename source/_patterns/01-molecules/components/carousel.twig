@@ -1,13 +1,13 @@
 {% if carousel %}
 <div class="carousel rel {{ carousel.carousel_outer_class }}">
   <div class="carousel__slides {{ carousel.carousel_class }}">
-    {% if carousel.slides %}
-      {% if carousel.slides2column %}
+    {% for slides in carousel %}
+      {% if slides.slides2column %}
         {% include molecules-slide-2-column %}
       {% else %}
         {% include molecules-slide %}
       {% endif %}
-    {% endif %}
+    {% endfor %}
   </div> <!-- /.carousel__slides -->
 
   {% if not carousel.no_arrows %}
