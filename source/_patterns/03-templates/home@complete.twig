@@ -1,0 +1,29 @@
+<div class="content cf has-aside" role="document">
+  {% include 'organisms-header' %}
+  <main class="main can-be--dark-dark" role="main">
+    {% include 'organisms-hero-carousel' %}
+    <div class="layout-container full--until-large">
+    {% if split-callout %}
+      {% include 'organisms-split-callout' %}
+    {% endif %}
+      <div class="flex-container cf">
+        <div class="shift-left--fluid column__primary bg--white can-be--dark-light no-pad--btm">
+          {% if has_short_body %}
+            {% include 'organisms-body-content-short' %}
+          {% else %}
+            {% include 'organisms-body-content' %}
+          {% endif %}
+        </div> <!-- /.shift-left--fluid -->
+        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+          {% if breakout_block %}
+            {% include 'molecules-media-block' %}
+          {% endif %}
+          <div class="column__secondary can-be--dark-dark">
+            {% include 'organisms-aside' %}
+          </div>
+        </div> <!-- /.shift-right--fluid -->
+      </div> <!-- /.flex-container -->
+    </div> <!-- /.layout-container -->
+  </main> <!-- /.main -->
+  {% include 'organisms-footer' %}
+</div> <!-- /.content -->

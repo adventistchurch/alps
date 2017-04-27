@@ -1,0 +1,10 @@
+{% if article_header %}
+<header class="article__header article__flow spacing--quarter">
+  <h1 class="font--secondary--xl theme--secondary-text-color">{{ article_header.heading  | raw}}</h1>
+  <div class="spacing--half">
+    {% if article_header.subheading %}<h1 class="font--secondary--m">{{ article_header.subheading | raw}}</h1>{% endif %}
+    {% include 'molecules-share-tools' with article_header  %}
+  </div>
+  {% include 'molecules-article-meta' with article_header %}
+</header> <!-- /.article__header -->
+{% endif %}
