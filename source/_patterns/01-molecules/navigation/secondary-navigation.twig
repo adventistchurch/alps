@@ -1,19 +1,21 @@
-{{# secondary_nav }}
+{% if secondary_nav %}
 <nav class="secondary-nav toggled-element" id="secondary-nav" role="navigation">
   <ul class="secondary-nav__list">
-    {{# items }}
-    <li class="secondary-nav__list-item rel"><a class="secondary-nav__link theme--secondary-text-color {{# subnav }} js-toggle-parent {{/ subnav }}" href="{{ url }}">
-      {{# link_before }}<span class="secondary-nav__before-link">{{{ link_before }}}</span>{{/ link_before }}
-      <strong>{{{ text }}}</strong> {{# subnav }}<span class="subnav__arrow dib arrow--down va--middle"></span>{{/ subnav }}</a>
-      {{# subnav }}
-        <ul class="secondary-nav__subnav__list theme--secondary-background-color">
-          {{# items }}
-            <li class="secondary-nav__subnav__list-item"><a class="secondary-nav__subnav__link theme--secondary-background-hover-color--at-medium {{# active_link }} active {{/ active_link }}" href="{{ url }}">{{# active_link }}<span class="icon icon--xs icon__check">{{> atoms-icon-check }}</span>{{/ active_link }} {{{ text }}}</a></li>
-          {{/ items }}
-        </ul> <!-- /.subnav -->
-      {{/ subnav }}
+    {% for items in secondary_nav %}
+      <li class="secondary-nav__list-item rel"><a class="secondary-nav__link theme--secondary-text-color {% if items.subnav %} js-toggle-parent {% endif %}" href="{{ url }}">
+        {% if items.link_before %}<span class="secondary-nav__before-link">{{ items.link_before }}</span>{% endif %}
+        <strong>{{ items.text }}</strong> {% if items.subnav %}<span class="subnav__arrow dib arrow--down va--middle"></span>{% endif %}</a>
+        {% if items.subnav %}
+          <ul class="secondary-nav__subnav__list theme--secondary-background-color">
+            {% for items in items.subanv %}
+              <li class="secondary-nav__subnav__list-item">
+                <a class="secondary-nav__subnav__link theme--secondary-background-hover-color--at-medium {% if items.active_link %} active {% endif %}" href="{{ url }}">{% if items.active_link %}<span class="icon icon--xs icon__check">{% include 'atoms-icon-check' %}</span>{% endif %} {{ items.text }}</a>
+              </li>
+            {% endfor %}
+          </ul> <!-- /.subnav -->
+        {% endif %}
       </li>
-    {{/ items }}
+    {% endfor %}
   </ul> <!-- /.secondary-nav__list -->
 </nav> <!-- /.secondary-nav -->
-{{/ secondary_nav }}
+{% endif %}

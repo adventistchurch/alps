@@ -9,8 +9,8 @@
         <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Filter</h3>
       {% if content_filter.checkbox %}
         <div class="filter-item__checkbox form-group">
-          <input id="checkbox-{{{ content_filter.checkbox.id }}}" type="checkbox" name="checkbox" value="{{{ content_filter.checkbox.label }}}" />
-          <label for="checkbox-{{{ content_filter.checkbox.id }}}" class="theme--primary-text-color">{{{ content_filter.checkbox.label }}}</label>
+          <input id="checkbox-{{ content_filter.checkbox.id }}}" type="checkbox" name="checkbox" value="{{ content_filter.checkbox.label }}" />
+          <label for="checkbox-{{ content_filter.checkbox.id }}}" class="theme--primary-text-color">{{ content_filter.checkbox.label }}</label>
         </div>
       {% endif %}
     </div>
