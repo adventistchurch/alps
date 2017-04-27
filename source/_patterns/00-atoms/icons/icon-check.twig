@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500"><title>Check</title><path fill="#fff" d="M427.4 10.3l-247 377-106.8-95.4-13.8-12.2-44.7 50.1L178 475.1l15.9 14.2L473.5 62.6l10.1-15.4z" class="{{ fill_class }}"/></svg>
