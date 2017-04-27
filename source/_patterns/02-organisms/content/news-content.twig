@@ -1,0 +1,57 @@
+{% if carousel %}
+  {% include 'organisms-hero-carousel' %}
+{% endif %}
+<div class="g g-2up--at-medium with-divider">
+  <div class="gi">
+    <div class="spacing">
+      <div class="spacing--half">
+        <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">Vivamus ornare</h2>
+        <hr>
+      </div>
+      {% for block in media_blocks %}
+        <div class="pad">{% include 'molecules-media-block' with block %}</div>
+        <hr>
+      {% endfor %}
+    </div>
+  </div> <!-- /.gi -->
+  <div class="gi pad-double--btm">
+    <div class="spacing">
+      <div class="spacing--half">
+        <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">Duis pretium</h2>
+        <hr>
+      </div>
+      {% if video_block %}
+        <div class="pad no-pad--btm">{% include 'molecules-media-block' with video_block %}</div>
+      {% endif %}
+
+      <div class="g g-2-split pad-half no-pad--top">
+        <div class="gi spacing--half">
+          {% for block in video_block_list %}
+            <div class="pad-half--left pad-half--right">{% include 'molecules-media-block' with block %}</div>
+          {% endfor %}
+        </div>
+        <div class="gi spacing--half">
+          {% for block in video_block_list %}
+            <div class="pad-half--left pad-half--right">{% include 'molecules-media-block' with block %}</div>
+          {% endfor %}
+        </div>
+      </div> <!-- /.g-2-split -->
+
+      <hr>
+
+      {% include 'molecules-carousel-block' %}
+
+      <hr>
+
+      <h3 class="font--tertiary--m theme--secondary-text-color pad--top pad--left pad-right">Sagittis massa</h3>
+      {% for block in content_blocks %}
+        <div class="content__block pad--left pad-right">
+          <h3 class="theme--primary-text-color font--secondary--m">{{ block.text.heading | raw}}</h3>
+          <p>Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. {% if block.text.cta %} <a href="{{ block.url }}" class="font--secondary--s upper theme--secondary-text-color"><strong>{{ block.text.cta | raw }}</strong></a> {% endif %}</p>
+        </div>
+        <hr>
+      {% endfor %}
+
+    </div>
+  </div> <!-- /.gi -->
+</div> <!-- /.2up--at-medium -->
