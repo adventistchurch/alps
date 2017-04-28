@@ -1,0 +1,133 @@
+{
+  "head": {
+    "title": "The Official Site of the Seventh-day Adventist world church",
+    "html_class": "pl theme--campfire",
+    "body_class": "body theme--cool dark"
+  },
+
+  "heading": "Welcome to the Visitor Center",
+
+  "primary_nav": false,
+  "secondary_nav": false,
+  "search": false,
+
+
+  "media_blocks": [
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "GOT IT Cras at sem at felis rhoncus",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": ""
+        },
+                "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "Fusce interdum purus est",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": "Alt"
+        },
+        "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "Sed neque odio, iaculis iaculis rutrum quis",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": "Media Block Image"
+        },
+        "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "Pellentesque semper",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": "Media Block Image Alt"
+        },
+        "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    }
+  ],
+
+  "media_blocks_2": [
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "Cras efficitur nibh eget tortor consequat posuere",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": ""
+        },
+        "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "Fusce interdum purus est",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": "Alt"
+        },
+        "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "Phasellus ac volutpat urna",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": "Media Block Image"
+        },
+        "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "",
+        "title": "Morbi accumsan imperdiet nisl non consectetur",
+        "img": {
+          "src": "//unsplash.it/640/360/?random",
+          "alt": "Media Block Image Alt"
+        },
+        "datetime": false,
+        "date": false,
+        "description": false,
+        "cta": false
+      }
+    }
+  ]
+
+}

@@ -1,0 +1,32 @@
+<div class="spacing--half">
+  <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">{{heading}}</h2>
+  <hr>
+</div>
+<div class="spacing--half">
+  <div class="pad">
+  {% include 'molecules-facet-filter' %}
+  </div>
+  <hr>
+</div>
+<div class="g g-2up--at-medium with-divider">
+  {% for block in media_blocks %}
+    <div class="gi">
+      <div class="spacing">
+        <div class="pad">{% include 'molecules-media-block' with block %}</div>
+        {% if block.has_hr %}<hr>{% endif %}
+      </div>
+    </div> <!-- /.gi -->
+  {% endfor %}
+  {% for block in media_blocks_2 %}
+    <div class="gi pad-double--btm">
+      <div class="spacing">
+        <div class="pad">{% include 'molecules-media-block' with block %}</div>
+        {% if block.has_hr %}<hr>{% endif %}
+      </div>
+    </div> <!-- /.gi -->
+  {% endfor %}
+</div> <!-- /.2up--at-medium -->
+<hr>
+<div class="pad spacing">
+{% include 'molecules-pagination' %}
+</div>
