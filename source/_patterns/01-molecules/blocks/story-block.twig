@@ -17,7 +17,7 @@
             {% if story_block_default.is_video %}</div>{% endif %}
           </a> <!-- /.story-block__image-wrap -->
         {% endif %}
-        {{ story_block_default.description }}
+        {{ story_block_default.description | raw}}
       </div>
       {% if story_block_default.cta %}
         <p><a class="story-block__cta block__cta btn theme--secondary-background-color" href="{{ story_block_default.url }}">{{ story_block_default.cta }}</a></p>

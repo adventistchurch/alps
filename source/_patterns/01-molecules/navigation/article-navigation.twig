@@ -5,14 +5,14 @@
       <div class="dropdown">
         <div class="dropdown__label font--secondary--s upper js-toggle-parent white">News Menu <span class="dropdown__arrow dib arrow--down border-top--white va--middle"></span></div>
         <ul class="article-nav__list dropdown__options theme--secondary-background-color">
-          {% for items in article_nav %}
-            <li class="article-nav__list-item dropdown__item {% if items.has_subnav %} article-nav--with-subnav js-hover {% endif %}" {% if items.has_subnav %} data-prefix="hover" {% endif %}>
-              <a class="article-nav__link dropdown__item-link white {% if items.is_active %} active {% endif %}" href="{{ url }}">{{ items.text }}</a>
-              {% if has_subnav %}
+          {% for item in article_nav.items %}
+            <li class="article-nav__list-item dropdown__item {% if item.has_subnav %} article-nav--with-subnav js-hover {% endif %}" {% if item.has_subnav %} data-prefix="hover" {% endif %}>
+              <a class="article-nav__link dropdown__item-link white {% if item.is_active %} active {% endif %}" href="{{ item.url }}">{{ item.text }}</a>
+              {% if item.has_subnav %}
                 <div class="article-nav__subnav__arrow va--middle js-toggle-parent"><span class="arrow--down"></span></div>
                 <ul class="article-nav__subnav theme--secondary-background-color">
-                  {% for sub_items in items %}
-                    <li class="article-nav__subnav__list-item"><a class="article-nav__subnav__link {% if sub_items.sub_items_is_active %} active {% endif %}" href="{{ url }}">{{ sub_items.text }}</a></li>
+                  {% for sub_item in item.sub_items %}
+                    <li class="article-nav__subnav__list-item"><a class="article-nav__subnav__link {% if sub_item.sub_items_is_active %} active {% endif %}" href="{{ sub_item.url }}">{{ sub_item.text }}</a></li>
                   {% endfor %}
                 </ul> <!-- /.primary-nav__subnav -->
               {% endif %}

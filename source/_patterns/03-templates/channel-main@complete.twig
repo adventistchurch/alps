@@ -9,7 +9,7 @@
         </div> <!-- /.shift-left--fluid -->
         <div class="shift-right--fluid bg--beige can-be--dark-dark">
           {% if breakout_block %}
-            {% include 'molecules-media-block' %}
+            {% include 'molecules-media-block' with {'media_block_default': breakout_block.media_block_default}  %}
           {% endif %}
           <div class="column__secondary can-be--dark-dark">
             {% include 'organisms-aside' %}
