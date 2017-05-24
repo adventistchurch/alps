@@ -1,5 +1,5 @@
 <div class="spacing--half">
-  <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">{{heading}}</h2>
+  <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">{{ heading }}</h2>
   <hr>
 </div>
 <div class="g g-3up--at-medium with-divider {{ grid_class }}">
@@ -7,7 +7,7 @@
     <div class="gi">
       <div class="spacing">
         <div class="pad">{% include 'molecules-media-block' with block %}</div>
-        {% if block.has_hr %}<hr>{% endif %}
+        {% if has_hr %}<hr>{% endif %}
       </div>
     </div> <!-- /.gi -->
   {% endfor %}
@@ -15,7 +15,7 @@
     <div class="gi">
       <div class="spacing">
         <div class="pad">{% include 'molecules-media-block' with block %}</div>
-        {% if block.has_hr %}<hr>{% endif %}
+        {% if has_hr %}<hr>{% endif %}
       </div>
     </div> <!-- /.gi -->
   {% endfor %}

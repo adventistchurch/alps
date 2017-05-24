@@ -8,6 +8,6 @@
       {{ carousel_block_default.block_heading }}
     </h2>
   {% endif %}
-  <div class="carousel-block__carousel carousel-nav--4-3">{% include 'molecules-carousel' %}</div>
+  <div class="carousel-block__carousel carousel-nav--4-3">{% include 'molecules-carousel' with {'carousel':carousel_block_default.carousel} %}</div>
 </div> <!-- /.carousel-block -->
 {% endif %}
