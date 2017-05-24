@@ -1,5 +1,5 @@
 <nav class="pagination center-block align--center" role="navigation">
-  <a href="" class="pagination__page pagination__prev theme--secondary-background-color white">{{ pager.prev }}</a>
+  <a href="" class="pagination__page pagination__prev theme--secondary-background-color white">{{ pager.prev | raw }}</a>
   <div class="pagination__pages show-at--medium dib">
     <a href="" class="pagination__page theme--secondary-background-color white">1</a>
     <span class="pagination__page pagination__page--current white bg--gray">2</span>
@@ -8,5 +8,5 @@
     <span class="pagination__divide">&hellip;</span>
     <a href="" class="pagination__page theme--secondary-background-color white">214</a>
   </div>
-  <a href="" class="pagination__page pagination__next theme--secondary-background-color white">{{ pager.next }}</a>
+  <a href="" class="pagination__page pagination__next theme--secondary-background-color white">{{ pager.next | raw }}</a>
 </nav> <!-- /.pagination -->

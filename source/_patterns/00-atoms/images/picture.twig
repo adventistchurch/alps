@@ -2,10 +2,10 @@
 <picture class="picture">
   <!--[if IE 9]><video style="display: none;"><![endif]-->
   {% if picture.has_break_xl %}
-    <source srcset="{{ picture.img.src_xl }}" media="(min-width: {{ picture.img_break_xl }}px)">
+    <source srcset="{{ picture.has_break_xl.img.src_xl }}" media="(min-width: {{ picture.has_break_xl.img_break_xl }}px)">
   {% endif %}
   {% if picture.has_break_l %}
-    <source srcset="{{ picture.img.src_l }}" media="(min-width: {{ picture.img_break_l }}px)">
+    <source srcset="{{ picture.has_break_l.img.src_l }}" media="(min-width: {{ picture.has_break_l.img_break_l }}px)">
   {% endif %}
   <source srcset="{{ picture.img.src_m }}" media="(min-width: {{ picture.img_break_m }}px)">
   <!--[if IE 9]></video><![endif]-->

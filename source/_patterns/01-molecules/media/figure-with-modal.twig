@@ -1,11 +1,11 @@
 {% if fig_with_modal %}
-  <figure class="figure {{ fig_with_modal.figure_class }}">
+  <figure class="figure {% if figure_class %}{{ figure_class }} {% else %} {{ fig_with_modal.figure_class }} {% endif %}">
     <div class="img-wrap">
       {% include 'atoms-image' %}
     </div> <!-- /.img-wrap -->
     <div class="spacing--quarter">
-      {% include 'molecules-figcaption' %}
-      {% include 'molecules-view-larger' %}
+      {% include 'molecules-figcaption' with fig_with_modal %}
+      {% include 'molecules-view-larger' with fig_with_modal %}
     </div>
   </figure> <!-- /.figure -->
 {% endif %}

@@ -1,27 +1,27 @@
 {% if address %}
   <div class="vcard text spacing--quarter">
-    {% if hcard_img %}
-      <img src="{{ hcard_img }}" alt="{{ first_name }} {{ last_name }}" class="photo">
+    {% if address.hcard_img %}
+      <img src="{{ address.hcard_img }}" alt="{{ address.first_name }} {{ address.last_name }}" class="photo">
     {% endif %}
     <p>
-      {% if first_name %}
+      {% if address.first_name %}
         <strong class="fn n">
-          {% if first_name %}<span class="given-name">{{ first_name }}</span>{% endif %}
-          {% if additional_name %}<span class="additional-name">{{ additional_name }}</span>{% endif %}
-          {% if last_name %}<span class="family-name">{{ last_name }}</span>{% endif %}
+          {% if address.first_name %}<span class="given-name">{{ address.first_name }}</span>{% endif %}
+          {% if address.additional_name %}<span class="additional-name">{{ address.additional_name }}</span>{% endif %}
+          {% if address.last_name %}<span class="family-name">{{ address.last_name }}</span>{% endif %}
         </strong><br>
       {% endif %}
-      {% if org %}<strong class="org">{{ org }}</strong><br>{% endif %}
-      {% if tel %}<span class="tel">{{ tel }}</span><br>{% endif %}
-      {% if url %}<span class="url">{{ url }}</span><br>{% endif %}
-      {% if email %}<a class="email" href="mailto:{{ email }}">{{ email }}</a><br>{% endif %}
-      {% if street_address %}
+      {% if address.org %}<strong class="org">{{ address.org }}</strong><br>{% endif %}
+      {% if address.tel %}<span class="tel">{{ address.tel }}</span><br>{% endif %}
+      {% if address.url %}<span class="url">{{ address.url }}</span><br>{% endif %}
+      {% if address.email %}<a class="email" href="mailto:{{ address.email }}">{{ address.email }}</a><br>{% endif %}
+      {% if address.street_address %}
         <span class="adr">
-          {% if street_address %}<span class="street-address">{{ street_address }}</span><br>{% endif %}
-          {% if locality %}<span class="locality">{{ locality }}</span>,{% endif %}
-          {% if region %}<span class="region">{{ region }}</span>,{% endif %}
-          {% if postal_code %}<span class="postal-code">{{ postal_code }}</span>{% endif %}
-          {% if country_name %}<br><span class="country-name">{{ country_name }}</span>{% endif %}
+          {% if address.street_address %}<span class="street-address">{{ address.street_address }}</span><br>{% endif %}
+          {% if address.locality %}<span class="locality">{{ address.locality }}</span>,{% endif %}
+          {% if address.region %}<span class="region">{{ address.region }}</span>,{% endif %}
+          {% if address.postal_code %}<span class="postal-code">{{ address.postal_code }}</span>{% endif %}
+          {% if address.country_name %}<br><span class="country-name">{{ address.country_name }}</span>{% endif %}
         </span><br>
       {% endif %}
     </p>

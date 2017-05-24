@@ -17,7 +17,7 @@
           </div>
           <div class="gi">
             {% if fig_1 %}
-              {% include 'molecules-figure-with-caption' %}
+              {% include 'molecules-figure-with-caption' with fig_1 %}
             {% endif %}
           </div>
         </div>
@@ -26,14 +26,14 @@
 
         <!-- Full-width media image -->
         {% if picture_1 %}
-          {% include 'atoms-picture' %}
+          {% include 'atoms-picture' with picture_1 %}
         {% endif %}
 
         <!-- 50/50 section -->
         <div class="g g-2up--at-medium pad--primary spacing">
           <div class="gi">
             {% if fig_2 %}
-              {% include 'molecules-figure-with-caption' %}
+              {% include 'molecules-figure-with-caption' with fig_2 %}
             {% endif %}
           </div>
           <div class="gi left-gutter--l">
@@ -71,7 +71,7 @@
 
         <!-- Full-width media image -->
         {% if picture_2 %}
-          {% include 'atoms-picture' %}
+          {% include 'atoms-picture' with picture_2 %}
         {% endif %}
 
         <!-- 30/70 section -->
@@ -85,7 +85,7 @@
           </div>
           <div class="gi">
             {% if fig_1 %}
-              {% include 'molecules-figure-with-caption' %}
+              {% include 'molecules-figure-with-caption' with fig_1 %}
             {% endif %}
           </div>
         </div>
@@ -104,7 +104,7 @@
           </div>
           <div class="gi">
             {% if fig_2 %}
-              {% include 'molecules-figure-with-caption' %}
+              {% include 'molecules-figure-with-caption' with fig_2 %}
             {% endif %}
           </div>
         </div>
@@ -119,7 +119,7 @@
               <p><strong>Service times:</strong> <br> Sabbath School: 9:30 a.m. <br> Worship Service: 11:00 a.m.</p>
               <address>
                 {% if contact_1 %}
-                  {% include 'molecules-hcard' %}
+                  {% include 'molecules-hcard' with contact_1 %}
                 {% endif %}
               </address>
             </div>
@@ -127,7 +127,7 @@
           <div class="gi">
             <div class="img-wrap">
               {% if map %}
-                {% include 'atoms-image' %}
+                {% include 'atoms-image' with map %}
               {% endif %}
             </div>
           </div>
@@ -135,10 +135,10 @@
             <div class="text spacing">
               <h2>Contact the Church</h2>
               {% if contact_2 %}
-                {% include 'molecules-hcard' %}
+                {% include 'molecules-hcard' with contact_2 %}
               {% endif %}
               {% if contact_3 %}
-                {% include 'molecules-hcard' %}
+                {% include 'molecules-hcard' with contact_3 %}
               {% endif %}
             </div>
           </div>
