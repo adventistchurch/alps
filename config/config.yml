@@ -8,7 +8,7 @@ id:
     - scss
     - .svn
     - .sass-cache
-cleanPublic: 'true'
+cleanPublic: 'false'
 patternStates:
     - inprogress
     - inreview
