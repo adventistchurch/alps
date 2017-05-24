@@ -1,19 +1,19 @@
 {% if primary_nav %}
 <nav class="primary-nav toggled-element" id="primary-nav" role="navigation" data-active-target="primary-nav">
   <ul class="primary-nav__list">
-    {% if items %}
-      <li class="primary-nav__list-item {% if has_subnav %} primary-nav--with-subnav js-hover {% endif %}" {% if has_subnav %} data-prefix="hover" {% endif %}>
-        <a class="primary-nav__link theme--primary-text-color {% if is_active %} theme--secondary-text-color active {% endif %}" href="{{ url }}">{{ text }}</a>
-        {% if has_subnav %}
+    {% for item in primary_nav.items %}
+      <li class="primary-nav__list-item {% if item.has_subnav %} primary-nav--with-subnav js-hover {% endif %}" {% if item.has_subnav %} data-prefix="hover" {% endif %}>
+        <a class="primary-nav__link theme--primary-text-color {% if item.is_active %} theme--secondary-text-color active {% endif %}" href="{{ item.url }}">{{ item.text }}</a>
+        {% if item.has_subnav %}
           <div class="primary-nav__subnav__arrow va--middle js-toggle-parent"><span class="arrow--down"></span></div>
           <ul class="primary-nav__subnav">
-            {% for sub_items in items %}
-              <li class="primary-nav__subnav__list-item"><a class="primary-nav__subnav__link theme--primary-text-color" href="{{ url }}">{{ sub_items.text }}</a></li>
+            {% for item in item.sub_items %}
+              <li class="primary-nav__subnav__list-item"><a class="primary-nav__subnav__link theme--primary-text-color" href="{{ item.url }}">{{ item.text }}</a></li>
             {% endfor %}
           </ul> <!-- /.primary-nav__subnav -->
         {% endif %}
       </li>
-    {% endif %}
+    {% endfor %}
   </ul> <!-- /.primary-nav__list -->
 </nav> <!-- /.primary-nav -->
 {% endif %}
