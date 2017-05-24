@@ -8,19 +8,23 @@
     <div class="filter-items filter-items__checkbox spacing--quarter">
         <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Filter</h3>
       {% if content_filter.checkbox %}
-        <div class="filter-item__checkbox form-group">
-          <input id="checkbox-{{ content_filter.checkbox.id }}}" type="checkbox" name="checkbox" value="{{ content_filter.checkbox.label }}" />
-          <label for="checkbox-{{ content_filter.checkbox.id }}}" class="theme--primary-text-color">{{ content_filter.checkbox.label }}</label>
-        </div>
+        {% for item in content_filter.checkbox %}
+          <div class="filter-item__checkbox form-group">
+            <input id="checkbox-{{ item.id }}}" type="checkbox" name="checkbox" value="{{ item.label }}" />
+            <label for="checkbox-{{ item.id }}}" class="theme--primary-text-color">{{ item.label }}</label>
+          </div>
+        {% endfor %}
       {% endif %}
     </div>
     <div class="filter-items filter-items__radio spacing--quarter">
       <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Sort By</h3>
       {% if content_filter.radio %}
-        <div class="filter-item__radio form-group">
-          <input id="radio-{{ content_filter.radio.id }}" type="radio" name="radio" value="{{ content_filter.radio.label }}" />
-          <label for="radio-{{ content_filter.radio.id }}" class="theme--primary-text-color">{{ content_filter.radio.label }}</label>
-        </div>
+        {% for item in content_filter.radio %}
+          <div class="filter-item__radio form-group">
+            <input id="radio-{{ item.id }}" type="radio" name="radio" value="{{ item.label }}" />
+            <label for="radio-{{ item.id }}" class="theme--primary-text-color">{{ item.label }}</label>
+          </div>
+        {% endfor %}
       {% endif %}
     </div>
   </form>

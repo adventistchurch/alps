@@ -22,7 +22,7 @@
   </div>
   <hr>
   <div class="spacing--one-and-half">
-    {%  for result in search_results %}
+    {% for result in search_results %}
       <div class="pad--primary no-pad--top no-pad--btm spacing--half text">
         <h3 class="brown font--tertiary--l theme--primary-text-color"><a href="">{{ result.text.heading | raw}}</a></h3>
         <p>{{ result.text.description | raw }}</p>
@@ -30,9 +30,7 @@
       </div>
       <hr>
     {% endfor %}
-
     {% include 'molecules-pagination' %}
-
   </div>
 </div> <!-- /.search__results -->
 

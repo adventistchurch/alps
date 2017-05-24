@@ -11,13 +11,13 @@
 
     <div class="spacing">
       <h3 class="font--tertiary--m theme--secondary-text-color">More News</h3>
-        {% for item in content_blocks %}
+      {% for item in content_blocks %}
         <div class="content__block">
           <h3 class="theme--primary-text-color font--secondary--m">{{ item.text.heading | raw }}</h3>
           <p>Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. {% if item.text.cta %} <a href="{{ item.url }}" class="font--secondary--s upper theme--secondary-text-color"><strong>{{ item.text.cta | raw}}</strong></a> {% endif %}</p>
         </div>
         <hr>
-        {% endfor %}
+      {% endfor %}
     </div>
   </div>
 </aside>
