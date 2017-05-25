@@ -17,11 +17,12 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 ### Getting Started
 
-- Set up your local dev url to be `alps.dev`
-- [Install node globally](https://docs.npmjs.com/getting-started/installing-node)
+- set up your local dev url to be `alps.dev`
+  - configure mamp with the server name of `alps.dev` and point the doc root to `alps/public`.
+- install node globally](https://docs.npmjs.com/getting-started/installing-node)
 - run `npm install` (may need to be run as `sudo`)
+- run `composer install`
 - run `grunt`
-- get mamp working and point toward the patternlab/public folder
 
 This creates all patterns, the styleguide, and the pattern lab site as well as a local server for development.
 
