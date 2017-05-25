@@ -45,7 +45,7 @@
 
   "search": "Search",
 
-  "facet-filter": "Filter the Results",
+  "facet_filter": "Filter the Results",
 
   "primary_nav": {
     "items": [
@@ -812,6 +812,9 @@
   },
   "button_default": {
     "button_text": "Button Text"
+  },
+  "button_submit": {
+    "button_text": "Submit"
   },
   "content_filter": {
     "radio": [

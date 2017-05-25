@@ -1,0 +1,9 @@
+{% if breadcrumbs %}
+<nav class="breadcrumbs" role="navigation">
+  <ul class="breadcrumbs__list">
+    {% for item in breadcrumbs.items %}
+      <li class="breadcrumbs__list-item font--secondary--xs upper dib"><a href="" class="breadcrumbs__link can-be--white">{{ item.text }}</a></li>
+    {% endfor %}
+  </ul>
+</nav> <!-- /.breadcrumbs -->
+{% endif %}

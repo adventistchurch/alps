@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: $gray-dark;
+  transition: all .3s ease-out;
+  path {
+    //fill: $red;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $blue;
+  }
+  p {
+    color: $gray-dark;
+  }
+  > .icon {
+    margin-right: 4px;
+  }
+}
+.hover {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

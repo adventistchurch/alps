@@ -4,6 +4,8 @@
 *.css.map
 /public
 /vendor
+/source--mustache
+/cdn
 
 # Ignore IDE-specific files
 *.sublime-project

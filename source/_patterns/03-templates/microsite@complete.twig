@@ -1,0 +1,34 @@
+<div class="content cf has-aside" role="document">
+  {% include 'organisms-header' %}
+  <main class="main can-be--dark-dark" role="main">
+    {% include 'organisms-page-header' %}
+    {% if article_navigation %}
+      {% include 'molecules-article-navigation' %}
+    {% endif %}
+    <div class="layout-container full--until-large">
+      <div class="flex-container cf">
+        <div class="shift-left--fluid column__primary bg--white no-pad--top no-pad--btm can-be--dark-light">
+          {% if news_home %}
+            {% include 'organisms-news-content' %}
+          {% endif %}
+          {% if news_channel %}
+            {% include 'organisms-grid-3up-content' with {'grid_class': 'grid--uniform', 'has_hr': false} %}
+          {% endif %}
+          {% if news_article %}
+            {% include 'organisms-news-article-content' %}
+          {% endif %}
+          {% if is_rtl %}
+            {% include 'organisms-news-article-content-rtl' %}
+          {% endif %}
+        </div> <!-- /.shift-left--fluid -->
+        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+          {% include 'molecules-aside-navigation' %}
+          <div class="column__secondary can-be--dark-dark">
+            {% include 'organisms-aside' %}
+          </div>
+        </div> <!-- /.shift-right--fluid -->
+      </div> <!-- /.flex-container -->
+    </div> <!-- /.layout-container -->
+  </main> <!-- /.main -->
+  {% include 'organisms-footer' %}
+</div> <!-- /.content -->

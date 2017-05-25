@@ -1,0 +1,51 @@
+<div class="carousel__item rel {{ carousel_item_class }}">
+
+  {% if is_lazy %}
+    {% include 'atoms-picture 'with {'is_lazy_slide': 'true', 'picture': picture} %}
+  {% else %}
+    {% include 'atoms-picture' with picture %}
+  {% endif %}
+
+  {% if has_slide_text %}
+  <div class="carousel__item-text__wrap">
+    <div class="layout-container">
+      <div class="carousel__item-text {{ has_slide_text.carousel_text_class }} spacing--half">
+        <div class="carousel__item-text--inner">
+          <h2 class="{{ carousel_heading_class }} carousel__item-heading theme--primary-transparent-background-color">{{ has_slide_text.slide_heading }}</h2>
+          {% if has_slide_text.slide_subtitle %}<h3 class="carousel__item-subtitle font--secondary--m theme--primary-transparent-background-color">{{ has_slide_text.slide_subtitle }}</h3>{% endif %}
+          <div class="carousel__item-dek pad-half--btm theme--primary-transparent-background-color">
+            <p>{{ has_slide_text.slide_dek }}</p>
+          </div> <!-- /.carousel__item-dek -->
+        </div>
+        <a href="{{ url }}" class="carousel__item-cta btn theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
+      </div> <!-- /.carousel__item-text -->
+    </div>
+  </div>
+  {% endif %}
+
+  {% if is_carousel_block %}
+    <div class="carousel-block__content block__content spacing--quarter pad {{ is_carousel_block.block_content_class }}">
+      {% if is_carousel_block.title %}
+        <h3 class="carousel-block__title block__title {{ is_carousel_block.block_title_class }}">
+          <a href="{{ url }}" class="block__title-link theme--primary-text-color">{{ is_carousel_block.title }}</a>
+        </h3>
+      {% endif %}
+      {% if is_carousel_block.date %}
+        <time class="block__date font--secondary--xs brown space-half--btm" datetime="{{ is_carousel_block.datetime }}">{{ is_carousel_block.date }}</time>
+      {% endif %}
+      {% if is_carousel_block.description %}
+        <div class="text pad-half--btm">
+          <p class="carousel-block__description block__description">
+            <span class="font--primary--xs">{{ is_carousel_block.description }}</span>
+          </p>
+        </div>
+      {% endif %}
+      {% if is_carousel_block.cta %}
+        <p>
+          <a class="carousel-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
+        </p>
+      {% endif %}
+    </div> <!-- carousel-block__content -->
+  {% endif %}
+
+</div> <!-- /.carousel__item -->

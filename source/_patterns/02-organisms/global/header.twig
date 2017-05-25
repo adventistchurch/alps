@@ -1,0 +1,27 @@
+<header class="header {{ header_class }} can-be--dark-dark" role="banner" id="header">
+{% include 'organisms-tophat' %}
+  <div class="header__inner">
+    {% include 'molecules-navigation-toggle' %}
+    <div class="header__unify-logo-nav">
+      <a href="/" class="logo__link logo__link--horiz theme--primary-background-color show-until--large {% if logo_bottom_text %} logo--with-text {% endif %}">
+      {% include 'atoms-logo-horiz' %}
+        {% if logo_bottom_text %}
+          <span class="logo__text"><img src="{{ image_path }}{{ logo_bottom_text.logo_text }}" class="logo__text" alt="{{ head.title }} logo" /></span>
+        {% endif %}
+      </a>
+      <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large {% if logo_bottom_text %} logo--with-text {% endif %}">
+      {% include 'atoms-logo-square' %}
+        {% if logo_bottom_text %}
+          <span class="logo__text"><img src="{{ image_path }}{{ logo_bottom_text.logo_text }}" class="logo__text" alt="{{ head.title }} logo" /></span>
+        {% endif %}
+      </a>
+      {% include 'molecules-primary-navigation' %}
+    </div> <!-- /.header__unify-logo-nav -->
+    <div class="header__utility">
+      <div class="header__utility__inner full--until-large">
+        {% include 'molecules-secondary-navigation' %}
+        {% include 'molecules-search' %}
+      </div>
+    </div> <!-- /.header__utility -->
+  </div> <!-- /.header__inner -->
+</header> <!-- .header -->

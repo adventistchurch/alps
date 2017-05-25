@@ -1,0 +1,22 @@
+<div class="spacing--half">
+  <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">{{ heading }}</h2>
+  <hr>
+</div>
+<div class="g g-3up--at-medium with-divider {{ grid_class }}">
+  {% for block in media_blocks %}
+    <div class="gi">
+      <div class="spacing">
+        <div class="pad">{% include 'molecules-media-block' with block %}</div>
+        {% if has_hr %}<hr>{% endif %}
+      </div>
+    </div> <!-- /.gi -->
+  {% endfor %}
+  {% for block in media_blocks_2 %}
+    <div class="gi">
+      <div class="spacing">
+        <div class="pad">{% include 'molecules-media-block' with block %}</div>
+        {% if has_hr %}<hr>{% endif %}
+      </div>
+    </div> <!-- /.gi -->
+  {% endfor %}
+</div> <!-- /.2up--at-medium -->

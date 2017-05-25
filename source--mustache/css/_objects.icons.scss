@@ -1,0 +1,167 @@
+/*------------------------------------*\
+    $ICONS
+\*------------------------------------*/
+
+/**
+ * Icon Sizing
+ */
+$icon-xsmall: rem(12);
+$icon-small: rem(18);
+$icon-medium: rem(25);
+$icon-large: rem(50);
+$icon-big: rem(65);
+
+
+.icon {
+  display: inline-block;
+}
+
+.icon--standard {
+  background-color: $gray-med;
+  path {
+    fill: $white;
+  }
+  &:hover {
+    background-color: $blue;
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.icon--xs {
+  width: $icon-xsmall;
+  height: $icon-xsmall;
+}
+.icon--s {
+  width: $icon-small;
+  height: $icon-small;
+  padding: rem(2);
+}
+.icon--m {
+  width: $icon-medium;
+  height: $icon-medium;
+  padding: rem(3);
+}
+.icon--l {
+  width: $icon-large;
+  height: $icon-large;
+  padding: rem(6);
+}
+.icon--xl {
+  width: $icon-big;
+  height: $icon-big;
+  padding: rem(6);
+}
+// Make icons larger for touch devices.
+.touchevents {
+  .t-icon {
+    min-width: rem(35);
+    min-height: rem(35);
+    padding: rem(4);
+    &.add-pad {
+      padding: $pad-half;
+    }
+  }
+}
+
+/**
+ * Play icon overlay
+ */
+.is-video {
+  position: relative;
+  transition: all .3s ease-out;
+  border-bottom: 4px solid rgba($black, 0);
+  display: block;
+  &:hover {
+    border-bottom-color: rgba($black, .2);
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: rem(40);
+    width: rem(40);
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/icons/icon-play.svg);
+  }
+}
+
+
+/*------------------------------------*\
+    $SOCIAL SPECIFIC
+\*------------------------------------*/
+
+.icon__facebook {
+  background-color: $facebook-blue;
+  border: rem(3) solid $facebook-blue;
+  path {
+    fill: $white;
+  }
+  &:hover {
+    background-color: $white;
+    border-color: $facebook-blue;
+    path {
+      fill: $facebook-blue;
+    }
+  }
+}
+.icon__twitter {
+  background-color: $twitter-blue;
+  border: rem(3) solid $twitter-blue;
+  path {
+    fill: $white;
+  }
+  &:hover {
+    background-color: $white;
+    border-color: $twitter-blue;
+    path {
+      fill: $twitter-blue;
+    }
+  }
+}
+.icon__instagram {
+  background-color: $instagram-brown;
+  border: rem(3) solid $instagram-brown;
+  &:hover {
+    background-color: $white;
+    border-color: $instagram-brown;
+    path {
+      fill: $instagram-brown;
+    }
+  }
+}
+.icon__pinterest {
+  background-color: $pinterest-red;
+  border: rem(3) solid $pinterest-red;
+  path {
+    fill: $white;
+  }
+  &:hover {
+    background-color: $white;
+    border-color: $pinterest-red;
+    path {
+      fill: $pinterest-red;
+    }
+  }
+}
+.icon__facebook,
+.icon__twitter,
+.icon__instagram,
+.icon__pinterest {
+  &.icon--s:hover {
+    border-width: rem(2);
+  }
+}
+
+body {
+  > svg {
+    width: 50px;
+    height: 50px;
+  }
+}

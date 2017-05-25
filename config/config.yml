@@ -19,19 +19,24 @@ exportDir: export
 publicDir: public
 sourceDir: source
 defaultPattern: pages-start-page
-defaultShowPatternInfo: true
-plugins:
-    reload:
-        enabled: true
+defaultShowPatternInfo: false
 ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
     - hay
     - disco
     - rand
-lineageMatch: '{{>([ ]+)?([A-Za-z0-9-_]+)(?:\:[A-Za-z0-9-]+)?(?:(| )\(.*)?([ ]+)?}}'
-lineageMatchKey: 2
-patternExtension: mustache
-mustacheHelperExt: helper.php
-styleguideKit: pattern-lab/styleguidekit-mustache-default
-styleguideKitPath: vendor/pattern-lab/styleguidekit-mustache-default
+styleguideKit: pattern-lab/styleguidekit-twig-default
+styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
+lineageMatch: '{%([ ]+)?include( |\()[&quot;\&#039;]([A-Za-z0-9-_]+)[&quot;\&#039;](\))?(.*)%}'
+lineageMatchKey: 3
+patternExtension: twig
+twigDebug: false
+twigAutoescape: html
+twigDefaultDateFormat: ''
+twigDefaultIntervalFormat: ''
+twigMacroExt: macro.twig
+twigFilterExt: filter.php
+twigFunctionExt: function.php
+twigTagExt: tag.php
+twigTestExt: test.php

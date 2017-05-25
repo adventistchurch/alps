@@ -1,0 +1,19 @@
+<div class="content cf has-aside" role="document">
+  {% include 'organisms-header' %}
+  <main class="main can-be--dark-dark" role="main">
+    {% include 'organisms-page-header' %}
+    {% include 'molecules-article-navigation' %}
+    <div class="layout-container full--until-large">
+      <div class="flex-container cf">
+        <div class="shift-left--fluid column__primary bg--white can-be--dark-light spacing--one-and-half">
+          {% include 'organisms-page-content' %}
+          <div class="pad--primary">{% include 'organisms-comments' %}</div>
+        </div> <!-- /.shift-left--fluid -->
+        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+          {% include 'molecules-aside-navigation' %}
+        </div> <!-- /.shift-right--fluid -->
+      </div> <!-- /.flex-container -->
+    </div> <!-- /.layout-container -->
+  </main> <!-- /.main -->
+  {% include 'organisms-footer' %}
+</div> <!-- /.content -->
