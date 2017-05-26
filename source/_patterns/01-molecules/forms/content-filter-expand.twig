@@ -1,19 +1,12 @@
 {% if content_filter %}
-<div class="filter spacing">
-  <div class="filter-search">
-    <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm"><strong>Search</strong></h3>
-    <form action="" role="search" method="get" class="filter-search">
-      <fieldset>
-        <div class="field-container spacing--half">
-          <input type="search" name="s" class="search__results__input font--secondary--s" value="" />
-          <button class="search__submit font--secondary--s upper theme--secondary-background-color">Search</button> <!-- /.search-form__submit -->
-        </div> <!-- /.field-container -->
-      </fieldset>
-    </form> <!-- /.search-form -->
+<div class="filter filter-expand spacing--half">
+  <div class="filter-options">
+    <h3 class="font--tertiary--m theme--secondary-text-color upper">Search</h3>
+    <div class="filter-toggle js-toggle font--secondary--s upper theme--primary-text-color" data-toggled="filter" data-prefix="filter">Options</div>
   </div>
-  <form class="content-filter-form filter-form spacing--double">
+  <form class="content-filter-form filter-form">
     <div class="filter-items filter-items__checkbox spacing--quarter">
-      <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm"><strong>Filter</strong></h3>
+        <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Filter</h3>
       {% if content_filter.checkbox %}
         {% for item in content_filter.checkbox %}
           <div class="filter-item__checkbox form-group">
@@ -24,7 +17,7 @@
       {% endif %}
     </div>
     <div class="filter-items filter-items__radio spacing--quarter">
-      <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm"><strong>Sort By</strong></h3>
+      <h3 class="font--secondary--m upper theme--primary-text-color space-half--btm">Sort By</h3>
       {% if content_filter.radio %}
         {% for item in content_filter.radio %}
           <div class="filter-item__radio form-group">
@@ -35,5 +28,13 @@
       {% endif %}
     </div>
   </form>
+  <form action="" role="search" method="get" class="filter-search">
+    <fieldset>
+      <div class="field-container spacing--half">
+        <input type="search" name="s" class="search__results__input font--secondary--s" value="Keyword" />
+        <button class="search__submit font--secondary--s upper theme--secondary-background-color">Search</button> <!-- /.search-form__submit -->
+      </div> <!-- /.field-container -->
+    </fieldset>
+  </form> <!-- /.search-form -->
 </div>
 {% endif %}
