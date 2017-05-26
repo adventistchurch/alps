@@ -24,6 +24,8 @@ ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
     - hay
+    - disco
+    - rand
 styleguideKit: pattern-lab/styleguidekit-twig-default
 styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
 lineageMatch: '{%([ ]+)?include( |\()[&quot;\&#039;]([A-Za-z0-9-_]+)[&quot;\&#039;](\))?(.*)%}'
