@@ -42,6 +42,13 @@ input[type=radio] {
   border-radius: rem(50);
 }
 
+.form--inline {
+  display: flex;
+  flex-direction: row;
+  .form-input {
+    padding: 0 $pad-half;
+  }
+}
 .form-group {
   display: block;
   width: 100%;
