@@ -1,1 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>Right arrow icon</title><path d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0ZM21.69,38.25l-3.43-3.43L28.07,25l-9.82-9.82,3.43-3.43L34.93,25Z" class="{{ fill_class }}" fill="#438390"/></svg>
