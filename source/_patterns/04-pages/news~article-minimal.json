@@ -1,7 +1,7 @@
 {
   "head": {
     "title": "Article - The Official Site of the Seventh-day Adventist world church",
-    "html_class": "pl theme--emperor",
+    "html_class": "pl theme--campfire",
     "body_class": "body theme--cool"
   },
 
@@ -9,15 +9,15 @@
   "logo_horiz": "logo__adra--horiz.svg",
 
   "page_header": {
-    "page_header_class": "header-swath--with-text"
+    "has_image": false,
   },
 
   "header_text": {
-    "heading": "Nunc malesuada mauris",
-    "subhead": "Maecenas semper, odio et gravida rhoncus, dui nunc mollis tortor",
-    "img": {
-      "src": "//placehold.it/80x80",
-      "alt": "Image Alt"
-    }
-  }
+  },
+
+
+  "carousel": false,
+
+  "news_home": false,
+  "news_article": true
 }
