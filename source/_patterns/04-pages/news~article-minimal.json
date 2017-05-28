@@ -9,12 +9,12 @@
   "logo_horiz": "logo__adra--horiz.svg",
 
   "page_header": {
-    "has_image": false,
+    "page_header_class": "header-swath blend-mode--multiply",
+
+    "has_image": false
   },
 
-  "header_text": {
-  },
-
+  "header_text": false,
 
   "carousel": false,
 
