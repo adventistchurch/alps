@@ -12,6 +12,7 @@
   },
   "page_reversed": true,
 
+  "accordion": true,
   "accordion_list": [
     {
       "accordion_heading": "Commodo at leo suspendisse:",
