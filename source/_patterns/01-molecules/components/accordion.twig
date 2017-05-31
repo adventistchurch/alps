@@ -3,7 +3,7 @@
   {% for item in accordion_list %}
   <div class="accordion__item spacing--quarter">
     <div class="accordion__heading js-toggle-parent va--middle"><span class="icon icon--m accordion__arrow">{% include 'atoms-icon-arrow-right' with {'fill_class': 'fill--blue'} %}</span> <span class="font--secondary--m dib">{{ item.accordion_heading }}</span></div>
-    <div class="accordion__content">{% include 'molecules-media-block' with {'block_inner_class': 'block__row'} %}</div>
+    <div class="accordion__content">{% include 'molecules-media-block' with {'block_inner_class': 'block__row', 'media_block_default': item.media_block_default } %}</div>
   </div>
   {% endfor %}
 </div> <!-- /.accordion -->
