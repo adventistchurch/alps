@@ -8,7 +8,6 @@
   "logo_square": "logo__nad-2017.svg",
   "logo_horiz": "logo__nad-2017.svg",
   "header_class": "header__wide-logo division__nad",
-
   "page_header": {
     "has_image": true,
     "kicker": "Maecenas",
@@ -17,6 +16,7 @@
     "img_url_m": "//placeimg.com/900/400/nature",
     "img_url_l": "//placeimg.com/1400/500/nature"
   },
+
   "primary_nav": {
     "items": [
       {

@@ -6,9 +6,9 @@
   },
 
   "page_header": {
-    "page_header_class": "pad-and-half--btm--l",
+    "page_header_class": "pad-and-half--btm--large",
     "has_image": true,
-    "kicker": "Header with 'pad-and-half--btm' class",
+    "kicker": "Header with 'pad-and-half--btm--large' class",
     "heading": "Unabhaeng Freundschaftsbezeigungen Zeigungen"
   },
   "page_reversed": true,
@@ -38,8 +38,7 @@
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Read more"
-       }
-
+      }
     },
     {
       "accordion_heading": "Phasellus at sem eros:",
@@ -54,7 +53,7 @@
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Read more"
-       }
+      }
     },
     {
       "accordion_heading": "Aliquam purus nulla:",
@@ -69,7 +68,7 @@
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Read more"
-       }
+      }
     },
     {
       "accordion_heading": "Sodales tortor et porta convallis:",
@@ -84,7 +83,7 @@
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Read more"
-       }
+      }
     },
     {
       "accordion_heading": "Donec dignissim sed risus egestas:",
@@ -99,7 +98,7 @@
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Read more"
-       }
+      }
     }
   ]
 }
