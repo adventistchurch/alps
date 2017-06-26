@@ -1,0 +1,13 @@
+{% if carousel_block_default %}
+<div class="carousel-block block spacing--quarter {{ carousel_block_default.block_class }}">
+  {% if carousel_block_default.block_heading %}
+    <h2 class="font--tertiary--m theme--primary-text-color pad pad-half--btm">
+      {% if carousel_block_default.heading_icon %}
+        <div class="icon icon--s">{{ carousel_block_default.heading_icon | raw }}</div>
+      {% endif %}
+      {{ carousel_block_default.block_heading }}
+    </h2>
+  {% endif %}
+  <div class="carousel-block__carousel carousel-nav--4-3">{% include 'molecules-carousel' with {'carousel':carousel_block_default.carousel} %}</div>
+</div> <!-- /.carousel-block -->
+{% endif %}

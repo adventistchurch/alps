@@ -143,7 +143,27 @@ module.exports = function(grunt) {
                         dest: 'cdn/<%= major_version %>/<%= version %>/'
                     }
                 ]
-            }
+            },
+            style_guide: {
+                files: [
+                    // Export public/patterns directory to style guide's includes
+                    // This is used to include the actual code into the code samples
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['**/*'],
+                        dest: 'style-guide/_includes/patterns'
+                    },
+                    // Export public/patterns directory to style guide patterns directory
+                    // This is used to pipe the live patterns into the iframe
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['**/*'],
+                        dest: 'style-guide/patterns'
+                    }
+                ]
+            },
         },
 
         // Symlink creates a cdn/latest
@@ -280,6 +300,13 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('images', [
         'imagemin'
+    ]);
+
+    /**
+     * Style Guide tasks
+     */
+    grunt.registerTask('style-guide-export', [
+        'copy:style_guide'
     ]);
 
     /**
