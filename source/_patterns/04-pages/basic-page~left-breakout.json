@@ -38,8 +38,7 @@
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Read more"
-       }
-
+      }
     },
     {
       "accordion_heading": "Phasellus at sem eros:",
@@ -99,7 +98,7 @@
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
         "cta": "Read more"
-       }
+      }
     }
   ]
 }
