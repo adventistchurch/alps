@@ -9,8 +9,6 @@
   "logo_horiz": "logo__nad-2017.svg",
   "header_class": "header__wide-logo division__nad",
 
-
-
   "primary_nav": {
     "items": [
       {
@@ -114,6 +112,7 @@
     "pub_region": "Spokane, WA, United States of America",
     "byline": "Fred Hardinge, DrPH, Associate Director of Health Ministries for the General Conference of Seventh-day Adventists"
   },
+
   "fig_with_modal": {
     "large_image_url": "/images/samples/health_sloop-trail.jpg",
     "figure_class": "size--medium",
@@ -123,7 +122,6 @@
     },
     "caption": "Family members and office friends ready to cut the ribbon."
   },
-
 
   "page_header": {
     "has_image": false,
