@@ -36,11 +36,11 @@
 
 <div class="pad--primary spacing column__primary">
 
-  <div class="rtl">{% include 'organisms-article-header' %}</div>
+  <div class="rtl">{% include '@organisms/sections/article-header.twig' %}</div>
 
   <div class="text article__body spacing rtl">
 
-    {% include 'molecules-video-figure-with-caption' with {'figure_class' : 'size--large'} %}
+    {% include '@molecules/media/video-figure-with-caption.twig' with {'figure_class' : 'size--large'} %}
 
     <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
 
