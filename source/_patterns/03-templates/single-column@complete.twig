@@ -1,14 +1,14 @@
 <div class="content cf has-aside" role="document">
-  {% include 'organisms-header' %}
+  {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
-    {% include 'organisms-page-header' %}
+    {% include '@organisms/sections/page-header.twig' %}
     <div class="layout-container full--until-large">
       <div class="flex-container cf">
         <div class="column__primary bg--white can-be--dark-light">
-          {% include 'organisms-grid-3up-content' %}
+          {% include '@organisms/content/grid-3up-content.twig' %}
         </div> <!-- /.column__primary -->
       </div> <!-- /.flex-container -->
     </div> <!-- /.layout-container -->
   </main> <!-- /.main -->
-  {% include 'organisms-footer' %}
+  {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

@@ -6,7 +6,7 @@
   {% for block in media_blocks %}
     <div class="gi">
       <div class="spacing">
-        <div class="pad">{% include 'molecules-media-block' with block %}</div>
+        <div class="pad">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if has_hr %}<hr>{% endif %}
       </div>
     </div> <!-- /.gi -->
@@ -14,7 +14,7 @@
   {% for block in media_blocks_2 %}
     <div class="gi">
       <div class="spacing">
-        <div class="pad">{% include 'molecules-media-block' with block %}</div>
+        <div class="pad">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if has_hr %}<hr>{% endif %}
       </div>
     </div> <!-- /.gi -->
