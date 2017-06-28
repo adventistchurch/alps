@@ -26,6 +26,19 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 This creates all patterns, the styleguide, and the pattern lab site as well as a local server for development.
 
+### Twig Include Syntax
+In order to play nice with environments outside of Pattern Lab, we use the default [Twig include syntax](https://twig.sensiolabs.org/doc/2.x/functions/include.html) over the Pattern Lab shorthand.
+
+**Don't do this:**
+```twig
+{% include 'templates-home' %}
+```
+
+**Do this:**
+```twig
+{% include '@templates/home@complete.twig' %}
+```
+
 ### Drupal Pattern Exporting
 For Drupal projects utilizing ALPS twig files, you'll need to run the pattern export command in order to generate the Drupal-specific file naming.
 
