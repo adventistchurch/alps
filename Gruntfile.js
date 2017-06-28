@@ -153,10 +153,14 @@ module.exports = function(grunt) {
                         dest: 'source/drupal-patterns/',
                         rename: function(dest, src) {
                             return dest + src.replace('.twig', '.html.twig');
-                        },
-                        filter: 'isFile'
+                        }
                     }
-                ]
+                ],
+                options: {
+                    process: function(content, srcpath) {
+                        return content.replace(/.twig/g, '.html.twig');
+                    }
+                }
             }
         },
 
