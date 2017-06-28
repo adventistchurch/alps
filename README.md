@@ -30,7 +30,7 @@ This creates all patterns, the styleguide, and the pattern lab site as well as a
 For Drupal projects utilizing ALPS twig files, you'll need to run the pattern export command in order to generate the Drupal-specific file naming.
 
 - Create a directory named "drupal-patterns" in `/source/`
-- run `grunt export-drupal-patterns` - this will copy all patterns from the `/source/` directory and rename the `.twig` file extensions to `.html.twig`
+- run `grunt export-drupal-patterns` - this will copy all patterns from the `/source/_patterns/` directory and rename the `.twig` file extensions to `.html.twig`
 
 ## Project Standards
 
