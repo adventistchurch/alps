@@ -144,14 +144,14 @@ module.exports = function(grunt) {
                     }
                 ]
             },
-            style_guide: {
+            styleGuide: {
                 files: [
                     // Export public/patterns directory to style guide's includes
                     // This is used to include the actual code into the code samples
                     {
                         expand: true,
                         cwd: 'public/patterns/',
-                        src: ['**/*' + /@igs/g],
+                        src: ['**/*@igs*'],
                         dest: '../igs-guidelines/_includes/patterns'
                     },
                     // Export public/patterns directory to style guide patterns directory
@@ -159,8 +159,29 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'public/patterns/',
-                        src: ['**/*' + /@igs/g],
+                        src: ['**/*@igs*'],
                         dest: '../igs-guidelines/patterns'
+                    },
+                    // Export css directory to style guide css directory
+                    {
+                        expand: true,
+                        cwd: 'public/css/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/css'
+                    },
+                    // Export js directory to style guide js directory
+                    {
+                        expand: true,
+                        cwd: 'public/js/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/js'
+                    },
+                    // Export images directory to style guide images directory
+                    {
+                        expand: true,
+                        cwd: 'public/images/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/images'
                     }
                 ]
             },
@@ -321,17 +342,17 @@ module.exports = function(grunt) {
     ]);
 
     /**
-<<<<<<< HEAD
      * Style Guide tasks
      */
     grunt.registerTask('style-guide-export', [
-        'copy:style_guide'
-=======
+        'copy:styleGuide'
+    ]);
+
+    /**
      * Drupal pattern exporting
      */
     grunt.registerTask('export-drupal-patterns', [
         'copy:drupalPatterns'
->>>>>>> master
     ]);
 
     /**
