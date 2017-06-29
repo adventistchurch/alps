@@ -13,6 +13,7 @@ patternStates:
     - inprogress
     - inreview
     - complete
+    - igs
 styleGuideExcludes: 'templates,pages'
 cacheBusterOn: 'true'
 exportDir: export

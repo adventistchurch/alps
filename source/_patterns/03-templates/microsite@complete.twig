@@ -1,34 +1,34 @@
 <div class="content cf has-aside" role="document">
-  {% include 'organisms-header' %}
+  {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
-    {% include 'organisms-page-header' %}
+    {% include '@organisms/sections/page-header.twig' %}
     {% if article_navigation %}
-      {% include 'molecules-article-navigation' %}
+      {% include '@molecules/navigation/article-navigation.twig' %}
     {% endif %}
     <div class="layout-container full--until-large">
       <div class="flex-container cf">
         <div class="shift-left--fluid column__primary bg--white no-pad--top no-pad--btm can-be--dark-light">
           {% if news_home %}
-            {% include 'organisms-news-content' %}
+            {% include '@organisms/content/news-content.twig' %}
           {% endif %}
           {% if news_channel %}
-            {% include 'organisms-grid-3up-content' with {'grid_class': 'grid--uniform', 'has_hr': false} %}
+            {% include '@organisms/content/grid-3up-content.twig' with {'grid_class': 'grid--uniform', 'has_hr': false} %}
           {% endif %}
           {% if news_article %}
-            {% include 'organisms-news-article-content' %}
+            {% include '@organisms/content/news-article-content.twig' %}
           {% endif %}
           {% if is_rtl %}
-            {% include 'organisms-news-article-content-rtl' %}
+            {% include '@organisms/content/news-article-content-rtl.twig' %}
           {% endif %}
         </div> <!-- /.shift-left--fluid -->
         <div class="shift-right--fluid bg--beige can-be--dark-dark">
-          {% include 'molecules-aside-navigation' %}
+          {% include '@molecules/navigation/aside-navigation.twig' %}
           <div class="column__secondary can-be--dark-dark">
-            {% include 'organisms-aside' %}
+            {% include '@organisms/asides/aside.twig' %}
           </div>
         </div> <!-- /.shift-right--fluid -->
       </div> <!-- /.flex-container -->
     </div> <!-- /.layout-container -->
   </main> <!-- /.main -->
-  {% include 'organisms-footer' %}
+  {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

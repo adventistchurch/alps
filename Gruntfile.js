@@ -151,19 +151,37 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'public/patterns/',
-                        src: ['**/*'],
-                        dest: 'style-guide/_includes/patterns'
+                        src: ['**/*' + /@igs/g],
+                        dest: '../igs-guidelines/_includes/patterns'
                     },
                     // Export public/patterns directory to style guide patterns directory
                     // This is used to pipe the live patterns into the iframe
                     {
                         expand: true,
                         cwd: 'public/patterns/',
-                        src: ['**/*'],
-                        dest: 'style-guide/patterns'
+                        src: ['**/*' + /@igs/g],
+                        dest: '../igs-guidelines/patterns'
                     }
                 ]
             },
+            drupalPatterns: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'source/_patterns/',
+                        src: ['**/*.twig'],
+                        dest: 'source/drupal-patterns/',
+                        rename: function(dest, src) {
+                            return dest + src.replace('.twig', '.html.twig');
+                        }
+                    }
+                ],
+                options: {
+                    process: function(content, srcpath) {
+                        return content.replace(/.twig/g, '.html.twig');
+                    }
+                }
+            }
         },
 
         // Symlink creates a cdn/latest
@@ -303,10 +321,17 @@ module.exports = function(grunt) {
     ]);
 
     /**
+<<<<<<< HEAD
      * Style Guide tasks
      */
     grunt.registerTask('style-guide-export', [
         'copy:style_guide'
+=======
+     * Drupal pattern exporting
+     */
+    grunt.registerTask('export-drupal-patterns', [
+        'copy:drupalPatterns'
+>>>>>>> master
     ]);
 
     /**
