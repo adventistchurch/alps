@@ -7,9 +7,6 @@ table {
   border-spacing: 0;
   border: 1px solid $gray;
   width: 100%;
-  &.table--responsive{
-    min-width: 500px;
-  }
 }
 th {
   text-align: left;
