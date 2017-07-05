@@ -7,15 +7,29 @@ table {
   border-spacing: 0;
   border: 1px solid $gray;
   width: 100%;
+  &.table--responsive{
+    min-width: 500px;
+  }
 }
 th {
   text-align: left;
-  border: 1px solid $gray;
+  border: 1px solid transparent;
+  background-color: $white;
+  border-bottom: $gray solid 1px;
   padding: 0.2em;
+  font-size: rem(14);
+  padding: $pad-half;
+}
+tr {
+    border: 1px solid transparent;
+  &:nth-child(even){
+    background-color: lighten($denim, 60%);
+  }
 }
 td {
-  border: 1px solid $gray;
-  padding: 0.2em;
+  border: 1px solid transparent;
+  padding: $pad-half;
+  font-size: rem(14);
 }
 
 /**
