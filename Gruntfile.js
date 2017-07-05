@@ -143,6 +143,24 @@ module.exports = function(grunt) {
                         dest: 'cdn/<%= major_version %>/<%= version %>/'
                     }
                 ]
+            },
+            drupalPatterns: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'source/_patterns/',
+                        src: ['**/*.twig'],
+                        dest: 'source/drupal-patterns/',
+                        rename: function(dest, src) {
+                            return dest + src.replace('.twig', '.html.twig');
+                        }
+                    }
+                ],
+                options: {
+                    process: function(content, srcpath) {
+                        return content.replace(/.twig/g, '.html.twig');
+                    }
+                }
             }
         },
 
@@ -280,6 +298,13 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('images', [
         'imagemin'
+    ]);
+
+    /**
+     * Drupal pattern exporting
+     */
+    grunt.registerTask('export-drupal-patterns', [
+        'copy:drupalPatterns'
     ]);
 
     /**

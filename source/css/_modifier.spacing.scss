@@ -26,6 +26,11 @@
 .pad-half--btm {
   padding-bottom: $pad-half;
 }
+.pad-and-half--btm--large {
+  @include media('>large') {
+    padding-bottom: $pad-and-half;
+  }
+}
 .pad-half--left {
   padding-left: $pad-half;
 }

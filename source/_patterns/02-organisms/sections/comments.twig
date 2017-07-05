@@ -4,17 +4,17 @@
   <ul class="comment-list spacing--one-and-half">
     {%  for comment in comments.comment %}
       <li class="comment">
-        {% include 'molecules-comment' with {'single_comment_text': comment.comment_text,'single_comment_date': comment.comment_date,'single_comment_byline': comment.comment_byline} %}
+        {% include '@molecules/components/comment.twig' with {'single_comment_text': comment.comment_text,'single_comment_date': comment.comment_date,'single_comment_byline': comment.comment_byline} %}
         {% for comment_child in comment.comment_children %}
           <ul class="children">
             <li class="comment">
-              {% include 'molecules-comment' with {'single_comment_text': comment_child.comment_text,'single_comment_date': comment_child.comment_date,'single_comment_byline': comment_child.comment_byline} %}
+              {% include '@molecules/components/comment.twig' with {'single_comment_text': comment_child.comment_text,'single_comment_date': comment_child.comment_date,'single_comment_byline': comment_child.comment_byline} %}
             </li>
           </ul>
         {% endfor %}
       </li>
     {% endfor %}
   </ul>
-  {% include 'molecules-comment-form' %}
+  {% include '@molecules/forms/comment-form.twig' %}
 </section>
 {% endif %}

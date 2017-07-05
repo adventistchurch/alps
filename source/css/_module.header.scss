@@ -173,6 +173,9 @@
     width: rem(170);
     height: rem(170);
   }
+  .header__wide-logo & {
+    width: rem(335);
+  }
 }
 .logo--with-text.logo__link--horiz {
   padding-bottom: rem(22);

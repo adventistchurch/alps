@@ -1,22 +1,22 @@
 <div class="content cf has-aside" role="document">
-  {% include 'organisms-header' %}
+  {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
-    {% include 'organisms-page-header' %}
+    {% include '@organisms/sections/page-header.twig' %}
     <div class="layout-container full--until-large">
       <div class="flex-container cf {% if page_reversed %} shift--reversed {% endif %}">
         <div class="shift-left--fluid column__primary bg--white can-be--dark-light">
-          {% include 'organisms-page-content' %}
+          {% include '@organisms/content/page-content.twig' %}
         </div> <!-- /.shift-left--fluid -->
         <div class="shift-right--fluid bg--beige can-be--dark-dark">
           {% if breakout_block %}
-            {% include 'molecules-media-block' with {'media_block_default': breakout_block.media_block_default} %}
+            {% include '@molecules/blocks/media-block.twig' with {'media_block_default': breakout_block.media_block_default} %}
           {% endif %}
           <div class="column__secondary can-be--dark-dark">
-            {% include 'organisms-aside' %}
+            {% include '@organisms/asides/aside.twig' %}
           </div>
         </div> <!-- /.shift-right--fluid -->
       </div> <!-- /.flex-container -->
     </div> <!-- /.layout-container -->
   </main> <!-- /.main -->
-  {% include 'organisms-footer' %}
+  {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

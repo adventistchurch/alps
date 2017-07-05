@@ -3,17 +3,17 @@
   <div class="carousel__slides {{ carousel.carousel_class }}">
     {% for slide in carousel.slides %}
       {% if carousel.slides2column %}
-        {% include 'molecules-slide-2-column' with slide %}
+        {% include '@molecules/components/slide-2-column.twig' with slide %}
       {% else %}
-        {% include 'molecules-slide' with slide %}
+        {% include '@molecules/components/slide.twig' with slide %}
       {% endif %}
     {% endfor %}
   </div> <!-- /.carousel__slides -->
 
   {% if not carousel.no_arrows %}
   <div class="carousel__controls">
-    <span class="arrow__prev"><span class="carousel__arrow carousel__arrow--prev icon round">{% include 'atoms-icon-arrow-left' with {'fill_class': 'theme--secondary-fill-color'} %}</span></span>
-    <span class="arrow__next"><span class="carousel__arrow carousel__arrow--next icon round">{% include 'atoms-icon-arrow-right' with {'fill_class': 'theme--secondary-fill-color'} %}</span></span>
+    <span class="arrow__prev"><span class="carousel__arrow carousel__arrow--prev icon round">{% include '@atoms/icons/icon-arrow-left.twig' with {'fill_class': 'theme--secondary-fill-color'} %}</span></span>
+    <span class="arrow__next"><span class="carousel__arrow carousel__arrow--next icon round">{% include '@atoms/icons/icon-arrow-right.twig' with {'fill_class': 'theme--secondary-fill-color'} %}</span></span>
   </div> <!-- /.carousel__controls -->
   {% endif %}
 </div> <!-- /.carousel -->

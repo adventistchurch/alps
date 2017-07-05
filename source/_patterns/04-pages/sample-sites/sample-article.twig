@@ -1,7 +1,7 @@
 <div class="content cf has-aside" role="document">
-  {% include 'organisms-header' %}
+  {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
-    {% include 'organisms-page-header' %}
+    {% include '@organisms/sections/page-header.twig' %}
     <div class="layout-container full--until-large">
       <div class="flex-container cf">
         <div class="shift-left--fluid column__primary bg--white no-pad--top no-pad--btm can-be--dark-light">
@@ -44,14 +44,14 @@
 
 <div class="pad--primary spacing column__primary">
 
-  {% include 'organisms-article-header' %}
+  {% include '@organisms/sections/article-header.twig' %}
 
   <div class="text article__body spacing">
 
 
     <p>The Upper Columbia Conference of Seventh-day Adventists dedicated a 1-mile walking trail that meanders through the pine trees on their property in memory of Dr. Jay Randall Sloop, former Health Ministries Director, who died on a mission trip to the Ukraine two years ago. This was a more than fitting tribute to honor a man who challenged everyone he contacted—patients, friends, church members, even the casual acquaintance—to  take seriously their own health: physically, mentally, and spiritually. Exercise was a cornerstone of his everyday life—daily walks on the hills near their home, or a climb on a mountain in the Cascades, and saying to colleagues during a break in meetings, “Come on, let’s walk around the parking lot together!” </p>
 
-    {% include 'molecules-figure-with-modal' with {'figure_class' : 'size--medium alignright'} %}
+    {% include '@molecules/media/figure-with-modal.twig' with {'figure_class' : 'size--medium alignright'} %}
 
 
     <p>During the dedication service, Dr. Fred Hardinge, Associate General Conference Health Ministries Director awarded Dr. Sloop, posthumously, the Medal of Distinguished Service in Health Ministry. This award recognizes those who have given a lifetime of service to the work of Health Ministry. Eighty-seven such medals have now been presented to a very diverse group of individuals around the globe--each one a humble, servant leader in Health Ministry. This was the first time it has been awarded posthumously, and the lovely plaque and beautiful lapel pin were presented to Dr. Sloop's widow, Sharlene Sloop.</p>
@@ -76,10 +76,10 @@
 
 <div class="g g-2up--at-medium with-divider">
   <div class="gi">
-    <div class="pad pad--primary">{% include 'molecules-media-block' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
+    <div class="pad pad--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
   </div> <!-- /.gi -->
   <div class="gi">
-    <div class="pad pad--primary">{% include 'molecules-media-block' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
+    <div class="pad pad--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
   </div> <!-- /.gi -->
 </div> <!-- /.2up--at-medium -->
 
@@ -87,14 +87,14 @@
         </div> <!-- /.shift-left--fluid -->
         <div class="shift-right--fluid bg--beige can-be--dark-dark">
           {% if breakout_block %}
-            {% include 'molecules-media-block' %}
+            {% include '@molecules/blocks/media-block.twig' %}
           {%  endif %}
           <div class="column__secondary can-be--dark-dark">
-            {% include 'organisms-aside' %}
+            {% include '@organisms/asides/aside.twig' %}
           </div>
         </div> <!-- /.shift-right--fluid -->
       </div> <!-- /.flex-container -->
     </div> <!-- /.layout-container -->
   </main> <!-- /.main -->
-  {% include 'organisms-footer' %}
+  {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

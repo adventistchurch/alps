@@ -9,7 +9,7 @@
           <ul class="secondary-nav__subnav__list theme--secondary-background-color">
             {% for sub_item in item.subnav.items %}
               <li class="secondary-nav__subnav__list-item">
-                <a class="secondary-nav__subnav__link theme--secondary-background-hover-color--at-medium {% if sub_item.active_link %} active {% endif %}" href="{{ sub_item.url }}">{% if sub_item.active_link %}<span class="icon icon--xs icon__check">{% include 'atoms-icon-check' %}</span>{% endif %} {{ sub_item.text }}</a>
+                <a class="secondary-nav__subnav__link theme--secondary-background-hover-color--at-medium {% if sub_item.active_link %} active {% endif %}" href="{{ sub_item.url }}">{% if sub_item.active_link %}<span class="icon icon--xs icon__check">{% include '@atoms/icons/icon-check.twig' %}</span>{% endif %} {{ sub_item.text }}</a>
               </li>
             {% endfor %}
           </ul> <!-- /.subnav -->

@@ -6,7 +6,7 @@
   <p>Mauris sapien purus, pharetra ac elit ac, volutpat suscipit ligula. Nullam dapibus pharetra vestibulum. Sed blandit enim quis efficitur pharetra. Nullam mattis a enim et suscipit. Praesent luctus quam nec quam fermentum, a dictum ex auctor. Nulla vel ullamcorper velit. Nam mollis turpis a commodo efficitur. Donec in tincidunt enim, quis placerat nunc.</p>
 
   {% if fig_1 %}
-    {% include 'molecules-figure-with-caption' with fig_1 %}
+    {% include '@molecules/media/figure-with-caption.twig' with fig_1 %}
   {% endif %}
 
   <p>Mauris vel ante porttitor nulla ultricies porta. Aliquam sapien mi, varius vel tellus in, dapibus pulvinar lectus. Proin consectetur ex vel eros sodales, at vestibulum nisl molestie. Aliquam velit neque, consectetur ut lorem nec, volutpat vestibulum nulla.</p>
@@ -27,12 +27,12 @@
 
   <p><a href="" class="btn">Read the whole post</a></p>
 
-  {% include 'molecules-video-figure-with-caption' with {'figure_class': 'size--large'}  %}
+  {% include '@molecules/media/video-figure-with-caption.twig' with {'figure_class': 'size--large'}  %}
 
   <p><a href="#">Aliquam erat volutpat.</a> Mauris vulputate scelerisque feugiat ras a erat a diam venenatis aliquam sed tempus, <strong>purus ac pretium</strong> varius, risus orci sagittis purus, quis auctor libero magna nec magna. Cum <a href="">sociis natoque penatibus et</a> magnis dis parturient montes, nascetur ridiculus mus.</p>
 
   {% if fig_2 %}
-    {% include 'molecules-figure-with-caption' with fig_2 %}
+    {% include '@molecules/media/figure-with-caption.twig' with fig_2 %}
   {% endif %}
 
   <p>Mauris sapien purus, pharetra ac elit ac, volutpat suscipit ligula. Nullam dapibus pharetra vestibulum. Sed blandit enim quis efficitur pharetra. Nullam mattis a enim et suscipit. Praesent luctus quam nec quam fermentum, a dictum ex auctor. Nulla vel ullamcorper velit. Nam mollis turpis a commodo efficitur. Donec in tincidunt enim, quis placerat nunc.</p>
@@ -58,11 +58,11 @@
   <p>Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.</p>
 
   {% if fig_4 %}
-    {% include 'molecules-figure-with-caption' with fig_4 %}
+    {% include '@molecules/media/figure-with-caption.twig' with fig_4 %}
   {% endif %}
 
   {% if fig_5 %}
-    {% include 'molecules-figure-with-caption' with fig_5%}
+    {% include '@molecules/media/figure-with-caption.twig' with fig_5%}
   {% endif %}
 
   <p>In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.</p>
@@ -72,7 +72,7 @@
   <p>Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum.</p>
 
   {% if fig_3 %}
-    {% include 'molecules-figure-with-caption' with fig_3 %}
+    {% include '@molecules/media/figure-with-caption.twig' with fig_3 %}
   {% endif %}
 
   <p>Maecenas eros dolor, <em>rutrum eu sollicitudin</em> eu, commodo at leo suspendisse potenti. Sed eu nibh sit amet quam auctor feugiat vel et risus maecenas eu urna adipiscing neque dictum mollis suscipit in augue.</p>
@@ -85,7 +85,7 @@
 
   {% if picture_1 %}
     <figure class="breakout breakout-image">
-      {% include 'atoms-picture' with picture_1 %}
+      {% include '@atoms/images/picture.twig' with picture_1 %}
     </figure>
   {% endif %}
 
@@ -107,7 +107,7 @@
 
   {% if picture_2 %}
     <figure class="size--full">
-      {% include 'atoms-picture' with picture_2 %}
+      {% include '@atoms/images/picture.twig' with picture_2 %}
     </figure>
   {% endif %}
 

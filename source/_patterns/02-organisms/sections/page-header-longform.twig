@@ -9,7 +9,7 @@
     </div>
     {% if page_header_longform.picture %}
       <div class="longform__hero">
-      {% include 'atoms-picture' with {'picture': page_header_longform.picture} %}
+      {% include '@atoms/images/picture.twig' with {'picture': page_header_longform.picture} %}
       </div>
     {% endif %}
   </div>
