@@ -151,17 +151,21 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'public/patterns/',
-                        src: ['**/*@igs*'],
-                        dest: '../igs-guidelines/_includes/patterns'
+                        src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
+                        dest: '../igs-guidelines/_includes/patterns/',
+                        rename: function(dest, src) {
+                            console.log(src);
+                            return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
+                        }
                     },
                     // Export public/patterns directory to style guide patterns directory
                     // This is used to pipe the live patterns into the iframe
-                    {
-                        expand: true,
-                        cwd: 'public/patterns/',
-                        src: ['**/*@igs*'],
-                        dest: '../igs-guidelines/patterns'
-                    },
+                    // {
+                    //     expand: true,
+                    //     cwd: 'public/patterns/',
+                    //     src: ['**/*@igs*'],
+                    //     dest: '../igs-guidelines/patterns'
+                    // },
                     // Export css directory to style guide css directory
                     {
                         expand: true,
