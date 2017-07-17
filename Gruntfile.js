@@ -146,7 +146,7 @@ module.exports = function(grunt) {
             },
             styleGuide: {
                 files: [
-                    // Export public/patterns directory to style guide's includes
+                    // Export public/patterns directory to IGS's includes
                     // This is used to include the actual code into the code samples
                     {
                         expand: true,
@@ -154,18 +154,21 @@ module.exports = function(grunt) {
                         src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
                         dest: '../igs-guidelines/_includes/patterns/',
                         rename: function(dest, src) {
-                            console.log(src);
                             return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
                         }
                     },
-                    // Export public/patterns directory to style guide patterns directory
+                    // Export public/patterns directory to IGS patterns directory
                     // This is used to pipe the live patterns into the iframe
-                    // {
-                    //     expand: true,
-                    //     cwd: 'public/patterns/',
-                    //     src: ['**/*@igs*'],
-                    //     dest: '../igs-guidelines/patterns'
-                    // },
+                    // Needs to be here in order to generate into the '_site' directory.
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
+                        dest: '../igs-guidelines/patterns/',
+                        rename: function(dest, src) {
+                            return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
+                        }
+                    },
                     // Export css directory to style guide css directory
                     {
                         expand: true,
@@ -206,6 +209,25 @@ module.exports = function(grunt) {
                         return content.replace(/.twig/g, '.html.twig');
                     }
                 }
+            }
+        },
+
+        // Add {% raw %} jekyll tags to Twig files so it doesn't parse it.
+        concat: {
+            dist: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
+                        dest: '../igs-guidelines/patterns/'
+                    }
+                ]
+            },
+            options: {
+                stripBanners: true,
+                banner: '{% raw %}',
+                footer: '{% endraw %}'
             }
         },
 
@@ -349,7 +371,8 @@ module.exports = function(grunt) {
      * Style Guide tasks
      */
     grunt.registerTask('style-guide-export', [
-        'copy:styleGuide'
+        'copy:styleGuide',
+        'concat'
     ]);
 
     /**
