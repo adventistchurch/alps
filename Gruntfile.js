@@ -227,6 +227,12 @@ module.exports = function(grunt) {
                         expand: true,
                         cwd: 'public/patterns/',
                         src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
+                        dest: '../igs-guidelines/_includes/patterns/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
                         dest: '../igs-guidelines/patterns/'
                     }
                 ]
