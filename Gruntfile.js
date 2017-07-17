@@ -169,26 +169,33 @@ module.exports = function(grunt) {
                             return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
                         }
                     },
-                    // Export css directory to style guide css directory
+                    // Export css directory to IGS css directory
                     {
                         expand: true,
                         cwd: 'public/css/',
                         src: ['**/*'],
                         dest: '../igs-guidelines/css'
                     },
-                    // Export js directory to style guide js directory
+                    // Export js directory to IGS js directory
                     {
                         expand: true,
                         cwd: 'public/js/',
                         src: ['**/*'],
                         dest: '../igs-guidelines/js'
                     },
-                    // Export images directory to style guide images directory
+                    // Export images directory to IGS images directory
                     {
                         expand: true,
                         cwd: 'public/images/',
                         src: ['**/*'],
                         dest: '../igs-guidelines/images'
+                    },
+                    // Export styleguide directory to IGS styleguide directory
+                    {
+                        expand: true,
+                        cwd: 'public/styleguide/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/styleguide'
                     }
                 ]
             },
