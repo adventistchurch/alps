@@ -39,6 +39,9 @@ In order to play nice with environments outside of Pattern Lab, we use the defau
 {% include '@templates/home@complete.twig' %}
 ```
 
+### Exporting Assets to Adventist Identity Guideline System
+To export the patterns to the Adventist Identity Guideline System, run the following grunt export command: `grunt style-guide-export`. All patterns will be copied over to the igs-guidelines repo, which should be located in the same root folder as ALPS , when this gets run. This command will clean up the files, removing any flags that are unneeded in the igs-guidelines repo.
+
 ### Drupal Pattern Exporting
 For Drupal projects utilizing ALPS twig files, you'll need to run the pattern export command in order to generate the Drupal-specific file naming.
 
