@@ -66,6 +66,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'cdn/<%= major_version %>/<%= version %>/css/main.css': 'source/css/main.scss',
+                    'cdn/<%= major_version %>/<%= version %>/css/net-adventist-shim.css': 'source/css/net-adventist-shim.scss',
                 }
             }
         },
