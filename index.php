@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat|Oswald" media="all">
     <link rel="stylesheet" type="text/css" href="/cdn/2/latest/css/main.css" media="all">
     <script>document.createElement("picture");</script>
-    <script src="//cdn.adventist.io/alps/2/latest/js/head-script.min.js" type="text/javascript"></script>
+    <script src="//cdn.adventist.org/alps/2/latest/js/head-script.min.js" type="text/javascript"></script>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <link rel="stylesheet" href="/public/styleguide/css/styleguide.css?1472759460" media="all" />
@@ -48,14 +48,14 @@
               <p>Include this code in the <code>&lt;head&gt;</code> of your page. This include the fonts, ALPS css, and the Javascript needed to start the page.</p>
               <pre class="language-markup"><code class="language-markup pad" id="head_code">
   &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;//fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat|Oswald&#x22; media=&#x22;all&#x22;&#x3E;<br>
-  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;//cdn.adventist.io/alps/2/latest/css/main.css&#x22; media=&#x22;all&#x22;&#x3E;<br>
-  &#x3C;script src=&#x22;//cdn.adventist.io/alps/2/latest/js/head-script.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;</code>
+  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;//cdn.adventist.org/alps/2/latest/css/main.css&#x22; media=&#x22;all&#x22;&#x3E;<br>
+  &#x3C;script src=&#x22;//cdn.adventist.org/alps/2/latest/js/head-script.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;</code>
               </pre>
               <h3 class="font--secondary--m">Footer</h3>
               <p>Include this code in the footer of your page, right before the closing <code>&lt;/body&gt;</code> tag.</p>
               <pre class="language-markup"><code class="language-markup pad">
   &lt;script src=&quot;https://code.jquery.com/jquery-2.2.4.min.js&quot;&gt;&lt;/script&gt;<br>
-  &lt;script src=&quot;//cdn.adventist.io/alps/2/latest/js/script.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
+  &lt;script src=&quot;//cdn.adventist.org/alps/2/latest/js/script.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
               </pre>
             </div>
           </div>
@@ -94,7 +94,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="/public/styleguide/js/vendor/prism.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
-    <script src="//cdn.adventist.io/alps/2/latest/js/script.min.js" type="text/javascript"></script>
+    <script src="//cdn.adventist.org/alps/2/latest/js/script.min.js" type="text/javascript"></script>
 
   </body>
 </html>
