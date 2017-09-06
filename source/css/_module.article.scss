@@ -127,6 +127,7 @@
 .alignright,
 .aligncenter {
   display: block;
+  height: auto;
   @include media('<=medium') {
     width: auto;
   }
