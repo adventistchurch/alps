@@ -143,6 +143,104 @@ module.exports = function(grunt) {
                         dest: 'cdn/<%= major_version %>/<%= version %>/'
                     }
                 ]
+            },
+            styleGuide: {
+                files: [
+                    // Export public/patterns directory to IGS's includes
+                    // This is used to include the actual code into the code samples
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
+                        dest: '../igs-guidelines/_includes/patterns/',
+                        rename: function(dest, src) {
+                            return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
+                        }
+                    },
+                    // Export public/patterns directory to IGS patterns directory
+                    // This is used to pipe the live patterns into the iframe
+                    // Needs to be here in order to generate into the '_site' directory.
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
+                        dest: '../igs-guidelines/patterns/',
+                        rename: function(dest, src) {
+                            return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
+                        }
+                    },
+                    // Export css directory to IGS css directory
+                    {
+                        expand: true,
+                        cwd: 'public/css/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/css'
+                    },
+                    // Export js directory to IGS js directory
+                    {
+                        expand: true,
+                        cwd: 'public/js/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/js'
+                    },
+                    // Export images directory to IGS images directory
+                    {
+                        expand: true,
+                        cwd: 'public/images/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/images'
+                    },
+                    // Export styleguide directory to IGS styleguide directory
+                    {
+                        expand: true,
+                        cwd: 'public/styleguide/',
+                        src: ['**/*'],
+                        dest: '../igs-guidelines/styleguide'
+                    }
+                ]
+            },
+            drupalPatterns: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'source/_patterns/',
+                        src: ['**/*.twig'],
+                        dest: 'source/drupal-patterns/',
+                        rename: function(dest, src) {
+                            return dest + src.replace('.twig', '.html.twig');
+                        }
+                    }
+                ],
+                options: {
+                    process: function(content, srcpath) {
+                        return content.replace(/.twig/g, '.html.twig');
+                    }
+                }
+            }
+        },
+
+        // Add {% raw %} jekyll tags to Twig files so it doesn't parse it.
+        concat: {
+            dist: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
+                        dest: '../igs-guidelines/_includes/patterns/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'public/patterns/',
+                        src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
+                        dest: '../igs-guidelines/patterns/'
+                    }
+                ]
+            },
+            options: {
+                stripBanners: true,
+                banner: '{% raw %}',
+                footer: '{% endraw %}'
             }
         },
 
@@ -280,6 +378,21 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('images', [
         'imagemin'
+    ]);
+
+    /**
+     * Style Guide tasks
+     */
+    grunt.registerTask('style-guide-export', [
+        'copy:styleGuide',
+        'concat'
+    ]);
+
+    /**
+     * Drupal pattern exporting
+     */
+    grunt.registerTask('export-drupal-patterns', [
+        'copy:drupalPatterns'
     ]);
 
     /**

@@ -20,16 +20,17 @@
 .pad-5--btm {
   padding-bottom: rem(5);
 }
+.pad-5--left {
+  padding-left: rem(5);
+}
+.pad-5--right {
+  padding-right: rem(5);
+}
 .pad-half--top {
   padding-top: $pad-half;
 }
 .pad-half--btm {
   padding-bottom: $pad-half;
-}
-.pad-and-half--btm--large {
-  @include media('>large') {
-    padding-bottom: $pad-and-half;
-  }
 }
 .pad-half--left {
   padding-left: $pad-half;
@@ -54,6 +55,11 @@
 }
 .pad-and-half--btm {
   padding-bottom: $pad-and-half;
+}
+.pad-and-half--btm--large {
+  @include media('>large') {
+    padding-bottom: $pad-and-half;
+  }
 }
 .pad-and-half--top {
   padding-top: $pad-and-half;
