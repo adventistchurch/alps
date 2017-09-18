@@ -167,6 +167,13 @@
     }
   }
 }
+.spacing--quarter--until-xlarge {
+  & > * + * {
+    @include media('<=xlarge') {
+      margin-top: rem(verticalSpacing(mobile)/4);
+    }
+  }
+}
 .spacing--half {
   & > * + * {
     margin-top: rem(verticalSpacing(mobile)/2);
