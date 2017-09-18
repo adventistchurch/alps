@@ -99,7 +99,7 @@
 }
 .footer__phone {
   font-size: rem(13);
-  @include mq($small) {
+  @include mq($large) {
     font-size: rem(11);
   }
   &:hover {
