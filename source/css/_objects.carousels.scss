@@ -132,6 +132,10 @@
 .carousel__item-text--inner {
   width: 100%;
   max-width: rem(600);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .carousel__item-heading,
@@ -172,6 +176,11 @@
 .carousel__item--right {
   align-items: flex-end;
   text-align: right;
+
+  .carousel__item-text--inner {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
 
 // Carousel pagination
