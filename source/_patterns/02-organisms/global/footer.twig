@@ -21,9 +21,15 @@
 
     <div class="footer__legal bg--brown  can-be--dark-light">
       <div class="footer__legal__inner layout-container spacing--quarter--until-large">
-        <div class="footer__unify-copyright-address spacing--quarter--until-large">
+        <div class="footer__unify-copyright-address spacing--quarter--until-xlarge">
           <p class="footer__copyright font--secondary--xs brown--light no-space--btm">Copyright &copy; 2016, General Conference of Seventh-day Adventists</p>
-          <address class="footer__address font--secondary--xs brown--light">12501 Old Columbia Pike, Silver Spring, MD 20904, USA 301-680-6000</address>
+          <address class="footer__address font--secondary--xs brown--light" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">12501 Old Columbia Pike</span>
+            <span itemprop="addressLocality"> Silver Spring</span>,
+            <span itemprop="addressRegion"> MD</span>
+            20904, USA
+          </address>
+          <a itemprop="telephone" href="tel:301-680-6000" class="footer__phone font--secondary--xs brown--light">301-680-6000</a>
         </div> <!-- /.footer__unify-copyright-address -->
         <div class="footer__legal-links font--secondary--xs"><a class="hover link--brown-light space-half--right" href="{{ url }}">Trademark and Logo Usage</a> <a class="hover link--brown-light" href="{{ url }}">Legal Notice</a></div>
       </div> <!-- /.layout-container -->

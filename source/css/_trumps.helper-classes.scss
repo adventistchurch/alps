@@ -308,6 +308,28 @@
 .flex--justify-between {
   justify-content: space-between;
 }
+.flex--order-first,
+.flex--order-0 {
+  order: 0;
+}
+.flex--order-1 {
+  order: 1;
+}
+.flex--order-2 {
+  order: 2;
+}
+.flex--order-3 {
+  order: 3;
+}
+.flex--order-4 {
+  order: 4;
+}
+.flex--order-5 {
+  order: 5;
+}
+.flex--order-last {
+  order: 999;
+}
 
 /**
  * Max/min-widths/heights

@@ -58,21 +58,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
   }
 }
+.footer__legal-links {
+  white-space: nowrap;
+}
 .footer__unify-copyright-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   @include mq($large) {
     text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include mq($xlarge) {
+    flex-wrap: nowrap;
   }
 }
 .footer__copyright {
+  @include mq($large) {
+    width: 100%;
+  }
   @include mq($xlarge) {
-    display: inline-block;
     margin-right: $space;
+    width: auto;
   }
 }
 .footer__address {
+  @include mq($large) {
+    margin-right: $space-half;
+  }
   @include mq($xlarge) {
-    display: inline-block;
+    margin-right: $space;
+  }
+}
+.footer__phone {
+  font-size: rem(13);
+  @include mq($large) {
+    font-size: rem(11);
+  }
+  &:hover {
+    color: $white;
+    text-decoration: underline;
   }
 }
