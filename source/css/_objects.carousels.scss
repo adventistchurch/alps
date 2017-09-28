@@ -7,6 +7,21 @@
     width: 100%;
   }
 }
+.carousel__stacked {
+  .flex-container {
+    flex-direction: column;
+
+    > .shift-left--fluid,
+    > .shift-right--fluid {
+      width: 100%;
+    }
+
+    .shift-right--fluid {
+      padding: 0 $pad $pad $pad;
+      border: 1px solid $gray-light;
+    }
+  }
+}
 .carousel__controls {
   width: 100%;
 }
@@ -96,9 +111,6 @@
     position: relative;
   }
 }
-
-
-
 
 /**
  * Carousel with Text
