@@ -12,7 +12,7 @@ module.exports = function(grunt) {
      * of /cdn/<major_version/<version>/ that contains the javascript and css.
      */
     var major_version = "2";
-    var version = "2.0.5";
+    var version = "2.0.6";
 
     grunt.initConfig({
         pkg: pkg,
@@ -135,14 +135,12 @@ module.exports = function(grunt) {
                 ]
             },
             prod: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'source/',
-                        src: ['<%= copyFiles %>'],
-                        dest: 'cdn/<%= major_version %>/<%= version %>/'
-                    }
-                ]
+                files: [{
+                    expand: true,
+                    cwd: 'source/',
+                    src: ['<%= copyFiles %>'],
+                    dest: 'cdn/<%= major_version %>/<%= version %>/'
+                }]
             },
             styleGuide: {
                 files: [
@@ -200,17 +198,15 @@ module.exports = function(grunt) {
                 ]
             },
             drupalPatterns: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'source/_patterns/',
-                        src: ['**/*.twig'],
-                        dest: 'source/drupal-patterns/',
-                        rename: function(dest, src) {
-                            return dest + src.replace('.twig', '.html.twig');
-                        }
+                files: [{
+                    expand: true,
+                    cwd: 'source/_patterns/',
+                    src: ['**/*.twig'],
+                    dest: 'source/drupal-patterns/',
+                    rename: function(dest, src) {
+                        return dest + src.replace('.twig', '.html.twig');
                     }
-                ],
+                }],
                 options: {
                     process: function(content, srcpath) {
                         return content.replace(/.twig/g, '.html.twig');
@@ -222,8 +218,7 @@ module.exports = function(grunt) {
         // Add {% raw %} jekyll tags to Twig files so it doesn't parse it.
         concat: {
             dist: {
-                files: [
-                    {
+                files: [{
                         expand: true,
                         cwd: 'public/patterns/',
                         src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
