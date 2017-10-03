@@ -4,6 +4,8 @@
     {% for slide in carousel.slides %}
       {% if carousel.slides2column %}
         {% include '@molecules/components/slide-2-column.twig' with slide %}
+      {% elseif carousel.slidesStacked %}
+        {% include '@molecules/components/slide-stacked.twig' with slide %}
       {% else %}
         {% include '@molecules/components/slide.twig' with slide %}
       {% endif %}

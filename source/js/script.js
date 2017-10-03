@@ -44,23 +44,6 @@
     getWidth();
   }
 
-  // Get Slide Caption Height and Position Slick Dots
-  var getSlideCaptionHeight = function() {
-    var height = $('.carousel__stacked .carousel__item-image').outerHeight();
-    var dotsHeight = $('.carousel__stacked .slick-dots').outerHeight();
-    $(".carousel__stacked .slick-dots").css({
-        top: height - dotsHeight,
-        bottom: 'auto'
-      }
-    );
-  }
-  window.onload = function() {
-    getSlideCaptionHeight();
-  }
-  window.onresize = function() {
-    getSlideCaptionHeight();
-  }
-
   // SITE SPECIFIC JS ------------------------------//
 
   var toggleClasses = function(element) {
@@ -133,7 +116,8 @@
       nextArrow: '.arrow__next',
       prevArrow: '.arrow__prev',
       touchThreshold: 11,
-      dots: true
+      dots: true,
+      adaptiveHeight: true
     });
   }
 

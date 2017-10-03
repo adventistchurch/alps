@@ -1,33 +1,9 @@
 {
-  "head": {
-    "title": "News Home - The Official Site of the Seventh-day Adventist world church",
-    "html_class": "pl theme--campfire",
-    "body_class": "body theme--cool"
-  },
-
-  "page_header": {
-    "has_image": true,
-    "kicker": "Maecenas",
-    "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
-    "img_url_s": "//unsplash.it/600/300/?random",
-    "img_url_m": "//unsplash.it/900/400/?random",
-    "img_url_l": "//unsplash.it/1400/500/?random"
-  },
-
-  "header_text": {
-    "heading": "Nunc malesuada mauris",
-    "subhead": "Maecenas semper, odio et gravida rhoncus, dui nunc mollis tortor",
-    "img": {
-      "src": "//placehold.it/80x80",
-      "alt": "Image Alt"
-    }
-  },
-
   "carousel": {
     "carousel_outer_class": "carousel-nav--16-9",
     "carousel_class": "js-carousel__single-item",
-    "slidesStacked": true,
     "no_arrows": true,
+    "slidesStacked": true,
     "slides": [
       {
         "picture": {
@@ -105,8 +81,5 @@
         }
       }
     ]
-  },
-
-  "news_home": true
-
+  }
 }

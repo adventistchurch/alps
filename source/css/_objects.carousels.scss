@@ -6,20 +6,9 @@
   img {
     width: 100%;
   }
-}
-.carousel__stacked {
-  .flex-container {
-    flex-direction: column;
 
-    > .shift-left--fluid,
-    > .shift-right--fluid {
-      width: 100%;
-    }
-
-    .shift-right--fluid {
-      padding: 0 $pad $pad $pad;
-      border: 1px solid $gray-light;
-    }
+  .shift-right--fluid {
+    padding: 0 $pad $pad $pad;
   }
 }
 .carousel__controls {
@@ -130,6 +119,23 @@
     padding: $pad-and-half;
   }
 }
+
+.carousel__item--stacked {
+  display: flex;
+  flex-direction: column;
+
+  .carousel__item-text__wrap {
+    position: relative;
+    height: auto;
+    color: $body-color;
+    padding: $pad;
+    border: 1px solid $gray-light;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .carousel__item-text {
   position: relative;
   height: 100%;
@@ -148,6 +154,19 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
+}
+
+// Right align slide text
+.carousel__item {
+  .carousel__item--right {
+    align-items: flex-end;
+    text-align: right;
+
+    .carousel__item-text--inner {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
 }
 
 .carousel__item-heading,
@@ -172,26 +191,11 @@
   }
 }
 
-// Hero w/ two columns
-.hero-carousel--2-column {
+// Hero w/ two columns & Hero Stacked
+.hero-carousel--2-column,
+.hero-carousel--stacked {
   .carousel__item {
     max-height: none;
-  }
-  .shift-right--fluid {
-    @include media('>large') {
-      padding-left: $pad-double;
-    }
-  }
-}
-
-// Right align slide text
-.carousel__item--right {
-  align-items: flex-end;
-  text-align: right;
-
-  .carousel__item-text--inner {
-    justify-content: flex-end;
-    align-items: flex-end;
   }
 }
 
@@ -200,12 +204,12 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  padding: $pad;
   width: 100%;
   text-align: center;
   max-width: $max-width;
   bottom: 0;
   text-align: left;
+  padding: $pad;
   li {
     display: inline-block;
     border-radius: 50%;
@@ -215,8 +219,7 @@
     height: rem(15);
     margin-left: $space-half;
     cursor: pointer;
-    box-shadow: 0 0 rem(3) rgba($black, .3),
-                inset 0 0 rem(3) rgba($black, .3);
+    box-shadow: 0 0 rem(3) rgba($black, .3), inset 0 0 rem(3) rgba($black, .3);
   }
   .slick-active {
     background-color: $white;
@@ -252,26 +255,26 @@
     top: 0;
     bottom: auto;
     left: 0;
-    padding: rem(10);
+    padding: $pad rem(10);
     padding-top: calc(#{$ratio});
     transform: translate(0, 0);
   }
 }
 
 .carousel-nav--4-3 {
-  @include carousel-nav--adjustment('75% - 28px');
+  @include carousel-nav--adjustment('75% - 35px');
 }
 .carousel-nav--4-3--until-large {
   @include media('<large') {
-    @include carousel-nav--adjustment('75% - 28px');
+    @include carousel-nav--adjustment('75% - 35px');
   }
 }
 
 .carousel-nav--16-9 {
-  @include carousel-nav--adjustment('56.25% - 28px');
+  @include carousel-nav--adjustment('56.25% - 35px');
 }
 .carousel-nav--16-9--until-large {
   @include media('<large') {
-    @include carousel-nav--adjustment('56.25% - 28px');
+    @include carousel-nav--adjustment('56.25% - 35px');
   }
 }
