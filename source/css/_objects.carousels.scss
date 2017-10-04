@@ -120,22 +120,6 @@
   }
 }
 
-.carousel__item--stacked {
-  display: flex;
-  flex-direction: column;
-
-  .carousel__item-text__wrap {
-    position: relative;
-    height: auto;
-    color: $body-color;
-    padding: $pad;
-    border: 1px solid $gray-light;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
-
 .carousel__item-text {
   position: relative;
   height: 100%;
@@ -192,8 +176,7 @@
 }
 
 // Hero w/ two columns & Hero Stacked
-.hero-carousel--2-column,
-.hero-carousel--stacked {
+.hero-carousel--2-column {
   .carousel__item {
     max-height: none;
   }
@@ -276,5 +259,22 @@
 .carousel-nav--16-9--until-large {
   @include media('<large') {
     @include carousel-nav--adjustment('56.25% - 35px');
+  }
+}
+
+.carousel-nav--4-3,
+.carousel-nav--16-9 {
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .shift-left--fluid,
+  .shift-right--fluid {
+    width: 100%;
+  }
+
+  .shift-right--fluid {
+    border: 1px solid $gray-light;
   }
 }

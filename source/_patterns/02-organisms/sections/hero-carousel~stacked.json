@@ -3,7 +3,7 @@
     "carousel_outer_class": "carousel-nav--4-3",
     "carousel_class": "js-carousel__single-item",
     "no_arrows": true,
-    "slidesStacked": true,
+    "slides2column": true,
     "slides": [
       {
         "picture": {
