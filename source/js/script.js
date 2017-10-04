@@ -116,7 +116,8 @@
       nextArrow: '.arrow__next',
       prevArrow: '.arrow__prev',
       touchThreshold: 11,
-      dots: true
+      dots: true,
+      adaptiveHeight: true
     });
   }
 

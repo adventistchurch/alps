@@ -12,7 +12,7 @@ module.exports = function(grunt) {
      * of /cdn/<major_version/<version>/ that contains the javascript and css.
      */
     var major_version = "2";
-    var version = "2.0.6";
+    var version = "2.0.7";
 
     grunt.initConfig({
         pkg: pkg,
