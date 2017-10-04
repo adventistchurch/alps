@@ -5,7 +5,6 @@
 /public
 /vendor
 /source--mustache
-/cdn
 /source/drupal-patterns
 
 # Ignore IDE-specific files
