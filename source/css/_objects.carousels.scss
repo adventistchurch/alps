@@ -162,7 +162,6 @@
 }
 .carousel__item-dek {
   padding-top: rem(5);
-  width: 100%;
   @include media('<=medium') {
     display: none;
   }
