@@ -27,6 +27,10 @@ td {
   border: 1px solid transparent;
   padding: $pad-half;
   font-size: rem(14);
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 /**
