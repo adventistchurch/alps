@@ -1,12 +1,9 @@
 {
     "name": "adventistchurch/alps",
     "description": "ALPS is the Adventist Living Pattern System, a pattern library for the Adventist church based on the Standard Edition of Pattern Lab for Twig.",
-    "keywords": ["pattern lab",
-        "Seventh-day Adventist",
-        "Adventist"
-    ],
+    "keywords": ["pattern lab", "Seventh-day Adventist", "Adventist"],
     "homepage": "https://github.com/adventistchurch/alps",
-    "license": "MIT",
+    "license": "proprietary",
     "type": "project",
     "authors": [{
             "name": "Brent Hardinge",
