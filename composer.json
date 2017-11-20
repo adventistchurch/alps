@@ -1,5 +1,5 @@
 {
-	"name":             "pattern-lab/edition-twig-standard",
+	"name":             "adventist-church/alps",
 	"description":      "Standard Edition of Pattern Lab for Twig. Installs all Twig-related assets except for a StarterKit.",
 	"keywords":         ["pattern lab"],
 	"homepage":         "http://patternlab.io",
