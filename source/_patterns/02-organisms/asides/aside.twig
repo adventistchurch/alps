@@ -1,11 +1,11 @@
 <aside class="aside spacing--double">
   <div class="pad--secondary spacing--double">
-    {% include 'molecules-content-filter-expand' %}
+    {% include '@molecules/forms/content-filter-expand.twig' %}
 
     {% for content in aside_content %}
       <h3 class="font--tertiary--m theme--secondary-text-color">{{ content.aside_heading }}</h3>
       {% for item in content.aside_blocks %}
-        {% include 'molecules-media-block' with {'block_inner_class': 'block__row--small-to-large'} %}
+        {% include '@molecules/blocks/media-block.twig' with {'block_inner_class': 'block__row--small-to-large'} %}
       {% endfor %}
     {% endfor %}
 
