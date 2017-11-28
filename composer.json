@@ -28,7 +28,10 @@
         }
     },
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "pattern-lab/core": "^2.0.0",
+        "pattern-lab/patternengine-twig": "^2.0.0",
+        "pattern-lab/styleguidekit-twig-default": "^3.0.0"
     },
     "scripts": {
         "post-install-cmd": [
