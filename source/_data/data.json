@@ -1,887 +1,876 @@
 {
-  "head": {
-    "title": "The Official Site of the Seventh-day Adventist world church",
-    "language": "en",
-    "charset": "UTF-8",
-    "html_class": "pl theme--ming",
-    "body_class": "body theme--cool",
-    "description": "Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole."
-  },
+    "head": {
+        "title": "The Official Site of the Seventh-day Adventist world church",
+        "language": "en",
+        "charset": "UTF-8",
+        "html_class": "pl theme--ming",
+        "body_class": "body theme--cool",
+        "description": "Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole."
+    },
 
-  "heading": "Lorem Ipsum",
+    "heading": "Lorem Ipsum",
 
-  "primary_font": "Montserrat",
-  "secondary_font": "Merriweather",
-  "fill_class": "fill--gray",
-  "logo_square": "adventist-logo-m.svg",
-  "logo_horiz": "adventist-logo-h-en.svg",
-  "image_path": "../../images/",
+    "primary_font": "Montserrat",
+    "secondary_font": "Merriweather",
+    "fill_class": "fill--gray",
+    "logo_square": "adventist-logo-m.svg",
+    "logo_horiz": "adventist-logo-h-en.svg",
+    "image_path": "../../images/",
 
-  "img": {
-    "src": "//placehold.it/500x400",
-    "alt": "Image Alt"
-  },
-
-  "picture": {
-    "img_break_m": "500",
     "img": {
-      "alt": "Alt Text",
-      "src_s": "//placehold.it/500x500",
-      "src_m": "//placehold.it/700x500"
+        "src": "//placehold.it/500x400",
+        "alt": "Image Alt"
     },
-    "has_break_l": {
-      "img_break_l": "700",
-      "img": {
-        "src_l": "//placehold.it/900x500"
-      }
-    },
-    "has_break_xl": {
-      "img_break_xl": "900",
-      "img": {
-        "src_xl": "//placehold.it/1300x700"
-      }
-    }
-  },
 
-  "search": {
-    "url": "/search",
-    "method": "get",
-    "placeholder": "Search …",
-    "name": "search"
-  },
-
-  "facet_filter": "Filter the Results",
-
-  "primary_nav": {
-    "items": [
-      {
-        "text": "Leadership Certification",
-        "has_subnav": true,
-        "sub_items": [
-          {
-            "text": "Assistant to the President for Evangelism"
-          },
-          {
-            "text": "Global Mission"
-          },
-          {
-            "text": "Mission Spotlight"
-          },
-          {
-            "text": "Church Mission Offerings"
-          }
-        ]
-      },
-      {
-        "text": "Service",
-        "has_subnav": true,
-        "sub_items": [
-          {
-            "text": "Life Hope Centers"
-          },
-          {
-            "text": "Global Mission"
-          },
-          {
-            "text": "Mission Spotlight"
-          },
-          {
-            "text": "Church Mission Offerings"
-          }
-        ]
-      },
-      {
-        "text": "Beliefs"
-      },
-      {
-        "text": "World Church"
-      },
-      {
-        "text": "Information"
-      },
-      {
-        "text": "News",
-        "has_subnav": true,
-        "sub_items": [
-          {
-            "text": "Life Hope Centers"
-          },
-          {
-            "text": "Global Mission"
-          },
-          {
-            "text": "Mission Spotlight"
-          },
-          {
-            "text": "Church Mission Offerings"
-          }
-        ]
-      }
-    ]
-  },
-
-  "secondary_nav": {
-    "items": [
-      {
-        "link_before": "<span class=\"icon icon--xs\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 49.5 49.5\"><title>World</title><path d=\"M25,0.25A24.75,24.75,0,1,0,49.75,25,24.78,24.78,0,0,0,25,.25ZM46.11,25a21,21,0,0,1-4.37,12.84,3.37,3.37,0,0,1-.82-3.93c0.78-1.7,1-5.64.81-7.17s-1-5.22-3.13-5.26-3.64-.75-4.93-3.31c-2.66-5.33,5-6.35,2.34-9.31-0.75-.83-4.6,3.41-5.16-2.24A3,3,0,0,1,31.7,5,21.14,21.14,0,0,1,46.11,25ZM22.1,4.1c-0.51,1-1.84,1.38-2.65,2.12C17.69,7.82,16.93,7.6,16,9.13s-4,3.74-4,4.85,1.56,2.41,2.34,2.16a8.33,8.33,0,0,1,4,.18c1.21,0.43,10.09.85,7.26,8.36-0.9,2.39-4.83,2-5.88,5.94A32.31,32.31,0,0,0,19,34.48c-0.06,1.25.89,6-.32,6s-4.48-4.22-4.48-5-0.85-3.45-.85-5.75S9.41,27.46,9.41,24.4c0-2.76,2.12-4.13,1.64-5.45s-4.2-1.36-5.75-1.52A21.16,21.16,0,0,1,22.1,4.1ZM18.36,45c1.27-.67,1.4-1.53,2.55-1.58a23.35,23.35,0,0,0,3.87-.84c1.32-.29,3.67-1.62,5.74-1.79,1.75-.14,5.19.09,6.12,1.78A21,21,0,0,1,18.36,45Z\" transform=\"translate(-0.25 -0.25)\" class=\"theme--secondary-fill-color\"/></svg></span>",
-        "text": "English",
-        "subnav": {
-          "items": [
-            {
-              "text": "English",
-              "active_link": true
-            },
-            {
-              "text": "Español"
-            },
-            {
-              "text": "Français"
-            },
-            {
-              "text": "Português"
+    "picture": {
+        "img_break_m": "500",
+        "img": {
+            "alt": "Alt Text",
+            "src_s": "//placehold.it/500x500",
+            "src_m": "//placehold.it/700x500"
+        },
+        "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+                "src_l": "//placehold.it/900x500"
             }
-          ]
+        },
+        "has_break_xl": {
+            "img_break_xl": "900",
+            "img": {
+                "src_xl": "//placehold.it/1300x700"
+            }
         }
-      },
-      {
-        "text": "Search"
-      },
-      {
-        "text": "Sitemap"
-      },
-      {
-        "text": "Find a Church"
-      },
-      {
-        "text": "Contact"
-      },
-      {
-        "text": "Press Inquiries"
-      }
-    ]
-  },
-
-  "aside_nav": {
-    "category_nav": {
-      "items": [
-        {
-          "text": "Submit a News Story"
-        },
-        {
-          "text": "Reproduction Requirements"
-        },
-        {
-          "text": "Styleguide"
-        },
-        {
-          "text": "Feeds"
-        },
-        {
-          "text": "Training"
-        },
-        {
-          "text": "News Contact Information"
-        },
-        {
-          "text": "Overview, Mission and Method"
-        }
-      ]
     },
-    "social_nav": {
-      "items": [
-        {
-          "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-491 493.2 16.6 13.8\"><path d=\"M-474.5,495.2c-0.4,0.7-1,1.2-1.6,1.7v0.4c0,0.9-0.1,1.7-0.4,2.6c-0.2,0.9-0.6,1.7-1.1,2.5 c-0.5,0.8-1.1,1.5-1.8,2.1c-0.7,0.6-1.6,1.1-2.6,1.4c-1,0.4-2.1,0.5-3.2,0.5c-1.9,0-3.6-0.4-4.9-1.3c0.3,0,0.5,0.1,0.8,0.1 c1.4,0,2.7-0.5,4-1.5c-0.7,0-1.3-0.2-1.9-0.6c-0.5-0.4-0.9-0.9-1.1-1.6c0.2,0,0.4,0.1,0.6,0.1c0.3,0,0.6,0,0.9-0.1 c-0.7-0.1-1.3-0.5-1.8-1.1c-0.5-0.6-0.7-1.3-0.7-2v0c0.5,0.3,0.9,0.4,1.4,0.4c-1-0.6-1.4-1.5-1.4-2.7c0-0.5,0.1-1,0.4-1.6 c0.8,1,1.8,1.8,2.9,2.3c1.1,0.6,2.4,0.9,3.7,1c0-0.2-0.1-0.5-0.1-0.7c0-0.9,0.3-1.6,0.9-2.3c0.6-0.6,1.4-0.9,2.3-0.9 c0.9,0,1.7,0.3,2.4,1c0.7-0.1,1.4-0.4,2-0.8c-0.2,0.8-0.7,1.4-1.4,1.8C-475.7,495.7-475.1,495.5-474.5,495.2z\"/></svg>",
-          "text": "Twitter"
-        },
-        {
-          "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-491 493.4 16.6 16.5\"><path d=\"M-475,508.4c0,0.5-0.4,1-1,1h-3.9v-6.1h1.9l0.3-2.2h-2.3v-1.8c0-0.6,0.3-1,1-1h1.5v-2 c0,0-0.7-0.1-1.6-0.1c-2.1,0-3.2,1.2-3.2,3v1.9h-1.9v2.2h1.9v6.1h-7.4c-0.5,0-1-0.4-1-1v-13.6c0-0.5,0.4-1,1-1h13.6c0.5,0,1,0.4,1,1 V508.4z\"/></svg>",
-          "text": "Facebook"
-        },
-        {
-          "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 99.63 44.28\"><path d=\"M21.9,72.61a22.14,22.14,0,0,1,0-44.28A22.14,22.14,0,0,1,21.9,72.61Zm56.19,0A22.14,22.14,0,1,1,99.81,50.48,21.93,21.93,0,0,1,78.09,72.61Z\" transform=\"translate(-0.19 -28.33)\" /></svg>",
-          "text": "Flickr"
-        },
-        {
-          "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 97.45 68.54\"><path d=\"M97.75,30.52s-1-6.72-3.87-9.67C90.17,17,86,16.94,84.11,16.72c-13.64-1-34.09-1-34.09-1h0s-20.46,0-34.09,1C14,16.94,9.83,17,6.12,20.84c-2.92,3-3.87,9.67-3.87,9.67a147.37,147.37,0,0,0-1,15.77v7.39a147.37,147.37,0,0,0,1,15.77s1,6.72,3.87,9.67C9.83,83,14.7,82.88,16.87,83.29c7.8,0.75,33.13,1,33.13,1s20.48,0,34.11-1C86,83,90.17,83,93.88,79.13c2.92-3,3.87-9.67,3.87-9.67a147.59,147.59,0,0,0,1-15.77V46.29A147.59,147.59,0,0,0,97.75,30.52ZM39.94,62.64V35.26L66.27,49Z\" transform=\"translate(-1.28 -15.73)\" /></svg>",
-          "text": "YouTube"
-        },
-        {
-          "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 99 88\"><path d=\"M99,27.12C93.48,58.87,62.57,85.75,53.27,91.89s-17.78-2.46-20.86-9C28.89,75.52,18.34,35.32,15.58,32S4.52,35.32,4.52,35.32l-4-5.37S17.34,9.46,30.15,6.9C43.74,4.18,43.72,28.15,47,41.46c3.16,12.87,5.29,20.24,8,20.24s8-7.18,13.82-18.18S68.6,22.77,57.29,29.68C61.81,2,104.54-4.62,99,27.12Z\" transform=\"translate(-0.5 -6)\" /></svg>",
-          "text": "Vimeo"
-        },
-        {
-          "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 99.3 79.87\"><path d=\"M96.92,10.25L1.64,43.83c-1.53.54-1.87,1.86-.05,2.59l20.48,8.21h0l12.15,4.87L93.49,16a0.81,0.81,0,0,1,1.14,1.14L52.15,63h0l-2.44,2.72,3.23,1.74h0L79.82,82a2.75,2.75,0,0,0,4.06-1.81L99.56,12.58C100,10.73,98.77,9.6,96.92,10.25ZM34.1,88.65c0,1.33.75,1.7,1.79,0.76C37.24,88.18,51.26,75.6,51.26,75.6L34.1,66.72V88.65Z\" transform=\"translate(-0.35 -10.07)\" /></svg>",
-          "text": "Email"
-        }
-      ]
-    }
-  },
 
-  "article_nav": {
-    "items": [
-      {
-        "text": "News",
-        "has_subnav": true,
-        "sub_items": [
-          {
-            "text": "Life Hope Centers"
-          },
-          {
-            "text": "Global Mission"
-          },
-          {
-            "text": "Mission Spotlight"
-          },
-          {
-            "text": "Church Mission Offerings"
-          }
+    "search": {
+        "url": "/search",
+        "method": "get",
+        "placeholder": "Search …",
+        "name": "search"
+    },
+
+    "facet_filter": "Filter the Results",
+
+    "primary_nav": {
+        "items": [{
+                "text": "Leadership Certification",
+                "has_subnav": true,
+                "sub_items": [{
+                        "text": "Assistant to the President for Evangelism"
+                    },
+                    {
+                        "text": "Global Mission"
+                    },
+                    {
+                        "text": "Mission Spotlight"
+                    },
+                    {
+                        "text": "Church Mission Offerings"
+                    }
+                ]
+            },
+            {
+                "text": "Service",
+                "has_subnav": true,
+                "sub_items": [{
+                        "text": "Life Hope Centers"
+                    },
+                    {
+                        "text": "Global Mission"
+                    },
+                    {
+                        "text": "Mission Spotlight"
+                    },
+                    {
+                        "text": "Church Mission Offerings"
+                    }
+                ]
+            },
+            {
+                "text": "Beliefs"
+            },
+            {
+                "text": "World Church"
+            },
+            {
+                "text": "Information"
+            },
+            {
+                "text": "News",
+                "has_subnav": true,
+                "sub_items": [{
+                        "text": "Life Hope Centers"
+                    },
+                    {
+                        "text": "Global Mission"
+                    },
+                    {
+                        "text": "Mission Spotlight"
+                    },
+                    {
+                        "text": "Church Mission Offerings"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "text": "ANN Videos"
-      },
-      {
-        "text": "Photos"
-      },
-      {
-        "text": "Church Business Meetings"
-      }
-    ]
-  },
-
-  "breadcrumbs": {
-    "items": [
-      {
-        "text": "Home"
-      },
-      {
-        "text": "Vitality"
-      },
-      {
-        "text": "Photos"
-      }
-    ]
-  },
-
-  "has_carousel": true,
-  "carousel_heading_class": "font--tertiary--xl",
-
-  "carousel": {
-    "carousel_class": "js-carousel__single-item",
-    "slides": [
-      { },
-      { },
-      { },
-      { }
-    ]
-  },
-
-  "text": {
-    "heading": "Donec volutpat libero",
-    "intro": "Fusce interdum purus est, <a href=\"\">vel semper ex tristique</a> ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet."
-  },
-
-  "pullquote": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-  "pullquote_author": "Alvin Brodus",
-
-  "caption": "Proin dictum lobortis luctus.",
-
-  "byline": "Michael Smith",
-
-  "see_all_type": "posts",
-
-  "fig_medium": {
-      "figure_class": "alignleft size--medium",
-      "img": {
-        "src": "//placehold.it/400x400",
-        "alt": "Image Alt"
-      },
-      "caption": "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-  },
-  "fig_right": {
-      "figure_class": "alignright size--medium",
-      "img": {
-        "src": "//placehold.it/400x300",
-        "alt": "Image Alt"
-      },
-      "caption": "Wllamco laboris nisi ut aliquip ex."
-  },
-  "fig_center": {
-      "figure_class": "fitcenter",
-      "img": {
-        "src": "//placehold.it/800x400",
-        "alt": "Image Alt"
-      },
-      "caption": "Duis aute irure dolor in reprehenderit in voluptate velit esse."
-  },
-  "fig_large": {
-      "figure_class": "size--large",
-      "img": {
-        "src": "//placehold.it/800x500",
-        "alt": "Image Alt"
-      },
-      "caption": "Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-  },
-
-  "fig_with_modal": {
-    "large_image_url": "//placehold.it/1200x800",
-    "figure_class": "size--medium",
-    "img": {
-      "src": "//placehold.it/400x300",
-      "alt": "Image Alt"
     },
-    "caption": "Wllamco laboris nisi ut aliquip ex."
-  },
 
-  "media_block_default": {
-    "block_title_class": "font--secondary--m",
-    "title": "Proin venenatis maximus",
-    "img": {
-      "src": "//placehold.it/500x400",
-      "alt": "Media Block Image Alt"
-    },
-    "datetime": "2016-12-12",
-    "date": "Mar 28, 2016",
-    "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-    "cta": "Donec volutpat libero"
-  },
-
-  "story_block_default": {
-    "is_video": true,
-    "bg_img": "//unsplash.it/g/1100/1100?blur",
-    "title": "Bestseller",
-    "subtitle": "The Clifford Goldstein Story",
-    "img": {
-      "src": "//unsplash.it/200/200/?random",
-      "alt": "Story Block Image Alt"
-    },
-    "text_img": {
-      "src": "//unsplash.it/350/200/?random",
-      "alt": "Text Image Alt"
-    },
-    "description": "<p>Clifford Goldstein didn’t believe in much, but one thing he did believe in was Truth. He just didn't know what it was or where to find it. As the fiery writer traveled Europe and Israel in search of his novel's soul, his quest for meaning of life continued, leading him to a different kind of altar.</p><p>Little did he know that one dark night in the summer of 1979, his search would end with a decision that would change his life forever.</p>",
-    "cta": "Find out more"
-  },
-
-  "carousel_block_default": {
-    "block_heading": "Mauris sit",
-    "carousel": {
-      "carousel_class": "js-carousel__single-item",
-      "no_arrows": true,
-      "slides": [
-        {
-          "picture": {
-            "img_break_m": "500",
-            "img": {
-              "alt": "Alt Text",
-              "src_s": "//unsplash.it/500/375/?random",
-              "src_m": "//unsplash.it/800/600/?random"
+    "secondary_nav": {
+        "items": [{
+                "link_before": "<span class=\"icon icon--xs\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 49.5 49.5\"><title>World</title><path d=\"M25,0.25A24.75,24.75,0,1,0,49.75,25,24.78,24.78,0,0,0,25,.25ZM46.11,25a21,21,0,0,1-4.37,12.84,3.37,3.37,0,0,1-.82-3.93c0.78-1.7,1-5.64.81-7.17s-1-5.22-3.13-5.26-3.64-.75-4.93-3.31c-2.66-5.33,5-6.35,2.34-9.31-0.75-.83-4.6,3.41-5.16-2.24A3,3,0,0,1,31.7,5,21.14,21.14,0,0,1,46.11,25ZM22.1,4.1c-0.51,1-1.84,1.38-2.65,2.12C17.69,7.82,16.93,7.6,16,9.13s-4,3.74-4,4.85,1.56,2.41,2.34,2.16a8.33,8.33,0,0,1,4,.18c1.21,0.43,10.09.85,7.26,8.36-0.9,2.39-4.83,2-5.88,5.94A32.31,32.31,0,0,0,19,34.48c-0.06,1.25.89,6-.32,6s-4.48-4.22-4.48-5-0.85-3.45-.85-5.75S9.41,27.46,9.41,24.4c0-2.76,2.12-4.13,1.64-5.45s-4.2-1.36-5.75-1.52A21.16,21.16,0,0,1,22.1,4.1ZM18.36,45c1.27-.67,1.4-1.53,2.55-1.58a23.35,23.35,0,0,0,3.87-.84c1.32-.29,3.67-1.62,5.74-1.79,1.75-.14,5.19.09,6.12,1.78A21,21,0,0,1,18.36,45Z\" transform=\"translate(-0.25 -0.25)\" class=\"theme--secondary-fill-color\"/></svg></span>",
+                "text": "English",
+                "subnav": {
+                    "items": [{
+                            "text": "English",
+                            "active_link": true
+                        },
+                        {
+                            "text": "Español"
+                        },
+                        {
+                            "text": "Français"
+                        },
+                        {
+                            "text": "Português"
+                        }
+                    ]
+                }
             },
-            "has_break_l": false,
-            "has_break_xl": false
-          },
-          "is_carousel_block": {
-            "block_title_class": "font--secondary--m",
-            "title": "Proin venenatis maximus",
-            "datetime": "2016-12-12",
-            "date": "Mar 28, 2016",
-            "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-            "cta": "Donec volutpat libero"
-          }
+            {
+                "text": "Search"
+            },
+            {
+                "text": "Sitemap"
+            },
+            {
+                "text": "Find a Church"
+            },
+            {
+                "text": "Contact"
+            },
+            {
+                "text": "Press Inquiries"
+            }
+        ]
+    },
+
+    "aside_nav": {
+        "category_nav": {
+            "items": [{
+                    "text": "Submit a News Story"
+                },
+                {
+                    "text": "Reproduction Requirements"
+                },
+                {
+                    "text": "Styleguide"
+                },
+                {
+                    "text": "Feeds"
+                },
+                {
+                    "text": "Training"
+                },
+                {
+                    "text": "News Contact Information"
+                },
+                {
+                    "text": "Overview, Mission and Method"
+                }
+            ]
         },
-        {
-          "picture": {
-            "img_break_m": "500",
-            "img": {
-              "alt": "Alt Text",
-              "src_s": "//unsplash.it/500/375/",
-              "src_m": "//unsplash.it/800/600/"
-            },
-            "has_break_l": false,
-            "has_break_xl": false
-          },
-          "is_carousel_block": {
-            "block_title_class": "font--secondary--m",
-            "title": "Sed sagittis massa id blandit aliquet",
-            "datetime": "2016-12-12",
-            "date": "Mar 28, 2016",
-            "description": "Fusce interdum purus est, vel semper ex tristique ut Pellentesque semper tincidunt ex sit amet tincidunt.",
-            "cta": "Cras at sem"
-          }
+        "social_nav": {
+            "items": [{
+                    "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-491 493.2 16.6 13.8\"><path d=\"M-474.5,495.2c-0.4,0.7-1,1.2-1.6,1.7v0.4c0,0.9-0.1,1.7-0.4,2.6c-0.2,0.9-0.6,1.7-1.1,2.5 c-0.5,0.8-1.1,1.5-1.8,2.1c-0.7,0.6-1.6,1.1-2.6,1.4c-1,0.4-2.1,0.5-3.2,0.5c-1.9,0-3.6-0.4-4.9-1.3c0.3,0,0.5,0.1,0.8,0.1 c1.4,0,2.7-0.5,4-1.5c-0.7,0-1.3-0.2-1.9-0.6c-0.5-0.4-0.9-0.9-1.1-1.6c0.2,0,0.4,0.1,0.6,0.1c0.3,0,0.6,0,0.9-0.1 c-0.7-0.1-1.3-0.5-1.8-1.1c-0.5-0.6-0.7-1.3-0.7-2v0c0.5,0.3,0.9,0.4,1.4,0.4c-1-0.6-1.4-1.5-1.4-2.7c0-0.5,0.1-1,0.4-1.6 c0.8,1,1.8,1.8,2.9,2.3c1.1,0.6,2.4,0.9,3.7,1c0-0.2-0.1-0.5-0.1-0.7c0-0.9,0.3-1.6,0.9-2.3c0.6-0.6,1.4-0.9,2.3-0.9 c0.9,0,1.7,0.3,2.4,1c0.7-0.1,1.4-0.4,2-0.8c-0.2,0.8-0.7,1.4-1.4,1.8C-475.7,495.7-475.1,495.5-474.5,495.2z\"/></svg>",
+                    "text": "Twitter"
+                },
+                {
+                    "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-491 493.4 16.6 16.5\"><path d=\"M-475,508.4c0,0.5-0.4,1-1,1h-3.9v-6.1h1.9l0.3-2.2h-2.3v-1.8c0-0.6,0.3-1,1-1h1.5v-2 c0,0-0.7-0.1-1.6-0.1c-2.1,0-3.2,1.2-3.2,3v1.9h-1.9v2.2h1.9v6.1h-7.4c-0.5,0-1-0.4-1-1v-13.6c0-0.5,0.4-1,1-1h13.6c0.5,0,1,0.4,1,1 V508.4z\"/></svg>",
+                    "text": "Facebook"
+                },
+                {
+                    "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 99.63 44.28\"><path d=\"M21.9,72.61a22.14,22.14,0,0,1,0-44.28A22.14,22.14,0,0,1,21.9,72.61Zm56.19,0A22.14,22.14,0,1,1,99.81,50.48,21.93,21.93,0,0,1,78.09,72.61Z\" transform=\"translate(-0.19 -28.33)\" /></svg>",
+                    "text": "Flickr"
+                },
+                {
+                    "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 97.45 68.54\"><path d=\"M97.75,30.52s-1-6.72-3.87-9.67C90.17,17,86,16.94,84.11,16.72c-13.64-1-34.09-1-34.09-1h0s-20.46,0-34.09,1C14,16.94,9.83,17,6.12,20.84c-2.92,3-3.87,9.67-3.87,9.67a147.37,147.37,0,0,0-1,15.77v7.39a147.37,147.37,0,0,0,1,15.77s1,6.72,3.87,9.67C9.83,83,14.7,82.88,16.87,83.29c7.8,0.75,33.13,1,33.13,1s20.48,0,34.11-1C86,83,90.17,83,93.88,79.13c2.92-3,3.87-9.67,3.87-9.67a147.59,147.59,0,0,0,1-15.77V46.29A147.59,147.59,0,0,0,97.75,30.52ZM39.94,62.64V35.26L66.27,49Z\" transform=\"translate(-1.28 -15.73)\" /></svg>",
+                    "text": "YouTube"
+                },
+                {
+                    "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 99 88\"><path d=\"M99,27.12C93.48,58.87,62.57,85.75,53.27,91.89s-17.78-2.46-20.86-9C28.89,75.52,18.34,35.32,15.58,32S4.52,35.32,4.52,35.32l-4-5.37S17.34,9.46,30.15,6.9C43.74,4.18,43.72,28.15,47,41.46c3.16,12.87,5.29,20.24,8,20.24s8-7.18,13.82-18.18S68.6,22.77,57.29,29.68C61.81,2,104.54-4.62,99,27.12Z\" transform=\"translate(-0.5 -6)\" /></svg>",
+                    "text": "Vimeo"
+                },
+                {
+                    "icon": "<svg class=\"theme--primary-fill-color\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 99.3 79.87\"><path d=\"M96.92,10.25L1.64,43.83c-1.53.54-1.87,1.86-.05,2.59l20.48,8.21h0l12.15,4.87L93.49,16a0.81,0.81,0,0,1,1.14,1.14L52.15,63h0l-2.44,2.72,3.23,1.74h0L79.82,82a2.75,2.75,0,0,0,4.06-1.81L99.56,12.58C100,10.73,98.77,9.6,96.92,10.25ZM34.1,88.65c0,1.33.75,1.7,1.79,0.76C37.24,88.18,51.26,75.6,51.26,75.6L34.1,66.72V88.65Z\" transform=\"translate(-0.35 -10.07)\" /></svg>",
+                    "text": "Email"
+                }
+            ]
         }
-      ]
-    }
-  },
+    },
 
-  "content_blocks": [
-    {
-      "text": {
-        "heading": "Nam efficitur",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Vivamus orci magna"
-      }
+    "article_nav": {
+        "items": [{
+                "text": "News",
+                "has_subnav": true,
+                "sub_items": [{
+                        "text": "Life Hope Centers"
+                    },
+                    {
+                        "text": "Global Mission"
+                    },
+                    {
+                        "text": "Mission Spotlight"
+                    },
+                    {
+                        "text": "Church Mission Offerings"
+                    }
+                ]
+            },
+            {
+                "text": "ANN Videos"
+            },
+            {
+                "text": "Photos"
+            },
+            {
+                "text": "Church Business Meetings"
+            }
+        ]
     },
-    {
-      "text": {
-        "heading": "Donec interdum",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
-      }
-    }
-  ],
 
-  "row_blocks": [
-    {
-      "media_block_default": {
-        "block_inner_class": "block__row",
-        "kicker": "Freundschaftsbezeigungen",
-        "title": "Cras at sem at felis rhoncus",
-        "block_img_class": "round ",
-        "img": {
-          "src": "//placehold.it/150x150",
-          "alt": "Media Block Image Alt Left Round"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
-        "cta": "Cras at sem"
-      }
+    "breadcrumbs": {
+        "items": [{
+                "text": "Home"
+            },
+            {
+                "text": "Vitality"
+            },
+            {
+                "text": "Photos"
+            }
+        ]
     },
-    {
-      "media_block_default": {
-        "block_inner_class": "block__row",
-        "title": "Fusce interdum purus est",
-        "img": {
-          "src": "//placehold.it/300x350",
-          "alt": "Media Block Image Alt Left"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
-        "cta": "Mauris sit amet"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_inner_class": "block__row",
-        "title": "Sed neque odio, iaculis iaculis rutrum quis",
-        "img": {
-          "src": "//placehold.it/300x200",
-          "alt": "Media Block Image Alt Left Round"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in."
-      }
-    },
-    {
-      "media_block_default": {
-        "block_inner_class": "block__row",
-        "kicker": "Aenean arcu",
-        "title": "Pellentesque semper",
-        "img": {
-          "src": "//placehold.it/300x300",
-          "alt": "Media Block Image Alt Left Round"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut.",
-        "cta": "Cras at sem"
-      }
-    }
-  ],
 
-  "breakout_block": {
+    "has_carousel": true,
+    "carousel_heading_class": "font--tertiary--xl",
+
+    "carousel": {
+        "carousel_class": "js-carousel__single-item",
+        "slides": [
+            {},
+            {},
+            {},
+            {}
+        ]
+    },
+
+    "text": {
+        "heading": "Donec volutpat libero",
+        "intro": "Fusce interdum purus est, <a href=\"\">vel semper ex tristique</a> ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet."
+    },
+
+    "pullquote": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+    "pullquote_author": "Alvin Brodus",
+
+    "caption": "Proin dictum lobortis luctus.",
+
+    "byline": "Michael Smith",
+
+    "see_all_type": "posts",
+
+    "fig_medium": {
+        "figure_class": "alignleft size--medium",
+        "img": {
+            "src": "//placehold.it/400x400",
+            "alt": "Image Alt"
+        },
+        "caption": "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+    },
+    "fig_right": {
+        "figure_class": "alignright size--medium",
+        "img": {
+            "src": "//placehold.it/400x300",
+            "alt": "Image Alt"
+        },
+        "caption": "Wllamco laboris nisi ut aliquip ex."
+    },
+    "fig_center": {
+        "figure_class": "fitcenter",
+        "img": {
+            "src": "//placehold.it/800x400",
+            "alt": "Image Alt"
+        },
+        "caption": "Duis aute irure dolor in reprehenderit in voluptate velit esse."
+    },
+    "fig_large": {
+        "figure_class": "size--large",
+        "img": {
+            "src": "//placehold.it/800x500",
+            "alt": "Image Alt"
+        },
+        "caption": "Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    },
+
+    "fig_with_modal": {
+        "large_image_url": "//placehold.it/1200x800",
+        "figure_class": "size--medium",
+        "img": {
+            "src": "//placehold.it/400x300",
+            "alt": "Image Alt"
+        },
+        "caption": "Wllamco laboris nisi ut aliquip ex."
+    },
+
     "media_block_default": {
-      "block_class": "bg--tan can-be--dark-dark block--breakout pad--secondary--for-breakouts",
-      "heading_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 77.22 99.29\"><title>List Icon</title><path d=\"M34.68,54.8H65.57V44.87H34.68V54.8ZM77.58,0.36H22.42a11.06,11.06,0,0,0-11,11V88.61a11.06,11.06,0,0,0,11,11H77.58a11.06,11.06,0,0,0,11-11V11.39A11.06,11.06,0,0,0,77.58.36Zm0,88.26H22.42V11.39H77.58V88.61ZM65.44,23.35H34.56V33H65.44V23.35Zm0,43.3H34.56v9.65H65.44V66.66Z\" transform=\"translate(-11.39 -0.36)\" fill=\"#010101\" class=\"theme--primary-fill-color\"/></svg>",
-      "block_heading": "Nulla facilisi",
-      "img": false,
-      "description": "Fusce porta sed odio eu dignissim. Vivamus imperdiet libero mattis orci aliquam imperdiet. Vivamus sit amet tortor nec magna tincidunt faucibus sit amet ac sem. Maecenas mattis nibh at urna feugiat posuere. Pellentesque blandit condimentum eros, fermentum ornare diam facilisis eget.",
-      "cta": "Vestibulum non lectus"
-    }
-  },
+        "block_title_class": "font--secondary--m",
+        "title": "Proin venenatis maximus",
+        "img": {
+            "src": "//placehold.it/500x400",
+            "alt": "Media Block Image Alt"
+        },
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "cta": "Donec volutpat libero"
+    },
 
-  "heading_block_default": {
-    "block_heading": "General Conference",
-    "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
-    "cta": "Find out more"
-  },
+    "story_block_default": {
+        "is_video": true,
+        "bg_img": "//unsplash.it/g/1100/1100?blur",
+        "title": "Bestseller",
+        "subtitle": "The Clifford Goldstein Story",
+        "img": {
+            "src": "//unsplash.it/200/200/?random",
+            "alt": "Story Block Image Alt"
+        },
+        "text_img": {
+            "src": "//unsplash.it/350/200/?random",
+            "alt": "Text Image Alt"
+        },
+        "description": "<p>Clifford Goldstein didn’t believe in much, but one thing he did believe in was Truth. He just didn't know what it was or where to find it. As the fiery writer traveled Europe and Israel in search of his novel's soul, his quest for meaning of life continued, leading him to a different kind of altar.</p><p>Little did he know that one dark night in the summer of 1979, his search would end with a decision that would change his life forever.</p>",
+        "cta": "Find out more"
+    },
 
-  "heading_blocks": [
-    {
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--emperor",
+    "carousel_block_default": {
+        "block_heading": "Mauris sit",
+        "carousel": {
+            "carousel_class": "js-carousel__single-item",
+            "no_arrows": true,
+            "slides": [{
+                    "picture": {
+                        "img_break_m": "500",
+                        "img": {
+                            "alt": "Alt Text",
+                            "src_s": "//unsplash.it/500/375/?random",
+                            "src_m": "//unsplash.it/800/600/?random"
+                        },
+                        "has_break_l": false,
+                        "has_break_xl": false
+                    },
+                    "is_carousel_block": {
+                        "block_title_class": "font--secondary--m",
+                        "title": "Proin venenatis maximus",
+                        "datetime": "2016-12-12",
+                        "date": "Mar 28, 2016",
+                        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+                        "cta": "Donec volutpat libero"
+                    }
+                },
+                {
+                    "picture": {
+                        "img_break_m": "500",
+                        "img": {
+                            "alt": "Alt Text",
+                            "src_s": "//unsplash.it/500/375/",
+                            "src_m": "//unsplash.it/800/600/"
+                        },
+                        "has_break_l": false,
+                        "has_break_xl": false
+                    },
+                    "is_carousel_block": {
+                        "block_title_class": "font--secondary--m",
+                        "title": "Sed sagittis massa id blandit aliquet",
+                        "datetime": "2016-12-12",
+                        "date": "Mar 28, 2016",
+                        "description": "Fusce interdum purus est, vel semper ex tristique ut Pellentesque semper tincidunt ex sit amet tincidunt.",
+                        "cta": "Cras at sem"
+                    }
+                }
+            ]
+        }
+    },
+
+    "content_blocks": [{
+            "text": {
+                "heading": "Nam efficitur",
+                "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+                "cta": "Vivamus orci magna"
+            }
+        },
+        {
+            "text": {
+                "heading": "Donec interdum",
+                "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+                "cta": "Donec volutpat libero"
+            }
+        }
+    ],
+
+    "row_blocks": [{
+            "media_block_default": {
+                "block_inner_class": "block__row",
+                "kicker": "Freundschaftsbezeigungen",
+                "title": "Cras at sem at felis rhoncus",
+                "block_img_class": "round ",
+                "img": {
+                    "src": "//placehold.it/150x150",
+                    "alt": "Media Block Image Alt Left Round"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
+                "cta": "Cras at sem"
+            }
+        },
+        {
+            "media_block_default": {
+                "block_inner_class": "block__row",
+                "title": "Fusce interdum purus est",
+                "img": {
+                    "src": "//placehold.it/300x350",
+                    "alt": "Media Block Image Alt Left"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
+                "cta": "Mauris sit amet"
+            }
+        },
+        {
+            "media_block_default": {
+                "block_inner_class": "block__row",
+                "title": "Sed neque odio, iaculis iaculis rutrum quis",
+                "img": {
+                    "src": "//placehold.it/300x200",
+                    "alt": "Media Block Image Alt Left Round"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in."
+            }
+        },
+        {
+            "media_block_default": {
+                "block_inner_class": "block__row",
+                "kicker": "Aenean arcu",
+                "title": "Pellentesque semper",
+                "img": {
+                    "src": "//placehold.it/300x300",
+                    "alt": "Media Block Image Alt Left Round"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut.",
+                "cta": "Cras at sem"
+            }
+        }
+    ],
+
+    "breakout_block": {
+        "media_block_default": {
+            "block_class": "bg--tan can-be--dark-dark block--breakout pad--secondary--for-breakouts",
+            "heading_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 77.22 99.29\"><title>List Icon</title><path d=\"M34.68,54.8H65.57V44.87H34.68V54.8ZM77.58,0.36H22.42a11.06,11.06,0,0,0-11,11V88.61a11.06,11.06,0,0,0,11,11H77.58a11.06,11.06,0,0,0,11-11V11.39A11.06,11.06,0,0,0,77.58.36Zm0,88.26H22.42V11.39H77.58V88.61ZM65.44,23.35H34.56V33H65.44V23.35Zm0,43.3H34.56v9.65H65.44V66.66Z\" transform=\"translate(-11.39 -0.36)\" fill=\"#010101\" class=\"theme--primary-fill-color\"/></svg>",
+            "block_heading": "Nulla facilisi",
+            "img": false,
+            "description": "Fusce porta sed odio eu dignissim. Vivamus imperdiet libero mattis orci aliquam imperdiet. Vivamus sit amet tortor nec magna tincidunt faucibus sit amet ac sem. Maecenas mattis nibh at urna feugiat posuere. Pellentesque blandit condimentum eros, fermentum ornare diam facilisis eget.",
+            "cta": "Vestibulum non lectus"
+        }
+    },
+
+    "heading_block_default": {
         "block_heading": "General Conference",
         "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
         "cta": "Find out more"
-      }
     },
-    {
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--red",
-        "block_heading": "East-Central Africa",
-        "description": "The East-Central Africa Division (ECD) is comprised of 11 countries. Amid a population of about 307 million, the Seventh-day Adventist Church counts more than 2.5 million members worshiping at more than 11,000 churches.",
-        "cta": "Find out more"
-      }
-    },
-    {
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--ming",
-        "block_heading": "Euro-Asia",
-        "description": "The Euro-Asia Division spans 11 time zones across northern Asia. Adventists worship at almost 2,000 churches across the region, which is comprised of 13 countries.",
-        "cta": "Find out more"
-      }
-    },
-    {
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--denim",
-        "block_heading": "Middle East and North Africa",
-        "description": "The Middle East and North Africa Union is comprised of 20 countries. The region is bordered by Morocco to the west, Iran to the east, Turkey to the north and Sudan to the south. The population of the region is about 500 million people.",
-        "cta": "Find out more"
-      }
-    }
-  ],
 
-  "aside_content": [
-    {
-      "aside_heading": "News",
-      "aside_blocks": [
-        { },
-        { }
-      ]
-    }
-  ],
-
-  "page_header": true,
-
-  "search_results": [
-    {
-      "text": {
-        "heading": "Donec consequat",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Vivamus orci magna"
-      }
-    },
-    {
-      "text": {
-        "heading": "Donec interdum",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
-      }
-    },
-    {
-      "text": {
-        "heading": "Proin interdum bibendum nisi",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
-        "cta": "Donec volutpat libero"
-      }
-    },
-    {
-      "text": {
-        "heading": "Nam diam elit",
-        "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
-      }
-    },
-    {
-      "text": {
-        "heading": "Donec interdum",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
-      }
-    }
-  ],
-
-  "has_hr": true,
-
-  "media_blocks": [
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Cras at sem at felis rhoncus",
-        "img": {
-          "src": "//unsplash.it/500/400/?random",
-          "alt": ""
+    "heading_blocks": [{
+            "heading_block_default": {
+                "block_class": "has-border--left has-border--left--emperor",
+                "block_heading": "General Conference",
+                "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
+                "cta": "Find out more"
+            }
         },
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
-        "cta": "Cras at sem"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Fusce interdum purus est",
-        "img": {
-          "src": "//unsplash.it/500/380/?random",
-          "alt": "Alt"
+        {
+            "heading_block_default": {
+                "block_class": "has-border--left has-border--left--red",
+                "block_heading": "East-Central Africa",
+                "description": "The East-Central Africa Division (ECD) is comprised of 11 countries. Amid a population of about 307 million, the Seventh-day Adventist Church counts more than 2.5 million members worshiping at more than 11,000 churches.",
+                "cta": "Find out more"
+            }
         },
-        "datetime": false,
-        "date": false,
-        "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
-        "cta": "Mauris sit amet"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Sed neque odio, iaculis iaculis rutrum quis",
-        "img": {
-          "src": "//unsplash.it/500/350/?random",
-          "alt": "Media Block Image"
+        {
+            "heading_block_default": {
+                "block_class": "has-border--left has-border--left--ming",
+                "block_heading": "Euro-Asia",
+                "description": "The Euro-Asia Division spans 11 time zones across northern Asia. Adventists worship at almost 2,000 churches across the region, which is comprised of 13 countries.",
+                "cta": "Find out more"
+            }
         },
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in."
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "kicker": "Aenean arcu",
-        "title": "Pellentesque semper",
-        "img": {
-          "src": "//unsplash.it/500/300/?random",
-          "alt": "Media Block Image Alt"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut.",
-        "cta": "Cras at sem"
-      }
-    }
-  ],
-
-  "media_blocks_2": [
-    {
-      "media_block_default": {
-        "block_class": "",
-        "kicker": "Suspendisse",
-        "title": "Cras efficitur nibh eget tortor consequat posuere",
-        "img": {
-          "src": "//unsplash.it/500/300/?random",
-          "alt": ""
-        },
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "description": "Pellentesque volutpat sodales metus, ac aliquam nibh consectetur id. Phasellus varius dui viverra vehicula efficitur.",
-        "cta": "Phasellus at sem"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Fusce interdum purus est",
-        "img": {
-          "src": "//unsplash.it/500/360/?random",
-          "alt": "Alt"
-        },
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "description": "Phasellus ac volutpat urna, scelerisque pharetra leo. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
-        "cta": "Mauris sit amet"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Phasellus ac volutpat urna",
-        "img": {
-          "src": "//unsplash.it/500/250/?random",
-          "alt": "Media Block Image"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Donec vehicula commodo dolor, a bibendum nulla malesuada id. Nam ac sapien eget erat auctor aliquam. Donec ut aliquam enim. Fusce ac ornare ipsum.",
-        "cta": "Phasellus ac"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Morbi accumsan imperdiet nisl non consectetur",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Nunc a ullamcorper lectus. Nulla facilisi. Nunc sed pretium ex, ut egestas diam. Proin varius pharetra lacus, eu auctor urna mollis eu. Donec convallis vehicula velit et laoreet.",
-        "cta": "Cras at sem"
-      }
-    }
-  ],
-
-  "video_block": {
-    "media_block_default": {
-      "block_class": "no-space--top",
-      "block_inner_class": "spacing--quarter",
-      "kicker": "Suspendisse",
-      "title": "Duis nulla arcu, malesuada - fringilla eu",
-      "img": false,
-      "video": true,
-      "datetime": "2016-12-12",
-      "date": "Mar 28, 2016"
-    }
-  },
-
-  "video_block_list": [
-    {
-      "media_block_default": {
-        "block_title_class": "font--secondary--s",
-        "title": "Nunc a ullamcorper lectus",
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
+        {
+            "heading_block_default": {
+                "block_class": "has-border--left has-border--left--denim",
+                "block_heading": "Middle East and North Africa",
+                "description": "The Middle East and North Africa Union is comprised of 20 countries. The region is bordered by Morocco to the west, Iran to the east, Turkey to the north and Sudan to the south. The population of the region is about 500 million people.",
+                "cta": "Find out more"
+            }
         }
-      }
-    },
-    {
-      "media_block_default": {
-        "block_title_class": "font--secondary--s",
-        "title": "Nunc a ullamcorper lectus",
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
-        }
-      }
-    },
-    {
-      "media_block_default": {
-        "block_title_class": "font--secondary--s",
-        "title": "Nunc a ullamcorper lectus",
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
-        }
-      }
-    }
-  ],
-
-  "article_navigation": true,
-
-  "article_header": {
-    "heading": "Powerful earthquake in Ecuador kills 413, injures more than 2,500",
-    "subheading": "Church members, humanitarians gather donations to assist those affected by the tragedy.",
-    "pub_date": "April 19, 2016",
-    "pub_region": "Pedernales, Ecuador",
-    "byline": "Andrew McChesney, news editor, Adventist Review/ ADRA International Staff/ ANN Staff"
-  },
-
-  "pager": {
-    "link": "?page=",
-    "current": 4,
-    "surr": 3,
-    "totalpages": 120,
-    "ellipsis" : "&hellip;",
-    "next": "Next &rarr;",
-    "prev": "&larr; Previous"
-  },
-
-  "testimonies": true,
-  "content_carousel": {
-    "content_carousel_class": "js-carousel__multi-item",
-    "content_carousel_slides": [
-      {
-        "heading": "Proin aliquam tempus lacinia",
-        "description": "Morbi massa ipsum, molestie ut luctus nec, placerat commodo magna. Vestibulum rhoncus molestie"
-      },
-      {
-        "heading": "Quisque ac justo",
-        "description": "Nullam ultricies ante nec sapien mattis viverra. Aliquam posuere urna quis est accumsan accumsan."
-      },
-      {
-        "heading": "Class aptent, taciti",
-        "description": "Fusce a odio ligula. Aliquam aliquet ligula purus, non mollis purus semper ut."
-      },
-      {
-        "heading": "Phasellus ligula ligula",
-        "description": "Proin pretium nisi non nisl lobortis, eu molestie magna posuere. Maecenas fermentum lorem ut eros viverra scelerisque."
-      },
-      {
-        "heading": "Quisque porta elit dui",
-        "description": "Ut vestibulum rhoncus molestie. Fusce a odio ligula. Aliquam aliquet ligula purus, non mollis purus semper ut."
-      },
-      {
-        "heading": "Cras nisi dolor, malesuada",
-        "description": "Maecenas tincidunt, dui at ultrices mattis, elit augue sollicitudin quam, hendrerit pellentesque leo mauris sed massa. "
-      },
-      {
-        "heading": "Aliquam vitae",
-        "description": "Maecenas interdum est eget blandit posuere. Pellentesque lacus sem, feugiat non porttitor eget commodo magna."
-      }
-    ]
-  },
-  "button_default": {
-    "button_text": "Button Text"
-  },
-  "button_submit": {
-    "button_text": "Submit"
-  },
-  "content_filter": {
-    "radio": [
-      {
-        "id": "1",
-        "label": "Option 1"
-      },
-      {
-        "id": "2",
-        "label": "Option 2"
-      }
     ],
-    "checkbox": [
-      {
-        "id": "1",
-        "label": "Option 1"
-      },
-      {
-        "id": "2",
-        "label": "Option 2"
-      }
-    ]
-  },
-  "single_comment" : {
-    "comment_avatar": "//placeimg.com/32/32/people",
-    "comment_date": "9 days ago",
-    "comment_byline": "Bob Smith",
-    "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
-  },
-  "comments": {
-    "comment": [
-      {
+
+    "aside_content": [{
+        "aside_heading": "News",
+        "aside_blocks": [
+            {},
+            {}
+        ]
+    }],
+
+    "page_header": true,
+
+    "page_header_longform": {
+        "heading": "Nunc malesuada mauris",
+        "dek": "Maecenas semper, odio et gravida rhoncus, dui nunc mollis tortor",
+        "picture": {
+            "img_break_m": "500",
+            "img": {
+                "alt": "Alt Text",
+                "src_s": "//unsplash.it/500/282/?random",
+                "src_m": "//unsplash.it/800/450/?random"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+        },
+    },
+
+    "search_results": [{
+            "text": {
+                "heading": "Donec consequat",
+                "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+                "cta": "Vivamus orci magna"
+            }
+        },
+        {
+            "text": {
+                "heading": "Donec interdum",
+                "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+                "cta": "Donec volutpat libero"
+            }
+        },
+        {
+            "text": {
+                "heading": "Proin interdum bibendum nisi",
+                "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
+                "cta": "Donec volutpat libero"
+            }
+        },
+        {
+            "text": {
+                "heading": "Nam diam elit",
+                "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+                "cta": "Donec volutpat libero"
+            }
+        },
+        {
+            "text": {
+                "heading": "Donec interdum",
+                "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+                "cta": "Donec volutpat libero"
+            }
+        }
+    ],
+
+    "has_hr": true,
+
+    "media_blocks": [{
+            "media_block_default": {
+                "block_class": "",
+                "title": "Cras at sem at felis rhoncus",
+                "img": {
+                    "src": "//unsplash.it/500/400/?random",
+                    "alt": ""
+                },
+                "datetime": "2016-12-12",
+                "date": "Mar 28, 2016",
+                "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
+                "cta": "Cras at sem"
+            }
+        },
+        {
+            "media_block_default": {
+                "block_class": "",
+                "title": "Fusce interdum purus est",
+                "img": {
+                    "src": "//unsplash.it/500/380/?random",
+                    "alt": "Alt"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
+                "cta": "Mauris sit amet"
+            }
+        },
+        {
+            "media_block_default": {
+                "block_class": "",
+                "title": "Sed neque odio, iaculis iaculis rutrum quis",
+                "img": {
+                    "src": "//unsplash.it/500/350/?random",
+                    "alt": "Media Block Image"
+                },
+                "datetime": "2016-12-12",
+                "date": "Mar 28, 2016",
+                "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in."
+            }
+        },
+        {
+            "media_block_default": {
+                "block_class": "",
+                "kicker": "Aenean arcu",
+                "title": "Pellentesque semper",
+                "img": {
+                    "src": "//unsplash.it/500/300/?random",
+                    "alt": "Media Block Image Alt"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut.",
+                "cta": "Cras at sem"
+            }
+        }
+    ],
+
+    "media_blocks_2": [{
+            "media_block_default": {
+                "block_class": "",
+                "kicker": "Suspendisse",
+                "title": "Cras efficitur nibh eget tortor consequat posuere",
+                "img": {
+                    "src": "//unsplash.it/500/300/?random",
+                    "alt": ""
+                },
+                "datetime": "2016-12-12",
+                "date": "Mar 28, 2016",
+                "description": "Pellentesque volutpat sodales metus, ac aliquam nibh consectetur id. Phasellus varius dui viverra vehicula efficitur.",
+                "cta": "Phasellus at sem"
+            }
+        },
+        {
+            "media_block_default": {
+                "block_class": "",
+                "title": "Fusce interdum purus est",
+                "img": {
+                    "src": "//unsplash.it/500/360/?random",
+                    "alt": "Alt"
+                },
+                "datetime": "2016-12-12",
+                "date": "Mar 28, 2016",
+                "description": "Phasellus ac volutpat urna, scelerisque pharetra leo. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
+                "cta": "Mauris sit amet"
+            }
+        },
+        {
+            "media_block_default": {
+                "block_class": "",
+                "title": "Phasellus ac volutpat urna",
+                "img": {
+                    "src": "//unsplash.it/500/250/?random",
+                    "alt": "Media Block Image"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Donec vehicula commodo dolor, a bibendum nulla malesuada id. Nam ac sapien eget erat auctor aliquam. Donec ut aliquam enim. Fusce ac ornare ipsum.",
+                "cta": "Phasellus ac"
+            }
+        },
+        {
+            "media_block_default": {
+                "block_class": "",
+                "title": "Morbi accumsan imperdiet nisl non consectetur",
+                "img": {
+                    "src": "//unsplash.it/500/280/?random",
+                    "alt": "Media Block Image Alt"
+                },
+                "datetime": false,
+                "date": false,
+                "description": "Nunc a ullamcorper lectus. Nulla facilisi. Nunc sed pretium ex, ut egestas diam. Proin varius pharetra lacus, eu auctor urna mollis eu. Donec convallis vehicula velit et laoreet.",
+                "cta": "Cras at sem"
+            }
+        }
+    ],
+
+    "video_block": {
+        "media_block_default": {
+            "block_class": "no-space--top",
+            "block_inner_class": "spacing--quarter",
+            "kicker": "Suspendisse",
+            "title": "Duis nulla arcu, malesuada - fringilla eu",
+            "img": false,
+            "video": true,
+            "datetime": "2016-12-12",
+            "date": "Mar 28, 2016"
+        }
+    },
+
+    "video_block_list": [{
+            "media_block_default": {
+                "block_title_class": "font--secondary--s",
+                "title": "Nunc a ullamcorper lectus",
+                "datetime": "2016-12-12",
+                "date": "Mar 28, 2016",
+                "img": {
+                    "src": "//unsplash.it/500/280/?random",
+                    "alt": "Media Block Image Alt"
+                }
+            }
+        },
+        {
+            "media_block_default": {
+                "block_title_class": "font--secondary--s",
+                "title": "Nunc a ullamcorper lectus",
+                "datetime": "2016-12-12",
+                "date": "Mar 28, 2016",
+                "img": {
+                    "src": "//unsplash.it/500/280/?random",
+                    "alt": "Media Block Image Alt"
+                }
+            }
+        },
+        {
+            "media_block_default": {
+                "block_title_class": "font--secondary--s",
+                "title": "Nunc a ullamcorper lectus",
+                "datetime": "2016-12-12",
+                "date": "Mar 28, 2016",
+                "img": {
+                    "src": "//unsplash.it/500/280/?random",
+                    "alt": "Media Block Image Alt"
+                }
+            }
+        }
+    ],
+
+    "article_navigation": true,
+
+    "article_header": {
+        "heading": "Powerful earthquake in Ecuador kills 413, injures more than 2,500",
+        "subheading": "Church members, humanitarians gather donations to assist those affected by the tragedy.",
+        "pub_date": "April 19, 2016",
+        "pub_region": "Pedernales, Ecuador",
+        "byline": "Andrew McChesney, news editor, Adventist Review/ ADRA International Staff/ ANN Staff"
+    },
+
+    "pager": {
+        "link": "?page=",
+        "current": 4,
+        "surr": 3,
+        "totalpages": 120,
+        "ellipsis" : "&hellip;",
+        "next": "Next &rarr;",
+        "prev": "&larr; Previous"
+    },
+
+    "testimonies": true,
+    "content_carousel": {
+        "content_carousel_class": "js-carousel__multi-item",
+        "content_carousel_slides": [{
+                "heading": "Proin aliquam tempus lacinia",
+                "description": "Morbi massa ipsum, molestie ut luctus nec, placerat commodo magna. Vestibulum rhoncus molestie"
+            },
+            {
+                "heading": "Quisque ac justo",
+                "description": "Nullam ultricies ante nec sapien mattis viverra. Aliquam posuere urna quis est accumsan accumsan."
+            },
+            {
+                "heading": "Class aptent, taciti",
+                "description": "Fusce a odio ligula. Aliquam aliquet ligula purus, non mollis purus semper ut."
+            },
+            {
+                "heading": "Phasellus ligula ligula",
+                "description": "Proin pretium nisi non nisl lobortis, eu molestie magna posuere. Maecenas fermentum lorem ut eros viverra scelerisque."
+            },
+            {
+                "heading": "Quisque porta elit dui",
+                "description": "Ut vestibulum rhoncus molestie. Fusce a odio ligula. Aliquam aliquet ligula purus, non mollis purus semper ut."
+            },
+            {
+                "heading": "Cras nisi dolor, malesuada",
+                "description": "Maecenas tincidunt, dui at ultrices mattis, elit augue sollicitudin quam, hendrerit pellentesque leo mauris sed massa. "
+            },
+            {
+                "heading": "Aliquam vitae",
+                "description": "Maecenas interdum est eget blandit posuere. Pellentesque lacus sem, feugiat non porttitor eget commodo magna."
+            }
+        ]
+    },
+    "button_default": {
+        "button_text": "Button Text"
+    },
+    "button_submit": {
+        "button_text": "Submit"
+    },
+    "content_filter": {
+        "radio": [{
+                "id": "1",
+                "label": "Option 1"
+            },
+            {
+                "id": "2",
+                "label": "Option 2"
+            }
+        ],
+        "checkbox": [{
+                "id": "1",
+                "label": "Option 1"
+            },
+            {
+                "id": "2",
+                "label": "Option 2"
+            }
+        ]
+    },
+    "single_comment": {
         "comment_avatar": "//placeimg.com/32/32/people",
         "comment_date": "9 days ago",
         "comment_byline": "Bob Smith",
-        "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim. ",
-        "comment_children": [
-          {
-            "comment_avatar": "//placeimg.com/32/32/people",
-            "comment_date": "8 days ago",
-            "comment_byline": "George Waltin",
-            "comment_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae lorem ullamcorper, posuere risus eu, consequat justo. Praesent at mi arcu. Praesent et vestibulum sem."
-          },
-          {
-            "comment_avatar": "//placeimg.com/32/32/people",
-            "comment_date": "7 days ago",
-            "comment_byline": "Bob Smith",
-            "comment_text": "Nam posuere ac leo et accumsan. Vestibulum condimentum tincidunt orci non dapibus. Aenean dapibus sem vel massa bibendum placerat. Duis nec est sed justo pulvinar faucibus."
-          }
+        "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
+    },
+    "comments": {
+        "comment": [{
+                "comment_avatar": "//placeimg.com/32/32/people",
+                "comment_date": "9 days ago",
+                "comment_byline": "Bob Smith",
+                "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim. ",
+                "comment_children": [{
+                        "comment_avatar": "//placeimg.com/32/32/people",
+                        "comment_date": "8 days ago",
+                        "comment_byline": "George Waltin",
+                        "comment_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae lorem ullamcorper, posuere risus eu, consequat justo. Praesent at mi arcu. Praesent et vestibulum sem."
+                    },
+                    {
+                        "comment_avatar": "//placeimg.com/32/32/people",
+                        "comment_date": "7 days ago",
+                        "comment_byline": "Bob Smith",
+                        "comment_text": "Nam posuere ac leo et accumsan. Vestibulum condimentum tincidunt orci non dapibus. Aenean dapibus sem vel massa bibendum placerat. Duis nec est sed justo pulvinar faucibus."
+                    }
+                ]
+            },
+            {
+                "comment_avatar": "//placeimg.com/32/32/people",
+                "comment_date": "5 days ago",
+                "comment_byline": "John Doe",
+                "comment_text": "Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
+            }
         ]
-      },
-      {
-        "comment_avatar": "//placeimg.com/32/32/people",
-        "comment_date": "5 days ago",
-        "comment_byline": "John Doe",
-        "comment_text": "Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
-      }
-    ]
-  }
+    }
 }
