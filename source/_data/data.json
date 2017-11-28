@@ -43,7 +43,12 @@
     }
   },
 
-  "search": "Search",
+  "search": {
+    "url": "/search",
+    "method": "get",
+    "placeholder": "Search …",
+    "name": "search"
+  },
 
   "facet_filter": "Filter the Results",
 
@@ -772,6 +777,11 @@
   },
 
   "pager": {
+    "link": "?page=",
+    "current": 4,
+    "surr": 3,
+    "totalpages": 120,
+    "ellipsis" : "&hellip;",
     "next": "Next &rarr;",
     "prev": "&larr; Previous"
   },

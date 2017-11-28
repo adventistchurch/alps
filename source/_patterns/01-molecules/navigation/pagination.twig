@@ -1,12 +1,43 @@
-<nav class="pagination center-block align--center" role="navigation">
-  <a href="" class="pagination__page pagination__prev theme--secondary-background-color white">{{ pager.prev | raw }}</a>
-  <div class="pagination__pages show-at--medium dib">
-    <a href="" class="pagination__page theme--secondary-background-color white">1</a>
-    <span class="pagination__page pagination__page--current white bg--gray">2</span>
-    <a href="" class="pagination__page theme--secondary-background-color white">3</a>
-    <a href="" class="pagination__page theme--secondary-background-color white">4</a>
-    <span class="pagination__divide">&hellip;</span>
-    <a href="" class="pagination__page theme--secondary-background-color white">214</a>
-  </div>
-  <a href="" class="pagination__page pagination__next theme--secondary-background-color white">{{ pager.next | raw }}</a>
-</nav> <!-- /.pagination -->
+{%- if pager.totalpages > 1 -%}
+    <nav class="pagination center-block align--center" role="navigation">
+        {# 'first' and 'prev' #}
+        {%- if pager.current > 1 -%}
+            <a href="{{ pager.link }}{{ pager.current - 1 }}" class="pagination__page pagination__prev theme--secondary-background-color white">
+                {{ pager.prev|raw }}
+            </a>
+        {%- endif -%}
+        {%- if pager.current > (pager.surr + 1) -%}
+            <a href="{{ pager.link }}{{ 1 }}" class="pagination__page theme--secondary-background-color white">1</a>
+        {%- endif -%}
+
+        {# start with ellipsis if there are more than pager.surr+1 before currentpage.. #}
+        {%- if pager.current > (pager.surr + 2) -%}
+            <span class="pagination__divide">{{ pager.ellipsis|raw }}</span>
+        {%- endif -%}
+
+        {%- for i in max(1, pager.current - pager.surr)..min(pager.current + pager.surr, pager.totalpages) -%}
+            {% if i == pager.current %}
+                <span class="pagination__page pagination__page--current white bg--gray">{{ i }}</span>
+            {%- else -%}
+                <a href="{{ pager.link }}{{ i }}" rel="noindex, follow" class="pagination__page theme--secondary-background-color white">{{ i }}</a>
+            {%- endif -%}
+        {%- endfor -%}
+
+        {# end with ellipsis if there are more than pager.surr+1 after currentpage.. #}
+        {%- if pager.current < (pager.totalpages - pager.surr - 1) -%}
+            <span class="pagination__divide">{{ pager.ellipsis|raw }}</span>
+        {%- endif -%}
+
+        {# 'next' and 'last' #}
+        {%- if pager.current < (pager.totalpages - pager.surr) -%}
+            <a href="{{ pager.link }}{{ pager.totalpages }}" rel="noindex, follow" class="pagination__page theme--secondary-background-color white">
+                {{ pager.totalpages }}
+            </a>
+        {%- endif -%}
+        {%- if pager.current < pager.totalpages -%}
+            <a href="{{ pager.link }}{{ pager.current + 1 }}" class="pagination__page pagination__prev theme--secondary-background-color white">
+                {{ pager.next|raw }}
+            </a>
+        {%- endif -%}
+    </nav>
+{%- endif -%}
