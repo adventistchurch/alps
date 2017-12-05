@@ -1,0 +1,14 @@
+{% if footer_nav %}
+<nav class="footer__nav">
+  <ul class="inline-list">
+    {% for item in footer_nav.items %}
+    <li class="footer__nav-item inline-list__item">
+      <a href="{{ item.url }}" class="footer__nav-link font--secondary link--white">
+        {{ item.text }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+<!-- /.footer__nav -->
+{% endif %}

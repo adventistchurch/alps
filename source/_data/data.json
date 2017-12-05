@@ -43,7 +43,13 @@
         }
     },
 
-    "search": "Search",
+    "search": {
+        "url": "/search",
+        "method": "get",
+        "placeholder": "Search …",
+        "form_title": "Search",
+        "name": "search"
+    },
 
     "facet_filter": "Filter the Results",
 
@@ -234,12 +240,54 @@
         ]
     },
 
-    "breadcrumbs": {
+    "footer_nav": {
         "items": [{
-                "text": "Home"
+                "text": "Facebook",
+                "url": ""
             },
             {
-                "text": "Vitality"
+                "text": "Twitter",
+                "url": ""
+            },
+            {
+                "text": "YouTube",
+                "url": ""
+            },
+            {
+                "text": "Vimeo",
+                "url": ""
+            },
+            {
+                "text": "Email",
+                "url": ""
+            },
+            {
+                "text": "Feedback",
+                "url": ""
+            }
+        ]
+    },
+
+    "subfooter_nav": {
+        "items": [{
+                "text": "Trademark and Logo Usage",
+                "url": ""
+            },
+            {
+                "text": "Legal Notice",
+                "url": ""
+            }
+        ]
+    },
+
+    "breadcrumbs": {
+        "items": [{
+                "text": "Home",
+                "url": "/"
+            },
+            {
+                "text": "Vitality",
+                "url": "/vitality"
             },
             {
                 "text": "Photos"
@@ -545,7 +593,7 @@
             },
             "has_break_l": false,
             "has_break_xl": false
-        },
+        }
     },
 
     "search_results": [{
@@ -766,6 +814,11 @@
     },
 
     "pager": {
+        "link": "?page=",
+        "current": 7,
+        "surrounding": 3,
+        "totalpages": 120,
+        "ellipsis": "&hellip;",
         "next": "Next &rarr;",
         "prev": "&larr; Previous"
     },
@@ -862,5 +915,23 @@
                 "comment_text": "Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
             }
         ]
+    },
+    "footer": {
+        "text": "Adventist.org is the Official website of the Seventh-day Adventist world church",
+        "links": [{
+            "url": "",
+            "label": "View Regions"
+        }]
+    },
+    "subfooter": {
+        "text": "Copyright ©2018, General Conference of Seventh-day Adventists",
+        "address": {
+            "address": "12501 Old Columbia Pike",
+            "locality": "Silver Spring",
+            "region": "MD",
+            "postcode": "20904",
+            "country": "USA",
+            "phonenumber": "301-680-6000"
+        }
     }
 }

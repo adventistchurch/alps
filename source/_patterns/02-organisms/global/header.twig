@@ -11,7 +11,11 @@
       <a href="/" class="logo__link logo__link--square theme--primary-background-color show-at--large {% if logo_bottom_text %} logo--with-text {% endif %}">
       {% include '@atoms/images/logo-square.twig' %}
         {% if logo_bottom_text %}
-          <span class="logo__text"><img src="{{ image_path }}{{ logo_bottom_text.logo_text }}" class="logo__text" alt="{{ head.title }} logo" /></span>
+          {% if logo_bottom_text.logo_text %}
+            <span class="logo__text"><img src="{{ image_path }}{{ logo_bottom_text.logo_text }}" class="logo__text" alt="{{ head.title }} logo" /></span>
+          {% else %}
+            <span class="logo__label font--tertiary">{{ logo_bottom_text.text }}</span>
+          {% endif %}
         {% endif %}
       </a>
       {% include '@molecules/navigation/primary-navigation.twig' %}
