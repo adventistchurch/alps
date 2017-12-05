@@ -1,7 +1,7 @@
 {% if search %}
   <form action="{{ search.url }}" role="search" method="{{ search.method }}" class="search-form toggled-element">
     <fieldset>
-      <legend class="is-vishidden">Search</legend>
+      <legend class="is-vishidden">{{ search.form_title }}</legend>
       <input type="search" name="{{ search.name }}" placeholder="{{ search.placeholder }}" class="search-form__input font--secondary--s" required />
       <button class="search-form__submit is-vishidden">
         <span class="is-vishidden">Submit</span>

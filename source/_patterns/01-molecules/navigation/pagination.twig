@@ -6,16 +6,16 @@
                 {{ pager.prev|raw }}
             </a>
         {%- endif -%}
-        {%- if pager.current > (pager.surr + 1) -%}
+        {%- if pager.current > (pager.surrounding + 1) -%}
             <a href="{{ pager.link }}{{ 1 }}" class="pagination__page theme--secondary-background-color white">1</a>
         {%- endif -%}
 
-        {# start with ellipsis if there are more than pager.surr+1 before currentpage.. #}
-        {%- if pager.current > (pager.surr + 2) -%}
+        {# start with ellipsis if there are more than pager.surrounding+1 before currentpage.. #}
+        {%- if pager.current > (pager.surrounding + 2) -%}
             <span class="pagination__divide">{{ pager.ellipsis|raw }}</span>
         {%- endif -%}
 
-        {%- for i in max(1, pager.current - pager.surr)..min(pager.current + pager.surr, pager.totalpages) -%}
+        {%- for i in max(1, pager.current - pager.surrounding)..min(pager.current + pager.surrounding, pager.totalpages) -%}
             {% if i == pager.current %}
                 <span class="pagination__page pagination__page--current white bg--gray">{{ i }}</span>
             {%- else -%}
@@ -23,13 +23,13 @@
             {%- endif -%}
         {%- endfor -%}
 
-        {# end with ellipsis if there are more than pager.surr+1 after currentpage.. #}
-        {%- if pager.current < (pager.totalpages - pager.surr - 1) -%}
+        {# end with ellipsis if there are more than pager.surrounding+1 after currentpage.. #}
+        {%- if pager.current < (pager.totalpages - pager.surrounding - 1) -%}
             <span class="pagination__divide">{{ pager.ellipsis|raw }}</span>
         {%- endif -%}
 
         {# 'next' and 'last' #}
-        {%- if pager.current < (pager.totalpages - pager.surr) -%}
+        {%- if pager.current < (pager.totalpages - pager.surrounding) -%}
             <a href="{{ pager.link }}{{ pager.totalpages }}" rel="noindex, follow" class="pagination__page theme--secondary-background-color white">
                 {{ pager.totalpages }}
             </a>

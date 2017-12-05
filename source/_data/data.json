@@ -47,6 +47,7 @@
         "url": "/search",
         "method": "get",
         "placeholder": "Search …",
+        "form_title": "Search",
         "name": "search"
     },
 
@@ -240,8 +241,7 @@
     },
 
     "footer_nav": {
-        "items": [
-            {
+        "items": [{
                 "text": "Facebook",
                 "url": ""
             },
@@ -269,8 +269,7 @@
     },
 
     "subfooter_nav": {
-        "items": [
-            {
+        "items": [{
                 "text": "Trademark and Logo Usage",
                 "url": ""
             },
@@ -283,10 +282,12 @@
 
     "breadcrumbs": {
         "items": [{
-                "text": "Home"
+                "text": "Home",
+                "url": "/"
             },
             {
-                "text": "Vitality"
+                "text": "Vitality",
+                "url": "/vitality"
             },
             {
                 "text": "Photos"
@@ -814,10 +815,10 @@
 
     "pager": {
         "link": "?page=",
-        "current": 4,
-        "surr": 3,
+        "current": 7,
+        "surrounding": 3,
         "totalpages": 120,
-        "ellipsis" : "&hellip;",
+        "ellipsis": "&hellip;",
         "next": "Next &rarr;",
         "prev": "&larr; Previous"
     },
@@ -917,15 +918,13 @@
     },
     "footer": {
         "text": "Adventist.org is the Official website of the Seventh-day Adventist world church",
-        "links": [
-            {
-                "url": "",
-                "label": "View Regions"
-            }
-        ]
+        "links": [{
+            "url": "",
+            "label": "View Regions"
+        }]
     },
     "subfooter": {
-        "text": "Copyright ©2016, General Conference of Seventh-day Adventists",
+        "text": "Copyright ©2018, General Conference of Seventh-day Adventists",
         "address": {
             "address": "12501 Old Columbia Pike",
             "locality": "Silver Spring",
@@ -936,4 +935,3 @@
         }
     }
 }
-
