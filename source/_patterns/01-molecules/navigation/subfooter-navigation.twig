@@ -1,0 +1,11 @@
+{% if subfooter_nav %}
+    <div class="footer__legal-links font--secondary--xs">
+        {% for item in subfooter_nav.items %}
+            <a class="hover link--brown-light {% if not count.last %}space-half--right{% endif %}"
+               href="{{ item.url }}"
+            >
+                {{ item.text }}
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
