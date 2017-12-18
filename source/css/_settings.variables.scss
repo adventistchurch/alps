@@ -79,10 +79,10 @@ $google-red: $youtube-red;
 /**
  * Typography
  */
-$font: "Merriweather", Georgia, Times, "Times New Roman", serif;
+$font: 'Noto Sans', Georgia, Times, "Times New Roman", serif;
 $font-serif: $font;
-$font-secondary: "Montserrat", "Helvetica", "Arial", sans-serif;
-$font-tertiary: "Oswald", "Trade Gothic", "Helvetica", "Arial", sans-serif;
+$font-secondary: 'Noto Serif', "Helvetica", "Arial", sans-serif;
+$font-tertiary: $font-secondary;
 $font-sans: $font-secondary;
 $sans: "Helvetica", "Arial", sans-serif;
 $serif: Georgia, Times, "Times New Roman", serif;
