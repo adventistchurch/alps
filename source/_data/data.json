@@ -375,7 +375,8 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
+        "cta": "Donec volutpat libero",
+        "category": "Culture"
     },
 
     "story_block_default": {
