@@ -226,29 +226,71 @@
  * Grid 4up
  */
 .g-4up {
-  > .gi {
-    margin-bottom: $space;
-  }
-  @include mq($px450) {
-    display: flex;
-    margin-left: -$pad-half;
-    margin-right: -$pad-half;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    > .gi {
-      float: left;
-      padding-left: $pad-half;
-      padding-right: $pad-half;
-      width: 50%;
-      display: flex;
+  width: 100%;
 
+  > * {
+    width: 25%;
+  }
+}
+
+.g-7up {
+  width: 100%;
+
+  > * {
+    width: calc(100%/7);
+  }
+
+  &--l--offset-1 {
+    @include media('>large') {
+      margin-left: calc(100%/7);
+      width: calc(100% - 100%/7);
     }
   }
-  @include mq($px800) {
-    > .gi {
-      width: 25%;
-      margin-bottom: $space-double;
+
+  .gi-s {
+    &--1col {
+      width: 100%;
+    }
+  }
+
+  @include media('>medium') {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .gi-m {
+      &--1col {
+        width: calc(100%/7*1);
+      }
+      &--2col {
+        width: calc(100%/7*2);
+      }
+      &--3col {
+        width: calc(100%/7*3);
+      }
+      &--4col {
+        width: calc(100%/7*4);
+      }
+      &--5col {
+        width: calc(100%/7*5);
+      }
+    }
+  }
+
+  @include media('>large') {
+    .gi-l {
+      &--1col {
+        width: calc(100%/7*1);
+      }
+      &--2col {
+        width: calc(100%/7*2);
+      }
+      &--3col {
+        width: calc(100%/7*3);
+      }
+      &--4col {
+        width: calc(100%/7*4);
+      }
     }
   }
 }

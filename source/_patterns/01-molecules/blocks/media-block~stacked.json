@@ -1,0 +1,16 @@
+{
+  "media_block_default": {
+    "block_class": "block--stacked block-media--stacked",
+    "block_img_class": "block__image--full",
+    "picture": {
+        "img_break_m": "500",
+        "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/375/?random",
+            "src_m": "//unsplash.it/800/600/?random"
+        },
+        "has_break_l": false,
+        "has_break_xl": false
+    }
+  }
+}

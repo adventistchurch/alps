@@ -367,15 +367,14 @@
 
     "media_block_default": {
         "block_title_class": "font--secondary--m",
-        "title": "Proin venenatis maximus",
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
         "img": {
-            "src": "//placehold.it/500x400",
+            "src": "//placehold.it/600x300",
             "alt": "Media Block Image Alt"
         },
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
+        "datetime": "2018-12-28",
+        "date": "December 28, 2018",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero",
         "category": "Culture"
     },
 

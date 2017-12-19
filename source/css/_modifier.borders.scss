@@ -42,3 +42,9 @@
 .no-border {
   border: none !important;
 }
+
+.border-left--white--at-large {
+  @include media('>large') {
+    border-left: 1px solid $white;
+  }
+}
