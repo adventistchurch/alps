@@ -2,7 +2,7 @@
   "head": {
     "title": "أسئلة تتعلق - مصدر الإجابات عن مواضيع ",
     "html_class": "pl theme--ming",
-    "body_class": "body theme--cool rtl",
+    "body_class": "body theme--cool u-rtl",
     "language": "ar",
     "attr": "dir=\"rtl\""
   },
@@ -205,7 +205,7 @@
   ],
 
   "media_block_default": {
-    "block_title_class": "font--secondary--m",
+    "block_title_class": "u-font--secondary--m",
     "title": "ومختلفة من نص",
     "img": {
       "src": "//placehold.it/500x400",

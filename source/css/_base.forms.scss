@@ -5,6 +5,7 @@
 form {
   font-family: $font-secondary;
 }
+
 form ol, form ul {
   list-style: none;
   margin-left: 0;
@@ -21,8 +22,6 @@ fieldset {
   margin: 0;
   min-width: 0;
 }
-
-label {}
 
 button, input, select, textarea {
   font-family: inherit;
@@ -60,20 +59,25 @@ input[type="search"]::-webkit-search-decoration {
 .field-container {
   margin-bottom: $space;
 }
+
 .field-container--inline {
   @include media('>small') {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   > input {
     width: 100%;
+
     @include media('>small') {
       width: calc(80% - 20px);
     }
   }
+
   > button {
     width: 100%;
+    
     @include media('>small') {
       width: 20%;
       padding-left: 0;
@@ -88,6 +92,7 @@ input[type="search"]::-webkit-search-decoration {
 .has-error {
   border-color: $error !important;
 }
+
 .is-valid {
   border-color: $valid !important;
 }

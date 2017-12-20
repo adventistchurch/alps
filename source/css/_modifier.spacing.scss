@@ -139,91 +139,81 @@
 
 .spacing {
   & > * + * {
-    margin-top: rem(verticalSpacing(mobile));
-    @include mq($large) {
-      margin-top: rem(verticalSpacing(desktop));
-    }
+    margin-top: $space;
   }
 }
+
+.spacing--quarter {
+  & > * + * {
+    margin-top: $space /4;
+  }
+}
+
+.spacing--half {
+  & > * + * {
+    margin-top: $space /2;
+  }
+}
+
+.spacing--one-and-half {
+  & > * + * {
+    margin-top: $space *1.5;
+  }
+}
+
+.spacing--double {
+  & > * + * {
+    margin-top: $space *2;
+  }
+}
+
+.spacing--triple {
+  & > * + * {
+    margin-top: $space *3;
+  }
+}
+
+.spacing--quad {
+  & > * + * {
+    margin-top: $space *4;
+  }
+}
+
+.spacing--zero {
+  & > * + * {
+    margin-top: 0;
+  }
+}
+
+
 .spacing--until-large {
   & > * + * {
     @include media('<=large') {
-      margin-top: rem(verticalSpacing(mobile));
+      margin-top: $space;
     }
   }
 }
-.spacing--quarter {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)/4);
-    @include mq($large) {
-      margin-top: rem(verticalSpacing(desktop)/4);
-    }
-  }
-}
+
 .spacing--quarter--until-large {
   & > * + * {
     @include media('<=large') {
-      margin-top: rem(verticalSpacing(mobile)/4);
+      margin-top: $space/4;
     }
   }
 }
 .spacing--quarter--until-xlarge {
   & > * + * {
     @include media('<=xlarge') {
-      margin-top: rem(verticalSpacing(mobile)/4);
+      margin-top: $space/4;
     }
   }
 }
-.spacing--half {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)/2);
-    @include mq($large) {
-      margin-top: rem(verticalSpacing(desktop)/2);
-    }
-  }
-}
+
 .spacing--half-until-large {
   @include media('<=large') {
     & > * + * {
-      margin-top: rem(verticalSpacing(mobile)/2);
+      margin-top: $space/2;
     }
-  }
-}
-.spacing--one-and-half {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*1.5);
-    @include mq($large) {
-      margin-top: rem(verticalSpacing(desktop)*1.5);
-    }
-  }
-}
-.spacing--double {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*2);
-    @include mq($large) {
-      margin-top: rem(verticalSpacing(desktop)*2);
-    }
-  }
-}
-.spacing--triple {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*3);
-    @include mq($large) {
-      margin-top: rem(verticalSpacing(desktop)*3);
-    }
-  }
-}
-.spacing--quad {
-  & > * + * {
-    margin-top: rem(verticalSpacing(mobile)*4);
-    @include mq($large) {
-      margin-top: rem(verticalSpacing(desktop)*4);
-    }
-  }
-}
-.spacing--zero {
-  & > * + * {
-    margin-top: 0;
   }
 }
 
@@ -231,40 +221,22 @@
  * Padding
  */
 .padding {
-  padding: rem(verticalSpacing(mobile));
-  @include media('>large') {
-    padding: rem(verticalSpacing(desktop));
-  }
+  padding: $pad;
 }
 .padding-top {
-    padding-top: rem(verticalSpacing(mobile));
-    @include media('>large') {
-        padding-top: rem(verticalSpacing(desktop));
-    }
+  padding-top: $pad;
 }
 .padding-top--double {
-    padding-top: rem(verticalSpacing(mobile)*2);
-    @include media('>large') {
-        padding-top: rem(verticalSpacing(desktop)*2);
-    }
+  padding-top: $pad*2;
 }
 .padding-bottom {
-    padding-bottom: rem(verticalSpacing(mobile));
-    @include media('>large') {
-        padding-bottom: rem(verticalSpacing(desktop));
-    }
+  padding-bottom: $pad;
 }
 .padding--half {
-    padding: rem(verticalSpacing(mobile)/2);
-    @include media('>large') {
-        padding: rem(verticalSpacing(desktop)/2);
-    }
+  padding: $pad/2;
 }
 .padding--double {
-    padding: rem(verticalSpacing(mobile)*2);
-    @include media('>large') {
-        padding: rem(verticalSpacing(desktop)*2);
-    }
+  padding: $pad*2;
 }
 
 /**

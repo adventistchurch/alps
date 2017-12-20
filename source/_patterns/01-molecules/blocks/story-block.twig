@@ -1,12 +1,12 @@
 {% if story_block_default %}
 <div class="story-block block spacing--half pad {{ story_block_default.block_class }}" style="background-image: url({{ story_block_default.bg_img }})">
-  <div class="story-block__image-wrap round">
+  <div class="story-block__image-wrap u-round">
     <img class="story-block__image" src="{{ story_block_default.img.src }}" alt="{{ story_block_default.img.alt }}" />
   </div>
   <div class="story-block__content spacing">
     <div>
-      <h2 class="story-block__heading font--secondary--l theme--secondary-text-color">{{ story_block_default.title }}</h2>
-      {% if story_block_default.subtitle %}<p class="font--secondary--xs white">{{ story_block_default.subtitle }}</p>{% endif %}
+      <h2 class="story-block__heading u-font--secondary--l theme--secondary-text-color">{{ story_block_default.title }}</h2>
+      {% if story_block_default.subtitle %}<p class="u-font--secondary--xs white">{{ story_block_default.subtitle }}</p>{% endif %}
     </div>
     <div class="spacing">
       <div class="text story-block__description block__description white">

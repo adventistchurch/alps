@@ -1,4 +1,4 @@
-<div class="content cf has-aside" role="document">
+<div class="content u-clear-fix has-aside" role="document">
   {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
     {% include '@organisms/sections/page-header@complete.twig' %}
@@ -6,7 +6,7 @@
       {% include '@molecules/navigation/article-navigation.twig' %}
     {% endif %}
     <div class="layout-container full--until-large">
-      <div class="flex-container cf">
+      <div class="l-flex-container u-clear-fix">
         <div class="shift-left--fluid column__primary bg--white no-pad--top no-pad--btm can-be--dark-light">
           {% if news_home %}
             {% include '@organisms/content/news-content.twig' %}
@@ -27,7 +27,7 @@
             {% include '@organisms/asides/aside.twig' %}
           </div>
         </div> <!-- /.shift-right--fluid -->
-      </div> <!-- /.flex-container -->
+      </div> <!-- /.l-flex-container -->
     </div> <!-- /.layout-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}

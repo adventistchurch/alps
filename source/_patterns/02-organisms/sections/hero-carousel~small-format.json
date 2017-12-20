@@ -1,7 +1,7 @@
 {
   "carousel": {
     "carousel_class": "js-carousel__single-item",
-    "carousel_heading_class": "font--secondary--l",
+    "carousel_heading_class": "u-font--secondary--l",
     "no_arrows": true,
     "slides2column": false,
     "slides": [

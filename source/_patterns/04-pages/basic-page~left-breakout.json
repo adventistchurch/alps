@@ -28,7 +28,7 @@
     {
       "accordion_heading": "Commodo at leo suspendisse:",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Commodo at leo suspendiss",
         "img": {
           "src": "//placehold.it/500x400",
@@ -43,7 +43,7 @@
     {
       "accordion_heading": "Phasellus at sem eros:",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Phasellus at sem eros",
         "img": {
           "src": "//placehold.it/500x400",
@@ -58,7 +58,7 @@
     {
       "accordion_heading": "Aliquam purus nulla:",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Aliquam purus nulla",
         "img": {
           "src": "//placehold.it/500x400",
@@ -73,7 +73,7 @@
     {
       "accordion_heading": "Sodales tortor et porta convallis:",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Sodales tortor et porta convallis",
         "img": {
           "src": "//placehold.it/500x400",
@@ -88,7 +88,7 @@
     {
       "accordion_heading": "Donec dignissim sed risus egestas:",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Donec dignissim sed risus egestas",
         "img": {
           "src": "//placehold.it/500x400",

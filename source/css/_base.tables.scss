@@ -8,6 +8,7 @@ table {
   border: 1px solid $gray;
   width: 100%;
 }
+
 th {
   text-align: left;
   border: 1px solid transparent;
@@ -17,12 +18,15 @@ th {
   font-size: rem(14);
   padding: $pad-half;
 }
+
 tr {
   border: 1px solid transparent;
-  &:nth-child(even){
+
+  &:nth-child(even) {
     background-color: lighten($denim, 60%);
   }
 }
+
 td {
   border: 1px solid transparent;
   padding: $pad-half;
@@ -31,14 +35,4 @@ td {
   a {
     text-decoration: underline;
   }
-}
-
-/**
- * Table Layout
- */
-.t {
-  display: table;
-}
-.t-cell {
-  display: table-cell;
 }

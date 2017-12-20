@@ -119,7 +119,7 @@
 /**
  * Shift at 900px (large breakpoint) with fluid left and right columns.
  */
-.flex-container {
+.l-flex-container {
   @include media('>large') {
     display: flex;
     align-items: stretch;

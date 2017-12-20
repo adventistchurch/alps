@@ -1,5 +1,5 @@
-<div class="carousel__item carousel__slide cf spacing rel {{ carousel_item_class }}">
-  <div class="flex-container">
+<div class="carousel__item carousel__slide u-clear-fix spacingu-position--relative{{ carousel_item_class }}">
+  <div class="l-flex-container">
     <div class="shift-left--fluid">
       {% include '@atoms/images/picture.twig' with picture %}
     </div> <!-- /.shift-left--fluid -->
@@ -7,9 +7,9 @@
     {% if has_slide_text %}
       <div class="shift-right--fluid">
         <div class="{{ has_slide_text.carousel_text_class }} spacing--half pad--top">
-          <h2 class="carousel__slide-heading font--tertiary--l theme--primary-text-color">{{ has_slide_text.slide_heading }}</h2>
+          <h2 class="carousel__slide-heading u-font--tertiary--l theme--primary-text-color">{{ has_slide_text.slide_heading }}</h2>
           {% if has_slide_text.slide_subtitle %}
-            <h3 class="carousel__slide-subtitle font--secondary--m">{{ has_slide_text.slide_subtitle }}</h3>
+            <h3 class="carousel__slide-subtitle u-font--secondary--m">{{ has_slide_text.slide_subtitle }}</h3>
           {% endif %}
           <div class="carousel__slide-dek pad-half--btm">
             <p>{{ has_slide_text.slide_dek }}</p>

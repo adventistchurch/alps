@@ -1,10 +1,10 @@
-<div class="content cf has-aside" role="document">
+<div class="content u-clear-fix has-aside" role="document">
   {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
     {% include '@organisms/sections/page-header@complete.twig' %}
     {% include '@molecules/navigation/article-navigation.twig' %}
     <div class="layout-container full--until-large">
-      <div class="flex-container cf">
+      <div class="l-flex-container u-clear-fix">
         <div class="shift-left--fluid column__primary bg--white can-be--dark-light spacing--one-and-half">
           {% include '@organisms/content/page-content.twig' %}
           <div class="pad--primary">{% include '@organisms/sections/comments.twig' %}</div>
@@ -12,7 +12,7 @@
         <div class="shift-right--fluid bg--beige can-be--dark-dark">
           {% include '@molecules/navigation/aside-navigation.twig' %}
         </div> <!-- /.shift-right--fluid -->
-      </div> <!-- /.flex-container -->
+      </div> <!-- /.l-flex-container -->
     </div> <!-- /.layout-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}

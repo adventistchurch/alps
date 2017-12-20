@@ -18,6 +18,7 @@ input[type="submit"] {
   font-family: $font-secondary;
   text-transform: uppercase;
   border: none;
+
   &:hover,
   &:focus {
     background-color: darken($orange, 10);
@@ -32,9 +33,3 @@ input[type="submit"] {
   padding: rem(8) rem(12);
   font-size: rem(12);
 }
-
-
-/**
- * Button Themes
- */
-

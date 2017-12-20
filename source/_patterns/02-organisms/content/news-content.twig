@@ -5,7 +5,7 @@
   <div class="gi">
     <div class="spacing">
       <div class="spacing--half">
-        <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">Vivamus ornare</h2>
+        <h2 class="u-font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">Vivamus ornare</h2>
         <hr>
       </div>
       {% for block in media_blocks %}
@@ -17,7 +17,7 @@
   <div class="gi pad-double--btm">
     <div class="spacing">
       <div class="spacing--half">
-        <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">Duis pretium</h2>
+        <h2 class="u-font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">Duis pretium</h2>
         <hr>
       </div>
       {% if video_block %}
@@ -43,11 +43,11 @@
 
       <hr>
 
-      <h3 class="font--tertiary--m theme--secondary-text-color pad--top pad--left pad-right">Sagittis massa</h3>
+      <h3 class="u-font--tertiary--m theme--secondary-text-color pad--top pad--left pad-right">Sagittis massa</h3>
       {% for block in content_blocks %}
         <div class="content__block pad--left pad-right">
-          <h3 class="theme--primary-text-color font--secondary--m">{{ block.text.heading | raw}}</h3>
-          <p>Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. {% if block.text.cta %} <a href="{{ block.url }}" class="font--secondary--s upper theme--secondary-text-color"><strong>{{ block.text.cta | raw }}</strong></a> {% endif %}</p>
+          <h3 class="theme--primary-text-color u-font--secondary--m">{{ block.text.heading | raw}}</h3>
+          <p>Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. {% if block.text.cta %} <a href="{{ block.url }}" class="u-font--secondary--s u-text-transform--upper theme--secondary-text-color"><strong>{{ block.text.cta | raw }}</strong></a> {% endif %}</p>
         </div>
         <hr>
       {% endfor %}

@@ -36,41 +36,10 @@
 }
 
 /**
- * Text Alignment
- */
-.align--right {
-  text-align: right;
-}
-.center,
-.align--center {
-  text-align: center;
-}
-.align--left {
-  text-align: left;
-}
-.align--right--at-medium {
-  @include media('>medium') {
-    text-align: right;
-  }
-}
-
-/**
  * Caption
  */
 .caption {
   line-height: 1.35;
-}
-
-/**
- * Byline
- */
-.byline {
-}
-
-/**
- * Credits Section
- */
-.credits {
 }
 
 /**
@@ -83,16 +52,19 @@
 /**
  * Font Families
  */
-.font--primary {
+.u-font--primary {
   font-family: $font;
 }
-.font--secondary {
+
+.u-font--secondary {
   font-family: $font-secondary;
 }
-.font--tertiary {
+
+.u-font--tertiary {
   font-family: $font-tertiary;
 }
-.font--monospace {
+
+.u-font--monospace {
   font-family: $monospace;
 }
 
@@ -101,317 +73,337 @@
  */
 
 // X-Large Type - primary
-@mixin font--primary--xl() {
+@mixin u-font--primary--xl() {
   font-family: $font;
   font-size: rem(26);
   line-height: 1;
   font-weight: normal;
+
   @include media('>large') {
     font-size: rem(36);
     line-height: rem(40);
   }
 }
-.font--primary--xl {
-  @include font--primary--xl;
+
+.u-font--primary--xl {
+  @include u-font--primary--xl;
 }
 
 // Large Type - primary
-@mixin font--primary--l() {
+@mixin u-font--primary--l() {
   font-family: $font;
   font-size: rem(22);
   line-height: rem(26);
   font-weight: normal;
+
   @include media('>large') {
     font-size: rem(30);
     line-height: rem(36);
   }
 }
-.font--primary--l {
-  @include font--primary--l;
+
+.u-font--primary--l {
+  @include u-font--primary--l;
 }
 
 // Medium Type - primary
-@mixin font--primary--m() {
+@mixin u-font--primary--m() {
   font-family: $font;
   font-size: rem(18);
   line-height: rem(24);
   font-weight: normal;
+
   @include media('>large') {
     font-size: rem(22);
     line-height: rem(30);
   }
 }
-.font--primary--m {
-  @include font--primary--m;
+
+.u-font--primary--m {
+  @include u-font--primary--m;
 }
 
 // Small Type - primary
-@mixin font--primary--s() {
+@mixin u-font--primary--s() {
   font-family: $font;
   font-size: rem(14);
   line-height: rem(17);
+
   @include media('>large') {
     font-size: rem(15);
     line-height: rem(21);
   }
 }
-.font--primary--s {
-  @include font--primary--s;
+
+.u-font--primary--s {
+  @include u-font--primary--s;
 }
 
 // X-Small Type - primary
-@mixin font--primary--xs() {
+@mixin u-font--primary--xs() {
   font-family: $font;
   font-size: rem(13);
   line-height: rem(17);
 }
-.font--primary--xs {
-  @include font--primary--xs;
-}
 
+.u-font--primary--xs {
+  @include u-font--primary--xs;
+}
 
 /**
  * Secondary type styles
  */
 
 // XLarge type - secondary
-@mixin font--secondary--xl() {
+@mixin u-font--secondary--xl() {
   font-family: $font-secondary;
   font-size: rem(24);
   font-weight: 600;
   line-height: rem(28);
+
   @include media('>medium') {
     font-size: rem(30);
     line-height: rem(34);
   }
+
   @include media('>large') {
     font-size: rem(38);
     line-height: rem(42);
   }
 }
-.font--secondary--xl {
-  @include font--secondary--xl;
+
+.u-font--secondary--xl {
+  @include u-font--secondary--xl;
 }
 
 // Large type - secondary
-@mixin font--secondary--l() {
+@mixin u-font--secondary--l() {
   font-family: $font-secondary;
   font-size: rem(22);
   line-height: rem(26);
   font-weight: 600;
   text-transform: uppercase;
+
   @include media('>large') {
     font-size: rem(28);
     line-height: rem(32);
   }
 }
-.font--secondary--l {
-  @include font--secondary--l;
+
+.u-font--secondary--l {
+  @include u-font--secondary--l;
 }
 
 // Medium type - secondary
-@mixin font--secondary--m() {
+@mixin u-font--secondary--m() {
   font-family: $font-secondary;
   font-size: rem(16);
   line-height: rem(20);
   font-weight: normal;
+
   @include media('>medium') {
     font-size: rem(18);
     line-height: rem(22);
   }
+
   @include media('>large') {
     font-size: rem(20);
     line-height: rem(24);
   }
 }
-.font--secondary--m {
-  @include font--secondary--m;
+
+.u-font--secondary--m {
+  @include u-font--secondary--m;
 }
 
 // Small type - secondary
-@mixin font--secondary--s() {
+@mixin u-font--secondary--s() {
   font-family: $font-secondary;
   font-size: rem(13);
   line-height: rem(20);
+
   @include media('>large') {
     font-size: rem(15);
   }
 }
-.font--secondary--s {
-  @include font--secondary--s;
+
+.u-font--secondary--s {
+  @include u-font--secondary--s;
 }
 
 // X-Small type - secondary
-@mixin font--secondary--xs() {
+@mixin u-font--secondary--xs() {
   font-family: $font-secondary;
   font-size: rem(11);
   line-height: rem(16);
 }
-.font--secondary--xs {
-  @include font--secondary--xs;
-}
 
+.u-font--secondary--xs {
+  @include u-font--secondary--xs;
+}
 
 /**
  * Tertiary type styles
  */
 
 // X-Large Type - tertiary
-@mixin font--tertiary--xl() {
+@mixin u-font--tertiary--xl() {
   font-family: $font-tertiary;
   font-size: rem(28);
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+
   @include media('>medium') {
     font-size: rem(44);
   }
+
   @include media('>large') {
     font-size: rem(55);
   }
 }
-.font--tertiary--xl {
-  @include font--tertiary--xl;
+
+.u-font--tertiary--xl {
+  @include u-font--tertiary--xl;
 }
 
 // Large Type - tertiary
-@mixin font--tertiary--l() {
+@mixin u-font--tertiary--l() {
   font-family: $font-tertiary;
   font-size: rem(24);
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+
   @include media('>medium') {
     font-size: rem(28);
     line-height: rem(32);
   }
 }
-.font--tertiary--l {
-  @include font--tertiary--l;
+
+.u-font--tertiary--l {
+  @include u-font--tertiary--l;
 }
 
 // Medium Type - tertiary
-@mixin font--tertiary--m() {
+@mixin u-font--tertiary--m() {
   font-family: $font-tertiary;
   font-size: rem(20);
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+
   @include media('>medium') {
     font-size: rem(24);
     line-height: rem(28);
   }
 }
-.font--tertiary--m {
-  @include font--tertiary--m;
-}
 
+.u-font--tertiary--m {
+  @include u-font--tertiary--m;
+}
 
 /**
  * Monospace  type styles
  */
 
 // X-Large Type - monospace
-@mixin font--monospace--xl() {
+@mixin u-font--monospace--xl() {
   font-family: $font-monospace;
   font-size: rem(28);
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+
   @include media('>medium') {
     font-size: rem(44);
   }
+
   @include media('>large') {
     font-size: rem(55);
   }
 }
-.font--monospace--xl {
-  @include font--monospace--xl;
+
+.u-font--monospace--xl {
+  @include u-font--monospace--xl;
 }
 
 // Large Type - monospace
-@mixin font--monospace--l() {
+@mixin u-font--monospace--l() {
   font-family: $font-monospace;
   font-size: rem(24);
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+
   @include media('>medium') {
     font-size: rem(28);
     line-height: rem(32);
   }
 }
-.font--monospace--l {
-  @include font--monospace--l;
+
+.u-font--monospace--l {
+  @include u-font--monospace--l;
 }
 
 // Medium Type - monospace
-@mixin font--monospace--m() {
+@mixin u-font--monospace--m() {
   font-family: $font-monospace;
   font-size: rem(20);
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
+
   @include media('>medium') {
     font-size: rem(24);
     line-height: rem(28);
   }
 }
-.font--monospace--m {
-  @include font--monospace--m;
+
+.u-font--monospace--m {
+  @include u-font--monospace--m;
 }
 
-
 // Small type - monospace
-@mixin font--monospace--s() {
+@mixin u-font--monospace--s() {
   font-family: $font-monospace;
   font-size: rem(13);
   line-height: rem(20);
+
   @include media('>large') {
     font-size: rem(15);
   }
 }
-.font--monospace--s {
-  @include font--monospace--s;
+
+.u-font--monospace--s {
+  @include u-font--monospace--s;
 }
 
 // X-Small type - monospace
-@mixin font--monospace--xs() {
+@mixin u-font--monospace--xs() {
   font-family: $font-monospace;
   font-size: rem(11);
   line-height: rem(16);
 }
-.font--monospace--xs {
-  @include font--monospace--xs;
-}
 
-/**
- * Font Weights
- */
-.fw--800 {
- font-weight: 800;
-}
-.fw--600 {
-  font-weight: 600;
-}
-.fw--400 {
-  font-weight: 400;
+.u-font--monospace--xs {
+  @include u-font--monospace--xs;
 }
 
 /**
  * Text Transforms
  */
-.upper {
+.u-text-transform--upper {
   text-transform: uppercase;
 }
-.lower {
+.u-text-transform--lower {
   text-transform: lowercase;
 }
 
 /**
  * Text Decorations
  */
-.td--u {
+.u-text-decoration--underline {
   text-decoration: underline;
 }
 
@@ -438,7 +430,7 @@
     font-weight: 600;
     margin-bottom: rem(-5);
     padding-top: $pad-half;
-    @include mq($large) {
+    @include media('>large') {
       margin-bottom: rem(-15);
     }
   }
@@ -490,7 +482,7 @@
   }
   > ul,
   > ol {
-    @include mq($px800, max) {
+    @include media('<=large') {
       padding-left: $space;
     }
   }
@@ -513,7 +505,7 @@
   > [class*="quote--"] {
     & > * + * {
       margin-top: rem(verticalSpacing(mobile));
-      @include mq($large) {
+      @include media('>large') {
         margin-top: rem(verticalSpacing(desktop));
       }
     }
@@ -544,7 +536,7 @@
       padding-bottom: rem(70);
     }
     h2, h3, h4, h5 {
-      @include font--secondary--m;
+      @include u-font--secondary--m;
     }
     p {
       font-style: normal;
@@ -557,40 +549,4 @@
   pre {
     font-size: 125%;
   }
-}
-
-/**
- * Smaller Text Version (non-article body, mostly for block deks)
- */
-.text--s {
-  > p,
-  > ul li,
-  > ol li,
-  > dl dd,
-  > dl dt,
-  > blockquote p {
-    line-height: 1.4;
-  }
-}
-
-
-/**
- * Letter Spacing
- */
-.ls {
-  letter-spacing: 1px;
-}
-
-/**
- * Line Heights
- */
-.lh--1 {
-  line-height: 1;
-}
-.lh--0 {
-  line-height: 0;
-}
-
-.token {
-  line-height: 1.5;
 }

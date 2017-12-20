@@ -17,7 +17,7 @@
   }
 }
 .no-flexbox .announcement-bar {
-  @include mq($px800) {
+  @include media('>large') {
     padding-top: rem(25);
   }
 }
@@ -44,7 +44,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  @include mq($px600) {
+  @include media('>medium') {
     top: 50%;
     margin-top: rem(-13);
   }
@@ -61,4 +61,3 @@
 .ab__cta {
   margin: rem(2) 0;
 }
-

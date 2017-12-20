@@ -8,6 +8,7 @@
 .trans {
   transition: all .4s ease-in-out;
 }
+
 .trans--fast {
   transition: all .1s ease-in-out;
 }
@@ -20,18 +21,20 @@
   transform: translate(0, 25px);
   transition: all .6s ease-out;
 }
+
 .fadeup {
   opacity: 1;
   transform: translate(0, 0);
 }
+
 .has-fadein {
   opacity: 0;
   transition: all .8s ease-out;
 }
+
 .fadein {
   opacity: 1;
 }
-
 
 // Fade image in after load.
 .lazyload,
@@ -40,6 +43,7 @@
   transform: translate(0, 25px);
   transition: all .6s ease-out;
 }
+
 .lazyloaded {
   opacity: 1;
   transition: opacity 300ms;

@@ -1,15 +1,15 @@
 /*------------------------------------*\
     $ARTICLE
 \*------------------------------------*/
-
 .page--pad {
-  @include mq($px350, max) {
+  @include media('<=small') {
     padding-left: rem(10);
     padding-right: rem(10);
   }
   padding-left: $pad;
   padding-right: $pad;
-  @include mq($px1000) {
+
+  @include media('>large') {
     padding-left: 0;
     padding-right: 0;
   }
@@ -18,18 +18,20 @@
 /*------------------------------------*\
     $ARTICLE HEADER
 \*------------------------------------*/
-
 .article__title {
   font-size: rem(30);
   line-height: 1;
   margin-bottom: rem(8);
-  @include mq($px750) {
+
+  @include media('>medium') {
     font-size: rem(34);
   }
-  @include mq($px1000) {
+
+  @include media('>large') {
     font-size: rem(44);
   }
-  @include mq($px1200) {
+
+  @include media('>xlarge') {
     font-size: rem(55);
   }
 }
@@ -39,25 +41,31 @@
   padding-top: $pad-double;
   padding-bottom: $pad-double;
   background-color: $beige;
+
   @include media('>medium') {
     padding-top: rem(80);
     padding-bottom: rem(80);
   }
+
   @include media('>xlarge') {
     padding-top: rem(120);
     padding-bottom: rem(120);
   }
 }
+
 .longform__header--with-hero {
   position: relative;
   padding-bottom: 0;
   background-color: transparent;
+
   @include media('>medium') {
     padding-bottom: 0;
   }
+
   @include media('>xlarge') {
     padding-bottom: 0;
   }
+
   &:before {
     content: '';
     position: absolute;
@@ -69,6 +77,7 @@
     background-color: $beige;
   }
 }
+
 .longform__header__text {
   max-width: rem(650);
 }
@@ -76,34 +85,36 @@
 /*------------------------------------*\
     $BODY OF ARTICLE
 \*------------------------------------*/
-
 .article__body,
 .article__flow {
   max-width: rem(700);
   margin-left: auto;
   margin-right: auto;
 }
+
 .article__body {
   padding-bottom: $pad-double;
+
   > figure:first-child {
     margin-top: 0;
+
     @include media('>medium') {
       margin-top: $space-half;
     }
   }
 }
 
-
 /*------------------------------------*\
     $IMAGE/FIGURE ALIGNMENT
 \*------------------------------------*/
-
 .aligncenter {
-  @include center-block;
+  @include u-center-block;
 }
+
 .alignright {
   float: none;
   padding-left: 0;
+
   @include media('>medium') {
     float: right;
     max-width: rem(400);
@@ -111,11 +122,13 @@
     margin: rem(5) 0 $space $space-and-half;
   }
 }
+
 .alignleft {
   float: none;
   padding-right: 0;
   width: 100%;
   clear: left;
+
   @include media('>medium') {
     float: left;
     max-width: rem(400);
@@ -123,92 +136,121 @@
     margin: rem(5) $space-and-half $space 0;
   }
 }
+
+.aligncenter,
 .alignleft,
-.alignright,
-.aligncenter {
+.alignright {
   display: block;
   height: auto;
+
   @include media('<=medium') {
     width: auto;
   }
+
   &:first-child {
     margin-top: rem(5);
   }
 }
+
 .aligncenter {
   width: 100%;
 }
+
 blockquote.aligncenter {
   text-align: center;
+
   p:before {
     position: static;
   }
 }
-.size--small,
+
+.size--large,
 .size--medium,
-.size--large {
-  .img-wrap {
+.size--small {
+  .u-image--wrap {
     display: block;
   }
+
   @include media('<=medium') {
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 .size--small {
   @include media('>medium') {
     max-width: rem(300);
   }
 }
+
 .size--medium {
   @include media('<=medium') {
     margin-left: auto;
     margin-right: auto;
   }
+
   @include media('>medium') {
     width: 40%;
     max-width: rem(320);
   }
 }
+
 .size--large {
   width: 100%;
 }
+
 .size-full {
   display: block;
 }
-
 // Longform article body
 .longform__body {
   max-width: none;
-  p,
-  ul, ol,
-  h1, h2, h3, h4, h5, h6,
-  .size--large,
+
+  .quote--inline,
   .size--half,
-  .quote--inline {
+  .size--large,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ol,
+  p,
+  ul {
     max-width: rem(700);
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+
   .size--medium {
     @include media('>large') {
       width: auto;
       max-width: rem(450);
     }
   }
+
   .size--half {
     @include media('>large') {
       float: left;
       width: 49%;
       clear: left;
       margin-bottom: $space-and-half;
+
       + .size--half {
         float: right;
         clear: right;
+
+        + h1,
+        + h2,
+        + h3,
+        + h4,
+        + h5,
+        + h6,
+        + ol,
         + p,
-        + ul, + ol,
-        + h1, + h2, + h3, + h4, + h5, + h6,
+        + ul,
         .size--large {
           clear: both;
         }

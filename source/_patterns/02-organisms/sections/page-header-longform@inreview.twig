@@ -1,10 +1,10 @@
 {% if page_header_longform %}
 <header class="longform__header {% if page_header_longform.picture %} longform__header--with-hero {% endif %}">
-  <div class="layout-container cf spacing">
+  <div class="layout-container u-clear-fix spacing">
     <div class="longform__header__text spacing--half">
-      <h1 class="longform__heading font--tertiary--xl">{{ page_header_longform.heading }}</h1>
+      <h1 class="longform__heading u-font--tertiary--xl">{{ page_header_longform.heading }}</h1>
       {% if page_header_longform.dek %}
-        <p class="font--primary--m">{{ page_header_longform.dek }}</p>
+        <p class="u-font--primary--m">{{ page_header_longform.dek }}</p>
       {% endif %}
     </div>
     {% if page_header_longform.picture %}

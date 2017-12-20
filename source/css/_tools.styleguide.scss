@@ -8,7 +8,6 @@
  * These styles will not be your production CSS.
  */
 
-
 /* Style Guide Interface Colors */
 $sg-primary : #222;
 $sg-secondary : #808080;
@@ -40,9 +39,7 @@ $sg-bp-small-2 : 30em;
 $sg-bp-med : 48em;
 $sg-bp-large : 72em;
 $sg-bp-xl : 80em;
-
 $animate-quick: 0.2s;
-
 
 // Demo to show grid system - in this stylesheet because it shouldn't be included in the production styles
 .demo {
@@ -101,8 +98,6 @@ $animate-quick: 0.2s;
   }
 }
 
-
-
 // Style Guide color swatches
 .sg-colors {
   overflow: hidden;
@@ -135,7 +130,6 @@ $animate-quick: 0.2s;
     height: 4em;
     margin-bottom: 0.2em;
   }
-
 }
 
 .sg-label {
@@ -145,13 +139,16 @@ $animate-quick: 0.2s;
 .sg-annotation-toggle {
   display: none;
 }
+
 .sg-code-head {
   color: $sg-quaternary;
 }
+
 .sg-code {
   display: none !important;
   color: lighten(#e6db74, 10);
   background-color: #272822;
+
   pre {
     border-color: $sg-quaternary;
     font-size: rem(18);
@@ -160,7 +157,6 @@ $animate-quick: 0.2s;
     padding-bottom: 0;
   }
 }
-
 
 /**
  *  * Color Containers
@@ -181,6 +177,7 @@ $animate-quick: 0.2s;
   display: block;
   color: $gray;
 }
+
 .sg-label--block{
   display: inline-block;
   margin-right: .25em;
@@ -190,19 +187,16 @@ $animate-quick: 0.2s;
   border-radius: 5px;
 }
 
-
 /*
  Flexbox Grid
  */
-
 .sg-grid{
   display: flex;
   flex-direction: row;
 
-  .sg-grid-1of2{
+  .sg-grid-1of2 {
     max-width: 50%;
     flex-basis: 50%;
-
   }
 }
 

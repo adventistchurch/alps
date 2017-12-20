@@ -416,11 +416,11 @@ $slice-height: 3;
   width: auto;
   position: relative;
   .arrow--down {
-    @include transition;
+    @include u-transition;
   }
   @include media('<large') {
     &.is-active {
-      @include transition;
+      @include u-transition;
       .article-nav__subnav {
         display: block;
       }
@@ -532,7 +532,7 @@ $slice-height: 3;
     box-shadow: inset 1px 1px 1px rgba($black, .1);
     background: rgba($black, .08) url('../images/icons/icon-search.svg') no-repeat center right 12px;
     background-size: rem(12);
-    @include placeHolder($white);
+    @include u-placeholder($white);
   }
 }
 
@@ -671,7 +671,7 @@ span.dropdown__arrow {
   left: 0;
   top: 50%;
   transform: translateY(-50%) rotate(0);
-  @include trans;
+  @include u-transition;
   .is-active & {
     transform: translateY(-50%) rotate(90deg);
   }

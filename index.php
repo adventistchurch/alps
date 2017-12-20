@@ -32,7 +32,7 @@
         <a href="/" class="alps-logo"><img src="/public/images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
       </div>
       <div class="sg-introduction rel">
-        <div class="cf flex-container">
+        <div class="u-clear-fix flex-container">
           <div class="shift-left--fluid pad-double">
             <div class="text spacing">
               <h1 class="font--tertiary--l">Welcome to the Adventist Living Pattern System</h1>
@@ -78,7 +78,7 @@
       </div>
     </div>
     <footer class="footer" role="contentinfo">
-      <div class="footer__inner cf bg--medium-brown white can-be--dark-dark">
+      <div class="footer__inner u-clear-fix bg--medium-brown white can-be--dark-dark">
         <div class="footer__legal bg--brown  can-be--dark-light">
           <div class="footer__legal__inner layout-container spacing--quarter--until-large">
             <div class="footer__unify-copyright-address spacing--quarter--until-large">

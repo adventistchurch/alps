@@ -7,15 +7,19 @@
  */
 .border {
   border: $border-style;
+
   &--top {
     border-top: $border-style;
   }
+
   &--bottom {
     border-bottom: $border-style;
   }
+
   &--red {
     border: 1px solid red;
   }
+
   &--light {
     border-color: $gray-light;
   }

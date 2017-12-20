@@ -1,4 +1,4 @@
-<div class="carousel__item rel {{ carousel_item_class }}">
+<div class="carousel__itemu-position--relative{{ carousel_item_class }}">
 
   {% if is_lazy %}
     {% include '@atoms/images/picture.twig' with {'is_lazy_slide': 'true', 'picture': picture} %}
@@ -12,7 +12,7 @@
         <div class="carousel__item-text {{ has_slide_text.carousel_text_class }} spacing--half">
           <div class="carousel__item-text--inner">
             <h2 class="{{ carousel_heading_class }} carousel__item-heading theme--primary-transparent-background-color">{{ has_slide_text.slide_heading }}</h2>
-            {% if has_slide_text.slide_subtitle %}<h3 class="carousel__item-subtitle font--secondary--m theme--primary-transparent-background-color">{{ has_slide_text.slide_subtitle }}</h3>{% endif %}
+            {% if has_slide_text.slide_subtitle %}<h3 class="carousel__item-subtitle u-font--secondary--m theme--primary-transparent-background-color">{{ has_slide_text.slide_subtitle }}</h3>{% endif %}
             <div class="carousel__item-dek pad-half--btm theme--primary-transparent-background-color">
               <p>{{ has_slide_text.slide_dek }}</p>
             </div> <!-- /.carousel__item-dek -->
@@ -31,12 +31,12 @@
         </h3>
       {% endif %}
       {% if is_carousel_block.date %}
-        <time class="block__date font--secondary--xs brown space-half--btm" datetime="{{ is_carousel_block.datetime }}">{{ is_carousel_block.date }}</time>
+        <time class="block__date u-font--secondary--xs brown space-half--btm" datetime="{{ is_carousel_block.datetime }}">{{ is_carousel_block.date }}</time>
       {% endif %}
       {% if is_carousel_block.description %}
         <div class="text pad-half--btm">
           <p class="carousel-block__description block__description">
-            <span class="font--primary--xs">{{ is_carousel_block.description }}</span>
+            <span class="u-font--primary--xs">{{ is_carousel_block.description }}</span>
           </p>
         </div>
       {% endif %}
