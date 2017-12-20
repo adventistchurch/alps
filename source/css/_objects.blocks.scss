@@ -5,7 +5,12 @@
 // Block
 .block__image {
   display: block;
+
+  picture img {
+    width: 100%;
+  }
 }
+
 .block__image-wrap {
   > * {
     width: 100%;
@@ -13,6 +18,19 @@
   .round {
     width: auto;
   }
+}
+
+.block__category {
+  padding-right: $pad;
+
+  @include media('>large') {
+    padding-right: $pad*2;
+  }
+}
+
+.block__meta {
+  display: flex;
+  align-items: flex-end;
 }
 
 @mixin block-row {
@@ -64,7 +82,6 @@
   &.shift--reversed:not(.keep-top-space) {
     margin-top: 0;
   }
-
 }
 
 /**
@@ -99,35 +116,35 @@
  * Media Block
  */
 
-// .block__description {
-//   flex-grow: 1;
-//   align-items: flex-end;
-// }
-
  .media-block {
-   // display: flex;
-   // flex-direction: row;
-   //
-   // &__content {
-   //   display: flex;
-   //   justify-content: space-between;
-   //   flex-direction: column;
-   //   flex-wrap: wrap;
-   // }
-   //
-   // &__meta {
-   //   display: flex;
-   //   justify-content: flex-start;
-   // }
+   display: flex;
+   flex-direction: row;
+
+   .block__content {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+
+   .block__meta {
+     display: flex;
+     justify-content: flex-start;
+   }
+ }
+
+ .block__stacked {
+   flex-direction: column;
+   border-left: 1px solid $black;
+
+   .block__content {
+     flex-direction: column;
+   }
  }
 
 .block__superimposed {
   display: block;
   position: relative;
-
-  .block__image img {
-    width: 100%;
-  }
 
   .block__content {
     position: absolute;
@@ -140,9 +157,4 @@
       color: $white;
     }
   }
-}
-
-.media-block__meta{
-  display: flex;
-  align-items: flex-end;
 }
