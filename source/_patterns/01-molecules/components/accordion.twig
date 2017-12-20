@@ -1,7 +1,7 @@
 {% if accordion %}
-<div class="accordionu-position--relativespacing--half {{ accordion_class }}">
+<div class="accordion u-position--relativeu-spacing--half {{ accordion_class }}">
   {% for item in accordion_list %}
-  <div class="accordion__item spacing--quarter">
+  <div class="accordion__item u-spacing--quarter">
     <div class="accordion__heading js-toggle-parent u-vertical-align--middle"><span class="icon icon--m accordion__arrow">{% include '@atoms/icons/icon-arrow-right.twig' with {'fill_class': 'fill--blue'} %}</span> <span class="u-font--secondary--m dib">{{ item.accordion_heading }}</span></div>
     <div class="accordion__content">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class': 'block__row', 'media_block_default': item.media_block_default } %}</div>
   </div>

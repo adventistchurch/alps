@@ -1,8 +1,8 @@
-<div class="spacing--double u-flex u-height--100p">
+<div class="u-spacing--double u-flex u-height--100p">
 
-  <div class="content-blocks spacing--double">
+  <div class="content-blocks u-spacing--double">
     {% for block in content_blocks %}
-    <div class="pad--primary spacing--half text">
+    <div class="u-padding--primary u-spacing--half text">
       <h3 class="brown u-font--tertiary--l">{{ text.heading  | raw}}</h3>
       <p>{{ block.text.description | raw }} {% if block.text.cta %} <a href="{{ block.url }}" class="u-font--secondary--s u-text-transform--upper"><strong>{{ block.text.cta | raw}}</strong></a> {% endif %}</p>
     </div>

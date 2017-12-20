@@ -1,9 +1,9 @@
-<div class="spacing--half">
-  <h2 class="u-font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">{{heading}}</h2>
+<div class="u-spacing--half">
+  <h2 class="u-font--tertiary--l theme--primary-text-color u-padding u-padding--double--top u-padding--half--bottom">{{heading}}</h2>
   <hr>
 </div>
-<div class="spacing--half">
-  <div class="pad">
+<div class="u-spacing--half">
+  <div class="u-padding">
   {% include '@molecules/forms/facet-filter.twig' %}
   </div>
   <hr>
@@ -11,22 +11,22 @@
 <div class="g g-2up--at-medium with-divider">
   {% for block in media_blocks %}
     <div class="gi">
-      <div class="spacing">
-        <div class="pad">{% include '@molecules/blocks/media-block.twig' with block %}</div>
+      <div class="u-spacing">
+        <div class="u-padding">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if block.has_hr %}<hr>{% endif %}
       </div>
     </div> <!-- /.gi -->
   {% endfor %}
   {% for block in media_blocks_2 %}
-    <div class="gi pad-double--btm">
-      <div class="spacing">
-        <div class="pad">{% include '@molecules/blocks/media-block.twig' with block %}</div>
+    <div class="gi u-padding--double--bottom">
+      <div class="u-spacing">
+        <div class="u-padding">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if block.has_hr %}<hr>{% endif %}
       </div>
     </div> <!-- /.gi -->
   {% endfor %}
 </div> <!-- /.2up--at-medium -->
 <hr>
-<div class="pad spacing">
+<div class="u-padding u-spacing">
 {% include '@molecules/navigation/pagination.twig' %}
 </div>

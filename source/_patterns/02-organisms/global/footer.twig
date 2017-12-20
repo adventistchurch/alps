@@ -1,7 +1,7 @@
 <footer class="footer" role="contentinfo">
   <div class="footer__inner u-clear-fix bg--medium-brown white can-be--dark-dark">
     <div class="layout-container">
-      <div class="footer__unify-nav-desc spacing--until-large">
+      <div class="footer__unify-nav-desc u-spacing--until-large">
         {% include '@molecules/navigation/footer-navigation.twig' %}
         <div class="footer__desc">
           <span class="icon footer__logo">{% include '@atoms/icons/icon-logo.twig' with {'fill_class': 'fill--light-brown'} %}</span>
@@ -16,9 +16,9 @@
     </div> <!-- /.layout-container -->
 
     <div class="footer__legal bg--brown  can-be--dark-light">
-      <div class="footer__legal__inner layout-container spacing--quarter--until-large">
-        <div class="footer__unify-copyright-address spacing--quarter--until-xlarge">
-          <p class="footer__copyright u-font--secondary--xs brown--light no-space--btm">{{ subfooter.text }}</p>
+      <div class="footer__legal__inner layout-container u-spacing--quarter--until-large">
+        <div class="footer__unify-copyright-address u-spacing--quarter--until-xlarge">
+          <p class="footer__copyright u-font--secondary--xs brown--light u-padding--zero--bottom">{{ subfooter.text }}</p>
           <address class="footer__address u-font--secondary--xs brown--light" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
             <span itemprop="streetAddress">{{ subfooter.address.address }}</span>,
             <span itemprop="addressPostCode"> {{ subfooter.address.postcode }}</span>

@@ -1,11 +1,11 @@
 {% if testimonies %}
-<section class="testimonies spacing--half carousel-nav--outside rel">
+<section class="testimonies u-spacing--half carousel-nav--outside rel">
   <header class="testimonies__header border--bottom border--light u-flex u-flex--nowrap u-flex--align-end u-flex--justify-between">
     <h2 class="u-font--secondary--l theme--primary-text-color">Testimonies</h2>
     <div class="show-at--medium">{% include '@atoms/text/see-all-link.twig' %}</div>
   </header>
   {% include '@molecules/components/content-carousel.twig' %}
-  <div class="spacing--half">
+  <div class="u-spacing--half">
     <a href="{{ url }}" class="btn theme--secondary-background-color">Submit a Testimony</a>
     <div class="show-until--medium">{% include '@atoms/text/see-all-link.twig' %}</div>
   </div>

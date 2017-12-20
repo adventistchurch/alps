@@ -1,19 +1,19 @@
 {% if content_filter %}
-<div class="filter spacing">
+<div class="filter u-spacing">
   <div class="filter-search">
-    <h3 class="u-font--secondary--m u-text-transform--upper theme--primary-text-color space-half--btm"><strong>Search</strong></h3>
+    <h3 class="u-font--secondary--m u-text-transform--upper theme--primary-text-color u-space--half--bottom"><strong>Search</strong></h3>
     <form action="" role="search" method="get" class="filter-search">
       <fieldset>
-        <div class="field-container spacing--half">
+        <div class="field-container u-spacing--half">
           <input type="search" name="s" class="search__results__input u-font--secondary--s" value="" />
           <button class="search__submit u-font--secondary--s u-text-transform--upper theme--secondary-background-color">Search</button> <!-- /.search-form__submit -->
         </div> <!-- /.field-container -->
       </fieldset>
     </form> <!-- /.search-form -->
   </div>
-  <form class="content-filter-form filter-form spacing--double">
-    <div class="filter-items filter-items__checkbox spacing--quarter">
-      <h3 class="u-font--secondary--m u-text-transform--upper theme--primary-text-color space-half--btm"><strong>Filter</strong></h3>
+  <form class="content-filter-form filter-form u-spacing--double">
+    <div class="filter-items filter-items__checkbox u-spacing--quarter">
+      <h3 class="u-font--secondary--m u-text-transform--upper theme--primary-text-color u-space--half--bottom"><strong>Filter</strong></h3>
       {% if content_filter.checkbox %}
         {% for item in content_filter.checkbox %}
           <div class="filter-item__checkbox form-group">
@@ -23,8 +23,8 @@
         {% endfor %}
       {% endif %}
     </div>
-    <div class="filter-items filter-items__radio spacing--quarter">
-      <h3 class="u-font--secondary--m u-text-transform--upper theme--primary-text-color space-half--btm"><strong>Sort By</strong></h3>
+    <div class="filter-items filter-items__radio u-spacing--quarter">
+      <h3 class="u-font--secondary--m u-text-transform--upper theme--primary-text-color u-space--half--bottom"><strong>Sort By</strong></h3>
       {% if content_filter.radio %}
         {% for item in content_filter.radio %}
           <div class="filter-item__radio form-group">
