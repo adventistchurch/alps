@@ -144,11 +144,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to bottom, transparent, rgba($black, 0.75) 80%);
+    background: linear-gradient(to bottom, transparent, rgba($c-black, 0.75) 80%);
 
     .block__title-link,
     .block__date {
-      color: $white;
+      color: $c-white;
     }
   }
 }

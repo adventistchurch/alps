@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html class="pl theme--ming no-js" lang="en" >
+<html class="pl u-theme--ming no-js" lang="en" >
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
     <!-- End Pattern Lab -->
     <link rel="icon" href="/public/favicon.ico" />
   </head>
-  <body class="body theme--warm">
+  <body class="body u-theme--warm">
 
     <div class="l-container u-spacing pre-header active">
       <div class="alps-logo-wrap">
@@ -40,7 +40,7 @@
               <p>The Adventist Living Pattern System (ALPS) is a set of design patterns created by the Seventh-day Adventist Church for use around the world by Adventist churches, schools, and organizational units. The purpose of ALPS is to make it easy for our church to create good looking sites that promote the brand of the church, while allowing for individuality and customization of each site.</p>
               <p> As you browse through the pages of this site, you will see examples of patterns for different types of pages. From <a href="/public/?p=pages-home">home pages</a> to <a href="/public/?p=pages-channel-main-with-image">channel pages</a>, to <a href="/public/?p=pages-basic-page-with-image">basic pages</a>, ALPS is designed to be beautiful, fast and flexible, while maintaining a consistent brand across the sites that use it.</p>
               <p>Take a look for yourself!</p>
-              <a href="/public/" class="btn theme--secondary-background-color u-link--white">View the Adventist Living Pattern System</a>
+              <a href="/public/" class="btn u-theme--secondary-background-color u-link--white">View the Adventist Living Pattern System</a>
               <h2 class="u-font--tertiary--l">Include in Your Project</h2>
               <p>Want to include ALPS in your project? The Adventist church is making the CSS and Javascript needed to build an ALPS site available via a public CDN. All you need to do to implement the latest styles is to link the files provides below and you will be up to date.</p>
               <p>Here are the links you need to make it happen.</p>
@@ -78,14 +78,14 @@
       </div>
     </div>
     <footer class="footer" role="contentinfo">
-      <div class="footer__inner u-clear-fix u-background-color--medium-brown white can-be--dark-dark">
+      <div class="footer__inner u-clear-fix u-background-color--brown-medium u-color--white can-be--dark-dark">
         <div class="footer__legal u-background-color--brown can-be--dark-light">
           <div class="footer__legal__inner l-container u-spacing--quarter--until-large">
             <div class="footer__unify-copyright-address u-spacing--quarter--until-large">
-              <p class="footer__copyright u-font--secondary--xs brown--light no-space--btm">Copyright &copy; 2016, General Conference of Seventh-day Adventists</p>
-              <address class="footer__address u-font--secondary--xs brown--light">12501 Old Columbia Pike, Silver Spring, MD 20904, USA 301-680-6000</address>
+              <p class="footer__copyright u-font--secondary--xs u-color--brown-light no-space--btm">Copyright &copy; 2016, General Conference of Seventh-day Adventists</p>
+              <address class="footer__address u-font--secondary--xs u-color--brown-light">12501 Old Columbia Pike, Silver Spring, MD 20904, USA 301-680-6000</address>
             </div> <!-- /.footer__unify-copyright-address -->
-            <div class="footer__legal-links u-font--secondary--xs"><a class="hover brown--light u-space--half--right u-link--brown-light" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a> <a class="hover brown--light u-link--brown-light" href="https://www.adventist.org/en/copyright/legal-notice/">Legal Notice</a></div>
+            <div class="footer__legal-links u-font--secondary--xs"><a class="hover u-color--brown-light u-space--half--right u-link--brown-light" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a> <a class="hover u-color--brown-light u-link--brown-light" href="https://www.adventist.org/en/copyright/legal-notice/">Legal Notice</a></div>
           </div> <!-- /.l-container -->
         </div> <!-- /.legal -->
       </div> <!-- /.footer__inner -->

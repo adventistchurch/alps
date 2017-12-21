@@ -64,7 +64,7 @@ blockquote {
 hr {
   height: 1px;
   border: none;
-  background-color: $gray-light;
+  background-color: $c-gray--light;
   margin: 0;
 
   @include u-center-block;
@@ -74,6 +74,6 @@ hr {
  * Abbreviation
  */
 abbr {
-  border-bottom: 1px dotted $gray;
+  border-bottom: 1px dotted $c-gray;
   cursor: help;
 }

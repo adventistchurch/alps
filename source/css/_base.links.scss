@@ -4,16 +4,16 @@
 
 a {
   text-decoration: none;
-  color: $gray-dark;
+  color: $c-gray--dark;
   transition: all .3s ease-out;
 
   &:hover, &:focus {
     text-decoration: none;
-    color: $blue;
+    color: $c-blue;
   }
 
   p {
-    color: $gray-dark;
+    color: $c-gray--dark;
   }
 
   > .icon {

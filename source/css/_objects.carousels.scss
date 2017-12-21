@@ -34,7 +34,7 @@
     top: 5%;
     width: 90%;
     height: 90%;
-    background-color: $white;
+    background-color: $c-white;
     z-index: -50;
   }
 
@@ -118,7 +118,7 @@
  */
 .carousel__item-text__wrap {
   padding: $pad;
-  color: $white;
+  color: $c-white;
   position: absolute;
   left: 0;
   height: 100%;
@@ -211,18 +211,18 @@
   li {
     display: inline-block;
     border-radius: 50%;
-    border: rem(3) solid $white;
+    border: rem(3) solid $c-white;
     background-color: transparent;
     width: rem(15);
     height: rem(15);
     margin-left: $space-half;
     cursor: pointer;
-    box-shadow: 0 0 rem(3) rgba($black, .3), inset 0 0 rem(3) rgba($black, .3);
+    box-shadow: 0 0 rem(3) rgba($c-black, .3), inset 0 0 rem(3) rgba($c-black, .3);
   }
 
   .slick-active {
-    background-color: $white;
-    box-shadow: 0 0 rem(3) rgba($black, .3);
+    background-color: $c-white;
+    box-shadow: 0 0 rem(3) rgba($c-black, .3);
   }
 
   button {
@@ -294,6 +294,6 @@
   }
 
   .l-shift-right--fluid {
-    border: 1px solid $gray-light;
+    border: 1px solid $c-gray--light;
   }
 }

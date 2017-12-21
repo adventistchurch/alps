@@ -1,6 +1,6 @@
 {% if article_header %}
 <header class="article__header article__flow u-spacing--quarter">
-  <h1 class="u-font--secondary--xl theme--secondary-text-color">{{ article_header.heading  | raw}}</h1>
+  <h1 class="u-font--secondary--xl u-theme--secondary-text-color">{{ article_header.heading  | raw}}</h1>
   <div class="u-spacing--half">
     {% if article_header.subheading %}<h1 class="u-font--secondary--m">{{ article_header.subheading | raw}}</h1>{% endif %}
     {% include '@molecules/components/share-tools.twig' with article_header  %}

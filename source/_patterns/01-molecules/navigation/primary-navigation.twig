@@ -3,12 +3,12 @@
   <ul class="primary-nav__list">
     {% for item in primary_nav.items %}
       <li class="primary-nav__list-item {% if item.has_subnav %} primary-nav--with-subnav js-hover {% endif %}" {% if item.has_subnav %} data-prefix="hover" {% endif %}>
-        <a class="primary-nav__link theme--primary-text-color {% if item.is_active %} theme--secondary-text-color active {% endif %}" href="{{ item.url }}">{{ item.text }}</a>
+        <a class="primary-nav__link u-theme--primary-text-color {% if item.is_active %} u-theme--secondary-text-color active {% endif %}" href="{{ item.url }}">{{ item.text }}</a>
         {% if item.has_subnav %}
           <div class="primary-nav__subnav__arrow u-vertical-align--middle js-toggle-parent"><span class="o-arrow--down"></span></div>
           <ul class="primary-nav__subnav">
             {% for item in item.sub_items %}
-              <li class="primary-nav__subnav__list-item"><a class="primary-nav__subnav__link theme--primary-text-color" href="{{ item.url }}">{{ item.text }}</a></li>
+              <li class="primary-nav__subnav__list-item"><a class="primary-nav__subnav__link u-theme--primary-text-color" href="{{ item.url }}">{{ item.text }}</a></li>
             {% endfor %}
           </ul> <!-- /.primary-nav__subnav -->
         {% endif %}

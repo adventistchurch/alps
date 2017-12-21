@@ -5,15 +5,15 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid $gray;
+  border: 1px solid $c-gray;
   width: 100%;
 }
 
 th {
   text-align: left;
   border: 1px solid transparent;
-  background-color: $white;
-  border-bottom: $gray solid 1px;
+  background-color: $c-white;
+  border-bottom: $c-gray solid 1px;
   padding: 0.2em;
   font-size: rem(14);
   padding: $pad-half;
@@ -23,7 +23,7 @@ tr {
   border: 1px solid transparent;
 
   &:nth-child(even) {
-    background-color: lighten($denim, 60%);
+    background-color: lighten($c-denim, 60%);
   }
 }
 

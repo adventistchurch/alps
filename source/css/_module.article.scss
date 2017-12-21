@@ -27,7 +27,7 @@
 .longform__header {
   padding-top: $pad-double;
   padding-bottom: $pad-double;
-  background-color: $beige;
+  background-color: $c-beige;
 
   @include media('>medium') {
     padding-top: rem(80);
@@ -61,7 +61,7 @@
     width: 100%;
     height: 70%;
     z-index: 0;
-    background-color: $beige;
+    background-color: $c-beige;
   }
 }
 

@@ -48,7 +48,7 @@ $slice-height: 3;
   position: absolute;
   height: rem($slice-height);
   width: 100%;
-  background-color: $gray-dark;
+  background-color: $c-gray--dark;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -152,7 +152,7 @@ $slice-height: 3;
 .primary-nav__link {
   display: block;
   white-space: nowrap;
-  font-family: $font;
+  font-family: $ff-font;
   padding: rem(10);
 
   @include media('<=medium') {
@@ -184,7 +184,7 @@ $slice-height: 3;
       content: "";
       border-left: rem(4) solid transparent;
       border-right: rem(4) solid transparent;
-      border-top: rem(4) solid rgba($black, .6);
+      border-top: rem(4) solid rgba($c-black, .6);
       position: absolute;
       right: rem(2);
       top: calc(50%);
@@ -197,8 +197,8 @@ $slice-height: 3;
     }
 
     &:hover {
-      box-shadow: 0 0 2px rgba($black, .3);
-      background-color: $white;
+      box-shadow: 0 0 2px rgba($c-black, .3);
+      background-color: $c-white;
       z-index: 15;
 
       &:before {
@@ -211,7 +211,7 @@ $slice-height: 3;
         left: 0;
         width: 100%;
         height: rem(5);
-        background-color: $white;
+        background-color: $c-white;
         bottom: rem(-2);
         z-index: 20;
       }
@@ -248,11 +248,11 @@ $slice-height: 3;
       right: rem(7);
       top: rem(9);
       bottom: rem(9);
-      background-color: rgba($black, .3);
+      background-color: rgba($c-black, .3);
     }
 
     .arrow--down {
-      border-top-color: $white;
+      border-top-color: $c-white;
       margin-left: auto;
       margin-right: auto;
       position: relative;
@@ -263,17 +263,17 @@ $slice-height: 3;
 
 // Submenu from primary navigation
 .primary-nav__subnav {
-  background-color: $gray-light;
+  background-color: $c-gray--light;
   display: none;
 
   @include media('>medium') {
     position: absolute;
     text-align: left;
-    background-color: $white;
+    background-color: $c-white;
     left: 0;
     min-width: rem(200);
     width: 100%;
-    box-shadow: 0 0 2px rgba($black, .3);
+    box-shadow: 0 0 2px rgba($c-black, .3);
     z-index: 10;
 
     .u-rtl & {
@@ -309,7 +309,7 @@ $slice-height: 3;
   }
 
   .subnav__arrow {
-    border-top: rem(5) solid rgba($black, .6);
+    border-top: rem(5) solid rgba($c-black, .6);
   }
 }
 
@@ -353,8 +353,8 @@ $slice-height: 3;
   display: block;
   font-size: rem(16);
   white-space: nowrap;
-  color: $blue;
-  font-family: $font-secondary;
+  color: $c-blue;
+  font-family: $ff-font--secondary;
 
   @include media('<=medium') {
     padding: rem(11) rem(6);
@@ -363,7 +363,7 @@ $slice-height: 3;
   @include media('>medium', '<=large') {
     padding: rem(3) 0;
     font-size: rem(11);
-    color: $white;
+    color: $c-white;
   }
 
   @include media('>large') {
@@ -392,7 +392,7 @@ $slice-height: 3;
     left: 0;
     padding: 0;
     min-width: rem(110);
-    box-shadow: 0 0 rem(2) rgba($black, .3);
+    box-shadow: 0 0 rem(2) rgba($c-black, .3);
     z-index: 10;
   }
 }
@@ -409,7 +409,7 @@ $slice-height: 3;
     padding: rem(8) rem(26) rem(8) rem(12);
     position: relative;
     border-bottom: $border-style;
-    background-color: $white;
+    background-color: $c-white;
   }
 
   .icon__check {
@@ -448,14 +448,14 @@ $slice-height: 3;
     display: inline-block;
 
     a.active {
-      background-color: rgba($black, .1);
+      background-color: rgba($c-black, .1);
     }
   }
 }
 
 .article-nav__link {
   display: block;
-  font-family: $font;
+  font-family: $ff-font;
 
   &.dropdown__item-link{
     padding-top: rem(13);
@@ -473,8 +473,8 @@ $slice-height: 3;
   }
 
   &:hover {
-    background-color: rgba($black, .1);
-    color: $white;
+    background-color: rgba($c-black, .1);
+    color: $c-white;
   }
 }
 
@@ -529,9 +529,9 @@ $slice-height: 3;
   display: block;
   padding: rem(10) rem(10);
   font-size: rem(12);
-  color: $white;
+  color: $c-white;
   position: relative;
-  background-color: rgba($black, .1);
+  background-color: rgba($c-black, .1);
 
   @include media('>large') {
     padding: rem(10) rem(15);
@@ -547,11 +547,11 @@ $slice-height: 3;
   &:active,
   &:hover {
     cursor: pointer;
-    color: $white;
-    background-color: rgba($black, .2);
+    color: $c-white;
+    background-color: rgba($c-black, .2);
 
     @include media('>large') {
-      background-color: rgba($black, .1);
+      background-color: rgba($c-black, .1);
     }
   }
 }
@@ -580,7 +580,7 @@ $slice-height: 3;
     }
 
     .arrow--down {
-      border-top-color: $white;
+      border-top-color: $c-white;
       margin-left: auto;
       margin-right: auto;
       position: relative;
@@ -614,11 +614,11 @@ $slice-height: 3;
     border-radius: rem(25);
     padding: rem(5) rem(34) rem(5) rem(12);
     width: 100%;
-    color: $white;
-    box-shadow: inset 1px 1px 1px rgba($black, .1);
-    background: rgba($black, .08) url('../images/icons/icon-search.svg') no-repeat center right 12px;
+    color: $c-white;
+    box-shadow: inset 1px 1px 1px rgba($c-black, .1);
+    background: rgba($c-black, .08) url('../images/icons/icon-search.svg') no-repeat center right 12px;
     background-size: rem(12);
-    @include u-placeholder($white);
+    @include u-placeholder($c-white);
   }
 }
 
@@ -666,7 +666,7 @@ span.dropdown__arrow {
     transform: rotate(0deg);
     margin-left: rem(5);
     transition: all .15s ease-out;
-    border-top-color: $white;
+    border-top-color: $c-white;
   }
 }
 
@@ -705,8 +705,8 @@ span.dropdown__arrow {
  * Search suggest
  */
 .ui-autocomplete {
-  background: $white;
-  border: 1px solid $gray-light;
+  background: $c-white;
+  border: 1px solid $c-gray--light;
   border-top: none;
   max-width: rem(300);
 }
@@ -715,14 +715,14 @@ span.dropdown__arrow {
   a {
     display: block;
     padding: rem(8);
-    color: $gray;
-    font-family: $font-secondary;
+    color: $c-gray;
+    font-family: $ff-font--secondary;
     font-size: rem(14);
   }
 
   &.ui-state-focus,
   a:hover {
-    color: $blue;
+    color: $c-blue;
     cursor: pointer;
   }
 }
@@ -742,7 +742,7 @@ span.dropdown__arrow {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    border-left: 4px solid $gray;
+    border-left: 4px solid $c-gray;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
   }

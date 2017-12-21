@@ -10,7 +10,7 @@
 }
 
 .sg-alps-logo-wrap {
-  border-bottom: 1px solid $gray-light;
+  border-bottom: 1px solid $c-gray--light;
   margin-bottom: $space;
   padding-left: $pad-half;
 }
@@ -35,17 +35,17 @@
  */
 .sg-header,
 .sg-tools-toggle {
-  background-color: $ming;
+  background-color: $c-ming;
 
   a {
-    color: $white;
+    color: $c-white;
 
     &.active {
-      background-color: $earth;
+      background-color: $c-earth;
     }
 
     &:hover {
-      background-color: darken($earth, 10);
+      background-color: darken($c-earth, 10);
     }
   }
 
@@ -57,10 +57,10 @@
 
 .sg-acc-panel {
   li {
-    background-color: $earth;
+    background-color: $c-earth;
 
     a:hover {
-      background-color: darken($earth, 10);
+      background-color: darken($c-earth, 10);
     }
   }
 }
@@ -68,24 +68,24 @@
 .sg-input {
   margin-left: 3px;
   margin-right: 3px;
-  background-color: $earth;
-  color: $gray-light;
+  background-color: $c-earth;
+  color: $c-gray--light;
 }
 
 .sg-current-size {
-  color: $white;
+  color: $c-white;
 }
 
 .sg-tools-toggle {
   path {
-    fill: $white;
+    fill: $c-white;
   }
 }
 
 .sg-acc-handle {
   &:after,
   &.active:after {
-    color: rgba($white, .75);
+    color: rgba($c-white, .75);
   }
 }
 

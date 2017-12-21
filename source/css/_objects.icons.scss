@@ -11,20 +11,19 @@ $icon-medium: rem(25);
 $icon-large: rem(50);
 $icon-big: rem(65);
 
-
 .u-icon {
   display: inline-block;
 }
 
 .u-icon--standard {
-  background-color: $gray-med;
+  background-color: $c-gray--medium;
   path {
-    fill: $white;
+    fill: $c-white;
   }
   &:hover {
-    background-color: $blue;
+    background-color: $c-blue;
     path {
-      fill: $white;
+      fill: $c-white;
     }
   }
 }
@@ -58,29 +57,17 @@ $icon-big: rem(65);
   padding: rem(6);
 }
 
-// Make icons larger for touch devices.
-.touchevents {
-  .t-icon {
-    min-width: rem(35);
-    min-height: rem(35);
-    padding: rem(4);
-    &.add-pad {
-      padding: $pad-half;
-    }
-  }
-}
-
 /**
  * Play icon overlay
  */
 .is-video {
   position: relative;
   transition: all .3s ease-out;
-  border-bottom: 4px solid rgba($black, 0);
+  border-bottom: 4px solid rgba($c-black, 0);
   display: block;
 
   &:hover {
-    border-bottom-color: rgba($black, .2);
+    border-bottom-color: rgba($c-black, .2);
   }
 
   &:before {
@@ -96,87 +83,6 @@ $icon-big: rem(65);
     background-size: cover;
     background-position: center center;
     background-image: url(../images/icons/icon-play.svg);
-  }
-}
-
-/*------------------------------------*\
-    $SOCIAL SPECIFIC
-\*------------------------------------*/
-
-.icon__facebook {
-  background-color: $facebook-blue;
-  border: rem(3) solid $facebook-blue;
-
-  path {
-    fill: $white;
-  }
-
-  &:hover {
-    background-color: $white;
-    border-color: $facebook-blue;
-
-    path {
-      fill: $facebook-blue;
-    }
-  }
-}
-
-.icon__twitter {
-  background-color: $twitter-blue;
-  border: rem(3) solid $twitter-blue;
-
-  path {
-    fill: $white;
-  }
-
-  &:hover {
-    background-color: $white;
-    border-color: $twitter-blue;
-
-    path {
-      fill: $twitter-blue;
-    }
-  }
-}
-
-.icon__instagram {
-  background-color: $instagram-brown;
-  border: rem(3) solid $instagram-brown;
-
-  &:hover {
-    background-color: $white;
-    border-color: $instagram-brown;
-
-    path {
-      fill: $instagram-brown;
-    }
-  }
-}
-
-.icon__pinterest {
-  background-color: $pinterest-red;
-  border: rem(3) solid $pinterest-red;
-
-  path {
-    fill: $white;
-  }
-
-  &:hover {
-    background-color: $white;
-    border-color: $pinterest-red;
-
-    path {
-      fill: $pinterest-red;
-    }
-  }
-}
-
-.icon__facebook,
-.icon__twitter,
-.icon__instagram,
-.icon__pinterest {
-  &.u-icon--s:hover {
-    border-width: rem(2);
   }
 }
 

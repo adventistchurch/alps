@@ -10,8 +10,8 @@
   padding: $pad-half 0;
   border-bottom-style: solid;
   border-bottom-width: 4px;
-  border-bottom-color: $red;
-  background-color: $blue;
+  border-bottom-color: $c-red;
+  background-color: $c-blue;
 
   &.this-is-active {
     display: none;
@@ -62,9 +62,9 @@
 
 .ab__label--with-bg {
   margin-bottom: rem(4);
-  color: $white;
+  color: $c-white;
   padding: rem(3) rem(4);
-  background-color: $red;
+  background-color: $c-red;
 }
 
 .ab__cta {

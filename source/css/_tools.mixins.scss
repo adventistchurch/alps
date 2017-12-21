@@ -50,7 +50,7 @@
  * Standard paragraph
  */
 @mixin p {
-  font-family: $font;
+  font-family: $ff-font;
   font-size: rem(14);
   line-height: rem(20);
 

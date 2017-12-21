@@ -125,6 +125,14 @@
     &--bottom {
       margin-bottom: $space/4;
     }
+
+    &--left {
+      margin-left: $space/4;
+    }
+
+    &--right {
+      margin-right: $space/4;
+    }
   }
 
   &--half {
@@ -136,6 +144,14 @@
 
     &--bottom {
       margin-bottom: $space/2;
+    }
+
+    &--left {
+      margin-left: $space/2;
+    }
+
+    &--right {
+      margin-right: $space/2;
     }
   }
 

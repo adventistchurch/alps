@@ -2,14 +2,14 @@
     $LIST TYPES
 \*------------------------------------*/
 
-.inline-list__item {
+.o-inline-list__item {
   display: inline-block;
 }
 
 /**
  * Bullet List
  */
-.bullet-list {
+.o-bullet-list {
   list-style-type: disc;
   padding-left: rem(18);
 
@@ -25,11 +25,11 @@
 /**
  * Text List
  */
-.text-list {
+.o-text-list {
   margin: 0 0 1em;
   line-height: 1.3;
 }
 
-.text-list__item {
+.o-text-list__item {
   margin-bottom: $space;
 }

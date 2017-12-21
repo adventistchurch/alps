@@ -5,81 +5,73 @@
 /**
  * Text Colors
  */
-.gray {
-  color: $gray;
+.u-color--gray {
+  color: $c-gray;
 }
 
-.gray--med {
-  color: $gray-med;
+.u-color--gray-medium {
+  color: $c-gray--medium;
 }
 
-.gray--light {
-  color: $gray-light;
+.u-color--gray-light {
+  color: $c-gray--light;
 }
 
-.gray--dark,
-.gray--dark a {
-  color: $gray-dark;
+.u-color--gray-dark,
+.u-color--gray-dark a {
+  color: $c-gray--dark;
 }
 
-.black,
-.black a {
-  color: $black;
+.u-color--black,
+.u-color--black a {
+  color: $c-black;
 }
 
-.black--trans {
-  color: rgba($black, 0.7);
+.u-color--black-transparent {
+  color: rgba($c-black, 0.7);
 }
 
-.white {
-  color: $white;
+.u-color--white {
+  color: $c-white;
 }
 
-.white--trans {
-  color: rgba($white, 0.7);
+.u-color--white-transparent {
+  color: rgba($c-white, 0.7);
 }
 
-.blue {
-  color: $blue;
-}
-
-.orange {
-  color: $orange;
-}
-
-.red {
+.u-color--red {
   color: red;
 }
 
-.brown {
-  color: $brown;
+.u-color--brown {
+  color: $c-brown;
 }
 
-.brown--light {
-  color: $brown-light;
+.u-color--brown-light {
+  color: $c-brown--light;
 }
 
 /**
  * Link Colors
  */
 .u-link--white {
-  color: $white;
+  color: $c-white;
 
   &:hover {
-    color: $brown-light;
+    color: $c-brown--light;
   }
 }
 
 .u-link--brown-light {
-  color: $brown-light;
+  color: $c-brown--light;
 
   &:hover {
-    color: $white;
+    color: $c-white;
   }
 }
 
 .u-link-hover--white:hover {
-  color: $white;
+  color: $c-white;
 }
 
 /**
@@ -90,96 +82,96 @@
 }
 
 .u-background-color--white {
-  background-color: $white;
+  background-color: $c-white;
 }
 
 .u-background-color--black {
-  background-color: $black;
+  background-color: $c-black;
 }
 
 .u-background-color--blue {
-  background-color: $blue;
+  background-color: $c-blue;
 }
 
 .u-background-color--gray {
-  background-color: $gray;
+  background-color: $c-gray;
 }
 
-.u-background-color--medium-gray {
-  background-color: $gray-med;
+.u-background-color--gray-medium {
+  background-color: $c-gray--medium;
 }
 
-.u-background-color--light-gray {
-  background-color: $gray-light;
+.u-background-color--gray-light {
+  background-color: $c-gray--light;
 }
 
-.u-background-color--dark-gray {
-  background-color: $gray-dark;
+.u-background-color--gray-dark {
+  background-color: $c-gray--dark;
 }
 
 .u-background-color--red {
-  background-color: $red;
+  background-color: $c-red;
 }
 
 .u-background-color--brown {
-  background-color: $brown;
+  background-color: $c-brown;
 }
 
-.u-background-color--medium-brown {
-  background-color: $brown-med;
+.u-background-color--brown-medium {
+  background-color: $c-brown--medium;
 }
 
 .u-background-color--beige {
-  background-color: $beige;
+  background-color: $c-beige;
 }
 
 .u-background-color--tan {
-  background-color: $tan;
+  background-color: $c-tan;
 }
 
 // Theme colors
 .u-background-color--emperor {
-  background-color: $emperor;
+  background-color: $c-emperor;
 }
 
 .u-background-color--earth {
-  background-color: $earth;
+  background-color: $c-earth;
 }
 
 .u-background-color--grapevine {
-  background-color: $grapevine;
+  background-color: $c-grapevine;
 }
 
 .u-background-color--denim {
-  background-color: $denim;
+  background-color: $c-denim;
 }
 
 .u-background-color--campfire {
-  background-color: $campfire;
+  background-color: $c-campfire;
 }
 
 .u-background-color--treefrog {
-  background-color: $treefrog;
+  background-color: $c-treefrog;
 }
 
 .u-background-color--ming {
-  background-color: $ming;
+  background-color: $c-ming;
 }
 
 .u-background-color--cool {
-  background-color: $cool;
+  background-color: $c-cool;
 }
 
 .u-background-color--warm {
-  background-color: $warm;
+  background-color: $c-warm;
 }
 
 .u-background-color--dark-light {
-  background-color: $dark-light;
+  background-color: $c-dark--light;
 }
 
 .u-background-color--dark-dark {
-  background-color: $dark-dark;
+  background-color: $c-dark--dark;
 }
 
 /**
@@ -196,55 +188,55 @@
     left: 0;
     height: 100%;
     width: rem(15);
-    background-color: $blue;
+    background-color: $c-blue;
   }
 
   &--emperor:before {
-    background-color: $emperor;
+    background-color: $c-emperor;
   }
 
   &--earth:before {
-    background-color: $earth;
+    background-color: $c-earth;
   }
 
   &--grapevine:before {
-    background-color: $grapevine;
+    background-color: $c-grapevine;
   }
 
   &--denim:before {
-    background-color: $denim;
+    background-color: $c-denim;
   }
 
   &--campfire:before {
-    background-color: $campfire;
+    background-color: $c-campfire;
   }
 
   &--treefrog:before {
-    background-color: $treefrog;
+    background-color: $c-treefrog;
   }
 
   &--ming:before {
-    background-color: $ming;
+    background-color: $c-ming;
   }
 
   &--cool:before {
-    background-color: $cool;
+    background-color: $c-cool;
   }
 
   &--warm:before {
-    background-color: $warm;
+    background-color: $c-warm;
   }
 
   &--blue:before {
-    background-color: $blue;
+    background-color: $c-blue;
   }
 
   &--brown:before {
-    background-color: $brown;
+    background-color: $c-brown;
   }
 
   &--red:before {
-    background-color: $red;
+    background-color: $c-red;
   }
 }
 
@@ -252,36 +244,36 @@
  * States
  */
 .u-color--valid {
-  color: $valid;
+  color: $c-valid;
 }
 
 .u-color--error {
-  color: $error;
+  color: $c-error;
 }
 
 .u-color--warning {
-  color: $warning;
+  color: $c-warning;
 }
 
 .u-color--information {
-  color: $information;
+  color: $c-information;
 }
 
 /**
  * SVG Fill Colors
  */
 .u-fill--gray {
-  fill: $body-color;
+  fill: $c-body-color;
 }
 
 .u-fill--white {
-  fill: $white;
+  fill: $c-white;
 }
 
 .u-fill--blue {
-  fill: $blue;
+  fill: $c-blue;
 }
 
 .u-fill--light-brown {
-  fill: $brown-light;
+  fill: $c-brown--light;
 }

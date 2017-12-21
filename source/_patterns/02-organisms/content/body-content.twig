@@ -1,6 +1,6 @@
 <div class="u-spacing--double">
   <div class="u-padding--primary u-spacing text">
-    <h2 class="u-font--tertiary--l theme--primary-text-color">{{ text.heading  | raw}}</h2>
+    <h2 class="u-font--tertiary--l u-theme--primary-text-color">{{ text.heading  | raw}}</h2>
     <p class="intro u-font--primary--m">{{ text.intro  | raw}}</p>
     {% include '@molecules/media/video-figure-with-caption.twig' with {'figure_class': 'size--large'} %}
   </div>
@@ -15,7 +15,7 @@
 
   {% for block in content_blocks %}
     <div class="u-padding--primary u-spacing--half text">
-      <h3 class="brown u-font--tertiary--l">{{ block.text.heading | raw}}</h3>
+      <h3 class="u-color--brown u-font--tertiary--l">{{ block.text.heading | raw}}</h3>
       <p>{{ block.text.description | raw }} {% if block.text.cta %} <a href="{{ block.url }}" class="u-font--secondary--s u-text-transform--upper"><strong>{{ block.text.cta | raw}}</strong></a> {% endif %}</p>
     </div>
     <hr>

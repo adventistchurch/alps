@@ -2,12 +2,12 @@
   <nav class="pagination u-center-block u-text-align--center" role="navigation">
     {# 'first' and 'prev' #}
     {%- if pager.current > 1 -%}
-      <a href="{{ pager.link }}{{ pager.current - 1 }}" class="pagination__page pagination__prev theme--secondary-background-color white">
+      <a href="{{ pager.link }}{{ pager.current - 1 }}" class="pagination__page pagination__prev u-theme--secondary-background-color u-color--white">
         {{ pager.prev|raw }}
       </a>
     {%- endif -%}
     {%- if pager.current > (pager.surrounding + 1) -%}
-      <a href="{{ pager.link }}{{ 1 }}" class="pagination__page theme--secondary-background-color white">1</a>
+      <a href="{{ pager.link }}{{ 1 }}" class="pagination__page u-theme--secondary-background-color u-color--white">1</a>
     {%- endif -%}
 
     {# start with ellipsis if there are more than pager.surrounding+1 before currentpage.. #}
@@ -17,9 +17,9 @@
 
     {%- for i in max(1, pager.current - pager.surrounding)..min(pager.current + pager.surrounding, pager.totalpages) -%}
       {% if i == pager.current %}
-        <span class="pagination__page pagination__page--current white u-background-color--gray">{{ i }}</span>
+        <span class="pagination__page pagination__page--current u-color--white u-background-color--gray">{{ i }}</span>
       {%- else -%}
-        <a href="{{ pager.link }}{{ i }}" rel="noindex, follow" class="pagination__page theme--secondary-background-color white">{{ i }}</a>
+        <a href="{{ pager.link }}{{ i }}" rel="noindex, follow" class="pagination__page u-theme--secondary-background-color u-color--white">{{ i }}</a>
       {%- endif -%}
     {%- endfor -%}
 
@@ -30,12 +30,12 @@
 
     {# 'next' and 'last' #}
     {%- if pager.current < (pager.totalpages - pager.surrounding) -%}
-      <a href="{{ pager.link }}{{ pager.totalpages }}" rel="noindex, follow" class="pagination__page theme--secondary-background-color white">
+      <a href="{{ pager.link }}{{ pager.totalpages }}" rel="noindex, follow" class="pagination__page u-theme--secondary-background-color u-color--white">
         {{ pager.totalpages }}
       </a>
     {%- endif -%}
     {%- if pager.current < pager.totalpages -%}
-      <a href="{{ pager.link }}{{ pager.current + 1 }}" class="pagination__page pagination__prev theme--secondary-background-color white">
+      <a href="{{ pager.link }}{{ pager.current + 1 }}" class="pagination__page pagination__prev u-theme--secondary-background-color u-color--white">
         {{ pager.next|raw }}
       </a>
     {%- endif -%}

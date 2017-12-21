@@ -7,14 +7,14 @@
     {% if has_slide_text %}
       <div class="l-shift-right--fluid">
         <div class="{{ has_slide_text.carousel_text_class }} u-spacing--half u-padding">
-          <h2 class="carousel__slide-heading u-font--tertiary--l theme--primary-text-color">{{ has_slide_text.slide_heading }}</h2>
+          <h2 class="carousel__slide-heading u-font--tertiary--l u-theme--primary-text-color">{{ has_slide_text.slide_heading }}</h2>
           {% if has_slide_text.slide_subtitle %}
             <h3 class="carousel__slide-subtitle u-font--secondary--m">{{ has_slide_text.slide_subtitle }}</h3>
           {% endif %}
           <div class="carousel__slide-dek u-padding--half--bottom">
             <p>{{ has_slide_text.slide_dek }}</p>
           </div> <!-- /.carousel__slide-dek -->
-          <a href="{{ url }}" class="carousel__slide-cta o-btn theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
+          <a href="{{ url }}" class="carousel__slide-cta o-btn u-theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
         </div> <!-- /.carousel__slide-text -->
       </div>
     {% endif %}

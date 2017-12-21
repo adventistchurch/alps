@@ -17,21 +17,21 @@
     }
   </style>
   {% endif %}
-<header class="header__swath theme--primary-background-color {{ page_header.page_header_class }}">
+<header class="header__swath u-theme--primary-background-color {{ page_header.page_header_class }}">
   <div class="l-container u-clear-fix">
     {% if header_text %}
       <div class="header__text">
         <div class="unify u-hide-until--s">
-          <h2 class="u-font--secondary--l u-text-transform--upper white">{{ header_text.heading }}</h2>
-          <h3 class="u-font--secondary--m white--trans">{{ header_text.subhead }}</h3>
+          <h2 class="u-font--secondary--l u-text-transform--upper u-color--white">{{ header_text.heading }}</h2>
+          <h3 class="u-font--secondary--m u-color--white-transparent">{{ header_text.subhead }}</h3>
         </div>
         <div class="header__logo">{% include '@atoms/images/image.twig' with header_text %}</div>
       </div> <!-- /.header__text -->
   {% endif %}
     <div class="l-flex-container u-clear-fix">
       <div class="l-shift-left--fluid">
-        {%  if page_header.kicker %}<span class="kicker white">{{ page_header.kicker | raw }}</span> {% endif %}
-        <h1 class="u-font--tertiary--xl white"><a class="u-link--white u-link-hover--white" href="">{{ heading }}</a></h1>
+        {%  if page_header.kicker %}<span class="o-kicker u-color--white">{{ page_header.kicker | raw }}</span> {% endif %}
+        <h1 class="u-font--tertiary--xl u-color--white"><a class="u-link--white u-link-hover--white" href="">{{ heading }}</a></h1>
       </div>
       <div class="l-shift-right--fluid"></div> <!-- /.l-shift-right--fluid -->
     </div>

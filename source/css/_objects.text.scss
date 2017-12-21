@@ -5,7 +5,7 @@
 /**
  * Dek
  */
-.dek {
+.o-dek {
   p {
     margin-bottom: 0;
   }
@@ -14,38 +14,38 @@
 /**
  * Kicker/Eyebrow
  */
-.kicker {
+.o-kicker {
   font-size: rem(11);
   line-height: 1;
   margin-bottom: rem(8);
   letter-spacing: 1px;
   font-weight: 600;
-  color: $blue;
+  color: $c-blue;
   text-transform: uppercase;
 }
 
 /**
  * Citation
  */
-.citation {
+.o-citation {
   display: block;
   font-style: normal;
   text-transform: uppercase;
-  font-family: $font-tertiary;
+  font-family: $ff-font--tertiary;
   float: right;
 }
 
 /**
  * Caption
  */
-.caption {
+.o-caption {
   line-height: 1.35;
 }
 
 /**
  * No Wrapping
  */
-.no-wrap {
+.u-no-wrap {
   white-space: nowrap;
 }
 
@@ -53,19 +53,19 @@
  * Font Families
  */
 .u-font--primary {
-  font-family: $font;
+  font-family: $ff-font;
 }
 
 .u-font--secondary {
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
 }
 
 .u-font--tertiary {
-  font-family: $font-tertiary;
+  font-family: $ff-font--tertiary;
 }
 
 .u-font--monospace {
-  font-family: $monospace;
+  font-family: $ff-font--monospace;
 }
 
 /**
@@ -74,7 +74,7 @@
 
 // X-Large Type - primary
 @mixin u-font--primary--xl() {
-  font-family: $font;
+  font-family: $ff-font;
   font-size: rem(26);
   line-height: 1;
   font-weight: normal;
@@ -91,7 +91,7 @@
 
 // Large Type - primary
 @mixin u-font--primary--l() {
-  font-family: $font;
+  font-family: $ff-font;
   font-size: rem(22);
   line-height: rem(26);
   font-weight: normal;
@@ -108,7 +108,7 @@
 
 // Medium Type - primary
 @mixin u-font--primary--m() {
-  font-family: $font;
+  font-family: $ff-font;
   font-size: rem(18);
   line-height: rem(24);
   font-weight: normal;
@@ -125,7 +125,7 @@
 
 // Small Type - primary
 @mixin u-font--primary--s() {
-  font-family: $font;
+  font-family: $ff-font;
   font-size: rem(14);
   line-height: rem(17);
 
@@ -141,7 +141,7 @@
 
 // X-Small Type - primary
 @mixin u-font--primary--xs() {
-  font-family: $font;
+  font-family: $ff-font;
   font-size: rem(13);
   line-height: rem(17);
 }
@@ -156,7 +156,7 @@
 
 // XLarge type - secondary
 @mixin u-font--secondary--xl() {
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
   font-size: rem(24);
   font-weight: 600;
   line-height: rem(28);
@@ -178,7 +178,7 @@
 
 // Large type - secondary
 @mixin u-font--secondary--l() {
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
   font-size: rem(22);
   line-height: rem(26);
   font-weight: 600;
@@ -196,7 +196,7 @@
 
 // Medium type - secondary
 @mixin u-font--secondary--m() {
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
   font-size: rem(16);
   line-height: rem(20);
   font-weight: normal;
@@ -218,7 +218,7 @@
 
 // Small type - secondary
 @mixin u-font--secondary--s() {
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
   font-size: rem(13);
   line-height: rem(20);
 
@@ -233,7 +233,7 @@
 
 // X-Small type - secondary
 @mixin u-font--secondary--xs() {
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
   font-size: rem(11);
   line-height: rem(16);
 }
@@ -248,7 +248,7 @@
 
 // X-Large Type - tertiary
 @mixin u-font--tertiary--xl() {
-  font-family: $font-tertiary;
+  font-family: $ff-font--tertiary;
   font-size: rem(28);
   line-height: 1;
   font-weight: normal;
@@ -269,7 +269,7 @@
 
 // Large Type - tertiary
 @mixin u-font--tertiary--l() {
-  font-family: $font-tertiary;
+  font-family: $ff-font--tertiary;
   font-size: rem(24);
   line-height: 1;
   font-weight: normal;
@@ -287,7 +287,7 @@
 
 // Medium Type - tertiary
 @mixin u-font--tertiary--m() {
-  font-family: $font-tertiary;
+  font-family: $ff-font--tertiary;
   font-size: rem(20);
   line-height: 1;
   font-weight: normal;
@@ -309,7 +309,7 @@
 
 // X-Large Type - monospace
 @mixin u-font--monospace--xl() {
-  font-family: $font-monospace;
+  font-family: $ff-font--monospace;
   font-size: rem(28);
   line-height: 1;
   font-weight: normal;
@@ -330,7 +330,7 @@
 
 // Large Type - monospace
 @mixin u-font--monospace--l() {
-  font-family: $font-monospace;
+  font-family: $ff-font--monospace;
   font-size: rem(24);
   line-height: 1;
   font-weight: normal;
@@ -348,7 +348,7 @@
 
 // Medium Type - monospace
 @mixin u-font--monospace--m() {
-  font-family: $font-monospace;
+  font-family: $ff-font--monospace;
   font-size: rem(20);
   line-height: 1;
   font-weight: normal;
@@ -366,7 +366,7 @@
 
 // Small type - monospace
 @mixin u-font--monospace--s() {
-  font-family: $font-monospace;
+  font-family: $ff-font--monospace;
   font-size: rem(13);
   line-height: rem(20);
 
@@ -381,7 +381,7 @@
 
 // X-Small type - monospace
 @mixin u-font--monospace--xs() {
-  font-family: $font-monospace;
+  font-family: $ff-font--monospace;
   font-size: rem(11);
   line-height: rem(16);
 }
@@ -411,7 +411,7 @@
  * Passages of Text
  */
 .text {
-  font-family: $font;
+  font-family: $ff-font;
 
   > blockquote p,
   > dl dd,
@@ -428,7 +428,7 @@
   > h4,
   > h5,
   > h1 {
-    font-family: $font-secondary;
+    font-family: $ff-font--secondary;
     font-weight: 600;
     margin-bottom: rem(-5);
     padding-top: $pad-half;
@@ -515,7 +515,7 @@
       font-size: rem(24);
       font-weight: 300;
       font-style: normal;
-      font-family: $font;
+      font-family: $ff-font;
 
       @include media('>medium') {
         font-size: rem(28);
@@ -548,7 +548,7 @@
   }
 
   > .quote--extended {
-    background-color: $beige;
+    background-color: $c-beige;
     padding: rem(30) 0;
 
     @include media('>medium') {

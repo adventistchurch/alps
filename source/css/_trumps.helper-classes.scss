@@ -14,25 +14,25 @@
 .o-arrow--up {
   border-left: rem(5) solid transparent;
   border-right: rem(5) solid transparent;
-  border-bottom: rem(5) solid $black;
+  border-bottom: rem(5) solid $c-black;
 }
 
 .o-arrow--down {
   border-left: rem(5) solid transparent;
   border-right: rem(5) solid transparent;
-  border-top: rem(5) solid $black;
+  border-top: rem(5) solid $c-black;
 }
 
 .o-arrow--right {
   border-top: rem(5) solid transparent;
   border-bottom: rem(5) solid transparent;
-  border-left: rem(5) solid $black;
+  border-left: rem(5) solid $c-black;
 }
 
 .o-arrow--left {
   border-top: rem(5) solid transparent;
   border-bottom: rem(5) solid transparent;
-  border-right: rem(5) solid $black;
+  border-right: rem(5) solid $c-black;
 }
 
 .o-arrow--small {
@@ -70,6 +70,21 @@
 .u-rtl {
   direction: rtl;
   unicode-bidi: bidi-override;
+}
+
+/**
+ * Floats
+ */
+.u-float--left {
+  float: left;
+}
+
+.u-float--right {
+  float: right;
+}
+
+.u-float--none {
+  float: none;
 }
 
 /**

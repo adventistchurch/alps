@@ -86,7 +86,7 @@
 .l-column--secondary {
   padding-top: $pad-and-half;
   padding-bottom: $pad-and-half;
-  background-color: $beige;
+  background-color: $c-beige;
 
   @include media('>medium') {
     padding-top: $pad-double;
