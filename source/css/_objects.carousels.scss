@@ -288,12 +288,12 @@
     flex-direction: column;
   }
 
-  .shift-left--fluid,
-  .shift-right--fluid {
+  .l-shift-left--fluid,
+  .l-shift-right--fluid {
     width: 100%;
   }
 
-  .shift-right--fluid {
+  .l-shift-right--fluid {
     border: 1px solid $gray-light;
   }
 }
