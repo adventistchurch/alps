@@ -12,11 +12,11 @@ $icon-large: rem(50);
 $icon-big: rem(65);
 
 
-.icon {
+.u-icon {
   display: inline-block;
 }
 
-.icon--standard {
+.u-icon--standard {
   background-color: $gray-med;
   path {
     fill: $white;
@@ -29,30 +29,35 @@ $icon-big: rem(65);
   }
 }
 
-.icon--xs {
+.u-icon--xs {
   width: $icon-xsmall;
   height: $icon-xsmall;
 }
-.icon--s {
+
+.u-icon--s {
   width: $icon-small;
   height: $icon-small;
   padding: rem(2);
 }
-.icon--m {
+
+.u-icon--m {
   width: $icon-medium;
   height: $icon-medium;
   padding: rem(3);
 }
-.icon--l {
+
+.u-icon--l {
   width: $icon-large;
   height: $icon-large;
   padding: rem(6);
 }
-.icon--xl {
+
+.u-icon--xl {
   width: $icon-big;
   height: $icon-big;
   padding: rem(6);
 }
+
 // Make icons larger for touch devices.
 .touchevents {
   .t-icon {
@@ -73,9 +78,11 @@ $icon-big: rem(65);
   transition: all .3s ease-out;
   border-bottom: 4px solid rgba($black, 0);
   display: block;
+
   &:hover {
     border-bottom-color: rgba($black, .2);
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -92,7 +99,6 @@ $icon-big: rem(65);
   }
 }
 
-
 /*------------------------------------*\
     $SOCIAL SPECIFIC
 \*------------------------------------*/
@@ -100,61 +106,76 @@ $icon-big: rem(65);
 .icon__facebook {
   background-color: $facebook-blue;
   border: rem(3) solid $facebook-blue;
+
   path {
     fill: $white;
   }
+
   &:hover {
     background-color: $white;
     border-color: $facebook-blue;
+
     path {
       fill: $facebook-blue;
     }
   }
 }
+
 .icon__twitter {
   background-color: $twitter-blue;
   border: rem(3) solid $twitter-blue;
+
   path {
     fill: $white;
   }
+
   &:hover {
     background-color: $white;
     border-color: $twitter-blue;
+
     path {
       fill: $twitter-blue;
     }
   }
 }
+
 .icon__instagram {
   background-color: $instagram-brown;
   border: rem(3) solid $instagram-brown;
+
   &:hover {
     background-color: $white;
     border-color: $instagram-brown;
+
     path {
       fill: $instagram-brown;
     }
   }
 }
+
 .icon__pinterest {
   background-color: $pinterest-red;
   border: rem(3) solid $pinterest-red;
+
   path {
     fill: $white;
   }
+
   &:hover {
     background-color: $white;
     border-color: $pinterest-red;
+
     path {
       fill: $pinterest-red;
     }
   }
 }
+
 .icon__facebook,
 .icon__twitter,
 .icon__instagram,
 .icon__pinterest {
-  &.icon--s:hover {
+  &.u-icon--s:hover {
     border-width: rem(2);
   }
 }

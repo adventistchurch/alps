@@ -12,10 +12,12 @@
   border-bottom-width: 4px;
   border-bottom-color: $red;
   background-color: $blue;
+
   &.this-is-active {
     display: none;
   }
 }
+
 .no-flexbox .announcement-bar {
   @include media('>large') {
     padding-top: rem(25);
@@ -25,6 +27,7 @@
 .ab__content-wrap {
   width: 100%;
 }
+
 .ab__content {
   width: 100%;
   padding-right: rem(40);
@@ -35,29 +38,35 @@
     margin-right: rem(3);
   }
 }
+
 .ab__text {
   padding-top: rem(6);
   padding-bottom: rem(6);
 }
+
 .ab__close {
   padding: rem(5);
   position: absolute;
   right: 0;
   top: 0;
+
   @include media('>medium') {
     top: 50%;
     margin-top: rem(-13);
   }
 }
+
 .ab__label {
   margin-right: rem(6);
 }
+
 .ab__label--with-bg {
   margin-bottom: rem(4);
   color: $white;
   padding: rem(3) rem(4);
   background-color: $red;
 }
+
 .ab__cta {
   margin: rem(2) 0;
 }

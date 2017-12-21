@@ -2,8 +2,8 @@
   "media_block_default": {
     "block_class": "block__superimposed media-block__superimposed",
     "block_content_class": "l-grid--7-col",
-    "block_title_class": "l-grid-items--1col l-grid-itemm--5col l-grid-iteml--4col",
-    "block_meta_class": "l-grid-items--1col l-grid-itemm--1col l-grid-iteml--2col",
+    "block_title_class": "l-grid-items--1-col l-grid-itemm--5-col l-grid-iteml--4-col",
+    "block_meta_class": "l-grid-items--1-col l-grid-itemm--1-col l-grid-iteml--2-col",
     "picture": {
         "img_break_m": "500",
         "img_break_l": "800",

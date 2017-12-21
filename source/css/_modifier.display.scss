@@ -36,6 +36,12 @@
   }
 }
 
+.u-hide-until--l {
+  @include media('<=xlarge') {
+    display: none;
+  }
+}
+
 // Specific Widths - hide greater than #
 .u-hide-after--s {
   @include media('>small') {
@@ -51,6 +57,12 @@
 
 .u-hide-after--l {
   @include media('>large') {
+    display: none;
+  }
+}
+
+.u-hide-after--xl {
+  @include media('>xlarge') {
     display: none;
   }
 }

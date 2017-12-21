@@ -18,16 +18,19 @@
 
 @mixin block-row {
   display: flex;
+
   .block__image-wrap {
     width: 30%;
     max-width: 300px;
     text-align: right;
   }
+
   .block__content {
     width: 70%;
     padding-left: $pad;
     align-self: center;
-    .rtl & {
+
+    .u-rtl & {
       padding-left: 0;
       padding-right: $pad;
     }
@@ -65,7 +68,7 @@
     margin-right: -$space;
   }
 
-  &.shift--reversed:not(.keep-top-space) {
+  &.l-shift--reversed:not(.keep-top-space) {
     margin-top: 0;
   }
 }

@@ -3,6 +3,43 @@
 \*------------------------------------*/
 
 /**
+ * Arrows
+ */
+.o-arrow {
+  width: 0;
+  height: 0;
+  display: inline-block;
+}
+
+.o-arrow--up {
+  border-left: rem(5) solid transparent;
+  border-right: rem(5) solid transparent;
+  border-bottom: rem(5) solid $black;
+}
+
+.o-arrow--down {
+  border-left: rem(5) solid transparent;
+  border-right: rem(5) solid transparent;
+  border-top: rem(5) solid $black;
+}
+
+.o-arrow--right {
+  border-top: rem(5) solid transparent;
+  border-bottom: rem(5) solid transparent;
+  border-left: rem(5) solid $black;
+}
+
+.o-arrow--left {
+  border-top: rem(5) solid transparent;
+  border-bottom: rem(5) solid transparent;
+  border-right: rem(5) solid $black;
+}
+
+.o-arrow--small {
+  border-width: 5px;
+}
+
+/**
  * Clearfix - extends outer container with floated children.
  */
 .u-clear-fix {

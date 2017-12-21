@@ -268,7 +268,7 @@
   }
 
   .l-grid-item--s {
-    &--1col {
+    &--1-col {
       width: 100%;
     }
   }
@@ -279,23 +279,23 @@
     justify-content: space-between;
 
     .l-grid-item--m {
-      &--1col {
+      &--1-col {
         width: calc(100%/7*1);
       }
 
-      &--2col {
+      &--2-col {
         width: calc(100%/7*2);
       }
 
-      &--3col {
+      &--3-col {
         width: calc(100%/7*3);
       }
 
-      &--4col {
+      &--4-col {
         width: calc(100%/7*4);
       }
 
-      &--5col {
+      &--5-col {
         width: calc(100%/7*5);
       }
     }
@@ -303,19 +303,19 @@
 
   @include media('>large') {
     .l-grid-item--l {
-      &--1col {
+      &--1-col {
         width: calc(100%/7*1);
       }
 
-      &--2col {
+      &--2-col {
         width: calc(100%/7*2);
       }
 
-      &--3col {
+      &--3-col {
         width: calc(100%/7*3);
       }
 
-      &--4col {
+      &--4-col {
         width: calc(100%/7*4);
       }
     }
