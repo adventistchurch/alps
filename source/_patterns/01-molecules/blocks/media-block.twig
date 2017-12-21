@@ -4,7 +4,7 @@
       <div class="media-block__image block__image {{ media_block_default.block_img_class }}">
         <a class="block__image-link {{ media_block_default.block_img_class }}" href="{{ url }}">
           {% if picture %}
-            {% include '@atoms/images/picture.twig' with picture %}
+            {% include '@atoms/images/picture.twig' %}
           {% elseif media_block_default.img %}
             {% include '@atoms/images/image.twig' %}
           {% endif %}

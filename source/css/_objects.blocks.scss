@@ -33,6 +33,15 @@
   align-items: flex-end;
 }
 
+.block__date {
+  white-space: nowrap;
+}
+
+.block__description {
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
 @mixin block-row {
   display: flex;
 
@@ -126,7 +135,6 @@
 /**
  * Media Block
  */
-
  .media-block {
    display: flex;
    flex-direction: row;
@@ -134,8 +142,8 @@
    .block__content {
      display: flex;
      justify-content: space-between;
-     flex-direction: column;
      flex-wrap: wrap;
+     flex-direction: column;
    }
 
    .block__meta {
@@ -146,22 +154,19 @@
 
  .block__stacked {
    flex-direction: column;
-   border-left: 1px solid $black;
-
-   .block__content {
-     flex-direction: column;
-   }
+   border-left: 1px solid $c-black;
  }
 
-.block__superimposed {
+.block__inset {
   display: block;
   position: relative;
 
   .block__content {
+    flex-direction: row;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to bottom, transparent, rgba($c-black, 0.75) 80%);
+    background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
 
     .block__title-link,
     .block__date {

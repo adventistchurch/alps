@@ -21,10 +21,17 @@ a {
   }
 }
 
-.hover {
+.u-link--underline {
   text-decoration: underline;
-  
+
   &:hover {
     text-decoration: none;
+  }
+}
+
+.u-link-hover--white,
+.u-link-hover--white a {
+  &:hover {
+    color: $c-white !important;
   }
 }

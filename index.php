@@ -85,7 +85,7 @@
               <p class="footer__copyright u-font--secondary--xs u-color--brown-light no-space--btm">Copyright &copy; 2016, General Conference of Seventh-day Adventists</p>
               <address class="footer__address u-font--secondary--xs u-color--brown-light">12501 Old Columbia Pike, Silver Spring, MD 20904, USA 301-680-6000</address>
             </div> <!-- /.footer__unify-copyright-address -->
-            <div class="footer__legal-links u-font--secondary--xs"><a class="hover u-color--brown-light u-space--half--right u-link--brown-light" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a> <a class="hover u-color--brown-light u-link--brown-light" href="https://www.adventist.org/en/copyright/legal-notice/">Legal Notice</a></div>
+            <div class="footer__legal-links u-font--secondary--xs"><a class="u-link--underline u-color--brown-light u-space--half--right u-link--brown-light" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a> <a class="u-link--underline u-color--brown-light u-link--brown-light" href="https://www.adventist.org/en/copyright/legal-notice/">Legal Notice</a></div>
           </div> <!-- /.l-container -->
         </div> <!-- /.legal -->
       </div> <!-- /.footer__inner -->
