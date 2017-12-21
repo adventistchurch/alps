@@ -138,3 +138,30 @@ $article-max: rem(950);
 $sidebar-width: 320;
 $small-header-height: 60;
 $wide-header-height: 80;
+
+/* Variables to display grid lines */
+:root {
+  --offset: rem(20);
+  --max_width: rem(1024);
+  --columns: 7;
+  --gutter: rem(1);
+  --color: hsla(204, 80%, 72%, 0.5);
+  --line-thickness: 1px;
+}
+
+:root {
+  --repeating-width: calc(100% / var(--columns));
+  --column-width: calc((100% / var(--columns)) - var(--gutter));
+  --background-width: calc(100% + var(--gutter));
+  --background-columns: repeating-linear-gradient(
+   to right,
+   var(--color),
+   var(--color) var(--line-thickness),
+   transparent var(--line-thickness),
+   transparent calc(var(--column-width) - var(--line-thickness)),
+   var(--color) calc(var(--column-width) - var(--line-thickness)),
+   var(--color) var(--column-width),
+   transparent var(--column-width),
+   transparent var(--repeating-width)
+ );
+}

@@ -263,7 +263,7 @@
   &--l--offset-1 {
     @include media('>large') {
       margin-left: calc(100%/7);
-      width: calc(100% - 100%/7);
+      width: calc(100% - (100% / 7));
     }
   }
 
@@ -280,23 +280,23 @@
 
     .l-grid-item--m {
       &--1-col {
-        width: calc(100%/7*1);
+        width: calc((100%/7) *1);
       }
 
       &--2-col {
-        width: calc(100%/7*2);
+        width: calc((100%/7) *2);
       }
 
       &--3-col {
-        width: calc(100%/7*3);
+        width: calc((100%/7) *3);
       }
 
       &--4-col {
-        width: calc(100%/7*4);
+        width: calc((100%/7) *4);
       }
 
       &--5-col {
-        width: calc(100%/7*5);
+        width: calc((100%/7) *5);
       }
     }
   }
@@ -304,19 +304,19 @@
   @include media('>large') {
     .l-grid-item--l {
       &--1-col {
-        width: calc(100%/7*1);
+        width: calc((100%/7) *1);
       }
 
       &--2-col {
-        width: calc(100%/7*2);
+        width: calc((100%/7) *2);
       }
 
       &--3-col {
-        width: calc(100%/7*3);
+        width: calc((100%/7) *3);
       }
 
       &--4-col {
-        width: calc(100%/7*4);
+        width: calc((100%/7) *4);
       }
     }
   }
