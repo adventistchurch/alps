@@ -6,7 +6,6 @@
 /vendor
 /source--mustache
 /source/drupal-patterns
-cdn
 
 # Ignore IDE-specific files
 *.sublime-project
