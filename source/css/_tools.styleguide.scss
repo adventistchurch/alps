@@ -47,7 +47,7 @@ $animate-quick: 0.2s;
   margin-bottom: 1rem;
 }
 
-.demo .gi, .demo .demo-block {
+.demo .l-grid-item, .demo .demo-block {
   background: $sg-tertiary;
   color: $sg-secondary;
   text-align: center;
@@ -59,7 +59,7 @@ $animate-quick: 0.2s;
     background: $sg-secondary;
   }
 
-  .gi {
+  .l-grid-item {
     background: $sg-tone;
     color: $sg-tertiary;
 

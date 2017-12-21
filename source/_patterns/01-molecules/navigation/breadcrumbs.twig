@@ -2,7 +2,7 @@
 <nav class="breadcrumbs" role="navigation">
   <ul class="breadcrumbs__list">
     {% for item in breadcrumbs.items %}
-      <li class="breadcrumbs__list-item u-font--secondary--xs u-text-transform--upper dib"><a {% if item.url %}href="{{ item.url }}"{% endif %} class="breadcrumbs__link can-be--white">{{ item.text }}</a></li>
+      <li class="breadcrumbs__list-item u-font--secondary--xs u-text-transform--upper u-display--inline-block"><a {% if item.url %}href="{{ item.url }}"{% endif %} class="breadcrumbs__link can-be--white">{{ item.text }}</a></li>
     {% endfor %}
   </ul>
 </nav> <!-- /.breadcrumbs -->

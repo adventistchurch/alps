@@ -4,6 +4,7 @@
 
 .main {
   overflow: hidden;
+
   @include media('>medium') {
     background-color: $beige;
   }
@@ -16,6 +17,7 @@ html,
 body {
   height: 100%;
 }
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -23,17 +25,21 @@ body {
   min-height: 100%;
   flex-direction: column;
 }
+
 .main {
   flex: 1 0 auto;
 }
+
 .header,
 .main {
   width: 100%;
   align-self: flex-start;
 }
+
 .header {
   flex: none;
 }
+
 .footer {
   margin-top: auto;
   width: 100%;

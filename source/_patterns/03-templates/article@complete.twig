@@ -3,17 +3,17 @@
   <main class="main can-be--dark-dark" role="main">
     {% include '@organisms/sections/page-header@complete.twig' %}
     {% include '@molecules/navigation/article-navigation.twig' %}
-    <div class="layout-container full--until-large">
+    <div class="l-container l-full--until-large">
       <div class="l-flex-container u-clear-fix">
-        <div class="shift-left--fluid column__primary bg--white can-be--dark-light u-spacing--one-and-half">
+        <div class="l-shift-left--fluid l-column--primary u-background-color--white can-be--dark-light u-spacing--one-and-half">
           {% include '@organisms/content/page-content.twig' %}
           <div class="u-padding--primary">{% include '@organisms/sections/comments.twig' %}</div>
-        </div> <!-- /.shift-left--fluid -->
-        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+        </div> <!-- /.l-shift-left--fluid -->
+        <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
           {% include '@molecules/navigation/aside-navigation.twig' %}
-        </div> <!-- /.shift-right--fluid -->
+        </div> <!-- /.l-shift-right--fluid -->
       </div> <!-- /.l-flex-container -->
-    </div> <!-- /.layout-container -->
+    </div> <!-- /.l-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

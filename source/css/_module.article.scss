@@ -1,19 +1,6 @@
 /*------------------------------------*\
     $ARTICLE
 \*------------------------------------*/
-.page--pad {
-  @include media('<=small') {
-    padding-left: rem(10);
-    padding-right: rem(10);
-  }
-  padding-left: $pad;
-  padding-right: $pad;
-
-  @include media('>large') {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 /*------------------------------------*\
     $ARTICLE HEADER

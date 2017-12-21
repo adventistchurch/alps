@@ -1,13 +1,13 @@
 {% if testimonies %}
 <section class="testimonies u-spacing--half carousel-nav--outside rel">
-  <header class="testimonies__header border--bottom border--light u-flex u-flex--nowrap u-flex--align-end u-flex--justify-between">
+  <header class="testimonies__header u-border--bottom u-border--light u-flex u-flex--nowrap u-flex--align-end u-flex--justify-between">
     <h2 class="u-font--secondary--l theme--primary-text-color">Testimonies</h2>
-    <div class="show-at--medium">{% include '@atoms/text/see-all-link.twig' %}</div>
+    <div class="u-hide-until--m">{% include '@atoms/text/see-all-link.twig' %}</div>
   </header>
   {% include '@molecules/components/content-carousel.twig' %}
   <div class="u-spacing--half">
-    <a href="{{ url }}" class="btn theme--secondary-background-color">Submit a Testimony</a>
-    <div class="show-until--medium">{% include '@atoms/text/see-all-link.twig' %}</div>
+    <a href="{{ url }}" class="o-btn theme--secondary-background-color">Submit a Testimony</a>
+    <div class="u-hide-after--m">{% include '@atoms/text/see-all-link.twig' %}</div>
   </div>
 </section> <!-- /.testimonies -->
 {% endif %}

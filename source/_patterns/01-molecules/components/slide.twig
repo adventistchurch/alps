@@ -8,7 +8,7 @@
 
   {% if has_slide_text %}
     <div class="carousel__item-text__wrap">
-      <div class="layout-container">
+      <div class="l-container">
         <div class="carousel__item-text {{ has_slide_text.carousel_text_class }} u-spacing--half">
           <div class="carousel__item-text--inner">
             <h2 class="{{ carousel_heading_class }} carousel__item-heading theme--primary-transparent-background-color">{{ has_slide_text.slide_heading }}</h2>
@@ -17,7 +17,7 @@
               <p>{{ has_slide_text.slide_dek }}</p>
             </div> <!-- /.carousel__item-dek -->
           </div>
-          <a href="{{ url }}" class="carousel__item-cta btn theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
+          <a href="{{ url }}" class="carousel__item-cta o-btn theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
         </div> <!-- /.carousel__item-text -->
       </div>
     </div>
@@ -42,7 +42,7 @@
       {% endif %}
       {% if is_carousel_block.cta %}
         <p>
-          <a class="carousel-block__cta block__cta btn theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
+          <a class="carousel-block__cta block__cta o-btn theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
         </p>
       {% endif %}
     </div> <!-- carousel-block__content -->

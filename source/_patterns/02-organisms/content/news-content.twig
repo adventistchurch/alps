@@ -1,8 +1,8 @@
 {% if carousel %}
   {% include '@organisms/sections/hero-carousel.twig' %}
 {% endif %}
-<div class="g g-2up--at-medium with-divider">
-  <div class="gi">
+<div class="l-grid l-grid--2-col--at-medium with-divider">
+  <div class="l-grid-item">
     <div class="u-spacing">
       <div class="u-spacing--half">
         <h2 class="u-font--tertiary--l theme--primary-text-color u-padding u-padding--double--top u-padding--half--bottom">Vivamus ornare</h2>
@@ -13,8 +13,8 @@
         <hr>
       {% endfor %}
     </div>
-  </div> <!-- /.gi -->
-  <div class="gi u-padding--double--bottom">
+  </div> <!-- /.l-grid-item -->
+  <div class="l-grid-item u-padding--double--bottom">
     <div class="u-spacing">
       <div class="u-spacing--half">
         <h2 class="u-font--tertiary--l theme--primary-text-color u-padding u-padding--double--top u-padding--half--bottom">Duis pretium</h2>
@@ -24,18 +24,18 @@
         <div class="u-padding u-padding--zero--bottom">{% include '@molecules/blocks/media-block.twig' with video_block %}</div>
       {% endif %}
 
-      <div class="g g-2-split u-padding--half u-padding--zero--top">
-        <div class="gi u-spacing--half">
+      <div class="l-grid l-grid--2-col--split u-padding--half u-padding--zero--top">
+        <div class="l-grid-item u-spacing--half">
           {% for block in video_block_list %}
             <div class="u-padding--half--left u-padding--half--right">{% include '@molecules/blocks/media-block.twig' with block %}</div>
           {% endfor %}
         </div>
-        <div class="gi u-spacing--half">
+        <div class="l-grid-item u-spacing--half">
           {% for block in video_block_list %}
             <div class="u-padding--half--left u-padding--half--right">{% include '@molecules/blocks/media-block.twig' with block %}</div>
           {% endfor %}
         </div>
-      </div> <!-- /.g-2-split -->
+      </div> <!-- /.l-grid--2-col--split -->
 
       <hr>
 
@@ -53,5 +53,5 @@
       {% endfor %}
 
     </div>
-  </div> <!-- /.gi -->
+  </div> <!-- /.l-grid-item -->
 </div> <!-- /.2up--at-medium -->

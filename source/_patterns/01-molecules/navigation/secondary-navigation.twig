@@ -4,7 +4,7 @@
     {% for item in secondary_nav.items %}
       <li class="secondary-nav__list-item rel"><a class="secondary-nav__link theme--secondary-text-color {% if item.subnav %} js-toggle-parent {% endif %}" href="{{ item.url }}">
         {% if item.link_before %}<span class="secondary-nav__before-link">{{ item.link_before | raw }}</span>{% endif %}
-        <strong>{{ item.text }}</strong> {% if item.subnav %}<span class="subnav__arrow dib arrow--down u-vertical-align--middle"></span>{% endif %}</a>
+        <strong>{{ item.text }}</strong> {% if item.subnav %}<span class="subnav__arrow u-display--inline-block arrow--down u-vertical-align--middle"></span>{% endif %}</a>
         {% if item.subnav %}
           <ul class="secondary-nav__subnav__list theme--secondary-background-color">
             {% for sub_item in item.subnav.items %}

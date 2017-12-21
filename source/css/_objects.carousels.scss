@@ -11,9 +11,11 @@
     padding: 0 $pad $pad $pad;
   }
 }
+
 .carousel__controls {
   width: 100%;
 }
+
 .carousel__arrow {
   width: rem(44);
   height: rem(44);
@@ -23,6 +25,7 @@
   z-index: 10;
   cursor: pointer;
   z-index: 100;
+
   &:before {
     content: "";
     border-radius: 50%;
@@ -34,11 +37,13 @@
     background-color: $white;
     z-index: -50;
   }
+
   &--s {
     width: rem(35);
     height: rem(35);
   }
 }
+
 .carousel__arrow--prev {
   left: $space-half;
 }
@@ -51,6 +56,7 @@
 .carousel--with-height {
   position: relative;
   width: 100%;
+
   .slick-list {
     position: absolute;
     width: 100%;
@@ -58,6 +64,7 @@
     left: 0;
     z-index: 0;
   }
+
   &:not(.slick-initialized) {
     .carousel__item {
       position: absolute;
@@ -73,12 +80,15 @@
 // Full-browser width carousel (currently used on adventist.org home page)
 .carousel--full-bleed {
   padding-top: (500 / 500) * 100%;
+
   @include media('>500px') {
     padding-top: (400 / 700) * 100%;
   }
+
   @include media('>700px') {
     padding-top: (400 / 900) * 100%;
   }
+
   @include media('>900px') {
     padding-top: (500 / 1300) * 100%;
   }
@@ -89,9 +99,11 @@
 .carousel--large {
   &:not(.slick-initialized) {
     padding-top: (375 / 500) * 100%;
+
     @include media('>500px') {
       padding-top: (600 / 800) * 100%;
     }
+
     @include media('>large') {
       padding-top: (600 / 800) * 68%; // 68% is the new container width at this media query
     }
@@ -112,9 +124,11 @@
   height: 100%;
   width: 100%;
   top: 0;
-  .layout-container {
+
+  .l-container {
     height: 100%;
   }
+
   @include media('>medium') {
     padding: $pad-and-half;
   }
@@ -160,6 +174,7 @@
   padding: rem(8) $pad-half;
   display: inline-block;
 }
+
 .carousel__item-dek {
   padding-top: rem(5);
   @include media('<=medium') {
@@ -192,6 +207,7 @@
   bottom: 0;
   text-align: left;
   padding: $pad;
+
   li {
     display: inline-block;
     border-radius: 50%;
@@ -203,14 +219,17 @@
     cursor: pointer;
     box-shadow: 0 0 rem(3) rgba($black, .3), inset 0 0 rem(3) rgba($black, .3);
   }
+
   .slick-active {
     background-color: $white;
     box-shadow: 0 0 rem(3) rgba($black, .3);
   }
+
   button {
     display: none;
   }
 }
+
 .no-dots .slick-dots {
   display: none !important;
 }
@@ -221,6 +240,7 @@
 .carousel-nav--outside {
   padding-left: rem(60);
   padding-right: rem(60);
+
   .carousel__inner {
     margin-left: -$space;
     margin-right: -$space;

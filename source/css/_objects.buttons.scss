@@ -2,7 +2,7 @@
     $BUTTONS
 \*------------------------------------*/
 
-.btn,
+.o-btn,
 button,
 input[type="submit"] {
   display: inline-block;
@@ -29,7 +29,7 @@ input[type="submit"] {
 /**
  * Button Sizing
  */
-.btn--small {
+.o-btn--small {
   padding: rem(8) rem(12);
   font-size: rem(12);
 }

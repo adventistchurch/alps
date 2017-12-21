@@ -5,14 +5,14 @@
     {% if article_navigation %}
       {% include '@molecules/navigation/article-navigation.twig' %}
     {% endif %}
-    <div class="layout-container full--until-large">
+    <div class="l-container l-full--until-large">
       <div class="l-flex-container u-clear-fix">
-        <div class="shift-left--fluid column__primary bg--white u-padding--zero--top u-padding--zero--bottom can-be--dark-light">
+        <div class="l-shift-left--fluid l-column--primary u-background-color--white u-padding--zero--top u-padding--zero--bottom can-be--dark-light">
           {% if news_home %}
             {% include '@organisms/content/news-content.twig' %}
           {% endif %}
           {% if news_channel %}
-            {% include '@organisms/content/grid-3up-content.twig' with {'grid_class': 'grid--uniform', 'has_hr': false} %}
+            {% include '@organisms/content/grid-3up-content.twig' with {'grid_class': 'l-grid--uniform', 'has_hr': false} %}
           {% endif %}
           {% if news_article %}
             {% include '@organisms/content/news-article-content.twig' %}
@@ -20,15 +20,15 @@
           {% if is_rtl %}
             {% include '@organisms/content/news-article-content-rtl.twig' %}
           {% endif %}
-        </div> <!-- /.shift-left--fluid -->
-        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+        </div> <!-- /.l-shift-left--fluid -->
+        <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
           {% include '@molecules/navigation/aside-navigation.twig' %}
-          <div class="column__secondary can-be--dark-dark">
+          <div class="l-column--secondary can-be--dark-dark">
             {% include '@organisms/asides/aside.twig' %}
           </div>
-        </div> <!-- /.shift-right--fluid -->
+        </div> <!-- /.l-shift-right--fluid -->
       </div> <!-- /.l-flex-container -->
-    </div> <!-- /.layout-container -->
+    </div> <!-- /.l-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

@@ -8,22 +8,22 @@
   </div>
   <hr>
 </div>
-<div class="g g-2up--at-medium with-divider">
+<div class="l-grid l-grid--2-col--at-medium with-divider">
   {% for block in media_blocks %}
-    <div class="gi">
+    <div class="l-grid-item">
       <div class="u-spacing">
         <div class="u-padding">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if block.has_hr %}<hr>{% endif %}
       </div>
-    </div> <!-- /.gi -->
+    </div> <!-- /.l-grid-item -->
   {% endfor %}
   {% for block in media_blocks_2 %}
-    <div class="gi u-padding--double--bottom">
+    <div class="l-grid-item u-padding--double--bottom">
       <div class="u-spacing">
         <div class="u-padding">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if block.has_hr %}<hr>{% endif %}
       </div>
-    </div> <!-- /.gi -->
+    </div> <!-- /.l-grid-item -->
   {% endfor %}
 </div> <!-- /.2up--at-medium -->
 <hr>

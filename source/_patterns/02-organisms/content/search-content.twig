@@ -26,7 +26,7 @@
       <div class="u-padding--primary u-padding--zero--top u-padding--zero--bottom u-spacing--half text">
         <h3 class="brown u-font--tertiary--l theme--primary-text-color"><a href="">{{ result.text.heading | raw}}</a></h3>
         <p>{{ result.text.description | raw }}</p>
-        {% if result.text.cta %}<a href="{{ result.url }}" class="btn u-font--secondary--s u-text-transform--upper theme--secondary-background-color"><strong>{{ result.text.cta | raw }}</strong></a> {% endif %}
+        {% if result.text.cta %}<a href="{{ result.url }}" class="o-btn u-font--secondary--s u-text-transform--upper theme--secondary-background-color"><strong>{{ result.text.cta | raw }}</strong></a> {% endif %}
       </div>
       <hr>
     {% endfor %}

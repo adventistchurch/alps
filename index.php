@@ -27,7 +27,7 @@
   </head>
   <body class="body theme--warm">
 
-    <div class="layout-container spacing pre-header active">
+    <div class="l-container spacing pre-header active">
       <div class="alps-logo-wrap">
         <a href="/" class="alps-logo"><img src="/public/images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
       </div>
@@ -80,13 +80,13 @@
     <footer class="footer" role="contentinfo">
       <div class="footer__inner u-clear-fix bg--medium-brown white can-be--dark-dark">
         <div class="footer__legal bg--brown  can-be--dark-light">
-          <div class="footer__legal__inner layout-container spacing--quarter--until-large">
+          <div class="footer__legal__inner l-container spacing--quarter--until-large">
             <div class="footer__unify-copyright-address spacing--quarter--until-large">
               <p class="footer__copyright font--secondary--xs brown--light no-space--btm">Copyright &copy; 2016, General Conference of Seventh-day Adventists</p>
               <address class="footer__address font--secondary--xs brown--light">12501 Old Columbia Pike, Silver Spring, MD 20904, USA 301-680-6000</address>
             </div> <!-- /.footer__unify-copyright-address -->
             <div class="footer__legal-links font--secondary--xs"><a class="hover brown--light space-half--right link--brown-light" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a> <a class="hover brown--light link--brown-light" href="https://www.adventist.org/en/copyright/legal-notice/">Legal Notice</a></div>
-          </div> <!-- /.layout-container -->
+          </div> <!-- /.l-container -->
         </div> <!-- /.legal -->
       </div> <!-- /.footer__inner -->
     </footer> <!-- /.footer -->

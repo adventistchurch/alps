@@ -2,9 +2,9 @@
   {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
     {% include '@organisms/sections/page-header@complete.twig' %}
-    <div class="layout-container full--until-large">
+    <div class="l-container l-full--until-large">
       <div class="l-flex-container u-clear-fix">
-        <div class="shift-left--fluid column__primary bg--white u-padding--zero--top u-padding--zero--bottom can-be--dark-light">
+        <div class="l-shift-left--fluid l-column--primary u-background-color--white u-padding--zero--top u-padding--zero--bottom can-be--dark-light">
 
           <script type="application/ld+json">
 {
@@ -42,7 +42,7 @@
 </script>
 
 
-<div class="u-padding--primary u-spacing column__primary">
+<div class="u-padding--primary u-spacing l-column--primary">
 
   {% include '@organisms/sections/article-header.twig' %}
 
@@ -74,27 +74,27 @@
 
 <hr>
 
-<div class="g g-2up--at-medium with-divider">
-  <div class="gi">
+<div class="l-grid l-grid--2-col--at-medium with-divider">
+  <div class="l-grid-item">
     <div class="u-padding u-padding--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
-  </div> <!-- /.gi -->
-  <div class="gi">
+  </div> <!-- /.l-grid-item -->
+  <div class="l-grid-item">
     <div class="u-padding u-padding--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
-  </div> <!-- /.gi -->
+  </div> <!-- /.l-grid-item -->
 </div> <!-- /.2up--at-medium -->
 
 
-        </div> <!-- /.shift-left--fluid -->
-        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+        </div> <!-- /.l-shift-left--fluid -->
+        <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
           {% if breakout_block %}
             {% include '@molecules/blocks/media-block.twig' %}
           {%  endif %}
-          <div class="column__secondary can-be--dark-dark">
+          <div class="l-column--secondary can-be--dark-dark">
             {% include '@organisms/asides/aside.twig' %}
           </div>
-        </div> <!-- /.shift-right--fluid -->
+        </div> <!-- /.l-shift-right--fluid -->
       </div> <!-- /.l-flex-container -->
-    </div> <!-- /.layout-container -->
+    </div> <!-- /.l-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

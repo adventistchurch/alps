@@ -5,14 +5,14 @@
 /**
  * Grid Container
  */
-.g {
+.l-grid {
   //overflow: hidden;
 }
 
 /**
  * Grid Item
  */
-.gi {
+.l-grid-item {
   width: 100%;
   img {
     display: block;
@@ -31,12 +31,12 @@
 /**
  * Flip column order
  */
-.flip-columns {
+.l-grid--flip-columns {
   @include media('>medium') {
-    & > .gi:nth-child(1) {
+    & > .l-grid-item:nth-child(1) {
       order: 2;
     }
-    & > .gi:nth-child(2) {
+    & > .l-grid-item:nth-child(2) {
       order: 1;
     }
   }
@@ -45,7 +45,7 @@
 /**
  * Grid Item Held - Check the specific grids below for how long it's held.
  */
-@mixin gi-hold {
+@mixin l-grid-item--hold {
   width: 100%;
   float: none;
   clear: both;
@@ -55,8 +55,8 @@
  * Grid Uniform - For grids that should line up evenly (these grids should not
  * use <hr>'s to separate individual grid items).
  */
-.grid--uniform {
-  > .gi {
+.l-grid--uniform {
+  > .l-grid-item {
     border-bottom: $border-style-light;
   }
 }
@@ -64,8 +64,8 @@
 /**
  * Grid 1up
  */
-.g-1up {
-  .gi {
+.l-grid--1-col {
+  .l-grid-item {
     width: 100%;
   }
 }
@@ -73,25 +73,30 @@
 /**
  * Grid 2up at medium width.
  */
-.g-2up--at-medium {
+.l-grid--2-col--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       width: 50%;
       align-items: stretch;
       display: flex;
       margin-top: 0;
-      * { // Slick slider hack for when a carousel is contained within a flexed element.
+
+      // Slick slider hack for when a carousel is contained within a flexed element.
+      * {
         min-height: 0;
         min-width: 0;
       }
     }
+
     &.with-divider {
-      > .gi:nth-child(odd) {
+      > .l-grid-item:nth-child(odd) {
         position: relative;
+
         &:after {
           content: "";
           position: absolute;
@@ -109,37 +114,45 @@
 /**
  * Grid 3up at medium width.
  */
-.g-3up--at-medium {
+.l-grid--3-col--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       width: 33.3333%;
       align-items: stretch;
       display: flex;
       margin-top: 0;
-      * { // Slick slider hack for when a carousel is contained within a flexed element.
+
+      // Slick slider hack for when a carousel is contained within a flexed element.
+      * {
         min-height: 0;
         min-width: 0;
       }
     }
+
     &.with-gutters {
-      > .gi:nth-child(3n+1) {
+      > .l-grid-item:nth-child(3n+1) {
         padding-right: $pad;
       }
-      > .gi:nth-child(3n+2) {
+
+      > .l-grid-item:nth-child(3n+2) {
         padding-left: $pad-half;
         padding-right: $pad-half;
       }
-      > .gi:nth-child(3n+3) {
+
+      > .l-grid-item:nth-child(3n+3) {
         padding-left: $pad;
       }
     }
+
     &.with-divider {
-      > .gi:nth-child(3n+1), > .gi:nth-child(3n+2) {
+      > .l-grid-item:nth-child(3n+1), > .l-grid-item:nth-child(3n+2) {
         position: relative;
+
         &:after {
           content: "";
           position: absolute;
@@ -157,23 +170,28 @@
 /**
  * Grid 2up at medium width with 70/30 split.
  */
-.g-2up--70-30--at-medium {
+.l-grid--2-col--70-30--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       align-items: stretch;
       display: flex;
       margin-top: 0;
-      * { // Slick slider hack for when a carousel is contained within a flexed element.
+
+      // Slick slider hack for when a carousel is contained within a flexed element.
+      * {
         min-height: 0;
         min-width: 0;
       }
+
       &:first-child {
         width: 70%;
       }
+
       &:last-child {
         width: 30%;
       }
@@ -184,19 +202,22 @@
 /**
  * Grid 2up at medium width with 35/65 split.
  */
-.g-2up--35-65--at-medium {
+.l-grid--2-col--35-65--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       align-items: stretch;
       display: flex;
       margin-top: 0;
+
       &:first-child {
         width: 35%;
       }
+
       &:last-child {
         width: 65%;
       }
@@ -204,15 +225,15 @@
   }
 }
 
-
 /**
  * Grid always 2 columns even
  */
-.g-2-split {
+.l-grid--2-col--split {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  > .gi {
+
+  > .l-grid-item {
     float: left;
     width: 50%;
     display: flex;
@@ -221,11 +242,10 @@
   }
 }
 
-
 /**
  * Grid 4up
  */
-.g-4up {
+.l-grid--4-col {
   width: 100%;
 
   > * {
@@ -233,7 +253,7 @@
   }
 }
 
-.g-7up {
+.l-grid--7-col {
   width: 100%;
 
   > * {
@@ -247,7 +267,7 @@
     }
   }
 
-  .gi-s {
+  .l-grid-item--s {
     &--1col {
       width: 100%;
     }
@@ -258,19 +278,23 @@
     flex-direction: row;
     justify-content: space-between;
 
-    .gi-m {
+    .l-grid-item--m {
       &--1col {
         width: calc(100%/7*1);
       }
+
       &--2col {
         width: calc(100%/7*2);
       }
+
       &--3col {
         width: calc(100%/7*3);
       }
+
       &--4col {
         width: calc(100%/7*4);
       }
+
       &--5col {
         width: calc(100%/7*5);
       }
@@ -278,16 +302,19 @@
   }
 
   @include media('>large') {
-    .gi-l {
+    .l-grid-item--l {
       &--1col {
         width: calc(100%/7*1);
       }
+
       &--2col {
         width: calc(100%/7*2);
       }
+
       &--3col {
         width: calc(100%/7*3);
       }
+
       &--4col {
         width: calc(100%/7*4);
       }

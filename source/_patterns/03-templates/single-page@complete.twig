@@ -2,12 +2,12 @@
   {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
     {% include '@organisms/sections/page-header@complete.twig' %}
-    <div class="layout-container full--until-large">
-      <div class="column__primary bg--white can-be--dark-light u-spacing--double">
+    <div class="l-container l-full--until-large">
+      <div class="l-column--primary u-background-color--white can-be--dark-light u-spacing--double">
 
         <!-- 70/30 section -->
-        <div class="g g-2up--70-30--at-medium u-padding--primary u-spacing">
-          <div class="gi right-gutter--l">
+        <div class="l-grid l-grid--2-col--70-30--at-medium u-padding--primary u-spacing">
+          <div class="l-grid-item right-gutter--l">
             <div class="text u-spacing">
               <h2>Header Two</h2>
               <p>In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.</p>
@@ -15,7 +15,7 @@
               {% include '@atoms/buttons/button.twig' %}
             </div>
           </div>
-          <div class="gi">
+          <div class="l-grid-item">
             {% if fig_1 %}
               {% include '@molecules/media/figure-with-caption.twig' with fig_1 %}
             {% endif %}
@@ -30,13 +30,13 @@
         {% endif %}
 
         <!-- 50/50 section -->
-        <div class="g g-2up--at-medium u-padding--primary u-spacing">
-          <div class="gi">
+        <div class="l-grid l-grid--2-col--at-medium u-padding--primary u-spacing">
+          <div class="l-grid-item">
             {% if fig_2 %}
               {% include '@molecules/media/figure-with-caption.twig' with fig_2 %}
             {% endif %}
           </div>
-          <div class="gi left-gutter--l">
+          <div class="l-grid-item left-gutter--l">
             <div class="text u-spacing">
               <h2>A Heading to Drive Us Home</h2>
               <p>Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium deserunt sed explicabo voluptate sapiente ratione inventore molestiae nihil earum repellat quia odit vitae perspiciatis aliquam amet?</p>
@@ -46,21 +46,21 @@
         </div>
 
         <!-- 33.33 x 3 section -->
-        <div class="g g-3up--at-medium u-padding--primary with-gutters u-spacing">
-          <div class="gi">
+        <div class="l-grid l-grid--3-col--at-medium u-padding--primary with-gutters u-spacing">
+          <div class="l-grid-item">
             <div class="text u-spacing">
               <h2>Thing 1</h2>
               <p>Maecenas eget diam nunc. Phasellus at sem eros, ac suscipit neque. Phasellus sollicitudin libero a odio dignissim scelerisque. Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui. Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div class="gi">
+          <div class="l-grid-item">
             <div class="text u-spacing">
               <h2>Thing 2</h2>
               <p>Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium?</p>
               {% include '@atoms/buttons/button.twig' %}
             </div>
           </div>
-          <div class="gi">
+          <div class="l-grid-item">
             <div class="text u-spacing">
               <h2>Thing 3</h2>
               <p>Aliquam purus nulla, tempor eget ullamcorper quis, rhoncus non dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -75,15 +75,15 @@
         {% endif %}
 
         <!-- 30/70 section -->
-        <div class="g g-2up--70-30--at-medium u-padding--primary flip-columns u-spacing">
-          <div class="gi left-gutter--l">
+        <div class="l-grid l-grid--2-col--70-30--at-medium u-padding--primary l-grid--flip-columns u-spacing">
+          <div class="l-grid-item left-gutter--l">
             <div class="text u-spacing">
               <h2>Header Two</h2>
               <p>In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.</p>
               <p>Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.</p>
             </div>
           </div>
-          <div class="gi">
+          <div class="l-grid-item">
             {% if fig_1 %}
               {% include '@molecules/media/figure-with-caption.twig' with fig_1 %}
             {% endif %}
@@ -94,15 +94,15 @@
         {% include '@molecules/media/breakout-image-with-parallax.twig' %}
 
         <!-- 30/70 section -->
-        <div class="g g-2up--70-30--at-medium u-padding--primary flip-columns u-spacing">
-          <div class="gi left-gutter--l">
+        <div class="l-grid l-grid--2-col--70-30--at-medium u-padding--primary l-grid--flip-columns u-spacing">
+          <div class="l-grid-item left-gutter--l">
             <div class="text u-spacing">
               <h2>Header Two</h2>
               <p>In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.</p>
               <p>Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper.</p>
             </div>
           </div>
-          <div class="gi">
+          <div class="l-grid-item">
             {% if fig_2 %}
               {% include '@molecules/media/figure-with-caption.twig' with fig_2 %}
             {% endif %}
@@ -112,8 +112,8 @@
         <hr>
 
         <!-- 33.33 x 3 section -->
-        <div class="g g-3up--at-medium u-padding--primary with-gutters u-spacing">
-          <div class="gi">
+        <div class="l-grid l-grid--3-col--at-medium u-padding--primary with-gutters u-spacing">
+          <div class="l-grid-item">
             <div class="text u-spacing">
               <h2>Join Us This Saturday</h2>
               <p><strong>Service times:</strong> <br> Sabbath School: 9:30 a.m. <br> Worship Service: 11:00 a.m.</p>
@@ -124,14 +124,14 @@
               </address>
             </div>
           </div>
-          <div class="gi">
+          <div class="l-grid-item">
             <div class="u-image--wrap">
               {% if map %}
                 {% include '@atoms/images/image.twig' with map %}
               {% endif %}
             </div>
           </div>
-          <div class="gi">
+          <div class="l-grid-item">
             <div class="text u-spacing">
               <h2>Contact the Church</h2>
               {% if contact_2 %}
@@ -145,7 +145,7 @@
         </div>
 
       </div>
-    </div> <!-- /.layout-container -->
+    </div> <!-- /.l-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

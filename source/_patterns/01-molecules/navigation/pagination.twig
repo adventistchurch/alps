@@ -17,7 +17,7 @@
 
     {%- for i in max(1, pager.current - pager.surrounding)..min(pager.current + pager.surrounding, pager.totalpages) -%}
       {% if i == pager.current %}
-        <span class="pagination__page pagination__page--current white bg--gray">{{ i }}</span>
+        <span class="pagination__page pagination__page--current white u-background-color--gray">{{ i }}</span>
       {%- else -%}
         <a href="{{ pager.link }}{{ i }}" rel="noindex, follow" class="pagination__page theme--secondary-background-color white">{{ i }}</a>
       {%- endif -%}
