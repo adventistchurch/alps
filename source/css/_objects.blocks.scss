@@ -15,7 +15,7 @@
   > * {
     width: 100%;
   }
-  .round {
+  .u-round {
     width: auto;
   }
 }
@@ -35,16 +35,19 @@
 
 @mixin block-row {
   display: flex;
+
   .block__image-wrap {
     width: 30%;
     max-width: 300px;
     text-align: right;
   }
+
   .block__content {
     width: 70%;
     padding-left: $pad;
     align-self: center;
-    .rtl & {
+
+    .u-rtl & {
       padding-left: 0;
       padding-right: $pad;
     }
@@ -59,12 +62,14 @@
     @include block-row;
   }
 }
+
 // Horizontal block between 'small' and 'medium' viewports.
 .block__row--small-to-medium {
   @include media('>small', '<=medium') {
     @include block-row;
   }
 }
+
 // Horizontal block between 'small' and 'large' viewports.
 .block__row--small-to-large {
   @include media('>small', '<=large') {
@@ -79,7 +84,8 @@
     margin-left: -$space;
     margin-right: -$space;
   }
-  &.shift--reversed:not(.keep-top-space) {
+
+  &.l-shift--reversed:not(.keep-top-space) {
     margin-top: 0;
   }
 }
@@ -90,22 +96,27 @@
 .story-block__image-wrap {
   width: rem(130);
   height: rem(130);
+
   @include media('>small') {
     float: left;
   }
 }
+
 .story-block__content {
   @include media('>small') {
     padding-left: rem(150);
   }
+
   @include media('>medium') {
     padding-left: rem(160);
   }
 }
+
 .story-block__text-image-wrap {
   max-width: rem(200);
   line-height: 1;
   display: block;
+
   @include media('>medium') {
     float: right;
     margin-left: $space;
@@ -150,11 +161,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to bottom, transparent, rgba($black, 0.75) 80%);
+    background: linear-gradient(to bottom, transparent, rgba($c-black, 0.75) 80%);
 
     .block__title-link,
     .block__date {
-      color: $white;
+      color: $c-white;
     }
   }
 }

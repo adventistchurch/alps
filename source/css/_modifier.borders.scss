@@ -5,23 +5,27 @@
 /**
  * Borders/Dividers
  */
-.border {
+.u-border {
   border: $border-style;
+
   &--top {
     border-top: $border-style;
   }
+
   &--bottom {
     border-bottom: $border-style;
   }
+
   &--red {
     border: 1px solid red;
   }
+
   &--light {
-    border-color: $gray-light;
+    border-color: $c-gray--light;
   }
 }
 
-.divider {
+.o-divider {
   display: inline-block;
   border-right: $border-style;
   margin-left: rem(2);
@@ -34,17 +38,12 @@
   vertical-align: middle;
 }
 
-.border--rounded-square {
-  border: $border-style;
-  border-radius: 3px;
-}
-
-.no-border {
+.u-border--none {
   border: none !important;
 }
 
-.border-left--white--at-large {
+.u-border-left--white--at-large {
   @include media('>large') {
-    border-left: 1px solid $white;
+    border-left: 1px solid $c-white;
   }
 }

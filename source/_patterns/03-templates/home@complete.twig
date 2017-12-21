@@ -1,29 +1,29 @@
-<div class="content cf has-aside" role="document">
+<div class="content u-clear-fix has-aside" role="document">
   {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
     {% include '@organisms/sections/hero-carousel.twig' %}
-    <div class="layout-container full--until-large">
+    <div class="l-container l-full--until-large">
     {% if split-callout %}
       {% include '@organisms/sections/split-callout.twig' %}
     {% endif %}
-      <div class="flex-container cf">
-        <div class="shift-left--fluid column__primary bg--white can-be--dark-light no-pad--btm">
+      <div class="l-flex-container u-clear-fix">
+        <div class="l-shift-left--fluid l-column--primary u-background-color--white can-be--dark-light u-padding--zero--bottom">
           {% if has_short_body %}
             {% include '@organisms/content/body-content-short.twig' %}
           {% else %}
             {% include '@organisms/content/body-content.twig' %}
           {% endif %}
-        </div> <!-- /.shift-left--fluid -->
-        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+        </div> <!-- /.l-shift-left--fluid -->
+        <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
           {% if breakout_block %}
             {% include '@molecules/blocks/media-block.twig' with {'media_block_default': breakout_block.media_block_default} %}
           {% endif %}
-          <div class="column__secondary can-be--dark-dark">
+          <div class="l-column--secondary can-be--dark-dark">
             {% include '@organisms/asides/aside.twig' %}
           </div>
-        </div> <!-- /.shift-right--fluid -->
-      </div> <!-- /.flex-container -->
-    </div> <!-- /.layout-container -->
+        </div> <!-- /.l-shift-right--fluid -->
+      </div> <!-- /.l-flex-container -->
+    </div> <!-- /.l-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

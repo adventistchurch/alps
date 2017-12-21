@@ -253,10 +253,10 @@
     $('.theme-swatches--primary .swatch').removeClass('active');
     $(this).addClass('active');
 
-    // Remove any class that starts with "theme--"
+    // Remove any class that starts with "u-theme--"
     $('html').removeClass(function(index, css) {
-      return (css.match (/(^|\s)theme--\S+/g) || []).join(' ');
-    }).addClass('theme--' + thisColor);
+      return (css.match (/(^|\s)u-theme--\S+/g) || []).join(' ');
+    }).addClass('u-theme--' + thisColor);
   });
 
   // Theme switcher for secondary colors
@@ -266,15 +266,15 @@
     $('.theme-swatches--secondary .swatch').removeClass('active');
     $(this).addClass('active');
 
-    // Remove any class that starts with "theme--"
+    // Remove any class that starts with "u-theme--"
     $('body').removeClass(function(index, css) {
-      return (css.match (/(^|\s)theme--\S+/g) || []).join(' ');
-    }).addClass('theme--' + thisColor);
+      return (css.match (/(^|\s)u-theme--\S+/g) || []).join(' ');
+    }).addClass('u-theme--' + thisColor);
   });
 
   // Theme switcher for dark colors
   $('.theme-swatches--dark .swatch').click(function() {
-    $('body').toggleClass('dark');
+    $('body').toggleClass('u-theme--dark');
     $(this).toggleClass('active');
   });
 

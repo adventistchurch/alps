@@ -1,10 +1,10 @@
-<div class="content cf has-aside" role="document">
+<div class="content u-clear-fix has-aside" role="document">
   {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
     {% include '@organisms/sections/page-header@complete.twig' %}
-    <div class="layout-container full--until-large">
-      <div class="flex-container cf">
-        <div class="shift-left--fluid column__primary bg--white no-pad--top no-pad--btm can-be--dark-light">
+    <div class="l-container l-full--until-large">
+      <div class="l-flex-container u-clear-fix">
+        <div class="l-shift-left--fluid l-column--primary u-background-color--white u-padding--zero--top u-padding--zero--bottom can-be--dark-light">
 
           <script type="application/ld+json">
 {
@@ -42,11 +42,11 @@
 </script>
 
 
-<div class="pad--primary spacing column__primary">
+<div class="u-padding--primary u-spacing l-column--primary">
 
   {% include '@organisms/sections/article-header.twig' %}
 
-  <div class="text article__body spacing">
+  <div class="text article__body u-spacing">
 
 
     <p>The Upper Columbia Conference of Seventh-day Adventists dedicated a 1-mile walking trail that meanders through the pine trees on their property in memory of Dr. Jay Randall Sloop, former Health Ministries Director, who died on a mission trip to the Ukraine two years ago. This was a more than fitting tribute to honor a man who challenged everyone he contacted—patients, friends, church members, even the casual acquaintance—to  take seriously their own health: physically, mentally, and spiritually. Exercise was a cornerstone of his everyday life—daily walks on the hills near their home, or a climb on a mountain in the Cascades, and saying to colleagues during a break in meetings, “Come on, let’s walk around the parking lot together!” </p>
@@ -70,31 +70,31 @@
   </div>
 
 
-</div> <!-- /.spacing -->
+</div> <!-- /.u-spacing -->
 
 <hr>
 
-<div class="g g-2up--at-medium with-divider">
-  <div class="gi">
-    <div class="pad pad--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
-  </div> <!-- /.gi -->
-  <div class="gi">
-    <div class="pad pad--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
-  </div> <!-- /.gi -->
+<div class="l-grid l-grid--2-col--at-medium with-divider">
+  <div class="l-grid-item">
+    <div class="u-padding u-padding--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
+  </div> <!-- /.l-grid-item -->
+  <div class="l-grid-item">
+    <div class="u-padding u-padding--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
+  </div> <!-- /.l-grid-item -->
 </div> <!-- /.2up--at-medium -->
 
 
-        </div> <!-- /.shift-left--fluid -->
-        <div class="shift-right--fluid bg--beige can-be--dark-dark">
+        </div> <!-- /.l-shift-left--fluid -->
+        <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
           {% if breakout_block %}
             {% include '@molecules/blocks/media-block.twig' %}
           {%  endif %}
-          <div class="column__secondary can-be--dark-dark">
+          <div class="l-column--secondary can-be--dark-dark">
             {% include '@organisms/asides/aside.twig' %}
           </div>
-        </div> <!-- /.shift-right--fluid -->
-      </div> <!-- /.flex-container -->
-    </div> <!-- /.layout-container -->
+        </div> <!-- /.l-shift-right--fluid -->
+      </div> <!-- /.l-flex-container -->
+    </div> <!-- /.l-container -->
   </main> <!-- /.main -->
   {% include '@organisms/global/footer.twig' %}
 </div> <!-- /.content -->

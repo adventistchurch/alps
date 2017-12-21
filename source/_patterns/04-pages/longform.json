@@ -1,8 +1,8 @@
 {
   "head": {
     "title": "Longform Article - The Official Site of the Seventh-day Adventist world church",
-    "html_class": "pl theme--ming",
-    "body_class": "body theme--cool"
+    "html_class": "pl u-theme--ming",
+    "body_class": "body u-theme--cool"
   },
 
   "page_header_longform": {

@@ -35,11 +35,11 @@
 </script>
 
 
-<div class="pad--primary spacing column__primary">
+<div class="u-padding--primary u-spacing l-column--primary">
 
   {% include '@organisms/sections/article-header.twig' %}
 
-  <div class="text article__body spacing">
+  <div class="text article__body u-spacing">
 
     <h2>Header One, Written with Header Two</h2>
     <ul>
@@ -86,15 +86,15 @@
     <p>Aenean pretium dui eget purus gravida, vitae fringilla diam ultricies. Integer quis pellentesque risus, non maximus mauris. Fusce eu ipsum faucibus, feugiat lorem in, mattis sapien. Curabitur sodales lacus eu mi aliquam convallis. Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.</p>
   </div>
 
-</div> <!-- /.spacing -->
+</div> <!-- /.u-spacing -->
 
 <hr>
 
-<div class="g g-2up--at-medium with-divider">
-  <div class="gi">
-    <div class="pad pad--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
-  </div> <!-- /.gi -->
-  <div class="gi">
-    <div class="pad pad--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class': 'block__row--small-to-medium'} %}</div>
-  </div> <!-- /.gi -->
+<div class="l-grid l-grid--2-col--at-medium with-divider">
+  <div class="l-grid-item">
+    <div class="u-padding u-padding--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class' : 'block__row--small-to-medium'} %}</div>
+  </div> <!-- /.l-grid-item -->
+  <div class="l-grid-item">
+    <div class="u-padding u-padding--primary">{% include '@molecules/blocks/media-block.twig' with {'block_inner_class': 'block__row--small-to-medium'} %}</div>
+  </div> <!-- /.l-grid-item -->
 </div> <!-- /.2up--at-medium -->
