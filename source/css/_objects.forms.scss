@@ -25,11 +25,13 @@ input[type=checkbox] {
   -webkit-appearance: none;
   background-color: $white;
 }
+
 input[type=radio],
 input[type=checkbox] {
   border-width: 2px;
   border-style: solid;
 }
+
 input[type=radio] + label,
 input[type=checkbox] + label {
   display: inline-block;
@@ -45,10 +47,12 @@ input[type=radio] {
 .form--inline {
   display: flex;
   flex-direction: row;
+
   .form-input {
     padding: 0 $pad-half;
   }
 }
+
 .form-group {
   display: block;
   width: 100%;
@@ -60,18 +64,22 @@ input[type=radio] {
  .filter-expand {
    &.filter-is-active {
      cursor: pointer;
+
      .filter-form {
        display: flex;
        padding-bottom: $space;
      }
+
      .filter-toggle:before {
        content: "Hide ";
      }
    }
+
    .filter-toggle:before {
      content: "Show ";
      cursor: pointer;
    }
+
    .filter-options {
      display: flex;
      justify-content: space-between;
@@ -79,21 +87,26 @@ input[type=radio] {
      border-bottom: 1px solid $gray-med;
      padding-bottom: $space-half;
    }
+
    .filter-form {
      display: none;
      align-items: flex-start;
      justify-content: flex-start;
      width: 100%;
      padding-bottom: $pad-half;
+
      @include media('>large') {
        flex-flow: column;
        padding-bottom: 0;
      }
    }
+
    .filter-items {
      margin-right: $space-double;
+
      @include media('>large') {
        margin-right: 0;
+
        &:last-child {
          margin-top: $space;
        }

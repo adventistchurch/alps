@@ -412,139 +412,171 @@
  */
 .text {
   font-family: $font;
-  > p,
-  > ul li,
-  > ol li,
+
+  > blockquote p,
   > dl dd,
   > dl dt,
-  > blockquote p {
+  > ol li,
+  > ul li,
+  > p {
     font-size: rem(16);
     line-height: 1.6;
   }
-  > h1,
+
   > h2,
   > h3,
   > h4,
-  > h5 {
+  > h5,
+  > h1 {
     font-family: $font-secondary;
     font-weight: 600;
     margin-bottom: rem(-5);
     padding-top: $pad-half;
+
     @include media('>large') {
       margin-bottom: rem(-15);
     }
   }
-  > h1,
-  > h2 {
+
+  > h2,
+  > h1 {
     font-size: rem(26);
   }
+
   > h3 {
     font-size: rem(22);
   }
-  > p:empty,
+
   > h2:empty,
-  > h3:empty {
+  > h3:empty,
+  > p:empty {
     display: none;
   }
+
   > ul {
     list-style: disc;
     padding-left: $space;
     margin-bottom: $space;
+
     li {
       margin-bottom: $space-half;
     }
-    ul, ol {
+
+    ol,
+    ul {
       list-style: disc;
       padding-top: rem(6);
       margin-bottom: 0;
       padding-left: $space;
     }
+
     ol {
       list-style: decimal;
     }
   }
+
   > ol {
     list-style: decimal;
     padding-left: $space;
     margin-bottom: $space;
+
     li {
       margin-bottom: $space-half;
     }
-    ol, ul {
+
+    ol,
+    ul {
       list-style: decimal;
       padding-top: rem(6);
       margin-bottom: 0;
       padding-left: $space;
     }
+
     ul {
       list-style: disc;
     }
   }
-  > ul,
-  > ol {
-    @include media('<=large') {
+
+  > ol,
+  > ul {
+    @include media ('<=large') {
       padding-left: $space;
     }
   }
+
   > blockquote:not([class*="quote--"]) {
     clear: both;
     font-size: rem(22);
     padding-top: $pad;
     padding-bottom: $pad;
+
     p {
       line-height: 1.3;
       font-size: rem(24);
       font-weight: 300;
       font-style: normal;
       font-family: $font;
+
       @include media('>medium') {
         font-size: rem(28);
       }
     }
   }
+
   > [class*="quote--"] {
     & > * + * {
       margin-top: rem(verticalSpacing(mobile));
+
       @include media('>large') {
         margin-top: rem(verticalSpacing(desktop));
       }
     }
+
     p {
       display: block;
-      &:before,
-      &:after {
+
+      &:after,
+      &:before {
         display: none;
       }
     }
   }
+
   > .quote--inline {
     border-left-width: rem(6);
     border-left-style: solid;
   }
+
   > .quote--extended {
     background-color: $beige;
-    padding-top: rem(30);
-    padding-bottom: rem(30);
-    padding-left: 0;
-    padding-right: 0;
+    padding: rem(30) 0;
+
     @include media('>medium') {
       padding-top: rem(50);
       padding-bottom: rem(50);
     }
+
     @include media('>xlarge') {
       padding-top: rem(70);
       padding-bottom: rem(70);
     }
-    h2, h3, h4, h5 {
+
+    h2,
+    h3,
+    h4,
+    h5 {
       @include u-font--secondary--m;
     }
+
     p {
       font-style: normal;
     }
   }
+
   p:last-of-type {
     margin-bottom: 0;
   }
+
   code,
   pre {
     font-size: 125%;

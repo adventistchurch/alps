@@ -16,6 +16,7 @@
     padding-top: rem(100);
   }
 }
+
 // Headers with background images
 .header-swath--with-image {
   background-size: cover;
@@ -28,31 +29,36 @@
 // Headers with inner text
 .header-swath--with-text {
   padding-top: 0;
+
   @include media('>medium') {
     padding-top: $pad;
   }
 }
+
 .header__text {
   padding-top: $pad;
   padding-bottom: $pad;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
+
   .unify {
     padding-right: $space;
     align-self: center;
   }
-  .rtl & {
+  .u-rtl & {
     .unify {
       padding-right: 0;
       padding-left: $space;
     }
   }
+
   @include media('>small') {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-end;
   }
+
   @include media('>medium') {
     text-align: right;
   }
@@ -64,6 +70,7 @@
 .comment-list {
   padding-top: $space-half;
   margin-bottom: $space-double;
+
   > li {
     border-top: 1px solid $gray-light;
     padding-top: $pad;
@@ -75,28 +82,35 @@
     }
   }
 }
+
 .comment-form {
   .comment-reply-title {
     margin-bottom: $space-half;
   }
+
   label {
     display: none;
   }
 }
+
 .comment--inner {
   display: flex;
   align-items: flex-start;
 }
+
 .comment__meta {
   margin-bottom: rem(5);
-  .divider {
+
+  .o-divider {
     margin-left: rem(5);
     margin-right: rem(5);
   }
 }
+
 .comment__edit-link {
   margin-left: rem(5);
 }
+
 .comment__avatar {
   margin-right: $space-half;
   display: flex;

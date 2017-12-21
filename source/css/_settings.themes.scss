@@ -159,20 +159,26 @@
 .dark {
   color: $white;
   background-color: $dark-dark;
+
   hr {
     background-color: rgba($white, .2);
   }
+
   .can-be--white {
     color: $white;
   }
+
   .l-grid--2-col--at-medium.with-divider > .l-grid-item:nth-child(odd):after {
     border-right-color: rgba($white, .2);
   }
+
   .can-be--dark-light {
     background-color: $dark-light;
   }
+
   .can-be--dark-dark {
     background-color: $dark-dark;
+
     .o-arrow--down,
     .primary-nav--with-subnav:before {
       border-top-color: $white;
