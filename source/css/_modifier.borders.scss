@@ -47,3 +47,9 @@
     border-left: 1px solid $c-white;
   }
 }
+
+.u-border-left--black--at-large {
+  @include media('>large') {
+    border-left: 1px solid $c-black;
+  }
+}

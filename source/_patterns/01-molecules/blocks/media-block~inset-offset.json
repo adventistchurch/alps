@@ -11,19 +11,19 @@
     "img_break_m": "500",
     "img": {
       "alt": "Alt Text",
-      "src_s": "//unsplash.it/500/375/?random",
-      "src_m": "//unsplash.it/800/450/?random"
+      "src_s": "//placehold.it/500x375",
+      "src_m": "//placehold.it/800x450"
     },
     "has_break_l": {
       "img_break_l": "800",
       "img": {
-        "src_l": "//unsplash.it/1000/400/?random"
+        "src_l": "//placehold.it/1000x550"
       }
     },
     "has_break_xl": {
       "img_break_xl": "1000",
       "img": {
-        "src_xl": "//unsplash.it/1440/500/?random"
+        "src_xl": "//placehold.it/1440x550"
       }
     }
   }

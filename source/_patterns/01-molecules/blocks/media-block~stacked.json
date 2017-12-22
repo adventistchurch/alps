@@ -1,22 +1,25 @@
 {
   "media_block_default": {
-    "block_class": "block__stacked media-block__stacked",
-    "block_content_class": "",
-    "block_title_class": "",
-    "block_meta_class": "",
-    "picture": {
-      "img_break_m": "500",
+    "block_class": "block__stacked media-block__stacked"
+  },
+  "picture": {
+    "img_break_m": "500",
+    "img": {
+      "alt": "Alt Text",
+      "src_s": "//placehold.it/500x375",
+      "src_m": "//placehold.it/800x450"
+    },
+    "has_break_l": {
       "img_break_l": "800",
+      "img": {
+        "src_l": "//placehold.it/1000x550"
+      }
+    },
+    "has_break_xl": {
       "img_break_xl": "1000",
       "img": {
-        "alt": "Alt Text",
-        "src_s": "//placehold.it/500/375/?random",
-        "src_m": "//placehold.it/800/450/?random",
-        "src_l": "//placehold.it/1000/550/?random",
-        "src_xl": "//placehold.it/1440/500/?random"
-      },
-      "has_break_l": true,
-      "has_break_xl": true
+        "src_xl": "//placehold.it/1440x550"
+      }
     }
   }
 }

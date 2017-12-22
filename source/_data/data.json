@@ -633,20 +633,20 @@
 
   "has_hr": true,
 
-  "media_blocks": [{
+  "media_blocks": [
+    {
       "media_block_default": {
         "block_class": "",
-        "title": "Cras at sem at felis rhoncus",
+        "title": "Fusce interdum purus est",
         "img": {
-          "src": "//unsplash.it/500/400/?random",
-          "alt": ""
+          "src": "//unsplash.it/500/380/?random",
+          "alt": "Alt"
         },
-        "datetime": "2017-12-25",
-        "date": "December 25, 2017",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
-        "category": "Culture"
-      },
-      "picture": false
+        "datetime": false,
+        "date": false,
+        "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
+        "cta": "Mauris sit amet"
+      }
     },
     {
       "media_block_default": {

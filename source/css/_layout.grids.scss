@@ -253,13 +253,19 @@
   }
 }
 
+/**
+ * Grid 7up
+ */
 .l-grid--7-col {
   width: 100%;
 
   > * {
-    width: calc(100vw/7);
     padding-left: $pad;
     padding-right: $pad;
+
+    @include media('>medium') {
+      width: calc(100vw/7);
+    }
   }
 
   &--l--offset-1 {
