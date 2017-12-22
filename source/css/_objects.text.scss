@@ -423,11 +423,11 @@
     line-height: 1.6;
   }
 
+  > h1
   > h2,
   > h3,
   > h4,
-  > h5,
-  > h1 {
+  > h5 {
     font-family: $ff-font--secondary;
     font-weight: 600;
     margin-bottom: rem(-5);
@@ -438,8 +438,8 @@
     }
   }
 
-  > h2,
-  > h1 {
+  > h1,
+  > h2 {
     font-size: rem(26);
   }
 

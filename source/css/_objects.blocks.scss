@@ -144,6 +144,7 @@
      justify-content: space-between;
      flex-wrap: wrap;
      flex-direction: column;
+     padding: $pad;
    }
 
    .block__meta {
@@ -164,9 +165,12 @@
   .block__content {
     flex-direction: row;
     position: absolute;
+    justify-content: flex-start;
     bottom: 0;
     left: 0;
     background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
+    padding-left: 0;
+    padding-right: 0;
 
     .block__title-link,
     .block__date {
