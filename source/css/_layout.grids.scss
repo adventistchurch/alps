@@ -264,13 +264,13 @@
     padding-right: $pad;
 
     @include media('>medium') {
-      width: calc(100vw/7);
+      width: calc(100vw / 7);
     }
   }
 
   &--l--offset-1 {
     @include media('>large') {
-      margin-left: calc(100vw/7);
+      margin-left: calc(100vw / 7);
     }
   }
 
@@ -287,23 +287,23 @@
 
     .l-grid-item--m {
       &--1-col {
-        width: calc((100vw/7) *1);
+        width: calc((100vw / 7) * 1);
       }
 
       &--2-col {
-        width: calc((100vw/7) *2);
+        width: calc((100vw / 7) * 2);
       }
 
       &--3-col {
-        width: calc((100vw/7) *3);
+        width: calc((100vw / 7) * 3);
       }
 
       &--4-col {
-        width: calc((100vw/7) *4);
+        width: calc((100vw / 7) * 4);
       }
 
       &--5-col {
-        width: calc((100vw/7) *5);
+        width: calc((100vw / 7) * 5);
       }
     }
   }
@@ -311,19 +311,19 @@
   @include media('>large') {
     .l-grid-item--l {
       &--1-col {
-        width: calc((100vw/7) *1);
+        width: calc((100vw / 7) * 1);
       }
 
       &--2-col {
-        width: calc((100vw/7) *2);
+        width: calc((100vw / 7) * 2);
       }
 
       &--3-col {
-        width: calc((100vw/7) *3);
+        width: calc((100vw / 7) * 3);
       }
 
       &--4-col {
-        width: calc((100vw/7) *4);
+        width: calc((100vw / 7) * 4);
       }
     }
   }
@@ -332,37 +332,37 @@
 .l-grid-wrap {
   @include media('>small') {
     &--1-of-7 {
-      width: calc((100vw/7) *1);
+      width: calc((100vw / 7) * 1);
       overflow: hidden;
     }
 
     &--2-of-7 {
-      width: calc((100vw/7) *2);
+      width: calc((100vw / 7) * 2);
       overflow: hidden;
     }
 
     &--3-of-7 {
-      width: calc((100vw/7) *3);
+      width: calc((100vw / 7) * 3);
       overflow: hidden;
     }
 
     &--4-of-7 {
-      width: calc((100vw/7) *4);
+      width: calc((100vw / 7) * 4);
       overflow: hidden;
     }
 
     &--5-of-7 {
-      width: calc((100vw/7) *5);
+      width: calc((100vw / 7) * 5);
       overflow: hidden;
     }
 
     &--6-of-7 {
-      width: calc((100vw/7) *6);
+      width: calc((100vw / 7) * 6);
       overflow: hidden;
     }
 
     &--7-of-7 {
-      width: calc((100vw/7) *7);
+      width: calc((100vw / 7) * 7);
       overflow: hidden;
     }
   }
