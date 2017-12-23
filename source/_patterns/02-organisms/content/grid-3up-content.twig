@@ -1,22 +1,22 @@
-<div class="spacing--half">
-  <h2 class="font--tertiary--l theme--primary-text-color pad pad-double--top pad-half--btm">{{ heading }}</h2>
+<div class="u-spacing--half">
+  <h2 class="u-font--tertiary--l u-theme--primary-text-color u-padding u-padding--double--top u-padding--half--bottom">{{ heading }}</h2>
   <hr>
 </div>
-<div class="g g-3up--at-medium with-divider {{ grid_class }}">
+<div class="l-grid l-grid--3-col--at-medium with-divider {{ grid_class }}">
   {% for block in media_blocks %}
-    <div class="gi">
-      <div class="spacing">
-        <div class="pad">{% include '@molecules/blocks/media-block.twig' with block %}</div>
+    <div class="l-grid-item">
+      <div class="u-spacing">
+        <div class="u-padding">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if has_hr %}<hr>{% endif %}
       </div>
-    </div> <!-- /.gi -->
+    </div> <!-- /.l-grid-item -->
   {% endfor %}
   {% for block in media_blocks_2 %}
-    <div class="gi">
-      <div class="spacing">
-        <div class="pad">{% include '@molecules/blocks/media-block.twig' with block %}</div>
+    <div class="l-grid-item">
+      <div class="u-spacing">
+        <div class="u-padding">{% include '@molecules/blocks/media-block.twig' with block %}</div>
         {% if has_hr %}<hr>{% endif %}
       </div>
-    </div> <!-- /.gi -->
+    </div> <!-- /.l-grid-item -->
   {% endfor %}
 </div> <!-- /.2up--at-medium -->

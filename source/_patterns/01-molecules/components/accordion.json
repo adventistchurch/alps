@@ -4,7 +4,7 @@
     {
       "accordion_heading": "Episode 1: This is the Accordion",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Episode 1: This is the Accordion",
         "img": {
           "src": "//placehold.it/500x400",
@@ -19,7 +19,7 @@
     {
       "accordion_heading": "Episode 2: Accordion Strikes Back",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Episode 2: Accordion Strikes Back",
         "img": {
           "src": "//placehold.it/500x400",
@@ -34,7 +34,7 @@
     {
       "accordion_heading": "Episode 3: Return of the Accordion",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Episode 3: Return of the Accordion",
         "img": {
           "src": "//placehold.it/500x400",
@@ -49,7 +49,7 @@
     {
       "accordion_heading": "Episode 4: Revenge of the Accordion",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Episode 4: Revenge of the Accordion",
         "img": {
           "src": "//placehold.it/500x400",
@@ -64,7 +64,7 @@
     {
       "accordion_heading": "Episode 5: The Accordion Awakens",
       "media_block_default": {
-        "block_title_class": "font--secondary--m",
+        "block_title_class": "u-font--secondary--m",
         "title": "Episode 5: The Accordion Awakens",
         "img": {
           "src": "//placehold.it/500x400",

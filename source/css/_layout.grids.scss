@@ -5,14 +5,14 @@
 /**
  * Grid Container
  */
-.g {
+.l-grid {
   //overflow: hidden;
 }
 
 /**
  * Grid Item
  */
-.gi {
+.l-grid-item {
   width: 100%;
   img {
     display: block;
@@ -31,12 +31,12 @@
 /**
  * Flip column order
  */
-.flip-columns {
+.l-grid--flip-columns {
   @include media('>medium') {
-    & > .gi:nth-child(1) {
+    & > .l-grid-item:nth-child(1) {
       order: 2;
     }
-    & > .gi:nth-child(2) {
+    & > .l-grid-item:nth-child(2) {
       order: 1;
     }
   }
@@ -45,7 +45,7 @@
 /**
  * Grid Item Held - Check the specific grids below for how long it's held.
  */
-@mixin gi-hold {
+@mixin l-grid-item--hold {
   width: 100%;
   float: none;
   clear: both;
@@ -55,8 +55,8 @@
  * Grid Uniform - For grids that should line up evenly (these grids should not
  * use <hr>'s to separate individual grid items).
  */
-.grid--uniform {
-  > .gi {
+.l-grid--uniform {
+  > .l-grid-item {
     border-bottom: $border-style-light;
   }
 }
@@ -64,8 +64,8 @@
 /**
  * Grid 1up
  */
-.g-1up {
-  .gi {
+.l-grid--1-col {
+  .l-grid-item {
     width: 100%;
   }
 }
@@ -73,25 +73,30 @@
 /**
  * Grid 2up at medium width.
  */
-.g-2up--at-medium {
+.l-grid--2-col--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       width: 50%;
       align-items: stretch;
       display: flex;
       margin-top: 0;
-      * { // Slick slider hack for when a carousel is contained within a flexed element.
+
+      // Slick slider hack for when a carousel is contained within a flexed element.
+      * {
         min-height: 0;
         min-width: 0;
       }
     }
+
     &.with-divider {
-      > .gi:nth-child(odd) {
+      > .l-grid-item:nth-child(odd) {
         position: relative;
+
         &:after {
           content: "";
           position: absolute;
@@ -109,37 +114,45 @@
 /**
  * Grid 3up at medium width.
  */
-.g-3up--at-medium {
+.l-grid--3-col--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       width: 33.3333%;
       align-items: stretch;
       display: flex;
       margin-top: 0;
-      * { // Slick slider hack for when a carousel is contained within a flexed element.
+
+      // Slick slider hack for when a carousel is contained within a flexed element.
+      * {
         min-height: 0;
         min-width: 0;
       }
     }
+
     &.with-gutters {
-      > .gi:nth-child(3n+1) {
+      > .l-grid-item:nth-child(3n+1) {
         padding-right: $pad;
       }
-      > .gi:nth-child(3n+2) {
+
+      > .l-grid-item:nth-child(3n+2) {
         padding-left: $pad-half;
         padding-right: $pad-half;
       }
-      > .gi:nth-child(3n+3) {
+
+      > .l-grid-item:nth-child(3n+3) {
         padding-left: $pad;
       }
     }
+
     &.with-divider {
-      > .gi:nth-child(3n+1), > .gi:nth-child(3n+2) {
+      > .l-grid-item:nth-child(3n+1), > .l-grid-item:nth-child(3n+2) {
         position: relative;
+
         &:after {
           content: "";
           position: absolute;
@@ -157,23 +170,28 @@
 /**
  * Grid 2up at medium width with 70/30 split.
  */
-.g-2up--70-30--at-medium {
+.l-grid--2-col--70-30--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       align-items: stretch;
       display: flex;
       margin-top: 0;
-      * { // Slick slider hack for when a carousel is contained within a flexed element.
+
+      // Slick slider hack for when a carousel is contained within a flexed element.
+      * {
         min-height: 0;
         min-width: 0;
       }
+
       &:first-child {
         width: 70%;
       }
+
       &:last-child {
         width: 30%;
       }
@@ -184,19 +202,22 @@
 /**
  * Grid 2up at medium width with 35/65 split.
  */
-.g-2up--35-65--at-medium {
+.l-grid--2-col--35-65--at-medium {
   @include media('>medium') {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    > .gi {
+
+    > .l-grid-item {
       float: left;
       align-items: stretch;
       display: flex;
       margin-top: 0;
+
       &:first-child {
         width: 35%;
       }
+
       &:last-child {
         width: 65%;
       }
@@ -204,15 +225,15 @@
   }
 }
 
-
 /**
  * Grid always 2 columns even
  */
-.g-2-split {
+.l-grid--2-col--split {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  > .gi {
+
+  > .l-grid-item {
     float: left;
     width: 50%;
     display: flex;
@@ -221,34 +242,178 @@
   }
 }
 
-
 /**
  * Grid 4up
  */
-.g-4up {
-  > .gi {
-    margin-bottom: $space;
-  }
-  @include mq($px450) {
-    display: flex;
-    margin-left: -$pad-half;
-    margin-right: -$pad-half;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    > .gi {
-      float: left;
-      padding-left: $pad-half;
-      padding-right: $pad-half;
-      width: 50%;
-      display: flex;
+.l-grid--4-col {
+  width: 100%;
 
+  > * {
+    width: 25%;
+  }
+}
+
+/**
+ * Grid 7up
+ */
+.l-grid--7-col {
+  width: 100%;
+
+  > * {
+    padding-left: $pad;
+    padding-right: $pad;
+
+    @include media('>medium') {
+      width: calc(100vw / 7);
     }
   }
-  @include mq($px800) {
-    > .gi {
-      width: 25%;
-      margin-bottom: $space-double;
+
+  &--l--offset-1 {
+    @include media('>large') {
+      margin-left: calc(100vw / 7);
     }
   }
+
+  .l-grid-item--s {
+    &--1-col {
+      width: 100%;
+    }
+  }
+
+  @include media('>medium') {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .l-grid-item--m {
+      &--1-col {
+        width: calc((100vw / 7) * 1);
+      }
+
+      &--2-col {
+        width: calc((100vw / 7) * 2);
+      }
+
+      &--3-col {
+        width: calc((100vw / 7) * 3);
+      }
+
+      &--4-col {
+        width: calc((100vw / 7) * 4);
+      }
+
+      &--5-col {
+        width: calc((100vw / 7) * 5);
+      }
+    }
+  }
+
+  @include media('>large') {
+    .l-grid-item--l {
+      &--1-col {
+        width: calc((100vw / 7) * 1);
+      }
+
+      &--2-col {
+        width: calc((100vw / 7) * 2);
+      }
+
+      &--3-col {
+        width: calc((100vw / 7) * 3);
+      }
+
+      &--4-col {
+        width: calc((100vw / 7) * 4);
+      }
+    }
+  }
+}
+
+.l-grid-wrap {
+  @include media('>small') {
+    &--1-of-7 {
+      width: calc((100vw / 7) * 1);
+      overflow: hidden;
+    }
+
+    &--2-of-7 {
+      width: calc((100vw / 7) * 2);
+      overflow: hidden;
+    }
+
+    &--3-of-7 {
+      width: calc((100vw / 7) * 3);
+      overflow: hidden;
+    }
+
+    &--4-of-7 {
+      width: calc((100vw / 7) * 4);
+      overflow: hidden;
+    }
+
+    &--5-of-7 {
+      width: calc((100vw / 7) * 5);
+      overflow: hidden;
+    }
+
+    &--6-of-7 {
+      width: calc((100vw / 7) * 6);
+      overflow: hidden;
+    }
+
+    &--7-of-7 {
+      width: calc((100vw / 7) * 7);
+      overflow: hidden;
+    }
+  }
+}
+
+.l-grid-container--7-col {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    width: calc(100% - (2 * var(--offset)));
+    //max-width: var(--max_width);
+    min-height: 100vh;
+    content: '';
+    background-image: var(--background-columns);
+    background-size: var(--background-width) 100%;
+    z-index: 1000;
+    pointer-events: none;
+  }
+}
+
+/* Variables to display grid lines (for development only) */
+:root {
+  --offset: rem(0);
+  --max_width: rem(1024);
+  --columns: 7;
+  --gutter: rem(1);
+  --color: hsla(204, 80%, 72%, 0.25);
+  --line-thickness: rem(20);
+}
+
+:root {
+  --repeating-width: calc(100% / var(--columns));
+  --column-width: calc((100% / var(--columns)) - var(--gutter));
+  --background-width: calc(100% + var(--gutter));
+  --background-columns: repeating-linear-gradient(
+   to right,
+   var(--color),
+   var(--color) var(--line-thickness),
+   transparent var(--line-thickness),
+   transparent calc(var(--column-width) - var(--line-thickness)),
+   var(--color) calc(var(--column-width) - var(--line-thickness)),
+   var(--color) var(--column-width),
+   transparent var(--column-width),
+   transparent var(--repeating-width)
+ );
 }

@@ -5,49 +5,64 @@
 /**
  * Display Classes
  */
-.dib {
+.u-display--inline-block {
   display: inline-block;
 }
-.db {
+
+.u-display--block {
   display: block;
 }
-.dt {
+
+.u-display--table {
   display: table;
-}
-.dtc {
-  display: table-cell;
 }
 
 // Specific Widths - visible greater than #
-.show-at--small {
+.u-hide-until--s {
   @include media('<=small') {
     display: none;
   }
 }
-.show-at--medium {
+
+.u-hide-until--m {
   @include media('<=medium') {
     display: none;
   }
 }
-.show-at--large {
+
+.u-hide-until--l {
   @include media('<=large') {
     display: none;
   }
 }
 
+.u-hide-until--l {
+  @include media('<=xlarge') {
+    display: none;
+  }
+}
+
 // Specific Widths - hide greater than #
-.show-until--small {
+.u-hide-after--s {
   @include media('>small') {
     display: none;
   }
 }
-.show-until--medium {
+
+.u-hide-after--m {
   @include media('>medium') {
     display: none;
   }
 }
-.show-until--large {
+
+.u-hide-after--l {
   @include media('>large') {
+    display: none;
+  }
+}
+
+.u-hide-after--xl {
+  @include media('>xlarge') {
     display: none;
   }
 }

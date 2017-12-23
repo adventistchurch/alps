@@ -1,19 +1,18 @@
-/*------------------------------------*\
+/* ------------------------------------*\
     $MEDIA QUERY TESTS
-\*------------------------------------*/
-
+\*------------------------------------ */
 @if $tests == true {
   body {
-    &:before {
+    &::before {
       display: block;
       position: fixed;
       z-index: 100000;
       background: black;
       bottom: 0;
       right: 0;
-      padding: .5em 1em;
+      padding: 0.5em 1em;
       content: 'No Media Query';
-      color: transparentize(#fff,.25);
+      color: transparentize(#fff, 0.25);
       border-top-left-radius: 10px;
       font-size: (12/16)+em;
 
@@ -21,14 +20,15 @@
         display: none;
       }
     }
-    &:after {
+
+    &::after {
       display: block;
       position: fixed;
       height: 5px;
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: (100000-1);
+      z-index: (100000);
       content: '';
       background: black;
 
@@ -38,71 +38,78 @@
     }
 
     @include media('>xsmall') {
-      &:before {
+      &::before {
         content: 'xsmall: 350px';
       }
-      &:before,
-      &:after {
+
+      &::after,
+      &::before {
         background: dodgerblue;
       }
     }
 
     @include media('>small') {
-      &:before {
-        content: 'small: 400px';
+      &::before {
+        content: 'small: 500px';
       }
-      &:before,
-      &:after {
+
+      &::after,
+      &::before {
         background: darkseagreen;
       }
     }
 
     @include media('>medium') {
-      &:before {
-        content: 'medium: 650px';
+      &::before {
+        content: 'medium: 700px';
       }
-      &:before,
-      &:after {
+
+      &::after,
+      &::before {
         background: lightcoral;
       }
     }
 
     @include media('>large') {
-      &:before {
+      &::before {
         content: 'large: 900px';
       }
-      &:before,
-      &:after {
+
+      &::after,
+      &::before {
         background: mediumvioletred;
       }
     }
 
     @include media('>xlarge') {
-      &:before {
+      &::before {
         content: 'xlarge: 1100px';
       }
-      &:before,
-      &:after {
+
+      &::after,
+      &::before {
         background: hotpink;
       }
     }
 
     @include media('>xxlarge') {
-      &:before {
+      &::before {
         content: 'xxlarge: 1300px';
       }
-      &:before,
-      &:after {
+
+      &::after,
+      &::before {
         background: orangered;
       }
     }
 
     @include media('>xxxlarge') {
-      &:before {
+      &::before {
         content: 'xxxlarge: 1400px';
       }
-      &:before,
-      &:after {
+
+      &::after,
+      &::before {
         background: dodgerblue;
       }
     }

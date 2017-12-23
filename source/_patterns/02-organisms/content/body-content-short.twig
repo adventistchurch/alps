@@ -1,14 +1,14 @@
-<div class="spacing--double flex h--100p">
+<div class="u-spacing--double u-flex u-height--100p">
 
-  <div class="content-blocks spacing--double">
+  <div class="content-blocks u-spacing--double">
     {% for block in content_blocks %}
-    <div class="pad--primary spacing--half text">
-      <h3 class="brown font--tertiary--l">{{ text.heading  | raw}}</h3>
-      <p>{{ block.text.description | raw }} {% if block.text.cta %} <a href="{{ block.url }}" class="font--secondary--s upper"><strong>{{ block.text.cta | raw}}</strong></a> {% endif %}</p>
+    <div class="u-padding--primary u-spacing--half text">
+      <h3 class="u-color--brown u-font--tertiary--l">{{ text.heading  | raw}}</h3>
+      <p>{{ block.text.description | raw }} {% if block.text.cta %} <a href="{{ block.url }}" class="u-font--secondary--s u-text-transform--upper"><strong>{{ block.text.cta | raw}}</strong></a> {% endif %}</p>
     </div>
     <hr>
     {% endfor %}
   </div>
 
-  {% include '@molecules/blocks/story-block.twig' with {'block_class': 'flex--end'} %}
+  {% include '@molecules/blocks/story-block.twig' with {'block_class': 'u-flex--end'} %}
 </div>

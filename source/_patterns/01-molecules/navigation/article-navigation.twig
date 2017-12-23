@@ -1,16 +1,16 @@
 {% if article_nav %}
-<nav id="article-nav" class="article-nav theme--secondary-background-color toggled-element" data-active-target="article-nav">
-  <div class="layout-container">
+<nav id="article-nav" class="article-nav u-theme--secondary-background-color toggled-element" data-active-target="article-nav">
+  <div class="l-container">
     <div class="article-nav__inner">
       <div class="dropdown">
-        <div class="dropdown__label font--secondary--s upper js-toggle-parent white">News Menu <span class="dropdown__arrow dib arrow--down border-top--white va--middle"></span></div>
-        <ul class="article-nav__list dropdown__options theme--secondary-background-color">
+        <div class="dropdown__label u-font--secondary--s u-text-transform--upper js-toggle-parent u-color--white">News Menu <span class="dropdown__arrow u-display--inline-block o-arrow--down border-top--white u-vertical-align--middle"></span></div>
+        <ul class="article-nav__list dropdown__options u-theme--secondary-background-color">
           {% for item in article_nav.items %}
             <li class="article-nav__list-item dropdown__item {% if item.has_subnav %} article-nav--with-subnav js-hover {% endif %}" {% if item.has_subnav %} data-prefix="hover" {% endif %}>
-              <a class="article-nav__link dropdown__item-link white {% if item.is_active %} active {% endif %}" href="{{ item.url }}">{{ item.text }}</a>
+              <a class="article-nav__link dropdown__item-link u-color--white {% if item.is_active %} active {% endif %}" href="{{ item.url }}">{{ item.text }}</a>
               {% if item.has_subnav %}
-                <div class="article-nav__subnav__arrow va--middle js-toggle-parent"><span class="arrow--down"></span></div>
-                <ul class="article-nav__subnav theme--secondary-background-color">
+                <div class="article-nav__subnav__arrow u-vertical-align--middle js-toggle-parent"><span class="o-arrow--down"></span></div>
+                <ul class="article-nav__subnav u-theme--secondary-background-color">
                   {% for sub_item in item.sub_items %}
                     <li class="article-nav__subnav__list-item"><a class="article-nav__subnav__link {% if sub_item.sub_items_is_active %} active {% endif %}" href="{{ sub_item.url }}">{{ sub_item.text }}</a></li>
                   {% endfor %}
@@ -20,8 +20,8 @@
           {% endfor %}
         </ul> <!-- /.article-nav__list -->
       </div>
-      <div class="article-nav__search cf">{% include '@molecules/forms/search.twig' %}</div>
+      <div class="article-nav__search u-clear-fix">{% include '@molecules/forms/search.twig' %}</div>
     </div>
-  </div> <!-- /.layout-container -->
+  </div> <!-- /.l-container -->
 </nav> <!-- /.article-nav -->
 {% endif %}
