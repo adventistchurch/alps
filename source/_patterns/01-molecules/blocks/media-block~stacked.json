@@ -6,7 +6,7 @@
     "img_break_m": "500",
     "img": {
       "alt": "Alt Text",
-      "src_s": "//placehold.it/500x375",
+      "src_s": "//placehold.it/600x330",
       "src_m": "//placehold.it/800x450"
     },
     "has_break_l": {
@@ -18,7 +18,7 @@
     "has_break_xl": {
       "img_break_xl": "1000",
       "img": {
-        "src_xl": "//placehold.it/1440x550"
+        "src_xl": "//placehold.it/1440x500"
       }
     }
   }

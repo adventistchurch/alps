@@ -162,13 +162,13 @@
         "img_break_m": "500",
         "img": {
           "alt": "Alt Text",
-          "src_s": "//unsplash.it/500/375/?random",
+          "src_s": "//unsplash.it/600/330/?random",
           "src_m": "//unsplash.it/800/450/?random"
         },
         "has_break_l": {
           "img_break_l": "800",
           "img": {
-            "src_l": "//unsplash.it/1000/400/?random"
+            "src_l": "//unsplash.it/1000/550/?random"
           }
         },
         "has_break_xl": {
@@ -195,21 +195,16 @@
         "img_break_m": "500",
         "img": {
           "alt": "Alt Text",
-          "src_s": "//unsplash.it/500/375/?random",
+          "src_s": "//unsplash.it/600/330/?random",
           "src_m": "//unsplash.it/800/450/?random"
         },
         "has_break_l": {
           "img_break_l": "800",
           "img": {
-            "src_l": "//unsplash.it/1000/400/?random"
+            "src_l": "//unsplash.it/1000/550/?random"
           }
         },
-        "has_break_xl": {
-          "img_break_xl": "1000",
-          "img": {
-            "src_xl": "//unsplash.it/1440/500/?random"
-          }
-        }
+        "has_break_xl": false
       }
     },
     {
@@ -228,21 +223,11 @@
         "img_break_m": "500",
         "img": {
           "alt": "Alt Text",
-          "src_s": "//unsplash.it/500/375/?random",
+          "src_s": "//unsplash.it/600/330/?random",
           "src_m": "//unsplash.it/800/450/?random"
         },
-        "has_break_l": {
-          "img_break_l": "800",
-          "img": {
-            "src_l": "//unsplash.it/1000/400/?random"
-          }
-        },
-        "has_break_xl": {
-          "img_break_xl": "1000",
-          "img": {
-            "src_xl": "//unsplash.it/1440/500/?random"
-          }
-        }
+        "has_break_l": false,
+        "has_break_xl": false
       }
     },
     {
@@ -261,21 +246,155 @@
         "img_break_m": "500",
         "img": {
           "alt": "Alt Text",
-          "src_s": "//unsplash.it/500/375/?random",
+          "src_s": "//unsplash.it/600/330/?random",
           "src_m": "//unsplash.it/800/450/?random"
         },
-        "has_break_l": {
-          "img_break_l": "800",
-          "img": {
-            "src_l": "//unsplash.it/1000/400/?random"
-          }
+        "has_break_l": false,
+        "has_break_xl": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_img_class": "l-grid-item--s--1-col l-grid-item--m--4-col",
+        "block_content_class": "l-grid-item--s--1-col l-grid-item--m--2-col",
+        "block_title_class": "",
+        "block_meta_class": "",
+        "title": "Nulla finibus ligula ut nisl facilisis",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+        "category": "Culture",
+        "datetime": "2017-12-28",
+        "date": "December 28, 2017"
+      },
+      "picture": {
+        "img_break_m": "500",
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "//unsplash.it/600/330/?random",
+          "src_m": "//unsplash.it/800/450/?random"
         },
-        "has_break_xl": {
-          "img_break_xl": "1000",
-          "img": {
-            "src_xl": "//unsplash.it/1440/500/?random"
-          }
-        }
+        "has_break_l": false,
+        "has_break_xl": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "block--reversed media-block--reversed l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_img_class": "l-grid-item--s--1-col l-grid-item--m--4-col",
+        "block_content_class": "l-grid-item--s--1-col l-grid-item--m--2-col u-border-left--black--at-large",
+        "block_title_class": "",
+        "block_meta_class": "",
+        "title": "Nulla finibus ligula ut nisl facilisis",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+        "category": "Culture",
+        "datetime": "2017-12-28",
+        "date": "December 28, 2017"
+      },
+      "picture": {
+        "img_break_m": "500",
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "//unsplash.it/600/330/?random",
+          "src_m": "//unsplash.it/800/450/?random"
+        },
+        "has_break_l": false,
+        "has_break_xl": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "block--reversed media-block--reversed l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_img_class": "l-grid-item--s--1-col l-grid-item--m--2-col",
+        "block_content_class": "l-grid-item--s--1-col l-grid-item--m--4-col u-border-left--black--at-large",
+        "block_title_class": "",
+        "block_meta_class": "",
+        "title": "Nulla finibus ligula ut nisl facilisis",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+        "category": "Culture",
+        "datetime": "2017-12-28",
+        "date": "December 28, 2017"
+      },
+      "picture": {
+        "img_break_m": "500",
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "//unsplash.it/600/330/?random",
+          "src_m": "//unsplash.it/800/450/?random"
+        },
+        "has_break_l": false,
+        "has_break_xl": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "block--reversed media-block--reversed l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_img_class": "l-grid-item--s--1-col l-grid-item--m--1-col",
+        "block_content_class": "l-grid-item--s--1-col l-grid-item--m--5-col u-border-left--black--at-large",
+        "block_title_class": "",
+        "block_meta_class": "",
+        "title": "Nulla finibus ligula ut nisl facilisis",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+        "category": "Culture",
+        "datetime": "2017-12-28",
+        "date": "December 28, 2017"
+      },
+      "picture": {
+        "img_break_m": "500",
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "//unsplash.it/600/330/?random",
+          "src_m": "//unsplash.it/800/450/?random"
+        },
+        "has_break_l": false,
+        "has_break_xl": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "block--reversed media-block--reversed l-grid-wrap--4-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_img_class": "l-grid-item--s--1-col l-grid-item--m--2-col",
+        "block_content_class": "l-grid-item--s--1-col l-grid-item--m--2-col u-border-left--black--at-large",
+        "block_title_class": "",
+        "block_meta_class": "",
+        "title": "Nulla finibus ligula ut nisl facilisis",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+        "category": "Culture",
+        "datetime": "2017-12-28",
+        "date": "December 28, 2017"
+      },
+      "picture": {
+        "img_break_m": "500",
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "//unsplash.it/600/330/?random",
+          "src_m": "//unsplash.it/800/450/?random"
+        },
+        "has_break_l": false,
+        "has_break_xl": false
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "block--reversed media-block--reversed l-grid-wrap--3-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_img_class": "l-grid-item--s--1-col l-grid-item--m--1-col",
+        "block_content_class": "l-grid-item--s--1-col l-grid-item--m--2-col u-border-left--black--at-large",
+        "block_title_class": "",
+        "block_meta_class": "",
+        "title": "Nulla finibus ligula ut nisl facilisis",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+        "category": "Culture",
+        "datetime": "2017-12-28",
+        "date": "December 28, 2017"
+      },
+      "picture": {
+        "img_break_m": "500",
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "//unsplash.it/600/330/?random",
+          "src_m": "//unsplash.it/800/450/?random"
+        },
+        "has_break_l": false,
+        "has_break_xl": false
       }
     }
   ]

@@ -139,6 +139,10 @@
    display: flex;
    flex-direction: row;
 
+    > * {
+      padding: 0;
+    }
+
    .block__content {
      display: flex;
      justify-content: space-between;
@@ -150,6 +154,16 @@
    .block__meta {
      display: flex;
      justify-content: flex-start;
+   }
+
+   &--reversed {
+     > div:first-child {
+       order: 1;
+     }
+
+     > div:last-child {
+       order: 0;
+     }
    }
  }
 

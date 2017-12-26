@@ -305,6 +305,10 @@
       &--5-col {
         width: calc((100vw / 7) * 5);
       }
+
+      &--6-col {
+        width: calc((100vw / 7) * 6);
+      }
     }
   }
 
@@ -324,6 +328,14 @@
 
       &--4-col {
         width: calc((100vw / 7) * 4);
+      }
+
+      &--5-col {
+        width: calc((100vw / 7) * 5);
+      }
+
+      &--6-col {
+        width: calc((100vw / 7) * 6);
       }
     }
   }
