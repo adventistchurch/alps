@@ -137,7 +137,11 @@
  */
  .media-block {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
+
+   @include media('>small') {
+     flex-direction: row;
+   }
 
     > * {
       padding: 0;
@@ -157,12 +161,14 @@
    }
 
    &--reversed {
-     > div:first-child {
-       order: 1;
-     }
+     @include media('>small') {
+       > div:first-child {
+         order: 1;
+       }
 
-     > div:last-child {
-       order: 0;
+       > div:last-child {
+         order: 0;
+       }
      }
    }
  }
