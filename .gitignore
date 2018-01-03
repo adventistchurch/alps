@@ -3,6 +3,7 @@
 .sass-cache/
 *.css.map
 /public
+/v2
 /vendor
 /source--mustache
 /source/drupal-patterns

@@ -15,21 +15,21 @@
     <script src="//cdn.adventist.org/alps/2/latest/js/head-script.min.js" type="text/javascript"></script>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="/public/styleguide/css/styleguide.css?1472759460" media="all" />
-	  <link rel="stylesheet" href="/public/styleguide/css/styleguide-specific.css?1472759460" media="all" />
-	  <link rel="stylesheet" href="/public/styleguide/css/vendor/prism.css?1472759460" media="all" />
+    <link rel="stylesheet" href="/v2/styleguide/css/styleguide.css?1472759460" media="all" />
+	  <link rel="stylesheet" href="/v2/styleguide/css/styleguide-specific.css?1472759460" media="all" />
+	  <link rel="stylesheet" href="/v2/styleguide/css/vendor/prism.css?1472759460" media="all" />
 
 	  <!-- Custom ALPS styleguide styles. -->
-	  <link rel="stylesheet" href="/public/styleguide/css/styleguide-custom.css?1472759460" media="all" />
+	  <link rel="stylesheet" href="/v2/styleguide/css/styleguide-custom.css?1472759460" media="all" />
 
     <!-- End Pattern Lab -->
-    <link rel="icon" href="/public/favicon.ico" />
+    <link rel="icon" href="/v2/favicon.ico" />
   </head>
   <body class="body theme--warm">
 
     <div class="layout-container spacing pre-header active">
       <div class="alps-logo-wrap">
-        <a href="/" class="alps-logo"><img src="/public/images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
+        <a href="/" class="alps-logo"><img src="/v2/images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
       </div>
       <div class="sg-introduction rel">
         <div class="cf flex-container">
@@ -38,9 +38,9 @@
               <h1 class="font--tertiary--l">Welcome to the Adventist Living Pattern System</h1>
               <p>We are glad you found ALPS. Take a look around, and see what you think. There is lots to explore. You can find <a href="https://github.com/adventistchurch/alps/">the code on Github</a>, check it out, <a href="https://github.com/adventistchurch/alps/issues">file issues</a>, and create pull requests. This code belongs to the Adventist church. It&rsquo;s ours!</p>
               <p>The Adventist Living Pattern System (ALPS) is a set of design patterns created by the Seventh-day Adventist Church for use around the world by Adventist churches, schools, and organizational units. The purpose of ALPS is to make it easy for our church to create good looking sites that promote the brand of the church, while allowing for individuality and customization of each site.</p>
-              <p> As you browse through the pages of this site, you will see examples of patterns for different types of pages. From <a href="/public/?p=pages-home">home pages</a> to <a href="/public/?p=pages-channel-main-with-image">channel pages</a>, to <a href="/public/?p=pages-basic-page-with-image">basic pages</a>, ALPS is designed to be beautiful, fast and flexible, while maintaining a consistent brand across the sites that use it.</p>
+              <p> As you browse through the pages of this site, you will see examples of patterns for different types of pages. From <a href="/v2/?p=pages-home">home pages</a> to <a href="/v2/?p=pages-channel-main-with-image">channel pages</a>, to <a href="/v2/?p=pages-basic-page-with-image">basic pages</a>, ALPS is designed to be beautiful, fast and flexible, while maintaining a consistent brand across the sites that use it.</p>
               <p>Take a look for yourself!</p>
-              <a href="/public/" class="btn theme--secondary-background-color link--white">View the Adventist Living Pattern System</a>
+              <a href="/v2/" class="btn theme--secondary-background-color link--white">View the Adventist Living Pattern System</a>
               <h2 class="font--tertiary--l">Include in Your Project</h2>
               <p>Want to include ALPS in your project? The Adventist church is making the CSS and Javascript needed to build an ALPS site available via a public CDN. All you need to do to implement the latest styles is to link the files provides below and you will be up to date.</p>
               <p>Here are the links you need to make it happen.</p>
@@ -92,7 +92,7 @@
     </footer> <!-- /.footer -->
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script src="/public/styleguide/js/vendor/prism.js"></script>
+    <script src="/v2/styleguide/js/vendor/prism.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
     <script src="//cdn.adventist.org/alps/2/latest/js/script.min.js" type="text/javascript"></script>
 

@@ -16,7 +16,7 @@ patternStates:
 styleGuideExcludes: 'templates,pages'
 cacheBusterOn: 'true'
 exportDir: export
-publicDir: public
+publicDir: v2
 sourceDir: source
 defaultPattern: pages-start-page
 defaultShowPatternInfo: false
@@ -24,11 +24,9 @@ ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
     - hay
-    - disco
-    - rand
 styleguideKit: pattern-lab/styleguidekit-twig-default
 styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
-lineageMatch: '{%([ ]+)?include( |\()[&quot;\&#039;]([A-Za-z0-9-_]+)[&quot;\&#039;](\))?(.*)%}'
+lineageMatch: '{%([ ]+)?(?:include|extends|embed)( |\()[&quot;\&#039;]([\/.@A-Za-z0-9-_]+)[&quot;\&#039;]([\s\S+]*?)%}'
 lineageMatchKey: 3
 patternExtension: twig
 twigDebug: false
