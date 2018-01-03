@@ -55,8 +55,8 @@ module.exports = function(grunt) {
           sourceMap: true,
         },
         files: {
-          'v2/css/dev.css': 'source/css/dev.scss',
-          'v2/styleguide/css/styleguide.min.css': 'source/css/styleguide.scss'
+          'public/v2/css/dev.css': 'source/css/dev.scss',
+          'public/v2/styleguide/css/styleguide.min.css': 'source/css/styleguide.scss'
         }
       },
       prod: {
@@ -91,8 +91,8 @@ module.exports = function(grunt) {
           compress: false
         },
         files: {
-          'v2/js/head-script.min.js': ['<%= jsHeadFiles %>'],
-          'v2/js/script.min.js': ['<%= jsFootFiles %>']
+          'public/v2/js/head-script.min.js': ['<%= jsHeadFiles %>'],
+          'public/v2/js/script.min.js': ['<%= jsFootFiles %>']
         }
       },
       prod: {
@@ -114,7 +114,7 @@ module.exports = function(grunt) {
           expand: true, // Enable dynamic expansion
           cwd: 'source/images/', // cwd is 'current working directory' - Src matches are relative to this path
           src: ['**/*.{png,jpg,gif}'], // Actual patterns to match
-          dest: 'v2/images/' // Destination path prefix
+          dest: 'public/v2/images/' // Destination path prefix
         }]
       }
     },
@@ -129,7 +129,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'source/',
             src: ['<%= copyFiles %>'],
-            dest: 'v2/',
+            dest: 'public/v2/',
             filter: 'isFile'
           }
         ]
@@ -148,7 +148,7 @@ module.exports = function(grunt) {
           // This is used to include the actual code into the code samples
           {
             expand: true,
-            cwd: 'v2/patterns/',
+            cwd: 'public/v2/patterns/',
             src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
             dest: '../igs-guidelines/_includes/patterns/',
             rename: function(dest, src) {
@@ -160,7 +160,7 @@ module.exports = function(grunt) {
           // Needs to be here in order to generate into the '_site' directory.
           {
             expand: true,
-            cwd: 'v2/patterns/',
+            cwd: 'public/v2/patterns/',
             src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
             dest: '../igs-guidelines/patterns/',
             rename: function(dest, src) {
@@ -170,28 +170,28 @@ module.exports = function(grunt) {
           // Export css directory to IGS css directory
           {
             expand: true,
-            cwd: 'v2/css/',
+            cwd: 'public/v2/css/',
             src: ['**/*'],
             dest: '../igs-guidelines/css'
           },
           // Export js directory to IGS js directory
           {
             expand: true,
-            cwd: 'v2/js/',
+            cwd: 'public/v2/js/',
             src: ['**/*'],
             dest: '../igs-guidelines/js'
           },
           // Export images directory to IGS images directory
           {
             expand: true,
-            cwd: 'v2/images/',
+            cwd: 'public/v2/images/',
             src: ['**/*'],
             dest: '../igs-guidelines/images'
           },
           // Export styleguide directory to IGS styleguide directory
           {
             expand: true,
-            cwd: 'v2/styleguide/',
+            cwd: 'public/v2/styleguide/',
             src: ['**/*'],
             dest: '../igs-guidelines/styleguide'
           }
@@ -220,13 +220,13 @@ module.exports = function(grunt) {
       dist: {
         files: [{
             expand: true,
-            cwd: 'v2/patterns/',
+            cwd: 'public/v2/patterns/',
             src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
             dest: '../igs-guidelines/_includes/patterns/'
           },
           {
             expand: true,
-            cwd: 'v2/patterns/',
+            cwd: 'public/v2/patterns/',
             src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
             dest: '../igs-guidelines/patterns/'
           }
@@ -300,7 +300,7 @@ module.exports = function(grunt) {
         browsers: ['last 4 versions', 'ie 9']
       },
       dev: {
-        src: 'v2/css/*.css'
+        src: 'public/v2/css/*.css'
       },
       prod: {
         src: 'cdn/<%= major_version %>/<%= version %>/css/*.css'
@@ -339,10 +339,10 @@ module.exports = function(grunt) {
     browserSync: {
       bsFiles: {
         src: [
-          'v2/css/*.css',
-          'v2/**/*.html',
-          'v2/**/*.js',
-          'v2/**/*.{svg,png,jpg,gif}'
+          'public/v2/css/*.css',
+          'public/v2/**/*.html',
+          'public/v2/**/*.js',
+          'public/v2/**/*.{svg,png,jpg,gif}'
         ]
       },
       options: {
