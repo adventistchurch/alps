@@ -6,40 +6,48 @@
  * Layout containers - keep content centered and within a maximum width. Also
  * adjusts left and right padding as the viewport widens.
  */
-.layout-container {
+
+.l-container {
   max-width: $max-width;
   margin: 0 auto;
   position: relative;
   padding-left: $pad;
   padding-right: $pad;
   width: 100%;
+
   @include media('>large') {
     padding-left: $pad;
     padding-right: $pad;
   }
+
   @include media('>xxlarge') {
     padding-left: 0;
     padding-right: 0;
   }
 }
-.layout-container--s {
+
+.l-container--s {
   max-width: rem(650);
 }
-.layout-container--s-m {
+
+.l-container--s-m {
   max-width: rem(700);
 }
-.layout-container--m {
+
+.l-container--m {
   max-width: rem(800);
 }
-.layout-container--l {
+
+.l-container--l {
   max-width: rem(1000);
 }
-.layout-container--xl {
+
+.l-container--xl {
   max-width: rem(1250);
 }
 
 // Stretch out of layout container.
-.full--until-large {
+.l-full--until-large {
   @include media('<=large') {
     padding-left: 0;
     padding-right: 0;
@@ -49,68 +57,72 @@
 /**
  * Wrapping element to keep content contained and centered.
  */
-.wrap {
+.l-wrap {
   max-width: $max-width;
   margin: 0 auto;
 }
-
-// 16:9
-.intrinsic-ratio--16-9 {
-  @include aspect-ratio(16, 9);
-}
-
 
 /*------------------------------------*\
     $LAYOUTS
 \*------------------------------------*/
 
-.column__primary {
+.l-column--primary {
   padding-top: $pad-and-half;
   padding-bottom: $pad;
+
   @include media('>medium') {
     padding-top: $pad-double;
   }
+
   @include media('>large') {
     padding-bottom: $pad-double;
   }
+
   @include media('>xlarge') {
     padding-top: rem(80);
   }
 }
-.column__secondary {
+
+.l-column--secondary {
   padding-top: $pad-and-half;
   padding-bottom: $pad-and-half;
-  background-color: $beige;
+  background-color: $c-beige;
+
   @include media('>medium') {
     padding-top: $pad-double;
     padding-bottom: $pad-double;
   }
 }
+
 // Padding for main content column
-.pad--primary {
+.u-padding--primary {
   padding-left: $pad;
   padding-right: $pad;
+
   @include media('>large') {
     padding-left: rem(60);
     padding-right: rem(60);
   }
 }
+
 // Padding for secondary column
-.pad--secondary {
+.u-padding--secondary {
   padding-left: $pad;
   padding-right: $pad;
+
   @include media('>large') {
     padding-left: $pad-double;
     padding-right: $pad-double;
   }
 }
-.pad--secondary--for-breakouts {
+
+.u-padding--secondary--for-breakouts {
   padding: $pad-and-half;
+
   @include media('>large') {
     padding: rem(50);
   }
 }
-
 
 /*------------------------------------*\
     $LAYOUT SHIFTERS
@@ -119,20 +131,24 @@
 /**
  * Shift at 900px (large breakpoint) with fluid left and right columns.
  */
-.flex-container {
+.l-flex-container {
   @include media('>large') {
     display: flex;
     align-items: stretch;
   }
 }
-.shift-left--fluid {
+
+.l-shift-left--fluid {
   width: 100%;
+
   @include media('>large') {
     width: 68%;
   }
 }
-.shift-right--fluid {
+
+.l-shift-right--fluid {
   width: 100%;
+
   @include media('>large') {
     width: 31%;
   }
@@ -141,9 +157,10 @@
 /**
  * Reverse the column and row of any shift layout.
  */
-.shift--reversed {
+.l-shift--reversed {
   display: flex;
   flex-wrap: wrap;
+
   @include media('>large') {
     flex-direction: row-reverse;
   }
@@ -152,19 +169,23 @@
 /**
  * Shift at 900px (large breakpoint) with static right rail.
  */
-.shift-left--static {
+.l-shift-left--static {
   width: 100%;
+
   @include media('>large') {
     margin-right: rem(-300);
   }
 }
-.shift-left--inner--static {
+
+.l-shift-left--inner--static {
   @include media('>large') {
     margin-right: rem(300);
   }
 }
-.shift-right--static {
+
+.l-shift-right--static {
   width: 100%;
+
   @include media('>large') {
     width: rem(300);
     position: relative;

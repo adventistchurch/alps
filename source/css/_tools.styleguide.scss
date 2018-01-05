@@ -8,7 +8,6 @@
  * These styles will not be your production CSS.
  */
 
-
 /* Style Guide Interface Colors */
 $sg-primary : #222;
 $sg-secondary : #808080;
@@ -40,9 +39,7 @@ $sg-bp-small-2 : 30em;
 $sg-bp-med : 48em;
 $sg-bp-large : 72em;
 $sg-bp-xl : 80em;
-
 $animate-quick: 0.2s;
-
 
 // Demo to show grid system - in this stylesheet because it shouldn't be included in the production styles
 .demo {
@@ -50,7 +47,7 @@ $animate-quick: 0.2s;
   margin-bottom: 1rem;
 }
 
-.demo .gi, .demo .demo-block {
+.demo .l-grid-item, .demo .demo-block {
   background: $sg-tertiary;
   color: $sg-secondary;
   text-align: center;
@@ -62,7 +59,7 @@ $animate-quick: 0.2s;
     background: $sg-secondary;
   }
 
-  .gi {
+  .l-grid-item {
     background: $sg-tone;
     color: $sg-tertiary;
 
@@ -101,8 +98,6 @@ $animate-quick: 0.2s;
   }
 }
 
-
-
 // Style Guide color swatches
 .sg-colors {
   overflow: hidden;
@@ -135,7 +130,6 @@ $animate-quick: 0.2s;
     height: 4em;
     margin-bottom: 0.2em;
   }
-
 }
 
 .sg-label {
@@ -145,13 +139,16 @@ $animate-quick: 0.2s;
 .sg-annotation-toggle {
   display: none;
 }
+
 .sg-code-head {
   color: $sg-quaternary;
 }
+
 .sg-code {
   display: none !important;
   color: lighten(#e6db74, 10);
   background-color: #272822;
+
   pre {
     border-color: $sg-quaternary;
     font-size: rem(18);
@@ -160,7 +157,6 @@ $animate-quick: 0.2s;
     padding-bottom: 0;
   }
 }
-
 
 /**
  *  * Color Containers
@@ -173,41 +169,39 @@ $animate-quick: 0.2s;
 .colorset--color {
   flex: 0 1 20%;
   flex-direction: column;
-  border: 1px $gray-light solid;
+  border: 1px $c-gray--light solid;
   padding: 5px;
 }
 
 .sg-label--color{
   display: block;
-  color: $gray;
+  color: $c-gray;
 }
+
 .sg-label--block{
   display: inline-block;
   margin-right: .25em;
-  background: $gray-light;
+  background: $c-gray--light;
   padding: 4px;
   font-size: 10px;
   border-radius: 5px;
 }
 
-
 /*
  Flexbox Grid
  */
-
 .sg-grid{
   display: flex;
   flex-direction: row;
 
-  .sg-grid-1of2{
+  .sg-grid-1of2 {
     max-width: 50%;
     flex-basis: 50%;
-
   }
 }
 
 code.sg-codesample{
-  background-color: $gray-light;
+  background-color: $c-gray--light;
   display: block;
   margin-bottom: 1em;
   border-radius: 0.5em;

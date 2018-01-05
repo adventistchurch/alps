@@ -5,20 +5,24 @@
 .footer {
   text-align: center;
 }
+
 .footer__unify-nav-desc,
 .footer__legal {
   padding: $pad;
-  @include mq($xlarge) {
+
+  @include media('>xlarge') {
     padding-left: 0;
     padding-right: 0;
   }
 }
+
 .footer__unify-nav-desc {
-  @include mq($medium) {
+  @include media('>medium') {
     padding-top: $pad-and-half;
     padding-bottom: $pad-and-half;
   }
-  @include mq($xlarge) {
+
+  @include media('>xlarge') {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,80 +34,97 @@
 .footer__nav-link,
 .footer__desc-text {
   font-size: rem(13);
-  @include mq($xlarge) {
+
+  @include media('>xlarge') {
     font-size: rem(12);
   }
 }
+
 .footer__logo {
-  @include mq($large) {
+  @include media('>large') {
     margin-right: $space-half;
   }
 }
+
 .footer__desc {
-  @include mq($large) {
+  @include media('>large') {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
 .footer__logo {
   width: rem(50);
   height: rem(45);
 }
+
 .footer__nav-item {
   margin: rem(5);
 }
+
 .footer__legal__inner {
-  @include mq($large) {
+  @include media('>large') {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
   }
 }
+
 .footer__legal-links {
   white-space: nowrap;
 }
+
 .footer__unify-copyright-address {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  @include mq($large) {
+
+  @include media('>large') {
     text-align: left;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  @include mq($xlarge) {
+
+  @include media('>xlarge') {
     flex-wrap: nowrap;
   }
 }
+
 .footer__copyright {
-  @include mq($large) {
+  @include media('>large') {
     width: 100%;
   }
-  @include mq($xlarge) {
+
+  @include media('>xlarge') {
     margin-right: $space;
     width: auto;
   }
 }
+
 .footer__address {
-  @include mq($large) {
+  @include media('>large') {
     margin-right: $space-half;
   }
-  @include mq($xlarge) {
+
+  @include media('>xlarge') {
     margin-right: $space;
   }
 }
+
 .footer__phone {
   font-size: rem(13);
-  @include mq($large) {
+
+  @include media('>large') {
     font-size: rem(11);
   }
+
   &:hover {
-    color: $white;
+    color: $c-white;
     text-decoration: underline;
   }
 }

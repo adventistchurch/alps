@@ -1,36 +1,35 @@
-<div class="search__results spacing--one-and-half">
-  <div class="search__options pad--primary no-pad--btm spacing--half">
+<div class="search__results u-spacing--one-and-half">
+  <div class="search__options u-padding--primary u-padding--zero--bottom u-spacing--half">
     <form action="" role="search" method="get" class="search__results__form ">
       <fieldset>
         <legend class="is-vishidden">Search</legend>
         <div class="field-container field-container--inline">
-          <input type="search" name="s" class="search__results__input font--secondary--s" value="Keyword" />
-          <button class="search__submit font--secondary--s upper theme--secondary-background-color">Search</button> <!-- /.search-form__submit -->
+          <input type="search" name="s" class="search__results__input u-font--secondary--s" value="Keyword" />
+          <button class="search__submit u-font--secondary--s u-text-transform--upper u-theme--secondary-background-color">Search</button> <!-- /.search-form__submit -->
         </div> <!-- /.field-container -->
       </fieldset>
     </form> <!-- /.search-form -->
-    <div class="search__filters spacing--half">
-      <h3 class="font--secondary--m upper">Narrow Search</h3>
-      <ul class="bullet-list spacing--quarter theme--primary-text-color">
-        <li class="font--primary--s"><a href="">News</a> (1326)</li>
-        <li class="font--primary--s"><a href="">Articles</a> (18)</li>
-        <li class="font--primary--s"><a href="">Pages</a> (16)</li>
-        <li class="font--primary--s"><a href="">Video Episodes</a> (4)</li>
-        <li class="font--primary--s"><a href="">Photos</a> (122)</li>
+    <div class="search__filters u-spacing--half">
+      <h3 class="u-font--secondary--m u-text-transform--upper">Narrow Search</h3>
+      <ul class="o-bullet-list u-spacing--quarter u-theme--primary-text-color">
+        <li class="u-font--primary--s"><a href="">News</a> (1326)</li>
+        <li class="u-font--primary--s"><a href="">Articles</a> (18)</li>
+        <li class="u-font--primary--s"><a href="">Pages</a> (16)</li>
+        <li class="u-font--primary--s"><a href="">Video Episodes</a> (4)</li>
+        <li class="u-font--primary--s"><a href="">Photos</a> (122)</li>
       </ul>
     </div> <!-- /.search__filters -->
   </div>
   <hr>
-  <div class="spacing--one-and-half">
+  <div class="u-spacing--one-and-half">
     {% for result in search_results %}
-      <div class="pad--primary no-pad--top no-pad--btm spacing--half text">
-        <h3 class="brown font--tertiary--l theme--primary-text-color"><a href="">{{ result.text.heading | raw}}</a></h3>
+      <div class="u-padding--primary u-padding--zero--top u-padding--zero--bottom u-spacing--half text">
+        <h3 class="u-color--brown u-font--tertiary--l u-theme--primary-text-color"><a href="">{{ result.text.heading | raw}}</a></h3>
         <p>{{ result.text.description | raw }}</p>
-        {% if result.text.cta %}<a href="{{ result.url }}" class="btn font--secondary--s upper theme--secondary-background-color"><strong>{{ result.text.cta | raw }}</strong></a> {% endif %}
+        {% if result.text.cta %}<a href="{{ result.url }}" class="o-btn u-font--secondary--s u-text-transform--upper u-theme--secondary-background-color"><strong>{{ result.text.cta | raw }}</strong></a> {% endif %}
       </div>
       <hr>
     {% endfor %}
     {% include '@molecules/navigation/pagination.twig' %}
   </div>
 </div> <!-- /.search__results -->
-

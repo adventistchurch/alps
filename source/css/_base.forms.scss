@@ -1,11 +1,12 @@
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
-
 form {
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
 }
-form ol, form ul {
+
+form ol,
+form ul {
   list-style: none;
   margin-left: 0;
 }
@@ -22,20 +23,27 @@ fieldset {
   min-width: 0;
 }
 
-label {}
-
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
-  font-family: $font-secondary;
+  font-family: $ff-font--secondary;
 }
 
-input[type=text], input[type=password], input[type=email], input[type=search], input[type=url], input[type=number], textarea {
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=text],
+input[type=url],
+textarea {
   width: 100%;
   border: $border-style;
   padding: rem(15);
   -webkit-appearance: none;
-  -webkit-border-radius: 0px;
+  -webkit-border-radius: 0;
 }
 
 input[type="checkbox"],
@@ -60,20 +68,25 @@ input[type="search"]::-webkit-search-decoration {
 .field-container {
   margin-bottom: $space;
 }
+
 .field-container--inline {
   @include media('>small') {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   > input {
     width: 100%;
+
     @include media('>small') {
       width: calc(80% - 20px);
     }
   }
+
   > button {
     width: 100%;
+
     @include media('>small') {
       width: 20%;
       padding-left: 0;
@@ -86,8 +99,9 @@ input[type="search"]::-webkit-search-decoration {
  * Validation
  */
 .has-error {
-  border-color: $error !important;
+  border-color: $c-error !important;
 }
+
 .is-valid {
-  border-color: $valid !important;
+  border-color: $c-valid !important;
 }
