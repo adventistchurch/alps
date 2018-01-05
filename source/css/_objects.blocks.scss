@@ -162,13 +162,7 @@
 
    &--reversed {
      @include media('>small') {
-       > div:first-child {
-         order: 1;
-       }
-
-       > div:last-child {
-         order: 0;
-       }
+       flex-direction: row-reverse;
      }
    }
  }
