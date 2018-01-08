@@ -2,7 +2,6 @@
  * CONTENTS
  *
  * SETTINGS
- * Bourbon..............Simple/lighweight SASS library - http://bourbon.io/
  * Variables............Globally-available variables and config.
  * Themes...............Theme settings for different color treatments.
  *
@@ -54,7 +53,6 @@
  * Borders..............Various borders and divider styles.
  * Colors...............Text and background colors.
  * Display..............Show and hide and breakpoint visibility rules.
- * Filters..............CSS filters styles.
  * Spacings.............Padding and margins in classes.
  *
  * THIRD PARTY
@@ -64,13 +62,10 @@
  * Helper Classes.......Helper classes loaded last in the cascade.
  */
 
-$output-bourbon-deprecation-warnings: false !default;
 /*------------------------------------*\
     $SETTINGS
 \*------------------------------------*/
-@import "bourbon";
 @import "settings.variables";
-
 
 /*------------------------------------*\
     $TOOLS
@@ -79,12 +74,10 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "tools.include-media";
 @import "settings.themes";
 
-
 /*------------------------------------*\
     $GENERIC
 \*------------------------------------*/
 @import "generic.reset";
-
 
 /*------------------------------------*\
     $BASE
@@ -98,7 +91,6 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "base.tables";
 @import "base.text";
 
-
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
@@ -109,7 +101,6 @@ $output-bourbon-deprecation-warnings: false !default;
     $TEXT
 \*------------------------------------*/
 @import "objects.text";
-
 
 /*------------------------------------*\
     $COMPONENTS
@@ -124,7 +115,6 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "objects.sections";
 @import "objects.forms";
 
-
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
@@ -134,7 +124,6 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "module.sidebar";
 @import "module.main";
 
-
 /*------------------------------------*\
     $MODIFIERS
 \*------------------------------------*/
@@ -142,16 +131,13 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "modifier.borders";
 @import "modifier.colors";
 @import "modifier.display";
-@import "modifier.filters";
 @import "modifier.spacing";
-
 
 /*------------------------------------*\
     $THIRD PARTY
 \*------------------------------------*/
 @import "vendor.modaal";
 @import "vendor.slick";
-
 
 /*------------------------------------*\
     $TRUMPS

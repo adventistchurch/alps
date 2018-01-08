@@ -7,7 +7,7 @@
 /**
  * Grid & Baseline Setup
  */
-$fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
+$ff-fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
 $rembase: 16; // 16px = 1.00rem
 $max-width-px: 1150;
@@ -16,78 +16,64 @@ $max-width: rem($max-width-px) !default;
 /**
  * Colors
  */
-$white: #fff;
-$black: #000;
-$error: #f00;
-$valid: #089e00;
-$warning: #fff664;
-$information: #000db5;
-$overlay: rgba($black, .9);
-$overlay-light: rgba($black, .76);
-$gray: lighten($black, 50);
-$gray-light: lighten($black, 90);
-$gray-med: lighten($black, 70);
-$gray-dark: lighten($black, 20);
+$c-white: #fff;
+$c-black: #000;
+$c-error: #f00;
+$c-valid: #089e00;
+$c-warning: #fff664;
+$c-information: #000db5;
+$c-overlay: rgba($c-black, .9);
+$c-overlay--light: rgba($c-black, .76);
+$c-gray: lighten($c-black, 50);
+$c-gray--light: lighten($c-black, 90);
+$c-gray--medium: lighten($c-black, 70);
+$c-gray--dark: lighten($c-black, 20);
 
 /**
  * Style Colors
  */
-$body-color: #4f5254;
-$blue: #438390;
-$brown: #514b41;
-$brown-med: #68635a;
-$brown-light: #ebe8df;
-$red: #ef3d25;
-$orange: #f9b000;
-$beige: #fbf9f3;
-$tan: #efe9d7;
+$c-body-color: #4f5254;
+$c-blue: #438390;
+$c-brown: #514b41;
+$c-brown--medium: #68635a;
+$c-brown--light: #ebe8df;
+$c-red: #ef3d25;
+$c-orange: #f9b000;
+$c-beige: #fbf9f3;
+$c-tan: #efe9d7;
 
 /**
  * Theme Colors (Primary)
  */
-$emperor: #4b207f;
-$earth: #5e3929;
-$grapevine: #7f264a;
-$denim: #2f557f;
-$campfire: #e36520;
-$treefrog: #448d21;
-$ming: #3e8391;
+$c-emperor: #4b207f;
+$c-earth: #5e3929;
+$c-grapevine: #7f264a;
+$c-denim: #2f557f;
+$c-campfire: #e36520;
+$c-treefrog: #448d21;
+$c-ming: #3e8391;
 
 /**
  * Theme Colors (Secondary)
  */
-$cool: #4d7549;
-$warm: #ffa92d;
+$c-cool: #4d7549;
+$c-warm: #ffa92d;
 
 /**
  * Theme Colors (Dark)
  */
-$dark-light: #303030;
-$dark-dark: #252525;
-
-/**
- * Social Colors
- */
-$twitter-blue: #13C4F8;
-$facebook-blue: #4A66A3;
-$instagram-blue: #48769F;
-$instagram-brown: #5f4132;
-$pinterest-red: #BD081C;
-$youtube-red: #B31217;
-$google-red: $youtube-red;
+$c-dark--light: #303030;
+$c-dark--dark: #252525;
 
 /**
  * Typography
  */
-$font: 'Noto Sans', Georgia, Times, "Times New Roman", serif;
-$font-serif: $font;
-$font-secondary: 'Noto Serif', "Helvetica", "Arial", sans-serif;
-$font-tertiary: $font-secondary;
-$font-sans: $font-secondary;
-$sans: "Helvetica", "Arial", sans-serif;
-$serif: Georgia, Times, "Times New Roman", serif;
-$monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
-$font-monospace: $monospace;
+$ff-font: 'Noto Sans', Georgia, Times, "Times New Roman", serif;
+$ff-font--secondary: 'Noto Serif', "Helvetica", "Arial", sans-serif;
+$ff-font--tertiary: $ff-font--secondary;
+$ff-font--serif: $ff-font;
+$ff-font--sans: $ff-font--secondary;
+$ff-font--monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
 
 /**
  * Animation
@@ -97,94 +83,56 @@ $cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 /**
  * Default Spacing/Padding
  */
-$space: rem(20);
+$space: 1.25rem;
 $space-and-half: $space*1.5;
 $space-double: $space*2;
 $space-quad: $space*4;
 $space-half: $space/2;
-$pad: rem(20);
+$pad: 1.25rem;
 $pad-and-half: $pad*1.5;
 $pad-double: $pad*2;
 $pad-half: $pad/2;
 $pad-quarter: $pad/4;
-
-// uses verticalSpacing(key) function
-$verticalSpacing: (
-  mobile: 20,
-  desktop: 30
-);
+$pad-triple: $pad*3;
+$pad-quad: $pad*4;
 
 /**
  * Border Styles
  */
 $border-med: 6px;
 $border-thick: 8px;
-$border-opacity: 1px solid rgba($white, .2);
-$border-style: 1px solid $gray;
-$border-style-blue: 1px solid $blue;
-$border-style-thick: 3px solid $gray-light;
-$border-style-light: 1px solid $gray-light;
-$border-style-dark: 1px solid $black;
-
-/**
- * Breakpoints
- */
-$px350: (350/$defaultpx) + 0em;
-$px400: (400/$defaultpx) + 0em;
-$px401: (401/$defaultpx) + 0em;
-$px450: (450/$defaultpx) + 0em;
-$px500: (500/$defaultpx) + 0em;
-$px550: (550/$defaultpx) + 0em;
-$px600: (600/$defaultpx) + 0em;
-$px650: (650/$defaultpx) + 0em;
-$px651: (651/$defaultpx) + 0em;
-$px700: (700/$defaultpx) + 0em;
-$px750: (750/$defaultpx) + 0em;
-$px800: (800/$defaultpx) + 0em;
-$px850: (850/$defaultpx) + 0em;
-$px900: (900/$defaultpx) + 0em;
-$px901: (901/$defaultpx) + 0em;
-$px950: (950/$defaultpx) + 0em;
-$px1000: (1000/$defaultpx) + 0em;
-$px1050: (1050/$defaultpx) + 0em;
-$px1100: (1100/$defaultpx) + 0em;
-$px1101: (1101/$defaultpx) + 0em;
-$px1150: (1150/$defaultpx) + 0em;
-$px1200: (1200/$defaultpx) + 0em;
-$px1250: (1250/$defaultpx) + 0em;
-$px1300: (1300/$defaultpx) + 0em;
-$px1301: (1301/$defaultpx) + 0em;
-$px1400: (1400/$defaultpx) + 0em;
-$px1450: (1450/$defaultpx) + 0em;
-$px1500: (1500/$defaultpx) + 0em;
-$px1501: (1501/$defaultpx) + 0em;
+$border-opacity: 1px solid rgba($c-white, .2);
+$border-style: 1px solid $c-gray;
+$border-style-blue: 1px solid $c-blue;
+$border-style-thick: 3px solid $c-gray--light;
+$border-style-light: 1px solid $c-gray--light;
+$border-style-dark: 1px solid $c-black;
 
 /**
  * Common Breakpoints
  */
-$small: $px400;
-$medium: $px700;
-$large: $px900;
-$xlarge: $px1100;
-$xxlarge: $px1300;
-$xxxlarge: $px1500;
+$xsmall: 350px;
+$small: 500px;
+$medium: 700px;
+$large: 900px;
+$xlarge: 1100px;
+$xxlarge: 1300px;
+$xxxlarge: 1500px;
 
-// uses px width / base font width to return a value in em units
 $breakpoints: (
-  xsmall:   $px350,
-  small:    $small,
-  medium:   $medium,
-  large:    $large,
-  xlarge:   $xlarge,
-  xxlarge:  $xxlarge,
-  xxxlarge: $xxxlarge
+  'xsmall': $xsmall,
+  'small': $small,
+  'medium': $medium,
+  'large': $large,
+  'xlarge': $xlarge,
+  'xxlarge': $xxlarge,
+  'xxxlarge': $xxxlarge
 );
 
 /**
  * Element Specific Dimensions
  */
+$article-max: rem(950);
 $sidebar-width: 320;
 $small-header-height: 60;
-$wide-header-height: 82;
-$split-col1: (354/$defaultpx) + 0em; // Right padding for split layout with fixed sidebar
-$split-col2: (300/$defaultpx) + 0em; // Fixed width of right column
+$wide-header-height: 80;

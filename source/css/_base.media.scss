@@ -9,18 +9,22 @@ img, video, object, svg, iframe {
   max-width: 100%;
   border: none;
 }
+
 svg {
   max-height: 100%;
 }
+
 picture,
 picture img {
   display: block;
 }
+
 figure {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
+
 figcaption {
   a {
     display: block;
@@ -42,13 +46,16 @@ figcaption {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -60,11 +67,13 @@ figcaption {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -72,19 +81,28 @@ figcaption {
   thead {
     display: table-header-group;
   }
-  tr, img {
+
+  tr,
+  img {
     page-break-inside: avoid;
   }
+
   img {
     max-width: 100% !important;
   }
-  p, h2, h3 {
+
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     page-break-after: avoid;
   }
+
   .no-print,
   #header,
   #footer,
@@ -92,4 +110,3 @@ figcaption {
     display: none;
   }
 }
-

@@ -6,7 +6,8 @@
  * Text-Related Elements
  */
 p {
-  @include text-styles;
+  @include p;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -15,7 +16,8 @@ p {
 /**
  * Bold
  */
-strong, b {
+strong,
+b {
   font-weight: 600;
 }
 
@@ -29,6 +31,7 @@ blockquote {
   position: relative;
   quotes: "\201C""\201D""\2018""\2019";
   padding-left: $pad;
+
   p {
     font-size: rem(24);
     line-height: 1.3;
@@ -37,12 +40,15 @@ blockquote {
     font-style: italic;
     text-indent: rem(25);
     margin-top: $space;
+
     &:first-child {
       margin-top: 0;
     }
+
     &:after {
       content: close-quote;
     }
+
     &:before {
       content: open-quote;
       position: absolute;
@@ -58,15 +64,16 @@ blockquote {
 hr {
   height: 1px;
   border: none;
-  background-color: $gray-light;
+  background-color: $c-gray--light;
   margin: 0;
-  @include center-block;
+
+  @include u-center-block;
 }
 
 /**
  * Abbreviation
  */
 abbr {
-  border-bottom: 1px dotted $gray;
+  border-bottom: 1px dotted $c-gray;
   cursor: help;
 }

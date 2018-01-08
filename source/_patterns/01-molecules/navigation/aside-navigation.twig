@@ -1,18 +1,18 @@
 {% if aside_nav %}
-<nav class="bg--tan aside-nav pad--secondary column__secondary can-be--dark-dark" id="aside-nav" role="navigation">
-  <div class="spacing">
+<nav class="u-background-color--tan aside-nav u-padding--secondary l-column--secondary can-be--dark-dark" id="aside-nav" role="navigation">
+  <div class="u-spacing">
     {% if aside_nav.category_nav %}
-      <ul class="aside-nav__list spacing--quarter">
+      <ul class="aside-nav__list u-spacing--quarter">
         {% for item in aside_nav.category_nav.items %}
-          <li class="aside-nav__list-item rel"><a class="aside-nav__link theme--primary-text-color font--primary--xs" href="{{ url }}">{{ item.text }}</a></li>
+          <li class="aside-nav__list-item u-position--relative"><a class="aside-nav__link u-theme--primary-text-color u-font--primary--xs" href="{{ url }}">{{ item.text }}</a></li>
         {% endfor %}
       </ul> <!-- /.aside-nav__list -->
     {% endif %}
-    <hr class="theme--primary-transparent-background-color--30">
+    <hr class="u-theme--primary-transparent-background-color--30">
     {% if aside_nav.social_nav %}
-      <ul class="aside-nav__list spacing--quarter">
+      <ul class="aside-nav__list u-spacing--quarter">
         {% for item in aside_nav.social_nav.items %}
-          <li class="aside-nav__list-item rel"><a class="aside-nav__link theme--primary-text-color font--primary--xs" href="{{ url }}"><span class="icon icon--s va--tbtm">{{ item.icon | raw }}</span> {{ item.text }}</a></li>
+          <li class="aside-nav__list-item u-position--relative"><a class="aside-nav__link u-theme--primary-text-color u-font--primary--xs" href="{{ url }}"><span class="u-icon u-icon--s u-vertical-align--text-bottom">{{ item.icon | raw }}</span> {{ item.text }}</a></li>
         {% endfor %}
       </ul> <!-- /.aside-nav__list -->
     {% endif %}

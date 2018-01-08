@@ -2,46 +2,54 @@
 .theme-switcher {
   position: fixed;
   left: 0;
-  background-color: $white;
+  background-color: $c-white;
   bottom: 0;
-  box-shadow: 0 0 3px rgba($black, .2);
+  box-shadow: 0 0 3px rgba($c-black, .2);
   border-top-right-radius: 3px;
-  .rtl & {
+
+  .u-rtl & {
     direction: ltr;
   }
 }
+
 .theme-swatches {
   margin-bottom: 5px;
   display: inline-block;
 }
+
 .theme-swatches--primary {
   margin-right: $space-half;
 }
+
 .swatch {
   height: 15px;
   width: 15px;
   display: inline-block;
   cursor: pointer;
-  box-shadow: 0 0 0 rgba($black, 0);
-  outline: 1px solid rgba($white, 0);
+  box-shadow: 0 0 0 rgba($c-black, 0);
+  outline: 1px solid rgba($c-white, 0);
   transition: all .3s ease-out;
+
   &.active {
-    box-shadow: 0 3px 5px rgba($black, .5);
-    outline: 1px solid $white;
+    box-shadow: 0 3px 5px rgba($c-black, .5);
+    outline: 1px solid $c-white;
     transition: all .3s ease-out;
   }
 }
+
 .theme-switcher-heading {
   font-size: 10px;
   margin-bottom: 8px;
-  color: $black;
+  color: $c-black;
 }
+
 .theme-heading {
   font-size: 9px;
   margin-bottom: 4px;
   text-transform: uppercase;
-  color: $black;
+  color: $c-black;
 }
+
 .alps-start-page {
   .theme-switcher {
     display: none;

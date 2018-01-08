@@ -1,17 +1,17 @@
 {% if story_block_default %}
-<div class="story-block block spacing--half pad {{ story_block_default.block_class }}" style="background-image: url({{ story_block_default.bg_img }})">
-  <div class="story-block__image-wrap round">
+<div class="story-block block u-spacing--half u-padding {{ story_block_default.block_class }}" style="background-image: url({{ story_block_default.bg_img }})">
+  <div class="story-block__image-wrap u-round">
     <img class="story-block__image" src="{{ story_block_default.img.src }}" alt="{{ story_block_default.img.alt }}" />
   </div>
-  <div class="story-block__content spacing">
+  <div class="story-block__content u-spacing">
     <div>
-      <h2 class="story-block__heading font--secondary--l theme--secondary-text-color">{{ story_block_default.title }}</h2>
-      {% if story_block_default.subtitle %}<p class="font--secondary--xs white">{{ story_block_default.subtitle }}</p>{% endif %}
+      <h2 class="story-block__heading u-font--secondary--l u-theme--secondary-text-color">{{ story_block_default.title }}</h2>
+      {% if story_block_default.subtitle %}<p class="u-font--secondary--xs u-color--white">{{ story_block_default.subtitle }}</p>{% endif %}
     </div>
-    <div class="spacing">
-      <div class="text story-block__description block__description white">
+    <div class="u-spacing">
+      <div class="text story-block__description block__description u-color--white">
         {% if story_block_default.text_img %}
-          <a class="story-block__text-image-wrap space-half--btm" href="{{ story_block_default.url }}">
+          <a class="story-block__text-image-wrap u-space--half--bottom" href="{{ story_block_default.url }}">
             {% if story_block_default.is_video %}<div class="is-video">{% endif %}
             <img class="story-block__text-image" src="{{ story_block_default.text_img.src }}" alt="{{ story_block_default.text_img.alt }}" />
             {% if story_block_default.is_video %}</div>{% endif %}
@@ -20,9 +20,9 @@
         {{ story_block_default.description | raw }}
       </div>
       {% if story_block_default.cta %}
-        <p><a class="story-block__cta block__cta btn theme--secondary-background-color" href="{{ story_block_default.url }}">{{ story_block_default.cta }}</a></p>
+        <p><a class="story-block__cta block__cta o-btn u-theme--secondary-background-color" href="{{ story_block_default.url }}">{{ story_block_default.cta }}</a></p>
       {% endif %}
-    </div> <!-- /.spacing -->
+    </div> <!-- /.u-spacing -->
   </div> <!-- story-block__content -->
 </div> <!-- /.story-block -->
 {% endif %}

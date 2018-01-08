@@ -3,9 +3,9 @@
 \*------------------------------------*/
 
 body {
-  background: $white;
-  font: 400 100%/1.3 $font-sans;
+  background: $c-white;
+  font: 400 100%/1.3 $ff-font--sans;
   -webkit-text-size-adjust: 100%;
-  color: $body-color;
+  color: $c-body-color;
   overflow-x: hidden;
 }

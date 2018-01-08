@@ -4,22 +4,34 @@
 
 a {
   text-decoration: none;
-  color: $gray-dark;
+  color: $c-gray--dark;
   transition: all .3s ease-out;
+
   &:hover, &:focus {
     text-decoration: none;
-    color: $blue;
+    color: $c-blue;
   }
+
   p {
-    color: $gray-dark;
+    color: $c-gray--dark;
   }
+
   > .icon {
     margin-right: 4px;
   }
 }
-.hover {
+
+.u-link--underline {
   text-decoration: underline;
+
   &:hover {
     text-decoration: none;
+  }
+}
+
+.u-link-hover--white,
+.u-link-hover--white a {
+  &:hover {
+    color: $c-white !important;
   }
 }

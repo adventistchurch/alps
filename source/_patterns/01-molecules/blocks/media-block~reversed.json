@@ -1,0 +1,17 @@
+{
+  "media_block_default": {
+    "block_class": "block--reversed media-block--reversed l-grid--7-col",
+    "block_img_class": "l-grid-item--s--1-col l-grid-item--m--3-col",
+    "block_content_class": "l-grid-item--s--1-col l-grid-item--m--4-col u-border-left--black--at-large"
+  },
+  "picture": {
+    "img_break_m": "500",
+    "img": {
+      "alt": "Alt Text",
+      "src_s": "//placehold.it/600x330",
+      "src_m": "//placehold.it/800x450"
+    },
+    "has_break_l": false,
+    "has_break_xl": false
+  }
+}
