@@ -16,7 +16,7 @@ patternStates:
 styleGuideExcludes: 'templates,pages'
 cacheBusterOn: 'true'
 exportDir: export
-publicDir: public
+publicDir: public/v3
 sourceDir: source
 defaultPattern: pages-start-page
 defaultShowPatternInfo: false
