@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><title>o-icon__close</title><path d="M9.91,1.5,8.5.09,5,3.59,1.5.09.09,1.5,3.59,5,.09,8.5,1.5,9.91,5,6.41l3.5,3.5L9.91,8.5,6.41,5Z" fill="#9b9b9b"/></svg>

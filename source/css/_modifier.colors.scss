@@ -258,18 +258,20 @@
 /**
  * SVG Fill Colors
  */
-.u-fill--gray {
-  fill: $c-body-color;
+.u-path-fill--white {
+  path {
+    fill: $c-white;
+  }
 }
 
-.u-fill--white {
-  fill: $c-white;
+.u-path-fill--black {
+  path {
+    fill: $c-black;
+  }
 }
 
-.u-fill--blue {
-  fill: $c-blue;
-}
-
-.u-fill--light-brown {
-  fill: $c-brown--light;
+.u-path-fill--gray {
+  path {
+    fill: $c-gray;
+  }
 }

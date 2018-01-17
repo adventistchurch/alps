@@ -33,3 +33,20 @@
 .o-text-list__item {
   margin-bottom: $space;
 }
+
+
+.o-icon-list {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    padding: $pad/2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .u-icon {
+    margin-bottom: $space/2;
+  }
+}
