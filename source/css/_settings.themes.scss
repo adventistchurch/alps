@@ -152,17 +152,14 @@
 }
 
 // Generate primary color palettes.
-@include theme-primary(u-theme--emperor, $c-emperor);
-@include theme-primary(u-theme--earth, $c-earth);
-@include theme-primary(u-theme--grapevine, $c-grapevine);
-@include theme-primary(u-theme--denim, $c-denim);
-@include theme-primary(u-theme--campfire, $c-campfire);
-@include theme-primary(u-theme--treefrog, $c-treefrog);
-@include theme-primary(u-theme--ming, $c-ming);
+@each $name, $color in $u-primary-themes {
+  @include theme-primary($name, $color);
+}
 
 // Generate secondary color palettes.
-@include theme-secondary(u-theme--warm, $c-warm);
-@include theme-secondary(u-theme--cool, $c-cool);
+@each $name, $color in $u-secondary-themes {
+  @include theme-secondary($name, $color);
+}
 
 /**
  * Dark Theme

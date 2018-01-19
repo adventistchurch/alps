@@ -66,6 +66,27 @@ $c-dark--light: #303030;
 $c-dark--dark: #252525;
 
 /**
+ * Primary Themes
+ */
+$u-primary-themes: (
+  u-theme--emperor:   $c-emperor,
+  u-theme--earth:     $c-earth,
+  u-theme--grapevine: $c-grapevine,
+  u-theme--denim:     $c-denim,
+  u-theme--campfire:  $c-campfire,
+  u-theme--treefrog:  $c-treefrog,
+  u-theme--ming:      $c-ming,
+);
+
+/**
+ * Secondary Themes
+ */
+$u-secondary-themes: (
+  u-theme--warm:  $c-warm,
+  u-theme--cool:  $c-cool,
+);
+
+/**
  * Typography
  */
 $ff-font: 'Noto Sans', Georgia, Times, "Times New Roman", serif;
