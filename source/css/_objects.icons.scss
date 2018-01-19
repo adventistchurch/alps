@@ -57,6 +57,31 @@ $icon-big: rem(65);
   padding: rem(6);
 }
 
+// .u-icon__menu {
+//   position: relative;
+//   width: rem(10);
+//   height: rem(2);
+//   background: $c-gray;
+//
+//   &::before,
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     width: rem(10);
+//     height: rem(2);
+//     background: $c-gray;
+//   }
+//
+//   &::before {
+//     top: rem(-3);
+//   }
+//
+//   &::after {
+//     bottom: rem(-3);
+//   }
+// }
+
 /**
  * Play icon overlay
  */

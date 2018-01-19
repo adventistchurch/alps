@@ -34,7 +34,9 @@
 
     // SVG fill colors
     .u-theme--primary-fill-color {
-      fill: $primary-color;
+      path {
+        fill: $primary-color;
+      }
     }
 
     // Bodies of text
@@ -82,7 +84,9 @@
 
     // SVG fill colors
     .u-theme--secondary-fill-color {
-      fill: $secondary-color;
+      path {
+        fill: $secondary-color;
+      }
     }
 
     // Border colors

@@ -1,17 +1,17 @@
 {% if secondary_nav %}
-<nav class="c-secondary-nav toggled-element" id="c-secondary-nav" role="navigation">
+<nav class="c-secondary-nav" id="c-secondary-nav" role="navigation">
   <ul class="c-secondary-nav__list">
     {% for item in secondary_nav.items %}
-      <li class="c-secondary-nav__list-item">
-        <a href="{{ item.url }}" class="c-secondary-nav__link u-font--primary--s u-color--gray {% if item.subnav %}{{ 'js-toggle-parent' }}{% endif %}">
-          {% if item.icon %}<span class="c-secondary-nav__icon u-icon u-icon--xs u-path-fill----gray">{{ item.icon | raw }}</span>{% endif %}
-          {{ item.text }} {% if item.subnav %}<span class="c-subnav__arrow u-display--inline-block o-arrow--down"></span>{% endif %}
+      <li class="c-secondary-nav__list-item {% if item.subnav %}has-subnav js-hover{% endif %}" {% if item.subnav %} data-prefix="hover" {% endif %}>
+        <a href="{{ item.url }}" class="c-secondary-nav__link">
+          {% if item.icon %}<span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/' ~ item.icon ~ '.twig' %}</span>{% endif %}
+          {{ item.text }} {% if item.subnav %}<span class="c-subnav__arrow o-arrow--down"></span>{% endif %}
         </a>
         {% if item.subnav %}
-          <ul class="c-secondary-nav__subnav__list">
+          <ul class="c-secondary-nav__subnav c-subnav">
             {% for sub_item in item.subnav.items %}
-              <li class="c-secondary-nav__subnav__list-item">
-                <a class="c-secondary-nav__subnav__link {% if sub_item.active_link %} active {% endif %}" href="{{ sub_item.url }}">{{ sub_item.text }}</a>
+              <li class="c-secondary-nav__subnav__list-item c-subnav__list-item">
+                <a class="c-secondary-nav__subnav__link c-subnav__link {% if sub_item.active_link %} active {% endif %}" href="{{ sub_item.url }}">{{ sub_item.text }}</a>
               </li>
             {% endfor %}
           </ul> <!-- /.subnav -->
