@@ -13,6 +13,21 @@
     document.documentElement.className += ' ie10';
   }
 
+  // Add class if is mobile
+  function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      return true;
+    }
+    return false;
+  }
+
+  // Add class if is mobile
+  if (isMobile()) {
+    $('html').addClass(' touch');
+  } else if (!isMobile()){
+    $('html').addClass(' no-touch');
+  }
+
   // Lazy load images.
   if ($('img.lazy').length) {
     $('img.lazy').show().lazyload({
@@ -91,6 +106,17 @@
   // });
   // updateNav();
 
+  $('.c-menu__nav .c-primary-nav__list-item').on('click', function() {
+    $('.c-menu__container').toggleClass('subnav-is-active');
+    $('.c-primary-nav__list-item').not(this).removeClass('this-is-active');
+  });
+
+  $('.js-toggle-menu').on('click', function(e) {
+    e.stopPropagation();
+    $('.c-menu').toggleClass('this-is-active');
+    $('.c-menu__nav .c-primary-nav__list-item').removeClass('js-hover');
+  });
+
   // SITE SPECIFIC JS ------------------------------//
 
   var toggleClasses = function(element) {
@@ -113,7 +139,6 @@
       $('.' + $this.data('remove')).removeClass($this.data(
             'remove'));
     }
-
   };
 
   /*
@@ -140,15 +165,17 @@
   $('.js-toggle-parent').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
-    $this.toggleClass('is-active');
-    $this.parent().toggleClass('is-active');
+    $this.toggleClass('this-is-active');
+    $this.parent().toggleClass('this-is-active');
   });
 
-  // Toggle hovered classes
-  $('.js-hover').on('mouseenter mouseleave', function(e) {
-    e.preventDefault();
-    toggleClasses($(this));
-  });
+  // Toggle hovered classes if not touch device
+  if (!isMobile()) {
+    $('.js-hover').on('mouseenter mouseleave', function(e) {
+      e.preventDefault();
+      toggleClasses($(this));
+    });
+  }
 
   // Slick carousel (single item)
   if ($('.js-carousel__single-item').length) {

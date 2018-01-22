@@ -1,7 +1,7 @@
 <header class="c-header {{ header_class }}" role="banner" id="header">
   <div class="c-header--inner l-container">
     <div class="c-header__logo c-logo">
-      <a href="/" class="c-logo__link u-theme--primary-fill-color u-space--right">
+      <a href="/" class="c-logo__link u-theme--primary-fill-color">
         {% include '@atoms/images/logo.twig' %}
       </a>
     </div> <!-- /.c-header__logo -->
@@ -16,15 +16,15 @@
   </div> <!-- /.c-header--inner -->
 </header> <!-- .c-header -->
 
-<div class="c-menu this-is-active">
-  <div class="c-menu__toggle js-toggle">
+<div class="c-menu">
+  <div class="c-menu__toggle js-toggle-parent">
     <div class="u-icon o-icon__close">
       <span class=""></span>
       <span class=""></span>
     </div>
   </div> <!-- .c-toggle -->
-  <div class="c-menu__container u-padding u-spacing">
-    <div class="c-menu__search u-padding--left">
+  <div class="c-menu__container u-spacing">
+    <div class="c-menu__search">
       {% include '@molecules/forms/search.twig' %}
     </div> <!-- .c-menu__search -->
     <div class="c-menu__nav">
@@ -35,7 +35,7 @@
         {% include '@molecules/navigation/secondary-navigation.twig' %}
       </div>
     </div> <!-- .c-menu__nav -->
-    <div class="c-menu__logo u-padding--left">
+    <div class="c-menu__logo">
       <span class="u-icon u-icon--l u-path-fill--white">
         {% include '@atoms/icons/icon-logo.twig' %}
       </span>
@@ -45,8 +45,8 @@
         <p>Tell the world is an offical media production of the Seventh-day Adventist world church.</p>
         <p>Seventh-day Adventists believe in inspiring those around us to experience a life of wholeness and hope for an eternal future with God.</p>
       </div>
-      <div class="c-menu__about-left u-spacing--half">
-        <h3 class="u-font--primary--s u-text-transform--upper">Learn More:</h3>
+      <div class="c-menu__about-right u-spacing--half">
+        <h3 class="u-font--primary--s u-text-transform--upper"><strong>Learn More:</strong></h3>
         <p class="u-spacing--half">
           <a href="" target="_blank">Adventist.org</a>
           <a href="" target="_blank">North American Division of Seventh-day Adventists</a>

@@ -8,4 +8,7 @@ body {
   -webkit-text-size-adjust: 100%;
   color: $c-body-color;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }

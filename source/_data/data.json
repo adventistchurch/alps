@@ -102,16 +102,16 @@
         "text": "News",
         "subnav": {
           "items": [{
-              "text": "Life Hope Centers"
+              "text": "News Item 1"
             },
             {
-              "text": "Global Mission"
+              "text": "News Item 2"
             },
             {
-              "text": "Mission Spotlight"
+              "text": "News Item 3"
             },
             {
-              "text": "Church Mission Offerings"
+              "text": "News Item 4"
             }
           ]
         }
@@ -123,22 +123,7 @@
     "items": [{
         "icon": "icon-language",
         "text": "Language",
-        "subnav": {
-          "items": [{
-              "text": "English",
-              "active_link": true
-            },
-            {
-              "text": "Español"
-            },
-            {
-              "text": "Français"
-            },
-            {
-              "text": "Português"
-            }
-          ]
-        }
+        "priority": true
       },
       {
         "icon": "icon-subscribe",
@@ -155,10 +140,6 @@
       {
         "icon": "icon-heart",
         "text": "Press"
-      },
-      {
-        "icon": "icon-search",
-        "text": "Search"
       }
     ]
   },

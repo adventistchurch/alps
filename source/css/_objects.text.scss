@@ -68,6 +68,31 @@
   font-family: $ff-font--monospace;
 }
 
+// Primary Navigation links
+@mixin u-font--primary-nav() {
+  font-family: $ff-font--secondary;
+  font-size: rem(18);
+  line-height: 1;
+}
+
+.u-font--primary-nav {
+  @include u-font--primary-nav;
+}
+
+// Secondary Navigation links
+@mixin u-font--secondary-nav() {
+  font-family: $ff-font;
+  font-size: rem(14);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: rem(2);
+  font-weight: 400;
+}
+
+.u-font--secondary-nav {
+  @include u-font--secondary-nav;
+}
+
 /**
  * Primary type styles
  */
