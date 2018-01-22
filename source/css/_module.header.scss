@@ -14,7 +14,7 @@
 
   @include media('>medium') {
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
   }
 }
@@ -27,6 +27,7 @@
 
   @include media('>medium') {
     width: rem(300);
+    padding-bottom: 0;
     margin-right: $space;
   }
 }
@@ -39,19 +40,6 @@
   }
 }
 
-// .c-priority-nav {
-//   position: relative;
-//   min-width: rem(250);
-//
-//   &--visible {
-//     display: inline-table;
-//
-//     li {
-//       display: table-cell;
-//     }
-//   }
-// }
-
 // Primary Nav
 .c-header__nav-primary {
   z-index: 1;
@@ -60,19 +48,31 @@
     display: none;
     position: relative;
     justify-content: flex-end;
+    float: right;
 
     @include media('>medium') {
-      display: flex;
+      display: inline-table;
     }
 
     &__list {
-      height: rem(40);
-      overflow: hidden;
+      // height: rem(40);
+      // overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       justify-content: flex-end;
       padding-right: rem(30);
+    }
+
+
+    &__list-item {
+      display: table-cell;
+
+      &:hover {
+        .c-primary-nav__subnav {
+          display: block;
+        }
+      }
     }
 
     &__link {
@@ -169,23 +169,30 @@
   position: absolute;
   left: $pad/2;
   top: 0;
-  background: $c-gray--light;
   flex-direction: column;
-  border-left: 1px solid $c-black;
-  padding: $pad/2 0;
 
   &.c-primary-nav__subnav {
-    margin-top: rem(40);
+    padding-top: rem(40);
   }
 
   &.c-secondary-nav__subnav {
-    margin-top: rem(30);
+    padding-top: rem(30);
   }
 
   &__list-item {
+    background: $c-gray--light;
+    border-left: 1px solid $c-black;
     position: relative;
     display: block;
     width: 100%;
+
+    &:first-child {
+      padding-top: $space/2;
+    }
+
+    &:last-child {
+      padding-bottom: $space/2;
+    }
   }
 
   &__link {
