@@ -492,7 +492,11 @@
         width: 50%;
 
         &:first-child {
-          padding-right: $pad*2;
+          padding-right: $pad;
+        }
+
+        &:last-child {
+          padding-left: $pad;
         }
       }
     }

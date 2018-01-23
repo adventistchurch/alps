@@ -128,6 +128,11 @@ $gutter: 1.875rem; // 30px
 .l-grid--7-col {
   width: 100%;
 
+  &--inner {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+  }
+
   > * {
     padding-left: $gutter/2;
     padding-right: $gutter/2;
@@ -145,9 +150,33 @@ $gutter: 1.875rem; // 30px
     }
   }
 
+  .l-grid-item {
+    width: 100%;
+  }
+
   .l-grid-item--s {
     &--1-col {
-      width: 100%;
+      width: calc((100vw / 7) * 1);
+    }
+
+    &--2-col {
+      width: calc((100vw / 7) * 2);
+    }
+
+    &--3-col {
+      width: calc((100vw / 7) * 3);
+    }
+
+    &--4-col {
+      width: calc((100vw / 7) * 4);
+    }
+
+    &--5-col {
+      width: calc((100vw / 7) * 5);
+    }
+
+    &--6-col {
+      width: calc((100vw / 7) * 6);
     }
   }
 
