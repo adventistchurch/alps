@@ -228,7 +228,7 @@
     ]
   },
 
-  "footer_nav": {
+  "footer_primary_nav": {
     "items": [{
         "text": "Facebook",
         "url": ""
@@ -256,7 +256,7 @@
     ]
   },
 
-  "subfooter_nav": {
+  "footer_secondary_nav": {
     "items": [{
         "text": "Trademark and Logo Usage",
         "url": ""

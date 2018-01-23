@@ -212,7 +212,7 @@
 }
 
 // Mobile menu
-.c-menu {
+.c-drawer {
   display: none;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -236,7 +236,7 @@
     fill: $c-white;
   }
 
-  .c-menu__nav-primary {
+  .c-drawer__nav-primary {
     position: relative;
   }
 
@@ -453,10 +453,10 @@
       @include media('<=medium') {
         overflow: hidden;
 
-        .c-menu__search,
-        .c-menu__about,
-        .c-menu__logo,
-        .c-menu__nav-secondary {
+        .c-drawer__search,
+        .c-drawer__about,
+        .c-drawer__logo,
+        .c-drawer__nav-secondary {
           display: none;
         }
       }

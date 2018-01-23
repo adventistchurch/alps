@@ -106,15 +106,15 @@
   // });
   // updateNav();
 
-  $('.c-menu__nav .c-primary-nav__list-item').on('click', function() {
-    $('.c-menu__container').toggleClass('subnav-is-active');
+  $('.c-drawer__nav .c-primary-nav__list-item').on('click', function() {
+    $('.c-drawer__container').toggleClass('subnav-is-active');
     $('.c-primary-nav__list-item').not(this).removeClass('this-is-active');
   });
 
   $('.js-toggle-menu').on('click', function(e) {
     e.stopPropagation();
-    $('.c-menu').toggleClass('this-is-active');
-    $('.c-menu__nav .c-primary-nav__list-item').removeClass('js-hover');
+    $('.c-drawer').toggleClass('this-is-active');
+    $('.c-drawer__nav .c-primary-nav__list-item').removeClass('js-hover');
   });
 
   // SITE SPECIFIC JS ------------------------------//
