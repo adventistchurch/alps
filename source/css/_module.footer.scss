@@ -4,7 +4,7 @@
 
 .c-footer {
   background-color: $c-primary-1;
-  padding: $pad 0;
+  padding: $pad*2 0;
 
   &--inner > div {
     @include media('<=medium') {
