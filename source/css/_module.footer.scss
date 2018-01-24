@@ -42,6 +42,14 @@
       display: flex;
       flex-direction: column;
     }
+
+    &__link {
+      display: flex;
+
+      .u-icon {
+        width: rem(12);
+      }
+    }
   }
 
   &__legal {

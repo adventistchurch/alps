@@ -83,7 +83,7 @@
 @mixin u-font--secondary-nav() {
   font-family: $ff-font;
   font-size: rem(14);
-  line-height: 1;
+  line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: rem(2);
   font-weight: 400;

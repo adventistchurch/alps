@@ -55,22 +55,35 @@
     }
 
     &__list {
-      // height: rem(40);
-      // overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       justify-content: flex-end;
       padding-right: rem(30);
+      position: relative;
+
+      &::after {
+        content: "";
+        background: white;
+        height: rem(100);
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: rem(40);
+        z-index: 1;
+      }
     }
 
 
     &__list-item {
       display: table-cell;
+      cursor: pointer;
 
       &:hover {
         .c-primary-nav__subnav {
           display: block;
+          visibility: visible;
+          opacity: 1;
         }
       }
     }
@@ -93,6 +106,7 @@
       cursor: pointer;
       justify-content: flex-end;
       padding: $pad/2;
+      z-index: 99;
 
       .u-icon {
         position: relative;
@@ -127,6 +141,7 @@
 
       @include media('>medium') {
         justify-content: flex-end;
+        align-items: center;
       }
     }
 
@@ -157,6 +172,12 @@
       span {
         margin-right: rem(4);
         margin-left: rem(4);
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: 0;
+        }
       }
     }
   }
@@ -164,12 +185,15 @@
 
 // Subnav
 .c-subnav {
-  display: none;
+  visibility: visible;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
   width: rem(250);
   position: absolute;
   left: $pad/2;
   top: 0;
   flex-direction: column;
+  z-index: 9;
 
   &.c-primary-nav__subnav {
     padding-top: rem(40);
@@ -213,19 +237,101 @@
 
 // Mobile menu
 .c-drawer {
-  display: none;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 999;
   color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease;
 
   &.this-is-active {
+    visibility: visible;
+    opacity: 1;
+
+    .c-drawer__toggle {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .c-drawer__container {
+      right: 0;
+    }
+  }
+
+  &__toggle {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    transition-delay: 0.25s;
+    background-color: rgba($c-primary-1, 0.5);
+    position: relative;
+    width: 10%;
+    min-width: rem(50);
+    cursor: pointer;
+
+    .o-icon__close{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__container {
+    position: fixed;
+    right: -100%;
+    transition: right 0.25s ease-in-out;
+    background-color: $c-primary-1;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    padding: $pad;
+    padding-bottom: $space*2;
+
+    @include media('>medium') {
+      padding: $pad $pad 0 $pad*2;
+    }
+
+    &.subnav-is-active {
+      @include media('<=medium') {
+        overflow: hidden;
+      }
+    }
+  }
+
+  .has-subnav {
+    padding: 0;
+    position: unset;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    &.this-is-active {
+      .c-subnav {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+      }
+
+      .o-arrow--down {
+        @include media('<=medium') {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    @include media('<=medium') {
+      right: -100%;
+      transition: right 0.25s ease-in-out;
+      background-color: $c-primary-1;
+    }
   }
 
   a {
@@ -234,10 +340,6 @@
 
   svg path {
     fill: $c-white;
-  }
-
-  .c-drawer__nav-primary {
-    position: relative;
   }
 
   // Drawer Primary Nav
@@ -256,6 +358,8 @@
         @include media('<=medium') {
           position: absolute;
           top: 0;
+          right: 0;
+          padding: $pad*2;
 
           .c-primary-nav__link {
             padding-top: 0;
@@ -366,26 +470,29 @@
   .c-subnav {
     left: 0;
     margin: 0;
-    height: auto;
     background-color: transparent;
     border: 0;
     padding: 0;
     position: relative;
-    padding-top: $space/4;
-    margin-bottom: $space/2;
     width: 100%;
     min-width: rem(270);
     z-index: 999;
+    height: 0;
+    transition: none;
 
     @include media('>medium') {
+      transition: all 0.25s ease;
       position: absolute;
       left: rem(240);
       padding-left: $space*2;
+      padding-top: $space/4;
+      margin-bottom: $space/2;
     }
 
     &__list-item {
       background-color: $c-white;
       color: $c-primary-1;
+      border: 0;
 
       &:first-child {
         padding-top: $pad/2;
@@ -399,67 +506,6 @@
     &__link {
       color: $c-primary-2;
       padding: $pad/4 $pad/2;
-    }
-  }
-
-  .has-subnav {
-    padding: 0;
-    position: unset;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-
-    &.this-is-active {
-      .o-arrow--down {
-        @include media('<=medium') {
-          transform: rotate(90deg);
-        }
-      }
-
-      .c-primary-nav__link {
-        opacity: 1;
-      }
-    }
-  }
-
-  &__toggle {
-    background-color: rgba($c-primary-1, 0.5);
-    position: relative;
-    width: 10%;
-    min-width: rem(50);
-    cursor: pointer;
-
-    .o-icon__close{
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  &__container {
-    background-color: $c-primary-1;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    padding: $pad;
-    padding-bottom: $space*2;
-
-    @include media('>medium') {
-      padding: $pad $pad 0 $pad*2;
-    }
-
-    &.subnav-is-active {
-      @include media('<=medium') {
-        overflow: hidden;
-
-        .c-drawer__search,
-        .c-drawer__about,
-        .c-drawer__logo,
-        .c-drawer__nav-secondary {
-          display: none;
-        }
-      }
     }
   }
 
