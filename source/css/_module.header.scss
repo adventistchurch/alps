@@ -127,6 +127,7 @@
 
       @include media('>medium') {
         justify-content: flex-end;
+        align-items: center;
       }
     }
 
@@ -157,6 +158,12 @@
       span {
         margin-right: rem(4);
         margin-left: rem(4);
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: 0;
+        }
       }
     }
   }
@@ -213,19 +220,95 @@
 
 // Mobile menu
 .c-drawer {
-  display: none;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 999;
   color: white;
+  visibility: hidden;
+  opacity: 0;
 
   &.this-is-active {
+    visibility: visible;
+    opacity: 1;
+
+    .c-drawer__toggle {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .c-drawer__container {
+      right: 0;
+    }
+  }
+
+  &__toggle {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    transition-delay: 0.25s;
+    background-color: rgba($c-primary-1, 0.5);
+    position: relative;
+    width: 10%;
+    min-width: rem(50);
+    cursor: pointer;
+
+    .o-icon__close{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__container {
+    position: fixed;
+    right: -100%;
+    transition: right 0.25s ease-in-out;
+    background-color: $c-primary-1;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    padding: $pad;
+    padding-bottom: $space*2;
+
+    @include media('>medium') {
+      padding: $pad $pad 0 $pad*2;
+    }
+
+    &.subnav-is-active {
+      @include media('<=medium') {
+        overflow: hidden;
+      }
+    }
+  }
+
+  .has-subnav {
+    right: -100%;
+    transition-delay: 2s;
+    transition: right 0.25s ease-in-out;
+    padding: 0;
+    position: unset;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: $c-primary-1;
+
+    &.this-is-active {
+      right: 0;
+      padding: $pad*2;
+
+      .o-arrow--down {
+        @include media('<=medium') {
+          transform: rotate(90deg);
+        }
+      }
+    }
   }
 
   a {
@@ -234,10 +317,6 @@
 
   svg path {
     fill: $c-white;
-  }
-
-  .c-drawer__nav-primary {
-    position: relative;
   }
 
   // Drawer Primary Nav
@@ -386,6 +465,7 @@
     &__list-item {
       background-color: $c-white;
       color: $c-primary-1;
+      border: 0;
 
       &:first-child {
         padding-top: $pad/2;
@@ -399,67 +479,6 @@
     &__link {
       color: $c-primary-2;
       padding: $pad/4 $pad/2;
-    }
-  }
-
-  .has-subnav {
-    padding: 0;
-    position: unset;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-
-    &.this-is-active {
-      .o-arrow--down {
-        @include media('<=medium') {
-          transform: rotate(90deg);
-        }
-      }
-
-      .c-primary-nav__link {
-        opacity: 1;
-      }
-    }
-  }
-
-  &__toggle {
-    background-color: rgba($c-primary-1, 0.5);
-    position: relative;
-    width: 10%;
-    min-width: rem(50);
-    cursor: pointer;
-
-    .o-icon__close{
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  &__container {
-    background-color: $c-primary-1;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    padding: $pad;
-    padding-bottom: $space*2;
-
-    @include media('>medium') {
-      padding: $pad $pad 0 $pad*2;
-    }
-
-    &.subnav-is-active {
-      @include media('<=medium') {
-        overflow: hidden;
-
-        .c-drawer__search,
-        .c-drawer__about,
-        .c-drawer__logo,
-        .c-drawer__nav-secondary {
-          display: none;
-        }
-      }
     }
   }
 
