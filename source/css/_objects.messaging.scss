@@ -10,8 +10,8 @@
   padding: $pad-half 0;
   border-bottom-style: solid;
   border-bottom-width: 4px;
-  border-bottom-color: $c-red;
-  background-color: $c-blue;
+  border-bottom-color: $c-neutral-4;
+  background-color: $c-theme-ming;
 
   &.this-is-active {
     display: none;
@@ -64,7 +64,7 @@
   margin-bottom: rem(4);
   color: $c-white;
   padding: rem(3) rem(4);
-  background-color: $c-red;
+  background-color: $c-neutral-4;
 }
 
 .ab__cta {

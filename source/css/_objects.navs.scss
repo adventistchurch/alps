@@ -48,7 +48,7 @@ $slice-height: 3;
   position: absolute;
   height: rem($slice-height);
   width: 100%;
-  background-color: $c-gray--dark;
+  background-color: $c-gray--darker;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -353,7 +353,7 @@ $slice-height: 3;
   display: block;
   font-size: rem(16);
   white-space: nowrap;
-  color: $c-blue;
+  color: $c-theme-ming;
   font-family: $ff-font--secondary;
 
   @include media('<=medium') {
@@ -722,7 +722,7 @@ span.dropdown__arrow {
 
   &.ui-state-focus,
   a:hover {
-    color: $c-blue;
+    color: $c-theme-ming;
     cursor: pointer;
   }
 }

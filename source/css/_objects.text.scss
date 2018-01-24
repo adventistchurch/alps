@@ -20,7 +20,7 @@
   margin-bottom: rem(8);
   letter-spacing: 1px;
   font-weight: 600;
-  color: $c-blue;
+  color: $c-theme-ming;
   text-transform: uppercase;
 }
 
@@ -573,7 +573,7 @@
   }
 
   > .quote--extended {
-    background-color: $c-beige;
+    background-color: $c-neutral-5;
     padding: rem(30) 0;
 
     @include media('>medium') {

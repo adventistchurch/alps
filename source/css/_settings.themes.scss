@@ -2,328 +2,110 @@
     $THEMES
 \*------------------------------------*/
 
-
-// Primary color themed elements.
-
-// Color themes
-$c-treefrog: #2b8500;
-$c-ming: #007f98;
-$c-bluejay: #2e6de7;
-$c-iris: #9013fe;
-$c-lily: #d41583;
-$c-scarlett: #d0021b;
-$c-forest: #355724;
-$c-cave: #255760;
-$c-denim: #2f557f;
-$c-emperor: #4b207f;
-$c-grapevine: #712551;
-$c-velvet: #782832;
-$c-earth: #5e3929;
-
-$themes: (
-  u-theme--treefrog: (
-    darkest: $c-treefrog,
-    dark: $c-treefrog,
-    normal: $c-treefrog,
-    light: $c-treefrog,
-    lightest: $c-treefrog
-  ),
-  u-theme--ming: (
-    darkest: $c-ming,
-    dark: $c-ming,
-    normal: $c-ming,
-    light: $c-ming,
-    lightest: $c-ming
-  )
-  // u-theme--ming: $c-ming,
-  // u-theme--bluejay: $c-bluejay,
-  // u-theme--iris: $c-iris,
-  // u-theme--lily: $c-lily,
-  // u-theme--scarlett: $c-scarlett,
-  // u-theme--campfire: $c-campfire,
-  // u-theme--forest: $c-forest,
-  // u-theme--cave: $c-cave,
-  // u-theme--denim: $c-denim,
-  // u-theme--emperor: $c-emperor,
-  // u-theme--grapevine: $c-grapevine,
-  // u-theme--velvet: $c-velvet,
-  // u-theme--earth: $c-earth
-);
-
-@function map-fetch($map, $keys) {
-  $key: nth($keys, 1);
-  $length: length($keys);
-  $value: map-get($map, $key);
-  @if ($length > 1) {
-    $rest: ();
-    @for $i from 2 through $length {
-      $rest: append($rest, nth($keys, $i))
-    }
-    @return map-fetch($value, $rest)
-  } @else {
-    @return $value;
-  }
-}
-
 // https://gist.github.com/jlong/8760275
 
 $themes: (
-  themes: (
-    u-theme--treefrog: (
-      darkest: #1b2d00,
-      dark: #355724,
-      base: $c-treefrog,
-      light: #7cd500,
-      lightest: #9fe180
-    ),
-    u-theme--forest: (
-      darkest: #101a00,
-      dark: #355724, //base
-      base: #2b8500,
-      light: #7cd500,
-      lightest: #9fe180
-    )
+  u-theme--treefrog: (
+    darker: #1b2d00,
+    dark: #355724,
+    base: $c-theme-treefrog, // base
+    light: #7cd500,
+    lighter: #9fe180
+  ),
+  u-theme--ming: (
+    darker: #002938,
+    dark: #255760,
+    base: $c-theme-ming, // base
+    light: #00d5fe,
+    lighter: #9fe180
+  ),
+  // Muted
+  u-theme--forest: (
+    darker: #101a00,
+    base: $c-theme-forest, // base
+    dark: #2b8500,
+    light: #7cd500,
+    lighter: #9fe180
   )
 );
 
-@each $theme in map-keys(map-get($primary, themes)) {
+@each $theme in $themes {
   .#{$theme} {
+    @each $color, $colors in $theme {
+      @each $key, $value in $color {
 
-    &.u-theme--dark {
+        // Text Color
+        .u-theme--color--#{$key},
+        .u-theme--color--#{$key} a,
+        a.u-theme--link-hover--#{$key}:hover,
+        .u-theme--link-hover--#{$key} a:hover {
+          color: $value;
+        }
+        // a.u-theme--color--#{$key}:hover,
+        // .u-theme--color--#{$key} a:hover {
+        //   //color: complement($value);
+        // }
 
-    }
+        // Background Color
+        .u-theme--background-color--#{$key} {
+          background-color: $value;
+        }
+        .u-theme--background-color-trans--#{$key} {
+          //background-color: rgba($value, 0.8);
+        }
 
-    &.u-theme--light {
-      .u-theme--primary-text-color-1 { color: map-fetch($primary, themes $theme 1  ); }
-      .u-theme--primary-background-color-1 { background-color: map-fetch($primary, themes $theme 1 ); }
-      .u-theme--primary-border-color-1  { border-color: map-fetch($primary, themes $theme 1  ); }
+        // Border Color
+        .u-theme--border-color--#{$key} {
+          border-color: $value;
 
-      .u-theme--primary-text-color-2 { color: map-fetch($primary, themes $theme 2  ); }
-      .u-theme--primary-background-color-2 { background-color: map-fetch($primary, themes $theme 2 ); }
-      .u-theme--primary-border-color-2  { border-color: map-fetch($primary, themes $theme 2  ); }
+          &--top {
+            border-top-color: $value;
+          }
+
+          &--bottom {
+            border-bottom-color: $value;
+          }
+
+          &--left {
+            border-left-color: $value;
+          }
+
+          &--right {
+            border-right-color: $value;
+          }
+        }
+
+        // SVG fill colors
+        .u-theme--fill-color--#{$key} {
+          path {
+            fill: $value;
+          }
+        }
+      }
     }
   }
 }
-
-// Helper theme mixin
-// @param $name: name of the theme (HTML class)
-// @param $color: color of the theme
-// @mixin theme($name, $color) {
-//   .#{$name} {
-//     // Text colors
-//     .u-theme--primary-text-color,
-//     .u-theme--primary-text-color a {
-//       color: $color;
-//     }
-//
-//     a.u-theme--primary-text-color:hover,
-//     .u-theme--primary-text-color a:hover {
-//       color: complement($color);
-//     }
-//
-//     // Background colors
-//     .u-theme--primary-background-color {
-//       background-color: $color;
-//     }
-//     .u-theme--primary-transparent-background-color {
-//       background-color: rgba($color, 0.8);
-//     }
-//
-//     // Border colors
-//     .u-theme--primary-border-color {
-//       border-color: $color;
-//
-//       &--top {
-//         border-top-color: $color;
-//       }
-//
-//       &--bottom {
-//         border-bottom-color: $color;
-//       }
-//
-//       &--left {
-//         border-left-color: $color;
-//       }
-//
-//       &--right {
-//         border-right-color: $color;
-//       }
-//     }
-//
-//     // SVG fill colors
-//     .u-theme--primary-fill-color {
-//       path {
-//         fill: $color;
-//       }
-//     }
-//   }
-// }
-//
-// // Including themes
-// // By looping through the $themes map
-// @each $key, $value in $themes {
-//   @include theme($key, $value);
-// }
-
-//
-// @mixin theme-primary-1($name, $primary-color-1) {
-//   .#{$name} {
-//
-//     // Text colors
-//     .u-theme--primary-text-color,
-//     .u-theme--primary-text-color a {
-//       color: $primary-color-1;
-//     }
-//
-//     a.u-theme--primary-text-color:hover,
-//     .u-theme--primary-text-color a:hover {
-//       color: complement($primary-color-1);
-//     }
-//
-//     // Background colors
-//     .u-theme--primary-background-color {
-//       background-color: $primary-color-1;
-//     }
-//     .u-theme--primary-transparent-background-color {
-//       background-color: rgba($primary-color-1, 0.8);
-//     }
-//
-//     // Border colors
-//     .u-theme--primary-border-color {
-//       border-color: $primary-color-1;
-//
-//       &--top {
-//         border-top-color: $primary-color-1;
-//       }
-//
-//       &--bottom {
-//         border-bottom-color: $primary-color-1;
-//       }
-//
-//       &--left {
-//         border-left-color: $primary-color-1;
-//       }
-//
-//       &--right {
-//         border-right-color: $primary-color-1;
-//       }
-//     }
-//
-//     // SVG fill colors
-//     .u-theme--primary-fill-color {
-//       path {
-//         fill: $primary-color-1;
-//       }
-//     }
-//   }
-// }
-//
-// // Secondary color themed elements.
-// @mixin theme-secondary($name, $secondary-color) {
-//   .#{$name} {
-//
-//     // Text colors
-//     .u-theme--secondary-text-color,
-//     .u-theme--secondary-text-color a {
-//       color: $secondary-color;
-//     }
-//
-//     a.u-theme--secondary-text-color:hover,
-//     .u-theme--secondary-text-color a:hover {
-//       color: complement($secondary-color);
-//     }
-//
-//     // Background colors
-//     .u-theme--secondary-background-color {
-//       background-color: $secondary-color;
-//     }
-//
-//     a.u-theme--secondary-background-color:hover {
-//       background-color: complement($secondary-color);
-//       color: $c-white;
-//     }
-//
-//     .u-theme--secondary-transparent-background-color {
-//       background-color: rgba($secondary-color, .8);
-//     }
-//
-//     // SVG fill colors
-//     .u-theme--secondary-fill-color {
-//       path {
-//         fill: $secondary-color;
-//       }
-//     }
-//
-//     // Border colors
-//     .u-theme--primary-border-color {
-//       border-color: $primary-color-1;
-//
-//       &--top {
-//         border-top-color: $secondary-color;
-//       }
-//
-//       &--bottom {
-//         border-bottom-color: $secondary-color;
-//       }
-//
-//       &--left {
-//         border-left-color: $secondary-color;
-//       }
-//
-//       &--right {
-//         border-right-color: $secondary-color;
-//       }
-//     }
-//   }
-// }
-//
-// // Generate primary color palettes.
-// @include theme-primary-1(u-theme--emperor, $c-emperor);
-// @include theme-primary-2(u-theme--emperor, $c-emperor);
-// @include theme-primary-3(u-theme--emperor, $c-emperor);
-// @include theme-primary-4(u-theme--emperor, $c-emperor);
-// @include theme-primary-5(u-theme--emperor, $c-emperor);
-//
-// @include theme-primary(u-theme--earth, $c-earth);
-// @include theme-primary(u-theme--grapevine, $c-grapevine);
-// @include theme-primary(u-theme--denim, $c-denim);
-// @include theme-primary(u-theme--campfire, $c-campfire);
-// @include theme-primary(u-theme--treefrog, $c-treefrog);
-// @include theme-primary(u-theme--ming, $c-ming);
-//
-// // Generate secondary color palettes.
-// @include theme-secondary(u-theme--warm, $c-warm);
-// @include theme-secondary(u-theme--cool, $c-cool);
 
 /**
  * Dark Theme
  */
 .u-theme--dark {
-  color: $c-white;
-  background-color: $c-dark--dark;
+  color: $c-neutral-6;
+  background-color: $c-neutral-1;
 
   hr {
-    background-color: rgba($c-white, .2);
+    background-color: rgba($c-neutral-6, .2);
   }
 
   .can-be--white {
-    color: $c-white;
-  }
-
-  .l-grid--2-col--at-medium.with-divider > .l-grid-item:nth-child(odd):after {
-    border-right-color: rgba($c-white, .2);
+    color: $c-neutral-6;
   }
 
   .can-be--dark-light {
-    background-color: $c-dark--light;
+    background-color: $c-neutral-5;
   }
 
   .can-be--dark-dark {
-    background-color: $c-dark--dark;
-
-    .o-arrow--down,
-    .primary-nav--with-subnav:before {
-      border-top-color: $c-white;
-    }
+    background-color: $c-neutral-2;
   }
 }

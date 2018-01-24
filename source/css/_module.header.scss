@@ -78,6 +78,7 @@
     &__list-item {
       display: table-cell;
       cursor: pointer;
+      background-color: transparent;
 
       &:hover {
         .c-primary-nav__subnav {
@@ -194,6 +195,7 @@
   top: 0;
   flex-direction: column;
   z-index: 9;
+  background-color: transparent !important;
 
   &.c-primary-nav__subnav {
     padding-top: rem(40);
@@ -270,7 +272,7 @@
     opacity: 0;
     transition: all 0.25s ease-in-out;
     transition-delay: 0.25s;
-    background-color: rgba($c-primary-1, 0.5);
+    background-color: rgba($c-black, 0.8);
     position: relative;
     width: 10%;
     min-width: rem(50);
@@ -287,7 +289,6 @@
     position: fixed;
     right: -100%;
     transition: right 0.25s ease-in-out;
-    background-color: $c-primary-1;
     height: 100%;
     width: 100%;
     overflow: scroll;
@@ -330,7 +331,6 @@
     @include media('<=medium') {
       right: -100%;
       transition: right 0.25s ease-in-out;
-      background-color: $c-primary-1;
     }
   }
 
@@ -364,7 +364,6 @@
           .c-primary-nav__link {
             padding-top: 0;
             padding-bottom: $pad/2;
-            background-color: $c-primary-1;
             font-family: $ff-font;
             font-size: rem(20);
             z-index: 999;
@@ -390,7 +389,6 @@
             padding: 0;
             padding-top: $pad;
             border-top: 1px solid $c-white;
-            background-color: $c-primary-1;
             overflow: scroll;
             z-index: 999;
 
@@ -470,7 +468,6 @@
   .c-subnav {
     left: 0;
     margin: 0;
-    background-color: transparent;
     border: 0;
     padding: 0;
     position: relative;
@@ -491,7 +488,6 @@
 
     &__list-item {
       background-color: $c-white;
-      color: $c-primary-1;
       border: 0;
 
       &:first-child {
@@ -504,7 +500,6 @@
     }
 
     &__link {
-      color: $c-primary-2;
       padding: $pad/4 $pad/2;
     }
   }

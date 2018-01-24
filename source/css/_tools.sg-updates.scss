@@ -35,17 +35,17 @@
  */
 .sg-header,
 .sg-tools-toggle {
-  background-color: $c-ming;
+  background-color: $c-theme-ming;
 
   a {
     color: $c-white;
 
     &.active {
-      background-color: $c-earth;
+      background-color: $c-theme-earth;
     }
 
     &:hover {
-      background-color: darken($c-earth, 10);
+      background-color: darken($c-theme-earth, 10);
     }
   }
 
@@ -57,10 +57,10 @@
 
 .sg-acc-panel {
   li {
-    background-color: $c-earth;
+    background-color: $c-theme-earth;
 
     a:hover {
-      background-color: darken($c-earth, 10);
+      background-color: darken($c-theme-earth, 10);
     }
   }
 }
@@ -68,7 +68,7 @@
 .sg-input {
   margin-left: 3px;
   margin-right: 3px;
-  background-color: $c-earth;
+  background-color: $c-theme-earth;
   color: $c-gray--light;
 }
 
