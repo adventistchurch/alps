@@ -55,22 +55,35 @@
     }
 
     &__list {
-      // height: rem(40);
-      // overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       justify-content: flex-end;
       padding-right: rem(30);
+      position: relative;
+
+      &::after {
+        content: "";
+        background: white;
+        height: rem(100);
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: rem(40);
+        z-index: 1;
+      }
     }
 
 
     &__list-item {
       display: table-cell;
+      cursor: pointer;
 
       &:hover {
         .c-primary-nav__subnav {
           display: block;
+          visibility: visible;
+          opacity: 1;
         }
       }
     }
@@ -93,6 +106,7 @@
       cursor: pointer;
       justify-content: flex-end;
       padding: $pad/2;
+      z-index: 99;
 
       .u-icon {
         position: relative;
@@ -171,12 +185,15 @@
 
 // Subnav
 .c-subnav {
-  display: none;
+  visibility: visible;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
   width: rem(250);
   position: absolute;
   left: $pad/2;
   top: 0;
   flex-direction: column;
+  z-index: 9;
 
   &.c-primary-nav__subnav {
     padding-top: rem(40);
@@ -288,26 +305,31 @@
   }
 
   .has-subnav {
-    right: -100%;
-    transition-delay: 2s;
-    transition: right 0.25s ease-in-out;
     padding: 0;
     position: unset;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    background-color: $c-primary-1;
 
     &.this-is-active {
-      right: 0;
-      padding: $pad*2;
+      .c-subnav {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+      }
 
       .o-arrow--down {
         @include media('<=medium') {
           transform: rotate(90deg);
         }
       }
+    }
+
+    @include media('<=medium') {
+      right: -100%;
+      transition: right 0.25s ease-in-out;
+      background-color: $c-primary-1;
     }
   }
 
@@ -335,6 +357,8 @@
         @include media('<=medium') {
           position: absolute;
           top: 0;
+          right: 0;
+          padding: $pad*2;
 
           .c-primary-nav__link {
             padding-top: 0;
@@ -445,21 +469,23 @@
   .c-subnav {
     left: 0;
     margin: 0;
-    height: auto;
     background-color: transparent;
     border: 0;
     padding: 0;
     position: relative;
-    padding-top: $space/4;
-    margin-bottom: $space/2;
     width: 100%;
     min-width: rem(270);
     z-index: 999;
+    height: 0;
+    transition: none;
 
     @include media('>medium') {
+      transition: all 0.25s ease;
       position: absolute;
       left: rem(240);
       padding-left: $space*2;
+      padding-top: $space/4;
+      margin-bottom: $space/2;
     }
 
     &__list-item {
