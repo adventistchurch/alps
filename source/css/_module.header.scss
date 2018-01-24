@@ -249,6 +249,7 @@
   color: white;
   visibility: hidden;
   opacity: 0;
+  transition: all 0.25s ease;
 
   &.this-is-active {
     visibility: visible;
