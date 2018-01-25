@@ -19,6 +19,41 @@ $themes: (
     light: #00d5fe,
     lighter: #9fe180
   ),
+  u-theme--bluejay: (
+    darker: #052252,
+    dark: #2f557f,
+    base: $c-theme-bluejay, // base
+    light: #84adfc,
+    lighter: #84adfc
+  ),
+  u-theme--iris: (
+    darker: #37034c,
+    dark: #4b207f,
+    base: $c-theme-iris, // base
+    light: #b971f7,
+    lighter: #b971f7
+  ),
+  u-theme--lily: (
+    darker: #4e053f,
+    dark: #712551,
+    base: $c-theme-lily, // base
+    light: #ff61bc,
+    lighter: #ff61bc
+  ),
+  u-theme--scarlett: (
+    darker: #440000,
+    dark: #782832,
+    base: $c-theme-scarlett, // base
+    light: #fd2641,
+    lighter: #e17077
+  ),
+  u-theme--campfire: (
+    darker: #361300,
+    dark: #6f2727,
+    base: $c-theme-campfire, // base
+    light: #ffa06c,
+    lighter: #ffa06c
+  ),
   // Muted
   u-theme--forest: (
     darker: #101a00,
@@ -26,6 +61,48 @@ $themes: (
     dark: #2b8500,
     light: #7cd500,
     lighter: #9fe180
+  ),
+  u-theme--cave: (
+    darker: #01161e,
+    dark: #007f98,
+    base: $c-theme-cave, // base
+    light: #00d5fe,
+    lighter: #9ae1f0
+  ),
+  u-theme--denim: (
+    darker: #04132b,
+    dark: #2e6de7,
+    base: $c-theme-denim, // base
+    light: #84adfc,
+    lighter: #84adfc
+  ),
+  u-theme--emperor: (
+    darker: #240431,
+    dark: #9013fe,
+    base: $c-theme-emperor, // base
+    light: #b971f7,
+    lighter: #b971f7
+  ),
+  u-theme--grapevine: (
+    darker: #2a0d24,
+    dark: #d41583,
+    base: $c-theme-grapevine, // base
+    light: #ff61bc,
+    lighter: #ff61bc
+  ),
+  u-theme--velvet: (
+    darker: #2d0505,
+    dark: #d0021b,
+    base: $c-theme-velvet, // base
+    light: #fd2641,
+    lighter: #e17077
+  ),
+  u-theme--earth: (
+    darker: #210b00,
+    dark: #974e02,
+    base: $c-theme-earth, // base
+    light: #eab57e,
+    lighter: #eab57e
   )
 );
 
