@@ -185,4 +185,8 @@ $themes: (
   .can-be--dark-dark {
     background-color: $c-neutral-2;
   }
+
+  .c-primary-nav__list::after {
+    background-color: $c-black !important;
+  }
 }
