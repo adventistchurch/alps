@@ -23,7 +23,7 @@ tr {
   border: 1px solid transparent;
 
   &:nth-child(even) {
-    background-color: lighten($c-neutral-2, 60%);
+    background-color: $c-gray--light;
   }
 }
 

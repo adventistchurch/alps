@@ -34,23 +34,16 @@ $c-theme-earth: #5e3929;
 /**
  * Neutral Colors
  */
-$c-neutral-1: #000000;
-$c-neutral-2: #222222;
-$c-neutral-3: #4a4a4a;
-$c-neutral-4: #717171;
-$c-neutral-5: #f5f5f5;
-$c-neutral-6: #ffffff;
+ $c-black: #000000;
+ $c-gray--darker: #222222;
+ $c-gray--dark: #4a4a4a;
+ $c-gray: #717171;
+ $c-gray--light: #f5f5f5;
+ $c-white: #ffffff;
 
 /**
  * Default Colors
  */
-$c-black: $c-neutral-1;
-$c-gray--darker: $c-neutral-2;
-$c-gray--dark: $c-neutral-3;
-$c-gray: $c-neutral-4;
-$c-gray--light: $c-neutral-5;
-$c-white: $c-neutral-6;
-
 $c-error: #f00;
 $c-valid: #089e00;
 $c-warning: #fff664;
@@ -61,16 +54,16 @@ $c-overlay: rgba($c-black, 0.8);
  * Style Colors
  */
 $c-body-color: $c-black;
-$c-link-color: $c-theme-ming;
-$c-button-color: $c-theme-ming;
+$c-link-color: $c-gray;
+$c-button-color: $c-gray;
 
 /**
  * Typography
  */
-$ff-font: 'Noto Sans', Georgia, Times, "Times New Roman", serif;
-$ff-font--secondary: 'Noto Serif', "Helvetica", "Arial", sans-serif;
-$ff-font--tertiary: $ff-font--secondary;
-$ff-font--serif: $ff-font;
+$ff-font: 'Noto Sans', "Helvetica", "Arial", sans-serif;
+$ff-font--primary: 'Noto Serif', Georgia, Times, "Times New Roman", serif;
+$ff-font--secondary: 'Noto Sans', "Helvetica", "Arial", sans-serif;
+$ff-font--serif: $ff-font--primary;
 $ff-font--sans: $ff-font--secondary;
 $ff-font--monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
 

@@ -2,7 +2,7 @@
 <nav class="c-primary-nav" role="navigation">
   <ul class="c-primary-nav__list">
     {% for item in primary_nav.items %}
-      <li class="c-primary-nav__list-item u-theme--link-hover--base js-toggle {% if item.subnav %}{{ 'has-subnav u-theme--background-color--darker' }}{% endif %}" {% if item.subnav %} data-prefix="this" {% endif %}>
+      <li class="c-primary-nav__list-item u-theme--link-hover--base{% if item.subnav %}{{ ' has-subnav js-toggle u-theme--background-color--darker' }}{% endif %}" {% if item.subnav %} data-prefix="this" {% endif %}>
         <a href="{{ item.url }}" class="c-primary-nav__link u-font--primary-nav u-color--gray--dark u-theme--link-hover--base u-theme--border-color--base {% if item.is_active %}active{% endif %}">
           {{ item.text }} {% if item.subnav %}<span class="c-subnav__arrow o-arrow--down u-path-fill--gray"></span>{% endif %}
         </a>

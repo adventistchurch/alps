@@ -85,6 +85,7 @@
           display: block;
           visibility: visible;
           opacity: 1;
+          z-index: 9;
         }
       }
     }
@@ -194,15 +195,17 @@
   left: $pad/2;
   top: 0;
   flex-direction: column;
-  z-index: 9;
+  z-index: -1;
   background-color: transparent !important;
 
   &.c-primary-nav__subnav {
-    padding-top: rem(40);
+    padding-top: rem(10);
+    top: rem(30);
   }
 
   &.c-secondary-nav__subnav {
-    padding-top: rem(30);
+    padding-top: rem(10);
+    top: rem(20);
   }
 
   &__list-item {
@@ -334,25 +337,48 @@
     }
   }
 
-  a {
-    color: $c-white;
-  }
-
   svg path {
     fill: $c-white;
   }
 
   // Drawer Primary Nav
+  &__nav-primary {
+    z-index: 1;
+  }
+
   .c-primary-nav {
     &__list {
       @include media('>medium') {
         max-width: rem(250);
         position: relative;
+
+        &.this-is-active {
+          .c-primary-nav__list-item.this-is-active {
+            opacity: 1;
+          }
+
+          .c-primary-nav__list-item {
+            opacity: 0.4;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
       }
     }
 
     &__list-item {
       display: flex;
+      cursor: pointer;
+
+      &.has-subnav .c-primary-nav__link {
+        pointer-events: none;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
 
       &.this-is-active {
         @include media('<=medium') {
@@ -413,6 +439,7 @@
       justify-content: space-between;
       align-items: center;
       transition: none;
+      color: $c-white;
 
       .o-arrow--down {
         border-right: 0;
@@ -426,6 +453,10 @@
         top: rem(5);
         display: inline-block;
       }
+
+      &:hover {
+        color: $c-white !important;
+      }
     }
 
     &__list-item__toggle,
@@ -435,6 +466,10 @@
   }
 
   // Drawer Secondary Nav
+  &__nav-secondary {
+    z-index: 2;
+  }
+
   .c-secondary-nav {
     margin-top: $space;
 
@@ -456,11 +491,20 @@
       &__toggle {
         display: none;
       }
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     &__link {
       padding: $pad/2 0;
       transition: none;
+      color: $c-white;
+
+      &:hover {
+        color: $c-white !important;
+      }
     }
   }
 
@@ -475,6 +519,7 @@
     min-width: rem(270);
     z-index: 999;
     height: 0;
+    top: 0;
     transition: none;
 
     @include media('>medium') {

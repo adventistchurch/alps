@@ -17,7 +17,7 @@ $themes: (
     dark: #255760,
     base: $c-theme-ming, // base
     light: #00d5fe,
-    lighter: #9fe180
+    lighter: #9ae1f0
   ),
   u-theme--bluejay: (
     darker: #052252,
@@ -110,7 +110,6 @@ $themes: (
   .#{$theme} {
     @each $color, $colors in $theme {
       @each $key, $value in $color {
-
         // Text Color
         .u-theme--color--#{$key},
         .u-theme--color--#{$key} a,
@@ -118,17 +117,10 @@ $themes: (
         .u-theme--link-hover--#{$key} a:hover {
           color: $value;
         }
-        // a.u-theme--color--#{$key}:hover,
-        // .u-theme--color--#{$key} a:hover {
-        //   //color: complement($value);
-        // }
 
         // Background Color
         .u-theme--background-color--#{$key} {
           background-color: $value;
-        }
-        .u-theme--background-color-trans--#{$key} {
-          //background-color: rgba($value, 0.8);
         }
 
         // Border Color
@@ -163,27 +155,52 @@ $themes: (
   }
 }
 
+@each $theme, $shade in $themes {
+  $darker: map-get($shade, darker);
+  $dark: map-get($shade, dark);
+  $base: map-get($shade, base);
+  $light: map-get($shade, light);
+  $lighter: map-get($shade, lighter);
+  .#{$theme} {
+    .u-theme--background-color-trans--darker {
+      background-color: rgba($darker, 0.8);
+    }
+    .u-theme--background-color-trans--dark {
+      background-color: rgba($dark, 0.8);
+    }
+    .u-theme--background-color-trans--base {
+      background-color: rgba($base, 0.8);
+    }
+    .u-theme--background-color-trans--light {
+      background-color: rgba($light, 0.8);
+    }
+    .u-theme--background-color-trans--lighter {
+      background-color: rgba($lighter, 0.8);
+    }
+  }
+};
+
 /**
  * Dark Theme
  */
 .u-theme--dark {
-  color: $c-neutral-6;
-  background-color: $c-neutral-1;
+  color: $c-white;
+  background-color: $c-black;
 
   hr {
-    background-color: rgba($c-neutral-6, .2);
+    background-color: rgba($c-white, .2);
   }
 
   .can-be--white {
-    color: $c-neutral-6;
+    color: $c-white;
   }
 
   .can-be--dark-light {
-    background-color: $c-neutral-5;
+    background-color: $c-gray--light;
   }
 
   .can-be--dark-dark {
-    background-color: $c-neutral-2;
+    background-color: $c-gray--darker;
   }
 
   .c-primary-nav__list::after {

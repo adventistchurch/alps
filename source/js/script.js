@@ -117,6 +117,16 @@
     $('.c-drawer__nav .c-primary-nav__list-item').removeClass('js-hover');
   });
 
+  // Add active class to drawer parent when child is active
+  $('.c-drawer .c-primary-nav__list-item').on('click', function() {
+    if ($(this).hasClass('this-is-active')) {
+      $(this).parent().removeClass('this-is-active');
+    } else {
+      $(this).parent().addClass('this-is-active');
+    }
+  });
+
+
   // SITE SPECIFIC JS ------------------------------//
 
   var toggleClasses = function(element) {
