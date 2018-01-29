@@ -393,6 +393,7 @@
             font-family: $ff-font;
             font-size: rem(20);
             z-index: 999;
+            width: 100%;
 
             &::before {
               content: "";
