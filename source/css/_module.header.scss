@@ -378,12 +378,6 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
-      // @include media('>medium') {
-      //   &:hover {
-      //     opacity: 0.5;
-      //   }
-      // }
-
       &.this-is-active {
         @include media('<=medium') {
           position: absolute;
@@ -549,7 +543,6 @@
       transition: all 0.25s ease;
       position: absolute;
       left: rem(320);
-      //padding-left: $space*2;
       padding-top: $space/4;
       margin-bottom: $space/2;
       background: transparent !important;
