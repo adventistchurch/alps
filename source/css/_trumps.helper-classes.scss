@@ -17,7 +17,11 @@
   border-bottom: rem(5) solid $c-black;
 }
 
-.o-arrow--down {
+.o-arrow--down::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
   border-left: rem(5) solid transparent;
   border-right: rem(5) solid transparent;
   border-top: rem(5) solid $c-gray;
