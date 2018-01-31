@@ -107,9 +107,17 @@
   // updateNav();
 
   $('.c-drawer__nav .c-subnav__arrow').on('click', function() {
-    $('.c-drawer__container').toggleClass('subnav-is-active');
     $('.c-subnav__arrow').not(this).parent().removeClass('this-is-active');
     $('.c-subnav__arrow').not(this).removeClass('this-is-active');
+    $('.c-drawer__container').toggleClass('subnav-is-active');
+
+    if ($(this).hasClass('this-is-active')) {
+      $(this).parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().parent().removeClass('this-is-active');
+    } else {
+      $(this).parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().parent().addClass('this-is-active');
+    }
   });
 
   $('.js-toggle-menu').on('click', function(e) {
@@ -118,18 +126,9 @@
     $('.c-drawer__nav .c-primary-nav__list-item').removeClass('js-hover');
   });
 
-  // Add active class to drawer parent when child is active
-  $('.c-drawer .c-subnav__arrow').on('click', function() {
-    if ($(this).hasClass('this-is-active')) {
-      $(this).parent().parent().removeClass('this-is-active');
-    } else {
-      $(this).parent().parent().addClass('this-is-active');
-    }
-  });
-
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
-    $('.c-primary-nav__list, .c-primary-nav__list-item').removeClass('this-is-active');
+    $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary').removeClass('this-is-active');
   });
 
   // Make search input active with toggle is clicked

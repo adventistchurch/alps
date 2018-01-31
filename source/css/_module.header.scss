@@ -12,7 +12,7 @@
   flex-direction: column;
   width: 100%;
 
-  @include media('>medium') {
+  @include media('>large') {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
@@ -35,7 +35,12 @@
 .c-header__nav {
   width: 100%;
 
-  @include media('>medium') {
+  @include media('>small') {
+    margin-top: $space;
+  }
+
+  @include media('>large') {
+    margin-top: 0;
     width: calc(100% - 300px);
   }
 }
@@ -50,7 +55,7 @@
     justify-content: flex-end;
     float: right;
 
-    @include media('>medium') {
+    @include media('>small') {
       display: inline-table;
     }
 
@@ -138,7 +143,7 @@
     margin-left: -$space;
     margin-right: -$space;
 
-    @include media('>medium') {
+    @include media('>small') {
       margin-left: 0;
       margin-right: 0;
     }
@@ -150,7 +155,7 @@
       flex-wrap: wrap;
       width: 100%;
 
-      @include media('>medium') {
+      @include media('>small') {
         justify-content: flex-end;
         align-items: center;
       }
@@ -159,7 +164,7 @@
     &__list-item {
       display: none;
 
-      @include media('>medium') {
+      @include media('>small') {
         display: inline-block;
       }
 
@@ -169,7 +174,7 @@
     }
 
     &__list-item__menu {
-      @include media('>medium') {
+      @include media('>small') {
         display: none !important;
       }
     }
@@ -274,19 +279,26 @@
     opacity: 1;
     z-index: 999;
 
-    .c-drawer__toggle,
+    .c-drawer__toggle {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
     .c-drawer__container {
       right: 0;
     }
   }
 
   &__toggle {
-    right: -100%;
-    transition: right 0.25s ease-in-out;
-    transition-delay: 0.25s;
+    right: 0;
+    opacity: 0;
+    transform: scale(0.9);
+    visibility: hidden;
+    transition: all 0.25s ease-in-out;
     background-color: rgba($c-black, 0.8);
     position: relative;
-    min-width: rem(50);
+    width: 100%;
     cursor: pointer;
 
     .o-icon__close{
@@ -300,6 +312,7 @@
     position: fixed;
     right: -100%;
     transition: right 0.25s ease-in-out;
+    transition-delay: 0.25s;
     height: 100%;
     width: 100%;
     overflow: scroll;
@@ -346,13 +359,17 @@
 
   // Drawer Primary Nav
   &__nav-primary {
-    z-index: 2;
+    z-index: 1;
+
+    &.this-is-active {
+      z-index: 2;
+    }
   }
 
   .c-primary-nav {
     &__list {
       @include media('>medium') {
-        max-width: rem(300);
+        width: rem(270);
         position: relative;
 
         &.this-is-active {
@@ -368,6 +385,10 @@
             }
           }
         }
+      }
+
+      @include media('>large') {
+        width: rem(300);
       }
     }
 
@@ -457,12 +478,18 @@
     }
 
     .c-subnav__arrow {
-      width: rem(50);
-      height: rem(30);
+      width: rem(60);
+      height: rem(50);
       min-width: rem(50);
       text-align: center;
-      position: relative;
+      position: absolute;
+      right: $pad;
+      padding-right: $pad;
       cursor: pointer;
+
+      @include media('>medium') {
+        right: 0;
+      }
 
       &::after {
         border-right: 0;
@@ -471,10 +498,28 @@
         border-top: rem(5) solid transparent;
         border-bottom: rem(5) solid transparent;
         border-left: rem(5) solid $c-white;
-        float: right;
-        position: relative;
-        top: rem(11);
+        right: $pad;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
         display: inline-block;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        z-index: 1;
+        width: rem(50);
+        height: rem(50);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+
+        @include media('>large')
+        width: rem(75);
       }
     }
 
@@ -500,6 +545,10 @@
       position: relative;
 
       @include media('>medium') {
+        max-width: rem(270);
+      }
+
+      @include media('>large') {
         max-width: rem(300);
       }
     }
@@ -543,10 +592,14 @@
     @include media('>medium') {
       transition: all 0.25s ease;
       position: absolute;
-      left: rem(320);
+      left: rem(290);
       padding-top: $space/4;
       margin-bottom: $space/2;
       background: transparent !important;
+    }
+
+    @include media('>large') {
+      left: rem(320);
     }
 
     &__list-item {
@@ -647,6 +700,33 @@
 
     &:last-child {
       transform: rotate(-45deg);
+    }
+  }
+}
+
+.no-touch {
+  .c-drawer {
+    .c-primary-nav__link,
+    .c-secondary-nav__list-item {
+      transition: all 0.25s ease;
+    }
+
+    .c-primary-nav__list-item:hover .c-primary-nav__link,
+    .c-primary-nav__subnav__link a:hover {
+      opacity: 0.4;
+    }
+
+    .c-primary-nav__list.this-is-active .c-primary-nav__list-item:hover .c-primary-nav__link {
+      opacity: 1;
+    }
+  }
+}
+
+.touch {
+  .c-drawer {
+    .c-primary-nav__list-item,
+    .c-primary-nav__list-item.this-is-active {
+      transition: right 0.25s ease;
     }
   }
 }
