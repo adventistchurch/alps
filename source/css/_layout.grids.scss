@@ -18,8 +18,13 @@ $gutter: 1.875rem; // 30px
  * Fixed Gutters
  */
 @mixin column-gutters() {
-  padding-left: $gutter;
-  padding-right: $gutter;
+  padding-left: $gutter/2;
+  padding-right: $gutter/2;
+
+  @include media('>medium') {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
 
   @include media ('>xlarge') {
     &.u-left-gutter--l {
