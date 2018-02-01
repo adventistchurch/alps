@@ -41,6 +41,12 @@ body {
   width: 100%;
 }
 
+.hide-theme-switcher {
+  .theme-switcher {
+    display: none;
+  }
+}
+
 /**
  * Browser Update message
  */
