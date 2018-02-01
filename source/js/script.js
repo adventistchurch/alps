@@ -110,6 +110,7 @@
     $('.c-subnav__arrow').not(this).parent().removeClass('this-is-active');
     $('.c-subnav__arrow').not(this).removeClass('this-is-active');
     $('.c-drawer__container').toggleClass('subnav-is-active');
+    $('.c-drawer__subnav li').remove();
 
     if ($(this).hasClass('this-is-active')) {
       $(this).parent().parent().removeClass('this-is-active');
@@ -117,18 +118,20 @@
     } else {
       $(this).parent().parent().addClass('this-is-active');
       $(this).parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parent('li').clone().appendTo('.c-drawer__subnav');
     }
-  });
-
-  $('.js-toggle-menu').on('click', function(e) {
-    e.stopPropagation();
-    $('.c-drawer').toggleClass('this-is-active');
-    $('.c-drawer__nav .c-primary-nav__list-item').removeClass('js-hover');
   });
 
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
     $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary').removeClass('this-is-active');
+  });
+
+  // Open drawer when menu toggle is clicked
+  $('.js-toggle-menu').on('click', function(e) {
+    e.stopPropagation();
+    $('.c-drawer').toggleClass('this-is-active');
+    $('.c-drawer__nav .c-primary-nav__list-item').removeClass('js-hover');
   });
 
   // Make search input active with toggle is clicked

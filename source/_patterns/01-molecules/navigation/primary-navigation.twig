@@ -2,13 +2,13 @@
 <nav class="c-primary-nav" role="navigation">
   <ul class="c-primary-nav__list">
     {% for item in primary_nav.items %}
-      <li class="c-primary-nav__list-item u-theme--link-hover--base{% if item.subnav %}{{ ' has-subnav js-this u-theme--background-color--darker' }}{% endif %}">
+      <li class="c-primary-nav__list-item u-theme--link-hover--base{% if item.subnav %}{{ ' has-subnav js-this' }}{% endif %}">
         <a href="/" class="c-primary-nav__link u-font--primary-nav u-color--gray--dark u-theme--link-hover--base u-theme--border-color--base {% if item.is_active %}active{% endif %}">
           {{ item.text }}
         </a>
         {% if item.subnav %}<span class="c-subnav__arrow o-arrow--down u-path-fill--gray js-toggle" {% if item.subnav %} data-toggled="this" data-prefix="this" {% endif %}></span>{% endif %}
         {% if item.subnav %}
-          <ul class="c-primary-nav__subnav c-subnav u-theme--background-color--darker">
+          <ul class="c-primary-nav__subnav c-subnav">
             {% for sub_item in item.subnav.items %}
               <li class="c-primary-nav__subnav__list-item c-subnav__list-item u-background-color--gray--light">
                 <a class="c-primary-nav__subnav__link c-subnav__link u-color--gray--dark u-theme--link-hover--base" href="{{ sub_item.url }}">{{ sub_item.text }}</a>
