@@ -581,7 +581,7 @@
 
   "row_blocks": [{
       "media_block_default": {
-        "block_inner_class": "block__row",
+        "block_inner_class": "c-block__row",
         "kicker": "Freundschaftsbezeigungen",
         "title": "Cras at sem at felis rhoncus",
         "block_img_class": "round ",
@@ -597,7 +597,7 @@
     },
     {
       "media_block_default": {
-        "block_inner_class": "block__row",
+        "block_inner_class": "c-block__row",
         "title": "Fusce interdum purus est",
         "img": {
           "src": "//placehold.it/300x350",
@@ -611,7 +611,7 @@
     },
     {
       "media_block_default": {
-        "block_inner_class": "block__row",
+        "block_inner_class": "c-block__row",
         "title": "Sed neque odio, iaculis iaculis rutrum quis",
         "img": {
           "src": "//placehold.it/300x200",
@@ -624,7 +624,7 @@
     },
     {
       "media_block_default": {
-        "block_inner_class": "block__row",
+        "block_inner_class": "c-block__row",
         "kicker": "Aenean arcu",
         "title": "Pellentesque semper",
         "img": {
