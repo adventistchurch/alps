@@ -1,11 +1,6 @@
 {% if secondary_nav %}
 <nav class="c-secondary-nav" id="c-secondary-nav" role="navigation">
   <ul class="c-secondary-nav__list">
-    <li class="c-secondary-nav__list-item c-secondary-nav__list-item__toggle js-toggle-menu js-toggle-search is-priority">
-      <a href="#" class="c-secondary-nav__link u-font--secondary-nav u-color--gray u-theme--link-hover--base">
-        <span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/icon-search.twig' %}</span>Search
-      </a>
-    </li>
     {% for item in secondary_nav.items %}
       <li class="c-secondary-nav__list-item {% if item.priority == true %}{{ 'is-priority' }}{% endif %}{% if item.subnav %}{{ 'has-subnav' }}{% endif %}" {% if item.subnav %} data-prefix="hover" {% endif %}>
         <a href="{{ item.url }}" class="c-secondary-nav__link u-font--secondary-nav u-color--gray u-theme--link-hover--base">
@@ -23,6 +18,11 @@
         {% endif %}
       </li>
     {% endfor %}
+    <li class="c-secondary-nav__list-item c-secondary-nav__list-item__search c-secondary-nav__list-item__toggle js-toggle-menu js-toggle-search is-priority">
+      <a href="#" class="c-secondary-nav__link u-font--secondary-nav u-color--gray u-theme--link-hover--base">
+        <span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/icon-search.twig' %}</span>Search
+      </a>
+    </li>
     <li class="c-secondary-nav__list-item c-secondary-nav__list-item__menu c-secondary-nav__list-item__toggle js-toggle-menu is-priority">
       <a href="#" class="c-secondary-nav__link u-font--secondary-nav u-color--gray u-theme--link-hover--base">
         <span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/icon-menu.twig' %}</span>Menu
