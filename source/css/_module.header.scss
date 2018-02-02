@@ -249,6 +249,8 @@
         width: rem(100);
         left: $space;
         top: 0;
+        height: rem(35); // Height of nav
+        line-height: rem(35);
       }
 
       @include media('>medium') {
@@ -259,7 +261,6 @@
       @include media('>xlarge') {
         left: auto;
         right: $space;
-        top: rem(1);
       }
     }
 
@@ -810,19 +811,21 @@
 }
 
 .no-touch {
-  .c-drawer {
-    .c-primary-nav__link,
-    .c-secondary-nav__list-item {
-      transition: all 0.25s ease;
-    }
+  @include media('>medium') {
+    .c-drawer {
+      .c-primary-nav__link,
+      .c-secondary-nav__list-item {
+        transition: all 0.25s ease;
+      }
 
-    .c-primary-nav__list-item:hover .c-primary-nav__link,
-    .c-primary-nav__subnav__link a:hover {
-      opacity: 0.4;
-    }
+      .c-primary-nav__list-item:hover .c-primary-nav__link,
+      .c-primary-nav__subnav__link a:hover {
+        opacity: 0.4;
+      }
 
-    .c-primary-nav__list.this-is-active .c-primary-nav__list-item:hover .c-primary-nav__link {
-      opacity: 1;
+      .c-primary-nav__list.this-is-active .c-primary-nav__list-item:hover .c-primary-nav__link {
+        opacity: 1;
+      }
     }
   }
 }

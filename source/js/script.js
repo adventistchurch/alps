@@ -59,88 +59,6 @@
     getWidth();
   }
 
-  // var $nav = $('.c-priority-nav');
-  // var $btn = $('.c-priority-nav c-priority-nav__toggle');
-  // var $vlinks = $('.c-priority-nav .c-priority-nav--visible');
-  // var $hlinks = $('.c-priority-nav .c-priority-nav--hidden');
-  // var breaks = [];
-  //
-  // function updateNav() {
-  //   var availableSpace = $btn.hasClass('is-hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-  //   // The visible list is overflowing the nav
-  //   if($vlinks.width() > availableSpace) {
-  //     // Record the width of the list
-  //     breaks.push($vlinks.width());
-  //     // Move item to the hidden list
-  //     $vlinks.children().last().prependTo($hlinks);
-  //     // Show the dropdown btn
-  //     if($btn.hasClass('is-hidden')) {
-  //       $btn.removeClass('is-hidden');
-  //     }
-  //   // The visible list is not overflowing
-  //   } else {
-  //     // There is space for another item in the nav
-  //     if(availableSpace > breaks[breaks.length-1]) {
-  //       // Move the item to the visible list
-  //       $hlinks.children().first().appendTo($vlinks);
-  //       breaks.pop();
-  //     }
-  //     // Hide the dropdown btn if hidden list is empty
-  //     if(breaks.length < 1) {
-  //       $btn.addClass('is-hidden');
-  //       $hlinks.addClass('is-hidden');
-  //     }
-  //   }
-  //   // Recur if the visible list is still overflowing the nav
-  //   if($vlinks.width() > availableSpace) {
-  //     updateNav();
-  //   }
-  // }
-  //
-  // // Window listeners
-  // $(window).resize(function() {
-  //     updateNav();
-  // });
-  // $btn.on('click', function() {
-  //   $hlinks.toggleClass('is-hidden');
-  // });
-  // updateNav();
-
-  $('.c-drawer__nav .c-subnav__arrow').on('click', function() {
-    $('.c-subnav__arrow').not(this).parent().removeClass('this-is-active');
-    $('.c-subnav__arrow').not(this).removeClass('this-is-active');
-    $('.c-drawer__container').toggleClass('subnav-is-active');
-    $('.c-drawer__subnav li').remove();
-
-    if ($(this).hasClass('this-is-active')) {
-      $(this).parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().removeClass('this-is-active');
-    } else {
-      $(this).parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().parent().addClass('this-is-active');
-      $(this).parent('li').clone().appendTo('.c-drawer__subnav');
-    }
-  });
-
-  // Remove active classes on click of drawer
-  $('.c-drawer').on('click', function() {
-    $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary').removeClass('this-is-active');
-  });
-
-  // Open drawer when menu toggle is clicked
-  $('.js-toggle-menu').on('click', function(e) {
-    e.stopPropagation();
-    $('.c-drawer').toggleClass('this-is-active');
-    $('.c-drawer__nav .c-primary-nav__list-item').removeClass('js-hover');
-  });
-
-  // Make search input active with toggle is clicked
-  $('.js-toggle-search').on('click', function() {
-    setTimeout(function(){
-      $('.c-drawer__search input').focus();
-    }, 250);
-  });
-
   // SITE SPECIFIC JS ------------------------------//
 
   var toggleClasses = function(element) {
@@ -200,6 +118,65 @@
       toggleClasses($(this));
     });
   }
+
+  $('.c-drawer__nav .c-subnav__arrow').on('click', function(e) {
+    e.stopPropagation();
+    $('.c-drawer__container').toggleClass('subnav-is-active');
+    $('.c-drawer__subnav li').remove();
+
+    if ($(this).hasClass('this-is-active')) {
+      $(this).removeClass('this-is-active');
+      $(this).parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().parent().removeClass('this-is-active');
+    } else {
+      $(this).addClass('this-is-active');
+      $(this).parent().addClass('this-is-active');
+      $(this).parent().parent().parent().addClass('this-is-active');
+      $(this).parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parent('li').clone().appendTo('.c-drawer__subnav');
+    }
+
+    $('.c-subnav__arrow').not(this).parent().removeClass('this-is-active');
+    $('.c-subnav__arrow').not(this).removeClass('this-is-active');
+  });
+
+  // Hover effects on drawer submenu not on mobile
+  if (!isMobile() && getWidth() > 700) {
+    $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
+      $('.c-drawer__container').addClass('subnav-is-active');
+      $(this).addClass('this-is-active');
+      $(this).parent().addClass('this-is-active');
+      $(this).parent().parent().parent().addClass('this-is-active');
+    });
+
+    $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
+      $('.c-drawer__container').removeClass('subnav-is-active');
+      $(this).removeClass('this-is-active');
+      $(this).parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().removeClass('this-is-active');
+    });
+  }
+
+  // Remove active classes on click of drawer
+  $('.c-drawer').on('click', function() {
+    $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-subnav__arrow').removeClass('this-is-active');
+  });
+
+  // Open drawer when menu toggle is clicked
+  $('.js-toggle-menu').on('click', function(e) {
+    e.stopPropagation();
+    $('.c-drawer').toggleClass('this-is-active');
+  });
+
+  // Make search input active with toggle is clicked
+  $('.js-toggle-search').on('click', function() {
+    setTimeout(function(){
+      $('.c-drawer__search input').focus();
+    }, 250);
+  });
 
   // Slick carousel (single item)
   if ($('.js-carousel__single-item').length) {
