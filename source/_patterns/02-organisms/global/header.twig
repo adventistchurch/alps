@@ -1,17 +1,15 @@
 <header class="c-header {{ header_class }}" role="banner" id="header">
   <div class="c-header--inner l-container">
+    <div class="c-header__nav-secondary">
+      {% include '@molecules/navigation/secondary-navigation.twig' %}
+    </div>
     <div class="c-header__logo c-logo">
       <a href="/" class="c-logo__link u-theme--fill-color--base">
         {% include '@atoms/images/logo.twig' %}
       </a>
     </div> <!-- /.c-header__logo -->
-    <div class="c-header__nav">
-      <div class="c-header__nav-secondary">
-        {% include '@molecules/navigation/secondary-navigation.twig' %}
-      </div>
-      <div class="c-header__nav-primary">
-        {% include '@molecules/navigation/primary-navigation.twig' %}
-      </div>
+    <div class="c-header__nav-primary">
+      {% include '@molecules/navigation/primary-navigation.twig' %}
     </div>
   </div> <!-- /.c-header--inner -->
 </header> <!-- .c-header -->
