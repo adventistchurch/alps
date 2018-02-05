@@ -37,9 +37,10 @@ This creates all patterns, the styleguide, and the pattern lab site as well as a
         ```apache
         <VirtualHost *:80>
           ServerName alps.test
-          DocumentRoot "/full/path/to/the/alps/project/files"
+          DocumentRoot "/full/path/to/alps/public"
         </VirtualHost>
         ```
+        Set the `DocumentRoot` to the full path to the `public` directory in the project files; e.g. `/Users/dallas/Code/alps/public`.
     1. Edit `/etc/hosts` (you will need root privileges to do so), add the following line:
         ```hosts
         127.0.0.1 alps.test
