@@ -5,7 +5,7 @@
         "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col--l--offset-1",
         "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-color--gray u-theme--border--darker--left",
         "block_title_class": "u-theme--color--darker u-theme--link-hover--base",
-        "block_meta_class": "u-padding--bottom u-theme--color--dark",
+        "block_meta_class": "u-theme--color--dark",
         "title": "Nulla finibus ligula ut nisl facilisis",
         "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
         "category": "Culture",

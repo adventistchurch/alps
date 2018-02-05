@@ -353,7 +353,9 @@
   },
 
   "media_block_default": {
-    "block_title_class": "font--secondary--m",
+    "block_content_class": "u-color--gray",
+    "block_title_class": "u-theme--color--darker u-theme--link-hover--base",
+    "block_meta_class": "u-theme--color--dark",
     "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
     "img": {
       "src": "//placehold.it/600x300",
@@ -519,9 +521,14 @@
   },
 
   "heading_block_default": {
-    "block_heading": "General Conference",
-    "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
-    "cta": "Find out more"
+    "block_content_class": "u-theme--color--darker",
+    "block_color_class": "u-color--gray",
+    "kicker": "Feature",
+    "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+    "description": "Pellentesque volutpat sodales metus, ac aliquam nibh consectetur id. Phasellus varius dui viverra vehicula efficitur.",
+    "category": "Feature",
+    "datetime": "2016-12-12",
+    "date": "Mar 28, 2016"
   },
 
   "heading_blocks": [{

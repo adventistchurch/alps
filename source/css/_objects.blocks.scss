@@ -11,6 +11,12 @@
   }
 }
 
+.c-block__kicker {
+  text-transform: uppercase;
+  letter-spacing: rem(1);
+  font-size: 90%;
+}
+
 .c-block__image-wrap {
   > * {
     width: 100%;
@@ -158,6 +164,30 @@
     .c-block__title-link,
     .c-block__date {
       color: $c-white;
+    }
+  }
+}
+
+.c-block__inline {
+  align-items: stretch;
+  align-content: flex-end;
+
+  @include media('>small') {
+    max-height: rem(600);
+    overflow: hidden;
+  }
+
+  .c-block__content {
+    justify-content: flex-end;
+  }
+
+  .c-block__description {
+    flex-grow: 0;
+  }
+
+  .c-block__meta {
+    @include media('>small') {
+      padding-bottom: $pad;
     }
   }
 }

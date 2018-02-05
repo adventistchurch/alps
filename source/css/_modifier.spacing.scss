@@ -102,6 +102,92 @@
 }
 
 /**
+ * Spacing
+ */
+// For more information on this spacing technique, please see:
+// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls.
+
+.u-spacing {
+  & > * + * {
+    margin-top: $space;
+  }
+
+  &--until-large {
+    & > * + * {
+      @include media('<=large') {
+        margin-top: $space;
+      }
+    }
+  }
+
+  &--quarter {
+    & > * + * {
+      margin-top: $space/4;
+    }
+
+    &--until-large {
+      & > * + * {
+        @include media('<=large') {
+          margin-top: $space/4;
+        }
+      }
+    }
+
+    &--until-xlarge {
+      & > * + * {
+        @include media('<=xlarge') {
+          margin-top: $space/4;
+        }
+      }
+    }
+  }
+
+  &--half {
+    & > * + * {
+      margin-top: $space/2;
+    }
+
+    &--until-large {
+      & > * + * {
+        @include media('<=large') {
+          margin-top: $space/2;
+        }
+      }
+    }
+  }
+
+  &--one-and-half {
+    & > * + * {
+      margin-top: $space*1.5;
+    }
+  }
+
+  &--double {
+    & > * + * {
+      margin-top: $space*2;
+    }
+  }
+
+  &--triple {
+    & > * + * {
+      margin-top: $space*3;
+    }
+  }
+
+  &--quad {
+    & > * + * {
+      margin-top: $space*4;
+    }
+  }
+
+  &--zero {
+    & > * + * {
+      margin-top: 0;
+    }
+  }
+}
+
+/**
  * Space
  */
 .u-space {
@@ -204,92 +290,6 @@
 
     &--bottom {
       margin-bottom: 0;
-    }
-  }
-}
-
-/**
- * Spacing
- */
-// For more information on this spacing technique, please see:
-// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls.
-
-.u-spacing {
-  & > * + * {
-    margin-top: $space;
-  }
-
-  &--until-large {
-    & > * + * {
-      @include media('<=large') {
-        margin-top: $space;
-      }
-    }
-  }
-
-  &--quarter {
-    & > * + * {
-      margin-top: $space/4;
-    }
-
-    &--until-large {
-      & > * + * {
-        @include media('<=large') {
-          margin-top: $space/4;
-        }
-      }
-    }
-
-    &--until-xlarge {
-      & > * + * {
-        @include media('<=xlarge') {
-          margin-top: $space/4;
-        }
-      }
-    }
-  }
-
-  &--half {
-    & > * + * {
-      margin-top: $space/2;
-    }
-
-    &--until-large {
-      & > * + * {
-        @include media('<=large') {
-          margin-top: $space/2;
-        }
-      }
-    }
-  }
-
-  &--one-and-half {
-    & > * + * {
-      margin-top: $space*1.5;
-    }
-  }
-
-  &--double {
-    & > * + * {
-      margin-top: $space*2;
-    }
-  }
-
-  &--triple {
-    & > * + * {
-      margin-top: $space*3;
-    }
-  }
-
-  &--quad {
-    & > * + * {
-      margin-top: $space*4;
-    }
-  }
-
-  &--zero {
-    & > * + * {
-      margin-top: 0;
     }
   }
 }

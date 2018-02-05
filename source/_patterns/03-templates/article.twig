@@ -1,19 +1,16 @@
 <div class="content u-clear-fix has-aside" role="document">
   {% include '@organisms/global/header.twig' %}
   <main class="main can-be--dark-dark" role="main">
-    {% include '@organisms/sections/page-header@complete.twig' %}
+    {% include '@organisms/sections/page-header.twig' %}
+    {% include '@molecules/navigation/article-navigation.twig' %}
     <div class="l-container l-full--until-large">
-      <div class="l-flex-container u-clear-fix {% if page_reversed %} l-shift--reversed {% endif %}">
-        <div class="l-shift-left--fluid l-column--primary u-background-color--white can-be--dark-light">
+      <div class="l-flex-container u-clear-fix">
+        <div class="l-shift-left--fluid l-column--primary u-background-color--white can-be--dark-light u-spacing--one-and-half">
           {% include '@organisms/content/page-content.twig' %}
+          <div class="u-padding--primary">{% include '@organisms/sections/comments.twig' %}</div>
         </div> <!-- /.l-shift-left--fluid -->
         <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
-          {% if breakout_block %}
-            {% include '@molecules/blocks/media-block.twig' with {'media_block_default': breakout_block.media_block_default} %}
-          {% endif %}
-          <div class="l-column--secondary can-be--dark-dark">
-            {% include '@organisms/asides/aside.twig' %}
-          </div>
+          {% include '@molecules/navigation/aside-navigation.twig' %}
         </div> <!-- /.l-shift-right--fluid -->
       </div> <!-- /.l-flex-container -->
     </div> <!-- /.l-container -->
