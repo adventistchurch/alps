@@ -347,7 +347,7 @@ module.exports = function(grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "alps.dev"
+        proxy: "alps.test"
       }
     }
 

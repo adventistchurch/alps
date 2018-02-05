@@ -19,12 +19,43 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 - [Install Composer globally](https://getcomposer.org/doc/00-intro.md#globally)
 - run `composer install`
-- Set up your local dev url to be `alps.dev`
+- Set up your local dev url to be `alps.test` (instructions below)
 - [Install node globally](https://docs.npmjs.com/getting-started/installing-node)
 - run `npm install` (may need to be run as `sudo`)
 - run `grunt`
 
 This creates all patterns, the styleguide, and the pattern lab site as well as a local server for development.
+
+#### Setting Up `alps.test` Local Development Domain
+
+##### Using MAMP
+
+1. Grab MAMP from [mamp.info/en/downloads](https://www.mamp.info/en/downloads/) and install it.
+1. Once all of the MAMP files have been installed, set up a virtual host for the project:
+    1. Edit `/Applications/MAMP/conf/apache/httpd.conf`, find the line which says `# Virtual hosts`, and uncomment the `Include …/httpd-vhosts.conf` line after it.
+    1. Edit `/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf`, comment out the 2 example `<VirtualHost>` blocks, and add:
+        ```apache
+        <VirtualHost *:80>
+          ServerName alps.test
+          DocumentRoot "/full/path/to/the/alps/project/files"
+        </VirtualHost>
+        ```
+    1. Edit `/etc/hosts` (you will need root privileges to do so), add the following line:
+        ```hosts
+        127.0.0.1 alps.test
+        ```
+1. Start the MAMP application.
+1. Before you “Start Servers”, go to “Preferences…”:
+    1. Go to the “Ports” tab.
+    1. Click on the “Set Web & MySQL ports to 80 & 3306” button.
+    1. Click “OK” to save this prefence and close the preferences dialog box.
+1. Click on “Start Servers” – you will likely need to enter your user password to allow access to port 80.
+1. Navigate to [alps.test](http://alps.test) in your browser.
+
+##### Using MAMP Pro
+
+_(Documentation needed)_
+
 
 ### Twig Include Syntax
 In order to play nice with environments outside of Pattern Lab, we use the default [Twig include syntax](https://twig.sensiolabs.org/doc/2.x/functions/include.html) over the Pattern Lab shorthand.
