@@ -4,7 +4,7 @@
 
 // Primary color themed elements.
 @mixin theme-primary($name, $primary-color) {
-  .#{$name} {
+  .theme--#{$name} {
     // Text colors
     .theme--primary-text-color,
     .theme--primary-text-color a {
@@ -52,7 +52,7 @@
 
 // Secondary color themed elements.
 @mixin theme-secondary($name, $secondary-color) {
-  .#{$name} {
+  .theme--#{$name} {
     // Text colors
     .theme--secondary-text-color,
     .theme--secondary-text-color a {
