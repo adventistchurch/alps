@@ -12,3 +12,28 @@ body {
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
+
+.l-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: stretch;
+}
+
+.l-wrap__content {
+  width: calc(100%/7 *6);
+}
+
+.l-wrap__sidebar {
+  width: calc(100%/7 *1);
+  height: 100vh;
+  background-color: $c-gray--light;
+  padding: $pad;
+  flex: 1;
+}
+
+.l-main {
+  z-index: 2;
+  position: relative;
+}

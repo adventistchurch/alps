@@ -5,6 +5,8 @@
 .c-header {
   display: flex;
   padding-top: $pad;
+  padding-bottom: $pad;
+  z-index: 1;
 
   &__logo {
     order: 0;
@@ -112,6 +114,8 @@
     }
 
     &__list {
+      height: rem(35);
+      overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
