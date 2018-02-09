@@ -307,7 +307,7 @@ $gutter: 1.875rem; // 30px
     content: '';
     background-image: var(--background-columns);
     background-size: var(--background-width) 100%;
-    z-index: 1000;
+    z-index: -1;
     pointer-events: none;
   }
 }
@@ -317,15 +317,14 @@ $gutter: 1.875rem; // 30px
   --offset: rem(0);
   --max_width: rem(1024);
   --columns: 7;
-  --gutter: rem(1);
-  --color: hsla(204, 80%, 72%, 0.25);
-  --line-thickness: rem(15);
+  --color: $c-gray--light;
+  --line-thickness: 1px;
 }
 
 :root {
   --repeating-width: calc(100% / var(--columns));
-  --column-width: calc((100% / var(--columns)) - var(--gutter));
-  --background-width: calc(100% + var(--gutter));
+  --column-width: calc((100% / var(--columns)));
+  --background-width: 100%;
   --background-columns: repeating-linear-gradient(
    to right,
    var(--color),

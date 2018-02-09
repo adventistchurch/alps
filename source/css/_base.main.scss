@@ -27,10 +27,8 @@ body {
 
 .l-wrap__sidebar {
   width: calc(100%/7 *1);
-  height: 100vh;
   background-color: $c-gray--light;
   padding: $pad;
-  flex: 1;
 }
 
 .l-main {

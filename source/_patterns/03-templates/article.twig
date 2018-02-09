@@ -1,16 +1,16 @@
-<div class="l-wrap">
+<div class="l-wrap l-grid-container--7-col">
   <div class="l-wrap__content l-content" role="document">
     {% include '@organisms/global/header.twig' %}
-    <main class="l-main" role="main">
+    <main class="l-main u-spacing--double" role="main">
       {% include '@organisms/sections/page-header-feature.twig' %}
-      <div class="l-shift-left--fluid l-column--primary u-background-color--white can-be--dark-light u-spacing--one-and-half">
-        {% include '@organisms/content/page-content.twig' %}
-        <div class="u-padding--primary">{% include '@organisms/sections/comments.twig' %}</div>
-      </div> <!-- /.l-shift-left--fluid -->
-      <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
-        {% include '@molecules/navigation/aside-navigation.twig' %}
-      </div> <!-- /.l-shift-right--fluid -->
-
+      <section class=" l-grid--7-col l-grid--7-col--l--offset-1 l-grid-wrap--6-of-7">
+        <div class="l-grid-item l-grid-item--l--3-col">
+          {% include '@organisms/content/page-content.twig' %}
+        </div>
+        <div class="l-grid-item l-grid-item--l--1-col">
+          {% include '@molecules/navigation/aside-navigation.twig' %}
+        </div>
+      </section>
     </main> <!-- /.l-main -->
     {% include '@organisms/global/footer.twig' %}
   </div> <!-- /.l-content -->

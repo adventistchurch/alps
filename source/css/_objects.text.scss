@@ -2,6 +2,45 @@
     $TEXT TYPES
 \*------------------------------------*/
 
+.o-dropcap {
+  color: $c-white;
+  display: block;
+  float: left;
+  width: calc(33.33% - 20px);
+  margin-right: $pad;
+  overflow: hidden;
+  position: relative;
+  content: "";
+
+  @include media('>large') {
+    width: calc(33.33% - 40px);
+    margin-right: $pad*2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  &::before {
+    content: attr(data-letter);
+    position: absolute;
+    text-align: center;
+    font-family: $ff-font;
+    font-size: 16vw;
+    display: block;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include media('>large') {
+      font-size: 8vw;
+    }
+  }
+}
+
 /**
  * Dek
  */
@@ -31,7 +70,7 @@
   font-style: normal;
   text-transform: uppercase;
   font-family: $ff-font;
-  float: right;
+  text-align: right;
 }
 
 /**
@@ -39,6 +78,7 @@
  */
 .o-caption {
   line-height: 1.35;
+  font-style: italic;
 }
 
 /**
@@ -52,7 +92,7 @@
  * Font Families
  */
 .u-font--primary {
-  font-family: $ff-font;
+  font-family: $ff-font--primary;
 }
 
 .u-font--secondary {
@@ -94,7 +134,7 @@
 
 // X-Large Type - primary
 @mixin u-font--primary--xl() {
-  font-family: $ff-font;
+  font-family: $ff-font--primary;
   font-size: rem(26);
   line-height: 1;
   font-weight: normal;
@@ -111,7 +151,7 @@
 
 // Large Type - primary
 @mixin u-font--primary--l() {
-  font-family: $ff-font;
+  font-family: $ff-font--primary;
   font-size: rem(22);
   line-height: rem(26);
   font-weight: normal;
@@ -128,7 +168,7 @@
 
 // Medium Type - primary
 @mixin u-font--primary--m() {
-  font-family: $ff-font;
+  font-family: $ff-font--primary;
   font-size: rem(18);
   line-height: rem(24);
   font-weight: normal;
@@ -145,7 +185,7 @@
 
 // Small Type - primary
 @mixin u-font--primary--s() {
-  font-family: $ff-font;
+  font-family: $ff-font--primary;
   font-size: rem(14);
   line-height: rem(17);
 
@@ -161,7 +201,7 @@
 
 // X-Small Type - primary
 @mixin u-font--primary--xs() {
-  font-family: $ff-font;
+  font-family: $ff-font--primary;
   font-size: rem(13);
   line-height: rem(17);
 }
@@ -370,7 +410,7 @@
  * Passages of Text
  */
 .text {
-  font-family: $ff-font;
+  font-family: $ff-font--primary;
 
   > blockquote p,
   > dl dd,

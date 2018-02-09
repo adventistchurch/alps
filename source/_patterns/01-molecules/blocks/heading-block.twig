@@ -15,10 +15,10 @@
     {% endif %}
     <div class="c-heading-block__meta c-block__meta {{ heading_block_default.block_color_class }}">
       {% if heading_block_default.category %}
-        <span class="c-block__category u-font--primary--xs u-text-transform--upper">{{ heading_block_default.category }}</span>
+        <span class="c-block__category u-text-transform--upper">{{ heading_block_default.category }}</span>
       {% endif %}
       {% if heading_block_default.date %}
-        <time class="c-block__dat u-font--primary--xs u-text-transform--upper" datetime="{{ heading_block_default.datetime }}">{{ heading_block_default.date }}</time>
+        <time class="c-block__dat u-text-transform--upper" datetime="{{ heading_block_default.datetime }}">{{ heading_block_default.date }}</time>
       {% endif %}
     </div>
   </div> <!-- /.c-heading-block__content -->

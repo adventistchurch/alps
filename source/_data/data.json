@@ -17,7 +17,8 @@
 
   "img": {
     "src": "//placehold.it/500x400",
-    "alt": "Image Alt"
+    "alt": "Image Alt",
+    "caption": "Caption"
   },
 
   "picture": {
