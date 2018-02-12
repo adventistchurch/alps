@@ -68,8 +68,8 @@
  * Comments
  */
 .comment-list {
-  padding-top: $space-half;
-  margin-bottom: $space-double;
+  padding-top: $space/2;
+  margin-bottom: $space*2;
 
   > li {
     border-top: 1px solid $c-gray--light;
@@ -77,7 +77,7 @@
 
     .comment-respond,
     .children li {
-      margin-top: $space-and-half;
+      margin-top: $space;
       margin-left: rem(50);
     }
   }
@@ -85,7 +85,7 @@
 
 .comment-form {
   .comment-reply-title {
-    margin-bottom: $space-half;
+    margin-bottom: $space/2;
   }
 
   label {
@@ -112,7 +112,7 @@
 }
 
 .comment__avatar {
-  margin-right: $space-half;
+  margin-right: $space/2;
   display: flex;
   min-width: rem(50);
   min-height: rem(50);

@@ -25,8 +25,8 @@
 
 // Longform header
 .longform__header {
-  padding-top: $pad-double;
-  padding-bottom: $pad-double;
+  padding-top: $pad*2;
+  padding-bottom: $pad*2;
   background-color: $c-gray--darker;
 
   @include media('>medium') {
@@ -80,13 +80,13 @@
 }
 
 .article__body {
-  padding-bottom: $pad-double;
+  padding-bottom: $pad*2;
 
   > figure:first-child {
     margin-top: 0;
 
     @include media('>medium') {
-      margin-top: $space-half;
+      margin-top: $space/2;
     }
   }
 }
@@ -106,7 +106,7 @@
     float: right;
     max-width: rem(400);
     width: auto;
-    margin: rem(5) 0 $space $space-and-half;
+    margin: rem(5) 0 $space $space;
   }
 }
 
@@ -120,7 +120,7 @@
     float: left;
     max-width: rem(400);
     width: auto;
-    margin: rem(5) $space-and-half $space 0;
+    margin: rem(5) $space $space 0;
   }
 }
 
@@ -223,7 +223,7 @@ blockquote.aligncenter {
       float: left;
       width: 49%;
       clear: left;
-      margin-bottom: $space-and-half;
+      margin-bottom: $space;
 
       + .size--half {
         float: right;

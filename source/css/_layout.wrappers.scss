@@ -49,15 +49,15 @@
 \*------------------------------------*/
 
 .l-column--primary {
-  padding-top: $pad-and-half;
+  padding-top: $pad;
   padding-bottom: $pad;
 
   @include media('>medium') {
-    padding-top: $pad-double;
+    padding-top: $pad*2;
   }
 
   @include media('>large') {
-    padding-bottom: $pad-double;
+    padding-bottom: $pad*2;
   }
 
   @include media('>xlarge') {
@@ -66,13 +66,13 @@
 }
 
 .l-column--secondary {
-  padding-top: $pad-and-half;
-  padding-bottom: $pad-and-half;
+  padding-top: $pad;
+  padding-bottom: $pad;
   background-color: $c-gray--light;
 
   @include media('>medium') {
-    padding-top: $pad-double;
-    padding-bottom: $pad-double;
+    padding-top: $pad*2;
+    padding-bottom: $pad*2;
   }
 }
 
@@ -93,13 +93,13 @@
   padding-right: $pad;
 
   @include media('>large') {
-    padding-left: $pad-double;
-    padding-right: $pad-double;
+    padding-left: $pad*2;
+    padding-right: $pad*2;
   }
 }
 
 .u-padding--secondary--for-breakouts {
-  padding: $pad-and-half;
+  padding: $pad;
 
   @include media('>large') {
     padding: rem(50);

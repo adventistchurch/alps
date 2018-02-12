@@ -45,10 +45,10 @@
 }
 
 .carousel__arrow--prev {
-  left: $space-half;
+  left: $space/2;
 }
 .carousel__arrow--next {
-  right: $space-half;
+  right: $space/2;
 }
 
 // Push carousel container open relative to the slide image ratio.
@@ -130,7 +130,7 @@
   }
 
   @include media('>medium') {
-    padding: $pad-and-half;
+    padding: $pad;
   }
 }
 
@@ -171,7 +171,7 @@
 .carousel__item-subtitle,
 .carousel__item-dek {
   line-height: 1.5;
-  padding: rem(8) $pad-half;
+  padding: rem(8) $pad/2;
   display: inline-block;
 }
 
@@ -215,7 +215,7 @@
     background-color: transparent;
     width: rem(15);
     height: rem(15);
-    margin-left: $space-half;
+    margin-left: $space/2;
     cursor: pointer;
     box-shadow: 0 0 rem(3) rgba($c-black, .3), inset 0 0 rem(3) rgba($c-black, .3);
   }

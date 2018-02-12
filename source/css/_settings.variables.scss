@@ -75,18 +75,10 @@ $cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 /**
  * Default Spacing/Padding
  */
-$space: 0.9375rem; // 15px
-$space-and-half: $space*1.5;
-$space-double: $space*2;
-$space-quad: $space*4;
-$space-half: $space/2;
-$pad: 0.9375rem; // 15px
-$pad-and-half: $pad*1.5;
-$pad-double: $pad*2;
-$pad-half: $pad/2;
-$pad-quarter: $pad/4;
-$pad-triple: $pad*3;
-$pad-quad: $pad*4;
+$space: 1.25rem; // 20px
+$space-mobile: 0.9375rem; // 15px
+$pad: 1.25rem; // 20px
+$pad-mobile: 0.9375rem; // 15px
 
 /**
  * Border Styles

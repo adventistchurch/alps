@@ -115,7 +115,6 @@
 
     &__list {
       height: rem(35);
-      overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
@@ -145,7 +144,8 @@
       background-color: transparent;
 
       &:hover {
-        .c-primary-nav__subnav {
+        .c-primary-nav__subnav,
+        .c-subnav {
           display: block;
           visibility: visible;
           opacity: 1;
@@ -331,7 +331,7 @@
   }
 
   &__link {
-    padding: $pad/2 $pad;
+    padding: $pad/4 $pad;
     display: block;
     white-space: nowrap;
   }
@@ -402,17 +402,19 @@
     transition-delay: 0.25s;
     height: 100%;
     width: 100%;
-    overflow: scroll;
-    padding: $pad;
-    padding-bottom: $space*2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: $pad-mobile;
+    padding-bottom: $pad-mobile*2;
 
     @include media('>medium') {
       padding: $pad $pad 0 $pad*2;
+      overflow-x: visible;
     }
 
     &.subnav-is-active {
       @include media('<=medium') {
-        overflow: hidden;
+        overflow-x: hidden;
       }
     }
   }
@@ -522,8 +524,8 @@
       min-width: rem(50);
       text-align: center;
       position: absolute;
-      right: $pad;
-      padding-right: $pad;
+      right: -$pad-mobile;
+      padding-right: $pad-mobile;
       cursor: pointer;
 
       @include media('>medium') {
@@ -631,13 +633,11 @@
     @include media('>medium') {
       transition: all 0.25s ease;
       position: absolute;
-      left: rem(290);
-      padding-top: $space/4;
-      margin-bottom: $space/2;
+      left: rem(265);
     }
 
     @include media('>large') {
-      left: rem(320);
+      left: rem(300);
     }
 
     &__list-item {
@@ -654,7 +654,7 @@
     }
 
     &__link {
-      padding: $pad/4 $pad/2;
+      padding: $pad/4 $pad;
       white-space: normal;
     }
   }
@@ -708,7 +708,7 @@
     z-index: 999;
     transition: right 0.25s ease;
     display: block;
-    padding: $pad*2 $pad;
+    padding: $pad-mobile*2 $pad-mobile;
     height: 100vh;
 
     @include media('>medium') {
@@ -752,7 +752,7 @@
       position: relative;
       margin: 0;
       padding: 0;
-      padding-top: $pad;
+      padding-top: $pad/2;
       border-top: 1px solid $c-white;
       overflow: scroll;
       z-index: 999;
@@ -766,7 +766,7 @@
 
       &__link {
         color: $c-white;
-        padding: $pad/4 0;
+        padding: $pad/2 0;
         transition: none;
       }
     }

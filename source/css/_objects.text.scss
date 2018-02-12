@@ -7,14 +7,15 @@
   display: block;
   float: left;
   width: calc(33.33% - 20px);
-  margin-right: $pad;
+  margin-right: $pad-mobile;
   overflow: hidden;
   position: relative;
   content: "";
 
   @include media('>large') {
-    width: calc(33.33% - 40px);
-    margin-right: $pad*2;
+    width: calc(33.33% - 30px);
+    margin-right: $pad;
+    margin-bottom: $pad/2;
   }
 
   &::after {
@@ -430,7 +431,7 @@
     font-family: $ff-font--secondary;
     font-weight: 600;
     margin-bottom: rem(-5);
-    padding-top: $pad-half;
+    padding-top: $pad/2;
 
     @include media('>large') {
       margin-bottom: rem(-15);
@@ -458,7 +459,7 @@
     margin-bottom: $space;
 
     li {
-      margin-bottom: $space-half;
+      margin-bottom: $space/2;
     }
 
     ol,
@@ -480,7 +481,7 @@
     margin-bottom: $space;
 
     li {
-      margin-bottom: $space-half;
+      margin-bottom: $space/2;
     }
 
     ol,

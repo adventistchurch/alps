@@ -16,7 +16,7 @@ th {
   border-bottom: $c-gray solid 1px;
   padding: 0.2em;
   font-size: rem(14);
-  padding: $pad-half;
+  padding: $pad;
 }
 
 tr {
@@ -29,7 +29,7 @@ tr {
 
 td {
   border: 1px solid transparent;
-  padding: $pad-half;
+  padding: $pad;
   font-size: rem(14);
 
   a {

@@ -49,7 +49,7 @@ input[type=radio] {
   flex-direction: row;
 
   .form-input {
-    padding: 0 $pad-half;
+    padding: 0 $pad/2;
   }
 }
 
@@ -85,7 +85,7 @@ input[type=radio] {
      justify-content: space-between;
      align-items: flex-end;
      border-bottom: 1px solid $c-gray--darker;
-     padding-bottom: $space-half;
+     padding-bottom: $space/2;
    }
 
    .filter-form {
@@ -93,7 +93,7 @@ input[type=radio] {
      align-items: flex-start;
      justify-content: flex-start;
      width: 100%;
-     padding-bottom: $pad-half;
+     padding-bottom: $pad/2;
 
      @include media('>large') {
        flex-flow: column;
@@ -102,7 +102,7 @@ input[type=radio] {
    }
 
    .filter-items {
-     margin-right: $space-double;
+     margin-right: $space*2;
 
      @include media('>large') {
        margin-right: 0;
