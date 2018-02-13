@@ -46,3 +46,9 @@
      }
    }
  }
+
+ .u-space--right--1-col--at-medium {
+   @include media('>medium') {
+     margin-right: calc((100vw/7) * -1);
+   }
+ }

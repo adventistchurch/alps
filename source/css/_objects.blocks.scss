@@ -191,7 +191,7 @@
     max-height: rem(600);
   }
 
-  @include media('>large') {
+  @include media('>medium') {
     flex-wrap: nowrap;
   }
 
@@ -206,5 +206,87 @@
 
   .c-block__description {
     flex-grow: 0;
+  }
+}
+
+/**
+ * Gallery Block
+ */
+
+
+.c-gallery-block {
+  &.this-is-active {
+    .c-gallery-block__body {
+      display: block;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__body {
+    display: none;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__thumb {
+    width: calc((100vw/7 *1) - 15px); // - $pad-mobile
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+    @include media('>large') {
+      width: calc((100vw/7 *1) - 20px); // - $padsss
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../images/icons/o-icon__gallery.svg') bottom rem(10) left rem(10) no-repeat;
+      background-size: 10%;
+    }
+  }
+
+  &__toggle {
+    @include u-font--secondary--xs;
+
+    font-weight: bold;
+
+    &::after {
+      content: "Show";
+      padding-left: $pad/4;
+    }
+
+    .u-icon {
+      font-size: rem(16);
+      position: relative;
+      top: rem(1);
+    }
+
+    &.this-is-active {
+      &::after {
+        content: "Hide";
+      }
+
+      .u-icon {
+        transform: rotate(45deg);
+        position: relative;
+        right: rem(-3);
+        top: rem(2);
+      }
+    }
   }
 }

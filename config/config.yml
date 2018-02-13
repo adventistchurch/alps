@@ -8,7 +8,7 @@ id:
     - scss
     - .svn
     - .sass-cache
-cleanPublic: 'false'
+cleanPublic: 'true'
 patternStates:
     - inprogress
     - inreview
@@ -24,11 +24,9 @@ ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
     - hay
-    - disco
-    - rand
 styleguideKit: pattern-lab/styleguidekit-twig-default
 styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
-lineageMatch: '{%([ ]+)?include( |\()[&quot;\&#039;]([A-Za-z0-9-_]+)[&quot;\&#039;](\))?(.*)%}'
+lineageMatch: '{%([ ]+)?(?:include|extends|embed)( |\()[&quot;\&#039;]([\/.@A-Za-z0-9-_]+)[&quot;\&#039;]([\s\S+]*?)%}'
 lineageMatchKey: 3
 patternExtension: twig
 twigDebug: false
@@ -40,3 +38,6 @@ twigFilterExt: filter.php
 twigFunctionExt: function.php
 twigTagExt: tag.php
 twigTestExt: test.php
+plugins:
+    dataInheritance:
+        enabled: true

@@ -2,7 +2,7 @@
     $BUTTONS
 \*------------------------------------*/
 
-.o-btn,
+.o-button,
 button,
 input[type="submit"] {
   display: inline-block;
@@ -19,9 +19,7 @@ input[type="submit"] {
   text-transform: uppercase;
   border: none;
 
-  &:hover,
-  &:focus {
-    background-color: darken($c-theme-ming, 10);
+  &:hover {
     color: $c-white;
   }
 }
@@ -29,7 +27,15 @@ input[type="submit"] {
 /**
  * Button Sizing
  */
-.o-btn--small {
+.o-button--small {
   padding: rem(8) rem(12);
   font-size: rem(12);
+}
+
+.o-button--outline {
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  border-radius: rem(50);
+  padding: $pad/4 $pad/2;
 }

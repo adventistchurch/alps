@@ -6,6 +6,7 @@
   bottom: 0;
   box-shadow: 0 0 3px rgba($c-black, .2);
   border-top-right-radius: 3px;
+  z-index: 9999;
 
   .u-rtl & {
     direction: ltr;

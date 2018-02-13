@@ -90,6 +90,11 @@
     $(this).html(text.substring(1)).prepend(first);
   });
 
+  // Hover class for buttons
+  $('.o-button').on('mouseenter mouseleave', function(e) {
+    $(this).toggleClass('u-theme--background-color--darker');
+  });
+
   /*
    * Toggle Active Classes
    *

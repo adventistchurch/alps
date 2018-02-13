@@ -142,22 +142,29 @@
  * Stretch media full browser width.
  */
 .u-image--breakout {
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  min-height: rem(250);
+  width: 100%;
 
-  img {
-    width: 100%;
-    width: 100vw;
+  @include media('>medium') {
+    min-height: rem(350);
+  }
+
+  @include media('>large') {
+    min-height: rem(450);
+  }
+
+  @include media('>xlarge') {
+    min-height: rem(550);
   }
 }
 
 /**
  * Floats
  */
-.u-flaot--right {
+.u-float--right {
   float: right;
 }
-.u-flaot--left {
+.u-float--left {
   float: left;
 }
 

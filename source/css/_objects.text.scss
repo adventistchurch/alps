@@ -507,18 +507,22 @@
   > blockquote:not([class*="quote--"]) {
     clear: both;
     font-size: rem(22);
-    padding-top: $pad;
-    padding-bottom: $pad;
+    font-family: $ff-font;
+    font-weight: bold;
+    padding-left: $pad-mobile;
+
+    @include media('>large') {
+      padding-left: $pad;
+      margin-left: -$pad;
+    }
 
     p {
       line-height: 1.3;
-      font-size: rem(24);
-      font-weight: 300;
-      font-style: normal;
+      font-size: rem(22);
       font-family: $ff-font;
 
-      @include media('>medium') {
-        font-size: rem(28);
+      @include media('>large') {
+        font-size: rem(24);
       }
     }
   }

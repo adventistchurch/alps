@@ -10,19 +10,35 @@
     "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
     "category": "Culture",
     "datetime": "2017-12-28",
-    "date": "December 28, 2017"
+    "date": "December 28, 2017",
+    "picture": {
+      "img_break_m": "500",
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "//unsplash.it/500/375/?random",
+        "src_m": "//unsplash.it/400/500/?random"
+      },
+      "has_break_l": {
+        "img_break_l": "800",
+        "img": {
+          "src_l": "//unsplash.it/600/700/?random"
+        }
+      },
+      "has_break_xl": false
+    }
   },
+
   "picture": {
     "img_break_m": "500",
     "img": {
       "alt": "Alt Text",
-      "src_s": "//unsplash.it/500/375/?random",
-      "src_m": "//unsplash.it/700/525/?random"
+      "src_s": "//placehold.it/900x375",
+      "src_m": "//placehold.it/1200x500"
     },
     "has_break_l": {
       "img_break_l": "800",
       "img": {
-        "src_l": "//unsplash.it/600/700/?random"
+        "src_l": "//placehold.it/1200x700"
       }
     },
     "has_break_xl": false

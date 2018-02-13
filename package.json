@@ -20,7 +20,6 @@
     "grunt-sass": "^1.2.0",
     "grunt-shell": "^2.1.0",
     "matchdep": "*",
-    "node-bourbon": "^4.2.8",
     "node-sass": "^2.1.1",
     "patternlab-md2json": "^0.1.1"
   },

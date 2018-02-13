@@ -16,7 +16,7 @@
   "image_path": "../../images/",
 
   "img": {
-    "src": "//placehold.it/500x400",
+    "src": "//placehold.it/600x375",
     "alt": "Image Alt",
     "caption": "Caption"
   },
@@ -25,19 +25,19 @@
     "img_break_m": "500",
     "img": {
       "alt": "Alt Text",
-      "src_s": "//placehold.it/500x500",
-      "src_m": "//placehold.it/700x500"
+      "src_s": "//placehold.it/500x375",
+      "src_m": "//placehold.it/700x525"
     },
     "has_break_l": {
       "img_break_l": "700",
       "img": {
-        "src_l": "//placehold.it/900x500"
+        "src_l": "//placehold.it/900x675"
       }
     },
     "has_break_xl": {
       "img_break_xl": "900",
       "img": {
-        "src_xl": "//placehold.it/1300x700"
+        "src_xl": "//placehold.it/1200x900"
       }
     }
   },
@@ -359,7 +359,7 @@
     "block_meta_class": "u-theme--color--dark",
     "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
     "img": {
-      "src": "//placehold.it/600x300",
+      "src": "//placehold.it/600x375",
       "alt": "Media Block Image Alt"
     },
     "datetime": "2018-12-28",
@@ -432,6 +432,26 @@
         }
       ]
     }
+  },
+
+  "gallery_block_default": {
+    "title": "Gallery Title",
+    "items": [
+      {
+        "caption": "Caption",
+        "img": {
+          "alt": "Alt Text",
+          "src": "//unsplash.it/"
+        }
+      },
+      {
+        "caption": "Caption",
+        "img": {
+          "alt": "Alt Text",
+          "src": "//unsplash.it/"
+        }
+      }
+    ]
   },
 
   "content_blocks": [{
