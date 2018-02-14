@@ -162,6 +162,8 @@ $themes: (
   $light: map-get($shade, light);
   $lighter: map-get($shade, lighter);
   .#{$theme} {
+
+    // Background transparency
     .u-theme--background-color-trans--darker {
       background-color: rgba($darker, 0.8);
     }
@@ -176,6 +178,143 @@ $themes: (
     }
     .u-theme--background-color-trans--lighter {
       background-color: rgba($lighter, 0.8);
+    }
+
+    // Buttons
+    .u-theme--button {
+      background-color: $base;
+      color: $c-white;
+
+      &:hover {
+        background-color: $darker;
+      }
+    }
+
+    .u-theme--button--outline {
+      background-color: transparent;
+      color: $base;
+      border-color: $base;
+
+      &:hover {
+        background-color: $base;
+        color: $c-white;
+      }
+    }
+
+    .u-theme--dark {
+
+      .can-be--dark-dark {
+        background-color: $darker;
+      }
+
+      // Colors
+      .u-theme--color--darker {
+        color: $lighter;
+      }
+      .u-theme--color--dark {
+        color: $light;
+      }
+      .u-theme--color--base {
+        color: $c-white;
+      }
+      .u-color--gray {
+        color: $c-white;
+      }
+      .u-color--gray--dark {
+        color: $c-gray--light;
+      }
+
+      // SVG fill colors
+      .u-path-fill--gray path {
+        fill: $c-white;
+      }
+      .u-path-fill--gray--dark path {
+        fill: $c-gray--light;
+      }
+      .u-theme--fill-color--darker path {
+        fill: $darker;
+      }
+      .u-theme--fill-color--dark path {
+        fill: $dark;
+      }
+      .u-theme--fill-color--base path {
+        fill: $c-white;
+      }
+      .o-arrow--down::after {
+        border-top-color: $c-white;
+      }
+
+      // Borders
+      .u-theme--border-color--darker {
+        &--left,
+        &--right,
+        &--top,
+        &--bottom {
+          border-color: $lighter;
+        }
+      }
+      .u-theme--border-color--dark {
+        &--left,
+        &--right,
+        &--top,
+        &--bottom {
+          border-color: $light;
+        }
+      }
+      .u-theme--border-color--base {
+        &--left,
+        &--right,
+        &--top,
+        &--bottom {
+          border-color: $c-white;
+        }
+      }
+
+      // Buttons
+      .u-theme--button {
+        background-color: $lighter;
+        color: $c-white;
+
+        &:hover {
+          background-color: $light;
+        }
+      }
+
+      .u-theme--button--outline {
+        background-color: transparent;
+        color: $lighter;
+        border-color: $lighter;
+
+        &:hover {
+          background-color: $lighter;
+          color: $c-white;
+        }
+      }
+
+      // Custom
+      .c-header {
+        background-color: $darker;
+
+        .c-primary-nav__list::after {
+          background-color: $darker !important;
+        }
+
+        .c-header__nav-secondary .c-secondary-nav__list-item__search {
+          background-color: $darker;
+        }
+
+        .c-secondary-nav__link.u-color--gray.u-theme--link-hover--base {
+          color: $lighter;
+
+          svg path {
+            fill: $lighter;
+          }
+        }
+      }
+
+      .l-sidebar {
+        background-color: $c-gray--darker;
+      }
     }
   }
 };
@@ -203,7 +342,16 @@ $themes: (
     background-color: $c-gray--darker;
   }
 
+  // Custom
   .c-primary-nav__list::after {
     background-color: $c-black !important;
+  }
+
+  .l-grid-container--7-col::before {
+    opacity: 0.1;
+  }
+
+  .c-header__nav-secondary .c-secondary-nav__list-item__search {
+    background-color: $c-black;
   }
 }

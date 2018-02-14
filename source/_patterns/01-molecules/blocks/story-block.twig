@@ -1,28 +1,19 @@
 {% if story_block_default %}
-<div class="story-block block u-spacing--half u-padding {{ story_block_default.block_class }}" style="background-image: url({{ story_block_default.bg_img }})">
-  <div class="story-block__image-wrap u-round">
-    <img class="story-block__image" src="{{ story_block_default.img.src }}" alt="{{ story_block_default.img.alt }}" />
-  </div>
-  <div class="story-block__content u-spacing">
-    <div>
-      <h2 class="story-block__heading u-font--secondary--l u-theme--secondary-text-color">{{ story_block_default.title }}</h2>
-      {% if story_block_default.subtitle %}<p class="u-font--secondary--xs u-color--white">{{ story_block_default.subtitle }}</p>{% endif %}
-    </div>
-    <div class="u-spacing">
-      <div class="text story-block__description c-block__description u-color--white">
-        {% if story_block_default.text_img %}
-          <a class="story-block__text-image-wrap u-space--half--bottom" href="{{ story_block_default.url }}">
-            {% if story_block_default.is_video %}<div class="is-video">{% endif %}
-            <img class="story-block__text-image" src="{{ story_block_default.text_img.src }}" alt="{{ story_block_default.text_img.alt }}" />
-            {% if story_block_default.is_video %}</div>{% endif %}
-          </a> <!-- /.story-block__image-wrap -->
-        {% endif %}
-        {{ story_block_default.description | raw }}
-      </div>
-      {% if story_block_default.cta %}
-        <p><a class="story-block__cta c-block__cta o-btn u-theme--secondary-background-color" href="{{ story_block_default.url }}">{{ story_block_default.cta }}</a></p>
+<div class="js-this c-story-block c-block u-background-color--gray--light u-border--left u-theme--border-color--darker--left can-be--dark-dark">
+  <div class="c-story-block__header">
+    <div class="c-story-block__title u-padding">
+      {% if story_block_default.title %}
+        <h2 class="u-font--primary--s u-theme--color--darker">
+          <span class="u-theme--color--base"><em>{{ story_block_default.kicker }}</em></span> {{ story_block_default.title }}
+        </h2>
       {% endif %}
-    </div> <!-- /.u-spacing -->
-  </div> <!-- story-block__content -->
-</div> <!-- /.story-block -->
+      <div class="c-story-block__toggle">
+        <a href="" class=" js-toggle o-button o-button--outline o-button--toggle u-theme--button--outline" data-toggled="this" data-prefix="this"><span class="u-icon u-icon--xs u-icon__expand">+</span></a>
+      </div>
+    </div> <!-- /.c-story-block__title -->
+  </div> <!-- /.c-story-block__header -->
+  <div class="c-story-block__body u-padding u-padding--zero--top u-spacing">
+    {{ story_block_default.body | raw }}
+  </div> <!-- /.c-story-block__body -->
+</div> <!-- /.c-story-block -->
 {% endif %}

@@ -39,3 +39,33 @@ input[type="submit"] {
   border-radius: rem(50);
   padding: $pad/4 $pad/2;
 }
+
+.o-button--toggle {
+  @include u-font--secondary--xs;
+
+  font-weight: bold;
+
+  &::after {
+    content: "Show";
+    padding-left: $pad/4;
+  }
+
+  .u-icon {
+    font-size: rem(16);
+    position: relative;
+    top: rem(1);
+  }
+
+  &.this-is-active {
+    &::after {
+      content: "Close";
+    }
+
+    .u-icon {
+      transform: rotate(45deg);
+      position: relative;
+      right: rem(-3);
+      top: rem(2);
+    }
+  }
+}

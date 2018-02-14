@@ -1,5 +1,5 @@
 {% if gallery_block_default %}
-<div class="js-this c-gallery-block c-block u-background-color--gray--light u-border--left u-theme--border-color--darker--left">
+<div class="js-this c-gallery-block c-block u-background-color--gray--light u-border--left u-theme--border-color--darker--left can-be--dark-dark">
   <div class="c-gallery-block__header">
     <div class="c-gallery-block__title u-padding u-spacing--half">
       {% if gallery_block_default.title %}
@@ -7,14 +7,14 @@
           <span class="u-theme--color--base"><em>Gallery</em></span> {{ gallery_block_default.title }}
         </h2>
       {% endif %}
-      <a href="" class="c-gallery-block__toggle js-toggle o-button o-button--outline u-theme--border-color--base u-theme--color--base" data-toggled="this" data-prefix="this"><span class="u-icon u-icon--xs u-icon__expand">+</span></a>
+      <a href="" class="c-gallery-block__toggle js-toggle o-button o-button--outline o-button--toggle u-theme--button--outline" data-toggled="this" data-prefix="this"><span class="u-icon u-icon--xs u-icon__expand">+</span></a>
     </div> <!-- /.c-gallery-block__title -->
     {% for item in gallery_block_default.items %}
       {% if loop.first %}
         <div class="c-gallery-block__thumb u-background--cover">
           <style>
             .c-gallery-block__thumb {
-              background: url('{{ item.img.src }}300x300/?random') center center no-repeat;
+              background: url('{{ item.img.src }}300x300') center center no-repeat;
             }
           </style>
         </div> <!-- /.c-gallery-block__thumb -->
@@ -25,8 +25,12 @@
   {% if gallery_block_default.items %}
     <div class="c-gallery-block__body">
       {% for item in gallery_block_default.items %}
-        <div class="c-gallery-block__image">
-          <img src="{{ item.img.src }}900x500/?random" alt="{{ item.img.alt }}" />
+        <div class="c-gallery-block__image {% if item.portrait %}{{ 'is-portrait' }}{% endif %}">
+          {% if item.portrait %}
+            <img src="{{ item.img.src }}400x600" alt="{{ item.img.alt }}" />
+          {% else %}
+            <img src="{{ item.img.src }}900x500" alt="{{ item.img.alt }}" />
+          {% endif %}
           {% if item.caption %}
             <div class="c-gallery-block__caption u-font--secondary--s u-color--gray u-padding u-padding--double--bottom">
               {{ item.caption }}

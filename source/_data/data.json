@@ -369,20 +369,9 @@
   },
 
   "story_block_default": {
-    "is_video": true,
-    "bg_img": "//unsplash.it/g/1100/1100?blur",
-    "title": "Bestseller",
-    "subtitle": "The Clifford Goldstein Story",
-    "img": {
-      "src": "//unsplash.it/200/200/?random",
-      "alt": "Story Block Image Alt"
-    },
-    "text_img": {
-      "src": "//unsplash.it/350/200/?random",
-      "alt": "Text Image Alt"
-    },
-    "description": "<p>Clifford Goldstein didn’t believe in much, but one thing he did believe in was Truth. He just didn't know what it was or where to find it. As the fiery writer traveled Europe and Israel in search of his novel's soul, his quest for meaning of life continued, leading him to a different kind of altar.</p><p>Little did he know that one dark night in the summer of 1979, his search would end with a decision that would change his life forever.</p>",
-    "cta": "Find out more"
+    "kicker": "Context Matters",
+    "title": "Donec sit amet justo at sapien aliquet iaculis.",
+    "body": "<p>Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed placerat nec nisl at laoreet. Cras tristique lacus turpis, sit amet luctus lorem facilisis sed. Suspendisse tempor ante mauris, vitae bibendum sem interdum sit amet. Nam vitae elit lobortis, vehicula neque ut, semper massa.</p><p>Proin hendrerit, diam eget aliquam semper, ipsum elit efficitur erat, a consectetur tortor ex at arcu. Nullam tincidunt lacus at scelerisque pulvinar. Donec faucibus maximus mi ut congue. Proin purus libero, fringilla et orci a, luctus posuere purus. Curabitur justo mi, auctor ut turpis eu, accumsan malesuada elit.</p>"
   },
 
   "carousel_block_default": {
@@ -435,20 +424,21 @@
   },
 
   "gallery_block_default": {
-    "title": "Gallery Title",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "items": [
       {
-        "caption": "Caption",
+        "caption": "Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus.",
         "img": {
           "alt": "Alt Text",
-          "src": "//unsplash.it/"
+          "src": "//source.unsplash.com/WLUHO9A_xik/"
         }
       },
       {
-        "caption": "Caption",
+        "caption": "Duis eu pharetra magna. Curabitur vulputate mattis dignissim.",
+        "portrait": true,
         "img": {
           "alt": "Alt Text",
-          "src": "//unsplash.it/"
+          "src": "//source.unsplash.com/"
         }
       }
     ]
