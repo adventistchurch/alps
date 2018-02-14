@@ -7,7 +7,7 @@
           <span class="u-theme--color--base"><em>Gallery</em></span> {{ gallery_block_default.title }}
         </h2>
       {% endif %}
-      <a href="" class="c-gallery-block__toggle js-toggle o-button o-button--outline o-button--toggle u-theme--button--outline" data-toggled="this" data-prefix="this"><span class="u-icon u-icon--xs u-icon__expand">+</span></a>
+      <a href="" class="c-gallery-block__toggle js-toggle o-button o-button--outline o-button--toggle o-button--small" data-toggled="this" data-prefix="this"><span class="u-icon u-icon--xs u-path-fill--white">{% include '@atoms/icons/icon-plus.twig' %}</span></a>
     </div> <!-- /.c-gallery-block__title -->
     {% for item in gallery_block_default.items %}
       {% if loop.first %}

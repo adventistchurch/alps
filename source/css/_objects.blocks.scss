@@ -290,7 +290,7 @@
   }
 
   &__thumb {
-    width: calc((100vw/7 *2) - 15px); // - $pad-mobile
+    width: calc((100vw / 7 *2) - 15px); // - $pad-mobile
     height: auto;
     position: relative;
     overflow: hidden;
@@ -318,3 +318,40 @@
     }
   }
 }
+
+/**
+ * Share tools
+ */
+ .c-share-tools {
+   display: inline-block;
+   position: relative;
+
+   &.this-is-active {
+     .c-share-tools__list {
+       opacity: 1;
+       visibility: visible;
+       height: auto;
+     }
+   }
+
+   &__toggle {
+     display: block;
+     padding-bottom: rem(5);
+   }
+
+   &__list {
+     position: absolute;
+     top: rem(25);
+     left: 0;
+     opacity: 0;
+     visibility: hidden;
+     height: 0;
+     border-left-width: 1px;
+     border-left-style: solid;
+     transition: all 0.25s ease;
+   }
+
+   &__list-item {
+     cursor: pointer;
+   }
+ }

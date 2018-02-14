@@ -1,10 +1,17 @@
-<div class="share-tools">
-  <div class="addthis_toolbox addthis_default_style" addthis:url="{{ share_url }}">
-    <a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed4fc0e60966005" class="addthis_button_compact can-be--white u-font--secondary--s"> Share</a>
-    <span class="addthis_separator">|</span>
-    <a class="addthis_button_facebook" g:plusone:count="false"></a>
-    <a class="addthis_button_twitter" g:plusone:count="false"></a>
-    <a class="addthis_button_google_plusone" g:plusone:count="false"></a>
-    <a class="addthis_button_email" g:plusone:count="false"></a>
-  </div>
-</div> <!-- /.share-tools -->
+<div class="c-share-tools js-hover" addthis:url="{{ share_url }}">
+  <a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed4fc0e60966005" class="c-share-tools__toggle addthis_button_compact can-be--white o-kicker u-theme--color--base"><span class="u-icon u-icon--xs u-theme--fill-color--base u-space--quarter--right">{% include '@atoms/icons/icon-share.twig' %}</span>Share</a>
+  <ul class="c-share-tools__list u-background-color--gray--light can-be--dark-dark u-theme--border-color--darker--left u-spacing--half u-padding--half">
+    <li class="c-share-tools__list-item">
+      <a class="c-share-tools__link u-theme--color--base addthis_button_facebook" g:plusone:count="false">Facebook</a>
+    </li>
+    <li class="c-share-tools__list-item">
+      <a class="c-share-tools__link u-theme--color--base addthis_button_twitter" g:plusone:count="false">Twitter</a>
+    </li>
+    <li class="c-share-tools__list-item">
+      <a class="c-share-tools__link u-theme--color--base addthis_button_google_plusone" g:plusone:count="false">Google</a>
+    </li>
+    <li class="c-share-tools__list-item">
+      <a class="c-share-tools__link u-theme--color--base addthis_button_email" g:plusone:count="false">Email</a>
+    </li>
+  </ul>
+</div> <!-- /.c-share-tools -->

@@ -11,16 +11,26 @@ input[type="submit"] {
   padding: rem(13) rem(16) rem(12);
   line-height: 1;
   color: $c-white;
-  background-color: $c-theme-ming;
+  background-color: $c-gray--darker;
   cursor: pointer;
   transition: all .6s ease-out;
   overflow: hidden;
   font-family: $ff-font--secondary;
+  font-weight: bold;
   text-transform: uppercase;
-  border: none;
+  border: 1px solid $c-gray--darker;
+  border-radius: rem(50);
 
   &:hover {
     color: $c-white;
+  }
+
+  .u-icon {
+    margin-right: rem(5);
+
+    svg path {
+      transition: all .6s ease-out;
+    }
   }
 }
 
@@ -28,32 +38,24 @@ input[type="submit"] {
  * Button Sizing
  */
 .o-button--small {
-  padding: rem(8) rem(12);
+  padding: rem(11) rem(14) rem(9);
   font-size: rem(12);
 }
 
-.o-button--outline {
-  border-width: 1px;
-  border-style: solid;
+.o-button--simple {
   background-color: transparent;
-  border-radius: rem(50);
-  padding: $pad/4 $pad/2;
+  border-color: transparent;
+}
+
+.o-button--outline {
+  background-color: transparent;
 }
 
 .o-button--toggle {
-  @include u-font--secondary--xs;
-
-  font-weight: bold;
+  white-space: nowrap;
 
   &::after {
     content: "Show";
-    padding-left: $pad/4;
-  }
-
-  .u-icon {
-    font-size: rem(16);
-    position: relative;
-    top: rem(1);
   }
 
   &.this-is-active {
@@ -64,8 +66,8 @@ input[type="submit"] {
     .u-icon {
       transform: rotate(45deg);
       position: relative;
-      right: rem(-3);
-      top: rem(2);
+      right: rem(-2);
+      top: rem(1);
     }
   }
 }

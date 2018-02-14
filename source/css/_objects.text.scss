@@ -55,7 +55,6 @@
  * Kicker/Eyebrow
  */
 .o-kicker {
-  font-size: rem(11);
   line-height: 1;
   margin-bottom: rem(8);
   letter-spacing: 1px;
@@ -411,8 +410,6 @@
  * Passages of Text
  */
 .text {
-  font-family: $ff-font--primary;
-
   > blockquote p,
   > dl dd,
   > dl dt,
@@ -421,6 +418,7 @@
   > p {
     font-size: rem(16);
     line-height: 1.6;
+    font-family: $ff-font--primary;
   }
 
   > h1

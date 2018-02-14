@@ -1,0 +1,6 @@
+{
+  "button_default": {
+    "text": "Button Simple",
+    "class": "o-button--simple"
+  }
+}

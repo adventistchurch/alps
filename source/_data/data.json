@@ -803,10 +803,8 @@
     ]
   },
   "button_default": {
-    "button_text": "Button Text"
-  },
-  "button_submit": {
-    "button_text": "Submit"
+    "text": "Button Defualt",
+    "class": "u-theme--button"
   },
   "content_filter": {
     "radio": [{
