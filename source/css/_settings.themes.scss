@@ -181,7 +181,9 @@ $themes: (
     }
 
     // Buttons
-    .o-button {
+    .o-button,
+    button,
+    input[type=submit] {
       background-color: $base;
       color: $c-white;
       border-color: $base;
@@ -224,9 +226,19 @@ $themes: (
       }
     }
 
+    input[type=radio],
+    input[type=checkbox] {
+      color: $darker;
+      border-color: $darker;
+    }
+
     input[type=radio]:checked,
     input[type=checkbox]:checked {
       background-color: $darker;
+    }
+
+    .c-header .c-primary-nav__link {
+      color: $darker;
     }
 
     .u-theme--dark {
@@ -313,7 +325,9 @@ $themes: (
       }
 
       // Buttons
-      .o-button {
+      .o-button,
+      button,
+      input[type=submit] {
         background-color: $lighter;
         color: $darker;
         border-color: $lighter;
@@ -369,6 +383,12 @@ $themes: (
         color: $c-white;
       }
 
+      input[type=radio],
+      input[type=checkbox] {
+        color: $c-white;
+        border-color: $lighter;
+      }
+
       input[type=radio]:checked,
       input[type=checkbox]:checked {
         background-color: $lighter;
@@ -385,7 +405,7 @@ $themes: (
           background-color: $darker;
         }
 
-        .c-secondary-nav__link.u-color--gray.u-theme--link-hover--base {
+        .c-secondary-nav__link {
           color: $lighter;
 
           svg path {

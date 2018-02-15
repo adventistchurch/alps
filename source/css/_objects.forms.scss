@@ -1,6 +1,36 @@
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  color: $c-gray;
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+  color: $c-gray;
+}
+
+/* IE 10+ */
+:-ms-input-placeholder {
+  color: $c-gray;
+}
+
+/* Firefox 18- */
+:-moz-placeholder {
+  color: $c-gray;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: url('../images/icons/o-arrow__bracket--down.svg') center right rem(10) no-repeat;
+  background-size: rem(10);
+}
+
 input[type=radio],
 input[type=checkbox] {
   outline: none;

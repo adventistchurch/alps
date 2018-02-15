@@ -26,6 +26,11 @@
   }
 }
 
+.c-block__title {
+  font-family: $ff-font--primary;
+  font-weight: bold;
+}
+
 .c-block__category {
   padding-right: $pad-mobile;
 

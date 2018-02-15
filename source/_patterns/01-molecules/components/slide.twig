@@ -17,7 +17,7 @@
               <p>{{ has_slide_text.slide_dek }}</p>
             </div> <!-- /.carousel__item-dek -->
           </div>
-          <a href="{{ url }}" class="carousel__item-cta o-btn u-theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
+          <a href="{{ url }}" class="carousel__item-cta o-button u-theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
         </div> <!-- /.carousel__item-text -->
       </div>
     </div>
@@ -27,7 +27,7 @@
     <div class="carousel-block__content c-block__content u-spacing--quarter u-padding {{ is_carousel_block.block_content_class }}">
       {% if is_carousel_block.title %}
         <h3 class="carousel-block__title c-block__title {{ is_carousel_block.block_title_class }}">
-          <a href="{{ url }}" class="c-block__title-link u-theme--primary-text-color">{{ is_carousel_block.title }}</a>
+          <a href="{{ url }}" class="c-block__title-link u-theme--color--base">{{ is_carousel_block.title }}</a>
         </h3>
       {% endif %}
       {% if is_carousel_block.date %}
@@ -42,7 +42,7 @@
       {% endif %}
       {% if is_carousel_block.cta %}
         <p>
-          <a class="carousel-block__cta c-block__cta o-btn u-theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
+          <a class="carousel-block__cta c-block__cta o-button u-theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
         </p>
       {% endif %}
     </div> <!-- carousel-block__content -->

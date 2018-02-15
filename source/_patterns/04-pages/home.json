@@ -35,7 +35,7 @@
           "slide_subtitle": "We believe that God creates",
           "slide_dek": "From neurons to nebulae, DNA to distant galaxies, we are surrounded by wonder. Yet the beauty is broken.",
           "slide_cta": "Find out more",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       },
       {
@@ -66,7 +66,7 @@
           "slide_subtitle": "Religious Liberty - The Freedom to Believe",
           "slide_dek": "A person’s conscience, not government, should dictate his or her choice to worship—or not.",
           "slide_cta": "Learn more",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       },
       {
@@ -96,7 +96,7 @@
           "slide_subtitle": "Family - God's Love Illustrated",
           "slide_dek": "God established the first family in the Garden of Eden. Since then, families have formed the basic unit of society.",
           "slide_cta": "Read more about Vitality",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       },
       {
@@ -126,7 +126,7 @@
           "slide_subtitle": "Have a conversation with God",
           "slide_dek": "God hears every prayer. Our heavenly Father always wants to hear from his children. Prayer gives you an instant and direct connection to your Creator and Redeemer.",
           "slide_cta": "Find out more",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       }
     ]
