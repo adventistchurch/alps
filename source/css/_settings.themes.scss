@@ -224,11 +224,12 @@ $themes: (
       }
     }
 
-    .u-theme--dark {
+    input[type=radio]:checked,
+    input[type=checkbox]:checked {
+      background-color: $darker;
+    }
 
-      .can-be--dark-dark {
-        background-color: $darker;
-      }
+    .u-theme--dark {
 
       // Colors
       .u-theme--color--darker,
@@ -281,6 +282,8 @@ $themes: (
 
       // Borders
       .u-theme--border-color--darker {
+        border-color: $lighter;
+
         &--left,
         &--right,
         &--top,
@@ -289,6 +292,8 @@ $themes: (
         }
       }
       .u-theme--border-color--dark {
+        border-color: $light;
+
         &--left,
         &--right,
         &--top,
@@ -297,6 +302,8 @@ $themes: (
         }
       }
       .u-theme--border-color--base {
+        border-color: $c-white;
+
         &--left,
         &--right,
         &--top,
@@ -354,6 +361,19 @@ $themes: (
       }
 
       // Custom
+      .can-be--dark-dark {
+        background-color: $darker;
+      }
+
+      .can-be--white {
+        color: $c-white;
+      }
+
+      input[type=radio]:checked,
+      input[type=checkbox]:checked {
+        background-color: $lighter;
+      }
+
       .c-header {
         background-color: $darker;
 

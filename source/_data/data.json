@@ -9,8 +9,8 @@
   },
 
   "heading": "Lorem Ipsum",
-  "primary_font": "Montserrat",
-  "secondary_font": "Merriweather",
+  "primary_font": "Noto Serif",
+  "secondary_font": "Noto Sans",
   "fill_class": "fill--gray",
   "logo": "adventist-logo-h-en.svg",
   "image_path": "../../images/",

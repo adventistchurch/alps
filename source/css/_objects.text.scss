@@ -91,11 +91,13 @@
 /**
  * Font Families
  */
-.u-font--primary {
+.u-font--primary,
+.u-font--primary p {
   font-family: $ff-font--primary;
 }
 
-.u-font--secondary {
+.u-font--secondary,
+.u-font--secondary p {
   font-family: $ff-font--secondary;
 }
 
