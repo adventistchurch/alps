@@ -7,7 +7,7 @@
 
   &--inner > div {
     @include media('<=medium') {
-      margin-top: $space*2;
+      margin-top: $space-mobile*2;
 
       &:first-child {
         margin-top: 0;

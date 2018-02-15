@@ -64,43 +64,43 @@ $themes: (
   ),
   u-theme--cave: (
     darker: #01161e,
-    dark: #007f98,
-    base: $c-theme-cave, // base
+    dark: $c-theme-cave, // base
+    base: #007f98,
     light: #00d5fe,
     lighter: #9ae1f0
   ),
   u-theme--denim: (
     darker: #04132b,
-    dark: #2e6de7,
-    base: $c-theme-denim, // base
+    dark: $c-theme-denim, // base
+    base: #2e6de7,
     light: #84adfc,
     lighter: #84adfc
   ),
   u-theme--emperor: (
     darker: #240431,
-    dark: #9013fe,
-    base: $c-theme-emperor, // base
+    dark: $c-theme-emperor, // base
+    base: #9013fe,
     light: #b971f7,
     lighter: #b971f7
   ),
   u-theme--grapevine: (
     darker: #2a0d24,
-    dark: #d41583,
-    base: $c-theme-grapevine, // base
+    dark: $c-theme-grapevine, // base
+    base: #d41583,
     light: #ff61bc,
     lighter: #ff61bc
   ),
   u-theme--velvet: (
     darker: #2d0505,
-    dark: #d0021b,
-    base: $c-theme-velvet, // base
+    dark: $c-theme-velvet, // base
+    base: #d0021b,
     light: #fd2641,
     lighter: #e17077
   ),
   u-theme--earth: (
     darker: #210b00,
-    dark: #974e02,
-    base: $c-theme-earth, // base
+    dark: $c-theme-earth, // base
+    base:  #974e02,
     light: #eab57e,
     lighter: #eab57e
   )
@@ -145,7 +145,7 @@ $themes: (
         }
 
         // SVG fill colors
-        .u-theme--fill-color--#{$key} {
+        .u-theme--path-fill--#{$key} {
           path {
             fill: $value;
           }
@@ -187,8 +187,8 @@ $themes: (
       border-color: $base;
 
       &:hover {
-        background-color: $darker;
-        border-color: $darker;
+        background-color: $dark;
+        border-color: $dark;
       }
     }
 
@@ -199,8 +199,8 @@ $themes: (
 
       &:hover {
         color: $c-white;
-        background-color: $base;
-        border-color: $base;
+        background-color: $dark;
+        border-color: $dark;
       }
     }
 
@@ -214,9 +214,9 @@ $themes: (
       }
 
       &:hover {
-        background-color: $base;
+        background-color: $dark;
         color: $c-white;
-        border-color: $base;
+        border-color: $dark;
 
         svg path {
           fill: $c-white;
@@ -231,15 +231,27 @@ $themes: (
       }
 
       // Colors
-      .u-theme--color--darker {
+      .u-theme--color--darker,
+      .u-theme--color--darker a,
+      a.u-theme--link-hover--darker:hover,
+      .u-theme--link-hover--darker a:hover {
         color: $lighter;
       }
-      .u-theme--color--dark {
+
+      .u-theme--color--dark,
+      .u-theme--color--dark a,
+      a.u-theme--link-hover--dark:hover,
+      .u-theme--link-hover--dark a:hover {
         color: $light;
       }
-      .u-theme--color--base {
+
+      .u-theme--color--base,
+      .u-theme--color--base a,
+      a.u-theme--link-hover--base:hover,
+      .u-theme--link-hover--base a:hover {
         color: $c-white;
       }
+
       .u-color--gray {
         color: $c-white;
       }
@@ -254,13 +266,13 @@ $themes: (
       .u-path-fill--gray--dark path {
         fill: $c-gray--light;
       }
-      .u-theme--fill-color--darker path {
+      .u-theme--path-fill--darker path {
         fill: $darker;
       }
-      .u-theme--fill-color--dark path {
+      .u-theme--path-fill--dark path {
         fill: $dark;
       }
-      .u-theme--fill-color--base path {
+      .u-theme--path-fill--base path {
         fill: $c-white;
       }
       .o-arrow--down::after {
@@ -296,10 +308,26 @@ $themes: (
       // Buttons
       .o-button {
         background-color: $lighter;
-        color: $c-white;
+        color: $darker;
         border-color: $lighter;
 
         &:hover {
+          background-color: $light;
+          border-color: $light;
+        }
+
+        svg path {
+          fill: $darker;
+        }
+      }
+
+      .o-button--simple {
+        background-color: transparent;
+        border-color: transparent;
+        color: $lighter;
+
+        &:hover {
+          color: $darker;
           background-color: $light;
           border-color: $light;
         }
@@ -315,12 +343,12 @@ $themes: (
         }
 
         &:hover {
-          background-color: $lighter;
-          border-color: $lighter;
-          color: $c-white;
+          background-color: $light;
+          border-color: $light;
+          color: $darker;
 
           svg path {
-            fill: $c-white;
+            fill: $darker;
           }
         }
       }
