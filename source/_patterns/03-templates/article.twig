@@ -67,6 +67,11 @@
             {% include '@organisms/sections/article-footer.twig' %}
           </div>
         </div>
+        <div class="l-grid-item l-grid-item--m--2-col l-grid-item--l--2-col">
+          {% if related_posts %}
+            {% include '@organisms/asides/related-posts.twig' %}
+          {% endif %}
+        </div>
       </section>
     </main> <!-- /.l-main -->
     {% include '@organisms/global/footer.twig' %}

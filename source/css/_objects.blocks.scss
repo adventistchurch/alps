@@ -11,6 +11,14 @@
   }
 }
 
+.c-block__header {
+  @include u-font--secondary--m;
+
+  font-weight: bold;
+  border-left: 2px solid $c-black;
+  text-transform: uppercase;
+}
+
 .c-block__kicker {
   text-transform: uppercase;
   letter-spacing: rem(1);

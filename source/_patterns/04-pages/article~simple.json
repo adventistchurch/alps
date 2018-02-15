@@ -11,6 +11,7 @@
   "highlight": true,
   "gallery_block": false,
   "content_block": false,
+  "related_posts": false,
 
   "media_block_default": {
     "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
