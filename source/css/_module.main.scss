@@ -4,10 +4,6 @@
 
 .main {
   overflow: hidden;
-
-  @include media('>medium') {
-    background-color: $c-beige;
-  }
 }
 
 /**
@@ -43,6 +39,12 @@ body {
 .footer {
   margin-top: auto;
   width: 100%;
+}
+
+.hide-theme-switcher {
+  .theme-switcher {
+    display: none;
+  }
 }
 
 /**

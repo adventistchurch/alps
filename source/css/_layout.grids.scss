@@ -1,255 +1,129 @@
-/*------------------------------------*\
+/* ------------------------------------*\
     $GRIDS
-\*------------------------------------*/
+\*------------------------------------ */
+
+$gutter: 1.875rem; // 30px
 
 /**
- * Grid Container
+ * Simple grid - keep adding more elements to the row until the max is hit
+ * (based on the flex-basis for each item), then start new row.
  */
 .l-grid {
-  //overflow: hidden;
+  display: flex;
+  display: inline-flex;
+  flex-flow: row wrap;
 }
 
 /**
- * Grid Item
+ * Fixed Gutters
  */
+@mixin column-gutters() {
+  padding-left: $gutter/2;
+  padding-right: $gutter/2;
+
+  @include media('>medium') {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+
+  @include media ('>xlarge') {
+    &.u-left-gutter--l {
+      padding-left: rem(30);
+    }
+
+    &.u-right-gutter--l {
+      padding-right: rem(30);
+    }
+
+    &.u-left-gutter--xl {
+      padding-left: rem(60);
+    }
+
+    &.u-right-gutter--xl {
+      padding-right: rem(60);
+    }
+  }
+}
+
+[class*="grid--"] {
+  &.u-no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+
+    > .l-grid-item {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  > .l-grid-item {
+    box-sizing: border-box;
+
+    @include column-gutters();
+  }
+}
+
+@mixin layout-in-column {
+  // margin-left: -1 * $space;
+  // margin-right: -1 * $space;
+  //
+  // @include media ('>xlarge') {
+  //   margin-left: -1 * $space;
+  //   margin-right: -1 * $space;
+  // }
+}
+
+[class*="l-grid--"] {
+  @include layout-in-column;
+}
+
 .l-grid-item {
   width: 100%;
-  img {
-    display: block;
-  }
-  > * {
-    width: 100%;
-  }
-  @include media('>medium') {
-    &.left-gutter--l { padding-left: rem(30); }
-    &.right-gutter--l { padding-right: rem(30); }
-    &.left-gutter--xl { padding-left: rem(60); }
-    &.right-gutter--xl { padding-right: rem(60); }
-  }
+  box-sizing: border-box;
 }
 
 /**
- * Flip column order
- */
-.l-grid--flip-columns {
-  @include media('>medium') {
-    & > .l-grid-item:nth-child(1) {
-      order: 2;
-    }
-    & > .l-grid-item:nth-child(2) {
-      order: 1;
-    }
-  }
-}
-
-/**
- * Grid Item Held - Check the specific grids below for how long it's held.
- */
-@mixin l-grid-item--hold {
-  width: 100%;
-  float: none;
-  clear: both;
-}
-
-/**
- * Grid Uniform - For grids that should line up evenly (these grids should not
- * use <hr>'s to separate individual grid items).
- */
-.l-grid--uniform {
-  > .l-grid-item {
-    border-bottom: $border-style-light;
-  }
-}
-
-/**
- * Grid 1up
- */
-.l-grid--1-col {
-  .l-grid-item {
-    width: 100%;
-  }
-}
-
-/**
- * Grid 2up at medium width.
- */
-.l-grid--2-col--at-medium {
-  @include media('>medium') {
-    display: flex;
-    flex-wrap: wrap;
+* 1 to 2 column grid at 50% each.
+*/
+.l-grid--50-50 {
+  @include media ('>medium') {
     width: 100%;
 
-    > .l-grid-item {
-      float: left;
+    > * {
       width: 50%;
-      align-items: stretch;
-      display: flex;
-      margin-top: 0;
-
-      // Slick slider hack for when a carousel is contained within a flexed element.
-      * {
-        min-height: 0;
-        min-width: 0;
-      }
-    }
-
-    &.with-divider {
-      > .l-grid-item:nth-child(odd) {
-        position: relative;
-
-        &:after {
-          content: "";
-          position: absolute;
-          right: 0;
-          width: 1px;
-          border-right: $border-style-light;
-          height: 100%;
-          z-index: 10;
-        }
-      }
     }
   }
 }
 
 /**
- * Grid 3up at medium width.
+ * 3 column grid
  */
-.l-grid--3-col--at-medium {
-  @include media('>medium') {
-    display: flex;
-    flex-wrap: wrap;
+.l-grid--3-col {
+  @include media ('>medium') {
     width: 100%;
 
-    > .l-grid-item {
-      float: left;
+    > * {
       width: 33.3333%;
-      align-items: stretch;
-      display: flex;
-      margin-top: 0;
-
-      // Slick slider hack for when a carousel is contained within a flexed element.
-      * {
-        min-height: 0;
-        min-width: 0;
-      }
-    }
-
-    &.with-gutters {
-      > .l-grid-item:nth-child(3n+1) {
-        padding-right: $pad;
-      }
-
-      > .l-grid-item:nth-child(3n+2) {
-        padding-left: $pad-half;
-        padding-right: $pad-half;
-      }
-
-      > .l-grid-item:nth-child(3n+3) {
-        padding-left: $pad;
-      }
-    }
-
-    &.with-divider {
-      > .l-grid-item:nth-child(3n+1), > .l-grid-item:nth-child(3n+2) {
-        position: relative;
-
-        &:after {
-          content: "";
-          position: absolute;
-          right: 0;
-          width: 1px;
-          border-right: $border-style-light;
-          height: 100%;
-          z-index: 10;
-        }
-      }
     }
   }
 }
 
 /**
- * Grid 2up at medium width with 70/30 split.
- */
-.l-grid--2-col--70-30--at-medium {
-  @include media('>medium') {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    > .l-grid-item {
-      float: left;
-      align-items: stretch;
-      display: flex;
-      margin-top: 0;
-
-      // Slick slider hack for when a carousel is contained within a flexed element.
-      * {
-        min-height: 0;
-        min-width: 0;
-      }
-
-      &:first-child {
-        width: 70%;
-      }
-
-      &:last-child {
-        width: 30%;
-      }
-    }
-  }
-}
-
-/**
- * Grid 2up at medium width with 35/65 split.
- */
-.l-grid--2-col--35-65--at-medium {
-  @include media('>medium') {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    > .l-grid-item {
-      float: left;
-      align-items: stretch;
-      display: flex;
-      margin-top: 0;
-
-      &:first-child {
-        width: 35%;
-      }
-
-      &:last-child {
-        width: 65%;
-      }
-    }
-  }
-}
-
-/**
- * Grid always 2 columns even
- */
-.l-grid--2-col--split {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
-  > .l-grid-item {
-    float: left;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0;
-  }
-}
-
-/**
- * Grid 4up
+ * 4 column grid
  */
 .l-grid--4-col {
   width: 100%;
 
-  > * {
-    width: 25%;
+  @include media ('>medium') {
+    > * {
+      width: 50%;
+    }
+  }
+
+  @include media ('>large') {
+    > * {
+      width: 25%;
+    }
   }
 }
 
@@ -259,12 +133,19 @@
 .l-grid--7-col {
   width: 100%;
 
+  &--inner {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+  }
+
   > * {
-    padding-left: $pad;
-    padding-right: $pad;
+    padding-left: $gutter/2;
+    padding-right: $gutter/2;
 
     @include media('>medium') {
       width: calc(100vw / 7);
+      padding-left: $gutter;
+      padding-right: $gutter;
     }
   }
 
@@ -274,9 +155,33 @@
     }
   }
 
+  .l-grid-item {
+    width: 100%;
+  }
+
   .l-grid-item--s {
     &--1-col {
-      width: 100%;
+      width: calc((100vw / 7) * 1);
+    }
+
+    &--2-col {
+      width: calc((100vw / 7) * 2);
+    }
+
+    &--3-col {
+      width: calc((100vw / 7) * 3);
+    }
+
+    &--4-col {
+      width: calc((100vw / 7) * 4);
+    }
+
+    &--5-col {
+      width: calc((100vw / 7) * 5);
+    }
+
+    &--6-col {
+      width: calc((100vw / 7) * 6);
     }
   }
 
@@ -342,6 +247,10 @@
 }
 
 .l-grid-wrap {
+  // > * {
+  //   margin: 0 $space*1.5 !important;
+  // }
+
   @include media('>small') {
     &--1-of-7 {
       width: calc((100vw / 7) * 1);
@@ -410,7 +319,7 @@
   --columns: 7;
   --gutter: rem(1);
   --color: hsla(204, 80%, 72%, 0.25);
-  --line-thickness: rem(20);
+  --line-thickness: rem(15);
 }
 
 :root {

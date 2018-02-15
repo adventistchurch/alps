@@ -44,7 +44,7 @@
 
 .u-border-left--white--at-large {
   @include media('>large') {
-    border-left: 1px solid $c-white;
+    border-left: 1px solid $c-white !important;
   }
 }
 

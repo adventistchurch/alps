@@ -13,6 +13,21 @@
     document.documentElement.className += ' ie10';
   }
 
+  // Add class if is mobile
+  function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      return true;
+    }
+    return false;
+  }
+
+  // Add class if is mobile
+  if (isMobile()) {
+    $('html').addClass(' touch');
+  } else if (!isMobile()){
+    $('html').addClass(' no-touch');
+  }
+
   // Lazy load images.
   if ($('img.lazy').length) {
     $('img.lazy').show().lazyload({
@@ -66,7 +81,6 @@
       $('.' + $this.data('remove')).removeClass($this.data(
             'remove'));
     }
-
   };
 
   /*
@@ -93,14 +107,75 @@
   $('.js-toggle-parent').on('click', function(e) {
     e.preventDefault();
     var $this = $(this);
-    $this.toggleClass('is-active');
-    $this.parent().toggleClass('is-active');
+    $this.toggleClass('this-is-active');
+    $this.parent().toggleClass('this-is-active');
   });
 
-  // Toggle hovered classes
-  $('.js-hover').on('mouseenter mouseleave', function(e) {
-    e.preventDefault();
-    toggleClasses($(this));
+  // Toggle hovered classes if not touch device
+  if (!isMobile()) {
+    $('.js-hover').on('mouseenter mouseleave', function(e) {
+      e.preventDefault();
+      toggleClasses($(this));
+    });
+  }
+
+  $('.c-drawer__nav .c-subnav__arrow').on('click', function(e) {
+    e.stopPropagation();
+    $('.c-drawer__container').toggleClass('subnav-is-active');
+    $('.c-drawer__subnav li').remove();
+
+    if ($(this).hasClass('this-is-active')) {
+      $(this).removeClass('this-is-active');
+      $(this).parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().parent().removeClass('this-is-active');
+    } else {
+      $(this).addClass('this-is-active');
+      $(this).parent().addClass('this-is-active');
+      $(this).parent().parent().parent().addClass('this-is-active');
+      $(this).parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parent('li').clone().appendTo('.c-drawer__subnav');
+    }
+
+    $('.c-subnav__arrow').not(this).parent().removeClass('this-is-active');
+    $('.c-subnav__arrow').not(this).removeClass('this-is-active');
+  });
+
+  // Hover effects on drawer submenu not on mobile
+  if (!isMobile() && getWidth() > 700) {
+    $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
+      $('.c-drawer__container').addClass('subnav-is-active');
+      $(this).addClass('this-is-active');
+      $(this).parent().addClass('this-is-active');
+      $(this).parent().parent().parent().addClass('this-is-active');
+    });
+
+    $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
+      $('.c-drawer__container').removeClass('subnav-is-active');
+      $(this).removeClass('this-is-active');
+      $(this).parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().removeClass('this-is-active');
+    });
+  }
+
+  // Remove active classes on click of drawer
+  $('.c-drawer').on('click', function() {
+    $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-subnav__arrow').removeClass('this-is-active');
+  });
+
+  // Open drawer when menu toggle is clicked
+  $('.js-toggle-menu').on('click', function(e) {
+    e.stopPropagation();
+    $('.c-drawer').toggleClass('this-is-active');
+  });
+
+  // Make search input active with toggle is clicked
+  $('.js-toggle-search').on('click', function() {
+    setTimeout(function(){
+      $('.c-drawer__search input').focus();
+    }, 250);
   });
 
   // Slick carousel (single item)

@@ -2,148 +2,152 @@
     $THEMES
 \*------------------------------------*/
 
-// Primary color themed elements.
-@mixin theme-primary($name, $primary-color) {
-  .#{$name} {
-    // Text colors
-    .u-theme--primary-text-color,
-    .u-theme--primary-text-color a {
-      color: $primary-color;
-    }
-    a.u-theme--primary-text-color:hover,
-    .u-theme--primary-text-color a:hover,
-    .this-is-active > .u-theme--primary-text-color {
-      color: complement($primary-color);
-    }
+// https://gist.github.com/jlong/8760275
 
-    // Background colors
-    .u-theme--primary-background-color {
-      background-color: $primary-color;
-    }
-    .u-theme--primary-transparent-background-color {
-      background-color: rgba($primary-color, .8);
-    }
-    .u-theme--primary-transparent-background-color--30 {
-      background-color: rgba($primary-color, .3);
-    }
+$themes: (
+  u-theme--treefrog: (
+    darker: #1b2d00,
+    dark: #355724,
+    base: $c-theme-treefrog, // base
+    light: #7cd500,
+    lighter: #9fe180
+  ),
+  u-theme--ming: (
+    darker: #002938,
+    dark: #255760,
+    base: $c-theme-ming, // base
+    light: #00d5fe,
+    lighter: #9ae1f0
+  ),
+  u-theme--bluejay: (
+    darker: #052252,
+    dark: #2f557f,
+    base: $c-theme-bluejay, // base
+    light: #84adfc,
+    lighter: #84adfc
+  ),
+  u-theme--iris: (
+    darker: #37034c,
+    dark: #4b207f,
+    base: $c-theme-iris, // base
+    light: #b971f7,
+    lighter: #b971f7
+  ),
+  u-theme--lily: (
+    darker: #4e053f,
+    dark: #712551,
+    base: $c-theme-lily, // base
+    light: #ff61bc,
+    lighter: #ff61bc
+  ),
+  u-theme--scarlett: (
+    darker: #440000,
+    dark: #782832,
+    base: $c-theme-scarlett, // base
+    light: #fd2641,
+    lighter: #e17077
+  ),
+  u-theme--campfire: (
+    darker: #361300,
+    dark: #6f2727,
+    base: $c-theme-campfire, // base
+    light: #ffa06c,
+    lighter: #ffa06c
+  ),
+  // Muted
+  u-theme--forest: (
+    darker: #101a00,
+    base: $c-theme-forest, // base
+    dark: #2b8500,
+    light: #7cd500,
+    lighter: #9fe180
+  ),
+  u-theme--cave: (
+    darker: #01161e,
+    dark: #007f98,
+    base: $c-theme-cave, // base
+    light: #00d5fe,
+    lighter: #9ae1f0
+  ),
+  u-theme--denim: (
+    darker: #04132b,
+    dark: #2e6de7,
+    base: $c-theme-denim, // base
+    light: #84adfc,
+    lighter: #84adfc
+  ),
+  u-theme--emperor: (
+    darker: #240431,
+    dark: #9013fe,
+    base: $c-theme-emperor, // base
+    light: #b971f7,
+    lighter: #b971f7
+  ),
+  u-theme--grapevine: (
+    darker: #2a0d24,
+    dark: #d41583,
+    base: $c-theme-grapevine, // base
+    light: #ff61bc,
+    lighter: #ff61bc
+  ),
+  u-theme--velvet: (
+    darker: #2d0505,
+    dark: #d0021b,
+    base: $c-theme-velvet, // base
+    light: #fd2641,
+    lighter: #e17077
+  ),
+  u-theme--earth: (
+    darker: #210b00,
+    dark: #974e02,
+    base: $c-theme-earth, // base
+    light: #eab57e,
+    lighter: #eab57e
+  )
+);
 
-    // Border colors
-    .u-theme--primary-border-color {
-      border-color: $primary-color;
-    }
+@each $theme in $themes {
+  .#{$theme} {
+    @each $color, $colors in $theme {
+      @each $key, $value in $color {
+        // Text Color
+        .u-theme--color--#{$key},
+        .u-theme--color--#{$key} a,
+        a.u-theme--link-hover--#{$key}:hover,
+        .u-theme--link-hover--#{$key} a:hover {
+          color: $value;
+        }
 
-    // SVG fill colors
-    .u-theme--primary-fill-color {
-      fill: $primary-color;
-    }
+        // Background Color
+        .u-theme--background-color--#{$key} {
+          background-color: $value;
+        }
 
-    // Bodies of text
-    .text {
-      > h1,
-      > h2,
-      > h3,
-      > h4,
-      > h5 {
-        color: $primary-color;
-      }
-    }
-  }
-}
+        // Border Color
+        .u-theme--border-color--#{$key} {
+          border-color: $value;
 
-// Secondary color themed elements.
-@mixin theme-secondary($name, $secondary-color) {
-  .#{$name} {
+          &--top {
+            border-top-color: $value;
+          }
 
-    // Text colors
-    .u-theme--secondary-text-color,
-    .u-theme--secondary-text-color a {
-      color: $secondary-color;
-    }
+          &--bottom {
+            border-bottom-color: $value;
+          }
 
-    a.u-theme--secondary-text-color:hover,
-    .u-theme--secondary-text-color a:hover {
-      color: complement($secondary-color);
-    }
+          &--left {
+            border-left-color: $value;
+          }
 
-    // Background colors
-    .u-theme--secondary-background-color,
-    .text .o-btn {
-      background-color: $secondary-color;
-    }
+          &--right {
+            border-right-color: $value;
+          }
+        }
 
-    a.u-theme--secondary-background-color:hover {
-      background-color: complement($secondary-color);
-      color: $c-white;
-    }
-
-    .u-theme--secondary-transparent-background-color {
-      background-color: rgba($secondary-color, .8);
-    }
-
-    // SVG fill colors
-    .u-theme--secondary-fill-color {
-      fill: $secondary-color;
-    }
-
-    // Border colors
-    .u-theme--secondary-border-top-color {
-      border-top-color: $secondary-color;
-    }
-
-    .u-theme--secondary-border-bottom-color {
-      border-bottom-color: $secondary-color;
-    }
-
-    .quote--inline,
-    .u-theme--secondary-border-left-color {
-      border-left-color: $secondary-color;
-    }
-
-    // Links
-    .u-theme--secondary-background-hover-color--at-medium {
-      color: $c-white;
-      background-color: $secondary-color;
-
-      @include media('>medium') {
-        color: $secondary-color;
-        background-color: $c-white;
-
-        &:hover {
-          color: $c-white;
-          background-color: $secondary-color;
-
+        // SVG fill colors
+        .u-theme--fill-color--#{$key} {
           path {
-            fill: $c-white;
-          }
-        }
-
-        path {
-          fill: $secondary-color;
-        }
-      }
-    }
-
-    input[type=radio]:checked,
-    input[type=checkbox]:checked {
-      background-color: $secondary-color;
-    }
-
-    input[type=radio],
-    input[type=checkbox] {
-      border-color: $secondary-color;
-    }
-
-    // Bodies of text
-    .text {
-      p, li {
-        a:not(.o-btn) {
-          color: $secondary-color;
-          box-shadow: inset 0 rem(-3) 0 rgba($secondary-color, .25);
-          transition: all .2s ease-out;
-
-          &:hover {
-            color: complement($secondary-color);
-            box-shadow: inset 0 rem(-10) 0 rgba($secondary-color, .15);
+            fill: $value;
           }
         }
       }
@@ -151,25 +155,37 @@
   }
 }
 
-// Generate primary color palettes.
-@include theme-primary(u-theme--emperor, $c-emperor);
-@include theme-primary(u-theme--earth, $c-earth);
-@include theme-primary(u-theme--grapevine, $c-grapevine);
-@include theme-primary(u-theme--denim, $c-denim);
-@include theme-primary(u-theme--campfire, $c-campfire);
-@include theme-primary(u-theme--treefrog, $c-treefrog);
-@include theme-primary(u-theme--ming, $c-ming);
-
-// Generate secondary color palettes.
-@include theme-secondary(u-theme--warm, $c-warm);
-@include theme-secondary(u-theme--cool, $c-cool);
+@each $theme, $shade in $themes {
+  $darker: map-get($shade, darker);
+  $dark: map-get($shade, dark);
+  $base: map-get($shade, base);
+  $light: map-get($shade, light);
+  $lighter: map-get($shade, lighter);
+  .#{$theme} {
+    .u-theme--background-color-trans--darker {
+      background-color: rgba($darker, 0.8);
+    }
+    .u-theme--background-color-trans--dark {
+      background-color: rgba($dark, 0.8);
+    }
+    .u-theme--background-color-trans--base {
+      background-color: rgba($base, 0.8);
+    }
+    .u-theme--background-color-trans--light {
+      background-color: rgba($light, 0.8);
+    }
+    .u-theme--background-color-trans--lighter {
+      background-color: rgba($lighter, 0.8);
+    }
+  }
+};
 
 /**
  * Dark Theme
  */
 .u-theme--dark {
   color: $c-white;
-  background-color: $c-dark--dark;
+  background-color: $c-black;
 
   hr {
     background-color: rgba($c-white, .2);
@@ -179,20 +195,15 @@
     color: $c-white;
   }
 
-  .l-grid--2-col--at-medium.with-divider > .l-grid-item:nth-child(odd):after {
-    border-right-color: rgba($c-white, .2);
-  }
-
   .can-be--dark-light {
-    background-color: $c-dark--light;
+    background-color: $c-gray--light;
   }
 
   .can-be--dark-dark {
-    background-color: $c-dark--dark;
+    background-color: $c-gray--darker;
+  }
 
-    .o-arrow--down,
-    .primary-nav--with-subnav:before {
-      border-top-color: $c-white;
-    }
+  .c-primary-nav__list::after {
+    background-color: $c-black !important;
   }
 }

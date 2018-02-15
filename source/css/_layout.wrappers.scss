@@ -14,16 +14,6 @@
   padding-left: $pad;
   padding-right: $pad;
   width: 100%;
-
-  @include media('>large') {
-    padding-left: $pad;
-    padding-right: $pad;
-  }
-
-  @include media('>xxlarge') {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 .l-container--s {
@@ -86,7 +76,7 @@
 .l-column--secondary {
   padding-top: $pad-and-half;
   padding-bottom: $pad-and-half;
-  background-color: $c-beige;
+  background-color: $c-gray--light;
 
   @include media('>medium') {
     padding-top: $pad-double;

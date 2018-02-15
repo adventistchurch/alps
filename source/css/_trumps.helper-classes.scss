@@ -17,10 +17,14 @@
   border-bottom: rem(5) solid $c-black;
 }
 
-.o-arrow--down {
+.o-arrow--down::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
   border-left: rem(5) solid transparent;
   border-right: rem(5) solid transparent;
-  border-top: rem(5) solid $c-black;
+  border-top: rem(5) solid $c-gray;
 }
 
 .o-arrow--right {
@@ -57,8 +61,7 @@
  * Completely remove from the flow and screen readers.
  */
 .is-hidden {
-  display: none !important;
-  visibility: hidden !important;
+  visibility: hidden;
 }
 .hide {
   display: none;
@@ -205,6 +208,10 @@
 
 .u-flex--nowrap {
   flex-wrap: nowrap;
+}
+
+.u-flex-direction--column {
+  flex-direction: column;
 }
 
 .u-flex--align-center {

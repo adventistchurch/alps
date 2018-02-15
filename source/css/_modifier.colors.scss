@@ -5,23 +5,6 @@
 /**
  * Text Colors
  */
-.u-color--gray {
-  color: $c-gray;
-}
-
-.u-color--gray-medium {
-  color: $c-gray--medium;
-}
-
-.u-color--gray-light {
-  color: $c-gray--light;
-}
-
-.u-color--gray-dark,
-.u-color--gray-dark a {
-  color: $c-gray--dark;
-}
-
 .u-color--black,
 .u-color--black a {
   color: $c-black;
@@ -31,24 +14,33 @@
   color: rgba($c-black, 0.7);
 }
 
-.u-color--white {
-  color: $c-white;
+.u-color--gray--darker,
+.u-color--gray--darker a {
+  color: $c-gray--darker;
+}
+
+.u-color--gray--dark,
+.u-color--gray--dark a {
+  color: $c-gray--dark;
+}
+
+.u-color--gray,
+.u-color--gray a {
+  color: $c-gray;
+}
+
+.u-color--gray--light,
+.u-color--gray--light a {
+  color: $c-gray--light;
+}
+
+.u-color--white,
+.u-color--white a {
+  color: $c-white !important;
 }
 
 .u-color--white-transparent {
   color: rgba($c-white, 0.7);
-}
-
-.u-color--red {
-  color: red;
-}
-
-.u-color--brown {
-  color: $c-brown;
-}
-
-.u-color--brown-light {
-  color: $c-brown--light;
 }
 
 /**
@@ -58,15 +50,8 @@
   color: $c-white;
 
   &:hover {
-    color: $c-brown--light;
-  }
-}
-
-.u-link--brown-light {
-  color: $c-brown--light;
-
-  &:hover {
     color: $c-white;
+    opacity: 0.5;
   }
 }
 
@@ -77,163 +62,28 @@
   background: none;
 }
 
-.u-background-color--white {
-  background-color: $c-white;
-}
-
 .u-background-color--black {
   background-color: $c-black;
 }
 
-.u-background-color--blue {
-  background-color: $c-blue;
+.u-background-color--gray--darker {
+  background-color: $c-gray--darker;
+}
+
+.u-background-color--gray--dark {
+  background-color: $c-gray--dark;
 }
 
 .u-background-color--gray {
   background-color: $c-gray;
 }
 
-.u-background-color--gray-medium {
-  background-color: $c-gray--medium;
-}
-
-.u-background-color--gray-light {
+.u-background-color--gray--light {
   background-color: $c-gray--light;
 }
 
-.u-background-color--gray-dark {
-  background-color: $c-gray--dark;
-}
-
-.u-background-color--red {
-  background-color: $c-red;
-}
-
-.u-background-color--brown {
-  background-color: $c-brown;
-}
-
-.u-background-color--brown-medium {
-  background-color: $c-brown--medium;
-}
-
-.u-background-color--beige {
-  background-color: $c-beige;
-}
-
-.u-background-color--tan {
-  background-color: $c-tan;
-}
-
-// Theme colors
-.u-background-color--emperor {
-  background-color: $c-emperor;
-}
-
-.u-background-color--earth {
-  background-color: $c-earth;
-}
-
-.u-background-color--grapevine {
-  background-color: $c-grapevine;
-}
-
-.u-background-color--denim {
-  background-color: $c-denim;
-}
-
-.u-background-color--campfire {
-  background-color: $c-campfire;
-}
-
-.u-background-color--treefrog {
-  background-color: $c-treefrog;
-}
-
-.u-background-color--ming {
-  background-color: $c-ming;
-}
-
-.u-background-color--cool {
-  background-color: $c-cool;
-}
-
-.u-background-color--warm {
-  background-color: $c-warm;
-}
-
-.u-background-color--dark-light {
-  background-color: $c-dark--light;
-}
-
-.u-background-color--dark-dark {
-  background-color: $c-dark--dark;
-}
-
-/**
- * Colored Left Borders
- */
-.u-border--left {
-  position: relative;
-  padding-left: $pad;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: rem(15);
-    background-color: $c-blue;
-  }
-
-  &--emperor:before {
-    background-color: $c-emperor;
-  }
-
-  &--earth:before {
-    background-color: $c-earth;
-  }
-
-  &--grapevine:before {
-    background-color: $c-grapevine;
-  }
-
-  &--denim:before {
-    background-color: $c-denim;
-  }
-
-  &--campfire:before {
-    background-color: $c-campfire;
-  }
-
-  &--treefrog:before {
-    background-color: $c-treefrog;
-  }
-
-  &--ming:before {
-    background-color: $c-ming;
-  }
-
-  &--cool:before {
-    background-color: $c-cool;
-  }
-
-  &--warm:before {
-    background-color: $c-warm;
-  }
-
-  &--blue:before {
-    background-color: $c-blue;
-  }
-
-  &--brown:before {
-    background-color: $c-brown;
-  }
-
-  &--red:before {
-    background-color: $c-red;
-  }
+.u-background-color--white {
+  background-color: $c-white;
 }
 
 /**
@@ -258,18 +108,96 @@
 /**
  * SVG Fill Colors
  */
-.u-fill--gray {
-  fill: $c-body-color;
+.u-path-fill--black {
+  path {
+    fill: $c-black;
+  }
 }
 
-.u-fill--white {
-  fill: $c-white;
+.u-path-fill--gray--darker {
+  path {
+    fill: $c-gray--darker;
+  }
 }
 
-.u-fill--blue {
-  fill: $c-blue;
+.u-path-fill--gray--dark {
+  path {
+    fill: $c-gray--dark;
+  }
 }
 
-.u-fill--light-brown {
-  fill: $c-brown--light;
+.u-path-fill--gray {
+  path {
+    fill: $c-gray;
+  }
+}
+
+.u-path-fill--gray--light {
+  path {
+    fill: $c-gray--light;
+  }
+}
+
+.u-path-fill--white {
+  path {
+    fill: $c-white;
+  }
+}
+
+/**
+ * Theme Colors
+ */
+.u-background-color--treefrog {
+  background-color: $c-theme-treefrog;
+}
+
+.u-background-color--ming {
+  background-color: $c-theme-ming;
+}
+
+.u-background-color--bluejay {
+  background-color: $c-theme-bluejay;
+}
+
+.u-background-color--iris {
+  background-color: $c-theme-iris;
+}
+
+.u-background-color--lily {
+  background-color: $c-theme-lily;
+}
+
+.u-background-color--scarlett {
+  background-color: $c-theme-scarlett;
+}
+
+.u-background-color--campfire {
+  background-color: $c-theme-campfire;
+}
+
+.u-background-color--forest {
+  background-color: $c-theme-forest;
+}
+
+.u-background-color--cave {
+  background-color: $c-theme-cave;
+}
+
+.u-background-color--denim {
+  background-color: $c-theme-denim;
+}
+
+.u-background-color--emperor {
+  background-color: $c-theme-emperor;
+}
+
+.u-background-color--grapevine {
+  background-color: $c-theme-grapevine;
+}
+
+.u-background-color--velvet {
+  background-color: $c-theme-velvet;
+}
+.u-background-color--earth {
+  background-color: $c-theme-earth;
 }

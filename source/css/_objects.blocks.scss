@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 // Block
-.block__image {
+.c-block__image {
   display: block;
 
   picture img {
@@ -11,7 +11,7 @@
   }
 }
 
-.block__image-wrap {
+.c-block__image-wrap {
   > * {
     width: 100%;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-.block__category {
+.c-block__category {
   padding-right: $pad;
 
   @include media('>large') {
@@ -28,16 +28,16 @@
   }
 }
 
-.block__meta {
+.c-block__meta {
   display: flex;
   align-items: flex-end;
 }
 
-.block__date {
+.c-block__date {
   white-space: nowrap;
 }
 
-.block__description {
+.c-block__description {
   flex-grow: 1;
   align-items: flex-end;
 }
@@ -45,13 +45,13 @@
 @mixin block-row {
   display: flex;
 
-  .block__image-wrap {
+  .c-block__image-wrap {
     width: 30%;
     max-width: 300px;
     text-align: right;
   }
 
-  .block__content {
+  .c-block__content {
     width: 70%;
     padding-left: $pad;
     align-self: center;
@@ -66,76 +66,30 @@
 /**
  * Block row (block with left thumb and right text when space allows)
  */
-.block__row {
+.c-block__row {
   @include media('>small') {
     @include block-row;
   }
 }
 
 // Horizontal block between 'small' and 'medium' viewports.
-.block__row--small-to-medium {
+.c-block__row--small-to-medium {
   @include media('>small', '<=medium') {
     @include block-row;
   }
 }
 
 // Horizontal block between 'small' and 'large' viewports.
-.block__row--small-to-large {
+.c-block__row--small-to-large {
   @include media('>small', '<=large') {
     @include block-row;
-  }
-}
-
-// Blocks that breakout of of their layout.
-.block--breakout {
-  @include media('>large') {
-    margin-top: -$space;
-    margin-left: -$space;
-    margin-right: -$space;
-  }
-
-  &.l-shift--reversed:not(.keep-top-space) {
-    margin-top: 0;
-  }
-}
-
-/**
- * Story Block
- */
-.story-block__image-wrap {
-  width: rem(130);
-  height: rem(130);
-
-  @include media('>small') {
-    float: left;
-  }
-}
-
-.story-block__content {
-  @include media('>small') {
-    padding-left: rem(150);
-  }
-
-  @include media('>medium') {
-    padding-left: rem(160);
-  }
-}
-
-.story-block__text-image-wrap {
-  max-width: rem(200);
-  line-height: 1;
-  display: block;
-
-  @include media('>medium') {
-    float: right;
-    margin-left: $space;
   }
 }
 
 /**
  * Media Block
  */
- .media-block {
+ .c-media-block {
    display: flex;
    flex-direction: column;
 
@@ -147,15 +101,24 @@
       padding: 0;
     }
 
-   .block__content {
+    .c-block__image {
+      padding: 0;
+    }
+
+   .c-block__content {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
      flex-direction: column;
      padding: $pad;
+
+     @include media('>small') {
+       padding-top: 0;
+       padding-bottom: 0;
+     }
    }
 
-   .block__meta {
+   .c-block__meta {
      display: flex;
      justify-content: flex-start;
    }
@@ -167,30 +130,33 @@
    }
  }
 
- .block__stacked {
+ .c-block__stacked {
    flex-direction: column;
 
-   .block__content {
+   .c-block__content {
      padding-bottom: 0;
+
+     @include media('>small') {
+       padding-top: $pad;
+     }
    }
  }
 
-.block__inset {
+.c-block__inset {
   display: block;
   position: relative;
 
-  .block__content {
+  .c-block__content {
     flex-direction: row;
     position: absolute;
     justify-content: flex-start;
     bottom: 0;
     left: 0;
     background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
-    padding-left: 0;
-    padding-right: 0;
+    padding: $pad 0;
 
-    .block__title-link,
-    .block__date {
+    .c-block__title-link,
+    .c-block__date {
       color: $c-white;
     }
   }

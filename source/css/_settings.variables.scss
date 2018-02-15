@@ -14,64 +14,56 @@ $max-width-px: 1150;
 $max-width: rem($max-width-px) !default;
 
 /**
- * Colors
+ * Theme Colors
  */
-$c-white: #fff;
-$c-black: #000;
+$c-theme-treefrog: #2b8500;
+$c-theme-ming: #007f98;
+$c-theme-bluejay: #2e6de7;
+$c-theme-iris: #9013fe;
+$c-theme-lily: #d41583;
+$c-theme-scarlett: #d0021b;
+$c-theme-campfire: #cd4900;
+$c-theme-forest: #355724;
+$c-theme-cave: #255760;
+$c-theme-denim: #2f557f;
+$c-theme-emperor: #4b207f;
+$c-theme-grapevine: #712551;
+$c-theme-velvet: #782832;
+$c-theme-earth: #5e3929;
+
+/**
+ * Neutral Colors
+ */
+ $c-black: #000000;
+ $c-gray--darker: #222222;
+ $c-gray--dark: #4a4a4a;
+ $c-gray: #717171;
+ $c-gray--light: #f5f5f5;
+ $c-white: #ffffff;
+
+/**
+ * Default Colors
+ */
 $c-error: #f00;
 $c-valid: #089e00;
 $c-warning: #fff664;
 $c-information: #000db5;
-$c-overlay: rgba($c-black, .9);
-$c-overlay--light: rgba($c-black, .76);
-$c-gray: lighten($c-black, 50);
-$c-gray--light: lighten($c-black, 90);
-$c-gray--medium: lighten($c-black, 70);
-$c-gray--dark: lighten($c-black, 20);
+$c-overlay: rgba($c-black, 0.8);
 
 /**
  * Style Colors
  */
-$c-body-color: #4f5254;
-$c-blue: #438390;
-$c-brown: #514b41;
-$c-brown--medium: #68635a;
-$c-brown--light: #ebe8df;
-$c-red: #ef3d25;
-$c-orange: #f9b000;
-$c-beige: #fbf9f3;
-$c-tan: #efe9d7;
-
-/**
- * Theme Colors (Primary)
- */
-$c-emperor: #4b207f;
-$c-earth: #5e3929;
-$c-grapevine: #7f264a;
-$c-denim: #2f557f;
-$c-campfire: #e36520;
-$c-treefrog: #448d21;
-$c-ming: #3e8391;
-
-/**
- * Theme Colors (Secondary)
- */
-$c-cool: #4d7549;
-$c-warm: #ffa92d;
-
-/**
- * Theme Colors (Dark)
- */
-$c-dark--light: #303030;
-$c-dark--dark: #252525;
+$c-body-color: $c-black;
+$c-link-color: $c-gray;
+$c-button-color: $c-gray;
 
 /**
  * Typography
  */
-$ff-font: 'Noto Sans', Georgia, Times, "Times New Roman", serif;
-$ff-font--secondary: 'Noto Serif', "Helvetica", "Arial", sans-serif;
-$ff-font--tertiary: $ff-font--secondary;
-$ff-font--serif: $ff-font;
+$ff-font: 'Noto Sans', "Helvetica", "Arial", sans-serif;
+$ff-font--primary: 'Noto Serif', Georgia, Times, "Times New Roman", serif;
+$ff-font--secondary: 'Noto Sans', "Helvetica", "Arial", sans-serif;
+$ff-font--serif: $ff-font--primary;
 $ff-font--sans: $ff-font--secondary;
 $ff-font--monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
 
@@ -83,12 +75,12 @@ $cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 /**
  * Default Spacing/Padding
  */
-$space: 1.25rem;
+$space: 0.9375rem; // 15px
 $space-and-half: $space*1.5;
 $space-double: $space*2;
 $space-quad: $space*4;
 $space-half: $space/2;
-$pad: 1.25rem;
+$pad: 0.9375rem; // 15px
 $pad-and-half: $pad*1.5;
 $pad-double: $pad*2;
 $pad-half: $pad/2;
@@ -103,7 +95,7 @@ $border-med: 6px;
 $border-thick: 8px;
 $border-opacity: 1px solid rgba($c-white, .2);
 $border-style: 1px solid $c-gray;
-$border-style-blue: 1px solid $c-blue;
+$border-style-blue: 1px solid $c-theme-ming;
 $border-style-thick: 3px solid $c-gray--light;
 $border-style-light: 1px solid $c-gray--light;
 $border-style-dark: 1px solid $c-black;

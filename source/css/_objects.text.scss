@@ -20,7 +20,7 @@
   margin-bottom: rem(8);
   letter-spacing: 1px;
   font-weight: 600;
-  color: $c-blue;
+  color: $c-theme-ming;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@
   display: block;
   font-style: normal;
   text-transform: uppercase;
-  font-family: $ff-font--tertiary;
+  font-family: $ff-font;
   float: right;
 }
 
@@ -60,12 +60,33 @@
   font-family: $ff-font--secondary;
 }
 
-.u-font--tertiary {
-  font-family: $ff-font--tertiary;
-}
-
 .u-font--monospace {
   font-family: $ff-font--monospace;
+}
+
+// Primary Navigation links
+@mixin u-font--primary-nav() {
+  font-family: $ff-font--primary;
+  font-size: rem(18);
+  line-height: 1;
+}
+
+.u-font--primary-nav {
+  @include u-font--primary-nav;
+}
+
+// Secondary Navigation links
+@mixin u-font--secondary-nav() {
+  font-family: $ff-font--secondary;
+  font-size: rem(14);
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: rem(2);
+  font-weight: 400;
+}
+
+.u-font--secondary-nav {
+  @include u-font--secondary-nav;
 }
 
 /**
@@ -240,67 +261,6 @@
 
 .u-font--secondary--xs {
   @include u-font--secondary--xs;
-}
-
-/**
- * Tertiary type styles
- */
-
-// X-Large Type - tertiary
-@mixin u-font--tertiary--xl() {
-  font-family: $ff-font--tertiary;
-  font-size: rem(28);
-  line-height: 1;
-  font-weight: normal;
-  text-transform: uppercase;
-
-  @include media('>medium') {
-    font-size: rem(44);
-  }
-
-  @include media('>large') {
-    font-size: rem(55);
-  }
-}
-
-.u-font--tertiary--xl {
-  @include u-font--tertiary--xl;
-}
-
-// Large Type - tertiary
-@mixin u-font--tertiary--l() {
-  font-family: $ff-font--tertiary;
-  font-size: rem(24);
-  line-height: 1;
-  font-weight: normal;
-  text-transform: uppercase;
-
-  @include media('>medium') {
-    font-size: rem(28);
-    line-height: rem(32);
-  }
-}
-
-.u-font--tertiary--l {
-  @include u-font--tertiary--l;
-}
-
-// Medium Type - tertiary
-@mixin u-font--tertiary--m() {
-  font-family: $ff-font--tertiary;
-  font-size: rem(20);
-  line-height: 1;
-  font-weight: normal;
-  text-transform: uppercase;
-
-  @include media('>medium') {
-    font-size: rem(24);
-    line-height: rem(28);
-  }
-}
-
-.u-font--tertiary--m {
-  @include u-font--tertiary--m;
 }
 
 /**
@@ -548,7 +508,7 @@
   }
 
   > .quote--extended {
-    background-color: $c-beige;
+    background-color: $c-gray--light;
     padding: rem(30) 0;
 
     @include media('>medium') {

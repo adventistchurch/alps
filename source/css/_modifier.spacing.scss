@@ -70,6 +70,14 @@
     &--bottom {
       padding-bottom: $pad*2;
     }
+
+    &--left {
+      padding-left: $pad*2;
+    }
+
+    &--right {
+      padding-right: $pad*2;
+    }
   }
 
   &--triple {

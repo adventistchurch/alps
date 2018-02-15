@@ -1,6 +1,8 @@
 /*------------------------------------*\
     $PATTERN LAB-SPECIFIC STYLES
 \*------------------------------------*/
+
+
 /**
  * This stylesheet is for styles you want to include only when the interface is being viewed within Pattern Lab.
  * This is helpful for displaying demo styles for grids, animations, color swatches, etc
@@ -8,61 +10,64 @@
  * These styles will not be your production CSS.
  */
 
+
 /* Style Guide Interface Colors */
-$sg-primary : #222;
-$sg-secondary : #808080;
-$sg-tertiary : #ddd;
-$sg-quaternary : #fff;
-$sg-quinary : #999;
-$sg-tint : rgba(255,255,255,0.05);
-$sg-tint-2 : rgba(255,255,255,0.25);
-$sg-tone : rgba(0,0,0,0.1);
-$sg-tone-2 : rgba(0,0,0,0.3);
+
+$sg-primary: #222;
+$sg-secondary: #808080;
+$sg-tertiary: #ddd;
+$sg-quaternary: #fff;
+$sg-quinary: #999;
+$sg-tint: rgba(255, 255, 255, 0.05);
+$sg-tint-2: rgba(255, 255, 255, 0.25);
+$sg-tone: rgba(0, 0, 0, 0.1);
+$sg-tone-2: rgba(0, 0, 0, 0.3);
 
 /* Typography */
-$sg-font-size-norm : 100%;
-$sg-font-size-sm : 70%;
-$sg-font-size-large : 120%;
+
+$sg-font-size-norm: 100%;
+$sg-font-size-sm: 70%;
+$sg-font-size-large: 120%;
 
 /* Defaults */
-$sg-space : 1em;
-$sg-doublespace : $sg-space*2;
-$sg-pad : 1em;
-$sg-pad-half : $sg-pad/2;
+
+$sg-space: 1em;
+$sg-doublespace: $sg-space*2;
+$sg-pad: 1em;
+$sg-pad-half: $sg-pad/2;
 
 /* Dimensions */
+
 $offset-top: 2em;
 
 /* Breakpoints */
-$sg-bp-small : 24em;
-$sg-bp-small-2 : 30em;
-$sg-bp-med : 48em;
-$sg-bp-large : 72em;
-$sg-bp-xl : 80em;
-$animate-quick: 0.2s;
 
+$sg-bp-small: 24em;
+$sg-bp-small-2: 30em;
+$sg-bp-med: 48em;
+$sg-bp-large: 72em;
+$sg-bp-xl: 80em;
+$animate-quick: 0.2s;
 // Demo to show grid system - in this stylesheet because it shouldn't be included in the production styles
 .demo {
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
-.demo .l-grid-item, .demo .demo-block {
+.demo .l-grid-item,
+.demo .demo-block {
   background: $sg-tertiary;
   color: $sg-secondary;
   text-align: center;
   margin-bottom: $sg-pad-half;
   padding: 1em !important;
-
   &:nth-of-type(2n) {
     color: $sg-tertiary;
     background: $sg-secondary;
   }
-
   .l-grid-item {
     background: $sg-tone;
     color: $sg-tertiary;
-
     &:nth-of-type(2n) {
       background: $sg-tone-2;
     }
@@ -80,7 +85,6 @@ $animate-quick: 0.2s;
 //Animate Demo to show
 .animate-move {
   position: relative;
-
   .demo-shape {
     position: absolute;
     top: 0;
@@ -89,9 +93,8 @@ $animate-quick: 0.2s;
     width: 20px;
     background: $sg-secondary;
   }
-
   &:hover {
-    > .demo-shape {
+    >.demo-shape {
       left: 100%;
       margin-left: -20px;
     }
@@ -101,13 +104,11 @@ $animate-quick: 0.2s;
 // Style Guide color swatches
 .sg-colors {
   overflow: hidden;
-
   li {
     overflow: hidden;
     border: 1px solid $sg-tertiary;
     padding: 0.3em;
     margin: 0 0.2em 0.2em 0;
-
     @media all and (min-width: $sg-bp-small-2) {
       float: left;
       width: 5em;
@@ -117,23 +118,30 @@ $animate-quick: 0.2s;
 
 .sg-swatch {
   display: block;
-  height: 1.5em;
-  width: 50%;
+  height: rem(80);
+  width: 100%;
+}
 
-  @media all and (max-width: $sg-bp-small-2) {
-    float: left;
-    margin-right: 0.3em;
-  }
+.sg-swatch--mini {
+  display: flex;
+  flex-direction: row;
+  height: rem(40);
+  margin: rem(5) 0;
+  justify-content: stretch;
+}
 
-  @media all and (min-width: $sg-bp-small-2) {
-    width: 100%;
-    height: 4em;
-    margin-bottom: 0.2em;
+.sg-swatch--mini-item {
+  width: 100%;
+  margin-right: rem(5);
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 .sg-label {
   line-height: 1;
+  margin-bottom: rem(5);
 }
 
 .sg-annotation-toggle {
@@ -148,7 +156,6 @@ $animate-quick: 0.2s;
   display: none !important;
   color: lighten(#e6db74, 10);
   background-color: #272822;
-
   pre {
     border-color: $sg-quaternary;
     font-size: rem(18);
@@ -158,49 +165,78 @@ $animate-quick: 0.2s;
   }
 }
 
+
 /**
  *  * Color Containers
  */
+
 .colorset {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+
+  @include media('>medium') {
+    flex-direction: row;
+    margin-left: -$space/2;
+    margin-right: -$space/2;
+  }
 }
 
 .colorset--color {
-  flex: 0 1 20%;
+  width: 100%;
   flex-direction: column;
+  flex-wrap: wrap;
   border: 1px $c-gray--light solid;
-  padding: 5px;
+  padding: rem(5s);
+  margin: 0 0 $space 0;
+
+  @include media('>medium') {
+    width: calc(33.333% - 20px);
+    margin: rem(10);
+  }
+
+  @include media('>large') {
+    width: calc(25% - 20px);
+  }
+
+  @include media('>xlarge') {
+    width: calc(20% - 20px);
+  }
 }
 
-.sg-label--color{
+.sg-label.small {
+  padding: rem(5);
+  display: block;
+}
+
+.sg-label--color {
   display: block;
   color: $c-gray;
 }
 
-.sg-label--block{
+.sg-label--block {
   display: inline-block;
-  margin-right: .25em;
+  margin-right: $space/2;
   background: $c-gray--light;
-  padding: 4px;
+  padding: rem(5);
   font-size: 10px;
-  border-radius: 5px;
+  border-radius: rem(5);
 }
 
 /*
  Flexbox Grid
  */
-.sg-grid{
+
+.sg-grid {
   display: flex;
   flex-direction: row;
-
   .sg-grid-1of2 {
     max-width: 50%;
     flex-basis: 50%;
   }
 }
 
-code.sg-codesample{
+code.sg-codesample {
   background-color: $c-gray--light;
   display: block;
   margin-bottom: 1em;

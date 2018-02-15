@@ -1,8 +1,8 @@
 {% if media_block_default %}
-  <div class="media-block block {{ media_block_default.block_class }}">
+  <div class="c-media-block c-block {{ media_block_default.block_class }}">
     {% if media_block_default.img or picture %}
-      <div class="media-block__image block__image {{ media_block_default.block_img_class }}">
-        <a class="block__image-link {{ media_block_default.block_img_class }}" href="{{ url }}">
+      <div class="c-media-block__image c-block__image {{ media_block_default.block_img_class }}">
+        <a class="c-block__image-link {{ media_block_default.block_img_class }}" href="{{ url }}">
           {% if picture %}
             {% include '@atoms/images/picture.twig' %}
           {% elseif media_block_default.img %}
@@ -11,23 +11,23 @@
         </a>
       </div>
     {% endif %}
-    <div class="media-block__content block__content u-spacing {{ media_block_default.block_content_class }}">
+    <div class="c-media-block__content c-block__content u-spacing {{ media_block_default.block_content_class }}">
       {% if media_block_default.title %}
-        <h3 class="media-block__title block__title {{ media_block_default.block_title_class }}">
-          <a href="{{ media_block_default.url }}" class="block__title-link u-theme--primary-text-color">{{ media_block_default.title }}</a>
+        <h3 class="c-media-block__title c-block__title {{ media_block_default.block_title_class }}">
+          <a href="{{ media_block_default.url }}" class="c-block__title-link">{{ media_block_default.title }}</a>
         </h3>
       {% endif %}
       {% if media_block_default.description %}
-        <p class="media-block__description block__description">{{ media_block_default.description }}</p>
+        <p class="c-media-block__description c-block__description">{{ media_block_default.description }}</p>
       {% endif %}
-      <div class="media-block__meta block__meta {{ media_block_default.block_meta_class }}">
+      <div class="c-media-block__meta c-block__meta {{ media_block_default.block_meta_class }}">
         {% if media_block_default.category %}
-          <span class="block__category u-theme--secondary-text-color u-font--primary--xs u-text-transform--upper">{{ media_block_default.category }}</span>
+          <span class="c-block__category u-theme--secondary-text-color u-font--primary--xs u-text-transform--upper">{{ media_block_default.category }}</span>
         {% endif %}
         {% if media_block_default.date %}
-          <time class="block__date u-theme--secondary-text-color u-font--primary--xs u-text-transform--upper" datetime="{{ media_block_default.datetime }}">{{ media_block_default.date }}</time>
+          <time class="c-block__date u-theme--secondary-text-color u-font--primary--xs u-text-transform--upper" datetime="{{ media_block_default.datetime }}">{{ media_block_default.date }}</time>
         {% endif %}
       </div>
-    </div> <!-- media-block__content -->
+    </div> <!-- c-media-block__content -->
   </div> <!-- media-block -->
 {% endif %}

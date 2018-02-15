@@ -24,25 +24,25 @@
   {% endif %}
 
   {% if is_carousel_block %}
-    <div class="carousel-block__content block__content u-spacing--quarter u-padding {{ is_carousel_block.block_content_class }}">
+    <div class="carousel-block__content c-block__content u-spacing--quarter u-padding {{ is_carousel_block.block_content_class }}">
       {% if is_carousel_block.title %}
-        <h3 class="carousel-block__title block__title {{ is_carousel_block.block_title_class }}">
-          <a href="{{ url }}" class="block__title-link u-theme--primary-text-color">{{ is_carousel_block.title }}</a>
+        <h3 class="carousel-block__title c-block__title {{ is_carousel_block.block_title_class }}">
+          <a href="{{ url }}" class="c-block__title-link u-theme--primary-text-color">{{ is_carousel_block.title }}</a>
         </h3>
       {% endif %}
       {% if is_carousel_block.date %}
-        <time class="block__date u-font--secondary--xs u-color--brown u-space--half--bottom" datetime="{{ is_carousel_block.datetime }}">{{ is_carousel_block.date }}</time>
+        <time class="c-block__date u-font--secondary--xs u-color--brown u-space--half--bottom" datetime="{{ is_carousel_block.datetime }}">{{ is_carousel_block.date }}</time>
       {% endif %}
       {% if is_carousel_block.description %}
         <div class="text u-padding--half--bottom">
-          <p class="carousel-block__description block__description">
+          <p class="carousel-block__description c-block__description">
             <span class="u-font--primary--xs">{{ is_carousel_block.description }}</span>
           </p>
         </div>
       {% endif %}
       {% if is_carousel_block.cta %}
         <p>
-          <a class="carousel-block__cta block__cta o-btn u-theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
+          <a class="carousel-block__cta c-block__cta o-btn u-theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
         </p>
       {% endif %}
     </div> <!-- carousel-block__content -->

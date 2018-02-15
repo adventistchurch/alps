@@ -9,7 +9,7 @@
       {% if story_block_default.subtitle %}<p class="u-font--secondary--xs u-color--white">{{ story_block_default.subtitle }}</p>{% endif %}
     </div>
     <div class="u-spacing">
-      <div class="text story-block__description block__description u-color--white">
+      <div class="text story-block__description c-block__description u-color--white">
         {% if story_block_default.text_img %}
           <a class="story-block__text-image-wrap u-space--half--bottom" href="{{ story_block_default.url }}">
             {% if story_block_default.is_video %}<div class="is-video">{% endif %}
@@ -20,7 +20,7 @@
         {{ story_block_default.description | raw }}
       </div>
       {% if story_block_default.cta %}
-        <p><a class="story-block__cta block__cta o-btn u-theme--secondary-background-color" href="{{ story_block_default.url }}">{{ story_block_default.cta }}</a></p>
+        <p><a class="story-block__cta c-block__cta o-btn u-theme--secondary-background-color" href="{{ story_block_default.url }}">{{ story_block_default.cta }}</a></p>
       {% endif %}
     </div> <!-- /.u-spacing -->
   </div> <!-- story-block__content -->
