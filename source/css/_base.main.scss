@@ -25,13 +25,35 @@ body {
   width: calc(100%/7 *6);
 }
 
-.l-wrap__sidebar {
+.l-wrap__sabbath {
   width: calc(100%/7 *1);
   background-color: $c-gray--light;
-  padding: $pad;
 }
 
 .l-main {
   z-index: 2;
   position: relative;
+}
+
+.l-sabbath {
+  //background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+  position: relative;
+  padding-top: 0;
+
+  &__logo {
+    padding-top: $pad/2;
+    padding-left: $pad/2;
+    padding-right: $pad/2;
+    display: block;
+
+    @include media('>large') {
+      padding-top: $pad;
+      padding-left: $pad*2;
+      padding-right: $pad*2;
+    }
+  }
 }

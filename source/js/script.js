@@ -90,6 +90,15 @@
     $(this).html(text.substring(1)).prepend(first);
   });
 
+  /**
+   * Fixto
+   */
+  $('.js-sticky').fixTo('js-sticky-parent', {
+    className: 'sticky-is-active',
+    useNativeSticky: true,
+    zIndex: 9999
+  });
+
   /*
    * Toggle Active Classes
    *
