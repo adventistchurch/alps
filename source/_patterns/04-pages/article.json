@@ -4,14 +4,13 @@
   },
 
   "blockquote": true,
-  "sidebar_nav": true,
   "figure_breakout": true,
   "figure_with_caption": true,
   "figure_split": true,
   "highlight": true,
   "gallery_block": true,
   "content_block": true,
-  "related_posts": false,
+  "related_posts": true,
 
   "media_block_default": {
     "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col",

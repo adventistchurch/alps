@@ -47,8 +47,16 @@
    }
  }
 
- .u-space--right--1-col--at-medium {
-   @include media('>medium') {
-     margin-right: calc((100vw/7) * -1);
-   }
- }
+.u-space--right--1-col--at-medium {
+  @include media('>medium') {
+   margin-right: calc((100vw/7) * -1);
+  }
+}
+
+.u-spacing--at-small {
+  @include media('<=small') {
+    & > * + * {
+      margin-top: $pad-mobile*2;
+    }
+  }
+}

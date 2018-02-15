@@ -15,7 +15,7 @@
   @include u-font--secondary--m;
 
   font-weight: bold;
-  border-left: 2px solid $c-black;
+  border-left: rem(3) solid $c-black;
   text-transform: uppercase;
 }
 
