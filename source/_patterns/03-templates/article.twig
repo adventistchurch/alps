@@ -74,7 +74,7 @@
     </main> <!-- /.l-main -->
     {% include '@organisms/global/footer.twig' %}
   </div> <!-- /.l-content -->
-  <aside class="l-wrap__sabbath l-sabbath u-background-image--sabbath js-sticky-parent">
+  <aside class="l-wrap__sabbath l-sabbath u-background-image--sabbath js-sticky-parent js-toggle-menu">
     {% if sabbath_background %}
       <style>
         .u-background-image--sabbath {
@@ -83,9 +83,7 @@
       </style>
     {% endif %}
     <div class="l-sabbath__logo u-path-fill--white js-sticky">
-      <a href="/">
-        {% include '@atoms/icons/icon-logo.twig' %}
-      </a>
+      {% include '@atoms/icons/icon-logo.twig' %}
     </div>
   </aside><!-- ./l-sidebar -->
 </div><!-- ./l-wrap -->

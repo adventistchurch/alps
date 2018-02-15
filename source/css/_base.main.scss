@@ -22,11 +22,11 @@ body {
 }
 
 .l-wrap__content {
-  width: calc(100%/7 *6);
+  width: calc(100vw/7 *6);
 }
 
 .l-wrap__sabbath {
-  width: calc(100%/7 *1);
+  width: calc(100vw/7 *1);
   background-color: $c-gray--light;
 }
 
@@ -43,6 +43,7 @@ body {
   z-index: 1;
   position: relative;
   padding-top: 0;
+  cursor: pointer;
 
   &__logo {
     padding-top: $pad/2;
