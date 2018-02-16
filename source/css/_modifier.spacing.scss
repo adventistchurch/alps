@@ -53,10 +53,10 @@
   }
 }
 
-.u-spacing--at-small {
-  @include media('<=small') {
+.u-spacing--at-medium {
+  @include media('<=medium') {
     & > * + * {
-      margin-top: $pad-mobile*2;
+      margin-top: $pad-mobile;
     }
   }
 }

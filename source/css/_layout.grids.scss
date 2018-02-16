@@ -101,7 +101,7 @@
     width: 100%;
 
     > * {
-      width: 33.3333%;
+      width: 50%;
     }
   }
 }
@@ -222,6 +222,34 @@
 
   @include media('>large') {
     .l-grid-item--l {
+      &--1-col {
+        width: calc((100vw / 7) * 1);
+      }
+
+      &--2-col {
+        width: calc((100vw / 7) * 2);
+      }
+
+      &--3-col {
+        width: calc((100vw / 7) * 3);
+      }
+
+      &--4-col {
+        width: calc((100vw / 7) * 4);
+      }
+
+      &--5-col {
+        width: calc((100vw / 7) * 5);
+      }
+
+      &--6-col {
+        width: calc((100vw / 7) * 6);
+      }
+    }
+  }
+
+  @include media('>xlarge') {
+    .l-grid-item--xl {
       &--1-col {
         width: calc((100vw / 7) * 1);
       }

@@ -333,6 +333,41 @@
 }
 
 /**
+ * Related posts
+ */
+.c-related-posts {
+  &__blocks {
+    .c-media-block {
+      @include media('>small', '<=medium') {
+        width: calc(50% - 15px);
+        float: left;
+        margin-top: 0;
+
+        &:first-child {
+          margin-right: $space-mobile;
+        }
+
+        &:last-child {
+          margin-left: $space-mobile;
+        }
+      }
+
+      @include media('<=xlarge') {
+        flex-wrap: wrap;
+
+        &__content {
+          padding-top: $pad-mobile;
+        }
+      }
+
+      &__content {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+/**
  * Share tools
  */
  .c-share-tools {
