@@ -395,14 +395,9 @@ $themes: (
       }
 
       .c-header {
-        background-color: $darker;
-
-        .c-primary-nav__list::after {
-          background-color: $darker !important;
-        }
-
-        .c-header__nav-secondary .c-secondary-nav__list-item__search {
+        .c-subnav__list-item {
           background-color: $darker;
+          border-left-color: $lighter;
         }
 
         .c-secondary-nav__link {

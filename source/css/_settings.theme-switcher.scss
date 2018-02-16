@@ -1,58 +1,86 @@
 // Theme switcher
-.theme-switcher {
+.c-theme-switcher {
   position: fixed;
   left: 0;
   background-color: $c-white;
-  bottom: 0;
-  box-shadow: 0 0 3px rgba($c-black, .2);
-  border-top-right-radius: 3px;
+  border-top: 1px solid rgba($c-black, 0.2);
+  border-right: 1px solid rgba($c-black, 0.2);
+  border-top-right-radius: rem(3);
   z-index: 9999;
+  bottom: rem(-40);
+  height: rem(40);
+  display: flex;
+  justify-content: center;
 
-  .u-rtl & {
-    direction: ltr;
+  &.this-is-active {
+    bottom: 0;
+
+    .u-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__toggle {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: rem(-30);
+    height: rem(30);
+    width: auto;
+    background: $c-white;
+    color: $c-black;
+    border-top: 1px solid rgba($c-black, 0.2);
+    border-right: 1px solid rgba($c-black, 0.2);
+    border-top-right-radius: rem(3);
+    font-size: rem(10);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__swatches {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &--inner {
+    display: flex;
   }
 }
 
-.theme-swatches {
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
-.theme-swatches--primary {
-  margin-right: $space/2;
-}
-
-.swatch {
-  height: 15px;
-  width: 15px;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: 0 0 0 rgba($c-black, 0);
-  outline: 1px solid rgba($c-white, 0);
-  transition: all .3s ease-out;
-
-  &.active {
-    box-shadow: 0 3px 5px rgba($c-black, .5);
-    outline: 1px solid $c-white;
-    transition: all .3s ease-out;
+.c-swatches {
+  &--primary {
+    margin-right: $space/2;
   }
-}
 
-.theme-switcher-heading {
-  font-size: 10px;
-  margin-bottom: 8px;
-  color: $c-black;
-}
+  &__heading {
+    font-size: rem(10);
+    text-transform: uppercase;
+    color: $c-black;
+    margin-right: rem(5);
+  }
 
-.theme-heading {
-  font-size: 9px;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  color: $c-black;
+  &__item {
+    height: 15px;
+    width: 15px;
+    margin-right: rem(2.5);
+    display: inline-block;
+    cursor: pointer;
+
+    &.active {
+      background-image: url('../images/icons/o-icon__check.svg');
+      background-size: 90%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .alps-start-page {
-  .theme-switcher {
+  .c-theme-switcher {
     display: none;
   }
 }

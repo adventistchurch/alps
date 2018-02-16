@@ -6,14 +6,14 @@
   color: $c-white;
   display: block;
   float: left;
-  width: calc(33.33% - 20px);
+  width: calc(33.33% - 15px);
   margin-right: $pad-mobile;
   overflow: hidden;
   position: relative;
   content: "";
 
   @include media('>large') {
-    width: calc(33.33% - 30px);
+    width: calc(33.33% - 20px);
     margin-right: $pad;
     margin-bottom: $pad/2;
   }

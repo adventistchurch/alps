@@ -1,6 +1,7 @@
 {
   "head": {
-    "title": "Article Page - The Official Site of the Seventh-day Adventist world church"
+    "title": "Article Page - The Official Site of the Seventh-day Adventist world church",
+    "body_class": "has-grid"
   },
 
   "sabbath_background": "../../images/background-sabbath.png",
@@ -10,7 +11,7 @@
   "figure_split": true,
   "highlight": true,
   "gallery_block": true,
-  "content_block": true,
+  "story_block": true,
   "related_posts": true,
 
   "media_block_default": {

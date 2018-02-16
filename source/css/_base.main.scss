@@ -50,6 +50,9 @@ body {
     padding-left: $pad/2;
     padding-right: $pad/2;
     display: block;
+    width: 100%;
+    max-width: rem(200);
+    margin: 0 auto;
 
     @include media('>large') {
       padding-top: $pad;

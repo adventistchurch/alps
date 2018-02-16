@@ -2,6 +2,30 @@
     $HELPER/TRUMP CLASSES
 \*------------------------------------*/
 
+.has-grid {
+  position: relative;
+
+  &::after {
+    background: url('../images/background-grid.svg') top left repeat-y;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+    content: "";
+  }
+
+  &.u-theme--dark::after {
+    background: black url('../images/background-grid.svg') top left repeat-y;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    opacity: 0.1;
+  }
+}
+
 /**
  * Arrows
  */
