@@ -1,4 +1,10 @@
 // Theme switcher
+.hide-theme-switcher {
+  .c-theme-switcher {
+    display: none;
+  }
+}
+
 .c-theme-switcher {
   position: fixed;
   left: 0;
@@ -52,8 +58,10 @@
 }
 
 .c-swatches {
-  &--primary {
-    margin-right: $space/2;
+  margin-right: $space/2;
+
+  &:last-child {
+    margin-right: 0;
   }
 
   &__heading {
@@ -76,11 +84,5 @@
       background-position: center center;
       background-repeat: no-repeat;
     }
-  }
-}
-
-.alps-start-page {
-  .c-theme-switcher {
-    display: none;
   }
 }

@@ -21,6 +21,7 @@
     return false;
   }
 
+  
   // Add class if is mobile
   if (isMobile()) {
     $('html').addClass(' touch');
@@ -35,6 +36,12 @@
       failure_limit: 9999,
     });
   }
+
+  var divs = $('.l-sabbath__logo-light');
+  $(window).scroll(function(){
+     var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
+     divs.css('opacity', 1 - percent);
+  });
 
   // Check window width
   var getWidth = function() {
@@ -318,7 +325,7 @@
   if ($('.has-parallax').length) {
     parallaxIt()
   }
-  
+
   /**
    * Modaal functionality
    * Reference:
@@ -329,11 +336,11 @@
     });
   }
 
-  // Theme switcher for primary colors
-  $('.c-swatches--primary .c-swatches__item').click(function(){
+  // Theme switcher for colors
+  $('.c-swatches--colors .c-swatches__item').click(function(){
     var thisColor = $(this).data('color');
 
-    $('.c-swatches--primary .c-swatches__item').removeClass('active');
+    $('.c-swatches--colors .c-swatches__item').removeClass('active');
     $(this).addClass('active');
 
     // Remove any class that starts with "u-theme--"
@@ -342,9 +349,15 @@
     }).addClass('u-theme--' + thisColor);
   });
 
-  // Theme switcher for dark colors
-  $('.c-swatches--dark .c-swatches__item').click(function() {
+  // Theme switcher for background
+  $('.c-swatches--background .c-swatches__item').click(function() {
     $('body').toggleClass('u-theme--dark');
+    $(this).toggleClass('active');
+  });
+
+  // Theme switcher for grid lines
+  $('.c-swatches--grid .c-swatches__item').click(function() {
+    $('body').toggleClass('has-grid');
     $(this).toggleClass('active');
   });
 

@@ -2,7 +2,7 @@
   "head": {
     "title": "Home - The Official Site of the Seventh-day Adventist world church",
     "html_class": "pl u-theme--denim",
-    "body_class": "body u-theme--cool"
+    "body_class": "body"
   },
 
   "logo_square": "logo__nad-2017.svg",

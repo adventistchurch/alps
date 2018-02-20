@@ -3,8 +3,8 @@
     "title": "The Official Site of the Seventh-day Adventist world church",
     "language": "en",
     "charset": "UTF-8",
-    "html_class": "pl u-theme--ming",
-    "body_class": "body u-theme--cool",
+    "html_class": "pl u-theme--treefrog",
+    "body_class": "body has-grid",
     "description": "Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole."
   },
 

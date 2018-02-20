@@ -219,11 +219,11 @@
       align-items: center;
 
       @include media('>small') {
-        padding-left: rem(100);
+        padding-left: rem(190);
       }
 
       @include media('>medium') {
-        padding-right: rem(100);
+        padding-right: rem(190);
         padding-left: 0;
       }
     }
@@ -240,13 +240,8 @@
       }
     }
 
+    &__list-item__search,
     &__list-item__menu {
-      @include media('>small') {
-        display: none !important;
-      }
-    }
-
-    &__list-item__search {
       @include media('>small') {
         position: absolute;
         background-color: white;
@@ -259,12 +254,25 @@
 
       @include media('>medium') {
         left: auto;
-        right: $space;
+        right: 0;
       }
 
       @include media('>xlarge') {
         left: auto;
-        right: $space;
+        right: 0;
+      }
+    }
+
+    &__list-item__search {
+      left: rem(105);
+
+      @include media('>medium') {
+        right: rem(105);
+        left: auto;
+      }
+
+      @include media('>xlarge') {
+        right: rem(105);
       }
     }
 

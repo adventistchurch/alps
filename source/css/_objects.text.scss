@@ -6,14 +6,18 @@
   color: $c-white;
   display: block;
   float: left;
-  width: calc(33.33% - 15px);
+  width: calc((100vw / 7 * 2) - 30px);
   margin-right: $pad-mobile;
   overflow: hidden;
   position: relative;
   content: "";
 
+  @include media('>medium') {
+    width: calc((100vw / 7 * 1) - 30px);
+  }
+
   @include media('>large') {
-    width: calc(33.33% - 20px);
+    width: calc((100vw / 7 * 1) - 40px);
     margin-right: $pad;
     margin-bottom: $pad/2;
   }
@@ -35,6 +39,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include media('>medium') {
+      font-size: 12vw;
+    }
 
     @include media('>large') {
       font-size: 8vw;

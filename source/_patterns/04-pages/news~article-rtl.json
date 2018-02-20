@@ -1,8 +1,8 @@
 {
   "head": {
     "title": "أسئلة تتعلق - مصدر الإجابات عن مواضيع ",
-    "html_class": "pl u-theme--ming",
-    "body_class": "body u-theme--cool u-rtl",
+    "html_class": "pl",
+    "body_class": "body u-rtl",
     "language": "ar",
     "attr": "dir=\"rtl\""
   },

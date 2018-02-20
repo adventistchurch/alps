@@ -1,0 +1,23 @@
+<aside class="l-wrap__sabbath l-sabbath {% if sabbath_background %}{{'u-background-image--sabbath'}}{% else %}{{ 'u-theme--background-gradient' }}{% endif %} js-sticky-parent js-toggle-menu">
+  {% if sabbath_background %}
+    <style>
+      .u-background-image--sabbath {
+        background-image: url('{{ sabbath_background }}') !important;
+      }
+    </style>
+    <div class="l-sabbath__logo u-path-fill--white js-sticky">
+      {% include '@atoms/icons/icon-logo.twig' %}
+    </div>
+  {% else %}
+    <div class="l-sabbath__logo js-sticky">
+      <div class="l-sabbath__logo--inner">
+        <div class="l-sabbath__logo-light u-path-fill--white">
+          {% include '@atoms/icons/icon-logo.twig' %}
+        </div>
+        <div class="l-sabbath__logo-dark u-theme--path-fill--darker">
+          {% include '@atoms/icons/icon-logo.twig' %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</aside><!-- ./l-sidebar -->

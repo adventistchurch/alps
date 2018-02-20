@@ -2,7 +2,7 @@
   "head": {
     "title": "Adventist Family Ministries - The Official Site of the Seventh-day Adventist world church",
     "html_class": "pl u-theme--earth",
-    "body_class": "body u-theme--cool"
+    "body_class": "body"
   },
 
   "logo_square": "logo__family--square.svg",

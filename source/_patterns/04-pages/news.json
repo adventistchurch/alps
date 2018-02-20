@@ -2,7 +2,7 @@
   "head": {
     "title": "News Home - The Official Site of the Seventh-day Adventist world church",
     "html_class": "pl u-theme--campfire",
-    "body_class": "body u-theme--cool"
+    "body_class": "body"
   },
 
   "page_header": {

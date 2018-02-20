@@ -1,10 +1,8 @@
 {
   "head": {
-    "title": "Article Page - The Official Site of the Seventh-day Adventist world church",
-    "body_class": "has-grid"
+    "title": "Article Page - The Official Site of the Seventh-day Adventist world church"
   },
 
-  "sabbath_background": "../../images/background-sabbath.png",
   "blockquote": true,
   "figure_breakout": true,
   "figure_with_caption": true,

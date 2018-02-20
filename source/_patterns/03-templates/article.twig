@@ -74,16 +74,5 @@
     </main> <!-- /.l-main -->
     {% include '@organisms/global/footer.twig' %}
   </div> <!-- /.l-content -->
-  <aside class="l-wrap__sabbath l-sabbath u-background-image--sabbath js-sticky-parent js-toggle-menu">
-    {% if sabbath_background %}
-      <style>
-        .u-background-image--sabbath {
-          background-image: url('{{ sabbath_background }}');
-        }
-      </style>
-    {% endif %}
-    <div class="l-sabbath__logo u-path-fill--white js-sticky">
-      {% include '@atoms/icons/icon-logo.twig' %}
-    </div>
-  </aside><!-- ./l-sidebar -->
+  {% include '@organisms/asides/sabbath.twig' %}
 </div><!-- ./l-wrap -->

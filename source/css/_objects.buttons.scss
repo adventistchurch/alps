@@ -20,6 +20,7 @@ input[type="submit"] {
   text-transform: uppercase;
   border: 1px solid $c-gray--darker;
   border-radius: rem(50);
+  outline: 0;
 
   &:hover {
     color: $c-white;
