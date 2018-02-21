@@ -5,7 +5,7 @@
   "devDependencies": {
     "bs-html-injector": "^3.0.0",
     "csswring": "^4.0.0",
-    "grunt": "~0.4.5",
+    "grunt": "^0.4.5",
     "grunt-add-comment": "^1.1.6",
     "grunt-autoprefixer": "^0.8.1",
     "grunt-browser-sync": "^2.2.0",
