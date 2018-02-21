@@ -484,7 +484,12 @@ $themes: (
     opacity: 0.1;
   }
 
-  .c-header__nav-secondary .c-secondary-nav__list-item__search {
+  .c-header {
+    background-color: $c-black;
+  }
+
+  .c-header__nav-secondary .c-secondary-nav__list-item__search,
+  .c-header__nav-secondary .c-secondary-nav__list-item__menu {
     background-color: $c-black;
   }
 

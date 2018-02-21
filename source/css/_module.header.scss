@@ -7,12 +7,15 @@
   padding-top: $pad;
   padding-bottom: $pad;
   z-index: 1;
+  background-color: $c-white;
 
   &__logo {
     order: 0;
     width: 50%;
     height: auto;
     padding-bottom: $pad/2;
+    z-index: 1;
+    position: relative;
 
     @include media('>small') {
       order: 1;
@@ -32,6 +35,8 @@
 
   &__nav-primary {
     order: 2;
+    z-index: 2;
+    position: relative;
 
     @include media('>small') {
       width: 100%;
@@ -54,6 +59,8 @@
 
   &__nav-secondary {
     order: 1;
+    z-index: 0;
+    position: relative;
 
     @include media('>small') {
       order: 0;
@@ -102,7 +109,7 @@
 
 // Primary Nav
 .c-header__nav-primary {
-  z-index: 1;
+  z-index: 2;
 
   .c-primary-nav {
     display: none;
@@ -110,38 +117,20 @@
     width: 100%;
 
     @include media('>small') {
-      display: inline-table;
+      display: block;
+      white-space: nowrap;
     }
 
     &__list {
-      height: rem(35);
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      padding-right: rem(30);
+      min-width: rem(300);
+      max-width: rem(800);
       position: relative;
-
-      &::after {
-        content: "";
-        background: white;
-        height: rem(80);
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: rem(30);
-        z-index: 1;
-      }
+      display: inline-block;
     }
 
-
     &__list-item {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
       background-color: transparent;
+      display: inline-block;
 
       &:hover {
         .c-primary-nav__subnav,
@@ -153,11 +142,15 @@
         }
       }
 
-      &:first-child {
+      &:last-child {
         .c-primary-nav__subnav {
-          left: $space/2;
-          right: auto;
+          right: rem(5);
+          left: auto;
         }
+      }
+
+      &.has-subnav a {
+        padding-right: $pad;
       }
     }
 
@@ -166,10 +159,6 @@
       padding: $pad/2;
       display: flex;
       align-items: center;
-
-      span {
-        margin-left: rem(4);
-      }
     }
 
     &__list-item__toggle {
@@ -191,15 +180,17 @@
     }
 
     .c-subnav__arrow {
-      position: relative;
-      left: rem(-5);
+      position: absolute;
+      right: rem(5);
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
 
 // Secondary Nav
 .c-header__nav-secondary {
-  z-index: 2;
+  z-index: 1;
 
   .c-secondary-nav {
     margin-left: -$space;
@@ -226,10 +217,22 @@
         padding-right: rem(190);
         padding-left: 0;
       }
+
+      // &::after {
+      //   content: "";
+      //   display: block;
+      //   width: 100%;
+      //   background-color: blue;
+      //   height: rem(60);
+      //   position: absolute;
+      //   top: rem(35);
+      //   right: 0;
+      // }
     }
 
     &__list-item {
       display: flex;
+      position: relative;
 
       @include media('<=small') {
         display: none;
@@ -237,6 +240,16 @@
 
       &.is-priority {
         display: flex;
+      }
+
+      &:hover {
+        .c-secondary-nav__subnav,
+        .c-subnav {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          z-index: 9;
+        }
       }
     }
 
@@ -307,10 +320,11 @@
   transition: all 0.25s ease-in-out;
   width: auto;
   position: absolute;
-  right: $pad/2;
+  left: $pad/2;
   top: 0;
   flex-direction: column;
   z-index: -1;
+  text-align: left;
 
   &.c-primary-nav__subnav {
     padding-top: rem(10);
@@ -627,7 +641,8 @@
 
   // Drawer Subnav
   .c-subnav {
-    left: 0;
+    left: auto;
+    right: 0;
     margin: 0;
     border: 0;
     padding: 0;
@@ -841,5 +856,82 @@
         opacity: 1;
       }
     }
+  }
+}
+
+/*
+ * Core styles for PriorityNav.js
+ * These styles are not optional and should always be included
+ *
+ * Free to use under the MIT License.
+ * http://twitter.com/GijsRoge
+ */
+
+.c-drawer .c-priority-nav__toggle {
+  display: none;
+}
+
+.c-header .priority-nav {
+  white-space: nowrap;
+  text-align: left;
+
+  @include media('>large') {
+    text-align: right;
+  }
+
+  > ul {
+    display: inline-block;
+
+    > li {
+      display: inline-block;
+    }
+  }
+
+  &-has-dropdown {
+    .priority-nav {
+      &__dropdown {
+        &-toggle {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__dropdown {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+
+    &.show {
+      visibility: visible;
+    }
+
+    &-toggle {
+      visibility: hidden;
+      position: absolute;
+      border-radius: 0;
+      background-color: transparent !important;
+      border: 0;
+      right: 0;
+
+      &::after {
+        content: "+";
+        display: block;
+        color: $c-gray;
+        font-size: rem(20);
+      }
+    }
+  }
+
+  &-is-visible {
+    visibility: visible;
+  }
+
+  &-is-hidden {
+    visibility: hidden;
   }
 }

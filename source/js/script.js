@@ -21,7 +21,14 @@
     return false;
   }
 
-  
+  var nav = priorityNav.init({
+      mainNavWrapper: ".c-priority-nav", // mainnav wrapper selector (must be direct parent from mainNav)
+      mainNav: ".c-priority-nav__list", // mainnav selector. (must be inline-block)
+      navDropdownLabel: '',
+      navDropdownClassName: ".c-priority-nav__dropdown", // class used for the dropdown.
+      navDropdownToggleClassName: "js-toggle-menu", // class used for the dropdown toggle.
+  });
+
   // Add class if is mobile
   if (isMobile()) {
     $('html').addClass(' touch');
@@ -149,16 +156,16 @@
 
     if ($(this).hasClass('this-is-active')) {
       $(this).removeClass('this-is-active');
-      $(this).parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
       $(this).parent().parent().removeClass('this-is-active');
       $(this).parent().parent().parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().parent().parent().removeClass('this-is-active');
     } else {
       $(this).addClass('this-is-active');
-      $(this).parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
       $(this).parent().parent().addClass('this-is-active');
       $(this).parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().parent().parent().addClass('this-is-active');
       $(this).parent('li').clone().appendTo('.c-drawer__subnav');
     }
 
@@ -189,7 +196,7 @@
   });
 
   // Open drawer when menu toggle is clicked
-  $('.js-toggle-menu').on('click', function(e) {
+  $('.js-toggle-menu, .c-priority-nav__toggle').on('click', function(e) {
     e.stopPropagation();
     $('.c-drawer').toggleClass('this-is-active');
   });
