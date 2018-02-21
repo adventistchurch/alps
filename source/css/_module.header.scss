@@ -7,13 +7,12 @@
   padding-top: $pad;
   padding-bottom: $pad;
   z-index: 1;
-  background-color: $c-white;
+  //background-color: $c-white;
 
   &__logo {
     order: 0;
     width: 50%;
     height: auto;
-    padding-bottom: $pad/2;
     z-index: 1;
     position: relative;
 
@@ -50,6 +49,7 @@
       width: calc(100% - 300px);
       order: 2;
       float: right;
+      padding-top: $pad/4;
 
       .c-primary-nav__list {
         justify-content: flex-end;
@@ -210,11 +210,11 @@
       align-items: center;
 
       @include media('>small') {
-        padding-left: rem(190);
+        padding-left: rem(195);
       }
 
       @include media('>medium') {
-        padding-right: rem(190);
+        padding-right: rem(180);
         padding-left: 0;
       }
 
@@ -259,7 +259,7 @@
         position: absolute;
         background-color: white;
         width: rem(100);
-        left: $space;
+        left: 0;
         top: 0;
         height: rem(35); // Height of nav
         line-height: rem(35);
@@ -267,25 +267,27 @@
 
       @include media('>medium') {
         left: auto;
-        right: 0;
+        right: -$space;
       }
 
       @include media('>xlarge') {
         left: auto;
-        right: 0;
+        right: -$space;
       }
     }
 
     &__list-item__search {
-      left: rem(105);
+      @include media('>small') {
+        left: rem(90);
+      }
 
       @include media('>medium') {
-        right: rem(105);
+        right: rem(80);
         left: auto;
       }
 
       @include media('>xlarge') {
-        right: rem(105);
+        right: rem(80);
       }
     }
 
