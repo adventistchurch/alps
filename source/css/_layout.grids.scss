@@ -248,7 +248,7 @@
     }
   }
 
-  @include media('>xlarge') {
+  @include media('>xxxlarge') {
     .l-grid-item--xl {
       &--1-col {
         width: calc((100vw / 7) * 1);

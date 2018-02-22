@@ -2,6 +2,17 @@
     $HELPER/TRUMP CLASSES
 \*------------------------------------*/
 
+.is-featured::before {
+  @include u-font--primary--xl;
+
+  font-weight: bold;
+  content: "Featured";
+  display: inline-block;
+  width: auto;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
 .has-grid {
   position: relative;
 

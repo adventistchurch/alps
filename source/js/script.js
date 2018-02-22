@@ -104,6 +104,9 @@
     $(this).html(text.substring(1)).prepend(first);
   });
 
+  // Add color classes
+  $('.is-featured').addClass('u-theme--color--lighter');
+
   /**
    * Fixto
    */

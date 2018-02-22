@@ -35,34 +35,6 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--6-of-7",
-        "block_content_class": "l-grid--7-col l-grid--7-col--l--offset-1 u-border-left--white--at-large",
-        "block_title_class": "l-grid-item l-grid-item--m--5-col l-grid-item--l--4-col u-link-hover--white",
-        "block_meta_class": "l-grid-item l-grid-item--m--5-col l-grid-item--l--1-col",
-        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis consequat convallis.",
-        "description": false,
-        "category": false,
-        "datetime": "2017-12-28",
-        "date": "December 28, 2017",
-        "picture": {
-          "img_break_m": "500",
-          "img": {
-            "alt": "Alt Text",
-            "src_s": "//unsplash.it/500/375/?random",
-            "src_m": "//unsplash.it/800/550/?random"
-          },
-          "has_break_l": {
-            "img_break_l": "800",
-            "img": {
-              "src_l": "//unsplash.it/1000/550/?random"
-            }
-          },
-          "has_break_xl": false
-        }
-      }
-    },
-    {
-      "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid--7-col",
         "block_img_class": "l-grid-item u-padding--zero",
         "block_content_class": "l-grid--7-col--l--offset-1 l-grid-wrap l-grid-wrap--4-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",

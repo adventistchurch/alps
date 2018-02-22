@@ -1,29 +1,34 @@
-<div class="content u-clear-fix has-aside" role="document">
-  {% include '@organisms/global/header.twig' %}
-  <main class="main can-be--dark-dark" role="main">
-    {% include '@organisms/sections/hero-carousel.twig' %}
-    <div class="l-container l-full--until-large">
-    {% if split-callout %}
-      {% include '@organisms/sections/split-callout.twig' %}
-    {% endif %}
-      <div class="l-flex-container u-clear-fix">
-        <div class="l-shift-left--fluid l-column--primary u-background-color--white can-be--dark-light u-padding--zero--bottom">
-          {% if has_short_body %}
-            {% include '@organisms/content/body-content-short.twig' %}
-          {% else %}
-            {% include '@organisms/content/body-content.twig' %}
-          {% endif %}
-        </div> <!-- /.l-shift-left--fluid -->
-        <div class="l-shift-right--fluid u-background-color--beige can-be--dark-dark">
-          {% if breakout_block %}
-            {% include '@molecules/blocks/media-block.twig' with {'media_block_default': breakout_block.media_block_default} %}
-          {% endif %}
-          <div class="l-column--secondary can-be--dark-dark">
-            {% include '@organisms/asides/aside.twig' %}
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
+      {% include '@organisms/sections/page-header-feature.twig' %}
+      <section class="l-grid--7-col l-grid--7-col--l--offset-1 l-grid-wrap--6-of-7 u-spacing--at-medium">
+        <div class="l-grid-item l-grid-item--m--4-col l-grid-item--l--3-col">
+          <div class="text c-article__body u-spacing">
+            {% if has_short_body %}
+              {% include '@organisms/content/body-content-short.twig' %}
+            {% else %}
+              {% include '@organisms/content/body-content.twig' %}
+            {% endif %}
           </div>
-        </div> <!-- /.l-shift-right--fluid -->
-      </div> <!-- /.l-flex-container -->
-    </div> <!-- /.l-container -->
-  </main> <!-- /.main -->
-  {% include '@organisms/global/footer.twig' %}
-</div> <!-- /.content -->
+        </div>
+        <div class="l-sidebar l-grid-item l-grid-item--m--2-col l-grid-item--l--2-col u-spacing--double">
+          {% if breakout_block %}
+            <div class="c-block__breakout u-padding u-padding--double--bottom u-padding--double--top u-spacing--half u-theme--background-color--darker {{ breakout_block.block_class }}">
+              <h3 class="c-block__title u-color--white">{{ breakout_block.title }}</h3>
+              <p class="c-block__body u-theme--color--lighter">{{ breakout_block.description }}</p>
+              <a href="" class="o-button o-button--lighter">{{ breakout_block.cta }}</a>
+            </div>
+          {% endif %}
+          {% include '@organisms/asides/aside.twig' %}
+          {% if related_posts %}
+            {% include '@organisms/asides/related-posts.twig' %}
+          {% endif %}
+        </div> <!-- /.l-sidebar -->
+      </section>
+    </main> <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div> <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div><!-- ./l-wrap -->

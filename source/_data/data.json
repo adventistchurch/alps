@@ -3,7 +3,7 @@
     "title": "The Official Site of the Seventh-day Adventist world church",
     "language": "en",
     "charset": "UTF-8",
-    "html_class": "pl u-theme--treefrog",
+    "html_class": "pl u-theme--ming",
     "body_class": "body has-grid",
     "description": "Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole."
   },
@@ -445,17 +445,91 @@
   },
 
   "content_blocks": [{
-      "text": {
-        "heading": "Nam efficitur",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Vivamus orci magna"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Aliquam malesuada viverra velit, in auctor justo ullamcorper vitae",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum."
       }
     },
     {
-      "text": {
-        "heading": "Donec interdum",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum."
+      }
+    }
+  ],
+
+  "page_content_blocks": [{
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "General Conference",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "East-Central Africa",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Euro-Asia",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Middle East and North Africa",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    }
+  ],
+
+  "aside_content_blocks": [{
+      "content_block_default": {
+        "block_class": "u-padding--bottom",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
       }
     }
   ],
@@ -521,14 +595,10 @@
   ],
 
   "breakout_block": {
-    "media_block_default": {
-      "block_class": "u-background-color--tan can-be--dark-dark block--breakout u-padding--secondary--for-breakouts",
-      "heading_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 77.22 99.29\"><title>List Icon</title><path d=\"M34.68,54.8H65.57V44.87H34.68V54.8ZM77.58,0.36H22.42a11.06,11.06,0,0,0-11,11V88.61a11.06,11.06,0,0,0,11,11H77.58a11.06,11.06,0,0,0,11-11V11.39A11.06,11.06,0,0,0,77.58.36Zm0,88.26H22.42V11.39H77.58V88.61ZM65.44,23.35H34.56V33H65.44V23.35Zm0,43.3H34.56v9.65H65.44V66.66Z\" transform=\"translate(-11.39 -0.36)\" fill=\"#010101\" class=\"u-theme--primary-fill-color\"/></svg>",
-      "block_heading": "Nulla facilisi",
-      "img": false,
-      "description": "Fusce porta sed odio eu dignissim. Vivamus imperdiet libero mattis orci aliquam imperdiet. Vivamus sit amet tortor nec magna tincidunt faucibus sit amet ac sem. Maecenas mattis nibh at urna feugiat posuere. Pellentesque blandit condimentum eros, fermentum ornare diam facilisis eget.",
-      "cta": "Vestibulum non lectus"
-    }
+    "block_class": "u-theme--background-color--darker can-be--dark-dark",
+    "title": "Nulla facilisi",
+    "description": "Fusce porta sed odio eu dignissim. Vivamus imperdiet libero mattis orci aliquam imperdiet. Vivamus sit amet tortor nec magna tincidunt faucibus sit amet ac sem. Maecenas mattis nibh at urna feugiat posuere. Pellentesque blandit condimentum eros, fermentum ornare diam facilisis eget.",
+    "cta": "Vestibulum non lectus"
   },
 
   "heading_block_default": {
@@ -578,8 +648,53 @@
 
   "aside_content": [{
     "aside_heading": "News",
-    "aside_blocks": [{},
-      {}
+    "aside_blocks": [
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked c-media-block__stacked",
+          "block_content_class": "l-grid-item u-border-left--black--at-large u-color--gray u-theme--border-color--darker--left u-spacing--half",
+          "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+          "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+          "title": "Nulla finibus ligula ut nisl facilisis",
+          "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "category": "Culture",
+          "datetime": "2017-12-28",
+          "date": "December 28, 2017",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//unsplash.it/600/330/?random",
+              "src_m": "//unsplash.it/800/450/?random"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked c-media-block__stacked",
+          "block_content_class": "l-grid-item u-border-left--black--at-large u-color--gray u-theme--border-color--darker--left u-spacing--half",
+          "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+          "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+          "title": "Nulla finibus ligula ut nisl facilisis",
+          "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "category": "Culture",
+          "datetime": "2017-12-28",
+          "date": "December 28, 2017",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//unsplash.it/600/330/?random",
+              "src_m": "//unsplash.it/800/450/?random"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          }
+        }
+      }
     ]
   }],
 

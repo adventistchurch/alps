@@ -146,12 +146,13 @@
 @mixin u-font--primary--xl() {
   font-family: $ff-font--primary;
   font-size: rem(26);
+  font-size: rem(30);
   line-height: 1;
   font-weight: normal;
 
   @include media('>large') {
-    font-size: rem(36);
-    line-height: rem(40);
+    font-size: rem(34);
+    line-height: rem(38);
   }
 }
 
@@ -184,8 +185,8 @@
   font-weight: normal;
 
   @include media('>large') {
-    font-size: rem(22);
-    line-height: rem(30);
+    font-size: rem(20);
+    line-height: rem(28);
   }
 }
 

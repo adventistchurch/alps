@@ -2,6 +2,37 @@
     $BLOCKS
 \*------------------------------------*/
 
+.c-block__heading {
+  border-left: rem(3) solid $c-black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: $pad-mobile;
+
+  @include media('>large') {
+    padding-left: $pad;
+  }
+
+  &-title {
+    @include u-font--secondary--m;
+
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &-link {
+    @include u-font--primary--s;
+
+    font-style: italic;
+    padding-left: $pad-mobile;
+    font-weight: bold;
+
+    @include media('>large') {
+      padding-left: $pad;
+    }
+  }
+}
+
 // Block
 .c-block__image {
   display: block;
@@ -9,14 +40,6 @@
   picture img {
     width: 100%;
   }
-}
-
-.c-block__header {
-  @include u-font--secondary--m;
-
-  font-weight: bold;
-  border-left: rem(3) solid $c-black;
-  text-transform: uppercase;
 }
 
 .c-block__kicker {
@@ -50,6 +73,8 @@
 .c-block__meta {
   display: flex;
   align-items: flex-end;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .c-block__date {
@@ -177,7 +202,7 @@
   .c-block__content {
     flex-direction: row;
     position: absolute;
-    justify-content: flex-start;
+    justify-content: space-between;
     bottom: 0;
     left: 0;
     background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
@@ -219,6 +244,35 @@
 
   .c-block__description {
     flex-grow: 0;
+  }
+}
+
+.c-block__text {
+  padding-left: $pad-mobile;
+  display: block;
+  width: 100%;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include media('>large') {
+    padding-left: $pad;
+  }
+}
+
+.c-block__breakout {
+  margin-left: -$space-mobile;
+  margin-right: -$space-mobile;
+
+  @include media('>medium') {
+    margin-top: -$space-mobile*2;
+  }
+
+  @include media('>large') {
+    margin-top: -$space*2;
+    margin-left: -$space;
+    margin-right: -$space;
   }
 }
 

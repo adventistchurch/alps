@@ -257,6 +257,22 @@ $themes: (
       }
     }
 
+    .o-button--lighter {
+      background-color: $lighter;
+      color: $darker;
+      border-color: $lighter;
+
+      &:hover {
+        background-color: $light;
+        border-color: $light;
+        color: $darker;
+      }
+
+      svg path {
+        fill: $darker;
+      }
+    }
+
     input[type=radio],
     input[type=checkbox] {
       color: $darker;
