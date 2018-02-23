@@ -124,32 +124,13 @@
 }
 
 // Theme colors
-.bg--emperor {
-  background-color: $emperor;
-}
-.bg--earth {
-  background-color: $earth;
-}
-.bg--grapevine {
-  background-color: $grapevine;
-}
-.bg--denim {
-  background-color: $denim;
-}
-.bg--campfire {
-  background-color: $campfire;
-}
-.bg--treefrog {
-  background-color: $treefrog;
-}
-.bg--ming {
-  background-color: $ming;
-}
-.bg--cool {
-  background-color: $cool;
-}
-.bg--warm {
-  background-color: $warm;
+@each $name, $color in map-merge(
+  $primary-themes,
+  $secondary-themes
+) {
+  .bg--#{$name} {
+    background-color: $color;
+  }
 }
 .bg--dark-light {
   background-color: $dark-light;
@@ -174,32 +155,13 @@
     width: rem(15);
     background-color: $blue;
   }
-  &--emperor:before {
-    background-color: $emperor;
-  }
-  &--earth:before {
-    background-color: $earth;
-  }
-  &--grapevine:before {
-    background-color: $grapevine;
-  }
-  &--denim:before {
-    background-color: $denim;
-  }
-  &--campfire:before {
-    background-color: $campfire;
-  }
-  &--treefrog:before {
-    background-color: $treefrog;
-  }
-  &--ming:before {
-    background-color: $ming;
-  }
-  &--cool:before {
-    background-color: $cool;
-  }
-  &--warm:before {
-    background-color: $warm;
+  @each $name, $color in map-merge(
+    $primary-themes,
+    $secondary-themes
+  ) {
+    &--#{$name}:before {
+      background-color: $color;
+    }
   }
   &--blue:before {
     background-color: $blue;

@@ -4,7 +4,7 @@
 
 // Primary color themed elements.
 @mixin theme-primary($name, $primary-color) {
-  .#{$name} {
+  .theme--#{$name} {
     // Text colors
     .theme--primary-text-color,
     .theme--primary-text-color a {
@@ -52,7 +52,7 @@
 
 // Secondary color themed elements.
 @mixin theme-secondary($name, $secondary-color) {
-  .#{$name} {
+  .theme--#{$name} {
     // Text colors
     .theme--secondary-text-color,
     .theme--secondary-text-color a {
@@ -141,17 +141,14 @@
 
 
 // Generate primary color palettes.
-@include theme-primary(theme--emperor, $emperor);
-@include theme-primary(theme--earth, $earth);
-@include theme-primary(theme--grapevine, $grapevine);
-@include theme-primary(theme--denim, $denim);
-@include theme-primary(theme--campfire, $campfire);
-@include theme-primary(theme--treefrog, $treefrog);
-@include theme-primary(theme--ming, $ming);
+@each $name, $color in $primary-themes {
+  @include theme-primary($name, $color);
+}
 
 // Generate secondary color palettes.
-@include theme-secondary(theme--warm, $warm);
-@include theme-secondary(theme--cool, $cool);
+@each $name, $color in $secondary-themes {
+  @include theme-secondary($name, $color);
+}
 
 /**
  * Dark Theme

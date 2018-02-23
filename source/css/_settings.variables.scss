@@ -73,6 +73,29 @@ $dark-light: #303030;
 $dark-dark: #252525;
 
 /**
+ * Primary Themes
+ */
+
+$primary-themes: (
+  emperor:   $emperor,
+  earth:     $earth,
+  grapevine: $grapevine,
+  denim:     $denim,
+  campfire:  $campfire,
+  treefrog:  $treefrog,
+  ming:      $ming,
+);
+
+/**
+ * Secondary Themes
+ */
+
+$secondary-themes: (
+  warm:  $warm,
+  cool:  $cool,
+);
+
+/**
  * Social Colors
  */
 
