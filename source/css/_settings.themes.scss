@@ -241,10 +241,18 @@ $themes: (
       border-color: transparent;
       color: $base;
 
+      svg path {
+        fill: $base;
+      }
+
       &:hover {
-        color: $c-white;
-        background-color: $dark;
-        border-color: $dark;
+        color: $darker;
+        background-color: transparent;
+        border-color: transparent;
+
+        svg path {
+          fill: $darker;
+        }
       }
     }
 
@@ -422,10 +430,18 @@ $themes: (
         border-color: transparent;
         color: $lighter;
 
+        svg path {
+          fill: $lighter;
+        }
+
         &:hover {
-          color: $darker;
-          background-color: $light;
-          border-color: $light;
+          color: $light;
+          background-color: transparent;
+          border-color: transparent;
+
+          svg path {
+            fill: $light;
+          }
         }
       }
 

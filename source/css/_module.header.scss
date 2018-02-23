@@ -4,10 +4,15 @@
 
 .c-header {
   display: flex;
-  padding-top: $pad;
-  padding-bottom: $pad;
+  padding-top: $pad-mobile;
+  padding-bottom: $pad-mobile/2;
   z-index: 1;
   background-color: $c-white;
+
+  @include media('>large') {
+    padding-top: $pad;
+    padding-bottom: $pad/2;
+  }
 
   &__logo {
     order: 0;
@@ -39,6 +44,8 @@
 
     @include media('>small') {
       width: 100%;
+      margin-left: -$space/2;
+      margin-right: -$space/2;
 
       .c-primary-nav__list {
         justify-content: space-between;
@@ -65,6 +72,8 @@
     @include media('>small') {
       order: 0;
       width: 100%;
+      margin-left: -$space/2;
+      margin-right: -$space/2;
 
       .c-secondary-nav__list {
         justify-content: flex-start;
@@ -83,6 +92,8 @@
     @include media('>large') {
       order: 1;
       float: right;
+      margin-left: 0;
+      margin-right: 0;
 
       .c-secondary-nav__list {
         justify-content: flex-end;

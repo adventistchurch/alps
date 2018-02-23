@@ -1,33 +1,33 @@
 {% if content_filter %}
-<div class="filter filter-expand u-spacing--half u-background-color--gray--light u-padding u-theme--border-color--darker u-border--left">
-  <form action="" role="search" method="get" class="filter-search">
+<div class="c-filter u-spacing u-background-color--gray--light u-padding u-theme--border-color--darker u-border--left can-be--dark-dark">
+  <form action="" role="search" method="get" class="c-filter-search">
     <fieldset>
-      <div class="field-container u-spacing--half">
-        <input type="search" name="s" class="search__results__input u-font--secondary--s" value="Keyword" />
-        <div>
-          <button class="search__submit o-button o-button--outline"><span class="u-icon u-icon--xs u-path-fill--base">{% include '@atoms/icons/icon-search.twig' %}</span>Search</button> <!-- /.search-form__submit -->
-          <div class="filter-toggle js-toggle o-button o-button--simple" data-toggled="filter" data-prefix="filter"><span class="u-icon u-icon--xs u-path-fill--base">{% include '@atoms/icons/icon-settings.twig' %}</span></div>
+      <div class="l-field-container u-spacing">
+        <input type="search" name="s" class="u-font--secondary--s u-color--gray" value="Search..." />
+        <div class="u-flex">
+          <button class="search__submit o-button o-button--outline u-space--right"><span class="u-icon u-icon--xs u-path-fill--base">{% include '@atoms/icons/icon-search.twig' %}</span>Search</button> <!-- /.search-form__submit -->
+          <span class="c-filter__toggle js-toggle o-button o-button--simple" data-toggled="c-filter" data-prefix="c-filter"><span class="u-icon u-icon--xs u-theme--path-fill--base">{% include '@atoms/icons/icon-settings.twig' %}</span></span>
         </div>
-      </div> <!-- /.field-container -->
+      </div>
     </fieldset>
-  </form> <!-- /.search-form -->
-  <form class="content-filter-form filter-form">
-    <div class="filter-items filter-items__checkbox u-spacing--quarter">
-      <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base u-space--half--bottom">Filter</h3>
+  </form>
+  <form class="c-filter__form u-spacing">
+    <div class="c-filter__form-item u-spacing--half">
+      <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base">Filter</h3>
       {% if content_filter.checkbox %}
         {% for item in content_filter.checkbox %}
-          <div class="filter-item__checkbox form-group">
+          <div class="c-filter__form-group">
             <input id="checkbox-{{ item.id }}" type="checkbox" name="checkbox" value="{{ item.label }}" />
             <label for="checkbox-{{ item.id }}">{{ item.label }}</label>
           </div>
         {% endfor %}
       {% endif %}
     </div>
-    <div class="filter-items filter-items__radio u-spacing--quarter">
-      <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base u-space--half--bottom">Sort By</h3>
+    <div class="c-filter__form-item u-spacing--half">
+      <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base">Sort By</h3>
       {% if content_filter.radio %}
         {% for item in content_filter.radio %}
-          <div class="filter-item__radio form-group">
+          <div class="c-filter__form-group">
             <input id="radio-{{ item.id }}" type="radio" name="radio" value="{{ item.label }}" />
             <label for="radio-{{ item.id }}">{{ item.label }}</label>
           </div>

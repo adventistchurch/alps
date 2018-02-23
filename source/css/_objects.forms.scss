@@ -91,55 +91,40 @@ input[type=radio] {
 /**
  * Search filter
  */
- .filter-expand {
-   &.filter-is-active {
+ .c-filter {
+   &.c-filter-is-active {
      cursor: pointer;
 
-     .filter-form {
-       display: flex;
-       padding-bottom: $space;
+     .c-filter__form {
+       display: block;
      }
 
-     .filter-toggle:before {
-       content: "Hide ";
+     .c-filter__toggle::after {
+       content: "Hide Options";
      }
    }
 
-   .filter-toggle:before {
-     content: "Show ";
-     cursor: pointer;
+   input[type='search'] {
+     outline: 0;
+     background-color: transparent;
+     border: 0;
+     border-bottom: 1px solid $c-gray;
+     padding-left: 0;
+
+     @include u-font--secondary--m;
    }
 
-   .filter-options {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-end;
-     border-bottom: 1px solid $c-gray--darker;
-     padding-bottom: $space/2;
-   }
-
-   .filter-form {
+   &__form {
      display: none;
-     align-items: flex-start;
-     justify-content: flex-start;
-     width: 100%;
-     padding-bottom: $pad/2;
-
-     @include media('>large') {
-       flex-flow: column;
-       padding-bottom: 0;
-     }
    }
 
-   .filter-items {
-     margin-right: $space*2;
+   &__toggle {
+     padding-left: 0;
+     padding-right: 0;
 
-     @include media('>large') {
-       margin-right: 0;
-
-       &:last-child {
-         margin-top: $space;
-       }
+     &::after {
+       content: "Options";
+       cursor: pointer;
      }
    }
  }
