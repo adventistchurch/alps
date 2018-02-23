@@ -10,9 +10,14 @@
   max-width: $max-width;
   margin: 0 auto;
   position: relative;
-  padding-left: $pad;
-  padding-right: $pad;
+  padding-left: $pad-mobile;
+  padding-right: $pad-mobile;
   width: 100%;
+
+  @include media('>large') {
+    padding-left: $pad;
+    padding-right: $pad;
+  }
 }
 
 .l-container--s {
@@ -35,106 +40,6 @@
   max-width: rem(1250);
 }
 
-// Stretch out of layout container.
-.l-full--until-large {
-  @include media('<=large') {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/*------------------------------------*\
-    $LAYOUTS
-\*------------------------------------*/
-
-.l-column--primary {
-  padding-top: $pad;
-  padding-bottom: $pad;
-
-  @include media('>medium') {
-    padding-top: $pad*2;
-  }
-
-  @include media('>large') {
-    padding-bottom: $pad*2;
-  }
-
-  @include media('>xlarge') {
-    padding-top: rem(80);
-  }
-}
-
-.l-column--secondary {
-  padding-top: $pad;
-  padding-bottom: $pad;
-  background-color: $c-gray--light;
-
-  @include media('>medium') {
-    padding-top: $pad*2;
-    padding-bottom: $pad*2;
-  }
-}
-
-// Padding for main content column
-.u-padding--primary {
-  padding-left: $pad;
-  padding-right: $pad;
-
-  @include media('>large') {
-    padding-left: rem(60);
-    padding-right: rem(60);
-  }
-}
-
-// Padding for secondary column
-.u-padding--secondary {
-  padding-left: $pad;
-  padding-right: $pad;
-
-  @include media('>large') {
-    padding-left: $pad*2;
-    padding-right: $pad*2;
-  }
-}
-
-.u-padding--secondary--for-breakouts {
-  padding: $pad;
-
-  @include media('>large') {
-    padding: rem(50);
-  }
-}
-
-/*------------------------------------*\
-    $LAYOUT SHIFTERS
-\*------------------------------------*/
-
-/**
- * Shift at 900px (large breakpoint) with fluid left and right columns.
- */
-.l-flex-container {
-  @include media('>large') {
-    display: flex;
-    align-items: stretch;
-  }
-}
-
-.l-shift-left--fluid {
-  width: 100%;
-
-  @include media('>large') {
-    width: 68%;
-  }
-}
-
-.l-shift-right--fluid {
-  width: 100%;
-
-  @include media('>large') {
-    width: 31%;
-  }
-}
-
 /**
  * Reverse the column and row of any shift layout.
  */
@@ -144,32 +49,5 @@
 
   @include media('>large') {
     flex-direction: row-reverse;
-  }
-}
-
-/**
- * Shift at 900px (large breakpoint) with static right rail.
- */
-.l-shift-left--static {
-  width: 100%;
-
-  @include media('>large') {
-    margin-right: rem(-300);
-  }
-}
-
-.l-shift-left--inner--static {
-  @include media('>large') {
-    margin-right: rem(300);
-  }
-}
-
-.l-shift-right--static {
-  width: 100%;
-
-  @include media('>large') {
-    width: rem(300);
-    position: relative;
-    z-index: 1;
   }
 }

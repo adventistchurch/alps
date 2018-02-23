@@ -1,10 +1,16 @@
-<div class="content-blocks u-spacing--double">
-  {% for block in content_blocks %}
-  <div class="text u-spacing--half">
-    <h3 class="u-theme--color--base u-font--secondary--l">{{ text.heading  | raw}}</h3>
-    <p>{{ block.text.description | raw }} {% if block.text.cta %} <a href="{{ block.url }}" class="u-font--secondary--s u-text-transform--upper"><strong>{{ block.text.cta | raw}}</strong></a> {% endif %}</p>
+<div class="u-spacing--triple">
+  <div class="text u-spacing">
+    <h2 class="u-font--secondary--l u-theme--color--darker">{{ text.heading | raw}}</h2>
+    <p class="o-intro u-font--primary--m">{{ text.intro | raw }}</p>
   </div>
-  <hr>
-  {% endfor %}
+
+  <section class="c-section c-section__blocks u-spacing--double">
+    {% for block in content_blocks %}
+      {% include '@molecules/blocks/content-block.twig' with block %}
+    {% endfor %}
+  </section>
+
+  <section class="c-section c-section__blocks">
+    {% include '@molecules/blocks/story-block.twig' %}
+  </section>
 </div>
-{% include '@molecules/blocks/story-block.twig' with {'block_class': 'u-flex--end'} %}

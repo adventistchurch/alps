@@ -211,6 +211,17 @@ $themes: (
       background-position: center center;
     }
 
+    // Text
+    .text {
+      a:not(.o-button) {
+        border-color: $base;
+
+        &:hover {
+          border-color: $light;
+        }
+      }
+    }
+
     // Buttons
     .o-button,
     button,
@@ -376,6 +387,18 @@ $themes: (
         }
       }
 
+      // Text
+      .text {
+        a:not(.o-button) {
+          color: $c-white;
+          border-color: $light;
+
+          &:hover {
+            border-color: $lighter;
+          }
+        }
+      }
+
       // Buttons
       .o-button,
       button,
@@ -435,6 +458,10 @@ $themes: (
         color: $c-white;
       }
 
+      .can-be--light {
+        color: $light;
+      }
+
       input[type=radio],
       input[type=checkbox] {
         color: $c-white;
@@ -462,7 +489,7 @@ $themes: (
       }
 
       .l-sabbath {
-        background-color: $c-gray--darker;
+        background-color: $c-black;
       }
     }
   }
@@ -473,7 +500,7 @@ $themes: (
  */
 .u-theme--dark {
   color: $c-white;
-  background-color: $c-black;
+  background-color: $c-gray--darker;
 
   hr {
     background-color: rgba($c-white, .2);
@@ -492,21 +519,14 @@ $themes: (
   }
 
   // Custom
-  .c-primary-nav__list::after {
-    background-color: $c-black !important;
-  }
-
   .l-grid-container--7-col::before {
     opacity: 0.1;
   }
 
-  // .c-header {
-  //   background-color: $c-black;
-  // }
-
+  .c-header,
   .c-header__nav-secondary .c-secondary-nav__list-item__search,
   .c-header__nav-secondary .c-secondary-nav__list-item__menu {
-    background-color: $c-black;
+    background-color: $c-gray--darker;
   }
 
   .l-sabbath__logo--inner > div {

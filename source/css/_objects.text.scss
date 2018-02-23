@@ -2,6 +2,12 @@
     $TEXT TYPES
 \*------------------------------------*/
 
+.o-intro {
+  a {
+    border-bottom: 1px solid $c-black;
+  }
+}
+
 .o-dropcap {
   color: $c-white;
   display: block;

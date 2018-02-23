@@ -22,7 +22,7 @@
     {% endif %}
     <div class="c-media-block__content c-block__content u-spacing {{ media_block_default.block_content_class }}">
       {% if media_block_default.kicker %}
-        <h4 class="c-media-block__kicker c-block__kicker">{{ media_block_default.kicker }}</h4>
+        <h4 class="c-media-block__kicker c-block__kicker {{ media_block_default.block_kicker_class }}">{{ media_block_default.kicker }}</h4>
       {% endif %}
       {% if media_block_default.title %}
         <h3 class="c-media-block__title c-block__title {{ media_block_default.block_title_class }} {% if media_block_default.kicker %}{{ 'u-space--zero'}}{% endif %}">

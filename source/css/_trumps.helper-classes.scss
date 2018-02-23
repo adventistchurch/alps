@@ -219,21 +219,27 @@
  * Round Element
  */
 .u-round {
-  overflow: hidden;
-  border-radius: 100%;
-  position: relative;
+  @include media('>small') {
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
 
-  img {
-    position: absolute;
+    img {
+      position: absolute;
+    }
   }
 }
 
-.u-height--1-col {
-  height: calc((100vw / 7) * 1);
+.u-height--s--2-col {
+  @include media('>small') {
+    height: calc((100vw / 7) * 2);
+  }
 }
 
-.u-height--2-col {
-  height: calc((100vw / 7) * 2);
+.u-height--m--1-col {
+  @include media('>medium') {
+    height: calc((100vw / 7) * 1);
+  }
 }
 
 /**
@@ -280,6 +286,10 @@
 
 .u-flex--justify-center {
   justify-content: center;
+}
+
+.u-flex--justify-start {
+  justify-content: flex-start !important;
 }
 
 .u-flex--justify-between {

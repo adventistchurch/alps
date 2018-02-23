@@ -7,7 +7,7 @@
   padding-top: $pad;
   padding-bottom: $pad;
   z-index: 1;
-  //background-color: $c-white;
+  background-color: $c-white;
 
   &__logo {
     order: 0;
@@ -193,8 +193,8 @@
   z-index: 1;
 
   .c-secondary-nav {
-    margin-left: -$space;
-    margin-right: -$space;
+    margin-left: -$space-mobile;
+    margin-right: -$space-mobile;
 
     @include media('>small') {
       margin-left: 0;
@@ -425,7 +425,6 @@
     transition: right 0.25s ease-in-out;
     transition-delay: 0.25s;
     height: 100%;
-    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: $pad-mobile;
