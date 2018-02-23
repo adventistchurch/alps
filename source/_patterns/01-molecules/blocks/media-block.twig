@@ -40,6 +40,9 @@
           <time class="c-block__date u-text-transform--upper" datetime="{{ media_block_default.datetime }}">{{ media_block_default.date }}</time>
         {% endif %}
       </div>
+      {% if media_block_default.cta %}
+        <a href="" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+      {% endif %}
     </div> <!-- c-media-block__content -->
   </div> <!-- media-block -->
 {% endif %}

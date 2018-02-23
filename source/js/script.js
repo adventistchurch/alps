@@ -106,6 +106,7 @@
 
   // Add color classes
   $('.is-featured').addClass('u-theme--color--lighter');
+  $('.c-block__body a').addClass('u-theme--border-color--base--bottom');
 
   /**
    * Fixto

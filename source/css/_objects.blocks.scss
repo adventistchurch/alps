@@ -42,10 +42,30 @@
   }
 }
 
+.c-block__body {
+  a {
+    border-bottom: 1px solid $c-black;
+  }
+}
+
 .c-block__kicker {
   text-transform: uppercase;
   letter-spacing: rem(1);
   font-size: 90%;
+}
+
+.c-block__button.o-button {
+  position: relative;
+  padding-right: $pad*2;
+  display: table;
+
+  .u-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: $space/2;
+    margin: auto;
+  }
 }
 
 .c-block__image-wrap {
@@ -417,6 +437,12 @@
       &__content {
         justify-content: flex-start;
       }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
     }
   }
 }

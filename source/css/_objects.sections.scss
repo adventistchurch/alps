@@ -2,6 +2,14 @@
     $PAGE SECTIONS
 \*------------------------------------*/
 
+.c-section__blocks {
+  //margin-left: -$space-mobile;
+
+  @include media('>large') {
+    //margin-left: -$space;
+  }
+}
+
 /**
  * Page headings
  */

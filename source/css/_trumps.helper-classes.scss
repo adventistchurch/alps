@@ -22,7 +22,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     min-height: 100vh;
     z-index: -1;
@@ -221,6 +221,19 @@
 .u-round {
   overflow: hidden;
   border-radius: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+}
+
+.u-height--1-col {
+  height: calc((100vw / 7) * 1);
+}
+
+.u-height--2-col {
+  height: calc((100vw / 7) * 2);
 }
 
 /**
