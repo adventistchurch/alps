@@ -221,11 +221,8 @@
 
   .c-block__content {
     flex-direction: row;
-    position: absolute;
+    position: relative;
     justify-content: space-between;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
     padding: $pad-mobile 0;
 
     @include media('>large') {
@@ -235,6 +232,13 @@
     .c-block__title-link,
     .c-block__date {
       color: $c-white;
+    }
+
+    @include media('>medium') {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
     }
   }
 }

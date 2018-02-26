@@ -49,7 +49,7 @@
     {
       "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col--l--offset-1",
-        "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-theme--dark u-theme--border-color--darker--left u-color--white",
+        "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-theme--background-color--dark u-theme--border-color--darker--left u-color--white",
         "block_title_class": "u-theme--link-hover--lighter",
         "block_meta_class": "u-padding--bottom",
         "title": "Nulla finibus ligula ut nisl facilisis",

@@ -947,7 +947,7 @@
     "text": "Button Defualt",
     "class": "u-theme--button"
   },
-  "content_filter": {
+  "search_filter": {
     "radio": [{
         "id": "1",
         "label": "Option 1"

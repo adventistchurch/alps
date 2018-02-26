@@ -1,8 +1,8 @@
 {
   "media_block_default": {
     "block_class": "c-block__inset c-media-block__inset",
-    "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
-    "block_title_class": "l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col u-link-hover--white u-font--primary--xl is-featured",
+    "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker",
+    "block_title_class": "l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col u-font--primary--xl is-featured",
     "block_meta_class": "l-grid-item l-grid-item--l--2-col l-grid-item--xl--2-col",
     "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis consequat convallis.",
     "kicker": false,

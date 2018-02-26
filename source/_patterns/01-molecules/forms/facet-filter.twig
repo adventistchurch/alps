@@ -1,34 +1,36 @@
 {% if facet_filter %}
-<form action="" method="get" class="facet-filter-form toggled-element">
-  <fieldset class="u-spacing">
+<form action="" method="get" class="c-facet-filter-form toggled-element">
+  <fieldset class="u-spacing--half">
     <legend class="u-font--secondary--m u-theme--color--darker">{{ facet_filter }}</legend>
-    <select name="select--year" id="select--year">
-      <option value="#" selected="selected">All years</option>
-      <option value="#">2016</option>
-      <option value="#">2015</option>
-      <option value="#">2014</option>
-      <option value="#">2013</option>
-      <option value="#">2012</option>
-      <option value="#">2011</option>
-    </select>
-    <select name="select--month" id="select--month">
-      <option value="#" selected="selected">All months</option>
-      <option value="#">December</option>
-      <option value="#">November</option>
-      <option value="#">October</option>
-      <option value="#">September</option>
-      <option value="#">August</option>
-      <option value="#">July</option>
-      <option value="#">June</option>
-      <option value="#">May</option>
-      <option value="#">April</option>
-      <option value="#">March</option>
-      <option value="#">February</option>
-      <option value="#">January</option>
-    </select>
-    <button class="search-form__submit is-vishidden">
-      <span class="is-vishidden">Filter</span>
-    </button> <!-- /.search-form__submit -->
+    <div class="u-spacing">
+      <select name="select--year" id="select--year">
+        <option value="#" selected="selected">All years</option>
+        <option value="#">2016</option>
+        <option value="#">2015</option>
+        <option value="#">2014</option>
+        <option value="#">2013</option>
+        <option value="#">2012</option>
+        <option value="#">2011</option>
+      </select>
+      <select name="select--month" id="select--month">
+        <option value="#" selected="selected">All months</option>
+        <option value="#">December</option>
+        <option value="#">November</option>
+        <option value="#">October</option>
+        <option value="#">September</option>
+        <option value="#">August</option>
+        <option value="#">July</option>
+        <option value="#">June</option>
+        <option value="#">May</option>
+        <option value="#">April</option>
+        <option value="#">March</option>
+        <option value="#">February</option>
+        <option value="#">January</option>
+      </select>
+      <button class="search-form__submit is-vishidden">
+        <span class="is-vishidden">Filter</span>
+      </button> <!-- /.search-form__submit -->
+    </div>
   </fieldset>
 </form> <!-- /.facet-filter-form -->
 {% endif %}
