@@ -3,6 +3,9 @@
 \*------------------------------------*/
 
 .o-intro {
+  font-size: 110%;
+  line-height: 150%;
+
   a {
     border-bottom: 1px solid $c-black;
   }
@@ -528,7 +531,6 @@
 
     @include media('>large') {
       padding-left: $pad;
-      margin-left: -$pad;
     }
 
     p {

@@ -2,6 +2,15 @@
     $ARTICLE
 \*------------------------------------*/
 
+.l-main .c-article {
+  padding-left: 0;
+  padding-right: $pad-mobile;
+
+  @include media('>large') {
+    padding-right: $pad;
+  }
+}
+
 /*------------------------------------*\
     $ARTICLE HEADER
 \*------------------------------------*/

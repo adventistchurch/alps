@@ -17,8 +17,7 @@
   --top: '-top',
   --bottom: '-bottom',
   --left: '-left',
-  --right: '-right',
-  --sides: ''
+  --right: '-right'
 );
 
  @each $size_key, $size_value in $sizes {
@@ -61,4 +60,18 @@
       margin-top: $pad-mobile;
     }
   }
+}
+
+.u-padding--sides {
+  padding-left: $pad-mobile;
+  padding-right: $pad-mobile;
+
+  @include media('>large') {
+    padding-left: $pad;
+    padding-right: $pad;
+  }
+}
+
+.u-padding--zero--sides {
+  padding: 0 !important;
 }

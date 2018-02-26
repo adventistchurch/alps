@@ -121,11 +121,7 @@
   },
 
   "secondary_nav": {
-    "items": [{
-        "icon": "icon-language",
-        "text": "Language",
-        "priority": true
-      },
+    "items": [
       {
         "icon": "icon-subscribe",
         "text": "Sitemap"

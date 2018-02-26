@@ -216,12 +216,13 @@
       height: rem(35);
       overflow: hidden;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       width: 100%;
-      align-items: center;
+      align-items: flex-start;
 
       @include media('>small') {
-        padding-left: rem(195);
+        padding-left: rem(190);
+        flex-wrap: wrap;
       }
 
       @include media('>medium') {
@@ -299,6 +300,39 @@
 
       @include media('>xlarge') {
         right: rem(80);
+      }
+    }
+
+    &__list-item__language {
+      position: relative;
+      height: rem(35);
+      padding-left: $pad-mobile*2;
+
+      @include media('>large') {
+        padding-left: $pad;
+      }
+
+      select {
+        border: 0;
+        padding: 0;
+        padding-right: $pad;
+        outline: 0;
+        text-align: right;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        left: $pad-mobile;
+        top: rem(13);
+        position: absolute;
+        width: rem(10);
+        height: rem(10);
+        background: url('../images/icons/o-icon__language.svg') center center no-repeat;
+
+        @include media('>large') {
+          left: rem(7.5);
+        }
       }
     }
 
