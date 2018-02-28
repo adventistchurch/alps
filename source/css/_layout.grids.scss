@@ -2,8 +2,6 @@
     $GRIDS
 \*------------------------------------ */
 
-$gutter: 1.875rem; // 30px
-
 /**
  * Simple grid - keep adding more elements to the row until the max is hit
  * (based on the flex-basis for each item), then start new row.
@@ -18,12 +16,12 @@ $gutter: 1.875rem; // 30px
  * Fixed Gutters
  */
 @mixin column-gutters() {
-  padding-left: $gutter/2;
-  padding-right: $gutter/2;
+  padding-left: $pad-mobile;
+  padding-right: $pad-mobile;
 
-  @include media('>medium') {
-    padding-left: $gutter;
-    padding-right: $gutter;
+  @include media('>large') {
+    padding-left: $pad;
+    padding-right: $pad;
   }
 
   @include media ('>xlarge') {
@@ -103,7 +101,7 @@ $gutter: 1.875rem; // 30px
     width: 100%;
 
     > * {
-      width: 33.3333%;
+      width: 50%;
     }
   }
 }
@@ -134,18 +132,23 @@ $gutter: 1.875rem; // 30px
   width: 100%;
 
   &--inner {
-    margin-left: -$gutter;
-    margin-right: -$gutter;
+    margin-left: -$space-mobile;
+    margin-right: -$space-mobile;
+
+    @include media('>large') {
+      margin-left: -$space;
+      margin-right: -$space;
+    }
   }
 
   > * {
-    padding-left: $gutter/2;
-    padding-right: $gutter/2;
+    padding-left: $space-mobile;
+    padding-right: $space-mobile;
 
-    @include media('>medium') {
+    @include media('>large') {
       width: calc(100vw / 7);
-      padding-left: $gutter;
-      padding-right: $gutter;
+      padding-left: $space;
+      padding-right: $space;
     }
   }
 
@@ -159,29 +162,31 @@ $gutter: 1.875rem; // 30px
     width: 100%;
   }
 
-  .l-grid-item--s {
-    &--1-col {
-      width: calc((100vw / 7) * 1);
-    }
+  @include media('>small') {
+    .l-grid-item--s {
+      &--1-col {
+        width: calc((100vw / 7) * 1);
+      }
 
-    &--2-col {
-      width: calc((100vw / 7) * 2);
-    }
+      &--2-col {
+        width: calc((100vw / 7) * 2);
+      }
 
-    &--3-col {
-      width: calc((100vw / 7) * 3);
-    }
+      &--3-col {
+        width: calc((100vw / 7) * 3);
+      }
 
-    &--4-col {
-      width: calc((100vw / 7) * 4);
-    }
+      &--4-col {
+        width: calc((100vw / 7) * 4);
+      }
 
-    &--5-col {
-      width: calc((100vw / 7) * 5);
-    }
+      &--5-col {
+        width: calc((100vw / 7) * 5);
+      }
 
-    &--6-col {
-      width: calc((100vw / 7) * 6);
+      &--6-col {
+        width: calc((100vw / 7) * 6);
+      }
     }
   }
 
@@ -244,97 +249,64 @@ $gutter: 1.875rem; // 30px
       }
     }
   }
+
+  @include media('>xxxlarge') {
+    .l-grid-item--xl {
+      &--1-col {
+        width: calc((100vw / 7) * 1);
+      }
+
+      &--2-col {
+        width: calc((100vw / 7) * 2);
+      }
+
+      &--3-col {
+        width: calc((100vw / 7) * 3);
+      }
+
+      &--4-col {
+        width: calc((100vw / 7) * 4);
+      }
+
+      &--5-col {
+        width: calc((100vw / 7) * 5);
+      }
+
+      &--6-col {
+        width: calc((100vw / 7) * 6);
+      }
+    }
+  }
 }
 
 .l-grid-wrap {
-  // > * {
-  //   margin: 0 $space*1.5 !important;
-  // }
+  width: 100vw;
 
-  @include media('>small') {
-    &--1-of-7 {
-      width: calc((100vw / 7) * 1);
-      overflow: hidden;
-    }
-
-    &--2-of-7 {
-      width: calc((100vw / 7) * 2);
-      overflow: hidden;
-    }
-
-    &--3-of-7 {
-      width: calc((100vw / 7) * 3);
-      overflow: hidden;
-    }
-
-    &--4-of-7 {
-      width: calc((100vw / 7) * 4);
-      overflow: hidden;
-    }
-
-    &--5-of-7 {
-      width: calc((100vw / 7) * 5);
-      overflow: hidden;
-    }
-
-    &--6-of-7 {
-      width: calc((100vw / 7) * 6);
-      overflow: hidden;
-    }
-
-    &--7-of-7 {
-      width: calc((100vw / 7) * 7);
-      overflow: hidden;
-    }
+  &--1-of-7 {
+    width: calc((100vw / 7) * 1);
   }
-}
 
-.l-grid-container--7-col {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    width: calc(100% - (2 * var(--offset)));
-    //max-width: var(--max_width);
-    min-height: 100vh;
-    content: '';
-    background-image: var(--background-columns);
-    background-size: var(--background-width) 100%;
-    z-index: 1000;
-    pointer-events: none;
+  &--2-of-7 {
+    width: calc((100vw / 7) * 2);
   }
-}
 
-/* Variables to display grid lines (for development only) */
-:root {
-  --offset: rem(0);
-  --max_width: rem(1024);
-  --columns: 7;
-  --gutter: rem(1);
-  --color: hsla(204, 80%, 72%, 0.25);
-  --line-thickness: rem(15);
-}
+  &--3-of-7 {
+    width: calc((100vw / 7) * 3);
+  }
 
-:root {
-  --repeating-width: calc(100% / var(--columns));
-  --column-width: calc((100% / var(--columns)) - var(--gutter));
-  --background-width: calc(100% + var(--gutter));
-  --background-columns: repeating-linear-gradient(
-   to right,
-   var(--color),
-   var(--color) var(--line-thickness),
-   transparent var(--line-thickness),
-   transparent calc(var(--column-width) - var(--line-thickness)),
-   var(--color) calc(var(--column-width) - var(--line-thickness)),
-   var(--color) var(--column-width),
-   transparent var(--column-width),
-   transparent var(--repeating-width)
- );
+  &--4-of-7 {
+    width: calc((100vw / 7) * 4);
+  }
+
+  &--5-of-7 {
+    width: calc((100vw / 7) * 5);
+  }
+
+  &--6-of-7 {
+    width: calc((100vw / 7) * 6);
+  }
+
+  &--7-of-7 {
+    width: calc((100vw / 7) * 7);
+  }
 }

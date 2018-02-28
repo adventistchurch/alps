@@ -2,7 +2,7 @@
     $BUTTONS
 \*------------------------------------*/
 
-.o-btn,
+.o-button,
 button,
 input[type="submit"] {
   display: inline-block;
@@ -11,25 +11,64 @@ input[type="submit"] {
   padding: rem(13) rem(16) rem(12);
   line-height: 1;
   color: $c-white;
-  background-color: $c-theme-ming;
+  background-color: $c-gray--darker;
   cursor: pointer;
   transition: all .6s ease-out;
   overflow: hidden;
   font-family: $ff-font--secondary;
+  font-weight: bold;
   text-transform: uppercase;
-  border: none;
+  border: 1px solid $c-gray--darker;
+  border-radius: rem(50);
+  outline: 0;
 
-  &:hover,
-  &:focus {
-    background-color: darken($c-theme-ming, 10);
+  &:hover {
     color: $c-white;
+  }
+
+  .u-icon {
+    margin-right: rem(5);
+
+    svg path {
+      transition: all .6s ease-out;
+    }
   }
 }
 
 /**
  * Button Sizing
  */
-.o-btn--small {
-  padding: rem(8) rem(12);
+.o-button--small {
+  padding: rem(11) rem(14) rem(9);
   font-size: rem(12);
+}
+
+.o-button--simple {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.o-button--outline {
+  background-color: transparent;
+}
+
+.o-button--toggle {
+  white-space: nowrap;
+
+  &::after {
+    content: "Show";
+  }
+
+  &.this-is-active {
+    &::after {
+      content: "Close";
+    }
+
+    .u-icon {
+      transform: rotate(45deg);
+      position: relative;
+      right: rem(-2);
+      top: rem(1);
+    }
+  }
 }

@@ -1,51 +1,49 @@
+<div class="u-spacing--double">
+  <div class="o-font u-font--primary u-spacing">
+    <h2>Primary Font: {{ primary_font }}</h2>
+    <p>When text is rendered by a computer, sometimes there will be characters in the text that can not be displayed, because no font that supports them is available to the computer. When this occurs, small boxes are shown to represent the characters. We call those small boxes “tofu,” and we want to remove tofu from the Web. This is how the Noto font families got their name.</p>
 
-  <h3 class="u-font--primary u-padding">Primary: Merriweather</h3>
+    <h3>Styles</h3>
+    <hr />
+    <div class="o-font__styles">
+      <p>Regular</p>
+      <p><em>Italic</em></p>
+      <p><strong>Bold</strong></p>
+    </div>
 
-<div class="sg-grid">
-  <div class="typography-intro sg-grid-1of2 u-padding">
-    <p>Merriweather is an open-source typeface designed specifically for onscreen reading. The letterforms have a tall x-height, making it idea for reading across various sizes. It is a classic looking font, with blocky serifs but a modern feel.</p>
+    <h3>Characters</h3>
+    <hr />
+    <div class="o-font__characters">
+      <span class="u-font--primary--xl">Aa</span>
+      <div class="u-font--primary--xs">
+        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+      </div>
+    </div>
   </div>
 
+  <div class="o-font u-font--secondary u-spacing">
+    <h2>Secondary Font: {{ secondary_font }}</h2>
+    <p>When text is rendered by a computer, sometimes there will be characters in the text that can not be displayed, because no font that supports them is available to the computer. When this occurs, small boxes are shown to represent the characters. We call those small boxes “tofu,” and we want to remove tofu from the Web. This is how the Noto font families got their name.</p>
 
-  <div class="typography-intro sg-grid-1of2 u-font--primary u-padding">
-    <span class="text-huge u-font--primary--xl">Aa</span>
-    <div>
-      <p class="sg-label u-font--primary--xs">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br />
-      a b c d e f g h i j k l m n o p q r s t u v w x y z <br/>
-      0 1 2 3 4 5 6 7 8 9</p>
+    <h3>Styles</h3>
+    <hr />
+    <div class="o-font__styles">
+      <p>Regular</p>
+      <p><em>Italic</em></p>
+      <p><strong>Bold</strong></p>
+    </div>
+
+    <h3>Characters</h3>
+    <hr />
+    <div class="o-font__characters">
+      <span class="u-font--secondary--xl">Aa</span>
+      <div class="u-font--secondary--xs">
+        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+      </div>
     </div>
   </div>
 </div>
-<div class="sg-include u-padding">
-  <h5>Embed Merriweather</h5>
-  <div class="sg-link u-font--monou-space u-padding">
-
-  <input type="text" name="input-text" id="input-text" value="&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//fonts.googleapis.com/css?family=Merriweather&quot; media=&quot;all&#x201d;&gt;">
-  </div>
-
-</div>
-
-  <h3 class="u-font--secondary u-padding">Secondary: Montserrat</h3>
-
-<div class="sg-grid">
-  <div class="typography-intro sg-grid-1of2 u-padding">
-    <p>Merriweather is an open-source typeface designed specifically for onscreen reading. The letterforms have a tall x-height, making it idea for reading across various sizes. It is a classic looking font, with blocky serifs but a modern feel.</p>
-  </div>
-
-
-  <div class="typography-intro sg-grid-1of2 u-font--secondary u-padding">
-    <span class="text-huge u-font--secondary--xl">Aa</span>
-    <div>
-      <p class="sg-label u-font--secondary--xs">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-      <p class="sg-label u-font--secondary--xs">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-      <p class="sg-label u-font--secondary--xs">0 1 2 3 4 5 6 7 8 9</p>
-    </div>
-  </div>
-</div>
-
-<p class="font--serif">Alpha font: {{ primary_font }}</p><!-- needs more thought-->
-<p class="font--serif"><em>Primary font italic: {{ primary_font }}</em></p>
-<p class="font--serif"><strong>Primary font bold: {{ primary_font }}</strong></p>
-<p class="font--sans">Secondary font: {{ secondary_font }}</p>
-<p class="font--sans"><em>Secondary font italic: {{ secondary_font }}</em></p>
-<p class="font--sans"><strong>Secondary font bold: {{ secondary_font }}</strong></p>

@@ -1,0 +1,7 @@
+{
+  "button_default": {
+    "text": "",
+    "icon": "icon-plus",
+    "class": "o-button--outline o-button--toggle o-button--small js-toggle"
+  }
+}

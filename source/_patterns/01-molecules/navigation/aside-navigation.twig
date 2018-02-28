@@ -1,21 +1,21 @@
 {% if aside_nav %}
-<nav class="u-background-color--tan aside-nav u-padding--secondary l-column--secondary can-be--dark-dark" id="aside-nav" role="navigation">
+<nav class="c-aside-nav u-background-color--gray--light u-padding can-be--dark-dark" id="c-aside-nav" role="navigation">
   <div class="u-spacing">
     {% if aside_nav.category_nav %}
-      <ul class="aside-nav__list u-spacing--quarter">
+      <ul class="c-aside-nav__list u-spacing--quarter">
         {% for item in aside_nav.category_nav.items %}
-          <li class="aside-nav__list-item u-position--relative"><a class="aside-nav__link u-theme--primary-text-color u-font--primary--xs" href="{{ url }}">{{ item.text }}</a></li>
+          <li class="c-aside-nav__list-item u-position--relative"><a class="c-aside-nav__link u-theme--color--base u-font--primary--xs" href="{{ url }}">{{ item.text }}</a></li>
         {% endfor %}
-      </ul> <!-- /.aside-nav__list -->
+      </ul> <!-- /.c-aside-nav__list -->
     {% endif %}
     <hr class="u-theme--primary-transparent-background-color--30">
     {% if aside_nav.social_nav %}
-      <ul class="aside-nav__list u-spacing--quarter">
+      <ul class="c-aside-nav__list u-spacing--quarter">
         {% for item in aside_nav.social_nav.items %}
-          <li class="aside-nav__list-item u-position--relative"><a class="aside-nav__link u-theme--primary-text-color u-font--primary--xs" href="{{ url }}"><span class="u-icon u-icon--s u-vertical-align--text-bottom">{{ item.icon | raw }}</span> {{ item.text }}</a></li>
+          <li class="c-aside-nav__list-item u-position--relative"><a class="c-aside-nav__link u-theme--color--base u-font--primary--xs" href="{{ url }}"><span class="u-icon u-icon--s u-vertical-align--text-bottom">{{ item.icon | raw }}</span> {{ item.text }}</a></li>
         {% endfor %}
-      </ul> <!-- /.aside-nav__list -->
+      </ul> <!-- /.c-aside-nav__list -->
     {% endif %}
   </div>
-</nav> <!-- /.aside-nav -->
+</nav> <!-- /.c-aside-nav -->
 {% endif %}

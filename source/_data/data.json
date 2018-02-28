@@ -4,39 +4,40 @@
     "language": "en",
     "charset": "UTF-8",
     "html_class": "pl u-theme--ming",
-    "body_class": "body u-theme--cool",
+    "body_class": "body has-grid",
     "description": "Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole."
   },
 
   "heading": "Lorem Ipsum",
-  "primary_font": "Montserrat",
-  "secondary_font": "Merriweather",
+  "primary_font": "Noto Serif",
+  "secondary_font": "Noto Sans",
   "fill_class": "fill--gray",
   "logo": "adventist-logo-h-en.svg",
   "image_path": "../../images/",
 
   "img": {
-    "src": "//placehold.it/500x400",
-    "alt": "Image Alt"
+    "src": "//placehold.it/600x375",
+    "alt": "Image Alt",
+    "caption": "Caption"
   },
 
   "picture": {
     "img_break_m": "500",
     "img": {
       "alt": "Alt Text",
-      "src_s": "//placehold.it/500x500",
-      "src_m": "//placehold.it/700x500"
+      "src_s": "//placehold.it/500x375",
+      "src_m": "//placehold.it/700x525"
     },
     "has_break_l": {
       "img_break_l": "700",
       "img": {
-        "src_l": "//placehold.it/900x500"
+        "src_l": "//placehold.it/900x675"
       }
     },
     "has_break_xl": {
       "img_break_xl": "900",
       "img": {
-        "src_xl": "//placehold.it/1300x700"
+        "src_xl": "//placehold.it/1200x900"
       }
     }
   },
@@ -120,11 +121,7 @@
   },
 
   "secondary_nav": {
-    "items": [{
-        "icon": "icon-language",
-        "text": "Language",
-        "priority": true
-      },
+    "items": [
       {
         "icon": "icon-subscribe",
         "text": "Sitemap"
@@ -353,10 +350,12 @@
   },
 
   "media_block_default": {
-    "block_title_class": "font--secondary--m",
+    "block_content_class": "u-color--gray",
+    "block_title_class": "u-theme--color--darker u-theme--link-hover--base",
+    "block_meta_class": "u-theme--color--dark",
     "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
     "img": {
-      "src": "//placehold.it/600x300",
+      "src": "//placehold.it/600x375",
       "alt": "Media Block Image Alt"
     },
     "datetime": "2018-12-28",
@@ -366,20 +365,9 @@
   },
 
   "story_block_default": {
-    "is_video": true,
-    "bg_img": "//unsplash.it/g/1100/1100?blur",
-    "title": "Bestseller",
-    "subtitle": "The Clifford Goldstein Story",
-    "img": {
-      "src": "//unsplash.it/200/200/?random",
-      "alt": "Story Block Image Alt"
-    },
-    "text_img": {
-      "src": "//unsplash.it/350/200/?random",
-      "alt": "Text Image Alt"
-    },
-    "description": "<p>Clifford Goldstein didn’t believe in much, but one thing he did believe in was Truth. He just didn't know what it was or where to find it. As the fiery writer traveled Europe and Israel in search of his novel's soul, his quest for meaning of life continued, leading him to a different kind of altar.</p><p>Little did he know that one dark night in the summer of 1979, his search would end with a decision that would change his life forever.</p>",
-    "cta": "Find out more"
+    "kicker": "Context Matters",
+    "title": "Donec sit amet justo at sapien aliquet iaculis.",
+    "body": "<p>Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed placerat nec nisl at laoreet. Cras tristique lacus turpis, sit amet luctus lorem facilisis sed. Suspendisse tempor ante mauris, vitae bibendum sem interdum sit amet. Nam vitae elit lobortis, vehicula neque ut, semper massa.</p><p>Proin hendrerit, diam eget aliquam semper, ipsum elit efficitur erat, a consectetur tortor ex at arcu. Nullam tincidunt lacus at scelerisque pulvinar. Donec faucibus maximus mi ut congue. Proin purus libero, fringilla et orci a, luctus posuere purus. Curabitur justo mi, auctor ut turpis eu, accumsan malesuada elit.</p>"
   },
 
   "carousel_block_default": {
@@ -431,137 +419,304 @@
     }
   },
 
+  "gallery_block_default": {
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "items": [
+      {
+        "caption": "Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus.",
+        "img": {
+          "alt": "Alt Text",
+          "src": "//source.unsplash.com/WLUHO9A_xik/"
+        }
+      },
+      {
+        "caption": "Duis eu pharetra magna. Curabitur vulputate mattis dignissim.",
+        "portrait": true,
+        "img": {
+          "alt": "Alt Text",
+          "src": "//source.unsplash.com/"
+        }
+      }
+    ]
+  },
+
+  "content_block_default": {
+    "block_class": "u-spacing",
+    "title_class": "u-font--primary--m",
+    "title": "General Conference",
+    "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+    "cta": "Learn More"
+  },
+
   "content_blocks": [{
-      "text": {
-        "heading": "Nam efficitur",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Vivamus orci magna"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aliquam malesuada viverra velit",
+        "description": "<a href=''>Fusce interdum</a> purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt."
       }
     },
     {
-      "text": {
-        "heading": "Donec interdum",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aenean quis velit vel",
+        "description": "<a href=''>Fusce interdum</a> purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt."
+      }
+    }
+  ],
+
+  "page_content_blocks": [{
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "General Conference",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "East-Central Africa",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Euro-Asia",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Middle East and North Africa",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    }
+  ],
+
+  "aside_content_blocks": [{
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture"
       }
     }
   ],
 
   "row_blocks": [{
       "media_block_default": {
-        "block_inner_class": "c-block__row",
-        "kicker": "Freundschaftsbezeigungen",
-        "title": "Cras at sem at felis rhoncus",
-        "block_img_class": "round ",
-        "img": {
-          "src": "//placehold.it/150x150",
-          "alt": "Media Block Image Alt Left Round"
+        "block_class": "c-media-block c-block l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+        "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--m--3-col l-grid-item--l--2-col u-flex--justify-start",
+        "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-round u-height--s--2-col u-height--m--1-col",
+        "block_kicker_class": "u-theme--color--base can-be--light",
+        "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+        "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+        "kicker": "Culture",
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/600/330/?random",
+            "src_m": "//unsplash.it/150/150/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+              "src_l": "//unsplash.it/200/200/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "1000",
+            "img": {
+              "src_xl": "//unsplash.it/300/300/?random"
+            }
+          }
         },
-        "datetime": false,
-        "date": false,
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.",
-        "cta": "Cras at sem"
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": false,
+        "category": "Culture",
+        "cta": "Learn More"
       }
     },
     {
       "media_block_default": {
-        "block_inner_class": "c-block__row",
-        "title": "Fusce interdum purus est",
-        "img": {
-          "src": "//placehold.it/300x350",
-          "alt": "Media Block Image Alt Left"
+        "block_class": "c-media-block c-block l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+        "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--m--3-col l-grid-item--l--2-col u-flex--justify-start",
+        "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col l-grid-item--l--1-col",
+        "block_kicker_class": "u-theme--color--base can-be--light",
+        "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+        "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+        "kicker": "Culture",
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/600/330/?random",
+            "src_m": "//unsplash.it/150/150/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+              "src_l": "//unsplash.it/200/200/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "1000",
+            "img": {
+              "src_xl": "//unsplash.it/300/300/?random"
+            }
+          }
         },
-        "datetime": false,
-        "date": false,
-        "description": "Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
-        "cta": "Mauris sit amet"
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": false,
+        "category": "Culture",
+        "cta": "Learn More"
       }
     },
     {
       "media_block_default": {
-        "block_inner_class": "c-block__row",
-        "title": "Sed neque odio, iaculis iaculis rutrum quis",
-        "img": {
-          "src": "//placehold.it/300x200",
-          "alt": "Media Block Image Alt Left Round"
+        "block_class": "c-media-block c-block l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+        "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--m--3-col l-grid-item--l--2-col u-flex--justify-start",
+        "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col l-grid-item--l--1-col",
+        "block_kicker_class": "u-theme--color--base can-be--light",
+        "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+        "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+        "kicker": "Culture",
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/600/330/?random",
+            "src_m": "//unsplash.it/150/150/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "700",
+            "img": {
+              "src_l": "//unsplash.it/200/200/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "1000",
+            "img": {
+              "src_xl": "//unsplash.it/300/300/?random"
+            }
+          }
         },
-        "datetime": false,
-        "date": false,
-        "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in."
-      }
-    },
-    {
-      "media_block_default": {
-        "block_inner_class": "c-block__row",
-        "kicker": "Aenean arcu",
-        "title": "Pellentesque semper",
-        "img": {
-          "src": "//placehold.it/300x300",
-          "alt": "Media Block Image Alt Left Round"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut.",
-        "cta": "Cras at sem"
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": false,
+        "category": "Culture"
       }
     }
   ],
 
   "breakout_block": {
-    "media_block_default": {
-      "block_class": "u-background-color--tan can-be--dark-dark block--breakout u-padding--secondary--for-breakouts",
-      "heading_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 77.22 99.29\"><title>List Icon</title><path d=\"M34.68,54.8H65.57V44.87H34.68V54.8ZM77.58,0.36H22.42a11.06,11.06,0,0,0-11,11V88.61a11.06,11.06,0,0,0,11,11H77.58a11.06,11.06,0,0,0,11-11V11.39A11.06,11.06,0,0,0,77.58.36Zm0,88.26H22.42V11.39H77.58V88.61ZM65.44,23.35H34.56V33H65.44V23.35Zm0,43.3H34.56v9.65H65.44V66.66Z\" transform=\"translate(-11.39 -0.36)\" fill=\"#010101\" class=\"u-theme--primary-fill-color\"/></svg>",
-      "block_heading": "Nulla facilisi",
-      "img": false,
-      "description": "Fusce porta sed odio eu dignissim. Vivamus imperdiet libero mattis orci aliquam imperdiet. Vivamus sit amet tortor nec magna tincidunt faucibus sit amet ac sem. Maecenas mattis nibh at urna feugiat posuere. Pellentesque blandit condimentum eros, fermentum ornare diam facilisis eget.",
-      "cta": "Vestibulum non lectus"
-    }
+    "block_class": "u-theme--background-color--darker can-be--dark-dark",
+    "title": "Nulla facilisi",
+    "description": "Fusce porta sed odio eu dignissim. Vivamus imperdiet libero mattis orci aliquam imperdiet. Vivamus sit amet tortor nec magna tincidunt faucibus sit amet ac sem. Maecenas mattis nibh at urna feugiat posuere. Pellentesque blandit condimentum eros, fermentum ornare diam facilisis eget.",
+    "cta": "Vestibulum non lectus"
   },
 
   "heading_block_default": {
-    "block_heading": "General Conference",
-    "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
-    "cta": "Find out more"
+    "block_content_class": "u-theme--color--darker",
+    "block_color_class": "u-color--gray",
+    "kicker": "Feature",
+    "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+    "description": "Pellentesque volutpat sodales metus, ac aliquam nibh consectetur id. Phasellus varius dui viverra vehicula efficitur.",
+    "category": "Feature",
+    "datetime": "2016-12-12",
+    "date": "Mar 28, 2016"
   },
-
-  "heading_blocks": [{
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--emperor",
-        "block_heading": "General Conference",
-        "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
-        "cta": "Find out more"
-      }
-    },
-    {
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--red",
-        "block_heading": "East-Central Africa",
-        "description": "The East-Central Africa Division (ECD) is comprised of 11 countries. Amid a population of about 307 million, the Seventh-day Adventist Church counts more than 2.5 million members worshiping at more than 11,000 churches.",
-        "cta": "Find out more"
-      }
-    },
-    {
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--ming",
-        "block_heading": "Euro-Asia",
-        "description": "The Euro-Asia Division spans 11 time zones across northern Asia. Adventists worship at almost 2,000 churches across the region, which is comprised of 13 countries.",
-        "cta": "Find out more"
-      }
-    },
-    {
-      "heading_block_default": {
-        "block_class": "has-border--left has-border--left--denim",
-        "block_heading": "Middle East and North Africa",
-        "description": "The Middle East and North Africa Union is comprised of 20 countries. The region is bordered by Morocco to the west, Iran to the east, Turkey to the north and Sudan to the south. The population of the region is about 500 million people.",
-        "cta": "Find out more"
-      }
-    }
-  ],
 
   "aside_content": [{
     "aside_heading": "News",
-    "aside_blocks": [{},
-      {}
+    "aside_blocks": [
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked c-media-block__stacked",
+          "block_content_class": "l-grid-item u-border-left--black--at-large u-color--gray u-theme--border-color--darker--left u-spacing--half",
+          "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+          "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+          "title": "Nulla finibus ligula ut nisl facilisis",
+          "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "category": "Culture",
+          "datetime": "2017-12-28",
+          "date": "December 28, 2017",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//unsplash.it/600/330/?random",
+              "src_m": "//unsplash.it/800/450/?random"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked c-media-block__stacked",
+          "block_content_class": "l-grid-item u-border-left--black--at-large u-color--gray u-theme--border-color--darker--left u-spacing--half",
+          "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+          "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+          "title": "Nulla finibus ligula ut nisl facilisis",
+          "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "category": "Culture",
+          "datetime": "2017-12-28",
+          "date": "December 28, 2017",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//unsplash.it/600/330/?random",
+              "src_m": "//unsplash.it/800/450/?random"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          }
+        }
+      }
     ]
   }],
 
@@ -785,12 +940,10 @@
     ]
   },
   "button_default": {
-    "button_text": "Button Text"
+    "text": "Button Defualt",
+    "class": "u-theme--button"
   },
-  "button_submit": {
-    "button_text": "Submit"
-  },
-  "content_filter": {
+  "search_filter": {
     "radio": [{
         "id": "1",
         "label": "Option 1"

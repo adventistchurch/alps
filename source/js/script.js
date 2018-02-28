@@ -21,6 +21,14 @@
     return false;
   }
 
+  var nav = priorityNav.init({
+      mainNavWrapper: ".c-priority-nav", // mainnav wrapper selector (must be direct parent from mainNav)
+      mainNav: ".c-priority-nav__list", // mainnav selector. (must be inline-block)
+      navDropdownLabel: '',
+      navDropdownClassName: ".c-priority-nav__dropdown", // class used for the dropdown.
+      navDropdownToggleClassName: "js-toggle-menu", // class used for the dropdown toggle.
+  });
+
   // Add class if is mobile
   if (isMobile()) {
     $('html').addClass(' touch');
@@ -35,6 +43,12 @@
       failure_limit: 9999,
     });
   }
+
+  var divs = $('.l-sabbath__logo-light');
+  $(window).scroll(function(){
+     var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
+     divs.css('opacity', 1 - percent);
+  });
 
   // Check window width
   var getWidth = function() {
@@ -83,6 +97,25 @@
     }
   };
 
+  // Grab first character for dropcaps
+  $('.has-dropcap p:eq(0)').each(function() {
+    var text = $(this).html();
+    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
+    $(this).html(text.substring(1)).prepend(first);
+  });
+
+  // Add color classes
+  $('.is-featured').addClass('u-theme--color--lighter');
+
+  /**
+   * Fixto
+   */
+  $('.js-sticky').fixTo('js-sticky-parent', {
+    className: 'sticky-is-active',
+    useNativeSticky: true,
+    zIndex: 9999
+  });
+
   /*
    * Toggle Active Classes
    *
@@ -126,16 +159,16 @@
 
     if ($(this).hasClass('this-is-active')) {
       $(this).removeClass('this-is-active');
-      $(this).parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
       $(this).parent().parent().removeClass('this-is-active');
       $(this).parent().parent().parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().parent().parent().removeClass('this-is-active');
     } else {
       $(this).addClass('this-is-active');
-      $(this).parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
       $(this).parent().parent().addClass('this-is-active');
       $(this).parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().parent().parent().addClass('this-is-active');
       $(this).parent('li').clone().appendTo('.c-drawer__subnav');
     }
 
@@ -166,7 +199,7 @@
   });
 
   // Open drawer when menu toggle is clicked
-  $('.js-toggle-menu').on('click', function(e) {
+  $('.js-toggle-menu, .c-priority-nav__toggle').on('click', function(e) {
     e.stopPropagation();
     $('.c-drawer').toggleClass('this-is-active');
   });
@@ -303,13 +336,6 @@
     parallaxIt()
   }
 
-
-  // FitText for logo subbrands.
-  // $('.js-logo-fit .line1').fitText(.55);
-  // $('.js-logo-fit .line2').fitText(.9);
-  // $('.js-logo-fit .line3').fitText(.79);
-
-
   /**
    * Modaal functionality
    * Reference:
@@ -320,12 +346,11 @@
     });
   }
 
-
-  // Theme switcher for primary colors
-  $('.theme-swatches--primary .swatch').click(function(){
+  // Theme switcher for colors
+  $('.c-swatches--colors .c-swatches__item').click(function(){
     var thisColor = $(this).data('color');
 
-    $('.theme-swatches--primary .swatch').removeClass('active');
+    $('.c-swatches--colors .c-swatches__item').removeClass('active');
     $(this).addClass('active');
 
     // Remove any class that starts with "u-theme--"
@@ -334,22 +359,15 @@
     }).addClass('u-theme--' + thisColor);
   });
 
-  // Theme switcher for secondary colors
-  $('.theme-swatches--secondary .swatch').click(function(){
-    var thisColor = $(this).data('color');
-
-    $('.theme-swatches--secondary .swatch').removeClass('active');
-    $(this).addClass('active');
-
-    // Remove any class that starts with "u-theme--"
-    $('body').removeClass(function(index, css) {
-      return (css.match (/(^|\s)u-theme--\S+/g) || []).join(' ');
-    }).addClass('u-theme--' + thisColor);
+  // Theme switcher for background
+  $('.c-swatches--background .c-swatches__item').click(function() {
+    $('body').toggleClass('u-theme--dark');
+    $(this).toggleClass('active');
   });
 
-  // Theme switcher for dark colors
-  $('.theme-swatches--dark .swatch').click(function() {
-    $('body').toggleClass('u-theme--dark');
+  // Theme switcher for grid lines
+  $('.c-swatches--grid .c-swatches__item').click(function() {
+    $('body').toggleClass('has-grid');
     $(this).toggleClass('active');
   });
 

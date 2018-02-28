@@ -1,0 +1,17 @@
+{% if page_header_longform %}
+<header class="longform__header {% if page_header_longform.picture %} longform__header--with-hero {% endif %}">
+  <div class="l-container u-clear-fix u-spacing">
+    <div class="longform__header__text u-spacing--half">
+      <h1 class="longform__heading u-font--secondary--xl">{{ page_header_longform.heading }}</h1>
+      {% if page_header_longform.dek %}
+        <p class="u-font--primary--m">{{ page_header_longform.dek }}</p>
+      {% endif %}
+    </div>
+    {% if page_header_longform.picture %}
+      <div class="longform__hero">
+      {% include '@atoms/images/picture.twig' with {'picture': page_header_longform.picture} %}
+      </div>
+    {% endif %}
+  </div>
+</header> <!-- /.longform__header -->
+{% endif %}

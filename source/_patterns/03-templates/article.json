@@ -1,0 +1,64 @@
+{
+  "head": {
+    "title": "Article Page - The Official Site of the Seventh-day Adventist world church"
+  },
+
+  "blockquote": true,
+  "figure_breakout": true,
+  "figure_with_caption": true,
+  "figure_split": true,
+  "highlight": true,
+  "gallery_block": true,
+  "story_block": true,
+  "related_posts": true,
+
+  "media_block_default": {
+    "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+    "block_img_class": "l-grid-item l-grid-item--m--3-col u-padding--zero",
+    "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-theme--border-color--darker--left u-theme--color--lighter u-theme--background-color--darker",
+    "block_title_class": "u-color--white",
+    "block_meta_class": "",
+    "kicker": "Feature",
+    "title": "Nulla finibus ligula ut nisl facilisis",
+    "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+    "category": "Culture",
+    "datetime": "2017-12-28",
+    "date": "December 28, 2017",
+    "picture": {
+      "img_break_m": "500",
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "//unsplash.it/500/375/?random",
+        "src_m": "//unsplash.it/400/500/?random"
+      },
+      "has_break_l": {
+        "img_break_l": "800",
+        "img": {
+          "src_l": "//unsplash.it/600/700/?random"
+        }
+      },
+      "has_break_xl": false
+    }
+  },
+
+  "picture": {
+    "img_break_m": "500",
+    "img": {
+      "alt": "Alt Text",
+      "src_s": "//unsplash.it/500/280/?random",
+      "src_m": "//unsplash.it/700/400/?random"
+    },
+    "has_break_l": {
+      "img_break_l": "1300",
+      "img": {
+        "src_l": "//unsplash.it/900/500/?random"
+      }
+    },
+    "has_break_xl": {
+      "img_break_xl": "1500",
+      "img": {
+        "src_xl": "//unsplash.it/1100/600/?random"
+      }
+    }
+  }
+}

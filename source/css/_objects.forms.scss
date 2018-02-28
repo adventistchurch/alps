@@ -1,6 +1,36 @@
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  color: $c-gray;
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+  color: $c-gray;
+}
+
+/* IE 10+ */
+:-ms-input-placeholder {
+  color: $c-gray;
+}
+
+/* Firefox 18- */
+:-moz-placeholder {
+  color: $c-gray;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: url('../images/icons/o-arrow--down.svg') center right rem(10) no-repeat;
+  background-size: rem(10);
+}
+
 input[type=radio],
 input[type=checkbox] {
   outline: none;
@@ -23,7 +53,7 @@ input[type=checkbox] {
   -ms-user-select: none;
   user-select: none;
   -webkit-appearance: none;
-  background-color: $c-white;
+  background-color: transparent;
 }
 
 input[type=radio],
@@ -44,12 +74,12 @@ input[type=radio] {
   border-radius: rem(50);
 }
 
-.form--inline {
+.c-form--inline {
   display: flex;
   flex-direction: row;
 
   .form-input {
-    padding: 0 $pad-half;
+    padding: 0 $pad/2;
   }
 }
 
@@ -61,55 +91,40 @@ input[type=radio] {
 /**
  * Search filter
  */
- .filter-expand {
-   &.filter-is-active {
+ .c-filter {
+   &.c-filter-is-active {
      cursor: pointer;
 
-     .filter-form {
-       display: flex;
-       padding-bottom: $space;
+     .c-filter__form {
+       display: block;
      }
 
-     .filter-toggle:before {
-       content: "Hide ";
+     .c-filter__toggle::after {
+       content: "Hide Options";
      }
    }
 
-   .filter-toggle:before {
-     content: "Show ";
-     cursor: pointer;
+   input[type='search'] {
+     outline: 0;
+     background-color: transparent;
+     border: 0;
+     border-bottom: 1px solid $c-gray;
+     padding-left: 0;
+
+     @include u-font--secondary--m;
    }
 
-   .filter-options {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-end;
-     border-bottom: 1px solid $c-gray--darker;
-     padding-bottom: $space-half;
-   }
-
-   .filter-form {
+   &__form {
      display: none;
-     align-items: flex-start;
-     justify-content: flex-start;
-     width: 100%;
-     padding-bottom: $pad-half;
-
-     @include media('>large') {
-       flex-flow: column;
-       padding-bottom: 0;
-     }
    }
 
-   .filter-items {
-     margin-right: $space-double;
+   &__toggle {
+     padding-left: 0;
+     padding-right: 0;
 
-     @include media('>large') {
-       margin-right: 0;
-
-       &:last-child {
-         margin-top: $space;
-       }
+     &::after {
+       content: "Options";
+       cursor: pointer;
      }
    }
  }

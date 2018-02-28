@@ -64,43 +64,43 @@ $themes: (
   ),
   u-theme--cave: (
     darker: #01161e,
-    dark: #007f98,
-    base: $c-theme-cave, // base
+    dark: $c-theme-cave, // base
+    base: #007f98,
     light: #00d5fe,
     lighter: #9ae1f0
   ),
   u-theme--denim: (
     darker: #04132b,
-    dark: #2e6de7,
-    base: $c-theme-denim, // base
+    dark: $c-theme-denim, // base
+    base: #2e6de7,
     light: #84adfc,
     lighter: #84adfc
   ),
   u-theme--emperor: (
     darker: #240431,
-    dark: #9013fe,
-    base: $c-theme-emperor, // base
+    dark: $c-theme-emperor, // base
+    base: #9013fe,
     light: #b971f7,
     lighter: #b971f7
   ),
   u-theme--grapevine: (
     darker: #2a0d24,
-    dark: #d41583,
-    base: $c-theme-grapevine, // base
+    dark: $c-theme-grapevine, // base
+    base: #d41583,
     light: #ff61bc,
     lighter: #ff61bc
   ),
   u-theme--velvet: (
     darker: #2d0505,
-    dark: #d0021b,
-    base: $c-theme-velvet, // base
+    dark: $c-theme-velvet, // base
+    base: #d0021b,
     light: #fd2641,
     lighter: #e17077
   ),
   u-theme--earth: (
     darker: #210b00,
-    dark: #974e02,
-    base: $c-theme-earth, // base
+    dark: $c-theme-earth, // base
+    base:  #974e02,
     light: #eab57e,
     lighter: #eab57e
   )
@@ -145,7 +145,7 @@ $themes: (
         }
 
         // SVG fill colors
-        .u-theme--fill-color--#{$key} {
+        .u-theme--path-fill--#{$key} {
           path {
             fill: $value;
           }
@@ -162,6 +162,8 @@ $themes: (
   $light: map-get($shade, light);
   $lighter: map-get($shade, lighter);
   .#{$theme} {
+
+    // Background transparency
     .u-theme--background-color-trans--darker {
       background-color: rgba($darker, 0.8);
     }
@@ -177,6 +179,335 @@ $themes: (
     .u-theme--background-color-trans--lighter {
       background-color: rgba($lighter, 0.8);
     }
+
+    // Gradient
+    .u-theme--background-gradient {
+      background-image: linear-gradient(to bottom, $darker, $dark, $c-gray--light);
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $darker;
+        top: 0;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    .u-background-image--sabbath {
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    // Text
+    .text {
+      a:not(.o-button) {
+        border-color: $base;
+
+        &:hover {
+          border-color: $light;
+        }
+      }
+    }
+
+    // Buttons
+    .o-button,
+    button,
+    input[type=submit] {
+      background-color: $base;
+      color: $c-white;
+      border-color: $base;
+
+      &:hover {
+        background-color: $dark;
+        border-color: $dark;
+      }
+    }
+
+    .o-button--simple {
+      background-color: transparent;
+      border-color: transparent;
+      color: $base;
+
+      svg path {
+        fill: $base;
+      }
+
+      &:hover {
+        color: $darker;
+        background-color: transparent;
+        border-color: transparent;
+
+        svg path {
+          fill: $darker;
+        }
+      }
+    }
+
+    .o-button--outline {
+      background-color: transparent;
+      color: $base;
+      border-color: $base;
+
+      svg path {
+        fill: $base;
+      }
+
+      &:hover {
+        background-color: $dark;
+        color: $c-white;
+        border-color: $dark;
+
+        svg path {
+          fill: $c-white;
+        }
+      }
+    }
+
+    .o-button--lighter {
+      background-color: $lighter;
+      color: $darker;
+      border-color: $lighter;
+
+      &:hover {
+        background-color: $light;
+        border-color: $light;
+        color: $darker;
+      }
+
+      svg path {
+        fill: $darker;
+      }
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+      color: $darker;
+      border-color: $darker;
+    }
+
+    input[type=radio]:checked,
+    input[type=checkbox]:checked {
+      background-color: $darker;
+    }
+
+    .c-header .c-primary-nav__link {
+      color: $darker;
+    }
+
+    .u-theme--dark {
+
+      // Colors
+      .u-theme--color--darker,
+      .u-theme--color--darker a,
+      a.u-theme--link-hover--darker:hover,
+      .u-theme--link-hover--darker a:hover {
+        color: $lighter;
+      }
+
+      .u-theme--color--dark,
+      .u-theme--color--dark a,
+      a.u-theme--link-hover--dark:hover,
+      .u-theme--link-hover--dark a:hover {
+        color: $light;
+      }
+
+      .u-theme--color--base,
+      .u-theme--color--base a,
+      a.u-theme--link-hover--base:hover,
+      .u-theme--link-hover--base a:hover {
+        color: $c-white;
+      }
+
+      .u-color--gray {
+        color: $c-white;
+      }
+      .u-color--gray--dark {
+        color: $c-gray--light;
+      }
+
+      // Gradient
+      .u-theme--background-gradient {
+        background-image: linear-gradient(to bottom, $darker, $dark, $c-gray--darker);
+      }
+
+      // SVG fill colors
+      .u-path-fill--gray path {
+        fill: $c-white;
+      }
+      .u-path-fill--gray--dark path {
+        fill: $c-gray--light;
+      }
+      .u-theme--path-fill--darker path {
+        fill: $darker;
+      }
+      .u-theme--path-fill--dark path {
+        fill: $dark;
+      }
+      .u-theme--path-fill--base path {
+        fill: $c-white;
+      }
+      .o-arrow--down::after {
+        border-top-color: $c-white;
+      }
+
+      // Borders
+      .u-theme--border-color--darker {
+        border-color: $lighter;
+
+        &--left,
+        &--right,
+        &--top,
+        &--bottom {
+          border-color: $lighter;
+        }
+      }
+      .u-theme--border-color--dark {
+        border-color: $light;
+
+        &--left,
+        &--right,
+        &--top,
+        &--bottom {
+          border-color: $light;
+        }
+      }
+      .u-theme--border-color--base {
+        border-color: $c-white;
+
+        &--left,
+        &--right,
+        &--top,
+        &--bottom {
+          border-color: $c-white;
+        }
+      }
+
+      // Text
+      .text {
+        a:not(.o-button) {
+          color: $c-white;
+          border-color: $light;
+
+          &:hover {
+            border-color: $lighter;
+          }
+        }
+      }
+
+      // Buttons
+      .o-button,
+      button,
+      input[type=submit] {
+        background-color: $lighter;
+        color: $darker;
+        border-color: $lighter;
+
+        &:hover {
+          background-color: $light;
+          border-color: $light;
+        }
+
+        svg path {
+          fill: $darker;
+        }
+      }
+
+      .o-button--simple {
+        background-color: transparent;
+        border-color: transparent;
+        color: $lighter;
+
+        svg path {
+          fill: $lighter;
+        }
+
+        &:hover {
+          color: $light;
+          background-color: transparent;
+          border-color: transparent;
+
+          svg path {
+            fill: $light;
+          }
+        }
+      }
+
+      .o-button--outline {
+        background-color: transparent;
+        color: $lighter;
+        border-color: $lighter;
+
+        svg path {
+          fill: $lighter;
+        }
+
+        &:hover {
+          background-color: $light;
+          border-color: $light;
+          color: $darker;
+
+          svg path {
+            fill: $darker;
+          }
+        }
+      }
+
+      // Custom
+      .can-be--dark-dark {
+        background-color: $darker;
+      }
+
+      .can-be--white {
+        color: $c-white;
+      }
+
+      .can-be--light {
+        color: $light;
+      }
+
+      input[type=radio],
+      input[type=checkbox] {
+        color: $c-white;
+        border-color: $lighter;
+      }
+
+      input[type=radio]:checked,
+      input[type=checkbox]:checked {
+        background-color: $lighter;
+      }
+
+      .c-header {
+        .c-subnav__list-item {
+          background-color: $darker;
+          border-left-color: $lighter;
+        }
+
+        .c-secondary-nav__link {
+          color: $lighter;
+
+          svg path {
+            fill: $lighter;
+          }
+        }
+      }
+
+      .l-sabbath {
+        background-color: $c-black;
+      }
+    }
   }
 };
 
@@ -185,7 +516,7 @@ $themes: (
  */
 .u-theme--dark {
   color: $c-white;
-  background-color: $c-black;
+  background-color: $c-gray--darker;
 
   hr {
     background-color: rgba($c-white, .2);
@@ -203,7 +534,18 @@ $themes: (
     background-color: $c-gray--darker;
   }
 
-  .c-primary-nav__list::after {
-    background-color: $c-black !important;
+  // Custom
+  .l-grid-container--7-col::before {
+    opacity: 0.1;
+  }
+
+  .c-header,
+  .c-header__nav-secondary .c-secondary-nav__list-item__search,
+  .c-header__nav-secondary .c-secondary-nav__list-item__menu {
+    background-color: $c-gray--darker;
+  }
+
+  .l-sabbath__logo--inner > div {
+    opacity: 1 !important;
   }
 }

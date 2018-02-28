@@ -1,3 +1,3 @@
 {% if button_default %}
-  <a href="" class="o-btn u-theme--secondary-background-color">{{ button_default.button_text }}</a>
+  <a href="" class="o-button {{ button_default.class }}">{% if button_default.icon %}<span class="u-icon u-icon--xs u-path-fill--white">{% include '@atoms/icons/' ~ button_default.icon ~ '.twig' %}</span>{% endif %}{{ button_default.text }}</a>
 {% endif %}

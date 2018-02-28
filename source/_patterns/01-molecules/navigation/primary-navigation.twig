@@ -1,6 +1,6 @@
 {% if primary_nav %}
-<nav class="c-primary-nav" role="navigation">
-  <ul class="c-primary-nav__list">
+<nav class="c-primary-nav c-priority-nav" role="navigation">
+  <ul class="c-primary-nav__list c-priority-nav__list">
     {% for item in primary_nav.items %}
       <li class="c-primary-nav__list-item {% if item.subnav %}{{ ' has-subnav' }}{% endif %}">
         <a href="/" class="c-primary-nav__link u-font--primary-nav u-color--gray--dark u-theme--link-hover--base u-theme--border-color--base {% if item.is_active %}active{% endif %}">
@@ -18,9 +18,6 @@
         {% endif %}
       </li>
     {% endfor %}
-    <li class="c-primary-nav__list-item c-primary-nav__list-item__toggle js-toggle-menu">
-      <span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/icon-plus.twig' %}</span>
-    </li>
   </ul> <!-- /.c-primary-nav__list -->
 </nav> <!-- /.c-primary-nav -->
 {% endif %}

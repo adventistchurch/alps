@@ -38,10 +38,12 @@ input[type=password],
 input[type=search],
 input[type=text],
 input[type=url],
-textarea {
+input[type=tel],
+textarea,
+select {
   width: 100%;
   border: $border-style;
-  padding: rem(15);
+  padding: $pad/2;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }

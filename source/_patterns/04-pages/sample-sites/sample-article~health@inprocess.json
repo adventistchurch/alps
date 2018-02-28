@@ -2,7 +2,7 @@
   "head": {
     "title": "Adventist Health Ministries - The Official Site of the Seventh-day Adventist world church",
     "html_class": "pl u-theme--denim",
-    "body_class": "body u-theme--warm"
+    "body_class": "body"
   },
 
   "logo_square": "logo__health--square.svg",

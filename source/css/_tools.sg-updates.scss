@@ -7,18 +7,19 @@
   padding: $pad;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: rem(100);
 }
 
 .sg-alps-logo-wrap {
   border-bottom: 1px solid $c-gray--light;
   margin-bottom: $space;
-  padding-left: $pad-half;
+  padding-left: $pad/2;
 }
 
 .sg-alps-logo {
   width: rem(250);
   display: block;
-  padding: rem(15) $pad $pad-half 0;
+  padding: rem(15) $pad $pad/2 0;
 }
 
 .sg-introduction {

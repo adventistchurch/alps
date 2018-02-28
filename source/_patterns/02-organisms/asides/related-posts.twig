@@ -1,0 +1,10 @@
+<div class="c-related-posts u-spacing">
+  <div class="c-block__heading u-theme--border-color--darker">
+    <h3 class="c-block__heading-title u-theme--color--darker">Related Stories</h3>
+  </div>
+  <div class="c-related-posts__blocks u-spacing">
+    {% for block in media_blocks %}
+      {% include '@molecules/blocks/media-block.twig' with block %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,7 +1,9 @@
 {
-  "picture": false,
-  "img": {
-    "src": "//placehold.it/600x375",
-    "alt": "Image Alt"
+  "media_block_default": {
+    "picture": false,
+    "img": {
+      "src": "//placehold.it/600x375",
+      "alt": "Image Alt"
+    }
   }
 }

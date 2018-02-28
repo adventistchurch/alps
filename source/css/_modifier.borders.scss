@@ -16,6 +16,14 @@
     border-bottom: $border-style;
   }
 
+  &--left {
+    border-left: $border-style;
+  }
+
+  &--right {
+    border-right: $border-style;
+  }
+
   &--red {
     border: 1px solid red;
   }

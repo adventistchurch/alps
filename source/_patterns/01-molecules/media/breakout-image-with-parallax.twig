@@ -1,13 +1,18 @@
-<style>
-.breakout-image { background-image: url(https://unsplash.it/500/800); }
-@media(min-width: 500px) {
-  .breakout-image { background-image: url(https://unsplash.it/700/800); }
-}
-@media(min-width: 700px) {
-  .breakout-image { background-image: url(https://unsplash.it/1200/800); }
-}
-@media(min-width: 1200px) {
-  .breakout-image { background-image: url(https://unsplash.it/1500/900); }
-}
-</style>
-<div class="u-image--breakout has-parallax breakout-image u-background--cover" data-type="background" data-speed="8"></div>
+<div class="c-breakout-image">
+  <style>
+    .c-breakout-image__background  { background-image: url(https://unsplash.it/500/800); }
+    @media(min-width: 500px) {
+      .c-breakout-image__background  { background-image: url(https://unsplash.it/700/800); }
+    }
+    @media(min-width: 700px) {
+      .c-breakout-image__background  { background-image: url(https://unsplash.it/1200/800); }
+    }
+    @media(min-width: 1200px) {
+      .c-breakout-image__background  { background-image: url(https://unsplash.it/1500/900); }
+    }
+  </style>
+  <div class="c-breakout-image__background u-image--breakout u-background--cover has-parallax" data-type="background" data-speed="8"></div>
+  <div class="c-breakout-image__caption">
+    {% include '@molecules/media/figcaption.twig' %}
+  </div>
+</div>

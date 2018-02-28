@@ -4,12 +4,11 @@
 
 a {
   text-decoration: none;
-  color: $c-gray--darker;
+  color: $c-black;
   transition: all .3s ease-out;
 
   &:hover, &:focus {
     text-decoration: none;
-    color: $c-theme-ming;
   }
 
   p {

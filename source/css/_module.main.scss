@@ -2,48 +2,79 @@
     $MAIN CONTENT AREA
 \*------------------------------------*/
 
-.main {
-  overflow: hidden;
-}
-
-/**
- * Stick the footer to viewport bottom.
- */
-html,
-body {
-  height: 100%;
-}
-
-.content {
+.l-wrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: row;
   width: 100%;
-  min-height: 100%;
-  flex-direction: column;
+  justify-content: stretch;
 }
 
-.main {
-  flex: 1 0 auto;
+.l-wrap__content {
+  width: calc(100vw/7 *6);
 }
 
-.header,
-.main {
-  width: 100%;
-  align-self: flex-start;
+.l-wrap__sabbath {
+  width: calc(100vw/7 *1);
+  background-color: $c-gray--light;
 }
 
-.header {
-  flex: none;
+.l-main {
+  z-index: 1;
+  position: relative;
+  min-height: 100vh;
 }
 
-.footer {
-  margin-top: auto;
-  width: 100%;
-}
+.l-sabbath {
+  z-index: 2;
+  position: relative;
+  padding-top: 0;
+  cursor: pointer;
 
-.hide-theme-switcher {
-  .theme-switcher {
-    display: none;
+  &__logo--inner {
+    position: relative;
+
+    > div {
+      transition: all 0.5s ease;
+    }
+  }
+
+  &__logo {
+    padding-top: $pad/2;
+    padding-left: $pad/2;
+    padding-right: $pad/2;
+    display: block;
+    width: 100%;
+    max-width: rem(200);
+    margin: 0 auto;
+
+    @include media('>large') {
+      padding-top: $pad;
+      padding-left: $pad*2;
+      padding-right: $pad*2;
+    }
+  }
+
+  &__logo-light {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__logo-dark {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+  }
+
+  &:hover {
+    .l-sabbath__logo--inner {
+      > div {
+        opacity: 1 !important;
+      }
+    }
   }
 }
 

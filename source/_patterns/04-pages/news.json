@@ -2,7 +2,7 @@
   "head": {
     "title": "News Home - The Official Site of the Seventh-day Adventist world church",
     "html_class": "pl u-theme--campfire",
-    "body_class": "body u-theme--cool"
+    "body_class": "body"
   },
 
   "page_header": {
@@ -45,7 +45,7 @@
           "slide_subtitle": "Fusce nec urna ut tellus accumsan fermentum.",
           "slide_dek": "Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue.Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue.",
           "slide_cta": "Mec cursus mi",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       },
       {
@@ -63,7 +63,7 @@
           "slide_heading": "Quisque",
           "slide_dek": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
           "slide_cta": "Aenean tempor dolor",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       },
       {
@@ -82,7 +82,7 @@
           "slide_subtitle": "Ut mollis risus a ipsum maximus ullamcorper.",
           "slide_dek": "Fusce rhoncus commodo lectus eu pretium. Donec interdum erat ut felis iaculis, id auctor elit mattis.",
           "slide_cta": "Mauris vel ornare metus",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       },
       {
@@ -101,7 +101,7 @@
           "slide_subtitle": "Nulla rhoncus semper dolor et placerat.",
           "slide_dek": "Mauris vel ornare metus. Donec rutrum arcu at erat pellentesque, vel euismod mi scelerisque. Nunc faucibus urna vel tristique volutpat. Praesent non libero sit amet neque feugiat condimentum.",
           "slide_cta": "Mec cursus mi",
-          "btn_class": "o-btn--white"
+          "btn_class": "o-button--white"
         }
       }
     ]

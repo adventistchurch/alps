@@ -26,6 +26,12 @@ figure {
 }
 
 figcaption {
+  padding: $pad-mobile/2 $pad-mobile;
+
+  @include media('>large') {
+    padding: $pad/2 $pad;
+  }
+
   a {
     display: block;
   }

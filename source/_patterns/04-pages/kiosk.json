@@ -1,8 +1,8 @@
 {
   "head": {
     "title": "The Official Site of the Seventh-day Adventist world church",
-    "html_class": "pl u-theme--campfire",
-    "body_class": "body u-theme--cool u-theme--dark"
+    "html_class": "pl",
+    "body_class": "body"
   },
 
   "heading": "Welcome to the Visitor Center",

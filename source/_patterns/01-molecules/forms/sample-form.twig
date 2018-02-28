@@ -1,54 +1,58 @@
-<div class="l-container l-container--s u-padding--double">
-  <form class="u-spacing" action="index.html" method="post">
-    <div class="u-spacing--quarter">
-      <h2 class="u-font--secondary--l u-theme--secondary-text-color">Form header</h2>
-      <hr />
+<form class="c-form u-spacing" action="index.html" method="post">
+  <h2 class="u-font--secondary--m u-theme--color--darker">Form header</h2>
+  <div class="u-spacing--quarter">
+    <label class="u-font--secondary--s" for="">Name</label>
+    <input type="text" name="name" value="">
+  </div>
+  <div class="u-spacing--quarter">
+    <label class="u-font--secondary--s" for="">Form
+      <span class="type-alpha--s text-color--gray">(Optional)</span>
+    </label>
+    <input type="text" name="name" value="">
+  </div>
+  <div class="u-spacing--quarter">
+    <label class="u-font--secondary--s u-color--red" for="">Error Label</label>
+    <input class="has-error" type="text" name="name" value="">
+    <br>
+    <small class="u-font--secondary--s u-color--red">This field is required</small>
+  </div>
+  <div class="u-spacing--quarter">
+    <label class="u-font--secondary--s" for="">Your Comments</label>
+    <textarea name="name" rows="8" cols="40">Enter a comment.</textarea>
+  </div>
+  <div class="form__checkbox u-spacing--half">
+    <div class="u-font--secondary--s">Select many options</div>
+    <div class="inline-form-element--row"><input type="checkbox" name="option" value="one">
+      <label class="u-font--secondary--s" for="">Option 1</label>
     </div>
-    <div class="u-spacing--quarter">
-      <label class="u-font--secondary--s" for="">Name</label>
-      <input type="text" name="name" value="">
+    <div class="inline-form-element--row"><input type="checkbox" name="option" value="two">
+      <label class="u-font--secondary--s" for="">Option 2</label>
     </div>
-    <div class="u-spacing--quarter">
-      <label class="u-font--secondary--s" for="">Form <span class="type-alpha--s text-color--gray">(Optional)</span></label>
-      <input type="text" name="name" value="">
+    <div class="inline-form-element--row"><input type="checkbox" name="option" value="three">
+      <label class="u-font--secondary--s" for="">Option 3</label>
     </div>
-    <div class="u-spacing--quarter">
-        <label class="u-font--secondary--s u-color--red" for="">Error Label</label>
-        <input class="has-error" type="text" name="name" value=""> <br>
-        <small class="u-font--secondary--s u-color--red">This field is required</small>
+  </div>
+  <div class="form__radio u-spacing--half">
+    <div class="u-font--secondary--s">Select one option</div>
+    <div class="inline-form-element--row"><input type="radio" name="option" value="one" checked>
+      <label class="u-font--secondary--s" for="">Option 1</label>
     </div>
-    <div class="u-spacing--quarter">
-        <label class="u-font--secondary--s" for="">Your Comments</label>
-        <textarea name="name" rows="8" cols="40">Enter a comment.</textarea>
+    <div class="inline-form-element--row"><input type="radio" name="option" value="two">
+      <label class="u-font--secondary--s" for="">Option 2</label>
     </div>
-    <div class="form__checkbox u-spacing--quarter">
-      <div class="u-font--secondary--s">Select many options</div>
-
-      <div class="inline-form-element--row"><input type="checkbox" name="option" value="one"> <label class="u-font--secondary--s" for="">Option 1</label></div>
-      <div class="inline-form-element--row"><input type="checkbox" name="option" value="two"> <label class="u-font--secondary--s" for="">Option 2</label></div>
-      <div class="inline-form-element--row"><input type="checkbox" name="option" value="three"> <label class="u-font--secondary--s" for="">Option 3</label></div>
+    <div class="inline-form-element--row"><input type="radio" name="option" value="three">
+      <label class="u-font--secondary--s" for="">Option 3</label>
     </div>
-
-    <div class="form__radio u-spacing--quarter">
-      <div class="u-font--secondary--s">Select one option</div>
-
-      <div class="inline-form-element--row"><input type="radio" name="option" value="one" checked> <label class="u-font--secondary--s" for="">Option 1</label></div>
-      <div class="inline-form-element--row"><input type="radio" name="option" value="two"> <label class="u-font--secondary--s" for="">Option 2</label></div>
-      <div class="inline-form-element--row"><input type="radio" name="option" value="three"> <label class="u-font--secondary--s" for="">Option 3</label></div>
-    </div>
-
-    <div class="form__select u-spacing--half">
-      <label class=" u-font--secondary--s" for="">Select from this list:</label>
-      <div>
-        <select>
-          <option value="one">Option 1</option>
-          <option value="two">Option 2</option>
-          <option value="three">Option 3</option>
-          <option value="four">Option 4</option>
-        </select>
-      </div>
-    </div>
-    <input class="u-theme--secondary-background-color" type="submit" value="Submit form" />
-    <input class="o-btn u-background-color--gray" type="reset" value="Cancel" />
-  </form>
-</div>
+  </div>
+  <div class="form__select u-spacing--half">
+    <label class=" u-font--secondary--s" for="">Select from this list:</label>
+    <select>
+      <option value="one">Option 1</option>
+      <option value="two">Option 2</option>
+      <option value="three">Option 3</option>
+      <option value="four">Option 4</option>
+    </select>
+  </div>
+  <input class="u-theme--secondary-background-color" type="submit" value="Submit form"/>
+  <input class="o-button o-button--simple" type="reset" value="Cancel"/>
+</form>

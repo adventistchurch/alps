@@ -46,8 +46,7 @@ module.exports = function(grunt) {
     sass: {
       options: {
         imagePath: 'source/images',
-        precision: 5,
-        includePaths: require('node-bourbon').includePaths
+        precision: 5
       },
       dev: {
         options: {

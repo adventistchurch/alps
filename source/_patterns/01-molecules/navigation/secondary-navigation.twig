@@ -1,8 +1,16 @@
 {% if secondary_nav %}
 <nav class="c-secondary-nav" id="c-secondary-nav" role="navigation">
   <ul class="c-secondary-nav__list">
+    <li class="c-secondary-nav__list-item c-secondary-nav__list-item__language c-secondary-nav__list-item__toggle is-priority">
+      <select class="u-font--secondary-nav u-color--gray">
+        <option value="language">Language</option>
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+      </select>
+    </li>
     {% for item in secondary_nav.items %}
-      <li class="c-secondary-nav__list-item {% if item.priority == true %}{{ 'is-priority' }}{% endif %}{% if item.subnav %}{{ 'has-subnav' }}{% endif %}" {% if item.subnav %} data-prefix="hover" {% endif %}>
+      <li class="c-secondary-nav__list-item {% if item.priority == true %}{{ 'is-priority' }}{% endif %}{% if item.subnav %}{{ 'has-subnav' }}{% endif %}">
         <a href="{{ item.url }}" class="c-secondary-nav__link u-font--secondary-nav u-color--gray u-theme--link-hover--base">
           {% if item.icon %}<span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/' ~ item.icon ~ '.twig' %}</span>{% endif %}
           {{ item.text }} {% if item.subnav %}<span class="c-subnav__arrow o-arrow--down"></span>{% endif %}

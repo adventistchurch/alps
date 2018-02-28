@@ -17,7 +17,8 @@ p {
  * Bold
  */
 strong,
-b {
+b,
+.u-font-weight--bold {
   font-weight: 600;
 }
 
@@ -25,20 +26,21 @@ b {
  * Blockquote
  */
 blockquote {
-  padding: 0;
-  border: none;
   text-align: left;
   position: relative;
   quotes: "\201C""\201D""\2018""\2019";
   padding-left: $pad;
+  border-left: 3px solid $c-black;
+  display: flex;
+  flex-direction: column;;
 
   p {
     font-size: rem(24);
     line-height: 1.3;
     position: relative;
     z-index: 10;
-    font-style: italic;
-    text-indent: rem(25);
+    font-weight: bold;
+    text-indent: $pad;
     margin-top: $space;
 
     &:first-child {
@@ -52,7 +54,7 @@ blockquote {
     &:before {
       content: open-quote;
       position: absolute;
-      left: rem(-20);
+      left: -$pad;
       top: 0;
     }
   }

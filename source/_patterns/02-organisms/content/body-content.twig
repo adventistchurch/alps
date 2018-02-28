@@ -1,31 +1,31 @@
-<div class="u-spacing--double">
-  <div class="u-padding--primary u-spacing text">
-    <h2 class="u-font--tertiary--l u-theme--primary-text-color">{{ text.heading  | raw}}</h2>
-    <p class="intro u-font--primary--m">{{ text.intro  | raw}}</p>
+<div class="u-spacing--triple">
+  <div class="text u-spacing">
+    <div class="u-padding--sides u-spacing">
+      <h2 class="u-font--secondary--l u-theme--color--darker">{{ text.heading | raw}}</h2>
+      <p class="o-intro">{{ text.intro | raw }}</p>
+    </div>
     {% include '@molecules/media/video-figure-with-caption.twig' with {'figure_class': 'size--large'} %}
   </div>
 
-  <hr>
-  {% for block in row_blocks %}
-    <div class="u-padding--primary u-spacing--half">
-      {% include '@molecules/blocks/media-block.twig' with block%}
-    </div>
-    <hr>
-  {% endfor %}
+  <section class="c-section c-section__blocks u-spacing--double">
+    {% for block in row_blocks %}
+      {% include '@molecules/blocks/media-block.twig' with block %}
+    {% endfor %}
+  </section>
 
-  {% for block in content_blocks %}
-    <div class="u-padding--primary u-spacing--half text">
-      <h3 class="u-color--brown u-font--tertiary--l">{{ block.text.heading | raw}}</h3>
-      <p>{{ block.text.description | raw }} {% if block.text.cta %} <a href="{{ block.url }}" class="u-font--secondary--s u-text-transform--upper"><strong>{{ block.text.cta | raw}}</strong></a> {% endif %}</p>
-    </div>
-    <hr>
-  {% endfor %}
+  <section class="c-section c-section__blocks u-spacing--double">
+    {% for block in content_blocks %}
+      {% include '@molecules/blocks/content-block.twig' with block %}
+    {% endfor %}
+  </section>
 
-  <div class="u-spacing--zero">
-    <hr>
-    {% include '@organisms/sections/heading-block-list.twig' %}
-  </div>
+  <section class="c-section c-section__blocks u-spacing--double">
+    {% for block in page_content_blocks %}
+      {% include '@molecules/blocks/content-block.twig' with block %}
+    {% endfor %}
+  </section>
 
-  {% include '@molecules/blocks/story-block.twig' %}
-
+  <section class="c-section c-section__blocks">
+    {% include '@molecules/blocks/story-block.twig' %}
+  </section>
 </div>
