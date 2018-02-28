@@ -3,7 +3,7 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid--7-col",
-        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--left",
+        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--right",
         "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col l-grid-item--xl--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--s",
         "block_meta_class": "u-theme--color--base u-font--secondary--xs",
@@ -27,7 +27,7 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid--7-col",
-        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--left",
+        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--right",
         "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col l-grid-item--xl--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--s",
         "block_meta_class": "u-theme--color--base u-font--secondary--xs",

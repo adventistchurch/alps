@@ -158,11 +158,7 @@
   flex-direction: column;
   flex-direction: row;
 
-  > * {
-    padding: 0;
-  }
-
-  .c-block__image {
+  &__image {
     padding: 0;
   }
 
@@ -186,6 +182,15 @@
 
   &--reversed {
     flex-direction: row-reverse;
+  }
+}
+
+/**
+ * Hero block
+ */
+.c-block__hero {
+  .c-block__image {
+    padding: 0;
   }
 }
 
