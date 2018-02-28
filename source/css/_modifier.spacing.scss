@@ -55,9 +55,9 @@
 }
 
 .u-spacing--at-medium {
-  @include media('<=medium') {
+  @include media('>medium') {
     & > * + * {
-      margin-top: $pad-mobile;
+      margin-top: $pad;
     }
   }
 }
