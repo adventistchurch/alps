@@ -358,6 +358,13 @@ module.exports = function(grunt) {
       production: {
         // Target-specific file lists and/or options go here.
       },
+    },
+    'gh-pages': {
+      options: {
+        base: 'cdn',
+        branch: 'cdn'
+      },
+      src: ['**']
     }
 
   });
@@ -427,7 +434,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('cdn', [
-    'buildGhPages:production'
+    'gh-pages'
   ]);
 
   /**
