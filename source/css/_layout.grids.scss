@@ -215,6 +215,11 @@
   }
 
   @include media('>medium') {
+    &--break-at--medium {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
     .l-grid-item--m {
       &--1-col {
         width: calc((100vw / 7) * 1);
@@ -243,6 +248,11 @@
   }
 
   @include media('>large') {
+    &--break-at--large {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
     .l-grid-item--l {
       &--1-col {
         width: calc((100vw / 7) * 1);
@@ -271,9 +281,11 @@
   }
 
   @include media('>xxlarge') {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    &--break-at--xxlarge {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
     .l-grid-item--xl {
       &--1-col {
         width: calc((100vw / 7) * 1);
