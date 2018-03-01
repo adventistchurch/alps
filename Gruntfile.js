@@ -349,6 +349,14 @@ module.exports = function(grunt) {
         watchTask: true,
         proxy: "alps.test"
       }
+    },
+    'gh-pages': {
+      options: {
+        base: 'cdn',
+        branch: 'cdn',
+        add: true
+      },
+      src: ['**']
     }
 
   });
@@ -417,6 +425,13 @@ module.exports = function(grunt) {
     'add_comment:prod'
   ]);
 
+  /**
+   * CDN tasks to push production files to the CDN branch.
+   */
+  grunt.registerTask('cdn', [
+    'prod',
+    'gh-pages'
+  ]);
   /**
    * DeployBot Task
    */
