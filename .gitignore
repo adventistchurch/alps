@@ -8,6 +8,7 @@
 /source--mustache
 /source/drupal-patterns
 /cdn
+.grunt/
 
 
 # Ignore IDE-specific files
