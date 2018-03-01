@@ -362,7 +362,8 @@ module.exports = function(grunt) {
     'gh-pages': {
       options: {
         base: 'cdn',
-        branch: 'cdn'
+        branch: 'cdn',
+        add: true
       },
       src: ['**']
     }
