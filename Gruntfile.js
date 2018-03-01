@@ -348,7 +348,17 @@ module.exports = function(grunt) {
         watchTask: true,
         proxy: "alps.test"
       }
-    }
+    },
+    buildGhPages: {
+      options: {
+        // Task-specific options go here.
+        build_branch: "cdn",
+        dist: "cdn"
+      },
+      production: {
+        // Target-specific file lists and/or options go here.
+      },
+    },
 
   });
 
@@ -414,6 +424,10 @@ module.exports = function(grunt) {
     'symlink',
     'copy:prod',
     'add_comment:prod'
+  ]);
+
+  grunt.registerTask('cdn', [
+    'buildGhPages:production'
   ]);
 
   /**
