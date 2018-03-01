@@ -54,6 +54,13 @@
   }
 }
 
+.u-spacing--until-small {
+  @include media('<=small') {
+    & > * + * {
+      margin-top: map-get($sizes, '');
+    }
+  }
+}
 .u-spacing--double--until-xxlarge {
   @include media('<=xxlarge') {
     & > * + * {

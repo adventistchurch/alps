@@ -195,19 +195,25 @@
 }
 
 .c-block__stacked {
- flex-direction: column;
+  flex-direction: column;
 
- .c-block__content {
-   padding-bottom: 0;
+  &--until-small {
+    @include media('<=small') {
+      flex-direction: column;
+    }
+  }
 
-   @include media('>small') {
-     padding-top: $pad-mobile;
-   }
+  .c-block__content {
+    padding-bottom: 0;
 
-   @include media('>large') {
-     padding-top: $pad;
-   }
- }
+    @include media('>small') {
+      padding-top: $pad-mobile;
+    }
+
+    @include media('>large') {
+      padding-top: $pad;
+    }
+  }
 }
 
 .c-block__inset {
