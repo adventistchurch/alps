@@ -349,16 +349,6 @@ module.exports = function(grunt) {
         proxy: "alps.test"
       }
     },
-    buildGhPages: {
-      options: {
-        // Task-specific options go here.
-        dist: "cdn",
-        build_branch: "cdn"
-      },
-      production: {
-        // Target-specific file lists and/or options go here.
-      },
-    },
     'gh-pages': {
       options: {
         base: 'cdn',
