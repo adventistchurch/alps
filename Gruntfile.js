@@ -352,13 +352,13 @@ module.exports = function(grunt) {
     buildGhPages: {
       options: {
         // Task-specific options go here.
-        build_branch: "cdn",
-        dist: "cdn"
+        dist: "cdn",
+        build_branch: "cdn"
       },
       production: {
         // Target-specific file lists and/or options go here.
       },
-    },
+    }
 
   });
 
