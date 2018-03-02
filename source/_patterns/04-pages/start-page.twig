@@ -1,16 +1,17 @@
-<link rel="stylesheet" href="/styleguide/css/styleguide.min.css" media="all" />
-<link rel="stylesheet" href="/styleguide/css/prism-typeahead.min.css" media="all" />
-<div class="content u-clear-fix" role="document">
-  <main class="main can-be--dark-dark u-background-color--white" role="main">
-    <div class="l-container u-spacing pre-header active">
-      <div class="sg-alps-logo-wrap">
+<link rel="stylesheet" href="/v3/styleguide/css/styleguide.min.css" media="all" />
+<link rel="stylesheet" href="/v3/styleguide/css/prism-typeahead.min.css" media="all" />
+
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    <div class="sg-alps-logo-wrap">
         <a href="/" class="sg-alps-logo"><img src="/v3/images/logo-alps.svg" alt="ALPS - Adventist Living Pattern System"></a>
       </div>
-      <div class="sg-introduction u-position--relative">
-        <div class="u-clear-fix l-flex-container">
-          <div class="l-shift-left--fluid u-padding--double">
-            <div class="text u-spacing">
-              <h1 class="u-font--secondary--l">Welcome to the Adventist Living Pattern System</h1>
+    <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
+      <section class="l-grid--7-col l-grid--7-col--l--offset-1 l-grid--7-col--break-at--medium l-grid-wrap--6-of-7 u-spacing--at-medium">
+        <article class="c-article l-grid-item l-grid-item--m--4-col l-grid-item--l--3-col">
+          <div class="c-article__body u-spacing">
+
+            <h1 class="u-font--secondary--l">Welcome to the Adventist Living Pattern System</h1>
               <p>We are glad you found ALPS. Take a look around, and see what you think. There is lots to explore. You can find
                 <a href="https://github.com/adventistchurch/alps/" target="_blank">the code on Github</a>, check it out,
                 <a href="https://github.com/adventistchurch/alps/issues" target="_blank">file issues</a>, and create pull requests. This code belongs to the Adventist church. It&rsquo;s ours!</p>
@@ -30,9 +31,9 @@
               <p>Include this code in the
                 <code>&lt;head&gt;</code> of your page. This include the fonts, ALPS css, and the Javascript needed to start the page.</p>
               <pre class="language-markup"><code class="language-markup" id="head_code">
-  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;//fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat|Oswald&#x22; media=&#x22;all&#x22;&#x3E;<br>
-  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;//cdn.adventist.org/alps/2/latest/css/main.css&#x22; media=&#x22;all&#x22;&#x3E;<br>
-  &#x3C;script src=&#x22;//cdn.adventist.org/alps/2/latest/js/head-script.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;</code>
+  &#x3C;link href=&#x22;https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i,700,700i&#x22; rel=&#x22;stylesheet&#x22;&#x3E;<br>
+  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;//cdn.adventist.org/alps/3/latest/css/main.css&#x22; media=&#x22;all&#x22;&#x3E;<br>
+  &#x3C;script src=&#x22;//cdn.adventist.org/alps/3/latest/js/head-script.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;</code>
               </pre>
               <h3 class="u-font--secondary--m">Footer</h3>
               <p>Include this code in the footer of your page, right before the closing
@@ -40,12 +41,14 @@
               </p>
               <pre class="language-markup"><code class="language-markup">
   &lt;script src=&quot;https://code.jquery.com/jquery-2.2.4.min.js&quot;&gt;&lt;/script&gt;<br>
-  &lt;script src=&quot;//cdn.adventist.org/alps/2/latest/js/script.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
+  &lt;script src=&quot;//cdn.adventist.org/alps/3/latest/js/script.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
               </pre>
-            </div>
+
           </div>
-          <div class="l-shift-right--fluid u-padding--double text u-spacing">
-            <h3 class="u-color--red u-font--secondary--m">Version 3.x is a WIP</h3>
+        </article>
+        <div class="l-sidebar l-grid-item l-grid-item--m--2-col l-grid-item--l--2-col u-spacing--triple u-padding--zero--sides">
+
+          <h3 class="u-color--red u-font--secondary--m">Version 3.x is a WIP</h3>
             <h3 class="u-font--secondary--m">Follow on GitHub</h3>
             <p class="u-font--primary--xs">ALPS is available on GitHub as a public project where you can download, file issues and pull requests, and follow the progress.
             </p>
@@ -59,17 +62,18 @@
               <p class="u-font--primary--xs">Do you have questions about ALPS? I'd love to hear from you and help make it work for your Adventist website.</p>
               <p class="u-font--primary--xs">
                 <a href="http://gain.adventist.org/slack" target="_blank">
-                  <img src="/v3/images/slack_rgb.png" alt="Connect to the GAiN Slack Channel" /> Join us on the free GAiN Slack channel in #designsystem.
+                  <img src="/v3/images/slack_rgb.png" alt="Connect to the GAiN Slack Channel" /> <br /> Join us on the free GAiN Slack channel in #designsystem.
                 </a>
               </p>
-          </div>
-        </div>
-        <!-- /.l-grid--2-col--70-30--at-medium -->
-      </div>
-    </div>
-  </main>
-  {% include '@organisms/global/footer.twig' %}
-</div>
-<script src="/styleguide/bower_components/prism.min.js"></script>
+
+        </div> <!-- /.l-sidebar -->
+      </section>
+    </main> <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div> <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div><!-- ./l-wrap -->
+
+<script src="/v3/styleguide/bower_components/prism.min.js"></script>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
