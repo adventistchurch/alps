@@ -3,14 +3,16 @@
     <a href="" class="c-block__link">
       <h3 class="u-theme--color--darker {{ content_block_default.title_class }}"><strong>{{ content_block_default.title }}</strong></h3>
     </a>
-    {% if content_block_default.description %}
-      <p class="c-block__body text">{{ content_block_default.description | raw }}</p>
-    {% endif %}
-    {% if content_block_default.category %}
-      <span class="c-block__meta u-theme--color--dark u-font--secondary--xs">{{ content_block_default.category }}</span>
-    {% endif %}
-    {% if content_block_default.cta %}
-      <a href="" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
-    {% endif %}
+    <div class="u-spacing">
+      {% if content_block_default.description %}
+        <p class="c-block__body text">{{ content_block_default.description | raw }}</p>
+      {% endif %}
+      {% if content_block_default.category %}
+        <span class="c-block__meta u-theme--color--dark u-font--secondary--xs">{{ content_block_default.category }}</span>
+      {% endif %}
+      {% if content_block_default.cta %}
+        <a href="" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+      {% endif %}
+    </div>
   </div>
 {% endif %}
