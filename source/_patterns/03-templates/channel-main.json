@@ -1,34 +1,3 @@
 {
-  "media_block_default": {
-    "block_class": "c-block__inset c-media-block__inset",
-    "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker",
-    "block_title_class": "l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col u-font--primary--xl is-featured",
-    "block_meta_class": "l-grid-item l-grid-item--l--2-col l-grid-item--xl--2-col",
-    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "kicker": false,
-    "description": false,
-    "category": false,
-    "datetime": "2017-12-28",
-    "date": "December 28, 2017",
-    "picture": {
-      "img_break_m": "500",
-      "img": {
-        "alt": "Alt Text",
-        "src_s": "//unsplash.it/500/375/?random",
-        "src_m": "//unsplash.it/800/450/?random"
-      },
-      "has_break_l": {
-        "img_break_l": "800",
-        "img": {
-          "src_l": "//unsplash.it/1000/400/?random"
-        }
-      },
-      "has_break_xl": {
-        "img_break_xl": "1000",
-        "img": {
-          "src_xl": "//unsplash.it/1440/500/?random"
-        }
-      }
-    }
-  }
+
 }

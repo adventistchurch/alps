@@ -61,6 +61,13 @@
     }
   }
 }
+.u-spacing--until-medium {
+  @include media('<=medium') {
+    & > * + * {
+      margin-top: $pad;
+    }
+  }
+}
 .u-spacing--double--until-xxlarge {
   @include media('<=xxlarge') {
     & > * + * {
@@ -69,13 +76,7 @@
   }
 }
 
-.u-spacing--at-medium {
-  @include media('>medium') {
-    & > * + * {
-      margin-top: $pad;
-    }
-  }
-}
+
 
 .u-padding--sides {
   padding-left: $pad-mobile;

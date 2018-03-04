@@ -721,7 +721,10 @@
     ]
   }],
 
-  "page_header": true,
+  "page_header": {
+    "kicker": "Maecenas",
+    "heading": "Lorem Ipsum"
+  },
 
   "page_header_longform": {
     "heading": "Nunc malesuada mauris",
