@@ -15,6 +15,7 @@
     "grunt-contrib-symlink": "^1.0.0",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-gh-pages": "^2.0.0",
     "grunt-htmlhint": "0.9.12-fix",
     "grunt-mkdir": "^1.0.0",
     "grunt-sass": "^1.2.0",

@@ -348,6 +348,14 @@ module.exports = function(grunt) {
         watchTask: true,
         proxy: "alps.test"
       }
+    },
+    'gh-pages': {
+      options: {
+        base: 'cdn',
+        branch: 'cdn',
+        add: true
+      },
+      src: ['**']
     }
 
   });
@@ -414,6 +422,10 @@ module.exports = function(grunt) {
     'symlink',
     'copy:prod',
     'add_comment:prod'
+  ]);
+
+  grunt.registerTask('cdn', [
+    'gh-pages'
   ]);
 
   /**
