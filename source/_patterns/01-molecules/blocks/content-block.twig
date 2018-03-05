@@ -1,5 +1,4 @@
 {% if content_block_default %}
-<div class="u-spacing">
   <div class="c-block c-block__text {% if content_block_default.img %}{{ 'has-image' }}{% endif %} u-theme--border-color--darker u-border--left {{ content_block_default.block_class }}">
     {% if content_block_default.img %}
       <img class="c-block__image" src="{{ content_block_default.img.src }}" />
@@ -26,5 +25,4 @@
       {% endif %}
     {% endif %}
   </div>
-</div>
 {% endif %}

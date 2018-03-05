@@ -206,6 +206,12 @@
         padding-left: 0;
       }
     }
+
+    .c-block__image {
+      @include media('>large') {
+        padding-left: 0;
+      }
+    }
   }
 
   .c-block__content {

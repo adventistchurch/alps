@@ -1,7 +1,7 @@
 {
   "media_block_default": {
     "block_class": "c-block__inset c-media-block__inset",
-    "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker",
+    "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker u-color--white",
     "block_title_class": "l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col u-font--primary--xl is-featured",
     "block_meta_class": "l-grid-item l-grid-item--l--2-col l-grid-item--xl--2-col",
     "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -30,5 +30,18 @@
         }
       }
     }
+  },
+
+  "content_block_default": {
+    "expand": true,
+    "block_class": "c-block__text-expand u-spacing u-background-color--gray--light u-padding u-clear-fix",
+    "title_class": "u-font--primary--m",
+    "title": "Sharon Aka",
+    "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus.",
+    "img": {
+      "src": "//source.unsplash.com/400x400",
+      "alt": "Image Alt"
+    },
+    "body": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum."
   }
 }

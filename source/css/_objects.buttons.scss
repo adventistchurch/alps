@@ -74,6 +74,8 @@ input[type="submit"] {
 }
 
 .o-button--expand {
+  display: table;
+
   &::after {
     content: "Show More";
     display: table-cell;

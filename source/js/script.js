@@ -105,7 +105,7 @@
   });
 
   // Add color classes
-  $('.is-featured').addClass('u-theme--color--lighter');
+  //$('.is-featured').addClass('u-theme--color--lighter');
 
   /**
    * Fixto

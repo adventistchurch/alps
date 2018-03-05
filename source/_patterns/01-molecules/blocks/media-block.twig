@@ -20,7 +20,7 @@
             <img src="{{ media_block_default.img.src }}" itemprop="image" alt="{{ media_block_default.img.alt }}" />
           {% endif %}
         </div>
-      </div>
+      </div> <!-- c-media-block__image -->
     {% endif %}
     <div class="c-media-block__content c-block__content u-spacing {{ media_block_default.block_content_class }}">
       {% if media_block_default.kicker %}
@@ -46,5 +46,5 @@
         <a href="" class="c-block__button o-button o-button--outline">{{ media_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
       {% endif %}
     </div> <!-- c-media-block__content -->
-  </div> <!-- media-block -->
+  </div> <!-- c-media-block -->
 {% endif %}

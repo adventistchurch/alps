@@ -12,16 +12,16 @@
   background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
 }
 
-.is-featured::before {
-  @include u-font--primary--xl;
-
-  font-weight: bold;
-  content: "Featured";
-  display: inline-block;
-  width: auto;
-  font-style: italic;
-  text-transform: capitalize;
-}
+// .is-featured::before {
+//   @include u-font--primary--xl;
+//
+//   font-weight: bold;
+//   content: "Featured";
+//   display: inline-block;
+//   width: auto;
+//   font-style: italic;
+//   text-transform: capitalize;
+// }
 
 .has-grid {
   position: relative;

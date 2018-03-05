@@ -220,6 +220,20 @@ $themes: (
           border-color: $light;
         }
       }
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: $darker;
+      }
+
+      ul, ol {
+        li::before {
+          color: $base;
+        }
+      }
     }
 
     // Buttons
@@ -403,6 +417,60 @@ $themes: (
 
           &:hover {
             border-color: $lighter;
+          }
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: $lighter;
+        }
+
+        ul,
+        ol {
+          li::before {
+            color: $lighter;
+          }
+        }
+      }
+
+      &.c-form {
+        .c-form-group {
+          position: relative;
+
+          input {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid $lighter;
+            outline: 0;
+            color: $lighter;
+            padding-left: 0;
+            padding-bottom: rem(10);
+          }
+
+          input::placeholder {
+            color: $lighter;
+          }
+
+          label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $lighter;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease;
+          }
+
+          input:focus + label {
+            top: rem(-15);
+            font-size: rem(10);
+            font-weight: bold;
+            text-transform: uppercase;
+            opacity: 1;
+            visibility: visible;
           }
         }
       }
