@@ -19,7 +19,7 @@
   <header class="c-page-header c-page-header__swath u-theme--background-color--base {{ page_header.page_header_class }}">
     <div class="c-page-header__swath--inner u-padding">
       {%  if page_header.kicker %}<span class="o-kicker u-color--white">{{ page_header.kicker | raw }}</span> {% endif %}
-      <h1 class="u-font--primary--xl u-color--white"><a class="u-link--white u-link-hover--white" href="">{{ heading }}</a></h1>
+      <h1 class="u-font--primary--xl u-color--white"><a class="u-link--white u-link-hover--white" href="">{{ page_header.title }}</a></h1>
     </div>
   </header> <!-- /.header__swath -->
 {% endif %}

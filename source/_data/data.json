@@ -731,7 +731,9 @@
     ]
   }],
 
-  "page_header": true,
+  "page_header": {
+    "title": "Lorem Ipsum"
+  },
 
   "page_header_longform": {
     "heading": "Nunc malesuada mauris",

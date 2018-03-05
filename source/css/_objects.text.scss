@@ -2,109 +2,6 @@
     $TEXT TYPES
 \*------------------------------------*/
 
-.o-intro {
-  font-size: 110%;
-  line-height: 150%;
-
-  a {
-    border-bottom: 1px solid $c-black;
-  }
-}
-
-.o-dropcap {
-  color: $c-white;
-  display: block;
-  float: left;
-  width: calc((100vw / 7 * 2) - 30px);
-  margin-right: $pad-mobile;
-  overflow: hidden;
-  position: relative;
-  content: "";
-
-  @include media('>medium') {
-    width: calc((100vw / 7 * 1) - 30px);
-  }
-
-  @include media('>large') {
-    width: calc((100vw / 7 * 1) - 40px);
-    margin-right: $pad;
-    margin-bottom: $pad/2;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  }
-
-  &::before {
-    content: attr(data-letter);
-    position: absolute;
-    text-align: center;
-    font-family: $ff-font;
-    font-size: 16vw;
-    display: block;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @include media('>medium') {
-      font-size: 12vw;
-    }
-
-    @include media('>large') {
-      font-size: 8vw;
-    }
-  }
-}
-
-/**
- * Dek
- */
-.o-dek {
-  p {
-    margin-bottom: 0;
-  }
-}
-
-/**
- * Kicker/Eyebrow
- */
-.o-kicker {
-  line-height: 1;
-  margin-bottom: rem(8);
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-/**
- * Citation
- */
-.o-citation {
-  display: block;
-  font-style: normal;
-  text-transform: uppercase;
-  font-family: $ff-font;
-  text-align: right;
-}
-
-/**
- * Caption
- */
-.o-caption {
-  line-height: 1.35;
-  font-style: italic;
-}
-
-/**
- * No Wrapping
- */
-.u-no-wrap {
-  white-space: nowrap;
-}
-
 /**
  * Font Families
  */
@@ -602,4 +499,108 @@
   pre {
     font-size: 125%;
   }
+}
+
+.o-intro {
+  font-size: 110%;
+  line-height: 150%;
+
+  a {
+    border-bottom: 1px solid $c-black;
+  }
+}
+
+.o-dropcap {
+  color: $c-white;
+  display: block;
+  float: left;
+  width: calc((100vw / 7 * 2) - 30px);
+  margin-right: $pad-mobile;
+  overflow: hidden;
+  position: relative;
+  content: "";
+
+  @include media('>medium') {
+    width: calc((100vw / 7 * 1) - 30px);
+  }
+
+  @include media('>large') {
+    width: calc((100vw / 7 * 1) - 40px);
+    margin-right: $pad;
+    margin-bottom: $pad/2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  &::before {
+    content: attr(data-letter);
+    position: absolute;
+    text-align: center;
+    font-family: $ff-font;
+    font-size: 16vw;
+    display: block;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include media('>medium') {
+      font-size: 12vw;
+    }
+
+    @include media('>large') {
+      font-size: 8vw;
+    }
+  }
+}
+
+/**
+ * Dek
+ */
+.o-dek {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Kicker/Eyebrow
+ */
+.o-kicker {
+  line-height: 1;
+  margin-bottom: rem(8);
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/**
+ * Citation
+ */
+.o-citation {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-top: $space/2;
+
+  @include u-font--secondary--s;
+}
+
+/**
+ * Caption
+ */
+.o-caption {
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/**
+ * No Wrapping
+ */
+.u-no-wrap {
+  white-space: nowrap;
 }
