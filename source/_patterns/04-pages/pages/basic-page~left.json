@@ -1,0 +1,93 @@
+{
+  "head": {
+    "title": "Basic Page – Left - The Official Site of the Seventh-day Adventist world church",
+    "html_class": "pl u-theme--grapevine",
+    "body_class": "body"
+  },
+
+  "page_header": {
+    "has_image": true,
+    "kicker": "Maecenas",
+    "heading": "Unabhaeng Freundschaftsbezeigungen Zeigungen"
+  },
+  "page_reversed": true,
+
+  "accordion_list": [
+    {
+      "accordion_heading": "Commodo at leo suspendisse:",
+      "media_block_default": {
+        "block_title_class": "u-font--secondary--m",
+        "title": "Commodo at leo suspendiss",
+        "img": {
+          "src": "//placehold.it/500x400",
+          "alt": "Media Block Image Alt"
+        },
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "cta": "Read more"
+       }
+
+    },
+    {
+      "accordion_heading": "Phasellus at sem eros:",
+      "media_block_default": {
+        "block_title_class": "u-font--secondary--m",
+        "title": "Phasellus at sem eros",
+        "img": {
+          "src": "//placehold.it/500x400",
+          "alt": "Media Block Image Alt"
+        },
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "cta": "Read more"
+       }
+    },
+    {
+      "accordion_heading": "Aliquam purus nulla:",
+      "media_block_default": {
+        "block_title_class": "u-font--secondary--m",
+        "title": "Aliquam purus nulla",
+        "img": {
+          "src": "//placehold.it/500x400",
+          "alt": "Media Block Image Alt"
+        },
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "cta": "Read more"
+       }
+    },
+    {
+      "accordion_heading": "Sodales tortor et porta convallis:",
+      "media_block_default": {
+        "block_title_class": "u-font--secondary--m",
+        "title": "Sodales tortor et porta convallis",
+        "img": {
+          "src": "//placehold.it/500x400",
+          "alt": "Media Block Image Alt"
+        },
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "cta": "Read more"
+       }
+    },
+    {
+      "accordion_heading": "Donec dignissim sed risus egestas:",
+      "media_block_default": {
+        "block_title_class": "u-font--secondary--m",
+        "title": "Donec dignissim sed risus egestas",
+        "img": {
+          "src": "//placehold.it/500x400",
+          "alt": "Media Block Image Alt"
+        },
+        "datetime": "2016-12-12",
+        "date": "Mar 28, 2016",
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "cta": "Read more"
+       }
+    }
+  ]
+}

@@ -455,7 +455,7 @@
 
   "content_blocks": [{
       "content_block_default": {
-        "block_class": "u-spacing",
+        "block_class": "u-spacing--half",
         "title_class": "u-font--secondary--m u-text-transform--upper",
         "title": "Aliquam malesuada viverra velit",
         "description": "<a href=''>Fusce interdum</a> purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
@@ -464,7 +464,7 @@
     },
     {
       "content_block_default": {
-        "block_class": "u-spacing",
+        "block_class": "u-spacing--half",
         "title_class": "u-font--secondary--m u-text-transform--upper",
         "title": "Aenean quis velit vel",
         "description": "<a href=''>Fusce interdum</a> purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
@@ -475,7 +475,7 @@
 
   "page_content_blocks": [{
       "content_block_default": {
-        "block_class": "u-spacing",
+        "block_class": "u-spacing--half",
         "title_class": "u-font--primary--m",
         "title": "General Conference",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
@@ -484,7 +484,7 @@
     },
     {
       "content_block_default": {
-        "block_class": "u-spacing",
+        "block_class": "u-spacing--half",
         "title_class": "u-font--primary--m",
         "title": "East-Central Africa",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
@@ -493,7 +493,7 @@
     },
     {
       "content_block_default": {
-        "block_class": "u-spacing",
+        "block_class": "u-spacing--half",
         "title_class": "u-font--primary--m",
         "title": "Euro-Asia",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
@@ -502,7 +502,7 @@
     },
     {
       "content_block_default": {
-        "block_class": "u-spacing",
+        "block_class": "u-spacing--half",
         "title_class": "u-font--primary--m",
         "title": "Middle East and North Africa",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
@@ -551,9 +551,10 @@
 
   "row_blocks": [{
       "media_block_default": {
-        "block_class": "c-media-block c-block c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+        "block_class": "c-media-block c-block c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-standard-break",
         "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--m--3-col l-grid-item--l--2-col u-flex--justify-start",
-        "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-round u-height--s--2-col u-height--m--1-col u-padding--zero--sides",
+        "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-height--s--2-col u-height--m--1-col",
+        "block_img_wrap_class": "u-round",
         "block_kicker_class": "u-theme--color--base can-be--light",
         "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
         "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
@@ -588,7 +589,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-media-block c-block c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+        "block_class": "c-media-block c-block c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-standard-break",
         "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--m--3-col l-grid-item--l--2-col u-flex--justify-start",
         "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--sides",
         "block_kicker_class": "u-theme--color--base can-be--light",
@@ -625,7 +626,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-media-block c-block c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+        "block_class": "c-media-block c-block c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-standard-break",
         "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--m--3-col l-grid-item--l--2-col u-flex--justify-start",
         "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--sides",
         "block_kicker_class": "u-theme--color--base can-be--light",

@@ -232,11 +232,6 @@
   @include media('>small') {
     overflow: hidden;
     border-radius: 100%;
-    position: relative;
-
-    img {
-      position: absolute;
-    }
   }
 }
 

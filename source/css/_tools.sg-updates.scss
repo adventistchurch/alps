@@ -31,6 +31,24 @@
   }
 }
 
+.sg-pattern-state {
+  &.inprocess {
+    &:before {
+      color: red;
+    }
+  }
+  &.inreview {
+    &:before {
+      color: yellow;
+    }
+  }
+  &.complete {
+    &:before {
+      color: green;
+    }
+  }
+}
+
 /**
  * Styleguide Chrome Styles (Wrapper Controls)
  */
