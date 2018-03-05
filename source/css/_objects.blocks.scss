@@ -201,6 +201,11 @@
     @include media('<=small') {
       flex-direction: column;
     }
+    .c-block__content {
+      @include media('>small') {
+        padding-left: 0;
+      }
+    }
   }
 
   .c-block__content {
