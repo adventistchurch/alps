@@ -1,0 +1,58 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
+      {% include '@organisms/sections/page-header.twig' %}
+      {% include '@organisms/sections/page-header-carousel.twig' %}
+      <section class="l-grid l-grid--7-col l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge">
+        <div class="l-grid-item l-grid-item--l--4-col u-padding--zero--sides">
+          {% for content in featured_content %}
+            <div class="c-block-wrap u-spacing u-padding--right">
+              <div class="c-block__heading u-theme--border-color--darker">
+                <h3 class="c-block__heading-title u-theme--color--darker">{{ content.featured_heading }}</h3>
+                <a href="" class="c-block__heading-link u-theme--color--base">See All</a>
+              </div>
+              <div class="c-block-wrap__content u-spacing">
+                {% for block in content.featured_blocks %}
+                  {% include '@molecules/blocks/media-block.twig' with block %}
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="l-grid-item l-grid-item--l--2-col u-padding--zero--sides">
+          {% for content in aside_content %}
+            <div class="c-block-wrap u-spacing u-padding--right">
+              <div class="c-block__heading u-theme--border-color--darker">
+                <h3 class="c-block__heading-title u-theme--color--darker">{{ content.aside_heading }}</h3>
+                <a href="" class="c-block__heading-link u-theme--color--base">See All</a>
+              </div>
+              <div class="c-block-wrap__content">
+                {% for block in content.aside_blocks %}
+                  {% include '@molecules/blocks/content-block.twig' with block %}
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+      <section class="l-grid l-grid--7-col l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge">
+        {% for content in media_content %}
+          <div class="c-block-wrap u-spacing u-padding--zero--sides">
+            <div class="c-block__heading u-theme--border-color--darker">
+              <h3 class="c-block__heading-title u-theme--color--darker">{{ content.media_heading }}</h3>
+              <a href="" class="c-block__heading-link u-theme--color--base">See All</a>
+            </div>
+            <div class="c-block-wrap__content">
+              {% for block in content.media_blocks %}
+                {% include '@molecules/blocks/media-block.twig' with block %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </section>
+    </main> <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div> <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div><!-- ./l-wrap -->

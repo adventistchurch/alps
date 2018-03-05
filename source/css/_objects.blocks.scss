@@ -271,10 +271,18 @@
 
   .c-block__content {
     justify-content: flex-end;
-    padding: $pad-mobile;
+    padding-left: $pad-mobile;
 
     @include media('>large') {
-      padding: $pad;
+      padding-left: $pad;
+    }
+  }
+
+  .c-block__image {
+    padding-right: $pad-mobile;
+
+    @include media('>large') {
+      padding-right: $pad;
     }
   }
 
