@@ -25,6 +25,22 @@
   }
 }
 
+.l-section__block-row {
+  .c-block__image-wrap {
+    margin-right: $space-mobile;
+
+    @include media('>small') {
+      margin-right: $space;
+    }
+  }
+
+  &--6-col {
+    .l-grid-item > * {
+      margin-top: $space;
+    }
+  }
+}
+
 
 /**
  * Comments
