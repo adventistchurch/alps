@@ -3,62 +3,28 @@
 \*------------------------------------*/
 
 /**
- * Page headings
+ * Page Headers
  */
-.header__swath {
-  padding-top: rem(70);
-  padding-bottom: rem(4);
-  @include media('>large') {
-    padding-top: rem(100);
-  }
-}
 
-// Headers with background images
-.header-swath--with-image {
-  background-size: cover;
-  padding-top: rem(120);
-  @include media('>large') {
-    padding-top: rem(200);
-  }
-}
-
-// Headers with inner text
-.header-swath--with-text {
-  padding-top: 0;
-
-  @include media('>medium') {
-    padding-top: $pad;
-  }
-}
-
-.header__text {
-  padding-top: $pad;
-  padding-bottom: $pad;
+.c-page-header__simple {
+  height: auto;
+  min-height: calc(100vw / 7 * 2);
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-
-  .unify {
-    padding-right: $space;
-    align-self: center;
-  }
-  .u-rtl & {
-    .unify {
-      padding-right: 0;
-      padding-left: $space;
-    }
-  }
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
 
   @include media('>small') {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-end;
+    min-height: calc(100vw / 7 * 1);
   }
 
-  @include media('>medium') {
-    text-align: right;
+  &--inner {
+    z-index: 2;
+    position: relative;
   }
 }
+
 
 /**
  * Comments

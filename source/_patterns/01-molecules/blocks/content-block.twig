@@ -1,5 +1,8 @@
 {% if content_block_default %}
-  <div class="c-block c-block__text u-theme--border-color--darker u-border--left {{ content_block_default.block_class }}">
+  <div class="c-block c-block__text {% if content_block_default.img %}{{ 'has-image' }}{% endif %} u-theme--border-color--darker u-border--left {{ content_block_default.block_class }}">
+    {% if content_block_default.img %}
+      <img class="c-block__image" src="{{ content_block_default.img.src }}" />
+    {% endif %}
     <a href="" class="c-block__link">
       <h3 class="u-theme--color--darker {{ content_block_default.title_class }}"><strong>{{ content_block_default.title }}</strong></h3>
     </a>
@@ -9,8 +12,17 @@
     {% if content_block_default.category %}
       <span class="c-block__meta u-theme--color--dark u-font--secondary--xs">{{ content_block_default.category }}</span>
     {% endif %}
-    {% if content_block_default.cta %}
-      <a href="" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+    {% if content_block_default.body %}
+      <div class="c-block__content">
+        <p>{{ content_block_default.body | raw }}</p>
+      </div>
+    {% endif %}
+    {% if content_block_default.expand %}
+      <a href="" class="o-button o-button--outline o-button--expand js-toggle-parent"></a>
+    {% else %}
+      {% if content_block_default.cta %}
+        <a href="" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+      {% endif %}
     {% endif %}
   </div>
 {% endif %}

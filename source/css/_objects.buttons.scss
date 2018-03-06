@@ -72,3 +72,37 @@ input[type="submit"] {
     }
   }
 }
+
+.o-button--expand {
+  display: table;
+
+  &::after {
+    content: "Show More";
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  &::before {
+    content: "+";
+    display: table-cell;
+    position: relative;
+    padding-right: rem(8);
+    font-size: rem(20);
+    vertical-align: middle;
+  }
+
+  span {
+    display: none;
+  }
+
+  &.this-is-active {
+    &::after {
+      content: "Show Less";
+    }
+
+    &::before {
+      content: "-";
+    }
+  }
+}

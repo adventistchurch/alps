@@ -1,40 +1,25 @@
 {% if page_header %}
   {% if page_header.has_image %}
-
-  <style type="text/css">
-    .header-swath--with-image {
-      background-image: url({{ page_header.img_url_s | raw }});
-    }
-    @media(min-width: 900px) {
-      .header-swath--with-image {
-        background-image: url({{ page_header.img_url_m | raw }});
+    <style type="text/css">
+      .c-background-image {
+        background-image: url({{ page_header.img_url_s | raw }});
       }
-    }
-    @media(min-width: 1100px) {
-      .header-swath--with-image {
-        background-image: url({{ page_header.img_url_l | raw }});
+      @media(min-width: 900px) {
+        .c-background-image {
+          background-image: url({{ page_header.img_url_m | raw }});
+        }
       }
-    }
-  </style>
+      @media(min-width: 1100px) {
+        .c-background-image {
+          background-image: url({{ page_header.img_url_l | raw }});
+        }
+      }
+    </style>
   {% endif %}
-<header class="header__swath u-theme--primary-background-color {{ page_header.page_header_class }}">
-  <div class="l-container u-clear-fix">
-    {% if header_text %}
-      <div class="header__text">
-        <div class="unify u-hide-until--s">
-          <h2 class="u-font--secondary--l u-text-transform--upper u-color--white">{{ header_text.heading }}</h2>
-          <h3 class="u-font--secondary--m u-color--white-transparent">{{ header_text.subhead }}</h3>
-        </div>
-        <div class="header__logo">{% include '@atoms/images/image.twig' with header_text %}</div>
-      </div> <!-- /.header__text -->
-    {% endif %}
-    <div class="l-flex-container u-clear-fix">
-      <div class="l-shift-left--fluid">
-        {%  if page_header.kicker %}<span class="o-kicker u-color--white">{{ page_header.kicker | raw }}</span> {% endif %}
-        <h1 class="u-font--secondary--xl u-color--white"><a class="u-link--white u-link-hover--white" href="">{{ heading }}</a></h1>
-      </div>
-      <div class="l-shift-right--fluid"></div> <!-- /.l-shift-right--fluid -->
+  <header class="c-page-header c-page-header__simple u-theme--background-color--base {{ page_header.page_header_class }}">
+    <div class="c-page-header__simple--inner u-padding">
+      {%  if page_header.kicker %}<span class="o-kicker u-color--white">{{ page_header.kicker | raw }}</span> {% endif %}
+      <h1 class="u-font--primary--xxl u-color--white"><a class="u-link--white u-link-hover--white" href="">{{ page_header.title }}</a></h1>
     </div>
-  </div>
-</header> <!-- /.header__swath -->
+  </header> <!-- /.header__swath -->
 {% endif %}
