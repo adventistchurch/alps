@@ -4,9 +4,11 @@
     $VARIABLES
 \*------------------------------------*/
 
+
 /**
  * Grid & Baseline Setup
  */
+
 $ff-fontpx: 16; // Font size (px) baseline applied to <body> and converted to %.
 $defaultpx: 16; // Browser default px used for media queries
 $rembase: 16; // 16px = 1.00rem
@@ -16,6 +18,7 @@ $max-width: rem($max-width-px) !default;
 /**
  * Theme Colors
  */
+
 $c-theme-treefrog: #2b8500;
 $c-theme-ming: #007f98;
 $c-theme-bluejay: #2e6de7;
@@ -23,6 +26,7 @@ $c-theme-iris: #9013fe;
 $c-theme-lily: #d41583;
 $c-theme-scarlett: #d0021b;
 $c-theme-campfire: #cd4900;
+$c-theme-winter: #717171;
 $c-theme-forest: #355724;
 $c-theme-cave: #255760;
 $c-theme-denim: #2f557f;
@@ -30,20 +34,23 @@ $c-theme-emperor: #4b207f;
 $c-theme-grapevine: #712551;
 $c-theme-velvet: #782832;
 $c-theme-earth: #5e3929;
+$c-theme-night: #4A4A4A;
 
 /**
  * Neutral Colors
  */
- $c-black: #000000;
- $c-gray--darker: #222222;
- $c-gray--dark: #4a4a4a;
- $c-gray: #717171;
- $c-gray--light: #f5f5f5;
- $c-white: #ffffff;
+
+$c-black: #000000;
+$c-gray--darker: #222222;
+$c-gray--dark: #4a4a4a;
+$c-gray: #717171;
+$c-gray--light: #f5f5f5;
+$c-white: #ffffff;
 
 /**
  * Default Colors
  */
+
 $c-error: #f00;
 $c-valid: #089e00;
 $c-warning: #fff664;
@@ -53,6 +60,7 @@ $c-overlay: rgba($c-black, 0.8);
 /**
  * Style Colors
  */
+
 $c-body-color: $c-black;
 $c-link-color: $c-gray;
 $c-button-color: $c-gray;
@@ -60,21 +68,38 @@ $c-button-color: $c-gray;
 /**
  * Typography
  */
-$ff-font: 'Noto Sans', "Helvetica", "Arial", sans-serif;
-$ff-font--primary: 'Noto Serif', Georgia, Times, "Times New Roman", serif;
-$ff-font--secondary: 'Noto Sans', "Helvetica", "Arial", sans-serif;
+
+$ff-font: 'Noto Sans',
+"Helvetica",
+"Arial",
+sans-serif;
+$ff-font--primary: 'Noto Serif',
+Georgia,
+Times,
+"Times New Roman",
+serif;
+$ff-font--secondary: 'Noto Sans',
+"Helvetica",
+"Arial",
+sans-serif;
 $ff-font--serif: $ff-font--primary;
 $ff-font--sans: $ff-font--secondary;
-$ff-font--monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
+$ff-font--monospace: Menlo,
+Monaco,
+"Courier New",
+"Courier",
+monospace;
 
 /**
  * Animation
  */
+
 $cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 
 /**
  * Default Spacing/Padding
  */
+
 $space: 1.25rem; // 20px
 $space-mobile: 0.9375rem; // 15px
 $pad: 1.25rem; // 20px
@@ -83,6 +108,7 @@ $pad-mobile: 0.9375rem; // 15px
 /**
  * Border Styles
  */
+
 $border-med: 6px;
 $border-thick: 8px;
 $border-opacity: 1px solid rgba($c-white, .2);
@@ -95,6 +121,7 @@ $border-style-dark: 1px solid $c-black;
 /**
  * Common Breakpoints
  */
+
 $xsmall: 350px;
 $small: 500px;
 $medium: 700px;
@@ -102,20 +129,12 @@ $large: 900px;
 $xlarge: 1100px;
 $xxlarge: 1300px;
 $xxxlarge: 1500px;
-
-$breakpoints: (
-  'xsmall': $xsmall,
-  'small': $small,
-  'medium': $medium,
-  'large': $large,
-  'xlarge': $xlarge,
-  'xxlarge': $xxlarge,
-  'xxxlarge': $xxxlarge
-);
+$breakpoints: ( 'xsmall': $xsmall, 'small': $small, 'medium': $medium, 'large': $large, 'xlarge': $xlarge, 'xxlarge': $xxlarge, 'xxxlarge': $xxxlarge);
 
 /**
  * Element Specific Dimensions
  */
+
 $article-max: rem(950);
 $sidebar-width: 320;
 $small-header-height: 60;
