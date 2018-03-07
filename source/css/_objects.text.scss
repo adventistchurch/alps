@@ -420,9 +420,16 @@
   }
 
   > .o-pullquote--extended {
-    margin-left: calc(100vw / 7 * -1);
-    width: calc(100vw / 7 * 2);
+    width: calc(100vw / 7 * 3);
     float: left;
+
+    @include media('>large') {
+      margin-left: calc(100vw / 7 * -1);
+    }
+
+    @include media('>xxlarge') {
+      width: calc(100vw / 7 * 2);
+    }
   }
 
   p:last-of-type {

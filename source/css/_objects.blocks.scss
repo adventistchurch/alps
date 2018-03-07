@@ -257,6 +257,21 @@
       padding-top: $pad;
     }
   }
+
+  @include media(">medium", "<=large") {
+    flex-direction: row;
+    width: calc(100vw / 7 * 6);
+
+    .c-block__image {
+      width: calc(100vw / 7 * 3);
+      padding-right: $pad;
+    }
+
+    .c-block__content {
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
 }
 
 .c-block__inset {
