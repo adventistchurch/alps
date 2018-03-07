@@ -1,51 +1,23 @@
-<div class="carousel__item u-position--relative {{ carousel_item_class }}">
-
+<div class="c-carousel__item u-position--relative {{ carousel_item_class }}">
   {% if is_lazy %}
     {% include '@atoms/images/picture.twig' with {'is_lazy_slide': 'true', 'picture': picture} %}
   {% else %}
     {% include '@atoms/images/picture.twig' with picture %}
   {% endif %}
-
   {% if has_slide_text %}
-    <div class="carousel__item-text__wrap">
-      <div class="l-container">
-        <div class="carousel__item-text {{ has_slide_text.carousel_text_class }} u-spacing--half">
-          <div class="carousel__item-text--inner">
-            <h2 class="{{ carousel_heading_class }} carousel__item-heading u-theme--primary-transparent-background-color">{{ has_slide_text.slide_heading }}</h2>
-            {% if has_slide_text.slide_subtitle %}<h3 class="carousel__item-subtitle u-font--secondary--m u-theme--primary-transparent-background-color">{{ has_slide_text.slide_subtitle }}</h3>{% endif %}
-            <div class="carousel__item-dek u-padding--half--bottom u-theme--primary-transparent-background-color">
+    <div class="c-carousel__item-text__wrap l-grid l-grid--7-col l-grid--7-col--l--offset-1">
+      <div class="l-grid-item l-grid-item--m--4-col l-grid-item--xl--3-col">
+        <div class="c-carousel__item-text {{ has_slide_text.carousel_text_class }} u-spacing">
+          <div class="c-carousel__item-text--inner u-spacing--half">
+            <h2 class="{{ carousel_heading_class }} c-carousel__item-heading u-font--primary--xl">{{ has_slide_text.slide_heading }}</h2>
+            {% if has_slide_text.slide_subtitle %}<h3 class="c-carousel__item-subtitle u-font--secondary--s u-text-transform--upper"><strong>{{ has_slide_text.slide_subtitle }}</strong></h3>{% endif %}
+            <div class="c-carousel__item-dek">
               <p>{{ has_slide_text.slide_dek }}</p>
-            </div> <!-- /.carousel__item-dek -->
+            </div> <!-- /.c-carousel__item-dek -->
           </div>
-          <a href="{{ url }}" class="carousel__item-cta o-button u-theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
-        </div> <!-- /.carousel__item-text -->
+          <a href="{{ url }}" class="c-carousel__item-cta o-button u-theme--secondary-background-color">{{ has_slide_text.slide_cta }}</a>
+        </div> <!-- /.c-carousel__item-text -->
       </div>
     </div>
   {% endif %}
-
-  {% if is_carousel_block %}
-    <div class="carousel-block__content c-block__content u-spacing--quarter u-padding {{ is_carousel_block.block_content_class }}">
-      {% if is_carousel_block.title %}
-        <h3 class="carousel-block__title c-block__title {{ is_carousel_block.block_title_class }}">
-          <a href="{{ url }}" class="c-block__title-link u-theme--color--base">{{ is_carousel_block.title }}</a>
-        </h3>
-      {% endif %}
-      {% if is_carousel_block.date %}
-        <time class="c-block__date u-font--secondary--xs u-color--brown u-space--half--bottom" datetime="{{ is_carousel_block.datetime }}">{{ is_carousel_block.date }}</time>
-      {% endif %}
-      {% if is_carousel_block.description %}
-        <div class="text u-padding--half--bottom">
-          <p class="carousel-block__description c-block__description">
-            <span class="u-font--primary--xs">{{ is_carousel_block.description }}</span>
-          </p>
-        </div>
-      {% endif %}
-      {% if is_carousel_block.cta %}
-        <p>
-          <a class="carousel-block__cta c-block__cta o-button u-theme--secondary-background-color" href="{{ url }}">{{ is_carousel_block.cta }}</a>
-        </p>
-      {% endif %}
-    </div> <!-- carousel-block__content -->
-  {% endif %}
-
-</div> <!-- /.carousel__item -->
+</div> <!-- /.c-carousel__item -->

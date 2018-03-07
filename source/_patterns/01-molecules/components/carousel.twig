@@ -1,21 +1,15 @@
 {% if carousel %}
-<div class="carousel u-position--relative {{ carousel.carousel_outer_class }}">
-  <div class="carousel__slides {{ carousel.carousel_class }}">
-    {% for slide in carousel.slides %}
-      {% if carousel.slides2column %}
-        {% include '@molecules/components/slide-2-column.twig' with slide %}
-      {% elseif carousel.slidesStacked %}
-        {% include '@molecules/components/slide-stacked.twig' with slide %}
-      {% else %}
+  <div class="c-carousel u-position--relative {{ carousel.carousel_outer_class }}">
+    <div class="c-carousel__slides {{ carousel.carousel_class }}">
+      {% for slide in carousel.slides %}
         {% include '@molecules/components/slide.twig' with slide %}
-      {% endif %}
-    {% endfor %}
-  </div> <!-- /.carousel__slides -->
-  {% if not carousel.no_arrows %}
-  <div class="carousel__controls">
-    <span class="arrow__prev"><span class="carousel__arrow carousel__arrow--prev u-icon u-round">{% include '@atoms/icons/icon-arrow-left.twig' with {'fill_class': 'u-theme--secondary-fill-color'} %}</span></span>
-    <span class="arrow__next"><span class="carousel__arrow carousel__arrow--next u-icon u-round">{% include '@atoms/icons/icon-arrow-right.twig' with {'fill_class': 'u-theme--secondary-fill-color'} %}</span></span>
-  </div> <!-- /.carousel__controls -->
-  {% endif %}
-</div> <!-- /.carousel -->
+      {% endfor %}
+    </div> <!-- /.carousel__slides -->
+    {% if not carousel.no_arrows %}
+    <div class="c-carousel__controls">
+      <span class="o-arrow__prev"><span class="c-carousel__arrow c-carousel__arrow--prev u-icon u-round">{% include '@atoms/icons/icon-arrow-bracket-left.twig' %}</span></span>
+      <span class="o-arrow__next"><span class="c-carousel__arrow c-carousel__arrow--next u-icon u-round">{% include '@atoms/icons/icon-arrow-bracket-right.twig' %}</span></span>
+    </div> <!-- /.c-carousel__controls -->
+    {% endif %}
+  </div> <!-- /.c-carousel -->
 {% endif %}

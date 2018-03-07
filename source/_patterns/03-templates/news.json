@@ -5,7 +5,6 @@
 
   "page_header": {
     "has_image": true,
-    "kicker": "Latest",
     "title": "News",
     "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
     "img_url_s": "//unsplash.it/600/300/?random",

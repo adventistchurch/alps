@@ -2,21 +2,17 @@
     $CAROUSELS
 \*------------------------------------*/
 
-.carousel__item {
+.c-carousel__item {
   img {
     width: 100%;
   }
-
-  .shift-right--fluid {
-    padding: 0 $pad $pad $pad;
-  }
 }
 
-.carousel__controls {
+.c-carousel__controls {
   width: 100%;
 }
 
-.carousel__arrow {
+.c-carousel__arrow {
   width: rem(44);
   height: rem(44);
   position: absolute;
@@ -37,104 +33,28 @@
     background-color: $c-white;
     z-index: -50;
   }
-
-  &--s {
-    width: rem(35);
-    height: rem(35);
-  }
 }
 
-.carousel__arrow--prev {
+.c-carousel__arrow--prev {
   left: $space/2;
 }
-.carousel__arrow--next {
+.c-carousel__arrow--next {
   right: $space/2;
-}
-
-// Push carousel container open relative to the slide image ratio.
-// For any carousel that fills in the height before slides load.
-.carousel--with-height {
-  position: relative;
-  width: 100%;
-
-  .slick-list {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  &:not(.slick-initialized) {
-    .carousel__item {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      visibility: hidden;
-    }
-  }
-}
-
-// Full-browser width carousel (currently used on adventist.org home page)
-.carousel--full-bleed {
-  padding-top: (500 / 500) * 100%;
-
-  @include media('>500px') {
-    padding-top: (400 / 700) * 100%;
-  }
-
-  @include media('>700px') {
-    padding-top: (400 / 900) * 100%;
-  }
-
-  @include media('>900px') {
-    padding-top: (500 / 1300) * 100%;
-  }
-}
-
-// Large format carousels. Mostly with the slide copy to the right at large
-// viewport widths.
-.carousel--large {
-  &:not(.slick-initialized) {
-    padding-top: (375 / 500) * 100%;
-
-    @include media('>500px') {
-      padding-top: (600 / 800) * 100%;
-    }
-
-    @include media('>large') {
-      padding-top: (600 / 800) * 68%; // 68% is the new container width at this media query
-    }
-  }
-  .slick-list {
-    position: relative;
-  }
 }
 
 /**
  * Carousel with Text
  */
-.carousel__item-text__wrap {
-  padding: $pad;
+.c-carousel__item-text__wrap {
   color: $c-white;
   position: absolute;
   left: 0;
   height: 100%;
   width: 100%;
   top: 0;
-
-  .l-container {
-    height: 100%;
-  }
-
-  @include media('>medium') {
-    padding: $pad;
-  }
 }
 
-.carousel__item-text {
+.c-carousel__item-text {
   position: relative;
   height: 100%;
   width: 100%;
@@ -145,9 +65,8 @@
   flex-direction: column;
 }
 
-.carousel__item-text--inner {
+.c-carousel__item-text--inner {
   width: 100%;
-  max-width: rem(600);
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -155,58 +74,39 @@
 }
 
 // Right align slide text
-.carousel__item {
-  .carousel__item--right {
+.c-carousel__item {
+  .c-carousel__item--right {
     align-items: flex-end;
     text-align: right;
 
-    .carousel__item-text--inner {
+    .c-carousel__item-text--inner {
       justify-content: flex-end;
       align-items: flex-end;
     }
   }
 }
 
-.carousel__item-heading,
-.carousel__item-subtitle,
-.carousel__item-dek {
-  line-height: 1.5;
-  padding: rem(8) $pad/2;
-  display: inline-block;
-}
-
-.carousel__item-dek {
-  padding-top: rem(5);
-  @include media('<=medium') {
-    display: none;
-  }
-}
-
 // Hero
-.hero-carousel {
-  .carousel__item {
+.c-hero-carousel {
+  .c-carousel__item {
     max-height: rem(600);
-  }
-}
-
-// Hero w/ two columns & Hero Stacked
-.hero-carousel--2-column {
-  .carousel__item {
-    max-height: none;
   }
 }
 
 // Carousel pagination
 .slick-dots {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 0;
   width: 100%;
   text-align: center;
-  max-width: $max-width;
   bottom: 0;
   text-align: left;
-  padding: $pad;
+  padding: $pad-mobile;
+
+  @include media('>large') {
+    padding-left: 0;
+    left: calc(100vw / 7 * 1);
+  }
 
   li {
     display: inline-block;
@@ -218,6 +118,10 @@
     margin-left: $space/2;
     cursor: pointer;
     box-shadow: 0 0 rem(3) rgba($c-black, .3), inset 0 0 rem(3) rgba($c-black, .3);
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   .slick-active {
@@ -232,68 +136,4 @@
 
 .no-dots .slick-dots {
   display: none !important;
-}
-
-/**
- * Pad the left and right to allow room for outside placed prev/next arrows.
- */
-.carousel-nav--outside {
-  padding-left: rem(60);
-  padding-right: rem(60);
-
-  .carousel__inner {
-    margin-left: -$space;
-    margin-right: -$space;
-  }
-}
-
-/**
- * Carousel as block
- * Include a calculation for the intrinic ratio: 4:3 = 75% - 28px, 16:9 = 56.25% - 28px)
- * http://alistapart.com/article/creating-intrinsic-ratios-for-video
- */
-@mixin carousel-nav--adjustment($ratio) {
-  .slick-dots {
-    top: 0;
-    bottom: auto;
-    left: 0;
-    padding: $pad rem(10);
-    padding-top: calc(#{$ratio});
-    transform: translate(0, 0);
-  }
-}
-
-.carousel-nav--4-3 {
-  @include carousel-nav--adjustment('75% - 35px');
-}
-.carousel-nav--4-3--until-large {
-  @include media('<large') {
-    @include carousel-nav--adjustment('75% - 35px');
-  }
-}
-
-.carousel-nav--16-9 {
-  @include carousel-nav--adjustment('56.25% - 35px');
-}
-.carousel-nav--16-9--until-large {
-  @include media('<large') {
-    @include carousel-nav--adjustment('56.25% - 35px');
-  }
-}
-
-.carousel-nav--4-3,
-.carousel-nav--16-9 {
-
-  .l-flex-container {
-    flex-direction: column;
-  }
-
-  .l-shift-left--fluid,
-  .l-shift-right--fluid {
-    width: 100%;
-  }
-
-  .l-shift-right--fluid {
-    border: 1px solid $c-gray--light;
-  }
 }

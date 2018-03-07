@@ -3,6 +3,11 @@
     "title": "Channel Main - The Official Site of the Seventh-day Adventist world church"
   },
 
+  "page_header": {
+    "title": "Channel Main"
+  },
+
+
   "content_block_default": {
     "expand": true,
     "block_class": "c-block__text-expand u-spacing u-background-color--gray--light u-padding u-clear-fix",
