@@ -1,7 +1,6 @@
 {
-  "page_header": {
-    "kicker": "Kicker",
-    "title" : "Channel Main"
+  "head": {
+    "title": "Channel Main - The Official Site of the Seventh-day Adventist world church"
   },
 
   "content_block_default": {

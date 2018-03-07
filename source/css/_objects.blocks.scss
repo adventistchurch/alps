@@ -371,6 +371,10 @@
 }
 
 .c-block__breakout {
+  @include media('>large') {
+    margin-top: -$space*4;
+  }
+
   @include media('>xxlarge') {
     margin-top: -$space*2;
   }

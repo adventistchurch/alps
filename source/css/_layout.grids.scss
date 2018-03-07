@@ -158,6 +158,12 @@
     }
   }
 
+  &--xl--offset-1 {
+    @include media('>xxlarge') {
+      margin-left: calc(100vw / 7);
+    }
+  }
+
   .l-grid-item {
     width: 100%;
 

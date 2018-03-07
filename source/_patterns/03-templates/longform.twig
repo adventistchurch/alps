@@ -1,12 +1,19 @@
-<div class="content u-clear-fix" role="document">
-  {% include '@organisms/global/header.twig' %}
-  <main class="main can-be--dark-dark u-background-color--white article__longform" role="main">
-    {% include '@organisms/sections/page-header-longform@inreview.twig' %}
-    <div class="l-container">
-      <div class="u-spacing l-column--primary">
-        {% include '@organisms/content/longform-content.twig' %}
-      </div> <!-- /.u-spacing -->
-    </div> <!-- /.l-container -->
-  </main> <!-- /.main -->
-  {% include '@organisms/global/footer.twig' %}
-</div> <!-- /.content -->
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
+      {% include '@organisms/sections/page-header-longform.twig' %}
+      <section class="l-grid l-grid--7-col l-grid--7-col--l--offset-1 l-grid--7-col--break-at--xxlarge l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides">
+        <div class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col u-padding--zero--sides">
+          <article class="text c-article__body u-spacing has-dropcap">
+            {% include '@organisms/content/longform-content.twig' %}
+          </article>
+        </div>
+        <div class="l-sidebar l-grid-item l-grid-item--l--4-col l-grid-item--xl--2-col u-padding--zero--sides">
+        </div>
+      </section>
+    </main> <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div> <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div><!-- ./l-wrap -->

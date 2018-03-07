@@ -21,10 +21,10 @@
         <hr>
       </div>
       {% if video_block %}
-        <div class="u-padding u-padding--zero--bottom">{% include '@molecules/blocks/media-block.twig' with video_block %}</div>
+        <div class="u-padding u-padding--zero--sides--bottom">{% include '@molecules/blocks/media-block.twig' with video_block %}</div>
       {% endif %}
 
-      <div class="l-grid l-grid--2-col--split u-padding--half u-padding--zero--top">
+      <div class="l-grid l-grid--2-col--split u-padding--half u-padding--zero--sides--top">
         <div class="l-grid-item u-spacing--half">
           {% for block in video_block_list %}
             <div class="u-padding--half--left u-padding--half--right">{% include '@molecules/blocks/media-block.twig' with block %}</div>

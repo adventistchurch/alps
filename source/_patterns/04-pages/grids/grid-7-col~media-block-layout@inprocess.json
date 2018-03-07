@@ -3,7 +3,7 @@
     {
       "media_block_default": {
         "block_class": "c-block__inset c-media-block__inset",
-        "block_content_class": "l-grid--7-col l-grid--7-col--l--offset-1 u-border-left--white--at-large u-theme--background-color--darker",
+        "block_content_class": "l-grid--7-col l-grid--7-col--xl--offset-1 u-border-left--white--at-large u-theme--background-color--darker",
         "block_title_class": "l-grid-item l-grid-item--m--5-col l-grid-item--l--3-col l-grid-item--xl--4-col u-link-hover--white",
         "block_meta_class": "l-grid-item l-grid-item--m--2-col l-grid-item--l--3-col l-grid-item--xl--2-col",
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis consequat convallis.",
@@ -68,7 +68,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--5-of-7 l-grid--7-col--l--offset-1",
+        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--5-of-7 l-grid--7-col--xl--offset-1",
         "block_content_class": "l-grid--7-col u-theme--background-color--darker",
         "block_title_class": "l-grid-item l-grid-item--m--3-col u-link-hover--white",
         "block_meta_class": "l-grid-item l-grid-item--m--2-col",
@@ -96,7 +96,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--4-of-7 l-grid--7-col--l--offset-1",
+        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--4-of-7 l-grid--7-col--xl--offset-1",
         "block_content_class": "l-grid--7-col u-theme--background-color--darker",
         "block_title_class": "l-grid-item l-grid-item--m--3-col u-link-hover--white",
         "block_meta_class": "l-grid-item l-grid-item--m--2-col",
@@ -124,7 +124,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col--l--offset-1",
+        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col--xl--offset-1",
         "block_content_class": "l-grid--7-col u-theme--background-color--darker",
         "block_title_class": "l-grid-item u-link-hover--white",
         "block_meta_class": "l-grid-item",
@@ -148,8 +148,8 @@
     {
       "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid--7-col",
-        "block_img_class": "l-grid-item u-padding--zero",
-        "block_content_class": "l-grid--7-col--l--offset-1 l-grid-wrap l-grid-wrap--5-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_img_class": "l-grid-item u-padding--zero--sides",
+        "block_content_class": "l-grid--7-col--xl--offset-1 l-grid-wrap l-grid-wrap--5-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
@@ -181,7 +181,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--5-of-7 l-grid--7-col--l--offset-1",
+        "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--5-of-7 l-grid--7-col--xl--offset-1",
         "block_content_class": "l-grid-item l-grid-item--m--5-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
         "block_meta_class": "u-theme--color--base",
@@ -209,7 +209,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--4-of-7 l-grid--7-col--l--offset-1",
+        "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--4-of-7 l-grid--7-col--xl--offset-1",
         "block_content_class": "l-grid-item l-grid-item--m--4-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
         "block_meta_class": "u-theme--color--base",
@@ -232,7 +232,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col--l--offset-1",
+        "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col--xl--offset-1",
         "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
         "block_meta_class": "u-theme--color--base",
@@ -255,7 +255,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_class": "l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--xl--offset-1",
         "block_img_class": "l-grid-item l-grid-item--m--4-col",
         "block_content_class": "l-grid-item l-grid-item--m--2-col",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
@@ -279,7 +279,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--xl--offset-1",
         "block_img_class": "l-grid-item l-grid-item--m--4-col",
         "block_content_class": "l-grid-item l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
@@ -303,7 +303,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--xl--offset-1",
         "block_img_class": "l-grid-item l-grid-item--m--2-col",
         "block_content_class": "l-grid-item l-grid-item--m--4-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
@@ -327,7 +327,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col l-grid--7-col--xl--offset-1",
         "block_img_class": "l-grid-item l-grid-item--m--1-col",
         "block_content_class": "l-grid-item l-grid-item--m--5-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
@@ -351,7 +351,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--4-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--4-of-7 l-grid--7-col l-grid--7-col--xl--offset-1",
         "block_img_class": "l-grid-item l-grid-item--m--2-col",
         "block_content_class": "l-grid-item l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
@@ -375,7 +375,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col l-grid--7-col--l--offset-1",
+        "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col l-grid--7-col--xl--offset-1",
         "block_img_class": "l-grid-item l-grid-item--m--1-col",
         "block_content_class": "l-grid-item l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",

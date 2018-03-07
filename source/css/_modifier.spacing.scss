@@ -61,6 +61,7 @@
     }
   }
 }
+
 .u-spacing--until-medium {
   @include media('<=medium') {
     & > * + * {
@@ -68,6 +69,15 @@
     }
   }
 }
+
+.u-spacing--double--until-large {
+  @include media('<=large') {
+    & > * + * {
+      margin-top: map-get($sizes, --double);
+    }
+  }
+}
+
 .u-spacing--double--until-xxlarge {
   @include media('<=xxlarge') {
     & > * + * {
@@ -76,8 +86,6 @@
   }
 }
 
-
-
 .u-padding--sides {
   padding-left: $pad-mobile;
   padding-right: $pad-mobile;
@@ -85,6 +93,18 @@
   @include media('>large') {
     padding-left: $pad;
     padding-right: $pad;
+  }
+}
+
+.u-padding--left--until-xxlarge {
+  padding-left: $pad-mobile;
+
+  @include media('>large') {
+    padding-left: $pad;
+  }
+
+  @include media('>xxlarge') {
+    padding-left: 0;
   }
 }
 

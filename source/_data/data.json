@@ -746,38 +746,57 @@
   },
 
   "search_results": [{
-      "text": {
-        "heading": "Donec consequat",
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Donec consequat",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Vivamus orci magna"
+        "cta": "Learn More"
       }
     },
     {
-      "text": {
-        "heading": "Donec interdum",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio.Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Donec consequat",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
       }
     },
     {
-      "text": {
-        "heading": "Proin interdum bibendum nisi",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
-        "cta": "Donec volutpat libero"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Donec consequat",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
       }
     },
     {
-      "text": {
-        "heading": "Nam diam elit",
-        "description": "Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Donec consequat",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
       }
     },
     {
-      "text": {
-        "heading": "Donec interdum",
-        "description": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi. Proin venenatis maximus dui, quis dapibus sem semper ut. Donec convallis ipsum ligula, at dapibus ex finibus in. Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Donec volutpat libero"
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Donec consequat",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing",
+        "title_class": "u-font--primary--m",
+        "title": "Donec consequat",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More"
       }
     }
   ],

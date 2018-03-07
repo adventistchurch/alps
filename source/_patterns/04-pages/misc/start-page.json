@@ -1,9 +1,5 @@
 {
   "head": {
-    "title": "Welcome to ALPS: Adventist Living Pattern System",
-    "html_class": "pl u-theme--ming",
-    "body_class": "body has-grid",
-    "language": "en",
-    "charset": "UTF-8"
+    "title": "Welcome to ALPS: Adventist Living Pattern System"
   }
 }
