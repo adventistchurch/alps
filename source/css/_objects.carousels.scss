@@ -13,14 +13,17 @@
 }
 
 .c-carousel__arrow {
-  width: rem(44);
-  height: rem(44);
+  width: rem(45);
+  height: rem(45);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:before {
     content: "";
@@ -33,13 +36,27 @@
     background-color: $c-white;
     z-index: -50;
   }
+
+  svg {
+    width: rem(20);
+    height: rem(20);
+  }
 }
 
 .c-carousel__arrow--prev {
-  left: $space/2;
+  left: $space-mobile;
+
+  @include media('>large') {
+    left: $space;
+  }
 }
+
 .c-carousel__arrow--next {
-  right: $space/2;
+  right: $space-mobile;
+
+  @include media('>large') {
+    right: $space;
+  }
 }
 
 /**
@@ -63,26 +80,13 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-}
 
-.c-carousel__item-text--inner {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-// Right align slide text
-.c-carousel__item {
-  .c-carousel__item--right {
-    align-items: flex-end;
-    text-align: right;
-
-    .c-carousel__item-text--inner {
-      justify-content: flex-end;
-      align-items: flex-end;
-    }
+  &--inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
