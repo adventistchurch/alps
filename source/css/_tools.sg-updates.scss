@@ -54,17 +54,17 @@
  */
 .sg-header,
 .sg-tools-toggle {
-  background-color: $c-theme-ming;
+  background-color: $c-gray--darker;
 
   a {
     color: $c-white;
 
     &.active {
-      background-color: $c-theme-earth;
+      background-color: $c-gray--dark;
     }
 
     &:hover {
-      background-color: darken($c-theme-earth, 10);
+      background-color: lighten($c-gray--dark, 10);
     }
   }
 
@@ -72,44 +72,78 @@
   [data-patternpartial="pages-start-page"] {
     display: none;
   }
-}
 
-.sg-acc-panel {
-  li {
-    background-color: $c-theme-earth;
-
-    a:hover {
-      background-color: darken($c-theme-earth, 10);
+  .sg-tools-toggle {
+    path {
+      fill: $c-white;
     }
   }
-}
 
-.sg-input {
-  margin-left: 3px;
-  margin-right: 3px;
-  background-color: $c-theme-earth;
-  color: $c-gray--light;
-}
+  .sg-acc-panel {
+    li {
+      background-color: darken($c-gray, 10);
+      border-bottom: 1px solid darken($c-gray, 15);
 
-.sg-current-size {
-  color: $c-white;
-}
+      a {
+        color: $c-white;
 
-.sg-tools-toggle {
-  path {
-    fill: $c-white;
+        &:hover {
+          background-color: $c-gray;
+        }
+      }
+    }
   }
-}
 
-.sg-acc-handle {
-  &:after,
-  &.active:after {
-    color: rgba($c-white, .75);
+  .sg-sub-nav {
+    li {
+      background-color: $c-gray;
+      border-bottom: 1px solid darken($c-gray, 5);
+
+      &:last-child {
+        border-radius: 0;
+        border-bottom: 0;
+      }
+
+      a {
+        &:hover {
+          background-color: lighten($c-gray, 10);
+        }
+      }
+    }
   }
-}
 
-.sg-acc-panel {
-  a {
-    text-transform: none;
+  .sg-acc-handle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.active {
+      color: $c-white;
+    }
+
+    &:after,
+    &.active:after {
+      color: rgba($c-white, .75);
+      position: relative;
+      top: rem(1);
+      right: rem(-3);
+    }
+  }
+
+  .sg-input {
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: $c-gray;
+    color: $c-white;
+  }
+
+  .sg-current-size {
+    color: lighten($c-gray, 10);
+  }
+
+  .sg-acc-panel {
+    a {
+      text-transform: none;
+    }
   }
 }
