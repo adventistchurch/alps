@@ -357,9 +357,11 @@
  */
 .l-standard-break {
   width: calc((100vw / 7) * 6); // = .l-grid-wrap--6-of-7
-  @include media('>medium') {
+
+  @include media('>large') {
     width: calc((100vw / 7) * 4); // = .l-grid-wrap--4-of-7
   }
+
   @include media('>xxlarge') {
     width: calc((100vw / 7) * 3); // = .l-grid-wrap--3-of-7
   }

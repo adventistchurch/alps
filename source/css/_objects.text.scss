@@ -424,11 +424,11 @@
     float: left;
 
     @include media('>large') {
-      margin-left: calc(100vw / 7 * -1);
+      width: calc(100vw / 7 * 2);
     }
 
     @include media('>xxlarge') {
-      width: calc(100vw / 7 * 2);
+      margin-left: calc(100vw / 7 * -1);
     }
   }
 
