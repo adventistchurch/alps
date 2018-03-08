@@ -14,14 +14,39 @@
   align-items: flex-start;
   flex-direction: column;
   position: relative;
+  min-height: 150px;
 
-  @include media('>small') {
-    min-height: calc(100vw / 7 * 1);
+  @include media('>large') {
+    //min-height: calc(100vw / 7 * 1);
+    min-height: 250px;
+  }
+  @include media('>xxlarge') {
+    min-height: 300px;
   }
 
   &--inner {
     z-index: 2;
     position: relative;
+  }
+
+  &.c-background-image {
+    background-size: cover;
+  }
+}
+
+.l-section__block-row {
+  .c-block__image-wrap {
+    margin-right: $space-mobile;
+
+    @include media('>small') {
+      margin-right: $space;
+    }
+  }
+
+  &--6-col {
+    .l-grid-item > * {
+      margin-top: $space;
+    }
   }
 }
 

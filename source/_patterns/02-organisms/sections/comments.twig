@@ -1,7 +1,7 @@
 {% if comments %}
 <section class="comments">
-  <h2 class="u-font--secondary--l u-theme--color--base">4 comments</h2>
-  <ul class="comment-list u-spacing--one-and-half">
+  <h2 class="u-font--secondary--s u-text-transform--upper u-theme--color--darker">4 comments</h2>
+  <ul class="comment-list u-spacing">
     {%  for comment in comments.comment %}
       <li class="comment">
         {% include '@molecules/components/comment.twig' with {'single_comment_text': comment.comment_text,'single_comment_date': comment.comment_date,'single_comment_byline': comment.comment_byline} %}

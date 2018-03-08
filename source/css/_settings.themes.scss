@@ -54,55 +54,69 @@ $themes: (
     light: #ffa06c,
     lighter: #ffa06c
   ),
+  u-theme--winter: (
+    darker: #222222,
+    dark: #4A4A4A,
+    base: $c-theme-winter, // base
+    light: #F9F9F9,
+    lighter: #F9F9F9
+  ),
   // Muted
   u-theme--forest: (
     darker: #101a00,
-    base: $c-theme-forest, // base
     dark: #2b8500,
+    base: $c-theme-forest, // base
     light: #7cd500,
     lighter: #9fe180
   ),
   u-theme--cave: (
     darker: #01161e,
-    dark: $c-theme-cave, // base
-    base: #007f98,
+    dark: #007f98,
+    base: $c-theme-cave, // base
     light: #00d5fe,
     lighter: #9ae1f0
   ),
   u-theme--denim: (
     darker: #04132b,
-    dark: $c-theme-denim, // base
-    base: #2e6de7,
-    light: #84adfc,
+    dark: #04132b,
+    base: $c-theme-denim, // base
+    light: #2e6de7,
     lighter: #84adfc
   ),
   u-theme--emperor: (
     darker: #240431,
-    dark: $c-theme-emperor, // base
-    base: #9013fe,
+    dark: #9013fe,
+    base: $c-theme-emperor, // base
     light: #b971f7,
     lighter: #b971f7
   ),
   u-theme--grapevine: (
     darker: #2a0d24,
-    dark: $c-theme-grapevine, // base
-    base: #d41583,
+    dark: #d41583,
+    base: $c-theme-grapevine, // base
     light: #ff61bc,
     lighter: #ff61bc
   ),
   u-theme--velvet: (
     darker: #2d0505,
-    dark: $c-theme-velvet, // base
-    base: #d0021b,
+    dark: #d0021b,
+    base: $c-theme-velvet, // base
     light: #fd2641,
     lighter: #e17077
   ),
   u-theme--earth: (
     darker: #210b00,
-    dark: $c-theme-earth, // base
-    base:  #974e02,
+    dark: #974e02,
+    base: $c-theme-earth, // base
     light: #eab57e,
     lighter: #eab57e
+  ),
+  u-theme--night: (
+    darker: #000000,
+    dark: #717171,
+    base: $c-theme-night, // base
+    light: #F9F9F9,
+    lighter: #F9F9F9
   )
 );
 

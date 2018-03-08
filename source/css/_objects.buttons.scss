@@ -106,3 +106,18 @@ input[type="submit"] {
     }
   }
 }
+
+.o-button--with-arrow {
+  position: relative;
+  padding-right: $pad*2.25;
+
+  .u-icon {
+    position: absolute;
+    top: rem(9);
+    bottom: 0;
+    margin: auto 0;
+    right: rem(15);
+    width: rem(20);
+    height: auto;
+  }
+}

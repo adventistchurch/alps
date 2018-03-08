@@ -1,22 +1,22 @@
 {% if page_header %}
-  {% if page_header.has_image %}
-    <style type="text/css">
-      .c-background-image {
-        background-image: url({{ page_header.img_url_s | raw }});
-      }
-      @media(min-width: 900px) {
-        .c-background-image {
-          background-image: url({{ page_header.img_url_m | raw }});
-        }
-      }
-      @media(min-width: 1100px) {
-        .c-background-image {
-          background-image: url({{ page_header.img_url_l | raw }});
-        }
-      }
-    </style>
-  {% endif %}
   <header class="c-page-header c-page-header__simple u-theme--background-color--base {{ page_header.page_header_class }}">
+    {% if page_header.has_image %}
+      <style type="text/css">
+        .c-background-image {
+          background-image: url({{ page_header.img_url_s | raw }});
+        }
+        @media(min-width: 900px) {
+          .c-background-image {
+            background-image: url({{ page_header.img_url_m | raw }});
+          }
+        }
+        @media(min-width: 1100px) {
+          .c-background-image {
+            background-image: url({{ page_header.img_url_l | raw }});
+          }
+        }
+      </style>
+    {% endif %}
     <div class="c-page-header__simple--inner u-padding">
       {%  if page_header.kicker %}<span class="o-kicker u-color--white">{{ page_header.kicker | raw }}</span> {% endif %}
       <h1 class="u-font--primary--xxl u-color--white"><a class="u-link--white u-link-hover--white" href="">{{ page_header.title }}</a></h1>

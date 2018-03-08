@@ -1,0 +1,25 @@
+{
+  "head": {
+    "title": "Longform Article - The Official Site of the Seventh-day Adventist world church"
+  },
+
+  "page_header": {
+    "title": "Longform"
+  },
+
+  "media_block_default": {
+    "block_class": "c-block__inline c-media-block__inine l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker can-be--dark-dark u-padding--top u-padding--bottom",
+    "block_img_class": false,
+    "block_content_class": "l-grid--7-col--l--offset-1 l-grid-item l-grid-item--m--6-col l-grid-item--l--4-col l-grid-item--xl--3-col u-border--left u-theme--border-color--light--left u-theme--color--lighter",
+    "block_title_class": "u-color--white u-font--primary--l",
+    "block_meta_class": "",
+    "kicker": "This Sabbath",
+    "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+    "description": "Church leaders pray for the two titles during Euro-Asia Division year-end meetings.",
+    "category": "Culture",
+    "datetime": "2017-12-28",
+    "date": "December 28, 2017",
+    "picture": false,
+    "img": false
+  }
+}

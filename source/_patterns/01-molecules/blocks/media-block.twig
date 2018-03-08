@@ -1,7 +1,7 @@
 {% if media_block_default %}
   <div class="c-media-block c-block {{ media_block_default.block_class }}">
     {% if media_block_default.img or media_block_default.picture %}
-      <div class="c-media-block__image c-block__image {{ media_block_default.block_img_class }}">
+      <div class="c-media-block__image c-block__image {{ media_block_default.block_img_class }}{% if media_block_default.block_type %} c-block__icon c-block__icon--{{ media_block_default.block_type }}{% endif %}">
         <div class="c-block__image-wrap {{ media_block_default.block_img_wrap_class }}">
           {% if media_block_default.picture %}
             <picture class="picture">
@@ -23,28 +23,32 @@
       </div> <!-- c-media-block__image -->
     {% endif %}
     <div class="c-media-block__content c-block__content u-spacing {{ media_block_default.block_content_class }}">
-      {% if media_block_default.kicker %}
-        <h4 class="c-media-block__kicker c-block__kicker {{ media_block_default.block_kicker_class }}">{{ media_block_default.kicker }}</h4>
-      {% endif %}
-      {% if media_block_default.title %}
-        <h3 class="c-media-block__title c-block__title {{ media_block_default.block_title_class }} {% if media_block_default.kicker %}{{ 'u-space--zero'}}{% endif %}">
-          {% if media_block_default.url %}<a href="{{ media_block_default.url }}" class="c-block__title-link">{% endif %}{{ media_block_default.title }}{% if media_block_default.url %}</a>{% endif %}
-        </h3>
-      {% endif %}
-      {% if media_block_default.description %}
-        <p class="c-media-block__description c-block__description">{{ media_block_default.description }}</p>
-      {% endif %}
-      <div class="c-media-block__meta c-block__meta {{ media_block_default.block_meta_class }}">
-        {% if media_block_default.category %}
-          <span class="c-block__category u-text-transform--upper">{{ media_block_default.category }}</span>
-        {% endif %}
-        {% if media_block_default.date %}
-          <time class="c-block__date u-text-transform--upper" datetime="{{ media_block_default.datetime }}">{{ media_block_default.date }}</time>
+      <div class="u-spacing c-media-block__group">
+        <div class="u-spacing">
+          {% if media_block_default.kicker %}
+            <h4 class="c-media-block__kicker c-block__kicker {{ media_block_default.block_kicker_class }}">{{ media_block_default.kicker }}</h4>
+          {% endif %}
+          {% if media_block_default.title %}
+            <h3 class="c-media-block__title c-block__title {{ media_block_default.block_title_class }} {% if media_block_default.kicker %}{{ 'u-space--zero'}}{% endif %}">
+              {% if media_block_default.url %}<a href="{{ media_block_default.url }}" class="c-block__title-link">{% endif %}{{ media_block_default.title | raw }}{% if media_block_default.url %}</a>{% endif %}
+            </h3>
+          {% endif %}
+          {% if media_block_default.description %}
+            <p class="c-media-block__description c-block__description">{{ media_block_default.description }}</p>
+          {% endif %}
+        </div>
+        <div class="c-media-block__meta c-block__meta {{ media_block_default.block_meta_class }}">
+          {% if media_block_default.category %}
+            <span class="c-block__category u-text-transform--upper">{{ media_block_default.category }}</span>
+          {% endif %}
+          {% if media_block_default.date %}
+            <time class="c-block__date u-text-transform--upper" datetime="{{ media_block_default.datetime }}">{{ media_block_default.date }}</time>
+          {% endif %}
+        </div>
+        {% if media_block_default.cta %}
+          <a href="" class="c-block__button o-button o-button--outline">{{ media_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
         {% endif %}
       </div>
-      {% if media_block_default.cta %}
-        <a href="" class="c-block__button o-button o-button--outline">{{ media_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
-      {% endif %}
     </div> <!-- c-media-block__content -->
   </div> <!-- c-media-block -->
 {% endif %}

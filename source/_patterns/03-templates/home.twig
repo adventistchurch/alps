@@ -3,9 +3,9 @@
     {% include '@organisms/global/header.twig' %}
     <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
       {% include '@organisms/sections/page-header-feature.twig' %}
-      <section class="l-grid l-grid--7-col l-grid--7-col--l--offset-1 l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero">
+      <section class="l-grid l-grid--7-col l-grid--7-col--xl--offset-1 l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides">
         <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col">
-          <div class="c-article__body u-spacing">
+          <div class="c-article__body">
             {% if has_short_body %}
               {% include '@organisms/content/body-content-short.twig' %}
             {% else %}
@@ -13,7 +13,7 @@
             {% endif %}
           </div>
         </article>
-        <div class="l-sidebar l-grid-item l-grid-item--l--4-col l-grid-item--xl--2-col u-spacing--double u-padding--zero--sides">
+        <div class="l-sidebar l-grid-item l-grid-item--l--2-col l-grid-item--xl--2-col u-spacing--double u-padding--zero--sides">
           {% if breakout_block %}
             {% include '@molecules/blocks/breakout-block.twig' %}
           {% endif %}

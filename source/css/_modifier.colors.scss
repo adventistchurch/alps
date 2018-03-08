@@ -2,9 +2,11 @@
     $COLOR MODIFIERS
 \*------------------------------------*/
 
+
 /**
  * Text Colors
  */
+
 .u-color--black,
 .u-color--black a {
   color: $c-black;
@@ -43,21 +45,24 @@
   color: rgba($c-white, 0.7);
 }
 
+
 /**
  * Link Colors
  */
+
 .u-link--white {
   color: $c-white;
-
   &:hover {
     color: $c-white;
     opacity: 0.5;
   }
 }
 
+
 /**
  * Background Colors
  */
+
 .u-background-color--none {
   background: none;
 }
@@ -86,9 +91,11 @@
   background-color: $c-white;
 }
 
+
 /**
  * States
  */
+
 .u-color--valid {
   color: $c-valid;
 }
@@ -105,9 +112,11 @@
   color: $c-information;
 }
 
+
 /**
  * SVG Fill Colors
  */
+
 .u-path-fill--black {
   path {
     fill: $c-black;
@@ -144,9 +153,11 @@
   }
 }
 
+
 /**
  * Theme Colors
  */
+
 .u-background-color--treefrog {
   background-color: $c-theme-treefrog;
 }
@@ -175,6 +186,10 @@
   background-color: $c-theme-campfire;
 }
 
+.u-background-color--winter {
+  background-color: $c-theme-winter;
+}
+
 .u-background-color--forest {
   background-color: $c-theme-forest;
 }
@@ -198,6 +213,11 @@
 .u-background-color--velvet {
   background-color: $c-theme-velvet;
 }
+
 .u-background-color--earth {
   background-color: $c-theme-earth;
+}
+
+.u-background-color--night {
+  background-color: $c-theme-night;
 }

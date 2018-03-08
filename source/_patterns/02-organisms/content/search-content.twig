@@ -1,35 +1,6 @@
-<div class="search__results u-spacing--one-and-half">
-  <div class="search__options u-padding--primary u-padding--zero--bottom u-spacing--half">
-    <form action="" role="search" method="get" class="search__results__form ">
-      <fieldset>
-        <legend class="is-vishidden">Search</legend>
-        <div class="field-container field-container--inline">
-          <input type="search" name="s" class="search__results__input u-font--secondary--s" value="Keyword" />
-          <button class="search__submit o-button">Search</button> <!-- /.search-form__submit -->
-        </div> <!-- /.field-container -->
-      </fieldset>
-    </form> <!-- /.search-form -->
-    <div class="search__filters u-spacing--half">
-      <h3 class="u-font--secondary--m u-text-transform--upper">Narrow Search</h3>
-      <ul class="o-bullet-list u-spacing--quarter u-theme--color--base">
-        <li class="u-font--primary--s"><a href="">News</a> (1326)</li>
-        <li class="u-font--primary--s"><a href="">Articles</a> (18)</li>
-        <li class="u-font--primary--s"><a href="">Pages</a> (16)</li>
-        <li class="u-font--primary--s"><a href="">Video Episodes</a> (4)</li>
-        <li class="u-font--primary--s"><a href="">Photos</a> (122)</li>
-      </ul>
-    </div> <!-- /.search__filters -->
-  </div>
-  <hr>
-  <div class="u-spacing--one-and-half">
-    {% for result in search_results %}
-      <div class="u-padding--primary u-padding--zero--top u-padding--zero--bottom u-spacing--half text">
-        <h3 class="u-color--brown u-font--secondary--l u-theme--color--base"><a href="">{{ result.text.heading | raw}}</a></h3>
-        <p>{{ result.text.description | raw }}</p>
-        {% if result.text.cta %}<a href="{{ result.url }}" class="o-button u-font--secondary--s u-text-transform--upper u-theme--secondary-background-color"><strong>{{ result.text.cta | raw }}</strong></a> {% endif %}
-      </div>
-      <hr>
-    {% endfor %}
-    {% include '@molecules/navigation/pagination.twig' %}
-  </div>
-</div> <!-- /.search__results -->
+<div class="c-search-results u-spacing--double text">
+  {% for block in search_results %}
+    {% include '@molecules/blocks/content-block.twig' with block %}
+  {% endfor %}
+  <a href="" class="o-button">Load More</a>
+</div> <!-- /.c-search-results -->
