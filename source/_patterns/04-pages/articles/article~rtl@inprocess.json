@@ -1,0 +1,135 @@
+{
+  "head": {
+    "title": "Article Page (RTL) - The Official Site of the Seventh-day Adventist world church"
+  },
+
+  "blockquote": true,
+  "figure_breakout": false,
+  "figure_with_caption": true,
+  "figure_split": false,
+  "highlight": true,
+  "gallery_block": false,
+  "story_block": false,
+  "related_posts": true,
+  
+  "media_block_default": {
+    "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+    "block_img_class": "l-grid-item l-grid-item--m--3-col l-grid-item--l--4-col u-padding--zero--sides",
+    "block_content_class": "l-grid-item l-grid-item--m--3-col l-grid-item--l--2-col u-theme--border-color--darker--left u-theme--color--lighter u-theme--background-color--darker can-be--dark-dark u-padding--top u-padding--bottom",
+    "block_title_class": "u-color--white",
+    "block_meta_class": "",
+    "title": "ومختلفة من نص",
+    "description": "إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى.",
+    "category": "ببساطة",
+    "datetime": "2017-12-28",
+    "date": "December 28, 2017",
+    "picture": {
+      "img_break_m": "500",
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "//unsplash.it/500/375/?random",
+        "src_m": "//unsplash.it/500/600/?random"
+      },
+      "has_break_l": {
+        "img_break_l": "800",
+        "img": {
+          "src_l": "//unsplash.it/600/700/?random"
+        }
+      }
+    }
+  },
+
+
+  "primary_nav": {
+    "items": [
+      {
+        "text": "ببساطة",
+        "subnav": {
+          "items": [
+            {
+              "text": "تغيير وتبديل"
+            },
+            {
+              "text": "تـــــــعويـــــــل"
+            },
+            {
+              "text": "تـــــوقــيت"
+            },
+            {
+              "text": "تـنجيــم .علم التنجيــــــم"
+            }
+          ]
+        }
+      },
+      {
+        "text": "أسئلة عامة",
+        "subnav": {
+          "items": [
+            {
+              "text": "تغيير وتبديل"
+            },
+            {
+              "text": "تـــــــعويـــــــل"
+            },
+            {
+              "text": "تـــــوقــيت"
+            },
+            {
+              "text": "تـنجيــم .علم التنجيــــــم"
+            }
+          ]
+        }
+      },
+      {
+        "text": "مواضيع الإنجيل"
+      },
+      {
+        "text": "موارد"
+      },
+      {
+        "text": " دراسات في"
+      },
+      {
+        "text": "الصفحة",
+        "subnav": {
+          "items": [
+            {
+              "text": "تغيير وتبديل"
+            },
+            {
+              "text": "تـــــــعويـــــــل"
+            },
+            {
+              "text": "تـــــوقــيت"
+            },
+            {
+              "text": "تـنجيــم .علم التنجيــــــم"
+            }
+          ]
+        }
+      },
+      {
+        "text": "عامة"
+      }
+    ]
+  },
+
+  "secondary_nav": {
+    "items": [
+      {
+        "text": "بحث"
+      },
+      {
+        "text": "المحتوى"
+      },
+      {
+        "text": "سؤالا يتعلق"
+      },
+      {
+        "text": "للاتصال بنا"
+      }
+    ]
+  }
+
+
+}
