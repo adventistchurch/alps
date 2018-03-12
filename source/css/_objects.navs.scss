@@ -16,29 +16,3 @@
     }
   }
 }
-
-/**
- * Search suggest
- */
-.ui-autocomplete {
-  background: $c-white;
-  border: 1px solid $c-gray--light;
-  border-top: none;
-  max-width: rem(300);
-}
-
-.ui-menu-item {
-  a {
-    display: block;
-    padding: rem(8);
-    color: $c-gray;
-    font-family: $ff-font--secondary;
-    font-size: rem(14);
-  }
-
-  &.ui-state-focus,
-  a:hover {
-    color: $c-theme-ming;
-    cursor: pointer;
-  }
-}

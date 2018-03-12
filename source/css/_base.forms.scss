@@ -65,39 +65,6 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /**
- * Form Field Container
- */
-.field-container {
-  margin-bottom: $space;
-}
-
-.field-container--inline {
-  @include media('>small') {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  > input {
-    width: 100%;
-
-    @include media('>small') {
-      width: calc(80% - 20px);
-    }
-  }
-
-  > button {
-    width: 100%;
-
-    @include media('>small') {
-      width: 20%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
-
-/**
  * Validation
  */
 .has-error {

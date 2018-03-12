@@ -32,17 +32,6 @@
   background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
 }
 
-// .is-featured::before {
-//   @include u-font--primary--xl;
-//
-//   font-weight: bold;
-//   content: "Featured";
-//   display: inline-block;
-//   width: auto;
-//   font-style: italic;
-//   text-transform: capitalize;
-// }
-
 .has-grid {
   position: relative;
 
@@ -107,30 +96,6 @@
 
 .o-arrow--small {
   border-width: 5px;
-}
-
-/**
- * Clearfix - extends outer container with floated children.
- */
-.u-clear-fix {
-  zoom: 1;
-}
-.u-clear-fix:before, .u-clear-fix:after {
-  content: " "; // 1
-  display: table; // 2
-}
-.u-clear-fix:after {
-  clear: both;
-}
-
-/**
- * Completely remove from the flow and screen readers.
- */
-.is-hidden {
-  visibility: hidden;
-}
-.hide {
-  display: none;
 }
 
 /**
@@ -211,17 +176,33 @@
   float: none;
 }
 
+
 /**
- * Clear Floats
+ * Clearfix - extends outer container with floated children.
  */
-.u-clear--both {
+.u-clear-fix {
+  zoom: 1;
+}
+
+.u-clear-fix:before,
+.u-clear-fix:after {
+  content: " ";
+  display: table;
+}
+
+.u-clear-fix:after {
   clear: both;
 }
-.u-clear--left {
-  clear: left;
+
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.is-hidden {
+  visibility: hidden;
 }
-.u-clear--right {
-  clear: right;
+
+.hide {
+  display: none;
 }
 
 /**
@@ -280,16 +261,6 @@
 }
 
 /**
- * Floats
- */
-.u-float--right {
-  float: right;
-}
-.u-float--left {
-  float: left;
-}
-
-/**
  * Positioning
  */
 .u-position--relative {
@@ -328,6 +299,11 @@
 .u-background--cover {
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.u-background-image {
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -383,54 +359,12 @@
   overflow: hidden;
 }
 
-.u-width--100vw {
-  width: 100vw;
-}
-
 .u-width--100p {
   width: 100%;
 }
 
-.u-height--100vh {
-  height: 100vh;
-}
-
 .u-height--100p {
   height: 100%;
-}
-
-/**
- * Hide elements only present and necessary for js enabled browsers.
- */
-.no-js .u-no-js-hide {
-  display: none;
-}
-
-/**
- * Positioning
- */
-.u-position--relative {
-  position: relative;
-}
-
-.u-position--absolute {
-  position: absolute;
-}
-
-/**
- * Active on/off states
- */
-.u-active--off {
-  display: none;
-}
-.this-is-active,
-.is-active {
-  .u-active--on {
-    display: none;
-  }
-  .u-active--off {
-    display: block;
-  }
 }
 
 /**
@@ -461,68 +395,4 @@
   right: 0;
   display: flex;
   align-items: center;
-}
-
-.u-vertical-align--top {
-  vertical-align: top;
-}
-
-.u-vertical-align--text-top {
-  vertical-align: text-top;
-}
-
-.u-vertical-align--bottom {
-  vertical-align: bottom;
-}
-
-.u-vertical-align--text-bottom {
-  vertical-align: text-bottom;
-}
-
-.u-vertical-align--middle {
-  vertical-align: middle;
-}
-
-.u-vertical-align--sub {
-  vertical-align: sub;
-}
-
-.u-vertical-align--center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/**
- * Background Covered
- */
-.u-background--cover {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.u-background-image {
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/**
- * Flexbox
- */
-.u-align-items--center {
-  align-items: center;
-}
-
-.u-align-items--end {
-  align-items: flex-end;
-}
-
-.u-align-items--start {
-  align-items: flex-start;
-}
-
-.u-justify-content--center {
-  justify-content: center;
 }
