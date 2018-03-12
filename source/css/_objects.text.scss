@@ -353,6 +353,25 @@
     font-family: $ff-font--primary;
   }
 
+  > p,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > ol,
+  > ul,
+  .c-breadcrumbs {
+    padding-left: $pad-mobile;
+    padding-right: $pad-mobile;
+
+    @include media('>large') {
+      padding-left: $pad;
+      padding-right: $pad;
+    }
+  }
+
   > h1
   > h2,
   > h3,
@@ -421,6 +440,7 @@
 
   > .o-pullquote--extended {
     width: calc(100vw / 7 * 3);
+    margin-bottom: $space;
     float: left;
 
     @include media('>large') {
@@ -444,6 +464,7 @@
   > ul {
     list-style: disc;
     padding-left: $space;
+    margin-left: $space;
     margin-bottom: $space;
 
     li {
@@ -466,6 +487,7 @@
   > ol {
     list-style: decimal;
     padding-left: $space;
+    margin-left: $space;
     margin-bottom: $space;
 
     li {
@@ -496,7 +518,6 @@
 ol,
 ul:not(.c-breadcrumbs__list) {
   .text & {
-    margin-left: 0;
 
     li {
       list-style: none;

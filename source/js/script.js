@@ -347,7 +347,7 @@
   }
 
   // Theme switcher for colors
-  $('.c-swatches--colors .c-swatches__item').click(function(){
+  $('.c-swatches--colors .c-swatches__item').click(function() {
     var thisColor = $(this).data('color');
 
     $('.c-swatches--colors .c-swatches__item').removeClass('active');

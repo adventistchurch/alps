@@ -171,28 +171,28 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'public/v3/css/',
             src: ['**/*'],
-            dest: '../igs-guidelines/css'
+            dest: '../igs-guidelines/v3/css'
           },
           // Export js directory to IGS js directory
           {
             expand: true,
             cwd: 'public/v3/js/',
             src: ['**/*'],
-            dest: '../igs-guidelines/js'
+            dest: '../igs-guidelines/v3/js'
           },
           // Export images directory to IGS images directory
           {
             expand: true,
             cwd: 'public/v3/images/',
             src: ['**/*'],
-            dest: '../igs-guidelines/images'
+            dest: '../igs-guidelines/v3/images'
           },
           // Export styleguide directory to IGS styleguide directory
           {
             expand: true,
             cwd: 'public/v3/styleguide/',
             src: ['**/*'],
-            dest: '../igs-guidelines/styleguide'
+            dest: '../igs-guidelines/v3/styleguide'
           }
         ]
       },

@@ -1,7 +1,6 @@
 /*------------------------------------*\
     $BLOCKS
 \*------------------------------------*/
-
 .c-block__heading {
   border-left: rem(3) solid $c-black;
   display: flex;
@@ -137,50 +136,6 @@
   align-items: flex-end;
 }
 
-@mixin block-row {
-  display: flex;
-
-  .c-block__image-wrap {
-    width: 30%;
-    max-width: 300px;
-    text-align: right;
-  }
-
-  .c-block__content {
-    width: 70%;
-    padding-left: $pad;
-    align-self: center;
-
-    .u-rtl & {
-      padding-left: 0;
-      padding-right: $pad;
-    }
-  }
-}
-
-/**
- * Block row (block with left thumb and right text when space allows)
- */
-.c-block__row {
-  @include media('>small') {
-    @include block-row;
-  }
-}
-
-// Horizontal block between 'small' and 'medium' viewports.
-.c-block__row--small-to-medium {
-  @include media('>small', '<=medium') {
-    @include block-row;
-  }
-}
-
-// Horizontal block between 'small' and 'large' viewports.
-.c-block__row--small-to-large {
-  @include media('>small', '<=large') {
-    @include block-row;
-  }
-}
-
 /**
  * Media Block
  */
@@ -197,7 +152,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: column;
     padding-left: $pad-mobile;
     padding-right: $pad-mobile;
     @include media('>large') {
@@ -508,15 +462,6 @@
       background: url('../images/icons/o-icon__gallery.svg') bottom rem(10) left rem(10) no-repeat;
       background-size: 50% auto;
     }
-  }
-}
-
-/**
- * Related posts
- */
-.c-related-posts {
-  &__blocks {
-
   }
 }
 

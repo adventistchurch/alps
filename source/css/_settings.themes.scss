@@ -54,6 +54,13 @@ $themes: (
     light: #ffa06c,
     lighter: #ffa06c
   ),
+  u-theme--winter: (
+    darker: #222222,
+    dark: #4A4A4A,
+    base: $c-theme-winter, // base
+    light: #F9F9F9,
+    lighter: #F9F9F9
+  ),
   // Muted
   u-theme--forest: (
     darker: #101a00,
@@ -103,6 +110,13 @@ $themes: (
     base: $c-theme-earth, // base
     light: #eab57e,
     lighter: #eab57e
+  ),
+  u-theme--night: (
+    darker: #000000,
+    dark: #717171,
+    base: $c-theme-night, // base
+    light: #F9F9F9,
+    lighter: #F9F9F9
   )
 );
 

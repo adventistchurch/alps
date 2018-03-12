@@ -119,6 +119,54 @@
 .u-rtl {
   direction: rtl;
   unicode-bidi: bidi-override;
+
+  blockquote,
+  .c-block__heading {
+    border-right: rem(3) solid $c-black;
+    border-left: 0;
+    padding-left: $pad-mobile;
+    padding-right: $pad-mobile;
+
+    @include media('>large') {
+      padding-left: $pad;
+      padding-right: $pad;
+    }
+  }
+
+  .u-border--left {
+    border-right: rem(1) solid $c-black;
+    border-left: 0;
+  }
+
+  .o-dropcap {
+    float: right;
+    margin-right: 0;
+    margin-left: $pad;
+
+    @include media('>large') {
+      margin-left: $pad;
+    }
+  }
+
+  .c-header .c-secondary-nav {
+    direction: ltr;
+  }
+
+  .l-grid--7-col {
+    &--l--offset-1 {
+      @include media('>large') {
+        margin-left: 0;
+        margin-right: calc(100vw / 7);
+      }
+    }
+
+    &--xl--offset-1 {
+      @include media('>xxlarge') {
+        margin-left: 0;
+        margin-right: calc(100vw / 7);
+      }
+    }
+  }
 }
 
 /**
