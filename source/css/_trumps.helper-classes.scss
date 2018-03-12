@@ -2,6 +2,26 @@
     $HELPER/TRUMP CLASSES
 \*------------------------------------*/
 
+.u-overlay--dark {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($c-black, 0.4);
+}
+
+.u-overlay--light {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($c-white, 0.4);
+}
+
 .u-gradient--bottom::after {
   content: "";
   display: block;
@@ -150,6 +170,13 @@
 
   .c-header .c-secondary-nav {
     direction: ltr;
+  }
+
+  .u-space--right--1-col--at-medium {
+    @include media('>medium') {
+     margin-left: calc((100vw/7) * -1);
+     margin-right: 0;
+    }
   }
 
   .l-grid--7-col {
@@ -356,8 +383,16 @@
   overflow: hidden;
 }
 
+.u-width--100vw {
+  width: 100vw;
+}
+
 .u-width--100p {
   width: 100%;
+}
+
+.u-height--100vh {
+  height: 100vh;
 }
 
 .u-height--100p {

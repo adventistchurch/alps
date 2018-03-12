@@ -6,7 +6,8 @@
   display: flex;
   padding-top: $pad-mobile;
   padding-bottom: rem(5);
-  z-index: 1;
+  z-index: 3;
+  position: relative;
   background-color: $c-white;
 
   @include media('>small') {
@@ -328,7 +329,7 @@
       select {
         border: 0;
         padding: 0;
-        padding-right: rem(23s);
+        padding-right: rem(23);
         outline: 0;
         text-align: right;
       }

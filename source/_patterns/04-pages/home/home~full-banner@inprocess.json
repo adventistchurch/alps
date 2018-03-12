@@ -1,0 +1,35 @@
+{
+  "media_block_default": {
+    "block_class": "c-block__full c-media-block__full",
+    "block_group_class": "u-flex--justify-center u-flex--align-center u-text-align--center u-overlay--dark",
+    "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-color--white",
+    "block_title_class": "l-grid-item--5-col l-grid-item--m--2-col u-font--primary--xl u-flex--justify-center",
+    "block_meta_class": "hide",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "kicker": false,
+    "description": false,
+    "category": false,
+    "datetime": false,
+    "date": false,
+    "picture": {
+      "img_break_m": "500",
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "//unsplash.it/500/800/?random",
+        "src_m": "//unsplash.it/600/900/?random"
+      },
+      "has_break_l": {
+        "img_break_l": "800",
+        "img": {
+          "src_l": "//unsplash.it/1000/900/?random"
+        }
+      },
+      "has_break_xl": {
+        "img_break_xl": "1000",
+        "img": {
+          "src_xl": "//unsplash.it/1440/1200/?random"
+        }
+      }
+    }
+  }
+}
