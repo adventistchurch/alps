@@ -54,13 +54,13 @@
 /**
  * Comments
  */
-.comment-list {
-  padding-top: $space/2;
-  margin-bottom: $space*2;
+.c-comment-list {
+  // padding-top: $space/2;
+  // margin-bottom: $space*2;
 
   > li {
-    border-top: 1px solid $c-gray--light;
-    padding-top: $pad;
+    // border-top: 1px solid $c-gray--light;
+    // padding-top: $pad;
 
     .comment-respond,
     .children li {
@@ -76,27 +76,28 @@
   }
 }
 
-.comment--inner {
-  display: flex;
-  align-items: flex-start;
-}
-
-.comment__meta {
-  margin-bottom: rem(5);
-
-  .o-divider {
-    margin-left: rem(5);
-    margin-right: rem(5);
+.c-comment {
+  &--inner {
+    display: flex;
+    align-items: flex-start;
   }
-}
 
-.comment__edit-link {
-  margin-left: rem(5);
-}
+  &__meta {
+    margin-bottom: rem(5);
 
-.comment__avatar {
-  margin-right: $space/2;
-  display: flex;
-  min-width: rem(50);
-  min-height: rem(50);
+    .o-divider {
+      margin-left: rem(5);
+      margin-right: rem(5);
+    }
+  }
+
+  &__edit-link {
+    margin-left: rem(5);
+  }
+
+  &__avatar {
+    display: flex;
+    min-width: rem(50);
+    min-height: rem(50);
+  }
 }
