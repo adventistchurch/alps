@@ -44,6 +44,17 @@
     });
   }
 
+  // Sabbath Logo Icon
+  var headerHeight = $('.c-header').outerHeight();
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > headerHeight) {
+      $('.js-show-on-scroll').removeClass('is-hidden').addClass('is-visible');
+    } else {
+      $('.js-show-on-scroll').removeClass('is-visible').addClass('is-hidden');
+    }
+  });
+
   var divs = $('.l-sabbath__logo-light');
   $(window).scroll(function(){
      var percent = $(document).scrollTop() / ($(document).height() - $(window).height());

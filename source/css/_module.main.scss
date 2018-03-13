@@ -38,6 +38,7 @@
 
   &__logo--inner {
     position: relative;
+    transition: all 0.25s ease;
 
     > div {
       transition: all 0.5s ease;
