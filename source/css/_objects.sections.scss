@@ -8,20 +8,15 @@
 
 .c-page-header__simple {
   height: auto;
-  min-height: calc(100vw / 7 * 2);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  min-height: 150px;
+  min-height: calc(100vw / 7 * 2);
 
-  @include media('>large') {
-    //min-height: calc(100vw / 7 * 1);
-    min-height: 250px;
-  }
-  @include media('>xxlarge') {
-    min-height: 300px;
+  @include media('>small') {
+    min-height: calc(100vw / 7 * 1);
   }
 
   &--inner {
@@ -54,28 +49,6 @@
 /**
  * Comments
  */
-.c-comment-list {
-  // padding-top: $space/2;
-  // margin-bottom: $space*2;
-
-  > li {
-    // border-top: 1px solid $c-gray--light;
-    // padding-top: $pad;
-
-    .comment-respond,
-    .children li {
-      margin-top: $space;
-      margin-left: rem(50);
-    }
-  }
-}
-
-.comment-form {
-  label {
-    display: none;
-  }
-}
-
 .c-comment {
   &--inner {
     display: flex;
@@ -99,5 +72,29 @@
     display: flex;
     min-width: rem(50);
     min-height: rem(50);
+  }
+
+  &__children li {
+    margin-left: rem(50);
+  }
+}
+
+/**
+ * Accordion
+ */
+
+.c-accordion {
+  &__item {
+    cursor: pointer;
+
+    &.this-is-active {
+      .c-accordion__content {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
+    display: none;
   }
 }

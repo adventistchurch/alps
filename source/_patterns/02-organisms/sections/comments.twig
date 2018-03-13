@@ -1,15 +1,15 @@
 {% if comments %}
 <section class="c-comments u-spacing--double">
-  <ul class="c-comment-list u-spacing">
+  <ul class="c-comment__list u-spacing">
     <div class="c-block__heading u-theme--border-color--darker">
       <h3 class="c-block__heading-title u-theme--color--darker">4 comments</h3>
     </div>
     {%  for comment in comments.comment %}
-      <li class="comment">
+      <li class="c-comment__list-item comment">
         {% include '@molecules/components/comment.twig' with {'single_comment_text': comment.comment_text,'single_comment_date': comment.comment_date,'single_comment_byline': comment.comment_byline} %}
         {% for comment_child in comment.comment_children %}
-          <ul class="children">
-            <li class="comment">
+          <ul class="c-comment__children__list children u-spacing">
+            <li class="c-comment__children__list-item comment">
               {% include '@molecules/components/comment.twig' with {'single_comment_text': comment_child.comment_text,'single_comment_date': comment_child.comment_date,'single_comment_byline': comment_child.comment_byline} %}
             </li>
           </ul>
