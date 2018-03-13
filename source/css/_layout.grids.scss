@@ -190,6 +190,10 @@
     &--6-col {
       width: calc((100vw / 7) * 6);
     }
+
+    &--7-col {
+      width: 100vw;
+    }
   }
 
   @include media('>small') {
@@ -250,6 +254,10 @@
       &--6-col {
         width: calc((100vw / 7) * 6);
       }
+
+      &--7-col {
+        width: 100vw;
+      }
     }
   }
 
@@ -283,6 +291,10 @@
       &--6-col {
         width: calc((100vw / 7) * 6);
       }
+
+      &--7-col {
+        width: 100vw;
+      }
     }
   }
 
@@ -315,6 +327,10 @@
 
       &--6-col {
         width: calc((100vw / 7) * 6);
+      }
+
+      &--7-col {
+        width: 100vw;
       }
     }
   }

@@ -124,31 +124,8 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__inset c-media-block__inset l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col--xl--offset-1",
-        "block_content_class": "l-grid--7-col u-theme--background-color--darker",
-        "block_title_class": "l-grid-item u-link-hover--white",
-        "block_meta_class": "l-grid-item",
-        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis consequat convallis.",
-        "description": false,
-        "category": false,
-        "datetime": "2017-12-28",
-        "date": "December 28, 2017",
-        "picture": {
-          "img_break_m": "500",
-          "img": {
-            "alt": "Alt Text",
-            "src_s": "//unsplash.it/500/375/?random",
-            "src_m": "//unsplash.it/800/550/?random"
-          },
-          "has_break_l": false,
-          "has_break_xl": false
-        }
-      }
-    },
-    {
-      "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid--7-col",
-        "block_img_class": "l-grid-item u-padding--zero--sides",
+        "block_img_class": "l-grid-item--7-col u-padding--zero--sides",
         "block_content_class": "l-grid--7-col--xl--offset-1 l-grid-wrap l-grid-wrap--5-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
         "block_meta_class": "u-theme--color--base",
