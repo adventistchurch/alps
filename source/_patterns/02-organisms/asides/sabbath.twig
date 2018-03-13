@@ -5,9 +5,11 @@
         background-image: url('{{ sabbath_background }}') !important;
       }
     </style>
-    <div class="l-sabbath__logo u-path-fill--white js-sticky">
-      {% include '@atoms/icons/icon-logo.twig' %}
-    </div>
+    {% if sabbath_logo %}
+      <div class="l-sabbath__logo u-path-fill--white js-sticky {{ sabbath_logo_class }}">
+        {% include '@atoms/icons/icon-logo.twig' %}
+      </div>
+    {% endif %}
   {% else %}
     <div class="l-sabbath__logo js-sticky">
       <div class="l-sabbath__logo--inner">

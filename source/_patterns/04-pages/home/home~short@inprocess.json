@@ -1,6 +1,7 @@
 {
   "has_short_body": true,
   "related_posts": false,
+  "header_logo": "logo-gain",
 
   "media_block_default": {
     "block_class": "c-block__full c-media-block__full",

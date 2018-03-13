@@ -15,6 +15,10 @@
   "logo": "adventist-logo-h-en.svg",
   "image_path": "../../images/",
 
+  "header_logo": "logo-sda",
+  "sabbath_logo": true,
+  "sabbath_logo_class": "",
+
   "img": {
     "src": "//placehold.it/600x375",
     "alt": "Image Alt",
