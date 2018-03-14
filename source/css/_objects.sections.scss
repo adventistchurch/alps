@@ -5,6 +5,7 @@
 /**
  * Page Headers
  */
+
 .c-page-header__3-col {
   .c-page-header__content {
     display: flex;
@@ -55,7 +56,6 @@
   }
 }
 
-
 /**
  * Comments
  */
@@ -84,7 +84,7 @@
     min-height: rem(50);
   }
 
-  &__children li {
+  &__children__list-item {
     margin-left: rem(50);
   }
 }

@@ -61,68 +61,9 @@
   }
 }
 
-@mixin layout-in-column {
-  // margin-left: -1 * $space;
-  // margin-right: -1 * $space;
-  //
-  // @include media ('>xlarge') {
-  //   margin-left: -1 * $space;
-  //   margin-right: -1 * $space;
-  // }
-}
-
-[class*="l-grid--"] {
-  @include layout-in-column;
-}
-
 .l-grid-item {
   width: 100%;
   box-sizing: border-box;
-}
-
-/**
-* 1 to 2 column grid at 50% each.
-*/
-.l-grid--50-50 {
-  @include media ('>medium') {
-    width: 100%;
-
-    > * {
-      width: 50%;
-    }
-  }
-}
-
-/**
- * 3 column grid
- */
-.l-grid--3-col {
-  @include media ('>medium') {
-    width: 100%;
-
-    > * {
-      width: 50%;
-    }
-  }
-}
-
-/**
- * 4 column grid
- */
-.l-grid--4-col {
-  width: 100%;
-
-  @include media ('>medium') {
-    > * {
-      width: 50%;
-    }
-  }
-
-  @include media ('>large') {
-    > * {
-      width: 25%;
-    }
-  }
 }
 
 /**

@@ -45,6 +45,40 @@ $icon-big: rem(65);
 }
 
 /**
+ * Close icon
+ */
+
+.o-icon__close {
+  display: block;
+  width: rem(50);
+  height: rem(50);
+  cursor: pointer;
+
+  span {
+    height: rem(1.5);
+    width: rem(25);
+    display: block;
+    content: "";
+    background-color: $c-white;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+/**
  * Play icon overlay
  */
 .is-video {

@@ -238,17 +238,6 @@
         padding-right: rem(180);
         padding-left: 0;
       }
-
-      // &::after {
-      //   content: "";
-      //   display: block;
-      //   width: 100%;
-      //   background-color: blue;
-      //   height: rem(60);
-      //   position: absolute;
-      //   top: rem(35);
-      //   right: 0;
-      // }
     }
 
     &__list-item {
@@ -519,11 +508,6 @@
         }
       }
     }
-
-    // @include media('<=medium') {
-    //   right: -100%;
-    //   transition: right 0.25s ease-in-out;
-    // }
   }
 
   svg path {
@@ -865,36 +849,6 @@
     a {
       display: block;
       width: 100%;
-    }
-  }
-}
-
-.o-icon__close {
-  display: block;
-  width: rem(50);
-  height: rem(50);
-  cursor: pointer;
-
-  span {
-    height: rem(1.5);
-    width: rem(25);
-    display: block;
-    content: "";
-    background-color: $c-white;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-    &:first-child {
-      transform: rotate(45deg);
-    }
-
-    &:last-child {
-      transform: rotate(-45deg);
     }
   }
 }

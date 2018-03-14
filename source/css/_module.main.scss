@@ -11,14 +11,14 @@
 }
 
 .l-wrap__content {
-  width: calc(100vw/7 *6);
+  width: calc(100vw / 7 * 6);
   z-index: 2;
   position: relative;
   overflow: visible;
 }
 
 .l-wrap__sabbath {
-  width: calc(100vw/7 *1);
+  width: calc(100vw / 7 * 1);
   background-color: $c-gray--light;
   z-index: 1;
   position: relative;

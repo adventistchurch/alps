@@ -550,6 +550,10 @@ $themes: (
       // Custom
       .can-be--dark-dark {
         background-color: $darker;
+
+        svg path {
+          fill: $c-white;
+        }
       }
 
       .can-be--dark-light {

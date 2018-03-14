@@ -4,7 +4,7 @@
       {% include '@molecules/navigation/secondary-navigation.twig' %}
     </div>
     <div class="c-header__logo c-logo">
-      <a href="/" class="c-logo__link u-theme--path-fill--base">
+      <a href="/" class="c-logo__link {{ header_logo_class }}">
         {% include '@atoms/images/' ~ header_logo ~ '.twig' %}
       </a>
     </div> <!-- /.c-header__logo -->
