@@ -3,6 +3,7 @@
   "related_posts": false,
   "header_logo": "logo-gain",
   "header_logo_class": "can-be--dark-dark",
+  "sabbath_icon_class": "",
 
   "media_block_default": {
     "block_class": "c-block__full c-media-block__full has-scroll",

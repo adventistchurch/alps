@@ -1,7 +1,4 @@
 {
-  "header_logo": "logo-sda-with-icon",
-  "sabbath_icon_class": "js-show-on-scroll is-hidden",
-
   "media_block_default": {
     "block_class": "c-block__inset c-media-block__inset",
     "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker u-color--white",

@@ -1,0 +1,112 @@
+{
+  "header_logo": "logo-sda-with-icon",
+  "sabbath_icon_class": "js-show-on-scroll is-hidden",
+
+  "page_header_blocks": [
+    {
+      "media_block_default": {
+        "block_class": "c-block__column c-media-block__column",
+        "block_group_class": "u-flex--justify-center u-overlay--dark",
+        "block_content_class": "u-color--white",
+        "block_title_class": "u-font--primary--xl u-flex--justify-center",
+        "block_meta_class": "hide",
+        "title": "<em class='u-theme--color--lighter'>Sermon</em> Seeking Another Way",
+        "kicker": false,
+        "description": false,
+        "category": false,
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "700",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/375/?random",
+            "src_m": "//unsplash.it/200/800/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//unsplash.it/300/1000/?random"
+            }
+          },
+          "has_break_l": {
+            "img_break_l": "1100",
+            "img": {
+              "src_l": "//unsplash.it/400/1100/?random"
+            }
+          }
+        }
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "c-block__column c-media-block__column",
+        "block_group_class": "u-flex--justify-center u-overlay--dark",
+        "block_content_class": "u-color--white",
+        "block_title_class": "u-font--primary--xl u-flex--justify-center",
+        "block_meta_class": "hide",
+        "title": "<em class='u-theme--color--lighter'>Blog</em> Son Rise Over the Land of the Rising Sun: My Eyewitness Account",
+        "kicker": false,
+        "description": false,
+        "category": false,
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "700",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/375/?gravity",
+            "src_m": "//unsplash.it/200/800/?gravity"
+          },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//unsplash.it/300/1000/?gravity"
+            }
+          },
+          "has_break_l": {
+            "img_break_l": "1100",
+            "img": {
+              "src_l": "//unsplash.it/400/1100/?gravity"
+            }
+          }
+        }
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "c-block__column c-media-block__column",
+        "block_group_class": "u-flex--justify-center u-overlay--dark",
+        "block_content_class": "u-color--white",
+        "block_title_class": "u-font--primary--xl u-flex--justify-center",
+        "block_meta_class": "hide",
+        "title": "<em class='u-theme--color--lighter'>Event</em> Religious Liberty – The Freedom to Beleive",
+        "kicker": false,
+        "description": false,
+        "category": false,
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "700",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/375/?nature",
+            "src_m": "//unsplash.it/200/800/?nature"
+          },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//unsplash.it/300/1000/?nature"
+            }
+          },
+          "has_break_l": {
+            "img_break_l": "1100",
+            "img": {
+              "src_l": "//unsplash.it/400/1100/?nature"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

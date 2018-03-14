@@ -2,6 +2,11 @@
     $MAIN CONTENT AREA
 \*------------------------------------*/
 
+.body {
+  position: relative;
+  min-height: 100vh;
+}
+
 .l-wrap {
   display: flex;
   flex-wrap: nowrap;

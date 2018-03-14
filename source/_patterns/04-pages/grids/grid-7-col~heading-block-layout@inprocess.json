@@ -34,9 +34,10 @@
           }
         }
       }
-    },{
+    },
+    {
       "media_block_default": {
-        "block_class": "c-block__full c-media-block__full",
+        "block_class": "c-block__full c-media-block__full has-scroll",
         "block_group_class": "u-flex--justify-center u-overlay--dark",
         "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-color--white",
         "block_title_class": "l-grid-item--2-col u-font--primary--xl u-flex--justify-center",
