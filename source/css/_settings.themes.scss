@@ -552,6 +552,20 @@ $themes: (
         background-color: $darker;
       }
 
+      .can-be--dark-light {
+        .u-theme--color--darker {
+          color: $darker;
+        }
+
+        .u-theme--color--dark {
+          color: $dark;
+        }
+
+        .u-color--gray {
+          color: $c-gray;
+        }
+      }
+
       .can-be--white {
         color: $c-white;
       }
