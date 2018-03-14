@@ -223,7 +223,7 @@
 
     &__list {
       height: rem(35);
-      overflow: hidden;
+      overflow-y: hidden;
       display: flex;
       flex-wrap: nowrap;
       width: 100%;
@@ -305,11 +305,7 @@
       position: relative;
       height: rem(35);
       padding-left: $pad-mobile*2;
-      display: none;
-
-      @include media('>small') {
-        display: flex;
-      }
+      display: flex;
 
       @include media('>large') {
         padding-left: $pad;
@@ -321,6 +317,11 @@
         padding-right: rem(23);
         outline: 0;
         text-align: right;
+        width: 0;
+
+        @include media('>small') {
+          width: rem(115);
+        }
       }
 
       &::before {
