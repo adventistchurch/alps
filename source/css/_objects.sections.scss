@@ -5,6 +5,16 @@
 /**
  * Page Headers
  */
+.c-page-header__3-col {
+  .c-page-header__content {
+    display: flex;
+    flex-direction: column;
+
+    @include media('>medium') {
+      flex-direction: row;
+    }
+  }
+}
 
 .c-page-header__simple {
   height: auto;

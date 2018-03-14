@@ -393,6 +393,71 @@
     width: 100%;
     height: 100%;
   }
+
+  &.has-scroll {
+    &::after {
+      content: 'Scroll';
+      padding: $pad/2 $pad $pad/2 rem(35);
+      border: 1px solid $c-white;
+      position: absolute;
+      bottom: $space*2;
+      left: 50%;
+      transform: translateX(-50%);
+      display: table;
+      width: auto;
+      border-radius: rem(50);
+      color: $c-white;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      background: url('../images/icons/o-arrow__short--down.svg') top rem(17) left rem(18) no-repeat;
+      background-size: rem(10);
+
+      @include u-font--secondary--s;
+    }
+  }
+}
+
+.c-block__column {
+  position: relative;
+  width: 100vw;
+  height: auto;
+
+  @include media('>medium') {
+    width: calc(100vw / 7 * 2);
+  }
+
+  .c-block__image {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+
+    @include media('>medium') {
+      height: calc(100vh - 105px);
+      max-height: rem(1000);
+    }
+  }
+
+  .c-block__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+  }
+
+  .c-block__group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: $pad-mobile;
+
+    @include media('>large') {
+      padding: $pad;
+    }
+  }
 }
 
 /**

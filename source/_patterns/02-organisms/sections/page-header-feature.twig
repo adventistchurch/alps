@@ -1,7 +1,13 @@
 {% if page_header %}
-  <header class="c-page-header c-page-header__feature">
+  <header class="c-page-header c-page-header__feature{% if page_header_blocks %}{{ ' c-page-header__3-col' }}{% endif %}">
     <div class="c-page-header__content">
-      {% include '@molecules/blocks/media-block.twig' %}
+      {% if page_header_blocks %}
+        {% for block in page_header_blocks %}
+          {% include '@molecules/blocks/media-block.twig' with block %}
+        {% endfor %}
+      {% else %}
+        {% include '@molecules/blocks/media-block.twig' %}
+      {% endif %}
     </div>
   </header> <!-- /.c-page-header -->
 {% endif %}

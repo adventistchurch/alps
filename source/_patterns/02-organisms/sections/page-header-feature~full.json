@@ -1,8 +1,4 @@
 {
-  "has_short_body": true,
-  "related_posts": false,
-  "header_logo": "logo-gain",
-
   "media_block_default": {
     "block_class": "c-block__full c-media-block__full has-scroll",
     "block_group_class": "u-flex--justify-center u-flex--align-center u-text-align--center u-overlay--dark",
