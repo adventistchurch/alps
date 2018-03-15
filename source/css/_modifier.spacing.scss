@@ -64,6 +64,12 @@
   }
 }
 
+.u-space--after-medium {
+  @include media('>medium') {
+    margin-top: $pad;
+  }
+}
+
 .u-spacing--double--until-large {
   @include media('<=large') {
     & > * + * {

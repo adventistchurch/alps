@@ -262,6 +262,10 @@ $themes: (
         background-color: $dark;
         border-color: $dark;
       }
+
+      svg path {
+        fill: $darker;
+      }
     }
 
     .o-button--simple {
@@ -552,7 +556,7 @@ $themes: (
         background-color: $darker;
 
         svg path {
-          fill: $c-white;
+          //sfill: $lighter;
         }
       }
 
@@ -576,6 +580,10 @@ $themes: (
 
       .can-be--light {
         color: $light;
+      }
+
+      .can-be--lighter {
+        color: $lighter;
       }
 
       input[type=radio],
@@ -607,6 +615,22 @@ $themes: (
       .l-sabbath {
         background-color: $c-black;
       }
+
+      .c-secondary-nav__list-item__language select {
+        color: $lighter;
+
+        &::before {
+          background: url("../images/icons/o-icon__language.svg") center center no-repeat
+        }
+      }
+
+      .c-page-header__search {
+        input[type="search"] {
+          color: $c-white;
+          border-bottom-color: $lighter;
+        }
+      }
+      
     }
   }
 };
