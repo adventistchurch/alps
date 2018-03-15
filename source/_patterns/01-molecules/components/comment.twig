@@ -1,15 +1,15 @@
-<div class="comment--inner">
-  <div class="comment__avatar u-round">
+<div class="c-comment--inner u-border--left u-theme--border-color--darker">
+  <div class="c-comment__avatar u-space--right">
     <img alt="" src="{{ single_comment.comment_avatar }}" class="avatar" height="50" width="50">
   </div>
-  <div class="comment__body u-spacing--quarter">
-    <div class="comment__meta">
-      <span class="byline u-font--secondary--s u-color--gray can-be--white u-theme--color--darker"><a href="">{{ single_comment.comment_byline }}</a></span>
+  <div class="c-comment__body u-spacing--quarter">
+    <div class="c-comment__meta">
+      <span class="byline u-font--secondary--s can-be--white u-theme--color--darker"><a href="">{{ single_comment.comment_byline }}</a></span>
       <span class="o-divider">|</span>
-      <span class="pub_date u-font--secondary--s u-color--gray can-be--white">{{ single_comment.comment_date }}</span><span class="comment__edit-link u-font--secondary--s u-theme--color--base"><a class="comment-edit-link" href="">(Edit)</a></span>
+      <span class="pub_date u-font--secondary--s u-color--gray can-be--white">{{ single_comment.comment_date }}</span><span class="c-comment__edit-link u-font--secondary--s u-theme--color--base"><a class="c-comment-edit-link" href="">(Edit)</a></span>
     </div>
-    <p class="comment__content">{{ single_comment.comment_text }}</p>
-    <div class="comment__reply">
+    <p class="c-comment__content">{{ single_comment.comment_text }}</p>
+    <div class="c-comment__reply">
       <a href="" class="u-font--secondary--s u-theme--color--base">Reply</a>
     </div>
   </div>

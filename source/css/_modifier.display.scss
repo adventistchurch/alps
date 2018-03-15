@@ -13,10 +13,6 @@
   display: block;
 }
 
-.u-display--table {
-  display: table;
-}
-
 // Specific Widths - visible greater than #
 .u-hide-until--s {
   @include media('<=small') {

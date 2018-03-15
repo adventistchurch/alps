@@ -15,19 +15,6 @@ $icon-big: rem(65);
   display: inline-block;
 }
 
-.u-icon--standard {
-  background-color: $c-gray--darker;
-  path {
-    fill: $c-white;
-  }
-  &:hover {
-    background-color: $c-theme-ming;
-    path {
-      fill: $c-white;
-    }
-  }
-}
-
 .u-icon--xs {
   width: $icon-xsmall;
   height: $icon-xsmall;
@@ -57,30 +44,39 @@ $icon-big: rem(65);
   padding: rem(6);
 }
 
-// .u-icon__menu {
-//   position: relative;
-//   width: rem(10);
-//   height: rem(2);
-//   background: $c-gray;
-//
-//   &::before,
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     left: 0;
-//     width: rem(10);
-//     height: rem(2);
-//     background: $c-gray;
-//   }
-//
-//   &::before {
-//     top: rem(-3);
-//   }
-//
-//   &::after {
-//     bottom: rem(-3);
-//   }
-// }
+/**
+ * Close icon
+ */
+
+.o-icon__close {
+  display: block;
+  width: rem(50);
+  height: rem(50);
+  cursor: pointer;
+
+  span {
+    height: rem(1.5);
+    width: rem(25);
+    display: block;
+    content: "";
+    background-color: $c-white;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
 
 /**
  * Play icon overlay

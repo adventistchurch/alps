@@ -6,22 +6,28 @@
  * Page Headers
  */
 
+.c-page-header__3-col {
+  .c-page-header__content {
+    display: flex;
+    flex-direction: column;
+
+    @include media('>medium') {
+      flex-direction: row;
+    }
+  }
+}
+
 .c-page-header__simple {
   height: auto;
-  min-height: calc(100vw / 7 * 2);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  min-height: 150px;
+  min-height: calc(100vw / 7 * 2);
 
-  @include media('>large') {
-    //min-height: calc(100vw / 7 * 1);
-    min-height: 250px;
-  }
-  @include media('>xxlarge') {
-    min-height: 300px;
+  @include media('>small') {
+    min-height: calc(100vw / 7 * 1);
   }
 
   &--inner {
@@ -50,53 +56,55 @@
   }
 }
 
-
 /**
  * Comments
  */
-.comment-list {
-  padding-top: $space/2;
-  margin-bottom: $space*2;
+.c-comment {
+  &--inner {
+    display: flex;
+    align-items: flex-start;
+  }
 
-  > li {
-    border-top: 1px solid $c-gray--light;
-    padding-top: $pad;
+  &__meta {
+    margin-bottom: rem(5);
 
-    .comment-respond,
-    .children li {
-      margin-top: $space;
-      margin-left: rem(50);
+    .o-divider {
+      margin-left: rem(5);
+      margin-right: rem(5);
     }
   }
+
+  &__edit-link {
+    margin-left: rem(5);
+  }
+
+  &__avatar {
+    display: flex;
+    min-width: rem(50);
+    min-height: rem(50);
+  }
+
+  &__children__list-item {
+    margin-left: rem(50);
+  }
 }
 
-.comment-form {
-  label {
+/**
+ * Accordion
+ */
+
+.c-accordion {
+  &__item {
+    cursor: pointer;
+
+    &.this-is-active {
+      .c-accordion__content {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
     display: none;
   }
-}
-
-.comment--inner {
-  display: flex;
-  align-items: flex-start;
-}
-
-.comment__meta {
-  margin-bottom: rem(5);
-
-  .o-divider {
-    margin-left: rem(5);
-    margin-right: rem(5);
-  }
-}
-
-.comment__edit-link {
-  margin-left: rem(5);
-}
-
-.comment__avatar {
-  margin-right: $space/2;
-  display: flex;
-  min-width: rem(50);
-  min-height: rem(50);
 }

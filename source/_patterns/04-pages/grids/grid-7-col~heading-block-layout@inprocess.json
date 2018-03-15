@@ -2,6 +2,146 @@
   "media_blocks": [
     {
       "media_block_default": {
+        "block_class": "c-block__full c-media-block__full",
+        "block_group_class": "u-flex--justify-center u-flex--align-center u-text-align--center u-overlay--dark",
+        "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-color--white",
+        "block_title_class": "l-grid-item--2-col u-font--primary--xl u-flex--justify-center",
+        "block_meta_class": "hide",
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "kicker": false,
+        "description": false,
+        "category": false,
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/700/?random",
+            "src_m": "//unsplash.it/800/900/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "800",
+            "img": {
+              "src_l": "//unsplash.it/1000/900/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "1000",
+            "img": {
+              "src_xl": "//unsplash.it/1440/1200/?random"
+            }
+          }
+        }
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "c-block__full c-media-block__full has-scroll",
+        "block_group_class": "u-flex--justify-center u-overlay--dark",
+        "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-color--white",
+        "block_title_class": "l-grid-item--2-col u-font--primary--xl u-flex--justify-center",
+        "block_meta_class": "hide",
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "kicker": false,
+        "description": false,
+        "category": false,
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/700/?random",
+            "src_m": "//unsplash.it/800/900/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "800",
+            "img": {
+              "src_l": "//unsplash.it/1000/900/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "1000",
+            "img": {
+              "src_xl": "//unsplash.it/1440/1200/?random"
+            }
+          }
+        }
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "c-block__full c-media-block__full",
+        "block_group_class": "u-flex--justify-center u-flex--align-center u-text-align--center u-overlay--light",
+        "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-theme--color--darker",
+        "block_title_class": "l-grid-item--2-col u-font--primary--xl u-flex--justify-center",
+        "block_meta_class": "hide",
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "kicker": false,
+        "description": false,
+        "category": false,
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/700/?random",
+            "src_m": "//unsplash.it/800/900/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "800",
+            "img": {
+              "src_l": "//unsplash.it/1000/900/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "1000",
+            "img": {
+              "src_xl": "//unsplash.it/1440/1200/?random"
+            }
+          }
+        }
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "c-block__full c-media-block__full",
+        "block_group_class": "u-flex--justify-center u-overlay--light",
+        "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-theme--color--darker",
+        "block_title_class": "l-grid-item--2-col u-font--primary--xl u-flex--justify-center",
+        "block_meta_class": "hide",
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "kicker": false,
+        "description": false,
+        "category": false,
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/700/?random",
+            "src_m": "//unsplash.it/800/900/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "800",
+            "img": {
+              "src_l": "//unsplash.it/1000/900/?random"
+            }
+          },
+          "has_break_xl": {
+            "img_break_xl": "1000",
+            "img": {
+              "src_xl": "//unsplash.it/1440/1200/?random"
+            }
+          }
+        }
+      }
+    },
+    {
+      "media_block_default": {
         "block_class": "c-block__inset c-media-block__inset u-theme--background-color--darker",
         "block_content_class": "l-grid--7-col l-grid--7-col--xl--offset-1 u-border-left--white--at-large u-color--white",
         "block_title_class": "l-grid-item l-grid-item--m--5-col l-grid-item--l--3-col l-grid-item--xl--4-col u-link-hover--white",
@@ -118,14 +258,15 @@
           "img": {
             "alt": "Alt Text",
             "src_s": "//unsplash.it/500/375/?random",
-            "src_m": "//unsplash.it/500/600/?random"
+            "src_m": "//unsplash.it/700/600/?random"
           },
           "has_break_l": {
-            "img_break_l": "800",
+            "img_break_l": "900",
             "img": {
-              "src_l": "//unsplash.it/600/700/?random"
+              "src_l": "//unsplash.it/900/700/?random"
             }
-          }
+          },
+          "has_break_xl": false
         }
       }
     },
@@ -146,14 +287,15 @@
           "img": {
             "alt": "Alt Text",
             "src_s": "//unsplash.it/500/375/?random",
-            "src_m": "//unsplash.it/500/600/?random"
+            "src_m": "//unsplash.it/700/600/?random"
           },
           "has_break_l": {
-            "img_break_l": "800",
+            "img_break_l": "900",
             "img": {
-              "src_l": "//unsplash.it/600/700/?random"
+              "src_l": "//unsplash.it/900/700/?random"
             }
-          }
+          },
+          "has_break_xl": false
         }
       }
     }

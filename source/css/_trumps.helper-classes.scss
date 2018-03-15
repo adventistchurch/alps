@@ -2,6 +2,26 @@
     $HELPER/TRUMP CLASSES
 \*------------------------------------*/
 
+.u-overlay--dark {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($c-black, 0.4);
+}
+
+.u-overlay--light {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($c-white, 0.4);
+}
+
 .u-gradient--bottom::after {
   content: "";
   display: block;
@@ -11,17 +31,6 @@
   z-index: 0;
   background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
 }
-
-// .is-featured::before {
-//   @include u-font--primary--xl;
-//
-//   font-weight: bold;
-//   content: "Featured";
-//   display: inline-block;
-//   width: auto;
-//   font-style: italic;
-//   text-transform: capitalize;
-// }
 
 .has-grid {
   position: relative;
@@ -90,35 +99,66 @@
 }
 
 /**
- * Clearfix - extends outer container with floated children.
- */
-.u-clear-fix {
-  zoom: 1;
-}
-.u-clear-fix:before, .u-clear-fix:after {
-  content: " "; // 1
-  display: table; // 2
-}
-.u-clear-fix:after {
-  clear: both;
-}
-
-/**
- * Completely remove from the flow and screen readers.
- */
-.is-hidden {
-  visibility: hidden;
-}
-.hide {
-  display: none;
-}
-
-/**
  * Right to left languages
  */
 .u-rtl {
   direction: rtl;
   unicode-bidi: bidi-override;
+
+  blockquote,
+  .c-block__heading {
+    border-right: rem(3) solid $c-black;
+    border-left: 0;
+    padding-left: $pad-mobile;
+    padding-right: $pad-mobile;
+
+    @include media('>large') {
+      padding-left: $pad;
+      padding-right: $pad;
+    }
+  }
+
+  .u-border--left {
+    border-right: rem(1) solid $c-black;
+    border-left: 0;
+  }
+
+  .o-dropcap {
+    float: right;
+    margin-right: 0;
+    margin-left: $pad;
+
+    @include media('>large') {
+      margin-left: $pad;
+    }
+  }
+
+  .c-header .c-secondary-nav {
+    direction: ltr;
+  }
+
+  .u-space--right--1-col--at-medium {
+    @include media('>medium') {
+     margin-left: calc((100vw/7) * -1);
+     margin-right: 0;
+    }
+  }
+
+  .l-grid--7-col {
+    &--l--offset-1 {
+      @include media('>large') {
+        margin-left: 0;
+        margin-right: calc(100vw / 7);
+      }
+    }
+
+    &--xl--offset-1 {
+      @include media('>xxlarge') {
+        margin-left: 0;
+        margin-right: calc(100vw / 7);
+      }
+    }
+  }
 }
 
 /**
@@ -136,17 +176,39 @@
   float: none;
 }
 
+
 /**
- * Clear Floats
+ * Clearfix - extends outer container with floated children.
  */
-.u-clear--both {
+.u-clear-fix {
+  zoom: 1;
+}
+
+.u-clear-fix:before,
+.u-clear-fix:after {
+  content: " ";
+  display: table;
+}
+
+.u-clear-fix:after {
   clear: both;
 }
-.u-clear--left {
-  clear: left;
+
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
 }
-.u-clear--right {
-  clear: right;
+
+.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide {
+  display: none;
 }
 
 /**
@@ -205,16 +267,6 @@
 }
 
 /**
- * Floats
- */
-.u-float--right {
-  float: right;
-}
-.u-float--left {
-  float: left;
-}
-
-/**
  * Positioning
  */
 .u-position--relative {
@@ -253,6 +305,11 @@
 .u-background--cover {
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.u-background-image {
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -317,40 +374,6 @@
 }
 
 /**
- * Hide elements only present and necessary for js enabled browsers.
- */
-.no-js .u-no-js-hide {
-  display: none;
-}
-
-/**
- * Positioning
- */
-.u-position--relative {
-  position: relative;
-}
-
-.u-position--absolute {
-  position: absolute;
-}
-
-/**
- * Active on/off states
- */
-.u-active--off {
-  display: none;
-}
-.this-is-active,
-.is-active {
-  .u-active--on {
-    display: none;
-  }
-  .u-active--off {
-    display: block;
-  }
-}
-
-/**
  * Alignment
  */
 .u-center-block {
@@ -378,68 +401,4 @@
   right: 0;
   display: flex;
   align-items: center;
-}
-
-.u-vertical-align--top {
-  vertical-align: top;
-}
-
-.u-vertical-align--text-top {
-  vertical-align: text-top;
-}
-
-.u-vertical-align--bottom {
-  vertical-align: bottom;
-}
-
-.u-vertical-align--text-bottom {
-  vertical-align: text-bottom;
-}
-
-.u-vertical-align--middle {
-  vertical-align: middle;
-}
-
-.u-vertical-align--sub {
-  vertical-align: sub;
-}
-
-.u-vertical-align--center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/**
- * Background Covered
- */
-.u-background--cover {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.u-background-image {
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/**
- * Flexbox
- */
-.u-align-items--center {
-  align-items: center;
-}
-
-.u-align-items--end {
-  align-items: flex-end;
-}
-
-.u-align-items--start {
-  align-items: flex-start;
-}
-
-.u-justify-content--center {
-  justify-content: center;
 }

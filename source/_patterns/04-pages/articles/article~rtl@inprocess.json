@@ -1,0 +1,184 @@
+{
+  "head": {
+    "title": "Article Page (RTL) - The Official Site of the Seventh-day Adventist world church",
+    "body_class": "u-rtl has-grid"
+  },
+
+  "rtl": true,
+
+  "figure_with_caption": true,
+  "related_posts": true,
+
+  "media_blocks": [
+    {
+      "media_block_default": {
+        "block_class": "c-block--reversed c-media-block--reversed l-grid--7-col",
+        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--right",
+        "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col l-grid-item--xl--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
+        "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--s",
+        "block_meta_class": "u-theme--color--base u-font--secondary--xs",
+        "title": "إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى.",
+        "description": false,
+        "category": "حضاره",
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/375/?random?water",
+            "src_m": "//unsplash.it/150/100/?random?water"
+          },
+          "has_break_l": false,
+          "has_break_xl": false
+        }
+      }
+    },
+    {
+      "media_block_default": {
+        "block_class": "c-block--reversed c-media-block--reversed l-grid--7-col",
+        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--right",
+        "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col l-grid-item--xl--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
+        "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--s",
+        "block_meta_class": "u-theme--color--base u-font--secondary--xs",
+        "title": "إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى.",
+        "description": false,
+        "category": "حضاره",
+        "datetime": false,
+        "date": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//unsplash.it/500/375/?random?water",
+            "src_m": "//unsplash.it/150/100/?random?water"
+          },
+          "has_break_l": false,
+          "has_break_xl": false
+        }
+      }
+    }
+  ],
+
+  "media_block_default": {
+    "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+    "block_img_class": "l-grid-item l-grid-item--m--3-col l-grid-item--l--4-col u-padding--zero--sides",
+    "block_content_class": "l-grid-item l-grid-item--m--3-col l-grid-item--l--2-col u-theme--border-color--darker--left u-theme--color--lighter u-theme--background-color--darker can-be--dark-dark u-padding--top u-padding--bottom",
+    "block_title_class": "u-color--white",
+    "block_meta_class": "",
+    "kicker": "خاصية",
+    "title": "ومختلفة من نص",
+    "description": "إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى.",
+    "category": "حضاره",
+    "datetime": "2017-12-28",
+    "date": "28 ديسمبر 2018",
+    "picture": {
+      "img_break_m": "500",
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "//unsplash.it/500/375/?random",
+        "src_m": "//unsplash.it/700/600/?random"
+      },
+      "has_break_l": {
+        "img_break_l": "900",
+        "img": {
+          "src_l": "//unsplash.it/900/700/?random"
+        }
+      },
+      "has_break_xl": false
+    }
+  },
+
+  "primary_nav": {
+    "items": [
+      {
+        "text": "ببساطة",
+        "subnav": {
+          "items": [
+            {
+              "text": "تغيير وتبديل"
+            },
+            {
+              "text": "تـــــــعويـــــــل"
+            },
+            {
+              "text": "تـــــوقــيت"
+            },
+            {
+              "text": "تـنجيــم .علم التنجيــــــم"
+            }
+          ]
+        }
+      },
+      {
+        "text": "أسئلة عامة",
+        "subnav": {
+          "items": [
+            {
+              "text": "تغيير وتبديل"
+            },
+            {
+              "text": "تـــــــعويـــــــل"
+            },
+            {
+              "text": "تـــــوقــيت"
+            },
+            {
+              "text": "تـنجيــم .علم التنجيــــــم"
+            }
+          ]
+        }
+      },
+      {
+        "text": "مواضيع الإنجيل"
+      },
+      {
+        "text": "موارد"
+      },
+      {
+        "text": " دراسات في"
+      },
+      {
+        "text": "الصفحة",
+        "subnav": {
+          "items": [
+            {
+              "text": "تغيير وتبديل"
+            },
+            {
+              "text": "تـــــــعويـــــــل"
+            },
+            {
+              "text": "تـــــوقــيت"
+            },
+            {
+              "text": "تـنجيــم .علم التنجيــــــم"
+            }
+          ]
+        }
+      },
+      {
+        "text": "عامة"
+      }
+    ]
+  },
+
+  "secondary_nav": {
+    "items": [
+      {
+        "text": "بحث"
+      },
+      {
+        "text": "المحتوى"
+      },
+      {
+        "text": "سؤالا يتعلق"
+      },
+      {
+        "text": "للاتصال بنا"
+      }
+    ]
+  }
+
+
+}

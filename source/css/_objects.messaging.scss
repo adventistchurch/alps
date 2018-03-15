@@ -1,3 +1,43 @@
 /*------------------------------------*\
     $MESSAGING
 \*------------------------------------*/
+.c-modal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &.this-is-active {
+    display: none;
+  }
+
+  .c-modal__body {
+    flex: 1;
+    padding-right: $pad;
+  }
+
+  .c-modal__close {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0;
+
+    svg {
+      width: rem(20);
+      height: rem(20);
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

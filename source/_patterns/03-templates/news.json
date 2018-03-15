@@ -39,12 +39,12 @@
       "img": {
         "alt": "Alt Text",
         "src_s": "//unsplash.it/500/375/?random",
-        "src_m": "//unsplash.it/700/400/?random"
+        "src_m": "//unsplash.it/700/600/?random"
       },
       "has_break_l": {
-        "img_break_l": "800",
+        "img_break_l": "900",
         "img": {
-          "src_l": "//unsplash.it/800/500/?random"
+          "src_l": "//unsplash.it/900/700/?random"
         }
       }
     }

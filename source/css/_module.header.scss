@@ -4,26 +4,27 @@
 
 .c-header {
   display: flex;
-  padding-top: $pad-mobile;
-  padding-bottom: $pad-mobile/2;
-  z-index: 1;
+  padding-top: rem(5);
+  padding-bottom: rem(5);
+  z-index: 3;
+  position: relative;
   background-color: $c-white;
 
   @include media('>large') {
-    padding-top: $pad;
-    padding-bottom: $pad/2;
+    padding-top: rem(15);
+    padding-bottom: rem(15);
   }
 
   &__logo {
     order: 0;
-    width: 50%;
-    height: auto;
     z-index: 1;
     position: relative;
+    width: rem(300);
+    text-align: left;
+    padding-top: rem(10);
 
     @include media('>small') {
       order: 1;
-      width: rem(300);
     }
 
     @include media('>medium') {
@@ -34,6 +35,15 @@
       padding-bottom: 0;
       float: left;
       display: block;
+    }
+
+    svg {
+      width: auto;
+      height: rem(45);
+
+      @include media('>medium') {
+        height: rem(55);
+      }
     }
   }
 
@@ -56,7 +66,6 @@
       width: calc(100% - 300px);
       order: 2;
       float: right;
-      padding-top: $pad/4;
 
       .c-primary-nav__list {
         justify-content: flex-end;
@@ -214,7 +223,7 @@
 
     &__list {
       height: rem(35);
-      overflow: hidden;
+      overflow-y: hidden;
       display: flex;
       flex-wrap: nowrap;
       width: 100%;
@@ -229,17 +238,6 @@
         padding-right: rem(180);
         padding-left: 0;
       }
-
-      // &::after {
-      //   content: "";
-      //   display: block;
-      //   width: 100%;
-      //   background-color: blue;
-      //   height: rem(60);
-      //   position: absolute;
-      //   top: rem(35);
-      //   right: 0;
-      // }
     }
 
     &__list-item {
@@ -290,7 +288,7 @@
 
     &__list-item__search {
       @include media('>small') {
-        left: rem(90);
+        left: rem(87);
       }
 
       @include media('>medium') {
@@ -303,10 +301,11 @@
       }
     }
 
-    &__list-item__language {
+    &__list-item__language.is-priority {
       position: relative;
       height: rem(35);
       padding-left: $pad-mobile*2;
+      display: flex;
 
       @include media('>large') {
         padding-left: $pad;
@@ -315,9 +314,14 @@
       select {
         border: 0;
         padding: 0;
-        padding-right: $pad;
+        padding-right: rem(23);
         outline: 0;
         text-align: right;
+        width: 0;
+
+        @include media('>small') {
+          width: rem(115);
+        }
       }
 
       &::before {
@@ -505,11 +509,6 @@
         }
       }
     }
-
-    // @include media('<=medium') {
-    //   right: -100%;
-    //   transition: right 0.25s ease-in-out;
-    // }
   }
 
   svg path {
@@ -851,36 +850,6 @@
     a {
       display: block;
       width: 100%;
-    }
-  }
-}
-
-.o-icon__close {
-  display: block;
-  width: rem(50);
-  height: rem(50);
-  cursor: pointer;
-
-  span {
-    height: rem(1.5);
-    width: rem(25);
-    display: block;
-    content: "";
-    background-color: $c-white;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-    &:first-child {
-      transform: rotate(45deg);
-    }
-
-    &:last-child {
-      transform: rotate(-45deg);
     }
   }
 }

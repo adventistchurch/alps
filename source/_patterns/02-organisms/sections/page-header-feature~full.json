@@ -1,14 +1,4 @@
 {
-  "head": {
-    "title": "The Global Adventist Internet Network",
-    "html_class": "pl u-theme--scarlett"
-  },
-  "has_short_body": true,
-  "related_posts": false,
-  "header_logo": "logo-gain",
-  "header_logo_class": "can-be--dark-dark",
-  "sabbath_icon_class": "",
-
   "media_block_default": {
     "block_class": "c-block__full c-media-block__full has-scroll",
     "block_group_class": "u-flex--justify-center u-flex--align-center u-text-align--center u-overlay--dark",

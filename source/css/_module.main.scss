@@ -2,6 +2,11 @@
     $MAIN CONTENT AREA
 \*------------------------------------*/
 
+.body {
+  position: relative;
+  min-height: 100vh;
+}
+
 .l-wrap {
   display: flex;
   flex-wrap: nowrap;
@@ -11,28 +16,35 @@
 }
 
 .l-wrap__content {
-  width: calc(100vw/7 *6);
+  width: calc(100vw / 7 * 6);
+  z-index: 2;
+  position: relative;
+  overflow: visible;
 }
 
 .l-wrap__sabbath {
-  width: calc(100vw/7 *1);
+  width: calc(100vw / 7 * 1);
   background-color: $c-gray--light;
-}
-
-.l-main {
   z-index: 1;
   position: relative;
   min-height: 100vh;
 }
 
-.l-sabbath {
+.l-main {
   z-index: 2;
+  position: relative;
+  min-height: 100vh;
+}
+
+.l-sabbath {
+  z-index: 1;
   position: relative;
   padding-top: 0;
   cursor: pointer;
 
   &__logo--inner {
     position: relative;
+    transition: all 0.25s ease;
 
     > div {
       transition: all 0.5s ease;
@@ -45,7 +57,7 @@
     padding-right: $pad/2;
     display: block;
     width: 100%;
-    max-width: rem(200);
+    max-width: rem(155);
     margin: 0 auto;
 
     @include media('>large') {
