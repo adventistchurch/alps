@@ -722,120 +722,6 @@
     }
   ],
 
-  "has_hr": true,
-
-  "media_blocks_2": [{
-      "media_block_default": {
-        "block_class": "",
-        "kicker": "Suspendisse",
-        "title": "Cras efficitur nibh eget tortor consequat posuere",
-        "img": {
-          "src": "//unsplash.it/500/300/?random",
-          "alt": ""
-        },
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "description": "Pellentesque volutpat sodales metus, ac aliquam nibh consectetur id. Phasellus varius dui viverra vehicula efficitur.",
-        "cta": "Phasellus at sem"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Fusce interdum purus est",
-        "img": {
-          "src": "//unsplash.it/500/360/?random",
-          "alt": "Alt"
-        },
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "description": "Phasellus ac volutpat urna, scelerisque pharetra leo. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt.",
-        "cta": "Mauris sit amet"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Phasellus ac volutpat urna",
-        "img": {
-          "src": "//unsplash.it/500/250/?random",
-          "alt": "Media Block Image"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Donec vehicula commodo dolor, a bibendum nulla malesuada id. Nam ac sapien eget erat auctor aliquam. Donec ut aliquam enim. Fusce ac ornare ipsum.",
-        "cta": "Phasellus ac"
-      }
-    },
-    {
-      "media_block_default": {
-        "block_class": "",
-        "title": "Morbi accumsan imperdiet nisl non consectetur",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
-        },
-        "datetime": false,
-        "date": false,
-        "description": "Nunc a ullamcorper lectus. Nulla facilisi. Nunc sed pretium ex, ut egestas diam. Proin varius pharetra lacus, eu auctor urna mollis eu. Donec convallis vehicula velit et laoreet.",
-        "cta": "Cras at sem"
-      }
-    }
-  ],
-
-  "video_block": {
-    "media_block_default": {
-      "block_class": "no-space--top",
-      "block_inner_class": "spacing--quarter",
-      "kicker": "Suspendisse",
-      "title": "Duis nulla arcu, malesuada - fringilla eu",
-      "img": false,
-      "video": true,
-      "datetime": "2016-12-12",
-      "date": "Mar 28, 2016"
-    }
-  },
-
-  "video_block_list": [{
-      "media_block_default": {
-        "block_title_class": "font--secondary--s",
-        "title": "Nunc a ullamcorper lectus",
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
-        }
-      }
-    },
-    {
-      "media_block_default": {
-        "block_title_class": "font--secondary--s",
-        "title": "Nunc a ullamcorper lectus",
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
-        }
-      }
-    },
-    {
-      "media_block_default": {
-        "block_title_class": "font--secondary--s",
-        "title": "Nunc a ullamcorper lectus",
-        "datetime": "2016-12-12",
-        "date": "Mar 28, 2016",
-        "img": {
-          "src": "//unsplash.it/500/280/?random",
-          "alt": "Media Block Image Alt"
-        }
-      }
-    }
-  ],
-
-  "article_navigation": true,
-
   "article_header": {
     "heading": "Powerful earthquake in Ecuador kills 413, injures more than 2,500",
     "subheading": "Church members, humanitarians gather donations to assist those affected by the tragedy.",
@@ -844,53 +730,11 @@
     "byline": "Andrew McChesney, news editor, Adventist Review/ ADRA International Staff/ ANN Staff"
   },
 
-  "pager": {
-    "link": "?page=",
-    "current": 7,
-    "surrounding": 3,
-    "totalpages": 120,
-    "ellipsis": "&hellip;",
-    "next": "Next &rarr;",
-    "prev": "&larr; Previous"
-  },
-
-  "testimonies": true,
-  "content_carousel": {
-    "content_carousel_class": "js-carousel__multi-item",
-    "content_carousel_slides": [{
-        "heading": "Proin aliquam tempus lacinia",
-        "description": "Morbi massa ipsum, molestie ut luctus nec, placerat commodo magna. Vestibulum rhoncus molestie"
-      },
-      {
-        "heading": "Quisque ac justo",
-        "description": "Nullam ultricies ante nec sapien mattis viverra. Aliquam posuere urna quis est accumsan accumsan."
-      },
-      {
-        "heading": "Class aptent, taciti",
-        "description": "Fusce a odio ligula. Aliquam aliquet ligula purus, non mollis purus semper ut."
-      },
-      {
-        "heading": "Phasellus ligula ligula",
-        "description": "Proin pretium nisi non nisl lobortis, eu molestie magna posuere. Maecenas fermentum lorem ut eros viverra scelerisque."
-      },
-      {
-        "heading": "Quisque porta elit dui",
-        "description": "Ut vestibulum rhoncus molestie. Fusce a odio ligula. Aliquam aliquet ligula purus, non mollis purus semper ut."
-      },
-      {
-        "heading": "Cras nisi dolor, malesuada",
-        "description": "Maecenas tincidunt, dui at ultrices mattis, elit augue sollicitudin quam, hendrerit pellentesque leo mauris sed massa. "
-      },
-      {
-        "heading": "Aliquam vitae",
-        "description": "Maecenas interdum est eget blandit posuere. Pellentesque lacus sem, feugiat non porttitor eget commodo magna."
-      }
-    ]
-  },
   "button_default": {
     "text": "Button Defualt",
     "class": "u-theme--button"
   },
+
   "search_filter": {
     "radio": [{
         "id": "1",
@@ -911,12 +755,14 @@
       }
     ]
   },
+
   "single_comment": {
     "comment_avatar": "//placeimg.com/32/32/people",
     "comment_date": "9 days ago",
     "comment_byline": "Bob Smith",
     "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
   },
+
   "comments": {
     "comment": [{
         "comment_avatar": "//placeimg.com/32/32/people",
@@ -945,6 +791,7 @@
       }
     ]
   },
+
   "footer": {
     "text": "Adventist.org is the Official website of the Seventh-day Adventist world church",
     "links": [{
@@ -952,6 +799,7 @@
       "label": "View Regions"
     }]
   },
+
   "subfooter": {
     "text": "Copyright ©2018, General Conference of Seventh-day Adventists",
     "address": {

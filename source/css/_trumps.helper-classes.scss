@@ -137,7 +137,7 @@
     direction: ltr;
   }
 
-  .u-space--right--1-col--at-medium {
+  .u-shift--right--1-col--at-medium {
     @include media('>medium') {
      margin-left: calc((100vw/7) * -1);
      margin-right: 0;
