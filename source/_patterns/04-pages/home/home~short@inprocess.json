@@ -1,4 +1,8 @@
 {
+  "head": {
+    "title": "The Global Adventist Internet Network",
+    "html_class": "pl u-theme--scarlett",
+  },
   "has_short_body": true,
   "related_posts": false,
   "header_logo": "logo-gain",
