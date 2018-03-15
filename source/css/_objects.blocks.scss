@@ -1,6 +1,12 @@
 /*------------------------------------*\
     $BLOCKS
 \*------------------------------------*/
+.c-block-wrap__content {
+  .c-block:last-child {
+    padding-bottom: 0;
+  }
+}
+
 .c-block__heading {
   border-left: rem(3) solid $c-black;
   display: flex;
@@ -321,21 +327,21 @@
       padding-top: $pad;
     }
   }
-
-  @include media(">medium", "<=large") {
-    flex-direction: row;
-    width: calc(100vw / 7 * 6);
-
-    .c-block__image {
-      width: calc(100vw / 7 * 3);
-      padding-right: $pad;
-    }
-
-    .c-block__content {
-      padding-top: 0;
-      padding-left: 0;
-    }
-  }
+  //
+  // @include media(">medium", "<=large") {
+  //   flex-direction: row;
+  //   width: calc(100vw / 7 * 6);
+  //
+  //   .c-block__image {
+  //     width: calc(100vw / 7 * 3);
+  //     padding-right: $pad;
+  //   }
+  //
+  //   .c-block__content {
+  //     padding-top: 0;
+  //     padding-left: 0;
+  //   }
+  // }
 }
 
 .c-block__inset {
@@ -449,8 +455,11 @@
 }
 
 .c-block__breakout {
+  margin-right: $pad-mobile;
+
   @include media('>large') {
     margin-top: -$space*4;
+    margin-right: 0;
   }
 
   @include media('>xxlarge') {
