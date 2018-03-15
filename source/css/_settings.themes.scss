@@ -264,7 +264,7 @@ $themes: (
       }
 
       svg path {
-        fill: $darker;
+        fill: $c-white;
       }
     }
 
@@ -630,7 +630,7 @@ $themes: (
           border-bottom-color: $lighter;
         }
       }
-      
+
     }
   }
 };
