@@ -1,4 +1,9 @@
 {
+  "head": {
+    "title": "The Global Adventist Internet Network",
+    "html_class": "pl u-theme--scarlett"
+  },
+
   "header_logo": "logo-sda-with-icon",
   "sabbath_icon_class": "js-show-on-scroll is-hidden",
   "has_short_body": true,
