@@ -67,6 +67,30 @@
       }
     }
   }
+
+  .l-standard-break {
+    width: 100vw;
+
+    @include media('>small') {
+      width: calc((100vw / 7) * 5);
+    }
+
+    @include media('>medium') {
+      width: calc((100vw / 7) * 4);
+    }
+  }
+
+  .l-large-break {
+    width: calc((100vw / 7) * 6);
+
+    @include media('>medium') {
+      width: calc((100vw / 7) * 4);
+    }
+  }
+
+  .c-footer__logo {
+    display: block;
+  }
 }
 
 .body {

@@ -15,7 +15,13 @@
     }
   }
 
+  &__description {
+    order: 1;
+  }
+
   &__primary-nav {
+    order: 2;
+
     &__list {
       display: flex;
       flex-direction: column;
@@ -23,12 +29,14 @@
   }
 
   &__secondary-nav {
+    order: 3;
+
     @include media('>medium') {
-      order: 3;
       margin-top: $space*2;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      order: 5;
     }
 
     @include media('>large') {
@@ -51,17 +59,38 @@
     }
   }
 
+  &__logo {
+    order: 0;
+    margin-bottom: $space-mobile;
+    margin-top: 0 !important;
+    display: none;
+
+    svg {
+      max-width: calc(100vw / 7 * 1);
+    }
+
+    @include media('>medium') {
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    @include media('>large') {
+      order: 4;
+    }
+  }
+
   &__legal {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    order: 5;
 
     @include media('>medium') {
-      order: 2;
+      order: 4;
     }
 
     @include media('>large') {
-      order: 3;
+      order: 5;
     }
   }
 }

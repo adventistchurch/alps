@@ -117,6 +117,13 @@
       .c-accordion__content {
         display: block;
       }
+
+      .c-accordion__arrow {
+        transform: rotate(90deg);
+        position: relative;
+        left: rem(4);
+        top: rem(6);
+      }
     }
   }
 

@@ -29,6 +29,7 @@ This creates all patterns, the styleguide, and the pattern lab site as well as a
 ### CSS Object and Utility Based Styling
 
 #### 7 Column Grid Layout Classes
+*The 7 Column Grid is used on the page layout and all blocks*
 - `.l-grid` Grid wrapper to make child divs flex
 - `.l-grid--7-col` 7 Column grid wrapper
   - `.l-grid-item--x-col` Span x number of columns on mobile (<=500px)
@@ -40,12 +41,14 @@ This creates all patterns, the styleguide, and the pattern lab site as well as a
   - `.l-grid-wrap--x-of-7` Span grid x number of columns
 
 #### Grid Shift Classes
+*Shifts the grid over 1 column*
 - `.u-shift--right--1-col--at-medium` Shift grid over to right 1 column at medium breakpoint (>700px)
 - `.u-shift--left--1-col--at-medium` Shift grid over to left 1 column at medium breakpoint (>700px)
 - `.u-shift--left--1-col--at-large` Shift grid over to left 1 column at large breakpoint (>900px)
 - `.u-shift--left--1-col--at-xxlarge` Shift grid over to left 1 column at xxlarge breakpoint (>1300px)
 
 #### Alignment Classes
+*Positions the content in the Blocks or Page Header*
 - `.u-flex--align-center` Flex align center
 - `.u-flex--align-end` Flex align end
 - `.u-flex--justify-center` Justify content center
@@ -55,6 +58,7 @@ This creates all patterns, the styleguide, and the pattern lab site as well as a
 - `.u-text-align--left` Text align left
 
 #### Theme Color Classes
+*Apply class for theme color. Each theme has 5 color variations. Replace the {$key} with a value.*
 
 **Color Keys {$key}**
 - `darker`
