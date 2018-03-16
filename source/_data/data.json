@@ -469,7 +469,7 @@
         "block_class": "c-media-block c-block l-grid--7-col l-grid-wrap l-standard-break",
         "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col u-flex--justify-start",
         "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
-        "block_img_wrap_class": "u-round",
+        "block_img_wrap_class": "u-round u-space--left",
         "block_kicker_class": "u-theme--color--base can-be--light",
         "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
         "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
@@ -479,7 +479,7 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
+            "src_s": "//unsplash.it/150/150/?random",
             "src_m": "//unsplash.it/150/150/?random"
           },
           "has_break_l": {

@@ -2,6 +2,8 @@
     $BLOCKS
 \*------------------------------------*/
 .c-block-wrap__content {
+  overflow: hidden;
+
   .c-block:last-child {
     padding-bottom: 0;
   }
@@ -303,17 +305,6 @@
     @include media('<=small') {
       flex-direction: column;
     }
-    .c-block__content {
-      @include media('>small') {
-        padding-left: 0;
-      }
-    }
-
-    .c-block__image {
-      @include media('>large') {
-        padding-left: 0;
-      }
-    }
   }
 
   .c-block__content {
@@ -509,8 +500,6 @@
  * Gallery Block
  */
 .c-gallery-block {
-  width: 100%;
-
   &.this-is-active {
     .c-gallery-block__body {
       display: block;

@@ -96,20 +96,20 @@
   &--l--offset-1 {
     @include media('>large') {
       margin-left: calc(100vw / 7);
-    }
 
-    &.l-grid-wrap--6-of-7 {
-      width: calc((100vw / 7) * 5);
+      &.l-grid-wrap--6-of-7 {
+        width: calc((100vw / 7) * 5);
+      }
     }
   }
 
   &--xl--offset-1 {
     @include media('>xxlarge') {
       margin-left: calc(100vw / 7);
-    }
 
-    &.l-grid-wrap--6-of-7 {
-      width: calc((100vw / 7) * 5);
+      &.l-grid-wrap--6-of-7 {
+        width: calc((100vw / 7) * 5);
+      }
     }
   }
 

@@ -281,10 +281,8 @@
  * Round Element
  */
 .u-round {
-  @include media('>small') {
-    overflow: hidden;
-    border-radius: 100%;
-  }
+  overflow: hidden;
+  border-radius: 100%;
 }
 
 .u-height--s--2-col {

@@ -6,7 +6,7 @@
         {% include '@organisms/sections/page-header.twig' %}
         {% include '@organisms/sections/page-header-feature.twig' %}
       </div>
-      <section class="l-grid l-grid--7-col l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge">
+      <section class="l-grid l-grid--7-col l-grid-wrap--6-of-7 u-spacing--double--until-large">
         <div class="l-grid-item l-grid-item--l--4-col u-padding--zero--sides">
           {% for content in featured_content %}
             <div class="c-block-wrap u-spacing--double u-padding--right">
@@ -62,11 +62,11 @@
           {% endfor %}
         </div>
       </section>
-      <section class="l-grid l-grid--7-col l-grid--7-col--xl--offset-1 u-spacing--double--until-xxlarge">
-        <div class="l-grid-item l-grid-item--l--4-col u-padding--zero--sides u-spacing--triple">
+      <section class="l-grid l-grid--7-col l-grid--7-col--l--offset-1 l-grid-wrap--6-of-7">
+        <div class="c-article l-grid-item l-grid-item--l--4-col u-spacing--triple">
           {% include '@molecules/forms/subscribe-form.twig' %}
           {% for content in archive_content %}
-            <div class="c-block-wrap u-spacing--double u-padding--right">
+            <div class="c-block-wrap u-spacing--double">
               <div class="c-block__heading u-theme--border-color--darker">
                 <h3 class="c-block__heading-title u-theme--color--darker">{{ content.archive_heading }}</h3>
                 <a href="" class="c-block__heading-link u-theme--color--base">See All</a>
