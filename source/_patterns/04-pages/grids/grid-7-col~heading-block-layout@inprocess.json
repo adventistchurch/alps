@@ -143,7 +143,7 @@
     {
       "media_block_default": {
         "block_class": "c-block__inset c-media-block__inset u-theme--background-color--darker",
-        "block_content_class": "l-grid--7-col l-grid--7-col--xl--offset-1 u-border-left--white--at-large u-color--white",
+        "block_content_class": "l-grid--7-col u-shift--left--1-col--at-xxlarge u-border-left--white--at-large u-color--white",
         "block_title_class": "l-grid-item l-grid-item--m--5-col l-grid-item--l--3-col l-grid-item--xl--4-col u-link-hover--white",
         "block_meta_class": "l-grid-item l-grid-item--m--2-col l-grid-item--l--3-col l-grid-item--xl--2-col",
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis consequat convallis.",
@@ -177,7 +177,7 @@
       "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid--7-col",
         "block_img_class": "l-grid-item u-padding--zero--sides",
-        "block_content_class": "l-grid--7-col--xl--offset-1 l-grid-wrap l-grid-wrap--4-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_content_class": "u-shift--left--1-col--at-xxlarge l-grid-wrap l-grid-wrap--4-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
@@ -211,7 +211,7 @@
       "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--6-of-7",
         "block_img_class": "l-grid-item u-padding--zero--sides",
-        "block_content_class": "l-grid--7-col--xl--offset-1 l-grid-wrap l-grid-wrap--5-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_content_class": "u-shift--left--1-col--at-xxlarge l-grid-wrap l-grid-wrap--5-of-7 u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
