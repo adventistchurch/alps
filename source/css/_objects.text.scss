@@ -443,7 +443,7 @@
     margin-bottom: $space;
     float: left;
 
-    @include media('>large') {
+    @include media('>medium') {
       width: calc(100vw / 7 * 2);
     }
 
@@ -454,11 +454,6 @@
 
   p:last-of-type {
     margin-bottom: 0;
-  }
-
-  code,
-  pre {
-    font-size: 125%;
   }
 
   > ul {

@@ -55,10 +55,10 @@
     }
   });
 
-  var divs = $('.l-sabbath__logo-light');
   $(window).scroll(function(){
      var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
-     divs.css('opacity', 1 - percent);
+     $('.l-sabbath__logo-light').css('opacity', 1 - percent);
+     $('.l-sabbath__overlay').css('opacity', 1 - percent);
   });
 
   // Check window width

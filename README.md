@@ -26,6 +26,58 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 This creates all patterns, the styleguide, and the pattern lab site as well as a local server for development.
 
+### CSS Object and Utility Based Styling
+
+#### 7 Column Grid Layout Classes
+*The 7 Column Grid is used on the page layout and all blocks*
+- `.l-grid` Grid wrapper to make child divs flex
+- `.l-grid--7-col` 7 Column grid wrapper
+  - `.l-grid-item--x-col` Span x number of columns on mobile (<=500px)
+  - `.l-grid-item--s--x-col` Span x number of columns at small breakpoint (>500px)
+  - `.l-grid-item--m--x-col` Span x number of columns at medium breakpoint (>700px)
+  - `.l-grid-item--l--x-col` Span x number of columns at large breakpoint (>900px)
+  - `.l-grid-item--xl--x-col` Span x number of columns at xxlarge breakpoint (>1300px)
+- `.l-grid-wrap` Span grid 100% of the viewport width
+  - `.l-grid-wrap--x-of-7` Span grid x number of columns
+
+#### Grid Shift Classes
+*Shifts the grid over 1 column*
+- `.u-shift--right--1-col--at-medium` Shift grid over to right 1 column at medium breakpoint (>700px)
+- `.u-shift--left--1-col--at-medium` Shift grid over to left 1 column at medium breakpoint (>700px)
+- `.u-shift--left--1-col--at-large` Shift grid over to left 1 column at large breakpoint (>900px)
+- `.u-shift--left--1-col--at-xxlarge` Shift grid over to left 1 column at xxlarge breakpoint (>1300px)
+
+#### Alignment Classes
+*Positions the content in the Blocks or Page Header*
+- `.u-flex--align-center` Flex align center
+- `.u-flex--align-end` Flex align end
+- `.u-flex--justify-center` Justify content center
+- `.u-flex--justify-end` Justify content end
+- `.u-text-align--center` Text align center
+- `.u-text-align--right` Text align right
+- `.u-text-align--left` Text align left
+
+#### Theme Color Classes
+*Apply class for theme color. Each theme has 5 color variations. Replace the {$key} with a value.*
+
+**Color Keys {$key}**
+- `darker`
+- `dark`
+- `base`
+- `light`
+- `lighter`
+
+**Color Classes**
+- `.u-theme--color--{$key}` Text Color
+- `.u-theme--link-hover--{$key}` Link Color
+- `.u-theme--background-color--{$key}` Background Color
+- `.u-theme--border-color--{$key}` Border Color
+  - `.u-theme--border-color--{$key}--left` Left Border Color
+  - `.u-theme--border-color--{$key}--right` Right Border Color
+  - `.u-theme--border-color--{$key}--Top` Top Border Color
+  - `.u-theme--border-color--{$key}--Bottom` Bottom Border Color
+- `.u-theme--path-fill--{$key}` SVG Fill Cover
+
 ### Twig Include Syntax
 In order to play nice with environments outside of Pattern Lab, we use the default [Twig include syntax](https://twig.sensiolabs.org/doc/2.x/functions/include.html) over the Pattern Lab shorthand.
 

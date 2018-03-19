@@ -1,6 +1,14 @@
 /*------------------------------------*\
     $BLOCKS
 \*------------------------------------*/
+.c-block-wrap__content {
+  overflow: hidden;
+
+  .c-block:last-child {
+    padding-bottom: 0;
+  }
+}
+
 .c-block__heading {
   border-left: rem(3) solid $c-black;
   display: flex;
@@ -297,17 +305,6 @@
     @include media('<=small') {
       flex-direction: column;
     }
-    .c-block__content {
-      @include media('>small') {
-        padding-left: 0;
-      }
-    }
-
-    .c-block__image {
-      @include media('>large') {
-        padding-left: 0;
-      }
-    }
   }
 
   .c-block__content {
@@ -321,21 +318,21 @@
       padding-top: $pad;
     }
   }
-
-  @include media(">medium", "<=large") {
-    flex-direction: row;
-    width: calc(100vw / 7 * 6);
-
-    .c-block__image {
-      width: calc(100vw / 7 * 3);
-      padding-right: $pad;
-    }
-
-    .c-block__content {
-      padding-top: 0;
-      padding-left: 0;
-    }
-  }
+  //
+  // @include media(">medium", "<=large") {
+  //   flex-direction: row;
+  //   width: calc(100vw / 7 * 6);
+  //
+  //   .c-block__image {
+  //     width: calc(100vw / 7 * 3);
+  //     padding-right: $pad;
+  //   }
+  //
+  //   .c-block__content {
+  //     padding-top: 0;
+  //     padding-left: 0;
+  //   }
+  // }
 }
 
 .c-block__inset {
@@ -449,8 +446,11 @@
 }
 
 .c-block__breakout {
+  margin-right: $pad-mobile;
+
   @include media('>large') {
     margin-top: -$space*4;
+    margin-right: 0;
   }
 
   @include media('>xxlarge') {
@@ -500,8 +500,6 @@
  * Gallery Block
  */
 .c-gallery-block {
-  width: 100%;
-
   &.this-is-active {
     .c-gallery-block__body {
       display: block;

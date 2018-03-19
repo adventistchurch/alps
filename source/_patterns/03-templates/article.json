@@ -49,16 +49,11 @@
       "src_m": "//unsplash.it/700/400/?random"
     },
     "has_break_l": {
-      "img_break_l": "1300",
+      "img_break_l": "900",
       "img": {
         "src_l": "//unsplash.it/900/500/?random"
       }
     },
-    "has_break_xl": {
-      "img_break_xl": "1500",
-      "img": {
-        "src_xl": "//unsplash.it/1100/600/?random"
-      }
-    }
+    "has_break_xl": false
   }
 }

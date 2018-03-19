@@ -17,6 +17,22 @@
   }
 }
 
+.c-page-header__search {
+  input[type="search"] {
+    outline: 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid $c-gray;
+    padding-left: 0;
+
+    @include u-font--secondary--m;
+  }
+
+  .c-filter__toggle::after {
+    content: "Settings";
+  }
+}
+
 .c-page-header__simple {
   height: auto;
   display: flex;
@@ -100,6 +116,13 @@
     &.this-is-active {
       .c-accordion__content {
         display: block;
+      }
+
+      .c-accordion__arrow {
+        transform: rotate(90deg);
+        position: relative;
+        left: rem(4);
+        top: rem(6);
       }
     }
   }

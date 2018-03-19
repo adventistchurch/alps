@@ -7,6 +7,102 @@
   min-height: 100vh;
 }
 
+.body.hide-sabbath {
+  .l-wrap__sabbath {
+    display: none;
+  }
+
+  .l-wrap__content,
+  .l-grid-wrap--6-of-7 {
+    width: 100vw;
+  }
+
+  .c-article {
+    @include media('>small') {
+      width: calc(100vw / 7 * 5);
+      margin-left: calc(100vw / 7 * 1);
+    }
+
+    @include media('>medium') {
+      width: calc(100vw / 7 * 4);
+      margin-left: 0;
+    }
+
+    @include media('>large') {
+      width: calc(100vw / 7 * 3);
+      margin-left: calc(100vw / 7 * 1);
+    }
+
+    @include media('>xxlarge') {
+      margin-left: 0;
+    }
+  }
+
+  .c-sidebar {
+    @include media('>small') {
+      width: calc(100vw / 7 * 5);
+      margin-left: calc(100vw / 7 * 1);
+    }
+
+    @include media('>medium') {
+      width: calc(100vw / 7 * 3);
+      margin-left: 0;
+    }
+
+    @include media('>large') {
+      width: calc(100vw / 7 * 2);
+    }
+
+    .c-block__breakout {
+      @include media('>medium') {
+        margin-top: -$space*3.5;
+      }
+
+      @include media('>large') {
+        margin-top: -$space*4;
+      }
+
+      @include media('>xxlarge') {
+        margin-top: -$space*2;
+      }
+    }
+  }
+
+  .l-standard-break {
+    width: 100vw;
+
+    @include media('>small') {
+      width: calc((100vw / 7) * 5);
+    }
+
+    @include media('>medium') {
+      width: calc((100vw / 7) * 4);
+    }
+  }
+
+  .l-large-break {
+    width: calc((100vw / 7) * 6);
+
+    @include media('>medium') {
+      width: calc((100vw / 7) * 4);
+    }
+  }
+
+  .c-footer__logo {
+    display: block;
+  }
+}
+
+.body {
+  .c-article,
+  .c-sidebar {
+    @include media('>medium', '<=large') {
+      width: calc(100vw / 7 * 4);
+      margin-left: calc(100vw / 7 * 1);
+    }
+  }
+}
+
 .l-wrap {
   display: flex;
   flex-wrap: nowrap;
@@ -41,14 +137,22 @@
   position: relative;
   padding-top: 0;
   cursor: pointer;
+  background-color: $c-gray--light;
 
   &__logo--inner {
     position: relative;
     transition: all 0.25s ease;
+  }
 
-    > div {
-      transition: all 0.5s ease;
-    }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    transition: all 0.5s ease;
   }
 
   &__logo {
@@ -57,10 +161,11 @@
     padding-right: $pad/2;
     display: block;
     width: 100%;
-    max-width: rem(155);
+    max-width: rem(80);
     margin: 0 auto;
 
     @include media('>large') {
+      max-width: rem(155);
       padding-top: $pad;
       padding-left: $pad*2;
       padding-right: $pad*2;
@@ -82,10 +187,13 @@
   }
 
   &:hover {
-    .l-sabbath__logo--inner {
-      > div {
-        opacity: 1 !important;
+    .l-sabbath__logo {
+      svg path {
+        fill: $c-white;
       }
+    }
+    .l-sabbath__overlay {
+      opacity: 1 !important;
     }
   }
 }

@@ -56,8 +56,8 @@
       {
         "media_block_default": {
           "block_class": "c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-large-break",
-          "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col",
-          "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--l--3-col u-flex--justify-start",
+          "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--l--3-col u-flex--justify-start u-padding--left",
           "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "Adventist leaders call for international cooperation to end abouse of refugees in Libya",
@@ -80,8 +80,8 @@
       {
         "media_block_default": {
           "block_class": "c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-large-break",
-          "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col",
-          "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--l--3-col u-flex--justify-start",
+          "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--l--3-col u-flex--justify-start u-padding--left",
           "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "Adventist leaders call for international cooperation to end abouse of refugees in Libya",
@@ -104,8 +104,8 @@
       {
         "media_block_default": {
           "block_class": "c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-large-break",
-          "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col",
-          "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--l--3-col u-flex--justify-start",
+          "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--l--3-col u-flex--justify-start u-padding--left",
           "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "Adventist leaders call for international cooperation to end abouse of refugees in Libya",
@@ -196,14 +196,18 @@
           "datetime": "2017-12-28",
           "date": "December 28, 2017",
           "picture": {
-            "img_break_m": "500",
+            "img_break_m": "900",
             "img": {
               "alt": "Alt Text",
               "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_m": "//unsplash.it/600/450/?random"
             },
-            "has_break_l": false,
-            "has_break_xl": false
+            "has_break_l": {
+              "img_break_l": "1100",
+              "img": {
+                "src_l": "//unsplash.it/800/450/?random"
+              }
+            }
           }
         }
       }
