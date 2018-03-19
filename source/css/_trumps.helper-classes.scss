@@ -2,6 +2,179 @@
     $HELPER/TRUMP CLASSES
 \*------------------------------------*/
 
+/**
+ * Right to left languages
+ */
+.u-rtl {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+
+  &.body {
+    .c-article,
+    .c-sidebar {
+      @include media('>medium', '<=large') {
+        margin-right: calc(100vw / 7 * 1);
+      }
+    }
+  }
+
+  .c-header {
+    .priority-nav {
+      text-align: left;
+    }
+
+    &__logo {
+      text-align: right;
+
+      @include media('>large') {
+        float: right;
+      }
+    }
+
+    &__nav-primary {
+      @include media('>large') {
+        float: left;
+
+        .c-primary-nav__list {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    &__nav-secondary {
+
+      @include media('>small') {
+        .c-secondary-nav__list {
+          justify-content: flex-end;
+          flex-direction: row-reverse;
+        }
+      }
+
+      @include media('>medium') {
+        .c-secondary-nav__list {
+          justify-content: flex-start;
+        }
+      }
+
+      @include media('>large') {
+        float: left;
+
+        .c-secondary-nav__list {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  .c-header__nav-secondary {
+    .c-secondary-nav {
+      &__list {
+        justify-content: flex-end;
+
+        @include media('>small') {
+          padding-right: rem(190);
+        }
+
+        @include media('>medium') {
+          padding-left: rem(180);
+          padding-right: 0;
+        }
+      }
+
+      &__list-item__search,
+      &__list-item__menu {
+        @include media('>small') {
+          right: 0;
+        }
+
+        @include media('>medium') {
+          right: auto;
+          left: -$space-mobile;
+        }
+      }
+
+      &__list-item__search {
+        @include media('>small') {
+          right: rem(87);
+        }
+
+        @include media('>medium') {
+          left: rem(80);
+          right: auto;
+        }
+
+        @include media('>xlarge') {
+          left: rem(80);
+        }
+      }
+    }
+  }
+
+  blockquote,
+  .c-block__heading {
+    text-align: right;
+    border-right: rem(3) solid $c-black;
+    border-left: 0;
+    padding-left: $pad-mobile;
+    padding-right: $pad-mobile;
+
+    @include media('>large') {
+      padding-left: $pad;
+      padding-right: $pad;
+    }
+  }
+
+  .u-border--left {
+    border-right: rem(1) solid $c-black;
+    border-left: 0;
+  }
+
+  .o-dropcap {
+    float: right;
+    margin-right: 0;
+    margin-left: $pad;
+
+    @include media('>large') {
+      margin-left: $pad;
+    }
+  }
+
+  .c-block__category {
+    padding-left: $pad;
+    padding-right: 0;
+  }
+
+  .c-header .c-secondary-nav {
+    direction: ltr;
+  }
+
+  .u-shift--right--1-col--at-medium {
+    @include media('>medium') {
+     margin-left: calc((100vw/7) * -1);
+     margin-right: 0;
+    }
+  }
+
+  .l-grid--7-col {
+    &--l--offset-1 {
+      @include media('>large') {
+        margin-left: 0;
+        margin-right: calc(100vw / 7);
+      }
+    }
+
+    &--xl--offset-1 {
+      @include media('>xxlarge') {
+        margin-left: 0;
+        margin-right: calc(100vw / 7);
+      }
+    }
+  }
+}
+
+/**
+ * Overlays
+ */
 .u-overlay--dark {
   content: "";
   position: absolute;
@@ -31,6 +204,10 @@
   z-index: 0;
   background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
 }
+
+/**
+ * Grid Lines
+ */
 
 .has-grid {
   position: relative;
@@ -68,69 +245,6 @@
   border-left: rem(5) solid transparent;
   border-right: rem(5) solid transparent;
   border-top: rem(5) solid $c-gray;
-}
-
-/**
- * Right to left languages
- */
-.u-rtl {
-  direction: rtl;
-  unicode-bidi: bidi-override;
-
-  blockquote,
-  .c-block__heading {
-    border-right: rem(3) solid $c-black;
-    border-left: 0;
-    padding-left: $pad-mobile;
-    padding-right: $pad-mobile;
-
-    @include media('>large') {
-      padding-left: $pad;
-      padding-right: $pad;
-    }
-  }
-
-  .u-border--left {
-    border-right: rem(1) solid $c-black;
-    border-left: 0;
-  }
-
-  .o-dropcap {
-    float: right;
-    margin-right: 0;
-    margin-left: $pad;
-
-    @include media('>large') {
-      margin-left: $pad;
-    }
-  }
-
-  .c-header .c-secondary-nav {
-    direction: ltr;
-  }
-
-  .u-shift--right--1-col--at-medium {
-    @include media('>medium') {
-     margin-left: calc((100vw/7) * -1);
-     margin-right: 0;
-    }
-  }
-
-  .l-grid--7-col {
-    &--l--offset-1 {
-      @include media('>large') {
-        margin-left: 0;
-        margin-right: calc(100vw / 7);
-      }
-    }
-
-    &--xl--offset-1 {
-      @include media('>xxlarge') {
-        margin-left: 0;
-        margin-right: calc(100vw / 7);
-      }
-    }
-  }
 }
 
 /**

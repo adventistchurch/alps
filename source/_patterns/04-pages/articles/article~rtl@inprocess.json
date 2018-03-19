@@ -1,8 +1,11 @@
 {
   "head": {
     "title": "Article Page (RTL) - The Official Site of the Seventh-day Adventist world church",
-    "body_class": "u-rtl has-grid"
+    "body_class": "body u-rtl has-grid"
   },
+
+  "header_logo": "logo-sda-arabic",
+  "sabbath_icon_class": "",
 
   "rtl": true,
 
@@ -13,21 +16,21 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid--7-col",
-        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--right",
-        "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col l-grid-item--xl--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
+        "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--left",
+        "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--s",
         "block_meta_class": "u-theme--color--base u-font--secondary--xs",
-        "title": "إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى.",
+        "title": "Mauris at ante laoreet, gravida odio gravida, fermentum lectus",
         "description": false,
-        "category": "حضاره",
+        "category": "Culture",
         "datetime": false,
         "date": false,
         "picture": {
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/500/375/?random?water",
-            "src_m": "//unsplash.it/150/100/?random?water"
+            "src_s": "//unsplash.it/500/375/?random",
+            "src_m": "//unsplash.it/150/100/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -37,13 +40,13 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid--7-col",
-        "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col l-grid-item--xl--1-col u-padding--right",
-        "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col l-grid-item--xl--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
+        "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--left",
+        "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
         "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--s",
         "block_meta_class": "u-theme--color--base u-font--secondary--xs",
-        "title": "إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى.",
+        "title": "Proin sed nisl ac velit aliquam euismod non tincidunt lectus",
         "description": false,
-        "category": "حضاره",
+        "category": "Culture",
         "datetime": false,
         "date": false,
         "picture": {
@@ -179,6 +182,4 @@
       }
     ]
   }
-
-
 }
