@@ -232,8 +232,8 @@
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
       fade: true,
-      nextArrow: '.arrow__next',
-      prevArrow: '.arrow__prev',
+      nextArrow: '.c-arrow__next',
+      prevArrow: '.c-arrow__prev',
       touchThreshold: 11,
       dots: true,
       adaptiveHeight: true
@@ -248,8 +248,7 @@
       autoplay: true,
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
-      nextArrow: '.arrow__next',
-      prevArrow: '.arrow__prev',
+      arrows: false,
       touchThreshold: 11,
       dots: false,
       slidesToShow: 1,
@@ -263,10 +262,17 @@
           }
         },
         {
-          breakpoint: 700,
+          breakpoint: 900,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6
           }
         }
       ]
