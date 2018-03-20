@@ -459,42 +459,42 @@
 }
 
 /**
- * Story Block
+ * Block Expand
  */
- .c-story-block {
-   &.this-is-active {
-     .c-story-block__body {
-       display: block;
-     }
-   }
+.c-block__expand {
+  &.this-is-active {
+    .c-block__body {
+      display: block;
+    }
+  }
 
-   &__title {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: space-between;
-     flex: auto;
-   }
+  .c-block__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex: auto;
+  }
 
-   &__toggle {
-     display: flex;
-     align-items: flex-start;
-     justify-content: flex-end;
-     width: calc((100vw/7 *4) - 15px); // - $pad-mobile
+  .c-block__toggle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: calc((100vw / 7 * 4) - 15px); // - $pad-mobile
 
-     @include media('>medium') {
-       width: calc((100vw/7 *2) - 15px); // - $pad
-     }
+    @include media('>medium') {
+      width: calc((100vw / 7 * 2) - 15px); // - $pad
+    }
 
-     @include media('>large') {
-       width: calc((100vw/7) *2); // - $pad
-     }
-   }
+    @include media('>large') {
+      width: calc((100vw / 7) * 2); // - $pad
+    }
+  }
 
-   &__body {
-     display: none;
-   }
- }
+  .c-block__body {
+    display: none;
+  }
+}
 
 /**
  * Gallery Block
