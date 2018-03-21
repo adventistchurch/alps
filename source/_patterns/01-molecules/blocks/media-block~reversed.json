@@ -7,8 +7,8 @@
       "img_break_m": "500",
       "img": {
         "alt": "Alt Text",
-        "src_s": "//placehold.it/600x330",
-        "src_m": "//placehold.it/800x450"
+        "src_s": "//picsum.photos/600/330",
+        "src_m": "//picsum.photos/800/450"
       },
       "has_break_l": false,
       "has_break_xl": false

@@ -2,7 +2,7 @@
   "media_block_default": {
     "picture": false,
     "img": {
-      "src": "//placehold.it/600x375",
+      "src": "//picsum.photos/600/375",
       "alt": "Image Alt"
     }
   }
