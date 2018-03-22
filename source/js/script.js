@@ -240,6 +240,8 @@
     });
   }
 
+
+
   // Slick carousel (multiple items)
   if ($('.js-carousel__multi-item').length) {
     $('.js-carousel__multi-item').slick({
@@ -248,7 +250,9 @@
       autoplay: true,
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
-      arrows: false,
+      arrows: true,
+      prevArrow:'<span class="c-arrow c-arrow--prev u-icon u-icon--s u-theme--color--darker">&#8249;</span>',
+      nextArrow:'<span class="c-arrow c-arrow--next u-icon u-icon--s u-theme--color--darker">&#8250;</span>',
       touchThreshold: 11,
       dots: false,
       slidesToShow: 1,
