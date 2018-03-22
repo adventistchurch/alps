@@ -788,6 +788,17 @@
     ]
   },
 
+  "pager": {
+    "link": "?page=",
+    "current": 7,
+    "surrounding": 3,
+    "totalpages": 120,
+    "ellipsis": "&hellip;",
+    "next": "Next &rarr;",
+    "prev": "&larr; Previous"
+  },
+
+
   "testimonies": [{
       "content_block_default": {
         "block_class": "u-spacing--half u-padding--right",
