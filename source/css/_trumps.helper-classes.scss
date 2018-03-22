@@ -33,7 +33,8 @@
 
     &__nav-primary {
       @include media('>large') {
-        float: left;
+        right: auto;
+        left: $space*1.5;
 
         .c-primary-nav__list {
           justify-content: flex-start;
@@ -57,7 +58,8 @@
       }
 
       @include media('>large') {
-        float: left;
+        right: auto;
+        left: $space;
 
         .c-secondary-nav__list {
           justify-content: flex-start;

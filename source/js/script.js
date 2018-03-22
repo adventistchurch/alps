@@ -232,13 +232,15 @@
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
       fade: true,
-      nextArrow: '.arrow__next',
-      prevArrow: '.arrow__prev',
+      nextArrow: '.c-arrow__next',
+      prevArrow: '.c-arrow__prev',
       touchThreshold: 11,
       dots: true,
       adaptiveHeight: true
     });
   }
+
+
 
   // Slick carousel (multiple items)
   if ($('.js-carousel__multi-item').length) {
@@ -248,8 +250,9 @@
       autoplay: true,
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
-      nextArrow: '.arrow__next',
-      prevArrow: '.arrow__prev',
+      arrows: true,
+      prevArrow:'<span class="c-arrow c-arrow--prev u-icon u-icon--s u-theme--color--darker">&#8249;</span>',
+      nextArrow:'<span class="c-arrow c-arrow--next u-icon u-icon--s u-theme--color--darker">&#8250;</span>',
       touchThreshold: 11,
       dots: false,
       slidesToShow: 1,
@@ -263,10 +266,17 @@
           }
         },
         {
-          breakpoint: 700,
+          breakpoint: 900,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6
           }
         }
       ]

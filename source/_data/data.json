@@ -283,7 +283,7 @@
     "category": "Culture"
   },
 
-  "story_block_default": {
+  "content_block_expand": {
     "kicker": "Context Matters",
     "title": "Donec sit amet justo at sapien aliquet iaculis.",
     "body": "<p>Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed placerat nec nisl at laoreet. Cras tristique lacus turpis, sit amet luctus lorem facilisis sed. Suspendisse tempor ante mauris, vitae bibendum sem interdum sit amet. Nam vitae elit lobortis, vehicula neque ut, semper massa.</p><p>Proin hendrerit, diam eget aliquam semper, ipsum elit efficitur erat, a consectetur tortor ex at arcu. Nullam tincidunt lacus at scelerisque pulvinar. Donec faucibus maximus mi ut congue. Proin purus libero, fringilla et orci a, luctus posuere purus. Curabitur justo mi, auctor ut turpis eu, accumsan malesuada elit.</p>"
@@ -787,6 +787,72 @@
       }
     ]
   },
+
+  "testimonies": [{
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aliquam malesuada viverra velit",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aliquam malesuada viverra velit",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aliquam malesuada viverra velit",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    }
+  ],
 
   "footer": {
     "text": "Adventist.org is the Official website of the Seventh-day Adventist world church",

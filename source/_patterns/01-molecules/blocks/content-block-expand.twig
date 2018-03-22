@@ -1,0 +1,19 @@
+{% if content_block_expand %}
+  <div class="js-this c-block c-block c-block__expand u-background-color--gray--light u-border--left u-theme--border-color--darker--left can-be--dark-dark">
+    <div class="c-block__header">
+      <div class="c-block__title u-padding">
+        {% if content_block_expand.title %}
+          <h2 class="u-font--primary--s u-theme--color--darker">
+            <span class="u-theme--color--base"><em>{{ content_block_expand.kicker }}</em></span> {{ content_block_expand.title }}
+          </h2>
+        {% endif %}
+        <div class="c-block__toggle">
+          <button class="js-toggle o-button o-button--outline o-button--toggle o-button--small" data-toggled="this" data-prefix="this"><span class="u-icon u-icon--xs u-path-fill--white">{% include '@atoms/icons/icon-plus.twig' %}</span></button>
+        </div>
+      </div> <!-- /.c-block__title -->
+    </div> <!-- /.c-block__header -->
+    <div class="c-block__body u-padding u-padding--zero--top u-spacing">
+      {{ content_block_expand.body | raw }}
+    </div> <!-- /.c-block__body -->
+  </div> <!-- /.c-block -->
+{% endif %}

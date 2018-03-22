@@ -586,6 +586,7 @@ ul:not(.c-breadcrumbs__list) {
   overflow: hidden;
   position: relative;
   content: "";
+  font-style: normal;
 
   @include media('>medium') {
     width: calc((100vw / 7 * 1) - 30px);

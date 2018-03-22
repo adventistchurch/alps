@@ -2,6 +2,35 @@
     $CAROUSELS
 \*------------------------------------*/
 
+.c-arrow {
+  font-size: rem(30);
+  position: absolute;
+  top: rem(-60);
+  width: rem(30);
+  height: rem(30);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  line-height: rem(30);
+  cursor: pointer;
+
+  @include media('>large') {
+    top: rem(-70);
+  }
+
+  &--prev {
+    right: rem(30);
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  &--next {
+    right: rem(-20);
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+
 .c-carousel__item {
   img {
     width: 100%;
@@ -16,8 +45,9 @@
   width: rem(45);
   height: rem(45);
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  bottom: 0;
+  margin: auto;
   z-index: 10;
   cursor: pointer;
   z-index: 100;
@@ -33,7 +63,6 @@
     top: 5%;
     width: 90%;
     height: 90%;
-    background-color: $c-white;
     z-index: -50;
   }
 
@@ -100,16 +129,15 @@
 // Carousel pagination
 .slick-dots {
   position: absolute;
-  left: 0;
+  right: 0;
+  top: 0;
+  left: auto;
   width: 100%;
-  text-align: center;
-  bottom: 0;
-  text-align: left;
+  text-align: right;
   padding: $pad-mobile;
 
   @include media('>large') {
-    padding-left: 0;
-    left: calc(100vw / 7 * 1);
+    padding: $pad;
   }
 
   li {
