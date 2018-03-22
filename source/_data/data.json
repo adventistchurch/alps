@@ -58,8 +58,7 @@
   "facet_filter": "Filter the Results",
 
   "primary_nav": {
-    "items": [
-      {
+    "items": [{
         "text": "Leadership Certification",
         "subnav": {
           "items": [{
@@ -126,8 +125,7 @@
   },
 
   "secondary_nav": {
-    "items": [
-      {
+    "items": [{
         "icon": "icon-subscribe",
         "text": "Sitemap"
       },
@@ -342,8 +340,7 @@
 
   "gallery_block_default": {
     "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "items": [
-      {
+    "items": [{
         "caption": "Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus.",
         "img": {
           "alt": "Alt Text",
@@ -597,8 +594,7 @@
 
   "aside_content": [{
     "aside_heading": "News",
-    "aside_blocks": [
-      {
+    "aside_blocks": [{
         "media_block_default": {
           "block_class": "c-block__stacked c-media-block__stacked",
           "block_content_class": "l-grid-item u-border--left u-color--gray u-theme--border-color--darker--left u-spacing--half",
@@ -791,6 +787,17 @@
       }
     ]
   },
+
+  "pager": {
+    "link": "?page=",
+    "current": 7,
+    "surrounding": 3,
+    "totalpages": 120,
+    "ellipsis": "&hellip;",
+    "next": "Next &rarr;",
+    "prev": "&larr; Previous"
+  },
+
 
   "testimonies": [{
       "content_block_default": {
