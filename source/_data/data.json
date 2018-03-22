@@ -21,7 +21,7 @@
   "sabbath_logo_class": "",
 
   "img": {
-    "src": "//placehold.it/600x375",
+    "src": "//picsum.photos/600/375",
     "alt": "Image Alt",
     "caption": "Caption"
   },
@@ -30,19 +30,19 @@
     "img_break_m": "500",
     "img": {
       "alt": "Alt Text",
-      "src_s": "//placehold.it/500x375",
-      "src_m": "//placehold.it/700x525"
+      "src_s": "//picsum.photos/500/375",
+      "src_m": "//picsum.photos/700/525"
     },
     "has_break_l": {
       "img_break_l": "700",
       "img": {
-        "src_l": "//placehold.it/900x675"
+        "src_l": "//picsum.photos/900/675"
       }
     },
     "has_break_xl": {
       "img_break_xl": "900",
       "img": {
-        "src_xl": "//placehold.it/1200x900"
+        "src_xl": "//picsum.photos/1200/900"
       }
     }
   },
@@ -58,8 +58,7 @@
   "facet_filter": "Filter the Results",
 
   "primary_nav": {
-    "items": [
-      {
+    "items": [{
         "text": "Leadership Certification",
         "subnav": {
           "items": [{
@@ -126,8 +125,7 @@
   },
 
   "secondary_nav": {
-    "items": [
-      {
+    "items": [{
         "icon": "icon-subscribe",
         "text": "Sitemap"
       },
@@ -230,7 +228,7 @@
   "fig_medium": {
     "figure_class": "alignleft size--medium",
     "img": {
-      "src": "//placehold.it/400x400",
+      "src": "//picsum.photos/400/400",
       "alt": "Image Alt"
     },
     "caption": "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
@@ -238,7 +236,7 @@
   "fig_right": {
     "figure_class": "alignright size--medium",
     "img": {
-      "src": "//placehold.it/400x300",
+      "src": "//picsum.photos/400/300",
       "alt": "Image Alt"
     },
     "caption": "Wllamco laboris nisi ut aliquip ex."
@@ -246,7 +244,7 @@
   "fig_center": {
     "figure_class": "fitcenter",
     "img": {
-      "src": "//placehold.it/800x400",
+      "src": "//picsum.photos/800/400",
       "alt": "Image Alt"
     },
     "caption": "Duis aute irure dolor in reprehenderit in voluptate velit esse."
@@ -254,17 +252,17 @@
   "fig_large": {
     "figure_class": "size--large",
     "img": {
-      "src": "//placehold.it/800x500",
+      "src": "//picsum.photos/800/500",
       "alt": "Image Alt"
     },
     "caption": "Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
   },
 
   "fig_with_modal": {
-    "large_image_url": "//placehold.it/1200x800",
+    "large_image_url": "//picsum.photos/1200/800",
     "figure_class": "size--medium",
     "img": {
-      "src": "//placehold.it/400x300",
+      "src": "//picsum.photos/400/300",
       "alt": "Image Alt"
     },
     "caption": "Wllamco laboris nisi ut aliquip ex."
@@ -276,7 +274,7 @@
     "block_meta_class": "u-theme--color--dark",
     "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
     "img": {
-      "src": "//placehold.it/600x375",
+      "src": "//picsum.photos/600/375",
       "alt": "Media Block Image Alt"
     },
     "datetime": "2018-12-28",
@@ -301,8 +299,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/500/375/?random",
-              "src_m": "//unsplash.it/800/600/?random"
+              "src_s": "//picsum.photos/500/375/?random",
+              "src_m": "//picsum.photos/800/600/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -321,8 +319,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/500/375/",
-              "src_m": "//unsplash.it/800/600/"
+              "src_s": "//picsum.photos/500/375/",
+              "src_m": "//picsum.photos/800/600/"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -342,12 +340,11 @@
 
   "gallery_block_default": {
     "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "items": [
-      {
+    "items": [{
         "caption": "Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus.",
         "img": {
           "alt": "Alt Text",
-          "src": "//source.unsplash.com/WLUHO9A_xik/"
+          "src": "//picsum.photos/"
         }
       },
       {
@@ -355,7 +352,7 @@
         "portrait": true,
         "img": {
           "alt": "Alt Text",
-          "src": "//source.unsplash.com/"
+          "src": "//picsum.photos/"
         }
       }
     ]
@@ -479,19 +476,19 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/150/150/?random",
-            "src_m": "//unsplash.it/150/150/?random"
+            "src_s": "//picsum.photos/150/150/?random",
+            "src_m": "//picsum.photos/150/150/?random"
           },
           "has_break_l": {
             "img_break_l": "700",
             "img": {
-              "src_l": "//unsplash.it/200/200/?random"
+              "src_l": "//picsum.photos/200/200/?random"
             }
           },
           "has_break_xl": {
             "img_break_xl": "1000",
             "img": {
-              "src_xl": "//unsplash.it/300/300/?random"
+              "src_xl": "//picsum.photos/300/300/?random"
             }
           }
         },
@@ -516,19 +513,19 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
-            "src_m": "//unsplash.it/150/150/?random"
+            "src_s": "//picsum.photos/600/330/?random",
+            "src_m": "//picsum.photos/150/150/?random"
           },
           "has_break_l": {
             "img_break_l": "700",
             "img": {
-              "src_l": "//unsplash.it/200/200/?random"
+              "src_l": "//picsum.photos/200/200/?random"
             }
           },
           "has_break_xl": {
             "img_break_xl": "1000",
             "img": {
-              "src_xl": "//unsplash.it/300/300/?random"
+              "src_xl": "//picsum.photos/300/300/?random"
             }
           }
         },
@@ -553,19 +550,19 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
-            "src_m": "//unsplash.it/150/150/?random"
+            "src_s": "//picsum.photos/600/330/?random",
+            "src_m": "//picsum.photos/150/150/?random"
           },
           "has_break_l": {
             "img_break_l": "700",
             "img": {
-              "src_l": "//unsplash.it/200/200/?random"
+              "src_l": "//picsum.photos/200/200/?random"
             }
           },
           "has_break_xl": {
             "img_break_xl": "1000",
             "img": {
-              "src_xl": "//unsplash.it/300/300/?random"
+              "src_xl": "//picsum.photos/300/300/?random"
             }
           }
         },
@@ -597,8 +594,7 @@
 
   "aside_content": [{
     "aside_heading": "News",
-    "aside_blocks": [
-      {
+    "aside_blocks": [{
         "media_block_default": {
           "block_class": "c-block__stacked c-media-block__stacked",
           "block_content_class": "l-grid-item u-border--left u-color--gray u-theme--border-color--darker--left u-spacing--half",
@@ -613,8 +609,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -636,8 +632,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -658,8 +654,8 @@
       "img_break_m": "500",
       "img": {
         "alt": "Alt Text",
-        "src_s": "//unsplash.it/500/282/?random",
-        "src_m": "//unsplash.it/800/450/?random"
+        "src_s": "//picsum.photos/500/282/?random",
+        "src_m": "//picsum.photos/800/450/?random"
       },
       "has_break_l": false,
       "has_break_xl": false

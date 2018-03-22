@@ -5,19 +5,19 @@
       "img_break_m": "500",
       "img": {
         "alt": "Alt Text",
-        "src_s": "//placehold.it/600x330",
-        "src_m": "//placehold.it/800x450"
+        "src_s": "//picsum.photos/600/330",
+        "src_m": "//picsum.photos/800/450"
       },
       "has_break_l": {
         "img_break_l": "800",
         "img": {
-          "src_l": "//placehold.it/1000x550"
+          "src_l": "//picsum.photos/1000/550"
         }
       },
       "has_break_xl": {
         "img_break_xl": "1000",
         "img": {
-          "src_xl": "//placehold.it/1440x500"
+          "src_xl": "//picsum.photos/1440/500"
         }
       }
     }

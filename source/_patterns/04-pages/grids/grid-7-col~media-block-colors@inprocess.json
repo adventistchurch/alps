@@ -1,6 +1,5 @@
 {
-  "media_blocks": [
-    {
+  "media_blocks": [{
       "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--3-of-7 u-shift--left--1-col--at-xxlarge",
         "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-color--gray u-theme--border-color--darker--left",
@@ -15,8 +14,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
-            "src_m": "//unsplash.it/800/450/?random"
+            "src_s": "//picsum.photos/600/330/?random",
+            "src_m": "//picsum.photos/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -38,8 +37,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
-            "src_m": "//unsplash.it/800/450/?random"
+            "src_s": "//picsum.photos/600/330/?random",
+            "src_m": "//picsum.photos/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -61,8 +60,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
-            "src_m": "//unsplash.it/800/450/?random"
+            "src_s": "//picsum.photos/600/330/?random",
+            "src_m": "//picsum.photos/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -84,8 +83,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
-            "src_m": "//unsplash.it/800/450/?random"
+            "src_s": "//picsum.photos/600/330/?random",
+            "src_m": "//picsum.photos/800/450/?random"
           },
           "has_break_l": false,
           "has_break_xl": false

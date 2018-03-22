@@ -27,13 +27,13 @@
       "img_break_m": "500",
       "img": {
         "alt": "Alt Text",
-        "src_s": "//unsplash.it/500/375/?random",
-        "src_m": "//unsplash.it/700/600/?random"
+        "src_s": "//picsum.photos/500/375/?random",
+        "src_m": "//picsum.photos/700/600/?random"
       },
       "has_break_l": {
         "img_break_l": "900",
         "img": {
-          "src_l": "//unsplash.it/900/700/?random"
+          "src_l": "//picsum.photos/900/700/?random"
         }
       },
       "has_break_xl": false

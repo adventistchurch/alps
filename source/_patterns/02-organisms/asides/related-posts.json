@@ -1,6 +1,5 @@
 {
-  "media_blocks": [
-    {
+  "media_blocks": [{
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid--7-col",
         "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--right",
@@ -16,8 +15,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/500/375/?random",
-            "src_m": "//unsplash.it/150/100/?random"
+            "src_s": "//picsum.photos/500/375/?random",
+            "src_m": "//picsum.photos/150/100/?random"
           },
           "has_break_l": false,
           "has_break_xl": false
@@ -40,8 +39,8 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/500/375/?random?water",
-            "src_m": "//unsplash.it/150/100/?random?water"
+            "src_s": "//picsum.photos/500/375/?random?water",
+            "src_m": "//picsum.photos/150/100/?random?water"
           },
           "has_break_l": false,
           "has_break_xl": false

@@ -7,16 +7,16 @@
     "has_image": true,
     "title": "News",
     "page_header_class": "header-swath--with-image header-swath--with-text blend-mode--multiply",
-    "img_url_s": "//unsplash.it/600/300/?random",
-    "img_url_m": "//unsplash.it/900/400/?random",
-    "img_url_l": "//unsplash.it/1400/500/?random"
+    "img_url_s": "//picsum.photos/600/300/?random",
+    "img_url_m": "//picsum.photos/900/400/?random",
+    "img_url_l": "//picsum.photos/1400/500/?random"
   },
 
   "header_text": {
     "heading": "Nunc malesuada mauris",
     "subhead": "Maecenas semper, odio et gravida rhoncus, dui nunc mollis tortor",
     "img": {
-      "src": "//placehold.it/80x80",
+      "src": "//picsum.photos/80/80",
       "alt": "Image Alt"
     }
   },
@@ -38,13 +38,13 @@
       "img_break_m": "500",
       "img": {
         "alt": "Alt Text",
-        "src_s": "//unsplash.it/500/375/?random",
-        "src_m": "//unsplash.it/700/600/?random"
+        "src_s": "//picsum.photos/500/375/?random",
+        "src_m": "//picsum.photos/700/600/?random"
       },
       "has_break_l": {
         "img_break_l": "900",
         "img": {
-          "src_l": "//unsplash.it/900/700/?random"
+          "src_l": "//picsum.photos/900/700/?random"
         }
       }
     }
@@ -52,8 +52,7 @@
 
   "featured_content": [{
     "featured_heading": "Featured",
-    "featured_blocks": [
-      {
+    "featured_blocks": [{
         "media_block_default": {
           "block_class": "c-block__stacked--until-small u-spacing--until-small l-grid--7-col l-grid-wrap l-large-break",
           "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col u-padding--zero--sides",
@@ -69,7 +68,7 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
+              "src_s": "//picsum.photos/600/330/?random",
               "src_m": false
             },
             "has_break_l": false,
@@ -93,7 +92,7 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
+              "src_s": "//picsum.photos/600/330/?random",
               "src_m": false
             },
             "has_break_l": false,
@@ -117,7 +116,7 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
+              "src_s": "//picsum.photos/600/330/?random",
               "src_m": false
             },
             "has_break_l": false,
@@ -130,8 +129,7 @@
 
   "aside_content": [{
     "aside_heading": "Global Perspectives",
-    "aside_blocks": [
-      {
+    "aside_blocks": [{
         "content_block_default": {
           "block_class": "u-padding--double--bottom u-spacing--half",
           "title_class": "u-font--primary--s",
@@ -181,43 +179,40 @@
 
   "media_content": [{
     "media_heading": "Media",
-    "media_blocks": [
-      {
-        "media_block_default": {
-          "block_type": "gallery",
-          "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
-          "block_img_class": "l-grid-item l-grid-item--m--3-col u-padding--zero--sides",
-          "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray u-background-color--gray--light can-be--dark-dark u-padding--top u-padding--bottom u-flex--justify-between",
-          "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--l",
-          "block_meta_class": "u-theme--color--base",
-          "title": "Gallery Adventist leaders call for international cooperation",
-          "description": "Church leaders pray for the two titles during Euro-Asia Division year-end meetings.",
-          "category": "Culture",
-          "datetime": "2017-12-28",
-          "date": "December 28, 2017",
-          "picture": {
-            "img_break_m": "900",
+    "media_blocks": [{
+      "media_block_default": {
+        "block_type": "gallery",
+        "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
+        "block_img_class": "l-grid-item l-grid-item--m--3-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray u-background-color--gray--light can-be--dark-dark u-padding--top u-padding--bottom u-flex--justify-between",
+        "block_title_class": "u-theme--color--dark u-theme--link-hover--base u-font--primary--l",
+        "block_meta_class": "u-theme--color--base",
+        "title": "Gallery Adventist leaders call for international cooperation",
+        "description": "Church leaders pray for the two titles during Euro-Asia Division year-end meetings.",
+        "category": "Culture",
+        "datetime": "2017-12-28",
+        "date": "December 28, 2017",
+        "picture": {
+          "img_break_m": "900",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//picsum.photos/600/330/?random",
+            "src_m": "//picsum.photos/600/450/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "1100",
             "img": {
-              "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/600/450/?random"
-            },
-            "has_break_l": {
-              "img_break_l": "1100",
-              "img": {
-                "src_l": "//unsplash.it/800/450/?random"
-              }
+              "src_l": "//picsum.photos/800/450/?random"
             }
           }
         }
       }
-    ]
+    }]
   }],
 
   "archive_content": [{
     "archive_heading": "Archive",
-    "archive_blocks": [
-      {
+    "archive_blocks": [{
         "media_block_default": {
           "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7  l-grid--7-col",
           "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col u-padding--zero--sides",
@@ -233,8 +228,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -257,8 +252,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -281,8 +276,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -305,8 +300,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -329,8 +324,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//unsplash.it/600/330/?random",
-              "src_m": "//unsplash.it/800/450/?random"
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -340,8 +335,7 @@
     ]
   }],
 
-  "media_row_blocks": [
-    {
+  "media_row_blocks": [{
       "media_block_default": {
         "block_type": "gallery",
         "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid--7-col l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col",
@@ -359,7 +353,7 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
+            "src_s": "//picsum.photos/600/330/?random",
             "src_m": false
           },
           "has_break_l": false,
@@ -384,7 +378,7 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
+            "src_s": "//picsum.photos/600/330/?random",
             "src_m": false
           },
           "has_break_l": false,
@@ -409,7 +403,7 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
+            "src_s": "//picsum.photos/600/330/?random",
             "src_m": false
           },
           "has_break_l": false,
@@ -433,7 +427,7 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
+            "src_s": "//picsum.photos/600/330/?random",
             "src_m": false
           },
           "has_break_l": false,
@@ -457,7 +451,7 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
+            "src_s": "//picsum.photos/600/330/?random",
             "src_m": false
           },
           "has_break_l": false,
@@ -481,7 +475,7 @@
           "img_break_m": "500",
           "img": {
             "alt": "Alt Text",
-            "src_s": "//unsplash.it/600/330/?random",
+            "src_s": "//picsum.photos/600/330/?random",
             "src_m": false
           },
           "has_break_l": false,
