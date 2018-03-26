@@ -5,6 +5,7 @@
 .body {
   position: relative;
   min-height: 100vh;
+  width: 100vw;
 }
 
 .body.hide-sabbath {
@@ -124,12 +125,15 @@
   z-index: 1;
   position: relative;
   min-height: 100vh;
+  //overflow: hidden;
 }
 
 .l-main {
   z-index: 2;
   position: relative;
   min-height: 100vh;
+  height: auto;
+  display: block;
 }
 
 .l-sabbath {
@@ -138,6 +142,8 @@
   padding-top: 0;
   cursor: pointer;
   background-color: $c-gray--light;
+  margin: 0 auto;
+  display: block;
 
   &__logo--inner {
     position: relative;

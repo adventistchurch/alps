@@ -2,6 +2,12 @@
     $HEADER
 \*------------------------------------*/
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%;
+  }
+}
+
 .c-header {
   display: flex;
   padding-top: rem(5);
@@ -28,6 +34,7 @@
     text-align: left;
     padding-top: rem(10);
     padding-bottom: rem(5);
+    overflow: hidden;
 
     @include media('>small') {
       order: 1;
@@ -49,6 +56,7 @@
 
     svg {
       width: 100%;
+      height: auto;
       max-width: rem(180);
 
       @include media('>medium') {
@@ -923,6 +931,7 @@
 
   > ul {
     display: inline-block;
+    vertical-align: bottom;
 
     > li {
       display: inline-block;
@@ -947,6 +956,7 @@
     position: absolute;
     visibility: hidden;
     display: none;
+    top: 0;
 
     &.show {
       visibility: visible;
@@ -954,11 +964,12 @@
 
     &-toggle {
       visibility: hidden;
-      position: absolute;
+      position: relative;
       border-radius: 0;
       background-color: transparent !important;
       border: 0;
       right: 0;
+      top: 0;
 
       &::after {
         content: "+";

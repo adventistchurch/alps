@@ -85,6 +85,7 @@
   > * {
     padding-left: $space-mobile;
     padding-right: $space-mobile;
+    box-sizing: border-box;
 
     @include media('>large') {
       width: calc(100vw / 7);

@@ -10,6 +10,11 @@ img, video, object, svg, iframe {
   border: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 svg {
   max-height: 100%;
 }

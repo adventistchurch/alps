@@ -23,18 +23,25 @@
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
   cursor: pointer;
   background: url('../images/icons/o-arrow--down.svg') center right rem(10) no-repeat;
-  background-size: rem(10);
+  background-size: rem(10) rem(10);
+  text-indent: 0.01px;
+  text-overflow: "";
+
+  &::-ms-expand {
+    display: none;
+  }
 }
 
 input[type=radio],
 input[type=checkbox] {
   outline: none;
-  border: none;
+  border: 0;
   margin: 0;
   margin-right: rem(8);
   height: rem(15);
@@ -54,6 +61,10 @@ input[type=checkbox] {
   user-select: none;
   -webkit-appearance: none;
   background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance:none;
+  appearance: none;
 }
 
 input[type=radio],

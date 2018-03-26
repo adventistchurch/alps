@@ -307,7 +307,7 @@
 
   // Responsive videos
   if ($.fn.fitVids) {
-    $('.article__body, .text, .fitvid').fitVids();
+    $('.c-article__body, .text, .fitvid').fitVids();
   }
 
   // Apply parallax effect to background images.

@@ -197,9 +197,9 @@
   background-color: rgba($c-white, 0.4);
 }
 
-.u-gradient--bottom::after {
+.u-gradient--bottom:after {
   content: "";
-  display: block;
+  display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -340,6 +340,7 @@
 .u-image--breakout {
   min-height: rem(250);
   width: 100%;
+  background-size: cover;
 
   @include media('>medium') {
     min-height: rem(350);
