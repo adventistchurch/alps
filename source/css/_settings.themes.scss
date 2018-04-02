@@ -120,62 +120,57 @@ $themes: (
   )
 );
 
-@each $theme in $themes {
+@each $theme, $shades in $themes {
+  $darker:  map-get($shades, darker);
+  $dark:    map-get($shades, dark);
+  $base:    map-get($shades, base);
+  $light:   map-get($shades, light);
+  $lighter: map-get($shades, lighter);
+
   .#{$theme} {
-    @each $color, $colors in $theme {
-      @each $key, $value in $color {
-        // Text Color
-        .u-theme--color--#{$key},
-        .u-theme--color--#{$key} a,
-        a.u-theme--link-hover--#{$key}:hover,
-        .u-theme--link-hover--#{$key} a:hover {
-          color: $value;
+
+    @each $shade, $color in $shades {
+      // Text Color
+      .u-theme--color--#{$shade},
+      .u-theme--color--#{$shade} a,
+      a.u-theme--link-hover--#{$shade}:hover,
+      .u-theme--link-hover--#{$shade} a:hover {
+        color: $color;
+      }
+
+      // Background Color
+      .u-theme--background-color--#{$shade} {
+        background-color: $color;
+      }
+
+      // Border Color
+      .u-theme--border-color--#{$shade} {
+        border-color: $color;
+
+        &--top {
+          border-top-color: $color;
         }
 
-        // Background Color
-        .u-theme--background-color--#{$key} {
-          background-color: $value;
+        &--bottom {
+          border-bottom-color: $color;
         }
 
-        // Border Color
-        .u-theme--border-color--#{$key} {
-          border-color: $value;
-
-          &--top {
-            border-top-color: $value;
-          }
-
-          &--bottom {
-            border-bottom-color: $value;
-          }
-
-          &--left {
-            border-left-color: $value;
-          }
-
-          &--right {
-            border-right-color: $value;
-          }
+        &--left {
+          border-left-color: $color;
         }
 
-        // SVG fill colors
-        .u-theme--path-fill--#{$key} {
-          path {
-            fill: $value;
-          }
+        &--right {
+          border-right-color: $color;
+        }
+      }
+
+      // SVG fill colors
+      .u-theme--path-fill--#{$shade} {
+        path {
+          fill: $color;
         }
       }
     }
-  }
-}
-
-@each $theme, $shade in $themes {
-  $darker: map-get($shade, darker);
-  $dark: map-get($shade, dark);
-  $base: map-get($shade, base);
-  $light: map-get($shade, light);
-  $lighter: map-get($shade, lighter);
-  .#{$theme} {
 
     // Background transparency
     .u-theme--background-color-trans--darker {
