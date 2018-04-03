@@ -42,6 +42,7 @@
       "src": "//picsum.photos/400/400",
       "alt": "Image Alt"
     },
+    "url": false,
     "body": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum."
   }
 }

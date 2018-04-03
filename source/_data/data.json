@@ -270,7 +270,7 @@
 
   "media_block_default": {
     "block_content_class": "u-color--gray",
-    "block_title_class": "u-theme--color--darker u-theme--link-hover--base",
+    "block_title_class": "u-theme--color--darker",
     "block_meta_class": "u-theme--color--dark",
     "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
     "img": {
@@ -280,7 +280,8 @@
     "datetime": "2018-12-28",
     "date": "December 28, 2018",
     "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-    "category": "Culture"
+    "category": "Culture",
+    "url": "/"
   },
 
   "content_block_expand": {
@@ -363,7 +364,8 @@
     "title_class": "u-font--primary--m",
     "title": "General Conference",
     "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-    "cta": "Learn More"
+    "cta": "Learn More",
+    "url": "/"
   },
 
   "content_blocks": [{
@@ -391,7 +393,8 @@
         "title_class": "u-font--primary--m",
         "title": "General Conference",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Learn More"
+        "cta": "Learn More",
+        "url": "/"
       }
     },
     {
@@ -400,7 +403,8 @@
         "title_class": "u-font--primary--m",
         "title": "East-Central Africa",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Learn More"
+        "cta": "Learn More",
+        "url": "/"
       }
     },
     {
@@ -409,7 +413,8 @@
         "title_class": "u-font--primary--m",
         "title": "Euro-Asia",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Learn More"
+        "cta": "Learn More",
+        "url": "/"
       }
     },
     {
@@ -418,7 +423,8 @@
         "title_class": "u-font--primary--m",
         "title": "Middle East and North Africa",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "cta": "Learn More"
+        "cta": "Learn More",
+        "url": "/"
       }
     }
   ],
@@ -429,6 +435,7 @@
         "title_class": "u-font--primary--s",
         "title": "Aenean quis velit vel nibh commodo elementum",
         "category": "Culture",
+        "url": "/",
         "expand": false
       }
     },
@@ -438,6 +445,7 @@
         "title_class": "u-font--primary--s",
         "title": "Aenean quis velit vel nibh commodo elementum",
         "category": "Culture",
+        "url": "/",
         "expand": false
       }
     },
@@ -447,6 +455,7 @@
         "title_class": "u-font--primary--s",
         "title": "Aenean quis velit vel nibh commodo elementum",
         "category": "Culture",
+        "url": "/",
         "expand": false
       }
     },
@@ -456,6 +465,7 @@
         "title_class": "u-font--primary--s",
         "title": "Aenean quis velit vel nibh commodo elementum",
         "category": "Culture",
+        "url": "/",
         "expand": false
       }
     }
@@ -468,7 +478,7 @@
         "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
         "block_img_wrap_class": "u-round u-space--left",
         "block_kicker_class": "u-theme--color--base can-be--light",
-        "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+        "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
         "kicker": "Culture",
         "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
@@ -495,6 +505,7 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": false,
+        "url": "/",
         "category": "Culture",
         "cta": "Learn More"
       }
@@ -505,7 +516,7 @@
         "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col u-flex--justify-start",
         "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
         "block_kicker_class": "u-theme--color--base can-be--light",
-        "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+        "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
         "kicker": "Culture",
         "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
@@ -532,6 +543,7 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": false,
+        "url": "/",
         "category": "Culture",
         "cta": "Learn More"
       }
@@ -542,7 +554,7 @@
         "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col u-flex--justify-start",
         "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
         "block_kicker_class": "u-theme--color--base can-be--light",
-        "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+        "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
         "kicker": "Culture",
         "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
@@ -569,6 +581,7 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": false,
+        "url": "/",
         "category": "Culture"
       }
     }
@@ -598,10 +611,11 @@
         "media_block_default": {
           "block_class": "c-block__stacked c-media-block__stacked",
           "block_content_class": "l-grid-item u-border--left u-color--gray u-theme--border-color--darker--left u-spacing--half",
-          "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
           "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
           "title": "Nulla finibus ligula ut nisl facilisis",
           "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "url": "/",
           "category": "Culture",
           "datetime": "2017-12-28",
           "date": "December 28, 2017",
@@ -621,10 +635,11 @@
         "media_block_default": {
           "block_class": "c-block__stacked c-media-block__stacked",
           "block_content_class": "l-grid-item u-border--left u-color--gray u-theme--border-color--darker--left u-spacing--half",
-          "block_title_class": "u-theme--color--darker u-theme--link-hover--base u-font--primary--m",
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
           "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
           "title": "Nulla finibus ligula ut nisl facilisis",
           "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "url": "/",
           "category": "Culture",
           "datetime": "2017-12-28",
           "date": "December 28, 2017",
@@ -668,6 +683,7 @@
         "title_class": "u-font--primary--m",
         "title": "Donec consequat",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "url": "/",
         "cta": "Learn More"
       }
     },
@@ -677,6 +693,7 @@
         "title_class": "u-font--primary--m",
         "title": "Donec consequat",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "url": "/",
         "cta": "Learn More"
       }
     },
@@ -686,6 +703,7 @@
         "title_class": "u-font--primary--m",
         "title": "Donec consequat",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "url": "/",
         "cta": "Learn More"
       }
     },
@@ -695,6 +713,7 @@
         "title_class": "u-font--primary--m",
         "title": "Donec consequat",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "url": "/",
         "cta": "Learn More"
       }
     },
@@ -704,6 +723,7 @@
         "title_class": "u-font--primary--m",
         "title": "Donec consequat",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "url": "/",
         "cta": "Learn More"
       }
     },
@@ -713,6 +733,7 @@
         "title_class": "u-font--primary--m",
         "title": "Donec consequat",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "url": "/",
         "cta": "Learn More"
       }
     }
