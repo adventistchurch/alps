@@ -51,11 +51,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
-    min-height: calc(100vw / 7 * 2);
-
-    @include media('>small') {
-      min-height: calc(100vw / 7 * 1);
-    }
+    min-height: calc(100vw / 14 * 1);
   }
 
   &.c-background-image {
