@@ -3,9 +3,17 @@
     {% if content_block_default.img %}
       <img class="c-block__image" src="{{ content_block_default.img.src }}" />
     {% endif %}
-    <a href="" class="c-block__link">
-      <h3 class="u-theme--color--darker {{ content_block_default.title_class }}"><strong>{{ content_block_default.title }}</strong></h3>
-    </a>
+    {% if content_block_default.url %}
+      <h3 class="u-theme--color--darker {{ content_block_default.title_class }}">
+        <a href="{{ content_block_default.url }}" class="c-block__link">
+          <strong>{{ content_block_default.title }}</strong>
+        </a>
+      </h3>
+    {% else %}
+      <h3 class="u-theme--color--darker {{ content_block_default.title_class }}">
+        <strong>{{ content_block_default.title }}</strong>
+      </h3>
+    {% endif %}
     {% if content_block_default.description %}
       <p class="c-block__body text">{{ content_block_default.description | raw }}</p>
     {% endif %}
@@ -21,7 +29,7 @@
       <a href="" class="o-button o-button--outline o-button--expand js-toggle-parent"></a>
     {% else %}
       {% if content_block_default.cta %}
-        <a href="" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+        <a href="{{ content_block_default.url }}" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
       {% endif %}
     {% endif %}
   </div>
