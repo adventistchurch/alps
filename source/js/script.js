@@ -56,7 +56,7 @@
   });
 
   $(window).scroll(function(){
-     var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
+     var percent = $(document).scrollTop() / ($(document).height() - ($(document).height() - $(window).height() - ($(window).height() / 2)));
      $('.l-sabbath__logo-light').css('opacity', 1 - percent);
      $('.l-sabbath__overlay').css('opacity', 1 - percent);
   });
