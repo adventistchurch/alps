@@ -18,6 +18,10 @@
     width: 100vw;
   }
 
+  .c-drawer .l-grid-wrap--6-of-7 {
+    width: calc(100vw / 7 * 6);
+  }
+
   .c-article {
     @include media('>small') {
       width: calc(100vw / 7 * 5);
