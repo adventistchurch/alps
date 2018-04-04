@@ -231,9 +231,10 @@
     },
     {
       "media_block_default": {
-        "block_class": "l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
+        "block_class": "c-media-block__row c-block__row l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
         "block_img_class": "l-grid-item l-grid-item--m--4-col u-padding--zero--sides",
         "block_content_class": "l-grid-item l-grid-item--m--2-col",
+        "block_group_class": "u-flex--justify-start",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
@@ -258,6 +259,7 @@
         "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
         "block_img_class": "l-grid-item l-grid-item--m--4-col u-padding--zero--sides",
         "block_content_class": "l-grid-item l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_group_class": "u-flex--justify-start",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",

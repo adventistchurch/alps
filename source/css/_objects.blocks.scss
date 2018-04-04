@@ -163,7 +163,6 @@
  */
 .c-media-block {
   display: flex;
-  flex-direction: column;
   flex-direction: row;
 
   &__image {
@@ -195,6 +194,29 @@
   &--reversed {
     flex-direction: row-reverse;
     justify-content: flex-end;
+  }
+}
+
+.c-media-block--reversed,
+.c-media-block__row {
+  @include media('<=small') {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .c-media-block__content {
+      width: 100%;
+      overflow: hidden;
+      display: block;
+      flex: 2 0 0;
+    }
+
+    .c-media-block__image {
+      width: calc((100vw / 7) * 2 - 15px);
+      height: auto;
+      display: block;
+      margin-right: $space-mobile;
+    }
   }
 }
 
@@ -328,30 +350,12 @@
 
   .c-block__content {
     padding-bottom: 0;
-
-    @include media('>small') {
-      padding-top: $pad-mobile;
-    }
+    padding-top: $pad-mobile;
 
     @include media('>large') {
       padding-top: $pad;
     }
   }
-  //
-  // @include media(">medium", "<=large") {
-  //   flex-direction: row;
-  //   width: calc(100vw / 7 * 6);
-  //
-  //   .c-block__image {
-  //     width: calc(100vw / 7 * 3);
-  //     padding-right: $pad;
-  //   }
-  //
-  //   .c-block__content {
-  //     padding-top: 0;
-  //     padding-left: 0;
-  //   }
-  // }
 }
 
 .c-block__inset {
@@ -599,36 +603,36 @@
 /**
  * Share tools
  */
- .c-share-tools {
-   display: inline-block;
-   position: relative;
+.c-share-tools {
+  display: inline-block;
+  position: relative;
 
-   &.this-is-active {
-     .c-share-tools__list {
-       opacity: 1;
-       visibility: visible;
-       height: auto;
-     }
-   }
+  &.this-is-active {
+    .c-share-tools__list {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+  }
 
-   &__toggle {
-     display: block;
-     padding-bottom: rem(5);
-   }
+  &__toggle {
+    display: block;
+    padding-bottom: rem(5);
+  }
 
-   &__list {
-     position: absolute;
-     top: rem(25);
-     left: 0;
-     opacity: 0;
-     visibility: hidden;
-     height: 0;
-     border-left-width: 1px;
-     border-left-style: solid;
-     transition: all 0.25s ease;
-   }
+  &__list {
+    position: absolute;
+    top: rem(25);
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    transition: all 0.25s ease;
+  }
 
-   &__list-item {
-     cursor: pointer;
-   }
- }
+  &__list-item {
+    cursor: pointer;
+  }
+}
