@@ -94,3 +94,20 @@
     }
   }
 }
+
+.c-footer__primary-nav__link,
+.c-footer__secondary-nav__link {
+  font-family: $ff-font--secondary;
+  font-size: rem(13);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: rem(2);
+  font-weight: 400;
+}
+
+.c-footer__copyright,
+.c-footer__address {
+  font-family: $ff-font;
+  font-size: rem(13);
+  line-height: 1.7;
+}
