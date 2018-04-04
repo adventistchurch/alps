@@ -143,16 +143,22 @@
       }
     }
   }
+
+  .priority-nav-is-hidden {
+    display: none;
+  }
 }
 
 .c-header--inner {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0 $pad-mobile;
 
   @include media('>medium') {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 $pad;
   }
 
   @include media('>large') {
