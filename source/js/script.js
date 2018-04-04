@@ -173,12 +173,14 @@
       $(this).parent().parent().removeClass('this-is-active');
       $(this).parent().parent().parent().parent().removeClass('this-is-active');
       $(this).parent().parent().parent().removeClass('this-is-active');
+      $(this).parent().parent().parent().parent().parent().children('.c-drawer__subnav').removeClass('this-is-active');
       $(this).parent().parent().parent().parent().parent().removeClass('this-is-active');
     } else {
       $(this).addClass('this-is-active');
       $(this).parent().parent().addClass('this-is-active');
       $(this).parent().parent().parent().parent().addClass('this-is-active');
       $(this).parent().parent().parent().addClass('this-is-active');
+      $(this).parent().parent().parent().parent().parent().children('.c-drawer__subnav').addClass('this-is-active');
       $(this).parent().parent().parent().parent().parent().addClass('this-is-active');
       $(this).parent('li').clone().appendTo('.c-drawer__subnav');
     }

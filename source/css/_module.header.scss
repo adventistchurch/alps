@@ -505,7 +505,7 @@
     width: 100%;
     cursor: pointer;
 
-    .o-icon__close{
+    .o-icon__close {
       position: absolute;
       top: 0;
       left: 0;
@@ -568,6 +568,11 @@
 
       .c-drawer__subnav {
         right: 0;
+
+        .c-subnav {
+          display: flex;
+          min-width: auto;
+        }
       }
     }
   }
