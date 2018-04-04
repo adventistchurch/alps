@@ -20,7 +20,11 @@
 
   .c-header {
     .priority-nav {
-      text-align: left;
+      text-align: right;
+
+      @include media('>large') {
+        text-align: left;
+      }
     }
 
     &__logo {
@@ -43,27 +47,9 @@
     }
 
     &__nav-secondary {
-
-      @include media('>small') {
-        .c-secondary-nav__list {
-          justify-content: flex-end;
-          flex-direction: row-reverse;
-        }
-      }
-
-      @include media('>medium') {
-        .c-secondary-nav__list {
-          justify-content: flex-start;
-        }
-      }
-
       @include media('>large') {
         right: auto;
         left: $space;
-
-        .c-secondary-nav__list {
-          justify-content: flex-start;
-        }
       }
     }
   }
@@ -71,15 +57,21 @@
   .c-header__nav-secondary {
     .c-secondary-nav {
       &__list {
-        justify-content: flex-end;
+        justify-content: flex-start;
 
         @include media('>small') {
-          padding-right: rem(190);
+          padding-right: rem(160);
+          padding-left: 0;
         }
 
         @include media('>medium') {
-          padding-left: rem(180);
+          padding-left: rem(155);
           padding-right: 0;
+          justify-content: flex-end;
+        }
+
+        @include media('>large') {
+          padding-left: rem(165);
         }
       }
 
@@ -87,26 +79,32 @@
       &__list-item__menu {
         @include media('>small') {
           right: 0;
+          left: auto;
         }
 
         @include media('>medium') {
           right: auto;
-          left: -$space-mobile;
+          left: rem(-25);
+        }
+
+        @include media('>large') {
+          left: rem(-15);
         }
       }
 
       &__list-item__search {
         @include media('>small') {
-          right: rem(87);
+          right: rem(75);
+          left: auto;
         }
 
         @include media('>medium') {
-          left: rem(80);
+          left: rem(65);
           right: auto;
         }
 
-        @include media('>xlarge') {
-          left: rem(80);
+        @include media('>large') {
+          left: rem(75);
         }
       }
     }
@@ -144,10 +142,6 @@
   .c-block__category {
     padding-left: $pad;
     padding-right: 0;
-  }
-
-  .c-header .c-secondary-nav {
-    direction: ltr;
   }
 
   .u-shift--right--1-col--at-medium {
