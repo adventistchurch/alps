@@ -185,6 +185,11 @@
   .c-block__meta {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+
+    > * {
+      line-height: 1.6;
+    }
   }
 
   &--reversed {
