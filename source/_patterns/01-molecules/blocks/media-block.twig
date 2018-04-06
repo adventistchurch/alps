@@ -30,7 +30,13 @@
           {% endif %}
           {% if media_block_default.title %}
             <h3 class="c-media-block__title c-block__title {{ media_block_default.block_title_class }} {% if media_block_default.kicker %}{{ 'u-space--zero'}}{% endif %}">
-              {% if media_block_default.url %}<a href="{{ media_block_default.url }}" class="c-block__title-link">{% endif %}{{ media_block_default.title | raw }}{% if media_block_default.url %}</a>{% endif %}
+              {% if media_block_default.url %}
+                <a href="{{ media_block_default.url }}" class="c-block__title-link u-theme--link-hover--dark">
+              {% endif %}
+              {{ media_block_default.title | raw }}
+              {% if media_block_default.url %}
+                </a>
+              {% endif %}
             </h3>
           {% endif %}
           {% if media_block_default.description %}

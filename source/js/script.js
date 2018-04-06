@@ -56,7 +56,7 @@
   });
 
   $(window).scroll(function(){
-     var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
+     var percent = $(document).scrollTop() / ($(document).height() - ($(document).height() - $(window).height() - ($(window).height() / 2)));
      $('.l-sabbath__logo-light').css('opacity', 1 - percent);
      $('.l-sabbath__overlay').css('opacity', 1 - percent);
   });
@@ -170,16 +170,18 @@
 
     if ($(this).hasClass('this-is-active')) {
       $(this).removeClass('this-is-active');
-      $(this).parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().removeClass('this-is-active');
+      $(this).parents('.c-primary-nav__list').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav-primary').removeClass('this-is-active');
+      $(this).parents('.c-primary-nav').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav').removeClass('this-is-active');
     } else {
       $(this).addClass('this-is-active');
-      $(this).parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parents('.c-primary-nav__list').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav-primary').addClass('this-is-active');
+      $(this).parents('.c-primary-nav').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav').addClass('this-is-active');
       $(this).parent('li').clone().appendTo('.c-drawer__subnav');
     }
 
@@ -307,7 +309,7 @@
 
   // Responsive videos
   if ($.fn.fitVids) {
-    $('.article__body, .text, .fitvid').fitVids();
+    $('.c-article__body, .text, .fitvid').fitVids();
   }
 
   // Apply parallax effect to background images.

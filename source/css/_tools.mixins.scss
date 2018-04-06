@@ -52,11 +52,10 @@
 @mixin p {
   font-family: $ff-font;
   font-size: rem(14);
-  line-height: rem(20);
+  line-height: 1.6;
 
   @include media('>large') {
     font-size: rem(16);
-    line-height: rem(24);
   }
 
   @media print {

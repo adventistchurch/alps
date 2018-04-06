@@ -1,5 +1,6 @@
 {
   "media_block_default": {
+    "block_class": "c-media-block__row c-block__row",
     "picture": false,
     "img": {
       "src": "//picsum.photos/600/375",

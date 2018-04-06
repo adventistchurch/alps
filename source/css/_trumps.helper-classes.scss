@@ -20,7 +20,11 @@
 
   .c-header {
     .priority-nav {
-      text-align: left;
+      text-align: right;
+
+      @include media('>large') {
+        text-align: left;
+      }
     }
 
     &__logo {
@@ -43,27 +47,9 @@
     }
 
     &__nav-secondary {
-
-      @include media('>small') {
-        .c-secondary-nav__list {
-          justify-content: flex-end;
-          flex-direction: row-reverse;
-        }
-      }
-
-      @include media('>medium') {
-        .c-secondary-nav__list {
-          justify-content: flex-start;
-        }
-      }
-
       @include media('>large') {
         right: auto;
         left: $space;
-
-        .c-secondary-nav__list {
-          justify-content: flex-start;
-        }
       }
     }
   }
@@ -71,15 +57,21 @@
   .c-header__nav-secondary {
     .c-secondary-nav {
       &__list {
-        justify-content: flex-end;
+        justify-content: flex-start;
 
         @include media('>small') {
-          padding-right: rem(190);
+          padding-right: rem(160);
+          padding-left: 0;
         }
 
         @include media('>medium') {
-          padding-left: rem(180);
+          padding-left: rem(155);
           padding-right: 0;
+          justify-content: flex-end;
+        }
+
+        @include media('>large') {
+          padding-left: rem(165);
         }
       }
 
@@ -87,27 +79,103 @@
       &__list-item__menu {
         @include media('>small') {
           right: 0;
+          left: auto;
         }
 
         @include media('>medium') {
           right: auto;
-          left: -$space-mobile;
+          left: rem(-25);
+        }
+
+        @include media('>large') {
+          left: rem(-15);
         }
       }
 
       &__list-item__search {
         @include media('>small') {
-          right: rem(87);
+          right: rem(75);
+          left: auto;
         }
 
         @include media('>medium') {
-          left: rem(80);
+          left: rem(65);
           right: auto;
         }
 
-        @include media('>xlarge') {
-          left: rem(80);
+        @include media('>large') {
+          left: rem(75);
         }
+      }
+    }
+  }
+
+  .c-drawer {
+    &.this-is-active {
+      .c-drawer__container {
+        left: 0;
+        right: auto;
+      }
+    }
+
+    &__toggle {
+      left: 0;
+      right: auto;
+
+      .o-icon__close {
+        right: 0;
+        left: auto;
+      }
+    }
+
+    &__container {
+      right: auto;
+      left: -100%;
+      transition: left 0.25s ease-in-out;
+    }
+
+    &__nav-primary {
+      &.this-is-active {
+        .c-drawer__subnav {
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+
+    .c-subnav__arrow {
+      right: auto;
+      left: -$pad-mobile;
+
+      @include media('>medium') {
+        left: 0;
+        right: auto;
+      }
+
+      &::after {
+        left: $pad;
+        right: auto;
+        border-left: 0;
+        border-right: rem(5) solid $c-white;
+      }
+
+      &::before {
+        right: auto;
+        left: 0;
+      }
+    }
+
+    .c-subnav {
+      left: 0;
+      right: auto;
+
+      @include media('>medium') {
+        right: rem(265);
+        left: auto;
+      }
+
+      @include media('>large') {
+        right: rem(300);
       }
     }
   }
@@ -144,10 +212,6 @@
   .c-block__category {
     padding-left: $pad;
     padding-right: 0;
-  }
-
-  .c-header .c-secondary-nav {
-    direction: ltr;
   }
 
   .u-shift--right--1-col--at-medium {
@@ -197,9 +261,9 @@
   background-color: rgba($c-white, 0.4);
 }
 
-.u-gradient--bottom::after {
+.u-gradient--bottom:after {
   content: "";
-  display: block;
+  display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -340,6 +404,7 @@
 .u-image--breakout {
   min-height: rem(250);
   width: 100%;
+  background-size: cover;
 
   @include media('>medium') {
     min-height: rem(350);

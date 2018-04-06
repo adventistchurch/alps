@@ -2,6 +2,12 @@
     $HEADER
 \*------------------------------------*/
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%;
+  }
+}
+
 .c-header {
   display: flex;
   padding-top: rem(5);
@@ -28,6 +34,7 @@
     text-align: left;
     padding-top: rem(10);
     padding-bottom: rem(5);
+    overflow: hidden;
 
     @include media('>small') {
       order: 1;
@@ -49,6 +56,7 @@
 
     svg {
       width: 100%;
+      height: auto;
       max-width: rem(180);
 
       @include media('>medium') {
@@ -135,12 +143,17 @@
       }
     }
   }
+
+  .priority-nav-is-hidden {
+    display: none;
+  }
 }
 
 .c-header--inner {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0 $pad-mobile;
 
   @include media('>medium') {
     flex-direction: row;
@@ -150,6 +163,7 @@
   @include media('>large') {
     display: block;
     position: relative;
+    padding: 0 $pad;
   }
 }
 
@@ -256,13 +270,17 @@
       align-items: flex-start;
 
       @include media('>small') {
-        padding-left: rem(190);
+        padding-left: rem(160);
         flex-wrap: wrap;
       }
 
       @include media('>medium') {
-        padding-right: rem(180);
+        padding-right: rem(155);
         padding-left: 0;
+      }
+
+      @include media('>large') {
+        padding-right: rem(165);
       }
     }
 
@@ -294,7 +312,7 @@
       @include media('>small') {
         position: absolute;
         background-color: white;
-        width: rem(100);
+        width: rem(85);
         left: 0;
         top: 0;
         height: rem(35); // Height of nav
@@ -303,27 +321,26 @@
 
       @include media('>medium') {
         left: auto;
-        right: -$space;
+        right: rem(-25);
       }
 
-      @include media('>xlarge') {
-        left: auto;
-        right: -$space;
+      @include media('>large') {
+        right: rem(-15);
       }
     }
 
     &__list-item__search {
       @include media('>small') {
-        left: rem(87);
+        left: rem(75);
       }
 
       @include media('>medium') {
-        right: rem(80);
+        right: rem(65);
         left: auto;
       }
 
-      @include media('>xlarge') {
-        right: rem(80);
+      @include media('>large') {
+        right: rem(75);
       }
     }
 
@@ -340,13 +357,13 @@
       select {
         border: 0;
         padding: 0;
-        padding-right: rem(23);
+        padding-right: rem(20);
         outline: 0;
         text-align: right;
         width: 0;
 
         @include media('>small') {
-          width: rem(115);
+          width: rem(102);
         }
       }
 
@@ -368,7 +385,7 @@
 
     &__link {
       white-space: nowrap;
-      padding: $pad/2;
+      padding: $pad/2 $pad/3;
       display: flex;
       align-items: center;
 
@@ -488,7 +505,7 @@
     width: 100%;
     cursor: pointer;
 
-    .o-icon__close{
+    .o-icon__close {
       position: absolute;
       top: 0;
       left: 0;
@@ -551,6 +568,11 @@
 
       .c-drawer__subnav {
         right: 0;
+
+        .c-subnav {
+          display: flex;
+          min-width: auto;
+        }
       }
     }
   }
@@ -923,6 +945,7 @@
 
   > ul {
     display: inline-block;
+    vertical-align: bottom;
 
     > li {
       display: inline-block;
@@ -947,6 +970,7 @@
     position: absolute;
     visibility: hidden;
     display: none;
+    top: 0;
 
     &.show {
       visibility: visible;
@@ -954,11 +978,12 @@
 
     &-toggle {
       visibility: hidden;
-      position: absolute;
+      position: relative;
       border-radius: 0;
       background-color: transparent !important;
       border: 0;
       right: 0;
+      top: 0;
 
       &::after {
         content: "+";
