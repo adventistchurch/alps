@@ -197,7 +197,7 @@
   }
 }
 
-.c-media-block--reversed,
+.c-media-block--reversed:not(.c-block__inline),
 .c-media-block__row {
   @include media('<=small') {
     flex-direction: row-reverse;

@@ -23,9 +23,6 @@
 }
 
 select {
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  -ms-appearance:none;
   appearance:none;
   cursor: pointer;
   background: url('../images/icons/o-arrow--down.svg') center right rem(10) no-repeat;
@@ -53,17 +50,8 @@ input[type=checkbox] {
   cursor: pointer;
   display: block;
   float: left;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-appearance: none;
   background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance:none;
   appearance: none;
 }
 

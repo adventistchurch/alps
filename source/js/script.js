@@ -170,18 +170,18 @@
 
     if ($(this).hasClass('this-is-active')) {
       $(this).removeClass('this-is-active');
-      $(this).parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().children('.c-drawer__subnav').removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().removeClass('this-is-active');
+      $(this).parents('.c-primary-nav__list').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav-primary').removeClass('this-is-active');
+      $(this).parents('.c-primary-nav').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav').removeClass('this-is-active');
     } else {
       $(this).addClass('this-is-active');
-      $(this).parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().children('.c-drawer__subnav').addClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parents('.c-primary-nav__list').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav-primary').addClass('this-is-active');
+      $(this).parents('.c-primary-nav').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav').addClass('this-is-active');
       $(this).parent('li').clone().appendTo('.c-drawer__subnav');
     }
 

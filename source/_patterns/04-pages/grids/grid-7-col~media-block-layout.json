@@ -36,7 +36,7 @@
       "media_block_default": {
         "block_class": "c-block__inset c-media-block__inset",
         "block_content_class": "l-grid--7-col u-theme--background-color--darker",
-        "block_title_class": "l-grid-item l-grid-item--m--5-col l-grid-item--l--4-col l-grid-item--xl--5-col u-link-hover--white",
+        "block_title_class": "l-grid-item l-grid-item--m--5-col l-grid-item--l--4-col u-link-hover--white",
         "block_meta_class": "l-grid-item l-grid-item--m--2-col l-grid-item--l--2-col l-grid-item--xl--2-col",
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis consequat convallis.",
         "description": false,
@@ -158,7 +158,7 @@
     {
       "media_block_default": {
         "block_class": "c-block__stacked c-media-block__stacked l-grid-wrap l-grid-wrap--5-of-7 u-shift--left--1-col--at-xxlarge",
-        "block_content_class": "l-grid-item l-grid-item--m--5-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_content_class": "l-grid-item l-grid-item--m--4-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
@@ -232,8 +232,8 @@
     {
       "media_block_default": {
         "block_class": "c-media-block__row c-block__row l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
-        "block_img_class": "l-grid-item l-grid-item--m--4-col u-padding--zero--sides",
-        "block_content_class": "l-grid-item l-grid-item--m--2-col",
+        "block_img_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--3-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--2-col",
         "block_group_class": "u-flex--justify-start",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
@@ -257,8 +257,8 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
-        "block_img_class": "l-grid-item l-grid-item--m--4-col u-padding--zero--sides",
-        "block_content_class": "l-grid-item l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_img_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--3-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_group_class": "u-flex--justify-start",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
@@ -282,8 +282,8 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
-        "block_img_class": "l-grid-item l-grid-item--m--2-col u-padding--zero--sides",
-        "block_content_class": "l-grid-item l-grid-item--m--4-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_img_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--2-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--3-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
@@ -306,8 +306,8 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
-        "block_img_class": "l-grid-item l-grid-item--m--1-col u-padding--zero--sides",
-        "block_content_class": "l-grid-item l-grid-item--m--5-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_img_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--1-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--s--4-col l-grid-item--m--4-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
@@ -330,8 +330,8 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--4-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
-        "block_img_class": "l-grid-item l-grid-item--m--2-col u-padding--zero--sides",
-        "block_content_class": "l-grid-item l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_img_class": "l-grid-item l-grid-item--s--1-col l-grid-item--m--2-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
@@ -354,8 +354,8 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--3-of-7 l-grid--7-col u-shift--left--1-col--at-xxlarge",
-        "block_img_class": "l-grid-item l-grid-item--m--1-col u-padding--zero--sides",
-        "block_content_class": "l-grid-item l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
+        "block_img_class": "l-grid-item l-grid-item--s--1-col l-grid-item--m--1-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--s--2-col l-grid-item--m--2-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray",
         "block_title_class": "u-theme--color--dark",
         "block_meta_class": "u-theme--color--base",
         "title": "Nulla finibus ligula ut nisl facilisis",
