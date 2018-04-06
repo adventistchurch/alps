@@ -23,7 +23,7 @@
 @mixin u-font--primary-nav() {
   font-family: $ff-font--primary;
   font-size: rem(18);
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .u-font--primary-nav {
@@ -36,7 +36,7 @@
   font-size: rem(14);
   line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: rem(2);
+  letter-spacing: 0.5px;
   font-weight: 400;
 }
 
@@ -52,7 +52,7 @@
 @mixin u-font--primary--xxl() {
   font-family: $ff-font--primary;
   font-size: rem(40);
-  line-height: 1;
+  line-height: 1.2;
   font-weight: normal;
 
   @include media('>xlarge') {
@@ -68,12 +68,11 @@
 @mixin u-font--primary--xl() {
   font-family: $ff-font--primary;
   font-size: rem(30);
-  line-height: 1;
+  line-height: 1.3;
   font-weight: normal;
 
   @include media('>large') {
     font-size: rem(34);
-    line-height: rem(38);
   }
 }
 
@@ -85,12 +84,11 @@
 @mixin u-font--primary--l() {
   font-family: $ff-font--primary;
   font-size: rem(22);
-  line-height: rem(26);
+  line-height: 1.4;
   font-weight: normal;
 
   @include media('>large') {
     font-size: rem(30);
-    line-height: rem(36);
   }
 }
 
@@ -102,12 +100,11 @@
 @mixin u-font--primary--m() {
   font-family: $ff-font--primary;
   font-size: rem(18);
-  line-height: rem(24);
+  line-height: 1.5;
   font-weight: normal;
 
   @include media('>large') {
     font-size: rem(20);
-    line-height: rem(28);
   }
 }
 
@@ -119,11 +116,10 @@
 @mixin u-font--primary--s() {
   font-family: $ff-font--primary;
   font-size: rem(14);
-  line-height: rem(17);
+  line-height: 1.6;
 
   @include media('>large') {
     font-size: rem(15);
-    line-height: rem(21);
   }
 }
 
@@ -135,7 +131,7 @@
 @mixin u-font--primary--xs() {
   font-family: $ff-font--primary;
   font-size: rem(13);
-  line-height: rem(17);
+  line-height: 1.7;
 }
 
 .u-font--primary--xs {
@@ -151,16 +147,14 @@
   font-family: $ff-font--secondary;
   font-size: rem(24);
   font-weight: 600;
-  line-height: rem(28);
+  line-height: 1.4;
 
   @include media('>medium') {
     font-size: rem(30);
-    line-height: rem(34);
   }
 
   @include media('>large') {
     font-size: rem(38);
-    line-height: rem(42);
   }
 }
 
@@ -172,13 +166,12 @@
 @mixin u-font--secondary--l() {
   font-family: $ff-font--secondary;
   font-size: rem(22);
-  line-height: rem(26);
+  line-height: 1.5;
   font-weight: 600;
   text-transform: uppercase;
 
   @include media('>large') {
     font-size: rem(28);
-    line-height: rem(32);
   }
 }
 
@@ -190,17 +183,15 @@
 @mixin u-font--secondary--m() {
   font-family: $ff-font--secondary;
   font-size: rem(16);
-  line-height: rem(20);
+  line-height: 1.6;
   font-weight: normal;
 
   @include media('>medium') {
     font-size: rem(18);
-    line-height: rem(22);
   }
 
   @include media('>large') {
     font-size: rem(20);
-    line-height: rem(24);
   }
 }
 
@@ -212,7 +203,7 @@
 @mixin u-font--secondary--s() {
   font-family: $ff-font--secondary;
   font-size: rem(13);
-  line-height: rem(20);
+  line-height: 1.7;
 
   @include media('>large') {
     font-size: rem(15);
@@ -227,7 +218,7 @@
 @mixin u-font--secondary--xs() {
   font-family: $ff-font--secondary;
   font-size: rem(11);
-  line-height: rem(16);
+  line-height: 1.8;
 }
 
 .u-font--secondary--xs {
@@ -348,8 +339,7 @@
   > ol li,
   > ul li,
   > p {
-    font-size: rem(16);
-    line-height: 1.6;
+    @include p;
     font-family: $ff-font--primary;
   }
 

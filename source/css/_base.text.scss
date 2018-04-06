@@ -30,9 +30,12 @@ blockquote {
   position: relative;
   quotes: "\201C""\201D""\2018""\2019";
   padding-left: $pad;
-  border-left: 3px solid $c-black;
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
+
+  @include media('>medium') {
+    border-left: 3px solid $c-black;
+  }
 
   p {
     font-size: rem(24);

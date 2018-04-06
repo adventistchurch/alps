@@ -1,6 +1,7 @@
 /*------------------------------------*\
     $BLOCKS
 \*------------------------------------*/
+
 .c-block-wrap__content {
   overflow: hidden;
 
@@ -10,11 +11,14 @@
 }
 
 .c-block__heading {
-  border-left: rem(3) solid $c-black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: $pad-mobile;
+
+  @include media('>medium') {
+    border-left: rem(3) solid $c-black;
+  }
 
   @include media('>large') {
     padding-left: $pad;
@@ -43,6 +47,7 @@
 // Block
 .c-block__image {
   display: block;
+  overflow: hidden;
 
   picture img {
     width: 100%;
@@ -90,6 +95,15 @@
   text-transform: uppercase;
   letter-spacing: rem(1);
   font-size: 90%;
+}
+
+.c-block__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .c-block__button.o-button {
@@ -149,7 +163,6 @@
  */
 .c-media-block {
   display: flex;
-  flex-direction: column;
   flex-direction: row;
 
   &__image {
@@ -171,11 +184,39 @@
   .c-block__meta {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+
+    > * {
+      line-height: 1.6;
+    }
   }
 
   &--reversed {
     flex-direction: row-reverse;
     justify-content: flex-end;
+  }
+}
+
+.c-media-block--reversed:not(.c-block__inline),
+.c-media-block__row {
+  @include media('<=small') {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .c-media-block__content {
+      width: 100%;
+      overflow: hidden;
+      display: block;
+      flex: 2 0 0;
+    }
+
+    .c-media-block__image {
+      width: calc((100vw / 7) * 2 - 15px);
+      height: auto;
+      display: block;
+      margin-right: $space-mobile;
+    }
   }
 }
 
@@ -309,30 +350,12 @@
 
   .c-block__content {
     padding-bottom: 0;
-
-    @include media('>small') {
-      padding-top: $pad-mobile;
-    }
+    padding-top: $pad-mobile;
 
     @include media('>large') {
       padding-top: $pad;
     }
   }
-  //
-  // @include media(">medium", "<=large") {
-  //   flex-direction: row;
-  //   width: calc(100vw / 7 * 6);
-  //
-  //   .c-block__image {
-  //     width: calc(100vw / 7 * 3);
-  //     padding-right: $pad;
-  //   }
-  //
-  //   .c-block__content {
-  //     padding-top: 0;
-  //     padding-left: 0;
-  //   }
-  // }
 }
 
 .c-block__inset {
@@ -368,11 +391,6 @@
   align-items: stretch;
   align-content: flex-end;
   flex-wrap: wrap;
-
-  @include media('>small') {
-    overflow: hidden;
-    max-height: rem(600);
-  }
 
   @include media('>medium') {
     flex-wrap: nowrap;
@@ -443,6 +461,12 @@
       }
     }
   }
+
+  &-expand {
+    h3 {
+      margin-top: 0;
+    }
+  }
 }
 
 .c-block__breakout {
@@ -462,6 +486,8 @@
  * Block Expand
  */
 .c-block__expand {
+  position: relative;
+
   &.this-is-active {
     .c-block__body {
       display: block;
@@ -474,12 +500,14 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     flex: auto;
+    width: 100%;
   }
 
   .c-block__toggle {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+    flex: auto;
     width: calc((100vw / 7 * 4) - 15px); // - $pad-mobile
 
     @include media('>medium') {
@@ -575,36 +603,36 @@
 /**
  * Share tools
  */
- .c-share-tools {
-   display: inline-block;
-   position: relative;
+.c-share-tools {
+  display: inline-block;
+  position: relative;
 
-   &.this-is-active {
-     .c-share-tools__list {
-       opacity: 1;
-       visibility: visible;
-       height: auto;
-     }
-   }
+  &.this-is-active {
+    .c-share-tools__list {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+  }
 
-   &__toggle {
-     display: block;
-     padding-bottom: rem(5);
-   }
+  &__toggle {
+    display: block;
+    padding-bottom: rem(5);
+  }
 
-   &__list {
-     position: absolute;
-     top: rem(25);
-     left: 0;
-     opacity: 0;
-     visibility: hidden;
-     height: 0;
-     border-left-width: 1px;
-     border-left-style: solid;
-     transition: all 0.25s ease;
-   }
+  &__list {
+    position: absolute;
+    top: rem(25);
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    transition: all 0.25s ease;
+  }
 
-   &__list-item {
-     cursor: pointer;
-   }
- }
+  &__list-item {
+    cursor: pointer;
+  }
+}

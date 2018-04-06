@@ -17,11 +17,15 @@
   }
 
   &--left {
-    border-left: $border-style;
+    @include media('>medium') {
+      border-left: $border-style;
+    }
   }
 
   &--right {
-    border-right: $border-style;
+    @include media('>medium') {
+      border-right: $border-style;
+    }
   }
 
   &--red {
