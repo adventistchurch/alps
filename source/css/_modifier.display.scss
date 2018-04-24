@@ -2,9 +2,11 @@
     $DISPLAY STATES
 \*------------------------------------*/
 
+
 /**
  * Display Classes
  */
+
 .u-display--inline-block {
   display: inline-block;
 }
@@ -24,7 +26,6 @@
   @include media('>medium', '<=large') {
     margin-left: calc((100vw / 7) * -1);
   }
-
   @include media('>xxlarge') {
     margin-left: calc((100vw / 7) * -1);
   }
@@ -33,7 +34,6 @@
 .u-shift--left--1-col--at-large {
   @include media('>large') {
     margin-left: calc(100vw / 7);
-
     &.l-grid-wrap--6-of-7 {
       width: calc((100vw / 7) * 5);
     }
@@ -43,7 +43,6 @@
 .u-shift--left--1-col--at-xxlarge {
   @include media('>xxlarge') {
     margin-left: calc(100vw / 7);
-
     &.l-grid-wrap--6-of-7 {
       width: calc((100vw / 7) * 5);
     }
@@ -69,7 +68,7 @@
   }
 }
 
-.u-hide-until--l {
+.u-hide-until--xl {
   @include media('<=xlarge') {
     display: none;
   }
