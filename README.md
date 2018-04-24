@@ -19,7 +19,7 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 - [Install Composer globally](https://getcomposer.org/doc/00-intro.md#globally)
 - run `composer install`
-- Set up your local dev url to be `alps.dev`
+- Set up your local dev url to be `alps.test`
 - [Install node globally](https://docs.npmjs.com/getting-started/installing-node)
 - run `npm install` (may need to be run as `sudo`)
 - run `grunt`
