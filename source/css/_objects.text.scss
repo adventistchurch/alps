@@ -2,9 +2,11 @@
     $TEXT TYPES
 \*------------------------------------*/
 
+
 /**
  * Font Families
  */
+
 .u-font--primary,
 .u-font--primary p {
   font-family: $ff-font--primary;
@@ -44,6 +46,7 @@
   @include u-font--secondary-nav;
 }
 
+
 /**
  * Primary type styles
  */
@@ -54,7 +57,6 @@
   font-size: rem(40);
   line-height: 1.2;
   font-weight: normal;
-
   @include media('>xlarge') {
     font-size: rem(60);
   }
@@ -70,7 +72,6 @@
   font-size: rem(30);
   line-height: 1.3;
   font-weight: normal;
-
   @include media('>large') {
     font-size: rem(34);
   }
@@ -86,7 +87,6 @@
   font-size: rem(22);
   line-height: 1.4;
   font-weight: normal;
-
   @include media('>large') {
     font-size: rem(30);
   }
@@ -102,7 +102,6 @@
   font-size: rem(18);
   line-height: 1.5;
   font-weight: normal;
-
   @include media('>large') {
     font-size: rem(20);
   }
@@ -117,7 +116,6 @@
   font-family: $ff-font--primary;
   font-size: rem(14);
   line-height: 1.6;
-
   @include media('>large') {
     font-size: rem(15);
   }
@@ -138,6 +136,7 @@
   @include u-font--primary--xs;
 }
 
+
 /**
  * Secondary type styles
  */
@@ -148,11 +147,9 @@
   font-size: rem(24);
   font-weight: 600;
   line-height: 1.4;
-
   @include media('>medium') {
     font-size: rem(30);
   }
-
   @include media('>large') {
     font-size: rem(38);
   }
@@ -169,7 +166,6 @@
   line-height: 1.5;
   font-weight: 600;
   text-transform: uppercase;
-
   @include media('>large') {
     font-size: rem(28);
   }
@@ -185,11 +181,9 @@
   font-size: rem(16);
   line-height: 1.6;
   font-weight: normal;
-
   @include media('>medium') {
     font-size: rem(18);
   }
-
   @include media('>large') {
     font-size: rem(20);
   }
@@ -204,7 +198,6 @@
   font-family: $ff-font--secondary;
   font-size: rem(13);
   line-height: 1.7;
-
   @include media('>large') {
     font-size: rem(15);
   }
@@ -225,6 +218,7 @@
   @include u-font--secondary--xs;
 }
 
+
 /**
  * Monospace  type styles
  */
@@ -236,11 +230,9 @@
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
-
   @include media('>medium') {
     font-size: rem(44);
   }
-
   @include media('>large') {
     font-size: rem(55);
   }
@@ -257,7 +249,6 @@
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
-
   @include media('>medium') {
     font-size: rem(28);
     line-height: rem(32);
@@ -275,7 +266,6 @@
   line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
-
   @include media('>medium') {
     font-size: rem(24);
     line-height: rem(28);
@@ -291,7 +281,6 @@
   font-family: $ff-font--monospace;
   font-size: rem(13);
   line-height: rem(20);
-
   @include media('>large') {
     font-size: rem(15);
   }
@@ -312,150 +301,136 @@
   @include u-font--monospace--xs;
 }
 
+
 /**
  * Text Transforms
  */
+
 .u-text-transform--upper {
   text-transform: uppercase;
 }
+
 .u-text-transform--lower {
   text-transform: lowercase;
 }
 
+
 /**
  * Text Decorations
  */
+
 .u-text-decoration--underline {
   text-decoration: underline;
 }
 
+
 /**
  * Passages of Text
  */
+
 .text {
-  > blockquote p,
-  > dl dd,
-  > dl dt,
-  > ol li,
-  > ul li,
-  > p {
+  >blockquote p,
+  >dl dd,
+  >dl dt,
+  >ol li,
+  >ul li,
+  >p {
     @include p;
     font-family: $ff-font--primary;
   }
-
-  > p,
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6,
-  > ol,
-  > ul,
+  >p,
+  >h1,
+  >h2,
+  >h3,
+  >h4,
+  >h5,
+  >h6,
+  >ol,
+  >ul,
   .c-breadcrumbs {
     padding-left: $pad-mobile;
     padding-right: $pad-mobile;
-
     @include media('>large') {
       padding-left: $pad;
       padding-right: $pad;
     }
   }
-
-  > h1
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6 {
+  >h1>h2,
+  >h3,
+  >h4,
+  >h5,
+  >h6 {
     margin-bottom: rem(-5);
     padding-top: $pad/2;
-
     @include media('>large') {
       margin-bottom: rem(-15);
     }
   }
-
-  > h1,
-  > h2,
-  > h3 {
+  >h1,
+  >h2,
+  >h3 {
     font-family: $ff-font--secondary;
     text-transform: uppercase;
     font-weight: bold;
   }
-
-  > h4,
-  > h5,
-  > h6 {
+  >h4,
+  >h5,
+  >h6 {
     font-family: $ff-font--primary;
     text-transform: none;
   }
-
-  > h1,
-  > h2 {
+  >h1,
+  >h2 {
     font-size: rem(26);
   }
-
-  > h3 {
+  >h3 {
     font-size: rem(22);
   }
-
-  > h2:empty,
-  > h3:empty,
-  > p:empty {
+  >h2:empty,
+  >h3:empty,
+  >p:empty {
     display: none;
   }
-
-  > blockquote {
+  >blockquote {
     clear: both;
     font-size: rem(22);
     font-family: $ff-font;
     font-weight: bold;
     padding-left: $pad-mobile;
-
     @include media('>large') {
       padding-left: $pad;
     }
-
     p {
       line-height: 1.3;
       font-size: rem(22);
       font-family: $ff-font;
-
       @include media('>large') {
         font-size: rem(24);
       }
     }
   }
-
-  > .o-pullquote--extended {
+  >.o-pullquote--extended {
     width: calc(100vw / 7 * 3);
     margin-bottom: $space;
     float: left;
-
     @include media('>medium') {
       width: calc(100vw / 7 * 2);
     }
-
     @include media('>xxlarge') {
       margin-left: calc(100vw / 7 * -1);
     }
   }
-
   p:last-of-type {
     margin-bottom: 0;
   }
-
-  > ul {
+  >ul {
     list-style: disc;
     padding-left: $space;
     margin-left: $space;
     margin-bottom: $space;
-
     li {
       margin-bottom: $space/2;
     }
-
     ol,
     ul {
       list-style: disc;
@@ -463,22 +438,18 @@
       margin-bottom: 0;
       padding-left: $space;
     }
-
     ol {
       list-style: decimal;
     }
   }
-
-  > ol {
+  >ol {
     list-style: decimal;
     padding-left: $space;
     margin-left: $space;
     margin-bottom: $space;
-
     li {
       margin-bottom: $space/2;
     }
-
     ol,
     ul {
       list-style: decimal;
@@ -486,14 +457,12 @@
       margin-bottom: 0;
       padding-left: $space;
     }
-
     ul {
       list-style: disc;
     }
   }
-
-  > ol,
-  > ul {
+  >ol,
+  >ul {
     @include media ('<=large') {
       padding-left: $space-mobile;
     }
@@ -503,16 +472,13 @@
 ol,
 ul:not(.c-breadcrumbs__list) {
   .text & {
-
     li {
       list-style: none;
       text-indent: rem(-10);
-
       &::before {
         width: rem(10);
         display: inline-block;
       }
-
       li {
         list-style: none;
       }
@@ -523,16 +489,13 @@ ul:not(.c-breadcrumbs__list) {
 ol {
   .text & {
     counter-reset: item;
-
     li {
       &::before {
         content: counter(item) ". ";
         counter-increment: item;
       }
-
       li {
         counter-reset: item;
-
         &::before {
           content: "\002022";
         }
@@ -541,13 +504,12 @@ ol {
   }
 }
 
-ul:not(.c-breadcrumbs__list) {
+ul:not(.c-breadcrumbs__list, .o-inline-list) {
   .text & {
     li {
       &::before {
         content: "\002022";
       }
-
       li {
         &::before {
           content: "\002010";
@@ -557,11 +519,9 @@ ul:not(.c-breadcrumbs__list) {
   }
 }
 
-
 .o-intro {
   font-size: 110%;
   line-height: 150%;
-
   a {
     border-bottom: 1px solid $c-black;
   }
@@ -577,23 +537,19 @@ ul:not(.c-breadcrumbs__list) {
   position: relative;
   content: "";
   font-style: normal;
-
   @include media('>medium') {
     width: calc((100vw / 7 * 1) - 30px);
   }
-
   @include media('>large') {
     width: calc((100vw / 7 * 1) - 40px);
     margin-right: $pad;
     margin-bottom: $pad/2;
   }
-
   &::after {
     content: "";
     display: block;
     padding-top: 100%;
   }
-
   &::before {
     content: attr(data-letter);
     position: absolute;
@@ -605,29 +561,31 @@ ul:not(.c-breadcrumbs__list) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     @include media('>medium') {
       font-size: 12vw;
     }
-
     @include media('>large') {
       font-size: 8vw;
     }
   }
 }
 
+
 /**
  * Dek
  */
+
 .o-dek {
   p {
     margin-bottom: 0;
   }
 }
 
+
 /**
  * Kicker/Eyebrow
  */
+
 .o-kicker {
   line-height: 1;
   margin-bottom: rem(8);
@@ -636,30 +594,35 @@ ul:not(.c-breadcrumbs__list) {
   text-transform: uppercase;
 }
 
+
 /**
  * Citation
  */
+
 .o-citation {
   display: block;
   font-style: normal;
   text-transform: uppercase;
   margin-top: $space/2;
   font-weight: bold;
-
   @include u-font--secondary--s;
 }
+
 
 /**
  * Caption
  */
+
 .o-caption {
   line-height: 1.35;
   font-style: italic;
 }
 
+
 /**
  * No Wrapping
  */
+
 .u-no-wrap {
   white-space: nowrap;
 }
