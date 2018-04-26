@@ -6,36 +6,53 @@
   display: inline-block;
 }
 
+
+/**
+ * Inline List
+ */
+
+.o-inline-list {
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: $pad/4;
+    margin-left: $pad/4;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+
 /**
  * Bullet List
  */
+
 .o-bullet-list {
   list-style-type: disc;
   padding-left: rem(18);
-
   li {
     overflow: visible;
-
     &:last-child {
       margin-bottom: 0;
     }
   }
 }
 
+
 /**
  * Icon List
  */
+
 .o-icon-list {
   display: flex;
   flex-direction: row;
-
   li {
     padding: $pad/2;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-
   .u-icon {
     margin-bottom: $space/2;
   }
