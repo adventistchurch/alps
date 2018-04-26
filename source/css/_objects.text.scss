@@ -336,7 +336,6 @@
   >ul li,
   >p {
     @include p;
-    font-family: $ff-font--primary;
   }
   >p,
   >h1,
@@ -522,9 +521,6 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
 .o-intro {
   font-size: 110%;
   line-height: 150%;
-  a {
-    border-bottom: 1px solid $c-black;
-  }
 }
 
 .o-dropcap {
