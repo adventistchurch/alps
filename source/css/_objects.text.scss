@@ -504,7 +504,7 @@ ol {
   }
 }
 
-ul:not(.c-breadcrumbs__list, .o-inline-list) {
+ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   .text & {
     li {
       &::before {
