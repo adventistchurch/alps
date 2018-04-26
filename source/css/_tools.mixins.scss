@@ -61,7 +61,7 @@
   line-height: 1.6;
   a {
     border-bottom: 1px solid $c-black;
-    &:hover {
+    &:hover:not(.o-inline-list a) {
       border-width: 2px;
     }
   }

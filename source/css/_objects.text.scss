@@ -469,7 +469,7 @@
 }
 
 ol,
-ul:not(.c-breadcrumbs__list) {
+ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   .text & {
     li {
       list-style: none;
