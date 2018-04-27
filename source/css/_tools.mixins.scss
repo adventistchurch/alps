@@ -53,9 +53,6 @@
   font-family: $ff-font--primary;
   font-size: rem(14);
   line-height: 1.6;
-  a {
-    border-bottom: 1px solid $c-black;
-  }
 
   @include media('>large') {
     font-size: rem(16);
