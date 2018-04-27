@@ -331,6 +331,9 @@
 .text {
   a {
     border-bottom: 1px solid $c-black;
+    &:hover:not(.o-inline-list a) {
+      border-width: 2px;
+    }
   }
   >blockquote p,
   >dl dd,
@@ -472,7 +475,7 @@
 }
 
 ol,
-ul:not(.c-breadcrumbs__list) {
+ul:not(.c-breadcrumbs__list):not(.o-inline-list):not(.c-share-tools__list) {
   .text & {
     li {
       list-style: none;

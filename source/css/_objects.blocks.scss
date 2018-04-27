@@ -630,9 +630,17 @@
     border-left-width: 1px;
     border-left-style: solid;
     transition: all 0.25s ease;
+    list-style-type: none;
+    margin: 0;
   }
 
   &__list-item {
     cursor: pointer;
+    text-indent: 0;
+
+    &::before {
+      display: none;
+      content: "";
+    }
   }
 }
