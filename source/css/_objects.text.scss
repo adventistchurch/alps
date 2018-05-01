@@ -329,6 +329,12 @@
  */
 
 .text {
+  a {
+    border-bottom: 1px solid $c-black;
+    &:hover:not(.o-inline-list a) {
+      border-width: 2px;
+    }
+  }
   >blockquote p,
   >dl dd,
   >dl dt,
