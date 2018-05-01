@@ -34,7 +34,7 @@
 
   "content_block_default": {
     "expand": true,
-    "block_class": "c-block__text-expand u-spacing u-background-color--gray--light u-padding u-clear-fix",
+    "block_class": "c-block__text-expand u-spacing u-background-color--gray--light u-padding u-clear-fix can-be--dark-dark",
     "title_class": "u-font--primary--m",
     "title": "Mariana Chambers",
     "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus.",
