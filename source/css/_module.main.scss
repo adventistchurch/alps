@@ -146,7 +146,7 @@
   padding-top: 0;
   cursor: pointer;
   background-color: $c-gray--light;
-  margin: 0 auto;
+  margin: 0;
   display: block;
 
   &__logo--inner {
@@ -173,6 +173,8 @@
     width: 100%;
     max-width: rem(80);
     margin: 0 auto;
+    left: 0;
+    right: 0;
 
     @include media('>large') {
       max-width: rem(155);
