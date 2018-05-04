@@ -208,6 +208,7 @@
 
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
+    $('.body').removeClass('menu-is-active');
     $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-subnav__arrow').removeClass('this-is-active');
   });
 
@@ -215,6 +216,7 @@
   $('.js-toggle-menu, .c-priority-nav__toggle').on('click', function(e) {
     e.stopPropagation();
     $('.c-drawer').toggleClass('this-is-active');
+    $('.body').addClass('menu-is-active');
   });
 
   // Make search input active with toggle is clicked

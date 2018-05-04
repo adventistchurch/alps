@@ -518,7 +518,7 @@
   }
 
   &__container {
-    position: fixed;
+    position: absolute;
     right: -100%;
     transition: right 0.25s ease-in-out;
     transition-delay: 0.25s;
@@ -527,6 +527,13 @@
     overflow-x: hidden;
     padding: $pad-mobile;
     padding-bottom: $pad-mobile*2;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    top: 0;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
 
     @include media('>medium') {
       padding: $pad $pad 0 $pad*2;
@@ -904,6 +911,7 @@
     a {
       display: block;
       width: 100%;
+      border-bottom: none;
     }
   }
 }
