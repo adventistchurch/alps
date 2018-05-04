@@ -4,7 +4,7 @@
 
 .c-footer {
   padding: $pad*2 0;
-
+  
   &--inner > div {
     @include media('<=medium') {
       margin-top: $space-mobile*2;
