@@ -45,6 +45,9 @@ select {
   border: $border-style;
   padding: $pad/2;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   -webkit-border-radius: 0;
 }
 
