@@ -359,12 +359,17 @@
         padding: 0;
         padding-right: rem(20);
         outline: 0;
-        text-align: right;
+        text-align: left;
         width: 0;
 
         @include media('>small') {
-          width: rem(102);
+          width: auto;
         }
+      }
+
+      option {
+        padding: 0;
+        margin: 0;
       }
 
       &::before {
