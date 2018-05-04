@@ -69,26 +69,12 @@ $c-button-color: $c-gray;
  * Typography
  */
 
-$ff-font: 'Noto Sans',
-"Helvetica",
-"Arial",
-sans-serif;
-$ff-font--primary: 'Noto Serif',
-Georgia,
-Times,
-"Times New Roman",
-serif;
-$ff-font--secondary: 'Noto Sans',
-"Helvetica",
-"Arial",
-sans-serif;
+$ff-font: 'Noto Sans',"Helvetica","Arial",sans-serif;
+$ff-font--primary: 'Noto Serif',Georgia,Times,"Times New Roman",serif;
+$ff-font--secondary: 'Noto Sans',"Helvetica","Arial",sans-serif;
 $ff-font--serif: $ff-font--primary;
 $ff-font--sans: $ff-font--secondary;
-$ff-font--monospace: Menlo,
-Monaco,
-"Courier New",
-"Courier",
-monospace;
+$ff-font--monospace: Menlo,Monaco,"Courier New","Courier",monospace;
 
 /**
  * Animation
