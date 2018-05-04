@@ -121,9 +121,9 @@
   /**
    * Fixto
    */
-  $('.js-sticky').fixTo('js-sticky-parent', {
+  $('.js-sticky').fixTo('.js-sticky-parent', {
     className: 'sticky-is-active',
-    useNativeSticky: true,
+    useNativeSticky: false,
     zIndex: 9999
   });
 
