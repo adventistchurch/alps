@@ -271,6 +271,7 @@
 
 .l-grid-wrap {
   width: 100vw;
+  max-width: 100%;
 
   &--1-of-7 {
     width: calc((100vw / 7) * 1 + 0);
@@ -290,17 +291,14 @@
 
   &--5-of-7 {
     width: calc((100vw / 7) * 5 + 0);
-    max-width: calc((100vw / 7) * 5);
   }
 
   &--6-of-7 {
     width: calc((100vw / 7) * 6 + 0);
-    max-width: calc((100vw / 7) * 6);
   }
 
   &--7-of-7 {
     width: calc((100vw / 7) * 7 + 0);
-    max-width: calc((100vw / 7) * 7);
   }
 }
 
