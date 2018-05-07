@@ -581,6 +581,22 @@ $themes: (
         background-color: $lighter;
       }
 
+      table {
+        a {
+          color: $c-white;
+        }
+      }
+
+      th {
+        border-bottom-color: $lighter;
+      }
+
+      tr {
+        &:nth-child(even) {
+          background-color: $c-gray--dark;
+        }
+      }
+
       .c-header {
         .c-subnav__list-item {
           background-color: $darker;
