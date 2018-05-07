@@ -95,6 +95,10 @@
 
   .l-grid-item {
     width: 100%;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+    margin: 0;
 
     &--1-col {
       width: calc((100vw / 7) * 1);
@@ -267,33 +271,34 @@
 
 .l-grid-wrap {
   width: 100vw;
+  max-width: 100%;
 
   &--1-of-7 {
-    width: calc((100vw / 7) * 1);
+    width: calc((100vw / 7) * 1 + 0);
   }
 
   &--2-of-7 {
-    width: calc((100vw / 7) * 2);
+    width: calc((100vw / 7) * 2 + 0);
   }
 
   &--3-of-7 {
-    width: calc((100vw / 7) * 3);
+    width: calc((100vw / 7) * 3 + 0);
   }
 
   &--4-of-7 {
-    width: calc((100vw / 7) * 4);
+    width: calc((100vw / 7) * 4 + 0);
   }
 
   &--5-of-7 {
-    width: calc((100vw / 7) * 5);
+    width: calc((100vw / 7) * 5 + 0);
   }
 
   &--6-of-7 {
-    width: calc((100vw / 7) * 6);
+    width: calc((100vw / 7) * 6 + 0);
   }
 
   &--7-of-7 {
-    width: calc((100vw / 7) * 7);
+    width: calc((100vw / 7) * 7 + 0);
   }
 }
 

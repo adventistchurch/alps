@@ -6,6 +6,10 @@
   position: relative;
   min-height: 100vh;
   width: 100vw;
+
+  &.menu-is-active {
+    overflow: hidden;
+  }
 }
 
 .body.hide-sabbath {
@@ -129,7 +133,6 @@
   z-index: 1;
   position: relative;
   min-height: 100vh;
-  //overflow: hidden;
 }
 
 .l-main {
@@ -187,6 +190,10 @@
   &__logo-light {
     z-index: 2;
     position: relative;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      top: 2px;
+    }
   }
 
   &__logo-dark {

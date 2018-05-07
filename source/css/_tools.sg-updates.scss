@@ -2,6 +2,12 @@
     $STYLEGUIDE UPDATES
 \*------------------------------------*/
 
+.sg-pattern-example {
+  .c-block__breakout {
+    margin-top: 0;
+  }
+}
+
 .sg-main {
   max-width: $max-width;
   padding: $pad;

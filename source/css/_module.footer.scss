@@ -5,7 +5,7 @@
 .c-footer {
   padding: $pad*2 0;
 
-  &--inner > div {
+  &--inner > .l-grid-item {
     @include media('<=medium') {
       margin-top: $space-mobile*2;
 

@@ -312,6 +312,23 @@ $themes: (
 
     .u-theme--dark {
 
+      // Globals
+      input,
+      textarea,
+      select {
+        background-color: $c-gray--darker;
+        border-color: $c-gray;
+        color: white;
+      }
+
+      input[type=file] {
+        background-color: transparent;
+      }
+
+      .u-background-color--gray--light {
+        background-color: $darker;
+      }
+
       // Colors
       .u-theme--color--darker,
       .u-theme--color--darker a,
@@ -525,10 +542,6 @@ $themes: (
       // Custom
       .can-be--dark-dark {
         background-color: $darker;
-
-        svg path {
-          //sfill: $lighter;
-        }
       }
 
       .can-be--dark-light {
@@ -566,6 +579,22 @@ $themes: (
       input[type=radio]:checked,
       input[type=checkbox]:checked {
         background-color: $lighter;
+      }
+
+      table {
+        a {
+          color: $c-white;
+        }
+      }
+
+      th {
+        border-bottom-color: $lighter;
+      }
+
+      tr {
+        &:nth-child(even) {
+          background-color: $c-gray--dark;
+        }
       }
 
       .c-header {
@@ -622,7 +651,7 @@ $themes: (
   }
 
   .can-be--dark-light {
-    background-color: $c-gray--light;
+    background-color: $c-gray--light !important;
   }
 
   .can-be--dark-dark {
