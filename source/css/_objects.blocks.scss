@@ -473,7 +473,7 @@
   margin-right: $pad-mobile;
 
   @include media('>large') {
-    margin-top: -$space*4;
+    margin-top: -$space*2;
     margin-right: 0;
   }
 
