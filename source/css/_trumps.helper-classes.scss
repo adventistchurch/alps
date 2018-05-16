@@ -290,6 +290,11 @@
     z-index: -1;
     display: block;
     content: "";
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      background: url('../images/background-grid.png') top left repeat-y;
+      background-size: 100%;
+    }
   }
 
   &.u-theme--dark::after {
@@ -297,6 +302,11 @@
     background-repeat: repeat-y;
     background-size: 100%;
     opacity: 0.1;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      background: url('../images/background-grid.png') top left repeat-y;
+      background-size: 100%;
+    }
   }
 }
 

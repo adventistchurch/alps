@@ -5,12 +5,16 @@
 .c-footer {
   padding: $pad*2 0;
 
-  &--inner > .l-grid-item {
-    @include media('<=medium') {
-      margin-top: $space-mobile*2;
+  &--inner {
+    width: 100%;
 
-      &:first-child {
-        margin-top: 0;
+    > .l-grid-item {
+      @include media('<=medium') {
+        margin-top: $space-mobile*2;
+
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
   }
