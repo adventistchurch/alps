@@ -10,7 +10,6 @@
   display: flex;
   display: inline-flex;
   flex-flow: row wrap;
-  max-width: 100%;
 }
 
 /**
@@ -64,7 +63,6 @@
 
 .l-grid-item {
   width: 100%;
-  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -200,6 +198,7 @@
       flex-direction: row;
       justify-content: flex-start;
     }
+
     .l-grid-item--l {
       &--1-col {
         width: calc((100vw / 7) * 1);
@@ -237,6 +236,7 @@
       flex-direction: row;
       justify-content: flex-start;
     }
+
     .l-grid-item--xl {
       &--1-col {
         width: calc((100vw / 7) * 1);
@@ -271,8 +271,6 @@
 
 .l-grid-wrap {
   width: 100vw;
-  max-width: 100%;
-  overflow: visible;
 
   &--1-of-7 {
     width: calc((100vw / 7) * 1);

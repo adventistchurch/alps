@@ -149,6 +149,14 @@ html {
   min-height: 100vh;
   height: auto;
   display: block;
+
+  &__content {
+    flex-wrap: wrap;
+
+    @include media('>large') {
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 .l-sabbath {
