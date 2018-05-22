@@ -198,6 +198,7 @@
       flex-direction: row;
       justify-content: flex-start;
     }
+
     .l-grid-item--l {
       &--1-col {
         width: calc((100vw / 7) * 1);
@@ -235,6 +236,7 @@
       flex-direction: row;
       justify-content: flex-start;
     }
+
     .l-grid-item--xl {
       &--1-col {
         width: calc((100vw / 7) * 1);
@@ -269,34 +271,33 @@
 
 .l-grid-wrap {
   width: 100vw;
-  max-width: 100%;
 
   &--1-of-7 {
-    width: calc((100vw / 7) * 1 + 0);
+    width: calc((100vw / 7) * 1);
   }
 
   &--2-of-7 {
-    width: calc((100vw / 7) * 2 + 0);
+    width: calc((100vw / 7) * 2);
   }
 
   &--3-of-7 {
-    width: calc((100vw / 7) * 3 + 0);
+    width: calc((100vw / 7) * 3);
   }
 
   &--4-of-7 {
-    width: calc((100vw / 7) * 4 + 0);
+    width: calc((100vw / 7) * 4);
   }
 
   &--5-of-7 {
-    width: calc((100vw / 7) * 5 + 0);
+    width: calc((100vw / 7) * 5);
   }
 
   &--6-of-7 {
-    width: calc((100vw / 7) * 6 + 0);
+    width: calc((100vw / 7) * 6);
   }
 
   &--7-of-7 {
-    width: calc((100vw / 7) * 7 + 0);
+    width: calc((100vw / 7) * 7);
   }
 }
 

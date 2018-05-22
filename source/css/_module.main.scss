@@ -2,10 +2,16 @@
     $MAIN CONTENT AREA
 \*------------------------------------*/
 
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  max-width: 100%;
+}
+
 .body {
   position: relative;
   min-height: 100vh;
   width: 100vw;
+  max-width: 100%;
 
   &.menu-is-active {
     overflow: hidden;
@@ -143,6 +149,14 @@
   min-height: 100vh;
   height: auto;
   display: block;
+
+  &__content {
+    flex-wrap: wrap;
+
+    @include media('>large') {
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 .l-sabbath {

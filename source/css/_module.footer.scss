@@ -5,12 +5,23 @@
 .c-footer {
   padding: $pad*2 0;
 
-  &--inner > .l-grid-item {
-    @include media('<=medium') {
-      margin-top: $space-mobile*2;
+  @include media('>large') {
+    position: relative;
+  }
 
-      &:first-child {
-        margin-top: 0;
+  &--inner {
+    @include media('>large') {
+      flex-wrap: nowrap;
+      padding-bottom: $pad*4;
+    }
+
+    > .l-grid-item {
+      @include media('<=medium') {
+        margin-top: $space-mobile*2;
+
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -30,6 +41,7 @@
 
   &__secondary-nav {
     order: 3;
+    flex-shrink: 0;
 
     @include media('>medium') {
       margin-top: $space*2;
@@ -91,6 +103,9 @@
 
     @include media('>large') {
       order: 5;
+      position: absolute;
+      bottom: $pad*2;
+      left: 0;
     }
   }
 }
