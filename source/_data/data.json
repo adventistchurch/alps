@@ -751,6 +751,11 @@
     "class": "u-theme--button"
   },
 
+  "button_submit": {
+    "text": "Submit",
+    "class": "u-theme--button"
+  },
+
   "search_filter": {
     "radio": [{
         "id": "1",
