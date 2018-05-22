@@ -6,7 +6,10 @@
   padding: $pad*2 0;
 
   &--inner {
-    //width: 100%;
+    @include media('>large') {
+      flex-wrap: nowrap;
+      padding-bottom: $pad*4;
+    }
 
     > .l-grid-item {
       @include media('<=medium') {
@@ -96,6 +99,9 @@
 
     @include media('>large') {
       order: 5;
+      position: absolute;
+      bottom: $pad*2;
+      left: 0;
     }
   }
 }
