@@ -5,6 +5,10 @@
 .c-footer {
   padding: $pad*2 0;
 
+  @include media('>large') {
+    position: relative;
+  }
+
   &--inner {
     @include media('>large') {
       flex-wrap: nowrap;
