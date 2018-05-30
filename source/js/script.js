@@ -44,23 +44,6 @@
     });
   }
 
-  // Sabbath Logo Icon
-  var headerHeight = $('.c-header').outerHeight();
-  $(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > headerHeight) {
-      $('.js-show-on-scroll').removeClass('is-hidden').addClass('is-visible');
-    } else {
-      $('.js-show-on-scroll').removeClass('is-visible').addClass('is-hidden');
-    }
-  });
-
-  $(window).scroll(function(){
-     var percent = $(document).scrollTop() / ($(document).height() - ($(document).height() - $(window).height() - ($(window).height() / 2)));
-     $('.l-sabbath__logo-light').css('opacity', 1 - percent);
-     $('.l-sabbath__overlay').css('opacity', 1 - percent);
-  });
-
   // Check window width
   var getWidth = function() {
     var width;
@@ -82,6 +65,28 @@
   }
   window.onresize = function() {
     getWidth();
+  }
+
+  // Sabbath Logo Icon
+  var headerHeight = $('.c-header').outerHeight();
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > headerHeight) {
+      $('.js-show-on-scroll').removeClass('is-hidden').addClass('is-visible');
+    } else {
+      $('.js-show-on-scroll').removeClass('is-visible').addClass('is-hidden');
+    }
+  });
+
+  $(window).scroll(function(){
+     var percent = $(document).scrollTop() / ($(document).height() - ($(document).height() - $(window).height() - ($(window).height() / 2)));
+     $('.l-sabbath__logo-light').css('opacity', 1 - percent);
+     $('.l-sabbath__overlay').css('opacity', 1 - percent);
+  });
+
+  // Hide sabbath column on small screens
+  if (isMobile() && $('.body').hasClass('hide-sabbath--small')) {
+    $('.body').addClass('hide-sabbath');
   }
 
   // SITE SPECIFIC JS ------------------------------//
