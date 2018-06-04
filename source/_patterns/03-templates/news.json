@@ -183,8 +183,8 @@
       "media_block_default": {
         "block_type": "gallery",
         "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7",
-        "block_img_class": "l-grid-item l-grid-item--m--3-col u-padding--zero--sides",
-        "block_content_class": "l-grid-item l-grid-item--m--3-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray u-background-color--gray--light can-be--dark-dark u-padding--top u-padding--bottom u-flex--justify-between",
+        "block_img_class": "l-grid-item l-grid-item--s--3-col u-padding--zero--sides",
+        "block_content_class": "l-grid-item l-grid-item--s--3-col u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray u-background-color--gray--light can-be--dark-dark u-padding--top u-padding--bottom u-flex--justify-between",
         "block_title_class": "u-theme--color--dark u-font--primary--l",
         "block_meta_class": "u-theme--color--base",
         "title": "The Coachella Valley community is officially home to Loma Linda University Children’s Health – Indio, Jill and Barry Golden Pavilion, the largest pediatric clinic in the area. The grand opening was...",
@@ -192,6 +192,7 @@
         "category": "Culture",
         "datetime": "2017-12-28",
         "date": "December 28, 2017",
+        "background_image": true,
         "picture": {
           "img_break_m": "900",
           "img": {
@@ -215,8 +216,8 @@
     "archive_blocks": [{
         "media_block_default": {
           "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7  l-grid--7-col",
-          "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col u-padding--zero--sides",
-          "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
+          "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
           "block_title_class": "u-theme--color--dark u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "Adventist leaders inspire mission at East-Central Africa Division ASI Convention",
@@ -239,8 +240,8 @@
       {
         "media_block_default": {
           "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col",
-          "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col u-padding--zero--sides",
-          "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
+          "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
           "block_title_class": "u-theme--color--dark u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "Tbilisi children’s program a successful community outreach",
@@ -263,8 +264,8 @@
       {
         "media_block_default": {
           "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col",
-          "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col u-padding--zero--sides",
-          "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
+          "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
           "block_title_class": "u-theme--color--dark u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "International vegetarian nutrition congress highlights plant-based nutrition",
@@ -287,8 +288,8 @@
       {
         "media_block_default": {
           "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col",
-          "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col u-padding--zero--sides",
-          "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
+          "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
           "block_title_class": "u-theme--color--dark u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "New Adventist church building inaugurated in Erbil, Iraq",
@@ -311,8 +312,8 @@
       {
         "media_block_default": {
           "block_class": "c-block--reversed c-media-block--reversed l-grid-wrap l-grid-wrap--6-of-7 l-grid--7-col",
-          "block_img_class": "l-grid-item--2-col l-grid-item--l--1-col u-padding--zero--sides",
-          "block_content_class": "l-grid-item--4-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
+          "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--sides",
+          "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--3-col u-flex--justify-start u-border--left",
           "block_title_class": "u-theme--color--dark u-font--primary--l",
           "block_meta_class": "u-theme--color--base",
           "title": "Fifteen church members die after being struck by lightning in Rwanda",

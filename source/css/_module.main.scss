@@ -29,22 +29,22 @@ html {
   }
 
   .c-drawer .l-grid-wrap--6-of-7 {
-    width: calc(100vw / 7 * 6);
+    width: calc(100vw / 7 * 6 - 0.01px);
   }
 
   .c-article {
     @include media('>small') {
-      width: calc(100vw / 7 * 5);
+      width: calc(100vw / 7 * 5 - 0.01px);
       margin-left: calc(100vw / 7 * 1);
     }
 
     @include media('>medium') {
-      width: calc(100vw / 7 * 4);
+      width: calc(100vw / 7 * 4 - 0.01px);
       margin-left: 0;
     }
 
     @include media('>large') {
-      width: calc(100vw / 7 * 3);
+      width: calc(100vw / 7 * 3 - 0.01px);
       margin-left: calc(100vw / 7 * 1);
     }
 
@@ -55,17 +55,17 @@ html {
 
   .c-sidebar {
     @include media('>small') {
-      width: calc(100vw / 7 * 5);
+      width: calc(100vw / 7 * 5 - 0.01px);
       margin-left: calc(100vw / 7 * 1);
     }
 
     @include media('>medium') {
-      width: calc(100vw / 7 * 3);
+      width: calc(100vw / 7 * 3 - 0.01px);
       margin-left: 0;
     }
 
     @include media('>large') {
-      width: calc(100vw / 7 * 2);
+      width: calc(100vw / 7 * 2 - 0.01px);
     }
 
     .c-block__breakout {
@@ -87,26 +87,29 @@ html {
     width: 100vw;
 
     @include media('>small') {
-      width: calc((100vw / 7) * 5);
+      width: calc((100vw / 7) * 5 - 0.01px);
     }
 
     @include media('>medium') {
-      width: calc((100vw / 7) * 4);
+      width: calc((100vw / 7) * 4 - 0.01px);
     }
   }
 
   .l-large-break {
-    width: calc((100vw / 7) * 6);
+    width: calc((100vw / 7) * 6 - 0.01px);
 
     @include media('>medium') {
-      width: calc((100vw / 7) * 4);
+      width: calc((100vw / 7) * 4 - 0.01px);
     }
   }
 
   .c-footer__logo {
     display: block;
-    width: calc((100vw / 7) * .75);
+    width: calc((100vw / 7) * 2);
 
+    @include media('>medium') {
+      width: calc((100vw / 7) * .75);
+    }
   }
 }
 
@@ -114,8 +117,8 @@ html {
   .c-article,
   .c-sidebar {
     @include media('>medium', '<=large') {
-      width: calc(100vw / 7 * 4);
-      margin-left: calc(100vw / 7 * 1);
+      width: calc(100vw / 7 * 4 - 0.01px);
+      margin-left: calc(100vw / 7 * 1 - 0.01px);
     }
   }
 }
@@ -129,14 +132,14 @@ html {
 }
 
 .l-wrap__content {
-  width: calc(100vw / 7 * 6);
+  width: calc(100vw / 7 * 6 - 0.01px);
   z-index: 2;
   position: relative;
   overflow: visible;
 }
 
 .l-wrap__sabbath {
-  width: calc(100vw / 7 * 1);
+  width: calc(100vw / 7 * 1 - 0.01px);
   background-color: $c-gray--light;
   z-index: 1;
   position: relative;

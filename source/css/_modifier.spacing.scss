@@ -23,7 +23,7 @@
  @each $size_key, $size_value in $sizes {
    .u-spacing#{$size_key} {
      & > * + * {
-       margin-top: calc(#{$size_value}/2 *1.5);
+       margin-top: calc(#{$size_value} / 2 * 1.5);
 
        @include media('>large') {
          margin-top: #{$size_value};
@@ -32,14 +32,14 @@
    }
    @each $side_key, $side_value in $sides {
      .u-padding#{$size_key}#{$side_key} {
-       padding#{$side_value}: calc(#{$size_value}/2 *1.5);
+       padding#{$side_value}: calc(#{$size_value} / 2 * 1.5);
 
        @include media('>large') {
          padding#{$side_value}: #{$size_value};
        }
      }
      .u-space#{$size_key}#{$side_key} {
-       margin#{$side_value}: calc(#{$size_value}/2 *1.5);
+       margin#{$side_value}: calc(#{$size_value} / 2 * 1.5);
 
        @include media('>large') {
          margin#{$side_value}: #{$size_value};

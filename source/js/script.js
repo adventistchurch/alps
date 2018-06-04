@@ -249,8 +249,6 @@
     });
   }
 
-
-
   // Slick carousel (multiple items)
   if ($('.js-carousel__multi-item').length) {
     $('.js-carousel__multi-item').slick({
@@ -399,6 +397,21 @@
   $('.c-swatches--grid .c-swatches__item').click(function() {
     $('body').toggleClass('has-grid');
     $(this).toggleClass('active');
+  });
+
+  // Toggle sabbath column on small screens
+  $(window).on('load resize', function() {
+    if (isMobile() || getWidth() < 500) {
+      $('.c-swatches--sabbath .c-swatches__item').click(function() {
+        $('body').toggleClass('hide-sabbath--small');
+        $('body').toggleClass('hide-sabbath');
+        $(this).toggleClass('active');
+      });
+    } else if (!isMobile() || getWidth() >= 500) {
+      $('body').removeClass('hide-sabbath--small');
+      $('body').removeClass('hide-sabbath');
+      $('.c-swatches--sabbath .c-swatches__item').removeClass('active');
+    }
   });
 
 })(jQuery); // Fully reference jQuery after this point.

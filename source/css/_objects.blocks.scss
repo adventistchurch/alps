@@ -169,6 +169,10 @@
     padding: 0;
   }
 
+  .o-background-image {
+    min-height: rem(300);
+  }
+
   .c-block__content {
     display: flex;
     justify-content: space-between;
