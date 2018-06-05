@@ -222,6 +222,27 @@ $themes: (
     }
 
     // Buttons
+
+    // .o-button{
+    //   // box-shadow:
+    //   //   0 0 0 2px $lighter,
+    //   //   0 0 0 4px $base;
+    //   position: relative;
+    //   // border: dashed;
+    //   border-style: dashed;
+    //     &:before {
+    //       content: " ";
+    //       position: absolute;
+    //       z-index: 0;
+    //       top: 0;
+    //       bottom: 0;
+    //       border: 2px solid #fff;
+    //       right: 0;
+    //       left: 0;
+    //       border-radius: 3.125rem;
+    //     }
+    // }
+
     .o-button,
     button,
     input[type=submit] {
@@ -230,8 +251,24 @@ $themes: (
       border-color: $base;
 
       &:hover {
+        background-color: $darker;
+        border-color: $darker;
+      }
+
+      &:active, &.this-is-active{
         background-color: $dark;
         border-color: $dark;
+      }
+
+      &.disabled{
+        background-color: $c-gray;
+        border-color: $c-gray;
+        cursor: not-allowed;
+
+        &:hover{
+          background-color: $c-gray--dark;
+          border-color: $c-gray--dark;
+        }
       }
 
       svg path {
@@ -252,9 +289,29 @@ $themes: (
         color: $darker;
         background-color: transparent;
         border-color: transparent;
+        text-decoration: underline;
 
         svg path {
           fill: $darker;
+        }
+      }
+
+      &:active, &.this-is-active{
+        color: $darker;
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      &.disabled{
+        background-color: transparent;
+        border-color: transparent;
+        color: $c-gray;
+        cursor: not-allowed;
+
+        &:hover{
+          background-color: transparent;
+          border-color: transparent;
+          color: $c-gray--dark;
         }
       }
     }
@@ -268,6 +325,12 @@ $themes: (
         fill: $base;
       }
 
+      &:active, &.this-is-active{
+        background-color: transparent;
+        color: $base;
+        border-color: $darker;
+      }
+
       &:hover {
         background-color: $dark;
         color: $c-white;
@@ -275,6 +338,20 @@ $themes: (
 
         svg path {
           fill: $c-white;
+        }
+      }
+
+      &.disabled{
+        color: $c-gray;
+        border-color: $c-gray;
+        background-color: inherit;
+        cursor: not-allowed;
+
+        &:hover{
+          color: $c-gray--dark;
+          border-color: $c-gray--dark;
+          background-color: inherit;
+
         }
       }
     }
@@ -494,6 +571,25 @@ $themes: (
           border-color: $light;
         }
 
+        &:active, &.this-is-active{
+          background-color: $light;
+          border-color: $light;
+          color: $dark;
+        }
+
+        &.disabled{
+          background-color: $c-gray;
+          border-color: $c-gray;
+          cursor: not-allowed;
+          color: $c-gray--darker;
+
+          &:hover{
+            background-color: $c-gray--light;
+            border-color: $c-gray--light;
+          }
+        }
+
+
         svg path {
           fill: $darker;
         }
@@ -508,13 +604,34 @@ $themes: (
           fill: $lighter;
         }
 
+        &:active, &.this-is-active{
+          background-color: transparent;
+          color: $light;
+          border-color: transparent;
+        }
+
         &:hover {
           color: $light;
           background-color: transparent;
           border-color: transparent;
+          // text-decoration: underline;
 
           svg path {
             fill: $light;
+          }
+        }
+
+        &.disabled{
+          color: $c-gray;
+          border-color: transparent;
+          background-color: transparent;
+          cursor: not-allowed;
+
+          &:hover{
+            color: $c-gray--light;
+            border-color: transparent;
+            background-color: inherit;
+
           }
         }
       }
@@ -528,6 +645,12 @@ $themes: (
           fill: $lighter;
         }
 
+        &:active, &.this-is-active{
+          background-color: transparent;
+          border-color: $light;
+          color: $lighter
+        }
+
         &:hover {
           background-color: $light;
           border-color: $light;
@@ -537,6 +660,28 @@ $themes: (
             fill: $darker;
           }
         }
+
+        &.disabled{
+          background-color: transparent;
+          border-color: $c-gray;
+          color: $c-gray;
+          cursor: not-allowed;
+
+          svg path {
+            fill: $c-gray;
+          }
+
+          &:hover{
+            background-color: transparent;
+            border-color: $c-gray--dark;
+            color: $c-gray--dark;
+            svg path {
+              fill: $c-gray--dark;
+            }
+
+          }
+        }
+
       }
 
       // Custom

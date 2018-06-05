@@ -1,6 +1,6 @@
 {
   "button_default": {
     "text": "Button Outline",
-    "class": "o-button--outline"
+    "class": "o-button--outline this-is-active"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "button_default": {
+    "text": "Button - Disabled",
+    "class": "o-button disabled"
+  }
+}
