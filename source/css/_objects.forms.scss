@@ -85,7 +85,8 @@ input[type=radio] {
 /**
  * Search filter
  */
- .c-filter {
+ .c-filter,
+ .search-form {
    &.c-filter-is-active {
      cursor: pointer;
 

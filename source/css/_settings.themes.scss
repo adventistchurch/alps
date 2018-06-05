@@ -219,6 +219,16 @@ $themes: (
           color: $base;
         }
       }
+
+      .u-theme--background-color--darker {
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: $c-white;
+        }
+      }
     }
 
     // Buttons
