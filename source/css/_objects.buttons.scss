@@ -14,16 +14,32 @@ input[type="submit"] {
   background-color: $c-gray--darker;
   cursor: pointer;
   transition: all .6s ease-out;
-  overflow: hidden;
+  //overflow: hidden;
   font-family: $ff-font--secondary;
   font-weight: bold;
   text-transform: uppercase;
   border: 1px solid $c-gray--darker;
   border-radius: rem(50);
   outline: 0;
+  position: relative;
 
   &:hover {
     color: $c-white;
+  }
+
+  &:focus {
+    &::after {
+      border-style: dashed;
+      border-width: 1px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      width: calc(100% + 6px);
+      height: calc(100% + 6px);
+      border-radius: rem(50);
+    }
   }
 
   .u-icon {
@@ -55,11 +71,15 @@ input[type="submit"] {
 .o-button--toggle {
   white-space: nowrap;
 
-  &::after {
+  &::after,
+  &:focus:after {
     content: "Show";
+    display: inline;
   }
 
+  &:active,
   &.this-is-active {
+    &:focus:after,
     &::after {
       content: "Close";
     }
@@ -71,12 +91,28 @@ input[type="submit"] {
       top: rem(1);
     }
   }
+
+  &:active,
+  &.this-is-active,
+  &:focus {
+    &::after {
+      display: inline;
+      width: auto;
+      height: auto;
+      border: 0;
+      border-radius: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .o-button--expand {
   display: table;
 
-  &::after {
+  &::after,
+  &:focus:after {
     content: "Show More";
     display: table-cell;
     position: relative;
@@ -99,12 +135,28 @@ input[type="submit"] {
   }
 
   &.this-is-active {
+    &:focus:after,
     &::after {
       content: "Show Less";
     }
 
     &::before {
       content: "-";
+    }
+  }
+
+  &:active,
+  &.this-is-active,
+  &:focus {
+    &::after {
+      display: inline;
+      width: auto;
+      height: auto;
+      border: 0;
+      border-radius: 0;
+      position: relative;
+      top: 0;
+      left: 0;
     }
   }
 }

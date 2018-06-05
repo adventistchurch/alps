@@ -239,13 +239,34 @@ $themes: (
       color: $c-white;
       border-color: $base;
 
+      svg path {
+        fill: $c-white;
+      }
+
       &:hover {
+        background-color: $darker;
+        border-color: $darker;
+      }
+
+      &:active,
+      &.this-is-active {
         background-color: $dark;
         border-color: $dark;
       }
 
-      svg path {
-        fill: $c-white;
+      &.disabled {
+        background-color: $c-gray;
+        border-color: $c-gray;
+        cursor: not-allowed;
+
+        &:hover {
+          background-color: $c-gray--dark;
+          border-color: $c-gray--dark;
+        }
+      }
+
+      &:focus::after {
+        border-color: $base;
       }
     }
 
@@ -262,9 +283,43 @@ $themes: (
         color: $darker;
         background-color: transparent;
         border-color: transparent;
+        text-decoration: underline;
 
         svg path {
           fill: $darker;
+        }
+      }
+
+      &:active,
+      &.this-is-active {
+        color: $darker;
+        background-color: transparent;
+        border-color: transparent;
+
+        svg path {
+          fill: $darker;
+        }
+      }
+
+      &.disabled {
+        background-color: transparent;
+        border-color: transparent;
+        color: $c-gray;
+        cursor: not-allowed;
+
+        &:hover {
+          background-color: transparent;
+          border-color: transparent;
+          color: $c-gray--dark;
+        }
+      }
+
+      &:focus {
+        color: $base;
+        text-decoration: underline;
+
+        &::after {
+          display: none;
         }
       }
     }
@@ -287,6 +342,34 @@ $themes: (
           fill: $c-white;
         }
       }
+
+      &:active,
+      &.this-is-active {
+        background-color: transparent;
+        color: $base;
+        border-color: $darker;
+
+        svg path {
+          fill: $base;
+        }
+      }
+
+      &.disabled {
+        color: $c-gray;
+        border-color: $c-gray;
+        background-color: inherit;
+        cursor: not-allowed;
+
+        &:hover {
+          color: $c-gray--dark;
+          border-color: $c-gray--dark;
+          background-color: inherit;
+        }
+      }
+
+      &:focus::after {
+        border-color: $base;
+      }
     }
 
     .o-button--lighter {
@@ -294,14 +377,46 @@ $themes: (
       color: $darker;
       border-color: $lighter;
 
+      svg path {
+        fill: $darker;
+      }
+
       &:hover {
         background-color: $light;
         border-color: $light;
-        color: $darker;
+        color: $dark;
+
+        svg path {
+          fill: $dark;
+        }
       }
 
-      svg path {
-        fill: $darker;
+      &:active,
+      &.this-is-active {
+        background-color: $base;
+        border-color: $base;
+        color: $c-white;
+
+        svg path {
+          fill: $c-white;
+        }
+      }
+
+      &.disabled {
+        color: $c-white;
+        border-color: $c-gray;
+        background-color: $c-gray;
+        cursor: not-allowed;
+
+        &:hover {
+          color: $c-white;
+          border-color: $c-gray--dark;
+          background-color: $c-gray--dark;
+        }
+      }
+
+      &:focus::after {
+        border-color: $light;
       }
     }
 
@@ -496,16 +611,43 @@ $themes: (
       button,
       input[type=submit] {
         background-color: $lighter;
-        color: $darker;
         border-color: $lighter;
+        color: $darker;
+
+        svg path {
+          fill: $darker;
+        }
 
         &:hover {
           background-color: $light;
           border-color: $light;
         }
 
-        svg path {
-          fill: $darker;
+        &:active,
+        &.this-is-active {
+          background-color: $light;
+          border-color: $light;
+          color: $dark;
+
+          svg path {
+            fill: $dark;
+          }
+        }
+
+        &.disabled {
+          background-color: $c-gray;
+          border-color: $c-gray;
+          cursor: not-allowed;
+          color: $c-gray--darker;
+
+          &:hover {
+            background-color: $c-gray--light;
+            border-color: $c-gray--light;
+          }
+        }
+
+        &:focus::after {
+          border-color: $lighter;
         }
       }
 
@@ -527,6 +669,38 @@ $themes: (
             fill: $light;
           }
         }
+
+        &:active,
+        &.this-is-active {
+          color: $lighter;
+          background-color: transparent;
+          border-color: transparent;
+
+          svg path {
+            fill: $lighter;
+          }
+        }
+
+        &.disabled {
+          color: $c-gray;
+          border-color: transparent;
+          background-color: transparent;
+          cursor: not-allowed;
+
+          &:hover {
+            color: $c-gray--light;
+            border-color: transparent;
+            background-color: inherit;
+          }
+        }
+
+        &:focus {
+          color: $lighter;
+
+          &::after {
+            display: none;
+          }
+        }
       }
 
       .o-button--outline {
@@ -539,13 +713,48 @@ $themes: (
         }
 
         &:hover {
-          background-color: $light;
-          border-color: $light;
+          background-color: $lighter;
+          border-color: $lighter;
           color: $darker;
 
           svg path {
             fill: $darker;
           }
+        }
+
+        &:active,
+        &.this-is-active {
+          background-color: transparent;
+          border-color: $light;
+          color: $lighter;
+
+          svg path {
+            fill: $lighter;
+          }
+        }
+
+        &.disabled {
+          background-color: transparent;
+          border-color: $c-gray;
+          color: $c-gray;
+          cursor: not-allowed;
+
+          svg path {
+            fill: $c-gray;
+          }
+
+          &:hover {
+            background-color: transparent;
+            border-color: $c-gray--dark;
+            color: $c-gray--dark;
+            svg path {
+              fill: $c-gray--dark;
+            }
+          }
+        }
+
+        &:focus::after {
+          border-color: $lighter;
         }
       }
 
