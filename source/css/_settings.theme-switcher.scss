@@ -86,20 +86,3 @@
     }
   }
 }
-
-
-.c-swatches {
-  &--colors,
-  &--background,
-  &--grid {
-    @include media('<=small') {
-      display: none;
-    }
-  }
-}
-
-.c-swatches--sabbath {
-  @include media('>small') {
-    display: none;
-  }
-}
