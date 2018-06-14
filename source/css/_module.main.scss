@@ -18,7 +18,7 @@ html {
   }
 }
 
-.body.hide-sabbath {
+@mixin hide-sabbath {
   .l-wrap__sabbath {
     display: none;
   }
@@ -109,6 +109,27 @@ html {
 
     @include media('>medium') {
       width: calc((100vw / 7) * .75);
+    }
+  }
+}
+
+.body.hide-sabbath {
+  &--all {
+    @include hide-sabbath;
+  }
+  &--until-small {
+    @include media('<=small') {
+      @include hide-sabbath;
+    }
+  }
+  &--until-medium {
+    @include media('<=medium') {
+      @include hide-sabbath;
+    }
+  }
+  &--until-large {
+    @include media('<=large') {
+      @include hide-sabbath;
     }
   }
 }
