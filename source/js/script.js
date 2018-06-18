@@ -84,11 +84,6 @@
      $('.l-sabbath__overlay').css('opacity', 1 - percent);
   });
 
-  // Hide sabbath column on small screens
-  if (isMobile() && $('.body').hasClass('hide-sabbath--small')) {
-    $('.body').addClass('hide-sabbath');
-  }
-
   // SITE SPECIFIC JS ------------------------------//
 
   var toggleClasses = function(element) {
