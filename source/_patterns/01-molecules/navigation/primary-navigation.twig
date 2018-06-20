@@ -3,7 +3,7 @@
   <ul class="c-primary-nav__list c-priority-nav__list">
     {% for item in primary_nav.items %}
       <li class="c-primary-nav__list-item {% if item.subnav %}{{ ' has-subnav' }}{% endif %}">
-        <a href="/" class="c-primary-nav__link u-font--primary-nav u-color--gray--dark u-theme--link-hover--base u-theme--border-color--base {% if item.is_active %}active{% endif %}">
+        <a href="/" class="c-primary-nav__link u-font--primary-nav u-color--gray--dark u-theme--link-hover--base u-theme--border-color--base {% if item.is_active %}this-is-active{% endif %}">
           {{ item.text }}
         </a>
         {% if item.subnav %}<span class="c-subnav__arrow o-arrow--down u-path-fill--gray"></span>{% endif %}

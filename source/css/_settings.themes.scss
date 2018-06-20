@@ -433,6 +433,9 @@ $themes: (
 
     .c-header .c-primary-nav__link {
       color: $darker;
+      &.this-is-active, &:active{
+        color: $base;
+      }
     }
 
     .u-theme--dark {
@@ -817,6 +820,11 @@ $themes: (
       }
 
       .c-header {
+        .c-primary-nav__link {
+          &.this-is-active, &:active{
+            color: $light;
+          }
+        }
         .c-subnav__list-item {
           background-color: $darker;
           border-left-color: $lighter;
