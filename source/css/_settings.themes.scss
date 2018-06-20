@@ -434,12 +434,13 @@ $themes: (
     .c-header {
       .c-primary-nav__link {
         color: $darker;
-        &.this-is-active, &:active{
+        &.this-is-active,
+        &:active {
           color: $base;
         }
       }
       .c-secondary-nav__link {
-        &.this-is-active{
+        &.this-is-active {
           color: $c-gray--darker;
         }
       }
@@ -828,7 +829,8 @@ $themes: (
 
       .c-header {
         .c-primary-nav__link {
-          &.this-is-active, &:active{
+          &.this-is-active,
+          &:active {
             color: $light;
           }
         }
