@@ -94,7 +94,8 @@
         }
       },
       {
-        "text": "Beliefs"
+        "text": "Beliefs",
+        "is_active": true
       },
       {
         "text": "World Church"
