@@ -357,6 +357,14 @@
 }
 
 /**
+ * Break Gutter: Removes the the element from the
+ * gutters applied to a parent element.
+**/
+.u-break-gutter {
+  @include column-gutters--break();
+}
+
+/**
  * Completely remove from the flow and screen readers.
  */
 .is-hidden {
