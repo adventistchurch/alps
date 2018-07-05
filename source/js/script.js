@@ -110,13 +110,10 @@
 
   // Grab first character for dropcaps
   $('.has-dropcap p:eq(0)').each(function() {
-    var text = $(this).html();
-    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
-    $(this).html(text.substring(1)).prepend(first);
+    var firstLetter = $(this).text().trim().charAt(0);
+    var dropcap = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', firstLetter);
+    $(this).prepend(dropcap);
   });
-
-  // Add color classes
-  //$('.is-featured').addClass('u-theme--color--lighter');
 
   /**
    * Fixto

@@ -535,6 +535,12 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   line-height: 150%;
 }
 
+.has-dropcap > p::first-letter {
+  opacity: 0;
+  font-size: 0;
+  display: block;
+}
+
 .o-dropcap {
   color: $c-white;
   display: block;
