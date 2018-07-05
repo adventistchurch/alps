@@ -5,8 +5,11 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid $c-gray;
   width: 100%;
+
+  &.u-border {
+    border-width: 2px;
+  }
 }
 
 th {
@@ -36,6 +39,11 @@ td {
   }
 }
 
-.o-table-slim td{
-  padding: .25rem;
+.o-table-slim {
+  td, th{
+    padding: .25rem;
+  }
+  th {
+    padding-top: $pad;
+  }
 }
