@@ -109,9 +109,7 @@
   };
 
   // Grab first character for dropcaps
-  $('.has-dropcap p:eq(0)').html(function (i, html) {
-    return html.replace(/^[^a-zA-Z'"<]*([a-zA-Z])/g, '<span class="o-dropcap u-theme--background-color--base" data-letter="$1"></span>');
-  });
+  $('.has-dropcap p:eq(0)').wrapFirstLetter();
 
   /**
    * Fixto
