@@ -109,7 +109,7 @@
   };
 
   // Grab first character for dropcaps
-  $('.has-dropcap p:eq(0)').wrapFirstLetter();
+  $('.has-dropcap > p:first-child').wrapFirstLetter();
 
   /**
    * Fixto
