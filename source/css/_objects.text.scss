@@ -576,8 +576,21 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
       font-size: 8vw;
     }
   }
-}
 
+  &__quote {
+    &::before {
+      font-size: 40vw;
+      line-height: 1;
+      font-family: 'georgia', sans-serif;
+      top: 100%;
+
+      @include media('>medium') {
+        font-size: 18vw;
+        top: 95%;
+      }
+    }
+  }
+}
 
 /**
  * Dek
