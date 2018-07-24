@@ -55,28 +55,26 @@
           continue;
         }
 
-
-
-
         if (settings.charpattern.test(content[i])) {
           var pre = '';
           var post = '';
           var t = settings.tag;
           var c = settings['class'];
-          console.log(content[i]);
           if (content[i] == '"') {
-            var letter = '&ldquo;';
-            var c = 'o-dropcap o-dropcap__quote u-theme--background-color--base'
+            var letter = '&ldquo;' + content[1];
+            var c = 'o-dropcap o-dropcap__quote u-theme--background-color--base';
+            post = content.substring(2);
+            return pre + '<'+t+' class=\'' + c + '\' data-letter='+letter+'></'+t+'>' + post;
           } else {
             var letter = content[i];
-          }
-          if (i==0) {
-            post = content.substring(1);
-            return pre + '<'+t+' class=\'' + c + '\' data-letter='+letter+'></'+t+'>' + post;
-          }
-          if (i==(len-1)) {
-            pre = content.substring(0,i);
-            return pre + '<'+t+' class=\'' + c + '\' data-letter='+letter+'></'+t+'>' + post;
+            if (i==0) {
+              post = content.substring(1);
+              return pre + '<'+t+' class=\'' + c + '\' data-letter='+letter+'></'+t+'>' + post;
+            }
+            if (i==(len-1)) {
+              pre = content.substring(0,i);
+              return pre + '<'+t+' class=\'' + c + '\' data-letter='+letter+'></'+t+'>' + post;
+            }
           }
 
           pre = content.substring(0,i);

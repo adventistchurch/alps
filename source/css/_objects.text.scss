@@ -544,7 +544,8 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   overflow: hidden;
   position: relative;
   content: "";
-  font-style: normal;
+  font-style: normal !important;
+  font-weight: normal !important;
   @include media('>medium') {
     width: calc((100vw / 7 * 1) - 30px);
   }
@@ -574,20 +575,6 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
     }
     @include media('>large') {
       font-size: 8vw;
-    }
-  }
-
-  &__quote {
-    &::before {
-      font-size: 40vw;
-      line-height: 1;
-      font-family: 'georgia', sans-serif;
-      top: 100%;
-
-      @include media('>medium') {
-        font-size: 18vw;
-        top: 95%;
-      }
     }
   }
 }
