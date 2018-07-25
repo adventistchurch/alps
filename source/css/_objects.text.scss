@@ -544,7 +544,8 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   overflow: hidden;
   position: relative;
   content: "";
-  font-style: normal;
+  font-style: normal !important;
+  font-weight: normal !important;
   @include media('>medium') {
     width: calc((100vw / 7 * 1) - 30px);
   }
@@ -577,7 +578,6 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
     }
   }
 }
-
 
 /**
  * Dek
