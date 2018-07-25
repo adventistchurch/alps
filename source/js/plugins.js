@@ -61,7 +61,7 @@
           var t = settings.tag;
           var c = settings['class'];
           if (content[i] == '"') {
-            var letter = '&ldquo;' + content[1];
+            var letter = content[1];
             var c = 'o-dropcap o-dropcap__quote u-theme--background-color--base';
             post = content.substring(2);
             return pre + '<'+t+' class=\'' + c + '\' data-letter='+letter+'></'+t+'>' + post;
