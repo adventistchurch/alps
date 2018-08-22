@@ -21,6 +21,20 @@
 }
 
 /**
+ * Number List
+ */
+ .number-list {
+  list-style-type: decimal;
+  padding-left: rem(18);
+  li {
+    overflow: visible;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/**
  * Text List
  */
 .text-list {
