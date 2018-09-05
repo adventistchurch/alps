@@ -346,7 +346,7 @@ module.exports = function(grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "alps.test",
+        proxy: "alps3.test",
         startPath: "/v3"
       }
     },
