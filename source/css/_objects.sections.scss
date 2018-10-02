@@ -2,19 +2,56 @@
     $PAGE SECTIONS
 \*------------------------------------*/
 
-
 /**
  * Page Headers
  */
+.c-page-header {
+  position: relative;
+
+  &.has-scroll {
+    &::after {
+      content: 'Scroll';
+      padding: ($pad / 2) $pad ($pad / 2) rem(35);
+      border: 1px solid $c-white;
+      position: absolute;
+      bottom: $space * 2;
+      left: 50%;
+      transform: translateX(-50%);
+      display: table;
+      width: auto;
+      border-radius: rem(50);
+      color: $c-white;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      background: url("../images/icons/o-arrow__short--down.svg") top rem(17) left rem(18) no-repeat;
+      background-size: rem(10);
+
+      @include u-font--secondary--s;
+    }
+  }
+}
 
 .c-page-header__3-col {
   .c-page-header__content {
     display: flex;
     flex-direction: column;
-    @include media('>medium') {
+
+    @include media(">medium") {
       flex-direction: row;
     }
   }
+}
+
+.c-page-header__scroll {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100vw;
+  z-index: 999;
 }
 
 .c-page-header__search {
@@ -24,8 +61,10 @@
     border: 0;
     border-bottom: 1px solid $c-gray;
     padding-left: 0;
+
     @include u-font--secondary--m;
   }
+
   .c-filter__toggle::after {
     content: "Settings";
   }
@@ -39,6 +78,7 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+
   &--inner {
     z-index: 2;
     position: relative;
@@ -50,9 +90,11 @@
     width: 100%;
     min-height: calc(100vw / 14 * 1);
   }
+
   .c-background-image &--inner {
     min-height: calc(100vw / 7 * 1);
   }
+
   &.c-background-image {
     background-size: cover;
   }
@@ -61,17 +103,18 @@
 .l-section__block-row {
   .c-block__image-wrap {
     margin-right: $space-mobile;
-    @include media('>small') {
+
+    @include media(">small") {
       margin-right: $space;
     }
   }
+
   &--6-col {
-    .l-grid-item>* {
+    .l-grid-item > * {
       margin-top: $space;
     }
   }
 }
-
 
 /**
  * Comments
@@ -82,26 +125,30 @@
     display: flex;
     align-items: flex-start;
   }
+
   &__meta {
     margin-bottom: rem(5);
+
     .o-divider {
       margin-left: rem(5);
       margin-right: rem(5);
     }
   }
+
   &__edit-link {
     margin-left: rem(5);
   }
+
   &__avatar {
     display: flex;
     min-width: rem(50);
     min-height: rem(50);
   }
+
   &__children__list-item {
     margin-left: rem(50);
   }
 }
-
 
 /**
  * Accordion
@@ -110,10 +157,12 @@
 .c-accordion {
   &__item {
     cursor: pointer;
+
     &.this-is-active {
       .c-accordion__content {
         display: block;
       }
+
       .c-accordion__arrow {
         transform: rotate(90deg);
         position: relative;
@@ -122,6 +171,7 @@
       }
     }
   }
+
   &__content {
     display: none;
   }

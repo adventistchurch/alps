@@ -14,9 +14,10 @@
   line-height: rem(30);
   cursor: pointer;
 
-  @include media('>large') {
+  @include media(">large") {
     top: rem(-70);
   }
+
 
   &--prev {
     right: rem(30);
@@ -75,7 +76,7 @@
 .c-carousel__arrow--prev {
   left: $space-mobile;
 
-  @include media('>large') {
+  @include media(">large") {
     left: $space;
   }
 }
@@ -83,7 +84,7 @@
 .c-carousel__arrow--next {
   right: $space-mobile;
 
-  @include media('>large') {
+  @include media(">large") {
     right: $space;
   }
 }
@@ -120,6 +121,18 @@
 }
 
 // Hero
+.c-hero {
+  .c-block__image {
+    min-height: 250px;
+    display: block;
+  }
+
+  .c-block__title-link:hover {
+    color: white !important;
+    text-decoration: underline;
+  }
+}
+
 .c-hero-carousel {
   .c-carousel__item {
     max-height: rem(600);
@@ -136,9 +149,10 @@
   text-align: right;
   padding: $pad-mobile;
 
-  @include media('>large') {
+  @include media(">large") {
     padding: $pad;
   }
+
 
   li {
     display: inline-block;
@@ -147,9 +161,9 @@
     background-color: transparent;
     width: rem(15);
     height: rem(15);
-    margin-left: $space/2;
+    margin-left: $space / 2;
     cursor: pointer;
-    box-shadow: 0 0 rem(3) rgba($c-black, .3), inset 0 0 rem(3) rgba($c-black, .3);
+    box-shadow: 0 0 rem(3) rgba($c-black, 0.3), inset 0 0 rem(3) rgba($c-black, 0.3);
 
     &:first-child {
       margin-left: 0;
@@ -158,7 +172,7 @@
 
   .slick-active {
     background-color: $c-white;
-    box-shadow: 0 0 rem(3) rgba($c-black, .3);
+    box-shadow: 0 0 rem(3) rgba($c-black, 0.3);
   }
 
   button {

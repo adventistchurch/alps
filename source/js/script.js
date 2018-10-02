@@ -44,6 +44,13 @@
     });
   }
 
+  // Scroll on click
+  $('.c-page-header__scroll').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+
+
   // Check window width
   var getWidth = function() {
     var width;

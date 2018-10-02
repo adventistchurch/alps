@@ -1,5 +1,5 @@
 {% if page_header %}
-  <header class="c-page-header c-page-header__feature{% if page_header_blocks %}{{ ' c-page-header__3-col' }}{% endif %}">
+  <header class="c-page-header c-page-header__feature{% if page_header_blocks %}{{ ' c-page-header__3-col' }}{% endif %}{% if page_header.scroll %}{{ ' has-scroll' }}{% endif %}">
     <div class="c-page-header__content">
       {% if page_header_blocks %}
         {% for block in page_header_blocks %}
@@ -9,5 +9,9 @@
         {% include '@molecules/blocks/media-block.twig' %}
       {% endif %}
     </div>
-  </header> <!-- /.c-page-header -->
+    {% if page_header.scroll %}
+      <a href="#top" class="c-page-header__scroll"></a>
+    {% endif %}
+  </header>
+  <!-- /.c-page-header -->
 {% endif %}
