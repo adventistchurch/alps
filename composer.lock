@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0952a502d26b37218d5bda4af26223a",
+    "content-hash": "6eef90a536700885ae676360f829aba0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -67,6 +67,63 @@
                 "zip"
             ],
             "time": "2016-02-15T22:46:40+00:00"
+        },
+        {
+            "name": "aleksip/plugin-data-transform",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aleksip/plugin-data-transform.git",
+                "reference": "e309b8f021745be9946a8c460c68e76057c417f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aleksip/plugin-data-transform/zipball/e309b8f021745be9946a8c460c68e76057c417f8",
+                "reference": "e309b8f021745be9946a8c460c68e76057c417f8",
+                "shasum": ""
+            },
+            "require": {
+                "pattern-lab/core": "^2.6.3",
+                "php": ">=5.5.9"
+            },
+            "type": "patternlab-plugin",
+            "extra": {
+                "patternlab": {
+                    "config": {
+                        "plugins": {
+                            "dataTransform": {
+                                "enabled": true
+                            }
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "aleksip\\DataTransformPlugin\\": "src/",
+                    "Drupal\\Component\\Render\\": "src/",
+                    "Drupal\\Component\\Utility\\": "src/",
+                    "Drupal\\Core\\": "src/",
+                    "Drupal\\Core\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksi Peebles"
+                }
+            ],
+            "description": "Data Transform Plugin for Pattern Lab PHP",
+            "homepage": "https://github.com/aleksip/plugin-data-transform",
+            "keywords": [
+                "drupal",
+                "pattern lab",
+                "plugin"
+            ],
+            "time": "2018-02-05T11:53:40+00:00"
         },
         {
             "name": "doctrine/collections",

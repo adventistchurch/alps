@@ -1,9 +1,11 @@
 {% if footer_secondary_nav %}
-<nav class="c-footer__secondary-nav__list u-spacing--half">
-  {% for item in footer_secondary_nav.items %}
-    <a href="{{ item.url }}" class="c-footer__secondary-nav__link u-link--white u-theme--link-hover--light">
-      <span class="u-icon u-icon--xs u-path-fill--white u-space--half--right">{% include '@atoms/icons/icon-legal.twig' %}</span><font>{{ item.text }}</font>
-    </a>
-  {% endfor %}
-</nav> <!-- /.c-footer__secondary-nav -->
+  <nav class="c-footer__secondary-nav__list u-spacing--half">
+    {% for item in footer_secondary_nav.items %}
+      <a href="{{ item.url }}" class="c-footer__secondary-nav__link u-link--white u-theme--link-hover--light">
+        <span class="u-icon u-icon--xs u-path-fill--white u-space--half--right">{% include '@atoms/icons/icon-legal.twig' %}</span>
+        <font>{{ item.text }}</font>
+      </a>
+    {% endfor %}
+  </nav>
+  <!-- /.c-footer__secondary-nav -->
 {% endif %}

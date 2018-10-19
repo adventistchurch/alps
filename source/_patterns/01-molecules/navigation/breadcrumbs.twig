@@ -1,9 +1,15 @@
 {% if breadcrumbs %}
-<nav class="c-breadcrumbs" role="navigation">
-  <ul class="c-breadcrumbs__list">
-    {% for item in breadcrumbs.items %}
-      <li class="c-breadcrumbs__list-item u-font--secondary--s u-text-transform--upper u-display--inline-block u-color--gray"><span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/icon-arrow-bracket-right.twig' %}</span><strong><a {% if item.url %}href="{{ item.url }}"{% endif %} class="c-breadcrumbs__link can-be--white">{{ item.text }}</a></strong></li>
-    {% endfor %}
-  </ul>
-</nav> <!-- /.breadcrumbs -->
+  <nav class="c-breadcrumbs" role="navigation">
+    <ul class="c-breadcrumbs__list">
+      {% for item in breadcrumbs.items %}
+        <li class="c-breadcrumbs__list-item u-font--secondary--s u-text-transform--upper u-display--inline-block u-color--gray">
+          <span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/icon-arrow-bracket-right.twig' %}</span>
+          <strong>
+            <a {% if item.url %} href="{{ item.url }}" {% endif %} class="c-breadcrumbs__link can-be--white">{{ item.text }}</a>
+          </strong>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <!-- /.breadcrumbs -->
 {% endif %}

@@ -37,7 +37,6 @@
     {% if pager.current < pager.totalpages %}
       <a href="{{ pager.link }}{{ pager.current + 1 }}" class="pagination__page pagination__prev u-padding--quarteru-theme--color--darker u-font-weight--bold">
         <span class="u-icon u-icon--m u-theme--path-fill--dark u-space--half--right">{% include '@atoms/icons/icon-arrow-bracket-right.twig' %}</span>
-
       </a>
     {% endif %}
   </nav>

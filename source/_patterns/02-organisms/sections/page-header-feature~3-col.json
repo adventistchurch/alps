@@ -1,5 +1,6 @@
 {
-  "page_header_blocks": [{
+  "page_header_blocks": [
+    {
       "media_block_default": {
         "block_class": "c-block__column c-media-block__column",
         "block_group_class": "u-flex--justify-center u-overlay--dark",

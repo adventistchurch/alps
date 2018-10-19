@@ -1,0 +1,17 @@
+{
+  "subfooter": {
+    "text": "Copyright ©2018, General Conference of Seventh-day Adventists",
+    "address": {
+      "address": "12501 Old Columbia Pike",
+      "locality": "Silver Spring",
+      "region": "MD",
+      "postcode": "20904",
+      "country": "USA",
+      "phonenumber": "301-680-6000"
+    }
+  },
+
+  "footer": {
+    "text": "Adventist.org is the Official website of the Seventh-day Adventist world church"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "gallery_block_default": {
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "items": [{
+        "caption": "Nam pretium et mauris sit amet vehicula. Morbi at est tristique, mollis odio ut, dignissim tellus.",
+        "img": {
+          "alt": "Alt Text",
+          "src": "//picsum.photos/"
+        }
+      },
+      {
+        "caption": "Duis eu pharetra magna. Curabitur vulputate mattis dignissim.",
+        "portrait": true,
+        "img": {
+          "alt": "Alt Text",
+          "src": "//picsum.photos/"
+        }
+      }
+    ]
+  }
+}

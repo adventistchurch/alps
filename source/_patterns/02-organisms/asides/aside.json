@@ -1,0 +1,96 @@
+{
+  "aside_content": [{
+    "aside_heading": "News",
+    "aside_blocks": [{
+        "media_block_default": {
+          "block_class": "c-block__stacked c-media-block__stacked",
+          "block_content_class": "l-grid-item u-border--left u-color--gray u-theme--border-color--darker--left u-spacing--half",
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+          "title": "Nulla finibus ligula ut nisl facilisis",
+          "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "url": "/",
+          "category": "Culture",
+          "datetime": "2017-12-28",
+          "date": "December 28, 2017",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked c-media-block__stacked",
+          "block_content_class": "l-grid-item u-border--left u-color--gray u-theme--border-color--darker--left u-spacing--half",
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
+          "title": "Nulla finibus ligula ut nisl facilisis",
+          "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum.",
+          "url": "/",
+          "category": "Culture",
+          "datetime": "2017-12-28",
+          "date": "December 28, 2017",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330/?random",
+              "src_m": "//picsum.photos/800/450/?random"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          }
+        }
+      }
+    ]
+  }],
+
+  "aside_content_blocks": [{
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture",
+        "url": "/",
+        "expand": false
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture",
+        "url": "/",
+        "expand": false
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture",
+        "url": "/",
+        "expand": false
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-padding--bottom u-spacing--half",
+        "title_class": "u-font--primary--s",
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "category": "Culture",
+        "url": "/",
+        "expand": false
+      }
+    }
+  ]
+}

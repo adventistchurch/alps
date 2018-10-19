@@ -1,0 +1,67 @@
+{
+  "testimonies": [{
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aliquam malesuada viverra velit",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aliquam malesuada viverra velit",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Aliquam malesuada viverra velit",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half u-padding--right",
+        "title_class": "u-font--secondary--m u-text-transform--upper",
+        "title": "Fusce interdum purus est",
+        "description": "Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque."
+      }
+    }
+  ]
+}

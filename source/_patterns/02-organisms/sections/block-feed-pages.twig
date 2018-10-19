@@ -1,1 +1,9 @@
-<div class="c-block-feed c-block-feed__pages"></div>
+{% if block_feed_pages %}
+  <div class="c-block-feed c-block-feed__pages">
+    {% for media_block in media_blocks %}
+      <div class="l-grid-item">
+        {{ media_block | raw }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

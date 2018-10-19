@@ -1,0 +1,17 @@
+{
+  "breadcrumbs": {
+    "items": [
+      {
+        "text": "Home",
+        "url": "/"
+      },
+      {
+        "text": "Vitality",
+        "url": "/vitality"
+      },
+      {
+        "text": "Photos"
+      }
+    ]
+  }
+}
