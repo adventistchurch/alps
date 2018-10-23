@@ -5,11 +5,7 @@
     {% include '@molecules/media/video-figure-with-caption.twig' with {'figure_class': 'size--large'} %}
   </div>
 
-  <section class="c-section c-section__blocks u-spacing--double">
-    {% for block in row_blocks %}
-      {% include '@molecules/blocks/media-block.twig' with block %}
-    {% endfor %}
-  </section>
+  {% include '@organisms/sections/block-feed-posts.twig' %}
 
   <section class="c-section c-section__blocks u-spacing--double">
     {% for block in content_blocks %}
@@ -22,6 +18,8 @@
       {% include '@molecules/blocks/content-block.twig' with block %}
     {% endfor %}
   </section>
+
+  {% include '@organisms/sections/block-feed-pages.twig' %}
 
   <section class="c-section c-section__blocks">
     {% include '@molecules/blocks/content-block.twig' %}

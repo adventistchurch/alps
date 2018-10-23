@@ -12,7 +12,7 @@
   &.body {
     .c-article,
     .c-sidebar {
-      @include media('>medium', '<=large') {
+      @include media(">medium", "<=large") {
         margin-right: calc(100vw / 7 * 1);
       }
     }
@@ -22,7 +22,7 @@
     .priority-nav {
       text-align: right;
 
-      @include media('>large') {
+      @include media(">large") {
         text-align: left;
       }
     }
@@ -30,15 +30,15 @@
     &__logo {
       text-align: right;
 
-      @include media('>large') {
+      @include media(">large") {
         float: right;
       }
     }
 
     &__nav-primary {
-      @include media('>large') {
+      @include media(">large") {
         right: auto;
-        left: $space*1.5;
+        left: $space * 1.5;
 
         .c-primary-nav__list {
           justify-content: flex-start;
@@ -47,7 +47,7 @@
     }
 
     &__nav-secondary {
-      @include media('>large') {
+      @include media(">large") {
         right: auto;
         left: $space;
       }
@@ -59,51 +59,57 @@
       &__list {
         justify-content: flex-start;
 
-        @include media('>small') {
+        @include media(">small") {
           padding-right: rem(160);
           padding-left: 0;
         }
 
-        @include media('>medium') {
+
+        @include media(">medium") {
           padding-left: rem(155);
           padding-right: 0;
           justify-content: flex-end;
         }
 
-        @include media('>large') {
+
+        @include media(">large") {
           padding-left: rem(165);
         }
       }
 
       &__list-item__search,
       &__list-item__menu {
-        @include media('>small') {
+        @include media(">small") {
           right: 0;
           left: auto;
         }
 
-        @include media('>medium') {
+
+        @include media(">medium") {
           right: auto;
           left: rem(-25);
         }
 
-        @include media('>large') {
+
+        @include media(">large") {
           left: rem(-15);
         }
       }
 
       &__list-item__search {
-        @include media('>small') {
+        @include media(">small") {
           right: rem(75);
           left: auto;
         }
 
-        @include media('>medium') {
+
+        @include media(">medium") {
           left: rem(65);
           right: auto;
         }
 
-        @include media('>large') {
+
+        @include media(">large") {
           left: rem(75);
         }
       }
@@ -147,10 +153,11 @@
       right: auto;
       left: -$pad-mobile;
 
-      @include media('>medium') {
+      @include media(">medium") {
         left: 0;
         right: auto;
       }
+
 
       &::after {
         left: $pad;
@@ -169,12 +176,13 @@
       left: 0;
       right: auto;
 
-      @include media('>medium') {
+      @include media(">medium") {
         right: rem(265);
         left: auto;
       }
 
-      @include media('>large') {
+
+      @include media(">large") {
         right: rem(300);
       }
     }
@@ -188,7 +196,7 @@
     padding-left: $pad-mobile;
     padding-right: $pad-mobile;
 
-    @include media('>large') {
+    @include media(">large") {
       padding-left: $pad;
       padding-right: $pad;
     }
@@ -204,7 +212,7 @@
     margin-right: 0;
     margin-left: $pad;
 
-    @include media('>large') {
+    @include media(">large") {
       margin-left: $pad;
     }
   }
@@ -215,26 +223,126 @@
   }
 
   .u-shift--right--1-col--at-medium {
-    @include media('>medium') {
-     margin-left: calc((100vw/7) * -1);
-     margin-right: 0;
+    @include media(">medium") {
+      margin-left: calc((100vw/7) * -1);
+      margin-right: 0;
     }
   }
 
   .l-grid--7-col {
     &--l--offset-1 {
-      @include media('>large') {
+      @include media(">large") {
         margin-left: 0;
         margin-right: calc(100vw / 7);
       }
     }
 
     &--xl--offset-1 {
-      @include media('>xxlarge') {
+      @include media(">xxlarge") {
         margin-left: 0;
         margin-right: calc(100vw / 7);
       }
     }
+  }
+}
+
+/**
+ * Shift classes
+ */
+.u-shift--right--1-col--at-medium {
+  @include media(">medium") {
+    margin-right: calc((100vw / 7) * -1);
+  }
+}
+
+.u-shift--left--1-col--at-medium {
+  @include media(">medium") {
+    margin-left: calc((100vw / 7) * -1);
+  }
+}
+
+.u-shift--left--1-col--standard {
+  @include media(">medium", "<=large") {
+    margin-left: calc((100vw / 7) * -1);
+  }
+
+
+  @include media(">xxlarge") {
+    margin-left: calc((100vw / 7) * -1);
+  }
+}
+
+.u-shift--left--1-col--at-large {
+  @include media(">large") {
+    margin-left: calc(100vw / 7);
+
+    &.l-grid-wrap--6-of-7 {
+      width: calc((100vw / 7) * 5);
+    }
+  }
+}
+
+.u-shift--left--1-col--at-xxlarge {
+  @include media(">xxlarge") {
+    margin-left: calc(100vw / 7);
+
+    &.l-grid-wrap--6-of-7 {
+      width: calc((100vw / 7) * 5);
+    }
+  }
+}
+
+/**
+ * Specific Widths - visible greater than #
+ */
+.u-hide-until--s {
+  @include media("<=small") {
+    display: none;
+  }
+}
+
+.u-hide-until--m {
+  @include media("<=medium") {
+    display: none;
+  }
+}
+
+.u-hide-until--l {
+  @include media("<=large") {
+    display: none;
+  }
+}
+
+.u-hide-until--xl {
+  @include media("<=xlarge") {
+    display: none;
+  }
+}
+
+/**
+ * Specific Widths - hide greater than #
+ */
+.u-hide-after--s {
+  @include media(">small") {
+    display: none;
+  }
+}
+
+.u-hide-after--m {
+  @include media(">medium") {
+    display: none;
+  }
+}
+
+.u-hide-after--l {
+  @include media(">large") {
+    display: none;
+  }
+}
+
+.u-hide-after--xl {
+  @include media(">xlarge") {
+    display: none;
   }
 }
 
@@ -279,7 +387,7 @@
   position: relative;
 
   &::after {
-    background: url('../images/background-grid.svg') top left repeat-y;
+    background: url("../images/background-grid.svg") top left repeat-y;
     background-size: 100%;
     position: absolute;
     top: 0;
@@ -292,19 +400,19 @@
     content: "";
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      background: url('../images/background-grid.png') top left repeat-y;
+      background: url("../images/background-grid.png") top left repeat-y;
       background-size: 100%;
     }
   }
 
   &.u-theme--dark::after {
-    background: black url('../images/background-grid.svg') top left repeat-y;
+    background: black url("../images/background-grid.svg") top left repeat-y;
     background-repeat: repeat-y;
     background-size: 100%;
     opacity: 0.1;
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      background: url('../images/background-grid.png') top left repeat-y;
+      background: url("../images/background-grid.png") top left repeat-y;
       background-size: 100%;
     }
   }
@@ -338,7 +446,6 @@
   float: none;
 }
 
-
 /**
  * Clearfix - extends outer container with floated children.
  */
@@ -361,7 +468,7 @@
  * gutters applied to a parent element.
 **/
 .u-break-gutter {
-  @include column-gutters--break();
+  @include column-gutters--break;
 }
 
 /**
@@ -378,7 +485,7 @@
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /**
@@ -410,6 +517,7 @@
   margin-bottom: rem(5);
   position: relative;
   overflow: hidden;
+
   img,
   picture {
     display: block;
@@ -424,15 +532,17 @@
   width: 100%;
   background-size: cover;
 
-  @include media('>medium') {
+  @include media(">medium") {
     min-height: rem(350);
   }
 
-  @include media('>large') {
+
+  @include media(">large") {
     min-height: rem(450);
   }
 
-  @include media('>xlarge') {
+
+  @include media(">xlarge") {
     min-height: rem(550);
   }
 }

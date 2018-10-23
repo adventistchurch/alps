@@ -1,3 +1,123 @@
 {
-
+  "block_feed_pages": {
+    "blocks": [
+      {
+        "media_block_default": {
+          "block_class": "c-media-block__row c-block__row l-grid--7-col l-grid-wrap l-standard-break",
+          "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col u-flex--justify-start",
+          "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
+          "block_img_wrap_class": "u-round u-space--left",
+          "block_kicker_class": "u-theme--color--base can-be--light",
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "East-Central Africa",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/150/150/?random",
+              "src_m": "//picsum.photos/150/150/?random"
+            },
+            "has_break_l": {
+              "img_break_l": "700",
+              "img": {
+                "src_l": "//picsum.photos/200/200/?random"
+              }
+            },
+            "has_break_xl": {
+              "img_break_xl": "1000",
+              "img": {
+                "src_xl": "//picsum.photos/300/300/?random"
+              }
+            }
+          },
+          "datetime": "2016-12-12",
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": "Read More"
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-media-block__row c-block__row l-grid--7-col l-grid-wrap l-standard-break",
+          "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col u-flex--justify-start",
+          "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
+          "block_img_wrap_class": "u-space--left",
+          "block_kicker_class": "u-theme--color--base can-be--light",
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "Euro-Asia",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/150/150/?random",
+              "src_m": "//picsum.photos/150/150/?random"
+            },
+            "has_break_l": {
+              "img_break_l": "700",
+              "img": {
+                "src_l": "//picsum.photos/200/200/?random"
+              }
+            },
+            "has_break_xl": {
+              "img_break_xl": "1000",
+              "img": {
+                "src_xl": "//picsum.photos/300/300/?random"
+              }
+            }
+          },
+          "datetime": "2016-12-12",
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": "Read More"
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-media-block__row c-block__row l-grid--7-col l-grid-wrap l-standard-break",
+          "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col u-flex--justify-start",
+          "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
+          "block_img_wrap_class": "u-space--left",
+          "block_kicker_class": "u-theme--color--base can-be--light",
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "Middle East and North Africa",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/150/150/?random",
+              "src_m": "//picsum.photos/150/150/?random"
+            },
+            "has_break_l": {
+              "img_break_l": "700",
+              "img": {
+                "src_l": "//picsum.photos/200/200/?random"
+              }
+            },
+            "has_break_xl": {
+              "img_break_xl": "1000",
+              "img": {
+                "src_xl": "//picsum.photos/300/300/?random"
+              }
+            }
+          },
+          "datetime": "2016-12-12",
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": "Read More"
+        }
+      }
+    ]
+  }
 }

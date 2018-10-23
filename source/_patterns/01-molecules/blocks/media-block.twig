@@ -1,7 +1,8 @@
 {% if media_block_default %}
   <div class="c-media-block c-block {{ media_block_default.block_class }}">
     {% if media_block_default.img or media_block_default.picture %}
-      <div class="c-media-block__image c-block__image {{ media_block_default.block_img_class }}{% if media_block_default.block_type %} c-block__icon c-block__icon--{{ media_block_default.block_type }}{% endif %}{% if media_block_default.background_image %} o-background-image u-background--cover{% endif %}">
+      <div
+        class="c-media-block__image c-block__image {{ media_block_default.block_img_class }}{% if media_block_default.block_type %} c-block__icon c-block__icon--{{ media_block_default.block_type }}{% endif %}{% if media_block_default.background_image %} o-background-image u-background--cover{% endif %}">
         <div class="c-block__image-wrap {{ media_block_default.block_img_wrap_class }}">
           {% if media_block_default.background_image %}
             <style type="text/css">
@@ -38,24 +39,25 @@
               <img itemprop="image" srcset="{{ media_block_default.picture.img.src_s }}" alt="{{ media_block_default.picture.img.alt }}">
             </picture>
           {% elseif media_block_default.img %}
-            <img src="{{ media_block_default.img.src }}" itemprop="image" alt="{{ media_block_default.img.alt }}" />
+            <img src="{{ media_block_default.img.src }}" itemprop="image" alt="{{ media_block_default.img.alt }}"/>
           {% endif %}
         </div>
-      </div> <!-- c-media-block__image -->
+      </div>
+      <!-- c-media-block__image -->
     {% endif %}
     <div class="c-media-block__content c-block__content u-spacing {{ media_block_default.block_content_class }}">
       <div class="u-spacing c-block__group c-media-block__group {{ media_block_default.block_group_class }}">
-        <div class="u-spacing u-width--100p">
+        <div class="u-width--100p u-spacing">
           {% if media_block_default.kicker %}
-            <h4 class="c-media-block__kicker c-block__kicker {{ media_block_default.block_kicker_class }}">{{ media_block_default.kicker }}</h4>
+            <h4 class="c-media-block__kicker c-block__kicker u-space--quarter--bottom {{ media_block_default.block_kicker_class }}">{{ media_block_default.kicker }}</h4>
           {% endif %}
           {% if media_block_default.title %}
             <h3 class="c-media-block__title c-block__title {{ media_block_default.block_title_class }} {% if media_block_default.kicker %}{{ 'u-space--zero'}}{% endif %}">
               {% if media_block_default.url %}
                 <a href="{{ media_block_default.url }}" class="c-block__title-link u-theme--link-hover--dark">
-              {% endif %}
-              {{ media_block_default.title | raw }}
-              {% if media_block_default.url %}
+                {% endif %}
+                {{ media_block_default.title | raw }}
+                {% if media_block_default.url %}
                 </a>
               {% endif %}
             </h3>
@@ -73,9 +75,12 @@
           {% endif %}
         </div>
         {% if media_block_default.cta %}
-          <a href="" class="c-block__button o-button o-button--outline">{{ media_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+          <a href="" class="c-block__button o-button o-button--outline">{{ media_block_default.cta }}
+            <span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
         {% endif %}
       </div>
-    </div> <!-- c-media-block__content -->
-  </div> <!-- c-media-block -->
+    </div>
+    <!-- c-media-block__content -->
+  </div>
+  <!-- c-media-block -->
 {% endif %}

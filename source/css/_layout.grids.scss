@@ -15,16 +15,17 @@
 /**
  * Fixed Gutters
  */
-@mixin column-gutters() {
+@mixin column-gutters {
   padding-left: $pad-mobile;
   padding-right: $pad-mobile;
 
-  @include media('>large') {
+  @include media(">large") {
     padding-left: $pad;
     padding-right: $pad;
   }
 
-  @include media('>xlarge') {
+
+  @include media(">xlarge") {
     &.u-left-gutter--l {
       padding-left: rem(30);
     }
@@ -46,16 +47,17 @@
 /**
  * Break Gutters
  */
- @mixin column-gutters--break() {
+@mixin column-gutters--break {
   margin-left: -$pad-mobile;
   margin-right: -$pad-mobile;
 
-  @include media('>large') {
+  @include media(">large") {
     margin-left: -$pad;
     margin-right: -$pad;
   }
 
-  @include media('>xlarge') {
+
+  @include media(">xlarge") {
     &.u-left-gutter--l {
       margin-left: -rem(30);
     }
@@ -74,14 +76,8 @@
   }
 }
 
-
-
-
 [class*="grid--"] {
   &.u-no-gutters {
-    margin-left: 0;
-    margin-right: 0;
-
     > .l-grid-item {
       padding-left: 0;
       padding-right: 0;
@@ -91,7 +87,7 @@
   > .l-grid-item {
     box-sizing: border-box;
 
-    @include column-gutters();
+    @include column-gutters;
   }
 }
 
@@ -110,7 +106,7 @@
     margin-left: -$space-mobile;
     margin-right: -$space-mobile;
 
-    @include media('>large') {
+    @include media(">large") {
       margin-left: -$space;
       margin-right: -$space;
     }
@@ -120,7 +116,7 @@
     padding-left: $space-mobile;
     padding-right: $space-mobile;
 
-    @include media('>large') {
+    @include media(">large") {
       width: calc(100vw / 7);
       padding-left: $space;
       padding-right: $space;
@@ -159,7 +155,7 @@
     }
   }
 
-  @include media('>small') {
+  @include media(">small") {
     .l-grid-item--s {
       &--1-col {
         width: calc((100vw / 7) * 1 - 0.01px);
@@ -187,12 +183,14 @@
     }
   }
 
-  @include media('>medium') {
+
+  @include media(">medium") {
     &--break-at--medium {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
     }
+
     .l-grid-item--m {
       &--1-col {
         width: calc((100vw / 7) * 1 - 0.01px);
@@ -224,7 +222,8 @@
     }
   }
 
-  @include media('>large') {
+
+  @include media(">large") {
     &--break-at--large {
       display: flex;
       flex-direction: row;
@@ -262,7 +261,8 @@
     }
   }
 
-  @include media('>xxlarge') {
+
+  @include media(">xxlarge") {
     &--break-at--xxlarge {
       display: flex;
       flex-direction: row;
@@ -337,21 +337,32 @@
  * Common breakpoint progression of main content well.
  */
 .l-standard-break {
-  width: calc((100vw / 7) * 6 - 0.01px); // = .l-grid-wrap--6-of-7
+  width: calc((100vw / 7) * 6 - 0.01px);
 
-  @include media('>large') {
-    width: calc((100vw / 7) * 4 - 0.01px); // = .l-grid-wrap--4-of-7
+  // = .l-grid-wrap--6-of-7
+
+  @include media(">large") {
+    width: calc((100vw / 7) * 4 - 0.01px);
+
+    // = .l-grid-wrap--4-of-7
   }
 
-  @include media('>xxlarge') {
-    width: calc((100vw / 7) * 3 - 0.01px); // = .l-grid-wrap--3-of-7
+
+  @include media(">xxlarge") {
+    width: calc((100vw / 7) * 3 - 0.01px);
+
+    // = .l-grid-wrap--3-of-7
   }
 }
 
 .l-large-break {
-  width: calc((100vw / 7) * 6 - 0.01px); // = .l-grid-wrap--6-of-7
+  width: calc((100vw / 7) * 6 - 0.01px);
 
-  @include media('>xlarge') {
-    width: calc((100vw / 7) * 4 - 0.01px); // = .l-grid-wrap--4-of-7
+  // = .l-grid-wrap--6-of-7
+
+  @include media(">xlarge") {
+    width: calc((100vw / 7) * 4 - 0.01px);
+
+    // = .l-grid-wrap--4-of-7
   }
 }
