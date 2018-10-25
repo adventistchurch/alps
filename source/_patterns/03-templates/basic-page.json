@@ -5,5 +5,7 @@
 
   "page_header": {
     "title": "Basic Page"
-  }
+  },
+
+  "sidebar": true
 }
