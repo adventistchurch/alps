@@ -1,0 +1,13 @@
+{
+  "footer_secondary_nav": {
+    "items": [{
+        "text": "Trademark and Logo Usage",
+        "url": ""
+      },
+      {
+        "text": "Legal Notice",
+        "url": ""
+      }
+    ]
+  }
+}

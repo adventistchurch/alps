@@ -1,0 +1,43 @@
+{
+  "page_content_blocks": [{
+      "content_block_default": {
+        "block_class": "u-spacing--half",
+        "title_class": "u-font--primary--m",
+        "title": "General Conference",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More",
+        "url": "/"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half",
+        "title_class": "u-font--primary--m",
+        "title": "East-Central Africa",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More",
+        "url": "/"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half",
+        "title_class": "u-font--primary--m",
+        "title": "Euro-Asia",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More",
+        "url": "/"
+      }
+    },
+    {
+      "content_block_default": {
+        "block_class": "u-spacing--half",
+        "title_class": "u-font--primary--m",
+        "title": "Middle East and North Africa",
+        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
+        "cta": "Learn More",
+        "url": "/"
+      }
+    }
+  ]
+}

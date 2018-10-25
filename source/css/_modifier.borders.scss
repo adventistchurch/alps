@@ -17,15 +17,11 @@
   }
 
   &--left {
-    @include media('>medium') {
-      border-left: $border-style;
-    }
+    border-left: $border-style;
   }
 
   &--right {
-    @include media('>medium') {
-      border-right: $border-style;
-    }
+    border-right: $border-style;
   }
 
   &--red {
@@ -55,13 +51,13 @@
 }
 
 .u-border-left--white--at-large {
-  @include media('>large') {
+  @include media(">large") {
     border-left: 1px solid $c-white !important;
   }
 }
 
 .u-border-left--black--at-large {
-  @include media('>large') {
+  @include media(">large") {
     border-left: 1px solid $c-black;
   }
 }

@@ -4,26 +4,36 @@
       <p class="c-footer__description-text u-font--secondary--m">
         {{ footer.text }}
       </p>
-    </div> <!-- /.c-footer__description -->
+    </div>
+    <!-- /.c-footer__description -->
     <div class="l-grid-item l-grid-item--m--3-col l-grid-item--l--1-col c-footer__primary-nav">
       {% include '@molecules/navigation/footer-primary-navigation.twig' %}
-    </div> <!-- /.c-footer__primary-nav -->
+    </div>
+    <!-- /.c-footer__primary-nav -->
     <div class="l-grid-item l-grid-item--m--3-col l-grid-item--l--2-col c-footer__secondary-nav">
       {% include '@molecules/navigation/footer-secondary-navigation.twig' %}
-    </div> <!-- /.c-footer__secondary-nav -->
+    </div>
+    <!-- /.c-footer__secondary-nav -->
     <div class="l-grid-item--7-col l-grid-item--m--1-col c-footer__logo u-path-fill--white">
       {% include '@atoms/icons/icon-logo-round.twig' %}
-    </div> <!-- /.c-footer__logo -->
+    </div>
+    <!-- /.c-footer__logo -->
     <div class="l-grid-item l-grid-item--m--3-col c-footer__legal">
       <p class="c-footer__copyright">{{ subfooter.text }}</p>
       <address class="c-footer__address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
         <span itemprop="streetAddress">{{ subfooter.address.address }}</span>,
-        <span itemprop="addressPostCode"> {{ subfooter.address.postcode }}</span>
-        <span itemprop="addressLocality"> {{ subfooter.address.locality }}</span>,
-        <span itemprop="addressRegion"> {{ subfooter.address.region }}</span>
+        <span itemprop="addressPostCode">
+          {{ subfooter.address.postcode }}</span>
+        <span itemprop="addressLocality">
+          {{ subfooter.address.locality }}</span>,
+        <span itemprop="addressRegion">
+          {{ subfooter.address.region }}</span>
         {{ subfooter.address.country }}
         <a itemprop="telephone" href="tel:{{ subfooter.address.phonenumber }}" class="c-footer__phone u-link--white u-theme--link-hover--light">{{ subfooter.address.phonenumber }}</a>
       </address>
-    </div> <!-- /.c-footer__legal -->
-  </div> <!-- /.c-footer--inner -->
-</footer> <!-- /.c-footer -->
+    </div>
+    <!-- /.c-footer__legal -->
+  </div>
+  <!-- /.c-footer--inner -->
+</footer>
+<!-- /.c-footer -->

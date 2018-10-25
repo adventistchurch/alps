@@ -1,0 +1,9 @@
+{
+  "search": {
+    "url": "/search",
+    "method": "get",
+    "placeholder": "Search …",
+    "form_title": "Search",
+    "name": "search"
+  }
+}

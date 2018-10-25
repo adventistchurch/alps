@@ -1,0 +1,21 @@
+{
+  "secondary_nav": {
+    "items": [{
+        "icon": "icon-subscribe",
+        "text": "Sitemap"
+      },
+      {
+        "icon": "icon-find",
+        "text": "Find a Church"
+      },
+      {
+        "icon": "icon-contact",
+        "text": "Contact"
+      },
+      {
+        "icon": "icon-heart",
+        "text": "Press"
+      }
+    ]
+  }
+}

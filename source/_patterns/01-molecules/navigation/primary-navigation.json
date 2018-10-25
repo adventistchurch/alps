@@ -1,0 +1,69 @@
+{
+  "primary_nav": {
+    "items": [{
+        "text": "Leadership Certification",
+        "subnav": {
+          "items": [{
+              "text": "Assistant to the President for Evangelism"
+            },
+            {
+              "text": "Global Mission"
+            },
+            {
+              "text": "Mission Spotlight"
+            },
+            {
+              "text": "Church Mission Offerings"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Service",
+        "subnav": {
+          "items": [{
+              "text": "Life Hope Centers"
+            },
+            {
+              "text": "Global Mission"
+            },
+            {
+              "text": "Mission Spotlight"
+            },
+            {
+              "text": "Church Mission Offerings"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Beliefs",
+        "is_active": true
+      },
+      {
+        "text": "World Church"
+      },
+      {
+        "text": "Information"
+      },
+      {
+        "text": "News",
+        "subnav": {
+          "items": [{
+              "text": "News Item 1"
+            },
+            {
+              "text": "News Item 2"
+            },
+            {
+              "text": "News Item 3"
+            },
+            {
+              "text": "News Item 4"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

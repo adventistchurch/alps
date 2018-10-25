@@ -1,0 +1,29 @@
+{
+  "footer_primary_nav": {
+    "items": [{
+        "text": "Facebook",
+        "url": ""
+      },
+      {
+        "text": "Twitter",
+        "url": ""
+      },
+      {
+        "text": "YouTube",
+        "url": ""
+      },
+      {
+        "text": "Vimeo",
+        "url": ""
+      },
+      {
+        "text": "Email",
+        "url": ""
+      },
+      {
+        "text": "Feedback",
+        "url": ""
+      }
+    ]
+  }
+}

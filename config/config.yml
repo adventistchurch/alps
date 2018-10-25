@@ -39,5 +39,7 @@ twigFunctionExt: function.php
 twigTagExt: tag.php
 twigTestExt: test.php
 plugins:
+    dataTransform:
+        enabled: false
     dataInheritance:
         enabled: true

@@ -1,0 +1,17 @@
+{% if block_feed_posts %}
+  <section class="c-section c-section__block-feed u-spacing--double">
+    {% if block_feed_posts.grid %}
+      <div class="l-grid {{ block_feed_posts.grid.grid_class }} u-no-gutters">
+        {% for block in block_feed_posts.blocks %}
+          <div class="l-grid-item {{ block_feed_posts.grid.grid_item_class }}">
+            {% include '@molecules/blocks/media-block.twig' with block %}
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      {% for block in block_feed_posts.blocks %}
+        {% include '@molecules/blocks/media-block.twig' with block %}
+      {% endfor %}
+    {% endif %}
+  </section>
+{% endif %}

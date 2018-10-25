@@ -1,9 +1,10 @@
 {% if footer_primary_nav %}
-<nav class="c-footer__primary-nav__list u-spacing--half">
-  {% for item in footer_primary_nav.items %}
-    <a href="{{ item.url }}" class="c-footer__primary-nav__link u-theme--link-hover--light u-link--white">
-      <strong>{{ item.text }}</strong>
-    </a>
-  {% endfor %}
-</nav> <!-- /.c-footer__primary-nav -->
+  <nav class="c-footer__primary-nav__list u-spacing--half">
+    {% for item in footer_primary_nav.items %}
+      <a href="{{ item.url }}" class="c-footer__primary-nav__link u-theme--link-hover--light u-link--white">
+        <strong>{{ item.text }}</strong>
+      </a>
+    {% endfor %}
+  </nav>
+  <!-- /.c-footer__primary-nav -->
 {% endif %}

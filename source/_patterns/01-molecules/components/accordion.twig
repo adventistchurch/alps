@@ -1,10 +1,14 @@
 {% if accordion %}
   <div class="c-accordion u-position--relative u-spacing {{ accordion_class }}">
     {% for item in accordion_list %}
-    <div class="c-accordion__item u-spacing--half u-border--left u-padding--half--left">
-      <div class="c-accordion__heading js-toggle-parent u-font--primary--m u-theme--color--darker"><span class="u-icon u-icon--m c-accordion__arrow u-space--half--right u-theme--path-fill--darker">{% include '@atoms/icons/icon-arrow-bracket-right.twig' %}</span><strong>{{ item.accordion_heading }}</strong></div>
-      <div class="c-accordion__content u-padding--half--left">{% include '@molecules/blocks/content-block.twig' %}</div>
-    </div>
+      <div class="c-accordion__item u-spacing--half u-border--left u-padding--half--left">
+        <div class="c-accordion__heading js-toggle-parent u-font--primary--m u-theme--color--darker">
+          <span class="u-icon u-icon--m c-accordion__arrow u-space--half--right u-theme--path-fill--darker">{% include '@atoms/icons/icon-arrow-bracket-right.twig' %}</span>
+          <strong>{{ item.accordion_heading }}</strong>
+        </div>
+        <div class="c-accordion__content u-padding--half--left">{% include '@molecules/blocks/content-block.twig' %}</div>
+      </div>
     {% endfor %}
-  </div> <!-- /.c-accordion -->
+  </div>
+  <!-- /.c-accordion -->
 {% endif %}
