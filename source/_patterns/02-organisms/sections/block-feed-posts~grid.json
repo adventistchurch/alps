@@ -1,8 +1,4 @@
 {
-  "grid": {
-    "grid_class": "l-grid--7-col",
-    "grid_item_class": "l-grid-item l-grid-item--s--3-col l-grid-item--l--2-col"
-  },
   "block_feed_posts": {
     "grid": {
       "grid_class": "l-grid--7-col",
