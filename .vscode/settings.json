@@ -1,7 +1,0 @@
-{
-  "eslint.enable": false,
-  "tslint.enable": false,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  }
-}
