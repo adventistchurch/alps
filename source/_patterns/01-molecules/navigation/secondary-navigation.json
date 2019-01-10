@@ -1,6 +1,25 @@
 {
   "secondary_nav": {
     "items": [{
+        "icon": "icon-language",
+        "text": "Languages",
+        "subnav": {
+          "items": [{
+              "text": "English"
+            },
+            {
+              "text": "Spanish"
+            },
+            {
+              "text": "French"
+            },
+            {
+              "text": "Dutch"
+            }
+          ]
+        }
+      },
+      {
         "icon": "icon-subscribe",
         "text": "Sitemap"
       },

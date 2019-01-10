@@ -60,20 +60,20 @@
         justify-content: flex-start;
 
         @include media(">small") {
-          padding-right: rem(160);
+          padding-right: rem(165);
           padding-left: 0;
         }
 
 
         @include media(">medium") {
-          padding-left: rem(155);
+          padding-left: rem(150);
           padding-right: 0;
           justify-content: flex-end;
         }
 
 
         @include media(">large") {
-          padding-left: rem(165);
+          padding-left: rem(160);
         }
       }
 
