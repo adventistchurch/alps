@@ -16,15 +16,17 @@
   position: relative;
   background-color: $c-white;
 
-  @include media('>medium') {
-    padding-top: $pad/2;
-    padding-bottom: $pad/2;
+  @include media(">medium") {
+    padding-top: $pad / 2;
+    padding-bottom: $pad / 2;
   }
 
-  @include media('>large') {
+
+  @include media(">large") {
     padding-top: $pad;
     padding-bottom: $pad;
   }
+
 
   &__logo {
     order: 0;
@@ -36,34 +38,38 @@
     padding-bottom: rem(5);
     overflow: hidden;
 
-    @include media('>small') {
+    @include media(">small") {
       order: 1;
       padding-top: rem(5);
     }
 
-    @include media('>medium') {
+
+    @include media(">medium") {
       order: 0;
       padding-top: rem(10);
       padding-bottom: rem(5);
     }
 
-    @include media('>large') {
+
+    @include media(">large") {
       float: left;
       display: block;
       padding-bottom: 0;
       padding-top: 0;
     }
 
+
     svg, img {
       width: 100%;
       height: auto;
       max-width: rem(180);
 
-      @include media('>medium') {
+      @include media(">medium") {
         max-width: rem(220);
       }
 
-      @include media('>large') {
+
+      @include media(">large") {
         max-width: rem(250);
       }
     }
@@ -76,25 +82,26 @@
 
   &__nav-primary {
     order: 2;
-    z-index: 2;
+    z-index: 1;
     position: relative;
 
-    @include media('>small') {
+    @include media(">small") {
       width: 100%;
-      margin-left: -$space/2;
-      margin-right: -$space/2;
+      margin-left: -$space / 2;
+      margin-right: -$space / 2;
 
       .c-primary-nav__list {
         justify-content: space-between;
       }
     }
 
-    @include media('>large') {
+
+    @include media(">large") {
       width: calc(100% - 300px);
       order: 2;
       position: absolute;
       bottom: rem(-10);
-      right: $space*1.5;
+      right: $space * 1.5;
       top: auto;
       left: auto;
 
@@ -106,21 +113,22 @@
 
   &__nav-secondary {
     order: 1;
-    z-index: 0;
+    z-index: 2;
     position: relative;
 
-    @include media('>small') {
+    @include media(">small") {
       order: 0;
       width: 100%;
-      margin-left: -$space/2;
-      margin-right: -$space/2;
+      margin-left: -$space / 2;
+      margin-right: -$space / 2;
 
       .c-secondary-nav__list {
         justify-content: flex-start;
       }
     }
 
-    @include media('>medium') {
+
+    @include media(">medium") {
       width: calc(100% - 300px);
       order: 1;
 
@@ -129,7 +137,8 @@
       }
     }
 
-    @include media('>large') {
+
+    @include media(">large") {
       order: 1;
       margin-left: 0;
       margin-right: 0;
@@ -155,12 +164,13 @@
   width: 100%;
   padding: 0 $pad-mobile;
 
-  @include media('>medium') {
+  @include media(">medium") {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  @include media('>large') {
+
+  @include media(">large") {
     display: block;
     position: relative;
     padding: 0 $pad;
@@ -169,17 +179,18 @@
 
 // Primary Nav
 .c-header__nav-primary {
-  z-index: 2;
+  z-index: 1;
 
   .c-primary-nav {
     display: none;
     position: relative;
     width: 100%;
 
-    @include media('>small') {
+    @include media(">small") {
       display: block;
       white-space: nowrap;
     }
+
 
     &__list {
       min-width: rem(300);
@@ -216,7 +227,7 @@
 
     &__link {
       display: block;
-      padding: $pad/2;
+      padding: $pad / 2;
       display: flex;
       align-items: center;
     }
@@ -227,7 +238,7 @@
       right: 0;
       cursor: pointer;
       justify-content: flex-end;
-      padding: $pad/2;
+      padding: $pad / 2;
       z-index: 99;
 
       .u-icon {
@@ -250,37 +261,38 @@
 
 // Secondary Nav
 .c-header__nav-secondary {
-  z-index: 1;
+  z-index: 2;
 
   .c-secondary-nav {
     margin-left: -$space-mobile;
     margin-right: -$space-mobile;
 
-    @include media('>small') {
+    @include media(">small") {
       margin-left: 0;
       margin-right: 0;
     }
 
+
     &__list {
       height: rem(35);
-      overflow-y: hidden;
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap-reverse;
       width: 100%;
       align-items: flex-start;
 
-      @include media('>small') {
-        padding-left: rem(160);
-        flex-wrap: wrap;
+      @include media(">small") {
+        padding-left: rem(165);
       }
 
-      @include media('>medium') {
-        padding-right: rem(155);
+
+      @include media(">medium") {
+        padding-right: rem(150);
         padding-left: 0;
       }
 
-      @include media('>large') {
-        padding-right: rem(165);
+
+      @include media(">large") {
+        padding-right: rem(160);
       }
     }
 
@@ -288,9 +300,10 @@
       display: flex;
       position: relative;
 
-      @include media('<=small') {
+      @include media("<=small") {
         display: none;
       }
+
 
       &.is-priority {
         display: flex;
@@ -309,37 +322,43 @@
 
     &__list-item__search,
     &__list-item__menu {
-      @include media('>small') {
+      @include media(">small") {
         position: absolute;
         background-color: white;
         width: rem(85);
         left: 0;
         top: 0;
-        height: rem(35); // Height of nav
+        height: rem(35);
+
+        // Height of nav
         line-height: rem(35);
       }
 
-      @include media('>medium') {
+
+      @include media(">medium") {
         left: auto;
         right: rem(-25);
       }
 
-      @include media('>large') {
+
+      @include media(">large") {
         right: rem(-15);
       }
     }
 
     &__list-item__search {
-      @include media('>small') {
+      @include media(">small") {
         left: rem(75);
       }
 
-      @include media('>medium') {
+
+      @include media(">medium") {
         right: rem(65);
         left: auto;
       }
 
-      @include media('>large') {
+
+      @include media(">large") {
         right: rem(75);
       }
     }
@@ -347,12 +366,13 @@
     &__list-item__language.is-priority {
       position: relative;
       height: rem(35);
-      padding-left: $pad-mobile*2;
+      padding-left: $pad-mobile * 2;
       display: flex;
 
-      @include media('>large') {
+      @include media(">large") {
         padding-left: $pad;
       }
+
 
       select {
         border: 0;
@@ -362,7 +382,7 @@
         text-align: left;
         width: 0;
 
-        @include media('>small') {
+        @include media(">small") {
           width: auto;
         }
       }
@@ -380,9 +400,9 @@
         position: absolute;
         width: rem(10);
         height: rem(10);
-        background: url('../images/icons/o-icon__language.svg') center center no-repeat;
+        background: url("../images/icons/o-icon__language.svg") center center no-repeat;
 
-        @include media('>large') {
+        @include media(">large") {
           left: rem(7.5);
         }
       }
@@ -390,7 +410,7 @@
 
     &__link {
       white-space: nowrap;
-      padding: $pad/2 $pad/3;
+      padding: ($pad / 2) ($pad / 3);
       display: flex;
       align-items: center;
 
@@ -420,7 +440,7 @@
   transition: all 0.25s ease-in-out;
   width: auto;
   position: absolute;
-  left: $pad/2;
+  left: $pad / 2;
   top: 0;
   flex-direction: column;
   z-index: -1;
@@ -444,16 +464,16 @@
     width: 100%;
 
     &:first-child {
-      padding-top: $space/2;
+      padding-top: $space / 2;
     }
 
     &:last-child {
-      padding-bottom: $space/2;
+      padding-bottom: $space / 2;
     }
   }
 
   &__link {
-    padding: $pad/4 $pad;
+    padding: ($pad / 4) $pad;
     display: block;
     white-space: nowrap;
   }
@@ -526,7 +546,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding: $pad-mobile;
-    padding-bottom: $pad-mobile*2;
+    padding-bottom: $pad-mobile * 2;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     top: 0;
@@ -535,13 +555,14 @@
       display: none;
     }
 
-    @include media('>medium') {
-      padding: $pad $pad 0 $pad*2;
+    @include media(">medium") {
+      padding: $pad $pad 0 ($pad * 2);
       overflow-x: visible;
     }
 
+
     &.subnav-is-active {
-      @include media('<=medium') {
+      @include media("<=medium") {
         overflow-x: hidden;
       }
     }
@@ -560,7 +581,8 @@
         visibility: visible;
         height: auto;
         z-index: 999;
-        @include media('<=medium') {
+
+        @include media("<=medium") {
           top: 0;
         }
       }
@@ -591,17 +613,19 @@
 
   .c-primary-nav {
     &__list {
-      @include media('>medium') {
+      @include media(">medium") {
         width: rem(270);
         position: relative;
       }
 
-      @include media('>large') {
+
+      @include media(">large") {
         width: rem(300);
       }
 
+
       &.this-is-active {
-        @include media('>medium') {
+        @include media(">medium") {
           .c-primary-nav__list-item.this-is-active {
             opacity: 1;
           }
@@ -625,7 +649,7 @@
       flex-wrap: wrap;
 
       &.this-is-active {
-        @include media('<=medium') {
+        @include media("<=medium") {
           .c-primary-nav__subnav {
             display: none;
           }
@@ -635,7 +659,7 @@
 
     &__link {
       width: calc(100% - 50px);
-      padding: $pad/2 0;
+      padding: ($pad / 2) 0;
       justify-content: space-between;
       align-items: center;
       transition: none;
@@ -656,9 +680,10 @@
       padding-right: $pad-mobile;
       cursor: pointer;
 
-      @include media('>medium') {
+      @include media(">medium") {
         right: 0;
       }
+
 
       &::after {
         border-right: 0;
@@ -687,8 +712,9 @@
         bottom: 0;
         margin: 0 auto;
 
-        @include media('>large')
-        width: rem(75);
+        @include media(">large") {
+          width: rem(75);
+        }
       }
     }
 
@@ -700,24 +726,26 @@
 
   // Drawer Secondary Nav
   &__nav-secondary {
-    z-index: 1;
+    z-index: 0;
   }
 
   .c-secondary-nav {
     margin-top: $space;
 
-    @include media('>medium') {
+    @include media(">medium") {
       margin-top: 0;
     }
+
 
     &__list {
       position: relative;
 
-      @include media('>medium') {
+      @include media(">medium") {
         max-width: rem(270);
       }
 
-      @include media('>large') {
+
+      @include media(">large") {
         max-width: rem(300);
       }
     }
@@ -728,19 +756,46 @@
       &__toggle {
         display: none;
       }
-
-      &:hover {
-        opacity: 0.5;
-      }
     }
 
     &__link {
-      padding: $pad/2 0;
+      padding: ($pad / 2) 0;
       transition: none;
       color: $c-white;
 
       &:hover {
         color: $c-white !important;
+      }
+
+      .c-subnav__arrow {
+        display: none;
+      }
+    }
+
+    .c-subnav {
+      position: relative;
+      display: block;
+      height: auto;
+      left: 0;
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+      z-index: 3;
+
+      li {
+        background-color: transparent;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        a {
+          color: $c-white;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
       }
     }
   }
@@ -759,31 +814,33 @@
     top: 0;
     transition: none;
 
-    @include media('>medium') {
+    @include media(">medium") {
       transition: all 0.25s ease;
       position: absolute;
       left: rem(265);
     }
 
-    @include media('>large') {
+
+    @include media(">large") {
       left: rem(300);
     }
+
 
     &__list-item {
       background-color: $c-white;
       border: 0;
 
       &:first-child {
-        padding-top: $pad/2;
+        padding-top: $pad / 2;
       }
 
       &:last-child {
-        padding-bottom: $pad/2;
+        padding-bottom: $pad / 2;
       }
     }
 
     &__link {
-      padding: $pad/4 $pad;
+      padding: ($pad / 4) $pad;
       white-space: normal;
     }
   }
@@ -797,7 +854,7 @@
       font-size: rem(20);
       font-family: $ff-font;
       outline: 0;
-      padding: $pad/2 0;
+      padding: ($pad / 2) 0;
 
       &::placeholder {
         color: $c-white;
@@ -810,7 +867,7 @@
     display: flex;
     flex-direction: column;
 
-    @include media('>medium') {
+    @include media(">medium") {
       flex-direction: row;
 
       > div {
@@ -837,17 +894,18 @@
     z-index: 999;
     transition: right 0.25s ease;
     display: block;
-    padding: $pad-mobile*2 $pad-mobile;
+    padding: ($pad-mobile * 2) $pad-mobile;
     height: 100vh;
 
-    @include media('>medium') {
+    @include media(">medium") {
       display: none;
     }
+
 
     .c-primary-nav__link {
       display: block;
       padding-top: 0;
-      padding-bottom: $pad/2;
+      padding-bottom: $pad / 2;
       font-family: $ff-font;
       font-size: rem(20);
       z-index: 999;
@@ -856,7 +914,7 @@
       &::before {
         content: "";
         display: inline-block;
-        background: url('../images/icons/o-arrow__bracket--left.svg') center center no-repeat;
+        background: url("../images/icons/o-arrow__bracket--left.svg") center center no-repeat;
         background-size: rem(10);
         width: rem(10);
         height: rem(10);
@@ -881,7 +939,7 @@
       position: relative;
       margin: 0;
       padding: 0;
-      padding-top: $pad/2;
+      padding-top: $pad / 2;
       border-top: 1px solid $c-white;
       overflow: scroll;
       z-index: 999;
@@ -895,7 +953,7 @@
 
       &__link {
         color: $c-white;
-        padding: $pad/2 0;
+        padding: ($pad / 2) 0;
         transition: none;
       }
     }
@@ -904,9 +962,10 @@
   &__about-right {
     margin-top: $space;
 
-    @include media('>medium') {
+    @include media(">medium") {
       margin-top: 0;
     }
+
 
     a {
       display: block;
@@ -917,7 +976,7 @@
 }
 
 .no-touch {
-  @include media('>medium') {
+  @include media(">medium") {
     .c-drawer {
       .c-primary-nav__link,
       .c-secondary-nav__list-item {
@@ -952,9 +1011,10 @@
   white-space: nowrap;
   text-align: left;
 
-  @include media('>large') {
+  @include media(">large") {
     text-align: right;
   }
+
 
   > ul {
     display: inline-block;
