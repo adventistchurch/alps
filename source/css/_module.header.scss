@@ -299,11 +299,22 @@
     &__list-item {
       display: flex;
       position: relative;
+      align-items: center;
 
       @include media("<=small") {
         display: none;
       }
 
+
+      .c-subnav__arrow {
+        position: relative;
+        top: -1px;
+        left: 0;
+      }
+
+      &.has-subnav {
+        padding-right: 10px;
+      }
 
       &.is-priority {
         display: flex;
@@ -755,6 +766,18 @@
 
       &__toggle {
         display: none;
+      }
+
+      .c-subnav__arrow {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        bottom: 0;
+
+        &::after {
+          border-top-color: white;
+        }
       }
     }
 
