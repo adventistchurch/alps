@@ -17,6 +17,7 @@ This repository contains the front-end code for the Seventh Day Adventist projec
 
 ### Getting Started
 - Use node -v `v7.2.0`
+   - `nvm use 7`
 - [Install Composer globally](https://getcomposer.org/doc/00-intro.md#globally)
 - run `composer install`
 - Set up your local dev url to be `alps.test`

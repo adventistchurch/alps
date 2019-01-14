@@ -24,9 +24,9 @@
   var nav = priorityNav.init({
       mainNavWrapper: ".c-priority-nav", // mainnav wrapper selector (must be direct parent from mainNav)
       mainNav: ".c-priority-nav__list", // mainnav selector. (must be inline-block)
-      navDropdownLabel: '',
-      navDropdownClassName: ".c-priority-nav__dropdown", // class used for the dropdown.
+      navDropdownClassName: "c-priority-nav__dropdown", // class used for the dropdown.
       navDropdownToggleClassName: "js-toggle-menu", // class used for the dropdown toggle.
+      navDropdownLabel: "",
   });
 
   // Add class if is mobile
