@@ -7,10 +7,9 @@
             {% if item.icon %}
               <span class="u-icon u-icon--xs u-path-fill--gray">{% include '@atoms/icons/' ~ item.icon ~ '.twig' %}</span>{% endif %}
             {{ item.text }}
-            {% if item.subnav %}
-              <span class="c-subnav__arrow o-arrow--down"></span>{% endif %}
           </a>
           {% if item.subnav %}
+            <span class="c-subnav__arrow o-arrow--down"></span>
             <ul class="c-secondary-nav__subnav c-subnav">
               {% for sub_item in item.subnav.items %}
                 <li class="c-secondary-nav__subnav__list-item c-subnav__list-item u-background-color--gray--light">
