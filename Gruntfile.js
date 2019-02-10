@@ -148,7 +148,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
+            src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*', '03-templates*/*'],
             dest: '../igs-guidelines/_includes/patterns/',
             rename: function(dest, src) {
               return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
@@ -160,7 +160,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*'],
+            src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*', '03-templates*/*'],
             dest: '../igs-guidelines/patterns/',
             rename: function(dest, src) {
               return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
@@ -220,13 +220,13 @@ module.exports = function(grunt) {
         files: [{
             expand: true,
             cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
+            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
             dest: '../igs-guidelines/_includes/patterns/'
           },
           {
             expand: true,
             cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig'],
+            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
             dest: '../igs-guidelines/patterns/'
           }
         ]
