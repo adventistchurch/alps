@@ -8,8 +8,9 @@
 /source/drupal-patterns
 /cdn
 .grunt/grunt-gh-pages/src/*
-
-
+/.grunt/
+/.grunt/grunt-gh-pages
+.grunt/grunt-gh-pages/gh-pages/src
 
 
 # Ignore IDE-specific files
