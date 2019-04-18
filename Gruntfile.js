@@ -347,7 +347,8 @@ module.exports = function(grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "alps.test"
+        proxy: "alps2.test",
+        startPath: "/v2"
       }
     },
     'gh-pages': {
