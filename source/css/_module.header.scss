@@ -194,7 +194,6 @@
 
     &__list {
       min-width: rem(300);
-      max-width: rem(800);
       position: relative;
       display: inline-block;
     }
@@ -1100,5 +1099,20 @@
 
   &-is-hidden {
     visibility: hidden;
+  }
+}
+
+button.priority-nav__dropdown-toggle {
+  padding: 15px 30px;
+
+  &:focus::after {
+    border: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
   }
 }
