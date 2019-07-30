@@ -334,8 +334,8 @@ var fixto=function(e,t,n){function s(){this._vendor=null}function f(){var e=!1,t
         //fix so button is type="button" and do not submit forms
         navDropdownToggle.setAttribute("type", "button");
 
-        toggleWrapper.classList.add(settings.navDropdownClassName+"-wrapper");
-        toggleWrapper.classList.add("priority-nav__wrapper");
+        //toggleWrapper.classList.add(settings.navDropdownClassName+"-wrapper");
+        //toggleWrapper.classList.add("priority-nav__wrapper");
 
         _this.classList.add("priority-nav");
     };
