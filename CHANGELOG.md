@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Fixed
 - Fixes the long menus and max-length for the menu area. [#383](https://github.com/adventistchurch/alps/issues/383)
 - Fixes Menu overlays the Sabbath column on page load. [#384](https://github.com/adventistchurch/alps/issues/384)
+- Fixes Menu missing items in the drawer on XSmall sizes [#389](https://github.com/adventistchurch/alps/issues/389)
 
 
 
