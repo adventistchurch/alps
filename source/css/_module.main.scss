@@ -33,52 +33,60 @@ html {
   }
 
   .c-article {
-    @include media('>small') {
+    @include media(">small") {
       width: calc(100vw / 7 * 5 - 0.01px);
       margin-left: calc(100vw / 7 * 1);
     }
 
-    @include media('>medium') {
+
+    @include media(">medium") {
       width: calc(100vw / 7 * 4 - 0.01px);
       margin-left: 0;
     }
 
-    @include media('>large') {
+
+    @include media(">large") {
       width: calc(100vw / 7 * 3 - 0.01px);
       margin-left: calc(100vw / 7 * 1);
     }
 
-    @include media('>xxlarge') {
+
+    @include media(">xxlarge") {
       margin-left: 0;
     }
   }
 
   .c-sidebar {
-    @include media('>small') {
+    @include media(">small") {
       width: calc(100vw / 7 * 5 - 0.01px);
       margin-left: calc(100vw / 7 * 1);
     }
 
-    @include media('>medium') {
+
+    @include media(">medium") {
       width: calc(100vw / 7 * 3 - 0.01px);
       margin-left: 0;
     }
 
-    @include media('>large') {
+
+    @include media(">large") {
       width: calc(100vw / 7 * 2 - 0.01px);
     }
 
+
     .c-block__breakout {
-      @include media('>medium') {
-        margin-top: -$space*3.5;
+      @include media(">medium") {
+        margin-top: -$space * 3.5;
       }
 
-      @include media('>large') {
-        margin-top: -$space*4;
+
+      @include media(">large") {
+        margin-top: -$space * 4;
       }
 
-      @include media('>xxlarge') {
-        margin-top: -$space*2;
+
+      @include media(">xxlarge") {
+        margin-top: -$space * 2;
       }
     }
   }
@@ -86,11 +94,12 @@ html {
   .l-standard-break {
     width: 100vw;
 
-    @include media('>small') {
+    @include media(">small") {
       width: calc((100vw / 7) * 5 - 0.01px);
     }
 
-    @include media('>medium') {
+
+    @include media(">medium") {
       width: calc((100vw / 7) * 4 - 0.01px);
     }
   }
@@ -98,7 +107,7 @@ html {
   .l-large-break {
     width: calc((100vw / 7) * 6 - 0.01px);
 
-    @include media('>medium') {
+    @include media(">medium") {
       width: calc((100vw / 7) * 4 - 0.01px);
     }
   }
@@ -107,7 +116,7 @@ html {
     display: block;
     width: calc((100vw / 7) * 2);
 
-    @include media('>medium') {
+    @include media(">medium") {
       width: calc((100vw / 7) * .75);
     }
   }
@@ -117,18 +126,21 @@ html {
   &--all, & {
     @include hide-sabbath;
   }
+
   &--until-small {
-    @include media('<=small') {
+    @include media("<=small") {
       @include hide-sabbath;
     }
   }
+
   &--until-medium {
-    @include media('<=medium') {
+    @include media("<=medium") {
       @include hide-sabbath;
     }
   }
+
   &--until-large {
-    @include media('<=large') {
+    @include media("<=large") {
       @include hide-sabbath;
     }
   }
@@ -137,7 +149,7 @@ html {
 .body {
   .c-article,
   .c-sidebar {
-    @include media('>medium', '<=large') {
+    @include media(">medium", "<=large") {
       width: calc(100vw / 7 * 4 - 0.01px);
       margin-left: calc(100vw / 7 * 1 - 0.01px);
     }
@@ -177,7 +189,7 @@ html {
   &__content {
     flex-wrap: wrap;
 
-    @include media('>large') {
+    @include media(">large") {
       flex-wrap: nowrap;
     }
   }
@@ -209,21 +221,25 @@ html {
   }
 
   &__logo {
-    padding-top: $pad/2;
-    padding-left: $pad/2;
-    padding-right: $pad/2;
+    padding-top: $pad / 2;
+    padding-left: $pad / 2;
+    padding-right: $pad / 2;
     display: block;
     width: 100%;
-    max-width: rem(80);
     margin: 0 auto;
     left: 0;
     right: 0;
+    max-width: rem(155);
 
-    @include media('>large') {
-      max-width: rem(155);
+    @include media(">small") {
+      padding-left: $pad;
+      padding-right: $pad;
       padding-top: $pad;
-      padding-left: $pad*2;
-      padding-right: $pad*2;
+    }
+
+
+    svg {
+      width: 100%;
     }
   }
 
@@ -251,6 +267,7 @@ html {
         fill: $c-white;
       }
     }
+
     .l-sabbath__overlay {
       opacity: 1 !important;
     }
@@ -261,5 +278,7 @@ html {
  * Browser Update message
  */
 .buorg {
-  z-index: 60000000; // Appear over header
+  z-index: 60000000;
+
+  // Appear over header
 }

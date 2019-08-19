@@ -326,18 +326,18 @@ var fixto=function(e,t,n){function s(){this._vendor=null}function f(){var e=!1,t
          * Add classes so we can target elements
          */
         navDropdown.classList.add(settings.navDropdownClassName);
-        navDropdown.classList.add("priority-nav__dropdown");
+        navDropdown.classList.add("c-priority-nav__dropdown");
 
         navDropdownToggle.classList.add(settings.navDropdownToggleClassName);
-        navDropdownToggle.classList.add("priority-nav__dropdown-toggle");
+        navDropdownToggle.classList.add("c-priority-nav__dropdown-toggle");
 
         //fix so button is type="button" and do not submit forms
         navDropdownToggle.setAttribute("type", "button");
 
-        //toggleWrapper.classList.add(settings.navDropdownClassName+"-wrapper");
-        //toggleWrapper.classList.add("priority-nav__wrapper");
+        toggleWrapper.classList.add(settings.navDropdownClassName+"-wrapper");
+        toggleWrapper.classList.add("c-priority-nav__dropdown-wrapper");
 
-        _this.classList.add("priority-nav");
+        _this.classList.add("c-priority-nav");
     };
 
 
@@ -483,24 +483,24 @@ var fixto=function(e,t,n){function s(){this._vendor=null}function f(){var e=!1,t
      */
     var showToggle = function (_this, identifier) {
         if (breaks[identifier].length < 1) {
-            _this.querySelector(navDropdownToggle).classList.add("priority-nav-is-hidden");
-            _this.querySelector(navDropdownToggle).classList.remove("priority-nav-is-visible");
-            _this.classList.remove("priority-nav-has-dropdown");
+            _this.querySelector(navDropdownToggle).classList.add("c-priority-nav--is-hidden");
+            _this.querySelector(navDropdownToggle).classList.remove("c-priority-nav--is-visible");
+            _this.classList.remove("c-priority-nav--has-dropdown");
 
             /**
              * Set aria attributes for accessibility
              */
-            _this.querySelector(".priority-nav__wrapper").setAttribute("aria-haspopup", "false");
+            _this.querySelector(".c-priority-nav__dropdown-wrapper").setAttribute("aria-haspopup", "false");
 
         } else {
-            _this.querySelector(navDropdownToggle).classList.add("priority-nav-is-visible");
-            _this.querySelector(navDropdownToggle).classList.remove("priority-nav-is-hidden");
-            _this.classList.add("priority-nav-has-dropdown");
+            _this.querySelector(navDropdownToggle).classList.add("c-priority-nav--is-visible");
+            _this.querySelector(navDropdownToggle).classList.remove("c-priority-nav--is-hidden");
+            _this.classList.add("c-priority-nav--has-dropdown");
 
             /**
              * Set aria attributes for accessibility
              */
-            _this.querySelector(".priority-nav__wrapper").setAttribute("aria-haspopup", "true");
+            _this.querySelector(".c-priority-nav__dropdown-wrapper").setAttribute("aria-haspopup", "true");
         }
     };
 
