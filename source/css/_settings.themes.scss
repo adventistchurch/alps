@@ -80,9 +80,9 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
 
     .u-background-image--sabbath {
       background-attachment: fixed;
-      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-size: auto 100vh;
+      background-position: right top;
     }
 
     // Text
