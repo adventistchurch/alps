@@ -2,36 +2,6 @@
     $CAROUSELS
 \*------------------------------------*/
 
-.c-arrow {
-  font-size: rem(30);
-  position: absolute;
-  top: rem(-60);
-  width: rem(30);
-  height: rem(30);
-  display: flex;
-  align-items: center;
-  padding: 0;
-  line-height: rem(30);
-  cursor: pointer;
-
-  @include media(">large") {
-    top: rem(-70);
-  }
-
-
-  &--prev {
-    right: rem(30);
-    text-align: right;
-    justify-content: flex-end;
-  }
-
-  &--next {
-    right: rem(-20);
-    text-align: left;
-    justify-content: flex-start;
-  }
-}
-
 .c-carousel__item {
   img {
     width: 100%;
@@ -40,14 +10,20 @@
 
 .c-carousel__controls {
   width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: $space;
 }
 
 .c-carousel__arrow {
   width: rem(45);
   height: rem(45);
-  position: absolute;
-  top: 0;
-  bottom: 0;
   margin: auto;
   z-index: 10;
   cursor: pointer;
@@ -70,22 +46,6 @@
   svg {
     width: rem(20);
     height: rem(20);
-  }
-}
-
-.c-carousel__arrow--prev {
-  left: $space-mobile;
-
-  @include media(">large") {
-    left: $space;
-  }
-}
-
-.c-carousel__arrow--next {
-  right: $space-mobile;
-
-  @include media(">large") {
-    right: $space;
   }
 }
 

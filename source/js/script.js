@@ -21,14 +21,6 @@
     return false;
   }
 
-  var nav = priorityNav.init({
-      mainNavWrapper: ".c-priority-nav", // mainnav wrapper selector (must be direct parent from mainNav)
-      mainNav: ".c-priority-nav__list", // mainnav selector. (must be inline-block)
-      navDropdownClassName: "c-priority-nav__dropdown", // class used for the dropdown.
-      navDropdownToggleClassName: "js-toggle-menu", // class used for the dropdown toggle.
-      navDropdownLabel: "",
-  });
-
   // Add class if is mobile
   if (isMobile()) {
     $('html').addClass(' touch');
@@ -73,6 +65,19 @@
   window.onresize = function() {
     getWidth();
   }
+  window.onorientationchange = function() {
+    getWidth();
+  }
+
+  // Priority Navigation
+  var nav = priorityNav.init({
+    mainNavWrapper: ".c-priority-nav", // mainnav wrapper selector (must be direct parent from mainNav)
+    mainNav: ".c-priority-nav__list", // mainnav selector. (must be inline-block)
+    navDropdownClassName: "c-priority-nav__dropdown", // class used for the dropdown.
+    navDropdownToggleClassName: "js-toggle-menu", // class used for the dropdown toggle.
+    navDropdownLabel: "",
+    breakpoint: 500,
+  });
 
   // Sabbath Logo Icon
   var headerHeight = $('.c-header').outerHeight();
@@ -243,8 +248,8 @@
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
       fade: true,
-      nextArrow: '.c-arrow__next',
-      prevArrow: '.c-arrow__prev',
+      nextArrow: '.o-arrow--next',
+      prevArrow: '.o-arrow--prev',
       touchThreshold: 11,
       dots: true,
       adaptiveHeight: true
@@ -260,8 +265,8 @@
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
       arrows: true,
-      prevArrow:'<span class="c-arrow c-arrow--prev u-icon u-icon--s u-theme--color--darker">&#8249;</span>',
-      nextArrow:'<span class="c-arrow c-arrow--next u-icon u-icon--s u-theme--color--darker">&#8250;</span>',
+      prevArrow:'<span class="o-arrow o-arrow--prev u-icon u-icon--s u-theme--color--darker">&#8249;</span>',
+      nextArrow:'<span class="o-arrow o-arrow--next u-icon u-icon--s u-theme--color--darker">&#8250;</span>',
       touchThreshold: 11,
       dots: false,
       slidesToShow: 1,

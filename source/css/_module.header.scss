@@ -153,7 +153,7 @@
     }
   }
 
-  .priority-nav-is-hidden {
+  .c-priority-nav--is-hidden {
     display: none;
   }
 }
@@ -194,7 +194,6 @@
 
     &__list {
       min-width: rem(300);
-      max-width: rem(800);
       position: relative;
       display: inline-block;
     }
@@ -996,10 +995,6 @@
       border-bottom: none;
     }
   }
-
-  .c-priority-nav__dropdown-wrapper {
-    display: none;
-  }
 }
 
 .no-touch {
@@ -1030,11 +1025,12 @@
  * http://twitter.com/GijsRoge
  */
 
-.c-drawer .c-priority-nav__toggle {
+.c-drawer .c-priority-nav__toggle,
+.c-drawer .c-priority-nav__dropdown-toggle {
   display: none;
 }
 
-.c-header .priority-nav {
+.c-header .c-priority-nav {
   white-space: nowrap;
   text-align: left;
 
@@ -1052,8 +1048,8 @@
     }
   }
 
-  &-has-dropdown {
-    .priority-nav {
+  &--has-dropdown {
+    .c-priority-nav {
       &__dropdown {
         &-toggle {
           position: relative;
@@ -1094,11 +1090,26 @@
     }
   }
 
-  &-is-visible {
+  &--is-visible {
     visibility: visible;
   }
 
-  &-is-hidden {
+  &--is-hidden {
     visibility: hidden;
+  }
+}
+
+button.c-priority-nav__dropdown-toggle {
+  padding: 15px 30px;
+
+  &:focus::after {
+    border: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
   }
 }
