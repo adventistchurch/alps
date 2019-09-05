@@ -9,10 +9,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Fixes Menu overlays the Sabbath column on page load. [#384](https://github.com/adventistchurch/alps/issues/384)
 - Fixes Menu missing items in the drawer on XSmall sizes [#389](https://github.com/adventistchurch/alps/issues/389)
 - Fixes the way the background images are calcuated for the Sabbath column. [#392](https://github.com/adventistchurch/alps/issues/392)
+- Fixes the grid on pages without a Sabbath column to flex out to 4 columns of text instead of 3. [#333](https://github.com/adventistchurch/alps/issues/333)
 
 
 ### Added
 -
-
-
 
