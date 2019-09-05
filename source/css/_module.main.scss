@@ -44,10 +44,9 @@ html {
       margin-left: 0;
     }
 
-
-    @include media(">large") {
-      width: calc(100vw / 7 * 3 - 0.01px);
-      margin-left: calc(100vw / 7 * 1);
+    @include media('>large') {
+      width: calc(100vw / 7 * 4 - 0.01px);
+      margin-left: 0
     }
 
 

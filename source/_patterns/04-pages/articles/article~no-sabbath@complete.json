@@ -8,9 +8,9 @@
   "blockquote": true,
   "figure_breakout": false,
   "figure_with_caption": true,
-  "figure_split": false,
+  "figure_split": true,
   "highlight": true,
-  "gallery_block": false,
+  "gallery_block": true,
   "story_block": false,
   "related_posts": true,
 
