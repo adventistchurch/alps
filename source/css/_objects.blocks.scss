@@ -611,6 +611,51 @@
 }
 
 /**
+ * CTA Block
+ */
+.c-cta-block {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+
+  &__group {
+    height: auto;
+  }
+
+  &__content {
+    padding: $space;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    min-height: 300px;
+  }
+
+  &.has-image {
+    > * {
+      width: 50%;
+    }
+  }
+
+  &.has-background-image {
+    min-height: 300px;
+
+    .c-block__content {
+      justify-content: flex-end;
+    }
+  }
+}
+
+/**
  * Share tools
  */
 .c-share-tools {
