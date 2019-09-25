@@ -47,7 +47,7 @@
           {% if not cta_block.title %}
             {% set block_description_class = "u-font--secondary--m" %}
           {% endif %}
-          <p class="c-cta-block__description c-block__description u-font--secondary">{{ cta_block.description }}</p>
+          <p class="c-cta-block__description c-block__description u-font--secondary {{ block_description_class }}">{{ cta_block.description }}</p>
         {% endif %}
       </div>
       {% if cta_block.button_1 or cta_block.button_2 %}
