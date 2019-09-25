@@ -408,7 +408,7 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
         width: 100%;
         height: 100%;
         z-index: 0;
-        background: linear-gradient(to bottom, transparent, rgba($dark, 0.8) 50%);
+        background: linear-gradient(to bottom, transparent, rgba($darker, 0.8) 50%);
       }
 
       // SVG fill colors
