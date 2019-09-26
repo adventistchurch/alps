@@ -257,7 +257,7 @@
 
 .u-shift--left--1-col--at-medium {
   @include media(">medium") {
-    margin-left: calc((100vw / 7) * -1);
+    margin-left: calc((100vw / 7) * 1);
   }
 }
 
@@ -370,6 +370,8 @@
 }
 
 .u-gradient--bottom:after {
+  bottom: 0;
+  left: 0;
   content: "";
   display: flex;
   position: absolute;

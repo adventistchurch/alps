@@ -1,0 +1,30 @@
+{% if page_header %}
+  {% if page_header.background_image %}
+    {% set page_header_class = "o-background-image u-background--cover has-background"%}
+    {% set page_header_inner_class = "u-gradient--bottom" %}
+    {% set page_header_content_class = "u-border-left--white--at-medium" %}
+    <style type="text/css">
+      .o-background-image {
+        background-image: url({{ page_header.img_url_s | raw }});
+      }
+      @media(min-width: 900px) {
+        .o-background-image {
+          background-image: url({{ page_header.img_url_m | raw }});
+        }
+      }
+      @media(min-width: 1100px) {
+        .o-background-image {
+          background-image: url({{ page_header.img_url_l | raw }});
+        }
+      }
+    </style>
+  {% endif %}
+  <header class="c-page-header c-page-header__long u-theme--background-color--dark{{ ' ' ~ page_header_class }}">
+    <div class="c-page-header__long--inner l-grid l-grid--7-col{{ ' ' ~ page_header_inner_class }}">
+      <div class="c-page-header__content c-page-header__long__content l-grid-wrap l-grid-wrap--5-of-7 u-shift--left--1-col--at-medium{{ ' ' ~ page_header_content_class }}">
+        {%  if page_header.kicker %}<span class="o-kicker u-color--white">{{ page_header.kicker | raw }}</span>{% endif %}
+        <h1 class="u-font--primary--xl u-color--white"><a class="u-link--white u-link-hover--white u-font-weight--bold" href="">{{ page_header.title }}</a></h1>
+      </div>
+    </div>
+  </header> <!-- /.header__swath -->
+{% endif %}

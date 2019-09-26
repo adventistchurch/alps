@@ -50,6 +50,12 @@
   border: none !important;
 }
 
+.u-border-left--white--at-medium {
+  @include media(">medium") {
+    border-left: 1px solid $c-white !important;
+  }
+}
+
 .u-border-left--white--at-large {
   @include media(">large") {
     border-left: 1px solid $c-white !important;

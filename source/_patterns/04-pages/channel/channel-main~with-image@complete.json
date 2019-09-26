@@ -6,7 +6,7 @@
   "page_header": {
     "has_image": true,
     "kicker": "With Image",
-    "page_header_class": "c-background-image u-gradient--bottom",
+    "page_header_class": "o-background-image u-gradient--bottom",
     "img_url_s": "//placeimg.com/600/300/nature",
     "img_url_m": "//placeimg.com/900/400/nature",
     "img_url_l": "//placeimg.com/1600/500/nature"
