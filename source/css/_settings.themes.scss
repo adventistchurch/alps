@@ -86,14 +86,14 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
     }
 
     // Gradient
-    .u-theme--gradient--bottom:after {
+    .u-theme--gradient--bottom::after {
       content: "";
       display: flex;
       position: absolute;
       width: 100%;
       height: 100%;
       z-index: 0;
-      background: linear-gradient(to bottom, transparent, rgba($c-gray--light, 0.8) 50%);
+      background-image: linear-gradient(to bottom, transparent, rgba($c-gray--light, 0.8) 50%);
     }
 
     // Text
@@ -401,14 +401,9 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
         background-image: linear-gradient(to bottom, $darker, $dark, $c-gray--darker);
       }
 
-      .u-theme--gradient--bottom:after {
-        content: "";
-        display: flex;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        background: linear-gradient(to bottom, transparent, rgba($darker, 0.8) 50%);
+      &.u-theme--gradient--bottom::after,
+      .u-theme--gradient--bottom::after {
+        background-image: linear-gradient(to bottom, transparent, rgba($darker, 0.8) 50%);
       }
 
       // SVG fill colors

@@ -30,7 +30,12 @@
       {% endif %}
     </style>
   {% endif %}
-  <div class="c-cta-block c-block u-background-color--gray--light u-border--left u-theme--border-color--darker--left can-be--dark-dark {{ block_class }}">
+  {% if cta_block.is_dark %}
+    {% set theme_class = "u-theme--dark u-theme--background-color--darker" %}
+  {% else %}
+    {% set theme_class = "u-background-color--gray--light" %}
+  {% endif %}
+  <div class="c-cta-block c-block u-border--left u-theme--border-color--darker--left can-be--dark-dark{{ ' ' ~ block_class }}{{ ' ' ~ theme_class }}">
     <div class="c-cta-block__content c-block__content u-spacing">
       <div class="c-cta-block__group c-block__group u-spacing">
         {% if cta_block.title %}
@@ -39,7 +44,7 @@
           {% else %}
             {% set block_title_class = "u-font--primary--xl" %}
           {% endif %}
-          <h3 class="c-cta-block__title c-block__title u-theme--color--darker {{ block_title_class }}">
+          <h3 class="c-cta-block__title c-block__title u-theme--color--darker{{ ' ' ~ block_title_class }}">
             {{ cta_block.title | raw }}
           </h3>
         {% endif %}
@@ -47,7 +52,7 @@
           {% if not cta_block.title %}
             {% set block_description_class = "u-font--secondary--m" %}
           {% endif %}
-          <p class="c-cta-block__description c-block__description u-font--secondary {{ block_description_class }}">{{ cta_block.description }}</p>
+          <p class="c-cta-block__description c-block__description u-font--secondary{{ ' ' ~ block_description_class }}">{{ cta_block.description }}</p>
         {% endif %}
       </div>
       {% if cta_block.button_1 or cta_block.button_2 %}
