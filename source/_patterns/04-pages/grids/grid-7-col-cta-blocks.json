@@ -1,0 +1,198 @@
+{
+  "cta_blocks": [
+    {
+      "cta_block": {
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "background_image": true,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//picsum.photos/500/375/?random",
+            "src_m": "//picsum.photos/700/600/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//picsum.photos/900/700/?random"
+            }
+          },
+          "has_break_xl": false
+        },
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    },
+    {
+      "cta_block": {
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "background_image": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//picsum.photos/500/375/?random",
+            "src_m": "//picsum.photos/700/600/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//picsum.photos/900/700/?random"
+            }
+          },
+          "has_break_xl": false
+        },
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    },
+    {
+      "cta_block": {
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "background_image": false,
+        "picture": false,
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    },
+    {
+      "cta_block": {
+        "background_image": false,
+        "picture": false,
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    },
+    {
+      "cta_block": {
+        "is_dark": true,
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "background_image": true,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//picsum.photos/500/375/?random",
+            "src_m": "//picsum.photos/700/600/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//picsum.photos/900/700/?random"
+            }
+          },
+          "has_break_xl": false
+        },
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    },
+    {
+      "cta_block": {
+        "is_dark": true,
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "background_image": false,
+        "picture": {
+          "img_break_m": "500",
+          "img": {
+            "alt": "Alt Text",
+            "src_s": "//picsum.photos/500/375/?random",
+            "src_m": "//picsum.photos/700/600/?random"
+          },
+          "has_break_l": {
+            "img_break_l": "900",
+            "img": {
+              "src_l": "//picsum.photos/900/700/?random"
+            }
+          },
+          "has_break_xl": false
+        },
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    },
+    {
+      "cta_block": {
+        "is_dark": true,
+        "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+        "background_image": false,
+        "picture": false,
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    },
+    {
+      "cta_block": {
+        "is_dark": true,
+        "background_image": false,
+        "picture": false,
+        "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+        "url": "/",
+        "button_1": {
+          "text": "Download",
+          "url": "/"
+        },
+        "button_2": {
+          "text": "Link",
+          "url": "/"
+        }
+      }
+    }
+  ]
+}

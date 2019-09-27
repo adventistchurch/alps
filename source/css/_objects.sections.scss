@@ -91,12 +91,38 @@
     min-height: calc(100vw / 14 * 1);
   }
 
-  .c-background-image &--inner {
+  .o-background-image &--inner {
     min-height: calc(100vw / 7 * 1);
   }
 
-  &.c-background-image {
+  &.o-background-image {
     background-size: cover;
+  }
+}
+
+.c-page-header__long {
+  &--inner {
+    position: relative;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    padding: ($space * 2) $space;
+  }
+
+  &__subtitle {
+    > * {
+      padding: ($space * 2) $space;
+    }
+  }
+
+  &.has-background {
+    padding-top: $space * 6;
+
+    .c-page-header__content {
+      padding-top: $space * 4;
+    }
   }
 }
 

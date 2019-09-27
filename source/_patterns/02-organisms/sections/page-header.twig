@@ -2,16 +2,16 @@
   <header class="c-page-header c-page-header__simple u-theme--background-color--dark {{ page_header.page_header_class }}">
     {% if page_header.has_image %}
       <style type="text/css">
-        .c-background-image {
+        .o-background-image {
           background-image: url({{ page_header.img_url_s | raw }});
         }
         @media(min-width: 900px) {
-          .c-background-image {
+          .o-background-image {
             background-image: url({{ page_header.img_url_m | raw }});
           }
         }
         @media(min-width: 1100px) {
-          .c-background-image {
+          .o-background-image {
             background-image: url({{ page_header.img_url_l | raw }});
           }
         }
