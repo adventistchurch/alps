@@ -650,7 +650,7 @@
   }
 
   &__image {
-    min-height: 300px;
+    min-height: 200px;
     order: 0;
 
     @include media(">medium") {
