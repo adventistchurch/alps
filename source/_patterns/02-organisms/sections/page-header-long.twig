@@ -26,5 +26,12 @@
         <h1 class="u-font--primary--xl u-color--white"><a class="u-link--white u-link-hover--white u-font-weight--bold" href="">{{ page_header.title }}</a></h1>
       </div>
     </div>
-  </header> <!-- /.header__swath -->
+  </header>
+  {% if page_header.subtitle %}
+    <div class="c-page-header__subtitle c-page-header__long__subtitle l-grid l-grid--7-col">
+      <div class="l-grid-wrap l-grid-wrap--5-of-7 u-shift--left--1-col--at-medium u-border--left u-font--secondary--m">
+        {{ page_header.subtitle }}
+      </div>
+    </div>
+  {% endif %}
 {% endif %}

@@ -111,6 +111,12 @@
     padding: ($space * 2) $space;
   }
 
+  &__subtitle {
+    > * {
+      padding: ($space * 2) $space;
+    }
+  }
+
   &.has-background {
     padding-top: $space * 6;
 
