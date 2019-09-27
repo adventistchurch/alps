@@ -617,6 +617,14 @@
   display: flex;
   flex-wrap: nowrap;
   position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include media(">medium") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 
   &__group {
     height: auto;
@@ -628,6 +636,11 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 1;
+    order: 1;
+
+    @include media(">medium") {
+      order: 0;
+    }
   }
 
   &__buttons {
@@ -638,11 +651,20 @@
 
   &__image {
     min-height: 300px;
+    order: 0;
+
+    @include media(">medium") {
+      order: 1;
+    }
   }
 
   &.has-image {
     > * {
-      width: 50%;
+      width: 100%;
+
+      @include media(">medium") {
+        width: 50%;
+      }
     }
   }
 
