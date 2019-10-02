@@ -255,6 +255,37 @@
       top: 50%;
       transform: translateY(-50%);
     }
+
+    &__subnav {
+      .c-subnav__arrow {
+        display: none;
+      }
+    }
+
+    &__subnav__subnav {
+      position: relative;
+      opacity: 0;
+      display: none;
+      margin-left: $space;
+      width: calc(100% - 20px);
+      top: 0;
+      left: 0;
+      padding: ($space / 4) 0;
+
+      .c-subnav__list-item {
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      .c-subnav__link {
+        white-space: normal;
+      }
+    }
   }
 }
 
@@ -450,7 +481,7 @@
   transition: all 0.25s ease-in-out;
   width: auto;
   position: absolute;
-  left: $pad / 2;
+  left: $space / 2;
   top: 0;
   flex-direction: column;
   z-index: -1;
@@ -467,11 +498,11 @@
   }
 
   &__list-item {
-    background: $c-gray--light;
-    border-left: 1px solid $c-black;
     position: relative;
     display: block;
     width: 100%;
+    background: $c-gray--light;
+    border-left: 1px solid $c-black;
 
     &:first-child {
       padding-top: $space / 2;
@@ -573,7 +604,8 @@
 
     &.subnav-is-active {
       @include media("<=medium") {
-        overflow-x: hidden;
+        overflow: hidden;
+        height: 100vh;
       }
     }
   }
@@ -862,8 +894,52 @@
     }
 
     &__link {
-      padding: ($pad / 4) $pad;
+      padding: ($pad / 4) $pad-mobile;
       white-space: normal;
+    }
+
+    .c-subnav {
+      position: relative;
+      left: $space;
+      border-left: 1px solid $c-gray;
+      width: calc(100% - 40px);
+      height: auto;
+      opacity: 1;
+      background-color: transparent;
+      z-index: 999;
+      margin: ($space-mobile / 4) 0;
+
+      @include media("<=medium") {
+        border-color: $c-white;
+        left: 0;
+      }
+
+
+      &__arrow {
+        display: none;
+      }
+
+      &__link:not(:hover) {
+        @include media("<=medium") {
+          color: $c-white;
+        }
+      }
+
+      .c-subnav {
+        margin-top: $space-mobile;
+
+        &__list-item {
+          background-color: transparent;
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
     }
   }
 
@@ -881,6 +957,12 @@
       &::placeholder {
         color: $c-white;
       }
+    }
+  }
+
+  &__nav {
+    @include media("<=medium") {
+      height: 100%;
     }
   }
 
@@ -957,7 +1039,7 @@
     }
 
     .c-primary-nav__subnav {
-      height: 100vh;
+      height: calc(100vh - 70px);
       position: relative;
       margin: 0;
       padding: 0;
@@ -967,6 +1049,7 @@
       z-index: 999;
       opacity: 1;
       visibility: visible;
+      margin-bottom: 60px;
 
       &__list-item {
         background-color: transparent;
