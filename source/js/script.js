@@ -175,30 +175,27 @@
     });
   }
 
-  $('.c-drawer__nav .c-subnav__arrow').on('click', function(e) {
+  $('.c-primary-nav__arrow').on('click', function(e) {
     e.stopPropagation();
-    $('.c-drawer__container').toggleClass('subnav-is-active');
-    $('.c-drawer__subnav li').remove();
+    $(this).toggleClass('this-is-active');
 
     if ($(this).hasClass('this-is-active')) {
-      $(this).removeClass('this-is-active');
-      $(this).parents('.c-primary-nav__list').removeClass('this-is-active');
-      $(this).parents('.c-drawer__nav-primary').removeClass('this-is-active');
-      $(this).parents('.c-primary-nav').removeClass('this-is-active');
-      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').removeClass('this-is-active');
-      $(this).parents('.c-drawer__nav').removeClass('this-is-active');
-    } else {
-      $(this).addClass('this-is-active');
+      $('.c-drawer__container').addClass('subnav-is-active');
+      $(this).parent('li').clone(true, true).appendTo('.c-drawer__subnav');
       $(this).parents('.c-primary-nav__list').addClass('this-is-active');
       $(this).parents('.c-drawer__nav-primary').addClass('this-is-active');
       $(this).parents('.c-primary-nav').addClass('this-is-active');
       $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').addClass('this-is-active');
       $(this).parents('.c-drawer__nav').addClass('this-is-active');
-      $(this).parent('li').clone().appendTo('.c-drawer__subnav');
+    } else {
+      $('.c-drawer__container').removeClass('subnav-is-active');
+      $('.c-drawer__subnav li').remove();
+      $('.c-primary-nav__list').removeClass('this-is-active');
+      $('.c-drawer__nav-primary').removeClass('this-is-active');
+      $('.c-primary-nav').removeClass('this-is-active');
+      $('.c-drawer__subnav').removeClass('this-is-active');
+      $('.c-drawer__nav').removeClass('this-is-active');
     }
-
-    $('.c-subnav__arrow').not(this).parent().removeClass('this-is-active');
-    $('.c-subnav__arrow').not(this).removeClass('this-is-active');
   });
 
   // Hover effects on drawer submenu not on mobile
@@ -216,13 +213,13 @@
       $(this).parent().removeClass('this-is-active');
       $(this).parent().parent().parent().removeClass('this-is-active');
     });
-  }
 
-  // Remove active classes on click of drawer
-  $('.c-drawer').on('click', function() {
-    $('.body').removeClass('menu-is-active');
-    $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-subnav__arrow').removeClass('this-is-active');
-  });
+    // Remove active classes on click of drawer
+    $('.c-drawer').on('click', function() {
+      $('.body').removeClass('menu-is-active');
+      $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-primary-nav__arrow').removeClass('this-is-active');
+    });
+  }
 
   // Open drawer when menu toggle is clicked
   $('.js-toggle-menu, .c-priority-nav__toggle').on('click', function(e) {

@@ -3,7 +3,8 @@
     "items": [{
         "text": "Leadership Certification",
         "subnav": {
-          "items": [{
+          "items": [
+            {
               "text": "Assistant to the President for Evangelism"
             },
             {
@@ -41,7 +42,39 @@
         "is_active": true
       },
       {
-        "text": "World Church"
+        "text": "World Church",
+        "subnav": {
+          "items": [
+            {
+              "text": "General Conference"
+            },
+            {
+              "text": "East-Central Africa"
+            },
+            {
+              "text": "North America",
+              "subnav": {
+                "items": [
+                  {
+                    "text": "Atlantic Union"
+                  },
+                  {
+                    "text": "Canadian Union"
+                  },
+                  {
+                    "text": "Columbia Union"
+                  },
+                  {
+                    "text": "Lake Union"
+                  }
+                ]
+              }
+            },
+            {
+              "text": "Middle East and North Africa"
+            }
+          ]
+        }
       },
       {
         "text": "Information"
