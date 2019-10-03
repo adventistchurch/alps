@@ -7,19 +7,19 @@
             {{ item.text }}
           </a>
           {% if item.subnav %}
-            <span class="c-subnav__arrow o-arrow--down u-path-fill--gray"></span>{% endif %}
+            <span class="c-primary-nav__arrow c-subnav__arrow o-arrow--down u-path-fill--gray"></span>{% endif %}
           {% if item.subnav %}
             <ul class="c-primary-nav__subnav c-subnav">
               {% for secondary_item in item.subnav.items %}
-                <li class="c-primary-nav__subnav__list-item c-subnav__list-item u-background-color--gray--light  u-theme--border-color--dark{% if secondary_item.subnav %}{{ ' has-subnav' }}{% endif %}">
+                <li class="c-primary-nav__subnav__list-item c-subnav__list-item u-background-color--gray--light u-theme--border-color--dark{% if secondary_item.subnav %}{{ ' has-subnav js-this' }}{% endif %}">
                   <a class="c-primary-nav__subnav__link c-subnav__link u-color--gray--dark u-theme--link-hover--base" href="{{ secondary_item.url }}">{{ secondary_item.text }}</a>
                   {% if secondary_item.subnav %}
-                    <span class="c-subnav__arrow o-arrow--down u-path-fill--gray"></span>{% endif %}
+                    <span class="c-primary-nav__subnav__arrow c-subnav__arrow o-arrow--down u-path-fill--gray js-toggle" data-toggled="this" data-prefix="this"></span>{% endif %}
                   {% if secondary_item.subnav %}
                     <ul class="c-primary-nav__subnav__subnav c-subnav">
                       {% for tertiary_item in secondary_item.subnav.items %}
-                        <li class="c-primary-nav__subnav__subnav__list-item c-subnav__list-item u-background-color--gray--light u-theme--border-color--dark">
-                          <a class="c-primary-nav__subnav__subnav__link c-subnav__link u-color--gray--dark u-theme--link-hover--base" href="{{ tertiary_item.url }}">{{ tertiary_item.text }}</a>
+                        <li class="c-primary-nav__subnav__subnav__list-item c-subnav__list-item u-theme--background-color--base">
+                          <a class="c-primary-nav__subnav__subnav__link c-subnav__link u-color--gray--dark u-theme--link-hover--lighter" href="{{ tertiary_item.url }}">{{ tertiary_item.text }}</a>
                         </li>
                       {% endfor %}
                     </ul>

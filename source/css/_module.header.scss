@@ -203,8 +203,7 @@
       display: inline-block;
 
       &:hover {
-        .c-primary-nav__subnav,
-        .c-subnav {
+        .c-primary-nav__subnav {
           display: block;
           visibility: visible;
           opacity: 1;
@@ -254,36 +253,60 @@
       right: rem(5);
       top: 50%;
       transform: translateY(-50%);
+
+      &.this-is-active {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
     }
 
     &__subnav {
       .c-subnav__arrow {
-        display: none;
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+        padding: 0 $space;
+        height: rem(35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      &__list-item.this-is-active {
+        .c-primary-nav__subnav__subnav {
+          opacity: 1;
+          display: block;
+          visibility: visible;
+          z-index: 9999;
+          padding: ($space / 4) 0;
+          height: auto;
+        }
       }
     }
 
     &__subnav__subnav {
       position: relative;
       opacity: 0;
+      height: 0;
       display: none;
-      margin-left: $space;
-      width: calc(100% - 20px);
+      width: 100%;
       top: 0;
       left: 0;
-      padding: ($space / 4) 0;
+      z-index: 9999;
 
-      .c-subnav__list-item {
-        &:first-child {
-          padding-top: 0;
-        }
+      &__list-item {
+        border: 0;
 
-        &:last-child {
-          padding-bottom: 0;
+        @include media(">medium") {
+          background-color: $c-gray--dark;
         }
       }
 
-      .c-subnav__link {
+      &__link {
         white-space: normal;
+        color: $c-white;
       }
     }
   }
@@ -351,8 +374,7 @@
       }
 
       &:hover {
-        .c-secondary-nav__subnav,
-        .c-subnav {
+        .c-secondary-nav__subnav {
           display: block;
           visibility: visible;
           opacity: 1;
@@ -369,9 +391,9 @@
         width: rem(85);
         left: 0;
         top: 0;
-        height: rem(35);
 
         // Height of nav
+        height: rem(35);
         line-height: rem(35);
       }
 
@@ -618,7 +640,7 @@
     justify-content: stretch;
 
     &.this-is-active {
-      .c-subnav {
+      .c-primary-nav__subnav {
         opacity: 1;
         visibility: visible;
         height: auto;
@@ -689,14 +711,6 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-
-      &.this-is-active {
-        @include media("<=medium") {
-          .c-primary-nav__subnav {
-            display: none;
-          }
-        }
-      }
     }
 
     &__link {
@@ -712,7 +726,7 @@
       }
     }
 
-    .c-subnav__arrow {
+    &__arrow {
       width: rem(60);
       height: rem(50);
       min-width: rem(50);
@@ -721,11 +735,6 @@
       right: -$pad-mobile;
       padding-right: $pad-mobile;
       cursor: pointer;
-
-      @include media(">medium") {
-        right: 0;
-      }
-
 
       &::after {
         border-right: 0;
@@ -758,6 +767,46 @@
           width: rem(75);
         }
       }
+    }
+
+    &__subnav {
+      &__list-item {
+        &.this-is-active {
+          .c-primary-nav__subnav__subnav {
+            opacity: 1;
+            height: auto;
+            visibility: visible;
+            display: block;
+          }
+        }
+      }
+
+      &__arrow {
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+        padding: 0 $space-mobile;
+        width: rem(50);
+        height: rem(35);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+        position: absolute;
+
+        &.this-is-active {
+          transform: rotate(180deg);
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    &__subnav__subnav {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      display: none;
+      z-index: 9999;
     }
 
     &__list-item__toggle,
@@ -820,10 +869,6 @@
       &:hover {
         color: $c-white !important;
       }
-
-      .c-subnav__arrow {
-        display: none;
-      }
     }
 
     .c-subnav {
@@ -871,18 +916,22 @@
     @include media(">medium") {
       transition: all 0.25s ease;
       position: absolute;
-      left: rem(265);
+      left: rem(280);
     }
 
 
     @include media(">large") {
-      left: rem(300);
+      left: rem(310);
     }
 
 
     &__list-item {
-      background-color: $c-white;
       border: 0;
+
+      @include media(">medium") {
+        background-color: $c-white;
+      }
+
 
       &:first-child {
         padding-top: $pad / 2;
@@ -896,49 +945,24 @@
     &__link {
       padding: ($pad / 4) $pad-mobile;
       white-space: normal;
-    }
-
-    .c-subnav {
-      position: relative;
-      left: $space;
-      border-left: 1px solid $c-gray;
-      width: calc(100% - 40px);
-      height: auto;
-      opacity: 1;
-      background-color: transparent;
-      z-index: 999;
-      margin: ($space-mobile / 4) 0;
 
       @include media("<=medium") {
-        border-color: $c-white;
-        left: 0;
+        color: $c-white;
+      }
+    }
+  }
+
+  .c-primary-nav__subnav__subnav {
+    position: relative;
+    left: 0;
+
+    @include media(">medium") {
+      &__list-item {
+        background-color: $c-gray--dark;
       }
 
-
-      &__arrow {
-        display: none;
-      }
-
-      &__link:not(:hover) {
-        @include media("<=medium") {
-          color: $c-white;
-        }
-      }
-
-      .c-subnav {
-        margin-top: $space-mobile;
-
-        &__list-item {
-          background-color: transparent;
-
-          &:first-child {
-            padding-top: 0;
-          }
-
-          &:last-child {
-            padding-bottom: 0;
-          }
-        }
+      &__link {
+        color: $c-white;
       }
     }
   }
@@ -998,13 +1022,18 @@
     z-index: 999;
     transition: right 0.25s ease;
     display: block;
-    padding: ($pad-mobile * 2) $pad-mobile;
     height: 100vh;
+    padding: $pad-mobile 0;
 
     @include media(">medium") {
       display: none;
     }
 
+
+    .c-primary-nav__link,
+    .c-primary-nav__subnav__link {
+      padding: 0 $pad-mobile;
+    }
 
     .c-primary-nav__link {
       display: block;
@@ -1045,7 +1074,8 @@
       padding: 0;
       padding-top: $pad / 2;
       border-top: 1px solid $c-white;
-      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: scroll;
       z-index: 999;
       opacity: 1;
       visibility: visible;
@@ -1058,8 +1088,28 @@
 
       &__link {
         color: $c-white;
-        padding: ($pad / 2) 0;
+        padding-top: $pad / 2;
+        padding-bottom: $pad / 2;
         transition: none;
+        z-index: 1;
+      }
+
+      .c-subnav__arrow {
+        left: auto;
+        top: 0;
+        height: rem(40);
+        width: rem(40);
+        padding-right: $space-mobile;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+
+        &::after {
+          display: block;
+          border-top-color: $c-white;
+        }
       }
     }
   }
