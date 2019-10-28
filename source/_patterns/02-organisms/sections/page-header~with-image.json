@@ -1,6 +1,6 @@
 {
   "page_header": {
-    "has_image": true,
+    "background_image": true,
     "page_header_class": "o-background-image blended u-background--cover u-gradient--bottom",
     "img_url_s": "//placeimg.com/600/300/nature",
     "img_url_m": "//placeimg.com/900/400/nature",
