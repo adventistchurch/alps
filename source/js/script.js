@@ -196,6 +196,8 @@
       $('.c-drawer__subnav').removeClass('this-is-active');
       $('.c-drawer__nav').removeClass('this-is-active');
     }
+
+    $(this).removeClass('this-is-active');
   });
 
   // Hover effects on drawer submenu not on mobile

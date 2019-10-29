@@ -7,8 +7,7 @@
             {{ item.text }}
           </a>
           {% if item.subnav %}
-            <span class="c-primary-nav__arrow c-subnav__arrow o-arrow--down u-path-fill--gray"></span>{% endif %}
-          {% if item.subnav %}
+            <span class="c-primary-nav__arrow c-subnav__arrow o-arrow--down u-path-fill--gray"></span>
             <ul class="c-primary-nav__subnav c-subnav">
               {% for secondary_item in item.subnav.items %}
                 <li class="c-primary-nav__subnav__list-item c-subnav__list-item u-background-color--gray--light u-theme--border-color--dark{% if secondary_item.subnav %}{{ ' has-subnav js-this' }}{% endif %}">
