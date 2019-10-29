@@ -263,7 +263,7 @@
 
     &__subnav {
       .c-subnav__arrow {
-        top: 0;
+        top: -2px;
         right: 0;
         transform: translateY(0);
         padding: 0 $space;
@@ -283,6 +283,10 @@
           padding: ($space / 4) 0;
           height: auto;
         }
+      }
+
+      &__list-item.has-subnav a {
+        padding-right: $pad * 2;
       }
     }
 
@@ -361,7 +365,7 @@
 
       .c-subnav__arrow {
         position: relative;
-        top: -1px;
+        top: -2px;
         left: 0;
       }
 
@@ -528,6 +532,10 @@
 
     &:first-child {
       padding-top: $space / 2;
+
+      .o-arrow--down {
+        top: calc((#{$space} / 2) - 2px);
+      }
     }
 
     &:last-child {
@@ -934,11 +942,19 @@
 
 
       &:first-child {
-        padding-top: $pad / 2;
+        padding-top: 0;
+        
+        @include media(">medium") {
+          padding-top: $pad / 2;
+        }
       }
 
       &:last-child {
-        padding-bottom: $pad / 2;
+        padding-bottom: 0;
+
+        @include media(">medium") {
+          padding-bottom: $pad / 2;
+        }
       }
     }
 
@@ -1055,7 +1071,7 @@
     }
 
     .c-subnav__arrow {
-      top: 0;
+      top: -2px;
       left: 0;
       width: 100%;
       height: rem(60);
