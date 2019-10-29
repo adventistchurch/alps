@@ -215,13 +215,13 @@
       $(this).parent().removeClass('this-is-active');
       $(this).parent().parent().parent().removeClass('this-is-active');
     });
-
-    // Remove active classes on click of drawer
-    $('.c-drawer').on('click', function() {
-      $('.body').removeClass('menu-is-active');
-      $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-primary-nav__arrow').removeClass('this-is-active');
-    });
   }
+
+  // Remove active classes on click of drawer
+  $('.c-drawer').on('click', function() {
+    $('.body').removeClass('menu-is-active');
+    $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-primary-nav__arrow').removeClass('this-is-active');
+  });
 
   // Open drawer when menu toggle is clicked
   $('.js-toggle-menu, .c-priority-nav__toggle').on('click', function(e) {
