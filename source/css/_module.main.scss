@@ -44,9 +44,10 @@ html {
       margin-left: 0;
     }
 
-    @include media('>large') {
+
+    @include media(">large") {
       width: calc(100vw / 7 * 4 - 0.01px);
-      margin-left: 0
+      margin-left: 0;
     }
 
 
@@ -108,6 +109,30 @@ html {
 
     @include media(">medium") {
       width: calc((100vw / 7) * 4 - 0.01px);
+    }
+  }
+
+  .c-page-header {
+    &__feature {
+      .c-block__column {
+        @include media(">medium") {
+          width: 33.33%;
+        }
+      }
+
+      .c-media-block__image {
+        &.l-grid-item--m--3-col {
+          @include media(">medium") {
+            width: calc((100vw / 7) * 4 - 0.01px);
+          }
+        }
+
+        &.l-grid-item--l--4-col {
+          @include media(">large") {
+            width: calc((100vw / 7) * 5 - 0.01px);
+          }
+        }
+      }
     }
   }
 
