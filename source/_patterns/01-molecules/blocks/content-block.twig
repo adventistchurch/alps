@@ -5,7 +5,7 @@
     {% endif %}
     <h3 class="u-theme--color--darker {{ content_block_default.title_class }}">
       {% if content_block_default.url %}
-        <a href="{{ content_block_default.url }}" class="c-block__title-link u-theme--link-hover--dark">
+        <a href="{{ content_block_default.url }}" class="c-block__title-link {% if content_block_default.block_title_link_class %}{{ content_block_default.block_title_link_class }}{% else %}{{ 'u-theme--link-hover--dark' }}{% endif %}">
       {% endif %}
       <strong>{{ content_block_default.title | raw }}</strong>
       {% if content_block_default.url %}

@@ -28,14 +28,15 @@ b,
 blockquote {
   text-align: left;
   position: relative;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "“" "”" "‘" "’";
   padding-left: $pad;
   display: flex;
   flex-direction: column;
 
-  @include media('>medium') {
+  @include media(">medium") {
     border-left: 3px solid $c-black;
   }
+
 
   p {
     font-size: rem(24);
@@ -51,11 +52,11 @@ blockquote {
     }
 
     &:after {
-      content: close-quote;
+      content: "\201D";
     }
 
     &:before {
-      content: open-quote;
+      content: "\201C";
       position: absolute;
       left: -$pad;
       top: 0;
