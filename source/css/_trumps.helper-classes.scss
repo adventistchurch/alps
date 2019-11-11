@@ -295,6 +295,11 @@
 /**
  * Specific Widths - visible greater than #
  */
+
+.u-hide {
+  display: none;
+}
+
 .u-hide-until--s {
   @include media("<=small") {
     display: none;
@@ -564,6 +569,7 @@
  * Round Element
  */
 .u-round {
+  display: grid;
   overflow: hidden;
   border-radius: 100%;
 }
