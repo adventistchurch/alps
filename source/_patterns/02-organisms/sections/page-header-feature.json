@@ -4,6 +4,7 @@
     "block_img_class": "l-grid-item u-padding--zero--sides",
     "block_content_class": "l-grid-item u-border-left--black--at-large u-theme--border-color--darker--left u-theme--color--lighter u-theme--background-color--darker u-padding--top u-padding--bottom",
     "block_title_class": "u-color--white u-font--primary u-font-weight--bold",
+    "block_title_link_class": "u-theme--link-hover--light",
     "block_meta_class": "",
     "kicker": "Feature",
     "title": "Nulla finibus ligula ut nisl facilisis",

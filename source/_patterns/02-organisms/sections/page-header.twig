@@ -18,8 +18,16 @@
       </style>
     {% endif %}
     <div class="c-page-header__simple--inner u-padding">
-      {%  if page_header.kicker %}<span class="o-kicker u-color--white">{{ page_header.kicker | raw }}</span> {% endif %}
-      <h1 class="u-font--primary--xxl u-color--white"><a class="u-link--white u-link-hover--white" href="">{{ page_header.title }}</a></h1>
+      {%  if page_header.kicker %}<span class="c-page-header__kicker o-kicker u-color--white">{{ page_header.kicker | raw }}</span> {% endif %}
+      <h1 class="c-page-header__title u-font--primary--xxl u-color--white">
+        {% if page_header.url %}
+          <a href="{{ page_header.url }}" class="c-page-header__title-link {% if page_header.block_title_link_class %}{{ page_header.block_title_link_class }}{% else %}{{ 'u-theme--link-hover--lighter' }}{% endif %}">
+        {% endif %}
+          {{ page_header.title | raw }}
+        {% if page_header.url %}
+          </a>
+        {% endif %}
+      </h1>
     </div>
   </header> <!-- /.header__swath -->
 {% endif %}

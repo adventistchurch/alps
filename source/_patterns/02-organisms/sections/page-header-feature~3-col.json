@@ -6,6 +6,7 @@
         "block_group_class": "u-flex--justify-center u-overlay--dark",
         "block_content_class": "u-color--white",
         "block_title_class": "u-font--primary--xl u-flex--justify-center",
+        "block_title_link_class": "u-theme--link-hover--light",
         "block_meta_class": "hide",
         "title": "<em class='u-theme--color--lighter'>Sermon</em> Seeking Another Way",
         "kicker": false,
@@ -13,6 +14,7 @@
         "category": false,
         "datetime": false,
         "date": false,
+        "url": "/",
         "picture": {
           "img_break_m": "700",
           "img": {
@@ -41,6 +43,7 @@
         "block_group_class": "u-flex--justify-center u-overlay--dark",
         "block_content_class": "u-color--white",
         "block_title_class": "u-font--primary--xl u-flex--justify-center",
+        "block_title_link_class": "u-theme--link-hover--light",
         "block_meta_class": "hide",
         "title": "<em class='u-theme--color--lighter'>Blog</em> Son Rise Over the Land of the Rising Sun: My Eyewitness Account",
         "kicker": false,
@@ -48,6 +51,7 @@
         "category": false,
         "datetime": false,
         "date": false,
+        "url": "/",
         "picture": {
           "img_break_m": "700",
           "img": {
@@ -76,6 +80,7 @@
         "block_group_class": "u-flex--justify-center u-overlay--dark",
         "block_content_class": "u-color--white",
         "block_title_class": "u-font--primary--xl u-flex--justify-center",
+        "block_title_link_class": "u-theme--link-hover--light",
         "block_meta_class": "hide",
         "title": "<em class='u-theme--color--lighter'>Event</em> Religious Liberty – The Freedom to Beleive",
         "kicker": false,
@@ -83,6 +88,7 @@
         "category": false,
         "datetime": false,
         "date": false,
+        "url": "/",
         "picture": {
           "img_break_m": "700",
           "img": {
