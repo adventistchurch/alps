@@ -1237,6 +1237,10 @@
     display: none;
     top: 0;
 
+    &-wrapper {
+      display: inline-block;
+    }
+
     &.show {
       visibility: visible;
     }
@@ -1249,13 +1253,11 @@
       border: 0;
       right: 0;
       top: 0;
-
-      &::after {
-        content: "+";
-        display: block;
-        color: $c-gray;
-        font-size: rem(20);
-      }
+      background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Ctitle%3Eicon-plus%3C/title%3E%3Cpath d='M15,8.5H8.5V15h-2V8.5H0v-2H6.5V0h2V6.5H15Z' fill='%23717171'/%3E%3C/svg%3E") center center no-repeat;
+      background-size: 13px 13px;
+      content: "";
+      height: 45px;
+      width: 50px;
     }
   }
 
@@ -1269,8 +1271,6 @@
 }
 
 button.c-priority-nav__dropdown-toggle {
-  padding: 15px 30px;
-
   &:focus::after {
     border: none;
     display: block;
