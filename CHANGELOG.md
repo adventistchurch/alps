@@ -26,7 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [3.0.2]
 ### Added:
-- Add new Call To Actionn (CTA) blocks with multiple option and shades. [#400](https://github.com/adventistchurch/alps/issues/400)
+- Add new Call To Action (CTA) blocks with multiple option and shades. [#400](https://github.com/adventistchurch/alps/issues/400)
 - Add a new extended and refined header, called `Page Header - Long` and `Page Header - Long with Subtitle`. [#397](https://github.com/adventistchurch/alps/issues/397)
 
 
