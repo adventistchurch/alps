@@ -180,6 +180,14 @@
 // Primary Nav
 .c-header__nav-primary {
   z-index: 1;
+  display: flex;
+  align-items: flex-end;
+
+  > a.is-priority {
+    @include media("<=small") {
+      display: none;
+    }
+  }
 
   .c-primary-nav {
     display: none;
@@ -228,6 +236,13 @@
       padding: $pad / 2;
       display: flex;
       align-items: center;
+
+      &.is-bold,
+      &.is-priority {
+        font-weight: bold;
+        font-family: $ff-font;
+        white-space: nowrap;
+      }
     }
 
     &__list-item__toggle {
@@ -391,7 +406,6 @@
     &__list-item__menu {
       @include media(">small") {
         position: absolute;
-        background-color: white;
         width: rem(85);
         left: 0;
         top: 0;
@@ -732,6 +746,12 @@
       &:hover {
         color: $c-white !important;
       }
+
+      &.is-bold,
+      &.is-priority {
+        font-weight: bold;
+        font-family: $ff-font;
+      }
     }
 
     &__arrow {
@@ -943,7 +963,7 @@
 
       &:first-child {
         padding-top: 0;
-        
+
         @include media(">medium") {
           padding-top: $pad / 2;
         }
@@ -1217,6 +1237,10 @@
     display: none;
     top: 0;
 
+    &-wrapper {
+      display: inline-block;
+    }
+
     &.show {
       visibility: visible;
     }
@@ -1229,13 +1253,11 @@
       border: 0;
       right: 0;
       top: 0;
-
-      &::after {
-        content: "+";
-        display: block;
-        color: $c-gray;
-        font-size: rem(20);
-      }
+      background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Ctitle%3Eicon-plus%3C/title%3E%3Cpath d='M15,8.5H8.5V15h-2V8.5H0v-2H6.5V0h2V6.5H15Z' fill='%23717171'/%3E%3C/svg%3E") center center no-repeat;
+      background-size: 13px 13px;
+      content: "";
+      height: 45px;
+      width: 50px;
     }
   }
 
@@ -1249,8 +1271,6 @@
 }
 
 button.c-priority-nav__dropdown-toggle {
-  padding: 15px 30px;
-
   &:focus::after {
     border: none;
     display: block;

@@ -1,24 +1,6 @@
 {
   "primary_nav": {
-    "items": [{
-        "text": "Leadership Certification",
-        "subnav": {
-          "items": [
-            {
-              "text": "Assistant to the President for Evangelism"
-            },
-            {
-              "text": "Global Mission"
-            },
-            {
-              "text": "Mission Spotlight"
-            },
-            {
-              "text": "Church Mission Offerings"
-            }
-          ]
-        }
-      },
+    "items": [
       {
         "text": "Service",
         "subnav": {
@@ -96,6 +78,10 @@
             }
           ]
         }
+      },
+      {
+        "text": "Sign up today",
+        "link_class": "is-bold"
       }
     ]
   }
