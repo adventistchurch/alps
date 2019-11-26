@@ -81,7 +81,7 @@
       },
       {
         "text": "Sign up today",
-        "link_class": "is-bold"
+        "link_class": "is-priority"
       }
     ]
   }
