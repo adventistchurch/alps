@@ -187,6 +187,14 @@
 // Primary Nav
 .c-header__nav-primary {
   z-index: 1;
+  display: flex;
+  align-items: flex-end;
+
+  > a.is-priority {
+    @include media("<=small") {
+      display: none;
+    }
+  }
 
   .c-primary-nav {
     display: none;
@@ -235,6 +243,13 @@
       padding: $pad / 2;
       display: flex;
       align-items: center;
+
+      &.is-bold,
+      &.is-priority {
+        font-weight: bold;
+        font-family: $ff-font;
+        white-space: nowrap;
+      }
     }
 
     &__list-item__toggle {
@@ -398,7 +413,6 @@
     &__list-item__menu {
       @include media(">small") {
         position: absolute;
-        background-color: white;
         width: rem(85);
         left: 0;
         top: 0;
@@ -738,6 +752,12 @@
 
       &:hover {
         color: $c-white !important;
+      }
+
+      &.is-bold,
+      &.is-priority {
+        font-weight: bold;
+        font-family: $ff-font;
       }
     }
 

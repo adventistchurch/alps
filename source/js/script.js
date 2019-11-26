@@ -27,6 +27,10 @@
     $('html').addClass(' no-touch');
   }
 
+  // Moves priority links to end of primary navigation
+  $('.c-header__nav-primary .c-primary-nav__list-item .c-primary-nav__link.is-priority + span').hide();
+  $('.c-header__nav-primary .c-primary-nav__list-item .c-primary-nav__link.is-priority').first().insertAfter( $('.c-header__nav-primary .c-primary-nav') );
+
   // Lazy load images.
   if ($('img.lazy').length) {
     $('img.lazy').show().lazyload({
@@ -114,8 +118,7 @@
 
     // Remove a class on another element, if needed.
     if ($this.data('remove')) {
-      $('.' + $this.data('remove')).removeClass($this.data(
-            'remove'));
+      $('.' + $this.data('remove')).removeClass($this.data('remove'));
     }
   };
 
@@ -125,9 +128,6 @@
     var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
     $(this).html(text.substring(1)).prepend(first);
   });
-
-  // Add color classes
-  //$('.is-featured').addClass('u-theme--color--lighter');
 
   /**
    * Fixto

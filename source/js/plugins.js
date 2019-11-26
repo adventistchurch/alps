@@ -522,7 +522,6 @@ var fixto=function(e,t,n){function s(){this._vendor=null}function f(){var e=!1,t
      */
     priorityNav.toDropdown = function (_this, identifier) {
 
-
         /**
          * move last child of navigation menu to dropdown
          */
