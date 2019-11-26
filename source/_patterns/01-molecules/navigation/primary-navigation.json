@@ -81,6 +81,7 @@
       },
       {
         "text": "News",
+        "link_class": "is-bold",
         "subnav": {
           "items": [{
               "text": "News Item 1"
@@ -96,6 +97,10 @@
             }
           ]
         }
+      },
+      {
+        "text": "Sign up today",
+        "priority": true
       }
     ]
   }

@@ -180,6 +180,14 @@
 // Primary Nav
 .c-header__nav-primary {
   z-index: 1;
+  display: flex;
+  align-items: flex-end;
+
+  > a.is-priority {
+    @include media("<=small") {
+      display: none;
+    }
+  }
 
   .c-primary-nav {
     display: none;
@@ -228,6 +236,13 @@
       padding: $pad / 2;
       display: flex;
       align-items: center;
+
+      &.is-bold,
+      &.is-priority {
+        font-weight: bold;
+        font-family: $ff-font;
+        white-space: nowrap;
+      }
     }
 
     &__list-item__toggle {
@@ -732,6 +747,12 @@
       &:hover {
         color: $c-white !important;
       }
+
+      &.is-bold,
+      &.is-priority {
+        font-weight: bold;
+        font-family: $ff-font;
+      }
     }
 
     &__arrow {
@@ -943,7 +964,7 @@
 
       &:first-child {
         padding-top: 0;
-        
+
         @include media(">medium") {
           padding-top: $pad / 2;
         }
