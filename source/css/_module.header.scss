@@ -28,6 +28,13 @@
   }
 
 
+  &.is-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
   &__logo {
     order: 0;
     z-index: 1;
@@ -943,7 +950,7 @@
 
       &:first-child {
         padding-top: 0;
-        
+
         @include media(">medium") {
           padding-top: $pad / 2;
         }
