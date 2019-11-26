@@ -406,7 +406,6 @@
     &__list-item__menu {
       @include media(">small") {
         position: absolute;
-        background-color: white;
         width: rem(85);
         left: 0;
         top: 0;
