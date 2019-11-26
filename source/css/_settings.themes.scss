@@ -96,6 +96,18 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
       background-image: linear-gradient(to bottom, transparent, rgba($c-gray--light, 0.8) 50%);
     }
 
+    .u-theme--gradient--top::after {
+      content: "";
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to top, transparent, rgba($darker, 0.8) 100%);
+    }
+
     // Text
     .text {
       a:not(.o-button) {

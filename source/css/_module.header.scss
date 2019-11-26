@@ -29,10 +29,25 @@
 
 
   &.is-overlay {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     background-color: transparent;
+
+    .c-primary-nav__link,
+    .c-secondary-nav__link,
+    .c-priority-nav__dropdown-toggle::after {
+      color: $c-white !important;
+    }
+
+    svg path {
+      fill: $c-white;
+    }
+
+    .o-arrow--down::after {
+      border-top-color: $c-white;
+    }
   }
 
   &__logo {
@@ -1258,7 +1273,7 @@
       top: 0;
 
       &::after {
-        content: "+";
+        content: "\002b";
         display: block;
         color: $c-gray;
         font-size: rem(20);
