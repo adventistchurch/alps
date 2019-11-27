@@ -1,0 +1,52 @@
+{
+  "head": {
+    "title": "Home with no Sabbath Column - The Official Site of the Seventh-day Adventist world church",
+    "body_class": "has-grid body"
+  },
+
+  "has_short_body": true,
+  "header_class": "c-header--overlay u-theme--gradient--top",
+  "header_logo": "logo-sda-with-icon",
+  "header_logo_class": "can-be--dark-dark",
+  "header_overlay": true,
+  "sabbath_icon_class": "is-hidden",
+
+  "page_header": {
+    "scroll": false
+  },
+
+  "media_block_default": {
+    "block_class": "c-block__full c-media-block__full",
+    "block_group_class": "u-flex--justify-center u-overlay--dark",
+    "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-color--white",
+    "block_title_class": "l-grid-item--5-col l-grid-item--m--2-col u-font--primary--xl u-flex--justify-center",
+    "block_meta_class": "hide",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "kicker": false,
+    "description": false,
+    "category": false,
+    "cta": "Start a bible study",
+    "datetime": false,
+    "date": false,
+    "picture": {
+      "img_break_m": "500",
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "//picsum.photos/400/700/?random",
+        "src_m": "//picsum.photos/500/800/?random"
+      },
+      "has_break_l": {
+        "img_break_l": "700",
+        "img": {
+          "src_l": "//picsum.photos/600/900/?random"
+        }
+      },
+      "has_break_xl": {
+        "img_break_xl": "900",
+        "img": {
+          "src_xl": "//picsum.photos/1440/1200/?random"
+        }
+      }
+    }
+  }
+}

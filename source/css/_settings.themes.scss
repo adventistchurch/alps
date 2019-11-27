@@ -332,6 +332,37 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
       }
     }
 
+    .o-button--white {
+      background-color: $c-white;
+      color: $darker;
+      border-color: $c-white;
+
+      svg path {
+        fill: $darker;
+      }
+
+      &:hover {
+        background-color: $lighter;
+        border-color: $lighter;
+        color: $darker;
+
+        svg path {
+          fill: $darker;
+        }
+      }
+
+      &:active,
+      &.this-is-active {
+        background-color: $light;
+        border-color: $light;
+        color: $darker;
+
+        svg path {
+          fill: $darker;
+        }
+      }
+    }
+
     input[type=radio],
     input[type=checkbox] {
       color: $darker;
@@ -755,6 +786,11 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
       }
 
       .c-header {
+        .c-priority-nav__dropdown-toggle {
+          background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Ctitle%3Eicon-plus%3C/title%3E%3Cpath d='M15,8.5H8.5V15h-2V8.5H0v-2H6.5V0h2V6.5H15Z' fill='%23ffffff'/%3E%3C/svg%3E") center center no-repeat;
+          background-size: 13px 13px;
+        }
+
         .c-primary-nav__link {
           &.this-is-active,
           &:active {

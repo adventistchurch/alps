@@ -12,9 +12,11 @@
       {% include '@molecules/navigation/primary-navigation.twig' %}
     </div>
   </div><!-- /.c-header--inner -->
-  {% if (header_class == "is-overlay" ) %}
-    <div class="c-header__sabbath">
-      Sabbath
+  {% if header_overlay == true %}
+    <div class="c-header__sabbath u-theme--gradient--top">
+      <div class="o-logo u-path-fill--white">
+        {% include '@atoms/icons/icon-logo.twig' %}
+      </div>
     </div>
   {% endif %}
 </header>

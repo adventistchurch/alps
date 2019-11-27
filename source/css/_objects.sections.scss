@@ -202,3 +202,115 @@
     display: none;
   }
 }
+
+/**
+ * Highlight Blocks
+ */
+.c-highlight-blocks {
+  position: relative;
+  top: -$space * 4;
+  margin-bottom: -$space * 4;
+  background-image: url("../images/background-pattern.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: ($pad-mobile * 2) $pad-mobile;
+
+  @include media(">medium") {
+    top: -$space * 6;
+    margin-bottom: -$space * 6;
+    padding: ($pad * 2) calc((100vw / 7) * 1 - 0.01px);
+  }
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include media(">medium") {
+      flex-direction: row;
+    }
+
+
+    &-item {
+      width: 100%;
+      padding: $pad-mobile;
+
+      p {
+        font-family: $ff-font;
+      }
+
+      @include media(">medium") {
+        padding: $pad;
+        width: 33.33%;
+      }
+    }
+  }
+
+  .o-button {
+    margin-left: $space-mobile;
+
+    @include media(">medium") {
+      margin-left: $space;
+    }
+  }
+}
+
+/**
+ * Content Read More
+ */
+.c-content-read-more {
+  border-left: 1px solid;
+  padding-left: $pad-mobile;
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+
+  @include media(">medium") {
+    padding-left: $pad;
+  }
+
+
+  &.this-is-active {
+    &::after {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-color: gray;
+    z-index: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .o-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    white-space: nowrap;
+
+    &::after {
+      content: "More";
+    }
+
+    &.this-is-active {
+      position: relative;
+
+      &::after {
+        content: "Less";
+      }
+    }
+  }
+}
