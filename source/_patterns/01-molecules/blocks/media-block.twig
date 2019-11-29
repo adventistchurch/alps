@@ -75,8 +75,15 @@
           {% endif %}
         </div>
         {% if media_block_default.cta %}
-          <a href="" class="c-block__button o-button o-button--outline">{{ media_block_default.cta }}
-            <span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+          <a href="" class="c-block__button o-button{% if media_block_default.cta_class %}{{ ' ' ~ media_block_default.cta_class }}{% else %}{{ ' o-button--outline' }}{% endif %}">
+            {% if media_block_default.cta_read_more %}
+              <span class="u-icon u-icon--xs u-path-fill--base u-space--half--right">{% include '@atoms/icons/icon-legal.twig' %}</span>
+            {% endif %}
+            {{ media_block_default.cta }}
+            {% if not media_block_default.cta_read_more %}
+              <span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span>
+            {% endif %}
+          </a>
         {% endif %}
       </div>
     </div>

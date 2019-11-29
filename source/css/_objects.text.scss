@@ -146,17 +146,17 @@
 // DXLarge type - secondary
 @mixin u-font--secondary--xxl {
   font-family: $ff-font--secondary;
-  font-size: rem(50);
+  font-size: rem(60);
   font-weight: 600;
   line-height: 1;
 
   @include media(">medium") {
-    font-size: rem(54);
+    font-size: rem(80);
   }
 
 
   @include media(">large") {
-    font-size: rem(58);
+    font-size: rem(100);
   }
 }
 
@@ -700,16 +700,6 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
 .o-caption {
   line-height: 1.35;
   font-style: italic;
-}
-
-/**
- * Number
- */
-
-.o-number {
-  display: block;
-
-  @include u-font--secondary--xxl;
 }
 
 /**

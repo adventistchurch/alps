@@ -5,7 +5,9 @@
 .o-button,
 button,
 input[type="submit"] {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: rem(14);
   padding: rem(13) rem(16) rem(12);
@@ -43,8 +45,6 @@ input[type="submit"] {
   }
 
   .u-icon {
-    margin-right: rem(5);
-
     svg path {
       transition: all .6s ease-out;
     }

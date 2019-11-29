@@ -45,7 +45,6 @@
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
 
-
   // Check window width
   var getWidth = function() {
     var width;
@@ -290,6 +289,25 @@
           }
         }
       ]
+    });
+  }
+
+  // Slick carousel (testimonies)
+  if ($('.js-carousel__testimonies-media').length) {
+    $('.js-carousel__testimonies-media').slick({
+      speed: 300,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      cssEase: 'ease-out',
+      arrows: true,
+      prevArrow:'.o-arrow--prev',
+      nextArrow:'.o-arrow--next',
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      appendDots: '.o-dots',
+      infinite: false,
+      variableWidth: true
     });
   }
 

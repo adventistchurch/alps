@@ -26,6 +26,7 @@
     "description": false,
     "category": false,
     "cta": "Start a bible study",
+    "cta_class": "o-button--white",
     "datetime": false,
     "date": false,
     "picture": {

@@ -2,62 +2,56 @@
     $SPACING
 \*------------------------------------*/
 
- $sizes: (
-  '': $pad,
-   --quarter: $pad/4,
-   --half: $pad/2,
-   --double: $pad*2,
-   --triple: $pad*3,
-   --quad: $pad*4,
-   --zero: 0rem
- );
+$sizes: ("": $pad, --quarter: $pad / 4, --half: $pad / 2, --double: $pad * 2, --triple: $pad * 3, --quad: $pad * 4, --zero: 0rem);
 
- $sides: (
- '':'',
-  --top: '-top',
-  --bottom: '-bottom',
-  --left: '-left',
-  --right: '-right'
-);
+$sides: ("": "", --top: "-top", --bottom: "-bottom", --left: "-left", --right: "-right");
 
- @each $size_key, $size_value in $sizes {
-   .u-spacing#{$size_key} {
-     & > * + * {
-       margin-top: calc(#{$size_value} / 2 * 1.5);
+@each $size_key, $size_value in $sizes {
+  .u-spacing#{$size_key} {
+    & > * + * {
+      margin-top: calc(#{$size_value} / 2 * 1.5);
 
-       @include media('>large') {
-         margin-top: #{$size_value};
-       }
-     }
-   }
-   @each $side_key, $side_value in $sides {
-     .u-padding#{$size_key}#{$side_key} {
-       padding#{$side_value}: calc(#{$size_value} / 2 * 1.5);
+      @include media(">large") {
+        margin-top: #{$size_value};
+      }
+    }
+  }
 
-       @include media('>large') {
-         padding#{$side_value}: #{$size_value};
-       }
-     }
-     .u-space#{$size_key}#{$side_key} {
-       margin#{$side_value}: calc(#{$size_value} / 2 * 1.5);
+  @each $side_key, $side_value in $sides {
+    .u-padding#{$size_key}#{$side_key} {
+      padding#{$side_value}: calc(#{$size_value} / 2 * 1.5);
 
-       @include media('>large') {
-         margin#{$side_value}: #{$size_value};
-       }
-     }
-   }
- }
+      @include media(">large") {
+        padding#{$side_value}: #{$size_value};
+      }
+    }
+
+    .u-space#{$size_key}#{$side_key} {
+      margin#{$side_value}: calc(#{$size_value} / 2 * 1.5);
+
+      @include media(">large") {
+        margin#{$side_value}: #{$size_value};
+      }
+    }
+  }
+}
+
+.u-spacing--left--half {
+  & > * + * {
+    margin-left: map-get($sizes, --half);
+  }
+}
 
 .u-spacing--until-small {
-  @include media('<=small') {
+  @include media("<=small") {
     & > * + * {
-      margin-top: map-get($sizes, '');
+      margin-top: map-get($sizes, "");
     }
   }
 }
 
 .u-spacing--until-medium {
-  @include media('<=medium') {
+  @include media("<=medium") {
     & > * + * {
       margin-top: $pad;
     }
@@ -65,13 +59,13 @@
 }
 
 .u-space--after-medium {
-  @include media('>medium') {
+  @include media(">medium") {
     margin-top: $pad;
   }
 }
 
 .u-spacing--double--until-large {
-  @include media('<=large') {
+  @include media("<=large") {
     & > * + * {
       margin-top: map-get($sizes, --double);
     }
@@ -79,7 +73,7 @@
 }
 
 .u-spacing--double--until-xxlarge {
-  @include media('<=xxlarge') {
+  @include media("<=xxlarge") {
     & > * + * {
       margin-top: map-get($sizes, --double);
     }
@@ -90,7 +84,7 @@
   padding-left: $pad-mobile;
   padding-right: $pad-mobile;
 
-  @include media('>large') {
+  @include media(">large") {
     padding-left: $pad;
     padding-right: $pad;
   }
@@ -99,11 +93,12 @@
 .u-padding--left--until-xxlarge {
   padding-left: $pad-mobile;
 
-  @include media('>large') {
+  @include media(">large") {
     padding-left: $pad;
   }
 
-  @include media('>xxlarge') {
+
+  @include media(">xxlarge") {
     padding-left: 0;
   }
 }

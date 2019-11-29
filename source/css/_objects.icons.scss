@@ -12,36 +12,34 @@ $icon-large: rem(50);
 $icon-big: rem(65);
 
 .u-icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.u-icon--xs {
+.u-icon--xs svg {
   width: $icon-xsmall;
   height: $icon-xsmall;
 }
 
-.u-icon--s {
+.u-icon--s svg {
   width: $icon-small;
   height: $icon-small;
-  padding: rem(2);
 }
 
-.u-icon--m {
+.u-icon--m svg {
   width: $icon-medium;
   height: $icon-medium;
-  padding: rem(3);
 }
 
-.u-icon--l {
+.u-icon--l svg {
   width: $icon-large;
   height: $icon-large;
-  padding: rem(6);
 }
 
-.u-icon--xl {
+.u-icon--xl svg {
   width: $icon-big;
   height: $icon-big;
-  padding: rem(6);
 }
 
 /**
@@ -88,7 +86,7 @@ $icon-big: rem(65);
   display: block;
 
   &:hover {
-    border-bottom-color: rgba($c-black, .2);
+    border-bottom-color: rgba($c-black, 0.2);
   }
 
   &:before {
