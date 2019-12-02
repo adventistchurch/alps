@@ -1,0 +1,82 @@
+{
+  "testimonies": {
+    "items": [
+      {
+        "media_block_default": {
+          "block_class": "c-block c-media-block u-color--white",
+          "block_content_class": "u-border--left u-theme--border-color--base",
+          "block_group_class": "u-flex--justify-start",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330",
+              "src_m": "//picsum.photos/800/450"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
+          "cta": {
+            "url": "",
+            "text": "Read more",
+            "class": "o-button--outline--white",
+            "icon_before": "legal"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block c-media-block u-color--white",
+          "block_content_class": "u-border--left u-theme--border-color--base",
+          "block_group_class": "u-flex--justify-start",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330",
+              "src_m": "//picsum.photos/800/450"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
+          "cta": {
+            "url": "",
+            "text": "Read more",
+            "class": "o-button--outline--white",
+            "icon_before": "legal"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block c-media-block u-color--white",
+          "block_content_class": "u-border--left u-theme--border-color--base",
+          "block_group_class": "u-flex--justify-start",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330",
+              "src_m": "//picsum.photos/800/450"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
+          "cta": {
+            "url": "",
+            "text": "Read more",
+            "class": "o-button--outline--white",
+            "icon_before": "legal"
+          }
+        }
+      }
+    ],
+    "cta": {
+      "url": "",
+      "text": "See all testimonies"
+    }
+  }
+}

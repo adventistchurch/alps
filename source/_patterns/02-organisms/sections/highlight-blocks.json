@@ -1,0 +1,22 @@
+{
+  "highlight_blocks": {
+    "items": [
+      {
+        "number": "1",
+        "description": "View our Bible study catalog"
+      },
+      {
+        "number": "2",
+        "description": "Sign up for free with only your name and email"
+      },
+      {
+        "number": "3",
+        "description": "Find answers and peace as you begin to understand God’s plan for your life"
+      }
+    ],
+    "button": {
+      "url": "",
+      "text": "Start a Bible Study"
+    }
+  }
+}

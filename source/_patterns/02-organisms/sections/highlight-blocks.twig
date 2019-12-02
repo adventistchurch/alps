@@ -1,0 +1,21 @@
+{% if highlight_blocks %}
+  <section class="c-section c-section__highlight-blocks c-highlight-blocks u-theme--background-color--base u-color--white u-spacing">
+    {% if highlight_blocks.items %}
+      <div class="c-highlight-blocks__content">
+        {% for item in highlight_blocks.items %}
+          <div class="c-highlight-blocks__content-item">
+            <div class="o-number u-font--secondary--xxl">{{ item.number }}</div>
+            <p class="u-font--secondary--m">{{ item.description }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if highlight_blocks.button %}
+      <button href="{{ highlight_blocks.button.url }}" class="o-button o-button--white">
+        <span class="u-icon u-icon--xs u-space--half--right">{% include '@atoms/icons/icon-arrow-short-right.twig' %}</span>
+        {{ highlight_blocks.button.text }}
+      </button>
+    {% endif %}
+  </section>
+{% endif %}
+

@@ -1,0 +1,34 @@
+{% if testimonies %}
+  <section class="c-testimonies-media u-spacing u-posititon--relative u-theme--background-color--darker u-color--white">
+    <div class="c-testimonies-media--inner u-spacing--double">
+      <div class="c-testimonies-media__heading">
+        <div class="c-block__heading u-theme--border-color--base">
+          <h3 class="c-block__heading-title">Testimonies</h3>
+          <a href="#" class="c-block__heading-link u-theme--color--light u-theme--link-hover--lighter">See All</a>
+        </div>
+        <div class="o-dots"></div>
+      </div>
+      <div class="c-testimonies-media__blocks js-carousel__testimonies-media u-theme--gradient--right u-theme--gradient--left">
+        {% for block in testimonies.items %}
+          <div class="c-testimonies-media__block">
+            {% include '@molecules/blocks/media-block.twig' with block %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="c-testimonies-media__buttons u-spacing--left--half">
+        <button aria-label="Previous" class="o-button o-button--outline--white o-arrow o-arrow--prev">
+          <span class="u-icon u-icon--s u-path-fill--white">{% include '@atoms/icons/icon-arrow-bracket-left.twig' %}</span>
+        </button>
+        <button aria-label="Next" class="o-button o-button--outline--white o-arrow o-arrow--next">
+          <span class="u-icon u-icon--s u-path-fill--white">{% include '@atoms/icons/icon-arrow-bracket-right.twig' %}</span>
+        </button>
+        {% if testimonies.cta %}
+          <a href="{{ testimonies.cta.url }}" class="o-button o-button--outline--white">
+            {{ testimonies.cta.text }}
+            <span class="u-icon u-icon--m u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}

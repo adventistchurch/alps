@@ -1,0 +1,9 @@
+{% if content_read_more %}
+  <div class="c-content-read-more u-spacing u-theme--border-color--base text">
+    {{ content_read_more.body | raw }}
+    <button class="o-button o-button--outline js-toggle-parent">
+      <span class="u-icon u-icon--xs u-space--half--right">{% include '@atoms/icons/icon-legal.twig' %}</span>
+      <font>Read</font>
+    </button>
+  </div>
+{% endif %}
