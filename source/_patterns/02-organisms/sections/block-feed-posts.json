@@ -38,7 +38,10 @@
           "description": false,
           "category": "Culture",
           "url": "/",
-          "cta": "Read More"
+          "cta": {
+            "url": "",
+            "text": "Read more"
+          }
         }
       },
       {
@@ -78,7 +81,10 @@
           "description": false,
           "category": "Culture",
           "url": "/",
-          "cta": "Read More"
+          "cta": {
+            "url": "",
+            "text": "Read more"
+          }
         }
       },
       {
@@ -118,7 +124,10 @@
           "description": false,
           "category": "Culture",
           "url": "/",
-          "cta": "Read More"
+          "cta": {
+            "url": "",
+            "text": "Read more"
+          }
         }
       }
     ]

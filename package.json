@@ -21,6 +21,8 @@
     "grunt-sass": "^1.2.0",
     "grunt-shell": "^2.1.0",
     "matchdep": "^2.0.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
     "node-sass": "^2.1.1",
     "patternlab-md2json": "^0.1.1"
   },

@@ -12,7 +12,10 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-        "cta": "Read more"
+        "cta": {
+          "url": "",
+          "text": "Read more"
+        }
       }
     },
     {
@@ -27,7 +30,10 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": "Donec luctus diam volutpat purus pulvinar, quis accumsan nulla semper.",
-        "cta": "Read more"
+        "cta": {
+          "url": "",
+          "text": "Read more"
+        }
       }
     },
     {
@@ -42,7 +48,10 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": "Praesent viverra augue ac lectus dapibus, ornare euismod felis lobortis.",
-        "cta": "Read more"
+        "cta": {
+          "url": "",
+          "text": "Read more"
+        }
       }
     },
     {
@@ -57,7 +66,10 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": "Aenean consequat dolor consectetur magna sodales, eget suscipit massa eleifend.",
-        "cta": "Read more"
+        "cta": {
+          "url": "",
+          "text": "Read more"
+        }
       }
     },
     {
@@ -72,7 +84,10 @@
         "datetime": "2016-12-12",
         "date": "Mar 28, 2016",
         "description": "Maecenas vel dictum mi, id aliquet nibh. Nunc dignissim et metus at dictum. Vivamus gravida laoreet orci aliquam.",
-        "cta": "Read more"
+        "cta": {
+          "url": "",
+          "text": "Read more"
+        }
       }
     }
   ]

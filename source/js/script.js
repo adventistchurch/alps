@@ -338,6 +338,46 @@
     $('.c-article__body, .text, .fitvid').fitVids();
   }
 
+  // Output youtube duration in seconds
+  function getDurationInSecond(youtubeDuration) {
+    var re=/pt([0-9]+)M([0-9]+)S/gi,
+        rex = new RegExp(re),
+        du = rex.exec(youtubeDuration);
+    if (du.length<1)
+        return 0;
+    var s=0;
+    s+= du.length >1 && du[1]? parseInt(du[1], 10) * 60 :0; // adding minute
+    s+= du.length >2 && du[2]? parseInt(du[1], 10) :0; //
+    return s;
+  }
+
+  // Creates title and duration for Youtube videos
+  var apiKey = 'AIzaSyAiCBcaYLra0GCWcoY6rTWktJWwd0VKQ6A';
+  $('.js-video').each(function() {
+    var videoId = $(this).attr('id');
+    $.ajax({
+      url: "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key="+ apiKey + "&fields=items(snippet(title),contentDetails(duration),id)&part=snippet,contentDetails",
+      dataType: "jsonp",
+      success: function(data) {
+        var id = data.items[0].id;
+        var title = data.items[0].snippet.title;
+        var durationSeconds = getDurationInSecond(data.items[0].contentDetails.duration);
+        var duration = moment.duration(durationSeconds, "seconds").format('h:mm:ss');
+        $('#' + id + ' .js-video-title').append(title);
+        $('#' + id + ' .js-video-duration').append(duration);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        alert (textStatus, + ' | ' + errorThrown);
+      }
+    });
+
+    // Play video on click
+    $(this).click(function(e) {
+      $('#'+ videoId + ' iframe')[0].src += "?autoplay=1";
+      e.preventDefault();
+    });
+  });
+
   // Apply parallax effect to background images.
   function parallaxIt() {
     var $fwindow = $(window),

@@ -504,7 +504,6 @@
 
         @include media(">xxlarge") {
           padding-top: 0;
-          padding-right: 0;
         }
       }
 
@@ -554,6 +553,62 @@
     .slick-dots {
       position: relative;
       padding: 0;
+    }
+  }
+}
+
+/**
+ * Video Full
+ */
+.c-video-full {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-bottom: -$space-mobile * 2;
+
+  @include media(">large") {
+    margin-bottom: -$space * 2;
+  }
+
+
+  &.this-is-active {
+    .c-video-full__content,
+    .c-video-full__video::after {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__content,
+  &__video {
+    &::after {
+      transition: all .3s ease-out;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: $space-mobile;
+    left: $space-mobile;
+    display: flex;
+    width: 100%;
+
+    @include media(">large") {
+      bottom: $space;
+      left: $space;
+    }
+
+
+    @include media(">xxlarge") {
+      left: 0;
+      margin-left: calc((100vw / 7) * 1 - 0.01px);
+    }
+
+
+    .u-icon svg {
+      width: auto;
     }
   }
 }

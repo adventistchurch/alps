@@ -31,7 +31,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
           "url": "/",
           "category": false,
-          "cta": "Read More"
+          "cta": {
+            "url": "",
+            "text": "Read more"
+          }
         }
       },
       {
@@ -60,7 +63,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
           "url": "/",
           "category": false,
-          "cta": "Read More"
+          "cta": {
+            "url": "",
+            "text": "Read more"
+          }
         }
       },
       {
@@ -89,7 +95,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
           "url": "/",
           "category": false,
-          "cta": "Read More"
+          "cta": {
+            "url": "",
+            "text": "Read more"
+          }
         }
       },
       {
@@ -118,7 +127,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
           "url": "/",
           "category": false,
-          "cta": "Read More"
+          "cta": {
+            "url": "",
+            "text": "Read more"
+          }
         }
       }
     ]

@@ -21,12 +21,16 @@
     "block_content_class": "l-grid--7-col l-grid-wrap l-grid-wrap--7-of-7 u-color--white",
     "block_title_class": "l-grid-item--5-col l-grid-item--m--2-col u-font--primary--xl u-flex--justify-center",
     "block_meta_class": "hide",
-    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "title": "You can understand the Bible and find freedom, healiing and hope in Jesus",
     "kicker": false,
     "description": false,
     "category": false,
-    "cta": "Start a bible study",
-    "cta_class": "o-button--white",
+    "cta": {
+      "url": "/",
+      "text": "Start a bible study",
+      "class": "o-button--white",
+      "icon_before": "arrow-short-right"
+    },
     "datetime": false,
     "date": false,
     "picture": {
@@ -49,5 +53,140 @@
         }
       }
     }
+  },
+
+  "highlight_blocks": {
+    "items": [
+      {
+        "number": "1",
+        "description": "View our Bible study catalog"
+      },
+      {
+        "number": "2",
+        "description": "Sign up for free with only your name and email"
+      },
+      {
+        "number": "3",
+        "description": "Find answers and peace as you begin to understand God’s plan for your life"
+      }
+    ],
+    "button": {
+      "url": "",
+      "text": "Start a Bible Study"
+    }
+  },
+
+  "content_read_more": {
+    "body": "<h2>Yes, these steps look easy. Easy enough to set aside for \"later.\" Easy enough to think that maybe they're not so important, or not so special. But that would be a mistake.</h2><p>The Bible tells the story of Naaman, the commander of the Syrian army. He contracted leprosy which was incurable and terminal. One of his slaves, an Israelite, suggested that he go to Samaria, where the prophet Elisha would be able to heal him.</p><p>Elisha told Naaman to go wash himself in the river Jordan, and to immerse himself seven times if he wanted to be healed. Naaman was insulted. That river was muddy and it was unacceptable for a high official to bath in it.</p>"
+  },
+
+  "split_highlight_content": {
+    "blockquote": "If you are looking for something better, if you're looking for a way out of your troubles, we can help.",
+    "body": "<p>The simple path we're offering will help you</p><ul><li>Find trustworthy answers</li><li>Experience total peace of mind</li><li>Live with purpose</li><li>Find forgiveness</li><li>See the world differently—understand why our lives are so full of trouble and at the same time, learn why there is hope.</li><li>Learn the end of the story, and find freedom, healing and hope in Jesus</li></ul>",
+    "cta": {
+      "url": "",
+      "text": "Download Now",
+      "icon_before": "download"
+    }
+  },
+
+  "testimonies": {
+    "items": [
+      {
+        "media_block_default": {
+          "block_class": "c-block c-media-block u-color--white",
+          "block_content_class": "u-border--left u-theme--border-color--base",
+          "block_group_class": "u-flex--justify-start",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330",
+              "src_m": "//picsum.photos/800/450"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
+          "cta": {
+            "url": "",
+            "text": "Read more",
+            "class": "o-button--outline--white",
+            "icon_before": "legal"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block c-media-block u-color--white",
+          "block_content_class": "u-border--left u-theme--border-color--base",
+          "block_group_class": "u-flex--justify-start",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330",
+              "src_m": "//picsum.photos/800/450"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
+          "cta": {
+            "url": "",
+            "text": "Read more",
+            "class": "o-button--outline--white",
+            "icon_before": "legal"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block c-media-block u-color--white",
+          "block_content_class": "u-border--left u-theme--border-color--base",
+          "block_group_class": "u-flex--justify-start",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/600/330",
+              "src_m": "//picsum.photos/800/450"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
+          "cta": {
+            "url": "",
+            "text": "Read more",
+            "class": "o-button--outline--white",
+            "icon_before": "legal"
+          }
+        }
+      }
+    ],
+    "cta": {
+      "url": "",
+      "text": "See all testimonies"
+    }
+  },
+
+  "step_blocks": [
+    {
+      "kicker": "Step 1",
+      "title": "View our Bible study catalog"
+    },
+    {
+      "kicker": "Step 2",
+      "title": "Sign up for free with only your name and email"
+    },
+    {
+      "kicker": "Step 3",
+      "title": "Find answers and peace as you begin to understand God’s plan for your life"
+    }
+  ],
+
+  "video_full": {
+    "id": "QPNxmEviUOg"
   }
 }
