@@ -6,12 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [3.0.7]
 ### Added:
-- Added a Call to Action styling for the primary navigation. [#420](https://github.com/adventistchurch/alps-wordpress/issue/420)
+- Added a Call to Action styling for the primary navigation. [#420](https://github.com/adventistchurch/alps/issues/420)
 
 
 ## [3.0.6]
 ### Fixed:
-- Fixes for the hero hovers. [#312](https://github.com/adventistchurch/alps-wordpress/issue/312)
+- Fixes for the hero hovers. [#312](https://github.com/adventistchurch/alps-wordpress/issues/312)
 
 
 ## [3.0.5]
