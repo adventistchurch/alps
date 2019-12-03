@@ -33,24 +33,11 @@
     },
     "datetime": false,
     "date": false,
+    "background_image": true,
     "picture": {
-      "img_break_m": "500",
       "img": {
         "alt": "Alt Text",
-        "src_s": "//picsum.photos/400/700/?random",
-        "src_m": "//picsum.photos/500/800/?random"
-      },
-      "has_break_l": {
-        "img_break_l": "700",
-        "img": {
-          "src_l": "//picsum.photos/600/900/?random"
-        }
-      },
-      "has_break_xl": {
-        "img_break_xl": "900",
-        "img": {
-          "src_xl": "//picsum.photos/1440/1200/?random"
-        }
+        "src_s": "../../images/background-alps-home.png"
       }
     }
   },

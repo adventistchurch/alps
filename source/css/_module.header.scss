@@ -1349,6 +1349,8 @@
 }
 
 button.c-priority-nav__dropdown-toggle {
+  text-indent: 9999px;
+
   &:focus::after {
     border: none;
     display: block;
