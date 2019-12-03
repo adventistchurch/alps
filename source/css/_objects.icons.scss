@@ -12,31 +12,36 @@ $icon-large: rem(50);
 $icon-big: rem(65);
 
 .u-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
+.u-icon--xs,
 .u-icon--xs svg {
   width: $icon-xsmall;
   height: $icon-xsmall;
 }
 
+.u-icon--s,
 .u-icon--s svg {
   width: $icon-small;
   height: $icon-small;
 }
 
+.u-icon--m,
 .u-icon--m svg {
   width: $icon-medium;
   height: $icon-medium;
 }
 
+.u-icon--l,
 .u-icon--l svg {
   width: $icon-large;
   height: $icon-large;
 }
 
+.u-icon--xl,
 .u-icon--xl svg {
   width: $icon-big;
   height: $icon-big;
