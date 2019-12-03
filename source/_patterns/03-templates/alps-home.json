@@ -3,7 +3,7 @@
     "title": "Home with no Sabbath Column - The Official Site of the Seventh-day Adventist world church",
     "body_class": "has-grid body"
   },
-
+  "html_class": "u-theme--bluejay",
   "has_short_body": true,
   "header_class": "c-header--overlay u-theme--gradient--top",
   "header_logo": "logo-sda-with-icon",
@@ -13,6 +13,100 @@
 
   "page_header": {
     "scroll": false
+  },
+
+
+  "primary_nav": {
+    "items": [
+      {
+        "text": "Bible",
+        "subnav": {
+          "items": [{
+              "text": "Life Hope Centers"
+            },
+            {
+              "text": "Global Mission"
+            },
+            {
+              "text": "Mission Spotlight"
+            },
+            {
+              "text": "Church Mission Offerings"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Beliefs",
+        "is_active": true
+      },
+      {
+        "text": "People",
+        "subnav": {
+          "items": [
+            {
+              "text": "General Conference"
+            },
+            {
+              "text": "East-Central Africa"
+            },
+            {
+              "text": "North America",
+              "subnav": {
+                "items": [
+                  {
+                    "text": "Atlantic Union"
+                  },
+                  {
+                    "text": "Canadian Union"
+                  },
+                  {
+                    "text": "Columbia Union"
+                  },
+                  {
+                    "text": "Lake Union"
+                  }
+                ]
+              }
+            },
+            {
+              "text": "Middle East and North Africa"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Church",
+        "subnav": {
+          "items": [{
+              "text": "News Item 1"
+            },
+            {
+              "text": "News Item 2"
+            },
+            {
+              "text": "News Item 3"
+            },
+            {
+              "text": "News Item 4"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "secondary_nav": {
+    "items": [
+      {
+        "icon": "icon-find",
+        "text": "Find a Church"
+      },
+      {
+        "icon": "icon-contact",
+        "text": "News"
+      }
+    ]
   },
 
   "media_block_default": {
