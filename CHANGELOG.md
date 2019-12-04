@@ -4,9 +4,14 @@ A record of the changes made to `ALPS V3`.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [3.0.7]
+### Added:
+- Added a Call to Action styling for the primary navigation. [#420](https://github.com/adventistchurch/alps/issues/420)
+
+
 ## [3.0.6]
 ### Fixed:
-- Fixes for the hero hovers. [#312](https://github.com/adventistchurch/alps-wordpress/issue/312)
+- Fixes for the hero hovers. [#312](https://github.com/adventistchurch/alps-wordpress/issues/312)
 
 
 ## [3.0.5]
@@ -26,7 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [3.0.2]
 ### Added:
-- Add new Call To Actionn (CTA) blocks with multiple option and shades. [#400](https://github.com/adventistchurch/alps/issues/400)
+- Add new Call To Action (CTA) blocks with multiple option and shades. [#400](https://github.com/adventistchurch/alps/issues/400)
 - Add a new extended and refined header, called `Page Header - Long` and `Page Header - Long with Subtitle`. [#397](https://github.com/adventistchurch/alps/issues/397)
 
 
