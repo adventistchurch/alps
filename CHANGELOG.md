@@ -4,6 +4,11 @@ A record of the changes made to `ALPS V3`.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [3.1.0]
+### Added:
+- Adding a new homepage design with some custom components. [#425](https://github.com/adventistchurch/alps/pr/425)
+
+
 ## [3.0.7]
 ### Added:
 - Added a Call to Action styling for the primary navigation. [#420](https://github.com/adventistchurch/alps/issues/420)

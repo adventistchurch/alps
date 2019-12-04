@@ -26,8 +26,8 @@
     {% if content_block_default.expand %}
       <a href="" class="o-button o-button--outline o-button--expand js-toggle-parent"></a>
     {% else %}
-      {% if content_block_default.cta %}
-        <a href="{{ content_block_default.url }}" class="c-block__button o-button o-button--outline">{{ content_block_default.cta }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+      {% if content_block_default.cta.url or content_block_default.cta.text %}
+        <a href="{{ content_block_default.cta.url }}" class="c-block__button o-button o-button--outline">{{ content_block_default.cta.text }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
       {% endif %}
     {% endif %}
   </div>

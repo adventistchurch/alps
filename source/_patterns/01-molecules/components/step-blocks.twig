@@ -1,0 +1,10 @@
+{% if step_blocks %}
+  <div class="c-step-blocks">
+    {% for item in step_blocks %}
+      <div class="c-step-blocks__item u-theme--background-color--base u-color--white u-padding">
+        <span class="o-kicker">{{ item.kicker }}</span>
+        <p><strong>{{ item.title }}</strong></p>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

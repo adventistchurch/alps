@@ -1,0 +1,43 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
+      {% include '@organisms/sections/page-header-feature.twig' with page_header %}
+      {% include '@organisms/sections/highlight-blocks.twig' %}
+      <section id="top" class="l-main__content l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides">
+        <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col">
+          <div class="c-article__body u-spacing--double">
+            {% include '@molecules/components/content-read-more.twig' %}
+            {% include '@molecules/components/split-highlight-content.twig' %}
+          </div>
+        </article>
+      </section>
+      {% include '@organisms/sections/testimonies-media.twig' %}
+      <section class="l-main__content l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides">
+        <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col">
+          <div class="c-article__body u-spacing--double">
+            <div class="c-home-body-content u-spacing u-theme--border-color--base text">
+              <h2>Life is tough. We know that you want to be at peace and have hope for the future. In order to do that, you need trustworthy answers. The problem is, it's difficult to find your way through the maze of competing philosophies that always fail to clarify the Truth, which makes you feel confused and even helpless.</h2>
+              <p>We believe evil should not prevail in keeping people from the Truth. We understand the challenges you face—we've faced them too. Which is why we have put a lot of effort into helping millions of people discover  freedom, healing, and hope - all based on the word of the living God - the Bible.</p>
+              <p>Here's how we do it:</p>
+              {% include '@molecules/components/step-blocks.twig' %}
+              <p>So check out the Bible Study Catalog. If you're in a hurry, download the free guide on how to study the Bible. And if you'd like to have us pray for you personally, send us a prayer request.</p>
+              <p>You can stop drifting through life without answers. You don't have to miss out on the journey that can bring you everlasting life. You can find freedom, healing and hope in Jesus.</p>
+              <p>He's waiting for you.</p>
+              <button href="" class="o-button o-button--primary">
+                <span class="u-icon u-icon--xs u-space--half--right">{% include '@atoms/icons/icon-arrow-short-right.twig' %}</span>
+                Start a bible study
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+      {% include '@organisms/sections/video-full.twig' %}
+    </main>
+    <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div>
+  <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div>
+<!-- ./l-wrap -->

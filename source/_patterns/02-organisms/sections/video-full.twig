@@ -1,0 +1,14 @@
+{% if video_full %}
+  <section id="{{ video_full.id }}" class="c-section c-section__video-full c-video-full js-video js-toggle">
+    <div class="c-video-full__video fitvid u-gradient--bottom">
+      <iframe src="https://www.youtube.com/embed/{{ video_full.id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="c-video-full__content">
+      <span class="u-icon u-icon--xl u-space--right u-path-fill--white">{% include '@atoms/icons/icon-play.twig' %}</span>
+      <div class="u-color--white">
+        <h3 class="u-font--primary--l"><strong class="js-video-title"></strong></h3>
+        <strong class="u-font--secondary--s js-video-duration"></strong>
+      </div>
+    </div>
+  </section>
+{% endif %}

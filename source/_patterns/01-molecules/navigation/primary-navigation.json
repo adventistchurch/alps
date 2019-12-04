@@ -80,8 +80,8 @@
         }
       },
       {
-        "text": "Sign up today",
-        "link_class": "is-priority"
+        "text": "Sign up now",
+        "link_class": "is-bold"
       }
     ]
   }

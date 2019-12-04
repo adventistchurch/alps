@@ -1,0 +1,20 @@
+{% if split_highlight_content %}
+  <div class="c-split-highlight-content">
+    {% if split_highlight_content.blockquote %}
+      <div class="c-split-highlight-content--left u-theme--background-color--base u-color--white u-padding">
+        <span class="u-font--primary--l">{{ split_highlight_content.blockquote }}</span>
+      </div>
+    {% endif %}
+    {% if split_highlight_content.body %}
+      <div class="c-split-highlight-content--right u-background-color--gray--light u-padding text">
+        {{ split_highlight_content.body | raw }}
+        {% if split_highlight_content.cta %}
+          <button href="{{ split_highlight_content.cta.url }}" class="o-button o-button--primary">
+            <span class="u-icon u-icon--xs u-space--half--right">{% include '@atoms/icons/icon-' ~ split_highlight_content.cta.icon_before ~ '.twig' %}</span>
+            {{ split_highlight_content.cta.text }}
+          </button>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

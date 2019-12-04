@@ -1,4 +1,5 @@
 {
   "header_logo": "logo-sda",
-  "header_logo_class": "u-theme--path-fill--base"
+  "header_logo_class": "u-theme--path-fill--base",
+  "header_overlay": false
 }

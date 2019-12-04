@@ -15,11 +15,7 @@
   justify-content: flex-start;
   align-items: center;
   padding-left: $pad-mobile;
-
-  @include media(">medium") {
-    border-left: rem(3) solid $c-black;
-  }
-
+  border-left: rem(3) solid $c-black;
 
   @include media(">large") {
     padding-left: $pad;
@@ -110,16 +106,9 @@
 
 .c-block__button.o-button {
   position: relative;
-  padding-right: $pad * 2;
-  display: table;
-
-  .u-icon {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: $space / 2;
-    margin: auto;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-block__image-wrap {

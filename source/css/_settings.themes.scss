@@ -94,6 +94,46 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
       height: 100%;
       z-index: 0;
       background-image: linear-gradient(to bottom, transparent, rgba($c-gray--light, 0.8) 50%);
+      pointer-events: none;
+    }
+
+    .u-theme--gradient--top::after {
+      content: "";
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to top, transparent, rgba($darker, 0.8) 100%);
+      pointer-events: none;
+    }
+
+    .u-theme--gradient--left::before {
+      content: "";
+      display: flex;
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to left, transparent, rgba($darker, 1) 100%);
+      pointer-events: none;
+    }
+
+    .u-theme--gradient--right::after {
+      content: "";
+      display: flex;
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(to right, transparent, rgba($darker, 1) 100%);
+      pointer-events: none;
     }
 
     // Text
@@ -272,6 +312,26 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
       }
     }
 
+    .o-button--outline--white {
+      background-color: transparent;
+      color: $c-white;
+      border-color: $c-white;
+
+      svg path {
+        fill: $c-white;
+      }
+
+      &:hover {
+        background-color: $lighter;
+        color: $darker;
+        border-color: $lighter;
+
+        svg path {
+          fill: $darker;
+        }
+      }
+    }
+
     .o-button--lighter {
       background-color: $lighter;
       color: $darker;
@@ -320,6 +380,37 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
       }
     }
 
+    .o-button--white {
+      background-color: $c-white;
+      color: $darker;
+      border-color: $c-white;
+
+      svg path {
+        fill: $darker;
+      }
+
+      &:hover {
+        background-color: $lighter;
+        border-color: $lighter;
+        color: $darker;
+
+        svg path {
+          fill: $darker;
+        }
+      }
+
+      &:active,
+      &.this-is-active {
+        background-color: $light;
+        border-color: $light;
+        color: $darker;
+
+        svg path {
+          fill: $darker;
+        }
+      }
+    }
+
     input[type=radio],
     input[type=checkbox] {
       color: $darker;
@@ -329,6 +420,20 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
     input[type=radio]:checked,
     input[type=checkbox]:checked {
       background-color: $darker;
+    }
+
+    // Dots
+    .o-dots {
+      li {
+        width: rem(5);
+        height: rem(5);
+        background-color: $base;
+        border: 0;
+
+        &.slick-active {
+          background-color: $c-white;
+        }
+      }
     }
 
     .c-header {

@@ -45,7 +45,6 @@
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
 
-
   // Check window width
   var getWidth = function() {
     var width;
@@ -293,6 +292,25 @@
     });
   }
 
+  // Slick carousel (testimonies)
+  if ($('.js-carousel__testimonies-media').length) {
+    $('.js-carousel__testimonies-media').slick({
+      speed: 300,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      cssEase: 'ease-out',
+      arrows: true,
+      prevArrow:'.o-arrow--prev',
+      nextArrow:'.o-arrow--next',
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      appendDots: '.o-dots',
+      infinite: false,
+      variableWidth: true
+    });
+  }
+
   // Show/ Hide main nav on scroll.
   var orgTop = 80;
   $(window).scroll(function() {
@@ -319,6 +337,46 @@
   if ($.fn.fitVids) {
     $('.c-article__body, .text, .fitvid').fitVids();
   }
+
+  // Output youtube duration in seconds
+  function getDurationInSecond(youtubeDuration) {
+    var re=/pt([0-9]+)M([0-9]+)S/gi,
+        rex = new RegExp(re),
+        du = rex.exec(youtubeDuration);
+    if (du.length<1)
+        return 0;
+    var s=0;
+    s+= du.length >1 && du[1]? parseInt(du[1], 10) * 60 :0; // adding minute
+    s+= du.length >2 && du[2]? parseInt(du[1], 10) :0; //
+    return s;
+  }
+
+  // Creates title and duration for Youtube videos
+  var apiKey = 'AIzaSyAiCBcaYLra0GCWcoY6rTWktJWwd0VKQ6A';
+  $('.js-video').each(function() {
+    var videoId = $(this).attr('id');
+    $.ajax({
+      url: "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key="+ apiKey + "&fields=items(snippet(title),contentDetails(duration),id)&part=snippet,contentDetails",
+      dataType: "jsonp",
+      success: function(data) {
+        var id = data.items[0].id;
+        var title = data.items[0].snippet.title;
+        var durationSeconds = getDurationInSecond(data.items[0].contentDetails.duration);
+        var duration = moment.duration(durationSeconds, "seconds").format('h:mm:ss');
+        $('#' + id + ' .js-video-title').append(title);
+        $('#' + id + ' .js-video-duration').append(duration);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        alert (textStatus, + ' | ' + errorThrown);
+      }
+    });
+
+    // Play video on click
+    $(this).click(function(e) {
+      $('#'+ videoId + ' iframe')[0].src += "?autoplay=1";
+      e.preventDefault();
+    });
+  });
 
   // Apply parallax effect to background images.
   function parallaxIt() {
