@@ -279,7 +279,7 @@
 
 
     &__list {
-      min-width: rem(300);
+      //min-width: rem(300);
       position: relative;
       display: inline-block;
     }
@@ -1334,7 +1334,7 @@
       background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Ctitle%3Eicon-plus%3C/title%3E%3Cpath d='M15,8.5H8.5V15h-2V8.5H0v-2H6.5V0h2V6.5H15Z' fill='%23717171'/%3E%3C/svg%3E") center center no-repeat;
       background-size: 13px 13px;
       content: "";
-      height: 45px;
+      height: 40px;
       width: 50px;
     }
   }
