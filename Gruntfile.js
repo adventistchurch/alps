@@ -12,7 +12,7 @@ module.exports = function(grunt) {
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
   var major_version = "3";
-  var version = "3.1.0";
+  var version = "3.1.1";
 
   grunt.initConfig({
     pkg: pkg,
@@ -112,13 +112,13 @@ module.exports = function(grunt) {
         files: [{
           expand: true, // Enable dynamic expansion
           cwd: 'source/images/', // cwd is 'current working directory' - Src matches are relative to this path
-          src: ['**/*.{png,jpg,gif}'], // Actual patterns to match
+          src: ['**/*.{png,jpg,gif,svg}'], // Actual patterns to match
           dest: 'public/v3/images/' // Destination path prefix
         }]
       }
     },
 
-    copyFiles: '**/*.{eot,svg,ttf,woff,pdf}',
+    copyFiles: '**/*.{eot,ttf,woff,pdf,png,jpg,gif,svg}',
 
     copy: {
       dev: {
@@ -325,7 +325,7 @@ module.exports = function(grunt) {
         tasks: ['javascript']
       },
       images: {
-        files: ['source/images/*.{png,jpg,gif}'],
+        files: ['source/images/*.{png,jpg,gif,svg}'],
         tasks: ['images']
       },
       copy: {
@@ -341,7 +341,7 @@ module.exports = function(grunt) {
           'public/v3/css/*.css',
           'public/v3/**/*.html',
           'public/v3/**/*.js',
-          'public/v3/**/*.{svg,png,jpg,gif}'
+          'public/v3/**/*.{png,jpg,gif,svg}'
         ]
       },
       options: {
