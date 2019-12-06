@@ -604,6 +604,7 @@
     @include media(">xxlarge") {
       left: 0;
       margin-left: calc((100vw / 7) * 1 - 0.01px);
+      width: calc((100vw / 7) * 5 - 0.01px);
     }
 
 
