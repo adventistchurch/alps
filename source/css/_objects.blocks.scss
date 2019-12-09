@@ -52,6 +52,26 @@
   }
 }
 
+.c-block__image-wrap {
+  position: relative;
+}
+
+.c-block__image-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  > * {
+    z-index: 1;
+  }
+}
+
 .c-block__icon {
   position: relative;
 

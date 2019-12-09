@@ -41,6 +41,12 @@
           {% elseif media_block_default.img %}
             <img src="{{ media_block_default.img.src }}" itemprop="image" alt="{{ media_block_default.img.alt }}"/>
           {% endif %}
+          {% if media_block_default.picture.video %}
+            <div class="c-media-block__image-video c-block__image-video u-spacing--half u-padding u-color--white u-gradient--bottom">
+              <strong>{{ media_block_default.picture.video.title }}</strong>
+              <button href="{{ media_block_default.picture.video.link }}" class="o-button o-button--outline o-button--outline--white"><span class="u-icon u-icon--xs u-space--half--right">{% include '@atoms/icons/icon-play.twig' %}</span>Watch Video</button>
+            </div>
+          {% endif %}
         </div>
       </div>
       <!-- c-media-block__image -->

@@ -286,7 +286,7 @@
  */
 .c-content-read-more {
   border-left: 1px solid;
-  max-height: 650px;
+  max-height: 400px;
   overflow: hidden;
   position: relative;
 
@@ -297,6 +297,9 @@
   }
 
   &.this-is-active {
+    max-height: 100%;
+    overflow: visible;
+
     &::after {
       opacity: 0;
       visibility: hidden;
@@ -343,6 +346,31 @@
       font::after {
         content: "Less";
       }
+    }
+  }
+
+  blockquote {
+    z-index: 0;
+
+    @include media(">medium") {
+      float: right;
+      width: calc((100vw / 7) * 2 - 0.01px);
+      margin-right: calc((100vw / 7) * -1 - 0.01px);
+      margin-bottom: $space-mobile;
+      left: $space-mobile;
+    }
+
+
+    @include media(">large") {
+      margin-bottom: $space;
+      left: $space;
+    }
+
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
     }
   }
 }
