@@ -4,6 +4,11 @@ A record of the changes made to `ALPS V3`.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [3.1.2]
+### Fixed:
+- Fix for content read more and media blocks with video button. [#428](https://github.com/adventistchurch/alps/pull/428)
+
+
 ## [3.1.1]
 ### Fixed:
 - Fixed to buttons being too wide. [#426](https://github.com/adventistchurch/alps/issues/426)
