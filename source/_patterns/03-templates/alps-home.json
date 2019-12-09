@@ -158,7 +158,7 @@
   },
 
   "content_read_more": {
-    "body": "<h2>Yes, these steps look easy. Easy enough to set aside for \"later.\" Easy enough to think that maybe they're not so important, or not so special. But that would be a mistake.</h2><p>The Bible tells the story of Naaman, the commander of the Syrian army. He contracted leprosy which was incurable and terminal. One of his slaves, an Israelite, suggested that he go to Samaria, where the prophet Elisha would be able to heal him.</p><p>Elisha told Naaman to go wash himself in the river Jordan, and to immerse himself seven times if he wanted to be healed. Naaman was insulted. That river was muddy and it was unacceptable for a high official to bath in it.</p>"
+    "body": "<h2>Yes, these steps look easy. Easy enough to set aside for \"later.\" Easy enough to think that maybe they're not so important, or not so special. But that would be a mistake.</h2><p>The Bible tells the story of Naaman, the commander of the Syrian army. He contracted leprosy which was incurable and terminal. One of his slaves, an Israelite, suggested that he go to Samaria, where the prophet Elisha would be able to heal him.</p><p>Elisha told Naaman to go wash himself in the river Jordan, and to immerse himself seven times if he wanted to be healed. Naaman was insulted. That river was muddy and it was unacceptable for a high official to bath in it.</p><blockquote class='pullquote u-theme--border-color--darker--left u-theme--color--darker u-padding--right'><p>Yes, the instructions to dunk himself in the Jordan were simple, but what did he have to lose?</p></blockquote><p>He was about to leave in a rage when one of his soldiers pointed out that if Elisha had asked him to do something great and difficult, he would have followed instructions without question. Yes, the instructions to dunk himself in the Jordan were simple, but what did he have to lose?</p><p>Naaman accepted the counsel, followed Elisha's instructions and was healed. (2 Kings 5:1-15)</p><p>Just like Naaman, you are free to choose your course of action. You can continue struggling with your troubles, drifting through life without meaning or purpose, and missing out on a journey that will bring you eternal life. Or, you can follow the simple steps on this page. The choice is yours.</p>"
   },
 
   "split_highlight_content": {
@@ -186,7 +186,11 @@
               "src_m": "//picsum.photos/800/450"
             },
             "has_break_l": false,
-            "has_break_xl": false
+            "has_break_xl": false,
+            "video": {
+              "title": "Casting a Vision",
+              "link": "/"
+            }
           },
           "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
           "cta": {
@@ -210,7 +214,11 @@
               "src_m": "//picsum.photos/800/450"
             },
             "has_break_l": false,
-            "has_break_xl": false
+            "has_break_xl": false,
+            "video": {
+              "title": "Casting a Vision",
+              "link": "/"
+            }
           },
           "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
           "cta": {
@@ -234,7 +242,11 @@
               "src_m": "//picsum.photos/800/450"
             },
             "has_break_l": false,
-            "has_break_xl": false
+            "has_break_xl": false,
+            "video": {
+              "title": "Casting a Vision",
+              "link": "/"
+            }
           },
           "description": "\"Aenean quis velit vel purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque.\"",
           "cta": {
