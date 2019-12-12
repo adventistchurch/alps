@@ -247,24 +247,21 @@
   position: relative;
   width: 100vw;
   height: calc(100vh - 100px);
-  max-height: rem(600);
+  min-height: 600px;
   overflow: hidden;
 
   @include media(">small") {
     height: calc(100vh - 150px);
-    max-height: rem(700);
   }
 
 
   @include media(">medium") {
     height: calc(100vh - 120px);
-    max-height: rem(900);
   }
 
 
   @include media(">large") {
     height: calc(100vh - 100px);
-    max-height: rem(1200);
   }
 
 
