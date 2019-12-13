@@ -9,17 +9,17 @@
               .o-background-image {
                 background-image: url({{ media_block_default.picture.img.src_s | raw }});
               }
-              @media(min-width: {{ media_block_default.picture.img_break_m }}) {
+              @media(min-width: {{ media_block_default.picture.img_break_m ~ 'px' }}) {
                 .o-background-image {
                   background-image: url({{ media_block_default.picture.img.src_m | raw }});
                 }
               }
-              @media(min-width: {{ media_block_default.picture.has_break_l.img_break_l }}) {
+              @media(min-width: {{ media_block_default.picture.has_break_l.img_break_l ~ 'px' }}) {
                 .o-background-image {
                   background-image: url({{ media_block_default.picture.has_break_l.img.src_l | raw }});
                 }
               }
-              @media(min-width: {{ media_block_default.picture.has_break_xl.img_break_xl }}) {
+              @media(min-width: {{ media_block_default.picture.has_break_xl.img_break_xl ~ 'px' }}) {
                 .o-background-image {
                   background-image: url({{ media_block_default.picture.has_break_xl.img.src_xl | raw }});
                 }

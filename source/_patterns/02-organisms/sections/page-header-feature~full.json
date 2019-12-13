@@ -15,6 +15,7 @@
     "category": false,
     "datetime": false,
     "date": false,
+    "background_image": true,
     "picture": {
       "img_break_m": "500",
       "img": {
