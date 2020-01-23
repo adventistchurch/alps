@@ -8,9 +8,10 @@
   "sabbath_icon_class": "js-show-on-scroll is-hidden",
   "has_short_body": true,
 
-  "page_header_blocks": [{
+  "page_header_blocks": [
+    {
       "media_block_default": {
-        "block_class": "c-block__column c-media-block__column",
+        "block_class": "c-block__column",
         "block_group_class": "u-flex--justify-center u-overlay--dark",
         "block_content_class": "u-color--white",
         "block_title_class": "u-font--primary--xl u-flex--justify-center",
@@ -45,7 +46,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__column c-media-block__column",
+        "block_class": "c-block__column",
         "block_group_class": "u-flex--justify-center u-overlay--dark",
         "block_content_class": "u-color--white",
         "block_title_class": "u-font--primary--xl u-flex--justify-center",
@@ -80,7 +81,7 @@
     },
     {
       "media_block_default": {
-        "block_class": "c-block__column c-media-block__column",
+        "block_class": "c-block__column",
         "block_group_class": "u-flex--justify-center u-overlay--dark",
         "block_content_class": "u-color--white",
         "block_title_class": "u-font--primary--xl u-flex--justify-center",

@@ -1,6 +1,6 @@
 {
   "media_block_default": {
-    "block_class": "c-block__inline c-media-block__inine c-block--reversed c-media-block--reversed l-grid--7-col",
+    "block_class": "c-block__inline c-block--reversed l-grid--7-col",
     "block_img_class": "l-grid-item u-padding--zero--sides",
     "block_content_class": "l-grid-item u-border-left--black--at-large u-theme--border-color--darker--left u-color--gray u-background-color--gray--light u-padding--top u-padding--bottom",
     "block_title_class": "u-theme--color--darker",

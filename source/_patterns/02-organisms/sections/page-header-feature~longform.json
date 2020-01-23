@@ -1,6 +1,6 @@
 {
   "media_block_default": {
-    "block_class": "c-block__inline c-media-block__inine l-grid--7-col l-grid-wrap u-theme--background-color--darker can-be--dark-dark u-padding--top u-padding--bottom",
+    "block_class": "c-block__inline l-grid--7-col l-grid-wrap u-theme--background-color--darker can-be--dark-dark u-padding--top u-padding--bottom",
     "block_img_class": false,
     "block_content_class": "u-shift--left--1-col--at-large l-grid-item l-grid-item--m--6-col l-grid-item--l--4-col l-grid-item--xl--3-col u-border--left u-theme--border-color--light--left u-theme--color--lighter",
     "block_title_class": "u-color--white u-font--primary--l",

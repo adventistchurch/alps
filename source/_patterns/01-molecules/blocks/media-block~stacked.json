@@ -1,6 +1,6 @@
 {
   "media_block_default": {
-    "block_class": "c-block__stacked c-media-block__stacked",
+    "block_class": "c-block__stacked",
     "picture": {
       "img_break_m": "500",
       "img": {

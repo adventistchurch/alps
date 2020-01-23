@@ -7,7 +7,7 @@
     "blocks": [
       {
         "media_block_default": {
-          "block_class": "c-media-block__stacked c-block__stacked u-space--right u-space--double--bottom",
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
           "block_img_wrap_class": false,
@@ -39,7 +39,7 @@
       },
       {
         "media_block_default": {
-          "block_class": "c-media-block__stacked c-block__stacked u-space--right u-space--double--bottom",
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
           "block_img_wrap_class": false,
@@ -71,7 +71,7 @@
       },
       {
         "media_block_default": {
-          "block_class": "c-media-block__stacked c-block__stacked u-space--right u-space--double--bottom",
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
           "block_img_wrap_class": false,
@@ -103,7 +103,7 @@
       },
       {
         "media_block_default": {
-          "block_class": "c-media-block__stacked c-block__stacked u-space--right u-space--double--bottom",
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
           "block_img_wrap_class": false,
