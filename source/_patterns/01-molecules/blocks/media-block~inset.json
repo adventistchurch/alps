@@ -1,7 +1,7 @@
 {
   "media_block_default": {
     "block_class": "c-block__inset c-media-block__inset",
-    "block_content_class": "l-grid--7-col u-shift--left--1-col--at-xxlarge u-border-left--white--at-large u-theme--background-color--darker l-grid-wrap--5-of-7",
+    "block_content_class": "l-grid--7-col u-shift--left--1-col--at-xxlarge u-border-left--white--at-large u-theme--background-color--darker",
     "block_title_class": "l-grid-item l-grid-item--m--4-col u-link-hover--white",
     "block_meta_class": "l-grid-item l-grid-item--m--2-col",
     "description": false,
