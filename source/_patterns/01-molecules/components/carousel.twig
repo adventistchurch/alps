@@ -1,8 +1,12 @@
 {% if carousel %}
-  <div class="c-carousel u-position--relative {{ carousel.carousel_outer_class }}">
+  <div class="c-carousel {% if carousel.slide_type %}c-carousel--{{ carousel.slide_type }} {% endif %}u-position--relative {{ carousel.carousel_outer_class }}">
     <div class="c-carousel__slides {{ carousel.carousel_class }}">
       {% for slide in carousel.slides %}
-        {% include '@molecules/components/slide.twig' with slide %}
+        {% if carousel.slide_type == 'inset' %}
+          {% include '@molecules/components/slide-with-text-inset.twig' with slide %}
+        {% else %}
+          {% include '@molecules/components/slide.twig' with slide %}
+        {% endif %}
       {% endfor %}
     </div>
     <!-- /.carousel__slides -->
