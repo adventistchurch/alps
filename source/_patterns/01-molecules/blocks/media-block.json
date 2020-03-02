@@ -1,6 +1,6 @@
 {
   "media_block_default": {
-    "block_class": "c-media-block__row c-block__row",
+    "block_class": "c-block__row",
     "block_group_class": false,
     "block_content_class": "u-color--gray",
     "block_title_class": "u-theme--color--darker",

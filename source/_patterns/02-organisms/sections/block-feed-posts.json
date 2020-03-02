@@ -3,7 +3,7 @@
     "blocks": [
       {
         "media_block_default": {
-          "block_class": "c-media-block__row c-block__row l-grid--7-col l-grid-wrap l-standard-break",
+          "block_class": "c-block__row l-grid--7-col l-grid-wrap l-standard-break",
           "block_group_class": "u-flex--justify-start",
           "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col",
           "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
@@ -46,7 +46,7 @@
       },
       {
         "media_block_default": {
-          "block_class": "c-media-block__row c-block__row l-grid--7-col l-grid-wrap l-standard-break",
+          "block_class": "c-block__row l-grid--7-col l-grid-wrap l-standard-break",
           "block_group_class": "u-flex--justify-start",
           "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col",
           "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",
@@ -89,7 +89,7 @@
       },
       {
         "media_block_default": {
-          "block_class": "c-media-block__row c-block__row l-grid--7-col l-grid-wrap l-standard-break",
+          "block_class": "c-block__row l-grid--7-col l-grid-wrap l-standard-break",
           "block_group_class": "u-flex--justify-start",
           "block_content_class": "l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col",
           "block_img_class": "l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--xl--1-col u-padding--zero--sides",

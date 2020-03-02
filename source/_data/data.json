@@ -70,7 +70,7 @@
   },
 
   "media_block_default": {
-    "block_class": "c-media-block__row c-block__row",
+    "block_class": "c-block__row",
     "picture": false,
     "img": {
       "src": "//picsum.photos/600/375",
@@ -79,7 +79,8 @@
   },
 
   "search_filter": {
-    "radio": [{
+    "radio": [
+      {
         "id": "1",
         "label": "Option 1"
       },
@@ -88,7 +89,8 @@
         "label": "Option 2"
       }
     ],
-    "checkbox": [{
+    "checkbox": [
+      {
         "id": "1",
         "label": "Option 1"
       },
