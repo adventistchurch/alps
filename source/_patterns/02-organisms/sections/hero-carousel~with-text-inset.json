@@ -1,0 +1,28 @@
+{
+  "carousel": {
+    "carousel_class": "js-carousel__single-item",
+    "no_arrows": true,
+    "slides2column": false,
+    "slide_type": "inset",
+    "slides": [
+      {
+        "slide_heading": "Proin dapibus",
+        "slide_dek": "Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue.",
+        "slide_cta": "Mec cursus mi",
+        "slide_url": "#"
+      },
+      {
+        "slide_heading": "Quisque",
+        "slide_dek": "Sed neque odio, iaculis iaculis rutrum quis, iaculis vitae est. Aenean arcu est, congue ut eleifend a, luctus ultrices odio. Etiam a dolor tortor. Nulla facilisi.",
+        "slide_cta": "Aenean tempor dolor",
+        "slide_url": "#"
+      },
+      {
+        "slide_heading": "Donec a gravida tellus",
+        "slide_dek": "Fusce rhoncus commodo lectus eu pretium. Donec interdum erat ut felis iaculis, id auctor elit mattis.",
+        "slide_cta": "Mauris vel ornare metus",
+        "slide_url": "#"
+      }
+    ]
+  }
+}

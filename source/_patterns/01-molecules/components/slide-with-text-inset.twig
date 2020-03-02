@@ -1,0 +1,18 @@
+<div class="c-carousel__item--inset u-position--relative {{ carousel_item_class }}">
+
+  {% include '@atoms/images/picture.twig' with picture %}
+
+  <div class="c-carousel__item-text__wrap u-theme--background-color-trans--dark">
+    <div class="l-container">
+      <div class="c-carousel__item-text {{ carousel_text_class }} u-spacing--half">
+        <div class="c-carousel__item-text--inner">
+          <h2 class="c-carousel__item-heading u-font--primary--xl">{{ slide_heading }}</h2>
+          <div class="c-carousel__item-dek u-padding--half--bottom u-theme--primary-transparent-background-color">
+            <p>{{ slide_dek }}</p>
+          </div>
+        </div>
+        <a href="{{ slide_url }}" class="c-carousel__item-cta o-button o-button-small u-theme--secondary-background-color">{{ slide_cta }}</a>
+      </div>
+    </div>
+  </div>
+</div>
