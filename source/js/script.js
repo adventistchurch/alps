@@ -325,7 +325,7 @@
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      appendDots: '.o-dots',
+      appendDots: $('.js-carousel__testimonies-media').parent().find('.o-dots'),
       infinite: false,
       variableWidth: true
     });
