@@ -3,6 +3,13 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.3.0]
+### Added:
+- Added an alternate Block Quote that is less bold. [#398](https://github.com/adventistchurch/alps/issues/398)
+
+### Fixed:
+- Fixed the menu arrows on dark themes. [#444](https://github.com/adventistchurch/alps/pull/444)
+
 ## [3.2.0]
 ### Added:
 - Added the hero carousel with inset text. This was pulled back from ALPS for Wordpress as the carousel feature was built there. [ALPS for Wordpress: #428](https://github.com/adventistchurch/alps-wordpress/pull/428)
