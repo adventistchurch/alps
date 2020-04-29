@@ -34,3 +34,11 @@ a {
     color: $c-white !important;
   }
 }
+
+.o-link-wrapper--underline a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
