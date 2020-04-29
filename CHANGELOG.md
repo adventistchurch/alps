@@ -3,6 +3,10 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.4.0]
+### Added:
+- Added a wrapper class for making deep links underlined: `o-link-wrapper--underline`. [#446](https://github.com/adventistchurch/alps/pull/446)
+
 ## [3.3.0]
 ### Added:
 - Added an alternate Block Quote that is less bold. [#398](https://github.com/adventistchurch/alps/issues/398)
