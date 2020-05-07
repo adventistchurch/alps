@@ -1,0 +1,206 @@
+{
+  "head": {
+    "title": "Video Page - The Official Site of the Seventh-day Adventist world church"
+  },
+
+  "blockquote": false,
+  "include_video": true,
+  "include_segments": true,
+  "meta_content": true,
+  "include_dropcap": false,
+
+
+  "media_block_default": {
+    "block_class": "c-block__inline l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker can-be--dark-dark u-padding--top u-padding--bottom",
+    "block_img_class": false,
+    "block_content_class": "u-shift--left--1-col--at-large l-grid-item l-grid-item--m--6-col l-grid-item--l--4-col l-grid-item--xl--3-col u-border--left u-theme--border-color--light--left u-theme--color--lighter",
+    "block_title_class": "u-color--white u-font--primary--l",
+    "block_meta_class": "",
+    "kicker": "Noteworthy Videos",
+    "title": "#DearCoronavirus, here is a message from the whole world to you",
+    "description": "Church leaders pray for the two titles during Euro-Asia Division year-end meetings.",
+    "category": "Culture",
+    "datetime": "2020-03-20",
+    "date": "March 20, 2020",
+    "picture": false,
+    "img": false
+  },
+
+  "content_block_default": {
+    "block_class": "u-spacing",
+    "title_class": "u-font--primary--m",
+    "title": false,
+    "description": "Duration: 28:30 mins",
+    "cta": false
+  },
+
+  "block_feed_pages": {
+    "grid": {
+      "grid_class": "l-grid--7-col l-grid-item--s--6-col l-grid-item--m--4-col ",
+      "grid_item_class": "l-grid-item l-grid-item--s--3-col l-grid-item--m--2-col"
+    },
+    "blocks": [
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
+          "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
+          "block_img_class": false,
+          "block_img_wrap_class": false,
+          "block_kicker_class": false,
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "General Conference",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/500/280",
+              "src_m": "//picsum.photos/700/400"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "datetime": false,
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": {
+            "url": "",
+            "text": "Watch now"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
+          "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
+          "block_img_class": false,
+          "block_img_wrap_class": false,
+          "block_kicker_class": false,
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "General Conference",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/500/280",
+              "src_m": "//picsum.photos/700/400"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "datetime": false,
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": {
+            "url": "",
+            "text": "Watch now"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
+          "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
+          "block_img_class": false,
+          "block_img_wrap_class": false,
+          "block_kicker_class": false,
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "General Conference",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/500/280",
+              "src_m": "//picsum.photos/700/400"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "datetime": false,
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": {
+            "url": "",
+            "text": "Watch now"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
+          "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
+          "block_img_class": false,
+          "block_img_wrap_class": false,
+          "block_kicker_class": false,
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "General Conference",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/500/280",
+              "src_m": "//picsum.photos/700/400"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "datetime": false,
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": {
+            "url": "",
+            "text": "Watch now"
+          }
+        }
+      },
+      {
+        "media_block_default": {
+          "block_class": "c-block__stacked u-space--right u-space--double--bottom",
+          "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
+          "block_img_class": false,
+          "block_img_wrap_class": false,
+          "block_kicker_class": false,
+          "block_title_class": "u-theme--color--darker u-font--primary--m",
+          "block_meta_class": "hide",
+          "kicker": false,
+          "title": "General Conference",
+          "picture": {
+            "img_break_m": "500",
+            "img": {
+              "alt": "Alt Text",
+              "src_s": "//picsum.photos/500/280",
+              "src_m": "//picsum.photos/700/400"
+            },
+            "has_break_l": false,
+            "has_break_xl": false
+          },
+          "datetime": false,
+          "date": false,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+          "url": "/",
+          "category": false,
+          "cta": {
+            "url": "",
+            "text": "Watch now"
+          }
+        }
+      }
+    ]
+  }
+
+}
