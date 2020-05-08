@@ -42,6 +42,7 @@
     "blocks": [
       {
         "media_block_default": {
+          "block_type": "video",
           "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
@@ -55,8 +56,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//picsum.photos/500/280",
-              "src_m": "//picsum.photos/700/400"
+              "src_s": "//picsum.photos/500/280?random=9",
+              "src_m": "//picsum.photos/700/400?random=10"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -74,6 +75,7 @@
       },
       {
         "media_block_default": {
+          "block_type": "video",
           "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
@@ -87,8 +89,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//picsum.photos/500/280",
-              "src_m": "//picsum.photos/700/400"
+              "src_s": "//picsum.photos/500/280?random=7",
+              "src_m": "//picsum.photos/700/400?random=8"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -106,6 +108,7 @@
       },
       {
         "media_block_default": {
+          "block_type": "video",
           "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
@@ -119,8 +122,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//picsum.photos/500/280",
-              "src_m": "//picsum.photos/700/400"
+              "src_s": "//picsum.photos/500/280?random=5",
+              "src_m": "//picsum.photos/700/400?random=6"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -138,6 +141,7 @@
       },
       {
         "media_block_default": {
+          "block_type": "video",
           "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
@@ -151,8 +155,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//picsum.photos/500/280",
-              "src_m": "//picsum.photos/700/400"
+              "src_s": "//picsum.photos/500/280?random=3",
+              "src_m": "//picsum.photos/700/400?random=4"
             },
             "has_break_l": false,
             "has_break_xl": false
@@ -170,6 +174,7 @@
       },
       {
         "media_block_default": {
+          "block_type": "video",
           "block_class": "c-block__stacked u-space--right u-space--double--bottom",
           "block_content_class": "u-border--left u-color--gray u-theme--border-color--darker--left",
           "block_img_class": false,
@@ -183,8 +188,8 @@
             "img_break_m": "500",
             "img": {
               "alt": "Alt Text",
-              "src_s": "//picsum.photos/500/280",
-              "src_m": "//picsum.photos/700/400"
+              "src_s": "//picsum.photos/500/280?random=1",
+              "src_m": "//picsum.photos/700/400?random=2"
             },
             "has_break_l": false,
             "has_break_xl": false

@@ -428,6 +428,7 @@
     },
     {
       "media_block_default": {
+        "block_type": "gallery",
         "block_class": "c-block__stacked l-grid-wrap l-grid--7-col l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col",
         "block_img_class": "l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col u-padding--zero--sides",
         "block_content_class": "l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col u-border--left",
@@ -452,6 +453,7 @@
     },
     {
       "media_block_default": {
+        "block_type": "video",
         "block_class": "c-block__stacked l-grid-wrap l-grid--7-col l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col",
         "block_img_class": "l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col u-padding--zero--sides",
         "block_content_class": "l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col u-border--left",
@@ -476,6 +478,7 @@
     },
     {
       "media_block_default": {
+        "block_type": "video",
         "block_class": "c-block__stacked l-grid-wrap l-grid--7-col l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col",
         "block_img_class": "l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col u-padding--zero--sides",
         "block_content_class": "l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col u-border--left",
