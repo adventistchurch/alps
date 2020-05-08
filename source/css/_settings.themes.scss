@@ -78,11 +78,29 @@ $themes: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-tre
       background-color: rgba($lighter, 0.8);
     }
 
-    .u-background-image--sabbath {
-      background-attachment: fixed;
-      background-size: auto 100vh;
-      background-position: center right;
-      background-repeat: no-repeat;
+    .l-sabbath.u-background-image--sabbath {
+      position: relative;
+      overflow: hidden;
+      background: transparent;
+      clip: rect(0, auto, auto, 0);
+      border-radius: 0.0001px;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        z-index: -1;
+        position: fixed;
+        transform: translateZ(0);
+        top: 0;
+        right: 0;
+        background-attachment: fixed;
+        background-size: auto 100vh;
+        background-position: top right;
+        background-repeat: no-repeat;
+      }
     }
 
     // Gradient
