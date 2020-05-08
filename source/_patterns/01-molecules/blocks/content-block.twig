@@ -3,15 +3,18 @@
     {% if content_block_default.img %}
       <img class="c-block__image" src="{{ content_block_default.img.src }}" />
     {% endif %}
-    <h3 class="u-theme--color--darker {{ content_block_default.title_class }}">
-      {% if content_block_default.url %}
-        <a href="{{ content_block_default.url }}" class="c-block__title-link {% if content_block_default.block_title_link_class %}{{ content_block_default.block_title_link_class }}{% else %}{{ 'u-theme--link-hover--dark' }}{% endif %}">
-      {% endif %}
-      <strong>{{ content_block_default.title | raw }}</strong>
-      {% if content_block_default.url %}
-        </a>
-      {% endif %}
-    </h3>
+    {% if content_block_default.title %}
+      <h3 class="u-theme--color--darker {{ content_block_default.title_class }}">
+        {% if content_block_default.url %}
+          <a href="{{ content_block_default.url }}" class="c-block__title-link {% if content_block_default.block_title_link_class %}{{ content_block_default.block_title_link_class }}{% else %}{{ 'u-theme--link-hover--dark' }}{% endif %}">
+        {% endif %}
+        <strong>{{ content_block_default.title | raw }}</strong>
+        {% if content_block_default.url %}
+          </a>
+        {% endif %}
+      </h3>
+    {% endif %}
+
     {% if content_block_default.description %}
       <p class="c-block__body text">{{ content_block_default.description | raw }}</p>
     {% endif %}

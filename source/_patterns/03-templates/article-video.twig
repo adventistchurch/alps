@@ -1,0 +1,31 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
+      {% include '@organisms/sections/page-header-feature.twig' %}
+      {% if include_video %}
+        <section class="l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap--6-of-7 u-spacing--double--until-large">
+          <div class="c-article l-grid-item l-grid-item--l--5-col l-grid-item--xl--4-col">
+            {% include '@molecules/media/video-figure-with-caption.twig' %}
+          </div>
+        </section>
+      {% endif %}
+
+      {% include '@organisms/content/article-content-short.twig' %}
+
+      {% if include_segments %}
+        <div class="c-block__heading u-theme--border-color--darker u-space--bottom">
+          <h3 class="c-block__heading-title u-theme--color--darker">Program Segments</h3>
+        </div>
+        {% include '@organisms/sections/block-feed-pages.twig' %}
+      {% endif %}
+
+
+    </main>
+    <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div>
+  <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div>
+<!-- ./l-wrap -->

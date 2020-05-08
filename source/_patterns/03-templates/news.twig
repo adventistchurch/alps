@@ -9,7 +9,7 @@
       <section class="l-grid l-grid--7-col l-grid-wrap--6-of-7 u-spacing--double--until-large">
         <div class="l-grid-item l-grid-item--l--4-col u-padding--zero--sides">
           {% for content in featured_content %}
-            <div class="c-block-wrap u-spacing--double u-padding--right">
+            <div class="c-block-wrap u-spacing u-padding--right">
               <div class="c-block__heading u-theme--border-color--darker">
                 <h3 class="c-block__heading-title u-theme--color--darker">{{ content.featured_heading }}</h3>
                 <a href="" class="c-block__heading-link u-theme--color--base u-theme--link-hover--dark">See All</a>
@@ -24,7 +24,7 @@
         </div>
         <div class="l-grid-item l-grid-item--l--2-col u-padding--zero--sides">
           {% for content in aside_content %}
-            <div class="c-block-wrap u-spacing--double u-padding--right">
+            <div class="c-block-wrap u-spacing u-padding--right">
               <div class="c-block__heading u-theme--border-color--darker">
                 <h3 class="c-block__heading-title u-theme--color--darker">{{ content.aside_heading }}</h3>
                 <a href="" class="c-block__heading-link u-theme--color--base u-theme--link-hover--dark">See All</a>
@@ -66,7 +66,7 @@
         <div class="c-article l-grid-item l-grid-item--l--4-col u-spacing--triple">
           {% include '@molecules/forms/subscribe-form.twig' %}
           {% for content in archive_content %}
-            <div class="c-block-wrap u-spacing--double">
+            <div class="c-block-wrap u-spacing">
               <div class="c-block__heading u-theme--border-color--darker">
                 <h3 class="c-block__heading-title u-theme--color--darker">{{ content.archive_heading }}</h3>
                 <a href="" class="c-block__heading-link u-theme--color--base u-theme--link-hover--dark">See All</a>

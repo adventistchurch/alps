@@ -1,4 +1,6 @@
 {
   "pullquote": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
-  "pullquote_author": "Alvin Brodus"
+  "pullquote_author": "Alvin Brodus",
+  "pullquote_style_strong": false
 }
+
