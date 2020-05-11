@@ -132,7 +132,7 @@
     "picture": {
       "img": {
         "alt": "Alt Text",
-        "src_s": "../../images/background-alps-home.png"
+        "src_s": "https://picsum.photos/1335/875?random=1"
       }
     }
   },
