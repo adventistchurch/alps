@@ -23,7 +23,7 @@
       "src": "//picsum.photos/800/500?random=1",
       "alt": "Image Alt"
     },
-    "caption": "Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    "caption": "Large Image: Led do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
   },
   "fig_med_right": {
     "figure_class": "size--medium alignright",
