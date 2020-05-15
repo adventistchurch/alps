@@ -157,6 +157,21 @@
       display: flex;
       align-items: flex-start;
     }
+
+    &--wide {
+     width: rem(500);
+
+      svg, img {
+
+        @include media(">medium") {
+          max-width: rem(400);
+        }
+
+        @include media(">large") {
+          max-width: rem(480);
+        }
+      }
+    }
   }
 
   &__nav-primary {

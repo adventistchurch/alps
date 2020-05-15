@@ -3,7 +3,7 @@
     <div class="c-header__nav-secondary">
       {% include '@molecules/navigation/secondary-navigation.twig' %}
     </div>
-    <div class="c-header__logo c-logo">
+    <div class="c-header__logo c-logo {{ header_logo_size }}">
       <a href="/" class="c-logo__link {{ header_logo_class }}">
         {% include '@atoms/images/' ~ header_logo ~ '.twig' %}
       </a>
