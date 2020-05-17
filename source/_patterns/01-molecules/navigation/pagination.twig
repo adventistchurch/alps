@@ -1,5 +1,5 @@
 {% if pager.totalpages > 1 %}
-  <nav class="pagination u-center-block u-text-align--center" role="navigation">
+  <nav class="pagination u-center-block u-text-align--center {{ pagination_classes }}" role="navigation">
     {# 'first' and 'prev' #}
     {% if pager.current > 1 %}
       <a href="{{ pager.link }}{{ pager.current - 1 }}" class="pagination__page pagination__prev u-padding--quarter u-theme--color--darker u-font-weight--bold">
