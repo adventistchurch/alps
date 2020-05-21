@@ -377,7 +377,6 @@
     }
   }
 
-  > blockquote p,
   > dl dd,
   > dl dt,
   > ol li,
@@ -446,29 +445,6 @@
   > h3:empty,
   > p:empty {
     display: none;
-  }
-
-  > blockquote {
-    clear: both;
-    font-size: rem(22);
-    font-family: $ff-font;
-    font-weight: bold;
-    padding-left: $pad-mobile;
-
-    @include media(">large") {
-      padding-left: $pad;
-    }
-
-
-    p {
-      line-height: 1.3;
-      font-size: rem(22);
-      font-family: $ff-font;
-
-      @include media(">large") {
-        font-size: rem(24);
-      }
-    }
   }
 
   > .o-pullquote--extended {
