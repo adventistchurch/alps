@@ -44,6 +44,7 @@ blockquote {
     z-index: 10;
     text-indent: $pad;
     margin-top: $space;
+    font-family: $ff-font;
 
     &:first-child {
       margin-top: 0;
