@@ -1,5 +1,5 @@
 {
-  "name": "ALPS",
+  "name": "alps",
   "version": "0.0.1",
   "description": "Adventist Living Pattern System",
   "devDependencies": {
@@ -33,6 +33,6 @@
   },
   "author": "SuperFriendly & Southleft",
   "license": "SEE LICENSE IN LICENSE.txt",
-  "homepage": "http://adventist.org",
+  "homepage": "https://www.adventist.org",
   "compileTemplates": false
 }
