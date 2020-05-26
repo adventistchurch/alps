@@ -1,21 +1,22 @@
 {
   "comments": {
+    "comment_classes": "l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col",
     "comment": [{
         "comment_avatar": "//placeimg.com/32/32/people",
         "comment_date": "9 days ago",
         "comment_byline": "Bob Smith",
-        "comment_text": "Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim. ",
+        "comment_text": "Comment 1: Vivamus sollicitudin ipsum vel rutrum facilisis. Vestibulum eu cursus massa. Donec faucibus velit eu enim dapibus, sed scelerisque nibh finibus. Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim. ",
         "comment_children": [{
             "comment_avatar": "//placeimg.com/32/32/people",
             "comment_date": "8 days ago",
             "comment_byline": "George Waltin",
-            "comment_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae lorem ullamcorper, posuere risus eu, consequat justo. Praesent at mi arcu. Praesent et vestibulum sem."
+            "comment_text": "Sub Comment 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae lorem ullamcorper, posuere risus eu, consequat justo. Praesent at mi arcu. Praesent et vestibulum sem."
           },
           {
             "comment_avatar": "//placeimg.com/32/32/people",
             "comment_date": "7 days ago",
             "comment_byline": "Bob Smith",
-            "comment_text": "Nam posuere ac leo et accumsan. Vestibulum condimentum tincidunt orci non dapibus. Aenean dapibus sem vel massa bibendum placerat. Duis nec est sed justo pulvinar faucibus."
+            "comment_text": "Sub Comment 2: Nam posuere ac leo et accumsan. Vestibulum condimentum tincidunt orci non dapibus. Aenean dapibus sem vel massa bibendum placerat. Duis nec est sed justo pulvinar faucibus."
           }
         ]
       },
@@ -23,7 +24,7 @@
         "comment_avatar": "//placeimg.com/32/32/people",
         "comment_date": "5 days ago",
         "comment_byline": "John Doe",
-        "comment_text": "Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
+        "comment_text": "Comment 2: Praesent imperdiet, leo ut ullamcorper facilisis, felis neque vestibulum mi, in vehicula turpis libero vestibulum eros. Nunc ac lectus id dui eleifend dignissim."
       }
     ]
   }
