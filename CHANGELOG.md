@@ -3,6 +3,12 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.5.4]
+### Added:
+- Added depth classes for comments. (For Wordpress). [#458](https://github.com/adventistchurch/alps/pull/458)
+
+### Fixed:
+- Fixed the spacing before the blockquotes.
 
 ## [3.5.3]
 ### Added:

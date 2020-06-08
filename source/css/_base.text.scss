@@ -57,7 +57,7 @@ blockquote {
     &:before {
       content: "\201C";
       position: absolute;
-      left: -$pad;
+      left: -$pad/1.5;
       top: 0;
     }
   }
