@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [3.5.5]
 ## Fixed:
 - Fixed bug on `.u-shift--left--1-col--standard` when `.hide-sabbath` applies.
+- Fixed the Support for "start" attribute in `<ol>`. [#460](https://github.com/adventistchurch/alps/issues/460)
 
 ## [3.5.4]
 ### Added:
