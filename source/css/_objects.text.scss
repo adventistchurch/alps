@@ -542,20 +542,18 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list):not(.c-share-tools__list) {
 
 ol {
   .text & {
-    counter-reset: item;
+    list-style: decimal;
 
     li {
+      list-style: decimal;
+      text-indent: 0.625rem;
+
       &::before {
-        content: counter(item) ". ";
-        counter-increment: item;
+        margin-right: 1rem;
       }
 
       li {
-        counter-reset: item;
-
-        &::before {
-          content: "\002022";
-        }
+        list-style: decimal;
       }
     }
   }
