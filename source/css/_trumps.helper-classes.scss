@@ -270,6 +270,16 @@
   @include media(">xxlarge") {
     margin-left: calc((100vw / 7) * -1);
   }
+
+  .hide-sabbath &,
+  .hide-sabbath--all &,
+  .hide-sabbath--until-small &,
+  .hide-sabbath--until-medium &,
+  .hide-sabbath--until-large & {
+      margin-left: 0;
+  }
+
+
 }
 
 .u-shift--left--1-col--at-large {
