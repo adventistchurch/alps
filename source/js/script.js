@@ -135,18 +135,20 @@
   }
 
   // Grab first character for dropcaps
-  $('.has-dropcap p:eq(0)').each(function() {
-    var text = $(this).text();
-    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
-
-    // Remove first text character from paragraph
-    var textNode = getFirstTextNode(this);
-    if (textNode) {
-      textNode.textContent = textNode.textContent.substring(1);
+  $( 'p.has-drop-cap, .has-dropcap p:eq(0)' ).each( function() {
+    var dropCap = $( this ).html();
+    var dropCapSplit = dropCap.slice( 0,1 );
+    if ( dropCapSplit == '“' || dropCapSplit == '"') {
+      // SKIP OPENING QUOTE / GET FIRST NON-PUNCTUATION LETTER & OFFSET
+      var dropCapWrap = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', dropCap.charAt(1));
+      $(this).html( dropCap.substring(2) ).prepend( dropCapWrap );
+    } else {
+      // GET FIRST LETTER & OFFSET
+      var dropCapWrap = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', dropCap.charAt(0));
+      $(this).html( dropCap.substring(1) ).prepend( dropCapWrap );
     }
-
-    $(this).prepend(first);
   });
+
 
   /**
    * Fixto
