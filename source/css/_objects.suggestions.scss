@@ -1,0 +1,32 @@
+.o-suggestions {
+  &__link {
+    strong,
+    .highlight {
+      font-weight: bold;
+    }
+
+
+    .c-drawer & {
+      color: $c-white;
+    }
+
+
+    @each $theme, $shades in $themes {
+      $base: map-get($shades, base);
+      $light: map-get($shades, light);
+
+      @at-root .#{$theme} & {
+        &:hover {
+          color:  $base;
+        }
+      }
+
+      @at-root .#{$theme} .c-drawer & {
+        &:hover {
+          color:  $light;
+        }
+      }
+    }
+  }
+
+}
