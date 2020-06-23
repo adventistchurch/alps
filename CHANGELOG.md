@@ -3,6 +3,33 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.5.7]
+## Fixed:
+- Fixed bug with the cursor getting changed for the `.c-accordion__item` intead of `.c-accordion__heading`.
+
+## [3.5.6]
+## Fixed:
+- Fixed bug on `.u-shift--left--1-col--standard` when partial `.hide-sabbath`  applies.
+
+## [3.5.5]
+## Fixed:
+- Fixed bug on `.u-shift--left--1-col--standard` when `.hide-sabbath` applies.
+- Fixed the Support for "start" attribute in `<ol>`. [#460](https://github.com/adventistchurch/alps/issues/460)
+
+## [3.5.4]
+### Added:
+- Added depth classes for comments. (For Wordpress). [#458](https://github.com/adventistchurch/alps/pull/458)
+
+### Fixed:
+- Fixed the spacing before the blockquotes.
+
+## [3.5.3]
+### Added:
+- Added `.u-link--no-underline` and `.o-link-wrapper--no-underline a` classes.
+
+## [3.5.2]
+### Fixed:
+- Updating the blockquote styles to remove certain nested styles.
 
 ## [3.5.1]
 ### Fixed:

@@ -173,6 +173,19 @@
 
   &__children__list-item {
     margin-left: rem(50);
+
+    &__depth-2 {
+      margin-left: rem(50);
+    }
+    &__depth-3 {
+      margin-left: rem(100);
+    }
+    &__depth-4 {
+      margin-left: rem(150);
+    }
+    &__depth-5 {
+      margin-left: rem(200);
+    }
   }
 }
 
@@ -181,7 +194,7 @@
  */
 
 .c-accordion {
-  &__item {
+  &__heading {
     cursor: pointer;
 
     &.this-is-active {
