@@ -1,0 +1,24 @@
+{
+  "search": {
+    "url": "/search",
+    "method": "get",
+    "placeholder": "Search …",
+    "form_title": "Search",
+    "name": "search",
+    "value": "Test",
+    "suggestions": [
+      {
+        "text": "<strong>Test</strong>",
+        "url": "#test"
+      },
+      {
+        "text": "My <strong>test</strong>imony",
+        "url": "#test"
+      },
+      {
+        "text": "<span class=\"highlight\">Test</span>ament",
+        "url": "#test"
+      }
+    ]
+  }
+}
