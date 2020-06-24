@@ -194,8 +194,10 @@
  */
 
 .c-accordion {
-  &__heading {
+  &__heading{
     cursor: pointer;
+  }
+  &__item {
 
     &.this-is-active {
       .c-accordion__content {
