@@ -3,6 +3,14 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.6.1]
+## Fixed:
+- Fixe to accordion content not showing.
+
+## [3.6.0]
+## Added:
+- Added molecules, components and style sheets for search suggestions.
+
 ## [3.5.7]
 ## Fixed:
 - Fixed bug with the cursor getting changed for the `.c-accordion__item` intead of `.c-accordion__heading`.

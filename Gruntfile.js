@@ -13,9 +13,8 @@ module.exports = function (grunt) {
    * files. This will also create a version directory in the /cdn folder in the structure
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
-  const major_version = "3";
-  const version = "3.5.7";
-
+  var major_version = "3";
+  var version = "3.6.1";
 
   grunt.initConfig({
     pkg: pkg,
