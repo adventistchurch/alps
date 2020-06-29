@@ -349,7 +349,9 @@ module.exports = function (grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "localhost:8080",
+        server: {
+          baseDir: './public'
+        },
         startPath: "/v3"
       }
     },
