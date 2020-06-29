@@ -4,7 +4,6 @@
   "description": "Adventist Living Pattern System",
   "devDependencies": {
     "bs-html-injector": "^3.0.0",
-    "concurrently": "^5.2.0",
     "csswring": "^7.0.0",
     "grunt": "^1.1.0",
     "grunt-add-comment": "^1.1.6",
@@ -21,18 +20,12 @@
     "grunt-mkdir": "^1.0.0",
     "grunt-sass": "^3.1.0",
     "grunt-shell": "^3.0.1",
-    "http-server": "^0.12.3",
     "matchdep": "^2.0.0",
     "node-sass": "^4.14.1",
-    "npm-check": "^5.9.2",
     "patternlab-md2json": "^0.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "http-server ./public",
-    "grunt": "grunt",
-    "dev": "concurrently --kill-others \"npm:grunt\" \"npm:server\"",
-    "upgrade-interactive": "npm-check --update"
+    "dev": "grunt"
   },
   "repository": {
     "type": "git",
