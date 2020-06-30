@@ -1,7 +1,9 @@
-module.exports = function(grunt) {
+const sass = require('node-sass');
+
+module.exports = function (grunt) {
   require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
-  var pkg = grunt.file.readJSON('package.json');
+  const pkg = grunt.file.readJSON('package.json');
 
   /**
    * Major Version and Version Number
@@ -12,7 +14,7 @@ module.exports = function(grunt) {
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
   var major_version = "3";
-  var version = "3.6.0";
+  var version = "3.6.1";
 
   grunt.initConfig({
     pkg: pkg,
@@ -24,7 +26,7 @@ module.exports = function(grunt) {
           failOnError: false,
           execOptions: {
             maxBuffer: 1024 * 1024 * 64
-              // maxBuffer: Infinity
+            // maxBuffer: Infinity
           },
         },
         command: "php core/console --generate",
@@ -45,6 +47,7 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
+        implementation: sass,
         imagePath: 'source/images',
         precision: 5
       },
@@ -150,7 +153,7 @@ module.exports = function(grunt) {
             cwd: 'public/v3/patterns/',
             src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*', '03-templates*/*'],
             dest: '../igs-guidelines/_includes/patterns/',
-            rename: function(dest, src) {
+            rename: function (dest, src) {
               return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
             }
           },
@@ -162,7 +165,7 @@ module.exports = function(grunt) {
             cwd: 'public/v3/patterns/',
             src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*', '03-templates*/*'],
             dest: '../igs-guidelines/patterns/',
-            rename: function(dest, src) {
+            rename: function (dest, src) {
               return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
             }
           },
@@ -202,12 +205,12 @@ module.exports = function(grunt) {
           cwd: 'source/_patterns/',
           src: ['**/*.twig'],
           dest: 'source/drupal-patterns/',
-          rename: function(dest, src) {
+          rename: function (dest, src) {
             return dest + src.replace('.twig', '.html.twig');
           }
         }],
         options: {
-          process: function(content, srcpath) {
+          process: function (content, srcpath) {
             return content.replace(/.twig/g, '.html.twig');
           }
         }
@@ -218,17 +221,17 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         files: [{
-            expand: true,
-            cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
-            dest: '../igs-guidelines/_includes/patterns/'
-          },
-          {
-            expand: true,
-            cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
-            dest: '../igs-guidelines/patterns/'
-          }
+          expand: true,
+          cwd: 'public/v3/patterns/',
+          src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
+          dest: '../igs-guidelines/_includes/patterns/'
+        },
+        {
+          expand: true,
+          cwd: 'public/v3/patterns/',
+          src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
+          dest: '../igs-guidelines/patterns/'
+        }
         ]
       },
       options: {
@@ -346,7 +349,9 @@ module.exports = function(grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "alps3.test",
+        server: {
+          baseDir: './public'
+        },
         startPath: "/v3"
       }
     },
