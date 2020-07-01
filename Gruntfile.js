@@ -14,7 +14,7 @@ module.exports = function (grunt) {
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
   var major_version = "3";
-  var version = "3.6.1";
+  var version = "3.6.2";
 
   grunt.initConfig({
     pkg: pkg,
@@ -427,7 +427,8 @@ module.exports = function (grunt) {
     'images',
     'symlink',
     'copy:prod',
-    'add_comment:prod'
+    'add_comment:prod',
+    'versions'
   ]);
 
   grunt.registerTask('cdn', [
@@ -446,8 +447,35 @@ module.exports = function (grunt) {
     'copy',
     'add_comment:dev'
   ]);
+  grunt.registerTask('versions', 'Create a versions.json file', () => {
+    const versionsFile = 'cdn/versions.json';
+    const changeLogFile = 'CHANGELOG.md';
+    const changeLogData = grunt.file.read(changeLogFile);
 
+    const exprVersions = /^## \[(?<version>[\d.]+)\].*\n(?<description>[^#]*)/gum;
+    const matches = changeLogData.matchAll(exprVersions);
 
+    const versionsData = [];
+
+    for (const m of matches) {
+      const v = m.groups.version;
+      const desc = m.groups.description ? m.groups.description.trim() : '';
+
+      versionsData.push({
+        version: v,
+        description: desc,
+        styles: {
+          main: `https://cdn.adventist.org/alps/3/${v}/css/main.css`,
+        },
+        scripts: {
+          main: `https://cdn.adventist.org/alps/3/${v}/js/script.min.js`,
+          head: `https://cdn.adventist.org/alps/3/${v}/js/head-script.min.js`,
+        },
+      });
+    }
+
+    grunt.file.write(versionsFile, JSON.stringify(versionsData, null, 2));
+  });
 
   /**
    * Default Tasks
