@@ -448,7 +448,7 @@ module.exports = function (grunt) {
     'add_comment:dev'
   ]);
   grunt.registerTask('versions', 'Create a versions.json file', () => {
-    const versionsFile = 'cdn/versions.json';
+    const versionsFile = 'cdn/3/versions.json';
     const changeLogFile = 'CHANGELOG.md';
     const changeLogData = grunt.file.read(changeLogFile);
 
