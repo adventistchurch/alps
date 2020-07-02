@@ -12,6 +12,6 @@
   @return $collection;
 }
 
-$themes: map-collect((), $u-theme-treefrog, $u-theme-ming);
+$themes: map-collect((), $u-theme-treefrog, $u-theme-ming, $u-theme-bluejay, $u-theme-iris, $u-theme-lily, $u-theme-scarlett, $u-theme-campfire, $u-theme-winter, $u-theme-forest, $u-theme-cave, $u-theme-denim, $u-theme-emperor, $u-theme-grapevine, $u-theme-velvet, $u-theme-earth, $u-theme-night);
 
 @import "common";
