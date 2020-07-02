@@ -13,8 +13,37 @@ module.exports = function (grunt) {
    * files. This will also create a version directory in the /cdn folder in the structure
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
-  var major_version = "3";
-  var version = "3.6.2";
+  const major_version = "3";
+  const version = "3.6.2";
+
+  /**
+   * Split SCSS files by theme
+   *
+   */
+  const themes = [
+    'treefrog',
+    'ming',
+    'bluejay',
+    'iris',
+    'lily',
+    'scarlett',
+    'campfire',
+    'winter',
+    'forest',
+    'cave',
+    'denim',
+    'emperor',
+    'grapevine',
+    'velvet',
+    'earth',
+    'night',
+  ];
+  const sassFiles = {
+    'cdn/<%= major_version %>/<%= version %>/css/main.css': 'source/css/main.scss',
+  };
+  for (const themeName of themes) {
+    sassFiles[`cdn/<%= major_version %>/<%= version %>/css/main-${themeName}.css`] = `source/css/main-${themeName}.scss`
+  }
 
   grunt.initConfig({
     pkg: pkg,
@@ -66,9 +95,7 @@ module.exports = function (grunt) {
           outputStyle: 'compressed',
           sourceMap: false,
         },
-        files: {
-          'cdn/<%= major_version %>/<%= version %>/css/main.css': 'source/css/main.scss',
-        }
+        files: sassFiles,
       }
     },
 
@@ -447,6 +474,7 @@ module.exports = function (grunt) {
     'copy',
     'add_comment:dev'
   ]);
+
   grunt.registerTask('versions', 'Create a versions.json file', () => {
     const versionsFile = 'cdn/3/versions.json';
     const changeLogFile = 'CHANGELOG.md';
