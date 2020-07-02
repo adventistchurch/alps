@@ -1,4 +1,5 @@
 const sass = require('node-sass');
+const semver = require('semver');
 
 module.exports = function (grunt) {
   require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
@@ -490,8 +491,10 @@ module.exports = function (grunt) {
       const desc = m.groups.description ? m.groups.description.trim() : '';
 
       const themesStyle = {};
-      for (const theme of themes) {
-        themesStyle[theme] = `https://cdn.adventist.org/alps/3/${v}/css/main-${theme}.css`;
+      if (semver.gt(v, '3.6.2')) {
+        for (const theme of themes) {
+          themesStyle[theme] = `https://cdn.adventist.org/alps/3/${v}/css/main-${theme}.css`;
+        }
       }
 
       versionsData.push({
