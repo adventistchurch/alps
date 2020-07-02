@@ -489,11 +489,17 @@ module.exports = function (grunt) {
       const v = m.groups.version;
       const desc = m.groups.description ? m.groups.description.trim() : '';
 
+      const themesStyle = {};
+      for (const theme of themes) {
+        themesStyle[theme] = `https://cdn.adventist.org/alps/3/${v}/css/main-${theme}.css`;
+      }
+
       versionsData.push({
         version: v,
         description: desc,
         styles: {
           main: `https://cdn.adventist.org/alps/3/${v}/css/main.css`,
+          themes: themesStyle,
         },
         scripts: {
           main: `https://cdn.adventist.org/alps/3/${v}/js/script.min.js`,
