@@ -22,7 +22,8 @@
     "grunt-shell": "^3.0.1",
     "matchdep": "^2.0.0",
     "node-sass": "^4.14.1",
-    "patternlab-md2json": "^0.1.1"
+    "patternlab-md2json": "^0.1.1",
+    "semver": "^7.3.2"
   },
   "scripts": {
     "dev": "grunt"
