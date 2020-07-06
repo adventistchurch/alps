@@ -445,16 +445,6 @@
     parallaxIt()
   }
 
-  /**
-   * Modaal functionality
-   * Reference:
-   */
-  if ($.fn.modaal) {
-    $('.js-modal-image').modaal({
-      type: 'image'
-    });
-  }
-
   // Theme switcher for colors
   $('.c-swatches--colors .c-swatches__item').click(function() {
     var thisColor = $(this).data('color');
