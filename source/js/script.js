@@ -371,26 +371,7 @@
     return s;
   }
 
-  // Creates title and duration for Youtube videos
-  var apiKey = 'AIzaSyAiCBcaYLra0GCWcoY6rTWktJWwd0VKQ6A';
   $('.js-video').each(function() {
-    var videoId = $(this).attr('id');
-    $.ajax({
-      url: "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key="+ apiKey + "&fields=items(snippet(title),contentDetails(duration),id)&part=snippet,contentDetails",
-      dataType: "jsonp",
-      success: function(data) {
-        var id = data.items[0].id;
-        var title = data.items[0].snippet.title;
-        var durationSeconds = getDurationInSecond(data.items[0].contentDetails.duration);
-        var duration = moment.duration(durationSeconds, "seconds").format('h:mm:ss');
-        $('#' + id + ' .js-video-title').append(title);
-        $('#' + id + ' .js-video-duration').append(duration);
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        alert (textStatus, + ' | ' + errorThrown);
-      }
-    });
-
     // Play video on click
     $(this).click(function(e) {
       $('#'+ videoId + ' iframe')[0].src += "?autoplay=1";
