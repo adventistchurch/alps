@@ -372,6 +372,8 @@
   }
 
   $('.js-video').each(function() {
+    var videoId = $(this).attr('id');
+
     // Play video on click
     $(this).click(function(e) {
       $('#'+ videoId + ' iframe')[0].src += "?autoplay=1";
