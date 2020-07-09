@@ -134,21 +134,29 @@
     return el.childNodes[0];
   }
 
-  // Grab first character for dropcaps
-  $( 'p.has-drop-cap, .has-dropcap p:eq(0)' ).each( function() {
-    var dropCap = $( this ).html();
-    var dropCapSplit = dropCap.slice( 0,1 );
-    if ( dropCapSplit == '“' || dropCapSplit == '"') {
-      // SKIP OPENING QUOTE / GET FIRST NON-PUNCTUATION LETTER & OFFSET
-      var dropCapWrap = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', dropCap.charAt(1));
-      $(this).html( dropCap.substring(2) ).prepend( dropCapWrap );
+  // DROP CAP FUNCTIONALITY
+  $( 'p.has-drop-cap, .has-drop-cap p:eq(0)' ).each( function() {
+    var dropCapHTML = $( this ).html();
+    var dropCapText = $( this ).html().substring( 0, 50 );
+    var firstChar = dropCapText.slice( 0, 1 );
+    if ( firstChar === '"' ) {
+      // QUOTE STRING
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + dropCapHTML.charAt(1) + '</span>');
+      $(this).html( dropCapHTML.substring(2) ).prepend( dropCapWrap );
+    } else if ( firstChar === '<') {
+      // HTML TAG // GRAB INNER TEXT & SPLIT THAT
+      // WILL ONLY DO THIS IF firstChar IS A TAG & PRESERVES IT
+      var tagTextFirst = $(this).context.firstElementChild.innerText.charAt(0);
+      var tagTextReplace = $(this).context.firstElementChild.innerText.substring(1);
+      $(this).context.firstElementChild.innerText = tagTextReplace;
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + tagTextFirst + '</span>');
+      $(this).prepend( dropCapWrap ); // WE ONLY ADD THIS TO THE FRONT
     } else {
-      // GET FIRST LETTER & OFFSET
-      var dropCapWrap = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', dropCap.charAt(0));
-      $(this).html( dropCap.substring(1) ).prepend( dropCapWrap );
+      // NOT A QUOTE AND NOT A TAG
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + firstChar + '</span>');
+      $(this).html( dropCapHTML.substring(1) ).prepend( dropCapWrap );
     }
   });
-
 
   /**
    * Fixto
@@ -483,3 +491,24 @@
   });
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+// Overwrites native 'firstElementChild' prototype.
+// Adds Document & DocumentFragment support for IE9 & Safari.
+;(function(constructor) {
+    if (constructor &&
+        constructor.prototype &&
+        constructor.prototype.firstElementChild == null) {
+        Object.defineProperty(constructor.prototype, 'firstElementChild', {
+            get: function() {
+                var node, nodes = this.childNodes, i = 0;
+                while (node = nodes[i++]) {
+                    if (node.nodeType === 1) {
+                        return node;
+                    }
+                }
+                return null;
+            }
+        });
+    }
+})(window.Node || window.Element);

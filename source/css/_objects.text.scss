@@ -588,7 +588,7 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   margin-right: $pad-mobile;
   overflow: hidden;
   position: relative;
-  content: "";
+  //content: "";
   font-style: normal;
 
   @include media(">medium") {
@@ -610,7 +610,6 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   }
 
   &::before {
-    content: attr(data-letter);
     position: absolute;
     text-align: center;
     font-family: $ff-font;
@@ -629,6 +628,30 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
     @include media(">large") {
       font-size: 8vw;
     }
+  }
+}
+
+.o-drop-cap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  float: left;
+  width: calc((100vw / 7 * 2) - 30px);
+  font-size: 16vw;
+  text-transform: uppercase;
+  color: $c-white;
+
+  @include media(">medium") {
+    width: calc((100vw / 7 * 1) - 30px);
+    font-size: 12vw;
+  }
+
+  @include media(">large") {
+    width: calc((100vw / 7 * 1) - 40px);
+    margin-right: $pad;
+    margin-bottom: $pad / 2;
+    font-size: 8vw;
   }
 }
 
