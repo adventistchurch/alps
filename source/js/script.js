@@ -215,21 +215,22 @@
   });
 
   // Hover effects on drawer submenu not on mobile
-  if (getWidth() > 700) {
-    $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
-      $('.c-drawer__container').addClass('subnav-is-active');
-      $(this).addClass('this-is-active');
-      $(this).parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
-    });
+  $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
+    if (getWidth() < 700) return;
+    $('.c-drawer__container').addClass('subnav-is-active');
+    $(this).addClass('this-is-active');
+    $(this).parent().addClass('this-is-active');
+    $(this).parent().parent().parent().addClass('this-is-active');
+  });
 
-    $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
-      $('.c-drawer__container').removeClass('subnav-is-active');
-      $(this).removeClass('this-is-active');
-      $(this).parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
-    });
-  }
+  $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
+    if (getWidth() < 700) return;
+    $('.c-drawer__container').removeClass('subnav-is-active');
+    $(this).removeClass('this-is-active');
+    $(this).parent().removeClass('this-is-active');
+    $(this).parent().parent().parent().removeClass('this-is-active');
+  });
+  
 
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
