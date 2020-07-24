@@ -272,13 +272,27 @@
   }
 
   .hide-sabbath &,
-  .hide-sabbath--all &,
-  .hide-sabbath--until-small &,
-  .hide-sabbath--until-medium &,
-  .hide-sabbath--until-large & {
+  .hide-sabbath--all & {
       margin-left: 0;
   }
 
+  .hide-sabbath--until-small & {
+    @include media("<=small") {
+      margin-left: 0;
+    }
+  }
+
+  .hide-sabbath--until-medium & {
+    @include media("<=medium") {
+      margin-left: 0;
+    }
+  }
+
+  .hide-sabbath--until-large & {
+    @include media("<=large") {
+      margin-left: 0;
+    }
+  }
 
 }
 

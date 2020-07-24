@@ -1,7 +1,7 @@
 {
   "head": {
     "title": "Archive Page - no Sabbath - The Official Site of the Seventh-day Adventist world church",
-    "body_class": "hide-sabbath has-grid body",
+    "body_class": "hide-sabbath--until-large has-grid body",
     "html_class": "pl u-theme--iris"
   },
   "page_header": {

@@ -1,0 +1,24 @@
+{
+  "suggestions": [
+    {
+      "text": "<strong>Test</strong>imonies",
+      "url": "#test"
+    },
+    {
+      "text": "<strong>Test</strong> 1",
+      "url": "#test"
+    },
+    {
+      "text": "<strong>Test</strong> 2",
+      "url": "#test"
+    },
+    {
+      "text": "<span class=\"highlight\">Test</span> 3",
+      "url": "#test"
+    },
+    {
+      "text": "Test 4",
+      "url": "#test"
+    }
+  ]
+}

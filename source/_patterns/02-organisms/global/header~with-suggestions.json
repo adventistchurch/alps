@@ -1,0 +1,32 @@
+{
+  "header_logo": "logo-sda",
+  "header_logo_class": "u-theme--path-fill--base",
+  "header_overlay": false,
+  "drawer": {
+    "search": {
+      "value": "te",
+      "suggestions": [
+        {
+          "text": "<strong>Te</strong>stimonies",
+          "url": "#test"
+        },
+        {
+          "text": "<strong>T</strong>est 1",
+          "url": "#test"
+        },
+        {
+          "text": "<strong>Te</strong>st 2",
+          "url": "#test"
+        },
+        {
+          "text": "<span class=\"highlight\">Te</span>st 3",
+          "url": "#test"
+        },
+        {
+          "text": "<strong>Te</strong>st 4",
+          "url": "#test"
+        }
+      ]
+    }
+  }
+}
