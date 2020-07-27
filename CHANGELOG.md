@@ -8,6 +8,9 @@ Fixed
 
 ### Fixed:
 - Fixed the Incorrect color gradients in Safari. [#482](https://github.com/adventistchurch/alps/issues/482)
+- Fixed the background color for the <mark> tag and added example pages in search. [#483](https://github.com/adventistchurch/alps/pull/483)
+- Fixed an error with the search form not displaying the search button label.
+
 
 ## [3.6.4]
 Refactored the Javascript to removed significant unused portions of code, including `moment`, `Moment Duration Format`, and `Modaal` libriaries. This is matching the removal of `Modaal` from the CSS that happened in `3.6.3`.
