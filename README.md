@@ -13,7 +13,7 @@ Questions or issues can be [filed as tickets on this repository](https://github.
 ## Seventh-day Adventist Pattern Lab
 
 ## Overview
-This repository contains the front-end code for the Seventh Day Adventist project. [Pattern Lab](http://patternlab.io/) is the tool used for pattern template building and pattern library compilation.
+This repository contains the front-end code for the Seventh-day Adventist project. [Pattern Lab](http://patternlab.io/) is the tool used for pattern template building and pattern library compilation.
 
 ### Getting Started
 - [Install Composer globally](https://getcomposer.org/doc/00-intro.md#globally)
