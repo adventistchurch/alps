@@ -637,20 +637,20 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   justify-content: center;
   position: relative;
   float: left;
-  width: calc((100vw / 7 * 2) - 30px);
+  width: calc((100vw / 7 * 2) - 15px);
+  margin-right: $pad;
+  margin-bottom: $pad / 2;
   font-size: 16vw;
   text-transform: uppercase;
   color: $c-white;
 
   @include media(">medium") {
-    width: calc((100vw / 7 * 1) - 30px);
-    font-size: 12vw;
+    width: calc((100vw / 7 * 1) - 15px);
+    font-size: 8vw;
   }
 
   @include media(">large") {
-    width: calc((100vw / 7 * 1) - 40px);
-    margin-right: $pad;
-    margin-bottom: $pad / 2;
+    width: calc((100vw / 7 * 1) - 20px);
     font-size: 8vw;
   }
 }
