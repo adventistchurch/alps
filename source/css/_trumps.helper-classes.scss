@@ -217,6 +217,16 @@
     }
   }
 
+  .o-drop-cap {
+    float: right;
+    margin-right: 0;
+    margin-left: $pad;
+
+    @include media(">large") {
+      margin-left: $pad;
+    }
+  }
+
   .c-block__category {
     padding-left: $pad;
     padding-right: 0;
