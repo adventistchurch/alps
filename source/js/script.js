@@ -135,10 +135,12 @@
   }
 
   // DROP CAP FUNCTIONALITY
-  $( 'p.has-drop-cap, .has-drop-cap p:eq(0)' ).each( function() {
+  var dropCapChecks = 'p.has-drop-cap, .has-drop-cap p:eq(0), div.has-drop-cap p:eq(0), article.has-drop-cap p:eq(0)';
+  $( dropCapChecks ).each( function() {
     var dropCapHTML = $( this ).html();
     var dropCapText = $( this ).html().substring( 0, 50 );
     var firstChar = dropCapText.slice( 0, 1 );
+    console.log( this );
     if ( firstChar === '"' ) {
       // QUOTE STRING
       var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + dropCapHTML.charAt(1) + '</span>');
