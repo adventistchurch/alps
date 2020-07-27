@@ -3,6 +3,12 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.__]
+Fixed
+
+### Fixed:
+- Fixed the Incorrect color gradients in Safari. [#482](https://github.com/adventistchurch/alps/issues/482)
+
 ## [3.6.4]
 Refactored the Javascript to removed significant unused portions of code, including `moment`, `Moment Duration Format`, and `Modaal` libriaries. This is matching the removal of `Modaal` from the CSS that happened in `3.6.3`.
 
