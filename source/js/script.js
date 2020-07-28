@@ -121,7 +121,21 @@
     }
   };
 
-  // Find first text node of an element
+  // LEGACY FUNCTION FOR PREVIOUS DROP CAP IMPLEMENTATION
+  $('.has-dropcap p:eq(0)').each(function() {
+    var text = $(this).text();
+    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
+
+    // Remove first text character from paragraph
+    var textNode = getFirstTextNode(this);
+    if (textNode) {
+      textNode.textContent = textNode.textContent.substring(1);
+    }
+
+    $(this).prepend(first);
+  });
+
+  // SUPPORTING FUNCTION FOR LEGACY DROP CAPS
   function getFirstTextNode(el) {
     if (!el.childNodes && !el.childNodes.length) {
       return null;
