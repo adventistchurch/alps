@@ -113,7 +113,7 @@
       width: 100%;
       height: 100%;
       z-index: 0;
-      background-image: linear-gradient(to bottom, transparent, rgba($c-gray--light, 0.8) 50%);
+      background-image: linear-gradient(to bottom, rgba($c-gray--light, 0), rgba($c-gray--light, 0.8) 50%);
       pointer-events: none;
     }
 
@@ -126,7 +126,7 @@
       z-index: 0;
       top: 0;
       left: 0;
-      background-image: linear-gradient(to top, transparent, rgba($darker, 0.8) 100%);
+      background-image: linear-gradient(to top, rgba($darker, 0), rgba($darker, 0.8) 100%);
       pointer-events: none;
     }
 
@@ -139,7 +139,7 @@
       z-index: 1;
       top: 0;
       left: 0;
-      background-image: linear-gradient(to left, transparent, rgba($darker, 1) 100%);
+      background-image: linear-gradient(to left, rgba($darker, 0), rgba($darker, 1) 100%);
       pointer-events: none;
     }
 
@@ -152,7 +152,7 @@
       z-index: 1;
       top: 0;
       right: 0;
-      background-image: linear-gradient(to right, transparent, rgba($darker, 1) 100%);
+      background-image: linear-gradient(to right, rgba($darker, 0), rgba($darker, 1) 100%);
       pointer-events: none;
     }
 
@@ -189,6 +189,13 @@
           color: $c-white;
         }
       }
+    }
+
+    /**
+     * Mark
+     */
+    mark {
+      background-color: $lighter;
     }
 
     // Buttons
@@ -528,7 +535,7 @@
 
       &.u-theme--gradient--bottom::after,
       .u-theme--gradient--bottom::after {
-        background-image: linear-gradient(to bottom, transparent, rgba($darker, 0.8) 50%);
+        background-image: linear-gradient(to bottom, rgba($darker, 0), rgba($darker, 0.8) 50%);
       }
 
       // SVG fill colors

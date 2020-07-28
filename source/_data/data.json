@@ -95,6 +95,16 @@
     }
   },
 
+  "search": {
+    "url": "/search",
+    "method": "get",
+    "placeholder": "Search …",
+    "searchLabel": "Search",
+    "settingsLabel": "",
+    "name": "search",
+    "value": "Test"
+  },
+
   "search_filter": {
     "radio": [
       {
