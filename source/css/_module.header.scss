@@ -124,6 +124,7 @@
 
 
     @include media(">medium") {
+      position: relative;
       order: 0;
       padding-top: rem(10);
       padding-bottom: rem(5);

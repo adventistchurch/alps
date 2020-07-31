@@ -1,7 +1,10 @@
-module.exports = function(grunt) {
+const sass = require('node-sass');
+const semver = require('semver');
+
+module.exports = function (grunt) {
   require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
-  var pkg = grunt.file.readJSON('package.json');
+  const pkg = grunt.file.readJSON('package.json');
 
   /**
    * Major Version and Version Number
@@ -11,8 +14,37 @@ module.exports = function(grunt) {
    * files. This will also create a version directory in the /cdn folder in the structure
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
-  var major_version = "3";
-  var version = "3.5.1";
+  const major_version = "3";
+  const version = "3.6.4";
+
+  /**
+   * Split SCSS files by theme
+   *
+   */
+  const themes = [
+    'treefrog',
+    'ming',
+    'bluejay',
+    'iris',
+    'lily',
+    'scarlett',
+    'campfire',
+    'winter',
+    'forest',
+    'cave',
+    'denim',
+    'emperor',
+    'grapevine',
+    'velvet',
+    'earth',
+    'night',
+  ];
+  const sassFiles = {
+    'cdn/<%= major_version %>/<%= version %>/css/main.css': 'source/css/main.scss',
+  };
+  for (const themeName of themes) {
+    sassFiles[`cdn/<%= major_version %>/<%= version %>/css/main-${themeName}.css`] = `source/css/main-${themeName}.scss`
+  }
 
   grunt.initConfig({
     pkg: pkg,
@@ -24,7 +56,7 @@ module.exports = function(grunt) {
           failOnError: false,
           execOptions: {
             maxBuffer: 1024 * 1024 * 64
-              // maxBuffer: Infinity
+            // maxBuffer: Infinity
           },
         },
         command: "php core/console --generate",
@@ -45,6 +77,7 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
+        implementation: sass,
         imagePath: 'source/images',
         precision: 5
       },
@@ -63,9 +96,7 @@ module.exports = function(grunt) {
           outputStyle: 'compressed',
           sourceMap: false,
         },
-        files: {
-          'cdn/<%= major_version %>/<%= version %>/css/main.css': 'source/css/main.scss',
-        }
+        files: sassFiles,
       }
     },
 
@@ -150,7 +181,7 @@ module.exports = function(grunt) {
             cwd: 'public/v3/patterns/',
             src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*', '03-templates*/*'],
             dest: '../igs-guidelines/_includes/patterns/',
-            rename: function(dest, src) {
+            rename: function (dest, src) {
               return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
             }
           },
@@ -162,7 +193,7 @@ module.exports = function(grunt) {
             cwd: 'public/v3/patterns/',
             src: ['00-atoms*/*', '01-molecules*/*', '02-organisms*/*', '03-templates*/*'],
             dest: '../igs-guidelines/patterns/',
-            rename: function(dest, src) {
+            rename: function (dest, src) {
               return dest + src.replace(/@inprogress|@complete|@inreview/g, '');
             }
           },
@@ -202,12 +233,12 @@ module.exports = function(grunt) {
           cwd: 'source/_patterns/',
           src: ['**/*.twig'],
           dest: 'source/drupal-patterns/',
-          rename: function(dest, src) {
+          rename: function (dest, src) {
             return dest + src.replace('.twig', '.html.twig');
           }
         }],
         options: {
-          process: function(content, srcpath) {
+          process: function (content, srcpath) {
             return content.replace(/.twig/g, '.html.twig');
           }
         }
@@ -218,17 +249,17 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         files: [{
-            expand: true,
-            cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
-            dest: '../igs-guidelines/_includes/patterns/'
-          },
-          {
-            expand: true,
-            cwd: 'public/v3/patterns/',
-            src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
-            dest: '../igs-guidelines/patterns/'
-          }
+          expand: true,
+          cwd: 'public/v3/patterns/',
+          src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
+          dest: '../igs-guidelines/_includes/patterns/'
+        },
+        {
+          expand: true,
+          cwd: 'public/v3/patterns/',
+          src: ['00-atoms*/*.twig', '01-molecules*/*.twig', '02-organisms*/*.twig', '03-templates*/*.twig'],
+          dest: '../igs-guidelines/patterns/'
+        }
         ]
       },
       options: {
@@ -346,7 +377,9 @@ module.exports = function(grunt) {
       },
       options: {
         watchTask: true,
-        proxy: "alps3.test",
+        server: {
+          baseDir: './public'
+        },
         startPath: "/v3"
       }
     },
@@ -422,7 +455,8 @@ module.exports = function(grunt) {
     'images',
     'symlink',
     'copy:prod',
-    'add_comment:prod'
+    'add_comment:prod',
+    'versions'
   ]);
 
   grunt.registerTask('cdn', [
@@ -442,7 +476,43 @@ module.exports = function(grunt) {
     'add_comment:dev'
   ]);
 
+  grunt.registerTask('versions', 'Create a versions.json file', () => {
+    const versionsFile = 'cdn/3/versions.json';
+    const changeLogFile = 'CHANGELOG.md';
+    const changeLogData = grunt.file.read(changeLogFile);
 
+    const exprVersions = /^## \[(?<version>[\d.]+)\].*\n(?<description>[^#]*)/gum;
+    const matches = changeLogData.matchAll(exprVersions);
+
+    const versionsData = [];
+
+    for (const m of matches) {
+      const v = m.groups.version;
+      const desc = m.groups.description ? m.groups.description.trim() : '';
+
+      const themesStyle = {};
+      if (semver.gt(v, '3.6.2')) {
+        for (const theme of themes) {
+          themesStyle[theme] = `https://cdn.adventist.org/alps/3/${v}/css/main-${theme}.css`;
+        }
+      }
+
+      versionsData.push({
+        version: v,
+        description: desc,
+        styles: {
+          main: `https://cdn.adventist.org/alps/3/${v}/css/main.css`,
+          themes: themesStyle,
+        },
+        scripts: {
+          main: `https://cdn.adventist.org/alps/3/${v}/js/script.min.js`,
+          head: `https://cdn.adventist.org/alps/3/${v}/js/head-script.min.js`,
+        },
+      });
+    }
+
+    grunt.file.write(versionsFile, JSON.stringify(versionsData, null, 2));
+  });
 
   /**
    * Default Tasks

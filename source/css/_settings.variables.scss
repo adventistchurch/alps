@@ -36,6 +36,23 @@ $c-theme-velvet: #782832;
 $c-theme-earth: #5e3929;
 $c-theme-night: #4A4A4A;
 
+$u-theme-treefrog: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-treefrog, light: #7cd500, lighter: #9fe180));
+$u-theme-ming: (u-theme--ming: (darker: #002938, dark: #255760, base: $c-theme-ming, light: #00d5fe, lighter: #9ae1f0));
+$u-theme-bluejay: (u-theme--bluejay: (darker: #052252, dark: #2f557f, base: $c-theme-bluejay, light: #84adfc, lighter: #84adfc));
+$u-theme-iris: (u-theme--iris: (darker: #37034c, dark: #4b207f, base: $c-theme-iris, light: #b971f7, lighter: #b971f7));
+$u-theme-lily: (u-theme--lily: (darker: #4e053f, dark: #712551, base: $c-theme-lily, light: #ff61bc, lighter: #ff61bc));
+$u-theme-scarlett: (u-theme--scarlett: (darker: #440000, dark: #782832, base: $c-theme-scarlett, light: #fd2641, lighter: #e17077));
+$u-theme-campfire: (u-theme--campfire: (darker: #361300, dark: #6f2727, base: $c-theme-campfire, light: #ffa06c, lighter: #ffa06c));
+$u-theme-winter: (u-theme--winter: (darker: #222222, dark: #4A4A4A, base: $c-theme-winter, light: #F9F9F9, lighter: #F9F9F9));
+$u-theme-forest: (u-theme--forest: (darker: #101a00, dark: #2b8500, base: $c-theme-forest, light: #7cd500, lighter: #9fe180));
+$u-theme-cave: (u-theme--cave: (darker: #01161e, dark: #007f98, base: $c-theme-cave, light: #00d5fe, lighter: #9ae1f0));
+$u-theme-denim: (u-theme--denim: (darker: #04132b, dark: #04132b, base: $c-theme-denim, light: #2e6de7, lighter: #84adfc));
+$u-theme-emperor: (u-theme--emperor: (darker: #240431, dark: #9013fe, base: $c-theme-emperor, light: #b971f7, lighter: #b971f7));
+$u-theme-grapevine: (u-theme--grapevine: (darker: #2a0d24, dark: #d41583, base: $c-theme-grapevine, light: #ff61bc, lighter: #ff61bc));
+$u-theme-velvet: (u-theme--velvet: (darker: #2d0505, dark: #d0021b, base: $c-theme-velvet, light: #fd2641, lighter: #e17077));
+$u-theme-earth: (u-theme--earth: (darker: #210b00, dark: #974e02, base: $c-theme-earth, light: #eab57e, lighter: #eab57e));
+$u-theme-night: (u-theme--night: (darker: #000000, dark: #717171, base: $c-theme-night, light: #F9F9F9, lighter: #F9F9F9));
+
 /**
  * Neutral Colors
  */

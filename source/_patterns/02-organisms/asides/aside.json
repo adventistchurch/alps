@@ -55,7 +55,9 @@
     }
   ],
 
+  "aside_content_blocks_heading": "Some More News",
   "aside_content_blocks": [
+
     {
       "content_block_default": {
         "block_class": "u-padding--bottom u-spacing--half",
@@ -96,5 +98,6 @@
         "expand": false
       }
     }
-  ]
+
+]
 }

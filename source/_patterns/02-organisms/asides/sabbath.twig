@@ -1,7 +1,7 @@
 <aside class="l-wrap__sabbath l-sabbath {% if sabbath_background %}{{'u-background-image--sabbath'}}{% endif %} js-sticky-parent js-toggle-menu">
   {% if sabbath_background %}
     <style>
-      .u-background-image--sabbath {
+      .u-background-image--sabbath::after {
         background-image: url('{{ sabbath_background }}') !important;
       }
     </style>

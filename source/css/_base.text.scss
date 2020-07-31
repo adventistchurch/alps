@@ -34,9 +34,8 @@ blockquote {
   flex-direction: column;
 
   @include media(">medium") {
-    border-left: 3px solid $c-black;
+    border-left: 2px solid $c-black;
   }
-
 
   p {
     font-size: rem(16);
@@ -45,6 +44,7 @@ blockquote {
     z-index: 10;
     text-indent: $pad;
     margin-top: $space;
+    font-family: $ff-font;
 
     &:first-child {
       margin-top: 0;
@@ -57,12 +57,14 @@ blockquote {
     &:before {
       content: "\201C";
       position: absolute;
-      left: -$pad;
+      left: -$pad/1.5;
       top: 0;
     }
   }
 
   &.o-pullquote--strong {
+    border-left: 3px solid $c-black;
+
     p {
       font-size: rem(22);
       font-weight: bold;
