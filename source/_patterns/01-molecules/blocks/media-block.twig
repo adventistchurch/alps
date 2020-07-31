@@ -48,7 +48,7 @@
             </div>
           {% endif %}
           {% if media_block_default.caption %}
-            <div class="c-block__caption u-padding--top u-padding--bottom u-padding--sides u-color--white-transparent">{{ media_block_default.caption }}</div>
+            <div class="c-block__caption u-padding--top u-padding--bottom u-color--white-transparent {% if media_block_default.block_type %}u-padding--right u-padding--quad--left{% else %}u-padding--sides{% endif %}">{{ media_block_default.caption }}</div>
           {% endif %}
         </div>
       </div>
