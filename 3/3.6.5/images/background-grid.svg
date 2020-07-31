@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <title>grid</title>
+  <rect x="0.5" width="1" height="700" fill="#f5f5f5"/>
+  <rect x="99.5" width="1" height="700" fill="#f5f5f5"/>
+  <rect x="199.5" width="1" height="700" fill="#f5f5f5"/>
+  <rect x="299.5" width="1" height="700" fill="#f5f5f5"/>
+  <rect x="399.5" width="1" height="700" fill="#f5f5f5"/>
+  <rect x="499.5" width="1" height="700" fill="#f5f5f5"/>
+  <rect x="599.5" width="1" height="700" fill="#f5f5f5"/>
+  <rect x="699.5" width="1" height="700" fill="#f5f5f5"/>
+</svg>
