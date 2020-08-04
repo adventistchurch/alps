@@ -16,6 +16,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -48,6 +49,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -80,6 +82,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -112,6 +115,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -144,6 +148,7 @@
           "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
           "kicker": false,
           "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -176,6 +181,7 @@
           "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
           "kicker": false,
           "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -208,6 +214,7 @@
           "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
           "kicker": false,
           "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -240,6 +247,7 @@
           "block_meta_class": "u-theme--color--dark u-font--secondary--xs",
           "kicker": false,
           "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {

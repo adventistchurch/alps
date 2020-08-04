@@ -3,11 +3,12 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed l-grid--7-col",
-        "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--right",
+        "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--right u-padding--zero--left",
         "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
         "block_title_class": "u-theme--color--dark u-font--primary--s",
         "block_meta_class": "u-theme--color--base u-font--secondary--xs",
         "title": "Mauris at ante laoreet, gravida odio gravida, fermentum lectus",
+        "title_tag": "h4",
         "description": false,
         "url": "/",
         "category": "Culture",
@@ -28,11 +29,12 @@
     {
       "media_block_default": {
         "block_class": "c-block--reversed l-grid--7-col",
-        "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--right",
+        "block_img_class": "l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col u-padding--zero--right u-padding--zero--left",
         "block_content_class": "l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--1-col u-border--left u-theme--border-color--darker--left u-color--gray u-spacing--half",
         "block_title_class": "u-theme--color--dark u-font--primary--s",
         "block_meta_class": "u-theme--color--base u-font--secondary--xs",
         "title": "Proin sed nisl ac velit aliquam euismod non tincidunt lectus",
+        "title_tag": "h4",
         "description": false,
         "url": "/",
         "category": "Culture",

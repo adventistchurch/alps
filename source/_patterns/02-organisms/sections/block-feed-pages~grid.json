@@ -16,6 +16,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -48,6 +49,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -80,6 +82,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -112,6 +115,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -144,6 +148,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "East-Central Africa",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -176,6 +181,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "Euro-Asia",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -208,6 +214,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "Middle East and North Africa",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {

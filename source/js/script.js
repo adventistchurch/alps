@@ -217,47 +217,46 @@
     toggleClasses($(this));
   });
 
-  $('.c-primary-nav__arrow').on('click', function(e) {
+  $('.c-primary-nav__arrow').on('click', function (e) {
     e.stopPropagation();
+    if (getWidth() > 700) return;
+
     $(this).toggleClass('this-is-active');
 
     if ($(this).hasClass('this-is-active')) {
       $('.c-drawer__container').addClass('subnav-is-active');
-      $(this).parent('li').clone(true, true).appendTo('.c-drawer__subnav');
-      $(this).parents('.c-primary-nav__list').addClass('this-is-active');
+      $(this).parent('li').children('.c-subnav').addClass('this-is-active');
+      $(this).parents('.c-primary-nav__list-item').addClass('this-is-active');
       $(this).parents('.c-drawer__nav-primary').addClass('this-is-active');
       $(this).parents('.c-primary-nav').addClass('this-is-active');
-      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').addClass('this-is-active');
       $(this).parents('.c-drawer__nav').addClass('this-is-active');
     } else {
       $('.c-drawer__container').removeClass('subnav-is-active');
-      $('.c-drawer__subnav li').remove();
-      $('.c-primary-nav__list').removeClass('this-is-active');
+      $(this).parent('li').children('.c-subnav').removeClass('this-is-active');
+      $('.c-primary-nav__list-item').removeClass('this-is-active');
       $('.c-drawer__nav-primary').removeClass('this-is-active');
       $('.c-primary-nav').removeClass('this-is-active');
-      $('.c-drawer__subnav').removeClass('this-is-active');
       $('.c-drawer__nav').removeClass('this-is-active');
     }
-
-    $(this).removeClass('this-is-active');
   });
 
   // Hover effects on drawer submenu not on mobile
-  if (getWidth() > 700) {
-    $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
-      $('.c-drawer__container').addClass('subnav-is-active');
-      $(this).addClass('this-is-active');
-      $(this).parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
-    });
+  $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
+    if (getWidth() < 700) return;
+    $('.c-drawer__container').addClass('subnav-is-active');
+    $(this).addClass('this-is-active');
+    $(this).parent().addClass('this-is-active');
+    $(this).parent().parent().parent().addClass('this-is-active');
+  });
 
-    $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
-      $('.c-drawer__container').removeClass('subnav-is-active');
-      $(this).removeClass('this-is-active');
-      $(this).parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
-    });
-  }
+  $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
+    if (getWidth() < 700) return;
+    $('.c-drawer__container').removeClass('subnav-is-active');
+    $(this).removeClass('this-is-active');
+    $(this).parent().removeClass('this-is-active');
+    $(this).parent().parent().parent().removeClass('this-is-active');
+  });
+  
 
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
