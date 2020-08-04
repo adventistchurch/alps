@@ -121,7 +121,21 @@
     }
   };
 
-  // Find first text node of an element
+  // LEGACY FUNCTION FOR PREVIOUS DROP CAP IMPLEMENTATION
+  $('.has-dropcap p:eq(0)').each(function() {
+    var text = $(this).text();
+    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
+
+    // Remove first text character from paragraph
+    var textNode = getFirstTextNode(this);
+    if (textNode) {
+      textNode.textContent = textNode.textContent.substring(1);
+    }
+
+    $(this).prepend(first);
+  });
+
+  // SUPPORTING FUNCTION FOR LEGACY DROP CAPS
   function getFirstTextNode(el) {
     if (!el.childNodes && !el.childNodes.length) {
       return null;
@@ -134,18 +148,30 @@
     return el.childNodes[0];
   }
 
-  // Grab first character for dropcaps
-  $('.has-dropcap p:eq(0)').each(function() {
-    var text = $(this).text();
-    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
-
-    // Remove first text character from paragraph
-    var textNode = getFirstTextNode(this);
-    if (textNode) {
-      textNode.textContent = textNode.textContent.substring(1);
+  // DROP CAP FUNCTIONALITY
+  var dropCapChecks = 'p.has-drop-cap, .has-drop-cap p:eq(0), div.has-drop-cap p:eq(0), article.has-drop-cap p:eq(0)';
+  $( dropCapChecks ).each( function() {
+    var dropCapHTML = $( this ).html();
+    var dropCapText = $( this ).html().substring( 0, 50 );
+    var firstChar = dropCapText.slice( 0, 1 );
+    console.log( this );
+    if ( firstChar === '"' ) {
+      // QUOTE STRING
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + dropCapHTML.charAt(1) + '</span>');
+      $(this).html( dropCapHTML.substring(2) ).prepend( dropCapWrap );
+    } else if ( firstChar === '<') {
+      // HTML TAG // GRAB INNER TEXT & SPLIT THAT
+      // WILL ONLY DO THIS IF firstChar IS A TAG & PRESERVES IT
+      var tagTextFirst = $(this).context.firstElementChild.innerText.charAt(0);
+      var tagTextReplace = $(this).context.firstElementChild.innerText.substring(1);
+      $(this).context.firstElementChild.innerText = tagTextReplace;
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + tagTextFirst + '</span>');
+      $(this).prepend( dropCapWrap ); // WE ONLY ADD THIS TO THE FRONT
+    } else {
+      // NOT A QUOTE AND NOT A TAG
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + firstChar + '</span>');
+      $(this).html( dropCapHTML.substring(1) ).prepend( dropCapWrap );
     }
-
-    $(this).prepend(first);
   });
 
   /**
@@ -453,3 +479,24 @@
   });
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+// Overwrites native 'firstElementChild' prototype.
+// Adds Document & DocumentFragment support for IE9 & Safari.
+;(function(constructor) {
+    if (constructor &&
+        constructor.prototype &&
+        constructor.prototype.firstElementChild == null) {
+        Object.defineProperty(constructor.prototype, 'firstElementChild', {
+            get: function() {
+                var node, nodes = this.childNodes, i = 0;
+                while (node = nodes[i++]) {
+                    if (node.nodeType === 1) {
+                        return node;
+                    }
+                }
+                return null;
+            }
+        });
+    }
+})(window.Node || window.Element);
