@@ -1,31 +1,32 @@
 {
-  "name": "ALPS",
+  "name": "alps",
   "version": "0.0.1",
   "description": "Adventist Living Pattern System",
   "devDependencies": {
-    "bs-html-injector": "^3.0.0",
-    "csswring": "^4.0.0",
-    "grunt": "^0.4.5",
+    "bs-html-injector": "^3.0.3",
+    "csswring": "^7.0.0",
+    "grunt": "^1.2.1",
     "grunt-add-comment": "^1.1.6",
-    "grunt-autoprefixer": "^0.8.1",
+    "grunt-autoprefixer": "^3.0.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "~0.6.0",
-    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-symlink": "^1.0.0",
-    "grunt-contrib-uglify": "^3.4.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-gh-pages": "^2.1.0",
-    "grunt-htmlhint": "0.9.12-fix",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-gh-pages": "^4.0.0",
+    "grunt-htmlhint": "^0.9.13",
     "grunt-mkdir": "^1.0.0",
-    "grunt-sass": "^1.2.0",
-    "grunt-shell": "^2.1.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-shell": "^3.0.1",
     "matchdep": "^2.0.0",
-    "node-sass": "^2.1.1",
-    "patternlab-md2json": "^0.1.1"
+    "node-sass": "^4.14.1",
+    "patternlab-md2json": "^0.1.1",
+    "semver": "^7.3.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "grunt"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,6 @@
   },
   "author": "SuperFriendly & Southleft",
   "license": "SEE LICENSE IN LICENSE.txt",
-  "homepage": "http://adventist.org",
+  "homepage": "https://www.adventist.org",
   "compileTemplates": false
 }

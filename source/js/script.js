@@ -132,7 +132,21 @@ if ($jq2) {
     }
   };
 
-  // Find first text node of an element
+  // LEGACY FUNCTION FOR PREVIOUS DROP CAP IMPLEMENTATION
+  $('.has-dropcap p:eq(0)').each(function() {
+    var text = $(this).text();
+    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
+
+    // Remove first text character from paragraph
+    var textNode = getFirstTextNode(this);
+    if (textNode) {
+      textNode.textContent = textNode.textContent.substring(1);
+    }
+
+    $(this).prepend(first);
+  });
+
+  // SUPPORTING FUNCTION FOR LEGACY DROP CAPS
   function getFirstTextNode(el) {
     if (!el.childNodes && !el.childNodes.length) {
       return null;
@@ -145,18 +159,30 @@ if ($jq2) {
     return el.childNodes[0];
   }
 
-  // Grab first character for dropcaps
-  $('.has-dropcap p:eq(0)').each(function() {
-    var text = $(this).text();
-    var first = $('<span class="o-dropcap u-theme--background-color--base"></span>').attr('data-letter', text.charAt(0));
-
-    // Remove first text character from paragraph
-    var textNode = getFirstTextNode(this);
-    if (textNode) {
-      textNode.textContent = textNode.textContent.substring(1);
+  // DROP CAP FUNCTIONALITY
+  var dropCapChecks = 'p.has-drop-cap, .has-drop-cap p:eq(0), div.has-drop-cap p:eq(0), article.has-drop-cap p:eq(0)';
+  $( dropCapChecks ).each( function() {
+    var dropCapHTML = $( this ).html();
+    var dropCapText = $( this ).html().substring( 0, 50 );
+    var firstChar = dropCapText.slice( 0, 1 );
+    console.log( this );
+    if ( firstChar === '"' ) {
+      // QUOTE STRING
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + dropCapHTML.charAt(1) + '</span>');
+      $(this).html( dropCapHTML.substring(2) ).prepend( dropCapWrap );
+    } else if ( firstChar === '<') {
+      // HTML TAG // GRAB INNER TEXT & SPLIT THAT
+      // WILL ONLY DO THIS IF firstChar IS A TAG & PRESERVES IT
+      var tagTextFirst = $(this).context.firstElementChild.innerText.charAt(0);
+      var tagTextReplace = $(this).context.firstElementChild.innerText.substring(1);
+      $(this).context.firstElementChild.innerText = tagTextReplace;
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + tagTextFirst + '</span>');
+      $(this).prepend( dropCapWrap ); // WE ONLY ADD THIS TO THE FRONT
+    } else {
+      // NOT A QUOTE AND NOT A TAG
+      var dropCapWrap = $('<span class="o-drop-cap u-theme--background-color--base">' + firstChar + '</span>');
+      $(this).html( dropCapHTML.substring(1) ).prepend( dropCapWrap );
     }
-
-    $(this).prepend(first);
   });
 
   /**
@@ -202,47 +228,46 @@ if ($jq2) {
     toggleClasses($(this));
   });
 
-  $('.c-primary-nav__arrow').on('click', function(e) {
+  $('.c-primary-nav__arrow').on('click', function (e) {
     e.stopPropagation();
+    if (getWidth() > 700) return;
+
     $(this).toggleClass('this-is-active');
 
     if ($(this).hasClass('this-is-active')) {
       $('.c-drawer__container').addClass('subnav-is-active');
-      $(this).parent('li').clone(true, true).appendTo('.c-drawer__subnav');
-      $(this).parents('.c-primary-nav__list').addClass('this-is-active');
+      $(this).parent('li').children('.c-subnav').addClass('this-is-active');
+      $(this).parents('.c-primary-nav__list-item').addClass('this-is-active');
       $(this).parents('.c-drawer__nav-primary').addClass('this-is-active');
       $(this).parents('.c-primary-nav').addClass('this-is-active');
-      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').addClass('this-is-active');
       $(this).parents('.c-drawer__nav').addClass('this-is-active');
     } else {
       $('.c-drawer__container').removeClass('subnav-is-active');
-      $('.c-drawer__subnav li').remove();
-      $('.c-primary-nav__list').removeClass('this-is-active');
+      $(this).parent('li').children('.c-subnav').removeClass('this-is-active');
+      $('.c-primary-nav__list-item').removeClass('this-is-active');
       $('.c-drawer__nav-primary').removeClass('this-is-active');
       $('.c-primary-nav').removeClass('this-is-active');
-      $('.c-drawer__subnav').removeClass('this-is-active');
       $('.c-drawer__nav').removeClass('this-is-active');
     }
-
-    $(this).removeClass('this-is-active');
   });
 
   // Hover effects on drawer submenu not on mobile
-  if (getWidth() > 700) {
-    $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
-      $('.c-drawer__container').addClass('subnav-is-active');
-      $(this).addClass('this-is-active');
-      $(this).parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
-    });
+  $('.c-drawer .c-primary-nav__list-item').on('mouseenter', function() {
+    if (getWidth() < 700) return;
+    $('.c-drawer__container').addClass('subnav-is-active');
+    $(this).addClass('this-is-active');
+    $(this).parent().addClass('this-is-active');
+    $(this).parent().parent().parent().addClass('this-is-active');
+  });
 
-    $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
-      $('.c-drawer__container').removeClass('subnav-is-active');
-      $(this).removeClass('this-is-active');
-      $(this).parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
-    });
-  }
+  $('.c-drawer .c-primary-nav__list-item').on('mouseleave', function() {
+    if (getWidth() < 700) return;
+    $('.c-drawer__container').removeClass('subnav-is-active');
+    $(this).removeClass('this-is-active');
+    $(this).parent().removeClass('this-is-active');
+    $(this).parent().parent().parent().removeClass('this-is-active');
+  });
+  
 
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
@@ -382,25 +407,8 @@ if ($jq2) {
     return s;
   }
 
-  // Creates title and duration for Youtube videos
-  var apiKey = 'AIzaSyAiCBcaYLra0GCWcoY6rTWktJWwd0VKQ6A';
   $('.js-video').each(function() {
     var videoId = $(this).attr('id');
-    $.ajax({
-      url: "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key="+ apiKey + "&fields=items(snippet(title),contentDetails(duration),id)&part=snippet,contentDetails",
-      dataType: "jsonp",
-      success: function(data) {
-        var id = data.items[0].id;
-        var title = data.items[0].snippet.title;
-        var durationSeconds = getDurationInSecond(data.items[0].contentDetails.duration);
-        var duration = moment.duration(durationSeconds, "seconds").format('h:mm:ss');
-        $('#' + id + ' .js-video-title').append(title);
-        $('#' + id + ' .js-video-duration').append(duration);
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        alert (textStatus, + ' | ' + errorThrown);
-      }
-    });
 
     // Play video on click
     $(this).click(function(e) {
@@ -456,16 +464,6 @@ if ($jq2) {
     parallaxIt()
   }
 
-  /**
-   * Modaal functionality
-   * Reference:
-   */
-  if ($.fn.modaal) {
-    $('.js-modal-image').modaal({
-      type: 'image'
-    });
-  }
-
   // Theme switcher for colors
   $('.c-swatches--colors .c-swatches__item').click(function() {
     var thisColor = $(this).data('color');
@@ -492,3 +490,23 @@ if ($jq2) {
   });
 
 })(alpsJQueryRef); // Fully reference jQuery after this point.
+
+// Overwrites native 'firstElementChild' prototype.
+// Adds Document & DocumentFragment support for IE9 & Safari.
+;(function(constructor) {
+    if (constructor &&
+        constructor.prototype &&
+        constructor.prototype.firstElementChild == null) {
+        Object.defineProperty(constructor.prototype, 'firstElementChild', {
+            get: function() {
+                var node, nodes = this.childNodes, i = 0;
+                while (node = nodes[i++]) {
+                    if (node.nodeType === 1) {
+                        return node;
+                    }
+                }
+                return null;
+            }
+        });
+    }
+})(window.Node || window.Element);

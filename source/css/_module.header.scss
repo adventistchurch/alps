@@ -124,6 +124,7 @@
 
 
     @include media(">medium") {
+      position: relative;
       order: 0;
       padding-top: rem(10);
       padding-bottom: rem(5);
@@ -723,14 +724,6 @@
       padding: $pad $pad 0 ($pad * 2);
       overflow-x: visible;
     }
-
-
-    &.subnav-is-active {
-      @include media("<=medium") {
-        overflow: hidden;
-        height: 100vh;
-      }
-    }
   }
 
   .has-subnav {
@@ -746,10 +739,6 @@
         visibility: visible;
         height: auto;
         z-index: 999;
-
-        @include media("<=medium") {
-          top: 0;
-        }
       }
     }
   }
@@ -761,6 +750,7 @@
   // Drawer Primary Nav
   &__nav-primary {
     z-index: 1;
+    user-select: none;
 
     &.this-is-active {
       z-index: 2;
@@ -809,7 +799,7 @@
     &__list-item {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
     }
@@ -856,6 +846,18 @@
         margin: auto;
         position: absolute;
         display: inline-block;
+
+        @include media("<=medium") {
+          transform: rotate(90deg);
+        }
+      }
+
+      &.this-is-active {
+        &::after {
+          @include media("<=medium") {
+            transform: rotate(270deg);
+          }
+        }
       }
 
       &::before {
@@ -1020,6 +1022,13 @@
     top: 0;
     transition: none;
 
+    &.this-is-active {
+      height: auto;
+      display: block;
+      opacity: 1;
+      z-index: 3;
+    }
+
     @include media(">medium") {
       transition: all 0.25s ease;
       position: absolute;
@@ -1041,7 +1050,7 @@
 
 
       &:first-child {
-        padding-top: 0;
+        padding-top: $pad / 4;
 
         @include media(">medium") {
           padding-top: $pad / 2;
@@ -1049,7 +1058,7 @@
       }
 
       &:last-child {
-        padding-bottom: 0;
+        padding-bottom: $pad / 4;
 
         @include media(">medium") {
           padding-bottom: $pad / 2;
@@ -1060,10 +1069,6 @@
     &__link {
       padding: ($pad / 4) $pad-mobile;
       white-space: normal;
-
-      @include media("<=medium") {
-        color: $c-white;
-      }
     }
   }
 
@@ -1071,14 +1076,12 @@
     position: relative;
     left: 0;
 
-    @include media(">medium") {
-      &__list-item {
-        background-color: $c-gray--dark;
-      }
+    &__list-item {
+      background-color: $c-gray--dark;
+    }
 
-      &__link {
-        color: $c-white;
-      }
+    &__link {
+      color: $c-white;
     }
   }
 
@@ -1096,12 +1099,6 @@
       &::placeholder {
         color: $c-white;
       }
-    }
-  }
-
-  &__nav {
-    @include media("<=medium") {
-      height: 100%;
     }
   }
 

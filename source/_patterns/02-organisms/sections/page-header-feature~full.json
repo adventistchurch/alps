@@ -10,6 +10,7 @@
     "block_title_link_class": "u-theme--link-hover--lighter",
     "block_meta_class": "hide",
     "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "title_tag": "h1",
     "kicker": false,
     "description": false,
     "category": false,

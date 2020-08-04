@@ -173,6 +173,19 @@
 
   &__children__list-item {
     margin-left: rem(50);
+
+    &__depth-2 {
+      margin-left: rem(50);
+    }
+    &__depth-3 {
+      margin-left: rem(100);
+    }
+    &__depth-4 {
+      margin-left: rem(150);
+    }
+    &__depth-5 {
+      margin-left: rem(200);
+    }
   }
 }
 
@@ -181,8 +194,10 @@
  */
 
 .c-accordion {
-  &__item {
+  &__heading{
     cursor: pointer;
+  }
+  &__item {
 
     &.this-is-active {
       .c-accordion__content {
@@ -314,7 +329,7 @@
     bottom: 0;
     left: 0;
     height: 120px;
-    background: linear-gradient(to bottom, transparent, rgba($c-white, 1) 60%);
+    background: linear-gradient(to bottom, rgba($c-white, 0), rgba($c-white, 1) 60%);
     z-index: 0;
     pointer-events: none;
     transition: all 0.25s ease;

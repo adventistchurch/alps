@@ -9,6 +9,7 @@
         "block_title_link_class": "u-theme--link-hover--light",
         "block_meta_class": "hide",
         "title": "<em class='u-theme--color--lighter'>Sermon</em> Seeking Another Way",
+        "title_tag": "h3",
         "kicker": false,
         "description": false,
         "category": false,
@@ -28,10 +29,10 @@
               "src_l": "//picsum.photos/300/1000/?random"
             }
           },
-          "has_break_l": {
-            "img_break_l": "1100",
+          "has_break_xl": {
+            "img_break_xl": "1100",
             "img": {
-              "src_l": "//picsum.photos/400/1100/?random"
+              "src_xl": "//picsum.photos/400/1100/?random"
             }
           }
         }
@@ -46,6 +47,7 @@
         "block_title_link_class": "u-theme--link-hover--light",
         "block_meta_class": "hide",
         "title": "<em class='u-theme--color--lighter'>Blog</em> Son Rise Over the Land of the Rising Sun: My Eyewitness Account",
+        "title_tag": "h3",
         "kicker": false,
         "description": false,
         "category": false,
@@ -65,10 +67,10 @@
               "src_l": "//picsum.photos/300/1000/?gravity"
             }
           },
-          "has_break_l": {
-            "img_break_l": "1100",
+          "has_break_xl": {
+            "img_break_xl": "1100",
             "img": {
-              "src_l": "//picsum.photos/400/1100/?gravity"
+              "src_xl": "//picsum.photos/400/1100/?gravity"
             }
           }
         }
@@ -83,6 +85,7 @@
         "block_title_link_class": "u-theme--link-hover--light",
         "block_meta_class": "hide",
         "title": "<em class='u-theme--color--lighter'>Event</em> Religious Liberty – The Freedom to Beleive",
+        "title_tag": "h3",
         "kicker": false,
         "description": false,
         "category": false,
@@ -102,10 +105,10 @@
               "src_l": "//picsum.photos/300/1000/?nature"
             }
           },
-          "has_break_l": {
-            "img_break_l": "1100",
+          "has_break_xl": {
+            "img_break_xl": "1100",
             "img": {
-              "src_l": "//picsum.photos/400/1100/?nature"
+              "src_xl": "//picsum.photos/400/1100/?nature"
             }
           }
         }

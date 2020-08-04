@@ -28,6 +28,14 @@ a {
   }
 }
 
+.u-link--no-underline {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .u-link-hover--white,
 .u-link-hover--white a {
   &:hover {
@@ -40,5 +48,13 @@ a {
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+.o-link-wrapper--no-underline a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

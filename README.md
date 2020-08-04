@@ -13,17 +13,15 @@ Questions or issues can be [filed as tickets on this repository](https://github.
 ## Seventh-day Adventist Pattern Lab
 
 ## Overview
-This repository contains the front-end code for the Seventh Day Adventist project. [Pattern Lab](http://patternlab.io/) is the tool used for pattern template building and pattern library compilation.
+This repository contains the front-end code for the Seventh-day Adventist project. [Pattern Lab](http://patternlab.io/) is the tool used for pattern template building and pattern library compilation.
 
 ### Getting Started
-- Use node -v `v7.2.0`
-   - `nvm use 7`
 - [Install Composer globally](https://getcomposer.org/doc/00-intro.md#globally)
 - run `composer install`
-- Set up your local dev url to be `alps.test`
-- [Install node globally](https://docs.npmjs.com/getting-started/installing-node)
+
+- [Install node globally](https://docs.npmjs.com/getting-started/installing-node) (`node >= v12)`
 - run `npm install` (may need to be run as `sudo`)
-- run `grunt`
+- run `npm run dev`
 
 This creates all patterns, the styleguide, and the pattern lab site as well as a local server for development.
 

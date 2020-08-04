@@ -3,6 +3,77 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.6.5]
+Added the media block captions and fixed gardients in Safari and background colors for <mark> tags.
+
+### Added:
+- Added support for captions in the Page Header - Featured media block. [#486](https://github.com/adventistchurch/alps/issues/486)
+
+### Fixed:
+- Fixed the Incorrect color gradients in Safari. [#482](https://github.com/adventistchurch/alps/issues/482)
+- Fixed the background color for the <mark> tag and added example pages in search. [#483](https://github.com/adventistchurch/alps/pull/483)
+- Fixed an error with the search form not displaying the search button label.
+
+## [3.6.4]
+Refactored the Javascript to removed significant unused portions of code, including `moment`, `Moment Duration Format`, and `Modaal` libriaries. This is matching the removal of `Modaal` from the CSS that happened in `3.6.3`.
+
+### Added:
+- Trimming the scripts.js file [#464](https://github.com/adventistchurch/alps/issues/464)
+
+## [3.6.3]
+Added unique CSS files for each theme.
+
+### Added:
+- Added unique CSS files for each theme. [#463](https://github.com/adventistchurch/alps/issues/463)
+
+### Fixed:
+- Resized the `background-pattern.png` file.
+
+## [3.6.2]
+Dynamic versioning
+
+### Added:
+- `versions.json` file with links to all the assets
+
+## [3.6.1]
+Fixed the accordion menu not showing.
+
+### Fixed:
+- Fixes to accordion content not showing.
+
+## [3.6.0]
+Adding search suggestions.
+
+### Added:
+- Added molecules, components and style sheets for search suggestions.
+
+## [3.5.7]
+### Fixed:
+- Fixed bug with the cursor getting changed for the `.c-accordion__item` intead of `.c-accordion__heading`.
+
+## [3.5.6]
+### Fixed:
+- Fixed bug on `.u-shift--left--1-col--standard` when partial `.hide-sabbath`  applies.
+
+## [3.5.5]
+### Fixed:
+- Fixed bug on `.u-shift--left--1-col--standard` when `.hide-sabbath` applies.
+- Fixed the Support for "start" attribute in `<ol>`. [#460](https://github.com/adventistchurch/alps/issues/460)
+
+## [3.5.4]
+#### Added:
+- Added depth classes for comments. (For Wordpress). [#458](https://github.com/adventistchurch/alps/pull/458)
+
+#### Fixed:
+- Fixed the spacing before the blockquotes.
+
+## [3.5.3]
+### Added:
+- Added `.u-link--no-underline` and `.o-link-wrapper--no-underline a` classes.
+
+## [3.5.2]
+### Fixed:
+- Updating the blockquote styles to remove certain nested styles.
 
 ## [3.5.1]
 ### Fixed:
