@@ -1,6 +1,17 @@
 /* MAIN JS
 --------------------------------------------*/
 
+/**
+ * Hotfix for ALPS Wordpress Theme
+ * Wordpress has jQuery v1.12.4 bundled. Global version must not be changed due to big amount of WP Plugins.
+ * To allow usage jQuery v2.2.4 for ALPS blocks, the $jq2 variable is created with alternative version.
+ * This version is injected into ALPS JS Script
+ */
+var alpsJQueryRef = jQuery;
+if ($jq2) {
+  alpsJQueryRef = $jq2;
+}
+
 (function($) {
 
   // BASE SETUP ------------------------------------//
@@ -478,8 +489,7 @@
     $(this).toggleClass('active');
   });
 
-})(jQuery); // Fully reference jQuery after this point.
-
+})(alpsJQueryRef); // Fully reference jQuery after this point.
 
 // Overwrites native 'firstElementChild' prototype.
 // Adds Document & DocumentFragment support for IE9 & Safari.
