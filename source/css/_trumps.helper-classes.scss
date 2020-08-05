@@ -622,6 +622,12 @@
   background-repeat: no-repeat;
 }
 
+.u-background--contain {
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
 /**
  * Flexbox
  */
