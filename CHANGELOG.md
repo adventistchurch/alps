@@ -3,6 +3,19 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.7.1]
+Add a new background modifier class.
+
+### Fixed:
+- Adds a new background modifer class `.u-background--contain` to help with the gallery block. [#490](https://github.com/adventistchurch/alps/pull/490)
+
+## [3.7.0]
+Breaking changes: Fixes to the drawer navigation and the handling of drop caps.
+
+### Fixed:
+- Fixed the  drawer navigation submenus on mobile to convert them into accordion menus and bring feature parity across ALPS React and ALPS for Wordpress. [#477](https://github.com/adventistchurch/alps/pull/477)
+- Fixed the Drop Cap handle the way it applies it to quoted text and text with html wraps (bold, emphasis, etc). This uses a new class name, .has-drop-cap. [#459](https://github.com/adventistchurch/alps/issues/459)
+
 ## [3.6.5]
 Added the media block captions and fixed gardients in Safari and background colors for <mark> tags.
 
