@@ -193,7 +193,16 @@
   }
 
   .o-background-image {
+    position: relative;
     min-height: rem(300);
+
+    .c-block__image-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   .c-block__content {
