@@ -8,7 +8,7 @@
  * This version is injected into ALPS JS Script
  */
 var alpsJQueryRef = jQuery;
-if ($jq2) {
+if (window.$jq2) {
   alpsJQueryRef = $jq2;
 }
 
@@ -267,7 +267,7 @@ if ($jq2) {
     $(this).parent().removeClass('this-is-active');
     $(this).parent().parent().parent().removeClass('this-is-active');
   });
-  
+
 
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
