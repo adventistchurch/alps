@@ -27,7 +27,8 @@
   },
   "scripts": {
     "dev": "grunt",
-    "build:prod": "grunt prod"
+    "build:prod": "grunt prod",
+    "build:cdn": "grunt cdn"
   },
   "repository": {
     "type": "git",
