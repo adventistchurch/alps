@@ -7,10 +7,6 @@
  * To allow usage jQuery v2.2.4 for ALPS blocks, the $jq2 variable is created with alternative version.
  * This version is injected into ALPS JS Script
  */
-var alpsJQueryRef = jQuery;
-if (window.$jq2) {
-  alpsJQueryRef = $jq2;
-}
 
 (function($) {
 
@@ -489,7 +485,7 @@ if (window.$jq2) {
     $(this).toggleClass('active');
   });
 
-})(alpsJQueryRef); // Fully reference jQuery after this point.
+})(window.alpsJQueryRef); // Fully reference jQuery after this point.
 
 // Overwrites native 'firstElementChild' prototype.
 // Adds Document & DocumentFragment support for IE9 & Safari.
