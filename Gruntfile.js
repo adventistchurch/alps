@@ -107,8 +107,8 @@ module.exports = function (grunt) {
 
     jsFootFiles: [
       // Include:
+      'source/js/jquery-ref.js',
       'source/js/plugins.js',
-      'source/js/modaal.js',
       'source/js/slick.js',
       'source/js/script.js'
     ],
