@@ -26,7 +26,8 @@
     "semver": "^7.3.2"
   },
   "scripts": {
-    "dev": "grunt"
+    "dev": "grunt",
+    "build:prod": "grunt prod"
   },
   "repository": {
     "type": "git",
