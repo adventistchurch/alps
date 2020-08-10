@@ -196,6 +196,10 @@
     position: relative;
     min-height: rem(300);
 
+    .c-block__image-outer-wrap {
+      padding-top: 56.25% !important; /* 16:9 aspect ratio */
+    }
+
     .c-block__image-wrap {
       position: absolute;
       top: 0;
