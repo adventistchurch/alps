@@ -50,7 +50,7 @@
 
     marker.addListener("click", function() {
       var screenWidth = window.screen.width;
-      if (screenWidth >= 400) {
+      if (screenWidth >= 500) {
         infoWindow.open(map, marker);
       } else {
         var elDiv = document.getElementById('small-screen-modal');
@@ -62,25 +62,5 @@
       });
     });
   }
-
-
-  // window.addEventListener("load", function() {
-  //   var closeIcon = false;
-  //   var inputField = document.querySelector(".custom__input");
-  //   var inputIcon = document.querySelector("#icon__close");
-  //   inputField.addEventListener("keyup", function() {
-  //     if( !closeIcon && inputField.value.length >= 1) {
-  //       closeIcon = true;
-  //       inputIcon.style.display = "block";
-  //     }
-  //     if (closeIcon && inputField.value.length === 0) {
-  //       closeIcon = false;
-  //       inputIcon.style.display = "none";
-  //     }
-  //   });
-  //   inputIcon.addEventListener('click', function() {
-  //     inputField.value = '';
-  //   })
-  // });
 
 </script>
