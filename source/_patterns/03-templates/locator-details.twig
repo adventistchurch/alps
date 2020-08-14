@@ -1,0 +1,17 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+      <div class="title-of-locators-results u-theme--background-color--dark">
+        <div class="title">
+          <a href="">{% include "@atoms/icons/icon-arrow-short-left.twig" %} FIND A CHURCH</a>
+          <p>{{ block_info.name }}</p>
+        </div>
+      </div>
+    {% include '@organisms/sections/locator-details-section.twig' %}
+    <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div>
+  <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div>
+<!-- ./l-wrap -->

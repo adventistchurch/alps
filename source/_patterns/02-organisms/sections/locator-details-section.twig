@@ -1,0 +1,46 @@
+<section class="section__locator-details">
+  <div class="locator-details">
+    <div class="details">
+      <div class="modal__block--item d-flex f-direction-column">
+        <span>location</span>
+        <span>{{ block_info.location }}</span>
+      </div>
+      <div class="modal__block--item d-flex f-direction-column">
+        <span>mailing address</span>
+        <span>{{ block_info.mailing_address }}</span>
+      </div>
+      <div class="modal__block--item d-flex f-direction-column">
+        <span>phone</span>
+        <span>{{ block_info.phone }}</span>
+      </div>
+      <div class="modal__block--item d-flex f-direction-column">
+        <span>email</span>
+        <span>{{ block_info.email }}</span>
+      </div>
+      <div class="modal__block--item d-flex f-direction-column">
+        <span>website</span>
+        <span>{{ block_info.site }}</span>
+      </div>
+      <div class="modal__block--item d-flex f-direction-column">
+        <span>service_list</span>
+        <span>{{ block_info.sabbath_school }}</span>
+        <span>{{ block_info.worship_service }}</span>
+      </div>
+      <a href="" class="o-button o-button--outline custom-button">
+        <span class="u-icon u-icon--xs u-path-fill--white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+            <title>o-arrow__short--left</title>
+            <path d="M5,9.91,6.38,8.5,3.88,6H10V4H3.88l2.5-2.5L5,.09.05,5Z" fill="#9b9b9b"/>
+          </svg>
+        </span>Back to map
+      </a>
+    </div>
+    <div class="description">
+      <img src="{{ block_info.img.src }}" alt="{{ block_info.img.alt }}">
+      <div class="modal__block--item d-flex f-direction-column">
+        <span>Description</span>
+        <span>{{ block_info.description }}</span>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,144 @@
+<style>
+  .gm-style .gm-style-iw-c {
+    width: 385px;
+    padding: 0 !important;
+  }
+  .gm-style-iw-d {
+    overflow: auto !important;
+  }
+
+  .gm-style .gm-style-iw-t::after {
+    left: -85px;
+  }
+
+  .modal__block {
+    overflow: scroll;
+  }
+
+  .modal__header span {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  .modal__block--item span:first-child {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #777777;
+
+  }
+  .modal__block--item span:not(:first-child) {
+    font-size: 14px;
+    line-height: 19px;
+    color: #777777;
+  }
+</style>
+
+<section>
+  <div class="search-input">
+    {% include '@molecules/forms/search.twig' %}
+  </div>
+  {% include '@atoms/map/map.twig' %}
+</section>
+
+<script>
+  function initMap() {
+    var mapOptions = {
+      zoom: 8,
+      center: {
+        lat: 51.7475324,
+        lng: -1.2259185,
+      },
+      disableDefaultUI: true,
+    };
+
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    {% for block in blocks %}
+      var marker = new google.maps.Marker({
+        info: {
+          name: "{{ block.name }}",
+          location: "{{ block.location }}",
+          mailing_address: "{{ block.mailing_address }}",
+          phone: "{{ block.phone }}",
+          email: "{{ block.email }}",
+          site: "{{ block.site }}",
+          sabbath_school: "{{ block.sabbath_school }}",
+          worship_service: "{{ block.worship_service }}",
+          img: {
+            src: "{{ block.img.src }}",
+            alt: "{{ block.img.alt }}"
+          }
+        },
+        position: {
+          lat: {{ block.lat }},
+          lng: {{ block.lng }},
+        },
+        icon: 'https://i.ibb.co/WByJvt2/spotlight-poi-dotless2.png',
+        map: map,
+      });
+
+      attachListener(marker);
+
+    {% endfor %}
+  }
+
+  function attachListener(marker) {
+    var infoWindow = new google.maps.InfoWindow({
+        map: map,
+        content: `<div id="content">
+      <div class="modal__header">
+        <img src="${ marker.info.img.src }" alt="${ marker.info.img.alt }" class="modal__header--img">
+        <span class="modal__header--name">${ marker.info.name }</span>
+      </div>
+      <div class="modal__block">
+        <div class="modal__block--item d-flex f-direction-column">
+          <span>location</span>
+          <span>${ marker.info.location }</span>
+        </div>
+        <div class="modal__block--item d-flex f-direction-column">
+          <span>mailing address</span>
+          <span>${ marker.info.mailing_address }</span>
+        </div>
+        <div class="modal__block--item d-flex f-direction-column">
+          <span>phone</span>
+          <span>${ marker.info.phone }</span>
+        </div>
+        <div class="modal__block--item d-flex f-direction-column">
+          <span>email</span>
+          <span>${ marker.info.email }</span>
+        </div>
+        <div class="modal__block--item d-flex f-direction-column">
+          <span>website</span>
+          <span>${ marker.info.site }</span>
+        </div>
+        <div class="modal__block--item d-flex f-direction-column">
+          <span>service_list</span>
+          <span>${ marker.info.sabbath_school }</span>
+          <span>${ marker.info.worship_service }</span>
+        </div>
+      <a href="" class="o-button o-button--outline" style="width: 66%;">
+        <span id="back__to_map" class="u-icon u-icon--xs u-path-fill--white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+            <title>o-arrow__short--left</title>
+            <path d="M5,9.91,6.38,8.5,3.88,6H10V4H3.88l2.5-2.5L5,.09.05,5Z" fill="#9b9b9b"/>
+          </svg>
+        </span>Back to map
+      </a>
+      </div>`
+    });
+    hideInput();
+    infoWindow.open(map, marker);
+  }
+
+  function hideInput() {
+    var input = document.querySelector('.search-input');
+    input.style.display = "none";
+  }
+
+</script>

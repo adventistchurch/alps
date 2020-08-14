@@ -1,0 +1,81 @@
+{
+  "blocks": [
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church4",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site": "oxfordadventist.org"
+    }
+
+  ],
+  "block_class": {
+    "section": "fixed-height",
+    "page_name": "page-title-alternative",
+    "blocks":"results-block-alternative",
+    "pagination": "pagination-alternative"
+  },
+  "pagination_classes": "u-space--double--top",
+  "pager": {
+    "link": "?page=",
+    "current": 3,
+    "surrounding": 3,
+    "totalpages": 5,
+    "ellipsis": "&hellip;",
+    "next": "Next &rarr;",
+    "prev": "&larr; Previous"
+  }
+}

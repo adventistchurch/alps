@@ -1,0 +1,23 @@
+<section class="l-wrap locator__alternative--page">
+  <div class="content l-wrap__content l-content">
+    <div>{% include '@organisms/global/header.twig' %}</div>
+    <div class="title-of-locators-results u-theme--background-color--dark">
+      <div class="title">
+        Find A Church
+        <p>Oxford</p>
+      </div>
+    </div>
+    <div class="main__content">
+      <div class="main__content--wrap">
+        {% include "@organisms/sections/locator-search-results.twig" %}
+        <section style="position: relative;">
+          {% include '@atoms/map/map.twig' %}
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="right__block">
+    {% include '@organisms/asides/sabbath.twig' %}
+  </div>
+</section>
+

@@ -1,0 +1,60 @@
+<div id="map"></div>
+<script>
+  var map = null;
+  var arrMarker = {
+      info: {
+        name: 'Oxford Seventh-day Adventist Church1',
+        location: '1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom',
+        site:'oxfordadventist.org'
+      },
+      lat: 51.7475324,
+      lng: -1.2259185,
+    };
+
+  function initMap() {
+    var mapOptions = {
+      zoom: 8,
+      center: {
+        lat: 51.7475324,
+        lng: -1.2259185,
+      },
+
+      mapTypeControl: false,
+      zoomControl: true,
+      zoomControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_BOTTOM
+      },
+      scaleControl: true,
+      streetViewControl: true,
+      streetViewControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_BOTTOM
+      },
+      fullscreenControl: false
+    };
+
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    var marker = new google.maps.Marker({
+      info: {
+        name: arrMarker.info.name,
+        location: arrMarker.info.location,
+        site: arrMarker.info.site,
+      },
+      position: {
+        lat: arrMarker.lat,
+        lng: arrMarker.lng,
+      },
+      icon: 'https://i.ibb.co/WByJvt2/spotlight-poi-dotless2.png',
+      map: map,
+    });
+  }
+
+</script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP-70x6h6sFRH6WNIVGQ5AlUrbWdsdd5g&callback=initMap&libraries=&v=weekly"
+  defer
+></script>
+
+
+
+

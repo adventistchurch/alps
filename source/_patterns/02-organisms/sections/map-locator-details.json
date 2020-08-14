@@ -1,0 +1,38 @@
+{
+  "blocks": [
+    {
+      "name": "Oxford Seventh-day Adventist Church33",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site":"oxfordadventist.org",
+      "lat": 52.7485324,
+      "lng": -1.2259185
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church23",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site":"oxfordadventist.org",
+      "lat": 51.7475324,
+      "lng": -1.2229185
+    },
+    {
+      "name": "Oxford Seventh-day Adventist Church13",
+      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
+      "site":"oxfordadventist.org",
+      "lat": 51.7275324,
+      "lng": -1.2259185
+    }
+  ],
+  "search": {
+    "url": "/search",
+    "method": "get",
+    "placeholder": "Search …",
+    "form_title": "Search",
+    "name": "search",
+    "value": null
+  },
+  "button_default": {
+    "text": "Back to map",
+    "class": "o-button--outline",
+    "icon": "icon-arrow-long-left"
+  }
+}

@@ -1,0 +1,20 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content d-flex f-direction-column " role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="d-flex f-direction-column f-grow" role="main">
+      <div class="title-of-locators-results u-theme--background-color--dark">
+        <div class="title" style="grid-column: 2 / 7;">
+          <p>{{ header.title }}</p>
+        </div>
+      </div>
+      <section id="top" style="position: relative; min-height: 500px; flex-grow: 1;">
+        {% include '@organisms/sections/map-locator-details-large.twig' %}
+      </section>
+    </main>
+    <!-- /.l-main -->
+    {% include '@organisms/global/footer.twig' %}
+  </div>
+  <!-- /.l-content -->
+  {% include '@organisms/asides/sabbath.twig' %}
+</div>
+<!-- ./l-wrap -->

@@ -1,0 +1,30 @@
+<section id="top" style="position: relative; min-height: 500px">
+  <div class="block_input">
+    <label>
+      <input type="search" name="{{ search.name }}" placeholder="{{ search.placeholder }}" class="custom__input" value="{{search.value}}" required autocomplete="off" />
+      <span id="icon__close">{% include "@atoms/icons/icon-close.twig" %}</span>
+    </label>
+  </div>
+  {% include '@atoms/map/map.twig' %}
+</section>
+
+<script>
+  window.addEventListener("load", function() {
+    var closeIcon = false;
+    var inputField = document.querySelector(".custom__input");
+    var inputIcon = document.querySelector("#icon__close");
+    inputField.addEventListener("keyup", function() {
+      if( !closeIcon && inputField.value.length >= 1) {
+        closeIcon = true;
+        inputIcon.style.display = "block";
+      }
+      if (closeIcon && inputField.value.length === 0) {
+        closeIcon = false;
+        inputIcon.style.display = "none";
+      }
+    });
+    inputIcon.addEventListener('click', function() {
+      inputField.value = '';
+    })
+  });
+</script>

@@ -1,0 +1,14 @@
+<section class="{{ block_class.section }} locator-search-result d-flex f-direction-column">
+  <div class="{{ block_class.page_name }}">
+    {% include '@molecules/blocks/heading-block.twig' %}
+  </div>
+  <div class="{{ block_class.blocks }}">
+    {% for block in blocks %}
+      {% include '@molecules/blocks/search-result.twig' with block %}
+    {% endfor %}
+  </div>
+
+  <div class="{{ block_class.pagination }}">
+    {% include "@molecules/navigation/pagination.twig" %}
+  </div>
+</section>
