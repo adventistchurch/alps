@@ -1,0 +1,41 @@
+<section class="c-locator-detail l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap--6-of-7">
+  <div class="c-locator-detail__col l-grid-item l-grid-item--m--3-col l-grid-item--xl--2-col u-padding--zero--sides">
+    <div class="c-locator-detail__item">
+      <div class="c-locator-detail__item__title">location</div>
+      <div class="c-locator-detail__item__text">{{ church_info.location }}</div>
+    </div>
+    <div class="c-locator-detail__item">
+      <div class="c-locator-detail__item__title">mailing address</div>
+      <div class="c-locator-detail__item__text">{{ church_info.mailing_address }}</div>
+    </div>
+    <div class="c-locator-detail__item">
+      <div class="c-locator-detail__item__title">phone</div>
+      <div class="c-locator-detail__item__text">{{ church_info.phone }}</div>
+    </div>
+    <div class="c-locator-detail__item">
+      <div class="c-locator-detail__item__title">email</div>
+      <div class="c-locator-detail__item__text">{{ church_info.email }}</div>
+    </div>
+    <div class="c-locator-detail__item">
+      <div class="c-locator-detail__item__title">website</div>
+      <div class="c-locator-detail__item__text">{{ church_info.site }}</div>
+    </div>
+    <div class="c-locator-detail__item">
+      <div class="c-locator-detail__item__title">service times</div>
+      <div class="c-locator-detail__item__text">{{ church_info.sabbath_school }}</div>
+      <div class="c-locator-detail__item__text">{{ church_info.worship_service }}</div>
+    </div>
+    <a href="#" class="o-button o-button--outline custom-button">
+      <span class="u-icon u-icon--xs u-path-fill--white">
+        {% include "@atoms/icons/icon-arrow-short-left.twig" %}
+      </span>Back to map
+    </a>
+  </div>
+  <div class="c-locator-detail__col l-grid-item l-grid-item--m--3-col l-grid-item--xl--2-col u-padding--zero--sides">
+    <img src="{{ church_info.img.src }}" alt="{{ church_info.img.alt }}" />
+    <div class="c-locator-detail__item">
+      <div class="c-locator-detail__item__title">description</div>
+      <div class="c-locator-detail__item__text">{{ church_info.description }}</div>
+    </div>
+  </div>
+</section>

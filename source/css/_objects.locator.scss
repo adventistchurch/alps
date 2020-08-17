@@ -144,6 +144,150 @@
   }
 }
 
+/// Locator Church Detail
+///
+/// @group 02-organisms
+/// @name sections/locator-church-detail
+.c-locator-detail {
+  flex-direction: column-reverse;
+  @include media(">medium") {
+    flex-direction: row;
+  }
+
+  &__col {}
+
+  &__item {
+    margin: rem(20) 0;
+    padding: 0 rem(20);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__title {
+      font-family: $ff-font;
+      font-weight: bold;
+      font-size: rem(10);
+      line-height: rem(14);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $c-gray;
+    }
+    &__text {
+      font-family: $ff-font;
+      font-size: rem(14);
+      line-height: rem(18);
+      color: $c-gray;
+
+      @include media(">large") {
+        font-size: rem(20);
+        line-height: rem(27);
+      }
+    }
+  }
+}
+
+
+//####################
+//  locator details section
+//####################
+
+.section__locator-details {
+  margin: 65px 0;
+}
+
+.modal__block--item span:first-child {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.modal__block--item span:not(:first-child) {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #777777;
+}
+
+.locator-details {
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.details {
+  grid-column: 2/4;
+  padding-left: 20px;
+}
+
+.description {
+  grid-column: 4/6;
+  padding-right: 20px;
+}
+
+.description div {
+  padding-left: 20px;
+}
+
+.custom-button {
+  width: 50%;
+}
+
+@media (max-width: 790px) {
+  .details {
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+
+  .description {
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+  }
+}
+
+@media (max-width: 490px) {
+  .section__locator-details {
+    margin: 0 0 20px 0;
+  }
+
+  .details {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding: 0;
+  }
+
+  .description {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+  }
+
+  .description div,
+  .details div{
+    padding: 0 20px;
+  }
+
+  .modal__block--item span:not(:first-child) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .custom-button {
+    width: 35%;
+    margin-left: 20px;
+    min-width: 145px;
+  }
+}
+
+
+
 
 //###################
 // custom classes
@@ -364,104 +508,6 @@
   }
 }
 
-//####################
-//  locator details section
-//####################
-
-.section__locator-details {
-  margin: 65px 0;
-}
-
-.modal__block--item span:first-child {
-  font-family: Noto Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #777777;
-}
-
-.modal__block--item span:not(:first-child) {
-  font-family: Noto Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 27px;
-  color: #777777;
-}
-
-.locator-details {
-  display:grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.details {
-  grid-column: 2/4;
-  padding-left: 20px;
-}
-
-.description {
-  grid-column: 4/6;
-  padding-right: 20px;
-}
-
-.description div {
-  padding-left: 20px;
-}
-
-.custom-button {
-  width: 50%;
-}
-
-@media (max-width: 790px) {
-  .details {
-    grid-column-start: 2;
-    grid-column-end: 6;
-  }
-
-  .description {
-    padding: 0;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 1;
-  }
-}
-
-@media (max-width: 490px) {
-  .section__locator-details {
-    margin: 0 0 20px 0;
-  }
-
-  .details {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    padding: 0;
-  }
-
-  .description {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 1;
-  }
-
-  .description div,
-  .details div{
-    padding: 0 20px;
-  }
-
-  .modal__block--item span:not(:first-child) {
-    font-size: 14px;
-    line-height: 19px;
-  }
-
-  .custom-button {
-    width: 35%;
-    margin-left: 20px;
-    min-width: 145px;
-  }
-}
 
 //#############
 
