@@ -33,7 +33,7 @@
   }
 
   &__title {
-    font-family: $ff-font;
+    font-family: $ff-font--primary;
     font-weight: bold;
     font-size: rem(20);
     line-height: rem(24);
@@ -101,6 +101,49 @@
     cursor: pointer;
   }
 }
+
+/// Locator Search Results
+///
+/// @group 01-molecules
+/// @name church-locator/search-results-item
+.c-search-results__item {
+  width: 100%;
+  position: relative;
+  background: #efefef;
+  padding: rem(20);
+  margin: 0 10px 10px 0;
+  grid-column: 2 / 4;
+  color: $c-gray;
+
+  &__title {
+    font-family: $ff-font--primary;
+    font-weight: bold;
+    font-size: rem(20);
+    line-height: rem(24);
+  }
+
+  &__location {
+    font-family: $ff-font;
+    font-size: rem(14);
+    line-height: rem(19);
+    margin: rem(15) 0;
+  }
+
+  &__link {
+    font-family: $ff-font;
+    font-weight: bold;
+    font-size: rem(10);
+    line-height: rem(14);
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    a {
+      color: $c-gray;
+    }
+  }
+}
+
 
 //###################
 // custom classes
@@ -606,5 +649,104 @@
 @media (max-width: 500px) {
   .block_input {
     max-width: 100%;
+  }
+}
+
+//###################
+// modal info
+//###################
+
+.modal {
+
+  max-width: 400px;
+  width: 100%;
+  max-height: 700px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
+
+  &__header {
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+
+    &--img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+    &--name {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px 40px 10px 20px;
+
+    &--title {
+      font-family: $ff-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &--location {
+      font-family: $ff-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      margin: 15px 0;
+    }
+
+    &--site {
+      font-family: $ff-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 14px;
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    &--item {
+      margin: 10px 0;
+    }
+  }
+}
+
+#small-screen-modal {
+  position: absolute;
+  bottom: 0;
+}
+
+.modal__arrow:after{
+  background: linear-gradient(45deg,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+  box-shadow: -2px 2px 2px 0 rgba(178,178,178,.4);
+  content: "";
+  height: 15px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(135deg) scale(2);
+  width: 15px;
+}
+
+@media (max-width: 615px) {
+  .modal__result {
+    grid-column: 2 / 6 !important;
   }
 }

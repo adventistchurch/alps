@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Molecules
 - `@molecules/church-locator/search` – search input for Locator
 - `@molecules/church-locator/church-info` – church info popup for map markers
+- `@molecules/church-locator/search-results-item` – single search result block
 
 ### Added
 
