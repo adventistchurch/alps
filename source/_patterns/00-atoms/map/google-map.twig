@@ -1,0 +1,21 @@
+<div id="map"></div>
+<script>
+  function initMap() {
+    const mapOptions = {{ map.options | json_encode | raw }};
+    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    const markers = [
+      {% for marker in map.markers %}
+      {{ marker | json_encode | raw }}
+      {% endfor %}
+    ];
+
+    for (const marker of markers) {
+      new google.maps.Marker({
+        ...marker,
+        map: map,
+      });
+    }
+  }
+</script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP-70x6h6sFRH6WNIVGQ5AlUrbWdsdd5g&callback=initMap"></script>

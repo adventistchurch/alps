@@ -1,0 +1,21 @@
+{
+  "map": {
+    "options": {
+      "center": {
+        "lat": 51.7475324,
+        "lng": -1.2259185
+      },
+      "zoom": 8,
+      "fullscreenControl": false
+    },
+    "markers": [
+      {
+        "position": {
+          "lat": 51.7475324,
+          "lng": -1.2259185
+        },
+        "icon": "/v3/images/locator-marker.png"
+      }
+    ]
+  }
+}
