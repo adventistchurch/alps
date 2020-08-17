@@ -3,17 +3,17 @@
     "apiKey": "AIzaSyBP-70x6h6sFRH6WNIVGQ5AlUrbWdsdd5g",
     "options": {
       "center": {
-        "lat": 51.7475324,
-        "lng": -1.2259185
+        "lat": 42.324574,
+        "lng": -85.190656
       },
-      "zoom": 8,
+      "zoom": 12,
       "fullscreenControl": false
     },
     "markers": [
       {
         "position": {
-          "lat": 51.7475324,
-          "lng": -1.2259185
+          "lat": 42.324574,
+          "lng": -85.190656
         },
         "icon": "/v3/images/locator-marker.png"
       }

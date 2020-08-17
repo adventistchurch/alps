@@ -7,8 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 # Church Locator Patterns
 
 ## Atoms
+- `@atoms/icons/icon-close--thin` – thin variant of cross icon
 - `@atoms/map/google-map` – basic Google Map component with markers and custom marker symbol
 
+## Molecules
+- `@molecules/church-locator/search` – search input for Locator
+- `@molecules/church-locator/church-info` – church info popup for map markers
 
 ### Added
 
