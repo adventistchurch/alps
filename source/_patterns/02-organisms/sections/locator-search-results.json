@@ -2,75 +2,71 @@
   "heading_block": {
     "title": "Results"
   },
-  "blocks": [
+  "items": [
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     },
     {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
-    },
-    {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
-    },
-    {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
-    },
-    {
-      "name": "Oxford Seventh-day Adventist Church4",
-      "location": "1a Chester St, Cowely, Oxford OX4 1SL, United Kingdom",
-      "site": "oxfordadventist.org"
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
     }
-
   ],
-  "block_class": {
-    "section": "",
-    "page_name": "page-title",
-    "blocks":"results-block",
-    "pagination": "pagination"
-  },
   "pagination_classes": "u-space--double--top",
   "pager": {
     "link": "?page=",

@@ -106,20 +106,42 @@
 ///
 /// @group 01-molecules
 /// @name church-locator/search-results-item
+.c-search-results {
+  &__wrap {
+    width: 100%;
+  }
+  &__list {
+    margin-top: $space;
+    display: grid;
+    grid-template-columns: col-width(6);
+    grid-gap: $space;
+
+    @include media(">large") {
+      grid-template-columns: col-width(2, $space) col-width(2, $space);
+    }
+  }
+  &__nav {
+    width: col-width(4);
+  }
+}
+
 .c-search-results__item {
   width: 100%;
   position: relative;
   background: #efefef;
   padding: rem(20);
-  margin: 0 10px 10px 0;
-  grid-column: 2 / 4;
   color: $c-gray;
 
   &__title {
     font-family: $ff-font--primary;
     font-weight: bold;
-    font-size: rem(20);
-    line-height: rem(24);
+    font-size: rem(16);
+    line-height: rem(20);
+
+    @include media(">medium") {
+      font-size: rem(20);
+      line-height: rem(24);
+    }
   }
 
   &__location {

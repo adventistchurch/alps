@@ -15,6 +15,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - `@molecules/church-locator/church-info` – church info popup for map markers
 - `@molecules/church-locator/search-results-item` – single search result block
 
+## Organisms
+- `@organisms/sections/locator-church-detail` – church detail component
+- `@organisms/sections/locator-search-results` – search results list
+
 ### Added
 
 

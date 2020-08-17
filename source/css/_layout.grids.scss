@@ -76,6 +76,10 @@
   }
 }
 
+@function col-width($n, $reduce: 0.01px) {
+  @return calc((100vw / 7) * #{$n} - #{$reduce});
+}
+
 [class*="grid--"] {
   &.u-no-gutters {
     > .l-grid-item {
