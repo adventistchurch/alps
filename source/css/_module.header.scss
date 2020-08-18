@@ -125,7 +125,7 @@
 
     @include media(">medium") {
       position: relative;
-      order: 1;
+      order: 0;
       padding-top: rem(10);
       padding-bottom: rem(5);
     }
@@ -160,15 +160,21 @@
     }
 
     &--wide {
-     order: 1;
-     width: 100%;
+
+      @include media("<xsmall") {
+        width: 100%;
+      }
+
+      @include media(">large") {
+        width: 100%;
+      }
 
       svg, img {
-        width: rem(300);
+        width: rem(700);
         max-width: rem(300);
 
         @include media(">medium") {
-          max-width: rem(300);
+          max-width: rem(400);
         }
 
         @include media(">large") {
@@ -176,7 +182,15 @@
         }
 
         @include media(">xlarge") {
-          max-width: rem(300);
+          max-width: rem(400);
+        }
+
+        @include media(">xxlarge") {
+          max-width: rem(600);
+        }
+
+        @include media(">xxxlarge") {
+          max-width: rem(700);
         }
       }
     }
