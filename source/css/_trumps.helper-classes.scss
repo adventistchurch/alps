@@ -217,6 +217,16 @@
     }
   }
 
+  .o-drop-cap {
+    float: right;
+    margin-right: 0;
+    margin-left: $pad;
+
+    @include media(">large") {
+      margin-left: $pad;
+    }
+  }
+
   .c-block__category {
     padding-left: $pad;
     padding-right: 0;
@@ -609,6 +619,12 @@
 
 .u-background-image {
   background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.u-background--contain {
+  background-size: contain;
+  background-position: center right;
   background-repeat: no-repeat;
 }
 

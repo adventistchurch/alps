@@ -3,14 +3,65 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [3.__]
-Fixed
+## [3.7.9]
+Fixes aspect ratio in MediaBlock with .o-background-image
+
+### Fixed:
+- Fixes aspect ratio in MediaBlock with .o-background-image  [#496](https://github.com/adventistchurch/alps/pull/496)
+
+## [3.7.7]
+Hotfix for script error introduced in 3.7.3
+
+### Fixed:
+- Hotfix for script error introduced in 3.7.3 [#494](https://github.com/adventistchurch/alps/pull/494)
+
+## [3.7.6]
+Redeploy of Hotfix for Uncaught ReferenceError: $jq2 is not defined at script.min.js
+
+### Fixed:
+- Uncaught ReferenceError: $jq2 is not defined at script.min.js [#493](https://github.com/adventistchurch/alps/pull/493)
+
+## [3.7.4]
+Hotfix for Uncaught ReferenceError: $jq2 is not defined at script.min.js
+
+### Fixed:
+- Uncaught ReferenceError: $jq2 is not defined at script.min.js [#493](https://github.com/adventistchurch/alps/pull/493)
+
+## [3.7.3]
+Hotfix for ALPS Wordpress Theme
+
+### Fixed:
+- Hotfix for ALPS Wordpress Theme [#455](https://github.com/adventistchurch/alps/pull/455)
+
+## [3.7.2]
+Fixes background image caption on the Media Block.
+
+### Fixed:
+- Fixes background image caption on the Media Block. [#491](https://github.com/adventistchurch/alps/pull/491)
+
+## [3.7.1]
+Add a new background modifier class.
+
+### Fixed:
+- Adds a new background modifer class `.u-background--contain` to help with the gallery block. [#490](https://github.com/adventistchurch/alps/pull/490)
+
+## [3.7.0]
+Breaking changes: Fixes to the drawer navigation and the handling of drop caps.
+
+### Fixed:
+- Fixed the  drawer navigation submenus on mobile to convert them into accordion menus and bring feature parity across ALPS React and ALPS for Wordpress. [#477](https://github.com/adventistchurch/alps/pull/477)
+- Fixed the Drop Cap handle the way it applies it to quoted text and text with html wraps (bold, emphasis, etc). This uses a new class name, .has-drop-cap. [#459](https://github.com/adventistchurch/alps/issues/459)
+
+## [3.6.5]
+Added the media block captions and fixed gardients in Safari and background colors for <mark> tags.
+
+### Added:
+- Added support for captions in the Page Header - Featured media block. [#486](https://github.com/adventistchurch/alps/issues/486)
 
 ### Fixed:
 - Fixed the Incorrect color gradients in Safari. [#482](https://github.com/adventistchurch/alps/issues/482)
 - Fixed the background color for the <mark> tag and added example pages in search. [#483](https://github.com/adventistchurch/alps/pull/483)
 - Fixed an error with the search form not displaying the search button label.
-
 
 ## [3.6.4]
 Refactored the Javascript to removed significant unused portions of code, including `moment`, `Moment Duration Format`, and `Modaal` libriaries. This is matching the removal of `Modaal` from the CSS that happened in `3.6.3`.

@@ -15,7 +15,7 @@ module.exports = function (grunt) {
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
   const major_version = "3";
-  const version = "3.6.4";
+  const version = "3.7.9";
 
   /**
    * Split SCSS files by theme
@@ -107,8 +107,8 @@ module.exports = function (grunt) {
 
     jsFootFiles: [
       // Include:
+      'source/js/jquery-ref.js',
       'source/js/plugins.js',
-      'source/js/modaal.js',
       'source/js/slick.js',
       'source/js/script.js'
     ],
