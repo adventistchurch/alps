@@ -16,15 +16,15 @@
 ///
 /// @group 01-molecules
 /// @name church-locator/church-info
-.c-church-info {
+.c-church-info.c-church-info--basic {
   max-width: rem(400);
   width: 100%;
   max-height: rem(700);
   background: $c-white;
-  position: relative;
-  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
+  //position: relative;
+  //box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
 
-  &__wrap {
+  .c-church-info__wrap {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -32,21 +32,21 @@
     padding: rem(10) rem(40) rem(10) rem(20);
   }
 
-  &__title {
+  .c-church-info__title {
     font-family: $ff-font--primary;
     font-weight: bold;
     font-size: rem(20);
     line-height: rem(24);
   }
 
-  &__location {
+  .c-church-info__location {
     font-family: $ff-font;
     font-size: rem(14);
     line-height: rem(19);
     margin: rem(15) 0;
   }
 
-  &__link {
+  .c-church-info__link {
     font-family: $ff-font;
     font-weight: bold;
     font-size: rem(10);
@@ -54,6 +54,67 @@
 
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+}
+
+.c-church-info.c-church-info--large {
+  max-width: rem(400);
+  width: 100%;
+  background: $c-white;
+
+  .c-church-info__header {
+    position: relative;
+    text-align: left;
+    height: rem(110);
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      padding: 0 $space;
+      font-size: rem(20);
+      font-family: $ff-font--primary;
+      font-weight: bold;
+      color: $c-white;
+      text-shadow: 1px 1px 2px black;
+    }
+  }
+
+  .c-church-info__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-church-info__item {
+    margin: rem(6);
+    padding: 0 rem(6);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__title {
+      font-family: $ff-font;
+      font-weight: bold;
+      font-size: rem(10);
+      line-height: rem(14);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $c-gray;
+    }
+    &__text {
+      font-family: $ff-font;
+      font-size: rem(14);
+      line-height: rem(18);
+      color: $c-gray;
+    }
+  }
+  .c-church-info__btn {
+    width: 50%;
+    margin: rem(6);
   }
 }
 
@@ -122,6 +183,12 @@
   }
   &__nav {
     width: col-width(4);
+  }
+
+  &--side &__list {
+    @include media(">large") {
+      grid-template-columns: col-width(2, $space);
+    }
   }
 }
 
@@ -208,6 +275,49 @@
   }
 }
 
+/// Locator Map
+///
+/// @group 02-organisms
+/// @name sections/locator-map-with-info
+/// @name sections/locator-map-with-large-info
+
+/// Google Map InfoWindow transform
+.c-map-info--basic {
+  .gm-style {
+    & .gm-style-iw-c {
+      border-radius: 0;
+      transform: translate(-122%, -25%);
+      width: rem(300);
+    }
+
+    & .gm-style-iw-t::after {
+      transform: translate(-50%,-50%) rotate(-135deg) scale(2);
+      left: rem(-70);
+      top: rem(30);
+    }
+  }
+}
+
+.c-map-info--large {
+  .gm-style {
+    .gm-style-iw-c {
+      border-radius: 0;
+      transform: translate(-122%, -40%);
+      width: rem(300);
+      padding: 0;
+    }
+
+    .gm-style-iw-t::after {
+      transform: translate(-50%,-50%) rotate(-135deg) scale(2);
+      left: rem(-70);
+      top: rem(30);
+    }
+    .gm-style-iw-d::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+}
 
 //####################
 //  locator details section
@@ -330,20 +440,7 @@
 //###################
 // infoModal
 //###################
-.gm-style {
-  & .gm-style-iw-c {
-    border-radius: 0;
-    padding: 10px 40px 10px 20px !important;
-    transform: translate(-122%, -25%);
-    width: 300px;
-  }
 
-  & .gm-style-iw-t::after {
-    transform: translate(-50%,-50%) rotate(-135deg) scale(2);
-    left: -70px;
-    top: 28px;
-  }
-}
 
 .gm-style-iw button {
   display: none !important;

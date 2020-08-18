@@ -1,0 +1,73 @@
+<section>
+  {% include "@atoms/map/google-map.twig" %}
+</section>
+
+<script>
+  function onMapInit(map, marker) {
+    const infoWindow = new google.maps.InfoWindow({
+      map: map,
+      content: `{% include "@molecules/church-locator/church-info.twig" with church_info %}`
+    });
+
+    infoWindow.open(map, marker);
+  }
+
+  {#function initMap() {#}
+  {#  var mapOptions = {#}
+  {#    zoom: 8,#}
+  {#    center: {#}
+  {#      lat: 51.7475324,#}
+  {#      lng: -1.2259185,#}
+  {#    },#}
+  {#    disableDefaultUI: true,#}
+  {#  };#}
+
+  {#  map = new google.maps.Map(document.getElementById("map"), mapOptions);#}
+
+  {#  {% for block in blocks %}#}
+  {#    var marker = new google.maps.Marker({#}
+  {#      info: {#}
+  {#        name: `{{ block.name }}`,#}
+  {#        location: `{{ block.location }}`,#}
+  {#        site: `{{ block.site }}`,#}
+  {#      },#}
+  {#      position: {#}
+  {#        lat: {{ block.lat }},#}
+  {#        lng: {{ block.lng }},#}
+  {#      },#}
+  {#      icon: 'https://i.ibb.co/WByJvt2/spotlight-poi-dotless2.png',#}
+  {#      map: map,#}
+  {#    });#}
+  {#    attachListener(marker);#}
+  {#  {% endfor %}#}
+  {#}#}
+
+  {#function attachListener(marker) {#}
+  {#  console.log(marker);#}
+  {#  var infoWindow = new google.maps.InfoWindow({#}
+  {#    map: map,#}
+  {#    content: `<div id="content">#}
+  {#      <p class="modal__block--title">${marker.info.name}</p>#}
+  {#      <p class="modal__block--location">${marker.info.location}</p>#}
+  {#      <p class="modal__block--site">${marker.info.site}</p>#}
+  {#    </div>`#}
+  {#  });#}
+
+  {#  var smallInfoWindow = `<div class="modal__arrow"><div class="modal"><div class="modal__block"><p class="modal__block--title">${marker.info.name}</p><p class="modal__block--location">${marker.info.location}</p><p class="modal__block--site"><a href="#">${marker.info.site}</a></p></div></div></div>`;#}
+
+  {#  marker.addListener("click", function() {#}
+  {#    var screenWidth = window.screen.width;#}
+  {#    if (screenWidth >= 500) {#}
+  {#      infoWindow.open(map, marker);#}
+  {#    } else {#}
+  {#      var elDiv = document.getElementById('small-screen-modal');#}
+  {#      elDiv.innerHTML = smallInfoWindow;#}
+  {#    }#}
+  {#    var closeIcons = document.querySelectorAll('.gm-ui-hover-effect');#}
+  {#    closeIcons.forEach(item => {#}
+  {#      item.style.display = "none";#}
+  {#    });#}
+  {#  });#}
+  {#}#}
+
+</script>
