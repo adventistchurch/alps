@@ -1,0 +1,80 @@
+{
+  "heading_block": {
+    "title": "Results"
+  },
+  "items": [
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    },
+    {
+      "church_info": {
+        "name": "Battle Creek Seventh-day Adventist Tabernacle",
+        "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+        "url": "www.battlecreektabernacle.com"
+      }
+    }
+  ],
+  "pagination_classes": "u-space--double--top",
+  "pager": {
+    "link": "?page=",
+    "current": 3,
+    "surrounding": 3,
+    "totalpages": 5,
+    "ellipsis": "&hellip;",
+    "next": "Next &rarr;",
+    "prev": "&larr; Previous"
+  }
+}

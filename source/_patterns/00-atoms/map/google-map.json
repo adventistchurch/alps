@@ -1,0 +1,25 @@
+{
+  "map": {
+    "apiKey": "AIzaSyBP-70x6h6sFRH6WNIVGQ5AlUrbWdsdd5g",
+    "options": {
+      "center": {
+        "lat": 42.324574,
+        "lng": -85.190656
+      },
+      "zoom": 12,
+      "fullscreenControl": false
+    },
+    "markers": [
+      {
+        "position": {
+          "lat": 42.324574,
+          "lng": -85.190656
+        },
+        "icon": "/v3/images/locator-marker.png"
+      }
+    ]
+  },
+  "custom_class": {
+    "map": "c-map-default"
+  }
+}

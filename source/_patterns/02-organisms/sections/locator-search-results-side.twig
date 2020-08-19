@@ -1,0 +1,7 @@
+<section class="c-search-results c-search-results--side">
+  <div class="c-search-results__list">
+    {% for item in items %}
+      {% include '@molecules/church-locator/search-results-item.twig' with item %}
+    {% endfor %}
+  </div>
+</section>

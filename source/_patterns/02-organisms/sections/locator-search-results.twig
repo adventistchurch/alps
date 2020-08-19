@@ -1,0 +1,15 @@
+<section class="c-search-results l-grid l-grid--7-col u-shift--left--1-col--at-large l-grid-wrap--6-of-7">
+  <div class="c-search-results__wrap u-padding--zero--sides">
+    {% include '@molecules/blocks/heading-block.twig' %}
+
+    <div class="c-search-results__list">
+      {% for item in items %}
+        {% include '@molecules/church-locator/search-results-item.twig' with item %}
+      {% endfor %}
+    </div>
+
+    <div class="c-search-results__nav">
+      {% include "@molecules/navigation/pagination.twig" %}
+    </div>
+  </div>
+</section>
