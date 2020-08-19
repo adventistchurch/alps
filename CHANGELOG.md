@@ -13,14 +13,76 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Molecules
 - `@molecules/church-locator/search` – search input for Locator
 - `@molecules/church-locator/church-info` – church info popup for map markers
+- `@molecules/church-locator/church-info-large` – church info popup for map markers with large info
 - `@molecules/church-locator/search-results-item` – single search result block
 
 ## Organisms
 - `@organisms/sections/locator-church-detail` – church detail component
 - `@organisms/sections/locator-search-results` – search results list
+- `@organisms/sections/locator-search-results-side` – search results list alternative view
+- `@organisms/sections/locator-map-with-info` – map with basic popup opened
+- `@organisms/sections/locator-map-with-large-info` – map with large popup opened
 
-### Added
+## Templates
+- `@templates/locator-with-basic-info` – map with basic info popup
+- `@templates/locator-with-large-info` – map with large info popup
+- `@templates/locator-results-grid` – map with grid search results
+- `@templates/locator-results-side` – map with side search results
 
+## Pages
+- `@pages/locator/locator-with-basic-info` – map with basic info popup
+- `@pages/locator/locator-with-large-info` – map with large info popup
+- `@pages/locator/locator-results-grid` – map with grid search results
+- `@pages/locator/locator-results-side` – map with side search results
+
+## [3.7.9]
+Fixes aspect ratio in MediaBlock with .o-background-image
+
+### Fixed:
+- Fixes aspect ratio in MediaBlock with .o-background-image  [#496](https://github.com/adventistchurch/alps/pull/496)
+
+## [3.7.7]
+Hotfix for script error introduced in 3.7.3
+
+### Fixed:
+- Hotfix for script error introduced in 3.7.3 [#494](https://github.com/adventistchurch/alps/pull/494)
+
+## [3.7.6]
+Redeploy of Hotfix for Uncaught ReferenceError: $jq2 is not defined at script.min.js
+
+### Fixed:
+- Uncaught ReferenceError: $jq2 is not defined at script.min.js [#493](https://github.com/adventistchurch/alps/pull/493)
+
+## [3.7.4]
+Hotfix for Uncaught ReferenceError: $jq2 is not defined at script.min.js
+
+### Fixed:
+- Uncaught ReferenceError: $jq2 is not defined at script.min.js [#493](https://github.com/adventistchurch/alps/pull/493)
+
+## [3.7.3]
+Hotfix for ALPS Wordpress Theme
+
+### Fixed:
+- Hotfix for ALPS Wordpress Theme [#455](https://github.com/adventistchurch/alps/pull/455)
+
+## [3.7.2]
+Fixes background image caption on the Media Block.
+
+### Fixed:
+- Fixes background image caption on the Media Block. [#491](https://github.com/adventistchurch/alps/pull/491)
+
+## [3.7.1]
+Add a new background modifier class.
+
+### Fixed:
+- Adds a new background modifer class `.u-background--contain` to help with the gallery block. [#490](https://github.com/adventistchurch/alps/pull/490)
+
+## [3.7.0]
+Breaking changes: Fixes to the drawer navigation and the handling of drop caps.
+
+### Fixed:
+- Fixed the  drawer navigation submenus on mobile to convert them into accordion menus and bring feature parity across ALPS React and ALPS for Wordpress. [#477](https://github.com/adventistchurch/alps/pull/477)
+- Fixed the Drop Cap handle the way it applies it to quoted text and text with html wraps (bold, emphasis, etc). This uses a new class name, .has-drop-cap. [#459](https://github.com/adventistchurch/alps/issues/459)
 
 ## [3.6.5]
 Added the media block captions and fixed gardients in Safari and background colors for <mark> tags.
