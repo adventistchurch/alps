@@ -226,6 +226,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "Middle East and North Africa",
+          "title_tag": "h2",
           "picture": {
             "img_break_m": "500",
             "img": {

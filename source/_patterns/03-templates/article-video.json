@@ -52,6 +52,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -85,6 +86,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -118,6 +120,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -151,6 +154,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
@@ -184,6 +188,7 @@
           "block_meta_class": "hide",
           "kicker": false,
           "title": "General Conference",
+          "title_tag": "h3",
           "picture": {
             "img_break_m": "500",
             "img": {
