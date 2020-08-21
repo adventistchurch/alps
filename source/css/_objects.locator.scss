@@ -332,7 +332,7 @@
   .gm-style {
     .gm-style-iw-c {
       border-radius: 0;
-      transform: translate(-122%, -25%);
+      transform: translate(-120%, -25%);
       width: rem(300);
 
       // Hide the popup close button
@@ -343,8 +343,8 @@
 
     .gm-style-iw-t::after {
       transform: translate(-50%,-50%) rotate(-135deg) scale(2);
-      left: rem(-70);
-      top: rem(30);
+      left: rem(-62);
+      top: rem(25);
     }
   }
 }
@@ -353,7 +353,7 @@
   .gm-style {
     .gm-style-iw-c {
       border-radius: 0;
-      transform: translate(-122%, -40%);
+      transform: translate(-120%, -40%);
       width: rem(300);
       padding: 0;
 
@@ -365,8 +365,8 @@
 
     .gm-style-iw-t::after {
       transform: translate(-50%,-50%) rotate(-135deg) scale(2);
-      left: rem(-70);
-      top: rem(30);
+      left: rem(-62);
+      top: rem(25);
     }
     .gm-style-iw-d::-webkit-scrollbar {
       width: 0;

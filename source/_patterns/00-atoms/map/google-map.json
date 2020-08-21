@@ -15,6 +15,13 @@
           "lat": 42.324574,
           "lng": -85.190656
         },
+        "icon": "/v3/images/locator-marker--focus.png"
+      },
+      {
+        "position": {
+          "lat": 42.3162331,
+          "lng": -85.1778066
+        },
         "icon": "/v3/images/locator-marker.png"
       }
     ]
