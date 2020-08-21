@@ -170,6 +170,15 @@ html {
       margin-left: calc(100vw / 7 * 1 - 0.01px);
     }
   }
+  .full-width {
+    .c-article,
+    .c-sidebar {
+      @include media(">medium", "<=large") {
+        margin: 0;
+        width: 100vw;
+      }
+    }
+  }
 }
 
 .l-wrap {
