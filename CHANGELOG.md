@@ -3,11 +3,15 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [3.7.xx]
+Adding: `full-width` class for making a page with no side column margins.
+
 ## [3.7.9]
 Fixes aspect ratio in MediaBlock with .o-background-image
 
 ### Fixed:
-- Fixes aspect ratio in MediaBlock with .o-background-image  [#496](https://github.com/adventistchurch/alps/pull/496)
+- Fixes aspect ratio in MediaBlock with .o-background-image [#496](https://github.com/adventistchurch/alps/pull/496)
 
 ## [3.7.7]
 Hotfix for script error introduced in 3.7.3
