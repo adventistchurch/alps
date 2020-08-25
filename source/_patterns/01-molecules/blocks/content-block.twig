@@ -31,6 +31,9 @@
     {% else %}
       {% if content_block_default.cta.url or content_block_default.cta.text %}
         <a href="{{ content_block_default.cta.url }}" class="c-block__button o-button o-button--outline">{{ content_block_default.cta.text }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+        {% if content_block_default.meta %}
+          <div class="c-block__meta u-font--secondary--xs u-color--gray ">{{ content_block_default.meta }}</div>
+        {% endif %}
       {% endif %}
     {% endif %}
   </div>
