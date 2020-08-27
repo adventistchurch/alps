@@ -3,8 +3,12 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.7.11]
+### Fixed
+Fixed: Added `height: auto;` to fix the scaling of images where the `height` and `width` is defined in the HTML. [#503](https://github.com/adventistchurch/alps/issues/503)
 
 ## [3.7.10]
+### Added
 Added: `full-width` class for making a page with no side column margins.
 Added: Search Meta information to show the URL the source came from.
 
