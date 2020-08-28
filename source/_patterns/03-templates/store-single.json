@@ -1,0 +1,167 @@
+{
+  "header_logo": "logo-sda-shop",
+  "secondary_nav": {
+    "items": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      {
+        "icon": "icon-trolly",
+        "text": "Cart (3)"
+      },
+      {
+        "icon": "icon-search",
+        "text": "Search"
+      }
+    ]
+  },
+  "primary_nav": {
+    "items": [
+      {
+        "text": "Spirituality",
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Vitality",
+        "is_active": false,
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Services",
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Beliefs",
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "World Church",
+        "subnav": {
+          "items": [
+            {
+              "text": "General Conference"
+            },
+            {
+              "text": "East-Central Africa"
+            },
+            {
+              "text": "North America",
+              "subnav": {
+                "items": [
+                  {
+                    "text": "Atlantic Union"
+                  },
+                  {
+                    "text": "Canadian Union"
+                  },
+                  {
+                    "text": "Columbia Union"
+                  },
+                  {
+                    "text": "Lake Union"
+                  }
+                ]
+              }
+            },
+            {
+              "text": "Middle East and North Africa"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Information",
+        "link_class": false,
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "News",
+        "subnav": false
+      }
+    ]
+  },
+  "page_header": {
+    "title": "Gift Shop",
+    "kicker": ""
+  },
+  "footer": {
+    "text": "The Texas Conference of Seventh-day Adventists is an administrative entity of the Seventh-day Adventist church."
+  }
+}

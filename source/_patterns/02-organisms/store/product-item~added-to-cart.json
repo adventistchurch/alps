@@ -1,0 +1,46 @@
+{
+  "notification": {
+    "type": "success",
+    "appearance": "large-notification",
+    "text": "Your gift has successfully been added to your cart. Thank you!",
+    "first_button": {
+      "text": "View Cart",
+      "class": "o-button--outline",
+      "icon": "icon-arrow-short-right"
+    },
+    "second_button": false
+  },
+
+  "item": {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQzirslF27pnrlMO_zp2wpk9IwzM_mxjpgFlA&usqp=CAU",
+    "title": "Yaks and Sheep",
+    "short_description": "Raising a family in Mongolia can be tough. Brutal winters mean months of limited food and money. You can change that by helping a family start a cheese production business, giving them year-round food and income.",
+    "long_description": false
+  },
+
+  "add_to_cart": {
+    "items": [
+      {
+        "label": "$55",
+        "checked": true
+      },
+      {
+        "label": "Choose your own amount",
+        "checked": false
+      }
+    ],
+    "button_default": {
+      "text": "Add to cart",
+      "class": "",
+      "icon": "icon-trolly"
+    }
+  },
+
+  "button": {
+    "button_default": {
+      "text": "Back to shop",
+      "class": "o-button--outline",
+      "icon": "icon-arrow-short-left"
+    }
+  }
+}

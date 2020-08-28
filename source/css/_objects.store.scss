@@ -1,0 +1,1125 @@
+.c-form-store__components {
+  @include media("<large") {
+    width: col-width(3, $space);
+  }
+  @include media("<medium") {
+    width: col-width(5, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+  &--title {
+    font-family: Noto Sans;
+    font-size: 16px;
+    line-height: 20px;
+    color: #02293e;
+  }
+  &--subtitle {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4a4a4a;
+  }
+  &--date__fields {
+    display: flex;
+  }
+  &--date__fields .day {
+    width: 57px;
+  }
+  &--date__fields .month {
+    width: 57px;
+    margin: 0 $space;
+  }
+  &--date__fields .year {
+    width: 110px;
+  }
+  &--button a {
+    background-color: #2e6de7 !important;
+    color: #fff;
+  }
+}
+.c-form-store-additional-information {
+  @include media("<large") {
+    width: col-width(3, $space);
+  }
+  @include media("<medium") {
+    width: col-width(5, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+  & p {
+    font-family: Noto Sans;
+    font-size: 16px;
+    line-height: 20px;
+    color: #02293e;
+  }
+  & label {
+    font-family: Noto Serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4a4a4a;
+  }
+}
+.c-form-store-details {
+  @include media("<large") {
+    width: col-width(3, $space);
+  }
+  @include media("<medium") {
+    width: col-width(5, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+}
+
+.warning {
+  border-left: 4px solid #FFA06C;
+}
+.info {
+  border-left: 4px solid #84ADFD;
+}
+.error {
+  border-left: 4px solid #FD2642;
+}
+.success {
+  border-left: 4px solid #2C8500;
+}
+.c-store-notification {
+  width: col-width(2, $space);
+  height: min-content;
+  background: $c-white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+
+  @include media("<xlarge") {
+    width: col-width(3, $space);
+  }
+  @include media("<large") {
+    width: col-width(4, $space);
+  }
+  @include media("<medium") {
+    width: col-width(6, $space);
+  }
+
+  &__wrap {
+    padding: $space;
+    display: flex;
+    justify-content: space-between;
+
+    @include media("<xlarge") {
+      flex-direction: column;
+    }
+  }
+  &__header {
+    margin-bottom: 10px;
+  }
+  &__header svg {
+    width: 12px;
+  }
+  &__text {
+    width: 285px;
+  }
+  &__button {
+    @include media("<xlarge") {
+      margin-top: $space;
+    }
+  }
+  &__button a svg{
+    width: 10px;
+    margin-right: 10px;
+  }
+}
+.large-notification {
+  width: col-width(4, $space);
+  @include media("<xlarge") {
+    width: col-width(3, $space);
+  }
+  @include media("<large") {
+    width: col-width(4, $space);
+  }
+  @include media("<medium") {
+    width: col-width(6, $space);
+  }
+}
+.small-notification {
+  width: col-width(2, $space);
+
+  @include media("<xlarge") {
+    width: col-width(3, $space);
+  }
+  @include media("<large") {
+    width: col-width(4, $space);
+  }
+  @include media("<medium") {
+    width: col-width(6, $space);
+  }
+
+  & .c-store-notification__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  & .c-store-notification__button {
+    display: flex;
+  }
+}
+
+
+.c-store-product {
+  width: col-width(2, $space);
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  background: #F5F5F5;
+  border-left: 1px solid #000;
+
+  @include media("<large") {
+    width: col-width(3, $space);
+  }
+  @include media("<medium") {
+    width: col-width(4, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+
+  &__header {
+    height: 180px;
+    max-width: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 0 $space $space;
+  }
+  &__header-meta {
+    display: flex;
+  }
+  &__header-title {
+    margin-left: $space;
+  }
+  &__header-button a {
+    padding-left: 0;
+    color: #fff !important;
+  }
+  &__header-button a svg {
+    width: 10px;
+    margin-right: 10px;
+  }
+  &__header-button a svg path{
+    fill: #fff !important;
+  }
+  &__header-name {
+    color: #fff;
+  }
+  &__header-icon svg {
+    width: 35px;
+  }
+  &__header-icon svg  path{
+    fill: #fff;
+  }
+
+  &__content {
+    padding: $space;
+  }
+  &__content div {
+    margin: 10px 0;
+  }
+  &__content-price {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+  }
+  &__content-tags span {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+    margin-right: 20px;
+  }
+  &__content-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #04132B;
+  }
+  &__content-title i {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F557F;
+  }
+  &__content-text {
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;
+  }
+}
+.small {
+  width: col-width(1, $space);
+
+  @include media("<xlarge") {
+    width: col-width(2, $space);
+  }
+  @include media("<large") {
+    width: col-width(3, $space);
+  }
+  .c-store-product__header {
+    height: 95px;
+  }
+  .c-store-product__header-icon svg {
+    width: 30px;
+  }
+}
+
+.c-store-product__important {
+  max-width: col-width(4, $space);
+  display: flex;
+  height: min-content;
+  background: #f5f5f5;
+  border-left: 1px solid #000;
+  @include media("<large") {
+    max-width: col-width(5, $space);
+  }
+  @include media("<medium") {
+    max-width: col-width(6, $space);
+  }
+
+  &--image {
+    width: 180px;
+    background-position: center;
+
+    @include media("<xlarge") {
+      order: 2;
+      width: 100%;
+      min-width: 160px;
+      max-height: 100px;
+      background-size: cover;
+    }
+  }
+  &--content {
+    padding: $space;
+    @include media("<xlarge") {
+      order: 1;
+    }
+  }
+  &--price {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2f557f;
+  }
+  &--title {
+    font-family: Noto Serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #04132b;
+    margin: 5px 0;
+  }
+  &--title i {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f557f;
+  }
+  &--tags {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2f557f;
+  }
+  &--tags span {
+    margin-right: $space;
+  }
+  &--description {
+    font-family: Noto Sans;
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;
+    margin: 5px 0;
+  }
+  &--button {
+    margin: 5px 0;
+  }
+}
+
+.c-store-product__detail {
+  width: col-width(2, $space);
+  @include media("<xlarge") {
+    width: col-width(3, $space);
+  }
+  @include media("<large") {
+    width: col-width(4, $space);
+  }
+  @include media("<medium") {
+    width: col-width(6, $space);
+  }
+
+  &--image {
+    width: 100%;
+  }
+  &--image img {
+    width: 100%;
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+    padding-left: $space;
+    padding-top: $space;
+  }
+  &--title p {
+    font-family: Noto Serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #02293e;
+    margin-bottom: $space;
+  }
+  &--short_description p {
+    font-family: Noto Sans;
+    font-size: 20px;
+    line-height: 27px;
+    color: #777777;
+    margin-bottom: 25px;
+  }
+  &--long_description p {
+    font-family: Noto Serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+  }
+}
+
+.c-store-product_to_cart {
+  width: col-width(2, $space);
+  padding: $space;
+  background: #f5f5f5;
+  @include media("<xlarge") {
+    width: col-width(3, $space);
+  }
+  @include media("<large") {
+    width: col-width(4, $space);
+  }
+  @include media("<medium") {
+    width: col-width(6, $space);
+  }
+  &--title {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #04132b;
+  }
+  &--radio {
+    margin-bottom: $space;
+  }
+  &--button {
+    margin-top: $space;
+  }
+  &--button a {
+    background: #2e6de7 !important;
+    color: #fff !important;
+  }
+  &--button a path {
+    fill: #fff !important;
+  }
+}
+
+.c-store-cart_item {
+  width: col-width(4, $space);
+  display: flex;
+  height: 100px;
+  background: #f5f5f5;
+  margin-top: $space;
+
+  @include media("<xlarge") {
+    width: col-width(3, $space);
+    flex-direction: column;
+    height: min-content;
+  }
+  @include media("<large") {
+    width: col-width(4, $space);
+  }
+  @include media("<medium") {
+    width: col-width(5, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+
+  &--image {
+    width: col-width(1, $space);
+    padding: $space;
+    display: flex;
+    align-items: flex-end;
+    @include media("<xlarge") {
+      display: none;
+    }
+  }
+  &--image__remove {
+    display: flex;
+    align-items: center;
+  }
+  &--image__remove svg {
+    width: 15px;
+  }
+  &--image__remove:hover span {
+    display: inline !important;
+  }
+  &--image__remove svg path {
+    fill: #fff;
+  }
+  &--image__remove span {
+    margin-left: 10px;
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: $space;
+    flex-grow: 1;
+    @include media("<xlarge") {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &--name {
+    width: col-width(1, $space);
+    position: relative;
+
+    @include media("<xlarge") {
+      width: col-width(1.5, $space);
+      margin: 5px 0;
+    }
+  }
+  &--name::before {
+    content: 'product';
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+
+    @include media("<xlarge") {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -80%;
+      z-index: 0;
+    }
+    @include media("<large") {
+      left: -80%;
+    }
+    @include media("<medium") {
+      left: -130%;
+    }
+    @include media("<small") {
+      left: -80%;
+    }
+  }
+  &--price {
+    width: col-width(1, $space);
+    position: relative;
+
+    @include media("<xlarge") {
+      width: col-width(1.5, $space);
+      margin: 5px 0;
+    }
+  }
+  &--price:before {
+    content: 'price';
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+
+    @include media("<xlarge") {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -80%;
+      z-index: 0;
+    }
+    @include media("<large") {
+      left: -80%;
+    }
+    @include media("<medium") {
+      left: -130%;
+    }
+    @include media("<small") {
+      left: -80%;
+    }
+  }
+  &--quantity {
+    width: col-width(1, $space);
+    position: relative;
+
+    @include media("<xlarge") {
+      width: col-width(1.5, $space);
+      margin: 5px 0;
+    }
+  }
+  &--quantity::before {
+    content: 'quantity';
+    position: absolute;
+    top: -58px;
+    z-index: -1;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+
+    @include media("<xlarge") {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -80%;
+      z-index: 0;
+    }
+    @include media("<large") {
+      left: -80%;
+    }
+    @include media("<medium") {
+      left: -130%;
+    }
+    @include media("<small") {
+      left: -80%;
+    }
+  }
+  &--quantity input {
+    width: 57px;
+    background: transparent;
+    text-align: center;
+  }
+  &--subtotal {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    @include media("<xlarge") {
+      width: col-width(1.5, $space);
+      margin: 5px 0;
+    }
+  }
+  &--subtotal::before {
+    content: 'subtotal';
+    position: absolute;
+    top: -70px;
+    right: 0;
+    z-index: -1;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+
+    @include media("<xlarge") {
+      top: 0;
+      right: unset;
+      left: -80%;
+      z-index: 0;
+    }
+    @include media("<large") {
+      left: -80%;
+    }
+    @include media("<medium") {
+      left: -130%;
+    }
+    @include media("<small") {
+      left: -80%;
+    }
+  }
+
+  &--column {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #02293E;
+
+    @include media('<xlarge') {
+      text-align: end;
+    }
+    @include media('<large') {
+      width: col-width(2, $space);
+    }
+    @include media('<medium') {
+      width: col-width(2, $space);
+    }
+    @include media('<small') {
+      width: col-width(3, $space);
+    }
+  }
+
+  &--remove {
+    display: flex;
+    align-items: center;
+    display: none;
+
+    @include media('<xlarge') {
+      display: block;
+    }
+  }
+  &--remove svg {
+    width: 10px;
+    margin-right: 5px;
+  }
+  &--remove:hover > * {
+    color: #c1c1c1;
+    fill: #c1c1c1;
+  }
+}
+
+.c-store-item__summary {
+  width: col-width(2, $space);
+  padding: $space;
+  display: flex;
+  justify-content: space-between;
+  background: #f5f5f5;
+  margin-top: $space;
+
+  font-family: Noto Serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #02293E;
+
+  @include media("<large") {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: col-width(3, $space);
+  }
+  @include media("<medium") {
+    width: col-width(5, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+
+  &--name {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    @include media("<large") {
+      justify-content: flex-end;
+    }
+  }
+  &--name span {
+    @include media("<large") {
+      width: col-width(1.5, $space);
+      text-align: end;
+    }
+    @include media("<medium") {
+      width: col-width(2, $space);
+    }
+    @include media("<small") {
+      width: col-width(3, $space);
+    }
+  }
+  &--name::before {
+    content: 'product';
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+    @include media("<large") {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: 0;
+    }
+  }
+  &--price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    @include media("<large") {
+      justify-content: flex-end;
+    }
+  }
+  &--price span {
+    @include media("<large") {
+      width: col-width(1.5, $space);
+      text-align: end;
+    }
+  }
+  &--price::before {
+    content: 'subtotal';
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #2F557F;
+
+    @include media("<large") {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: 0;
+    }
+  }
+}
+
+.c-store-cart__total {
+  width: col-width(2, $space);
+  height: 100px;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $space;
+  @include media("<large") {
+    width: col-width(3, $space);
+  }
+  @include media("<medium") {
+    width: col-width(5, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+  & div {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--field_name {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    color: #2f557f;
+  }
+  &--price {
+    font-family: Noto Serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #02293e;
+  }
+}
+
+.c-store-payment__info {
+  width: col-width(2, $space);
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: $space;
+  @include media("<large") {
+    width: col-width(3, $space);
+  }
+  @include media("<medium") {
+    width: col-width(5, $space);
+  }
+  @include media("<small") {
+    width: col-width(6, $space);
+  }
+  &--card {
+    margin-bottom: $space;
+  }
+  &--card p {
+    margin-bottom: 10px;
+  }
+  &--date_code {
+    display: flex;
+  }
+  &--date_code div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &--date {
+    margin-right: 5px;
+  }
+  &--field__title {
+    font-family: Noto Sans;
+    font-size: 16px;
+    line-height: 20px;
+    color: #02293E;
+  }
+  &--date__month {
+    font-family: Noto Sans;
+    font-size: 12px;
+    line-height: 16px;
+    color: #04132b;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+  &--code {
+    margin-left: 5px;
+  }
+  &--disclaimer {
+    font-family: Noto Serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4a4a4a;
+    margin: 10px 0;
+  }
+  &--button a {
+    background-color: #2E6DE7 !important;
+  }
+}
+
+.s-store-form {
+  width: col-width(6, $space);
+  display: flex;
+
+  &__fields {
+    width: col-width(2, $space * 3);
+    margin: 0 $space*2 0 $space;
+  }
+
+  &__modals {
+    width: col-width(2, $space * 3);
+    margin: 0 $space;
+  }
+  &__pagination nav {
+    text-align: left;
+  }
+
+  &__error-label {
+    font-family: Noto Sans;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FF0101;
+  }
+  &__input {
+    margin-top: 30px;
+  }
+  &__notification .c-store-notification {
+    margin-top:  $space;
+    width: col-width(2, $space * 3);
+  }
+
+}
+
+.s-store-product__list {
+  display: flex;
+  flex-direction: column;
+
+  &--title {
+    margin: $space*2 0 0 0;
+  }
+  &--large {
+    display: flex;
+    flex-wrap: wrap;
+    width: col-width(4);
+
+    @include media("<large") {
+      width: col-width(6);
+    }
+    @include media("<medium") {
+      width: col-width(6);
+    }
+  }
+  &--large .c-store-product {
+    margin: $space $space $space 0;
+  }
+
+  &--small {
+    display: flex;
+    flex-wrap: wrap;
+    width: col-width(4);
+
+    @include media("<large") {
+      width: col-width(6);
+    }
+    @include media("<medium") {
+      width: col-width(6);
+    }
+  }
+  &--small .small {
+    margin-top: $space;
+    margin-right: $space;
+  }
+
+  &--more {
+    display: flex;
+    flex-direction: column;
+  }
+  &--more .c-store-product__important {
+    margin-top: $space;
+  }
+  &--pagination nav {
+    text-align: left;
+  }
+}
+
+.s-store-product__item {
+  width: col-width(4);
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media("<xlarge") {
+    width: col-width(3, $space);
+  }
+  @include media("<large") {
+    width: col-width(4, $space);
+  }
+  @include media("<medium") {
+    width: col-width(6, $space);
+  }
+
+  &--notification {
+    margin: $space 0;
+  }
+  &--detail {
+    margin-right: $space;
+  }
+  &--button {
+    margin: $space $space;
+  }
+}
+.alternative {
+  & .s-store-product__item--notification {
+    order: 2
+  }
+  & .s-store-product__item--detail {
+    order: 1;
+  }
+  & .s-store-product__item--button {
+    order: 3;
+  }
+}
+
+.s-store-cart {
+  display: flex;
+  flex-direction: column;
+
+  &__items-title {
+    margin: $space*2 0;
+  }
+  &__totals-title {
+    margin: $space 0;
+  }
+  &__totals-button {
+    margin: $space 0;
+  }
+  &__totals-button a {
+    background-color: #2E6DE7 !important;
+  }
+}
+
+.s-store-checkout {
+  display: flex;
+  flex-wrap: wrap;
+  width: col-width(4);
+
+  @include media("<large") {
+    flex-direction: column;
+  }
+  @include media("<medium") {
+    width: col-width(6, $space);
+  }
+
+  &__block-title {
+    margin: $space*2 0 $space;
+    @include media("<large") {
+      width: col-width(3, $space);
+    }
+    @include media("<medium") {
+      width: col-width(5, $space);
+    }
+    @include media("<small") {
+      width: col-width(6, $space);
+    }
+  }
+  &__block-form {
+    padding: 0 $space $space;
+  }
+  &__details {
+    width: col-width(2);
+  }
+  &__information {
+    width: col-width(2);
+  }
+  &__products {
+    margin-top: $space*2;
+  }
+  &__total {
+    margin: $space 0;
+  }
+  &__order {
+    width: col-width(2);
+  }
+}
+
+.p-store-components__search {
+  margin-bottom: $space*3;
+}
+
+.c-page-header__search--button-grid {
+  display: flex;
+  align-items: center;
+  padding: $space 0 0 $space;
+  & * {
+    margin-right: 5px;
+  }
+}

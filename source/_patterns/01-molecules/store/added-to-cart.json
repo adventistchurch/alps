@@ -1,0 +1,18 @@
+{
+  "title": "Yaks and sheep gift",
+  "items": [
+    {
+      "label": "$55",
+      "checked": false
+    },
+    {
+      "label": "Choose your own amount",
+      "checked": true
+    }
+  ],
+  "button_default": {
+    "text": "Add to cart",
+    "class": "",
+    "icon": "icon-plus"
+  }
+}

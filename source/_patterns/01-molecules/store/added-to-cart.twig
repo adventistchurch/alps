@@ -1,0 +1,37 @@
+<div class="c-store-product_to_cart">
+  <div class="c-store-product_to_cart--title">{{ title }}</div>
+  <div class="c-store-product_to_cart--radio u-spacing--half">
+    <div class="u-font--secondary--s">Select one option</div>
+    {% for item in items %}
+    <div class="c-store-product_to_cart--input-radio inline-form-element--row">
+      <input type="radio" name="option" value="{{ item.label }}"
+      {% if item.checked %}
+        checked
+      {% endif %}
+      >
+      <label for="">{{ item.label }}</label>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="c-store-product_to_cart--amount" style="display: none">
+    <p>Enter your donation amount below</p>
+    <input type="text" name="name" value="">
+  </div>
+  <div class="c-store-product_to_cart--button">
+    {% include '@atoms/buttons/button.twig' %}
+  </div>
+</div>
+
+
+<script>
+  var amount = document.querySelectorAll('.c-store-product_to_cart--input-radio input');
+  amount.forEach((item) => {
+    if(item.checked) {
+      if (item.value === "Choose your own amount") {
+        var amountCustom = document.querySelector('.c-store-product_to_cart--amount');
+        amountCustom.style.display = "block";
+      }
+    }
+  })
+</script>

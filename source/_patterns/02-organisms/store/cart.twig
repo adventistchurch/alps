@@ -1,0 +1,33 @@
+<section class="s-store-cart u-shift--left--1-col--at-large">
+  <div class="s-store-cart__items">
+    {% if items_block.heading_block %}
+    <div class="s-store-cart__items-title">
+      {% include '@molecules/blocks/heading-block.twig' with items_block %}
+    </div>
+    {% endif %}
+    {% if items_block.items %}
+    <div class="s-store-cart__items-block">
+      {% for item in items_block.items %}
+        {% include '@molecules/store/cart-item.twig' with item %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  <div class="s-store-cart__totals">
+    {% if items_block.heading_block %}
+      <div class="s-store-cart__totals-title">
+        {% include '@molecules/blocks/heading-block.twig' with totals_block %}
+      </div>
+    {% endif %}
+    {% if totals_block.cart_total %}
+    <div class="s-store-cart__totals-block">
+      {% include '@molecules/store/cart-total.twig' with totals_block.cart_total %}
+    </div>
+    {% endif %}
+    {% if button_default %}
+    <div class="s-store-cart__totals-button">
+      {% include '@atoms/buttons/button.twig' %}
+    </div>
+    {% endif %}
+  </div>
+</section>

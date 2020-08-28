@@ -1,6 +1,7 @@
 {
   "secondary_nav": {
-    "items": [{
+    "items": [
+      {
         "icon": "icon-language",
         "text": "Languages",
         "subnav": {
@@ -34,6 +35,14 @@
       {
         "icon": "icon-heart",
         "text": "Press"
+      },
+      {
+        "icon": "icon-search",
+        "text": "Search"
+      },
+      {
+        "icon": "icon-menu",
+        "text": "Menu"
       }
     ]
   }

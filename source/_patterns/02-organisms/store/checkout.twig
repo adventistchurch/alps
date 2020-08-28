@@ -1,0 +1,47 @@
+<section class="s-store-checkout u-shift--left--1-col--at-large">
+
+  <div class="s-store-checkout__details">
+    {% if details.heading_block %}
+    <div class="s-store-checkout__block-title">
+      {% include '@molecules/blocks/heading-block.twig' with details %}
+    </div>
+    {% endif %}
+    <div class="s-store-checkout__block-form">
+      {% include '@molecules/forms/store-billing-details.twig' %}
+    </div>
+  </div>
+
+  <div class="s-store-checkout__information">
+    {% if information.heading_block %}
+      <div class="s-store-checkout__block-title">
+        {% include '@molecules/blocks/heading-block.twig' with information %}
+      </div>
+    {% endif %}
+    <div class="s-store-checkout__block-form">
+      {% include '@molecules/forms/store-additional-information.twig' %}
+    </div>
+    {% if information.products %}
+      <div class="s-store-checkout__products">
+        {% for product in information.products %}
+          {% include '@molecules/store/cart-item-summary.twig' with information.products %}
+        {% endfor %}
+      </div>
+      {% if information.products_total %}
+        <div class="s-store-checkout__total">
+          {% include '@molecules/store/cart-total.twig' with information.products_total %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+
+  <div class="s-store-checkout__order">
+    {% if order.heading_block %}
+      <div class="s-store-checkout__block-title">
+        {% include '@molecules/blocks/heading-block.twig' with order %}
+      </div>
+    {% endif %}
+    <div class="s-store-checkout__order-form">
+      {% include '@molecules/store/payment-info.twig' %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+{
+  "details": {
+    "heading_block": {
+      "title": "Billing details"
+    }
+  },
+  "information": {
+    "heading_block": {
+      "title": "Additional information"
+    },
+    "products": [
+      {
+        "product_name": "Honor Sashes - Large (Dark Green) x 5",
+        "product_subtotal": "$37.50"
+      },
+      {
+        "product_name": "Honor Sashes - Large (Dark Green) x 5",
+        "product_subtotal": "$37.50"
+      },
+      {
+        "product_name": "Honor Sashes - Large (Dark Green) x 5",
+        "product_subtotal": "$37.50"
+      },
+      {
+        "product_name": "Honor Sashes - Large (Dark Green) x 5",
+        "product_subtotal": "$37.50"
+      }
+    ],
+    "products_total": {
+      "subtotal": "$37.50",
+      "total": "$37.50"
+    }
+  },
+  "order": {
+    "heading_block": {
+      "title": "Your order"
+    }
+  }
+}

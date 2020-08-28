@@ -1,0 +1,24 @@
+{
+  "header": {
+    "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+    "title": {
+      "cursive_words": "Meta",
+      "remainder_words": "Title"
+    },
+    "button_text": "META"
+  },
+  "content": {
+    "price": "$3.50",
+    "tags": ["Indoor survival", "trending"],
+    "title": {
+      "cursive_words": "Product",
+      "remainder_words": "Artist Patch"
+    },
+    "text": "Standart honor ashes pathfinder clubs. Order in bulk to receive shipping discounts"
+  },
+  "button_default": {
+    "text": "View Cart",
+    "class": "o-button--outline",
+    "icon": "icon-arrow-short-right"
+  }
+}
