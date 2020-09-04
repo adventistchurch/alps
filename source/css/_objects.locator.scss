@@ -194,7 +194,7 @@
 
   &>input {
     height: rem(75);
-    background: $c-white;
+    background-color: $c-white;
     border: none;
     border-left: 1px solid rgba(0, 0, 0, 0.8);
     padding-left: rem(20);
@@ -211,6 +211,14 @@
     width: rem(26);
     height: rem(26);
     cursor: pointer;
+  }
+}
+
+.u-theme--dark {
+  .c-locator-search {
+    input {
+      background-color: $c-white;
+    }
   }
 }
 
