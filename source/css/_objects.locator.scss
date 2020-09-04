@@ -231,7 +231,7 @@
   &__list {
     margin-top: $space;
     display: grid;
-    grid-template-columns: col-width(6);
+    grid-template-columns: calc(#{col-width(6)} - #{$space});
     grid-gap: $space;
 
     @include media(">large") {
