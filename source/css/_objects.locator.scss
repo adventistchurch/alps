@@ -27,6 +27,7 @@
 .c-map-main--2col {
   display: grid;
   grid-template-columns: col-width(6);
+  grid-template-rows: fit-content(#{rem(20)}) auto;
   grid-template-areas:
     "header"
     "map"
