@@ -1,0 +1,37 @@
+<div class="c-church-info c-church-info--large">
+  <div class="c-church-info__header" style="background-image: url({{ church_info.img.src }})">
+    <div class="c-church-info__header__title">{{ church_info.name }}</div>
+  </div>
+  <div class="c-church-info__wrap">
+    <div class="c-church-info__item">
+      <div class="c-church-info__item__title">location</div>
+      <div class="c-church-info__item__text">{{ church_info.location }}</div>
+    </div>
+    <div class="c-church-info__item">
+      <div class="c-church-info__item__title">mailing address</div>
+      <div class="c-church-info__item__text">{{ church_info.mailing_address }}</div>
+    </div>
+    <div class="c-church-info__item">
+      <div class="c-church-info__item__title">phone</div>
+      <div class="c-church-info__item__text">{{ church_info.phone }}v</div>
+    </div>
+    <div class="c-church-info__item">
+      <div class="c-church-info__item__title">email</div>
+      <div class="c-church-info__item__text">{{ church_info.email }}</div>
+    </div>
+    <div class="c-church-info__item">
+      <div class="c-church-info__item__title">website</div>
+      <div class="c-church-info__item__text">{{ church_info.url }}</div>
+    </div>
+    <div class="c-church-info__item">
+      <div class="c-church-info__item__title">service list</div>
+      <div class="c-church-info__item__text">{{ church_info.sabbath_school }}</div>
+      <div class="c-church-info__item__text">{{ church_info.worship_service }}</div>
+    </div>
+    <a href="#" class="o-button o-button--outline c-church-info__btn">
+      <span class="u-icon u-icon--xs u-path-fill--white">
+        {% include "@atoms/icons/icon-arrow-short-left.twig" %}
+      </span>Back to map
+    </a>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<section class="c-map-container">
+  {% include "@molecules/church-locator/search.twig" %}
+  {% include '@atoms/map/google-map.twig' %}
+</section>
+
+<script>
+  function onMapInit(map, marker) {
+    const infoWindow = new google.maps.InfoWindow({
+      map: map,
+      content: `{% include "@molecules/church-locator/church-info-large.twig" with church_info %}`,
+      disableAutoPan: true,
+    });
+
+    infoWindow.open(map, marker);
+  }
+</script>

@@ -1,0 +1,17 @@
+{
+  "church_info": {
+    "name": "Battle Creek Tabernacle",
+    "location": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+    "mailing_address": "264 W Michigan Ave, Battle Creek, MI 49037, United States",
+    "phone": "+1 269-968-8101",
+    "email": "contact@battlecreektabernacle.com",
+    "site": "www.battlecreektabernacle.com",
+    "sabbath_school": "Sabbath School: 9:30a",
+    "worship_service": "Worship Service: 11:00a",
+    "description": "The current Battle Creek Tabernacle is now the fifth church building that has served this community.",
+    "img": {
+      "src": "/v3/images/locator-church-image.jpg",
+      "alt": "Battle Creek Tabernacle"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "map": {
+    "apiKey": "AIzaSyC_ygceXP13Bw75bMXjXW9yGK95tJ4fNnA",
+    "options": {
+      "center": {
+        "lat": 42.324574,
+        "lng": -85.190656
+      },
+      "zoom": 12,
+      "fullscreenControl": false
+    },
+    "markers": [
+      {
+        "position": {
+          "lat": 42.324574,
+          "lng": -85.190656
+        },
+        "icon": "/v3/images/locator-marker--focus.png"
+      },
+      {
+        "position": {
+          "lat": 42.3162331,
+          "lng": -85.1778066
+        },
+        "icon": "/v3/images/locator-marker.png"
+      }
+    ]
+  },
+  "custom_class": {
+    "map": "c-map-default"
+  }
+}

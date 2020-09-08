@@ -1,0 +1,15 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main u-spacing--double u-padding--double--bottom c-map-main" role="main">
+      {% include '@organisms/sections/page-header-long.twig' %}
+      <section class="c-map-container">
+        {% include "@molecules/church-locator/search.twig" %}
+        {% include '@atoms/map/google-map.twig' %}
+      </section>
+      {% include '@organisms/sections/locator-search-results.twig' %}
+    </main>
+    {% include '@organisms/global/footer.twig' %}
+  </div>
+  {% include '@organisms/asides/sabbath.twig' %}
+</div>
