@@ -34,7 +34,7 @@
     "type": "git",
     "url": "git@github.com:adventistchurch/alps.git"
   },
-  "author": "SuperFriendly & Southleft",
+  "author": "Seventh-day Adventist Church",
   "license": "SEE LICENSE IN LICENSE.txt",
   "homepage": "https://www.adventist.org",
   "compileTemplates": false
