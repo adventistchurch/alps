@@ -1,0 +1,46 @@
+{
+  "pager": {
+    "link": "?page=",
+    "current": 3,
+    "surrounding": 5,
+    "totalpages": 5,
+    "ellipsis": "&hellip;",
+    "next": "Next &rarr;",
+    "prev": "&larr; Previous"
+  },
+  "button_default": {
+    "text": "Proceed to payment",
+    "class": "",
+    "icon": ""
+  },
+  "notifications": [
+    {
+      "type": "warning",
+      "appearance": "",
+      "text": "Warning message content. Heed this warning or else.",
+      "button_second": false,
+      "button_default": false
+    },
+    {
+      "type": "info",
+      "appearance": "",
+      "text": "Simply an informational message. Feel more informed.",
+      "button_second": false,
+      "button_default": false
+    },
+    {
+      "type": "error",
+      "appearance": "",
+      "text": "Notification message content. Note this helpful note.",
+      "button_second": false,
+      "button_default": false
+    },
+    {
+      "type": "success",
+      "appearance": "",
+      "text": "Success message content. Feel proud about what you accomplished.",
+      "button_second": false,
+      "button_default": false
+    }
+  ]
+}

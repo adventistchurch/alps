@@ -1,0 +1,32 @@
+<div class="c-store-product__important">
+  <div class="c-store-product__important--image" style="background-image: url('{{ img }}')"></div>
+
+  <div class="c-store-product__important--content">
+    {% if price %}
+      <div class="c-store-product__important--price">{{ price }}</div>
+    {% endif %}
+
+    {% if title %}
+      <div class="c-store-product__important--title">
+        {% if title.cursive_words %}
+          <i>{{ title.cursive_words }}</i>
+        {% endif %} {{ title.remainder_words }}
+      </div>
+    {% endif %}
+
+    {% if tags %}
+      <div class="c-store-product__important--tags">
+        {% for tag in tags %}
+          <span>{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if description %}
+      <div class="c-store-product__important--description">{{ description }}</div>
+    {% endif %}
+    <div class="c-store-product__important--button">
+      {% include '@atoms/buttons/button.twig' %}
+    </div>
+  </div>
+</div>

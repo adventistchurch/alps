@@ -438,13 +438,13 @@
 
 
       @include media(">medium") {
-        padding-right: rem(150);
+        //padding-right: rem(150);
         padding-left: 0;
       }
 
 
       @include media(">large") {
-        padding-right: rem(160);
+        //padding-right: rem(160);
       }
     }
 

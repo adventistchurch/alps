@@ -1,0 +1,51 @@
+<div class="c-store-product {{ appearance }}">
+  <div class="c-store-product__wrap">
+    <div class="c-store-product__header" style="background: url({{ header.img_src }}) center no-repeat">
+      <div class="c-store-product__header-meta">
+        <div class="c-store-product__header-icon">
+          {% include '@atoms/icons/icon-play.twig' %}
+        </div>
+
+        <div class="c-store-product__header-title">
+
+          <div class="c-store-product__header-button">
+            {% if header.button_text %}
+              <a href="" class="o-button o-button--simple">{% include '@atoms/icons/icon-arrow-short-left.twig' %} {{ header.button_text }}</a>
+            {% endif %}
+          </div>
+
+          <div class="c-store-product__header-name">
+            <i>{{ header.title.cursive_words }}</i> {{ header.title.remainder_words }}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="c-store-product__content">
+      {% if content.price %}
+        <div class="c-store-product__content-price">{{ content.price }}</div>
+      {% endif %}
+
+      {% if content.tags|length > 0 %}
+        <div class="c-store-product__content-tags">
+          {% for tag in content.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if content.title %}
+        <div class="c-store-product__content-title">
+          <i>{{ content.title.cursive_words }}</i> {{ content.title.remainder_words }}
+        </div>
+      {% endif %}
+      {% if content.text %}
+        <div class="c-store-product__content-text">{{ content.text }}</div>
+      {% endif %}
+      <div class="c-store-product__content-button">
+        {% include '@atoms/buttons/button.twig' %}
+      </div>
+    </div>
+  </div>
+</div>

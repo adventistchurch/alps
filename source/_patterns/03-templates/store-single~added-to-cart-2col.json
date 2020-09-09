@@ -1,0 +1,201 @@
+{
+  "header_logo": "logo-sda-shop",
+  "secondary_nav": {
+    "items": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      {
+        "icon": "icon-trolly",
+        "text": "Cart (3)"
+      },
+      {
+        "icon": "icon-search",
+        "text": "Search"
+      }
+    ]
+  },
+  "primary_nav": {
+    "items": [
+      {
+        "text": "Spirituality",
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Vitality",
+        "is_active": false,
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Services",
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Beliefs",
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "World Church",
+        "subnav": {
+          "items": [
+            {
+              "text": "General Conference"
+            },
+            {
+              "text": "East-Central Africa"
+            },
+            {
+              "text": "North America",
+              "subnav": {
+                "items": [
+                  {
+                    "text": "Atlantic Union"
+                  },
+                  {
+                    "text": "Canadian Union"
+                  },
+                  {
+                    "text": "Columbia Union"
+                  },
+                  {
+                    "text": "Lake Union"
+                  }
+                ]
+              }
+            },
+            {
+              "text": "Middle East and North Africa"
+            }
+          ]
+        }
+      },
+      {
+        "text": "Information",
+        "link_class": false,
+        "subnav": {
+          "items": [
+            {
+              "text": "Item 1"
+            },
+            {
+              "text": "Item 2"
+            },
+            {
+              "text": "Item 3"
+            },
+            {
+              "text": "Item 4"
+            }
+          ]
+        }
+      },
+      {
+        "text": "News",
+        "subnav": false
+      }
+    ]
+  },
+  "page_header": {
+    "title": "Gift Shop",
+    "kicker": ""
+  },
+  "footer": {
+    "text": "The Texas Conference of Seventh-day Adventists is an administrative entity of the Seventh-day Adventist church."
+  },
+
+  "notification": {
+    "type": "success",
+    "appearance": "small-notification",
+    "text": "Your gift has successfully been added to your cart. Thank you!",
+    "first_button": {
+      "text": "View Cart",
+      "class": "o-button--outline",
+      "icon": "icon-arrow-short-right"
+    },
+    "second_button": {
+      "text": "Add another",
+      "class": "o-button--simple",
+      "icon": "icon-plus"
+    }
+  },
+  "type_of_page": "alternative",
+
+  "item": {
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQzirslF27pnrlMO_zp2wpk9IwzM_mxjpgFlA&usqp=CAU",
+    "title": "Yaks and Sheep",
+    "short_description": "Raising a family in Mongolia can be tough. Brutal winters mean months of limited food and money. You can change that by helping a family start a cheese production business, giving them year-round food and income.",
+    "long_description": false
+  },
+
+  "add_to_cart": false,
+
+  "button": {
+    "button_default": {
+      "text": "Back to shop",
+      "class": "o-button--outline",
+      "icon": "icon-arrow-short-left"
+    }
+  }
+}
