@@ -1,0 +1,28 @@
+<div class="c-store-checkout-place">
+  {% include '@molecules/blocks/heading-block.twig' with checkout_place %}
+  <div class="c-store-checkout-place__wrap">
+    <div class="c-store-checkout-place__card">
+      <div class="c-store-checkout-place__card__number c-store-checkout-place__card__cell">
+        <div class="c-store-checkout-place__card__title u-theme--color--darker">Card Number</div>
+        <input type="text" />
+      </div>
+      <div class="c-store-checkout-place__card__date c-store-checkout-place__card__cell">
+        <div class="c-store-checkout-place__card__title u-theme--color--darker">Expiry Date</div>
+        <div class="c-store-checkout-place__card__subtitle u-theme--color--darker">MM / YY</div>
+        <input type="text" />
+      </div>
+      <div class="c-store-checkout-place__card__cvc c-store-checkout-place__card__cell">
+        <div class="c-store-checkout-place__card__title u-theme--color--darker">Card Code (CVC)</div>
+        <div class="c-store-checkout-place__card__subtitle">&nbsp;</div>
+        <input type="text" />
+      </div>
+    </div>
+    <div class="c-store-checkout-place__text">
+      Your personal data will be used to process your order, support your experience throughout this website,
+      and for other purposes described in our privacy policy.
+    </div>
+    <div class="c-store-checkout-place__btn">
+      {% include '@atoms/buttons/button.twig' with checkout_place %}
+    </div>
+  </div>
+</div>

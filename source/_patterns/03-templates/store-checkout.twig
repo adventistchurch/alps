@@ -3,7 +3,12 @@
     {% include '@organisms/global/header.twig' %}
     <main class="l-main u-padding--double--bottom c-map-main" role="main">
       {% include '@organisms/sections/page-header-long.twig' %}
-      {% include '@organisms/store/checkout.twig' %}
+      <section class="c-store-checkout u-shift--left--1-col--at-xxlarge">
+        {% include '@molecules/store/checkout-billing.twig' %}
+        {% include '@molecules/store/checkout-info.twig' %}
+        {% include '@molecules/store/checkout-products.twig' %}
+        {% include '@molecules/store/checkout-place.twig' %}
+      </section>
     </main>
     {% include '@organisms/global/footer.twig' %}
   </div>

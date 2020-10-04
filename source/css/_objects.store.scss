@@ -1,3 +1,703 @@
+////
+/// Store Components
+////
+
+/// Product Detail
+///
+/// @molecules/store/product-detail
+.c-store-product-detail {
+  width: col-width(6);
+  @include media(">medium") {
+    width: col-width(4, $space);
+    margin-bottom: $space;
+    margin-top: $space;
+    margin-right: $space;
+  }
+  @include media(">large") {
+    width: col-width(3, $space);
+  }
+  @include media(">xlarge") {
+    width: col-width(2, $space);
+  }
+  flex-shrink: 0;
+
+  &__image {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: $space;
+    padding-top: $space;
+  }
+  &__title {
+    @include u-font--primary--l;
+    font-weight: bold;
+  }
+  &__short-desc {
+    @include u-font--secondary--m;
+    line-height: 1.4;
+    margin-top: $space;
+    color: $c-gray;
+  }
+  &__long-desc {
+    @include u-font--primary--s;
+    margin-top: $space;
+    color: $c-gray--dark;
+  }
+  &__button {
+    margin-top: $space;
+    margin-left: $space;
+  }
+}
+
+/// Cart: Add to Cart
+///
+/// @molecules/store/cart-add
+.c-store-cart-add {
+  width: col-width(6);
+  margin-top: $space;
+  @include media(">medium") {
+    width: col-width(4, $space);
+  }
+  @include media(">large") {
+    width: col-width(2, $space);
+  }
+
+  padding: $space;
+  background: $c-gray--light;
+
+  &__title {
+    @include u-font--secondary--m;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__options {
+    &__title {
+      @include u-font--primary--s;
+      margin-bottom: $space;
+    }
+
+    &__item {
+      display: flex;
+      align-items: baseline;
+      @include u-font--secondary--s;
+    }
+  }
+
+  &__custom-amount {
+    margin-top: $space;
+
+    &__title {
+      @include u-font--secondary--m;
+    }
+    &__text {
+      @include u-font--primary--s;
+    }
+    &__input {
+      background: $c-gray--light;
+    }
+    &__button {
+      margin-top: $space;
+    }
+  }
+}
+
+/// Cart: Headers
+///
+/// @molecules/store/cart-headers
+.c-store-cart-headers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: $space;
+  background: $c-gray--light;
+
+  @include media(">medium") {
+    flex-direction: row;
+    width: col-width(6, $space);
+    margin-top: 0;
+    background: transparent;
+    display: none;
+    &:first-child {
+      display: flex;
+    }
+  }
+  @include media(">large") {
+    width: col-width(5, $space);
+  }
+  @include media(">xxxlarge") {
+    width: col-width(4, $space);
+  }
+
+  &__col {
+    @include u-font--secondary--s;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: $space;
+    padding-left: $space;
+    @include media(">medium") {
+      padding-top: 0;
+      padding-left: 0;
+    }
+
+    &--image {
+      display: none;
+      @include media(">medium") {
+        display: block;
+      }
+      padding-left: col-width(1);
+    }
+    &--title {
+      padding-bottom: $space;
+
+      @include media(">medium") {
+        padding-left: 0;
+        width: col-width(2);
+      }
+      @include media(">large") {
+        width: col-width(1.5);
+      }
+      @include media(">xxxlarge") {
+        width: col-width(1);
+      }
+
+    }
+    &--price {
+      padding-left: $space;
+
+      @include media(">medium") {
+        width: col-width(1);
+      }
+      @include media(">large") {
+        width: col-width(0.7);
+      }
+    }
+    &--quantity {
+      @include media(">medium") {
+        width: col-width(1);
+      }
+      @include media(">large") {
+        width: col-width(0.7);
+      }
+    }
+    &--subtotal {
+    }
+  }
+}
+
+/// Cart: Item
+///
+/// @molecules/store/cart-item
+.c-store-cart-item {
+  @include u-font--primary--m;
+  width: 100%;
+  display: flex;
+  background: $c-gray--light;
+  margin-top: $space;
+
+  @include media(">medium") {
+    width: col-width(6, $space);
+    height: rem(100);
+  }
+  @include media(">large") {
+    width: col-width(5, $space);
+  }
+  @include media(">xxxlarge") {
+    width: col-width(4, $space);
+  }
+
+  &__image {
+    display: none;
+    @include media(">medium") {
+      display: flex;
+    }
+
+    width: col-width(1, $space);
+    padding: $space;
+    align-items: flex-end;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__remove {
+    display: flex;
+    align-items: center;
+    height: rem(15);
+
+    span {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+      margin-left: rem(10);
+      @include u-font--secondary--s;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $c-white;
+    }
+    svg {
+      height: rem(15);
+
+      path {
+        fill: $c-white;
+      }
+    }
+  }
+  &__remove:hover {
+    cursor: pointer;
+
+    span {
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: left;
+
+    padding: $space;
+    flex-grow: 1;
+    align-items: flex-end;
+    flex-direction: column;
+    @include media(">medium") {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__col {
+    height: rem(40);
+    text-align: right;
+    @include media(">medium") {
+      height: auto;
+      text-align: left;
+    }
+
+    font-weight: bold;
+    flex-grow: 0;
+
+    &--title {
+      height: rem(60);
+      @include media(">medium") {
+        width: col-width(2);
+      }
+      @include media(">large") {
+        width: col-width(1.5);
+      }
+      @include media(">xxxlarge") {
+        width: col-width(1);
+      }
+    }
+    &--price {
+      @include media(">medium") {
+        padding-left: $space;
+        width: col-width(1);
+      }
+      @include media(">large") {
+        width: col-width(0.7);
+      }
+    }
+    &--quantity {
+      @include media(">medium") {
+        width: col-width(1);
+      }
+      @include media(">large") {
+        width: col-width(0.7);
+      }
+
+      input {
+        @include u-font--primary--m;
+        width: rem(40);
+        font-weight: bold;
+        background-color: $c-gray--light;
+        padding: rem(5);
+      }
+    }
+    &--subtotal {
+    }
+    &--remove {
+      display: flex;
+      align-items: center;
+      height: rem(15);
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 0.2s ease-in-out;
+
+      @include media(">medium") {
+        display: none;
+      }
+
+      span {
+        margin-left: rem(10);
+        @include u-font--secondary--m;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $c-gray;
+      }
+      svg {
+        height: rem(15);
+
+        path {
+          fill: $c-gray;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/// Notifications
+///
+/// @molecules/store/notification
+.c-store-notification {
+  background: $c-white;
+  @include media(">medium") {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  margin-top: $space;
+  height: min-content;
+  width: col-width(6);
+  @include media(">medium") {
+    width: col-width(6, $space);
+  }
+  @include media(">large") {
+    width: col-width(2, $space);
+  }
+
+  &--warning {
+    border-left: 4px solid #FFA06C;
+  }
+  &--info {
+    border-left: 4px solid #84ADFD;
+  }
+  &--error {
+    border-left: 4px solid #FD2642;
+  }
+  &--success {
+    border-left: 4px solid #2C8500;
+  }
+
+  &__wrap {
+    padding: $space;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__header {
+    @include u-font--secondary--s;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__header svg {
+    width: rem(12);
+  }
+  &__text {
+    @include u-font--secondary--s;
+  }
+  &__buttons {
+    margin-top: $space;
+  }
+  &__buttons a svg{
+    width: rem(10);
+  }
+
+  &--wide {
+    @include media(">large") {
+      width: col-width(5, $space);
+    }
+    @include media(">xlarge") {
+      width: col-width(4, $space);
+    }
+  }
+  &--wide &__wrap {
+    @include media(">medium") {
+      flex-direction: row;
+    }
+  }
+  &--wide &__buttons {
+    @include media(">medium") {
+      margin-top: 0;
+    }
+  }
+}
+
+/// Product Single Page
+///
+/// @pages/store/product-single
+.c-store-product-single {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @include media(">medium") {
+    flex-direction: row;
+  }
+}
+
+/// Cart Page
+///
+/// @pages/store/cart
+.c-store-cart {
+  display: flex;
+  flex-direction: column;
+
+  &__items__list {
+    display: grid;
+    grid-template-columns: col-width(2) col-width(4);
+    grid-template-areas:
+      "headers item";
+
+    @include media(">medium") {
+      grid-template-columns: col-width(6);
+      grid-template-areas:
+      "item";
+    }
+  }
+  &__items__title {
+    margin: $space 0;
+  }
+  &__totals__title {
+    margin: $space 0;
+  }
+  &__totals__button {
+    margin: $space 0;
+  }
+  &__totals__button a {
+    background-color: #2E6DE7 !important;
+  }
+}
+
+/// Checkout Page
+///
+/// @pages/store/checkout
+.c-store-checkout {
+  display: grid;
+
+  grid-template-columns: col-width(6);
+  grid-template-areas:
+      "billing"
+      "info"
+      "products"
+      "place";
+
+  @include media(">medium") {
+    grid-template-columns: col-width(3) col-width(3);
+    grid-template-areas:
+      "billing info"
+      "billing products"
+      "place products";
+  }
+  @include media(">xxlarge") {
+    grid-template-columns: col-width(2) col-width(2);
+    grid-template-areas:
+      "billing info"
+      "billing products"
+      "place products";
+  }
+}
+
+/// Checkout Billing
+///
+/// @molecules/store/checkout-billing
+.c-store-checkout-billing {
+  margin: $space 0;
+  grid-area: billing;
+
+  form {
+    margin: 0 $space;
+  }
+}
+
+/// Checkout Info
+///
+/// @molecules/store/checkout-info
+.c-store-checkout-info {
+  margin-top: $space;
+  grid-area: info;
+
+  &__wrap {
+    margin: $space $space 0 $space;
+  }
+  &__title {
+    @include u-font--secondary--m;
+  }
+  &__text {
+    @include u-font--primary--s;
+  }
+}
+
+/// Checkout Products
+///
+/// @molecules/store/checkout-products
+.c-store-checkout-products {
+  display: grid;
+  grid-template-columns: col-width(2) col-width(4);
+  align-content: start;
+  grid-template-areas:
+      "headers item";
+
+  @include media(">medium") {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item";
+
+    margin-top: $space;
+  }
+
+  grid-area: products;
+
+  &__headers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: $space;
+    background: $c-gray--light;
+
+    @include media(">medium") {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0;
+      padding: 0 $space;
+      background: transparent;
+      display: none;
+      &:first-child {
+        display: flex;
+      }
+    }
+
+    &__col {
+      @include u-font--secondary--s;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: $space;
+      padding-left: $space;
+      @include media(">medium") {
+        padding-top: 0;
+        padding-left: 0;
+      }
+
+      &--title {
+        padding-bottom: $space;
+
+        @include media(">medium") {
+          padding-left: 0;
+          padding-bottom: 0;
+          width: 75%;
+        }
+      }
+      &--subtotal {
+      }
+    }
+  }
+
+  &__item {
+    @include u-font--primary--m;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: $space;
+    flex-grow: 1;
+    align-items: flex-end;
+    flex-direction: column;
+    background: $c-gray--light;
+    margin-top: $space;
+
+    @include media(">medium") {
+      height: rem(100);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__col {
+      height: rem(40);
+      text-align: right;
+      @include media(">medium") {
+        height: auto;
+        text-align: left;
+      }
+
+      font-weight: bold;
+      flex-grow: 0;
+
+      &--title {
+        height: rem(60);
+        @include media(">medium") {
+          width: 75%;
+        }
+      }
+
+      &--subtotal {
+      }
+    }
+  }
+}
+
+/// Checkout Place Order
+///
+/// @molecules/store/checkout-place
+.c-store-checkout-place {
+  grid-area: place;
+
+  margin-top: $space;
+  .c-block__heading {
+    margin-bottom: $space;
+  }
+
+  &__wrap {
+    background: $c-gray--light;
+    padding: 0 $space $space $space;
+  }
+
+  &__card {
+    display: grid;
+    column-gap: $space / 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "number number"
+      "date cvc";
+
+    @include u-font--secondary--m;
+
+    &__cell {
+      margin-top: $space / 2;
+      input {
+        background: $c-gray--light;
+      }
+    }
+    &__subtitle {
+      @include u-font--secondary--s;
+    }
+    &__number {
+      grid-area: number;
+    }
+    &__date {
+      grid-area: date;
+    }
+    &__cvc {
+      grid-area: cvc;
+    }
+  }
+  &__text {
+    margin-top: $space / 2;
+    @include u-font--primary--s;
+  }
+  &__btn {
+    margin-top: $space / 2;
+  }
+}
+
 .c-form-store__components {
   @include media("<large") {
     width: col-width(3, $space);
@@ -38,130 +738,6 @@
   &--button a {
     background-color: #2e6de7 !important;
     color: #fff;
-  }
-}
-.c-form-store-additional-information {
-  @include media("<large") {
-    width: col-width(3, $space);
-  }
-  @include media("<medium") {
-    width: col-width(5, $space);
-  }
-  @include media("<small") {
-    width: col-width(6, $space);
-  }
-  & p {
-    font-family: Noto Sans;
-    font-size: 16px;
-    line-height: 20px;
-    color: #02293e;
-  }
-  & label {
-    font-family: Noto Serif;
-    font-size: 16px;
-    line-height: 26px;
-    color: #4a4a4a;
-  }
-}
-.c-form-store-details {
-  @include media("<large") {
-    width: col-width(3, $space);
-  }
-  @include media("<medium") {
-    width: col-width(5, $space);
-  }
-  @include media("<small") {
-    width: col-width(6, $space);
-  }
-}
-
-.warning {
-  border-left: 4px solid #FFA06C;
-}
-.info {
-  border-left: 4px solid #84ADFD;
-}
-.error {
-  border-left: 4px solid #FD2642;
-}
-.success {
-  border-left: 4px solid #2C8500;
-}
-.c-store-notification {
-  width: col-width(2, $space);
-  height: min-content;
-  background: $c-white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
-
-  @include media("<xlarge") {
-    width: col-width(3, $space);
-  }
-  @include media("<large") {
-    width: col-width(4, $space);
-  }
-  @include media("<medium") {
-    width: col-width(6, $space);
-  }
-
-  &__wrap {
-    padding: $space;
-    display: flex;
-    justify-content: space-between;
-
-    @include media("<xlarge") {
-      flex-direction: column;
-    }
-  }
-  &__header {
-    margin-bottom: 10px;
-  }
-  &__header svg {
-    width: 12px;
-  }
-  &__text {
-    width: 285px;
-  }
-  &__button {
-    @include media("<xlarge") {
-      margin-top: $space;
-    }
-  }
-  &__button a svg{
-    width: 10px;
-    margin-right: 10px;
-  }
-}
-.large-notification {
-  width: col-width(4, $space);
-  @include media("<xlarge") {
-    width: col-width(3, $space);
-  }
-  @include media("<large") {
-    width: col-width(4, $space);
-  }
-  @include media("<medium") {
-    width: col-width(6, $space);
-  }
-}
-.small-notification {
-  width: col-width(2, $space);
-
-  @include media("<xlarge") {
-    width: col-width(3, $space);
-  }
-  @include media("<large") {
-    width: col-width(4, $space);
-  }
-  @include media("<medium") {
-    width: col-width(6, $space);
-  }
-
-  & .c-store-notification__wrap {
-    display: flex;
-    flex-direction: column;
-  }
-  & .c-store-notification__button {
-    display: flex;
   }
 }
 
@@ -355,365 +931,8 @@
   }
 }
 
-.c-store-product__detail {
-  width: col-width(2, $space);
-  @include media("<xlarge") {
-    width: col-width(3, $space);
-  }
-  @include media("<large") {
-    width: col-width(4, $space);
-  }
-  @include media("<medium") {
-    width: col-width(6, $space);
-  }
 
-  &--image {
-    width: 100%;
-  }
-  &--image img {
-    width: 100%;
-  }
-  &--content {
-    display: flex;
-    flex-direction: column;
-    padding-left: $space;
-    padding-top: $space;
-  }
-  &--title p {
-    font-family: Noto Serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    color: #02293e;
-    margin-bottom: $space;
-  }
-  &--short_description p {
-    font-family: Noto Sans;
-    font-size: 20px;
-    line-height: 27px;
-    color: #777777;
-    margin-bottom: 25px;
-  }
-  &--long_description p {
-    font-family: Noto Serif;
-    font-size: 16px;
-    line-height: 26px;
-    color: #4a4a4a;
-    margin-bottom: 25px;
-  }
-}
 
-.c-store-product_to_cart {
-  width: col-width(2, $space);
-  padding: $space;
-  background: #f5f5f5;
-  @include media("<xlarge") {
-    width: col-width(3, $space);
-  }
-  @include media("<large") {
-    width: col-width(4, $space);
-  }
-  @include media("<medium") {
-    width: col-width(6, $space);
-  }
-  &--title {
-    font-family: Noto Sans;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #04132b;
-  }
-  &--radio {
-    margin-bottom: $space;
-  }
-  &--button {
-    margin-top: $space;
-  }
-  &--button a {
-    background: #2e6de7 !important;
-    color: #fff !important;
-  }
-  &--button a path {
-    fill: #fff !important;
-  }
-}
-
-.c-store-cart_item {
-  width: col-width(4, $space);
-  display: flex;
-  height: 100px;
-  background: #f5f5f5;
-  margin-top: $space;
-
-  @include media("<xlarge") {
-    width: col-width(3, $space);
-    flex-direction: column;
-    height: min-content;
-  }
-  @include media("<large") {
-    width: col-width(4, $space);
-  }
-  @include media("<medium") {
-    width: col-width(5, $space);
-  }
-  @include media("<small") {
-    width: col-width(6, $space);
-  }
-
-  &--image {
-    width: col-width(1, $space);
-    padding: $space;
-    display: flex;
-    align-items: flex-end;
-    @include media("<xlarge") {
-      display: none;
-    }
-  }
-  &--image__remove {
-    display: flex;
-    align-items: center;
-  }
-  &--image__remove svg {
-    width: 15px;
-  }
-  &--image__remove:hover span {
-    display: inline !important;
-  }
-  &--image__remove svg path {
-    fill: #fff;
-  }
-  &--image__remove span {
-    margin-left: 10px;
-    font-family: Noto Sans;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-
-  &--content {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: $space;
-    flex-grow: 1;
-    @include media("<xlarge") {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  }
-
-  &--name {
-    width: col-width(1, $space);
-    position: relative;
-
-    @include media("<xlarge") {
-      width: col-width(1.5, $space);
-      margin: 5px 0;
-    }
-  }
-  &--name::before {
-    content: 'product';
-    position: absolute;
-    top: -70px;
-    z-index: -1;
-
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #2F557F;
-
-    @include media("<xlarge") {
-      top: 50%;
-      transform: translateY(-50%);
-      left: -80%;
-      z-index: 0;
-    }
-    @include media("<large") {
-      left: -80%;
-    }
-    @include media("<medium") {
-      left: -130%;
-    }
-    @include media("<small") {
-      left: -80%;
-    }
-  }
-  &--price {
-    width: col-width(1, $space);
-    position: relative;
-
-    @include media("<xlarge") {
-      width: col-width(1.5, $space);
-      margin: 5px 0;
-    }
-  }
-  &--price:before {
-    content: 'price';
-    position: absolute;
-    top: -70px;
-    z-index: -1;
-
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #2F557F;
-
-    @include media("<xlarge") {
-      top: 50%;
-      transform: translateY(-50%);
-      left: -80%;
-      z-index: 0;
-    }
-    @include media("<large") {
-      left: -80%;
-    }
-    @include media("<medium") {
-      left: -130%;
-    }
-    @include media("<small") {
-      left: -80%;
-    }
-  }
-  &--quantity {
-    width: col-width(1, $space);
-    position: relative;
-
-    @include media("<xlarge") {
-      width: col-width(1.5, $space);
-      margin: 5px 0;
-    }
-  }
-  &--quantity::before {
-    content: 'quantity';
-    position: absolute;
-    top: -58px;
-    z-index: -1;
-
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #2F557F;
-
-    @include media("<xlarge") {
-      top: 50%;
-      transform: translateY(-50%);
-      left: -80%;
-      z-index: 0;
-    }
-    @include media("<large") {
-      left: -80%;
-    }
-    @include media("<medium") {
-      left: -130%;
-    }
-    @include media("<small") {
-      left: -80%;
-    }
-  }
-  &--quantity input {
-    width: 57px;
-    background: transparent;
-    text-align: center;
-  }
-  &--subtotal {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-
-    @include media("<xlarge") {
-      width: col-width(1.5, $space);
-      margin: 5px 0;
-    }
-  }
-  &--subtotal::before {
-    content: 'subtotal';
-    position: absolute;
-    top: -70px;
-    right: 0;
-    z-index: -1;
-
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #2F557F;
-
-    @include media("<xlarge") {
-      top: 0;
-      right: unset;
-      left: -80%;
-      z-index: 0;
-    }
-    @include media("<large") {
-      left: -80%;
-    }
-    @include media("<medium") {
-      left: -130%;
-    }
-    @include media("<small") {
-      left: -80%;
-    }
-  }
-
-  &--column {
-    font-family: Noto Sans;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: #02293E;
-
-    @include media('<xlarge') {
-      text-align: end;
-    }
-    @include media('<large') {
-      width: col-width(2, $space);
-    }
-    @include media('<medium') {
-      width: col-width(2, $space);
-    }
-    @include media('<small') {
-      width: col-width(3, $space);
-    }
-  }
-
-  &--remove {
-    display: flex;
-    align-items: center;
-    display: none;
-
-    @include media('<xlarge') {
-      display: block;
-    }
-  }
-  &--remove svg {
-    width: 10px;
-    margin-right: 5px;
-  }
-  &--remove:hover > * {
-    color: #c1c1c1;
-    fill: #c1c1c1;
-  }
-}
 
 .c-store-item__summary {
   width: col-width(2, $space);
@@ -1049,23 +1268,6 @@
   }
 }
 
-.s-store-cart {
-  display: flex;
-  flex-direction: column;
-
-  &__items-title {
-    margin: $space*2 0;
-  }
-  &__totals-title {
-    margin: $space 0;
-  }
-  &__totals-button {
-    margin: $space 0;
-  }
-  &__totals-button a {
-    background-color: #2E6DE7 !important;
-  }
-}
 
 .s-store-checkout {
   display: flex;

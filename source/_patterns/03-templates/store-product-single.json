@@ -1,0 +1,17 @@
+{
+  "page_header": {
+    "title": "Gift Shop",
+    "kicker": ""
+  },
+  "notification": {
+    "type": "success",
+    "appearance": "wide",
+    "text": "Your gift has successfully been added to your cart. Thank you!",
+    "first_button": {
+      "text": "View Cart",
+      "class": "o-button--outline",
+      "icon": "icon-arrow-short-right"
+    },
+    "second_button": false
+  }
+}
