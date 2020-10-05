@@ -1,0 +1,8 @@
+<div class="c-store-products--row">
+  {% include '@molecules/blocks/heading-block.twig' with products_row %}
+  <div class="c-store-products__wrap">
+    {% for product in products_row.items %}
+      {% include '@molecules/store/product.twig' with product %}
+    {% endfor %}
+  </div>
+</div>

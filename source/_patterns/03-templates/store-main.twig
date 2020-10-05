@@ -1,12 +1,15 @@
 <div class="l-wrap">
   <div class="l-wrap__content l-content" role="document">
     {% include '@organisms/global/header.twig' %}
-    <main class="l-main u-padding--double--bottom c-map-main" role="main">
+    <main class="l-main u-padding--double--bottom" role="main">
       {% include '@organisms/sections/page-header-long.twig' %}
-      <div class="p-store-components__search">
-        {% include '@molecules/forms/search-header.twig' %}
-      </div>
-      {% include '@organisms/store/product-list.twig' %}
+      {% include '@molecules/forms/search-header.twig' %}
+      <section class="c-store-main u-shift--left--1-col--at-xxlarge">
+        {% include '@molecules/store/products-cards.twig' %}
+        {% include '@molecules/store/products-row.twig' %}
+        {% include '@molecules/store/products-list.twig' %}
+      </section>
+      {% include "@molecules/navigation/pagination.twig" %}
     </main>
     {% include '@organisms/global/footer.twig' %}
   </div>

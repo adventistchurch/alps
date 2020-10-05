@@ -1,0 +1,77 @@
+{
+  "products_row": {
+    "heading_block": {
+      "title": "Less Important Products"
+    },
+    "items": [
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "price": "$3.50",
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          }
+        },
+        "button_default": {
+          "text": "Add",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      },
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "price": "$3.50",
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          }
+        },
+        "button_default": {
+          "text": "Add",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      },
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "price": "$3.50",
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          }
+        },
+        "button_default": {
+          "text": "Add",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      },
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "price": "$3.50",
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          }
+        },
+        "button_default": {
+          "text": "Add",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      }
+    ]
+  }
+}
