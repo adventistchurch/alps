@@ -1,25 +1,24 @@
 {
   "secondary_nav": {
-    "items": [
-      {
-        "icon": "icon-language",
-        "text": "Languages",
-        "subnav": {
-          "items": [{
-              "text": "English"
-            },
-            {
-              "text": "Spanish"
-            },
-            {
-              "text": "French"
-            },
-            {
-              "text": "Dutch"
-            }
-          ]
-        }
-      },
+    "items": [{
+      "icon": "icon-language",
+      "text": "Languages",
+      "subnav": {
+        "items": [{
+          "text": "English"
+        },
+          {
+            "text": "Spanish"
+          },
+          {
+            "text": "French"
+          },
+          {
+            "text": "Dutch"
+          }
+        ]
+      }
+    },
       {
         "icon": "icon-subscribe",
         "text": "Sitemap"
@@ -35,14 +34,6 @@
       {
         "icon": "icon-heart",
         "text": "Press"
-      },
-      {
-        "icon": "icon-search",
-        "text": "Search"
-      },
-      {
-        "icon": "icon-menu",
-        "text": "Menu"
       }
     ]
   }
