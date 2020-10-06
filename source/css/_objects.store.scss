@@ -154,8 +154,6 @@
       padding-left: col-width(1);
     }
     &--title {
-      padding-bottom: $space;
-
       @include media(">medium") {
         padding-left: 0;
         width: col-width(2);
@@ -475,9 +473,6 @@
       margin: $space 0;
     }
   }
-  &__totals__button a {
-    background-color: #2E6DE7 !important;
-  }
 }
 
 /// Checkout Page
@@ -589,8 +584,6 @@
       }
 
       &--title {
-        padding-bottom: $space;
-
         @include media(">medium") {
           padding-left: 0;
           padding-bottom: 0;
