@@ -493,6 +493,7 @@
       "billing"
       "info"
       "products"
+      "totals"
       "place";
 
   @include media(">medium") {
@@ -500,14 +501,11 @@
     grid-template-areas:
       "billing info"
       "billing products"
-      "place products";
+      "billing totals"
+      "place totals";
   }
   @include media(">xxlarge") {
     grid-template-columns: col-width(2) col-width(2);
-    grid-template-areas:
-      "billing info"
-      "billing products"
-      "place products";
   }
 }
 
@@ -545,22 +543,23 @@
 ///
 /// @molecules/store/checkout-products
 .c-store-checkout-products {
-  display: grid;
-  grid-template-columns: col-width(2) col-width(4);
-  align-content: start;
-  grid-template-areas:
-      "headers item";
-
-  @include media(">medium") {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "item";
-
-    margin-top: $space;
-  }
-
   grid-area: products;
 
+  &__wrap {
+    display: grid;
+    grid-template-columns: col-width(2) col-width(4);
+    align-content: start;
+    grid-template-areas:
+      "headers item";
+
+    @include media(">medium") {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "item";
+
+      margin-top: $space;
+    }
+  }
   &__headers {
     display: flex;
     flex-direction: column;
@@ -645,6 +644,11 @@
       &--subtotal {
       }
     }
+  }
+
+  .c-store-totals {
+    width: 100%;
+    margin-top: $space;
   }
 }
 
@@ -954,7 +958,7 @@
   }
 }
 
-.c-store-cart__total {
+.c-store-totals {
   width: col-width(6, $space);
   height: rem(100);
   background: $c-gray--light;
@@ -975,12 +979,12 @@
     display: flex;
     justify-content: space-between;
   }
-  &--field_name {
+  &__field-name {
     @include u-font--secondary--s;
     font-weight: bold;
     text-transform: uppercase;
   }
-  &--price {
+  &__price {
     @include u-font--primary--m;
     font-weight: bold;
   }
