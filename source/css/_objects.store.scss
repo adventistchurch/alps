@@ -935,7 +935,6 @@
       text-transform: uppercase;
     }
     &__content-tags {
-      display: none;
       margin-top: $space / 2;
       span {
         @include u-font--secondary--m;
@@ -951,7 +950,6 @@
       margin-bottom: $space / 2;
     }
     &__content-text {
-      display: none;
       @include u-font--secondary--m;
       margin-bottom: $space / 2;
     }
