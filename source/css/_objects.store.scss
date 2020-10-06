@@ -471,7 +471,11 @@
     margin: $space 0;
   }
   &__totals__button {
-    margin: $space 0;
+    margin: $space $space / 2;
+
+    @include media(">large") {
+      margin: $space 0;
+    }
   }
   &__totals__button a {
     background-color: #2E6DE7 !important;
