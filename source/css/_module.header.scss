@@ -160,6 +160,7 @@
     }
 
     &--wide {
+      padding-bottom: $space;
 
       @include media("<xsmall") {
         width: 100%;
