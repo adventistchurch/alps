@@ -160,7 +160,6 @@
     }
 
     &--wide {
-      padding-bottom: $space;
 
       @include media("<xsmall") {
         width: 100%;
@@ -168,6 +167,10 @@
 
       @include media(">large") {
         width: 100%;
+      }
+
+      @include media(">small", "<xlarge") {
+        padding-bottom: $space;
       }
 
       svg, img {
