@@ -1,0 +1,15 @@
+{% if inline_sidebar_block_default %}
+  <div class="js-this c-inline-sidebar-block c-block u-background-color--gray--light u-border--left u-theme--border-color--darker--left can-be--dark-dark">
+    <div class="c-inline-sidebar-block__header u-padding">
+      {% if inline_sidebar_block_default.title %}
+        <h2 class="c-inline-sidebar-block__title u-theme--color--darker">
+          {% if inline_sidebar_block_default.title_accent %}<span class="u-theme--color--base"><em>{{ inline_sidebar_block_default.title_accent }}</em></span>{% endif %} {{ inline_sidebar_block_default.title }}
+        </h2>
+      {% endif %}
+      <button class="c-inline-sidebar-block__toggle js-toggle o-button o-button--outline o-button--toggle o-button--small" data-toggled="this" data-prefix="this"><span class="u-icon u-icon--xs u-path-fill--white">{% include '@atoms/icons/icon-plus.twig' %}</span></button>
+    </div> <!-- /.c-inline-sidebar-block__header -->
+    <div class="c-inline-sidebar-block__body u-padding u-padding--zero--top">
+      {{ inline_sidebar_block_default.copy }}
+    </div>
+  </div> <!-- /.c-inline-sidebar-block-->
+{% endif %}
