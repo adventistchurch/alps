@@ -1,0 +1,19 @@
+<div class="c-store-checkout-products">
+  <div class="c-store-checkout-products__wrap">
+    {% for item in ckeckout_products %}
+      <div class="c-store-checkout-products__headers">
+        <div class="c-store-checkout-products__headers__col c-store-checkout-products__headers__col--title u-theme--color--dark">Product</div>
+        <div class="c-store-checkout-products__headers__col c-store-checkout-products__headers__col--subtotal u-theme--color--dark">Subtotal</div>
+      </div>
+      <div class="c-store-checkout-products__item">
+        <div class="c-store-checkout-products__item__col--title c-store-checkout-products__item__col">
+          {{ item.name }}
+        </div>
+        <div class="c-store-checkout-products__item__col--subtotal c-store-checkout-products__item__col">
+          {{ item.price.currency }} <span>{{ item.subtotal }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% include '@molecules/store/totals.twig' %}
+</div>

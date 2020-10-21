@@ -1,0 +1,19 @@
+<div class="c-store-product-detail">
+  <div class="c-store-product-detail__image">
+    <img src="{{ image }}" />
+  </div>
+  <div class="c-store-product-detail__content">
+    <div class="c-store-product-detail__title u-theme--color--dark">
+      {{ title }}
+    </div>
+    <div class="c-store-product-detail__short-desc">
+      {{ short_description }}
+    </div>
+    <div class="c-store-product-detail__long-desc">
+      {{ long_description }}
+    </div>
+  </div>
+  <div class="c-store-product-detail__button">
+    {% include '@atoms/buttons/button.twig' with button %}
+  </div>
+</div>

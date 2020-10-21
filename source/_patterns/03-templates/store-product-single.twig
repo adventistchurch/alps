@@ -1,0 +1,17 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main" role="main">
+      {% include '@organisms/sections/page-header-long.twig' %}
+      <div class="u-shift--left--1-col--at-large">
+        {% include '@molecules/store/notification.twig' with notification %}
+      </div>
+      <section class="c-store-product-single u-shift--left--1-col--at-large">
+        {% include '@molecules/store/product-detail.twig' %}
+        {% include '@molecules/store/cart-add.twig' %}
+      </section>
+    </main>
+    {% include '@organisms/global/footer.twig' %}
+  </div>
+  {% include '@organisms/asides/sabbath.twig' %}
+</div>

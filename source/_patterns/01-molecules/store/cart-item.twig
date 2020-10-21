@@ -1,0 +1,26 @@
+<div class="c-store-cart-item">
+  <div class="c-store-cart-item__image" style="background-image: url('{{ image }}')">
+    <div class="c-store-cart-item__remove">
+      {% include '@atoms/icons/icon-close.twig' %}
+      <span>remove</span>
+    </div>
+  </div>
+  <div class="c-store-cart-item__content u-theme--color--darker">
+    <div class="c-store-cart-item__col--title c-store-cart-item__col">
+      {{ name }}
+    </div>
+    <div class="c-store-cart-item__col--price c-store-cart-item__col">
+      <span>{{ price.currency }}{{ price.cost }}</span>
+    </div>
+    <div class="c-store-cart-item__col--quantity c-store-cart-item__col">
+      <input type="text" value="{{ quantity }}" class="u-theme--color--darker" />
+    </div>
+    <div class="c-store-cart-item__col--subtotal c-store-cart-item__col">
+      {{ price.currency }} <span>{{ subtotal }}</span>
+    </div>
+    <div class="c-store-cart-item__col--remove c-store-cart-item__col">
+      {% include '@atoms/icons/icon-close.twig' %}
+      <span>remove</span>
+    </div>
+  </div>
+</div>

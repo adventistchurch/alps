@@ -1,0 +1,11 @@
+{
+  "checkout_place": {
+    "heading_block": {
+      "title": "Your Order"
+    },
+    "button_default": {
+      "text": "Place Order",
+      "class": ""
+    }
+  }
+}

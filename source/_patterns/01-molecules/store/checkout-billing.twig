@@ -1,0 +1,60 @@
+<div class="c-store-checkout-billing">
+  {% include '@molecules/blocks/heading-block.twig' with checkout_billing %}
+  <form class="c-form u-spacing u-theme--color--dark">
+    <div class="u-spacing--quarter">
+      <label class="u-font--secondary--m">First name</label>
+      <input type="text" />
+    </div>
+
+    <div class="u-spacing--quarter">
+      <label class="u-font--secondary--m">Last name</label>
+      <input type="text" />
+    </div>
+
+    <div class="form__select u-spacing--half">
+      <label class="u-font--secondary--m">Country / Region</label>
+      <select>
+        <option value="one">Option 1</option>
+        <option value="two">Option 2</option>
+        <option value="three">Option 3</option>
+        <option value="four">Option 4</option>
+      </select>
+    </div>
+
+    <div class="u-spacing--quarter">
+      <label class="u-font--secondary--m">Street address</label>
+      <input type="text" placeholder="House number and street name" />
+      <input type="text" placeholder="Apartament, suite, unit, etc. (optional)" />
+    </div>
+
+    <div class="u-spacing--quarter">
+      <label class="u-font--secondary--m">Town / City</label>
+      <input type="text" />
+    </div>
+
+    <div class="form__select u-spacing--half">
+      <label class="u-font--secondary--m">State</label>
+      <select>
+        <option value="one">Option 1</option>
+        <option value="two">Option 2</option>
+        <option value="three">Option 3</option>
+        <option value="four">Option 4</option>
+      </select>
+    </div>
+
+    <div class="u-spacing--quarter">
+      <label class="u-font--secondary--m">ZIP</label>
+      <input type="text" />
+    </div>
+
+    <div class="u-spacing--quarter">
+      <label class="u-font--secondary--m">Phone</label>
+      <input type="text" />
+    </div>
+
+    <div class="u-spacing--quarter">
+      <label class="u-font--secondary--m">Email address</label>
+      <input type="text" />
+    </div>
+  </form>
+</div>

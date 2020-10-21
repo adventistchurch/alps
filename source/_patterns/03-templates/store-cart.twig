@@ -1,0 +1,34 @@
+<div class="l-wrap">
+  <div class="l-wrap__content l-content" role="document">
+    {% include '@organisms/global/header.twig' %}
+    <main class="l-main" role="main">
+      {% include '@organisms/sections/page-header-long.twig' %}
+      <section class="c-store-cart u-shift--left--1-col--at-large">
+        <div class="c-store-cart__items">
+          <div class="c-store-cart__items__title">
+            {% include '@molecules/blocks/heading-block.twig' with items_block %}
+          </div>
+          <div class="c-store-cart__items__list">
+            {% for item in items_block.items %}
+              {% include '@molecules/store/cart-headers.twig' %}
+              {% include '@molecules/store/cart-item.twig' with item %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="c-store-cart__totals">
+          <div class="c-store-cart__totals__title">
+            {% include '@molecules/blocks/heading-block.twig' with totals_block %}
+          </div>
+          <div class="c-store-cart__totals__info">
+            {% include '@molecules/store/totals.twig' with totals_block.cart_total %}
+          </div>
+          <div class="c-store-cart__totals__button">
+            {% include '@atoms/buttons/button.twig' %}
+          </div>
+        </div>
+      </section>
+    </main>
+    {% include '@organisms/global/footer.twig' %}
+  </div>
+  {% include '@organisms/asides/sabbath.twig' %}
+</div>

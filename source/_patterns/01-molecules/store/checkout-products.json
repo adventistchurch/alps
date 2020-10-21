@@ -1,0 +1,25 @@
+{
+  "ckeckout_products": [
+    {
+      "name": "Honor Sashes - Large (Dark Green)",
+      "price": {
+        "currency": "$"
+      },
+      "subtotal": 37.5
+    },
+    {
+      "name": "Honor Sashes - Large (Dark Green)",
+      "price": {
+        "currency": "$"
+      },
+      "subtotal": 37.5
+    },
+    {
+      "name": "Honor Sashes - Large (Dark Green)",
+      "price": {
+        "currency": "$"
+      },
+      "subtotal": 37.5
+    }
+  ]
+}

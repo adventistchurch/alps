@@ -1,0 +1,79 @@
+{
+  "products_list": {
+    "heading_block": {
+      "title": "Even More Important Products"
+    },
+    "items": [
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "price": "$3.50",
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          },
+          "text": "Standard honor ashes pathfinder clubs. Order in bulk to receive shipping discounts"
+        },
+        "button_default": {
+          "text": "View Cart",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      },
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "tags": ["Limited Time Offer"],
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          }
+        },
+        "button_default": {
+          "text": "View Cart",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      },
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "price": "$3.50",
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          }
+        },
+        "button_default": {
+          "text": "View Cart",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      },
+      {
+        "header": {
+          "img_src": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg"
+        },
+        "content": {
+          "price": "$3.50",
+          "tags": ["Best Price"],
+          "title": {
+            "cursive_words": "Product",
+            "remainder_words": "Artist Patch"
+          }
+        },
+        "button_default": {
+          "text": "View Cart",
+          "class": "o-button--outline",
+          "icon": "icon-arrow-short-right"
+        }
+      }
+    ]
+  }
+}

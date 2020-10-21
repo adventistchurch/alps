@@ -1,0 +1,36 @@
+<div class="c-store-notification c-store-notification--{{ type }} c-store-notification--{{ appearance }}">
+  <div class="c-store-notification__wrap">
+    <div class="c-store-notification__content">
+      <div class="c-store-notification__header">
+        {% include '@atoms/icons/icon-'~type~'.twig' %} <span>{{ type }}</span>
+      </div>
+      <div class="c-store-notification__text">
+        {{ text }}
+      </div>
+    </div>
+    {% if first_button %}
+      <div class="c-store-notification__buttons">
+        {% if first_button %}
+          <a href="#" class="o-button {{ first_button.class }}">
+            {% if first_button.icon %}
+              <span class="u-icon u-path-fill--white">
+                {% include '@atoms/icons/' ~ first_button.icon ~ '.twig' %}
+              </span>
+            {% endif %}
+            {{ first_button.text }}
+          </a>
+        {% endif %}
+        {% if second_button %}
+          <a href="#" class="o-button {{ second_button.class }}">
+            {% if second_button.icon %}
+              <span class="u-icon u-path-fill--white">
+                {% include '@atoms/icons/' ~ second_button.icon ~ '.twig' %}
+              </span>
+            {% endif %}
+            {{ second_button.text }}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>

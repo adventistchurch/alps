@@ -101,6 +101,8 @@
 }
 
 .c-page-header__long {
+  padding-top: $space * 3;
+
   &--inner {
     position: relative;
   }
@@ -108,7 +110,7 @@
   &__content {
     position: relative;
     z-index: 1;
-    padding: ($space * 2) $space;
+    padding: $space;
   }
 
   &__subtitle {
