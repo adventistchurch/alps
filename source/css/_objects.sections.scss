@@ -101,7 +101,7 @@
 }
 
 .c-page-header__long {
-  padding-top: $space * 6;
+  padding-top: $space * 4;
 
   &--inner {
     position: relative;
@@ -111,12 +111,19 @@
     position: relative;
     z-index: 1;
     padding: $space;
-    padding-top: $space * 4;
   }
 
   &__subtitle {
     > * {
       padding: ($space * 2) $space;
+    }
+  }
+
+  &.has-background {
+    padding-top: $space * 6;
+
+    .c-page-header__content {
+      padding-top: $space * 4;
     }
   }
 }
