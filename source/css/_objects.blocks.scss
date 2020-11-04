@@ -663,6 +663,10 @@
 
   &__body {
     display: none;
+
+    p {
+      margin-bottom: $space;
+    }
   }
 
   &__toggle {
