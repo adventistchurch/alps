@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [3.*.*]
 ###  Added
 Added: A wide logo pattern. This is used by adding the class `c-header__logo--wide` to the logo container. [#376](https://github.com/adventistchurch/alps/issues/376)
-
+Adding: Product and store pages to be intergrated with ecommerce. [#499](https://github.com/adventistchurch/alps/issues/499)
 
 ## [3.8.0]
 ###  Added
