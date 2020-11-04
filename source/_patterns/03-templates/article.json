@@ -4,6 +4,7 @@
   },
 
   "blockquote": true,
+  "inlinesidebar": true,
   "figure_breakout": true,
   "figure_with_caption": true,
   "figure_split": true,
