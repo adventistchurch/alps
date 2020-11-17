@@ -1126,6 +1126,9 @@
   }
 
   &__search {
+    padding-bottom: $space;
+    border-bottom: 1px solid $c-gray;
+
     input {
       background-color: transparent;
       color: $c-white;

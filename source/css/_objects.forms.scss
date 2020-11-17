@@ -123,3 +123,27 @@ input[type=radio] {
      }
    }
  }
+
+.c-search-filter {
+  padding-top: $space;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__label {
+    padding-left: $space / 2;
+    letter-spacing: 1px;
+  }
+
+  &__form {
+    margin-top: $space;
+  }
+
+  &__matches {
+    margin-top: $space;
+
+    li {
+      margin-top: $space;
+    }
+  }
+}
