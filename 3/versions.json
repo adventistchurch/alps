@@ -1,7 +1,36 @@
 [
   {
+    "version": "3.9.1",
+    "description": "Fixing grid styles for 'l-grid-item--xl' and 'l-grid-item--xxl'.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.1/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.9.1/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.9.1/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.9.1/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.9.1/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.9.1/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.9.1/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.9.1/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.9.1/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.9.1/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.9.1/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.9.1/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.9.1/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.9.1/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.9.1/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.9.1/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.9.1/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.9.1/js/head-script.min.js"
+    }
+  },
+  {
     "version": "3.9.0",
-    "description": "",
+    "description": "Added support for the wide logo pattern and inline sidebar block.",
     "styles": {
       "main": "https://cdn.adventist.org/alps/3/3.9.0/css/main.css",
       "themes": {
@@ -30,7 +59,7 @@
   },
   {
     "version": "3.8.0",
-    "description": "",
+    "description": "Added patterns for the church locator.",
     "styles": {
       "main": "https://cdn.adventist.org/alps/3/3.8.0/css/main.css",
       "themes": {
@@ -59,7 +88,7 @@
   },
   {
     "version": "3.7.11",
-    "description": "",
+    "description": "Fixed the scaling of images.",
     "styles": {
       "main": "https://cdn.adventist.org/alps/3/3.7.11/css/main.css",
       "themes": {
@@ -88,7 +117,7 @@
   },
   {
     "version": "3.7.10",
-    "description": "",
+    "description": "Added a full-width class for making a full page.",
     "styles": {
       "main": "https://cdn.adventist.org/alps/3/3.7.10/css/main.css",
       "themes": {
