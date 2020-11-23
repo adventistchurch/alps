@@ -15,7 +15,7 @@ module.exports = function (grunt) {
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
   const major_version = "3";
-  const version = "3.9.0";
+  const version = "3.9.1";
 
   /**
    * Split SCSS files by theme
