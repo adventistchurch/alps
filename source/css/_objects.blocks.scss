@@ -638,6 +638,60 @@
 }
 
 /**
+ * Inline Sidebar
+ */
+.c-inline-sidebar-block {
+
+  &.this-is-active {
+    .c-inline-sidebar-block__body {
+      display: block;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: $ff-font--primary;
+    font-size: rem(16);
+  }
+
+  &__body {
+    display: none;
+
+    p {
+      margin-bottom: $space;
+    }
+  }
+
+  &__toggle {
+    margin-left: $space;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /*
+  &__title {
+    width: calc((100vw / 7) * 4);
+
+    // - $pad-mobile * 2
+
+    @include media(">medium") {
+      width: calc((100vw / 7) * 2);
+
+      // - $pad * 2
+    }
+  }
+  */
+
+}
+
+/**
  * CTA Block
  */
 .c-cta-block {

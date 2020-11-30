@@ -1,7 +1,11 @@
 <section class="l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap--6-of-7 u-spacing--double--until-large">
-  <div class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col">
+  <div class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xxl--3-col">
     <article class="text c-article__body u-spacing has-drop-cap">
       <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. <a href="">Donec malesuada</a>, est ut viverra euismod, dui dolor gravida massa, sed aliquam ex nisl ut metus. Mauris at ante laoreet, gravida odio gravida, fermentum lectus. Fusce ac sollicitudin purus. Morbi et diam nunc. Praesent fringilla magna nisl, et volutpat nisi tincidunt aliquet. In laoreet ligula vel porttitor condimentum. In mattis ultricies placerat. Morbi interdum hendrerit tempus. Donec consequat elit vitae justo ornare, eget elementum quam consequat. Quisque auctor ex et congue finibus. Proin sed nisl ac velit aliquam euismod non tincidunt lectus. In enim ex, commodo feugiat porttitor sed, eleifend vitae ipsum. Suspendisse lorem nisl, suscipit at tellus quis, porttitor convallis sem.</p>
+      {% if inlinesidebar %}
+        {% include '@molecules/blocks/inline-sidebar.twig' %}
+      {% endif %}
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aenean, eros magnis lectus condimentum magna integer mauris mattis, auctor imperdiet dui nibh lacinia penatibus est. Risus congue ullamcorper scelerisque fames semper lorem vehicula metus in magna, cum commodo vestibulum porta nunc aliquet ultrices ac facilisis, blandit amet eros est proin eget sociis molestie interdum. Sollicitudin primis habitasse lacus nec cum ullamcorper sit, congue ornare magna netus lobortis sociis vehicula, faucibus conubia parturient sociosqu hac sed. Lobortis convallis sodales nec faucibus vel in posuere sed, est feugiat facilisi hac accumsan rutrum himenaeos, ultrices metus vestibulum amet malesuada at curae. Morbi suscipit varius sollicitudin hac ipsum sociosqu lectus, lacus libero fermentum nam primis vivamus netus laoreet, platea cras sem himenaeos eget pretium. Per facilisis odio erat natoque est semper ante mauris augue felis condimentum fermentum, magna quam ridiculus pellentesque habitant gravida eros fames fringilla id porta. Posuere proin inceptos urna facilisi libero platea dictum sit, vehicula pulvinar adipiscing habitant accumsan turpis.</p>
       {% if blockquote %}
         {% include '@atoms/text/blockquote.twig' %}
       {% endif %}
@@ -22,7 +26,7 @@
   </section>
 {% endif %}
 <section class="l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap l-grid-wrap--6-of-7">
-  <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col">
+  <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xxl--3-col">
     <div class="text c-article__body u-spacing">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada, est ut viverra euismod, dui dolor gravida massa, sed aliquam ex nisl ut metus. Mauris at ante laoreet, gravida odio gravida, fermentum lectus. Fusce ac sollicitudin purus. Morbi et diam nunc. Praesent fringilla magna nisl, et volutpat nisi tincidunt aliquet. In laoreet ligula vel porttitor condimentum. In mattis ultricies placerat. Morbi interdum hendrerit tempus. Donec consequat elit vitae justo ornare, eget elementum quam consequat. Quisque auctor ex et congue finibus. Proin sed nisl ac velit aliquam euismod non tincidunt lectus. In enim ex, commodo feugiat porttitor sed, eleifend vitae ipsum. Suspendisse lorem nisl, suscipit at tellus quis, porttitor convallis sem.</p>
       {% if figure_with_caption %}
@@ -45,7 +49,7 @@
   </section>
 {% endif %}
 <section class="l-grid l-grid--7-col u-shift--left--1-col--at-xxlarge l-grid-wrap l-grid-wrap--6-of-7">
-  <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xl--3-col">
+  <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xxl--3-col">
     <div class="text c-article__body u-spacing">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada, est ut viverra euismod, dui dolor gravida massa, sed aliquam ex nisl ut metus. Mauris at ante laoreet, gravida odio gravida, fermentum lectus. Fusce ac sollicitudin purus. Morbi et diam nunc. Praesent fringilla magna nisl, et volutpat nisi tincidunt aliquet. In laoreet ligula vel porttitor condimentum. In mattis ultricies placerat. Morbi interdum hendrerit tempus. Donec consequat elit vitae justo ornare, eget elementum quam consequat. Quisque auctor ex et congue finibus. Proin sed nisl ac velit aliquam euismod non tincidunt lectus. In enim ex, commodo feugiat porttitor sed, eleifend vitae ipsum. Suspendisse lorem nisl, suscipit at tellus quis, porttitor convallis sem.</p>
       {% if highlight %}

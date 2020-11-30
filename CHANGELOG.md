@@ -4,20 +4,35 @@ A record of the changes made to `ALPS V3`.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [3.*.*]
+## [3.9.1]
+Fixing grid styles for 'l-grid-item--xl' and 'l-grid-item--xxl'.
+
+###  Added
+Fixing grid styles for 'l-grid-item--xl' and 'l-grid-item--xxl'.
+
+## [3.9.0]
+Added support for the wide logo pattern and inline sidebar block.
+
 ###  Added
 Added: A wide logo pattern. This is used by adding the class `c-header__logo--wide` to the logo container. [#376](https://github.com/adventistchurch/alps/issues/376)
-
+Adding: Product and store pages to be intergrated with ecommerce. [#499](https://github.com/adventistchurch/alps/issues/499)
+Added: Inline sidebar block. [#489](https://github.com/adventistchurch/alps/issues/489)
 
 ## [3.8.0]
+Added patterns for the church locator.
+
 ###  Added
 Added: Patterns for the church locator. [#484](https://github.com/adventistchurch/alps/issues/484)
 
 ## [3.7.11]
+Fixed the scaling of images.
+
 ### Fixed
 Fixed: Added `height: auto;` to fix the scaling of images where the `height` and `width` is defined in the HTML. [#503](https://github.com/adventistchurch/alps/issues/503)
 
 ## [3.7.10]
+Added a full-width class for making a full page.
+
 ### Added
 Added: `full-width` class for making a page with no side column margins.
 Added: Search Meta information to show the URL the source came from.
