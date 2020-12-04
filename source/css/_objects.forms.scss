@@ -133,17 +133,26 @@ input[type=radio] {
   &__label {
     padding-left: $space / 2;
     letter-spacing: 1px;
+
+    span {
+      display: none;
+
+      @include media('>small') {
+        display: inline;
+      }
+    }
   }
 
   &__form {
-    margin-top: $space;
-  }
-
-  &__matches {
+    display: none;
     margin-top: $space;
 
-    li {
-      margin-top: $space;
+    &.c-filter-is-active {
+      display: flex;
+    }
+
+    &-item {
+      flex: 1;
     }
   }
 }

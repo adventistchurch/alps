@@ -1,9 +1,9 @@
 {% if search.matches %}
   {% if search_filter %}
     <p class="c-search-filter js-toggle u-font--secondary--s u-text-transform--upper" data-toggled="c-search-filter__form" data-prefix="c-filter">
-      {% include '@atoms/icons/icon-settings.twig' %} <span class="c-search-filter__label">Filter Results</span>
+      {% include '@atoms/icons/icon-settings.twig' %} <span class="c-search-filter__label">Filter <span>Results</span></span>
     </p>
-    <form class="c-search-filter__form js-toggle-this u-spacing toggled-element">
+    <form class="c-search-filter__form js-toggle-this toggled-element">
       <div class="c-search-filter__form-item u-spacing--half">
         <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base">Filter</h3>
         {% if search_filter.checkbox %}
@@ -27,12 +27,11 @@
         {% endif %}
       </div>
     </form>
-
   {% endif %}
-  <ul class="c-search-filter__matches">
+  <ul class="c-search-filter__matches o-suggestions">
     {% if matchlist %}
       {% for match in matchlist %}
-        <li><a style="color:white" href="{{ match.url }}">{{ match.text | raw }}</a></li>
+        <li><a href="{{ match.url }}">{{ match.text | raw }}</a></li>
       {% endfor %}
     {% endif %}
   </ul>
