@@ -72,5 +72,14 @@
         "search_meta": "Source: www.adventist.org"
       }
     }
-  ]
+  ],
+  "pager": {
+    "link": "?page=",
+    "current": 2,
+    "surrounding": 3,
+    "totalpages": 6,
+    "ellipsis": "&hellip;",
+    "next": "Next &rarr;",
+    "prev": "&larr; Previous"
+  }
 }

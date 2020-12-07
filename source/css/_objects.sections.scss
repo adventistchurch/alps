@@ -658,3 +658,60 @@
     }
   }
 }
+
+// SEARCH RESULTS DO NOT FOLLOW THE GRID IN DESIGN
+.c-search-results {
+
+  &.l-grid-item {
+    padding-left: 0;
+  }
+
+  @include media(">large") {
+    width: calc((100vw / 7) * 3.5 - 0.01px);
+  }
+
+  .c-block__text.has-image > :not(.c-block__image) {
+    margin-left: calc((100vw / 7) * 0.8 - 0.01px)
+  }
+
+  .pagination {
+
+    .pagination__page {
+      text-decoration: none;
+      border: 0;
+    }
+
+    .pagination__prev svg,
+    .pagination__next svg {
+      display: inline-block;
+      position: relative;
+      transform: translateY(4px); // BRINGS BRACKETS CENTER ALIGNED
+    }
+
+  }
+}
+
+.c-block__search-content {
+
+  .c-block__image {
+    max-width: calc((100vw / 7) * 1.25 - 0.01px);
+    margin-left: 1.25rem;
+    float: right;
+  }
+
+  @include media(">large") {
+    padding-left: 0;
+    clear: both;
+
+    &.u-border--left { // CLASS IS HARDCODED IN CHILD BLOCK
+      border-left: 0;
+    }
+
+    .c-block__image {
+      margin-left: 0;
+      max-width: calc((100vw / 7) * 0.8 - 0.01px);
+      float: left;
+    }
+  }
+}
+

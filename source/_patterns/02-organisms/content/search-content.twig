@@ -2,7 +2,11 @@
   {% for block in search_results %}
     {% include '@molecules/blocks/content-block.twig' with block %}
   {% endfor %}
+  {#}
+  <!-- USING PAGINATION NOW? -->
   <p>
     <a href="" class="o-button u-space--left">Load More</a>
   </p>
+  {/#}
+  {% include '@molecules/navigation/pagination.twig' with pager %}
 </div> <!-- /.c-search-results -->
