@@ -14,7 +14,6 @@
         {% endif %}
       </h3>
     {% endif %}
-
     {% if content_block_default.description %}
       <p class="c-block__body text">{{ content_block_default.description | raw }}</p>
     {% endif %}
@@ -35,6 +34,9 @@
           <div class="c-block__meta u-font--secondary--xs u-color--gray ">{{ content_block_default.meta }}</div>
         {% endif %}
       {% endif %}
+      {% if content_block_default.search_meta %}
+          <div class="c-block__meta u-font--secondary--xs u-theme--color--darker">{{ content_block_default.search_meta }}</div>
+        {% endif %}
     {% endif %}
   </div>
 {% endif %}
