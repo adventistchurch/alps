@@ -11,6 +11,9 @@
 /.grunt/
 /.grunt/grunt-gh-pages
 .grunt/grunt-gh-pages/gh-pages/src
+package-lock.json
+*.log
+*.lock
 
 
 # Ignore IDE-specific files
