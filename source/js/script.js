@@ -107,16 +107,18 @@
 
   // SITE SPECIFIC JS ------------------------------//
 
+  var $toggled = '';
   var toggleClasses = function(element) {
     var $this = element,
         $togglePrefix = $this.data('prefix') || 'this';
 
     // If the element you need toggled is relative to the toggle, add the
     // .js-this class to the parent element and "this" to the data-toggled attr.
-    if ($this.data('toggled') == "this") {
-      var $toggled = $this.parents('.js-this');
-    } else {
-      var $toggled = $('.' + $this.data('toggled'));
+    if ($this.data('toggled') === "this") {
+      $toggled = $this.parents('.js-this');
+    }
+    else {
+      $toggled = $('.' + $this.data('toggled'));
     }
 
     $this.toggleClass($togglePrefix + '-is-active');
@@ -207,6 +209,7 @@
    */
   $('.js-toggle').on('click', function(e) {
     e.stopPropagation();
+    e.preventDefault();
     toggleClasses($(this));
   });
 

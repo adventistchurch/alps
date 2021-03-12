@@ -5,71 +5,11 @@
         "img": {
           "src": "https://picsum.photos/180/"
         },
-        "block_class": "c-block__search-content u-spacing",
+        "block_class": "c-block--reversed l-grid--7-col",
         "title_class": "u-font--primary--m",
         "title": "Doed sagittis massa id blandit aliquet",
         "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim <mark>porttitor gravida</mark> at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "search_meta": "Source: www.adventist.org"
-      }
-    },
-    {
-      "content_block_default": {
-        "img": {
-          "src": "https://picsum.photos/180/"
-        },
-        "block_class": "c-block__search-content u-spacing u-padding--top--double",
-        "title_class": "u-font--primary--m",
-        "title": "Donec consequat",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. <mark>Sed sagittis massa</mark> id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "search_meta": "Source: gc.adventist.org"
-      }
-    },
-    {
-      "content_block_default": {
-        "img": {
-          "src": "https://picsum.photos/180/"
-        },
-        "block_class": "c-block__search-content u-spacing",
-        "title_class": "u-font--primary--m",
-        "title": "Lorem ipsum dolor sit amet consectetur adipiscing elit litora diam in iaculis aenean primis.",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "search_meta": "Source: stewardship.adventist.org"
-      }
-    },
-    {
-      "content_block_default": {
-        "img": {
-          "src": "https://picsum.photos/180/"
-        },
-        "block_class": "c-block__search-content u-spacing",
-        "title_class": "u-font--primary--m",
-        "title": "Porta dui metus phasellus laoreet cum tortor ultricies ridiculus fames commodo.",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "search_meta": "Source: www.adventist.org"
-      }
-    },
-    {
-      "content_block_default": {
-        "img": {
-          "src": "https://picsum.photos/180/"
-        },
-        "block_class": "c-block__search-content u-spacing",
-        "title_class": "u-font--primary--m",
-        "title": "Donec consequat",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "search_meta": "Source: family.adventist.org"
-      }
-    },
-    {
-      "content_block_default": {
-        "img": {
-          "src": "https://picsum.photos/180/"
-        },
-        "block_class": "c-block__search-content u-spacing",
-        "title_class": "u-font--primary--m",
-        "title": "Cras at semi at felis rhoncus varius eget vel ipsum.",
-        "description": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet. Pellentesque semper tincidunt ex sit amet tincidunt. Cras at sem at felis rhoncus varius eget vel ipsum.",
-        "search_meta": "Source: www.adventist.org"
+        "category": "This Site"
       }
     }
   ],

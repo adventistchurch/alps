@@ -1,0 +1,24 @@
+{% if search_drawer %}
+  <div class="c-search-drawer u-theme--dark u-theme--background-color--darker">
+    <div class="c-search-drawer__filter c-filter">
+      <form action="{{ search_drawer.url }}" role="search" method="{{ search_drawer.method }}" class="c-filter__search">
+        <div class="c-filter__inline">
+          <input type="search" name="{{ search_drawer.name }}" placeholder="{{ search_drawer.placeholder }}" class="u-font--secondary--s u-theme--color--darker can-be--white" />
+          <button class="o-button o-button--simple can-be--white"><font>Clear search</font></button>
+        </div>
+        {% if search_drawer.filter_form %}
+          <button class="c-filter__toggle js-toggle o-button o-button--simple--gray" data-toggled="c-filter" data-prefix="c-filter">
+            <span class="u-icon u-icon--xs u-theme--path-fill--base">{% include '@atoms/icons/icon-settings.twig' %}</span>
+            <font>{{ search_drawer.filter_form.toggle_text }}</font>
+          </button>
+        {% endif %}
+      </form>
+      {% if search_drawer.filter_form %}
+        {% include '@molecules/forms/filter-form.twig' with search_drawer %}
+      {% endif %}
+    </div>
+    {% if search_drawer.suggestions %}
+      {% include '@molecules/components/suggestions.twig' with search_drawer %}
+    {% endif %}
+  </div>
+{% endif %}

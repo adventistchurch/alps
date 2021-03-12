@@ -445,8 +445,7 @@
   > h3:empty,
   > p:empty {
     display: none;
-
-}
+  }
 
   > .o-pullquote--extended {
     width: calc(100vw / 7 * 3);
@@ -588,6 +587,7 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
   margin-right: $pad-mobile;
   overflow: hidden;
   position: relative;
+
   //content: "";
   font-style: normal;
 
@@ -648,6 +648,7 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
     width: calc((100vw / 7 * 1) - 15px);
     font-size: 8vw;
   }
+
 
   @include media(">large") {
     width: calc((100vw / 7 * 1) - 20px);

@@ -15,7 +15,6 @@ package-lock.json
 *.log
 *.lock
 
-
 # Ignore IDE-specific files
 *.sublime-project
 *.sublime-workspace

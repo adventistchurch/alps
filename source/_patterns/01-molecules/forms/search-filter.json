@@ -1,22 +1,33 @@
 {
   "search_filter": {
-    "radio": [{
-        "id": "1",
-        "label": "Option 1"
-      },
-      {
-        "id": "2",
-        "label": "Option 2"
-      }
-    ],
-    "checkbox": [{
-        "id": "1",
-        "label": "Option 1"
-      },
-      {
-        "id": "2",
-        "label": "Option 2"
-      }
-    ]
+    "url": "",
+    "method": "",
+    "placeholder": "Search…",
+    "form_title": "Search",
+    "name": "search",
+    "filter_form": {
+      "active": "",
+      "toggle_text": "Options",
+      "radio": [
+        {
+          "id": "1",
+          "label": "Option 1"
+        },
+        {
+          "id": "2",
+          "label": "Option 2"
+        }
+      ],
+      "checkbox": [
+        {
+          "id": "1",
+          "label": "Option 1"
+        },
+        {
+          "id": "2",
+          "label": "Option 2"
+        }
+      ]
+    }
   }
 }

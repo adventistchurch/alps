@@ -1,29 +1,33 @@
 {
-  "search": {
-    "url": "/search",
-    "method": "get",
-    "placeholder": "Search …",
-    "searchLabel": "Search",
-    "settingsLabel": "",
+  "search_header": {
+    "url": "",
+    "method": "",
+    "placeholder": "Search…",
+    "form_title": "Search",
     "name": "search",
-    "value": "Test",
-    "suggestions": [
-      {
-          "text": "Finland: Church-Planting Project <strong>Test</strong>s Faith, Energy",
-          "url": "#"
-      },
-      {
-          "text": "Top Adventist leaders in Southern Africa <strong>test</strong>ed for HIV/AIDS",
-          "url": "#"
-      },
-      {
-          "text": "World Church: Leaders Pray in Wake of Apparent North Korea Nuke <strong>Test</strong>",
-          "url": "#"
-      },
-      {
-          "text": "Adventist University and Sanitarium team up to perform swabs and coronavirus <strong>test</strong>s",
-          "url": "#"
-      }
-    ]
+    "filter_form": {
+      "active": "",
+      "toggle_text": "Filter",
+      "radio": [
+        {
+          "id": "1",
+          "label": "Option 1"
+        },
+        {
+          "id": "2",
+          "label": "Option 2"
+        }
+      ],
+      "checkbox": [
+        {
+          "id": "1",
+          "label": "Option 1"
+        },
+        {
+          "id": "2",
+          "label": "Option 2"
+        }
+      ]
+    }
   }
 }

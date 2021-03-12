@@ -16,3 +16,39 @@
     }
   }
 }
+
+/**
+ * Pagination
+ */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .u-icon {
+    margin: 0;
+  }
+
+  &__page,
+  &__page--current {
+    @include u-font--secondary--m;
+
+    font-weight: bold;
+    line-height: 1;
+    padding: 8px;
+  }
+
+  &__prev,
+  &__next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: $space/4;
+  }
+}

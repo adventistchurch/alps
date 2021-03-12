@@ -1,0 +1,26 @@
+{% if filter_form %}
+  <form class="c-filter__form u-spacing {{ filter_form.active }}">
+    <div class="c-filter__form-item u-spacing--half">
+      <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base">Filter</h3>
+      {% if filter_form.checkbox %}
+        {% for item in filter_form.checkbox %}
+          <div class="c-filter__form-group">
+            <input id="checkbox-{{ item.id }}" type="checkbox" name="checkbox" value="{{ item.label }}"/>
+            <label for="checkbox-{{ item.id }}">{{ item.label }}</label>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="c-filter__form-item u-spacing--half">
+      <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base">Sort By</h3>
+      {% if filter_form.radio %}
+        {% for item in filter_form.radio %}
+          <div class="c-filter__form-group">
+            <input id="radio-{{ item.id }}" type="radio" name="radio" value="{{ item.label }}"/>
+            <label for="radio-{{ item.id }}">{{ item.label }}</label>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </form>
+{% endif %}

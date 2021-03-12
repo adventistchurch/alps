@@ -98,7 +98,7 @@
   "search": {
     "url": "/search",
     "method": "get",
-    "placeholder": "Search …",
+    "placeholder": "Search…",
     "searchLabel": "Search",
     "settingsLabel": "",
     "name": "search",

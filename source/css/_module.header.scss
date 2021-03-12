@@ -1125,26 +1125,6 @@
     }
   }
 
-  &__search {
-    padding-bottom: $space;
-    border-bottom: 1px solid $c-gray;
-
-    input {
-      background-color: transparent;
-      color: $c-white;
-      border: 0;
-      border-bottom: 1px solid $c-white;
-      font-size: rem(20);
-      font-family: $ff-font;
-      outline: 0;
-      padding: ($pad / 2) 0;
-
-      &::placeholder {
-        color: $c-white;
-      }
-    }
-  }
-
   &__nav,
   &__about {
     display: flex;

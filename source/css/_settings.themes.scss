@@ -232,7 +232,7 @@
         }
       }
 
-      &:focus::after {
+      &:focus::before {
         border-color: $base;
       }
     }
@@ -246,14 +246,28 @@
         fill: $base;
       }
 
-      &:hover {
+      &::after,
+      font::before {
+        color: $base;
+      }
+
+      &:hover,
+      &:focus {
         color: $darker;
         background-color: transparent;
         border-color: transparent;
-        text-decoration: underline;
 
         svg path {
           fill: $darker;
+        }
+
+        &::after,
+        font::before {
+          color: $darker;
+        }
+
+        &::before {
+          display: none;
         }
       }
 
@@ -265,6 +279,11 @@
 
         svg path {
           fill: $darker;
+        }
+
+        &::after,
+        font::before {
+          color: $darker;
         }
       }
 
@@ -280,12 +299,38 @@
           color: $c-gray--dark;
         }
       }
+    }
 
+    .o-button--simple--gray {
+      background-color: transparent;
+      border-color: transparent;
+      color: $c-gray;
+
+      svg path {
+        fill: $c-gray;
+      }
+
+      &::after,
+      font::before {
+        color: $c-gray;
+      }
+
+      &:hover,
       &:focus {
-        color: $base;
-        text-decoration: underline;
+        background-color: transparent;
+        border-color: transparent;
+        color: $darker;
 
-        &::after {
+        svg path {
+          fill: $darker;
+        }
+
+        &::after,
+        font::before {
+          color: $darker;
+        }
+
+        &::before {
           display: none;
         }
       }
@@ -477,6 +522,39 @@
         &.this-is-active {
           color: $c-gray--darker;
         }
+      }
+    }
+
+    .c-drawer {
+      .c-filter,
+      .search-form {
+        input[type="search"] {
+          color: $c-white;
+          border-bottom-color: $c-white;
+
+          &::placeholder {
+            color: $c-white;
+          }
+        }
+      }
+    }
+
+    .c-filter,
+    .search-form {
+      input[type="search"] {
+        color: $darker;
+        border-bottom-color: $darker;
+
+        &::placeholder {
+          color: $darker;
+        }
+      }
+    }
+
+    .c-suggestions {
+      li a:hover {
+        background-color: $darker;
+        color: $c-white;
       }
     }
 
@@ -717,13 +795,28 @@
           fill: $lighter;
         }
 
-        &:hover {
+        &::after,
+        font::before {
+          color: $lighter;
+        }
+
+        &:hover,
+        &:focus {
           color: $light;
           background-color: transparent;
           border-color: transparent;
 
           svg path {
             fill: $light;
+          }
+
+          &::after,
+          font::before {
+            color: $light;
+          }
+
+          &::before {
+            display: none;
           }
         }
 
@@ -735,6 +828,15 @@
 
           svg path {
             fill: $lighter;
+          }
+
+          &::after,
+          font::before {
+            color: $lighter;
+          }
+
+          &::before {
+            display: none;
           }
         }
 
@@ -750,11 +852,38 @@
             background-color: inherit;
           }
         }
+      }
 
+      .o-button--simple--gray {
+        background-color: transparent;
+        border-color: transparent;
+        color: $c-white;
+
+        svg path {
+          fill: $c-white;
+        }
+
+        &::after,
+        font::before {
+          color: $c-white;
+        }
+
+        &:hover,
         &:focus {
-          color: $lighter;
+          background-color: transparent;
+          border-color: transparent;
+          color: $light;
 
-          &::after {
+          svg path {
+            fill: $light;
+          }
+
+          &::after,
+          font::before {
+            color: $light;
+          }
+
+          &::before {
             display: none;
           }
         }
@@ -811,7 +940,7 @@
           }
         }
 
-        &:focus::after {
+        &:focus::before {
           border-color: $lighter;
         }
       }
@@ -917,15 +1046,40 @@
         }
       }
 
-      .c-page-header__search {
+      .c-drawer .o-arrow--down::after {
+        border-top-color: transparent;
+      }
+
+      .c-filter,
+      .search-form {
         input[type="search"] {
           color: $c-white;
-          border-bottom-color: $lighter;
+          border-bottom-color: $c-white;
+
+          &::placeholder {
+            color: $c-white;
+          }
         }
       }
 
-      .c-drawer .o-arrow--down::after {
-        border-top-color: transparent;
+      .c-suggestions {
+        li a:hover {
+          background-color: $lighter;
+          color: $darker;
+        }
+      }
+
+      .pagination {
+        &__prev,
+        &__next {
+          svg path {
+            fill: $lighter;
+          }
+        }
+
+        &__page--current {
+          color: $light;
+        }
       }
     }
   }
