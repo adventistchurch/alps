@@ -1,6 +1,6 @@
 <div class="c-search-results u-spacing--double text">
   {% for block in search_results %}
-    {% include '@molecules/blocks/content-block.twig' with block %}
+    {% include '@molecules/blocks/media-block.twig' with block %}
   {% endfor %}
-  {% include '@molecules/navigation/pagination.twig' with pager %}
+  {% include '@molecules/navigation/pagination.twig' %}
 </div> <!-- /.c-search-results -->

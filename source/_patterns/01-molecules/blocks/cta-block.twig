@@ -7,24 +7,24 @@
     {% endif %}
     <style type="text/css">
       .o-background-image {
-        background-image: url({{ cta_block.picture.img.src_s | raw }});
+        background-image: url({{ cta_block.picture.img.src_s|raw }});
       }
       @media(min-width: {{ cta_block.picture.img_break_m }}) {
         .o-background-image {
-          background-image: url({{ cta_block.picture.img.src_m | raw }});
+          background-image: url({{ cta_block.picture.img.src_m|raw }});
         }
       }
       {% if cta_block.picture.has_break_l.img_break_l %}
         @media(min-width: {{ cta_block.picture.has_break_l.img_break_l }}) {
           .o-background-image {
-            background-image: url({{ cta_block.picture.has_break_l.img.src_l | raw }});
+            background-image: url({{ cta_block.picture.has_break_l.img.src_l|raw }});
           }
         }
       {% endif %}
       {% if cta_block.picture.has_break_xl.img_break_xl %}
         @media(min-width: {{ cta_block.picture.has_break_xl.img_break_xl }}) {
           .o-background-image {
-            background-image: url({{ cta_block.picture.has_break_xl.img.src_xl | raw }});
+            background-image: url({{ cta_block.picture.has_break_xl.img.src_xl|raw }});
           }
         }
       {% endif %}
@@ -45,7 +45,7 @@
             {% set block_title_class = "u-font--primary--xl" %}
           {% endif %}
           <h3 class="c-cta-block__title c-block__title u-theme--color--darker{{ ' ' ~ block_title_class }}">
-            {{ cta_block.title | raw }}
+            {{ cta_block.title|raw }}
           </h3>
         {% endif %}
         {% if cta_block.description %}

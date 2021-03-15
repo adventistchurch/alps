@@ -4,5 +4,8 @@
   },
   "page_header": {
     "title": "Search"
+  },
+  "search_header": {
+    "placeholder": "Search..."
   }
 }

@@ -558,6 +558,10 @@
       }
     }
 
+    .c-block--search u {
+      border-color: $base;
+    }
+
     .u-theme--dark {
       // Globals
       input,
@@ -1067,6 +1071,10 @@
           background-color: $lighter;
           color: $darker;
         }
+      }
+
+      .c-block--search u {
+        border-color: $light;
       }
 
       .pagination {
