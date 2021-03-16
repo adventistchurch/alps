@@ -179,12 +179,15 @@
     &__depth-2 {
       margin-left: rem(50);
     }
+
     &__depth-3 {
       margin-left: rem(100);
     }
+
     &__depth-4 {
       margin-left: rem(150);
     }
+
     &__depth-5 {
       margin-left: rem(200);
     }
@@ -196,11 +199,11 @@
  */
 
 .c-accordion {
-  &__heading{
+  &__heading {
     cursor: pointer;
   }
-  &__item {
 
+  &__item {
     &.this-is-active {
       .c-accordion__content {
         display: block;
@@ -228,9 +231,9 @@
   top: -$space * 4;
   margin-bottom: -$space * 4;
   background-image: url("../images/background-pattern.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: auto;
   padding: ($pad-mobile * 2) $pad-mobile;
 
   @include media(">large") {
