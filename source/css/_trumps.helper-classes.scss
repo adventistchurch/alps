@@ -484,6 +484,11 @@
       background: url("../images/background-grid.png") top left repeat-y;
       background-size: 100%;
     }
+
+    @media print {
+      background: $c-white url("../images/background-grid.svg") top left repeat-y;
+      opacity: 1;
+    }
   }
 }
 

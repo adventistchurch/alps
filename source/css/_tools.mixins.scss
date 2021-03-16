@@ -2,7 +2,6 @@
     $MIXINS
 \*------------------------------------ */
 
-
 /**
  * Convert px to rem.
  *
@@ -14,9 +13,9 @@
 
 @function rem($size) {
   $remSize: $size / $rembase;
+
   @return #{$remSize}rem;
 }
-
 
 /**
  * Center-align a block level element
@@ -27,7 +26,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /**
  * Transition
@@ -45,11 +43,11 @@
   &::-webkit-input-placeholder {
     color: $color;
   }
+
   &:-moz-placeholder {
     color: $color;
   }
 }
-
 
 /**
  * Standard paragraph
@@ -59,15 +57,11 @@
   font-family: $ff-font--primary;
   font-size: rem(14);
   line-height: 1.6;
-  @include media('>large') {
+
+  @include media(">large") {
     font-size: rem(16);
   }
-  @media print {
-    font-size: rem(12);
-    line-height: rem(15);
-  }
 }
-
 
 /**
  * Maintain aspect ratio
@@ -75,13 +69,15 @@
 
 @mixin aspect-ratio($width, $height) {
   position: relative;
+
   &::before {
     display: block;
     content: "";
     width: 100%;
-    padding-top: ($height / $width) * 100%;
+    padding-top: $height / $width * 100%;
   }
-  >.ratio-content {
+
+  > .ratio-content {
     position: absolute;
     top: 0;
     left: 0;
