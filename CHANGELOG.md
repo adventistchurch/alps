@@ -3,6 +3,12 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.9.3]
+Optimizing the background image the for the homepage to reduce file size.
+
+### Added
+Optimizing the background image the for the homepage to reduce file size. [#526](https://github.com/adventistchurch/alps/pull/526)
+
 
 ## [3.9.2]
 Added missing `.u-shift--left--1-col--at-` clases.
