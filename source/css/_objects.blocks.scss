@@ -387,13 +387,8 @@
     padding: $pad-mobile 0;
     color: $c-white;
 
-    @include media(">large") {
-      padding: $pad 0;
-    }
-
-    .c-block__title-link,
-    .c-block__date {
-      color: $c-white;
+    @media print {
+      color: black;
     }
 
     @include media(">medium") {
@@ -405,6 +400,29 @@
         transparent,
         rgba($c-black, 0.5) 80%
       );
+
+      @media print {
+        color: white;
+      }
+    }
+
+    @include media(">large") {
+      padding: $pad 0;
+    }
+
+    .c-block__title a,
+    .c-block__date {
+      color: $c-white;
+
+      @media print {
+        color: black;
+      }
+
+      @include media(">medium") {
+        @media print {
+          color: white;
+        }
+      }
     }
   }
 }

@@ -1,19 +1,53 @@
 @media print {
   @page {
-    margin: 0.5in;
-  }
-
-  #pagecontents {
-    width: 100%;
-    border: 0;
+    size: 14in 10in;
   }
 
   body {
+    width: 100%;
     margin: 0;
     color: black;
     background: white;
   }
 
+  pre,
+  blockquote,
+  tr,
+  img,
+  ul {
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  img,
+  picture {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /*
+   * Theme specific print styles.
+   */
   .c-header {
     border-bottom: 1px solid black;
   }
@@ -23,17 +57,29 @@
   .c-footer__primary-nav,
   .c-footer__secondary-nav,
   .c-theme-switcher,
-  .c-theme-switcher.this-is-active {
-    display: none;
+  .c-theme-switcher.this-is-active,
+  .c-drawer,
+  .sg-header,
+  video,
+  audio,
+  object,
+  embed,
+  iframe,
+  .fitvid,
+  .o-figure--video {
+    display: none !important;
   }
 
   .l-sabbath {
     border-left: 1px solid black;
     background-color: white;
-    margin-left: 0.5in;
 
     &__overlay {
       display: none;
+    }
+
+    &__logo {
+      position: relative !important;
     }
 
     svg path {
@@ -41,10 +87,19 @@
     }
   }
 
-  .u-color--white {
+  .text > *,
+  .c-section > *,
+  .c-sidebar > * {
+    page-break-inside: avoid;
+  }
+
+  .u-color--white,
+  .u-color--white a,
+  .u-color--white * {
     color: black;
   }
 }
+
 
 @media print and (color) {
   * {
