@@ -12,11 +12,9 @@
   "sidebar": false,
   "aside_content": false,
   "aside_content_blocks_heading": "Archives",
-
   "breakout_block": false,
-  "section_classes": "l-main__content l-grid l-grid--7-col l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides u-shift--left--1-col--at-large ",
-  "column_classes": "l-grid-item--6-col l-grid-item--l--4-col l-grid-item--xl--6-col u-shift--right--1-col--at-large u-shift--left--1-col--standard u-no-gutters ",
-
+  "section_classes": "l-main__content l-grid l-grid--7-col l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides u-shift--left--1-col--at-large",
+  "column_classes": "l-grid-item--6-col l-grid-item--l--4-col l-grid-item--xxl--6-col u-shift--left--1-col--standard u-no-gutters",
   "block_feed_pages": {
     "grid": {
       "grid_class": "l-grid--7-col",
@@ -250,5 +248,4 @@
       }
     ]
   }
-
 }
