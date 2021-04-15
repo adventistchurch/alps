@@ -64,6 +64,7 @@
   .c-theme-switcher,
   .c-theme-switcher.this-is-active,
   .c-drawer,
+  .c-comment-form,
   .sg-header,
   video,
   audio,
@@ -114,11 +115,15 @@
   .c-page-header__feature.has-scroll a {
     color: white;
   }
+
+  .c-comment__list {
+    margin-top: $space;
+  }
 }
 
 @media print and (color) {
   * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }
