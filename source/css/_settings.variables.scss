@@ -53,6 +53,24 @@ $u-theme-velvet: (u-theme--velvet: (darker: #2d0505, dark: #d0021b, base: $c-the
 $u-theme-earth: (u-theme--earth: (darker: #210b00, dark: #974e02, base: $c-theme-earth, light: #eab57e, lighter: #eab57e));
 $u-theme-night: (u-theme--night: (darker: #000000, dark: #717171, base: $c-theme-night, light: #F9F9F9, lighter: #F9F9F9));
 
+
+$alps_themes: map_merge((), $u-theme-treefrog);
+$alps_themes: map_merge($alps_themes, $u-theme-ming);
+$alps_themes: map_merge($alps_themes, $u-theme-bluejay);
+$alps_themes: map_merge($alps_themes, $u-theme-iris);
+$alps_themes: map_merge($alps_themes, $u-theme-lily);
+$alps_themes: map_merge($alps_themes, $u-theme-scarlett);
+$alps_themes: map_merge($alps_themes, $u-theme-campfire);
+$alps_themes: map_merge($alps_themes, $u-theme-winter);
+$alps_themes: map_merge($alps_themes, $u-theme-forest);
+$alps_themes: map_merge($alps_themes, $u-theme-cave);
+$alps_themes: map_merge($alps_themes, $u-theme-denim);
+$alps_themes: map_merge($alps_themes, $u-theme-emperor);
+$alps_themes: map_merge($alps_themes, $u-theme-grapevine);
+$alps_themes: map_merge($alps_themes, $u-theme-velvet);
+$alps_themes: map_merge($alps_themes, $u-theme-earth);
+$alps_themes: map_merge($alps_themes, $u-theme-night);
+
 /**
  * Neutral Colors
  */
@@ -142,3 +160,4 @@ $article-max: rem(950);
 $sidebar-width: 320;
 $small-header-height: 60;
 $wide-header-height: 80;
+

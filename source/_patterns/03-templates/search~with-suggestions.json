@@ -1,4 +1,13 @@
 {
+  "head": {
+    "title": "Search - The Official Site of the Seventh-day Adventist world church"
+  },
+  "page_header": {
+    "title": "Search"
+  },
+  "search_header": {
+    "placeholder": "Test"
+  },
   "search_results": [
     {
       "media_block_default": {
@@ -9,7 +18,7 @@
         "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark",
         "kicker": false,
-        "title": "Brazilian House of Representatives Discusses Law to Guarantee Test-free Saturdays",
+        "title": "Brazilian House of Representatives Discusses Law to Guarantee <u>Test</u>-free Saturdays",
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -20,7 +29,7 @@
           "has_break_l": false,
           "has_break_xl": false
         },
-        "description": "Establishing that public testing and college entrance examinations should be carried out from Sunday through Friday",
+        "description": "...establishing that public <u>test</u>ing and college entrance examinations should be carried out from Sunday through Friday",
         "category": false,
         "meta": "This Site",
         "url": "/"
@@ -35,7 +44,7 @@
         "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark",
         "kicker": false,
-        "title": "World Church: Leaders Pray in Wake of Apparent North Korea Nuke Test",
+        "title": "World Church: Leaders Pray in Wake of Apparent North Korea Nuke <u>Test</u>",
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -46,7 +55,7 @@
           "has_break_l": false,
           "has_break_xl": false
         },
-        "description": "Leaders of the Seventh-day Adventist world church united in prayer on Monday, October 9, in response to an apparent test of nuclear weapons by the Democratic People's Republic of Korea...",
+        "description": "Leaders of the Seventh-day Adventist world church united in prayer on Monday, October 9, in response to an apparent <u>test</u> of nuclear weapons by the Democratic People's Republic of Korea...",
         "category": false,
         "meta": "Adventistreview.org",
         "url": "/"
@@ -61,7 +70,7 @@
         "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark",
         "kicker": false,
-        "title": "Brazilian House of Representatives Discusses Law to Guarantee Test-free Saturdays",
+        "title": "Brazilian House of Representatives Discusses Law to Guarantee <u>Test</u>-free Saturdays",
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -72,7 +81,7 @@
           "has_break_l": false,
           "has_break_xl": false
         },
-        "description": "Establishing that public testing and college entrance examinations should be carried out from Sunday through Friday",
+        "description": "...establishing that public <u>test</u>ing and college entrance examinations should be carried out from Sunday through Friday",
         "category": false,
         "meta": "This Site",
         "url": "/"
@@ -87,7 +96,7 @@
         "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark",
         "kicker": false,
-        "title": "World Church: Leaders Pray in Wake of Apparent North Korea Nuke Test",
+        "title": "World Church: Leaders Pray in Wake of Apparent North Korea Nuke <u>Test</u>",
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -98,7 +107,7 @@
           "has_break_l": false,
           "has_break_xl": false
         },
-        "description": "Leaders of the Seventh-day Adventist world church united in prayer on Monday, October 9, in response to an apparent test of nuclear weapons by the Democratic People's Republic of Korea...",
+        "description": "Leaders of the Seventh-day Adventist world church united in prayer on Monday, October 9, in response to an apparent <u>test</u> of nuclear weapons by the Democratic People's Republic of Korea...",
         "category": false,
         "meta": "Adventistreview.org",
         "url": "/"
@@ -113,7 +122,7 @@
         "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark",
         "kicker": false,
-        "title": "Brazilian House of Representatives Discusses Law to Guarantee Test-free Saturdays",
+        "title": "Brazilian House of Representatives Discusses Law to Guarantee <u>Test</u>-free Saturdays",
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -124,7 +133,7 @@
           "has_break_l": false,
           "has_break_xl": false
         },
-        "description": "Establishing that public testing and college entrance examinations should be carried out from Sunday through Friday",
+        "description": "...establishing that public <u>test</u>ing and college entrance examinations should be carried out from Sunday through Friday",
         "category": false,
         "meta": "This Site",
         "url": "/"
@@ -139,7 +148,7 @@
         "block_title_class": "u-theme--color--darker u-font--primary--m",
         "block_meta_class": "u-theme--color--dark",
         "kicker": false,
-        "title": "World Church: Leaders Pray in Wake of Apparent North Korea Nuke Test",
+        "title": "World Church: Leaders Pray in Wake of Apparent North Korea Nuke <u>Test</u>",
         "picture": {
           "img_break_m": "500",
           "img": {
@@ -150,7 +159,7 @@
           "has_break_l": false,
           "has_break_xl": false
         },
-        "description": "Leaders of the Seventh-day Adventist world church united in prayer on Monday, October 9, in response to an apparent test of nuclear weapons by the Democratic People's Republic of Korea...",
+        "description": "Leaders of the Seventh-day Adventist world church united in prayer on Monday, October 9, in response to an apparent <u>test</u> of nuclear weapons by the Democratic People's Republic of Korea...",
         "category": false,
         "meta": "Adventistreview.org",
         "url": "/"

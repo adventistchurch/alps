@@ -5,16 +5,16 @@
     {% set page_header_content_class = "u-border-left--white--at-medium" %}
     <style type="text/css">
       .o-background-image {
-        background-image: url({{ page_header.img_url_s | raw }});
+        background-image: url({{ page_header.img_url_s|raw }});
       }
       @media(min-width: 900px) {
         .o-background-image {
-          background-image: url({{ page_header.img_url_m | raw }});
+          background-image: url({{ page_header.img_url_m|raw }});
         }
       }
       @media(min-width: 1100px) {
         .o-background-image {
-          background-image: url({{ page_header.img_url_l | raw }});
+          background-image: url({{ page_header.img_url_l|raw }});
         }
       }
     </style>
@@ -22,12 +22,12 @@
   <header class="c-page-header c-page-header__long u-space--zero u-theme--background-color--dark{{ ' ' ~ page_header_class }}">
     <div class="c-page-header__long--inner l-grid l-grid--7-col{{ ' ' ~ page_header_inner_class }}">
       <div class="c-page-header__content c-page-header__long__content l-grid-wrap l-grid-wrap--5-of-7 u-shift--left--1-col--at-xxlarge{{ ' ' ~ page_header_content_class }}">
-        {%  if page_header.kicker %}<span class="c-page-header__kicker o-kicker u-color--white">{{ page_header.kicker | raw }}</span>{% endif %}
+        {%  if page_header.kicker %}<span class="c-page-header__kicker o-kicker u-color--white">{{ page_header.kicker|raw }}</span>{% endif %}
         <h1 class="c-page-header__title u-font--primary--xl u-color--white">
           {% if page_header.url %}
             <a href="{{ page_header.url }}" class="c-page-header__title-link u-font-weight--bold {% if page_header.block_title_link_class %}{{ page_header.block_title_link_class }}{% else %}{{ 'u-theme--link-hover--lighter' }}{% endif %}">
           {% endif %}
-            {{ page_header.title | raw }}
+            {{ page_header.title|raw }}
           {% if page_header.url %}
             </a>
           {% endif %}

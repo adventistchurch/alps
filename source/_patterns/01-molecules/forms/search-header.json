@@ -1,5 +1,5 @@
 {
-  "search_filter": {
+  "search_header": {
     "url": "",
     "method": "",
     "placeholder": "Search…",
@@ -7,7 +7,7 @@
     "name": "search",
     "filter_form": {
       "active": "",
-      "toggle_text": "Options",
+      "toggle_text": "Filter",
       "radio": [
         {
           "id": "1",

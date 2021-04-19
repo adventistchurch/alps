@@ -1,17 +1,18 @@
 <div class="l-wrap">
   <div class="l-wrap__content l-content" role="document">
     {% include '@organisms/global/header.twig' %}
-    <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
+    <main class="l-main u-padding--double--bottom" role="main">
+      {% include '@organisms/sections/page-header.twig' %}
       {% include '@molecules/forms/search-header.twig' %}
-      <section class="l-grid l-grid--7-col u-shift--left--1-col--at-large l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides">
-        <div class="c-article l-grid-item l-grid-item--l--4-col u-padding--zero--sides">
-          <article class="c-article__body u-padding--right">
+      <section id="top" class="l-main__content l-grid l-grid--7-col u-shift--left--1-col--at-large l-grid-wrap--6-of-7 u-spacing--double--until-xxlarge u-padding--zero--sides u-space--double--top">
+        <article class="c-article l-grid-item l-grid-item--l--4-col">
+          <div class="c-article__body">
             {% include '@organisms/content/search-content.twig' %}
-          </article>
-        </div>
+          </div>
+        </article>
       </section>
     </main> <!-- /.l-main -->
     {% include '@organisms/global/footer.twig' %}
   </div> <!-- /.l-content -->
   {% include '@organisms/asides/sabbath.twig' %}
-</div><!-- ./l-wrap -->
+</div> <!-- ./l-wrap -->

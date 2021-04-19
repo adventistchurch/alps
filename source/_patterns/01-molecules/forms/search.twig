@@ -2,13 +2,10 @@
   <form action="{{ search.url }}" role="search" method="{{ search.method }}" class="search-form toggled-element">
     <fieldset>
       <legend class="is-vishidden">{{ search.form_title }}</legend>
-      <input type="search" name="{{ search.name }}" placeholder="{{ search.placeholder }}" class="search-form__input u-font--secondary--s" value="{{search.value}}" required autocomplete="off" />
-      {% if search.suggestions %}
-        {% include '@molecules/components/suggestions.twig' with {'suggestions': search.suggestions} %}
-      {% endif %}
+      <input type="search" name="{{ search.name }}" placeholder="{{ search.placeholder }}" class="search-form__input u-font--secondary--s can-be--white" value="{{ search.value }}" required autocomplete="off" />
       <button class="search-form__submit is-vishidden">
         <span class="is-vishidden">Submit</span>
-      </button> <!-- /.search-form__submit -->
+      </button>
     </fieldset>
-  </form> <!-- /.search-form -->
+  </form>
 {% endif %}

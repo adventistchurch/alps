@@ -1,12 +1,12 @@
 <div id="map" class="{{ custom_class.map }}"></div>
 <script>
   function initMap() {
-    const mapOptions = {{ map.options | json_encode | raw }};
+    const mapOptions = {{ map.options | json_encode|raw }};
     const map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     const markerData = [
       {% for marker in map.markers %}
-      {{ marker | json_encode | raw }},
+      {{ marker | json_encode|raw }},
       {% endfor %}
     ];
     const markers = [];

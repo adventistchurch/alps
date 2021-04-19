@@ -95,7 +95,7 @@ $icon-big: rem(65);
     border-bottom-color: rgba($c-black, 0.2);
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: 50%;
