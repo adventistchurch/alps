@@ -1,4 +1,4 @@
-<div class="c-drawer l-grid l-grid--7-col">
+<div class="c-drawer l-grid l-grid--7-col {{ drawer.active }}">
   <div class="c-drawer__toggle js-toggle-parent u-theme--background-color-trans--darker">
     <div class="u-icon o-icon__close">
       <span></span>
@@ -8,7 +8,7 @@
   <!-- .c-drawer__toggle -->
   <div class="l-grid-wrap--6-of-7 l-grid-item--s--6-col c-drawer__container u-spacing u-theme--background-color--darker">
     <div class="c-drawer__search">
-      {% include '@molecules/forms/search.twig' %}
+      {% include '@molecules/forms/search-drawer.twig' with drawer %}
     </div>
     <!-- .c-drawer__search -->
     <div class="c-drawer__nav">

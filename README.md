@@ -73,8 +73,8 @@ This creates all patterns, the styleguide, and the pattern lab site as well as a
 - `.u-theme--border-color--{$key}` Border Color
   - `.u-theme--border-color--{$key}--left` Left Border Color
   - `.u-theme--border-color--{$key}--right` Right Border Color
-  - `.u-theme--border-color--{$key}--Top` Top Border Color
-  - `.u-theme--border-color--{$key}--Bottom` Bottom Border Color
+  - `.u-theme--border-color--{$key}--top` Top Border Color
+  - `.u-theme--border-color--{$key}--bottom` Bottom Border Color
 - `.u-theme--path-fill--{$key}` SVG Fill Cover
 
 ### Twig Include Syntax

@@ -1,7 +1,7 @@
 {
-  "search": {
-    "url": "/search",
-    "method": "get",
+  "search_drawer": {
+    "url": "",
+    "method": "",
     "placeholder": "Search…",
     "form_title": "Search",
     "name": "search"

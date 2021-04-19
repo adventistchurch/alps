@@ -1,42 +1,24 @@
 {% if search_filter %}
-  <div class="c-filter u-spacing u-background-color--gray--light u-padding u-theme--border-color--darker u-border--left can-be--dark-dark">
-    <form action="" role="search" method="get" class="c-filter__search">
+  <div class="c-filter u-background-color--gray--light u-padding u-theme--border-color--darker u-border--left can-be--dark-dark">
+    <form action="{{ search_filter.url }}" role="search" method="{{ search_filter.method }}" class="c-filter__search">
       <div class="l-field-container u-spacing">
-        <input type="search" name="s" class="u-font--secondary--s u-color--gray" value="Search..."/>
+        <input type="search" name="{{ search_filter.name }}" placeholder="{{ search_filter.placeholder }}" class="u-font--secondary--s u-color--gray" />
         <div class="u-flex">
           <button class="c-filter__button o-button o-button--outline u-space--right">
-            <span class="u-icon u-icon--xs u-path-fill--base">{% include '@atoms/icons/icon-search.twig' %}</span>Search</button>
-          <!-- /.search-form__submit -->
-          <span class="c-filter__toggle js-toggle o-button o-button--simple" data-toggled="c-filter" data-prefix="c-filter"><span class="u-icon u-icon--xs u-theme--path-fill--base">{% include '@atoms/icons/icon-settings.twig' %}</span></span>
+            <span class="u-icon u-icon--xs u-path-fill--base">{% include '@atoms/icons/icon-search.twig' %}</span>
+            Search
+          </button>
+          {% if search_filter.filter_form %}
+            <button class="c-filter__toggle js-toggle o-button o-button--simple" data-toggled="c-filter" data-prefix="c-filter">
+              <span class="u-icon u-icon--xs u-theme--path-fill--base">{% include '@atoms/icons/icon-settings.twig' %}</span>
+              <font>{{ search_filter.filter_form.toggle_text }}</font>
+            </button>
+          {% endif %}
         </div>
       </div>
     </form>
-    <!-- ./c-filter__form -->
-    <form class="c-filter__form u-spacing">
-      <div class="c-filter__form-item u-spacing--half">
-        <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base">Filter</h3>
-        {% if search_filter.checkbox %}
-          {% for item in search_filter.checkbox %}
-            <div class="c-filter__form-group">
-              <input id="checkbox-{{ item.id }}" type="checkbox" name="checkbox" value="{{ item.label }}"/>
-              <label for="checkbox-{{ item.id }}">{{ item.label }}</label>
-            </div>
-          {% endfor %}
-        {% endif %}
-      </div>
-      <div class="c-filter__form-item u-spacing--half">
-        <h3 class="u-font--secondary--s u-font-weight--bold u-text-transform--upper u-theme--color--base">Sort By</h3>
-        {% if search_filter.radio %}
-          {% for item in search_filter.radio %}
-            <div class="c-filter__form-group">
-              <input id="radio-{{ item.id }}" type="radio" name="radio" value="{{ item.label }}"/>
-              <label for="radio-{{ item.id }}">{{ item.label }}</label>
-            </div>
-          {% endfor %}
-        {% endif %}
-      </div>
-    </form>
-    <!-- ./c-filter__form -->
+    {% if search_filter.filter_form %}
+      {% include '@molecules/forms/filter-form.twig' with search_filter %}
+    {% endif %}
   </div>
-  <!-- ./c-filter -->
 {% endif %}
