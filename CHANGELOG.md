@@ -4,12 +4,12 @@ A record of the changes made to `ALPS V3`.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [3.x.x]
-Adding more text-transform classes.
+## [3.10.0]
+Adding new search patterns and more text-transform classes.
 
 ### Added
 Added new classes for `.u-text-transform--capitalize` and `.u-text-transform--initial`.
-
+Added updated search patterns to seperate local and remove search results. [#513](https://github.com/adventistchurch/alps/issues/513)
 
 ## [3.9.3]
 Optimizing the background image the for the homepage to reduce file size.
