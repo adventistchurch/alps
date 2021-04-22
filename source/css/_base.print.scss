@@ -1,12 +1,13 @@
 @media print {
   @page {
     margin: 0.5in;
-    size: 14in 10in;
+    size: 8.5in 11in;
   }
 
   body {
-    width: 100%;
-    margin: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
     color: black;
     background: white;
   }
