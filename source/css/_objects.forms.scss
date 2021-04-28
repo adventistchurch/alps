@@ -92,34 +92,127 @@ input[type=radio] {
 
      .c-filter__form {
        display: block;
+       margin-top: $space;
+       margin-bottom: $space;
      }
 
-     .c-filter__toggle::after {
-       content: "Hide Options";
+     .c-filter__toggle font::before {
+       content: "Hide ";
      }
    }
 
    input[type="search"] {
+     @include u-font--secondary--m;
+
      outline: 0;
      background-color: transparent;
-     border: 0;
-     border-bottom: 1px solid $c-gray;
+     border-top: 0;
+     border-left: 0;
+     border-right: 0;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
      padding-left: 0;
-
-     @include u-font--secondary--m;
+     line-height: 1;
    }
 
    &__form {
      display: none;
+
+     &.this-is-active {
+       display: block;
+     }
    }
 
    &__toggle {
      padding-left: 0;
      padding-right: 0;
 
-     &::after {
-       content: "Options";
+     font::before {
+       content: "";
        cursor: pointer;
      }
    }
+
+   &__inline {
+     position: relative;
+
+     button {
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       text-transform: none;
+       font-weight: normal;
+       padding: ($space / 1.5) 0;
+     }
+
+     + .c-filter__toggle {
+       margin-bottom: -$space/2;
+     }
+   }
  }
+
+.c-search-filter {
+  padding-top: $space;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__label {
+    padding-left: $space / 2;
+    letter-spacing: 1px;
+
+    span {
+      display: none;
+
+      @include media('>small') {
+        display: inline;
+      }
+    }
+  }
+
+  &__form {
+    display: none;
+    margin-top: $space;
+
+    &.c-filter-is-active {
+      display: flex;
+    }
+
+    &-item {
+      flex: 1;
+    }
+  }
+}
+
+.c-search-header {
+  .c-filter {
+    &__search {
+      & > * + * {
+        @include media('<=medium') {
+          margin-top: $space;
+        }
+      }
+    }
+  }
+}
+
+.c-search-drawer {
+  &.u-theme--dark {
+    input {
+      background-color: transparent;
+    }
+  }
+
+  .c-suggestions {
+    margin-top: $space;
+  }
+}
+
+.c-suggestions {
+  li a {
+    padding: $space / 4 $space;
+    margin-left: -$space;
+    margin-right: -$space;
+    display: block;
+  }
+}

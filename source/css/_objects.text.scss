@@ -349,6 +349,14 @@
   text-transform: lowercase;
 }
 
+.u-text-transform--initial {
+  text-transform: initial !important;
+}
+
+.u-text-transform--capitalize {
+  text-transform: capitalize !important;
+}
+
 /**
  * Text Strong
  */

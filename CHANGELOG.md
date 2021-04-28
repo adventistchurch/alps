@@ -3,6 +3,22 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [3.10.1]
+Fixed `.u-text-transform--capitalize` and `.u-text-transform--initial` by adding `!important` to the rule.
+
+### Fixed
+Fixed `.u-text-transform--capitalize` and `.u-text-transform--initial` by adding `!important` to the rule.
+
+
+## [3.10.0]
+Adding new search patterns and more text-transform classes.
+
+### Added
+Added new classes for `.u-text-transform--capitalize` and `.u-text-transform--initial`.
+Added updated search patterns to seperate local and remove search results. [#513](https://github.com/adventistchurch/alps/issues/513)
+
+
 ## [3.9.3]
 Optimizing the background image the for the homepage to reduce file size.
 
@@ -16,11 +32,13 @@ Added missing `.u-shift--left--1-col--at-` clases.
 ###  Added
 Added missing `.u-shift--left--1-col--at-` clases. [#515](https://github.com/adventistchurch/alps/issues/515)
 
+
 ## [3.9.1]
 Fixing grid styles for 'l-grid-item--xl' and 'l-grid-item--xxl'.
 
 ###  Added
 Fixing grid styles for 'l-grid-item--xl' and 'l-grid-item--xxl'.
+
 
 ## [3.9.0]
 Added support for the wide logo pattern and inline sidebar block.
@@ -30,11 +48,13 @@ Added: A wide logo pattern. This is used by adding the class `c-header__logo--wi
 Adding: Product and store pages to be intergrated with ecommerce. [#499](https://github.com/adventistchurch/alps/issues/499)
 Added: Inline sidebar block. [#489](https://github.com/adventistchurch/alps/issues/489)
 
+
 ## [3.8.0]
 Added patterns for the church locator.
 
 ###  Added
 Added: Patterns for the church locator. [#484](https://github.com/adventistchurch/alps/issues/484)
+
 
 ## [3.7.11]
 Fixed the scaling of images.

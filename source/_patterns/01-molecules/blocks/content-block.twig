@@ -8,31 +8,33 @@
         {% if content_block_default.url %}
           <a href="{{ content_block_default.url }}" class="c-block__title-link {% if content_block_default.block_title_link_class %}{{ content_block_default.block_title_link_class }}{% else %}{{ 'u-theme--link-hover--dark' }}{% endif %}">
         {% endif %}
-        <strong>{{ content_block_default.title | raw }}</strong>
+        <strong>{{ content_block_default.title|raw }}</strong>
         {% if content_block_default.url %}
           </a>
         {% endif %}
       </h3>
     {% endif %}
-
     {% if content_block_default.description %}
-      <p class="c-block__body text">{{ content_block_default.description | raw }}</p>
+      <p class="c-block__body text">{{ content_block_default.description|raw }}</p>
     {% endif %}
     {% if content_block_default.category %}
       <span class="c-block__meta u-theme--color--dark u-font--secondary--xs">{{ content_block_default.category }}</span>
     {% endif %}
     {% if content_block_default.body %}
       <div class="c-block__content">
-        <p>{{ content_block_default.body | raw }}</p>
+        <p>{{ content_block_default.body|raw }}</p>
       </div>
     {% endif %}
     {% if content_block_default.expand %}
       <a href="" class="o-button o-button--outline o-button--expand js-toggle-parent"></a>
     {% else %}
       {% if content_block_default.cta.url or content_block_default.cta.text %}
-        <a href="{{ content_block_default.cta.url }}" class="c-block__button o-button o-button--outline">{{ content_block_default.cta.text }}<span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span></a>
+        <a href="{{ content_block_default.cta.url }}" class="c-block__button o-button o-button--outline">
+          {{ content_block_default.cta.text }}
+          <span class="u-icon u-icon--m u-path-fill--base u-space--half--left">{% include '@atoms/icons/icon-arrow-long-right.twig' %}</span>
+        </a>
         {% if content_block_default.meta %}
-          <div class="c-block__meta u-font--secondary--xs u-color--gray ">{{ content_block_default.meta }}</div>
+          <div class="c-block__meta u-font--secondary--xs u-color--gray">{{ content_block_default.meta }}</div>
         {% endif %}
       {% endif %}
     {% endif %}

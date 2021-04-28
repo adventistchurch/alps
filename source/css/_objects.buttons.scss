@@ -23,17 +23,15 @@ input[type="submit"] {
   border-radius: rem(50);
   outline: 0;
   position: relative;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
 
   &:hover {
     color: $c-white;
   }
 
   &:focus {
-    &::after {
+    &::before {
       border-style: dashed;
       border-width: 1px;
-      content: "";
       display: block;
       position: absolute;
       top: -4px;
@@ -41,6 +39,7 @@ input[type="submit"] {
       width: calc(100% + 6px);
       height: calc(100% + 6px);
       border-radius: rem(50);
+      content: "";
     }
   }
 
@@ -48,6 +47,11 @@ input[type="submit"] {
     svg path {
       transition: all .6s ease-out;
     }
+  }
+
+  &::after,
+  font::before {
+    transition: all .6s ease-out;
   }
 }
 
@@ -59,7 +63,8 @@ input[type="submit"] {
   font-size: rem(12);
 }
 
-.o-button--simple {
+.o-button--simple,
+.o-button--simple--gray {
   background-color: transparent;
   border-color: transparent;
 }

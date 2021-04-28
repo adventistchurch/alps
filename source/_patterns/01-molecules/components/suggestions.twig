@@ -1,7 +1,28 @@
-<ul class="o-suggestions u-border--bottom u-theme--color--base">
-  {% for suggestion in suggestions %}
-    <li class="o-suggestions__item u-padding--half--top u-padding--half--bottom">
-      <a class="o-suggestions__link" href="{{suggestion.url}}">{{suggestion.text | raw }}</a>
-    </li>
-  {% endfor %}
-<ul>
+{% if suggestions %}
+  <div class="c-suggestions u-border--bottom u-theme--border-color--darker--bottom u-spacing can-be--dark u-padding--bottom" data-context="search-main-suggestions">
+    {% if suggestions %}
+      <div class="c-suggestions__main u-spacing--quarter">
+        <h4 class="c-suggestions__heading u-font--secondary--xs u-text-transform--upper u-color--gray can-be--lighter">This site ({{ suggestions.items|length }})</h4>
+        <ul class="c-suggestions__list u-spacing--quarter" data-context="search-main-suggestions">
+          {% for suggestion in suggestions.items %}
+            <li>
+              <a href="{{ suggestion.url }}" class="u-theme--color--darker can-be--white">{{ suggestion.text|raw }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% if suggestions.other %}
+        <div class="c-suggestions__other u-spacing--quarter">
+          <h4 class="c-suggestions__heading u-font--secondary--xs u-text-transform--upper u-color--gray can-be--lighter">Other sites ({{ suggestions.other.items|length }})</h4>
+          <ul class="c-suggestions__list u-spacing--quarter" data-context="search-other-suggestions">
+            {% for suggestion in suggestions.other.items %}
+              <li>
+                <a href="{{ suggestion.url }}" class="u-theme--color--darker can-be--white">{{ suggestion.text|raw }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endif %}

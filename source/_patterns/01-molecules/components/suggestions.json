@@ -1,24 +1,34 @@
 {
-  "suggestions": [
-    {
-      "text": "<strong>Test</strong>imonies",
-      "url": "#test"
-    },
-    {
-      "text": "<strong>Test</strong> 1",
-      "url": "#test"
-    },
-    {
-      "text": "<strong>Test</strong> 2",
-      "url": "#test"
-    },
-    {
-      "text": "<span class=\"highlight\">Test</span> 3",
-      "url": "#test"
-    },
-    {
-      "text": "Test 4",
-      "url": "#test"
+  "suggestions": {
+    "items": [
+      {
+        "text": "Finland: Church-Planting Project <strong>Test</strong>s Faith, Energy",
+        "url": "#"
+      },
+      {
+        "text": "Top Adventist leaders in Southern Africa <strong>test</strong>ed for HIV/AIDS",
+        "url": "#"
+      },
+      {
+        "text": "Brazilian House of Representatives Discusses Law of Guarantee <strong>Test</strong>-free Saturdays",
+        "url": "#"
+      }
+    ],
+    "other": {
+      "items": [
+        {
+          "text": "Power of a <strong>test</strong>imony",
+          "url": "#"
+        },
+        {
+          "text": "Study Strengthens Biblical Principle of Personal <strong>Test</strong>imony",
+          "url": "#"
+        },
+        {
+          "text": "Adventist <strong>Test</strong>ifies before United States Senate",
+          "url": "#"
+        }
+      ]
     }
-  ]
+  }
 }
