@@ -4,6 +4,13 @@ A record of the changes made to `ALPS V3`.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [3.11.0]
+Adding print styles for most page.
+
+### Added
+Added print style sheets. [#510](https://github.com/adventistchurch/alps/issues/510)
+
+
 ## [3.10.1]
 Fixed `.u-text-transform--capitalize` and `.u-text-transform--initial` by adding `!important` to the rule.
 
