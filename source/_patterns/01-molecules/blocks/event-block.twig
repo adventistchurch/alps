@@ -1,0 +1,61 @@
+{% if event_block %}
+  <div class="c-event-block {{ event_block.block_class }}">
+<div class="c-event-block__image u-theme--background-color--base u-padding{% if event_block.picture %} o-background-image u-background--cover{% endif %}">
+      {% if event_block.picture %}
+        <style type="text/css">
+          .o-background-image {
+            background-image: url({{ event_block.picture.img.src_s|raw }});
+          }
+          @media(min-width: {{ event_block.picture.img_break_m ~ 'px' }}) {
+            .o-background-image {
+              background-image: url({{ event_block.picture.img.src_m|raw }});
+            }
+          }
+          @media(min-width: {{ event_block.picture.has_break_l.img_break_l ~ 'px' }}) {
+            .o-background-image {
+              background-image: url({{ event_block.picture.has_break_l.img.src_l|raw }});
+            }
+          }
+          @media(min-width: {{ event_block.picture.has_break_xl.img_break_xl ~ 'px' }}) {
+            .o-background-image {
+              background-image: url({{ event_block.picture.has_break_xl.img.src_xl|raw }});
+            }
+          }
+        </style>
+      {% endif %}
+      {% if event_block.date %}
+        <div class="c-event-block__image-date u-color--white">
+          <span class="c-event-block__image-date__month u-font--secondary--xs">{{ event_block.date|date("F") }}</span>
+          <span class="c-event-block__image-date__day u-font--secondary--xl">{{ event_block.date|date("d") }}</span>
+        </div>
+      {% endif %}
+    </div>
+    <div class="c-event-block__content u-background-color--gray--light u-padding u-spacing--quarter">
+      {% if event_block.title %}
+        <h3 class="c-event-block__title u-font--primary--s u-theme--color--darker">
+          {% if event_block.url %}
+            <a href="{{ event_block.url }}" class="c-event-block__title-link u-theme--link-hover--dark">
+          {% endif %}
+            <strong>{{ event_block.title|raw }}</strong>
+          {% if event_block.url %}
+            </a>
+          {% endif %}
+        </h3>
+      {% endif %}
+      <div class="c-event-block__meta u-font--secondary--xs u-theme--color--dark can-be--white">
+        {% if event_block.date %}
+          <time class="c-event-block__date u-space--right">{{ event_block.date|date("F d, Y") }}</time>
+        {% endif %}
+        {% if event_block.location %}
+          <span class="c-event-block__location">{{ event_block.category }}</span>
+        {% endif %}
+      </div>
+      {% if event_block.url %}
+        <a href="{{ event_block.url }}" class="c-event-block__button o-button o-button--outline u-space--half--top">
+          <span class="u-icon u-icon--xs u-path-fill--base u-space--quarter--right">{% include '@atoms/icons/icon-plus.twig' %}</span>
+          View Details
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

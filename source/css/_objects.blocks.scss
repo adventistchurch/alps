@@ -674,21 +674,6 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-
-  /*
-  &__title {
-    width: calc((100vw / 7) * 4);
-
-    // - $pad-mobile * 2
-
-    @include media(">medium") {
-      width: calc((100vw / 7) * 2);
-
-      // - $pad * 2
-    }
-  }
-  */
-
 }
 
 /**
@@ -754,6 +739,80 @@
     .c-block__content {
       justify-content: flex-end;
     }
+  }
+}
+
+/**
+ * Event block
+ */
+
+.c-event-block {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+
+  &__image {
+    position: relative;
+    min-width: calc((100vw / 7) * 1 - 0.01px);
+    min-height: calc((100vw / 7) * 1 - 0.01px);
+
+    &-date {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      line-height: 1;
+
+      &__day {
+        line-height: 1;
+      }
+    }
+
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      display: block;
+      position: absolute;
+      left: $space / 4;
+      bottom: $space / 4;
+      z-index: 2;
+      background-size: 15px 15px;
+      background: url('../images/icons/o-icon__calendar.svg') center center no-repeat;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  .o-background-image {
+    &::after {
+      content: "";
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      background-image: linear-gradient(to bottom, rgba(black, 0), rgba(black, 0.8) 50%);
+    }
+  }
+
+  .u-font--secondary--xs {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }
 
