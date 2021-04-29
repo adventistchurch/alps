@@ -526,6 +526,11 @@
       padding-left: $space-mobile;
     }
   }
+
+  ol + h3 {
+    margin-bottom: $space;
+    padding: 0;
+  }
 }
 
 ol,

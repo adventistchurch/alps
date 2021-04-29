@@ -440,21 +440,42 @@
     padding: $pad-mobile 0;
     color: $c-white;
 
-    @include media(">large") {
-      padding: $pad 0;
-    }
-
-
-    .c-block__title-link,
-    .c-block__date {
-      color: $c-white;
+    @media print {
+      color: black;
     }
 
     @include media(">medium") {
       position: absolute;
       bottom: 0;
       left: 0;
-      background: linear-gradient(to bottom, transparent, rgba($c-black, 0.5) 80%);
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba($c-black, 0.5) 80%
+      );
+
+      @media print {
+        color: white;
+      }
+    }
+
+    @include media(">large") {
+      padding: $pad 0;
+    }
+
+    .c-block__title a,
+    .c-block__date {
+      color: $c-white;
+
+      @media print {
+        color: black;
+      }
+
+      @include media(">medium") {
+        @media print {
+          color: white;
+        }
+      }
     }
   }
 }

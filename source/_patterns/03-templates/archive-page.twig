@@ -4,7 +4,7 @@
     <main class="l-main u-spacing--double u-padding--double--bottom" role="main">
       {% include '@organisms/sections/page-header-long.twig' %}
       <section id="top" class="{{ section_classes }}">
-        <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xxl--3-col">
+        <article class="c-article l-grid-item l-grid-item--l--4-col l-grid-item--xxl--4-col">
           <div class="c-article__body">
             <div class="text u-spacing u-space--top l-grid">
               <div class="{{ column_classes }}">
@@ -12,7 +12,6 @@
                 {% include '@molecules/navigation/pagination.twig' %}
               </div>
             </div>
-
           </div>
         </article>
         {% if sidebar %}
@@ -27,8 +26,6 @@
           </div>
           <!-- /.c-sidebar -->
         {% endif %}
-
-
       </section>
     </main>
     <!-- /.l-main -->
