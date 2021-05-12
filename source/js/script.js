@@ -498,7 +498,7 @@
       $('[data-context="search-main-suggestions"]').slideUp(200);
     }
   })
-  if (searchInput.blur && searchInput.val().length == 0) {
+  if (searchInput.blur && searchInput.val() != true) {
       $('[data-context="search-main-suggestions"]').slideUp(200);
   }
 
