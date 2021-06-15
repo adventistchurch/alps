@@ -639,7 +639,7 @@
     }
 
     .c-suggestions {
-      li a:hover {
+      li a:hover, li a.active {
         background-color: $darker;
         color: $c-white;
       }
@@ -1290,7 +1290,7 @@
       }
 
       .c-suggestions {
-        li a:hover {
+        li a:hover, li a.active {
           background-color: $lighter;
           color: $darker;
         }
