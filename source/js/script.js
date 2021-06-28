@@ -501,7 +501,6 @@
   if (searchInput.blur && searchInput.val() != true) {
       $('[data-context="search-main-suggestions"]').slideUp(200);
   }
-
   // ------- END MOCK TYPEAHEAD
 
 
