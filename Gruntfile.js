@@ -113,6 +113,11 @@ module.exports = function (grunt) {
       'source/js/script.js'
     ],
 
+    jsDevScripts: [
+     // Include:
+     'source/js/dev-scripts.js'
+    ],
+
     uglify: {
       dev: {
         options: {
@@ -122,7 +127,7 @@ module.exports = function (grunt) {
         },
         files: {
           'public/v3/js/head-script.min.js': ['<%= jsHeadFiles %>'],
-          'public/v3/js/script.min.js': ['<%= jsFootFiles %>']
+          'public/v3/js/script.min.js': ['<%= jsDevScripts %>', '<%= jsFootFiles %>']
         }
       },
       prod: {
