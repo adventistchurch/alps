@@ -202,14 +202,12 @@ input[type=radio] {
       background-color: transparent;
     }
   }
-
-  .c-suggestions {
-    margin-top: $space;
-    display: none;
-  }
 }
 
 .c-suggestions {
+  margin-top: $space;
+  display: none;
+
   li a {
     padding: $space / 4 $space;
     margin-left: -$space;

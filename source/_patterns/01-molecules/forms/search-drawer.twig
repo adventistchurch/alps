@@ -3,7 +3,7 @@
     <div class="c-search-drawer__filter c-filter">
       <form action="{{ search_drawer.url }}" role="search" method="{{ search_drawer.method }}" class="c-filter__search">
         <div class="c-filter__inline">
-          <input id="search-input" type="search" name="{{ search_drawer.name }}" placeholder="{{ search_drawer.placeholder }}" class="u-font--secondary--s u-theme--color--darker can-be--white" />
+          <input id="drawer-search-input" type="search" name="{{ search_drawer.name }}" placeholder="{{ search_drawer.placeholder }}" class="u-font--secondary--s u-theme--color--darker can-be--white" />
           <button class="o-button o-button--simple can-be--white"><font>Clear search</font></button>
         </div>
         {% if search_drawer.filter_form %}
