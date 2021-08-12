@@ -1,39 +1,73 @@
 {
-  "name": "ALPS",
-  "version": "0.0.1",
-  "description": "Adventist Living Pattern System",
-  "devDependencies": {
-    "bs-html-injector": "^3.0.0",
-    "csswring": "^4.0.0",
-    "grunt": "~0.4.5",
-    "grunt-add-comment": "^1.1.6",
-    "grunt-autoprefixer": "^0.8.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "~0.6.0",
-    "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-contrib-symlink": "^1.0.0",
-    "grunt-contrib-uglify": "^3.4.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-gh-pages": "^2.0.0",
-    "grunt-htmlhint": "0.9.12-fix",
-    "grunt-mkdir": "^1.0.0",
-    "grunt-sass": "^1.2.0",
-    "grunt-shell": "^2.1.0",
-    "matchdep": "^2.0.0",
-    "node-bourbon": "^4.2.8",
-    "node-sass": "^2.1.1",
-    "patternlab-md2json": "^0.1.1"
+  "name": "alps-storybook",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
+  "main": "./build/index.js",
+  "module": "./build/index.es.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 9001 -s ./public -c .storybook --ci",
+    "build-storybook": "build-storybook -s public -o .storybook-build",
+    "build": "rollup --config",
+    "dev": "rollup --config --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:adventistchurch/alps.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
-  "author": "SuperFriendly & Southleft",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "homepage": "http://adventist.org",
-  "compileTemplates": false
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/node-logger": "^6.3.7",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.7",
+    "postcss": "^7.0.35",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.37.5"
+  }
 }
