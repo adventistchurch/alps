@@ -38,9 +38,14 @@
   "scripts": {
     "test": "react-scripts test",
     "storybook": "start-storybook -p 9001 -s ./public -c .storybook --ci",
-    "build-storybook": "build-storybook -s public -o .storybook-build",
     "build": "rollup --config",
-    "dev": "rollup --config --watch"
+    "dev": "rollup --config --watch",
+    "deploy": "npm run-script build && npm publish",
+    "deploy:patch": "npm version patch && npm run deploy",
+    "deploy:minor": "npm version minor && npm run deploy",
+    "deploy:major": "npm version major && npm run deploy",
+    "build-storybook": "build-storybook -s public -o .storybook-build",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "eslintConfig": {
     "extends": [
