@@ -1,7 +1,24 @@
 {
   "name": "alps-storybook",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "General Conference of Seventh-day Adventists"
+  },
+  "contributors": [
+    {
+      "name": "Yauheni Kapliarchuk",
+      "email": "yauheni.kapliarchuk@gmail.com",
+      "url": "https://github.com/YauheniKapliarchuk"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "React implementation of the Adventist Living Pattern System (ALPS)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adventistchurch/alps.git",
+    "directory": "/storybook"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -16,8 +33,8 @@
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
-  "main": "./build/index.js",
-  "module": "./build/index.es.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "test": "react-scripts test",
     "storybook": "start-storybook -p 9001 -s ./public -c .storybook --ci",
@@ -60,10 +77,19 @@
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
+    "@storybook/addons": "^6.3.7",
     "@storybook/node-logger": "^6.3.7",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.7",
+    "@storybook/theming": "^6.3.7",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
     "postcss": "^7.0.35",
+    "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
