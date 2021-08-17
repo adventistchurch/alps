@@ -1,6 +1,6 @@
 # alps-library
 ***
-[![ALPS-Library](public/alps-storybook-logo-min.svg)](https://alps-dev.adventist.io/)
+[![ALPS-Library](https://raw.githubusercontent.com/adventistchurch/alps/storybook/public/alps-storybook-logo-min.svg)](https://alps-dev.adventist.io/)
 
 For more info and reference, check ALPS Documentation:
 
@@ -32,7 +32,7 @@ Add `alps-library` as a dependency:
 ### Requirements
 
 - [Node](https://nodejs.org)
-- [yarn](https://yarnpkg.com/en/docs/install) || 
+- [yarn](https://yarnpkg.com/en/docs/install)
 
 ### Install Dependencies
 
@@ -42,7 +42,7 @@ yarn
 
 ### Load Storybook
 
-- **Run Storybook**: Will run a local storybook server with hot reload in `http://localhost:9009`
+- **Run Storybook**: Will run a local storybook server with hot reload in `http://localhost:9001`
 
   ```bash
   yarn storybook
