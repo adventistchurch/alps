@@ -1,11 +1,13 @@
 import { create } from '@storybook/theming';
 
+const themeColor = 'light';
+
 export default create({
-    base: 'light', // Is this a 'light' or 'dark' theme?
+    base: themeColor, // Is this a 'light' or 'dark' theme?
 
     brandTitle: 'ALPS-Storybook',
     brandUrl: 'https://github.com/adventistchurch/alps/tree/storybook',
-    brandImage: 'alps-storybook-logo.svg',
+    brandImage: themeColor === 'light' ? 'alps-storybook-logo.svg' : 'alps-storybook-logo-dark.svg',
 
     // Simulates ALPS radius-less styles.
     appBorderRadius: 0,

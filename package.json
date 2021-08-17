@@ -1,5 +1,5 @@
 {
-  "name": "alps-storybook",
+  "name": "alps-library",
   "version": "0.1.0",
   "private": false,
   "author": {
@@ -10,6 +10,14 @@
       "name": "Yauheni Kapliarchuk",
       "email": "yauheni.kapliarchuk@gmail.com",
       "url": "https://github.com/YauheniKapliarchuk"
+    },
+    {
+      "name": "Eduardo Ludi",
+      "email": "eduardo.ludi@stimme-der-hoffnung.de"
+    },
+    {
+      "name": "Olivier Guy",
+      "email": "olivier.guy@stimme-der-hoffnung.de"
     }
   ],
   "license": "SEE LICENSE IN LICENSE",
@@ -20,6 +28,7 @@
     "directory": "/storybook"
   },
   "dependencies": {
+    "@storybook/storybook-deployer": "^2.8.10",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
