@@ -14,10 +14,6 @@
     {
       "name": "Eduardo Ludi",
       "email": "eduardo.ludi@stimme-der-hoffnung.de"
-    },
-    {
-      "name": "Olivier Guy",
-      "email": "olivier.guy@stimme-der-hoffnung.de"
     }
   ],
   "license": "SEE LICENSE IN LICENSE",
@@ -90,6 +86,7 @@
     "@rollup/plugin-typescript": "^8.2.5",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/addons": "^6.3.7",
     "@storybook/node-logger": "^6.3.7",
@@ -98,6 +95,7 @@
     "@storybook/theming": "^6.3.7",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
+    "@whitespace/storybook-addon-html": "^5.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -108,6 +106,7 @@
     "react-dom": "^17.0.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-scss": "^3.0.0",
-    "sass": "^1.37.5"
+    "sass": "^1.37.5",
+    "storybook-addon-themes": "^6.1.0"
   }
 }
