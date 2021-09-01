@@ -1,5 +1,6 @@
 import React from 'react';
 import useClasses from "../../helpers/useClasses";
+import {buttonConfig} from "./config";
 
 interface ButtonProps {
     disabled?: boolean,
@@ -8,22 +9,23 @@ interface ButtonProps {
     simple?: boolean,
     small?: boolean,
     toggle?: boolean,
-    backgroundColor?: string;
     label: string;
+    as: string,
+    url: string,
     onClick?: () => void;
 }
 
 export const Button = ({
-                           backgroundColor,
-                           label,
-                           disabled = false,
-                           lighter = false,
-                           outline = false,
-                           simple = false,
-                           small = false,
-                           toggle = false,
-                           ...props
-                       }: ButtonProps) => {
+    label,
+    disabled = false,
+    lighter = false,
+    outline = false,
+    simple = false,
+    small = false,
+    toggle = false,
+    url,
+    ...props
+}: ButtonProps): JSX.Element => {
 
     const buttonClass = useButtonClass(
         'o-button',
@@ -36,37 +38,33 @@ export const Button = ({
             toggle: toggle,
         },
         ""
-    )
-
-    return (
-        <button
-            className={buttonClass}
-            style={{ backgroundColor }}
-            {...props}
-        >
-            {label}
-        </button>
     );
-}
 
-export const buttonConfig = {
-    asOptions: ['a', 'button', 'span'],
-    iconPositions: ['left', 'right'],
-    defaultProps: {
-        as: 'button',
-        primary: false,
-        disabled: false,
-        expand: false,
-        lighter: false,
-        outline: false,
-        simple: false,
-        small: false,
-        toggle: false,
-        className: '',
-        iconFill: 'white',
-        iconPosition: 'left',
-        iconSize: 'xs'
+    let elementByType: JSX.Element;
+
+    switch (props.as) {
+        case buttonConfig.asOptions[0]:
+            elementByType =
+                <a className={buttonClass} href={url}>
+                    {label}
+                </a>;
+            break;
+        case buttonConfig.asOptions[2]:
+            elementByType =
+                <span className={buttonClass}>
+                    {label}
+                </span>;
+            break;
+        default:
+            elementByType =
+                <button className={buttonClass}>
+                    {label}
+                </button>;
+            break;
     }
+
+    return (elementByType);
+
 }
 
 function useButtonClass(base: string, disabled: boolean, flags: {[key: string]: string | boolean }, extras: any) {
@@ -78,7 +76,6 @@ function useButtonClass(base: string, disabled: boolean, flags: {[key: string]: 
             validClasses[`${base}--${flag}`] = flags[flag];
         }
     })
-
 
     return useClasses(
         base,

@@ -1,15 +1,15 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react'
-import { boolean, text as textInput, select } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/react'
+import {boolean, select, text as textInput} from '@storybook/addon-knobs';
 
-import { Button, buttonConfig } from './Button';
-import data from './Button.stories.json';
+import {Button} from './Button';
+import {buttonConfig} from "./config";
 
 function getTabData(name: string, settings = {}) {
     return {
         tab: name,
         ...buttonConfig.defaultProps,
-        ...data,
+        ...buttonConfig.data,
         ...settings,
     }
 }
