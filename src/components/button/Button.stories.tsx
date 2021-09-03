@@ -3,7 +3,7 @@ import {Meta, Story} from '@storybook/react'
 
 import {Button, ButtonProps} from './Button';
 import {buttonConfig} from "./_config";
-import {iconConfig} from "../../icons/_config";
+import {iconConfig} from "../icons/_config";
 
 export default {
     title: "components/Button",

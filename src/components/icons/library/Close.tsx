@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Svg from '../../helpers/Svg'
+import Svg from '../../../helpers/Svg'
 import {IconProps} from "./IconProps";
 
 const Close = ({fill}: IconProps): JSX.Element => (

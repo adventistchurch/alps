@@ -1,9 +1,9 @@
 import React from 'react'
 
 import {Icon} from './Icon';
-import useClasses from '../helpers/useClasses';
-import {getBaseClass} from "../global/commons";
-import {backgroundColorClass} from "../global/colors";
+import useClasses from '../../helpers/useClasses';
+import {getBaseClass} from "../../global/commons";
+import {backgroundColorClass} from "../../global/colors";
 import {iconConfig} from "./_config";
 
 const fixRightIcon = {marginLeft: '.3125rem', marginRight: '0'}

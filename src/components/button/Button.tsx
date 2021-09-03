@@ -1,8 +1,8 @@
 import React from 'react';
 import useClasses from "../../helpers/useClasses";
 import {buttonConfig} from "./_config";
-import {IconWrap} from "../../icons/IconWrap";
-import {iconConfig} from "../../icons/_config";
+import {IconWrap} from "../icons/IconWrap";
+import {iconConfig} from "../icons/_config";
 
 export interface ButtonProps {
     /**

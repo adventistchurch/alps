@@ -2,7 +2,7 @@ import React from 'react';
 import {Meta, Story} from '@storybook/react';
 import {Icon} from './Icon';
 import {IconProps} from "./library/IconProps";
-import library from "./library/index";
+import library from "./library";
 
 export default {
     title: "components/Icon",

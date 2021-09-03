@@ -1,4 +1,4 @@
-import library from "../icons/library/index";
+import library from "./library";
 
 export const iconConfig = {
     iconSizes:{
