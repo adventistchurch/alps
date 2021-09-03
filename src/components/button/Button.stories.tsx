@@ -1,86 +1,105 @@
 import React from 'react';
-import {storiesOf} from '@storybook/react'
-import {boolean, select, text as textInput} from '@storybook/addon-knobs';
+import {Meta, Story} from '@storybook/react'
 
-import {Button} from './Button';
-import {buttonConfig} from "./config";
+import {Button, ButtonProps} from './Button';
+import {buttonConfig} from "./_config";
+import {iconConfig} from "../../icons/_config";
 
-function getTabData(name: string, settings = {}) {
-    return {
-        tab: name,
-        ...buttonConfig.defaultProps,
-        ...buttonConfig.data,
-        ...settings,
+export default {
+    title: "components/Button",
+    component: Button,
+    argTypes: {
+        label: {
+            name: "Text",
+            defaultValue: buttonConfig.data.label,
+            control: {type: "text"}
+        },
+        url: {
+            name: "URL",
+            defaultValue: buttonConfig.data.url,
+            control: {type: "text"}
+        },
+        as: {
+            name: "as",
+            defaultValue: buttonConfig.defaultProps.as,
+            options: buttonConfig.asOptions,
+            control: {type: "select"}
+        },
+        icon: {
+            name: "Icon",
+            options: [""].concat(iconConfig.iconNames),
+            control: {type: "select"}
+        },
+        iconPosition: {
+            name: "Icon Position",
+            defaultValue: "left",
+            options: iconConfig.iconPositions.available,
+            control: {type: "radio"}
+        },
+        iconSize: {
+            name: "Icon Size",
+            defaultValue: "xs",
+            options: iconConfig.iconSizes.available,
+            control: {type: "inline-radio"}
+        },
+        iconFill: {
+            name: "Fill",
+            defaultValue: "white",
+            options: iconConfig.fill.default,
+            control: {type: "select"}
+        }
     }
+} as Meta;
+
+const Template: Story<ButtonProps> = (args) =>
+    <Button {...args} />
+
+export const Basic = Template.bind({});
+Basic.argTypes = {
+    disabled: {name: "Disable", defaultValue: false, control: {type: "boolean"}},
+    expand: {name: "Expand", defaultValue: false, control: {type: "boolean"}},
+    lighter: {name: "Lighter", defaultValue: false, control: {type: "boolean"}},
+    outline: {name: "Outline", defaultValue: false, control: {type: "boolean"}},
+    simple: {name: "Simple", defaultValue: false, control: {type: "boolean"}},
+    small: {name: "Small", defaultValue: false, control: {type: "boolean"}},
+    toggle: {name: "Toggle", defaultValue: false, control: {type: "boolean"}}
 }
 
-function generalTab(settings = {}) {
-    const { as, label, url, tab } = getTabData('General', settings)
-    return {
-        label: textInput('Text *', label, tab),
-        url: textInput('URL', url, tab),
-        as: select('As', buttonConfig.asOptions, as, tab),
-    }
+export const Disabled = Template.bind({});
+Disabled.args = {
+    disabled: true
 }
 
-function settingsTab(settings = {}) {
-    const {
-        disabled,
-        expand,
-        lighter,
-        outline,
-        simple,
-        small,
-        toggle,
-        tab,
-    } = getTabData('Settings', settings)
-    return {
-        disabled: boolean('Disabled', disabled, tab),
-        expand: boolean('Expand', expand, tab),
-        lighter: boolean('Lighter', lighter, tab),
-        outline: boolean('Outline', outline, tab),
-        simple: boolean('Simple', simple, tab),
-        small: boolean('Small', small, tab),
-        toggle: boolean('Toggle', toggle, tab),
-    }
+export const Lighter = Template.bind({});
+Lighter.args = {
+    lighter: true
 }
 
-function allTabs(settings = {}) {
-    const generalProps = generalTab(settings);
-    // const iconProps = iconTab(settings)
-    const settingsProps = settingsTab(settings);
-
-    // return { ...generalProps, ...iconProps, ...settingsProps }
-    return { ...generalProps, ...settingsProps }
+export const Outline = Template.bind({});
+Outline.args = {
+    outline: true
 }
 
-storiesOf('Components/Button', module)
-    .add('Default', () => {
-        const props = allTabs()
-        return <Button {...props} />
-    })
+export const Simple = Template.bind({});
+Simple.args = {
+    simple: true
+}
 
-    .add('Disabled', () => {
-        const props = allTabs({ disabled: true })
-        return <Button {...props} />
-    })
+export const Small = Template.bind({});
+Small.args = {
+    small: true
+}
 
-    .add('Lighter', () => {
-        const props = allTabs({ lighter: true })
-        return <Button {...props} />
-    })
+export const with_icon_left = Template.bind({});
+with_icon_left.args = {
+    icon: "arrow-bracket-left"
+}
+export const with_icon_right = Template.bind({});
+with_icon_right.args = {
+    icon: "arrow-bracket-right"
+}
 
-    .add('Outline', () => {
-        const props = allTabs({ outline: true })
-        return <Button {...props} />
-    })
-
-    .add('Simple', () => {
-        const props = allTabs({ simple: true })
-        return <Button {...props} />
-    })
-
-    .add('Small', () => {
-        const props = allTabs({ small: true })
-        return <Button {...props} />
-    })
+export const Toggle = Template.bind({});
+Toggle.args = {
+    toggle: true
+}

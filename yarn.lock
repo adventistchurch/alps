@@ -1909,7 +1909,7 @@
     "ts-dedent" "^2.0.0"
     "util-deprecate" "^1.0.2"
 
-"@storybook/addon-controls@6.3.7":
+"@storybook/addon-controls@^6.3.7", "@storybook/addon-controls@6.3.7":
   "integrity" "sha512-VHOv5XZ0MQ45k6X7AUrMIxGkm7sgIiPwsvajnoeMe7UwS3ngbTb0Q0raLqI/L5jLM/jyQwfpUO9isA6cztGTEQ=="
   "resolved" "https://registry.npmjs.org/@storybook/addon-controls/-/addon-controls-6.3.7.tgz"
   "version" "6.3.7"

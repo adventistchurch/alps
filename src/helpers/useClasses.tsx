@@ -20,11 +20,8 @@ export default function useClasses(base = '', conditionals: {[key: string]: stri
     const classes = splitAndRemoveEmpty(base);
 
     for (const className of Object.keys(conditionals)) {
-        console.log("USE 1: " + className + " ::: " + conditionals[className]);
         const condition = conditionals[className];
-        console.log("USE 2: " + className);
         if (condition) classes.push(...splitAndRemoveEmpty(className));
-        console.log("USE 3: " + classes);
     }
 
     if (extra) classes.push(...splitAndRemoveEmpty(extra));
