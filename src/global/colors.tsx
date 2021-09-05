@@ -21,6 +21,25 @@ export const primaryColors = [
   'winter',
 ]
 
+export const primaryColorsThemes = [
+  { name: 'Off', class: 'theme-fb', color: '#' },
+  { name: 'Bluejay', class: 'u-theme--bluejay', color: '#2e6de7' },
+  { name: 'Campfire', class: 'u-theme--campfire', color: '#cd4900' },
+  { name: 'Cave', class: 'u-theme--cave', color: '#255760' },
+  { name: 'Denim', class: 'u-theme--denim', color: '#2f557f' },
+  { name: 'Earth', class: 'u-theme--earth', color: '#5e3929' },
+  { name: 'Emperor', class: 'u-theme--emperor', color: '#4b207f' },
+  { name: 'Forest', class: 'u-theme--forest', color: '#355724' },
+  { name: 'Grapevine', class: 'u-theme--grapevine', color: '#712551' },
+  { name: 'Lily', class: 'u-theme--lily', color: '#d41583' },
+  { name: 'Ming', class: 'u-theme--ming', color: '#4a4a4a' },
+  { name: 'Night', class: 'u-theme--night', color: '#007f98' },
+  { name: 'Scarlett', class: 'u-theme--scarlett', color: '#d0021b' },
+  { name: 'Treefrog', class: 'u-theme--treefrog', color: '#2b8500' },
+  { name: 'Velvet', class: 'u-theme--velvet', color: '#782832' },
+  { name: 'Winter', class: 'u-theme--winter', color: '#717171' },
+]
+
 export const secondaryColors = ['', 'dark']
 
 export const grayscaleColors = [

@@ -1,3 +1,5 @@
+import {primaryColorsThemes} from "../src/global/colors";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -17,9 +19,6 @@ export const parameters = {
   },
   themes: {
     default: 'Ming',
-    list: [
-      { name: 'Ming', class: 'u-theme--ming', color: '#007f98' },
-      { name: 'facebook', class: 'theme-fb', color: '#' }
-    ],
+    list: primaryColorsThemes,
   },
 }
