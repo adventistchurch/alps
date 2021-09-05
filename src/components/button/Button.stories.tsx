@@ -100,6 +100,16 @@ with_icon_right.args = {
 }
 
 export const Toggle = Template.bind({});
+Toggle.argTypes = {
+    label: {
+        table: {disable: true}
+    }
+}
 Toggle.args = {
-    toggle: true
+    label: "",
+    outline: true,
+    small: true,
+    toggle: true,
+    icon: "plus",
+    iconPosition: "left"
 }

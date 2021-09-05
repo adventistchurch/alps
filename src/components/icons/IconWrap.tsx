@@ -3,7 +3,7 @@ import React from 'react'
 import {Icon} from './Icon';
 import useClasses from '../../helpers/useClasses';
 import {getBaseClass} from "../../global/commons";
-import {backgroundColorClass} from "../../global/colors";
+import {backgroundColorClass, grayscaleColorsMap, themeColorsMap} from "../../global/colors";
 import {iconConfig} from "./_config";
 
 const fixRightIcon = {marginLeft: '.3125rem', marginRight: '0'}
@@ -12,8 +12,8 @@ interface IconWrapProps {
     as?: string,
     background?: string,
     className?: string,
-    color?: string,
-    themeColor?: string,
+    color?: keyof typeof grayscaleColorsMap,
+    themeColor?: keyof typeof themeColorsMap,
     fill?: string,
     name: keyof typeof iconConfig.iconNamesMap,
     size?: string,

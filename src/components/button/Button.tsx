@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {MouseEventHandler, useCallback} from 'react';
 import useClasses from "../../helpers/useClasses";
 import {buttonConfig} from "./_config";
 import {IconWrap} from "../icons/IconWrap";
 import {iconConfig} from "../icons/_config";
+import useToggle from "../../helpers/useToggle";
 
 export interface ButtonProps {
     /**
@@ -30,8 +31,8 @@ export interface ButtonProps {
      */
     toggle?: boolean,
     /**
-    * Specify the content of your Button
-    */
+     * Specify the content of your Button
+     */
     label: string;
     /**
      * Specify the type of your Button
@@ -51,7 +52,7 @@ export interface ButtonProps {
      * You can set position of icon into the button
      */
     iconPosition?: "left" | "right",
-    onClick?: () => void;
+    onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
 }
 
 export const Button = ({
@@ -64,8 +65,11 @@ export const Button = ({
                            toggle = false,
                            url,
                            iconPosition = "left",
+                           onClick,
                            ...props
                        }: ButtonProps): JSX.Element => {
+
+    const {openClass, onToggle} = useToggle(false)
 
     const buttonClass = useButtonClass(
         'o-button',
@@ -77,7 +81,7 @@ export const Button = ({
             small: small,
             toggle: toggle,
         },
-        ""
+        openClass
     );
 
     const icon = props.icon && (
@@ -98,24 +102,38 @@ export const Button = ({
         </>
     );
 
+    const _onClick = onClick || toggle ? useCallback(
+        event => {
+            if (onClick) onClick(event)
+            if (toggle) onToggle()
+        },
+        [onClick, onToggle, toggle]
+    ) : null;
+
     let elementByType: JSX.Element;
 
     switch (props.as) {
         case buttonConfig.asOptions[0]:
             elementByType =
-                <a className={buttonClass} href={url}>
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                <a className={buttonClass} href={url} onClick={_onClick}>
                     {labelWithIcon}
                 </a>;
             break;
         case buttonConfig.asOptions[2]:
             elementByType =
-                <span className={buttonClass}>
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                <span className={buttonClass} onClick={_onClick}>
                     {labelWithIcon}
                 </span>;
             break;
         default:
             elementByType =
-                <button className={buttonClass}>
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                <button className={buttonClass} onClick={_onClick}>
                     {labelWithIcon}
                 </button>;
             break;
@@ -141,3 +159,4 @@ function useButtonClass(base: string, disabled: boolean, flags: { [key: string]:
         extras
     )
 }
+
