@@ -1,10 +1,10 @@
 ##### UTILITIES
-##Borders
+## Borders
 Border classes to add horizontal borders to block-level elements.
-##USAGE
-#####When to Use
+## USAGE
+##### When to Use
 
-#####Default border
+##### Default border
 The default border is a 1px, solid gray border.
 
 

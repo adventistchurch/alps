@@ -1,9 +1,9 @@
 ##### UTILITIES
-##COLOR
+## COLOR
 Common color modifier classes.
 
-##USAGE
-#####Please note that some examples of non-background colors in the description below have a background color applied - this is for readability purposes, and does not represent the display of the class name specified.
+## USAGE
+##### Please note that some examples of non-background colors in the description below have a background color applied - this is for readability purposes, and does not represent the display of the class name specified.
 
 
 

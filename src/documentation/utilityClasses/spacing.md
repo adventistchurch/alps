@@ -1,17 +1,17 @@
 ##### UTILITIES
-##SPACING
+## SPACING
 Adjust whitespace with horizontal and vertical spacing with `block` level `margin` adjustment helpers.
 
-##USAGE
-#####When to Use
+## USAGE
+##### When to Use
 Spacing classes can be applied to block level items to provide a margin on that item. (For padding adjustments, see Padding.)
 
 
 
-#####Base Unit
+##### Base Unit
 The base space size is 1.25rem or 20px.
 
-#####Spacing Wrappers
+##### Spacing Wrappers
 
 ALPS uses a technique for vertical spacing called “Lobotomized Owls” and is detailed in an articled titled [“Axiomatic CSS and Lobotomized Owls”](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/). The classes, detailed below and starting with spacing, add top margins to the elements inside the wrapper the spacing class is applied to. The margins are based on default spaces of 20 pixels on mobile and 30 pixels on desktop.
 

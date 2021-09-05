@@ -1,8 +1,8 @@
 ##### UTILITIES
-##DISPLAY
+## DISPLAY
 Border classes to add horizontal borders to block-level elements.
-##USAGE
-#####When to Use
+## USAGE
+##### When to Use
 Use these classes to adjust the display settings of an element as well as shift and hide elements.
 
 

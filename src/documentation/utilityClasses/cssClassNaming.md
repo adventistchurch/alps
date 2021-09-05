@@ -1,4 +1,4 @@
-##CSS CLASS NAMING
+## CSS CLASS NAMING
 Various classes that don't fit other categories.
 
 https://sparkdesignsystem.com/docs/class-naming-convention

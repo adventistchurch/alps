@@ -1,16 +1,16 @@
 ##### UTILITIES
-##PADDING
+## PADDING
 
 Adjust whitespace with horizontal and vertical spacing with`block` level `padding` adjustment helpers.
 
-##USAGE
-#####When to Use
+## USAGE
+##### When to Use
 Padding classes can be applied to block level items to provide a padding on that item. (For margin adjustments, see Spacing
 
-#####Base Unit
+##### Base Unit
 The base space size is 1.25rem or 20px.
 
-#####Padding classes
+##### Padding classes
 ALPS uses padding classes to apply varying padding to the current element. The classes, detailed below and starting with u-padding, add a varying padding size to all or individual sides.
 
 

@@ -1,10 +1,10 @@
 ##### UTILITIES
-##RIGHT TO LEFT
+## RIGHT TO LEFT
 
 Classes used to deal with Right-to-Left layouts.
 
-##USAGE
-#####When to Use
+## USAGE
+##### When to Use
 
 
 |Class Name|Description|
