@@ -32,6 +32,15 @@ export const grayscaleColors = [
   'white',
 ]
 
+export const grayscaleColorsMap = {
+  'black': 'black',
+  'gray--darker': 'gray--darker',
+  'gray--dark': 'gray--dark',
+  'gray': 'gray',
+  'gray--light': 'gray--light',
+  'white': 'white',
+}
+
 const stateColors = ['valid', 'error', 'warning', 'information']
 
 // Text Colors:
@@ -67,6 +76,14 @@ export const backgroundColors = ['none', ...grayscaleColors]
 // - Foreground
 export const themeColorClass = 'u-theme--color'
 export const themeColors = ['darker', 'dark', 'base', 'light', 'lighter']
+
+export const themeColorsMap = {
+  'darker':'darker',
+  'dark': 'dark',
+  'base': 'base',
+  'light': 'light',
+  'lighter': 'lighter'
+}
 
 // - Background
 export const themeBackgroundClass = 'u-theme--background-color'

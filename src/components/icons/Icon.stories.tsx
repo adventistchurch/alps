@@ -3,10 +3,27 @@ import {Meta, Story} from '@storybook/react';
 import {Icon} from './Icon';
 import {IconProps} from "./library/IconProps";
 import library from "./library";
+import {svgFillColors, themeColors} from "../../global/colors";
 
 export default {
     title: "components/Icon",
-    component: Icon
+    component: Icon,
+    argTypes: {
+        color: {
+            name: "Color",
+            options: [""].concat(svgFillColors),
+            control: {type: 'select'}
+        },
+        themeColor: {
+            name: "Theme colors",
+            options: [""].concat(themeColors),
+            control: {type: 'select'}
+        },
+        fill: {
+            name: "Fill",
+            control: {type: 'color'}
+        }
+    }
 } as Meta;
 
 const iconNames = Array.from(library.keys());
