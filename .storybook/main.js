@@ -5,7 +5,18 @@ module.exports = {
     ],
     "addons": [
         "@storybook/addon-links",
-        "@storybook/addon-essentials",
+        // "@storybook/addon-essentials",
+        {
+            name: '@storybook/addon-essentials',
+            options: {
+                actions: true,
+                backgrounds: false,
+                controls: true,
+                docs: true,
+                viewport: false,
+                toolbars: false
+            }
+        },
         "@storybook/preset-create-react-app",
         '@whitespace/storybook-addon-html',
         'storybook-addon-themes'

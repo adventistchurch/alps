@@ -147,6 +147,7 @@ function useButtonClass(base: string, disabled: boolean, flags: { [key: string]:
 
     const validClasses: { [key: string]: string | boolean } = {disabled: disabled};
 
+    // eslint-disable-next-line array-callback-return
     Object.keys(flags).map(flag => {
         if (flags[flag]) {
             validClasses[`${base}--${flag}`] = flags[flag];
@@ -159,4 +160,3 @@ function useButtonClass(base: string, disabled: boolean, flags: { [key: string]:
         extras
     )
 }
-
