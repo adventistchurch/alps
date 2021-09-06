@@ -8,9 +8,9 @@ import {iconConfig} from "./_config";
 
 const fixRightIcon = {marginLeft: '.3125rem', marginRight: '0'}
 
-interface IconWrapProps {
+export interface IconWrapProps {
     as?: string,
-    background?: string,
+    background?: keyof typeof themeColorsMap,
     className?: string,
     color?: keyof typeof grayscaleColorsMap,
     themeColor?: keyof typeof themeColorsMap,
