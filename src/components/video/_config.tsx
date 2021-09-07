@@ -1,0 +1,7 @@
+export const videoConfig = {
+    data: {
+        src: "https://player.vimeo.com/video/137487821?color=ffffff&title=0&byline=0&portrait=0",
+        width: 600,
+        height: 338
+    }
+}

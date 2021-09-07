@@ -40,14 +40,9 @@ export const IconWrap = ({
         className
     );
 
-    console.log("BACK: " + background);
-
     const backgroundColor = background ?
         getBaseClass(themeBackgroundClass, [background]) :
         "";
-
-    console.log("BACK 2: " + backgroundColor);
-    console.log("BACK 3: " + classes + " " + backgroundColor);
 
     const iconPositionStyles = props.iconPosition === "right" ? fixRightIcon : {};
 
