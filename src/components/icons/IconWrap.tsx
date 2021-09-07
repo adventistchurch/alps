@@ -3,7 +3,7 @@ import React from 'react'
 import {Icon} from './Icon';
 import useClasses from '../../helpers/useClasses';
 import {getBaseClass} from "../../global/commons";
-import {backgroundColorClass, grayscaleColorsMap, themeColorsMap} from "../../global/colors";
+import {grayscaleColorsMap, themeBackgroundClass, themeColorsMap} from "../../global/colors";
 import {iconConfig} from "./_config";
 
 const fixRightIcon = {marginLeft: '.3125rem', marginRight: '0'}
@@ -40,9 +40,14 @@ export const IconWrap = ({
         className
     );
 
+    console.log("BACK: " + background);
+
     const backgroundColor = background ?
-        getBaseClass(backgroundColorClass, [background]) :
+        getBaseClass(themeBackgroundClass, [background]) :
         "";
+
+    console.log("BACK 2: " + backgroundColor);
+    console.log("BACK 3: " + classes + " " + backgroundColor);
 
     const iconPositionStyles = props.iconPosition === "right" ? fixRightIcon : {};
 

@@ -1,3 +1,15 @@
+import {Meta} from '@storybook/addon-docs/blocks';
+
+<Meta
+    title="Introduction/Installation"
+    parameters={{
+        viewMode: 'docs',
+        previewTabs: {
+            canvas: { hidden: true }
+        },
+    }}
+/>
+
 # alps-library
 ***
 [![ALPS-Library](https://raw.githubusercontent.com/adventistchurch/alps/storybook/public/alps-storybook-logo-min.svg)](https://adventistchurch.github.io/alps/)
@@ -14,14 +26,15 @@ For more info and reference, check ALPS Documentation:
 Add `alps-library` as a dependency:
 
 - Using `yarn`
-  ```bash
-  yarn add alps-library
+
+```bash
+yarn add alps-library
   ```
 
 - Using `npm`
 
-  ```bash
-  npm intall alps-library
+```bash
+npm intall alps-library
   ```
 
 ***
@@ -43,14 +56,14 @@ yarn
 
 - **Run Storybook**: Will run a local storybook server with hot reload in `http://localhost:9001`
 
-  ```bash
-  yarn storybook
+```bash
+yarn storybook
   ```
 
 - **Build Storybook**: will bundle the storybook as static assets in `/storybook-static`
 
-  ```bash
-  yarn build-storybook
+```bash
+yarn build-storybook
   ```
 
 ### Build for production

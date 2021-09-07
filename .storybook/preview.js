@@ -21,4 +21,19 @@ export const parameters = {
     default: 'Ming',
     list: primaryColorsThemes,
   },
+  options: {
+    storySort: {
+      order: [
+        'Introduction',
+        [
+          'Installation',
+          'Using the library',
+          "What's new",
+          'Support and Feedback'
+        ],
+        'Documentation',
+        'Components',
+      ],
+    },
+  },
 }
