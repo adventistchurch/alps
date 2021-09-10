@@ -3,7 +3,7 @@ import {Meta, Story} from '@storybook/react';
 import {Icon} from './Icon';
 import {IconProps} from "./library/IconProps";
 import library from "./library";
-import {svgFillColors, themeColors} from "../../global/colors";
+import {grayscaleColors, themeColors} from "../../global/colors";
 
 export default {
     title: "components/Icon",
@@ -11,17 +11,11 @@ export default {
     argTypes: {
         color: {
             name: "Color",
-            options: [""].concat(svgFillColors),
-            control: {type: 'select'}
-        },
-        themeColor: {
-            name: "Theme colors",
-            options: [""].concat(themeColors),
+            options: [""].concat(grayscaleColors, themeColors),
             control: {type: 'select'}
         },
         fill: {
-            name: "Fill",
-            control: {type: 'color'}
+            table: {disable: true}
         }
     }
 } as Meta;
@@ -53,8 +47,8 @@ arrow_brackets.argTypes = {
     }
 };
 
-export const arrow_long = Template.bind({});
-arrow_long.argTypes = {
+export const arrow_long_brackets = Template.bind({});
+arrow_long_brackets.argTypes = {
     name: {
         name: "Icon name",
         defaultValue: "arrow-long-left",
@@ -63,8 +57,8 @@ arrow_long.argTypes = {
     }
 };
 
-export const arrow_short = Template.bind({});
-arrow_short.argTypes = {
+export const arrow_short_brackets = Template.bind({});
+arrow_short_brackets.argTypes = {
     name: {
         name: "Icon name",
         defaultValue: "arrow-short-left",
@@ -73,8 +67,8 @@ arrow_short.argTypes = {
     }
 };
 
-export const logo = Template.bind({});
-logo.argTypes = {
+export const logos = Template.bind({});
+logos.argTypes = {
     name: {
         name: "Icon name",
         defaultValue: "logo",
@@ -87,10 +81,7 @@ logo.argTypes = {
 const argsTypeForSingleIcon = (name: string) => {
     return {
         name: {
-            name: "Icon name",
-            defaultValue: name,
-            options: [name],
-            control: {type: 'text'}
+            table: {disable: true}
         }
     }
 }

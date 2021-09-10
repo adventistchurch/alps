@@ -3,7 +3,7 @@ import React from 'react'
 import {Icon} from './Icon';
 import useClasses from '../../helpers/useClasses';
 import {getBaseClass} from "../../global/commons";
-import {grayscaleColorsMap, themeBackgroundClass, themeColorsMap} from "../../global/colors";
+import {iconColorsMap, themeBackgroundClass, themeColorsMap} from "../../global/colors";
 import {iconConfig} from "./_config";
 
 const fixRightIcon = {marginLeft: '.3125rem', marginRight: '0'}
@@ -12,9 +12,7 @@ export interface IconWrapProps {
     as?: string,
     background?: keyof typeof themeColorsMap,
     className?: string,
-    color?: keyof typeof grayscaleColorsMap,
-    themeColor?: keyof typeof themeColorsMap,
-    fill?: string,
+    color?: keyof typeof iconColorsMap,
     name: keyof typeof iconConfig.iconNamesMap,
     size?: string,
     iconPosition?: string
@@ -25,8 +23,6 @@ export const IconWrap = ({
                              background,
                              className,
                              color,
-                             themeColor,
-                             fill = 'white',
                              name,
                              size = 'm',
                              ...props
@@ -52,13 +48,13 @@ export const IconWrap = ({
         case "button":
             elementByType =
                 <button className={classes + " " + backgroundColor} style={iconPositionStyles}>
-                    <Icon name={name} color={color} fill={fill} themeColor={themeColor}/>
+                    <Icon name={name} color={color}/>
                 </button>;
             break;
         default:
             elementByType =
                 <span className={classes + " " + backgroundColor} style={iconPositionStyles}>
-                    <Icon name={name} color={color} fill={fill} themeColor={themeColor}/>
+                    <Icon name={name} color={color}/>
                 </span>;
             break;
     }

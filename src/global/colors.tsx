@@ -104,6 +104,20 @@ export const themeColorsMap = {
   'lighter': 'lighter'
 }
 
+export const iconColorsMap = {
+  'darker':'darker',
+  'dark': 'dark',
+  'base': 'base',
+  'light': 'light',
+  'lighter': 'lighter',
+  'black': 'black',
+  'gray--darker': 'gray--darker',
+  'gray--dark': 'gray--dark',
+  'gray': 'gray',
+  'gray--light': 'gray--light',
+  'white': 'white',
+}
+
 // - Background
 export const themeBackgroundClass = 'u-theme--background-color'
 export const themeBackgroundColors = [...themeColors]

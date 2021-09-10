@@ -1,7 +1,7 @@
 import {Meta, Story} from '@storybook/react';
 import {IconWrap, IconWrapProps} from "./IconWrap";
 import {iconConfig} from "./_config";
-import {svgFillColors, themeColors} from "../../global/colors";
+import {grayscaleColors, themeColors} from "../../global/colors";
 
 export default {
     title: "components/Icon Wrap",
@@ -15,16 +15,7 @@ export default {
         },
         color: {
             name: "Color",
-            options: [""].concat(svgFillColors),
-            control: {type: 'select'}
-        },
-        fill: {
-            name: "Fill",
-            control: {type: 'color'}
-        },
-        themeColor: {
-            name: "Theme colors",
-            options: [""].concat(themeColors),
+            options: [""].concat(grayscaleColors, themeColors),
             control: {type: 'select'}
         },
         background: {
@@ -48,7 +39,7 @@ export default {
             table: {disable: true}
         }
     }
-}
+} as Meta;
 
 // eslint-disable-next-line react/react-in-jsx-scope
 const Template: Story<IconWrapProps> = (args) => <IconWrap {...args}/>;

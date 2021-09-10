@@ -46,7 +46,6 @@ export interface ButtonProps {
      * Specify an `icon` to include in the Button through an string (name of the icon) representing the SVG data of the icon, similar to the `Icon` component
      */
     icon?: keyof typeof iconConfig.iconNamesMap,
-    iconFill?: string,
     iconSize?: keyof typeof iconConfig.iconSizes.map,
     /**
      * You can set position of icon into the button
@@ -55,6 +54,10 @@ export interface ButtonProps {
     onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
 }
 
+/**
+ * Buttons express what action will occur when the user clicks or touches it.
+ * Buttons are used to initialize an action, either in the background or foreground of an experience.
+ */
 export const Button = ({
                            label,
                            disabled = false,
@@ -88,7 +91,6 @@ export const Button = ({
         <IconWrap
             color={"white"}
             name={props.icon}
-            fill={props.iconFill}
             size={props.iconSize}
             iconPosition={iconPosition}
         />
