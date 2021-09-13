@@ -1,0 +1,24 @@
+{
+  "items": [
+    { "text": "This is a list item in an ordered list" },
+    {
+      "text": "An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters."
+    },
+    {
+      "text": "List item with nested list (unordered)",
+      "subItems": [
+        { "text": "This is a nested list item" },
+        { "text": "This is another nested list item in an ordered list" }
+      ]
+    },
+    {
+      "text": "List item with nested list (ordered)",
+      "subItems": [
+        { "text": "This is a nested list item of an ordered list" },
+        { "text": "This is another nested list item in an ordered list" }
+      ]
+    },
+    { "text": "Item 6" },
+    { "text": "Item 7" }
+  ]
+}

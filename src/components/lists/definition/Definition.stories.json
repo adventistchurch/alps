@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "title": "Definition List",
+      "text": "A number of connected items or names written or printed consecutively, typically one below the other."
+    },
+    {
+      "title": "This is a term.",
+      "text": "This is the definition of that term, which both live in a <code>dl</code>."
+    },
+    {
+      "title": "Here is another term.",
+      "text": "And it gets a definition too, which is this line."
+    },
+    {
+      "title": "Here is term that shares a definition with the term below.",
+      "text": "And it gets a definition too, which is this line."
+    }
+  ]
+}

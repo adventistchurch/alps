@@ -10,7 +10,7 @@ import {
     buttonSmallDesc,
     buttonToggleDesc,
     buttonWithIconDesc
-} from "../../global/descriptions";
+} from "./descriptions";
 
 export default {
     title: "components/Button",
