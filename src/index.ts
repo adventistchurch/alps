@@ -2,3 +2,8 @@ export {Button} from "./components/button/Button";
 export {Icon} from "./components/icons/Icon";
 export {IconWrap} from "./components/icons/IconWrap";
 export {Video} from "./components/video/Video";
+export {Blockquote} from "./components/text/Blockquote";
+export {Caption} from "./components/text/Caption";
+export {DropCap} from "./components/text/DropCap";
+export {Intro} from "./components/text/Intro";
+export {Kicker} from "./components/text/Kicker";

@@ -6,7 +6,7 @@ export default {
     component: DropCap,
     argTypes: {
         letter: {
-            name: "Letter",
+            name: "letter",
             defaultValue: "S",
             control: {type: "text"}
         }

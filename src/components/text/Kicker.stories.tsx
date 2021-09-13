@@ -1,9 +1,9 @@
 import {Meta, Story} from "@storybook/react";
-import {Caption, CaptionProps} from "./Caption";
+import {Kicker, KickerProps} from "./Kicker";
 
 export default {
-    title: "components/Texts/Caption",
-    component: Caption,
+    title: "components/Texts/Kicker",
+    component: Kicker,
     argTypes: {
         content: {
             name: "content",
@@ -14,6 +14,6 @@ export default {
 } as Meta;
 
 // eslint-disable-next-line react/react-in-jsx-scope
-const Template: Story<CaptionProps> = (args) => <Caption {...args}/>
+const Template: Story<KickerProps> = (args) => <Kicker {...args}/>
 
 export const Basic = Template.bind({});

@@ -1,7 +1,7 @@
 // BUTTON SECTION
 //-----DISABLE--------------------------------------------------
 export const buttonDisableDesc = `
-\`\`\`html
+\`\`\`tsx
 <Button
     label={"Learn More"}
     disabled={true} 
@@ -12,7 +12,7 @@ export const buttonDisableDesc = `
 //-----LIGHTER--------------------------------------------------
 
 export const buttonLighterDesc = `
-\`\`\`html
+\`\`\`tsx
 <Button
     label={"Learn More"}
     lighter={true} 
@@ -23,7 +23,7 @@ export const buttonLighterDesc = `
 //-----OUTLINE--------------------------------------------------
 
 export const buttonOutlineDesc = `
-\`\`\`html
+\`\`\`tsx
 <Button
     label={"Learn More"}
     outline={true} 
@@ -34,7 +34,7 @@ export const buttonOutlineDesc = `
 //-----SIMPLE---------------------------------------------------
 
 export const buttonSimpleDesc = `
-\`\`\`html
+\`\`\`tsx
 <Button
     label={"Learn More"}
     simple={true} 
@@ -45,7 +45,7 @@ export const buttonSimpleDesc = `
 //-----SMALL----------------------------------------------------
 
 export const buttonSmallDesc = `
-\`\`\`html
+\`\`\`tsx
 <Button
     label={"Learn More"}
     small={true} 
@@ -56,7 +56,7 @@ export const buttonSmallDesc = `
 //-----TOGGLE---------------------------------------------------
 
 export const buttonToggleDesc = `
-\`\`\`html
+\`\`\`tsx
 <Button
     outline={true}
     small={true}
@@ -100,7 +100,7 @@ By changing the \`icon\` prop you can use different icons of the button.
 | \`share\`| |
 | \`subscribe\`| |
 
-\`\`\`html
+\`\`\`tsx
 <Button
     label={"Learn More"}
     small={true} 
