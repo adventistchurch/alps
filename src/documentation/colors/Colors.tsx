@@ -1,6 +1,6 @@
 import React from "react";
 
-import { colorsConfig } from "./_config";
+import {colorsConfig} from "./_config";
 import "./colors.scss";
 
 export const Colors = (): JSX.Element => {
@@ -9,8 +9,6 @@ export const Colors = (): JSX.Element => {
 
     colorsConfig.forEach(row => {
         const boxes: any[] = [];
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
         row.forEach(box => boxes.push(box));
 
         const htmlBoxes: any[] = [];
