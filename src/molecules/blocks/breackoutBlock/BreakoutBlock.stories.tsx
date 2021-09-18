@@ -4,7 +4,7 @@ import {Meta, Story} from "@storybook/react";
 import {BreakoutBlock, BreakoutBlockProps} from "./BreakoutBlock";
 
 export default {
-    title: "molecules/Breakout Block",
+    title: "molecules/Blocks/Breakout Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
