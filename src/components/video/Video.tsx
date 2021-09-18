@@ -18,7 +18,6 @@ export interface VideoProps {
 }
 
 export const Video = ({ src, width, height}: VideoProps): JSX.Element => {
-    console.log("TTT: " + width + " :: " + height);
     return (
         <div style={wrapStyle}>
             <iframe

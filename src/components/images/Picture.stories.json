@@ -1,0 +1,21 @@
+{
+  "Landscape": {
+    "default": "//picsum.photos/500/282",
+    "500": "//picsum.photos/900/507",
+    "750": "//picsum.photos/700/395",
+    "1200": "//picsum.photos/500/282"
+  },
+  "Portrait": {
+    "default": "//picsum.photos/150/200",
+    "500": "//picsum.photos/300/400",
+    "750": "//picsum.photos/450/600",
+    "1200": "//picsum.photos/600/800"
+  },
+  "Square": {
+    "default": "//picsum.photos/100/100",
+    "500": "//picsum.photos/200/200",
+    "750": "//picsum.photos/300/300",
+    "1200": "//picsum.photos/500/500"
+  },
+  "alt": "Explicabo repellat dolor"
+}

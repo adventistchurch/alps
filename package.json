@@ -39,7 +39,8 @@
     "react-scripts": "4.0.3",
     "sass": "^1.39.0",
     "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "react-lazy-images": "^1.1.0"
   },
   "scripts": {
     "test": "react-scripts test",

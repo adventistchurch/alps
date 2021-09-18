@@ -1,6 +1,7 @@
 import {Meta, Story} from "@storybook/react";
 import React from "react";
 import {TableSlim, TableSlimProps} from "./tableSlim/TableSlim";
+import {range} from "../../helpers/range";
 
 export default {
     title: "components/Tables/Playground",
@@ -55,6 +56,3 @@ const Template: Story<TableSlimProps> = (args) => {
 }
 
 export const Playground = Template.bind({});
-
-const range = (start: number, end: number) =>
-    Array.from({length: end - start + 1}, () => start++);
