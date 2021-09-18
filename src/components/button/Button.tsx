@@ -33,15 +33,15 @@ export interface ButtonProps {
     /**
      * Specify the content of your Button
      */
-    label: string;
+    label?: string;
     /**
      * Specify the type of your Button
      */
-    as: 'a' | 'button' | 'span',
+    as?: 'a' | 'button' | 'span',
     /**
      * Specify the url for `a` type of your Button
      */
-    url: string,
+    url?: string,
     /**
      * Specify an `icon` to include in the Button through an string (name of the icon) representing the SVG data of the icon, similar to the `Icon` component
      */
@@ -59,7 +59,7 @@ export interface ButtonProps {
  * Buttons are used to initialize an action, either in the background or foreground of an experience.
  */
 export const Button = ({
-                           label,
+                           label = "",
                            disabled = false,
                            lighter = false,
                            outline = false,
@@ -68,6 +68,7 @@ export const Button = ({
                            toggle = false,
                            url,
                            iconPosition = "left",
+                           iconSize = "xs",
                            onClick,
                            ...props
                        }: ButtonProps): JSX.Element => {
@@ -91,7 +92,7 @@ export const Button = ({
         <IconWrap
             color={"white"}
             name={props.icon}
-            size={props.iconSize}
+            size={iconSize}
             iconPosition={iconPosition}
         />
     );

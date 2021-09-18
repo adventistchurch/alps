@@ -22,7 +22,7 @@ export default {
     component: Button,
     argTypes: {
         label: {
-            name: "Text",
+            name: "Label",
             defaultValue: buttonConfig.data.label,
             control: {type: "text"}
         },
