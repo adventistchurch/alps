@@ -1,4 +1,6 @@
 export interface ImageType {
     alt: string,
-    srcSet: any
+    srcSet: any,
+    caption?: string,
+    portrait?: boolean
 }
