@@ -1,6 +1,8 @@
+import {SourceSet} from "./SourceSet";
+
 export interface ImageType {
     alt: string,
-    srcSet: any,
+    srcSet: SourceSet,
     caption?: string,
     portrait?: boolean
 }

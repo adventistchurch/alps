@@ -52,6 +52,7 @@ export interface ButtonProps {
      */
     iconPosition?: "left" | "right",
     onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
+    className?: string
 }
 
 /**
@@ -115,12 +116,14 @@ export const Button = ({
 
     let elementByType: JSX.Element;
 
+    const classes =  props.className ? " " + props.className : '';
+
     switch (props.as) {
         case buttonConfig.asOptions[0]:
             elementByType =
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
-                <a className={buttonClass} href={url} onClick={_onClick}>
+                <a className={buttonClass + classes} href={url} onClick={_onClick}>
                     {labelWithIcon}
                 </a>;
             break;
@@ -128,7 +131,7 @@ export const Button = ({
             elementByType =
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
-                <span className={buttonClass} onClick={_onClick}>
+                <span className={buttonClass + classes} onClick={_onClick}>
                     {labelWithIcon}
                 </span>;
             break;
@@ -136,7 +139,7 @@ export const Button = ({
             elementByType =
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
-                <button className={buttonClass} onClick={_onClick}>
+                <button className={buttonClass + classes} onClick={_onClick}>
                     {labelWithIcon}
                 </button>;
             break;
