@@ -20,3 +20,4 @@ export {BreakoutBlock} from "./molecules/blocks/breackoutBlock/BreakoutBlock";
 export {ContentBlockExpand} from "./molecules/blocks/contentBlockExpand/ContentBlockExpand";
 export {GalleryBlock} from "./molecules/blocks/galleryBlock/GalleryBlock";
 export {HeadingBlock} from "./molecules/blocks/headingBlock/HeadingBlock";
+export {CtaBlock} from "./molecules/blocks/ctaBlock/CtaBlock";
