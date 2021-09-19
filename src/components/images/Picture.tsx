@@ -9,7 +9,14 @@ export interface PictureProps {
 
 export const Picture = ({
                             lazy = false,
-                            image = {srcSet: {}, alt: ''}
+                            image = {
+                                srcSet: {
+                                    default: "",
+                                    500: "",
+                                    750: "",
+                                    1200: ""
+                                }, alt: ''
+                            }
                         }: PictureProps): JSX.Element | null => {
     if (!image || !image.srcSet) return null;
 
@@ -25,6 +32,8 @@ export const Picture = ({
                     <source
                         key={i}
                         media={`(min-width: ${size}px)`}
+                        /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+                        // @ts-ignore
                         srcSet={otherImages[size]}
                     />
                 ))}
