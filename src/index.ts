@@ -15,9 +15,13 @@ export {Image} from "./components/images/Image";
 export {Picture} from "./components/images/Picture";
 export {Video} from "./components/video/Video";
 
-//Molecules
+//Molecules - blocks
 export {BreakoutBlock} from "./molecules/blocks/breackoutBlock/BreakoutBlock";
 export {ContentBlockExpand} from "./molecules/blocks/contentBlockExpand/ContentBlockExpand";
 export {GalleryBlock} from "./molecules/blocks/galleryBlock/GalleryBlock";
 export {HeadingBlock} from "./molecules/blocks/headingBlock/HeadingBlock";
 export {CtaBlock} from "./molecules/blocks/ctaBlock/CtaBlock";
+
+//Molecules - components
+export {Accordion} from "./molecules/components/accordion/Accordion";
+export {Comment} from "./molecules/components/comment/Comment";
