@@ -36,6 +36,22 @@ export default {
             defaultValue: data.comment,
             control: {type: "text"}
         },
+        editUrl: {
+            defaultValue: data.editUrl,
+            control: {type: "text"}
+        },
+        editLabel: {
+            defaultValue: data.editLabel,
+            control: {type: "text"}
+        },
+        replyUrl: {
+            defaultValue: data.replyUrl,
+            control: {type: "text"}
+        },
+        replyLabel: {
+            defaultValue: data.replyLabel,
+            control: {type: "text"}
+        }
     }
 } as Meta;
 
