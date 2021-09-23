@@ -25,3 +25,5 @@ export {CtaBlock} from "./molecules/blocks/ctaBlock/CtaBlock";
 //Molecules - components
 export {Accordion} from "./molecules/components/accordion/Accordion";
 export {Comment} from "./molecules/components/comment/Comment";
+export {Progress} from "./molecules/components/progress/Progress";
+export {ShareTools} from "./molecules/components/share/ShareTools";
