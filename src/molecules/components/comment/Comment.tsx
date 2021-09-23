@@ -35,7 +35,7 @@ export const Comment = ({
     console.log("DATE: " + date);
 
     return (
-        <div className="c-comment--inner u-border--left u-theme--border-color--darker">
+        <div className="c-comment--inner u-border--left u-space--bottom  u-theme--border-color--darker">
             <div className="c-comment__avatar u-space--right">
                 <Image src={avatar} alt={byline}/>
             </div>
