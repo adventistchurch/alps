@@ -1,0 +1,17 @@
+{
+  "heading": "Lorem Ipsum",
+  "subtitle": "Fusce nec urna ut tellus accumsan fermentum.",
+  "dek": "Morbi eleifend, mi et varius imperdiet, nunc magna ullamcorper nibh, vel varius felis dui ac arcu. Vestibulum semper commodo dolor vel congue. Curabitur eleifend ligula ut arcu finibus posuere.",
+  "cta": "Read more",
+  "url": "https://www.adventist.org",
+  "image": {
+    "srcSet": {
+      "default": "//picsum.photos/500/450?image=767",
+      "500": "//picsum.photos/750/400?image=777",
+      "750": "//picsum.photos/1200/800?image=741",
+      "1200": "//picsum.photos/1500/900?image=737"
+    },
+    "alt": "Placeholder image"
+  },
+  "imageIsLazy": false
+}
