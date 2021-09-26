@@ -28,3 +28,4 @@ export {Comment} from "./molecules/components/comment/Comment";
 export {Comments} from "./molecules/components/comments/Comments";
 export {Progress} from "./molecules/components/progress/Progress";
 export {ShareTools} from "./molecules/components/share/ShareTools";
+export {Slide} from "./molecules/components/slide/Slide";
