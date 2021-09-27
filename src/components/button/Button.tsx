@@ -31,6 +31,10 @@ export interface ButtonProps {
      */
     toggle?: boolean,
     /**
+     * Specify whether the Button should be a toggle variant
+     */
+    expand?: boolean,
+    /**
      * Specify the content of your Button
      */
     label?: string;
@@ -67,6 +71,7 @@ export const Button = ({
                            simple = false,
                            small = false,
                            toggle = false,
+                           expand = false,
                            url,
                            iconPosition = "left",
                            iconSize = "xs",
@@ -85,6 +90,7 @@ export const Button = ({
             simple: simple,
             small: small,
             toggle: toggle,
+            expand: expand
         },
         openClass
     );

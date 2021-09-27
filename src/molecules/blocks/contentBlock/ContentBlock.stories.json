@@ -1,0 +1,32 @@
+{
+  "title": "General Conference",
+  "category": "Category",
+  "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
+  "more": "Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole.",
+  "cta": "Find out more",
+  "url": "https://www.adventist.org",
+  "meta": "SOURCE: WWW.ADVENTIST.ORG",
+  "image": {
+    "srcSet": {
+      "Landscape": {
+        "default": "//picsum.photos/480/270",
+        "500": "//picsum.photos/960/540",
+        "750": "//picsum.photos/720/405",
+        "1200": "//picsum.photos/480/270"
+      },
+      "Portrait": {
+        "default": "//picsum.photos/150/200",
+        "500": "//picsum.photos/300/400",
+        "750": "//picsum.photos/450/600",
+        "1200": "//picsum.photos/600/800"
+      },
+      "Square": {
+        "default": "//picsum.photos/100/100",
+        "500": "//picsum.photos/200/200",
+        "750": "//picsum.photos/300/300",
+        "1200": "//picsum.photos/500/500"
+      }
+    },
+    "alt": "Placeholder image"
+  }
+}
