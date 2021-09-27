@@ -5,13 +5,13 @@ import "./colors.scss";
 import {ColorItem} from "./ColorItem";
 
 export const Colors = (): JSX.Element => {
-    const brightColorRows: [] = [];
+    const brightColorRows: JSX.Element[][] = [];
     brightColorRows.push(generateColorRows(colorsConfig.brightColors));
 
-    const mutedColorRows: [] = [];
+    const mutedColorRows: JSX.Element[][] = [];
     mutedColorRows.push(generateColorRows(colorsConfig.mutedColors));
 
-    const neutralsColorRows: [] = [];
+    const neutralsColorRows: JSX.Element[][] = [];
     neutralsColorRows.push(generateColorRows(colorsConfig.neutralsColors));
 
 
@@ -57,16 +57,15 @@ const generateTableItem = (theme: string, hex: string, rgb: string) => {
 }
 
 const generateColorRows = (colors: ColorItem[][]) => {
-    const rows: [] = [];
+    const rows: JSX.Element[] = [];
 
     colors.forEach(row => {
-        const boxes: [] = [];
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
+        const boxes: ColorItem[] = [];
+
         row.forEach(box => boxes.push(box));
 
-        const htmlBoxes: [] = [];
-        const colorsTables: [] = [];
+        const htmlBoxes: JSX.Element[] = [];
+        const colorsTables: JSX.Element[] = [];
 
         boxes.forEach(box => {
 
@@ -80,11 +79,11 @@ const generateColorRows = (colors: ColorItem[][]) => {
                             {group}
                         </h3>
                         <table width={"100%"} className={"colors-table"}>
-                            {generateTableItem(box.name + " - Darker", box.color_1, box.rgb_1)}
-                            {generateTableItem(box.name + " - Dark", box.color_2, box.rgb_2)}
+                            {box.rgb_1 && generateTableItem(box.name + " - Darker", box.color_1, box.rgb_1)}
+                            {box.color_2 && box.rgb_2 && generateTableItem(box.name + " - Dark", box.color_2, box.rgb_2)}
                             {generateTableItem(box.name + " - Base", box.color_3, box.rgb)}
-                            {generateTableItem(box.name + " - Light", box.color_4, box.rgb_4)}
-                            {generateTableItem(box.name + " - Lighter", box.color_5, box.rgb_5)}
+                            {box.color_4 && box.rgb_4 && generateTableItem(box.name + " - Light", box.color_4, box.rgb_4)}
+                            {box.color_5 && box.rgb_5 && generateTableItem(box.name + " - Lighter", box.color_5, box.rgb_5)}
                         </table>
                         <br/>
                         <hr/>
@@ -99,13 +98,13 @@ const generateColorRows = (colors: ColorItem[][]) => {
                     <div className={"box-1"} style={{backgroundColor: box.color_3}}/>
                     <div className="colors-list">
                         {box.color_1 &&
-                            <>
-                                <div className={"colors-item"} style={{backgroundColor: box.color_1}}/>
-                                <div className={"colors-item"} style={{backgroundColor: box.color_2}}/>
-                                <div className={"colors-item"} style={{backgroundColor: box.color_3}}/>
-                                <div className={"colors-item"} style={{backgroundColor: box.color_4}}/>
-                                <div className={"colors-item"} style={{backgroundColor: box.color_5}}/>
-                            </>
+                        <>
+                            <div className={"colors-item"} style={{backgroundColor: box.color_1}}/>
+                            <div className={"colors-item"} style={{backgroundColor: box.color_2}}/>
+                            <div className={"colors-item"} style={{backgroundColor: box.color_3}}/>
+                            <div className={"colors-item"} style={{backgroundColor: box.color_4}}/>
+                            <div className={"colors-item"} style={{backgroundColor: box.color_5}}/>
+                        </>
                         }
                     </div>
                     <div className={"box-3"}>
