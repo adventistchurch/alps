@@ -1,0 +1,25 @@
+{
+  "title": "Learn more",
+  "items": [
+    {
+      "text": "Adventist.org",
+      "url": "https://adventist.org"
+    },
+    {
+      "text": "Adventist Mission",
+      "url": "https://www.adventistmission.org"
+    },
+    {
+      "text": "ADRA",
+      "url": "https://www.adra.org"
+    },
+    {
+      "text": "Adventist World Radio",
+      "url": "https://awr.org"
+    },
+    {
+      "text": "Hope Channel",
+      "url": "https://hopetv.org"
+    }
+  ]
+}
