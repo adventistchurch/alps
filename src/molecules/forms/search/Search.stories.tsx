@@ -4,7 +4,7 @@ import {Search, SearchProps} from "./Search";
 import data from "./Search.stories.json";
 
 export default {
-    title: "molecules/froms/Search",
+    title: "molecules/forms/Search",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

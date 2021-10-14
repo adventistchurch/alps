@@ -3,12 +3,14 @@ import {Grid} from "./Grid";
 
 export interface GridSevenProps {
     children?: React.ReactNode,
-    inner?: boolean
+    inner?: boolean,
+    className?: string,
+    onClick?: () => void
 }
 
-export const GridSeven = ({children, inner, ...props}: GridSevenProps): JSX.Element => {
+export const GridSeven = ({children, inner, className, onClick}: GridSevenProps): JSX.Element => {
     return (
-        <Grid {...props} seven sevenInner={inner}>
+        <Grid className={className} seven sevenInner={inner}>
             {children}
         </Grid>
     )

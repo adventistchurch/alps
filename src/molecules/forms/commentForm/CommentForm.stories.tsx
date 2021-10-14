@@ -4,7 +4,7 @@ import data from "./CommentForm.stories.json";
 import {CommentForm, CommentFormProps} from "./CommentForm";
 
 export default {
-    title: "molecules/froms/Comment Form",
+    title: "molecules/forms/Comment Form",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

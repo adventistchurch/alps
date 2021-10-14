@@ -4,7 +4,7 @@ import data from "./InlineForm.stories.json";
 import {InlineForm, InlineFormProps} from "./InlineForm";
 
 export default {
-    title: "molecules/froms/Inline Form",
+    title: "molecules/forms/Inline Form",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

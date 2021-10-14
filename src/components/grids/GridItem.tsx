@@ -9,6 +9,7 @@ interface GridItemProps {
     sizeAtM?: string,
     sizeAtS?: string,
     sizeAtXL?: string,
+    className?: string
 }
 
 export const GridItem = ({
@@ -19,7 +20,7 @@ export const GridItem = ({
                              sizeAtM,
                              sizeAtS,
                              sizeAtXL,
-                             ...props
+                             className
                          }: GridItemProps): JSX.Element => {
 
     const classes = getGridItemClass({
@@ -32,7 +33,7 @@ export const GridItem = ({
     }).toString().replaceAll(",", " ");
 
     return (
-        <div className={classes} {...props}>
+        <div className={className + " " + classes}>
             {children}
         </div>
     )
