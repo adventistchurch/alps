@@ -1,0 +1,13 @@
+{
+  "placeholder": "Search...",
+  "submitLabel": "Search",
+  "title": "Search",
+  "suggestions": [
+    { "key": "abc1", "text": "Hi", "href": "#" },
+    { "key": "abc2", "text": "Hello", "href": "#" },
+    { "key": "abc3", "text": "Hola", "href": "#" },
+    { "key": "abc4", "text": "Hallo", "href": "#" },
+    { "key": "abc5", "text": "Hallo", "href": "#" },
+    { "key": "abc6", "text": "Hallooo", "href": "#" }
+  ]
+}
