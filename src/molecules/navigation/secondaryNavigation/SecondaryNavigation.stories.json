@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "text": "Language",
+      "icon": "language",
+      "url": "#",
+      "subnav": [
+        {
+          "text": "English",
+          "url": "/en"
+        },
+        {
+          "text": "Español",
+          "url": "/es"
+        },
+        {
+          "text": "Português",
+          "url": "/pt"
+        },
+        {
+          "text": "Français",
+          "url": "/fr"
+        }
+      ]
+    },
+    {
+      "text": "Sitemap",
+      "icon": "subscribe",
+      "url": "#"
+    },
+    {
+      "text": "Find a Church",
+      "icon": "find",
+      "url": "#"
+    },
+    {
+      "text": "Contact",
+      "icon": "contact",
+      "url": "#"
+    },
+    {
+      "text": "Press",
+      "icon": "heart",
+      "url": "#"
+    }
+  ],
+  "itemsWithSubmenu": [
+    {
+      "text": "Sitemap",
+      "icon": "subscribe",
+      "url": "#",
+      "subnav": [
+        {
+          "text": "Find a Church",
+          "icon": "find",
+          "url": "#"
+        },
+        {
+          "text": "Contact",
+          "icon": "contact",
+          "url": "#"
+        },
+        {
+          "text": "Press",
+          "icon": "heart",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Contact",
+      "icon": "subscribe",
+      "url": "#",
+      "subnav": [
+        {
+          "text": "Find a Church",
+          "icon": "find",
+          "url": "#"
+        },
+        {
+          "text": "Contact",
+          "icon": "contact",
+          "url": "#"
+        },
+        {
+          "text": "Press",
+          "icon": "heart",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "text": "Find a Church",
+      "icon": "find",
+      "url": "#",
+      "subnav": [
+        {
+          "text": "Find a Church",
+          "icon": "find",
+          "url": "#"
+        },
+        {
+          "text": "Contact",
+          "icon": "contact",
+          "url": "#"
+        },
+        {
+          "text": "Press",
+          "icon": "heart",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "languageLabel": "Language"
+}

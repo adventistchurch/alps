@@ -1,6 +1,6 @@
 import React, {useCallback, useMemo, useState} from 'react'
-import {SubNavArrow} from "../primaryNavItem/SubNavArrow";
-import {SubNav} from "../primaryNavItem/SubNav";
+import {SubNavArrow} from "./SubNavArrow";
+import {SubNav} from "./SubNav";
 
 const statuses = {
     closed: {menu: false, search: false},

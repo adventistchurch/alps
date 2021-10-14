@@ -1,6 +1,6 @@
 import React from 'react'
 import renderItems from "../../../helpers/renderItems";
-import {PrimaryNavItem} from "../primaryNavigation/PrimaryNavItem";
+import {PrimaryNavItem} from "../primaryNavItem/PrimaryNavItem";
 
 interface PrimaryNavBaseProps {
     children?: React.ReactNode,

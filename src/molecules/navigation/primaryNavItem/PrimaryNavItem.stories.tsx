@@ -1,9 +1,9 @@
 import React from 'react';
 import {Meta, Story} from "@storybook/react";
-import {PrimaryNavItem, PrimaryNavItemProps} from "../primaryNavigation/PrimaryNavItem";
+import {PrimaryNavItem, PrimaryNavItemProps} from "./PrimaryNavItem";
 
 import data from "./PrimaryNavItem.stories.json";
-import {PrimaryNavBase} from "./PrimaryNavigation";
+import {PrimaryNavBase} from "../primaryNavigation/PrimaryNavigation";
 
 interface HeaderSimulatorProps {
     children?: React.ReactNode
