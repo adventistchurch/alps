@@ -2,12 +2,13 @@ import React from 'react';
 import {themeColorClass} from "../../global/colors";
 
 export interface KickerProps {
-    content: string
+    content: string,
+    color?: string
 }
 
-export const Kicker = ({content}: KickerProps): JSX.Element => {
+export const Kicker = ({content, color = "base"}: KickerProps): JSX.Element => {
     return (
-        <span className={themeColorClass + "--base"}>
+        <span className={themeColorClass + `--${color}`}>
             <em>{content}</em>
         </span>
     );

@@ -1,0 +1,41 @@
+{
+  "placeholder": "Search...",
+  "searchAgainLabel": "Search Again",
+  "searchLabel": "Search",
+  "filters": [
+    {
+      "title": "Media",
+      "options": [
+        {
+          "id": 1,
+          "checked": true,
+          "type": "checkbox",
+          "name": "Option 1",
+          "value": "Option 1"
+        },
+        {
+          "id": 2,
+          "type": "checkbox",
+          "name": "Option 2",
+          "value": "Option 2"
+        }
+      ]
+    }
+  ],
+  "sorting": {
+    "title": "Sort By",
+    "options": [
+      {
+        "id": 1,
+        "checked": true,
+        "name": "Option 1",
+        "value": "Option 1"
+      },
+      {
+        "id": 2,
+        "name": "Option 2",
+        "value": "Option 2"
+      }
+    ]
+  }
+}

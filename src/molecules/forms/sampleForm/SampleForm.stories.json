@@ -1,0 +1,100 @@
+{
+  "title": "Form header",
+  "submitLabel": "Submit Form",
+  "cancelLabel": "Cancel",
+  "form": {
+    "title": "Form header",
+    "fields": [
+      {
+        "type": "title",
+        "fontSize": "m",
+        "fontType": "secondary",
+        "text": "Form header",
+        "themeColor": "darker"
+      },
+      {
+        "type": "text",
+        "label": "Name",
+        "name": "name"
+      },
+      {
+        "type": "text",
+        "label": "Form",
+        "labelOptional": "Optional",
+        "name": "optional"
+      },
+      {
+        "type": "text",
+        "label": "Error Label",
+        "name": "error",
+        "error": "This field is required"
+      },
+      {
+        "type": "textarea",
+        "label": "Your Comments",
+        "name": "comments",
+        "placeholder": "Enter a comment",
+        "rows": 8
+      },
+      {
+        "type": "checkbox-group",
+        "title": "Select many options",
+        "options": [
+          {
+            "label": "Option 1",
+            "name": "checkbox-one",
+            "value": "checkbox-one"
+          },
+          {
+            "label": "Option 2",
+            "name": "checkbox-two",
+            "value": "checkbox-two"
+          }
+        ]
+      },
+      {
+        "type": "radio-group",
+        "title": "Select one option",
+        "options": [
+          {
+            "checked": true,
+            "label": "Option 1",
+            "name": "radio",
+            "value": "radio-one"
+          },
+          {
+            "label": "Option 2",
+            "name": "radio",
+            "value": "radio-two"
+          },
+          {
+            "label": "Option 3",
+            "name": "radio",
+            "value": "radio-three"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "label": "Select from this list:",
+        "name": "select",
+        "options": [
+          { "text": "Option 1", "value": "one" },
+          { "text": "Option 2", "value": "two" },
+          { "text": "Option 3", "value": "three" },
+          { "text": "Option 4", "value": "four" }
+        ],
+        "hideNone": true
+      },
+      {
+        "type": "button",
+        "text": "Submit Form"
+      },
+      {
+        "type": "button",
+        "text": "Cancel",
+        "simple": true
+      }
+    ]
+  }
+}
