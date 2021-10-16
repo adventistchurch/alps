@@ -12,8 +12,9 @@ export interface TextFieldProps {
     labelSpacing?: string,
     name: string,
     placeholder?: string,
-    type?: "email" | "password" | "search" | "text" | "number" | "checkbox",
-    value?: string
+    type?: "email" | "password" | "search" | "text" | "number" | "checkbox" | "textarea",
+    value?: string,
+    rows?: number
 }
 
 export const TextField = ({
@@ -21,6 +22,8 @@ export const TextField = ({
                               labelOptional,
                               labelClass,
                               labelSpacing,
+                              type = "text",
+                              rows,
                               ...props
                           }: TextFieldProps): JSX.Element => {
 
@@ -33,14 +36,16 @@ export const TextField = ({
             textOptional={labelOptional}
             // spacing={labelSpacing}
         >
-            <BaseInput {...props} />
+            {type === "textarea" ?
+                <textarea
+                    aria-required={true}
+                    name="comment"
+                    required={true}
+                    rows={rows}
+                    placeholder={props.placeholder}
+                />
+                : <BaseInput {...props} type={type}/>}
         </FormLabel>
     )
 }
 
-TextField.propTypes = {}
-TextField.defaultProps = {
-    type: "text",
-}
-
-export default TextField

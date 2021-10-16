@@ -14,7 +14,7 @@ export interface BaseInputProps {
     value?: string
 }
 
-export const BaseInput = ({checked, error, type = "text", value, hasFocus = false}: BaseInputProps): JSX.Element => {
+export const BaseInput = ({checked, error, type = "text", value, hasFocus = false, name, placeholder}: BaseInputProps): JSX.Element => {
     const inputClass = useClasses("form-input", {
         "has-error": !!error,
     })
@@ -29,7 +29,9 @@ export const BaseInput = ({checked, error, type = "text", value, hasFocus = fals
             defaultChecked: checked,
             defaultValue: value,
             ref: inputFocusRef,
-            type
+            type,
+            name: name,
+            placeholder: placeholder
         },
         isTextArea ? value : null
     )

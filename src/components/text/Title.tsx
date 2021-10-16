@@ -29,7 +29,7 @@ export const Title = ({
                           className
                       }: TitleProps): JSX.Element => {
 
-    const classes = getFontClass(fontSize, fontType) + " " + getBaseClass(themeColorClass, [themeColor]) + " " + className;
+    const classes = getFontClass(fontSize, fontType) + " " + getBaseClass(themeColorClass, [themeColor]) + " " + (className ? className : "");
 
     let elementByType: JSX.Element;
 

@@ -5,7 +5,7 @@ import useToggle from "../../../helpers/useToggle";
 import {getGridItemClass} from "../../../global/grids";
 import {Form} from "./Form";
 import {Button} from "../../../components/button/Button";
-import {Suggestions} from "./Suggestions";
+import {Suggestions, SuggestionsItem} from "./Suggestions";
 import {FilterGroup} from "./FilterGroup";
 
 export interface BaseSearchProps {
@@ -17,9 +17,10 @@ export interface BaseSearchProps {
     searchLabel?: string,
     showSearchAgain?: boolean,
     sorting?: [],
-    suggestions?: [],
+    suggestions?: SuggestionsItem[],
     term?: string,
-    className?: string
+    className?: string,
+    isSearchHeader?: boolean
 }
 
 export const BaseSearch = ({
@@ -32,15 +33,21 @@ export const BaseSearch = ({
                                showSearchAgain,
                                sorting,
                                suggestions,
-                               term
+                               term,
+                               isSearchHeader = false
                            }: BaseSearchProps): JSX.Element => {
     const {onToggle, openClass} = useToggle(false, "c-filter-is-active", "");
 
+    const defaultClasses = "l-field-container u-spacing";
+    const isHeaderClasses = "l-grid l-grid--7-col u-shift--left--1-col--at-medium";
+
     return (
-        <div className={`c-filter ${openClass} u-background-color--gray--light u-padding u-spacing u-border--left l-field-container u-theme--border-color--darker`}>
+        <div
+            className={`c-filter ${openClass} u-background-color--gray--light ${isSearchHeader ? "u-padding--double--bottom u-padding--double--top" : "u-padding u-spacing u-border--left l-field-container u-theme--border-color--darker"}`}>
             <Form className="c-filter__search" role="search" onSubmit={onSubmit}>
-                <div className={"l-field-container u-spacing"}>
-                    <div>
+                <div
+                    className={isSearchHeader ? isHeaderClasses : defaultClasses}>
+                    <div className={isSearchHeader ? "l-grid-item l-grid-item--m--3-col" : ""}>
                         <div style={{position: "relative"}}>
                             <input
                                 className="o-input__search u-color--gray u-font--secondary--s u-theme--color--darker"
@@ -75,12 +82,14 @@ export const BaseSearch = ({
                 </div>
                 {(filters || sorting) && (
                     <div className="c-filter__form u-padding--top">
-                        <div className={"l-field-container u-spacing"}>
+                        <div className={isSearchHeader ? isHeaderClasses : defaultClasses}>
                             {filters && renderItems(filters, FilterGroup, "")}
                             {sorting && renderItems([sorting], FilterGroup, "")}
                             {showSearchAgain && (
-                                <div
-                                    className={getGridItemClass({noItemClass: true, size: "7"}) + " u-spacing--medium"}>
+                                <div className={`${getGridItemClass({
+                                    noItemClass: true,
+                                    size: "7"
+                                })}  u-space--after-medium`}>
                                     <Button
                                         icon="search"
                                         iconSize="xs"

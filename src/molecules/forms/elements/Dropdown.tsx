@@ -12,7 +12,7 @@ export interface DropdownProps {
     labelOptional?: string,
     labelClass?: string,
     name: string,
-    options: {text: string, value: number}[],
+    options: {text: string, value: number | string}[],
     noneLabel?: React.ReactNode,
     noneValue?: any,
     darkMode?: boolean

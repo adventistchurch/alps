@@ -1,0 +1,61 @@
+{
+  "placeholder": "Search...",
+  "searchAgainLabel": "Search Again",
+  "searchLabel": "Search",
+  "suggestions": [
+    { "key": "abc1", "text": "Hi", "href": "#" },
+    { "key": "abc2", "text": "History", "href": "#" },
+    { "key": "abc3", "text": "Hello", "href": "#" },
+    { "key": "abc4", "text": "Hola", "href": "#" },
+    { "key": "abc5", "text": "Hallo", "href": "#" }
+  ],
+  "filters": [
+    {
+      "title": "Media",
+      "options": [
+        {
+          "id": 1,
+          "name": "Option 1",
+          "value": "Option 1"
+        },
+        {
+          "id": 2,
+          "name": "Option 2",
+          "value": "Option 2"
+        }
+      ]
+    },
+    {
+      "title": "Category",
+      "options": [
+        {
+          "id": 1,
+          "type": "checkbox",
+          "name": "Option 1",
+          "value": "Option 1"
+        },
+        {
+          "id": 2,
+          "type": "checkbox",
+          "name": "Option 2",
+          "value": "Option 2"
+        }
+      ]
+    },
+    {
+      "title": "Category",
+      "options": [
+        {
+          "id": 1,
+          "name": "Option 1",
+          "value": "Option 1"
+        },
+        {
+          "id": 2,
+          "name": "Option 2",
+          "value": "Option 2"
+        }
+      ]
+    }
+  ]
+}

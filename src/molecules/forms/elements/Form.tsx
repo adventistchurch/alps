@@ -5,7 +5,7 @@ import {Dropdown} from "./Dropdown";
 import {Button} from "../../../components/button/Button";
 import {darkThemeClass, themeBackgroundClass} from "../../../global/colors";
 import {OptionGroup} from "./OptionGroup";
-import TextField from "./TextField";
+import {TextField} from "./TextField";
 import Title from "../../../components/text/Title";
 import {getBaseClass} from "../../../global/commons";
 
@@ -70,7 +70,7 @@ export const Form = ({
         className
     )
 
-    const formFields = useFormFields(fields, children)
+    const formFields = useFormFields(fields, children);
 
     const _onSubmit = useCallback(
         e => {
@@ -88,9 +88,9 @@ export const Form = ({
             {title ? (
                 typeof title === "string" ? (
                     <Title
+                        className={"u-text--strong"}
                         color={darkMode ? "white" : null}
                         fontSize="l"
-                        strong
                         text={title}
                         //eslint-disable-next-line @typescript-eslint/ban-ts-comment
                         // @ts-ignore
