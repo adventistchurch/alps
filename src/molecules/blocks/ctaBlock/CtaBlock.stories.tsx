@@ -4,7 +4,7 @@ import {Meta, Story} from "@storybook/react";
 import {CtaBlock, CtaBlockProps} from "./CtaBlock";
 
 export default {
-    title: "molecules/Blocks/CTA Block",
+    title: "molecules/blocks/CTA Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

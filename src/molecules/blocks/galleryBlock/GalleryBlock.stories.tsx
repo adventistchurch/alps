@@ -4,7 +4,7 @@ import {Meta, Story} from "@storybook/react";
 import {GalleryBlock, GalleryBlockProps} from "./GalleryBlock";
 
 export default {
-    title: "molecules/Blocks/Gallery Block",
+    title: "molecules/blocks/Gallery Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

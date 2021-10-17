@@ -1,0 +1,13 @@
+{
+  "caption": "Proin dictum lobortis luctus.",
+  "videoSrc": "https://player.vimeo.com/video/137487821?color=ffffff&title=0&byline=0&portrait=0",
+  "image": {
+    "alt": "Placeholder image",
+    "srcSet": {
+      "default": "//picsum.photos/500/282",
+      "500": "//picsum.photos/900/507",
+      "750": "//picsum.photos/700/395",
+      "1200": "//picsum.photos/500/282"
+    }
+  }
+}

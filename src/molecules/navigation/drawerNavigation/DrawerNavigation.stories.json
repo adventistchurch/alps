@@ -1,0 +1,13 @@
+{
+  "aboutLeft": "Tell the world is an offical media production of the Seventh-day Adventist world church.",
+  "aboutRight": "Seventh-day Adventists are devoted to helping people understand the Bible to find freedom, healing and hope.",
+
+  "defaultTerm": "Hi",
+  "suggestions": [
+    { "key": "abc1", "text": "Hi", "href": "#" },
+    { "key": "abc2", "text": "History", "href": "#" },
+    { "key": "abc3", "text": "Hello", "href": "#" },
+    { "key": "abc4", "text": "Hola", "href": "#" },
+    { "key": "abc5", "text": "Hallo", "href": "#" }
+  ]
+}

@@ -4,7 +4,7 @@ import {Meta, Story} from "@storybook/react";
 import {ContentBlock, ContentBlockProps} from "./ContentBlock";
 
 export default {
-    title: "molecules/Blocks/Content Block",
+    title: "molecules/blocks/Content Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

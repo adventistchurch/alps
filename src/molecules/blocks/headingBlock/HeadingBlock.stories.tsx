@@ -4,7 +4,7 @@ import {Meta, Story} from "@storybook/react";
 import {HeadingBlock, HeadingBlockProps} from "./HeadingBlock";
 
 export default {
-    title: "molecules/Blocks/Heading Block",
+    title: "molecules/blocks/Heading Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

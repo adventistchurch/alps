@@ -1,0 +1,11 @@
+{
+  "title": "Lorem Ipsum",
+  "description": "Fusce nec urna ut tellus accumsan fermentum.",
+  "srcSet": {
+    "default": "//picsum.photos/500/800",
+    "500": "//picsum.photos/700/800",
+    "700": "//picsum.photos/1200/800",
+    "1200": "//picsum.photos/1500/900"
+  },
+  "caption": "Proin dictum lobortis luctus."
+}

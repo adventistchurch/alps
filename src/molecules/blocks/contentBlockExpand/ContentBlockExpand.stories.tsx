@@ -4,7 +4,7 @@ import {Meta, Story} from "@storybook/react";
 import {ContentBlockExpand, ContentBlockExpandProps} from "./ContentBlockExpand";
 
 export default {
-    title: "molecules/Blocks/Content Block Expand",
+    title: "molecules/blocks/Content Block Expand",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'

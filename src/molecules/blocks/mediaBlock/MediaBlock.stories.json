@@ -1,0 +1,19 @@
+{
+  "title": "Adventist leaders call for international cooperation to end abuse of refugees in Libya",
+  "titlePrefix": "Breaking",
+  "description": "Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.",
+  "date": "2019-02-09 12:32:23",
+  "category": "Culture",
+  "cta": "Find out more",
+  "ctaIcon": "arrow-long-right",
+  "url": "https://www.adventist.org",
+  "kicker": "Eligendi quod dolorem",
+  "image": {
+    "alt": "Eligendi quod dolorem",
+    "srcSet": {
+      "default": "https://picsum.photos/480/360/",
+      "500": "https://picsum.photos/720/540/",
+      "900": "https://picsum.photos/960/720/"
+    }
+  }
+}
