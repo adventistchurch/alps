@@ -1,0 +1,33 @@
+{
+  "heading": "Related Stories",
+  "linkText": "More stories",
+  "url": "#",
+  "blocks": [
+    {
+      "title": "Mauris at ante laoreet, gravida odio gravida, fermentum lectus ",
+      "category": "Culture",
+      "image": {
+        "srcSet": {
+          "default": "//picsum.photos/300/200?random",
+          "500": "//picsum.photos/400/300?random",
+          "750": "//picsum.photos/600/400?random",
+          "1200": "//picsum.photos/900/600?random"
+        },
+        "alt": "A nostrum labore"
+      }
+    },
+    {
+      "title": "Proin sed nisl ac velit aliquam euismod non tincidunt lectus ",
+      "category": "Culture",
+      "image": {
+        "srcSet": {
+          "default": "//picsum.photos/300/200?random",
+          "500": "//picsum.photos/400/300?random",
+          "750": "//picsum.photos/600/400?random",
+          "1200": "//picsum.photos/900/600?random"
+        },
+        "alt": "At praesentium doloribus"
+      }
+    }
+  ]
+}

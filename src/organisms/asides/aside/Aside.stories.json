@@ -1,0 +1,69 @@
+{
+  "media": {
+    "title": "News",
+    "linkLabel": "See All",
+    "linkUrl": "#/news/all",
+    "items": [
+      {
+        "title": "Sed quod corrupti qui reiciendis qui sequi iure deleniti atque.",
+        "description": "Quidem ab magnam quae cumque dolorum ipsam totam facilis totam. Et atque eum quis temporibus voluptates itaque excepturi quo facere. Ea ab ut minima voluptatum animi consequatur rerum. ",
+        "category": "Culture",
+        "date": "2019-04-17",
+        "url": "#/news/article-aside-1",
+        "image": {
+          "srcSet": {
+            "default": "//picsum.photos/300/200?random",
+            "500": "//picsum.photos/400/300?random",
+            "750": "//picsum.photos/600/400?random",
+            "1200": "//picsum.photos/900/600?random"
+          },
+          "alt": "Placeholder image"
+        }
+      },
+      {
+        "title": "Nulla finibus ligula ut nisl facilisis",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aliquam est hic hic esse libero. Et non qui ut et.",
+        "category": "Culture",
+        "date": "2019-08-24",
+        "url": "#/news/article-aside-2",
+        "image": {
+          "srcSet": {
+            "default": "//picsum.photos/300/200?random",
+            "500": "//picsum.photos/400/300?random",
+            "750": "//picsum.photos/600/400?random",
+            "1200": "//picsum.photos/900/600?random"
+          },
+          "alt": "Placeholder image"
+        }
+      }
+    ]
+  },
+  "comments": {
+    "title": "Comments",
+    "linkLabel": "See All",
+    "linkUrl": "#/news/all",
+    "items": [
+      {
+        "title": "Dicta maxime enim impedit harum et nulla praesentium aut.",
+        "date": "2019-02-09",
+        "url": "#/news/article-aside-3",
+        "category": "Culture"
+      },
+      {
+        "title": "Fugiat sit iusto error quo numquam sed qui quos.",
+        "url": "#/news/article-aside-4",
+        "category": "Family"
+      },
+      {
+        "title": "Dignissimos iusto commodi nostrum enim nostrum est ut.",
+        "url": "#/news/article-aside-5",
+        "category": "Kids"
+      },
+      {
+        "title": "Aenean quis velit vel nibh commodo elementum",
+        "url": "#/news/article-aside-6",
+        "category": "Church"
+      }
+    ]
+  }
+}
