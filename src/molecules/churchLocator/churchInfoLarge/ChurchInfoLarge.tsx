@@ -59,6 +59,7 @@ export const ChurchInfoLarge = ({
                     })}
                 </div>
                 <Button
+                    className={"c-church-info__btn"}
                     icon={"arrow-short-left"}
                     label={buttonLabel}
                     outline={true}

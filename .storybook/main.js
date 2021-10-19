@@ -13,7 +13,7 @@ module.exports = {
                 backgrounds: false,
                 controls: true,
                 docs: true,
-                viewport: false,
+                viewport: true,
                 toolbars: false
             }
         },

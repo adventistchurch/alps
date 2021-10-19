@@ -2644,7 +2644,7 @@
     "core-js" "^3.8.2"
     "regenerator-runtime" "^0.13.7"
 
-"@storybook/addon-viewport@6.3.8":
+"@storybook/addon-viewport@^6.3.8", "@storybook/addon-viewport@6.3.8":
   "integrity" "sha512-aHGg1jWqJdncrB7YuAYIk+T2WLlGhcL/mBHYjIYnUWP4jtilW5QLUVr/kOBB0JlLx1v9hrKMsItJQMAP9jN+mw=="
   "resolved" "https://registry.npmjs.org/@storybook/addon-viewport/-/addon-viewport-6.3.8.tgz"
   "version" "6.3.8"
