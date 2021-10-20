@@ -1,0 +1,8 @@
+{
+    "title": "YAKS AND SHEEP GIFT",
+    "optionsLabel": "Select one option",
+    "options": ["$55", "$20"],
+    "chooseAmountLabel": "Choose your own amount",
+    "chooseAmountDesc": "Enter your donation amount below",
+    "buttonLabel": "Add to cart"
+}

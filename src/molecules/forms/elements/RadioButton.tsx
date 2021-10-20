@@ -1,4 +1,4 @@
-import React from "react";
+import React, {MouseEventHandler} from "react";
 import {FormLabel} from "./FormLabel";
 import {BaseInput} from "./BaseInput";
 
@@ -12,7 +12,8 @@ export interface RadioButtonProps {
     labelSpacing?: string,
     name: string,
     placeholder?: string,
-    value?: string
+    value?: string,
+    onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
 }
 
 export const RadioButton = ({
@@ -27,6 +28,7 @@ export const RadioButton = ({
                                 value,
                                 ...props
                             }: RadioButtonProps): JSX.Element => {
+
     return (
         <FormLabel
             className={labelClass}

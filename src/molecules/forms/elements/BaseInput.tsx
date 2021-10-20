@@ -1,4 +1,4 @@
-import React from "react";
+import React, {MouseEventHandler} from "react";
 
 import useClasses from "../../../helpers/useClasses";
 import useInputFocus from "../../../helpers/useInputFocus";
@@ -11,10 +11,11 @@ export interface BaseInputProps {
     name?: string,
     placeholder?: string,
     type?: "checkbox" | "email" | "password" | "number" | "radio" | "search" | "text" | "textarea",
-    value?: string
+    value?: string,
+    onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void
 }
 
-export const BaseInput = ({checked, error, type = "text", value, hasFocus = false, name, placeholder}: BaseInputProps): JSX.Element => {
+export const BaseInput = ({checked, error, type = "text", value, hasFocus = false, name, placeholder, onClick}: BaseInputProps): JSX.Element => {
     const inputClass = useClasses("form-input", {
         "has-error": !!error,
     })
@@ -31,7 +32,8 @@ export const BaseInput = ({checked, error, type = "text", value, hasFocus = fals
             ref: inputFocusRef,
             type,
             name: name,
-            placeholder: placeholder
+            placeholder: placeholder,
+            onClick: isTextArea ? null : onClick
         },
         isTextArea ? value : null
     )

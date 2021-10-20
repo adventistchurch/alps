@@ -81,6 +81,7 @@ logos.argTypes = {
 const argsTypeForSingleIcon = (name: string) => {
     return {
         name: {
+            defaultValue: name,
             table: {disable: true}
         }
     }
