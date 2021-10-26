@@ -1,0 +1,124 @@
+{
+  "title": "IMPORTANT PRODUCTS",
+  "items": [
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "title": "TITLE",
+      "content": "Standart honor ashes pathfinder clubs. Order in\n                    bulk to receive shipping discounts",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "tags": [
+        "Indoor survival",
+        "trending"
+      ]
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "title": "TITLE",
+      "content": "Standart honor ashes pathfinder clubs. Order in\n                    bulk to receive shipping discounts",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "tags": [
+        "Indoor survival",
+        "trending"
+      ]
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "title": "TITLE",
+      "content": "Standart honor ashes pathfinder clubs. Order in\n                    bulk to receive shipping discounts",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "tags": [
+        "Indoor survival",
+        "trending"
+      ]
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "title": "TITLE",
+      "content": "Standart honor ashes pathfinder clubs. Order in\n                    bulk to receive shipping discounts",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "tags": [
+        "Indoor survival",
+        "trending"
+      ]
+    }
+  ],
+  "listItems": [
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "content": "Standart honor ashes pathfinder clubs. Order in\n                    bulk to receive shipping discounts",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "tags": [
+        "Indoor survival",
+        "trending"
+      ]
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "title": "TITLE",
+      "productName": "Product",
+      "author": "Artist Patch",
+      "tags": [
+        "Indoor survival",
+        "trending"
+      ]
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "tags": [
+        "Indoor survival",
+        "trending"
+      ]
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "price": 3.5,
+      "author": "Artist Patch",
+      "tags": [
+        "Best Price"
+      ]
+    }
+  ],
+  "rowList": [
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "buttonLabel": "Add"
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "buttonLabel": "Add"
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "buttonLabel": "Add"
+    },
+    {
+      "image": "https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg",
+      "price": 3.5,
+      "productName": "Product",
+      "author": "Artist Patch",
+      "buttonLabel": "Add"
+    }
+  ]
+}
