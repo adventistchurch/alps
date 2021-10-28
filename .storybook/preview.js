@@ -4,52 +4,54 @@ import {ArgsTable, Description, Primary, PRIMARY_STORY, Stories, Subtitle, Title
 import React from "react";
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    // matchers: {
-    //   color: /(background|color)$/i,
-    //   date: /Date$/,
-    // },
-    expanded: true
-  },
-  html: {
-    prettier: {
-      tabWidth: 2,
-      useTabs: false,
-      jsxBracketSameLine: false,
-      htmlWhitespaceSensitivity: 'ignore',
+    actions: {argTypesRegex: "^on[A-Z].*"},
+    controls: {
+        // matchers: {
+        //   color: /(background|color)$/i,
+        //   date: /Date$/,
+        // },
+        expanded: true
     },
-  },
-  themes: {
-    default: 'Ming',
-    list: primaryColorsThemes,
-  },
-  options: {
-    storySort: {
-      order: [
-        'Introduction',
-        [
-          'Installation',
-          'Using the library',
-          "What's new",
-          'Support and Feedback'
-        ],
-        'Documentation',
-        'Components',
-      ],
+    html: {
+        prettier: {
+            tabWidth: 2,
+            useTabs: false,
+            jsxBracketSameLine: false,
+            htmlWhitespaceSensitivity: 'ignore',
+        },
     },
-  },
-  docs: {
-    // eslint-disable-next-line react/display-name
-    page: () => (
-        <>
-          <Title />
-          <Subtitle />
-          <Description />
-          <Primary />
-          <ArgsTable story={PRIMARY_STORY} />
-          <Stories />
-        </>
-    ),
-  }
+    themes: {
+        default: 'Ming',
+        list: primaryColorsThemes,
+    },
+    options: {
+        storySort: {
+            order: [
+                'Introduction',
+                [
+                    'Installation',
+                    'Using the library',
+                    "What's new",
+                    'Support and Feedback'
+                ],
+                'Documentation',
+                'Components',
+                'Molecules',
+                'Organisms',
+            ],
+        },
+    },
+    docs: {
+        // eslint-disable-next-line react/display-name
+        page: () => (
+            <>
+                <Title/>
+                <Subtitle/>
+                <Description/>
+                <Primary/>
+                <ArgsTable story={PRIMARY_STORY}/>
+                <Stories/>
+            </>
+        ),
+    }
 }
