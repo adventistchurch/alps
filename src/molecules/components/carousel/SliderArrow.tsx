@@ -1,5 +1,6 @@
-import React from 'react'
-import {themeColorClass} from "../global/colors";
+import React from "react";
+import {getBaseClass} from "../../../global/commons";
+import {themeColorClass} from "../../../global/colors";
 
 export interface SliderArrowProps {
     className?: string,
@@ -20,17 +21,17 @@ export const SliderArrow = ({
                             }: SliderArrowProps): JSX.Element => {
     const isPrev = prev && !next
 
-    const dir = isPrev ? 'prev' : 'next'
-    const arrow = isPrev ? '‹' : '›' // prev: '‹' == &#8249; next: '›' == &#8250;
+    const dir = isPrev ? "prev" : "next"
+    const arrow = isPrev ? "‹" : "›" // prev: "‹" == &#8249; next: "›" == &#8250;
     const label = isPrev ? labelPrev : labelNext
 
     return (
         <span
             onClick={onClick}
-            className={`c-arrow c-arrow--${dir} ${themeColorClass}--darker slick-arrow slick-${dir} ${className}`} // u-icon u-icon--s ?
+            className={`c-arrow c-arrow--${dir} slick-arrow slick-${dir} ${className} ${getBaseClass(themeColorClass, ["darker"])}`} // u-icon u-icon--s ?
             aria-label={label}
         >
-            {arrow}
-        </span>
+      {arrow}
+    </span>
     )
 }

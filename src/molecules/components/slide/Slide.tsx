@@ -33,7 +33,7 @@ export const Slide = ({
                 <div className="c-carousel__item-text__wrap l-grid l-grid--7-col u-shift--left--1-col--at-large">
                     <div className={"l-grid-item l-grid-item--m--4-col l-grid-item--xl--3-col"}>
                         <div
-                            className={`c-carousel__item-text u-padding--double--bottom u-padding--double--top u-spacing ${textClass}`}>
+                            className={`c-carousel__item-text u-padding--double--bottom u-padding--double--top u-spacing ${textClass && textClass}`}>
                             <div className="c-carousel__item-text--inner u-spacing--half">
                                 <h2 className="c-carousel__item-heading u-font--primary--xl">
                                     {heading}
@@ -48,12 +48,7 @@ export const Slide = ({
                                 </div>
                             </div>
                             {cta && url && (
-                                <Button
-                                    as="a"
-                                    className="c-carousel__item-cta"
-                                    url={url}
-                                    label={cta}
-                                />
+                                <Button as="a" className="c-carousel__item-cta" url={url} label={cta}/>
                             )}
                         </div>
                     </div>
