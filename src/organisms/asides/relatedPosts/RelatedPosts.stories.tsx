@@ -1,25 +1,25 @@
 import React from "react";
 import {Meta, Story} from "@storybook/react";
 import data from "./RelatedPosts.stories.json";
-import {RelatedPosts, RelatedPostsProps} from "./RelatedPostsProps";
+import {RelatedPosts, RelatedPostsProps} from "./RelatedPosts";
 
 export default {
     title: "organisms/aside/Related Posts",
     component: RelatedPosts,
     argTypes: {
-      heading: {
+        heading: {
             defaultValue: data.heading,
             control: {type: "text"}
         },
-      linkText: {
+        linkText: {
             defaultValue: data.linkText,
             control: {type: "text"}
         },
-      url: {
+        url: {
             defaultValue: data.url,
             control: {type: "text"}
         },
-      blocks: {
+        blocks: {
             defaultValue: data.blocks,
             control: {type: "object"}
         }

@@ -16,6 +16,15 @@ export const spacingSizes = [
   'quad',
   'zero',
 ]
+
+export const spacingSizesMap = {
+  "quarter": "quarter",
+  "half": "half",
+  "double": "double",
+  "triple": "triple",
+  "quad": "quad",
+  "zero": "zero",
+}
 export const spaceAfterSizes = ['medium']
 export const spacingAfterSizes = ['medium', 'large']
 export const spacingUntilSizes = ['small', 'medium', 'large', 'xxlarge']

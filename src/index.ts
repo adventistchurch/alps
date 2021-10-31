@@ -3,7 +3,7 @@ export {Button} from "./components/button/Button";
 
 export {Blockquote} from "./components/text/Blockquote";
 export {Caption} from "./components/text/Caption";
-export {DropCap} from "./components/text/DropCap";
+export {Dropcap} from "./components/text/Dropcap";
 export {Intro} from "./components/text/Intro";
 export {Kicker} from "./components/text/Kicker";
 

@@ -37,7 +37,7 @@ export const parameters = {
                 'Documentation',
                 'Components',
                 'Molecules',
-                'Organisms',
+                // 'Organisms',
             ],
         },
     },

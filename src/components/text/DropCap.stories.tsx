@@ -1,9 +1,9 @@
 import {Meta, Story} from "@storybook/react";
-import {DropCap, DropCapProps} from "./DropCap";
+import {Dropcap, DropCapProps} from "./Dropcap";
 
 export default {
-    title: "components/Texts/DropCap",
-    component: DropCap,
+    title: "components/Texts/Dropcap",
+    component: Dropcap,
     argTypes: {
         letter: {
             name: "letter",
@@ -14,6 +14,6 @@ export default {
 } as Meta;
 
 // eslint-disable-next-line react/react-in-jsx-scope
-const Template: Story<DropCapProps> = (args) => <DropCap {...args}/>
+const Template: Story<DropCapProps> = (args) => <Dropcap {...args}/>
 
 export const Basic = Template.bind({});
