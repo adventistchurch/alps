@@ -1,13 +1,18 @@
 import React from "react";
 import {Meta, Story} from "@storybook/react";
 import {ArticleContent, ArticleContentProps} from "./ArticleContent";
-import {RelatedPosts} from "../asides/relatedPosts/RelatedPosts";
-import relatedPostsData from "./../asides/relatedPosts/RelatedPosts.stories.json";
+import {RelatedPosts} from "../../asides/relatedPosts/RelatedPosts";
+import relatedPostsData from "../../asides/relatedPosts/RelatedPosts.stories.json";
 
 export default {
     title: "organisms/content/Article Content",
     component: ArticleContent,
-    argTypes: {}
+    argTypes: {
+        spacing: {
+            defaultValue: "double",
+            control: {type: "select"}
+        }
+    }
 } as Meta;
 
 const Template: Story<ArticleContentProps> = (args) =>

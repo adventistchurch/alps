@@ -1,8 +1,8 @@
 import React from "react";
 
-import {spacingSizesMap} from "../../global/spacing";
-import {GridItem} from "../../components/grids/GridItem";
-import {Text} from "../../components/text/Text";
+import {spacingSizesMap} from "../../../global/spacing";
+import {GridItem} from "../../../components/grids/GridItem";
+import {Text} from "../../../components/text/Text";
 
 export interface ArticleContentProps {
     children?: React.ReactNode,
@@ -25,7 +25,7 @@ export const ArticleContent = ({
                     as="article"
                     className="c-article__body"
                     hasDropcap={hasDropcap}
-                    // spacing={spacing}
+                    spacing={spacing}
                 >
                 {children}
                 </Text>

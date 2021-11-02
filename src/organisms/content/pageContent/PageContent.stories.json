@@ -1,0 +1,11 @@
+{
+  "items": [
+    { "text": "Home", "url": "/" },
+    { "text": "Vitality", "url": "/vitality" },
+    { "text": "Children", "url": "/vitality/children" },
+    { "text": "Family", "url": "/vitality/children/family" },
+    { "text": "Women", "url": "/vitality/children/family/women" },
+    { "text": "Church", "url": "/vitality/children/family/women/church" },
+    { "text": "Photos" }
+  ]
+}

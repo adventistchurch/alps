@@ -1,0 +1,51 @@
+{
+  "title": "Featured",
+  "linkLabel": "See all",
+  "linkUrl": "#",
+  "pagination": {
+    "current": 10,
+    "total": 100
+  },
+  "items": [
+    {
+      "title": "General Conference",
+      "category": "Category",
+      "description": "The General Conference coordinates the global ministry of the Seventh-day Adventist Church and is responsible for the spiritual and developmental plans of the church around the world.",
+      "url": "https://www.adventist.org",
+      "image": {
+        "srcSet": {
+          "default": "//picsum.photos/400/220?random=1",
+          "500": "//picsum.photos/600/330?random=1"
+        },
+        "alt": "Placeholder image"
+      }
+    },
+    {
+      "kicker": "Quia, veniam",
+      "title": "Laboriosam, itaque voluptates ipsam suscipit id necessitatibus",
+      "category": "Category",
+      "description": "Consequatur necessitatibus aliquid nam quibusdam repellat quo assumenda deserunt suscipit possimus non iste et aliquam cum nostrum fugiat nisi est quos rerum, similique optio minima quas.",
+      "url": "https://www.adventist.org",
+      "image": {
+        "srcSet": {
+          "default": "//picsum.photos/400/220?random=2",
+          "500": "//picsum.photos/600/330?random=2"
+        },
+        "alt": "Placeholder image"
+      }
+    },
+    {
+      "title": "GC Session 2020",
+      "category": "Indianapolis",
+      "description": "Facilis voluptatem sunt omnis dolorem, asperiores molestias autem blanditiis nemo ex quod nisi dignissimos quas repellendus.",
+      "url": "https://www.adventist.org",
+      "image": {
+        "srcSet": {
+          "default": "//picsum.photos/400/220?random=3",
+          "500": "//picsum.photos/600/330?random=3"
+        },
+        "alt": "Placeholder image"
+      }
+    }
+  ]
+}
