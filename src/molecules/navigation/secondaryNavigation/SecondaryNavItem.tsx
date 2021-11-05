@@ -8,7 +8,7 @@ export interface SecondaryNavItemProps {
     icon?: keyof typeof iconConfig.iconNamesMap,
     isPriority?: boolean,
     noWrap?: boolean,
-    onClick?: () => void,
+    onClick?: (any: any) => void,
     subnav?: [],
     text: string,
     type?: "search" | "menu",
@@ -34,15 +34,25 @@ export const SecondaryNavItem = ({
             }
       `}
         >
-            <a
-                className={`c-secondary-nav__link u-font--secondary-nav u-theme--link-hover--base u-color--gray ${noWrap ? "u-flex--nowrap" : ""} `}
-                href={onClick ? '#' : url}
-                onClick={onClick}
-            >
-                {icon && <IconWrap name={icon} size="xs" color="gray"/>}
-                {text}
-            </a>
-
+            {onClick ?
+                (<a
+                    className={`c-secondary-nav__link u-font--secondary-nav u-theme--link-hover--base u-color--gray ${noWrap ? "u-flex--nowrap" : ""} `}
+                    onClick={onClick}
+                >
+                    {icon && <IconWrap name={icon} size="xs" color="gray"/>}
+                    {text}
+                </a>) :
+                (
+                    <a
+                        className={`c-secondary-nav__link u-font--secondary-nav u-theme--link-hover--base u-color--gray ${noWrap ? "u-flex--nowrap" : ""} `}
+                        href={url}
+                        onClick={onClick}
+                    >
+                        {icon && <IconWrap name={icon} size="xs" color="gray"/>}
+                        {text}
+                    </a>
+                )
+            }
             {subnav && (
                 <>
                     <SubNavArrow/>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import renderItems from "../../../helpers/renderItems";
 import {SecondaryNavItem} from "./SecondaryNavItem";
 
@@ -8,6 +8,8 @@ export interface SecondaryNavigationProps {
     searchLabel?: string,
     showMenu?: boolean,
     showSearch?: boolean,
+    onClickSearch?: () => void,
+    onClickMenu?: () => void
 }
 
 export const SecondaryNavigation = ({
@@ -16,6 +18,8 @@ export const SecondaryNavigation = ({
                                         searchLabel = "Search",
                                         showMenu = true,
                                         showSearch = true,
+                                        onClickMenu,
+                                        onClickSearch
                                     }: SecondaryNavigationProps): JSX.Element => {
 
     return (
@@ -29,6 +33,7 @@ export const SecondaryNavigation = ({
                         type="search"
                         isPriority
                         noWrap
+                        onClick={onClickSearch}
                     />
                 )}
                 {showMenu && (
@@ -38,6 +43,7 @@ export const SecondaryNavigation = ({
                         type="menu"
                         isPriority
                         noWrap
+                        onClick={onClickMenu}
                     />
                 )}
             </ul>
