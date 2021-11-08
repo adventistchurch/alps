@@ -1,6 +1,6 @@
 {
   "name": "alps-library",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "author": {
     "name": "General Conference of Seventh-day Adventists"
@@ -10,10 +10,6 @@
       "name": "Yauheni Kapliarchuk",
       "email": "yauheni.kapliarchuk@gmail.com",
       "url": "https://github.com/YauheniKapliarchuk"
-    },
-    {
-      "name": "Eduardo Ludi",
-      "email": "eduardo.ludi@stimme-der-hoffnung.de"
     }
   ],
   "license": "SEE LICENSE IN LICENSE",
