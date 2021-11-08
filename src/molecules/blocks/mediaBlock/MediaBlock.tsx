@@ -11,6 +11,27 @@ import {iconConfig} from "../../../components/icons/_config";
 
 export const mediaBlocksTypes = Object.keys(presets);
 
+export const MediaBlockTypesMap = {
+    "default": "default",
+    "column": "column",
+    "feature": "feature",
+    "featureHalf": "featureHalf",
+    "featureWide": "featureWide",
+    "featuredNews": "featuredNews",
+    "archiveHome": "archiveHome",
+    "archivePage": "archivePage",
+    "full": "full",
+    "inline": "inline",
+    "inset": "inset",
+    "mediaContent": "mediaContent",
+    "mediaRow": "mediaRow",
+    "longform": "longform",
+    "row": "row",
+    "stacked": "stacked",
+    "relatedPost": "relatedPost",
+    "video": "video"
+}
+
 export interface MediaBlockProps {
     asBackgroundImage?: boolean,
     mediaIcon?: "audio" | "gallery" | "video",
@@ -34,7 +55,7 @@ export interface MediaBlockProps {
     stackedUntilSmall?: boolean,
     title?: string,
     titlePrefix?: string,
-    type?: "default" | "column" | "feature" | "featureHalf" | "featureWide" | "featuredNews" | "archiveHome" | "archivePage" | "full" | "inline" | "inset" | "mediaContent" | "mediaRow" | "longform" | "row" | "stacked" | "relatedPost" | "video",
+    type?: keyof typeof MediaBlockTypesMap,
     video?: any
 }
 

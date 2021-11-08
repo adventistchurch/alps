@@ -1,0 +1,10 @@
+{
+  "background": {
+    "default": "//picsum.photos/300/282?random",
+    "500": "//picsum.photos/500/282?random",
+    "750": "//picsum.photos/700/395?random",
+    "1200": "//picsum.photos/900/507?random"
+  },
+  "title": "Harum pariatur ipsam eos quod alias ducimus rerum.",
+  "url": "#est-doloremque-harum"
+}

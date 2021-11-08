@@ -1,0 +1,18 @@
+{
+  "blocks": [
+    {
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/400/700?image=161",
+          "500": "//picsum.photos/500/800?image=161",
+          "700": "//picsum.photos/600/900?image=161",
+          "900": "//picsum.photos/1440/1200?image=161"
+        }
+      },
+      "url": "#"
+    }
+  ],
+  "hasScroll": true
+}

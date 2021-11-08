@@ -1,0 +1,58 @@
+{
+  "blocks": [
+    {
+      "kicker": "In ut reiciendis",
+      "title": "General Conference",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/350/200",
+          "500": "//picsum.photos/400/300",
+          "750": "//picsum.photos/650/400",
+          "1200": "//picsum.photos/800/500"
+        }
+      },
+      "date": "2019-04-17",
+      "description": "Dolorum voluptas sit rerum alias rerum sunt quia. Soluta sed corporis esse voluptatem. Autem consequatur omnis facere ullam. Velit accusamus dolorem quo velit adipisci sunt quod. Incidunt fuga fugiat.",
+      "url": "/",
+      "category": "Expedita",
+      "cta": "Read More"
+    },
+    {
+      "kicker": "In ut reiciendis",
+      "title": "General Conference",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/350/200",
+          "500": "//picsum.photos/400/300",
+          "750": "//picsum.photos/650/400",
+          "1200": "//picsum.photos/800/500"
+        }
+      },
+      "date": "2019-04-17",
+      "description": "Dolorum voluptas sit rerum alias rerum sunt quia. Soluta sed corporis esse voluptatem. Autem consequatur omnis facere ullam. Velit accusamus dolorem quo velit adipisci sunt quod. Incidunt fuga fugiat.",
+      "url": "/",
+      "category": "Rerum",
+      "cta": "Read More"
+    },
+    {
+      "kicker": "In ut reiciendis",
+      "title": "General Conference",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/350/200",
+          "500": "//picsum.photos/400/300",
+          "750": "//picsum.photos/650/400",
+          "1200": "//picsum.photos/800/500"
+        }
+      },
+      "date": "2019-04-17",
+      "description": "Dolorum voluptas sit rerum alias rerum sunt quia. Soluta sed corporis esse voluptatem. Autem consequatur omnis facere ullam. Velit accusamus dolorem quo velit adipisci sunt quod. Incidunt fuga fugiat.",
+      "url": "/",
+      "category": "Voluptatem",
+      "cta": "Read More"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "kicker": "Featured block",
+  "title": "Nulla finibus ligula ut nisl facilisis",
+  "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+  "category": "Culture",
+  "date": "2019-02-28",
+  "url": "#",
+  "image": {
+    "alt": "Aut blanditiis qui",
+    "srcSet": {
+      "default": "//picsum.photos/480/270?image=1067",
+      "700": "//picsum.photos/720/405?image=1067",
+      "900": "//picsum.photos/960/540?image=1067"
+    }
+  }
+}

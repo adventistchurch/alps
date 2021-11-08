@@ -1,7 +1,7 @@
 import React from 'react';
 import {getGridItemClass} from "../../global/grids";
 
-interface GridItemProps {
+export interface GridItemProps {
     children?: React.ReactNode,
     noItemClass?: boolean,
     size?: string,

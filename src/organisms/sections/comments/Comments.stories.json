@@ -1,0 +1,65 @@
+{
+  "title": "Comments",
+  "items": [
+    {
+      "avatar": "//picsum.photos/50/50",
+      "byline": "A nobis praesentium",
+      "date": "2019-10-26 09:54",
+      "text": "Delectus consectetur blanditiis. Quisquam nobis quasi doloremque ut voluptatem ipsam numquam hic. Eos et repellat velit autem velit ut repellendus. Quos provident rerum non incidunt voluptate. Dignissimos maiores nihil dicta iste dolores."
+    },
+    {
+      "avatar": "//picsum.photos/50/50",
+      "byline": "Enim accusamus",
+      "date": "2019-10-26 09:56",
+      "text": "Eum facilis distinctio. Iusto necessitatibus inventore rerum suscipit quaerat inventore. Facere nisi optio.",
+      "replies": [
+        {
+          "avatar": "//picsum.photos/50/50",
+          "byline": "A nobis praesentium",
+          "date": "2019-10-26 09:58",
+          "text": "Delectus consectetur blanditiis. Quisquam nobis quasi doloremque ut voluptatem ipsam numquam hic. Eos et repellat velit autem velit ut repellendus. Quos provident rerum non incidunt voluptate. Dignissimos maiores nihil dicta iste dolores."
+        },
+        {
+          "avatar": "//picsum.photos/50/50",
+          "byline": "Enim accusamus",
+          "date": "2019-10-26 09:59",
+          "text": "Eum facilis distinctio. Iusto necessitatibus inventore rerum suscipit quaerat inventore. Facere nisi optio.",
+          "replies": [
+            {
+              "avatar": "//picsum.photos/50/50",
+              "byline": "A nobis praesentium",
+              "date": "2019-10-26 10:05",
+              "text": "Delectus consectetur blanditiis. Quisquam nobis quasi doloremque ut voluptatem ipsam numquam hic. Eos et repellat velit autem velit ut repellendus. Quos provident rerum non incidunt voluptate. Dignissimos maiores nihil dicta iste dolores.",
+              "replies": [
+                {
+                  "avatar": "//picsum.photos/50/50",
+                  "byline": "Enim accusamus",
+                  "date": "2019-10-26 10:14",
+                  "text": "Eum facilis distinctio. Iusto necessitatibus inventore rerum suscipit quaerat inventore. Facere nisi optio."
+                },
+                {
+                  "avatar": "//picsum.photos/50/50",
+                  "byline": "Iusto",
+                  "date": "2019-10-26 10:52",
+                  "text": "Laborum pariatur aspernatur sit laborum provident veritatis consequatur. Dicta odit facilis et non molestiae laborum voluptates. Laudantium non accusamus corporis corrupti nemo. Tempora distinctio voluptatem ea."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "avatar": "//picsum.photos/50/50",
+          "byline": "Iusto",
+          "date": "2019-10-26 09:58",
+          "text": "Laborum pariatur aspernatur sit laborum provident veritatis consequatur. Dicta odit facilis et non molestiae laborum voluptates. Laudantium non accusamus corporis corrupti nemo. Tempora distinctio voluptatem ea."
+        }
+      ]
+    },
+    {
+      "avatar": "//picsum.photos/50/50",
+      "byline": "Iusto",
+      "date": "2019-10-26 09:59",
+      "text": "Laborum pariatur aspernatur sit laborum provident veritatis consequatur. Dicta odit facilis et non molestiae laborum voluptates. Laudantium non accusamus corporis corrupti nemo. Tempora distinctio voluptatem ea."
+    }
+  ]
+}

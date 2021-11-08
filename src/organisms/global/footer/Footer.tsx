@@ -28,6 +28,7 @@ export interface FooterProps {
     primaryNav?: FooterPrimaryNavigationProps,
     secondaryNav?: FooterSecondaryNavigationProps,
     text?: string,
+    className?: string
 }
 
 export const Footer = ({
