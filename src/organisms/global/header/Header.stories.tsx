@@ -31,6 +31,10 @@ export default {
             defaultValue: "SDA",
             options: ["SDA", "SDAWithIcon", "GAIN"],
             control: {type: "select"}
+        },
+        usePathFill: {
+            defaultValue: true,
+            control: {type: "boolean"}
         }
     }
 } as Meta;

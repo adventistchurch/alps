@@ -20,6 +20,7 @@ export interface HeaderProps {
     logoElement: keyof typeof logosMap,
     primaryNav?: PrimaryNavigationProps,
     secondaryNav: SecondaryNavigationProps,
+    usePathFill?: boolean
 }
 
 const logosMap = {
@@ -31,11 +32,12 @@ const logosMap = {
 export const Header = ({
                            drawer = {},
                            logoElement,
+                           usePathFill = true,
                            logo = {
                                canBeDark: false,
                                link: "/",
                                element: logosMap[logoElement],
-                               useFillTheme: true
+                               useFillTheme: usePathFill
                            },
                            className, primaryNav, secondaryNav
                        }: HeaderProps): JSX.Element => {
