@@ -11,13 +11,26 @@ import {
     buttonToggleDesc,
     buttonWithIconDesc
 } from "./descriptions";
+import {ComponentsTypes} from "../../global/commons";
 
 export default {
     title: "components/Button",
-    markdown: 'hello',
     parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+        componentSubtitle: ComponentsTypes.COMPONENT,
+        status: 'released',
+        docs: {
+            recommended: false,
+            source: {
+                code: 'Some custom string here',
+            },
+            code: {
+                tabs: ["1", "2"]
+            },
+            description: {
+                type: "docgen",
+                component: 'Some component _markdown_',
+            },
+        }
     },
     component: Button,
     argTypes: {
@@ -54,7 +67,7 @@ export default {
             options: iconConfig.iconSizes.available,
             control: {type: "inline-radio"}
         }
-    },
+    }
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) =>

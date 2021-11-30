@@ -2,6 +2,17 @@
  * Custom Configurations & methods
  */
 
+export enum ComponentsTypes {
+  COMPONENT = "Component",
+  CAN_BE_USE_AS_WRAPPER = `. Can be use as wrapper`
+}
+
+export enum ComponentsStatus {
+  RELEASED = "Ready for Production",
+  DEPRECATED = "Deprecated",
+  NOT_READY = "NOT Ready for Production",
+}
+
 // Common Sides
 export const sides = ['top', 'bottom', 'left', 'right']
 

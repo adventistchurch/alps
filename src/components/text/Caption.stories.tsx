@@ -1,9 +1,14 @@
+import React from "react";
 import {Meta, Story} from "@storybook/react";
 import {Caption, CaptionProps} from "./Caption";
+import {ComponentsTypes} from "../../global/commons";
 
 export default {
     title: "components/Texts/Caption",
     component: Caption,
+    parameters: {
+        componentSubtitle: ComponentsTypes.COMPONENT,
+    },
     argTypes: {
         content: {
             name: "content",
@@ -13,7 +18,6 @@ export default {
     }
 } as Meta;
 
-// eslint-disable-next-line react/react-in-jsx-scope
 const Template: Story<CaptionProps> = (args) => <Caption {...args}/>
 
 export const Basic = Template.bind({});

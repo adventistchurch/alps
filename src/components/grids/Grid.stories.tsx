@@ -3,11 +3,12 @@ import {Meta, Story} from '@storybook/react'
 
 import {Grid, GridProps, wrapSizes} from './Grid'
 import {GridItem} from './GridItem'
+import {ComponentsTypes} from "../../global/commons";
 
 export default {
     title: "components/Grid",
     parameters: {
-        componentSubtitle: 'Component',
+        componentSubtitle: ComponentsTypes.COMPONENT + ComponentsTypes.CAN_BE_USE_AS_WRAPPER,
         status: 'released'
     },
     component: Grid,
@@ -24,10 +25,24 @@ export default {
         },
         noGutters: {
             name: "No Gutters",
+            defaultValue: false,
             control: {type: "boolean"}
         },
         seven: {
             name: "Seven",
+            defaultValue: false,
+            control: {type: "boolean"}
+        },
+        blockRow: {
+            defaultValue: false,
+            control: {type: "boolean"}
+        },
+        noWrapClass: {
+            defaultValue: false,
+            control: {type: "boolean"}
+        },
+        sevenInner: {
+            defaultValue: false,
             control: {type: "boolean"}
         }
     }
@@ -35,12 +50,27 @@ export default {
 
 const Template: Story<GridProps> = (args) => {
     return (
-        <Grid as={args.as} noGutters={args.noGutters} seven={args.seven} wrap={args.wrap}>
+        <Grid {...args}>
             <GridItem sizeAtS="3" sizeAtXL="2">
-                Test
+                Test_1
             </GridItem>
             <GridItem sizeAtS="3" sizeAtXL="2">
-                Test
+                Test_2
+            </GridItem>
+            <GridItem sizeAtS="3" sizeAtXL="2">
+                Test_3
+            </GridItem>
+            <GridItem sizeAtS="3" sizeAtXL="2">
+                Test_4
+            </GridItem>
+            <GridItem sizeAtS="3" sizeAtXL="2">
+                Test_5
+            </GridItem>
+            <GridItem sizeAtS="3" sizeAtXL="2">
+                Test_6
+            </GridItem>
+            <GridItem sizeAtS="3" sizeAtXL="2">
+                Test_7
             </GridItem>
         </Grid>
     )

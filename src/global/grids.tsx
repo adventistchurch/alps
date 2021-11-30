@@ -55,7 +55,7 @@ interface GetGridClassProps {
   noGridClass?: boolean,
   noGutters?: boolean,
   noWrapClass?: boolean,
-  blockRow?: string,
+  blockRow?: boolean,
   seven?: boolean,
   sevenInner?: boolean,
   shiftLeftAt?: string,

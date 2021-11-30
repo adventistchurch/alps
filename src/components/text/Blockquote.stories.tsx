@@ -1,9 +1,14 @@
+import React from "react";
 import {Meta, Story} from "@storybook/react";
 import {Blockquote, BlockquoteProps} from "./Blockquote";
+import {ComponentsTypes} from "../../global/commons";
 
 export default {
     title: "components/Texts/Blockquote",
     component: Blockquote,
+    parameters: {
+        componentSubtitle: ComponentsTypes.COMPONENT,
+    },
     argTypes: {
         content: {
             name: "content",
@@ -18,7 +23,6 @@ export default {
     }
 } as Meta;
 
-// eslint-disable-next-line react/react-in-jsx-scope
 const Template: Story<BlockquoteProps> = (args) => <Blockquote {...args}/>
 
 export const Basic = Template.bind({});

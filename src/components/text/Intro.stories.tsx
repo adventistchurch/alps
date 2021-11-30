@@ -1,9 +1,14 @@
+import React from "react";
 import {Meta, Story} from "@storybook/react";
 import {Intro, IntroProps} from "./Intro";
+import {ComponentsTypes} from "../../global/commons";
 
 export default {
     title: "components/Texts/Intro",
     component: Intro,
+    parameters: {
+        componentSubtitle: ComponentsTypes.COMPONENT + ComponentsTypes.CAN_BE_USE_AS_WRAPPER,
+    },
     argTypes: {
         content: {
             name: "content",
@@ -13,12 +18,10 @@ export default {
     }
 } as Meta;
 
-// eslint-disable-next-line react/react-in-jsx-scope
 const Template: Story<IntroProps> = (args) => <Intro {...args}/>
 export const Basic = Template.bind({});
 
 const TemplateChildren: Story<IntroProps> = (args) =>
-    // eslint-disable-next-line react/react-in-jsx-scope
     <Intro {...args}>Some Tag <a href="https://google.com">Google link</a></Intro>
 
 export const with_children = TemplateChildren.bind({});

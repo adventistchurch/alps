@@ -3,26 +3,51 @@ import React from "react";
 import {getGridClass, wrapSizes} from "../../global/grids";
 
 export interface GridProps {
+    /**
+     * Wrap block in tag
+     */
     as?: "article" | "div" | "section",
-    blockRow?: string,
+    /**
+     * Set `l-section__block-row l-section__block-row--6-col` class
+     */
+    blockRow?: boolean,
     children?: React.ReactNode,
+    /**
+     * Set `noWrapClass` class
+     */
     noWrapClass?: boolean,
+    /**
+     * Remove gutters (left padding) in columns content. `Seven` property need to be available
+     */
     noGutters?: boolean,
+    /**
+     * Wrap blocks `x of 7`. `Seven` property need to be available
+     */
     wrap?: string,
+    /**
+     * Enable vertical layout of columns
+     */
     seven?: boolean,
+    /**
+     * Set `l-grid--7-col--inner` class. `Seven` property need to be available
+     */
     sevenInner?: boolean,
+    /**
+     * Set className from available global css for this library.
+     * You can see this information in Documentation Section
+     */
     className?: string
 }
 
 export const Grid = ({
                          as = "div",
-                         blockRow,
+                         blockRow = false,
                          children,
                          noWrapClass,
                          noGutters = false,
                          seven = false,
-                         sevenInner,
-                         wrap,
+                         sevenInner = false,
+                         wrap = "1",
                          ...props
                      }: GridProps): JSX.Element => {
 

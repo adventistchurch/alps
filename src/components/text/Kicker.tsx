@@ -1,9 +1,15 @@
 import React from 'react';
-import {themeColorClass} from "../../global/colors";
+import {themeColorClass, themeColorsMap} from "../../global/colors";
 
 export interface KickerProps {
+    /**
+     * Kicker content
+     */
     content: string,
-    color?: string
+    /**
+     * Theme color content
+     */
+    color?: keyof typeof themeColorsMap
 }
 
 export const Kicker = ({content, color = "base"}: KickerProps): JSX.Element => {
