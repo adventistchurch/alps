@@ -1,7 +1,7 @@
 import React, {useCallback} from 'react'
 
 import useToggle from "../../../helpers/useToggle";
-import {IconWrap} from "../../../components/icons/IconWrap";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
 import {themeColorClass} from "../../../global/colors";
 
 export interface AccordionItemProps {

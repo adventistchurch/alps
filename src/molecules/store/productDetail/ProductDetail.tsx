@@ -1,12 +1,30 @@
 import React from "react";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface ProductDetailProps {
+    /**
+     * Specify the image of your ProductDetail
+     */
     image?: string,
+    /**
+     * Specify the imageAlt of your ProductDetail
+     */
     imageAlt?: string,
+    /**
+     * Specify the title of your ProductDetail
+     */
     title?: string,
+    /**
+     * Specify the description of your ProductDetail
+     */
     description?: string,
+    /**
+     * Specify the content of your ProductDetail
+     */
     content?: string,
+    /**
+     * Specify the buttonLabel of your ProductDetail
+     */
     buttonLabel?: string
 }
 

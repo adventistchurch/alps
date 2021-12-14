@@ -1,8 +1,11 @@
 import React from "react";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface InlineFormProps {
     onSubmit?: () => void,
+    /**
+     * Specify the submitLabel of your  InlineForm
+     */
     submitLabel?: string
 }
 

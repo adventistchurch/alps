@@ -7,7 +7,11 @@ import {Comment} from "../../../molecules/components/comment/Comment";
 export interface CommentsListProps {
     level?: number,
     items?: [],
-    areReplies?: boolean
+    areReplies?: boolean,
+    /**
+     * Specify the title of your CommentsList
+     */
+    title?:string
 }
 
 const CommentsList = ({items = [], level = 0, areReplies = false}: CommentsListProps): JSX.Element => {

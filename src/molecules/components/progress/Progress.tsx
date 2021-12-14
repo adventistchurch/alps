@@ -20,10 +20,22 @@ export const sizeMap = {
 }
 
 export interface ProgressProps {
+    /**
+     * Specify whether the Progress should be a fixed variant
+     */
     fixed?: boolean,
+    /**
+     * Specify the percentage of your Progress
+     */
     percentage?: number,
+    /**
+     * Specify the size of your Progress
+     */
     size?: keyof typeof sizeMap,
     style?: [],
+    /**
+     * Specify whether the Progress should be a visible variant
+     */
     visible?: boolean
 }
 

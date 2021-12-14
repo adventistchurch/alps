@@ -1,6 +1,6 @@
 import React from "react";
 
-import {SourceSet} from "../../../components/images/SourceSet";
+import {SourceSet} from "../../../atoms/images/SourceSet";
 import useResponsiveStyles from "../../../helpers/useResponsiveStyles";
 import {Figcaption} from "../figcaption/Figcaption";
 import {InlineStyles} from "../../../helpers/InlineStyles";
@@ -11,8 +11,14 @@ const getBackgroundRule = (url: string) => `.c-breakout-image__background {
 }`
 
 export interface BreakoutImageProps {
+    /**
+     * Specify the caption of your BreakoutImage
+     */
     caption?: string,
     srcSet: SourceSet,
+    /**
+     * Specify whether the BreakoutImage should be a parallax variant
+     */
     parallax?: boolean,
 }
 

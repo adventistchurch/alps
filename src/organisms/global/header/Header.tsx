@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {LogoType} from "../../../components/icons/library/LogoType";
+import {LogoType} from "../../../atoms/icons/library/LogoType";
 import {
     PrimaryNavigation,
     PrimaryNavigationProps
@@ -9,17 +9,23 @@ import {
     SecondaryNavigationProps
 } from "../../../molecules/navigation/secondaryNavigation/SecondaryNavigation";
 import {DrawerNavigation, DrawerNavigationProps} from "../../../molecules/navigation/drawerNavigation/DrawerNavigation";
-import SDA from "../../../components/images/logos/SDA";
-import SDAWithIcon from "../../../components/images/logos/SDAWithIcon";
-import Gain from "../../../components/images/logos/Gain";
+import SDA from "../../../atoms/images/logos/SDA";
+import SDAWithIcon from "../../../atoms/images/logos/SDAWithIcon";
+import Gain from "../../../atoms/images/logos/Gain";
 
 export interface HeaderProps {
     className?: string,
     drawer?: DrawerNavigationProps,
     logo?: LogoType,
+    /**
+     * Specify the type of your logoElement
+     */
     logoElement: keyof typeof logosMap,
     primaryNav?: PrimaryNavigationProps,
     secondaryNav: SecondaryNavigationProps,
+    /**
+     * Specify whether the Header should be a usePathFill variant
+     */
     usePathFill?: boolean
 }
 

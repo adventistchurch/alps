@@ -3,28 +3,61 @@ import useClasses from "../../../helpers/useClasses";
 import useToggle from "../../../helpers/useToggle";
 import {themeBorderColorClass} from "../../../global/colors";
 import {MediaImage} from "../mediaBlock/MediaImage";
-import {ImageType} from "../../../components/images/ImageType";
+import {ImageType} from "../../../atoms/images/ImageType";
 import {dateFormatsMap, DateTimeFormat} from "../../../helpers/DateTimeFormat";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 import {getFontClass} from "../../../global/fonts";
 
 export interface ContentBlockProps {
+    /**
+     * Specify the title of your ContentBlock
+     */
     title: string,
+    /**
+     * Specify the size of your titleSize
+     */
     titleSize?: "s" | "m" | "l",
 
+    /**
+     * Specify the description of your ContentBlock
+     */
     description: string,
+    /**
+     * Specify the content of your ContentBlocks Button
+     */
     cta?: string,
 
+    /**
+     * Specify the date of your ContentBlock
+     */
     date?: number,
+    /**
+     * Specify the datetime of your ContentBlock
+     */
     datetime: number,
+    /**
+     * Specify the dateFormat of your ContentBlock
+     */
     dateFormat: keyof typeof dateFormatsMap,
     dateLocales?: [],
     dateStyle?: any,
 
+    /**
+     * Specify the url of your ContentBlock
+     */
     url?: string,
     meta?: string,
+    /**
+     * Specify the category of your ContentBlock
+     */
     category?: string,
+    /**
+     * Specify whether the ContentBlock should be a expand variant
+     */
     expand?: boolean,
+    /**
+     * Specify whether the ContentBlock should be a withImage variant
+     */
     withImage?: boolean,
     more?: string,
     image?: ImageType
@@ -32,7 +65,7 @@ export interface ContentBlockProps {
 
 export const ContentBlock = ({
                                  title,
-                                 titleSize,
+                                 titleSize = "s",
                                  description,
                                  cta = "",
                                  date,

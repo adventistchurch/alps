@@ -1,10 +1,22 @@
 import React, {useState} from "react";
-import {Icon} from "../../../components/icons/Icon";
+import {Icon} from "../../../atoms/icons/Icon";
 
 export interface CartItemProps {
+    /**
+     * Specify the title of your CartItem
+     */
     title?: string,
+    /**
+     * Specify the price of your CartItem
+     */
     price?: number,
+    /**
+     * Specify the currency of your CartItem
+     */
     currency?: string,
+    /**
+     * Specify the image of your CartItem
+     */
     image?: string,
     onClick?: () => void
 }

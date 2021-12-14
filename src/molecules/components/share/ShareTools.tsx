@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconWrap} from "../../../components/icons/IconWrap";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
 import {shareToolsConfig} from "./_config";
 
 export interface ShareToolsProps {
@@ -29,9 +29,18 @@ export const ShareTools = ({services = shareToolsConfig.services, url = shareToo
 }
 
 interface ShareToolItemProps {
+    /**
+     * Specify the name of your ShareToolItem
+     */
     name?: string,
+    /**
+     * Specify the label of your ShareToolItem
+     */
     label?: string,
     onClick?: () => void,
+    /**
+     * Specify the url of your ShareToolItem
+     */
     url?: string
 }
 

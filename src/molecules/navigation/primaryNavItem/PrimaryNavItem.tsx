@@ -16,13 +16,31 @@ function useItemId(text: string, url: string) {
 }
 
 export interface PrimaryNavItemProps {
+    /**
+     * Specify whether the PrimaryNavItem should be an active variant
+     */
     active?: boolean,
+    /**
+     * Specify the linkClass of your  PrimaryNavItem
+     */
     linkClass?: string,
     onClick?: () => void,
+    /**
+     * Specify whether the PrimaryNavItem should be a priority variant
+     */
     priority?: boolean,
     subnav?: [],
+    /**
+     * Specify the text of your  PrimaryNavItem
+     */
     text: string,
+    /**
+     * Specify the url of your  PrimaryNavItem
+     */
     url?: string,
+    /**
+     * Specify whether the PrimaryNavItem should be a noWrap variant
+     */
     noWrap?: boolean,
 }
 

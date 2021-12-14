@@ -1,14 +1,30 @@
 import React, {useState} from "react";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 import RadioButton from "../../forms/elements/RadioButton";
 import {OptionGroup} from "../../forms/elements/OptionGroup";
 
 export interface CartAddProps {
+    /**
+     * Specify the title of your CartAdd
+     */
     title?: string,
+    /**
+     * Specify the optionsLabel of your CartAdd
+     */
     optionsLabel?: string,
+
     options?: string[],
+    /**
+     * Specify the chooseAmountLabel of your CartAdd
+     */
     chooseAmountLabel?: string,
+    /**
+     * Specify the chooseAmountDesc of your CartAdd
+     */
     chooseAmountDesc?: string,
+    /**
+     * Specify the buttonLabel of your CartAdd
+     */
     buttonLabel?: string
 }
 

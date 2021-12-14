@@ -1,7 +1,7 @@
 import React from "react";
 import useResponsiveStyles from "../../../helpers/useResponsiveStyles";
 import {InlineStyles} from "../../../helpers/InlineStyles";
-import {SourceSet} from "../../../components/images/SourceSet";
+import {SourceSet} from "../../../atoms/images/SourceSet";
 
 const getBackgroundRule = (url: string) => `.o-background-image {
   background-image: url("${url}");
@@ -9,8 +9,17 @@ const getBackgroundRule = (url: string) => `.o-background-image {
 
 export interface PageHeaderProps {
     background?: SourceSet,
+    /**
+     * Specify the kicker of your PageHeader
+     */
     kicker?: string,
+    /**
+     * Specify the title of your PageHeader
+     */
     title?: string,
+    /**
+     * Specify the url of your PageHeader
+     */
     url?: string
 }
 

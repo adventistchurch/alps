@@ -5,16 +5,44 @@ export interface CheckoutBillingProps {
      * Billing INFORMATION
      */
     heading?: string,
+    /**
+     * Specify the firstName of your CheckoutBilling
+     */
     firstName?: string,
+    /**
+     * Specify the lastName of your CheckoutBilling
+     */
     lastName?: string,
+    /**
+     * Specify the country of your CheckoutBilling
+     */
     country?: string,
     countryOptions?: string[],
+    /**
+     * Specify the streetAddress of your CheckoutBilling
+     */
     streetAddress?: string,
+    /**
+     * Specify the town of your CheckoutBilling
+     */
     town?: string,
+    /**
+     * Specify the state of your CheckoutBilling
+     */
     state?: string,
+
     stateOptions?: string[],
+    /**
+     * Specify the zip of your CheckoutBilling
+     */
     zip?: string,
+    /**
+     * Specify the phone of your CheckoutBilling
+     */
     phone?: string,
+    /**
+     * Specify the email of your CheckoutBilling
+     */
     email?: string
 }
 

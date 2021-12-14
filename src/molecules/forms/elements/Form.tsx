@@ -2,11 +2,11 @@ import React, {useCallback} from "react";
 
 import useClasses from "../../../helpers/useClasses";
 import {Dropdown} from "./Dropdown";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 import {darkThemeClass, themeBackgroundClass} from "../../../global/colors";
 import {OptionGroup} from "./OptionGroup";
 import {TextField} from "./TextField";
-import Title from "../../../components/text/Title";
+import Title from "../../../atoms/text/Title";
 import {getBaseClass} from "../../../global/commons";
 
 const components = {

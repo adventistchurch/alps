@@ -2,9 +2,18 @@ import React from "react";
 import {Form} from "../elements/Form";
 
 export interface SampleFormProps {
+    /**
+     * Specify the cancelLabel of your SampleForm
+     */
     cancelLabel?: string,
+    /**
+     * Specify the submitLabel of your SampleForm
+     */
     submitLabel?: string,
     children?: React.ReactNode,
+    /**
+     * Specify the title of your SampleForm
+     */
     title?: JSX.Element
 }
 

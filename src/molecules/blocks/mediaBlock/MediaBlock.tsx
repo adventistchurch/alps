@@ -4,10 +4,10 @@ import {MediaImage} from "./MediaImage";
 import presets from "./MediaBlock.presets";
 import {Figure} from "../../media/figure/Figure";
 import {dateFormatsMap, DateTimeFormat} from "../../../helpers/DateTimeFormat";
-import {Button} from "../../../components/button/Button";
-import {ImageType} from "../../../components/images/ImageType";
+import {Button} from "../../../atoms/button/Button";
+import {ImageType} from "../../../atoms/images/ImageType";
 import useClasses from "../../../helpers/useClasses";
-import {iconConfig} from "../../../components/icons/_config";
+import {iconConfig} from "../../../atoms/icons/_config";
 
 export const mediaBlocksTypes = Object.keys(presets);
 
@@ -33,27 +33,81 @@ export const MediaBlockTypesMap = {
 }
 
 export interface MediaBlockProps {
+    /**
+     * Specify whether the MediaBlock should be an asBackgroundImage variant
+     */
     asBackgroundImage?: boolean,
+    /**
+     * Specify the type of your  mediaIcon
+     */
     mediaIcon?: "audio" | "gallery" | "video",
+    /**
+     * Specify the blockProps of your MediaBlock
+     */
     blockProps?: string,
+    /**
+     * Specify the category of your MediaBlock
+     */
     category?: string,
+    /**
+     * Specify whether the MediaBlock should be a column variant
+     */
     column?: boolean,
+    /**
+     * Specify the content of your MediaBlocks Button
+     */
     cta?: string,
     ctaIcon?: keyof typeof iconConfig.iconNamesMap,
+    /**
+     * You can set position of icon into the button
+     */
     ctaIconPosition?: "left" | "right",
+    /**
+     * Specify the description of your MediaBlocks Button
+     */
     description?: string,
+    /**
+     * Specify the date of your MediaBlocks
+     */
     date?: number,
+    /**
+     * Specify the dateFormat of your MediaBlocks
+     */
     dateFormat?: keyof typeof dateFormatsMap,
     dateLocales?: [],
     dateStyle?: any,
     image?: ImageType,
+    /**
+     * Specify the imageCaption of your MediaBlocks
+     */
     imageCaption?: string,
+    /**
+     * Specify the kicker of your MediaBlocks
+     */
     kicker?: string,
+    /**
+     * Specify the kickerAs of your  mediaIcon
+     */
     kickerAs?: "h1" | "h2" | "h3" | "h4",
+    /**
+     * Specify the url of your  mediaIcon
+     */
     url?: string,
+    /**
+     * Specify whether the MediaBlock should be an reversed variant
+     */
     reversed?: boolean,
+    /**
+     * Specify whether the MediaBlock should be an stackedUntilSmall variant
+     */
     stackedUntilSmall?: boolean,
+    /**
+     * Specify the title of your  mediaIcon
+     */
     title?: string,
+    /**
+     * Specify the titlePrefix of your  mediaIcon
+     */
     titlePrefix?: string,
     type?: keyof typeof MediaBlockTypesMap,
     video?: any

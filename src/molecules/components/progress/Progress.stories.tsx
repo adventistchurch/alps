@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Meta, Story} from "@storybook/react";
 import {Progress, ProgressProps, sizeMap} from "./Progress";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export default {
     title: "molecules/components/Progress",

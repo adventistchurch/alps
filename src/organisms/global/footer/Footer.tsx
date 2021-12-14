@@ -1,5 +1,5 @@
 import React from "react";
-import {Icon} from "../../../components/icons/Icon";
+import {Icon} from "../../../atoms/icons/Icon";
 import {
     FooterSecondaryNavigation,
     FooterSecondaryNavigationProps
@@ -20,13 +20,32 @@ export interface AddressType {
 
 export interface FooterProps {
     address?: AddressType,
+    /**
+     * Specify the locality of your Footer
+     */
     locality?: string,
+    /**
+     * Specify the region of your Footer
+     */
     region?: string,
+    /**
+     * Specify the country of your Footer
+     */
     country?: string,
+    /**
+     * Specify the phone of your Footer
+     */
     phone?: string,
+    /**
+     * Specify the copyright of your Footer
+     */
     copyright?: string,
+
     primaryNav?: FooterPrimaryNavigationProps,
     secondaryNav?: FooterSecondaryNavigationProps,
+    /**
+     * Specify the text of your Footer
+     */
     text?: string,
     className?: string
 }

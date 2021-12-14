@@ -4,9 +4,21 @@ import {SecondaryNavItem} from "./SecondaryNavItem";
 
 export interface SecondaryNavigationProps {
     items?: [],
+    /**
+     * Specify the menuLabel of your SecondaryNavigation
+     */
     menuLabel?: string,
+    /**
+     * Specify the searchLabel of your SecondaryNavigation
+     */
     searchLabel?: string,
+    /**
+     * Specify whether the SecondaryNavigation should be a showMenu variant
+     */
     showMenu?: boolean,
+    /**
+     * Specify whether the SecondaryNavigation should be a showSearch variant
+     */
     showSearch?: boolean,
     onClickSearch?: () => void,
     onClickMenu?: () => void

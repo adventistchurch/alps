@@ -5,13 +5,37 @@ export interface CheckoutPlaceProps {
      * ADDITIONAL INFORMATION
      */
     heading?: string,
+    /**
+     * Specify the cardNumber
+     */
     cardNumber?: string,
+    /**
+     * Specify the expiryDate
+     */
     expiryDate?: string,
+    /**
+     * Specify the expiryDateAdditionalInfo
+     */
     expiryDateAdditionalInfo?: string,
+    /**
+     * Specify the cardCode
+     */
     cardCode?: string,
+    /**
+     * Specify the cardCodeAdditionalInfo
+     */
     cardCodeAdditionalInfo?: string,
+    /**
+     * Specify the additionalInfo
+     */
     additionalInfo?: string,
+    /**
+     * Specify the buttonLabel
+     */
     buttonLabel?: string,
+    /**
+     * Specify the url
+     */
     url?: string,
     onClick?: () => void
 }

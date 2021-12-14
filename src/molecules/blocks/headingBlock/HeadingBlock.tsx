@@ -1,8 +1,17 @@
 import React from 'react';
 
 export interface HeadingBlockProps {
+    /**
+     * Specify the title of your HeadingBlock
+     */
     title: string,
+    /**
+     * Specify the linkText of your HeadingBlock
+     */
     linkText?: string,
+    /**
+     * Specify the url of your HeadingBlock
+     */
     url?: string
 }
 

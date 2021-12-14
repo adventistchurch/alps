@@ -10,7 +10,13 @@ export const productsTypesMap = {
 }
 
 export interface ProductsProps {
+    /**
+     * Specify the type of your  Products
+     */
     type?: keyof typeof productsTypesMap,
+    /**
+     * Specify the title of your  Products
+     */
     title?: string,
     items?: ProductItem[]
 }

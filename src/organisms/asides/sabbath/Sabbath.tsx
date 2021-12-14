@@ -1,11 +1,20 @@
 import React from "react";
 import {InlineStyles} from "../../../helpers/InlineStyles";
-import {Icon} from "../../../components/icons/Icon";
-import {iconConfig} from "../../../components/icons/_config";
+import {Icon} from "../../../atoms/icons/Icon";
+import {iconConfig} from "../../../atoms/icons/_config";
 
 export interface SabbathProps {
+    /**
+     * Specify the backgroundImage of your Sabbath
+     */
     backgroundImage?: string,
+    /**
+     * Specify whether the Sabbath should be a showLogo variant
+     */
     showLogo?: boolean,
+    /**
+     * Specify an `icon` to include in the logo through an string (name of the icon) representing the SVG data of the icon, similar to the `Icon` component
+     */
     logo?: keyof typeof iconConfig.iconNamesMap
 }
 

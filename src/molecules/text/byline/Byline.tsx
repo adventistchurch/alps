@@ -2,6 +2,9 @@ import React from 'react';
 
 export interface BylineProps {
     children?: React.ReactNode,
+    /**
+     * Specify the value of your Byline
+     */
     value?: string,
 }
 

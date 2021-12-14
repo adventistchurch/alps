@@ -1,15 +1,42 @@
 import React from "react";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface ChurchInfoLargeProps {
+    /**
+     * Specify the location of your ChurchInfoLarge
+     */
     location?: string,
+    /**
+     * Specify the address of your ChurchInfoLarge
+     */
     address?: string,
+    /**
+     * Specify the phone of your ChurchInfoLarge
+     */
     phone?: string,
+    /**
+     * Specify the mail of your ChurchInfoLarge
+     */
     mail?: string,
+    /**
+     * Specify the site of your ChurchInfoLarge
+     */
     site?: string,
+    /**
+     * Specify the serviceList of your ChurchInfoLarge
+     */
     serviceList?: string[],
+    /**
+     * Specify the buttonLabel of your ChurchInfoLarge
+     */
     buttonLabel?: string,
+    /**
+     * Specify the image of your ChurchInfoLarge
+     */
     image?: string,
+    /**
+     * Specify the imageCaption of your ChurchInfoLarge
+     */
     imageCaption?: string
 }
 

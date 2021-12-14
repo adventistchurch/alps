@@ -1,6 +1,9 @@
 import React from "react";
 
 export interface FigcaptionProps {
+    /**
+     * Specify the caption of your  Figcaption
+     */
     caption?: string,
     children?: React.ReactNode,
 }

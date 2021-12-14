@@ -1,9 +1,9 @@
 import React from 'react'
 
-import {ImageType} from "../../../components/images/ImageType";
+import {ImageType} from "../../../atoms/images/ImageType";
 import useResponsiveStyles from "../../../helpers/useResponsiveStyles";
 import {InlineStyles} from "../../../helpers/InlineStyles";
-import {Picture} from "../../../components/images/Picture";
+import {Picture} from "../../../atoms/images/Picture";
 import useClasses from "../../../helpers/useClasses";
 
 export interface MediaImageProps {

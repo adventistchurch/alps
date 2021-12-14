@@ -1,13 +1,19 @@
 import React from "react";
 
 import {spacingSizesMap} from "../../../global/spacing";
-import {GridItem} from "../../../components/grids/GridItem";
-import {Text} from "../../../components/text/Text";
+import {GridItem} from "../../../atoms/grids/GridItem";
+import {Text} from "../../../atoms/text/Text";
 
 export interface ArticleContentProps {
     children?: React.ReactNode,
     sidebar?: React.ReactNode,
+    /**
+     * Specify whether the ArticleContent should be a hasDropcap variant
+     */
     hasDropcap?: boolean,
+    /**
+     * Specify the type of your  spacing
+     */
     spacing?: keyof typeof spacingSizesMap
 }
 

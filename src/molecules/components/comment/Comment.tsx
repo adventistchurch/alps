@@ -1,19 +1,49 @@
 import React from "react";
-import {Image} from "../../../components/images/Image";
+import {Image} from "../../../atoms/images/Image";
 import {dateFormatsMap, DateTimeFormat} from "../../../helpers/DateTimeFormat";
 
 export interface CommentProps {
+    /**
+     * Specify the avatar of your Comment
+     */
     avatar: string,
+    /**
+     * Specify the byline of your Comment
+     */
     byline: string,
+    /**
+     * Specify the bylineLink of your Comment
+     */
     bylineLink?: string,
     children?: React.ReactNode,
+    /**
+     * Specify the date of your Comment
+     */
     date: number,
+    /**
+     * Specify the dateFormat of your Comment
+     */
     dateFormat: keyof typeof dateFormatsMap,
     dateLocales?: [],
+    /**
+     * Specify the editUrl of your Comment
+     */
     editUrl?: string,
+    /**
+     * Specify the editLabel of your Comment
+     */
     editLabel?: string,
+    /**
+     * Specify the replyLabel of your Comment
+     */
     replyLabel?: string,
+    /**
+     * Specify the replyUrl of your Comment
+     */
     replyUrl?: string,
+    /**
+     * Specify the text of your Comment
+     */
     text: string,
 }
 

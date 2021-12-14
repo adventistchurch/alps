@@ -15,6 +15,10 @@ export default {
             defaultValue: data.title,
             control: {type: "text"}
         },
+        titleSize: {
+            defaultValue: "s",
+            control: {type: "select"}
+        },
         description: {
             defaultValue: data.description,
             control: {type: "text"}
@@ -22,6 +26,10 @@ export default {
         cta: {
             defaultValue: data.cta,
             control: {type: "text"}
+        },
+        dateFormat: {
+            defaultValue: "date",
+            control: {type: "select"}
         },
         url: {
             defaultValue: data.url,

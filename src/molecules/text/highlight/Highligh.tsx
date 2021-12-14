@@ -2,6 +2,9 @@ import React from 'react';
 
 export interface HighlightProps {
     children?: React.ReactNode,
+    /**
+     * Specify the value of your Highlight
+     */
     value?: string,
 }
 

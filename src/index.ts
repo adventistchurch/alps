@@ -1,29 +1,29 @@
 // ----- Components -----
-export {Button} from "./components/button/Button";
-export {Grid} from "./components/grids/Grid";
-export {Icon} from "./components/icons/Icon";
-export {IconWrap} from "./components/icons/IconWrap";
+export {Button} from "./atoms/button/Button";
+export {Grid} from "./atoms/grids/Grid";
+export {Icon} from "./atoms/icons/Icon";
+export {IconWrap} from "./atoms/icons/IconWrap";
 
 //images
-export {Image} from "./components/images/Image";
-export {Picture} from "./components/images/Picture";
+export {Image} from "./atoms/images/Image";
+export {Picture} from "./atoms/images/Picture";
 
 //lists
-export {Definition} from "./components/lists/definition/Definition";
-export {Inline} from "./components/lists/inline/Inline";
-export {Ordered} from "./components/lists/ordered/Ordered";
-export {Unordered} from "./components/lists/unordered/Unordered";
+export {Definition} from "./atoms/lists/definition/Definition";
+export {Inline} from "./atoms/lists/inline/Inline";
+export {Ordered} from "./atoms/lists/ordered/Ordered";
+export {Unordered} from "./atoms/lists/unordered/Unordered";
 
 //table
 
 //text
-export {Blockquote} from "./components/text/Blockquote";
-export {Caption} from "./components/text/Caption";
-export {Dropcap} from "./components/text/Dropcap";
-export {Intro} from "./components/text/Intro";
-export {Kicker} from "./components/text/Kicker";
+export {Blockquote} from "./atoms/text/Blockquote";
+export {Caption} from "./atoms/text/Caption";
+export {Dropcap} from "./atoms/text/Dropcap";
+export {Intro} from "./atoms/text/Intro";
+export {Kicker} from "./atoms/text/Kicker";
 
-export {Video} from "./components/video/Video";
+export {Video} from "./atoms/video/Video";
 
 // ----- Molecules - blocks        -----
 export {BreakoutBlock} from "./molecules/blocks/breackoutBlock/BreakoutBlock";

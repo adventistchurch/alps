@@ -4,10 +4,22 @@ import {HeadingBlock} from "../../../molecules/blocks/headingBlock/HeadingBlock"
 
 export interface ListContentProps {
     children?: React.ReactNode,
+    /**
+     * Specify the contentSpacing of your ListContent
+     */
     contentSpacing?: string,
+    /**
+     * Specify the linkLabel of your ListContent
+     */
     linkLabel?: string,
+    /**
+     * Specify the linkUrl of your ListContent
+     */
     linkUrl?: string,
     pagination?: any,
+    /**
+     * Specify the title of your ListContent
+     */
     title?: string
 }
 

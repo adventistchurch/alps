@@ -14,7 +14,13 @@ export const blockTypes = {
 
 export interface PageHeaderFeatureProps {
     blocks?: [],
+    /**
+     * Specify the type of your  blockType
+     */
     blockType?: keyof typeof blockTypes,
+    /**
+     * Specify whether the PageHeader should be a hasScroll variant
+     */
     hasScroll?: boolean
 }
 

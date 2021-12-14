@@ -3,14 +3,26 @@ import {Form} from "../elements/Form";
 import {TextField} from "../elements/TextField";
 import {OptionGroup} from "../elements/OptionGroup";
 import RadioButton from "../elements/RadioButton";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface SubscribeFormProps {
+    /**
+     * Specify the cancelLabel of your SubscribeForm
+     */
     cancelLabel?: string,
+    /**
+     * Specify whether the SubscribeForm should be a darkMode variant
+     */
     darkMode?: boolean,
     onCancel?: () => void,
     onSubmit?: () => void,
+    /**
+     * Specify the submitLabel of your SubscribeForm
+     */
     submitLabel?: string,
+    /**
+     * Specify the title of your SubscribeForm
+     */
     title?: string,
 }
 

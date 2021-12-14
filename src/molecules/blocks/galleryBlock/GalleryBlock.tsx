@@ -1,14 +1,27 @@
 import React from 'react';
 import useToggle from "../../../helpers/useToggle";
 import {backgroundColorClass, canBeClass, themeBorderColorClass} from "../../../global/colors";
-import {Button} from "../../../components/button/Button";
-import {Picture} from "../../../components/images/Picture";
-import {ImageType} from "../../../components/images/ImageType";
+import {Button} from "../../../atoms/button/Button";
+import {Picture} from "../../../atoms/images/Picture";
+import {ImageType} from "../../../atoms/images/ImageType";
 
 export interface GalleryBlockProps {
+    /**
+     * Specify the title of your GalleryBlock
+     */
     title: string,
+    /**
+     * Specify the kicker of your GalleryBlock
+     */
     kicker?: string,
-    images?: ImageType[]
+    /**
+     * Specify the images of your GalleryBlock
+     */
+    images?: ImageType[],
+    /**
+     * Specify the description of your GalleryBlock
+     */
+    description?:string
 }
 
 export const GalleryBlock = ({title, kicker, images}: GalleryBlockProps): JSX.Element => {

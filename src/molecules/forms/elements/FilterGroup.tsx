@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../../components/text/Title";
+import Title from "../../../atoms/text/Title";
 
 export interface FormFilterProps {
     title: string,

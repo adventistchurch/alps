@@ -1,14 +1,23 @@
 import React from 'react';
-import {SourceSet} from "../../../components/images/SourceSet";
+import {SourceSet} from "../../../atoms/images/SourceSet";
 import {canBeClass, themeBorderColorClass} from "../../../global/colors";
 import useResponsiveStyles from "../../../helpers/useResponsiveStyles";
 import {InlineStyles} from "../../../helpers/InlineStyles";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface CtaBlockProps {
+    /**
+     * Specify the title of your CtaBlock
+     */
     title: string,
+    /**
+     * Specify the description of your CtaBlock
+     */
     description?: string,
     picture?: SourceSet,
+    /**
+     * Specify whether the CtaBlock should be a asBackgroundImage variant
+     */
     asBackgroundImage?: boolean,
     buttons?: []
 }

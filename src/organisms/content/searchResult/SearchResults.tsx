@@ -1,15 +1,30 @@
 import React from "react";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 import {ContentBlock, ContentBlockProps} from "../../../molecules/blocks/contentBlock/ContentBlock";
-import {Text} from "../../../components/text/Text";
+import {Text} from "../../../atoms/text/Text";
 
 export interface SearchResultsProps {
     results?: ContentBlockProps[],
+    /**
+     * Specify the learnMoreLabel of your  SearchResults
+     */
     learnMoreLabel?: string,
+    /**
+     * Specify the loadMoreLabel of your  SearchResults
+     */
     loadMoreLabel?: string,
+    /**
+     * Specify the loadMoreUrl of your  SearchResults
+     */
     loadMoreUrl?: string,
+    /**
+     * Specify the noResultsLabel of your  SearchResults
+     */
     noResultsLabel?: string,
     onLoadMore?: () => void,
+    /**
+     * Specify whether the  SearchResults should be a showLoadMore variant
+     */
     showLoadMore?: boolean,
 }
 

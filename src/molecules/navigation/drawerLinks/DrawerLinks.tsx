@@ -6,6 +6,9 @@ export interface DrawerLinksItem {
 }
 
 export interface DrawerLinksProps {
+    /**
+     * Specify the title of your  DrawerLinks
+     */
     title?: string,
     items?: DrawerLinksItem[]
 }

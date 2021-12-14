@@ -1,12 +1,21 @@
 import React from "react";
 import renderItems from "../../../helpers/renderItems";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 import {Dropdown} from "../elements/Dropdown";
 
 export interface FacetFilterProps {
     facets?: [],
+    /**
+     * Specify the filterLabel of your FacetFilter
+     */
     filterLabel?: string,
+    /**
+     * Specify whether the FacetFilter should be an showButton variant
+     */
     showButton?: boolean,
+    /**
+     * Specify the title of your FacetFilter
+     */
     title?: string
 }
 

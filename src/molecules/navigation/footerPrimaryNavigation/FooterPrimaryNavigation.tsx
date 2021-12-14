@@ -1,6 +1,9 @@
 import React from 'react';
 
 export interface FooterPrimaryNavigationProps {
+    /**
+     * Specify the text of your  FooterPrimaryNavigation
+     */
     text: string,
     items?: { text: string, className?: string, onClick?: () => void, url: string }[]
 }

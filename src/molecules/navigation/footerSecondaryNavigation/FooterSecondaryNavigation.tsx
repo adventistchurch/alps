@@ -1,8 +1,11 @@
 import React from 'react'
-import {IconWrap} from "../../../components/icons/IconWrap";
-import {iconConfig} from "../../../components/icons/_config";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
+import {iconConfig} from "../../../atoms/icons/_config";
 
 export interface FooterSecondaryNavigationProps {
+    /**
+     * Specify an `icon` to include in the defaultItemIcon through an string (name of the icon) representing the SVG data of the icon, similar to the `Icon` component
+     */
     defaultItemIcon?: keyof typeof iconConfig.iconNamesMap,
     items?: { text: string, icon?: keyof typeof iconConfig.iconNamesMap, className?: string, onClick?: () => void, url: string }[]
 }

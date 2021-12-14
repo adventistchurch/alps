@@ -4,7 +4,7 @@ import renderItems from "../../../helpers/renderItems";
 import useToggle from "../../../helpers/useToggle";
 import {getGridItemClass} from "../../../global/grids";
 import {Form} from "./Form";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 import {Suggestions, SuggestionsItem} from "./Suggestions";
 import {FilterGroup} from "./FilterGroup";
 

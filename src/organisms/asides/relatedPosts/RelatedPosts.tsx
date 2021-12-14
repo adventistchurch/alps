@@ -5,8 +5,17 @@ import {MediaBlock} from "../../../molecules/blocks/mediaBlock/MediaBlock";
 
 export interface RelatedPostsProps {
     blocks?: [],
+    /**
+     * Specify the heading of your RelatedPosts
+     */
     heading?: string,
+    /**
+     * Specify the linkText of your RelatedPosts
+     */
     linkText?: string,
+    /**
+     * Specify the url of your RelatedPosts
+     */
     url?: string
 }
 

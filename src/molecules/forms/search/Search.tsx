@@ -1,15 +1,30 @@
 import React from "react";
 import {Suggestions, SuggestionsItem} from '../elements/Suggestions'
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface SearchProps {
+    /**
+     * Specify whether the Search should be a hasFocus variant
+     */
     hasFocus?: boolean,
     onSearch?: () => void,
     onSubmit?: () => void,
+    /**
+     * Specify the placeholder of your Search
+     */
     placeholder?: string,
+    /**
+     * Specify the submitLabel of your Search
+     */
     submitLabel?: string,
     suggestions?: SuggestionsItem[],
+    /**
+     * Specify the term of your Search
+     */
     term?: string,
+    /**
+     * Specify the title of your Search
+     */
     title?: string
 }
 

@@ -2,13 +2,13 @@ import React from "react";
 import {Meta, Story} from '@storybook/react';
 import {SampleForm, SampleFormProps} from "./SampleForm";
 import data from "./SampleForm.stories.json";
-import Title from "../../../components/text/Title";
+import Title from "../../../atoms/text/Title";
 import {TextField} from "../elements/TextField";
 import {OptionGroup} from "../elements/OptionGroup";
 import {Checkbox} from "../elements/Checkbox";
 import RadioButton from "../elements/RadioButton";
 import {Dropdown} from "../elements/Dropdown";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export default {
     title: "molecules/forms/Sample Form",

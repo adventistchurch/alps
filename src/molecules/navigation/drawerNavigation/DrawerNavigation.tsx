@@ -2,9 +2,9 @@ import React from "react";
 
 import {SecondaryNavigation, SecondaryNavigationProps} from "../secondaryNavigation/SecondaryNavigation";
 import {PrimaryNavigation, PrimaryNavigationProps} from "../primaryNavigation/PrimaryNavigation";
-import {GridItem} from "../../../components/grids/GridItem";
-import {IconWrap} from "../../../components/icons/IconWrap";
-import {GridSeven} from "../../../components/grids/GridSeven";
+import {GridItem} from "../../../atoms/grids/GridItem";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
+import {GridSeven} from "../../../atoms/grids/GridSeven";
 import {Search, SearchProps} from "../../forms/search/Search";
 
 export interface DrawerNavigationProps {

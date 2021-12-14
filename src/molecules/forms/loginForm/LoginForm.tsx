@@ -1,16 +1,37 @@
 import React from "react";
 
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 import {SubmitMessage} from "../elements/SubmitMessage";
 
 export interface LoginFormProps {
+    /**
+     * Specify the forgotPwdLabel of your LoginForm
+     */
     forgotPwdLabel?: string,
+    /**
+     * Specify the forgotPwdUrl of your LoginForm
+     */
     forgotPwdUrl?: string,
     onSubmit?: () => void,
+    /**
+     * Specify the passwordLabel of your LoginForm
+     */
     passwordLabel?: string,
+    /**
+     * Specify the submitLabel of your LoginForm
+     */
     submitLabel?: string,
+    /**
+     * Specify the submitMessage of your LoginForm
+     */
     submitMessage?: string,
+    /**
+     * Specify the title of your LoginForm
+     */
     title?: string,
+    /**
+     * Specify the usernameLabel of your LoginForm
+     */
     usernameLabel?: string
 }
 

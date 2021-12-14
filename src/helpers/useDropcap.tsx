@@ -1,5 +1,5 @@
 import React, {cloneElement} from 'react';
-import {DropCapProps} from "../components/text/Dropcap";
+import {DropCapProps} from "../atoms/text/Dropcap";
 
 function DefaultDropcap({letter}: DropCapProps) {
     return <span className="dropcap">{letter}</span>

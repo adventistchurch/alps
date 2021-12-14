@@ -1,6 +1,9 @@
 import React from "react";
 
 export interface NotificationProps {
+    /**
+     * Specify the content of your  Notification
+     */
     content?: string
 }
 

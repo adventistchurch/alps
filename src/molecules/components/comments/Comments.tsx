@@ -1,12 +1,18 @@
 import React from 'react';
 import {Accordion} from "../accordion/Accordion";
 import {AccordionItem} from "../accordion/AccordionItem";
-import {iconConfig} from "../../../components/icons/_config";
+import {iconConfig} from "../../../atoms/icons/_config";
 
 export interface CommentsProps {
     heading?: React.ReactNode,
     content?: React.ReactNode,
+    /**
+     * Specify an `icon` to include in the Comments through an string (name of the icon) representing the SVG data of the icon, similar to the `Icon` component
+     */
     icon?: keyof typeof iconConfig.iconNamesMap,
+    /**
+     * Specify whether the Comments should be an expanded variant
+     */
     expanded?: boolean,
     onChange?: () => void
 }

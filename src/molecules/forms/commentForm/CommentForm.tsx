@@ -1,10 +1,19 @@
 import React from "react";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface CommentFormProps {
     onSubmit?: () => void,
+    /**
+     * Specify the rows of your CommentForm
+     */
     rows?: number,
+    /**
+     * Specify the submitLabel of your CommentForm
+     */
     submitLabel?: string,
+    /**
+     * Specify the title of your CommentForm
+     */
     title?: string,
 }
 

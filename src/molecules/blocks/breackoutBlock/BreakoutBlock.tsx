@@ -2,9 +2,21 @@ import React from 'react';
 import {themeBackgroundClass, themeColorClass} from "../../../global/colors";
 
 export interface BreakoutBlockProps {
+    /**
+     * Specify the title of your BreakoutBlock
+     */
     title: string,
+    /**
+     * Specify the description of your BreakoutBlock
+     */
     description: string,
+    /**
+     * Specify the content of your BreakoutBlocks Button
+     */
     cta: string,
+    /**
+     * Specify the url of your BreakoutBlock
+     */
     url: string
 }
 

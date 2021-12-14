@@ -1,8 +1,8 @@
 import React from "react";
-import {IconWrap} from "../../../components/icons/IconWrap";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
 import {SubNavArrow} from "../primaryNavItem/SubNavArrow";
 import {SubNav} from "../primaryNavItem/SubNav";
-import {iconConfig} from "../../../components/icons/_config";
+import {iconConfig} from "../../../atoms/icons/_config";
 
 export interface SecondaryNavItemProps {
     icon?: keyof typeof iconConfig.iconNamesMap,

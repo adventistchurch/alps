@@ -4,11 +4,23 @@ import {PrimaryNavItem} from "../primaryNavItem/PrimaryNavItem";
 
 interface PrimaryNavBaseProps {
     children?: React.ReactNode,
+    /**
+     * Specify whether the PrimaryNavBase should be a drawer variant
+     */
     drawer?: boolean,
+    /**
+     * Specify whether the PrimaryNavBase should be a hasDropdown variant
+     */
     hasDropdown?: boolean,
     items?: [],
+    /**
+     * Specify the url of your  PrimaryNavBase
+     */
     navRef?: string,
     priorityDropdown?: React.ReactNode,
+    /**
+     * Specify the url of your  PrimaryNavBase
+     */
     wrapperRef?: string,
 }
 

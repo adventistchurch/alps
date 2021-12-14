@@ -1,10 +1,19 @@
 import React from 'react';
 import useToggle from "../../../helpers/useToggle";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../atoms/button/Button";
 
 export interface ContentBlockExpandProps {
+    /**
+     * Specify the title of your ContentBlockExpand
+     */
     title: string,
+    /**
+     * Specify the kicker of your ContentBlockExpands
+     */
     kicker?: string,
+    /**
+     * Specify the description of your ContentBlockExpand
+     */
     description?: string
 }
 

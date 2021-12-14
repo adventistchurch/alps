@@ -1,6 +1,6 @@
 {
   "name": "alps-library",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "private": false,
   "author": {
     "name": "General Conference of Seventh-day Adventists"
@@ -83,7 +83,7 @@
     ]
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^7.1.3",
     "@rollup/plugin-typescript": "^8.2.5",

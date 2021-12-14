@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {IconWrap} from "../../../components/icons/IconWrap";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
 import renderItems from "../../../helpers/renderItems";
 
 export interface BreadcrumbItemProps {

@@ -4,7 +4,7 @@ import {Comment} from "../comment/Comment";
 import {Comments, CommentsProps} from "./Comments";
 import data from "./Comments.stories.json";
 import dataComment from "../comment/Comment.stories.json";
-import {iconConfig} from "../../../components/icons/_config";
+import {iconConfig} from "../../../atoms/icons/_config";
 
 export default {
     title: "molecules/components/Comments",

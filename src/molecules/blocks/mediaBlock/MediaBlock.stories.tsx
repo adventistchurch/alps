@@ -46,7 +46,19 @@ export default {
         image: {
             defaultValue: data.image,
             control: {type: "object"}
-        }
+        },
+        mediaIcon: {
+            defaultValue: "audio",
+            control: {type: "select"}
+        },
+        kickerAs: {
+            defaultValue: "h1",
+            control: {type: "select"}
+        },
+        dateFormat: {
+            defaultValue: "date",
+            control: {type: "select"}
+        },
     },
 } as Meta;
 

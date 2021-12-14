@@ -6,9 +6,21 @@ interface ProductItem {
 }
 
 export interface CheckoutProductsProps {
+    /**
+     * Specify the productLabel
+     */
     productLabel?: string,
+    /**
+     * Specify the productSubTotalLabel
+     */
     productSubTotalLabel?: string,
-    productTotalLabel?: string,
+    /**
+     * Specify the productTotalLabel
+     */
+    productTotalLabel?: string
+    /**
+     * Specify the currency
+     */
     currency?: string,
     items?: ProductItem[]
 }

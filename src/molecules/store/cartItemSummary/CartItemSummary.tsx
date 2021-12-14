@@ -1,9 +1,21 @@
 import React from "react";
 
 export interface CartItemSummaryProps {
+    /**
+     * Specify the title of your CartItemSummary
+     */
     title?: string,
+    /**
+     * Specify the count of your CartItemSummary
+     */
     count?: number,
+    /**
+     * Specify the price of your CartItemSummary
+     */
     price?: number,
+    /**
+     * Specify the currency of your CartItemSummary
+     */
     currency?: string
 }
 

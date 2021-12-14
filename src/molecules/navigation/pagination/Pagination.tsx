@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {IconWrap} from "../../../components/icons/IconWrap";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
 import renderItems from "../../../helpers/renderItems";
 import {usePagination} from "../../../helpers/usePagination";
 import {PaginationItem} from "./PaginationItem";
@@ -21,11 +21,26 @@ const defaultPrevIcon = (
 )
 
 export interface PaginationProps {
+    /**
+     * Specify the page of your   Pagination
+     */
     page: number,
+    /**
+     * Specify the dividerLabel of your   Pagination
+     */
     dividerLabel?: string,
+    /**
+     * Specify the firstLabel of your   Pagination
+     */
     firstLabel?: string,
+    /**
+     * Specify the lastLabel of your   Pagination
+     */
     lastLabel?: string,
     nextIcon?: JSX.Element,
+    /**
+     * Specify the nextLabel of your   Pagination
+     */
     nextLabel: string,
     onPageClick: () => void,
     onNextClick: () => void,
@@ -33,10 +48,26 @@ export interface PaginationProps {
     prevIcon?: JSX.Element,
     prevLabel: string,
     setUrl?: (number: number) => void,
+    /**
+     * Specify whether the Pagination should be a showFirstAndLast variant
+     */
     showFirstAndLast?: boolean,
+    /**
+     * Specify whether the Pagination should be a showPrevAndNext variant
+     */
     showPrevAndNext?: boolean,
+    /**
+     * Specify whether the Pagination should be a showIconArrows?: boolean,
+     variant
+     */
     showIconArrows?: boolean,
+    /**
+     * Specify the surrounding of your   Pagination
+     */
     surrounding: number,
+    /**
+     * Specify the total of your   Pagination
+     */
     total: number
 }
 

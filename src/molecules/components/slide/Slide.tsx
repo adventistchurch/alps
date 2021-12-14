@@ -1,17 +1,41 @@
 import React from 'react';
-import {Button} from "../../../components/button/Button";
-import {Picture} from "../../../components/images/Picture";
-import {ImageType} from "../../../components/images/ImageType";
+import {Button} from "../../../atoms/button/Button";
+import {Picture} from "../../../atoms/images/Picture";
+import {ImageType} from "../../../atoms/images/ImageType";
 
 export interface SlideProps {
     className?: string,
+    /**
+     * Specify the cta of your Slide
+     */
     cta?: string,
+    /**
+     * Specify the dek of your Slide
+     */
     dek?: string,
+    /**
+     * Specify the heading of your Slide
+     */
     heading?: string,
+    /**
+     * Specify the image of your Slide
+     */
     image: ImageType,
-    imageIsLazy?: boolean
+    /**
+     * Specify whether the Slide should be an imageIsLazy variant
+     */
+    imageIsLazy?: boolean,
+    /**
+     * Specify the subtitle of your Slide
+     */
     subtitle?: string,
+    /**
+     * Specify the textClass of your Slide
+     */
     textClass?: string,
+    /**
+     * Specify the url of your Slide
+     */
     url?: string
 }
 

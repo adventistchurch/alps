@@ -1,7 +1,13 @@
 import React from "react";
 
 export interface PullquoteProps {
+    /**
+     * Specify the quote of your Pullquote
+     */
     quote?: string,
+    /**
+     * Specify the author of your Pullquote
+     */
     author?: string,
 }
 

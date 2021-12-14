@@ -1,16 +1,40 @@
 import React from "react";
-import {Button} from "../../../components/button/Button";
-import {Icon} from "../../../components/icons/Icon";
+import {Button} from "../../../atoms/button/Button";
+import {Icon} from "../../../atoms/icons/Icon";
 
 export interface ProductItem {
+    /**
+     * Specify the image of your ProductItem
+     */
     image?: string,
     meta?: string,
+    /**
+     * Specify the title of your ProductItem
+     */
     title?: string,
+    /**
+     * Specify the productName of your ProductItem
+     */
     productName?: string,
+    /**
+     * Specify the author of your ProductItem
+     */
     author?: string,
+    /**
+     * Specify the content of your ProductItem
+     */
     content?: string,
+    /**
+     * Specify the buttonLabel of your ProductItem
+     */
     buttonLabel?: string,
+    /**
+     * Specify the price of your ProductItem
+     */
     price?: number,
+    /**
+     * Specify the currency of your ProductItem
+     */
     currency?: string,
     tags?: string[]
 }

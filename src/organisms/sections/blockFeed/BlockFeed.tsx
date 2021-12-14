@@ -1,14 +1,23 @@
 import React from "react";
-import {GridItem, GridItemProps} from "../../../components/grids/GridItem";
+import {GridItem, GridItemProps} from "../../../atoms/grids/GridItem";
 import {MediaBlock, MediaBlockProps, MediaBlockTypesMap} from "../../../molecules/blocks/mediaBlock/MediaBlock";
-import {GridSeven} from "../../../components/grids/GridSeven";
+import {GridSeven} from "../../../atoms/grids/GridSeven";
 import renderItems from "../../../helpers/renderItems";
 
 export interface BlockFeedProps {
     blocks?: [],
+    /**
+     * Specify the type of your blocksType
+     */
     blocksType?: keyof typeof MediaBlockTypesMap,
+    /**
+     * Specify whether the BlockFeed should be a grid variant
+     */
     grid?: boolean,
     gridItemProps?: GridItemProps,
+    /**
+     * Specify whether the BlockFeed should be a gridNoWrap variant
+     */
     gridNoWrap?: boolean,
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {IconWrap} from "../../../components/icons/IconWrap";
+import {IconWrap} from "../../../atoms/icons/IconWrap";
 import {Slide, SlideProps} from "../slide/Slide";
 import {Slider} from "./Slider";
 

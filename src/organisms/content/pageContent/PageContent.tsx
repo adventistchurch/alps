@@ -1,5 +1,5 @@
 import React from "react";
-import {Text} from "../../../components/text/Text";
+import {Text} from "../../../atoms/text/Text";
 import {Breadcrumbs} from "../../../molecules/navigation/breadcrumbs/Breadcrumbs";
 
 export interface PageContentProps {

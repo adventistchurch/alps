@@ -1,10 +1,25 @@
 import React from "react";
 
 export interface TotalsProps {
+    /**
+     * Specify the subTotalLabel of your Totals
+     */
     subTotalLabel?: string,
+    /**
+     * Specify the subTotal of your Totals
+     */
     subTotal?: number,
+    /**
+     * Specify the totalLabel of your Totals
+     */
     totalLabel?: string,
+    /**
+     * Specify the total of your Totals
+     */
     total?: number,
+    /**
+     * Specify the currency of your Totals
+     */
     currency?: string
 }
 
