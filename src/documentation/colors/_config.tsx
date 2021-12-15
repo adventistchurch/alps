@@ -22,7 +22,7 @@ export const colorsConfig = {
             {
                 name:"Ming",
                 group: "bright",
-                hex: "HEX#007f98",
+                hex: "#007f98",
                 rgb: "rgb(0, 127, 152)",
                 cmyk: "96, 9, 32, 29",
                 pantone: "7474C",

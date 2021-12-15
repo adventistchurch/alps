@@ -3,6 +3,7 @@ import React from "react";
 import {colorsConfig} from "./_config";
 import "./colors.scss";
 import {ColorItem} from "./ColorItem";
+import {outFunc, tooltip} from "./tooltip";
 
 export const Colors = (): JSX.Element => {
     const brightColorRows: JSX.Element[][] = [];
@@ -109,7 +110,17 @@ const generateColorRows = (colors: ColorItem[][]) => {
                     </div>
                     <div className={"box-3"}>
                         <span className={"colors-name span"}>{box.name}</span>
-                        <div className={"colors-internals"}><span className={"span"}>HEX</span> {box.hex}</div>
+                        <div className={"colors-internals"}>
+                            <span className={"span"}>HEX</span>
+                            <div className={"tooltip"}>
+                                <button className={"tooltipButton"}
+                                        onClick={() => tooltip(box.hex, `tooltipId-${box.hex}`)}
+                                        onMouseOut={() => outFunc(`tooltipId-${box.hex}`)}>
+                                    <span className={"tooltiptext"} id={`tooltipId-${box.hex}`}>Copy to clipboard</span>
+                                    {box.hex}
+                                </button>
+                            </div>
+                        </div>
                         <div className={"colors-internals"}><span className={"span"}>RGB</span> {box.rgb}</div>
                         {box.cmyk &&
                         <div className={"colors-internals"}><span className={"span"}>CMYK</span> {box.cmyk}</div>
