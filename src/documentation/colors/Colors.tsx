@@ -3,7 +3,7 @@ import React from "react";
 import {colorsConfig} from "./_config";
 import "./colors.scss";
 import {ColorItem} from "./ColorItem";
-import {outFunc, tooltip} from "./tooltip";
+import {ColorTooltip} from "./ColorTooltip";
 
 export const Colors = (): JSX.Element => {
     const brightColorRows: JSX.Element[][] = [];
@@ -47,11 +47,11 @@ const generateTableItem = (theme: string, hex: string, rgb: string) => {
             <td>{theme}</td>
             <td width={"45%"} className={"td-table"}>
                 <span className="color__table">HEX</span>
-                : {hex}
+                : <ColorTooltip content={hex} id={`${theme}-${hex}`}/>
             </td>
             <td width={"25%"} className={"td-table"}>
                 <span className="color__table">RGB</span>
-                : {rgb}
+                : <ColorTooltip content={rgb} id={`${theme}-${rgb}`}/>
             </td>
         </tr>
     )
@@ -110,26 +110,16 @@ const generateColorRows = (colors: ColorItem[][]) => {
                     </div>
                     <div className={"box-3"}>
                         <span className={"colors-name span"}>{box.name}</span>
-                        <div className={"colors-internals"}>
-                            <span className={"span"}>HEX</span>
-                            <div className={"tooltip"}>
-                                <button className={"tooltipButton"}
-                                        onClick={() => tooltip(box.hex, `tooltipId-${box.hex}`)}
-                                        onMouseOut={() => outFunc(`tooltipId-${box.hex}`)}>
-                                    <span className={"tooltiptext"} id={`tooltipId-${box.hex}`}>Copy to clipboard</span>
-                                    {box.hex}
-                                </button>
-                            </div>
-                        </div>
-                        <div className={"colors-internals"}><span className={"span"}>RGB</span> {box.rgb}</div>
+                        <ColorTooltip label={"HEX"} content={box.hex} id={`${box.name}-${box.hex}`}/>
+                        <ColorTooltip label={"RGB"} content={box.rgb} id={`${box.name}-${box.rgb}`}/>
                         {box.cmyk &&
-                        <div className={"colors-internals"}><span className={"span"}>CMYK</span> {box.cmyk}</div>
+                        <ColorTooltip label={"CMYK"} content={box.cmyk} id={`${box.name}-${box.cmyk}`}/>
                         }
                         {box.pantone &&
-                        <div className={"colors-internals"}><span className={"span"}>Pantone</span> {box.pantone}</div>
+                        <ColorTooltip label={"Pantone"} content={box.pantone} id={`${box.name}-${box.pantone}`}/>
                         }
                         {box.sass &&
-                        <div className={"colors-internals"}><span className={"span"}>SASS</span> {box.sass}</div>
+                        <ColorTooltip label={"SASS"} content={box.sass} id={`${box.name}-${box.sass}`}/>
                         }
                     </div>
                 </div>
