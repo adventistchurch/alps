@@ -1,8 +1,8 @@
 export const buttonConfig = {
-    asOptions: ['a', 'button', 'span'],
-    iconPositions: ['left', 'right'],
+    asOptions: ["a", "button", "span"],
+    iconPositions: ["left", "right"],
     defaultProps: {
-        as: 'button',
+        as: "button",
         primary: false,
         disabled: false,
         expand: false,
@@ -11,10 +11,10 @@ export const buttonConfig = {
         simple: false,
         small: false,
         toggle: false,
-        className: '',
-        iconFill: 'white',
-        iconPosition: 'left',
-        iconSize: 'xs'
+        className: "",
+        iconFill: "white",
+        iconPosition: "left",
+        iconSize: "xs"
     },
     data: {
         label: "Learn More",
