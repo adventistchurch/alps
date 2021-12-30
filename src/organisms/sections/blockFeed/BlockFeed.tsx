@@ -5,6 +5,9 @@ import {GridSeven} from "../../../atoms/grids/GridSeven";
 import renderItems from "../../../helpers/renderItems";
 
 export interface BlockFeedProps {
+    /**
+     * Items for rendering MediaBlock components
+     */
     blocks?: [],
     /**
      * Specify the type of your blocksType
@@ -25,8 +28,7 @@ export const BlockFeed = ({
                               blocks = [],
                               blocksType = "row",
                               grid = false,
-                              gridItemProps = {sizeAtS: "3", sizeAtXL: "2"},
-                              gridNoWrap,
+                              gridItemProps = {sizeAtS: "3", sizeAtXL: "2"}
                           }: BlockFeedProps): JSX.Element => {
     const itemsProps = {
         type: blocksType,

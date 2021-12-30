@@ -36,7 +36,8 @@ export interface GridProps {
      * Set className from available global css for this library.
      * You can see this information in Documentation Section
      */
-    className?: string
+    className?: string,
+    id?: string
 }
 
 export const Grid = ({
@@ -48,6 +49,7 @@ export const Grid = ({
                          seven = false,
                          sevenInner = false,
                          wrap = "1",
+                         id,
                          ...props
                      }: GridProps): JSX.Element => {
 
@@ -59,20 +61,20 @@ export const Grid = ({
     switch (as) {
         case "article":
             elementByType =
-                <article className={classes}{...props}>
+                <article id={id ? id : ""} className={classes}{...props}>
                     {children}
                 </article>
 
             break;
         case "section":
             elementByType =
-                <section className={classes} {...props}>
+                <section id={id ? id : ""} className={classes} {...props}>
                     {children}
                 </section>
             break;
         default:
             elementByType =
-                <div className={classes} {...props}>
+                <div id={id ? id : ""} className={classes} {...props}>
                     {children}
                 </div>
             break;

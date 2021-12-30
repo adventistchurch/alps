@@ -7,9 +7,7 @@ import {BlockWrap} from "./BlockWrap";
 export default {
     title: "organisms/aside/Aside",
     component: Aside,
-    argTypes: {
-
-    }
+    argTypes: {}
 } as Meta;
 
 const Template: Story<AsideProps> = (args) => {

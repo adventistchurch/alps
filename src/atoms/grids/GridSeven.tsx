@@ -5,12 +5,14 @@ export interface GridSevenProps {
     children?: React.ReactNode,
     inner?: boolean,
     className?: string,
-    onClick?: () => void
+    onClick?: () => void,
+    id?: string,
+    as?: "article" | "div" | "section"
 }
 
-export const GridSeven = ({children, inner, className, onClick}: GridSevenProps): JSX.Element => {
+export const GridSeven = ({children, inner, className, id, as}: GridSevenProps): JSX.Element => {
     return (
-        <Grid className={className} seven sevenInner={inner}>
+        <Grid id={id} as={as} className={className} seven sevenInner={inner}>
             {children}
         </Grid>
     )

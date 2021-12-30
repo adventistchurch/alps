@@ -1,0 +1,206 @@
+{
+  "pageHeader": {
+    "kicker": "category",
+    "title": "Archives"
+  },
+  "articlesTitle": "Archive news",
+  "articles": [
+    {
+      "title": "Adventist student’s incredible story of survival",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis. Nihil adipisci vero dicta quis temporibus repellendus repudiandae laudantium! Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "NORTH AMERICAN DIVISION",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=1",
+          "500": "https://picsum.photos/720/405?random=1",
+          "900": "https://picsum.photos/960/540?random=1"
+        }
+      }
+    },
+    {
+      "title": "In dicta qui earum",
+      "description": "Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "facilis nesciunt suscipit",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=2",
+          "500": "https://picsum.photos/720/405?random=2",
+          "900": "https://picsum.photos/960/540?random=2"
+        }
+      }
+    },
+    {
+      "title": "Iure similique pariatur odio",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=3",
+          "500": "https://picsum.photos/720/405?random=3",
+          "900": "https://picsum.photos/960/540?random=3"
+        }
+      }
+    },
+    {
+      "title": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+      "description": "Nulla, inventore officia!",
+      "category": "quo",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=4",
+          "500": "https://picsum.photos/720/405?random=4",
+          "900": "https://picsum.photos/960/540?random=4"
+        }
+      }
+    },
+    {
+      "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis. Nihil adipisci vero dicta quis temporibus repellendus repudiandae laudantium! Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "omnis",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=5",
+          "500": "https://picsum.photos/720/405?random=5",
+          "900": "https://picsum.photos/960/540?random=5"
+        }
+      }
+    },
+    {
+      "title": "Adventist student’s incredible story of survival",
+      "description": "Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "NORTH AMERICAN DIVISION",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=1",
+          "500": "https://picsum.photos/720/405?random=1",
+          "900": "https://picsum.photos/960/540?random=1"
+        }
+      }
+    },
+    {
+      "title": "In dicta qui earum",
+      "category": "facilis nesciunt suscipit",
+      "description": "Odio dolores eum vel veritatis.Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=2",
+          "500": "https://picsum.photos/720/405?random=2",
+          "900": "https://picsum.photos/960/540?random=2"
+        }
+      }
+    },
+    {
+      "title": "Iure similique pariatur odio",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis.",
+      "category": "fugiat quis quisquam",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=3",
+          "500": "https://picsum.photos/720/405?random=3",
+          "900": "https://picsum.photos/960/540?random=3"
+        }
+      }
+    },
+    {
+      "title": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+      "category": "quo",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=4",
+          "500": "https://picsum.photos/720/405?random=4",
+          "900": "https://picsum.photos/960/540?random=4"
+        }
+      }
+    },
+    {
+      "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis. Nihil adipisci vero dicta quis temporibus repellendus repudiandae laudantium! Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "omnis",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "cta": "Learn more",
+      "ctaIconPosition": "right",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=5",
+          "500": "https://picsum.photos/720/405?random=5",
+          "900": "https://picsum.photos/960/540?random=5"
+        }
+      }
+    }
+  ],
+
+  "aside": {
+    "comments": {
+      "title": "Archives",
+      "linkLabel": "See all",
+      "linkUrl": "#",
+      "items": [
+        {
+          "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+          "category": "Culture",
+          "date": "2017-12-28 10:30",
+          "url": "#"
+        },
+        {
+          "title": "Church leaders pray for the two titles during Euro-Asia Division year-end meetings.",
+          "category": "Church",
+          "date": "2017-12-28 10:30",
+          "url": "#"
+        }
+      ]
+    }
+  },
+  "pagination": {
+    "page": 7,
+    "surrounding": 2,
+    "surroundingOnExtremes": 0,
+    "showFirstAndLast": false,
+    "showPrevAndNext": true,
+    "total": 120
+  }
+}
