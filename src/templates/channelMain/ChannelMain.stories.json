@@ -1,0 +1,27 @@
+{
+  "title": "Channel Main",
+  "kicker": "Kicker",
+  "background": {
+    "default": "//placeimg.com/600/300/nature",
+    "500": "//placeimg.com/600/300/nature",
+    "750": "//placeimg.com/900/400/nature",
+    "1200": "//placeimg.com/1400/500/nature"
+  },
+  "breadcrumbs": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "Vitality",
+      "url": "/vitality"
+    },
+    {
+      "text": "Photos"
+    }
+  ],
+  "content": {
+    "title": "Donec volutpat libero",
+    "text": "Fusce interdum purus est, vel semper ex tristique ut. Proin dapibus luctus pellentesque. Duis et sapien sit amet enim porttitor gravida at non orci. Proin dictum lobortis luctus. Sed sagittis massa id blandit aliquet."
+  }
+}

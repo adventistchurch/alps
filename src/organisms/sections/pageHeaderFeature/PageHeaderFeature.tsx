@@ -21,13 +21,18 @@ export interface PageHeaderFeatureProps {
     /**
      * Specify whether the PageHeader should be a hasScroll variant
      */
-    hasScroll?: boolean
+    hasScroll?: boolean,
+    /**
+     * Specify this parameter for Media Block includes in this component
+     */
+    asBackgroundImage?: boolean
 }
 
 export const PageHeaderFeature = ({
                                       blocks,
                                       blockType = "feature",
-                                      hasScroll = false
+                                      hasScroll = false,
+                                      asBackgroundImage
                                   }: PageHeaderFeatureProps): JSX.Element => {
     const headerClasses = useClasses("c-page-header c-page-header__feature", {
         "c-page-header__3-col": blockType === "column",
@@ -42,11 +47,11 @@ export const PageHeaderFeature = ({
                 ) : (
                     <MediaBlock
                         type={blockType}
-                        asBackgroundImage
+                        asBackgroundImage={asBackgroundImage}
                     />
                 )}
             </div>
-            {hasScroll && <a href="#top" className="c-page-header__scroll"/>}
+            {hasScroll && <a href="#" className="c-page-header__scroll"/>}
         </header>
     )
 }

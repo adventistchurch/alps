@@ -20,7 +20,8 @@ export interface ListContentProps {
     /**
      * Specify the title of your ListContent
      */
-    title?: string
+    title?: string,
+    className?: string
 }
 
 export const ListContent = ({
@@ -29,10 +30,11 @@ export const ListContent = ({
                                 pagination,
                                 title,
                                 linkUrl = "#",
-                                linkLabel = "See all"
+                                linkLabel = "See all",
+                                className
                             }: ListContentProps): JSX.Element => {
     return (
-        <div className="c-block-wrap u-spacing">
+        <div className={`c-block-wrap u-spacing ${className ? className : ""}`}>
             {title && (
                 <HeadingBlock title={title} linkText={linkLabel} url={linkUrl}/>
             )}

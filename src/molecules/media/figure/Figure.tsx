@@ -39,10 +39,13 @@ export const Figure = ({
                            image,
                            lazy = false,
                            videoSrc,
-                           align = "left",
-                           size = "medium"
+                           align,
+                           size
                        }: FigureProps): JSX.Element => {
-    const classes = useMemo(() => getFigureClasses(align, size), [align, size])
+    let classes = "";
+    if (align && size) {
+        classes = useMemo(() => getFigureClasses(align, size), [align, size])
+    }
 
     return (
         <figure className={`o-figure ${classes} ${className}`}>

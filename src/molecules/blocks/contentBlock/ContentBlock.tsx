@@ -12,7 +12,7 @@ export interface ContentBlockProps {
     /**
      * Specify the title of your ContentBlock
      */
-    title: string,
+    title?: string,
     /**
      * Specify the size of your titleSize
      */
@@ -21,7 +21,7 @@ export interface ContentBlockProps {
     /**
      * Specify the description of your ContentBlock
      */
-    description: string,
+    description?: string,
     /**
      * Specify the content of your ContentBlocks Button
      */
@@ -34,7 +34,7 @@ export interface ContentBlockProps {
     /**
      * Specify the datetime of your ContentBlock
      */
-    datetime: number,
+    datetime?: number,
     /**
      * Specify the dateFormat of your ContentBlock
      */
@@ -73,10 +73,7 @@ export const ContentBlock = ({
                                  dateLocales,
                                  dateStyle,
                                  url = "",
-                                 meta = "",
                                  category = "",
-                                 expand = false,
-                                 withImage = false,
                                  more = "",
                                  image
                              }: ContentBlockProps): JSX.Element => {

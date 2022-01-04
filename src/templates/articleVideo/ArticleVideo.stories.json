@@ -1,0 +1,88 @@
+{
+  "pageHeaderFuture": {
+    "blocks": [
+      {
+        "kicker": "Noteworthy Videos",
+        "title": "#DearCoronavirus, here is a message from the whole world to you",
+        "description": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi. Morbi ullamcorper purus et massa mattis fermentum. Aenean pretium augue sit amet nunc consequat vulputate.",
+        "category": "Culture",
+        "date": "2019-02-28"
+      }
+    ]
+  },
+  "content": {
+    "title": "Maiores repellendus sapiente",
+    "text": "Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium. In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper. Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies."
+  },
+  "src": "https://player.vimeo.com/video/137487821?color=ffffff&title=0&byline=0&portrait=0",
+  "caption": "test",
+  "duration": "28:30 mins",
+  "segmentsTitle": "Video segments",
+  "segments": [
+    {
+      "title": "Curabitur non est vulputate, euismod nibh non, sollicitudin nisi",
+      "category": "Culture",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/480/270?image=1061",
+          "700": "//picsum.photos/720/405?image=1061",
+          "900": "//picsum.photos/960/540?image=1061"
+        }
+      }
+    },
+    {
+      "title": "Fusce fringilla lectus vel risus feugiat semper.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit dolor leo, quis tempus turpis bibendum sed. Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi.",
+      "category": "Culture",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/480/270?image=1068",
+          "700": "//picsum.photos/720/405?image=1068",
+          "900": "//picsum.photos/960/540?image=1068"
+        }
+      }
+    },
+    {
+      "title": "Morbi ullamcorper purus et massa mattis fermentum",
+      "category": "Culture",
+      "description": "Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi. In blandit dolor leo, quis tempus turpis bibendum sed. ",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/480/270?image=1082",
+          "700": "//picsum.photos/720/405?image=1082",
+          "900": "//picsum.photos/960/540?image=1082"
+        }
+      }
+    },
+    {
+      "title": "In blandit dolor leo",
+      "category": "Culture",
+      "description": "Maecenas vitae massa facilisis, pellentesque ex vitae, elementum nisi. ",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/480/270?image=1080",
+          "700": "//picsum.photos/720/405?image=1080",
+          "900": "//picsum.photos/960/540?image=1080"
+        }
+      }
+    },
+    {
+      "title": "Maecenas vitae bibendum sed.",
+      "category": "Culture",
+      "description": "In blandit dolor leo, quis tempus turpis bibendum sed.",
+      "image": {
+        "alt": "Aut blanditiis qui",
+        "srcSet": {
+          "default": "//picsum.photos/480/270?image=1050",
+          "700": "//picsum.photos/720/405?image=1050",
+          "900": "//picsum.photos/960/540?image=1050"
+        }
+      }
+    }
+  ]
+}

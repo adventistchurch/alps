@@ -1,0 +1,389 @@
+{
+  "pageHeader": {
+    "title": "News"
+  },
+  "featured": {
+    "blocks": [
+      {
+        "title": "Adventist student’s incredible story of survival",
+        "titlePrefix": "Breaking",
+        "category": "NORTH AMERICAN DIVISION",
+        "date": "2022-01-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=0",
+            "500": "https://picsum.photos/720/405?random=0",
+            "900": "https://picsum.photos/960/540?random=0"
+          }
+        }
+      }
+    ]
+  },
+  "extendedFeatures": {
+    "title": "Extended Features",
+    "linkLabel": "See all",
+    "linkUrl": "#",
+    "items": [
+      {
+        "title": "Adventist student’s incredible story of survival",
+        "category": "NORTH AMERICAN DIVISION",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=1",
+            "500": "https://picsum.photos/720/405?random=1",
+            "900": "https://picsum.photos/960/540?random=1"
+          }
+        }
+      },
+      {
+        "title": "In dicta qui earum",
+        "category": "facilis nesciunt suscipit",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=2",
+            "500": "https://picsum.photos/720/405?random=2",
+            "900": "https://picsum.photos/960/540?random=2"
+          }
+        }
+      }
+    ]
+  },
+  "latest": {
+    "title": "Latest news",
+    "linkLabel": "See all",
+    "linkUrl": "#",
+    "items": [
+      {
+        "title": "Adventist student’s incredible story of survival",
+        "category": "NORTH AMERICAN DIVISION",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=1",
+            "500": "https://picsum.photos/720/405?random=1",
+            "900": "https://picsum.photos/960/540?random=1"
+          }
+        }
+      },
+      {
+        "title": "In dicta qui earum",
+        "category": "facilis nesciunt suscipit",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=2",
+            "500": "https://picsum.photos/720/405?random=2",
+            "900": "https://picsum.photos/960/540?random=2"
+          }
+        }
+      },
+      {
+        "title": "Iure similique pariatur odio",
+        "category": "fugiat quis quisquam",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=3",
+            "500": "https://picsum.photos/720/405?random=3",
+            "900": "https://picsum.photos/960/540?random=3"
+          }
+        }
+      },
+      {
+        "title": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+        "category": "quo",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=4",
+            "500": "https://picsum.photos/720/405?random=4",
+            "900": "https://picsum.photos/960/540?random=4"
+          }
+        }
+      },
+      {
+        "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+        "category": "omnis",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=5",
+            "500": "https://picsum.photos/720/405?random=5",
+            "900": "https://picsum.photos/960/540?random=5"
+          }
+        }
+      }
+    ]
+  },
+  "aside": {
+    "primary": {
+      "title": "Videos",
+      "linkLabel": "See all",
+      "linkUrl": "#",
+      "items": [
+        {
+          "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+          "category": "Culture",
+          "description": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+          "date": "2022-01-28 10:30",
+          "url": "#",
+          "mediaIcon": "video",
+          "image": {
+            "alt": "Eligendi quod dolorem",
+            "srcSet": {
+              "default": "https://picsum.photos/400/225?random=16",
+              "500": "https://picsum.photos/640/360?random=16"
+            }
+          }
+        },
+        {
+          "title": "Church leaders pray for the two titles during Euro-Asia Division year-end meetings.",
+          "category": "Church",
+          "description": "The Coachella Valley community is officially home to Loma Linda University Children’s Health – Indio, Jill and Barry Golden Pavilion, the largest pediatric clinic in the area. The grand opening was...",
+          "date": "2022-01-28 10:30",
+          "url": "#",
+          "mediaIcon": "video",
+          "image": {
+            "alt": "Eligendi quod dolorem",
+            "srcSet": {
+              "default": "https://picsum.photos/400/225?random=18",
+              "500": "https://picsum.photos/640/360?random=18"
+            }
+          }
+        },
+        {
+          "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+          "category": "Gospel",
+          "description": "In dicta qui earum",
+          "date": "2022-01-28 10:30",
+          "url": "#",
+          "mediaIcon": "video",
+          "image": {
+            "alt": "Eligendi quod dolorem",
+            "srcSet": {
+              "default": "https://picsum.photos/400/225?random=12",
+              "500": "https://picsum.photos/640/360?random=12"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "media": {
+    "title": "Media",
+    "linkLabel": "See all",
+    "linkUrl": "#",
+    "primaryItems": [
+      {
+        "title": "The Coachella Valley community is officially home to Loma Linda University Children’s Health – Indio, Jill and Barry Golden Pavilion, the largest pediatric clinic in the area. The grand opening was...",
+        "category": "Culture",
+        "description": "Church leaders pray for the two titles during Euro-Asia Division year-end meetings.",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "mediaIcon": "gallery",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=1",
+            "500": "https://picsum.photos/720/405?random=1",
+            "900": "https://picsum.photos/960/540?random=1"
+          }
+        }
+      }
+    ],
+    "secondaryItems": [
+      {
+        "title": "In dicta qui earum",
+        "category": "facilis nesciunt suscipit",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "mediaIcon": "video",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=2",
+            "500": "https://picsum.photos/720/405?random=2",
+            "900": "https://picsum.photos/960/540?random=2"
+          }
+        }
+      },
+      {
+        "title": "Iure similique pariatur odio",
+        "category": "fugiat quis quisquam",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "mediaIcon": "video",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=3",
+            "500": "https://picsum.photos/720/405?random=3",
+            "900": "https://picsum.photos/960/540?random=3"
+          }
+        }
+      },
+      {
+        "title": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+        "category": "quo",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "mediaIcon": "video",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=4",
+            "500": "https://picsum.photos/720/405?random=4",
+            "900": "https://picsum.photos/960/540?random=4"
+          }
+        }
+      },
+      {
+        "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+        "category": "omnis",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "mediaIcon": "video",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=5",
+            "500": "https://picsum.photos/720/405?random=5",
+            "900": "https://picsum.photos/960/540?random=5"
+          }
+        }
+      },
+      {
+        "title": "Adventist student’s incredible story of survival",
+        "category": "NORTH AMERICAN DIVISION",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "mediaIcon": "video",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=1",
+            "500": "https://picsum.photos/720/405?random=1",
+            "900": "https://picsum.photos/960/540?random=1"
+          }
+        }
+      },
+      {
+        "title": "In dicta qui earum",
+        "category": "facilis nesciunt suscipit",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "mediaIcon": "video",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=2",
+            "500": "https://picsum.photos/720/405?random=2",
+            "900": "https://picsum.photos/960/540?random=2"
+          }
+        }
+      }
+    ]
+  },
+
+  "archive": {
+    "title": "Archive",
+    "items": [
+      {
+        "title": "Adventist student’s incredible story of survival",
+        "category": "North-American Division",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=1",
+            "500": "https://picsum.photos/720/405?random=1",
+            "900": "https://picsum.photos/960/540?random=1"
+          }
+        }
+      },
+      {
+        "title": "In dicta qui earum",
+        "category": "Suscipit",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=2",
+            "500": "https://picsum.photos/720/405?random=2",
+            "900": "https://picsum.photos/960/540?random=2"
+          }
+        }
+      },
+      {
+        "title": "Iure similique pariatur odio",
+        "category": "fugiat",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=3",
+            "500": "https://picsum.photos/720/405?random=3",
+            "900": "https://picsum.photos/960/540?random=3"
+          }
+        }
+      },
+      {
+        "title": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+        "category": "quo",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=4",
+            "500": "https://picsum.photos/720/405?random=4",
+            "900": "https://picsum.photos/960/540?random=4"
+          }
+        }
+      },
+      {
+        "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+        "category": "omnis",
+        "date": "2017-12-28 10:30",
+        "url": "#",
+        "image": {
+          "alt": "Eligendi quod dolorem",
+          "srcSet": {
+            "default": "https://picsum.photos/480/270?random=5",
+            "500": "https://picsum.photos/720/405?random=5",
+            "900": "https://picsum.photos/960/540?random=5"
+          }
+        }
+      }
+    ]
+  },
+  "pagination": {
+    "page": 7,
+    "surrounding": 2,
+    "surroundingOnExtremes": 0,
+    "showFirstAndLast": false,
+    "showPrevAndNext": true,
+    "total": 120
+  }
+}

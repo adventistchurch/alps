@@ -15,7 +15,7 @@ const asideChildren = data.aside
     : null;
 
 export default {
-    title: "templates/archivePage/ArchivePage",
+    title: "templates/ArchivePage",
     component: ArchivePage,
     argTypes: {
         filters: {
@@ -58,7 +58,5 @@ export default {
 } as Meta;
 
 const Template: Story<ArchivePageProps> = (args) =>
-    <ArchivePage {...args}>
-        {/*{demoContent(data.content.title, data.content.text)}*/}
-    </ArchivePage>;
+    <ArchivePage {...args}/>;
 export const Basic = Template.bind({});

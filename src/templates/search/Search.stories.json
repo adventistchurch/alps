@@ -1,0 +1,171 @@
+{
+  "pageHeader": {
+    "title": "Search"
+  },
+  "suggestions": [
+    { "key": "abc1", "label": "Hi", "href": "#" },
+    { "key": "abc2", "label": "Hello", "href": "#" },
+    { "key": "abc3", "label": "Hola", "href": "#" },
+    { "key": "abc4", "label": "Hallo", "href": "#" },
+    { "key": "abc5", "label": "Hallo", "href": "#" },
+    { "key": "abc6", "label": "Hallooo", "href": "#" }
+  ],
+  "results": [
+    {
+      "title": "Adventist student’s incredible story of survival",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis. Nihil adipisci vero dicta quis temporibus repellendus repudiandae laudantium! Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "This site",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=1",
+          "500": "https://picsum.photos/720/405?random=1",
+          "900": "https://picsum.photos/960/540?random=1"
+        }
+      }
+    },
+    {
+      "title": "In dicta qui earum",
+      "description": "Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "adventist.news",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=2",
+          "500": "https://picsum.photos/720/405?random=2",
+          "900": "https://picsum.photos/960/540?random=2"
+        }
+      }
+    },
+    {
+      "title": "Iure similique pariatur odio",
+      "date": "2017-12-28 10:30",
+      "category": "This site",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=3",
+          "500": "https://picsum.photos/720/405?random=3",
+          "900": "https://picsum.photos/960/540?random=3"
+        }
+      }
+    },
+    {
+      "title": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+      "description": "Nulla, inventore officia!",
+      "category": "adventistreview.org",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=4",
+          "500": "https://picsum.photos/720/405?random=4",
+          "900": "https://picsum.photos/960/540?random=4"
+        }
+      }
+    },
+    {
+      "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis. Nihil adipisci vero dicta quis temporibus repellendus repudiandae laudantium! Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "This site",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=5",
+          "500": "https://picsum.photos/720/405?random=5",
+          "900": "https://picsum.photos/960/540?random=5"
+        }
+      }
+    },
+    {
+      "title": "Adventist student’s incredible story of survival",
+      "description": "Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "This site",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=1",
+          "500": "https://picsum.photos/720/405?random=1",
+          "900": "https://picsum.photos/960/540?random=1"
+        }
+      }
+    },
+    {
+      "title": "In dicta qui earum",
+      "category": "adventist.news",
+      "description": "Odio dolores eum vel veritatis.Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=2",
+          "500": "https://picsum.photos/720/405?random=2",
+          "900": "https://picsum.photos/960/540?random=2"
+        }
+      }
+    },
+    {
+      "title": "Iure similique pariatur odio",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis.",
+      "category": "This site",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=3",
+          "500": "https://picsum.photos/720/405?random=3",
+          "900": "https://picsum.photos/960/540?random=3"
+        }
+      }
+    },
+    {
+      "title": "Eligendi vel voluptas repudiandae voluptatibus laboriosam tenetur occaecati et consequatur",
+      "category": "adventistreview.org",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=4",
+          "500": "https://picsum.photos/720/405?random=4",
+          "900": "https://picsum.photos/960/540?random=4"
+        }
+      }
+    },
+    {
+      "title": "Quis soluta sapiente et nam iure velit tenetur facere quia",
+      "description": "Consectetur adipisicing elit. Nulla, inventore officia! Consequatur nihil, sed explicabo ipsum fugiat impedit ipsa, atque ab quidem sequi quis, odio dolores eum vel veritatis. Nihil adipisci vero dicta quis temporibus repellendus repudiandae laudantium! Voluptas porro officiis at necessitatibus culpa reiciendis et quas fugit error nulla.",
+      "category": "This site",
+      "date": "2017-12-28 10:30",
+      "url": "#",
+      "image": {
+        "alt": "Eligendi quod dolorem",
+        "srcSet": {
+          "default": "https://picsum.photos/480/270?random=5",
+          "500": "https://picsum.photos/720/405?random=5",
+          "900": "https://picsum.photos/960/540?random=5"
+        }
+      }
+    }
+  ],
+  "pagination": {
+    "page": 7,
+    "surrounding": 2,
+    "surroundingOnExtremes": 0,
+    "showFirstAndLast": false,
+    "showPrevAndNext": true,
+    "total": 120
+  }
+}

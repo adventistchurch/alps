@@ -54,8 +54,6 @@ export const ArchivePage = ({
                             <BlockFeed
                                 blocks={articles}
                                 blocksType="archivePage"
-                                // blocksProps={articleProps}
-                                // spacing="double"
                             />
                             {pagination && <Pagination {...pagination} />}
                         </GridItem>

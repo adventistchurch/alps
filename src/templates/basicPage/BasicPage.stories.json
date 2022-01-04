@@ -1,0 +1,24 @@
+{
+  "title": "Basic page",
+  "breadcrumbs": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "Vitality",
+      "url": "/vitality"
+    },
+    {
+      "text": "Photos"
+    }
+  ],
+  "content": {
+    "title1": "Maiores repellendus sapiente",
+    "title2": "Earum molestias officiis perferendis officia",
+    "title3": "Repudiandae fugit in porro nulla vitae officia numquam ut.",
+    "text1": "Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium. In hac habitasse platea dictumst. Maecenas vitae turpis pretium, accumsan neque non, pretium dui. Phasellus volutpat tortor vitae lacinia elementum. Fusce fringilla lectus vel risus feugiat semper. Fusce ullamcorper condimentum condimentum proin eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies.",
+    "text2": "Atque aut culpa et nulla atque dolores. Modi magnam voluptatum consequuntur ullam omnis nesciunt. Reiciendis vero qui cum recusandae sint excepturi facere et non. Omnis omnis quaerat voluptas similique aut debitis. Quae iure voluptate ipsam dolore nemo minus a aliquam. Asperiores eligendi in amet voluptatem aliquid nulla vitae delectus maiores. Iure consequatur rem mollitia sed ut. In optio dignissimos nam culpa qui voluptas sed. Libero est dolorum voluptatem vel. Aut omnis ea ipsa quos sequi totam. Hic ea mollitia animi. Dolores omnis aperiam. Eum ut ut enim nisi. Adipisci ipsa sunt aspernatur inventore voluptatem ut. Molestiae quidem accusamus harum culpa accusamus quam aut at. Tenetur cum ut harum optio quo ut. Et ab est et odio molestias. Qui in enim hic odit occaecati. Doloribus aspernatur reprehenderit.",
+    "text3": "Molestiae est corporis praesentium voluptatem quisquam sint accusantium. Quos distinctio ad omnis molestias dolorem. Nulla blanditiis omnis incidunt. Explicabo nemo quisquam. Qui sunt soluta ipsam modi iure similique adipisci explicabo molestiae. Quas debitis soluta possimus at et pariatur ipsam sit."
+  }
+}

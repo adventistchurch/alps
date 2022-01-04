@@ -10,14 +10,15 @@ export default {
     argTypes: {}
 } as Meta;
 
+export const mediaAside = <BlockWrap type="mediaBlock" title={data.media.title} linkLabel={data.media.linkLabel} linkUrl={data.media.linkUrl} items={data.media.items}/>;
+export const commentsAside = <BlockWrap type="contentBlock" title={data.comments.title} linkLabel={data.comments.linkLabel} linkUrl={data.comments.linkUrl} items={data.comments.items}/>;
+
 const Template: Story<AsideProps> = (args) => {
-    const media = <BlockWrap type="mediaBlock" title={data.media.title} linkLabel={data.media.linkLabel} linkUrl={data.media.linkUrl} items={data.media.items}/>
-    const comments = <BlockWrap type="contentBlock" title={data.comments.title} linkLabel={data.comments.linkLabel} linkUrl={data.comments.linkUrl} items={data.comments.items}/>
 
     return (
         <Aside {...args}>
-          {media}
-          {comments}
+          {mediaAside}
+          {commentsAside}
         </Aside>
     )
 }
