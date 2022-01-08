@@ -3,11 +3,13 @@ import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import del from "rollup-plugin-delete";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import css from 'rollup-plugin-import-css';
 import scss from 'rollup-plugin-scss';
 
 import packageJson from "./package.json";
 import {readdirSync, statSync} from "fs";
 import json from "@rollup/plugin-json";
+import image from "@rollup/plugin-image";
 
 const CODES = [
     'THIS_IS_UNDEFINED',
@@ -18,7 +20,7 @@ const CODES = [
 const excludePaths = [
     '.stories.tsx', // Storybook stories
     'global', // global classes configuration
-    'components/icons/library', // Icons in library
+    'atoms/icons/library', // Icons in library
     'helpers/renderTimes', // not used
 ]
 
@@ -65,7 +67,7 @@ const walkFolder = dir => {
  */
 const getChunks = URI =>
     walkFolder(URI)
-        .filter(path => path.includes('.tsx') && shouldIncludePath(path))
+        .filter(path => path.includes('.tsx', '.svg', '.png') && shouldIncludePath(path))
         .reduce(
             (acc, current) => ({
                 ...acc,
@@ -109,7 +111,9 @@ export default {
         resolve(),
         commonjs(),
         typescript(),
+        css(),
         scss(),
+        image(),
         json()
     ]
 };

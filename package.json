@@ -48,7 +48,8 @@
     "deploy:minor": "npm version minor && npm run deploy",
     "deploy:major": "npm version major && npm run deploy",
     "build-storybook": "build-storybook -s public -o .storybook-build",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "update-styles": "node scripts/update-styles.js"
   },
   "eslintConfig": {
     "extends": [
@@ -80,6 +81,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.1.2",
     "@rollup/plugin-typescript": "^8.3.0",
@@ -90,6 +92,7 @@
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.9",
     "@whitespace/storybook-addon-html": "^5.0.0",
+    "axios": "^0.24.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -97,6 +100,7 @@
     "gh-pages": "^3.2.3",
     "rollup": "^2.62.0",
     "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-import-css": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-scss": "^3.0.0",
     "storybook-addon-themes": "^6.1.0"
