@@ -3,7 +3,9 @@ import React from 'react';
 export interface TableProps {
     title?: string,
     columns?: string[],
-    rows?: []
+    rows?: [],
+    withBorder?: boolean,
+    slim?: boolean
 }
 
 /**
@@ -41,10 +43,20 @@ export interface TableProps {
 }
  ```
  */
-export const Table = ({title, columns = [], rows = []}: TableProps): JSX.Element => {
+export const Table = ({title, columns = [], rows = [], withBorder = false, slim = false}: TableProps): JSX.Element => {
+
+    let classes = "u-spacing ";
+
+    if (withBorder && slim) {
+        classes = classes + "u-border o-table-slim";
+    } else if (withBorder) {
+        classes = classes + "u-border";
+    } else if (slim) {
+        classes = classes + "o-table-slim";
+    }
 
     return (
-        <table className={"u-spacing"}>
+        <table className={classes}>
             {title && <caption>{title}</caption>}
             <thead>
             <tr>

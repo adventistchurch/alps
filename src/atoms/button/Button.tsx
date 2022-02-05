@@ -5,7 +5,7 @@ import {IconWrap} from "../icons/IconWrap";
 import {iconConfig} from "../icons/_config";
 import useToggle from "../../helpers/useToggle";
 
-import "../../styles/main/main.css";
+// import "../../styles/main/main.css";
 
 export interface ButtonProps {
     /**

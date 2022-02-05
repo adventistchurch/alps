@@ -30,3 +30,14 @@ const Template: Story<TableProps> = (args) =>
     <Table {...args} />
 
 export const Basic = Template.bind({});
+
+export const with_border = Template.bind({});
+with_border.args = {
+    withBorder: true
+}
+
+export const Slim = Template.bind({});
+Slim.args = {
+    withBorder: true,
+    slim: true
+}

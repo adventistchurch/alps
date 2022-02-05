@@ -1,7 +1,7 @@
 import {Meta, Story} from "@storybook/react";
 import React from "react";
-import {TableSlim, TableSlimProps} from "./tableSlim/TableSlim";
 import {range} from "../../helpers/range";
+import {Table, TableProps} from "./table/Table";
 
 export default {
     title: "atoms/Tables/Playground",
@@ -9,7 +9,7 @@ export default {
         componentSubtitle: 'Component',
         status: 'released'
     },
-    component: TableSlim,
+    component: Table,
     argTypes: {
         columns: {
             table: {disable: true}
@@ -42,17 +42,18 @@ export default {
     },
 } as Meta;
 
-const Template: Story<TableSlimProps> = (args) => {
+const Template: Story<TableProps> = (args) => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const columns = range(1, args.colCount).map(col => `Header ${col}`)
+
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const rows = range(1, args.rowCount).map(row => range(1, args.colCount).map(col => args.cellText || `C:${col} / R:${row}`))
 
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    return <TableSlim columns={columns} rows={rows} {...args} />
+    return <Table columns={columns} rows={rows} {...args} />
 }
 
 export const Playground = Template.bind({});
