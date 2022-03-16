@@ -29,6 +29,7 @@ export const parameters = {
             order: [
                 'Introduction',
                 [
+                    'Getting started',
                     'Installation',
                     'Using the library',
                     "What's new",
