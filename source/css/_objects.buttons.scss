@@ -180,3 +180,9 @@ input[type="submit"] {
     height: auto;
   }
 }
+
+.u-buttons--square {
+  .o-button {
+    border-radius: 0;
+  }
+}
