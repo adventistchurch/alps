@@ -19,6 +19,13 @@ $max-width: rem($max-width-px) !default;
  * Theme Colors
  */
 
+$c-theme-nad-denim: #003b5c;
+$c-theme-nad-nile: #007682;
+$c-theme-nad-amethyst: #582c83;
+$c-theme-nad-spark: #d86018;
+$c-theme-nad-miracle: #7d2248;
+$c-theme-nad-branch: #4e3629;
+$c-theme-nad-vine: #4a7729;
 $c-theme-treefrog: #2b8500;
 $c-theme-ming: #007f98;
 $c-theme-bluejay: #2e6de7;
@@ -36,6 +43,13 @@ $c-theme-velvet: #782832;
 $c-theme-earth: #5e3929;
 $c-theme-night: #4A4A4A;
 
+$u-theme-nad-denim: (u-theme--nad-denim: (darker: #001724, dark: #002D46, base: $c-theme-nad-denim, light: #51BEFB, lighter: #86D4FF));
+$u-theme-nad-nile: (u-theme--nad-nile: (darker: #142C2E, dark: #1D5358, base: $c-theme-nad-nile, light: #76EFFA, lighter: #BAF5FA));;
+$u-theme-nad-amethyst: (u-theme--nad-amethyst: (darker: #1E0D2E, dark: #31174B, base: $c-theme-nad-amethyst, light: #C189F8, lighter: #DBC5F1));;
+$u-theme-nad-spark: (u-theme--nad-spark: (darker: #2F1200, dark: #4A1C01, base: $c-theme-nad-spark, light: #FFE5D5, lighter: #FFE5D5));;
+$u-theme-nad-miracle: (u-theme--nad-miracle: (darker: #330015, dark: #400C22, base: $c-theme-nad-miracle, light: #F675AB, lighter: #FCB5D3));;
+$u-theme-nad-branch: (u-theme--nad-branch: (darker: #140802, dark: #2A170D, base: $c-theme-nad-branch, light: #A08577, lighter: #CEC4C0));;
+$u-theme-nad-vine: (u-theme--nad-vine: (darker: #1E2519, dark: #364D26, base: $c-theme-nad-vine, light: #89DF4B, lighter: #BAEC97));;
 $u-theme-treefrog: (u-theme--treefrog: (darker: #1b2d00, dark: #355724, base: $c-theme-treefrog, light: #7cd500, lighter: #9fe180));
 $u-theme-ming: (u-theme--ming: (darker: #002938, dark: #255760, base: $c-theme-ming, light: #00d5fe, lighter: #9ae1f0));
 $u-theme-bluejay: (u-theme--bluejay: (darker: #052252, dark: #2f557f, base: $c-theme-bluejay, light: #84adfc, lighter: #84adfc));
@@ -53,8 +67,14 @@ $u-theme-velvet: (u-theme--velvet: (darker: #2d0505, dark: #d0021b, base: $c-the
 $u-theme-earth: (u-theme--earth: (darker: #210b00, dark: #974e02, base: $c-theme-earth, light: #eab57e, lighter: #eab57e));
 $u-theme-night: (u-theme--night: (darker: #000000, dark: #717171, base: $c-theme-night, light: #F9F9F9, lighter: #F9F9F9));
 
-
-$alps_themes: map_merge((), $u-theme-treefrog);
+$alps_themes: map_merge((), $u-theme-nad-denim);
+$alps_themes: map_merge($alps_themes, $u-theme-nad-nile);
+$alps_themes: map_merge($alps_themes, $u-theme-nad-amethyst);
+$alps_themes: map_merge($alps_themes, $u-theme-nad-spark);
+$alps_themes: map_merge($alps_themes, $u-theme-nad-miracle);
+$alps_themes: map_merge($alps_themes, $u-theme-nad-branch);
+$alps_themes: map_merge($alps_themes, $u-theme-nad-vine);
+$alps_themes: map_merge($alps_themes, $u-theme-treefrog);
 $alps_themes: map_merge($alps_themes, $u-theme-ming);
 $alps_themes: map_merge($alps_themes, $u-theme-bluejay);
 $alps_themes: map_merge($alps_themes, $u-theme-iris);
