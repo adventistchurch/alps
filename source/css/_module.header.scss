@@ -509,7 +509,7 @@
       }
 
       &.is-priority {
-        display: flex;
+        display: table;
       }
 
       &:hover {
@@ -559,9 +559,10 @@
       }
 
 
-      @include media(">large") {
-        right: rem(75);
-      }
+      // This remove for responsible search icon
+      //@include media(">large") {
+      //  right: rem(75);
+      //}
     }
 
     &__list-item__language.is-priority {
