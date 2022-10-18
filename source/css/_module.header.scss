@@ -473,18 +473,16 @@
       align-items: flex-start;
 
       @include media(">small") {
-        padding-left: rem(165);
       }
 
 
       @include media(">medium") {
-        padding-right: rem(150);
         padding-left: 0;
       }
 
 
       @include media(">large") {
-        padding-right: rem(160);
+        //padding-right: rem(160);
       }
     }
 
@@ -613,7 +611,7 @@
     &__link {
       white-space: nowrap;
       padding: ($pad / 2) ($pad / 3);
-      display: flex;
+      //display: flex;
       align-items: center;
 
       span {
