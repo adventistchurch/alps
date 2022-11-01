@@ -697,12 +697,21 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
 
 .o-citation {
   display: block;
-  font-style: normal;
-  text-transform: uppercase;
+  font-style: italic;
+  //text-transform: uppercase;
   margin-top: $space / 2;
-  font-weight: bold;
+  font-weight: 600;
 
-  @include u-font--secondary--s;
+  font-family: $ff-font--primary;
+  font-size: rem(22);
+  line-height: rem(34);
+
+  padding: rem(25) 0 rem(25) rem(20);
+
+  @include media(">large") {
+    font-size: rem(25);
+  }
+  //@include u-font--secondary--s;
 }
 
 /**

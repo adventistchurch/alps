@@ -29,22 +29,28 @@ blockquote {
   text-align: left;
   position: relative;
   quotes: "“" "”" "‘" "’";
-  padding-left: $pad;
   display: flex;
   flex-direction: column;
 
+  @include media("<medium") {
+    padding-left: $pad;
+  }
+
   @include media(">medium") {
-    border-left: 2px solid $c-black;
+    //border-left: 2px solid $c-black;
   }
 
   p {
-    font-size: rem(16);
-    line-height: 1.3;
+    font-size: rem(20);
+    line-height: rem(31);
     position: relative;
     z-index: 10;
     text-indent: $pad;
     margin-top: $space;
-    font-family: $ff-font;
+    font-family: $ff-font--primary;
+    font-style: normal;
+    font-weight: 400;
+    color: #4A4A4A;
 
     &:first-child {
       margin-top: 0;

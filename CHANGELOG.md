@@ -3,6 +3,9 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.11.9]
+New design of ALPS Quote block [story](https://app.zenhub.com/workspaces/alps---core-and-wp-583365a5f9e6361b5cc5f5f6/issues/adventistchurch/alps-gutenberg-blocks/87)
+
 ## [3.11.8]
 Update styles for menu. Need for internationalization in menu. Version 3.11.7 was skipped.
 
