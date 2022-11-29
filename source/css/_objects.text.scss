@@ -697,21 +697,27 @@ ul:not(.c-breadcrumbs__list):not(.o-inline-list) {
 
 .o-citation {
   display: block;
-  font-style: italic;
-  //text-transform: uppercase;
+  font-style: normal;
   margin-top: $space / 2;
-  font-weight: 600;
+  font-weight: 500;
 
   font-family: $ff-font--primary;
-  font-size: rem(22);
-  line-height: rem(34);
+  font-size: rem(14);
+  line-height: rem(20);
 
-  padding: rem(25) 0 rem(25) rem(20);
+  padding: rem(10) 0 rem(25) rem(60);
+
+  &:before {
+    content: "\2014  ";
+  }
+
+  @include media("<large") {
+    padding: rem(10) 0 rem(20) 0;
+  }
 
   @include media(">large") {
-    font-size: rem(25);
+    //font-size: rem(16);
   }
-  //@include u-font--secondary--s;
 }
 
 /**

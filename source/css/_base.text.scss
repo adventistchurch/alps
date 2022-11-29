@@ -28,7 +28,6 @@ b,
 blockquote {
   text-align: left;
   position: relative;
-  quotes: "“" "”" "‘" "’";
   display: flex;
   flex-direction: column;
 
@@ -37,34 +36,31 @@ blockquote {
   }
 
   @include media(">medium") {
-    //border-left: 2px solid $c-black;
   }
 
   p {
-    font-size: rem(20);
-    line-height: rem(31);
+    font-size: rem(16);
+    line-height: rem(30);
     position: relative;
     z-index: 10;
-    text-indent: $pad;
     margin-top: $space;
     font-family: $ff-font--primary;
-    font-style: normal;
-    font-weight: 400;
-    color: #4A4A4A;
+    font-style: italic;
+    font-weight: 600;
+    padding: rem(10) 0 rem(10) rem(60);
 
     &:first-child {
       margin-top: 0;
     }
 
-    &:after {
-      content: "\201D";
+    &:before {
+      position: absolute;
+      top: 0;
     }
 
-    &:before {
-      content: "\201C";
-      position: absolute;
-      left: -$pad/1.5;
-      top: 0;
+    @include media("<large") {
+      padding: rem(20) 0 rem(10) 0;
+      left: 0;
     }
   }
 
