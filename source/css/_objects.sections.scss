@@ -128,6 +128,12 @@
   }
 }
 
+.c-page-header__longer {
+  &.has-background {
+    padding-top: 33vw;
+  }
+}
+
 .l-section__block-row {
   .c-block__image-wrap {
     margin-right: $space-mobile;

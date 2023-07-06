@@ -1,0 +1,46 @@
+@import "settings.variables";
+
+.editor-styles-wrapper {
+  /*------------------------------------*\
+    $TOOLS
+  \*------------------------------------*/
+  @import "tools.mixins";
+  @import "tools.include-media";
+
+  /*------------------------------------*\
+    $BASE
+  \*------------------------------------*/
+  @import "base.forms";
+  @import "base.headings";
+  @import "base.links";
+  @import "base.lists";
+  @import "base.tables";
+
+  /*------------------------------------*\
+    $TEXT
+  \*------------------------------------*/
+  @import "objects.text";
+
+  /*------------------------------------*\
+    $COMPONENTS
+  \*------------------------------------*/
+  @import "objects.blocks";
+  @import "objects.buttons";
+  @import "objects.icons";
+  @import "objects.lists";
+  @import "objects.forms";
+
+  /*------------------------------------*\
+    $MODIFIERS
+  \*------------------------------------*/
+  @import "modifier.borders";
+  @import "modifier.colors";
+  @import "modifier.display";
+  @import "modifier.spacing";
+
+  /*------------------------------------*\
+    WP Editor
+  \*------------------------------------*/
+  @import "wp.pagebuilders";
+
+}

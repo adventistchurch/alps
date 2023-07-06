@@ -1360,7 +1360,7 @@
     opacity: 0.1;
   }
 
-  .c-header,
+  .c-header:not(.c-header--overlay),
   .c-header__nav-secondary .c-secondary-nav__list-item__search,
   .c-header__nav-secondary .c-secondary-nav__list-item__menu {
     background-color: $c-gray--darker;
