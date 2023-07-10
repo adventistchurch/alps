@@ -3,6 +3,12 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.12.0]
+- New wp-editor styleseheet for WP page builder editor support and additional rules for
+- new _wp.pagebuilders scss to feed wp-editor stylesheet and provide additional classes to front end sheets by inclusion in common.scss
+- Additional class for featured image heros
+- Fix header style for overlayed header on dark theme
+
 ## [3.11.10]
 New design of ALPS Quote block. Fix styles for citation and quote fields. [story](https://app.zenhub.com/workspaces/alps---core-and-wp-583365a5f9e6361b5cc5f5f6/issues/adventistchurch/alps-gutenberg-blocks/87)
 

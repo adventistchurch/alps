@@ -1,0 +1,82 @@
+/**
+ * Mods and fixes for page builders
+ */
+
+// content-width padding for wrappers
+.u-padding--container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  @include media(">large") {
+    padding-left: calc((100vw/7)*1) !important;
+    padding-right: calc((100vw/7)*1) !important;
+  }
+  @include media(">xxxlarge"){
+    padding-left: 21vw !important;
+    padding-right: 21vw !important;
+  }
+}
+
+// move carousel dots to the bottom so they don't interfere with overlayed header
+.c-hero {
+  .slick-dots {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+// fixes for overlay header
+.c-header--overlay {
+  .c-header__logo {
+    img {
+      filter: invert(100%);
+    }
+  }
+  .c-header__nav-primary {
+    display: none;
+    @include media(">large"){
+      display: flex;
+    }
+  }
+}
+
+// sabbath column fixes for overlay header
+.hide-sabbath {
+  .c-header--overlay .c-header--inner {
+    width: 100vw;
+  }
+}
+.hide-sabbath--until-small {
+  .c-header--overlay .c-header--inner {
+    width: 100vw;
+    @include media(">small"){
+      width: calc((100vw/7) * 6 - 0.01px);
+    }
+  }
+}
+.hide-sabbath--until-medium {
+  .c-header--overlay .c-header--inner {
+    width: 100vw;
+    @include media(">medium"){
+      width: calc((100vw/7) * 6 - 0.01px);
+    }
+  }
+}
+.hide-sabbath--until-large {
+  .c-header--overlay .c-header--inner {
+    width: 100vw;
+    @include media(">large"){
+      width: calc((100vw/7) * 6 - 0.01px);
+    }
+  }
+}
+
+// margin fixes for page headers inside custom template
+.template-custom {
+  .c-page-header__long--inner {
+    .c-page-header__content {
+      @include media(">xxxlarge"){
+        margin: 0 21vw;
+      }
+    }
+  }
+}
