@@ -46,6 +46,8 @@ module.exports = function (grunt) {
     sassFiles[`cdn/<%= major_version %>/<%= version %>/css/main-${themeName}.css`] = `source/css/main-${themeName}.scss`
   }
 
+  sassFiles[`cdn/<%= major_version %>/<%= version %>/css/wp-editor.css`] = `source/css/wp-editor.scss`
+
   grunt.initConfig({
     pkg: pkg,
     version: version,
