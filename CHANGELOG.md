@@ -3,6 +3,9 @@ A record of the changes made to `ALPS V3`.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.12.1]
+- Update build process for CDN (add build css for WP page builder editor).
+
 ## [3.12.0]
 - New wp-editor styleseheet for WP page builder editor support and additional rules for
 - new _wp.pagebuilders scss to feed wp-editor stylesheet and provide additional classes to front end sheets by inclusion in common.scss

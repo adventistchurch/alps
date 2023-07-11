@@ -15,7 +15,7 @@ module.exports = function (grunt) {
    * of /cdn/<major_version/<version>/ that contains the javascript and css.
    */
   const major_version = "3";
-  const version = "3.12.0";
+  const version = "3.12.1";
 
   /**
    * Split SCSS files by theme
@@ -45,6 +45,8 @@ module.exports = function (grunt) {
   for (const themeName of themes) {
     sassFiles[`cdn/<%= major_version %>/<%= version %>/css/main-${themeName}.css`] = `source/css/main-${themeName}.scss`
   }
+
+  sassFiles[`cdn/<%= major_version %>/<%= version %>/css/wp-editor.css`] = `source/css/wp-editor.scss`
 
   grunt.initConfig({
     pkg: pkg,
