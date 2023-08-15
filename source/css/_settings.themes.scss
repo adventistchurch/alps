@@ -8,6 +8,7 @@
   $darker: map-get($shades, darker);
   $dark: map-get($shades, dark);
   $base: map-get($shades, base);
+  $base-filter: map-get($shades, base-filter);
   $light: map-get($shades, light);
   $lighter: map-get($shades, lighter);
 
@@ -85,6 +86,13 @@
           @media print {
             fill: black;
           }
+        }
+      }
+
+      // recolor logo images
+      .u-theme--path-fill--base {
+        img {
+          filter: $base-filter;
         }
       }
     }
@@ -765,11 +773,16 @@
         fill: $dark;
       }
 
-      .u-theme--path-fill--base path {
-        fill: $c-white;
+      .u-theme--path-fill--base {
+        path {
+          fill: $c-white;
 
-        @media print {
-          fill: black;
+          @media print {
+            fill: black;
+          }
+        }
+        img {
+          filter: brightness(0) invert(1);
         }
       }
 
