@@ -26,9 +26,9 @@
 
 // fixes for overlay header
 .c-header--overlay {
-  .c-header__logo {
+  .u-theme--path-fill--base {
     img {
-      filter: invert(100%);
+      filter: brightness(0) invert(1);
     }
   }
   .c-header__nav-primary {
