@@ -1,5 +1,34 @@
 [
   {
+    "version": "3.12.2",
+    "description": "- Update global css styles file for button o-button-toggle class. [",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.2/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.12.2/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.12.2/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.12.2/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.12.2/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.12.2/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.12.2/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.12.2/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.12.2/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.12.2/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.12.2/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.12.2/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.12.2/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.12.2/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.12.2/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.12.2/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.12.2/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.12.2/js/head-script.min.js"
+    }
+  },
+  {
     "version": "3.12.1",
     "description": "- Update build process for CDN (add build css for WP page builder editor).",
     "styles": {
