@@ -1,25 +1,25 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./Comments.stories.json";
-import {Comments, CommentsProps} from "./Comments";
+import {Comments} from "./Comments";
 
-export default {
+const meta = {
     title: "organisms/sections/Comments",
     component: Comments,
-    argTypes: {
-        items: {
-            defaultValue: data.items,
-            control: {type: "object"}
-        },
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof Comments>;
 
-const Template: Story<CommentsProps> = (args) =>
-    <Comments {...args}/>
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        items: data.items,
+        title: data.title
+    }
+};
 

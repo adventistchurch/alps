@@ -1,20 +1,23 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {PageContent, PageContentProps} from "./PageContent";
+import {Meta, StoryObj} from "@storybook/react";
+import {PageContent} from "./PageContent";
 
 import data from "./PageContent.stories.json";
 
-export default {
+const meta = {
     title: "organisms/content/Page Content",
     component: PageContent,
-    argTypes: {
-      breadcrumbs: {
-        defaultValue: data.items,
-        control: {type: "object"}
-      }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof PageContent>;
 
-const Template: Story<PageContentProps> = (args) =>
-    <PageContent {...args}>Body content goes here...</PageContent>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        breadcrumbs: data.items
+    }
+};

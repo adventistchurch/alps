@@ -1,36 +1,34 @@
 import React from "react";
-import {Meta, Story} from '@storybook/react'
-import {Search, SearchProps} from "./Search";
+import {Meta, StoryObj} from '@storybook/react'
+import {Search} from "./Search";
 import data from "./Search.stories.json";
 
-export default {
+const meta = {
     title: "molecules/forms/Search",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: Search,
-    argTypes: {
-        placeholder: {
-            defaultValue: data.placeholder,
-            control: {type: "text"}
-        },
-        submitLabel: {
-            defaultValue: data.submitLabel,
-            control: {type: "text"}
-        },
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof Search>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        placeholder: data.placeholder,
+        submitLabel: data.submitLabel,
+        title: data.title,
     }
-} as Meta;
+};
 
-const Template: Story<SearchProps> = (args) => <Search {...args}/>;
+export const with_suggestions: Story = {
+    args: {
+        ...Basic.args,
+        suggestions: data.suggestions
+    }
+};
 
-export const Basic = Template.bind({});
-
-export const with_suggestions = Template.bind({});
-with_suggestions.args = {
-    suggestions: data.suggestions
-}

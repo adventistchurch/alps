@@ -1,31 +1,27 @@
 import React from 'react';
 import data from "./ContentBlockExpand.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {ContentBlockExpand, ContentBlockExpandProps} from "./ContentBlockExpand";
+import {Meta, StoryObj} from "@storybook/react";
+import {ContentBlockExpand} from "./ContentBlockExpand";
 
-export default {
+const meta = {
     title: "molecules/blocks/Content Block Expand",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: ContentBlockExpand,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        description: {
-            defaultValue: data.description,
-            control: {type: "text"}
-        },
-        kicker: {
-            defaultValue: data.kicker,
-            control: {type: "text"}
-        },
-    },
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof ContentBlockExpand>;
 
-const Template: Story<ContentBlockExpandProps> = (args) => <ContentBlockExpand {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        description: data.description,
+        kicker: data.kicker,
+    }
+};

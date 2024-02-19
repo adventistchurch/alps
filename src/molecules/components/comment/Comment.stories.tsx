@@ -1,60 +1,34 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
-import {Comment, CommentProps} from "./Comment";
+import {Meta, StoryObj} from "@storybook/react";
+import {Comment} from "./Comment";
 import data from "./Comment.stories.json";
-import {dateFormats, dateFormatsMap} from "../../../helpers/DateTimeFormat";
 
-export default {
+const meta = {
     title: "molecules/components/Comment",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: Comment,
-    argTypes: {
-        avatar: {
-            defaultValue: data.avatar,
-            control: {type: "text"}
-        },
-        date: {
-            control: {type: "date"}
-        },
-        dateFormat: {
-            defaultValue: dateFormatsMap.date,
-            options: dateFormats,
-            control: {type: "select"}
-        },
-        byline: {
-            defaultValue: data.byline,
-            control: {type: "text"}
-        },
-        bylineLink: {
-            defaultValue: data.bylineLink,
-            control: {type: "text"}
-        },
-        text: {
-            defaultValue: data.comment,
-            control: {type: "text"}
-        },
-        editUrl: {
-            defaultValue: data.editUrl,
-            control: {type: "text"}
-        },
-        editLabel: {
-            defaultValue: data.editLabel,
-            control: {type: "text"}
-        },
-        replyUrl: {
-            defaultValue: data.replyUrl,
-            control: {type: "text"}
-        },
-        replyLabel: {
-            defaultValue: data.replyLabel,
-            control: {type: "text"}
-        }
+    argTypes: { date: { control: 'date' }},
+    tags: ['autodocs']
+} satisfies Meta<typeof Comment>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        avatar: data.avatar,
+        date: 1707771600000,
+        dateFormat: "datetime",
+        byline: data.byline,
+        bylineLink: data.bylineLink,
+        text: data.comment,
+        editUrl: data.editUrl,
+        editLabel: data.editLabel,
+        replyUrl: data.replyUrl,
+        replyLabel: data.replyLabel
     }
-} as Meta;
-
-const Template: Story<CommentProps> = (args) => <Comment {...args} />
-
-export const Basic = Template.bind({});
+};

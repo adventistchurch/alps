@@ -6,57 +6,52 @@ import dataHeaderSecondary from "../../molecules/navigation/secondaryNavigation/
 import dataFooterPrimary from "../../molecules/navigation/footerPrimaryNavigation/FooterPrimaryNavigation.stories.json";
 import dataFooterSecondary
     from "../../molecules/navigation/footerSecondaryNavigation/FooterSecondaryNavigation.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {ArchivePage, ArchivePageProps} from "./ArchivePage";
+import {Meta, StoryObj} from "@storybook/react";
+import {ArchivePage} from "./ArchivePage";
 import {BlockWrap} from "../../organisms/asides/aside/BlockWrap";
 
 const asideChildren = data.aside
-    ? <BlockWrap type="contentBlock" title={data.aside.comments.title} linkLabel={data.aside.comments.linkLabel} linkUrl={data.aside.comments.linkUrl} items={data.aside.comments.items}/>
+    ? <BlockWrap type="contentBlock" title={data.aside.comments.title} linkLabel={data.aside.comments.linkLabel}
+                 linkUrl={data.aside.comments.linkUrl} items={data.aside.comments.items}/>
     : null;
 
-export default {
+const meta = {
     title: "templates/ArchivePage",
     component: ArchivePage,
-    argTypes: {
-        filters: {
-            defaultValue: dataFilters,
-            control: {type: "object"}
-        },
-        pageHeader: {
-            defaultValue: data.pageHeader,
-            control: {type: "object"}
-        },
-        articles: {
-            defaultValue: data.articles,
-            control: {type: "object"}
-        },
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof ArchivePage>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        filters: dataFilters,
+        pageHeader: data.pageHeader,
+        // @ts-ignore
+        articles: data.articles,
         blankTemplateProps: {
-            defaultValue: {
-                templateProps: {
-                    header: {
-                        primaryNav: dataHeaderPrimary,
-                        secondaryNav: dataHeaderSecondary,
-                        logoElement: "SDA"
-                    },
-                    footer: {
-                        primaryNav: dataFooterPrimary,
-                        secondaryNav: dataFooterSecondary
-                    }
+            templateProps: {
+                header: {
+                    // @ts-ignore
+                    primaryNav: dataHeaderPrimary,
+                    // @ts-ignore
+                    secondaryNav: dataHeaderSecondary,
+                    logoElement: "SDA"
                 },
-                control: {type: "object"}
+                footer: {
+                    // @ts-ignore
+                    primaryNav: dataFooterPrimary,
+                    secondaryNav: dataFooterSecondary
+                }
             }
         },
-        aside: {
-            defaultValue: asideChildren,
-            control: {type: "object"}
-        },
-        pagination: {
-            defaultValue: data.pagination,
-            control: {type: "object"}
-        }
+        // @ts-ignore
+        aside: asideChildren,
+        // @ts-ignore
+        pagination: data.pagination
     }
-} as Meta;
-
-const Template: Story<ArchivePageProps> = (args) =>
-    <ArchivePage {...args}/>;
-export const Basic = Template.bind({});
+};

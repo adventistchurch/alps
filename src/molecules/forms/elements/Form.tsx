@@ -73,7 +73,7 @@ export const Form = ({
     const formFields = useFormFields(fields, children);
 
     const _onSubmit = useCallback(
-        e => {
+        (e: { preventDefault: () => void; }) => {
             if (typeof onSubmit === "function") {
                 e.preventDefault()
                 onSubmit(e)

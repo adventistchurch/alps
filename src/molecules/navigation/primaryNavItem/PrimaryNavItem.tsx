@@ -66,7 +66,7 @@ export const PrimaryNavItem = ({
             : ''
 
     const onArrowClick = useCallback(
-        e => {
+        (e: { stopPropagation: () => void; preventDefault: () => void; }) => {
             e.stopPropagation()
             e.preventDefault()
             setIsOpen(isOpen ? statuses.closed : statuses.open)

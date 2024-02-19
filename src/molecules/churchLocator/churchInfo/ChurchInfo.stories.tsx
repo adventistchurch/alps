@@ -1,32 +1,25 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./ChurchInfo.stories.json";
-import {ChurchInfo, ChurchInfoProps} from "./ChurchInfo";
+import {ChurchInfo} from "./ChurchInfo";
 
-export default {
+const meta = {
     title: "molecules/Church Locator/Church Info",
     component: ChurchInfo,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        address: {
-            defaultValue: data.address,
-            control: {type: "text"}
-        },
-        site: {
-            defaultValue: data.site,
-            control: {type: "text"}
-        },
-        siteLabel: {
-            defaultValue: data.siteLabel,
-            control: {type: "text"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof ChurchInfo>;
 
-const Template: Story<ChurchInfoProps> = (args) =>
-    <ChurchInfo {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        address: data.address,
+        site: data.site,
+        siteLabel: data.siteLabel,
+    }
+};
 

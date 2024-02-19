@@ -1,24 +1,26 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
-import {Breadcrumbs, BreadcrumbsProps} from "./Breadcrumbs";
+import {Meta, StoryObj} from "@storybook/react";
+import {Breadcrumbs} from "./Breadcrumbs";
 
 import data from "./Breadcrumbs.stories.json";
 
-export default {
+const meta = {
     title: "molecules/navigation/Breadcrumbs",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: Breadcrumbs,
-    argTypes: {
-        items: {
-          defaultValue: data.items,
-          control: {type: "object"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof Breadcrumbs>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        items: data.items
     }
-} as Meta;
-
-const Template: Story<BreadcrumbsProps> = (args) => <Breadcrumbs {...args} />
-
-export const Basic = Template.bind({});
+};

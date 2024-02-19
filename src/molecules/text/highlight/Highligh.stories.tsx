@@ -1,20 +1,21 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {Highlight, HighlightProps} from "./Highligh";
+import {Meta, StoryObj} from "@storybook/react";
+import {Highlight} from "./Highligh";
 import data from "./Highlight.stories.json";
 
 
-export default {
+const meta = {
     title: "molecules/text/Highlight",
     component: Highlight,
-    argTypes: {
-        value: {
-            defaultValue: data.text,
-            control: {type: "text"}
-        }
-    }
-} as Meta;
+    argTypes: {}
+} satisfies Meta<typeof Highlight>;
 
-const Template: Story<HighlightProps> = (args) =>
-    <Highlight {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        value: data.text
+    }
+};

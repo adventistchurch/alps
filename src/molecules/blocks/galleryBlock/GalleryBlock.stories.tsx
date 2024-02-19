@@ -1,35 +1,28 @@
 import React from 'react';
 import data from "./GalleryBlock.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {GalleryBlock, GalleryBlockProps} from "./GalleryBlock";
+import {Meta, StoryObj} from "@storybook/react";
+import {GalleryBlock} from "./GalleryBlock";
 
-export default {
+const meta = {
     title: "molecules/blocks/Gallery Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: GalleryBlock,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        kicker: {
-            defaultValue: data.kicker,
-            control: {type: "text"}
-        },
-        description: {
-            defaultValue: data.description,
-            control: {type: "text"}
-        },
-        images: {
-            defaultValue: data.images,
-            control: {type: "object"}
-        }
-    },
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof GalleryBlock>;
 
-const Template: Story<GalleryBlockProps> = (args) => <GalleryBlock {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        kicker: data.kicker,
+        description: data.description,
+        images: data.images
+    }
+};

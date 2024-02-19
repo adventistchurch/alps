@@ -63,6 +63,7 @@ export const ArchivePage = ({
                 <div
                     className="c-sidebar u-padding--zero--sides u-spacing l-grid-item l-grid-item--l--2-col l-grid-item--xl--2-col"
                 >
+                    {/*@ts-ignore*/}
                     <div className={"u-padding--right u-spacing--double"}>
                         {breakout && <BreakoutBlock {...breakout} />}
                         <ListContent title={filtersTitle}>

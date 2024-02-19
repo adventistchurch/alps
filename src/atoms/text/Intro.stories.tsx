@@ -1,9 +1,9 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {Intro, IntroProps} from "./Intro";
+import {Meta, StoryObj} from "@storybook/react";
+import {Intro} from "./Intro";
 import {ComponentsTypes} from "../../global/commons";
 
-export default {
+const meta = {
     title: "atoms/Texts/Intro",
     component: Intro,
     parameters: {
@@ -16,17 +16,20 @@ export default {
             control: {type: "text"}
         }
     }
-} as Meta;
+} satisfies Meta<typeof Intro>;
 
-const Template: Story<IntroProps> = (args) => <Intro {...args}/>
-export const Basic = Template.bind({});
+export default meta;
 
-const TemplateChildren: Story<IntroProps> = (args) =>
-    <Intro {...args}>Some Tag <a href="https://google.com">Google link</a></Intro>
+type Story = StoryObj<typeof meta>;
 
-export const with_children = TemplateChildren.bind({});
-with_children.argTypes = {
-    content: {
-        table: {disable: true}
+export const Basic: Story = {
+    args: {
+        content: "A block quotation is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation."
+    }
+};
+
+export const with_children = {
+    args: {
+        children: <Intro {...Basic.args}>Some Tag <a href="https://google.com">Google link</a></Intro>
     }
 }

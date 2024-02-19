@@ -1,8 +1,8 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {VideoFull, VideoFullProps} from "./VideoFull";
+import {Meta, StoryObj} from "@storybook/react";
+import {VideoFull} from "./VideoFull";
 
-export default {
+const meta = {
     title: "organisms/sections/Video Full",
     component: VideoFull,
     argTypes: {
@@ -15,10 +15,22 @@ export default {
             },
             control: {type: "object"}
         }
-    }
-} as Meta;
+    },
+    tags: ['autodocs']
+} satisfies Meta<typeof VideoFull>;
 
-const Template: Story<VideoFullProps> = (args) =>
-    <VideoFull {...args}/>
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        srcVideo: {
+            src: "https://www.youtube.com/embed/QPNxmEviUOg",
+            frameBorder: 0,
+            allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+            allowFullScreen: true
+        }
+    }
+};
 

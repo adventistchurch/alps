@@ -1,31 +1,26 @@
 import React from "react";
-import {Meta, Story} from '@storybook/react';
-import {SubscribeForm, SubscribeFormProps} from "./SubscribeForm";
+import {Meta, StoryObj} from '@storybook/react';
+import {SubscribeForm} from "./SubscribeForm";
 import data from "./SubscribeForm.stories.json";
 
-export default {
+const meta = {
     title: "molecules/forms/Subscribe Form",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: SubscribeForm,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        submitLabel: {
-            defaultValue: data.submitLabel,
-            control: {type: "text"}
-        },
-        cancelLabel: {
-            defaultValue: data.cancelLabel,
-            control: {type: "text"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof SubscribeForm>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        submitLabel: data.submitLabel,
+        cancelLabel: data.cancelLabel
     }
-} as Meta;
-
-const Template: Story<SubscribeFormProps> = (args) => <SubscribeForm {...args}/>;
-
-export const Basic = Template.bind({});
+};

@@ -1,121 +1,117 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react';
-import {Icon, IconProps} from './Icon';
-import library from "./library";
-import {grayscaleColors, themeColors} from "../../global/colors";
+import {Meta, StoryObj} from '@storybook/react';
+import {Icon} from './Icon';
 
-export default {
+const meta = {
     title: "atoms/Icon",
     component: Icon,
-    argTypes: {
-        color: {
-            name: "Color",
-            options: [""].concat(grayscaleColors, themeColors),
-            control: {type: 'select'}
+    argTypes: {},
+    parameters: {
+        viewport: {
+            defaultViewport: 'custom',
+            viewports: {
+                custom: {
+                    name: 'Custom',
+                    styles: {
+                        width: '500px',
+                        height: '500px',
+                    },
+                },
+            },
         },
-        fill: {
-            table: {disable: true}
-        }
     }
-} as Meta;
+} satisfies Meta<typeof Icon>;
 
-const iconNames = Array.from(library.keys());
+export default meta;
 
-const Template: Story<IconProps> = (args) =>
-    <div style={{height: "500px", width: "500px"}}>
-        <Icon {...args} />
-    </div>;
+type Story = StoryObj<typeof meta>;
 
-//Add controls for not single Icon Story
-export const DefaultIcon = Template.bind({});
-DefaultIcon.argTypes = {
-    name: {
-        name: "Icon name",
-        options: iconNames,
-        defaultValue: "logo",
-        control: {type: 'select'}
-    }
-};
-
-export const arrow_brackets = Template.bind({});
-arrow_brackets.argTypes = {
-    name: {
-        name: "Icon name",
-        defaultValue: "arrow-bracket-left",
-        options: iconNames.filter(icon => icon.includes("arrow-bracket")),
-        control: {type: 'select'}
-    }
-};
-
-export const arrow_long_brackets = Template.bind({});
-arrow_long_brackets.argTypes = {
-    name: {
-        name: "Icon name",
-        defaultValue: "arrow-long-left",
-        options: iconNames.filter(icon => icon.includes("arrow-long")),
-        control: {type: 'select'}
-    }
-};
-
-export const arrow_short_brackets = Template.bind({});
-arrow_short_brackets.argTypes = {
-    name: {
-        name: "Icon name",
-        defaultValue: "arrow-short-left",
-        options: iconNames.filter(icon => icon.includes("arrow-short")),
-        control: {type: 'select'}
-    }
-};
-
-export const logos = Template.bind({});
-logos.argTypes = {
-    name: {
-        name: "Icon name",
-        defaultValue: "logo",
-        options: iconNames.filter(icon => icon.includes("logo")),
-        control: {type: 'select'}
-    }
-};
-
-//Single Icons
-const argsTypeForSingleIcon = (name: string) => {
-    return {
-        name: {
-            defaultValue: name,
-            table: {disable: true}
-        }
+export const DefaultIcon: Story = {
+    args: {
+        name: "logo"
     }
 }
 
-export const close = Template.bind({});
-close.argTypes = argsTypeForSingleIcon("close");
+export const arrow_brackets: Story = {
+    args: {
+        name: "arrow-bracket-left"
+    }
+}
 
-export const contacts = Template.bind({});
-contacts.argTypes = argsTypeForSingleIcon("contacts");
+export const arrow_long_brackets: Story = {
+    args: {
+        name: "arrow-long-left"
+    }
+}
 
-export const dots = Template.bind({});
-dots.argTypes = argsTypeForSingleIcon("dots");
+export const arrow_short_brackets: Story = {
+    args: {
+        name: "arrow-short-left"
+    }
+}
 
-export const language = Template.bind({});
-language.argTypes = argsTypeForSingleIcon("language");
+export const logos: Story = {
+    args: {
+        name: "logo"
+    }
+}
 
-export const legal = Template.bind({});
-legal.argTypes = argsTypeForSingleIcon("legal");
+export const close: Story = {
+    args: {
+        name: "close"
+    }
+}
 
-export const menu = Template.bind({});
-menu.argTypes = argsTypeForSingleIcon("menu");
+export const contacts: Story = {
+    args: {
+        name: "contact"
+    }
+}
 
-export const plus = Template.bind({});
-plus.argTypes = argsTypeForSingleIcon("plus");
+export const dots: Story = {
+    args: {
+        name: "dots"
+    }
+}
 
-export const search = Template.bind({});
-search.argTypes = argsTypeForSingleIcon("search");
+export const language: Story = {
+    args: {
+        name: "language"
+    }
+}
 
-export const settings = Template.bind({});
-settings.argTypes = argsTypeForSingleIcon("settings");
+export const legal: Story = {
+    args: {
+        name: "language"
+    }
+}
 
-export const share = Template.bind({});
-share.argTypes = argsTypeForSingleIcon("share");
+export const plus: Story = {
+    args: {
+        name: "plus"
+    }
+}
 
-export const subscribe = Template.bind({});
-subscribe.argTypes = argsTypeForSingleIcon("subscribe");
+export const search: Story = {
+    args: {
+        name: "search"
+    }
+}
+
+export const settings: Story = {
+    args: {
+        name: "settings"
+    }
+}
+
+export const share: Story = {
+    args: {
+        name: "share"
+    }
+}
+
+export const subscribe: Story = {
+    args: {
+        name: "subscribe"
+    }
+}

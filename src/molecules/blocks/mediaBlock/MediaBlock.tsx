@@ -159,6 +159,7 @@ export const MediaBlock = ({
     })
 
     return (
+        // @ts-ignore
         <div className={`${wrapClasses} ${preset.block ? preset.block : ""}`} {...blockProps}>
             {image && (
                 <MediaImage

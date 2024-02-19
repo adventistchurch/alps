@@ -114,8 +114,9 @@ export const Button = ({
         </>
     );
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const _onClick = onClick || toggle ? useCallback(
-        event => {
+        (event: React.MouseEventHandler<HTMLAnchorElement>) => {
             if (onClick) onClick(event)
             if (toggle) onToggle()
         },

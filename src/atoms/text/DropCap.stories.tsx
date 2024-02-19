@@ -1,23 +1,23 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {Dropcap, DropCapProps} from "./Dropcap";
+import {Meta, StoryObj} from "@storybook/react";
+import {Dropcap} from "./Dropcap";
 import {ComponentsTypes} from "../../global/commons";
 
-export default {
+const meta = {
     title: "atoms/Texts/Dropcap",
     component: Dropcap,
     parameters: {
         componentSubtitle: ComponentsTypes.COMPONENT,
     },
-    argTypes: {
-        letter: {
-            name: "letter",
-            defaultValue: "S",
-            control: {type: "text"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof Dropcap>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        letter: "S"
     }
-} as Meta;
-
-const Template: Story<DropCapProps> = (args) => <Dropcap {...args}/>
-
-export const Basic = Template.bind({});
+};

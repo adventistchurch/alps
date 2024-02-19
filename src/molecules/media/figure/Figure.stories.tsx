@@ -1,44 +1,41 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./Figure.stories.json";
-import {Figure, FigureProps} from "./Figure";
+import {Figure} from "./Figure";
 
-export default {
+const meta = {
     title: "molecules/media/Figure",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: Figure,
-    argTypes: {
-        caption: {
-            defaultValue: data.caption,
-            control: {type: "text"}
-        },
-        image: {
-            defaultValue: data.image,
-            control: {type: "object"}
-        },
-        size: {
-            defaultValue: "large",
-            control: {type: "select"}
-        },
-        align: {
-            defaultValue: "left",
-            control: {type: "select"}
-        },
+    argTypes: {},
+    tags: ['autodocs'],
+} satisfies Meta<typeof Figure>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        caption: data.caption,
+        image: data.image,
+        size: "large",
+        align: "left"
     }
-} as Meta;
+};
 
-const Template: Story<FigureProps> = (args) => <Figure {...args} />
+export const with_video: Story = {
+    args: {
+        caption: data.caption,
+        videoSrc: data.videoSrc,
+        // @ts-ignore
+        image: {},
+        size: "large",
+        align: "left"
+    }
+};
 
-export const Basic = Template.bind({});
-
-export const with_video = Template.bind({});
-with_video.args = {
-    videoSrc: data.videoSrc,
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    image: {}
-}

@@ -8,10 +8,11 @@ import dataFooterPrimary from "../../molecules/navigation/footerPrimaryNavigatio
 import pageHeaderLong from "../../organisms/sections/pageHeaderLong/PageHeaderLong.stories.json";
 import dataFooterSecondary
     from "../../molecules/navigation/footerSecondaryNavigation/FooterSecondaryNavigation.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {BasicPage, BasicPageProps} from "./BasicPage";
+import {Meta, StoryObj} from "@storybook/react";
+import {BasicPage} from "./BasicPage";
 import {Aside} from "../../organisms/asides/aside/Aside";
-import {commentsAside, mediaAside} from "../../organisms/asides/aside/Aside.stories";
+import {BlockWrap} from "../../organisms/asides/aside/BlockWrap";
+import asideData from "../../organisms/asides/aside/Aside.stories.json";
 
 const defaultContent =
     <>
@@ -61,63 +62,70 @@ const defaultContent =
         </div>
     </>;
 
-export default {
+const meta = {
     title: "templates/BasicPage",
     component: BasicPage,
-    argTypes: {
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof BasicPage>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
         pageHeader: {
-            defaultValue: {
-                "kicker": pageHeaderLong.kicker,
-                "title": pageHeaderLong.title,
-                "subtitle": pageHeaderLong.subtitle,
-                "url": pageHeaderLong.url,
-            },
-            control: {type: "object"}
+            "kicker": pageHeaderLong.kicker,
+            "title": pageHeaderLong.title,
+            "subtitle": pageHeaderLong.subtitle,
+            "url": pageHeaderLong.url,
         },
-        content: {
-            defaultValue: defaultContent,
-            control: {type: "object"}
-        },
+        content: defaultContent,
         templateProps: {
-            defaultValue: {
-                header: {
-                    primaryNav: dataHeaderPrimary,
-                    secondaryNav: dataHeaderSecondary,
-                    logoElement: "SDA"
-                },
-                footer: {
-                    primaryNav: dataFooterPrimary,
-                    secondaryNav: dataFooterSecondary
-                },
-                control: {type: "object"}
+            header: {
+                // @ts-ignore
+                primaryNav: dataHeaderPrimary,
+                // @ts-ignore
+                secondaryNav: dataHeaderSecondary,
+                logoElement: "SDA"
+            },
+            footer: {
+                // @ts-ignore
+                primaryNav: dataFooterPrimary,
+                secondaryNav: dataFooterSecondary
             }
         }
     }
-} as Meta;
+};
 
-const Template: Story<BasicPageProps> = (args) =>
-    <BasicPage {...args}/>;
-
-export const Basic = Template.bind({});
-
-export const with_background = Template.bind({});
-with_background.args = {
-    pageHeader: pageHeaderLong
+export const with_background: Story = {
+    args: {
+        ...Basic.args,
+        pageHeader: pageHeaderLong
+    }
 }
 
 const aside =
     <Aside>
-        {mediaAside}
-        {commentsAside}
+        <BlockWrap type="mediaBlock" title={asideData.media.title} linkLabel={asideData.media.linkLabel}
+                   linkUrl={asideData.media.linkUrl} items={asideData.media.items}/>
+        <BlockWrap type="contentBlock" title={asideData.comments.title} linkLabel={asideData.comments.linkLabel}
+                   linkUrl={asideData.comments.linkUrl} items={asideData.comments.items}/>
     </Aside>;
 
-export const with_sideBar = Template.bind({});
-with_sideBar.args = {
-    breakout: dataBreakoutBlock,
-    aside: aside
+
+export const with_sideBar: Story = {
+    args: {
+        ...Basic.args,
+        breakout: dataBreakoutBlock,
+        aside: aside
+    }
 }
 
-export const with_asides = Template.bind({});
-with_asides.args = {
-    aside: aside
+export const with_asides: Story = {
+    args: {
+        ...Basic.args,
+        aside: aside
+    }
 }

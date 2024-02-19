@@ -1,10 +1,10 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./BreakoutImage.stories.json";
-import {BreakoutImage, BreakoutImageProps} from "./BreakoutImage";
+import {BreakoutImage} from "./BreakoutImage";
 
-export default {
+const meta = {
     title: "molecules/media/Breakout Image",
     parameters: {
         componentSubtitle: 'Component',
@@ -21,13 +21,23 @@ export default {
             control: {type: "object"}
         }
     }
-} as Meta;
+} satisfies Meta<typeof BreakoutImage>;
 
-const Template: Story<BreakoutImageProps> = (args) => <BreakoutImage {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
 
-export const with_parallax = Template.bind({});
-with_parallax.args = {
-    parallax: true
-}
+// @ts-ignore
+export const Basic: Story = {
+    args: {
+        caption: data.caption,
+        srcSet: data.srcSet
+    }
+};
+
+export const with_parallax: Story = {
+    args: {
+        ...Basic.args,
+        parallax: true
+    }
+};

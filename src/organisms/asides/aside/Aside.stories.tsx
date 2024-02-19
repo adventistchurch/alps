@@ -1,26 +1,30 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./Aside.stories.json";
-import {Aside, AsideProps} from "./Aside";
+import {Aside} from "./Aside";
 import {BlockWrap} from "./BlockWrap";
 
-export default {
+const meta = {
     title: "organisms/aside/Aside",
     component: Aside,
-    argTypes: {}
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof Aside>;
 
-export const mediaAside = <BlockWrap type="mediaBlock" title={data.media.title} linkLabel={data.media.linkLabel} linkUrl={data.media.linkUrl} items={data.media.items}/>;
-export const commentsAside = <BlockWrap type="contentBlock" title={data.comments.title} linkLabel={data.comments.linkLabel} linkUrl={data.comments.linkUrl} items={data.comments.items}/>;
+export default meta;
 
-const Template: Story<AsideProps> = (args) => {
+type Story = StoryObj<typeof meta>;
 
-    return (
-        <Aside {...args}>
-          {mediaAside}
-          {commentsAside}
-        </Aside>
-    )
-}
-export const Basic = Template.bind({});
+export const mediaAside: Story = {
+    args: {
+        children: <BlockWrap type="mediaBlock" title={data.media.title} linkLabel={data.media.linkLabel}
+                             linkUrl={data.media.linkUrl} items={data.media.items}/>
+    }
+};
 
+export const commentsAside: Story = {
+    args: {
+        children: <BlockWrap type="contentBlock" title={data.comments.title} linkLabel={data.comments.linkLabel}
+                             linkUrl={data.comments.linkUrl} items={data.comments.items}/>
+    }
+};

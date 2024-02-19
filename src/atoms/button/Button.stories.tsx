@@ -1,161 +1,129 @@
 import React from 'react';
-import {Meta, Story} from '@storybook/react'
+import {Meta, StoryObj} from '@storybook/react'
 
-import {Button, ButtonProps} from './Button';
+import {Button} from './Button';
 import {buttonConfig} from "./_config";
-import {iconConfig} from "../icons/_config";
+
 import {
-    buttonDisableDesc, buttonLighterDesc, buttonOutlineDesc,
+    buttonDisableDesc,
+    buttonLighterDesc,
+    buttonOutlineDesc,
     buttonSimpleDesc,
-    buttonSmallDesc,
-    buttonToggleDesc,
+    buttonSmallDesc, buttonToggleDesc,
     buttonWithIconDesc
 } from "./descriptions";
 import {ComponentsTypes} from "../../global/commons";
 
-export default {
+const meta = {
     title: "atoms/Button",
     parameters: {
         componentSubtitle: ComponentsTypes.COMPONENT,
         status: 'released',
         docs: {
             recommended: false,
-            // source: {
-            //     code: 'Some custom string here',
-            // },
-            // code: {
-            //     tabs: ["1", "2"]
-            // },
-            // description: {
-            //     type: "docgen",
-            //     component: 'Some component _markdown_',
-            // },
         }
     },
     component: Button,
-    argTypes: {
-        label: {
-            name: "Label",
-            defaultValue: buttonConfig.data.label,
-            control: {type: "text"}
-        },
-        url: {
-            name: "URL",
-            defaultValue: buttonConfig.data.url,
-            control: {type: "text"}
-        },
-        as: {
-            name: "as",
-            defaultValue: buttonConfig.defaultProps.as,
-            options: buttonConfig.asOptions,
-            control: {type: "select"}
-        },
-        icon: {
-            name: "Icon",
-            options: [""].concat(iconConfig.iconNames),
-            control: {type: "select"}
-        },
-        iconPosition: {
-            name: "Icon Position",
-            defaultValue: "left",
-            options: iconConfig.iconPositions.available,
-            control: {type: "radio"}
-        },
-        iconSize: {
-            name: "Icon Size",
-            defaultValue: "xs",
-            options: iconConfig.iconSizes.available,
-            control: {type: "inline-radio"}
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof Button>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        label: buttonConfig.data.label
+    }
+};
+
+export const Disabled: Story = {
+    args: {
+        ...Basic.args,
+        disabled: true
+    },
+    parameters: {
+        docs: {
+            storyDescription: buttonDisableDesc
         }
     }
-} as Meta;
+};
 
-const Template: Story<ButtonProps> = (args) =>
-    <Button {...args} />
+export const Lighter: Story = {
+    args: {
+        ...Basic.args,
+        lighter: true
+    },
+    parameters: {
+        docs: {
+            storyDescription: buttonLighterDesc
+        }
+    }
+};
 
-export const Basic = Template.bind({});
+export const Outline: Story = {
+    args: {
+        ...Basic.args,
+        outline: true
+    },
+    parameters: {
+        docs: {
+            storyDescription: buttonOutlineDesc
+        }
+    }
+};
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-    disabled: true
-}
-Disabled.parameters = {
-    docs: {
-        storyDescription: buttonDisableDesc
+export const Simple: Story = {
+    args: {
+        ...Basic.args,
+        simple: true
+    },
+    parameters: {
+        docs: {
+            storyDescription: buttonSimpleDesc
+        }
     }
-}
+};
 
-export const Lighter = Template.bind({});
-Lighter.args = {
-    lighter: true
-}
-Lighter.parameters = {
-    docs: {
-        storyDescription: buttonLighterDesc
+export const Small: Story = {
+    args: {
+        ...Basic.args,
+        small: true
+    },
+    parameters: {
+        docs: {
+            storyDescription: buttonSmallDesc
+        }
     }
-}
+};
 
-export const Outline = Template.bind({});
-Outline.args = {
-    outline: true
-}
-Outline.parameters = {
-    docs: {
-        storyDescription: buttonOutlineDesc
+export const with_icon: Story = {
+    args: {
+        ...Basic.args,
+        icon: "arrow-bracket-left"
+    },
+    parameters: {
+        docs: {
+            storyDescription: buttonWithIconDesc
+        }
     }
-}
+};
 
-export const Simple = Template.bind({});
-Simple.args = {
-    simple: true
-}
-Simple.parameters = {
-    docs: {
-        storyDescription: buttonSimpleDesc
+export const Toggle: Story = {
+    args: {
+        label: "",
+        outline: true,
+        small: true,
+        toggle: true,
+        icon: "plus",
+        iconPosition: "left"
+    },
+    parameters: {
+        docs: {
+            storyDescription: buttonToggleDesc
+        }
     }
-}
+};
 
-export const Small = Template.bind({});
-Small.args = {
-    small: true
-}
-Small.parameters = {
-    docs: {
-        storyDescription: buttonSmallDesc
-    }
-}
 
-export const with_icon = Template.bind({});
-with_icon.argTypes = {
-    icon: {
-        description: "Available types for `Button` components you can see bellow, but for 'Button With Icon' variant available just 2 two types of the icon: `arrow-bracket-left`, `arrow-bracket-right`",
-        defaultValue: "arrow-bracket-left",
-        options: iconConfig.iconNames.filter(icon => icon.includes("arrow-bracket")),
-        control: {type: "select"}
-    }
-}
-with_icon.parameters = {
-    docs: {
-        storyDescription: buttonWithIconDesc
-    }
-}
-
-export const Toggle = Template.bind({});
-Toggle.argTypes = {
-    label: {
-        table: {disable: true}
-    }
-}
-Toggle.args = {
-    label: "",
-    outline: true,
-    small: true,
-    toggle: true,
-    icon: "plus",
-    iconPosition: "left"
-}
-Toggle.parameters = {
-    docs: {
-        storyDescription: buttonToggleDesc
-    }
-}

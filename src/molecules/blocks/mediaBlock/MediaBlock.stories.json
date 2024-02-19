@@ -13,7 +13,9 @@
     "srcSet": {
       "default": "https://picsum.photos/480/360/",
       "500": "https://picsum.photos/720/540/",
-      "900": "https://picsum.photos/960/720/"
+      "750": "https://picsum.photos/720/540/",
+      "900": "https://picsum.photos/960/720/",
+      "1200": "https://picsum.photos/960/720/"
     }
   }
 }

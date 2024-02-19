@@ -89,15 +89,17 @@ export const News = ({
                 {featured && (
                     <PageHeaderFeature
                         asBackgroundImage
+                        // @ts-ignore
                         {...featured}
                         blockType="featureWide"
                     />
                 )}
             </div>
 
-            <Grid className={"u-spacing--double--until-large l-grid l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7"} seven={true}  as="section" wrap={"6"} >
+            <Grid className={"u-spacing--double--until-large l-grid l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7"}
+                  seven={true} as="section" wrap={"6"}>
                 <GridItem className={"u-padding--zero--sides"} sizeAtL={"4"}>
-                    { extendedFeatures?.items?.length > 0 && (
+                    {extendedFeatures?.items?.length > 0 && (
                         <ListContent
                             className={"u-padding--right"}
                             title={extendedFeatures.title}
@@ -109,6 +111,7 @@ export const News = ({
                                     <MediaBlock
                                         key={`extended-featured-item-${key}`}
                                         type="featuredNews"
+                                        // @ts-ignore
                                         {...item}
                                     />
                                 ))}
@@ -125,6 +128,7 @@ export const News = ({
                                 <MediaBlock
                                     key={`featured-item-${key}`}
                                     type="featuredNews"
+                                    // @ts-ignore
                                     {...item}
                                 />
                             ))}
@@ -164,12 +168,14 @@ export const News = ({
                 )}
 
                 {media.secondaryItems && media.secondaryItems.length > 0 && (
-                    <Grid as="section" blockRow={true} seven={true} wrap={"6"} className={"u-spacing--double--until-large l-grid l-grid--7-col l-section__block-row l-section__block-row--6-col l-grid-wrap l-grid-wrap--6-of-7"}>
+                    <Grid as="section" blockRow={true} seven={true} wrap={"6"}
+                          className={"u-spacing--double--until-large l-grid l-grid--7-col l-section__block-row l-section__block-row--6-col l-grid-wrap l-grid-wrap--6-of-7"}>
                         <GridItem className={"u-padding--zero--sides u-flex"}>
                             {media.secondaryItems.map((item, key) => (
                                 <MediaBlock
                                     key={`media-row-${key}`}
                                     type="mediaRow"
+                                    // @ts-ignore
                                     {...item}
                                 />
                             ))}
@@ -177,7 +183,8 @@ export const News = ({
                     </Grid>
                 )}
             </ListContent>
-            <GridSeven as="section" className={"l-grid l-grid--7-col l-grid-wrap--6-of-7 u-shift--left--1-col--at-large"}>
+            <GridSeven as="section"
+                       className={"l-grid l-grid--7-col l-grid-wrap--6-of-7 u-shift--left--1-col--at-large"}>
                 <GridItem className={"c-article u-spacing--triple l-grid-item l-grid-item--l--4-col"}>
                     {subscribeForm}
                     {archive && (

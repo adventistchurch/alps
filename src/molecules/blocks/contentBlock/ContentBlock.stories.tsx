@@ -1,67 +1,53 @@
 import React from 'react';
 import data from "./ContentBlock.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {ContentBlock, ContentBlockProps} from "./ContentBlock";
+import {Meta, StoryObj} from "@storybook/react";
+import {ContentBlock} from "./ContentBlock";
 
-export default {
+const meta = {
     title: "molecules/blocks/Content Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: ContentBlock,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        titleSize: {
-            defaultValue: "s",
-            control: {type: "select"}
-        },
-        description: {
-            defaultValue: data.description,
-            control: {type: "text"}
-        },
-        cta: {
-            defaultValue: data.cta,
-            control: {type: "text"}
-        },
-        dateFormat: {
-            defaultValue: "date",
-            control: {type: "select"}
-        },
-        url: {
-            defaultValue: data.url,
-            control: {type: "text"}
-        },
-        meta: {
-            defaultValue: data.meta,
-            control: {type: "tet"}
-        },
-        category: {
-            defaultValue: data.category,
-            control: {type: "text"}
-        }
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof ContentBlock>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        description: data.description,
+        cta: data.cta,
+        dateFormat: "date",
+        url: data.url,
+        meta: data.meta,
+        category: data.category
     }
-} as Meta;
+};
 
-const Template: Story<ContentBlockProps> = (args) => <ContentBlock {...args} />
-
-export const Basic = Template.bind({});
-
-export const show_more = Template.bind({});
-show_more.args = {
-    more: data.more
+export const show_more: Story = {
+    args: {
+        ...Basic.args,
+        more: data.more
+    }
 }
 
-export const with_image = Template.bind({});
-with_image.args = {
-    image: { srcSet: data.image.srcSet.Landscape, alt: data.image.alt}
+export const with_image: Story = {
+    args: {
+        ...Basic.args,
+        image: {srcSet: data.image.srcSet.Landscape, alt: data.image.alt}
+    }
 }
 
-export const show_more_with_image = Template.bind({});
-show_more_with_image.args = {
-    more: data.more,
-    image: { srcSet: data.image.srcSet.Landscape, alt: data.image.alt}
+export const show_more_with_image: Story = {
+    args: {
+        ...Basic.args,
+        more: data.more,
+        image: {srcSet: data.image.srcSet.Landscape, alt: data.image.alt}
+    }
 }
