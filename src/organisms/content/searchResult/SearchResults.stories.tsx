@@ -1,20 +1,23 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./SearchResults.stories.json";
-import {SearchResults, SearchResultsProps} from "./SearchResults";
+import {SearchResults} from "./SearchResults";
 
-export default {
+const meta = {
     title: "organisms/content/Search Results",
     component: SearchResults,
-    argTypes: {
-        results: {
-            defaultValue: data.results,
-            control: {type: "object"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof SearchResults>;
 
-const Template: Story<SearchResultsProps> = (args) =>
-    <SearchResults {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        results: data.results
+    }
+};

@@ -1,9 +1,9 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {Byline, BylineProps} from "./Byline";
+import {Meta, StoryObj} from "@storybook/react";
+import {Byline} from "./Byline";
 import data from "./Byline.stories.json";
 
-export default {
+const meta = {
     title: "molecules/text/Byline",
     component: Byline,
     argTypes: {
@@ -12,8 +12,14 @@ export default {
             control: {type: "text"}
         }
     }
-} as Meta;
+} satisfies Meta<typeof Byline>;
 
-const Template: Story<BylineProps> = (args) =>
-    <Byline {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        value: data.textValue
+    }
+};

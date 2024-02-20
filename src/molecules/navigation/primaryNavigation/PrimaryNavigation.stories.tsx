@@ -1,8 +1,9 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./PrimaryNavigation.stories.json";
 import {PrimaryNavigation, PrimaryNavigationProps} from "./PrimaryNavigation";
+import {JSX} from 'react/jsx-runtime';
 
 interface HeaderSimulatorProps {
     children?: React.ReactNode
@@ -18,24 +19,30 @@ const HeaderSimulator = ({children}: HeaderSimulatorProps): JSX.Element => {
     )
 }
 
-export default {
+const meta = {
     title: "molecules/navigation/Primary Navigation",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
+    decorators: [
+        (Story) => (
+            <HeaderSimulator>
+                <Story />
+            </HeaderSimulator>
+        )
+    ],
     component: PrimaryNavigation,
-    argTypes: {
-        items: {
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof PrimaryNavigation>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        items: data.items
     }
-} as Meta;
-
-const Template: Story<PrimaryNavigationProps> = (args) =>
-    <HeaderSimulator>
-        <PrimaryNavigation {...args} />
-    </HeaderSimulator>
-
-export const Basic = Template.bind({});
+}

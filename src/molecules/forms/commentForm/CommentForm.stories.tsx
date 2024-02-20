@@ -1,31 +1,26 @@
 import React from "react";
-import {Meta, Story} from '@storybook/react'
+import {Meta, StoryObj} from '@storybook/react'
 import data from "./CommentForm.stories.json";
-import {CommentForm, CommentFormProps} from "./CommentForm";
+import {CommentForm} from "./CommentForm";
 
-export default {
+const meta = {
     title: "molecules/forms/Comment Form",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: CommentForm,
-    argTypes: {
-        rows: {
-            defaultValue: data.numberOfRows,
-            control: {type: "number"}
-        },
-        submitLabel: {
-            defaultValue: data.submitLabel,
-            control: {type: "text"}
-        },
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof CommentForm>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        rows: data.numberOfRows,
+        submitLabel: data.submitLabel,
+        title: data.title
     }
-} as Meta;
-
-const Template: Story<CommentFormProps> = (args) => <CommentForm {...args}/>;
-
-export const Basic = Template.bind({});
+};

@@ -1,3 +1,4 @@
+import React from 'react';
 export const dateFormats = ['date', 'time', 'datetime'];
 export const dateFormatsMap = {
     'date': 'date',
@@ -48,7 +49,6 @@ export const dateTimeFormat = ({datetime, format, locales, style}: DateTimeForma
  */
 export const DateTimeFormat = ({datetime, format, locales, style = {}}: DateTimeFormatProps): JSX.Element => {
     return (
-        // eslint-disable-next-line react/react-in-jsx-scope
         <>
             {dateTimeFormat({datetime, format, locales, style})}
         </>

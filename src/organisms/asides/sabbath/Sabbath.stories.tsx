@@ -1,21 +1,28 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./Sabbath.stories.json";
-import {Sabbath, SabbathProps} from "./Sabbath";
+import {Sabbath} from "./Sabbath";
 
-export default {
+const meta = {
     title: "organisms/aside/Sabbath",
     component: Sabbath,
-    argTypes: {
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof Sabbath>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        showLogo: data.showLogo
     }
-} as Meta;
+};
 
-const Template: Story<SabbathProps> = (args) =>
-    <Sabbath {...args}/>;
-export const Basic = Template.bind({});
-
-export const with_background = Template.bind({});
-with_background.args = {
-  backgroundImage: data.backgroundImage
-}
+export const with_background: Story = {
+    args: {
+        backgroundImage: data.backgroundImage
+    }
+};
 

@@ -1,32 +1,24 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {ExtendedQuote, ExtendedQuoteProps} from "./ExtendedQuote";
+import {Meta, StoryObj} from "@storybook/react";
+import {ExtendedQuote} from "./ExtendedQuote";
 import data from "./ExtendesQuote.stories.json";
 
-export default {
-    title:"molecules/text/ExtendedQuote",
+const meta = {
+    title: "molecules/text/ExtendedQuote",
     component: ExtendedQuote,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        quote: {
-            defaultValue: data.quote,
-            control: {type: "text"}
-        },
-        author: {
-            defaultValue: data.author,
-            control: {type: "text"}
-        },
-        minutes: {
-            defaultValue: data.minutes,
-            control: {type: "number"}
-        }
-    }
-} as Meta;
+    argTypes: {}
+} satisfies Meta<typeof ExtendedQuote>;
 
-const Template: Story<ExtendedQuoteProps> = (args) =>
-    <ExtendedQuote {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        quote: data.quote,
+        author: data.author,
+        minutes: data.minutes,
+    }
+};
 

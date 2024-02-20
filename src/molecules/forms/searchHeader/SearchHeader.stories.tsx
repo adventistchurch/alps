@@ -1,46 +1,44 @@
 import React from "react";
-import {Meta, Story} from '@storybook/react';
+import {Meta, StoryObj} from '@storybook/react';
 import data from "./SearchHeader.stories.json";
-import {SearchHeader, SearchHeaderProps} from "./SearchHeader";
+import {SearchHeader} from "./SearchHeader";
 
-export default {
-  title: "molecules/forms/Search Header",
-  parameters: {
-    componentSubtitle: 'Component',
-    status: 'released'
-  },
-  component: SearchHeader,
-  argTypes: {
-    filters: {
-      defaultValue: data.filters,
-      control: {type: "object"}
+const meta = {
+    title: "molecules/forms/Search Header",
+    parameters: {
+        componentSubtitle: 'Component',
+        status: 'released'
     },
-    placeholder: {
-      defaultValue: data.placeholder,
-      control: {type: "text"}
-    },
-    searchAgainLabel: {
-      defaultValue: data.searchAgainLabel,
-      control: {type: "text"}
-    },
-    searchLabel: {
-      defaultValue: data.searchLabel,
-      control: {type: "text"}
+    component: SearchHeader,
+    argTypes: {}
+} satisfies Meta<typeof SearchHeader>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        filters: data.filters,
+        placeholder: data.placeholder,
+        searchAgainLabel: data.searchAgainLabel,
+        searchLabel: data.searchLabel,
     }
-  }
-} as Meta;
+};
 
-const Template: Story<SearchHeaderProps> = (args) => <SearchHeader {...args}/>;
-
-export const Basic = Template.bind({});
-
-export const with_filters = Template.bind({});
-with_filters.args = {
-  showFilters: true
+export const with_filters: Story = {
+    args: {
+        ...Basic.args,
+        showFilters: true
+    }
 }
 
-export const with_suggestions = Template.bind({});
-with_suggestions.args = {
-  suggestions: data.suggestions,
-  term: "Hi"
+export const with_suggestions: Story = {
+    args: {
+        ...Basic.args,
+        suggestions: data.suggestions,
+        term: "Hi"
+    }
 }
+

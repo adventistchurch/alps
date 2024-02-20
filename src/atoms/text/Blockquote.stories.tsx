@@ -1,37 +1,30 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {Blockquote, BlockquoteProps} from "./Blockquote";
+import {Meta, StoryObj} from "@storybook/react";
+import {Blockquote} from "./Blockquote";
 import {ComponentsTypes} from "../../global/commons";
 
-export default {
+const meta = {
     title: "atoms/Texts/Blockquote",
     component: Blockquote,
     parameters: {
         componentSubtitle: ComponentsTypes.COMPONENT,
     },
-    argTypes: {
-        content: {
-            name: "content",
-            defaultValue: "A block quotation is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
-            control: {type: "text"}
-        },
-        isStrong: {
-            name: "Is strong Blockquote",
-            defaultValue: false,
-            control: {type: "boolean"}
-        }
-    }
-} as Meta;
+    argTypes: {}
+} satisfies Meta<typeof Blockquote>;
 
-const Template: Story<BlockquoteProps> = (args) => <Blockquote {...args}/>
+export default meta;
 
-export const Basic = Template.bind({});
-export const Strong = Template.bind({});
-Strong.argTypes = {
-    isStrong: {
-        table: {disable: true}
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        content: "A block quotation is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation."
     }
-}
-Strong.args = {
-    isStrong: true
+};
+
+export const Strong: Story = {
+    args: {
+        ...Basic.args,
+        isStrong: true
+    }
 }

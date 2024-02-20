@@ -1,9 +1,9 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
-import {Picture, PictureProps} from "./Picture";
+import {Meta, StoryObj} from "@storybook/react";
+import {Picture} from "./Picture";
 import data from './Picture.stories.json';
 
-export default {
+const meta = {
     title: "atoms/images/Picture",
     parameters: {
         componentSubtitle: 'Component',
@@ -23,24 +23,35 @@ export default {
             control: {type: "boolean"}
         }
     },
-} as Meta;
+} satisfies Meta<typeof Picture>;
 
-const Template: Story<PictureProps> = (args) => <Picture {...args} />;
+export default meta;
 
-export const Landscape = Template.bind({});
+type Story = StoryObj<typeof meta>;
 
-export const Portrait = Template.bind({});
-Portrait.args = {
-    image: {
-        srcSet: data.Portrait,
-        alt: data.alt
+export const Landscape: Story = {
+    args: {
+        image: {
+            srcSet: data.Landscape,
+            alt: data.alt
+        }
     }
 }
 
-export const Square = Template.bind({});
-Square.args = {
-    image: {
-        srcSet: data.Square,
-        alt: data.alt
+export const Portrait: Story = {
+    args: {
+        image: {
+            srcSet: data.Portrait,
+            alt: data.alt
+        }
+    }
+}
+
+export const Square: Story = {
+    args: {
+        image: {
+            srcSet: data.Square,
+            alt: data.alt
+        }
     }
 }

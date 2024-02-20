@@ -1,8 +1,8 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./SecondaryNavigation.stories.json";
-import {SecondaryNavigation, SecondaryNavigationProps} from "./SecondaryNavigation";
+import {SecondaryNavigation} from "./SecondaryNavigation";
 
 interface HeaderSimulatorProps {
     enabled?: boolean,
@@ -19,37 +19,50 @@ const HeaderSimulator = ({enabled = false, children}: HeaderSimulatorProps): JSX
     ) as JSX.Element;
 }
 
-export default {
+const meta = {
     title: "molecules/navigation/Secondary Navigation",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: SecondaryNavigation,
-    argTypes: {
-        items: {
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof SecondaryNavigation>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        // @ts-ignore
+        items: data.items
     }
-} as Meta;
+};
 
-const Template: Story<SecondaryNavigationProps> = (args) =>
-    <HeaderSimulator>
-        <SecondaryNavigation {...args} />
-    </HeaderSimulator>
+export const with_header: Story = {
+    args: {
+        ...Basic.args
+    },
+    decorators: [
+        (Story) => (
+            <HeaderSimulator>
+                <Story/>
+            </HeaderSimulator>
+        )]
+};
 
-export const Basic = Template.bind({});
-
-const TemplateWithinHeader: Story<SecondaryNavigationProps> = (args) =>
-    <HeaderSimulator enabled={true}>
-        <SecondaryNavigation {...args} />
-    </HeaderSimulator>
-
-export const with_header = TemplateWithinHeader.bind({});
-
-export const without_menu_and_search_toggles = Template.bind({});
-without_menu_and_search_toggles.args = {
-    showMenu: false,
-    showSearch: false
-}
+export const without_menu_and_search_toggles: Story = {
+    args: {
+        ...Basic.args,
+        showMenu: false,
+        showSearch: false
+    },
+    decorators: [
+        (Story) => (
+            <HeaderSimulator>
+                <Story/>
+            </HeaderSimulator>
+        )]
+};

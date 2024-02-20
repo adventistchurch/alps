@@ -1,31 +1,24 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./ProductDetail.stories.json";
-import {ProductDetail, ProductDetailProps} from "./ProductDetail";
+import {ProductDetail} from "./ProductDetail";
 
-export default {
+const meta = {
     title: "molecules/store/Product Detail",
     component: ProductDetail,
-    argTypes: {
-        image: {
-            defaultValue: data.image,
-            control: {type: "object"}
-        },
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        description: {
-            defaultValue: data.description,
-            control: {type: "text"}
-        },
-        content: {
-            defaultValue: data.content,
-            control: {type: "text"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof ProductDetail>;
 
-const Template: Story<ProductDetailProps> = (args) =>
-    <ProductDetail {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        image: data.image,
+        title: data.title,
+        description: data.description,
+        content: data.content
+    }
+};

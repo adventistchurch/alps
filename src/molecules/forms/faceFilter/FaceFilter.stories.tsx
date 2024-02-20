@@ -1,27 +1,26 @@
 import React from "react";
-import {Meta, Story} from '@storybook/react'
+import {Meta, StoryObj} from '@storybook/react'
 import data from "./FacetFilter.stories.json";
-import {FacetFilter, FacetFilterProps} from "./FacetFilter";
+import {FacetFilter} from "./FacetFilter";
 
-export default {
+const meta = {
     title: "molecules/forms/Face Filter",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: FacetFilter,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        facets: {
-            defaultValue: data.facets,
-            control: {type: "object"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof FacetFilter>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        // @ts-ignore
+        facets: data.facets
     }
-} as Meta;
-
-const Template: Story<FacetFilterProps> = (args) => <FacetFilter {...args}/>;
-
-export const Basic = Template.bind({});
+};

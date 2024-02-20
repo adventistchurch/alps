@@ -20,6 +20,7 @@ export interface SabbathProps {
 
 export const Sabbath = ({backgroundImage, showLogo = true, logo = "logo"}: SabbathProps): JSX.Element => {
 
+    console.log("HERE:: ");
     return (
         <aside
             className={`l-wrap__sabbath l-sabbath ${

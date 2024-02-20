@@ -1,52 +1,30 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./ChurchInfoLarge.stories.json";
-import {ChurchInfoLarge, ChurchInfoLargeProps} from "./ChurchInfoLarge";
+import {ChurchInfoLarge} from "./ChurchInfoLarge";
 
-export default {
+const meta = {
     title: "molecules/Church Locator/Church Info Large",
     component: ChurchInfoLarge,
-    argTypes: {
-        location: {
-            defaultValue: data.location,
-            control: {type: "text"}
-        },
-        address: {
-            defaultValue: data.address,
-            control: {type: "text"}
-        },
-        phone: {
-            defaultValue: data.phone,
-            control: {type: "text"}
-        },
-        mail: {
-            defaultValue: data.mail,
-            control: {type: "text"}
-        },
-        site: {
-            defaultValue: data.site,
-            control: {type: "text"}
-        },
-        serviceList: {
-            defaultValue: data.serviceList,
-            control: {type: "object"}
-        },
-        buttonLabel: {
-            defaultValue: data.buttonLabel,
-            control: {type: "text"}
-        },
-        imageCaption: {
-            defaultValue: data.imageCaption,
-            control: {type: "text"}
-        },
-        image: {
-            defaultValue: data.image,
-            control: {type: "text"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof ChurchInfoLarge>;
 
-const Template: Story<ChurchInfoLargeProps> = (args) =>
-    <ChurchInfoLarge {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        location: data.location,
+        address: data.address,
+        phone: data.phone,
+        mail: data.mail,
+        site: data.site,
+        serviceList: data.serviceList,
+        buttonLabel: data.buttonLabel,
+        imageCaption: data.imageCaption,
+        image: data.image
+    }
+};
 

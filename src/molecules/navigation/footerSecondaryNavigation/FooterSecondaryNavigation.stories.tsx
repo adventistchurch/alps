@@ -1,24 +1,25 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./FooterSecondaryNavigation.stories.json";
-import {FooterSecondaryNavigation, FooterSecondaryNavigationProps} from "./FooterSecondaryNavigation";
+import {FooterSecondaryNavigation} from "./FooterSecondaryNavigation";
 
-export default {
+const meta = {
     title: "molecules/navigation/Footer Secondary Navigation",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: FooterSecondaryNavigation,
-    argTypes: {
-        items: {
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof FooterSecondaryNavigation>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        items: data.items
     }
-} as Meta;
-
-const Template: Story<FooterSecondaryNavigationProps> = (args) => <FooterSecondaryNavigation {...args} />
-
-export const Basic = Template.bind({});
+};

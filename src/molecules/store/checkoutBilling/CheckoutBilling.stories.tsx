@@ -1,27 +1,23 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./CheckoutBilling.stories.json";
-import {CheckoutBilling, CheckoutBillingProps} from "./CheckoutBilling";
+import {CheckoutBilling} from "./CheckoutBilling";
 
-export default {
+const meta = {
     title: "molecules/store/Checkout Billing",
     component: CheckoutBilling,
-    argTypes: {
-        heading: {
-            defaultValue: data.heading,
-            control: {type: "text"}
-        },
-        countryOptions: {
-            defaultValue: data.countryOptions,
-            control: {type: "object"}
-        },
-        stateOptions: {
-            defaultValue: data.stateOptions,
-            control: {type: "object"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof CheckoutBilling>;
 
-const Template: Story<CheckoutBillingProps> = (args) =>
-    <CheckoutBilling {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        heading: data.heading,
+        countryOptions: data.countryOptions,
+        stateOptions: data.stateOptions
+    }
+};

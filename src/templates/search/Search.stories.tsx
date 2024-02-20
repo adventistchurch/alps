@@ -6,42 +6,46 @@ import dataHeaderSecondary from "../../molecules/navigation/secondaryNavigation/
 import dataFooterPrimary from "../../molecules/navigation/footerPrimaryNavigation/FooterPrimaryNavigation.stories.json";
 import dataFooterSecondary
     from "../../molecules/navigation/footerSecondaryNavigation/FooterSecondaryNavigation.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {Search, SearchProps} from "./Search";
+import {Meta, StoryObj} from "@storybook/react";
+import {Search} from "./Search";
 
-export default {
+const meta = {
     title: "templates/Search",
     component: Search,
-    argTypes: {
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof Search>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
         blankTemplate: {
-            defaultValue: {
-                templateProps: {
-                    header: {
-                        primaryNav: dataHeaderPrimary,
-                        secondaryNav: dataHeaderSecondary,
-                        logoElement: "SDA"
-                    },
-                    footer: {
-                        primaryNav: dataFooterPrimary,
-                        secondaryNav: dataFooterSecondary
-                    }
+            templateProps: {
+                header: {
+                    // @ts-ignore
+                    primaryNav: dataHeaderPrimary,
+                    // @ts-ignore
+                    secondaryNav: dataHeaderSecondary,
+                    logoElement: "SDA"
                 },
-                control: {type: "object"}
-            }
+                footer: {
+                    // @ts-ignore
+                    primaryNav: dataFooterPrimary,
+                    secondaryNav: dataFooterSecondary
+                }
+            },
         },
-        results: {
-            defaultValue: data.results,
-            control: {type: "object"}
-        }
+        // @ts-ignore
+        results: data.results
     }
-} as Meta;
+};
 
-const Template: Story<SearchProps> = (args) =>
-    <Search {...args}/>;
-
-export const Basic = Template.bind({});
-
-export const with_suggestions = Template.bind({});
-with_suggestions.args = {
-    suggestions: data.suggestions
-}
+export const with_suggestions: Story = {
+    args: {
+        ...Basic.args,
+        suggestions: data.suggestions
+    }
+};

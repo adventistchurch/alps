@@ -1,28 +1,27 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./DrawerLinks.stories.json";
-import {DrawerLinks, DrawerLinksProps} from "./DrawerLinks";
+import {DrawerLinks} from "./DrawerLinks";
 
-export default {
+const meta = {
     title: "molecules/navigation/Drawer Links",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: DrawerLinks,
-    argTypes: {
-        title: {
-          defaultValue: data.title,
-          control: {type: "text"}
-        },
-        items: {
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof DrawerLinks>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        items: data.items
     }
-} as Meta;
-
-const Template: Story<DrawerLinksProps> = (args) => <DrawerLinks {...args} />
-
-export const Basic = Template.bind({});
+};

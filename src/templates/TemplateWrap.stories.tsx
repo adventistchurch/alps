@@ -1,35 +1,37 @@
 import React from "react";
 
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import dataHeaderPrimary from "../molecules/navigation/primaryNavigation/PrimaryNavigation.stories.json";
 import dataHeaderSecondary from "../molecules/navigation/secondaryNavigation/SecondaryNavigation.stories.json";
 import dataFooterPrimary from "../molecules/navigation/footerPrimaryNavigation/FooterPrimaryNavigation.stories.json";
 import dataFooterSecondary
     from "../molecules/navigation/footerSecondaryNavigation/FooterSecondaryNavigation.stories.json";
-import {TemplateWrap, TemplateWrapProps} from "./TemplateWrap";
+import {TemplateWrap} from "./TemplateWrap";
 
-export default {
+const meta = {
     title: "templates/TemplateWrap",
     component: TemplateWrap,
-    argTypes: {
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof TemplateWrap>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
         header: {
-            defaultValue: {
-                primaryNav: dataHeaderPrimary,
-                secondaryNav: dataHeaderSecondary,
-                logoElement: "SDA"
-            },
-            control: {type: "object"}
+            // @ts-ignore
+            primaryNav: dataHeaderPrimary,
+            // @ts-ignore
+            secondaryNav: dataHeaderSecondary,
+            logoElement: "SDA"
         },
         footer: {
-            defaultValue: {
-                primaryNav: dataFooterPrimary,
-                secondaryNav: dataFooterSecondary
-            },
-            control: {type: "object"}
+            // @ts-ignore
+            primaryNav: dataFooterPrimary,
+            secondaryNav: dataFooterSecondary
         }
     }
-} as Meta;
-
-const Template: Story<TemplateWrapProps> = (args) =>
-    <TemplateWrap {...args}/>;
-export const Basic = Template.bind({});
+};

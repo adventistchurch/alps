@@ -1,8 +1,8 @@
-import {Video, VideoProps} from "./Video";
+import {Video} from "./Video";
 import {videoConfig} from "./_config";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
-export default {
+const meta = {
     title: "atoms/Video",
     component: Video,
     argTypes: {
@@ -22,9 +22,16 @@ export default {
             control: {type: "number"}
         }
     }
-} as Meta;
+} satisfies Meta<typeof Video>;
 
-// eslint-disable-next-line react/react-in-jsx-scope
-const Template: Story<VideoProps> = (args) => <Video {...args}/>;
+export default meta;
 
-export const Default = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+    args: {
+        src: videoConfig.data.src,
+        width: videoConfig.data.width,
+        height: videoConfig.data.height
+    }
+}

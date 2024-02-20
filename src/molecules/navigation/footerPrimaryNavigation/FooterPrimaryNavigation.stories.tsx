@@ -1,24 +1,27 @@
 import React from 'react';
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./FooterPrimaryNavigation.stories.json";
-import {FooterPrimaryNavigation, FooterPrimaryNavigationProps} from "./FooterPrimaryNavigation";
+import {FooterPrimaryNavigation} from "./FooterPrimaryNavigation";
 
-export default {
+const meta = {
     title: "molecules/navigation/Footer Primary Navigation",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: FooterPrimaryNavigation,
-    argTypes: {
-        items: {
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof FooterPrimaryNavigation>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        text: "Some text",
+        items: data.items
     }
-} as Meta;
-
-const Template: Story<FooterPrimaryNavigationProps> = (args) => <FooterPrimaryNavigation {...args} />
-
-export const Basic = Template.bind({});
+};

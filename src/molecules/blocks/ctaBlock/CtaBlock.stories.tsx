@@ -1,40 +1,31 @@
 import React from 'react';
 import data from "./CtaBlock.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {CtaBlock, CtaBlockProps} from "./CtaBlock";
+import {Meta, StoryObj} from "@storybook/react";
+import {CtaBlock} from "./CtaBlock";
 
-export default {
+const meta = {
     title: "molecules/blocks/CTA Block",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: CtaBlock,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        description: {
-            defaultValue: data.description,
-            control: {type: "text"}
-        },
-        buttons: {
-            defaultValue: data.buttons,
-            control: {type: "object"}
-        },
-        picture: {
-            defaultValue: data.picture,
-            control: {type: "object"}
-        },
-        asBackgroundImage: {
-            name: "As Background Image",
-            defaultValue: false,
-            control: {type: "boolean"}
-        }
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof CtaBlock>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        description: data.title,
+        // @ts-ignore
+        buttons: data.buttons,
+        picture: data.picture,
+        // @ts-ignore
+        asBackgroundImage: data.asBackgroundImage,
     }
-} as Meta;
-
-const Template: Story<CtaBlockProps> = (args) => <CtaBlock {...args} />
-
-export const Basic = Template.bind({});
+};

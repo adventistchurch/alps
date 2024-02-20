@@ -1,10 +1,10 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./PageHeader.stories.json";
-import {PageHeader, PageHeaderProps} from "./PageHeader";
+import {PageHeader} from "./PageHeader";
 
-export default {
+const meta = {
     title: "organisms/sections/Page Header",
     component: PageHeader,
     argTypes: {
@@ -16,18 +16,26 @@ export default {
             defaultValue: data.title,
             control: {type: "text"}
         }
-    }
-} as Meta;
+    },
+    tags: ['autodocs']
+} satisfies Meta<typeof PageHeader>;
 
-const Template: Story<PageHeaderProps> = (args) =>
-    <PageHeader {...args}/>
-export const Basic = Template.bind({});
+export default meta;
 
-export const with_background = Template.bind({});
-with_background.argTypes = {
-    background: {
-        defaultValue: data.background,
-        control: {type: "object"}
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        url: data.url,
+        title: data.title
     }
-}
+};
+
+export const with_background: Story = {
+    args: {
+        ...Basic.args,
+        background: data.background,
+    }
+};
+
 

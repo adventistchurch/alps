@@ -1,19 +1,21 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./Notification.stories.json";
-import {Notification, NotificationProps} from "./Notification";
+import {Notification} from "./Notification";
 
-export default {
+const meta = {
     title: "molecules/store/Notification",
     component: Notification,
-    argTypes: {
-        content: {
-            defaultValue: data.content,
-            control: {type: "text"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof Notification>;
 
-const Template: Story<NotificationProps> = (args) =>
-    <Notification {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        content: data.content
+    }
+};

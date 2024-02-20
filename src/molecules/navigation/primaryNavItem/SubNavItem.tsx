@@ -21,7 +21,7 @@ export const SubNavItem = ({active = false, level, subnav, text, url, type, onCl
     const navLevel = isTertiary ? 'subnav__subnav' : 'subnav'
 
     const onArrowClick = useCallback(
-        e => {
+        (e: { stopPropagation: () => void; }) => {
             e.stopPropagation()
             onToggle()
         },

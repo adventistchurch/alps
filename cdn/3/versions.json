@@ -1,0 +1,1259 @@
+[
+  {
+    "version": "3.12.2",
+    "description": "- Update global css styles file for button o-button-toggle class. [",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.2/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.12.2/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.12.2/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.12.2/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.12.2/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.12.2/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.12.2/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.12.2/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.12.2/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.12.2/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.12.2/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.12.2/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.12.2/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.12.2/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.12.2/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.12.2/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.12.2/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.12.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.12.1",
+    "description": "- Update build process for CDN (add build css for WP page builder editor).",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.1/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.12.1/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.12.1/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.12.1/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.12.1/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.12.1/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.12.1/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.12.1/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.12.1/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.12.1/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.12.1/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.12.1/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.12.1/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.12.1/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.12.1/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.12.1/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.12.1/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.12.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.12.0",
+    "description": "- New wp-editor styleseheet for WP page builder editor support and additional rules for\n- new _wp.pagebuilders scss to feed wp-editor stylesheet and provide additional classes to front end sheets by inclusion in common.scss\n- Additional class for featured image heros\n- Fix header style for overlayed header on dark theme",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.0/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.12.0/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.12.0/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.12.0/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.12.0/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.12.0/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.12.0/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.12.0/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.12.0/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.12.0/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.12.0/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.12.0/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.12.0/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.12.0/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.12.0/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.12.0/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.12.0/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.12.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.12.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.10",
+    "description": "New design of ALPS Quote block. Fix styles for citation and quote fields. [story](https://app.zenhub.com/workspaces/alps---core-and-wp-583365a5f9e6361b5cc5f5f6/issues/adventistchurch/alps-gutenberg-blocks/87)",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.10/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.10/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.10/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.10/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.10/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.10/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.10/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.10/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.10/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.10/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.10/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.10/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.10/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.10/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.10/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.10/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.10/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.10/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.10/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.9",
+    "description": "New design of ALPS Quote block [story](https://app.zenhub.com/workspaces/alps---core-and-wp-583365a5f9e6361b5cc5f5f6/issues/adventistchurch/alps-gutenberg-blocks/87)",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.9/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.9/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.9/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.9/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.9/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.9/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.9/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.9/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.9/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.9/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.9/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.9/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.9/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.9/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.9/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.9/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.9/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.9/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.9/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.8",
+    "description": "Update styles for menu. Need for internationalization in menu. Version 3.11.7 was skipped.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.8/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.8/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.8/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.8/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.8/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.8/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.8/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.8/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.8/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.8/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.8/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.8/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.8/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.8/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.8/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.8/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.8/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.8/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.8/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.6",
+    "description": "Update styles for menu and under bullet.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.6/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.6/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.6/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.6/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.6/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.6/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.6/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.6/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.6/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.6/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.6/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.6/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.6/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.6/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.6/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.6/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.6/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.6/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.6/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.5",
+    "description": "Square Button Styles, add NAD colors.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.5/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.5/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.5/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.5/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.5/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.5/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.5/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.5/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.5/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.5/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.5/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.5/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.5/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.5/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.5/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.5/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.5/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.5/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.5/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.4",
+    "description": "Fixing the styling for `<mark>` and switching the `<u>` to `<mark>`.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.4/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.4/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.4/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.4/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.4/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.4/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.4/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.4/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.4/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.4/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.4/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.4/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.4/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.4/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.4/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.4/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.4/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.4/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.4/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.3",
+    "description": "Seperating out the JS to make the search suggestions work on the PL site.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.3/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.3/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.3/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.3/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.3/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.3/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.3/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.3/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.3/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.3/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.3/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.3/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.3/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.3/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.3/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.3/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.3/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.3/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.3/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.2",
+    "description": "Adding an active class for the search auto-complete fields.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.2/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.2/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.2/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.2/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.2/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.2/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.2/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.2/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.2/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.2/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.2/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.2/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.2/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.2/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.2/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.2/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.2/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.1",
+    "description": "Fixing a JS error.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.1/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.1/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.1/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.1/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.1/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.1/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.1/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.1/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.1/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.1/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.1/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.1/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.1/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.1/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.1/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.1/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.1/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.11.0",
+    "description": "Adding print styles for most page.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.0/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.11.0/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.11.0/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.11.0/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.11.0/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.11.0/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.11.0/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.11.0/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.11.0/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.11.0/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.11.0/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.11.0/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.11.0/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.11.0/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.11.0/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.11.0/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.11.0/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.11.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.11.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.10.1",
+    "description": "Fixed `.u-text-transform--capitalize` and `.u-text-transform--initial` by adding `!important` to the rule.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.10.1/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.10.1/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.10.1/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.10.1/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.10.1/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.10.1/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.10.1/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.10.1/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.10.1/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.10.1/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.10.1/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.10.1/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.10.1/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.10.1/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.10.1/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.10.1/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.10.1/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.10.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.10.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.10.0",
+    "description": "Adding new search patterns and more text-transform classes.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.10.0/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.10.0/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.10.0/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.10.0/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.10.0/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.10.0/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.10.0/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.10.0/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.10.0/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.10.0/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.10.0/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.10.0/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.10.0/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.10.0/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.10.0/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.10.0/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.10.0/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.10.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.10.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.9.3",
+    "description": "Optimizing the background image the for the homepage to reduce file size.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.3/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.9.3/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.9.3/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.9.3/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.9.3/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.9.3/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.9.3/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.9.3/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.9.3/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.9.3/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.9.3/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.9.3/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.9.3/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.9.3/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.9.3/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.9.3/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.9.3/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.3/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.9.3/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.9.2",
+    "description": "Added missing `.u-shift--left--1-col--at-` clases.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.2/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.9.2/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.9.2/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.9.2/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.9.2/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.9.2/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.9.2/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.9.2/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.9.2/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.9.2/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.9.2/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.9.2/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.9.2/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.9.2/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.9.2/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.9.2/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.9.2/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.9.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.9.1",
+    "description": "Fixing grid styles for 'l-grid-item--xl' and 'l-grid-item--xxl'.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.1/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.9.1/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.9.1/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.9.1/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.9.1/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.9.1/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.9.1/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.9.1/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.9.1/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.9.1/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.9.1/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.9.1/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.9.1/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.9.1/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.9.1/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.9.1/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.9.1/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.9.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.9.0",
+    "description": "Added support for the wide logo pattern and inline sidebar block.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.0/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.9.0/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.9.0/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.9.0/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.9.0/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.9.0/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.9.0/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.9.0/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.9.0/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.9.0/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.9.0/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.9.0/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.9.0/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.9.0/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.9.0/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.9.0/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.9.0/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.9.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.9.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.8.0",
+    "description": "Added patterns for the church locator.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.8.0/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.8.0/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.8.0/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.8.0/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.8.0/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.8.0/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.8.0/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.8.0/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.8.0/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.8.0/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.8.0/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.8.0/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.8.0/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.8.0/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.8.0/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.8.0/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.8.0/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.8.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.8.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.11",
+    "description": "Fixed the scaling of images.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.11/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.11/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.11/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.11/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.11/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.11/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.11/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.11/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.11/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.11/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.11/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.11/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.11/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.11/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.11/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.11/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.11/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.11/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.11/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.10",
+    "description": "Added a full-width class for making a full page.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.10/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.10/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.10/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.10/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.10/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.10/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.10/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.10/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.10/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.10/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.10/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.10/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.10/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.10/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.10/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.10/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.10/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.10/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.10/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.9",
+    "description": "Fixes aspect ratio in MediaBlock with .o-background-image",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.9/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.9/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.9/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.9/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.9/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.9/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.9/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.9/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.9/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.9/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.9/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.9/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.9/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.9/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.9/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.9/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.9/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.9/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.9/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.7",
+    "description": "Hotfix for script error introduced in 3.7.3",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.7/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.7/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.7/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.7/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.7/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.7/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.7/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.7/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.7/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.7/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.7/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.7/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.7/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.7/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.7/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.7/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.7/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.7/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.7/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.6",
+    "description": "Redeploy of Hotfix for Uncaught ReferenceError: $jq2 is not defined at script.min.js",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.6/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.6/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.6/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.6/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.6/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.6/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.6/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.6/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.6/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.6/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.6/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.6/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.6/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.6/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.6/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.6/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.6/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.6/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.6/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.4",
+    "description": "Hotfix for Uncaught ReferenceError: $jq2 is not defined at script.min.js",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.4/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.4/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.4/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.4/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.4/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.4/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.4/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.4/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.4/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.4/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.4/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.4/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.4/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.4/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.4/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.4/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.4/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.4/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.4/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.3",
+    "description": "Hotfix for ALPS Wordpress Theme",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.3/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.3/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.3/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.3/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.3/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.3/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.3/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.3/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.3/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.3/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.3/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.3/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.3/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.3/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.3/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.3/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.3/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.3/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.3/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.2",
+    "description": "Fixes background image caption on the Media Block.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.2/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.2/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.2/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.2/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.2/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.2/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.2/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.2/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.2/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.2/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.2/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.2/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.2/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.2/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.2/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.2/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.2/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.1",
+    "description": "Add a new background modifier class.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.1/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.1/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.1/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.1/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.1/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.1/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.1/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.1/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.1/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.1/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.1/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.1/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.1/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.1/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.1/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.1/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.1/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.7.0",
+    "description": "Breaking changes: Fixes to the drawer navigation and the handling of drop caps.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.0/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.7.0/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.7.0/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.7.0/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.7.0/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.7.0/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.7.0/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.7.0/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.7.0/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.7.0/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.7.0/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.7.0/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.7.0/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.7.0/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.7.0/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.7.0/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.7.0/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.7.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.7.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.6.5",
+    "description": "Added the media block captions and fixed gardients in Safari and background colors for <mark> tags.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.5/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.6.5/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.6.5/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.6.5/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.6.5/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.6.5/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.6.5/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.6.5/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.6.5/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.6.5/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.6.5/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.6.5/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.6.5/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.6.5/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.6.5/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.6.5/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.6.5/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.5/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.6.5/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.6.4",
+    "description": "Refactored the Javascript to removed significant unused portions of code, including `moment`, `Moment Duration Format`, and `Modaal` libriaries. This is matching the removal of `Modaal` from the CSS that happened in `3.6.3`.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.4/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.6.4/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.6.4/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.6.4/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.6.4/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.6.4/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.6.4/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.6.4/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.6.4/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.6.4/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.6.4/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.6.4/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.6.4/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.6.4/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.6.4/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.6.4/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.6.4/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.4/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.6.4/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.6.3",
+    "description": "Added unique CSS files for each theme.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.3/css/main.css",
+      "themes": {
+        "treefrog": "https://cdn.adventist.org/alps/3/3.6.3/css/main-treefrog.css",
+        "ming": "https://cdn.adventist.org/alps/3/3.6.3/css/main-ming.css",
+        "bluejay": "https://cdn.adventist.org/alps/3/3.6.3/css/main-bluejay.css",
+        "iris": "https://cdn.adventist.org/alps/3/3.6.3/css/main-iris.css",
+        "lily": "https://cdn.adventist.org/alps/3/3.6.3/css/main-lily.css",
+        "scarlett": "https://cdn.adventist.org/alps/3/3.6.3/css/main-scarlett.css",
+        "campfire": "https://cdn.adventist.org/alps/3/3.6.3/css/main-campfire.css",
+        "winter": "https://cdn.adventist.org/alps/3/3.6.3/css/main-winter.css",
+        "forest": "https://cdn.adventist.org/alps/3/3.6.3/css/main-forest.css",
+        "cave": "https://cdn.adventist.org/alps/3/3.6.3/css/main-cave.css",
+        "denim": "https://cdn.adventist.org/alps/3/3.6.3/css/main-denim.css",
+        "emperor": "https://cdn.adventist.org/alps/3/3.6.3/css/main-emperor.css",
+        "grapevine": "https://cdn.adventist.org/alps/3/3.6.3/css/main-grapevine.css",
+        "velvet": "https://cdn.adventist.org/alps/3/3.6.3/css/main-velvet.css",
+        "earth": "https://cdn.adventist.org/alps/3/3.6.3/css/main-earth.css",
+        "night": "https://cdn.adventist.org/alps/3/3.6.3/css/main-night.css"
+      }
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.3/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.6.3/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.6.2",
+    "description": "Dynamic versioning",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.2/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.6.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.6.1",
+    "description": "Fixed the accordion menu not showing.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.1/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.6.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.6.0",
+    "description": "Adding search suggestions.",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.0/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.6.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.6.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.7",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.7/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.7/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.7/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.6",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.6/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.6/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.6/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.5",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.5/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.5/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.5/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.4",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.4/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.4/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.4/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.3",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.3/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.3/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.3/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.2",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.2/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.1",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.1/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.5.0",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.0/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.5.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.5.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.4.1",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.4.1/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.4.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.4.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.4.0",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.4.0/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.4.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.4.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.3.0",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.3.0/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.3.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.3.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.2.0",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.2.0/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.2.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.2.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.1.2",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.1.2/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.1.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.1.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.1.1",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.1.1/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.1.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.1.1/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.1.0",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.1.0/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.1.0/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.1.0/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.0.7",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.7/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.7/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.0.7/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.0.6",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.6/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.6/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.0.6/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.0.5",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.5/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.5/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.0.5/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.0.4",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.4/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.4/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.0.4/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.0.3",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.3/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.3/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.0.3/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.0.2",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.2/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.2/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.0.2/js/head-script.min.js"
+    }
+  },
+  {
+    "version": "3.0.1",
+    "description": "",
+    "styles": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.1/css/main.css",
+      "themes": {}
+    },
+    "scripts": {
+      "main": "https://cdn.adventist.org/alps/3/3.0.1/js/script.min.js",
+      "head": "https://cdn.adventist.org/alps/3/3.0.1/js/head-script.min.js"
+    }
+  }
+]

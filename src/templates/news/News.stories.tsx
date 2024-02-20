@@ -6,82 +6,100 @@ import dataHeaderSecondary from "../../molecules/navigation/secondaryNavigation/
 import dataFooterPrimary from "../../molecules/navigation/footerPrimaryNavigation/FooterPrimaryNavigation.stories.json";
 import dataFooterSecondary
     from "../../molecules/navigation/footerSecondaryNavigation/FooterSecondaryNavigation.stories.json";
-import {Meta, Story} from "@storybook/react";
-import {News, NewsProps} from "./News";
+import {Meta, StoryObj} from "@storybook/react";
+import {News} from "./News";
 import {Aside} from "../../organisms/asides/aside/Aside";
-import {commentsAside, mediaAside} from "../../organisms/asides/aside/Aside.stories";
+import {BlockWrap} from "../../organisms/asides/aside/BlockWrap";
+import asideData from "../../organisms/asides/aside/Aside.stories.json";
 
 const aside =
     <Aside>
-        {mediaAside}
-        {commentsAside}
+        <BlockWrap type="mediaBlock" title={asideData.media.title} linkLabel={asideData.media.linkLabel}
+                   linkUrl={asideData.media.linkUrl} items={asideData.media.items}/>
+        <BlockWrap type="contentBlock" title={asideData.comments.title} linkLabel={asideData.comments.linkLabel}
+                   linkUrl={asideData.comments.linkUrl} items={asideData.comments.items}/>
     </Aside>;
 
-export default {
+const meta = {
     title: "templates/News",
     component: News,
-    argTypes: {
-        featured: {
-            defaultValue: data.featured,
-            control: {type: "object"}
-        },
-        latest: {
-            defaultValue: data.latest,
-            control: {type: "object"}
-        },
-        media: {
-            defaultValue: data.media,
-            control: {type: "object"}
-        },
-        archive: {
-            defaultValue: data.archive,
-            control: {type: "object"}
-        },
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof News>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        aside: aside,
+        pageHeader: data.pageHeader,
+        // @ts-ignore
+        featured: data.featured,
+        // @ts-ignore
+        latest: data.latest,
+        media: {title: data.media.title, linkLabel: data.media.linkLabel, linkUrl: data.media.linkUrl},
+        // @ts-ignore
+        archive: data.archive,
         blankTemplate: {
-            defaultValue: {
-                templateProps: {
-                    header: {
-                        primaryNav: dataHeaderPrimary,
-                        secondaryNav: dataHeaderSecondary,
-                        logoElement: "SDA"
-                    },
-                    footer: {
-                        primaryNav: dataFooterPrimary,
-                        secondaryNav: dataFooterSecondary
-                    }
+            templateProps: {
+                header: {
+                    logoElement: "SDA",
+                    // @ts-ignore
+                    primaryNav: dataHeaderPrimary,
+                    // @ts-ignore
+                    secondaryNav: dataHeaderSecondary
                 },
-                control: {type: "object"}
+                footer: {
+                    // @ts-ignore
+                    primaryNav: dataFooterPrimary,
+                    secondaryNav: dataFooterSecondary
+                },
+                sabbath: {
+                    showLogo: true
+                }
             }
         },
     }
-} as Meta;
+};
 
-const Template: Story<NewsProps> = (args) =>
-    <News {...args}/>;
+export const no_header: Story = {
+    args: {
+        ...Basic.args,
+        blankTemplate: {
+            templateProps: {
+                header: {
+                    logoElement: "SDA",
+                    // @ts-ignore
+                    primaryNav: {},
+                    // @ts-ignore
+                    secondaryNav: {}
+                },
+                footer: {
+                    // @ts-ignore
+                    primaryNav: dataFooterPrimary,
+                    secondaryNav: dataFooterSecondary
+                },
+                sabbath: {
+                    showLogo: true
+                }
+            }
+        },
+    }
+};
 
-export const Basic = Template.bind({});
-Basic.args = {
-    pageHeader: data.pageHeader,
-    aside: aside,
-    media: {title: data.media.title, linkLabel: data.media.linkLabel, linkUrl: data.media.linkUrl}
-}
+export const no_aside: Story = {
+    args: {
+        ...Basic.args,
+        aside: <></>
+    }
+};
 
-export const no_header = Template.bind({});
-no_header.args = {
-    aside: aside
-}
-
-export const no_aside = Template.bind({});
-no_aside.args = {
-    pageHeader: data.pageHeader,
-}
-
-export const with_pagination = Template.bind({});
-with_pagination.args = {
-    pageHeader: data.pageHeader,
-    aside: aside,
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    pagination: data.pagination
-}
-
+export const with_pagination: Story = {
+    args: {
+        ...Basic.args,
+        // @ts-ignore
+        pagination: data.pagination
+    }
+};

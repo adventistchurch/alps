@@ -1,27 +1,23 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./CartItemSummary.stories.json";
-import {CartItemSummary, CartItemSummaryProps} from "./CartItemSummary";
+import {CartItemSummary} from "./CartItemSummary";
 
-export default {
+const meta = {
     title: "molecules/store/Cart Item Summary",
     component: CartItemSummary,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        count: {
-            defaultValue: data.count,
-            control: {type: "number"}
-        },
-        price: {
-            defaultValue: data.price,
-            control: {type: "number"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof CartItemSummary>;
 
-const Template: Story<CartItemSummaryProps> = (args) =>
-    <CartItemSummary {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        title: data.title,
+        count: data.count,
+        price: data.price
+    }
+};

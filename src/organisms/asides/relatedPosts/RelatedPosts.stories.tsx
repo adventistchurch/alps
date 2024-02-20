@@ -1,32 +1,27 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./RelatedPosts.stories.json";
-import {RelatedPosts, RelatedPostsProps} from "./RelatedPosts";
+import {RelatedPosts} from "./RelatedPosts";
+import {CheckoutPlace} from "../../../molecules/store/checkoutPlace/CheckoutPlace";
 
-export default {
+const meta = {
     title: "organisms/aside/Related Posts",
     component: RelatedPosts,
-    argTypes: {
-        heading: {
-            defaultValue: data.heading,
-            control: {type: "text"}
-        },
-        linkText: {
-            defaultValue: data.linkText,
-            control: {type: "text"}
-        },
-        url: {
-            defaultValue: data.url,
-            control: {type: "text"}
-        },
-        blocks: {
-            defaultValue: data.blocks,
-            control: {type: "object"}
-        }
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof CheckoutPlace>;
 
-const Template: Story<RelatedPostsProps> = (args) =>
-    <RelatedPosts {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        heading: data.heading,
+        linkText: data.linkText,
+        url: data.url,
+        // @ts-ignore
+        blocks: data.blocks
+    }
+};
 

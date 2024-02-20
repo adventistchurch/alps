@@ -20,7 +20,7 @@ export interface TemplateWrapProps {
 
 export const TemplateWrap = ({ children, footer, header, sabbath }: TemplateWrapProps): JSX.Element => {
   return (
-    <div className="l-wrap">
+    <div className="l-wrap" style={{width: "1600px"}}>
       <div className="l-wrap__content l-content" role="document">
         <Header {...header} />
         {children}

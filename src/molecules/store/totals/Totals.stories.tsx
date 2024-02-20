@@ -1,23 +1,22 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 import data from "./Totals.stories.json";
-import {Totals, TotalsProps} from "./Totals";
+import {Totals} from "./Totals";
 
-export default {
+const meta = {
     title: "molecules/store/Totals",
     component: Totals,
-    argTypes: {
-        total: {
-            defaultValue: data.total,
-            control: {type: "number"}
-        },
-        subTotal: {
-            defaultValue: data.subTotal,
-            control: {type: "number"}
-        },
-    }
-} as Meta;
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof Totals>;
 
-const Template: Story<TotalsProps> = (args) =>
-    <Totals {...args}/>;
-export const Basic = Template.bind({});
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        total: data.total,
+        subTotal: data.subTotal,
+    }
+};

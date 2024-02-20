@@ -1,23 +1,24 @@
 import React from "react";
-import {Meta, Story} from '@storybook/react'
+import {Meta, StoryObj} from '@storybook/react'
 import data from "./InlineForm.stories.json";
-import {InlineForm, InlineFormProps} from "./InlineForm";
+import {InlineForm} from "./InlineForm";
 
-export default {
+const meta = {
     title: "molecules/forms/Inline Form",
     parameters: {
         componentSubtitle: 'Component',
         status: 'released'
     },
     component: InlineForm,
-    argTypes: {
-        submitLabel: {
-            defaultValue: data.submitLabel,
-            control: {type: "text"}
-        }
+    argTypes: {}
+} satisfies Meta<typeof InlineForm>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        submitLabel: data.submitLabel
     }
-} as Meta;
-
-const Template: Story<InlineFormProps> = (args) => <InlineForm {...args}/>;
-
-export const Basic = Template.bind({});
+};

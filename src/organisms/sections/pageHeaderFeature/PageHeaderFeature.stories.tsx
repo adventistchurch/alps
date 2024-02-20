@@ -1,56 +1,55 @@
 import React from "react";
-import {Meta, Story} from "@storybook/react";
+import {Meta, StoryObj} from "@storybook/react";
 
 import data from "./PageHeaderFeature.stories.json";
 import dataColumns from "./PageHeaderFeatureColumns.stories.json";
 import dataFull from "./PageHeaderFeatureFull.stories.json";
 import dataLongForm from "./PageHeaderFeatureLongform.stories.json";
-import {PageHeaderFeature, PageHeaderFeatureProps} from "./PageHeaderFeature";
+import {PageHeaderFeature} from "./PageHeaderFeature";
 
-export default {
+const meta = {
     title: "organisms/sections/Page Header Feature",
     component: PageHeaderFeature,
-    argTypes: {
-        blockType: {
-            defaultValue: "feature",
-            control: {type: "text"}
-        },
-        hasScroll: {
-            defaultValue: false,
-            control: {type: "boolean"}
-        },
-        blocks: {
-            defaultValue: [data],
-            control: {type: "object"}
-        }
+    argTypes: {},
+    tags: ['autodocs']
+} satisfies Meta<typeof PageHeaderFeature>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+    args: {
+        blockType: "feature",
+        hasScroll: false,
+        // @ts-ignore
+        blocks: [data]
     }
-} as Meta;
+};
 
-const Template: Story<PageHeaderFeatureProps> = (args) =>
-    <PageHeaderFeature {...args}/>
-export const Basic = Template.bind({});
+export const Columns: Story = {
+    args: {
+        blockType: "column",
+        hasScroll: false,
+        // @ts-ignore
+        blocks: dataColumns.blocks
+    }
+};
 
-export const Columns = Template.bind({});
-Columns.args = {
-    blockType: "column",
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    blocks: dataColumns.blocks
-}
+export const Full: Story = {
+    args: {
+        blockType: "full",
+        // @ts-ignore
+        blocks: dataFull.blocks,
+        hasScroll: dataFull.hasScroll
+    }
+};
 
-export const Full = Template.bind({});
-Full.args = {
-    blockType: "full",
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    blocks: dataFull.blocks,
-    hasScroll: dataFull.hasScroll
-}
+export const LongForm: Story = {
+    args: {
+        blockType: "longform",
+        // @ts-ignore
+        blocks: dataLongForm.blocks
+    }
+};
 
-export const LongForm = Template.bind({});
-LongForm.args = {
-    blockType: "longform",
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    blocks: dataLongForm.blocks
-}
