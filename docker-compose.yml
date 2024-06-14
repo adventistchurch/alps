@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  alps:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/var/www/html
+      - /var/www/html/node_modules
