@@ -3,7 +3,6 @@ import { IconWrap } from "../../../atoms/icons/IconWrap";
 import { SubNavArrow } from "../primaryNavItem/SubNavArrow";
 import { SubNav } from "../primaryNavItem/SubNav";
 import { iconConfig } from "../../../atoms/icons/_config";
-import { NavLink } from "react-router-dom";
 
 export interface SecondaryNavItemProps {
   icon?: keyof typeof iconConfig.iconNamesMap;
@@ -14,7 +13,6 @@ export interface SecondaryNavItemProps {
   text: string;
   type?: "search" | "menu";
   url?: string;
-  useNavLink?: boolean;
 }
 
 export const SecondaryNavItem = ({
@@ -26,7 +24,6 @@ export const SecondaryNavItem = ({
   type,
   text,
   url = "#",
-  useNavLink,
 }: SecondaryNavItemProps): JSX.Element => {
   const linkAttr = {
     // to: url || "",
@@ -49,11 +46,6 @@ export const SecondaryNavItem = ({
           {iconComp}
           {text}
         </a>
-      ) : useNavLink ? (
-        <NavLink {...linkAttr} to={url}>
-          {iconComp}
-          {text}
-        </NavLink>
       ) : (
         <a {...linkAttr} href={url} onClick={onClick}>
           {iconComp}

@@ -31,7 +31,7 @@ export const SecondaryNavigation = ({
                                         showMenu = true,
                                         showSearch = true,
                                         onClickMenu,
-                                        onClickSearch                                        
+                                        onClickSearch
                                     }: SecondaryNavigationProps): JSX.Element => {
 
     return (

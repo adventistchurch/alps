@@ -16,7 +16,6 @@ import SDA from "../../../atoms/images/logos/SDA";
 import SDAWithIcon from "../../../atoms/images/logos/SDAWithIcon";
 import Gain from "../../../atoms/images/logos/Gain";
 import SDAbgNet from "../../../atoms/images/logos/SDAbgNet";
-import { NavLink } from "react-router-dom";
 
 export interface HeaderProps {
   className?: string;
@@ -49,8 +48,7 @@ export const Header = ({
     canBeDark: false,
     link: "/",
     element: logosMap[logoElement],
-    useFillTheme: usePathFill,
-    useNavLink: false
+    useFillTheme: usePathFill
   },
   className,
   primaryNav,
@@ -86,13 +84,9 @@ export const Header = ({
             />
           </div>
           <div className="c-header__logo c-logo">
-            {logo.useNavLink ? (
-                 <NavLink className={logoClass} to={logo.link || ""}> {logo.element}</NavLink>
-            ) : (
-                <a className={logoClass} href={logo.link}>
-                {logo.element}
-              </a>
-            )}
+            <a className={logoClass} href={logo.link}>
+              {logo.element}
+            </a>
           </div>
           <div className="c-header__nav-primary">
             <PrimaryNavigation {...primaryNav} />

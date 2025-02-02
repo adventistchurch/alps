@@ -1,5 +1,4 @@
 import React, {useCallback, useMemo, useState} from 'react'
-import { NavLink } from 'react-router-dom';
 import {SubNavArrow} from "./SubNavArrow";
 import {SubNav} from "./SubNav";
 import { SubNavItemProps } from './SubNavItem';
@@ -45,7 +44,6 @@ export interface PrimaryNavItemProps {
      */
     noWrap?: boolean,
     isExternal?: boolean, //Eli added
-    useNavLink?: boolean
 }
 
 export const PrimaryNavItem = ({
@@ -57,8 +55,7 @@ export const PrimaryNavItem = ({
                                    url = "",
                                    onClick,
                                    noWrap,
-                                   isExternal = url.indexOf('http')==0,
-                                   useNavLink
+                                   isExternal = url.indexOf('http')===0
                                }: PrimaryNavItemProps): JSX.Element => {
 
     const [isOpen, setIsOpen] = useState(statuses.closed);
@@ -105,9 +102,7 @@ export const PrimaryNavItem = ({
                 <a {...linkAttr} onClick={onClick}>
                 {text} <i className="fa fa-external-link u-space--quarter--left"></i>
                 </a>
-            ) : useNavLink ? (
-                <NavLink {...linkAttr}>{text}</NavLink>
-                ) : (
+            ) : (
                 <a {...linkAttr} onClick={onClick}>
                 {text}
                 </a>

@@ -7,7 +7,6 @@ import {
   themeBackgroundClass,
   themeLinkHoverClass
 } from '../../../global/colors';
-import {NavLink} from 'react-router-dom';
 
 export interface SubNavItemProps {
   active?: boolean;
@@ -18,7 +17,6 @@ export interface SubNavItemProps {
   type: 'primary' | 'secondary';
   url?: string;
   isExternal?: boolean; //Eli added
-  useNavLink?: boolean;
 }
 
 export const SubNavItem = ({
@@ -29,8 +27,7 @@ export const SubNavItem = ({
   url,
   type,
   onClick,
-  isExternal = url?.indexOf('http') == 0,
-  useNavLink
+  isExternal = url?.indexOf('http') === 0
 }: SubNavItemProps): JSX.Element => {
   const {onToggle, openClass} = useToggle(false);
   const hasSubnav = Array.isArray(subnav) && subnav.length > 0;
@@ -71,14 +68,11 @@ export const SubNavItem = ({
                 ${isTertiary ? themeBackgroundClass + '--base' : null}
             `}
     >
-      {useNavLink ? (
-        <NavLink {...linkAttr}>{text}</NavLink>
-      ) : (
-        <a {...linkAttr} onClick={onClick}>
-          {text}
-          {linkIcon}
-        </a>
-      )}
+      <a {...linkAttr} onClick={onClick}>
+        {text}
+        {linkIcon}
+      </a>
+     
       {hasSubnav && (
         <SubNavArrow
           fill="gray"
