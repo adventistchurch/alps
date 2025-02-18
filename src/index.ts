@@ -63,7 +63,7 @@ export {CommentForm} from "./molecules/forms/commentForm/CommentForm";
 export {FacetFilter} from "./molecules/forms/faceFilter/FacetFilter";
 export {InlineForm} from "./molecules/forms/inlineForm/InlineForm";
 export {LoginForm} from "./molecules/forms/loginForm/LoginForm";
-export {Search} from "./molecules/forms/search/Search
+export {Search} from "./molecules/forms/search/Search";
 export {SearchFilter} from "./molecules/forms/searchFilter/SearchFilter";
 export {SearchHeader} from "./molecules/forms/searchHeader/SearchHeader";
 export {SubscribeForm} from "./molecules/forms/subscribeForm/SubscribeForm";
@@ -99,7 +99,7 @@ export {Totals} from "./molecules/store/totals/Totals";
 
 // ----- Molecules - text         -----
 export {Byline} from "./molecules/text/byline/Byline";
-export {ExtendedQuote} from "./molecules/text/extendeQuote/ExtendedQuote";
+export {ExtendedQuote} from "./molecules/text/extendequote/ExtendedQuote";
 export {Highlight} from "./molecules/text/highlight/Highligh";
 export {Pullquote} from "./molecules/text/pullquote/Pullquote";
 
@@ -116,7 +116,7 @@ export {BodyContent} from "./organisms/content/bodyContent/BodyContent";
 export {ListContent} from "./organisms/content/listContent/ListContent";
 export {PageContent} from "./organisms/content/pageContent/PageContent";
 export {SearchContent} from "./organisms/content/searchResult/SearchContent";
-export {SearchResult} from "./organisms/content/searchResult/SearchResult";
+export {SearchResults} from "./organisms/content/searchResult/SearchResults";
 
 // ----- Organisms - global         -----
 export {Footer} from "./organisms/global/footer/Footer";
@@ -125,7 +125,7 @@ export {Header} from "./organisms/global/header/Header";
 // ----- Organisms - sections         -----
 export {ArticleFooter} from "./organisms/sections/articleFooter/ArticleFooter";
 export {BlockFeed} from "./organisms/sections/blockFeed/BlockFeed";
-export {Comments} from "./organisms/sections/comments/Comments";
+export {Comments as CommentsSection} from "./organisms/sections/comments/Comments";
 export {PageHeader} from "./organisms/sections/pageHeader/PageHeader";
 export {PageHeaderFeature} from "./organisms/sections/pageHeaderFeature/PageHeaderFeature";
 export {PageHeaderLong} from "./organisms/sections/pageHeaderLong/PageHeaderLong";
