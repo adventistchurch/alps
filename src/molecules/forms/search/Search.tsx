@@ -7,8 +7,8 @@ export interface SearchProps {
      * Specify whether the Search should be a hasFocus variant
      */
     hasFocus?: boolean,
-    onSearch?: () => void,
-    onSubmit?: () => void,
+    onSearch?: (e: React.ChangeEvent<HTMLInputElement>) => void,
+    onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void,
     /**
      * Specify the placeholder of your Search
      */
