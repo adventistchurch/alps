@@ -99,7 +99,7 @@ const mediaRow = {
 
 const longform = {
   type: 'inline',
-  block: "can-be--dark-dark u-padding--bottom u-padding--top l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker",
+  block: "can-be--dark-dark u-padding--bottom u-padding--top u-spacing--until-medium l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--darker",
   content: "u-spacing u-border--left u-shift--left--1-col--at-large l-grid-item l-grid-item--m--6-col l-grid-item--l--4-col l-grid-item--xl--3-col u-theme--border-color--light--left u-theme--color--lighter",
   title: "u-color--white u-font--primary u-space--zero u-theme--color--lighter",
   titleLink: "u-theme--link-hover--light",
