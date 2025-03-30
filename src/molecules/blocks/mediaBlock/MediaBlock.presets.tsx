@@ -35,7 +35,7 @@ const featuredNews = {
   stackedUntilSmall: true,
   seven: true,
   block: "l-large-break l-grid-wrap l-grid l-grid--7-col u-spacing--until-small c-block__featuredNews",
-  image: "u-padding--zero--sides l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col",
+  image: "u-padding--zero--sides u-padding--left l-grid-item l-grid-item--s--2-col l-grid-item--l--1-col",
   content: "u-spacing u-padding--left u-flex--justify-start l-grid-item l-grid-item--s--4-col l-grid-item--l--3-col",
   meta: "u-theme--color--base",
 }
