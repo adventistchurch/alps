@@ -3,30 +3,38 @@ import {Suggestions, SuggestionsItem} from '../elements/Suggestions'
 import {Button} from "../../../atoms/button/Button";
 
 export interface SearchProps {
-    /**
-     * Specify whether the Search should be a hasFocus variant
-     */
+  /**
+   * Specify whether the Search should be a hasFocus variant
+   */
     hasFocus?: boolean,
     onSearch?: (e: React.ChangeEvent<HTMLInputElement>) => void,
     onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void,
-    /**
-     * Specify the placeholder of your Search
-     */
+  /**
+   * Specify the placeholder of your Search
+   */
     placeholder?: string,
-    /**
-     * Specify the submitLabel of your Search
-     */
+  /**
+   * Specify the submitLabel of your Search
+   */
     submitLabel?: string,
     suggestions?: SuggestionsItem[],
-    /**
-     * Specify the term of your Search
-     */
+  /**
+   * Specify the term of your Search
+   */
     term?: string,
-    /**
-     * Specify the title of your Search
-     */
+  /**
+   * Specify the title of your Search
+   */
     title?: string
 }
+
+const handleInvalid = (event: React.InvalidEvent<HTMLInputElement>) => {
+  event.target.setCustomValidity('Моля, попълнете това поле.');
+};
+const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  // Reset the custom message when the user starts typing
+  event.target.setCustomValidity('');
+};
 
 export const Search = ({
                            term,
@@ -55,9 +63,11 @@ export const Search = ({
                         value={term}
                         required
                         autoComplete="off"
-                    />
-                    {suggestions && <Suggestions items={suggestions}/>}
-                </div>
+                        onInvalid={handleInvalid}
+                        onInput={handleInput} // Reset error on user input
+                      />
+                      {suggestions && <Suggestions items={suggestions}/>}
+                  </div>
 
                 <Button className={"search-form__submit is-vishidden"} label={submitLabel}/>
             </fieldset>
