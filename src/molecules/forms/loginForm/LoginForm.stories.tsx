@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import data from "./LoginForm.stories.json";
-import { LoginForm, LoginFormProps } from "./LoginForm";
+import { LoginForm } from "./LoginForm";
 
 const meta = {
   title: "molecules/forms/Login Form",
@@ -49,15 +49,20 @@ export const Basic: Story = {
     passwordLabel: data.passwordLabel,
     forgotPwdLabel: data.forgotPwdLabel,
     forgotPwdUrl: data.forgotPwdUrl,
-    // @ts-ignore
+    // @ts-expect-error - not part of props, just used in render
     formSubmitted: false,
   },
-  // @ts-ignore
-  render: (args: LoginFormProps & { formSubmitted: boolean }) => (
-    <LoginForm
-      {...args}
-      // @ts-ignore
-      submitMessage={args.formSubmitted ? data.submitMessage : null}
-    />
-  ),
+  render: (args) => {
+    // @ts-expect-error formSubmitted is not part of LoginFormProps
+    const { formSubmitted, ...rest } = args;
+
+    return (
+      <LoginForm
+        {...rest}
+        // @ts-ignore
+        submitMessage={formSubmitted ? data.submitMessage : null}
+      />
+    );
+  },
 };
+

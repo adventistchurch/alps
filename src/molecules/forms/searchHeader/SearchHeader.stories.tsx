@@ -19,7 +19,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
     args: {
-        // @ts-ignore
         filters: data.filters,
         placeholder: data.placeholder,
         searchAgainLabel: data.searchAgainLabel,

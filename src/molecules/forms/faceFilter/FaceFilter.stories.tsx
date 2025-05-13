@@ -20,7 +20,6 @@ type Story = StoryObj<typeof meta>;
 export const Basic: Story = {
   args: {
     title: data.title,
-    // @ts-ignore
     facets: data.facets,
   },
 };
