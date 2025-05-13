@@ -1,79 +1,66 @@
-import React from 'react'
-import {Meta, Story} from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react';
+import { Grid, GridProps, wrapSizes } from './Grid';
+import { GridItem } from './GridItem';
+import { ComponentsTypes } from '../../global/commons';
 
-import {Grid, GridProps, wrapSizes} from './Grid'
-import {GridItem} from './GridItem'
-import {ComponentsTypes} from "../../global/commons";
-
-export default {
-    title: "atoms/Grid",
-    parameters: {
-        componentSubtitle: ComponentsTypes.COMPONENT + ComponentsTypes.CAN_BE_USE_AS_WRAPPER,
-        status: 'released'
+const meta: Meta<typeof Grid> = {
+  title: 'atoms/Grid',
+  component: Grid,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: `${ComponentsTypes.COMPONENT}${ComponentsTypes.CAN_BE_USE_AS_WRAPPER}`,
+    status: 'released',
+  },
+  argTypes: {
+    as: {
+      options: [ 'article', 'div', 'section' ],
+      control: { type: 'select' },
     },
-    component: Grid,
-    argTypes: {
-        as: {
-            defaultValue: "div",
-            options: ["article", "div", "section"],
-            control: {type: "select"}
-        },
-        wrap: {
-            name: "Wrap (x of 7)",
-            options: wrapSizes,
-            control: {type: "select"}
-        },
-        noGutters: {
-            name: "No Gutters",
-            defaultValue: false,
-            control: {type: "boolean"}
-        },
-        seven: {
-            name: "Seven",
-            defaultValue: false,
-            control: {type: "boolean"}
-        },
-        blockRow: {
-            defaultValue: false,
-            control: {type: "boolean"}
-        },
-        noWrapClass: {
-            defaultValue: false,
-            control: {type: "boolean"}
-        },
-        sevenInner: {
-            defaultValue: false,
-            control: {type: "boolean"}
-        }
-    }
-} as Meta;
+    wrap: {
+      name: 'Wrap (x of 7)',
+      options: wrapSizes,
+      control: { type: 'select' },
+    },
+    noGutters: {
+      name: 'No Gutters',
+      control: { type: 'boolean' },
+    },
+    seven: {
+      name: 'Seven',
+      control: { type: 'boolean' },
+    },
+    blockRow: {
+      control: { type: 'boolean' },
+    },
+    noWrapClass: {
+      control: { type: 'boolean' },
+    },
+    sevenInner: {
+      control: { type: 'boolean' },
+    },
+  },
+  args: {
+    as: 'div',
+    noGutters: false,
+    seven: false,
+    blockRow: false,
+    noWrapClass: false,
+    sevenInner: false,
+  },
+};
 
-const Template: Story<GridProps> = (args) => {
-    return (
-        <Grid {...args}>
-            <GridItem sizeAtS="3" sizeAtXL="2">
-                Test_1
-            </GridItem>
-            <GridItem sizeAtS="3" sizeAtXL="2">
-                Test_2
-            </GridItem>
-            <GridItem sizeAtS="3" sizeAtXL="2">
-                Test_3
-            </GridItem>
-            <GridItem sizeAtS="3" sizeAtXL="2">
-                Test_4
-            </GridItem>
-            <GridItem sizeAtS="3" sizeAtXL="2">
-                Test_5
-            </GridItem>
-            <GridItem sizeAtS="3" sizeAtXL="2">
-                Test_6
-            </GridItem>
-            <GridItem sizeAtS="3" sizeAtXL="2">
-                Test_7
-            </GridItem>
-        </Grid>
-    )
-}
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof Grid>;
+
+export const Basic: Story = {
+  render: (args: GridProps) => (
+    <Grid {...args}>
+      {Array.from({ length: 7 }).map((_, i) => (
+        <GridItem key={i} sizeAtS="3" sizeAtXL="2">
+          Test_{i + 1}
+        </GridItem>
+      ))}
+    </Grid>
+  ),
+};

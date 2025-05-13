@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import {Meta, Story} from "@storybook/react";
 import {BodyContent, BodyContentProps} from "./BodyContent";
 
@@ -8,6 +9,6 @@ export default {
     argTypes: {}
 } as Meta;
 
-const Template: Story<BodyContentProps> = (args) =>
+const Template: Story<BodyContentProps> = (args: any) =>
     <BodyContent {...args}>Body content goes here...</BodyContent>;
 export const Basic = Template.bind({});

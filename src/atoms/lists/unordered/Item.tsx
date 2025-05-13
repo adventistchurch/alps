@@ -1,4 +1,4 @@
 export interface Item {
-    text: string,
-    subItems?: {text: string}[]
+  text: string,
+  subItems?: { text: string }[]
 }

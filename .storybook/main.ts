@@ -1,38 +1,32 @@
-import type { StorybookConfig } from "@storybook/react-webpack5";
+import type { StorybookConfig } from '@storybook/react-webpack5';
 const path = require('path');
 
 const config: StorybookConfig = {
+  // Paths to stories files
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+
+  // Addons configuration
   addons: [
-    "@storybook/addon-links",
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        actions: true,
-        backgrounds: false,
-        controls: true,
-        docs: true,
-        viewport: true,
-        toolbars: false,
-        canvas: true
-      }
-    },
-    // "@storybook/preset-create-react-app",
-    '@whitespace/storybook-addon-html',
-    'storybook-addon-themes',
+    "@storybook/addon-webpack5-compiler-swc", // SWC compiler for faster builds
+    "@storybook/addon-essentials", // Essential Storybook addons
+    "@storybook/addon-onboarding", // Onboarding guide
+    "@chromatic-com/storybook", // Chromatic integration
+    "@storybook/addon-interactions", // Interaction testing
+    "@storybook/addon-themes",
+    "@storybook/addon-docs"
   ],
+
+  // Framework configuration
   framework: {
     name: "@storybook/react-webpack5",
-    options: {
-      builder: {
-        useSWC: true,
-      },
-    },
+    options: {}
   },
-  docs: {
-    autodocs: true,
-  },
-  staticDirs: ["../public"],
+
+  staticDirs: [
+    '../.storybook/public',
+    '../stories/assets',
+  ],
+
   webpackFinal: async (config, { configType }) => {
     // @ts-ignore
     config.module.rules.push({
@@ -42,5 +36,20 @@ const config: StorybookConfig = {
     });
     return config;
   },
+
+  // TypeScript configuration
+  typescript: {
+    check: true, // Enable type checking during build
+    reactDocgen: 'react-docgen-typescript', // Use react-docgen-typescript for prop docs
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true, // Extract enum values
+      propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true), // Filter out props from node_modules
+      compilerOptions: {
+        allowSyntheticDefaultImports: false,
+        esModuleInterop: false,
+      }
+    }
+  }
 };
+
 export default config;

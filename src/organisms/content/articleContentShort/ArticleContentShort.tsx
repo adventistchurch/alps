@@ -1,5 +1,3 @@
-import React from "react";
-
 import {spacingSizesMap} from "../../../global/spacing";
 import {GridItem} from "../../../atoms/grids/GridItem";
 import {Text} from "../../../atoms/text/Text";
@@ -22,7 +20,7 @@ export const ArticleContentShort = ({
                                         sidebar,
                                         hasDropcap = false,
                                         spacing = "double"
-                                    }: ArticleContentShortProps): JSX.Element => {
+                                    }: ArticleContentShortProps) => {
     return (
         <section
             className={"u-spacing--double--until-large l-grid l-grid--7-col l-grid-wrap--6-of-7 u-shift--left--1-col--at-xxlarge"}>

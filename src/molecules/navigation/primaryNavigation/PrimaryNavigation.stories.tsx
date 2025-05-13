@@ -1,48 +1,38 @@
-import React from 'react';
-import {Meta, StoryObj} from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react';
+import { PrimaryNavigation } from './PrimaryNavigation';
+import data from './PrimaryNavigation.stories.json';
 
-import data from "./PrimaryNavigation.stories.json";
-import {PrimaryNavigation, PrimaryNavigationProps} from "./PrimaryNavigation";
-import {JSX} from 'react/jsx-runtime';
+const HeaderSimulator = ({ children }: { children?: React.ReactNode }) => (
+  <div className="c-header">
+    <div className="c-header__nav-primary">{children}</div>
+  </div>
+);
 
-interface HeaderSimulatorProps {
-    children?: React.ReactNode
-}
-
-const HeaderSimulator = ({children}: HeaderSimulatorProps): JSX.Element => {
-    return (
-        <div className="c-header">
-            <div className="c-header__nav-primary">
-                {children}
-            </div>
-        </div>
-    )
-}
-
-const meta = {
-    title: "molecules/navigation/Primary Navigation",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
-    },
-    decorators: [
-        (Story) => (
-            <HeaderSimulator>
-                <Story />
-            </HeaderSimulator>
-        )
-    ],
-    component: PrimaryNavigation,
-    argTypes: {}
-} satisfies Meta<typeof PrimaryNavigation>;
+const meta: Meta<typeof PrimaryNavigation> = {
+  title: 'molecules/navigation/Primary Navigation',
+  component: PrimaryNavigation,
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  decorators: [
+    (Story) => (
+      <HeaderSimulator>
+        <Story/>
+      </HeaderSimulator>
+    ),
+  ],
+  argTypes: {},
+  tags: [ 'autodocs' ],
+};
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
-    args: {
-        // @ts-ignore
-        items: data.items
-    }
-}
+  args: {
+    // @ts-ignore
+    items: data.items,
+  },
+};

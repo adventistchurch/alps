@@ -1,53 +1,55 @@
-import React from 'react';
-import {Meta, Story} from "@storybook/react";
-import {PrimaryNavItem, PrimaryNavItemProps} from "./PrimaryNavItem";
+import type { Meta, StoryObj } from '@storybook/react';
+import { PrimaryNavItem } from './PrimaryNavItem';
+import { PrimaryNavBase } from '../primaryNavigation/PrimaryNavigation';
+import data from './PrimaryNavItem.stories.json';
 
-import data from "./PrimaryNavItem.stories.json";
-import {PrimaryNavBase} from "../primaryNavigation/PrimaryNavigation";
+const HeaderSimulator = ({ children }: { children?: React.ReactNode }) => (
+  <div className="c-header">
+    <div className="c-header__nav-primary">
+      <PrimaryNavBase>{children}</PrimaryNavBase>
+    </div>
+  </div>
+);
 
-interface HeaderSimulatorProps {
-    children?: React.ReactNode
-}
-
-const HeaderSimulator = ({children}: HeaderSimulatorProps): JSX.Element => {
-    return (
-        <div className="c-header">
-            <div className="c-header__nav-primary">
-                <PrimaryNavBase>{children}</PrimaryNavBase>
-            </div>
-        </div>
-    )
-}
-
-export default {
-    title: "molecules/navigation/Primary Navigation Item",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'molecules/navigation/Primary Navigation Item',
+  component: PrimaryNavItem,
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  decorators: [
+    (Story) => <HeaderSimulator><Story/></HeaderSimulator>,
+  ],
+  argTypes: {
+    text: {
+      defaultValue: data.text,
+      control: { type: 'text' },
     },
-    component: PrimaryNavItem,
-    argTypes: {
-      text: {
-        defaultValue: data.text,
-        control: {type: "text"}
-      },
-      url: {
-        defaultValue: data.url,
-        control: {type: "text"}
-      }
-    }
-} as Meta;
+    url: {
+      defaultValue: data.url,
+      control: { type: 'text' },
+    },
+  },
+  tags: [ 'autodocs' ],
+} satisfies Meta<typeof PrimaryNavItem>;
 
-const Template: Story<PrimaryNavItemProps> = (args) =>
-    <HeaderSimulator>
-        <PrimaryNavItem {...args} />
-    </HeaderSimulator>
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
 
-export const with_subMenu = Template.bind({});
-with_subMenu.args = {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+export const Basic: Story = {
+  args: {
+    text: data.text,
+    url: data.url,
+  },
+};
+
+export const with_subMenu: Story = {
+  args: {
+    text: data.text,
+    url: data.url,
     // @ts-ignore
-    subnav: data.subnav
-}
+    subnav: data.subnav,
+  },
+};

@@ -1,23 +1,27 @@
-import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {Caption, CaptionProps} from "./Caption";
-import {ComponentsTypes} from "../../global/commons";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Caption } from './Caption';
+import { ComponentsTypes } from '../../global/commons';
 
-export default {
-    title: "atoms/Texts/Caption",
-    component: Caption,
-    parameters: {
-        componentSubtitle: ComponentsTypes.COMPONENT,
+const meta = {
+  title: 'atoms/Texts/Caption',
+  component: Caption,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: ComponentsTypes.COMPONENT,
+  },
+  argTypes: {
+    content: {
+      control: { type: 'text' },
     },
-    argTypes: {
-        content: {
-            name: "content",
-            defaultValue: "A block quotation is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.",
-            control: {type: "text"}
-        }
-    }
-} as Meta;
+  },
+  args: {
+    content:
+      'A block quotation is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.',
+  },
+} satisfies Meta<typeof Caption>;
 
-const Template: Story<CaptionProps> = (args) => <Caption {...args}/>
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {};

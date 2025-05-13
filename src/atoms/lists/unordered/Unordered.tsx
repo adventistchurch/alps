@@ -1,22 +1,21 @@
-import {Item} from "./Item";
-import React from "react";
+import { Item } from "./Item";
 
 export interface UnorderedProps {
-    /**
-     * Item => is object with 2 field
-     * {
-     *     text: string
-     *     subItems?: {text: string}[]
-     * }
-     */
-    items: Item[]
+  /**
+   * Item => is object with 2 field
+   * {
+   *     text: string
+   *     subItems?: {text: string}[]
+   * }
+   */
+  items: Item[]
 }
 
 
 /**
  *```tsx
  <Unordered
-    items={items}
+ items={items}
  />
  ```
  ## JSON ITEMS
@@ -47,27 +46,27 @@ export interface UnorderedProps {
 }
  ```
  */
-export const Unordered = ({items}: UnorderedProps): JSX.Element => {
+export const Unordered = ({ items }: UnorderedProps) => {
 
-    return (
-        <div className={"text"}>
-            <ul>
-                {
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-ignore
-                    renderItems(items, ({text, subItems}) => (
-                        <li>
-                            {text}
-                            {subItems && <ul>{renderItems(subItems, (
-                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                                // @ts-ignore
-                                {text}) => (<li>{text}</li>))}</ul>}
-                        </li>
-                    ))
-                }
-            </ul>
-        </div>
-    )
+  return (
+    <div className={"text"}>
+      <ul>
+        {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          renderItems(items, ({ text, subItems }) => (
+            <li>
+              {text}
+              {subItems && <ul>{renderItems(subItems, (
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                { text }) => (<li>{text}</li>))}</ul>}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  )
 }
 
 /**
@@ -77,8 +76,8 @@ export const Unordered = ({items}: UnorderedProps): JSX.Element => {
  * @param {ReactComponent} Component React Component used to render every item
  */
 function renderItems(items: Item[], Component: any) {
-    return (
-        items &&
-        items.map((item, key) => <Component {...item} key={key}/>)
-    )
+  return (
+    items &&
+    items.map((item, key) => <Component {...item} key={key}/>)
+  )
 }

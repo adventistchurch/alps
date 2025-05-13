@@ -1,25 +1,28 @@
-import {Meta, Story} from "@storybook/react";
-import data from './Definition.stories.json'
-import {Definition, DefinitionProps} from "./Definition";
-import React from "react";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Definition } from './Definition';
+import data from './Definition.stories.json';
 
-export default {
-    title: "atoms/Lists/Definition",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'atoms/Lists/Definition',
+  component: Definition,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    items: {
+      control: { type: 'object' },
     },
-    component: Definition,
-    argTypes: {
-        items: {
-            name: "items",
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
-    },
-} as Meta;
+  },
+} satisfies Meta<typeof Definition>;
 
-const Template: Story<DefinitionProps> = (args) =>
-    <Definition {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  args: {
+    items: data.items,
+  },
+};

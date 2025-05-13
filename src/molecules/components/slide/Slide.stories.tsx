@@ -1,33 +1,40 @@
-import React from 'react';
-import {Meta, Story} from "@storybook/react";
-import {Slide, SlideProps} from "./Slide";
-import data from "./Slide.stories.json";
+import { Meta, StoryObj } from '@storybook/react';
+import { Slide } from './Slide';
+import data from './Slide.stories.json';
 
-export default {
-    title: "molecules/components/Slide",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'molecules/components/Slide',
+  component: Slide,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    image: {
+      control: { type: 'object' },
     },
-    component: Slide,
-    argTypes: {
-        image: {
-            defaultValue: data.image,
-            control: {type: "object"}
-        }
-    }
-} as Meta;
+  },
+} satisfies Meta<typeof Slide>;
 
-const Template: Story<SlideProps> = (args) => <Slide {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
 
-export const with_heading = Template.bind({});
-with_heading.args = {
+export const Basic: Story = {
+  args: {
+    image: data.image,
+  },
+};
+
+export const with_heading: Story = {
+  args: {
     heading: data.heading,
     subtitle: data.subtitle,
     dek: data.dek,
     cta: data.cta,
     url: data.url,
-    imageIsLazy: data.imageIsLazy
-}
+    image: data.image,
+    imageIsLazy: data.imageIsLazy,
+  },
+};

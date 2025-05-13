@@ -1,16 +1,16 @@
-import React from "react";
-import {Meta, StoryObj} from '@storybook/react'
-import {Search} from "./Search";
+import { Meta, StoryObj } from '@storybook/react';
+import { Search } from "./Search";
 import data from "./Search.stories.json";
 
 const meta = {
-    title: "molecules/forms/Search",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
-    },
-    component: Search,
-    argTypes: {}
+  title: "molecules/forms/Search",
+  component: Search,
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  tags: [ 'autodocs' ],
+  argTypes: {}
 } satisfies Meta<typeof Search>;
 
 export default meta;
@@ -18,17 +18,16 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
-    args: {
-        placeholder: data.placeholder,
-        submitLabel: data.submitLabel,
-        title: data.title,
-    }
+  args: {
+    placeholder: data.placeholder,
+    submitLabel: data.submitLabel,
+    title: data.title,
+  }
 };
 
 export const with_suggestions: Story = {
-    args: {
-        ...Basic.args,
-        suggestions: data.suggestions
-    }
+  args: {
+    ...Basic.args,
+    suggestions: data.suggestions
+  }
 };
-

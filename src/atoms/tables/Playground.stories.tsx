@@ -1,59 +1,67 @@
-import {Meta, Story} from "@storybook/react";
-import React from "react";
-import {range} from "../../helpers/range";
-import {Table, TableProps} from "./table/Table";
+import type { Meta, StoryObj } from '@storybook/react';
+import { range } from '../../helpers/range';
+import { Table, TableProps } from './table/Table';
 
-export default {
-    title: "atoms/Tables/Playground",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+type PlaygroundArgs = TableProps & {
+  colCount: number;
+  rowCount: number;
+  cellText: string;
+};
+
+const meta = {
+  title: 'atoms/Tables/Playground',
+  component: Table,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    columns: { table: { disable: true } },
+    rows: { table: { disable: true } },
+    title: {
+      control: { type: 'text' },
+      defaultValue: 'Title for table',
     },
-    component: Table,
-    argTypes: {
-        columns: {
-            table: {disable: true}
-        },
-        rows: {
-            table: {disable: true}
-        },
-        title: {
-            defaultValue: "Title for table",
-            control: {type: "text"}
-        },
-        colCount: {
-            name: "colCount",
-            defaultValue: 5,
-            control: {type: "number"}
-        },
-        rowCount: {
-            name: "rowCount",
-            defaultValue: 5,
-            control: {type: "number"}
-        },
-        cellText: {
-            name: "cellText",
-            defaultValue: "cellText",
-            control: {type: "text"}
-        },
-        slim: {
-            control: {type: "boolean"}
-        },
+    // @ts-ignore
+    colCount: {
+      name: 'Column Count',
+      control: { type: 'number' },
+      defaultValue: 5,
     },
-} as Meta;
+    rowCount: {
+      name: 'Row Count',
+      control: { type: 'number' },
+      defaultValue: 5,
+    },
+    cellText: {
+      name: 'Cell Text',
+      control: { type: 'text' },
+      defaultValue: 'cellText',
+    },
+    slim: {
+      control: { type: 'boolean' },
+    },
+  },
+} satisfies Meta<typeof Table>;
 
-const Template: Story<TableProps> = (args) => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+export default meta;
+
+export const Playground: StoryObj<PlaygroundArgs> = {
+  args: {
+    colCount: 5,
+    rowCount: 5,
+    cellText: 'cellText',
+  },
+  render: (args) => {
+    const { colCount, rowCount, cellText, ...rest } = args;
+
+    const columns = range(1, colCount).map((col) => `Header ${col}`);
+    const rows = range(1, rowCount).map(() =>
+      range(1, colCount).map(() => cellText)
+    );
+
     // @ts-ignore
-    const columns = range(1, args.colCount).map(col => `Header ${col}`)
-
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    const rows = range(1, args.rowCount).map(row => range(1, args.colCount).map(col => args.cellText || `C:${col} / R:${row}`))
-
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    return <Table columns={columns} rows={rows} {...args} />
-}
-
-export const Playground = Template.bind({});
+    return <Table {...rest} columns={columns} rows={rows}/>;
+  },
+};

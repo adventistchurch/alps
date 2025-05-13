@@ -1,16 +1,21 @@
-import React from "react";
-import {Meta, Story} from "@storybook/react";
-import {ArticleFooter, ArticleFooterProps} from "./ArticleFooter";
+import type { Meta, StoryObj } from '@storybook/react';
+import { ArticleFooter } from './ArticleFooter';
 
-export default {
-    title: "organisms/sections/Article Footer",
-    component: ArticleFooter,
-    argTypes: {}
-} as Meta;
+const meta = {
+  title: 'organisms/sections/Article Footer',
+  component: ArticleFooter,
+  tags: [ 'autodocs' ],
+  argTypes: {},
+} satisfies Meta<typeof ArticleFooter>;
 
-const Template: Story<ArticleFooterProps> = (args) =>
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  render: (args) => (
     <ArticleFooter {...args}>
-        ArticleFooter content goes here...
-    </ArticleFooter>;
-export const Basic = Template.bind({});
-
+      ArticleFooter content goes here...
+    </ArticleFooter>
+  ),
+};
