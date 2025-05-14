@@ -1,9 +1,10 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
+
 const path = require('path');
 
 const config: StorybookConfig = {
   // Paths to stories files
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: [ "../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)" ],
 
   // Addons configuration
   addons: [
@@ -24,14 +25,13 @@ const config: StorybookConfig = {
 
   staticDirs: [
     '../.storybook/public',
-    '../stories/assets',
   ],
 
   webpackFinal: async (config, { configType }) => {
     // @ts-ignore
     config.module.rules.push({
       test: /\.scss$/,
-      use: ['style-loader', 'css-loader', 'sass-loader'],
+      use: [ 'style-loader', 'css-loader', 'sass-loader' ],
       include: path.resolve(__dirname, '../'),
     });
     return config;
