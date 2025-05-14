@@ -1,53 +1,68 @@
-import React from "react";
-import {Meta, Story} from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react';
 import data from "./LoginForm.stories.json";
-import {LoginForm, LoginFormProps} from "./LoginForm";
+import { LoginForm } from "./LoginForm";
 
-export default {
-    title: "molecules/forms/Login Form",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: "molecules/forms/Login Form",
+  component: LoginForm,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    title: {
+      control: { type: "text" }
     },
-    component: LoginForm,
-    argTypes: {
-        title: {
-            defaultValue: data.title,
-            control: {type: "text"}
-        },
-        submitLabel: {
-            defaultValue: data.submitLabel,
-            control: {type: "text"}
-        },
-        usernameLabel: {
-            defaultValue: data.usernameLabel,
-            control: {type: "text"}
-        },
-        passwordLabel: {
-            defaultValue: data.passwordLabel,
-            control: {type: "text"}
-        },
-        forgotPwdLabel: {
-            defaultValue: data.forgotPwdLabel,
-            control: {type: "text"}
-        },
-        forgotPwdUrl: {
-            defaultValue: data.forgotPwdUrl,
-            control: {type: "text"}
-        },
-        formSubmitted: {
-            name: "Form submitted",
-            defaultValue: false,
-            control: {type: "boolean"}
-        }
-    }
-} as Meta;
-
-const Template: Story<LoginFormProps> = (args) => {
-
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    submitLabel: {
+      control: { type: "text" }
+    },
+    usernameLabel: {
+      control: { type: "text" }
+    },
+    passwordLabel: {
+      control: { type: "text" }
+    },
+    forgotPwdLabel: {
+      control: { type: "text" }
+    },
+    forgotPwdUrl: {
+      control: { type: "text" }
+    },
     // @ts-ignore
-    return <LoginForm submitMessage={args.formSubmitted ? data.submitMessage : null} {...args}/>
+    formSubmitted: {
+      name: "Form submitted",
+      control: { type: "boolean" }
+    },
+  },
+} satisfies Meta<typeof LoginForm>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  args: {
+    title: data.title,
+    submitLabel: data.submitLabel,
+    usernameLabel: data.usernameLabel,
+    passwordLabel: data.passwordLabel,
+    forgotPwdLabel: data.forgotPwdLabel,
+    forgotPwdUrl: data.forgotPwdUrl,
+    // @ts-expect-error - not part of props, just used in render
+    formSubmitted: false,
+  },
+  render: (args) => {
+    // @ts-expect-error formSubmitted is not part of LoginFormProps
+    const { formSubmitted, ...rest } = args;
+
+    return (
+      <LoginForm
+        {...rest}
+        // @ts-ignore
+        submitMessage={formSubmitted ? data.submitMessage : null}
+      />
+    );
+  },
 };
 
-export const Basic = Template.bind({});

@@ -1,6 +1,6 @@
 {
   "name": "alps-library",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "files": [
     "dist"
@@ -22,11 +22,9 @@
     "@types/react-dom": "^18.2.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-import-css": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-scss": "^4.0.0",
     "saas": "^1.0.0",
     "typescript": "^4.9.5"
   },
@@ -35,7 +33,7 @@
     "build": "rollup --config",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 9001 -c .storybook --ci",
+    "storybook": "storybook dev -p 9003 -c .storybook --ci",
     "build-storybook": "storybook build -o .storybook-build",
     "deploy-storybook": "storybook-to-ghpages",
     "update-styles": "node scripts/update-styles.js"
@@ -60,24 +58,31 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.14",
-    "@storybook/addon-interactions": "^7.6.14",
-    "@storybook/addon-links": "^7.6.14",
-    "@storybook/addon-onboarding": "^1.0.11",
-    "@storybook/blocks": "^7.6.14",
-    "@storybook/manager-api": "^7.6.14",
-    "@storybook/preset-create-react-app": "^7.6.14",
-    "@storybook/react": "^7.6.14",
-    "@storybook/react-webpack5": "^7.6.14",
-    "@storybook/test": "^7.6.14",
-    "@storybook/theming": "^7.6.14",
-    "eslint-plugin-storybook": "^0.6.15",
-    "node-sass": "^9.0.0",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-docs": "^8.6.12",
+    "@storybook/addon-essentials": "^8.6.6",
+    "@storybook/addon-interactions": "^8.6.6",
+    "@storybook/addon-onboarding": "^8.6.6",
+    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
+    "@storybook/addon-themes": "^8.6.12",
+    "@storybook/blocks": "^8.6.6",
+    "@storybook/mdx2-csf": "^1.1.0",
+    "@storybook/react": "^8.6.6",
+    "@storybook/react-webpack5": "^8.6.6",
+    "@storybook/test": "^8.6.6",
+    "css-loader": "^7.1.2",
+    "eslint-plugin-storybook": "^0.11.4",
     "prop-types": "^15.8.1",
     "rollup": "^2.79.1",
-    "sass-loader": "^14.1.1",
-    "storybook": "^7.6.14",
-    "storybook-addon-themes": "^6.1.0",
-    "webpack": "^5.90.1"
+    "rollup-plugin-scss": "^4.0.1",
+    "sass": "^1.87.0",
+    "sass-loader": "^16.0.5",
+    "storybook": "^8.6.6",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.90.1",
+    "typescript": "^5.8.3"
   }
 }

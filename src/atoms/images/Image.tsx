@@ -7,7 +7,9 @@ export interface ImageProps {
     src: string,
     placeholderSrc?: string,
     className?: string,
-    mode?: string
+    mode?: string,
+    width?: number | string;
+    height?: number | string;
 }
 
 export const Image = ({
@@ -16,6 +18,8 @@ export const Image = ({
                           src,
                           placeholderSrc,
                           className,
+                          width,
+                          height,
                           ...others
 }: ImageProps): JSX.Element => {
 
@@ -49,6 +53,8 @@ export const Image = ({
             itemProp="image"
             alt={alt}
             src={src}
+            width={width}
+            height={height}
             // @ts-ignore
             placeholder={placeholderSrc}
             className={className}

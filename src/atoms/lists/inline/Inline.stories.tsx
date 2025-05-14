@@ -1,25 +1,28 @@
-import {Meta, Story} from "@storybook/react";
-import data from './Inline.stories.json'
-import React from "react";
-import {Inline, InlineProps} from "./Inline";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Inline } from './Inline';
+import data from './Inline.stories.json';
 
-export default {
-    title: "atoms/Lists/Inline",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'atoms/Lists/Inline',
+  component: Inline,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    items: {
+      control: { type: 'object' },
     },
-    component: Inline,
-    argTypes: {
-        items: {
-            name: "items",
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
-    },
-} as Meta;
+  },
+} satisfies Meta<typeof Inline>;
 
-const Template: Story<InlineProps> = (args) =>
-    <Inline {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  args: {
+    items: data.items,
+  },
+};

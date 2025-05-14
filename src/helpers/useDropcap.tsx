@@ -26,6 +26,7 @@ function withChildren(children: any, Dropcap: any, parentFound: boolean, setPare
         if (setParentFound) setParentFound()
     }
 
+    // @ts-ignore
     return React.Children.map(children, child => {
         // If still not found and is a string...
         if (!found && typeof child === 'string') {

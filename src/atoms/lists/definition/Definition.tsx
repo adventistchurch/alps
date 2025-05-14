@@ -1,21 +1,20 @@
-import React from 'react';
-import {Item} from "./Item";
+import { Item } from "./Item";
 
 export interface DefinitionProps {
-    /**
-     * Item => is object with 2 field
-     * {
-     *     title: string,
-     *     text: string
-     * }
-     */
-    items: Item[]
+  /**
+   * Item => is object with 2 field
+   * {
+   *     title: string,
+   *     text: string
+   * }
+   */
+  items: Item[]
 }
 
 /**
  *```tsx
  <Definition
-    items={items}
+ items={items}
  />
  ```
  ## JSON ITEMS
@@ -42,25 +41,25 @@ export interface DefinitionProps {
 }
  ```
  */
-export const Definition = ({items = []}: DefinitionProps): JSX.Element => {
-    return (
-        <dl>
-            {
-                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                // @ts-ignore
-                renderItems(items, ({text, title}) => (
-                    <>
-                        <dt className={"u-padding--top"}>
-                            {title}
-                        </dt>
-                        <dd className={"u-padding--bottom"}>
-                            {text}
-                        </dd>
-                    </>
-                ))
-            }
-        </dl>
-    )
+export const Definition = ({ items = [] }: DefinitionProps) => {
+  return (
+    <dl>
+      {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        renderItems(items, ({ text, title }) => (
+          <>
+            <dt className={"u-padding--top"}>
+              {title}
+            </dt>
+            <dd className={"u-padding--bottom"}>
+              {text}
+            </dd>
+          </>
+        ))
+      }
+    </dl>
+  )
 }
 
 
@@ -71,8 +70,8 @@ export const Definition = ({items = []}: DefinitionProps): JSX.Element => {
  * @param {ReactComponent} Component React Component used to render every item
  */
 function renderItems(items: Item[], Component: any) {
-    return (
-        items &&
-        items.map((item, key) => <Component {...item} key={key}/>)
-    )
+  return (
+    items &&
+    items.map((item, key) => <Component {...item} key={key}/>)
+  )
 }

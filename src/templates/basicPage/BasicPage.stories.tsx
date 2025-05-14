@@ -1,5 +1,3 @@
-import React from "react";
-
 import data from "./BasicPage.stories.json";
 import dataBreakoutBlock from "../../molecules/blocks/breackoutBlock/BreakoutBlock.stories.json";
 import dataHeaderPrimary from "../../molecules/navigation/primaryNavigation/PrimaryNavigation.stories.json";

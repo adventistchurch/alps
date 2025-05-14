@@ -1,43 +1,58 @@
-import {Meta, Story} from "@storybook/react";
-import data from '../Table.stories.json'
-import React from "react";
-import {Table, TableProps} from "./Table";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Table } from './Table';
+import data from '../Table.stories.json';
 
-export default {
-    title: "atoms/Tables/Table",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'atoms/Tables/Table',
+  component: Table,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    title: {
+      control: { type: 'text' },
     },
-    component: Table,
-    argTypes: {
-        title: {
-            defaultValue: "Title for table",
-            control: {type: "text"}
-        },
-        columns: {
-            defaultValue: data.table1.columns,
-            control: {type: "object"}
-        },
-        rows: {
-            defaultValue: data.table1.rows,
-            control: {type: "object"}
-        },
+    columns: {
+      control: { type: 'object' },
     },
-} as Meta;
+    rows: {
+      control: { type: 'object' },
+    },
+  },
+} satisfies Meta<typeof Table>;
 
-const Template: Story<TableProps> = (args) =>
-    <Table {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
 
-export const with_border = Template.bind({});
-with_border.args = {
-    withBorder: true
-}
+export const Basic: Story = {
+  args: {
+    title: 'Title for table',
+    columns: data.table1.columns,
+    // @ts-ignore
+    rows: data.table1.rows,
+  },
+};
 
-export const Slim = Template.bind({});
-Slim.args = {
+export const WithBorder: Story = {
+  args: {
+    title: 'Title for table',
+    columns: data.table1.columns,
+    // @ts-ignore
+    rows: data.table1.rows,
     withBorder: true,
-    slim: true
-}
+  },
+};
+
+export const Slim: Story = {
+  args: {
+    title: 'Title for table',
+    columns: data.table1.columns,
+    // @ts-ignore
+    rows: data.table1.rows,
+    withBorder: true,
+    slim: true,
+  },
+};

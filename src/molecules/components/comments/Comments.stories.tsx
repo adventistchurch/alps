@@ -1,49 +1,56 @@
-import React from 'react';
-import {Meta, Story} from "@storybook/react";
-import {Comment} from "../comment/Comment";
-import {Comments, CommentsProps} from "./Comments";
-import data from "./Comments.stories.json";
-import dataComment from "../comment/Comment.stories.json";
-import {iconConfig} from "../../../atoms/icons/_config";
+import { Meta, StoryObj } from '@storybook/react';
+import type { CommentsProps } from './Comments';
+import { Comments } from './Comments';
+import { Comment } from '../comment/Comment';
+import data from './Comments.stories.json';
+import dataComment from '../comment/Comment.stories.json';
+import { iconConfig } from '../../../atoms/icons/_config';
 
-export default {
-    title: "molecules/components/Comments",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'molecules/components/Comments',
+  component: Comments,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    heading: {
+      defaultValue: data.heading,
+      control: { type: 'text' },
     },
-    component: Comments,
-    argTypes: {
-        heading: {
-            defaultValue: data.heading,
-            controls: {type: "text"}
-        },
-        icon: {
-            options: iconConfig.iconNamesMap,
-            defaultValue: "contact",
-            control: {type: "select"}
-        },
-        count: {
-            defaultValue: 5,
-            control: {type: "number"}
-        }
-    }
-} as Meta;
+    icon: {
+      // @ts-ignore
+      options: iconConfig.iconNamesMap,
+      defaultValue: 'contact',
+      control: { type: 'select' },
+    },
+    count: {
+      defaultValue: 5,
+      control: { type: 'number' },
+    },
+  },
+} satisfies Meta<typeof Comments>;
 
-const Template: Story<CommentsProps> = (args) => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  render: (args: CommentsProps) => {
     // @ts-ignore
-    const content = [...Array(args.count).keys()].map(i => (
-        <Comment key={`comment-${i}`} avatar={dataComment.avatar} byline={dataComment.byline}
-                 bylineLink={dataComment.bylineLink} date={13}
-                 dateFormat={"datetime"} text={dataComment.comment}/>
+    const content = Array.from({ length: args.count ?? 5 }, (_, i) => (
+      <Comment
+        key={`comment-${i}`}
+        avatar={dataComment.avatar}
+        byline={dataComment.byline}
+        bylineLink={dataComment.bylineLink}
+        date={13}
+        dateFormat="datetime"
+        text={dataComment.comment}
+      />
     ));
 
-    args.content = content;
-
-    return (
-        <Comments {...args} />
-    )
-}
-
-export const Basic = Template.bind({});
+    return <Comments {...args} content={content}/>;
+  },
+};

@@ -1,25 +1,28 @@
-import {Meta, Story} from "@storybook/react";
-import data from './Ordered.stories.json'
-import React from "react";
-import {Ordered, OrderedProps} from "./Ordered";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Ordered } from './Ordered';
+import data from './Ordered.stories.json';
 
-export default {
-    title: "atoms/Lists/Ordered",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'atoms/Lists/Ordered',
+  component: Ordered,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    items: {
+      control: { type: 'object' },
     },
-    component: Ordered,
-    argTypes: {
-        items: {
-            name: "items",
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
-    },
-} as Meta;
+  },
+} satisfies Meta<typeof Ordered>;
 
-const Template: Story<OrderedProps> = (args) =>
-    <Ordered {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  args: {
+    items: data.items,
+  },
+};

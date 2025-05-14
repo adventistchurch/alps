@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import {Meta, Story} from "@storybook/react";
 import {ListContent, ListContentProps} from "./ListContent";
 
@@ -12,7 +13,7 @@ export default {
     argTypes: {}
 } as Meta;
 
-const Template: Story<ListContentProps> = (args) =>
+const Template: Story<ListContentProps> = (args: any) =>
     <ListContent {...args}>
         {data.items &&
             renderItems(data.items, MediaBlock, "")

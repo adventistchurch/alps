@@ -1,25 +1,28 @@
-import {Meta, Story} from "@storybook/react";
-import data from './Unordered.stories.json'
-import React from "react";
-import {Unordered, UnorderedProps} from "./Unordered";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Unordered } from './Unordered';
+import data from './Unordered.stories.json';
 
-export default {
-    title: "atoms/Lists/Unordered",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: 'atoms/Lists/Unordered',
+  component: Unordered,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+  argTypes: {
+    items: {
+      control: { type: 'object' },
     },
-    component: Unordered,
-    argTypes: {
-        items: {
-            name: "items",
-            defaultValue: data.items,
-            control: {type: "object"}
-        }
-    },
-} as Meta;
+  },
+} satisfies Meta<typeof Unordered>;
 
-const Template: Story<UnorderedProps> = (args) =>
-    <Unordered {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  args: {
+    items: data.items,
+  },
+};

@@ -1,16 +1,20 @@
-import React from 'react';
-import {Meta, Story} from "@storybook/react";
-import {ShareTools, ShareToolsProps} from "./ShareTools";
+import { Meta, StoryObj } from '@storybook/react';
+import { ShareTools } from './ShareTools';
 
-export default {
-    title: "molecules/components/ShareTools",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
-    },
-    component: ShareTools
-} as Meta;
+const meta = {
+  title: 'molecules/components/ShareTools',
+  component: ShareTools,
+  tags: [ 'autodocs' ],
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released',
+  },
+} satisfies Meta<typeof ShareTools>;
 
-const Template: Story<ShareToolsProps> = (args) => <ShareTools {...args} />
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {
+  args: {},
+};

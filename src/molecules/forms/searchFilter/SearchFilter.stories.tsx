@@ -1,39 +1,41 @@
-import React from "react";
-import {Meta, Story} from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react';
 import data from "./SearchFilter.stories.json";
-import {SearchFilter, SearchFilterProps} from "./SearchFilter";
+import { SearchFilter } from "./SearchFilter";
 
-export default {
-    title: "molecules/forms/Search Filter",
-    parameters: {
-        componentSubtitle: 'Component',
-        status: 'released'
+const meta = {
+  title: "molecules/forms/Search Filter",
+  component: SearchFilter,
+  parameters: {
+    componentSubtitle: 'Component',
+    status: 'released'
+  },
+  tags: [ 'autodocs' ],
+  argTypes: {
+    filters: {
+      defaultValue: data.filters,
+      control: { type: "object" }
     },
-    component: SearchFilter,
-    argTypes: {
-        filters: {
-            defaultValue: data.filters,
-            control: {type: "object"}
-        },
-        sorting: {
-            defaultValue: data.sorting,
-            control: {type: "object"}
-        },
-        placeholder: {
-            defaultValue: data.placeholder,
-            control: {type: "text"}
-        },
-        searchAgainLabel: {
-            defaultValue: data.searchAgainLabel,
-            control: {type: "text"}
-        },
-        searchLabel: {
-            defaultValue: data.searchLabel,
-            control: {type: "text"}
-        }
+    sorting: {
+      defaultValue: data.sorting,
+      control: { type: "object" }
+    },
+    placeholder: {
+      defaultValue: data.placeholder,
+      control: { type: "text" }
+    },
+    searchAgainLabel: {
+      defaultValue: data.searchAgainLabel,
+      control: { type: "text" }
+    },
+    searchLabel: {
+      defaultValue: data.searchLabel,
+      control: { type: "text" }
     }
-} as Meta;
+  }
+} satisfies Meta<typeof SearchFilter>;
 
-const Template: Story<SearchFilterProps> = (args) => <SearchFilter {...args}/>;
+export default meta;
 
-export const Basic = Template.bind({});
+type Story = StoryObj<typeof meta>;
+
+export const Basic: Story = {};

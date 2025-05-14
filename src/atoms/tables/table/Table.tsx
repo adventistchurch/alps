@@ -1,19 +1,17 @@
-import React from 'react';
-
 export interface TableProps {
-    title?: string,
-    columns?: string[],
-    rows?: [],
-    withBorder?: boolean,
-    slim?: boolean
+  title?: string,
+  columns?: string[],
+  rows?: [],
+  withBorder?: boolean,
+  slim?: boolean
 }
 
 /**
  *```tsx
  <Table
-    title={"Title of the Table"}
-    columns={columns}
-    rows={rows}
+ title={"Title of the Table"}
+ columns={columns}
+ rows={rows}
  />
  ```
  ## JSON ITEMS
@@ -43,47 +41,53 @@ export interface TableProps {
 }
  ```
  */
-export const Table = ({title, columns = [], rows = [], withBorder = false, slim = false}: TableProps): JSX.Element => {
+export const Table = ({
+                        title,
+                        columns = [],
+                        rows = [],
+                        withBorder = false,
+                        slim = false
+                      }: TableProps) => {
 
-    let classes = "u-spacing ";
+  let classes = "u-spacing ";
 
-    if (withBorder && slim) {
-        classes = classes + "u-border o-table-slim";
-    } else if (withBorder) {
-        classes = classes + "u-border";
-    } else if (slim) {
-        classes = classes + "o-table-slim";
-    }
+  if (withBorder && slim) {
+    classes = classes + "u-border o-table-slim";
+  } else if (withBorder) {
+    classes = classes + "u-border";
+  } else if (slim) {
+    classes = classes + "o-table-slim";
+  }
 
-    return (
-        <table className={classes}>
-            {title && <caption>{title}</caption>}
-            <thead>
-            <tr>
-                {
-                    columns.map((header, col) => (
-                        <th tabIndex={0} scope="col" title={title} key={`column-${col}`}>
-                            {header}
-                        </th>
-                    ))
-                }
-            </tr>
-            </thead>
-            <tbody>
-            {rows.map((cells, row) => (
-                <tr tabIndex={0} key={`row-${row}`}>
-                    {
-                        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                        // @ts-ignore
-                        cells.map((content, cell) => (
-                            <td tabIndex={0} key={`row-${row}-${cell}`}>
-                                {content}
-                            </td>
-                        ))
-                    }
-                </tr>
-            ))}
-            </tbody>
-        </table>
-    )
+  return (
+    <table className={classes}>
+      {title && <caption>{title}</caption>}
+      <thead>
+      <tr>
+        {
+          columns.map((header, col) => (
+            <th tabIndex={0} scope="col" title={title} key={`column-${col}`}>
+              {header}
+            </th>
+          ))
+        }
+      </tr>
+      </thead>
+      <tbody>
+      {rows.map((cells, row) => (
+        <tr tabIndex={0} key={`row-${row}`}>
+          {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            cells.map((content, cell) => (
+              <td tabIndex={0} key={`row-${row}-${cell}`}>
+                {content}
+              </td>
+            ))
+          }
+        </tr>
+      ))}
+      </tbody>
+    </table>
+  )
 }
