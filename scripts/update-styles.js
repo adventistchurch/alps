@@ -3,8 +3,8 @@ const React = require("react");
 const axios = require("axios");
 const {logger} = require("@storybook/node-logger");
 
-const CDN_URL = "https://cdn.adventist.org/alps/3/3.9.3";
-const STYLES_URL = CDN_URL + "/css/main.css";
+const CDN_URL = "https://alps.adventistcdn.org/wordpress/themes/alps";
+const STYLES_URL = CDN_URL + "/main.css";
 
 // const IMAGES_LIST = [
 //     //SVG
