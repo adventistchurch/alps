@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useCallback } from "react";
+import React, { useCallback } from "react";
 import useClasses from "../../helpers/useClasses";
 import { buttonConfig } from "./_config";
 import { IconWrap } from "../icons/IconWrap";
@@ -57,7 +57,7 @@ export interface ButtonProps {
    * You can set position of icon into the button
    */
   iconPosition?: "left" | "right";
-  onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement | HTMLSpanElement>) => void;
   className?: string;
   isExternal?: boolean;
 }
@@ -120,12 +120,19 @@ export const Button = ({
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const _onClick = useCallback(
-    (event: React.MouseEventHandler<HTMLAnchorElement>) => {
-      if (onClick) onClick(event);
-      if (toggle) onToggle();
-    },
-    [onClick, onToggle, toggle]
-  );
+        (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement | HTMLSpanElement>) => {
+          if (onClick) onClick(event);
+          if (toggle) onToggle();
+          if (expand) {
+            const buttonElement = event.currentTarget as HTMLElement;
+            const parentElement = buttonElement.parentElement;
+            if (parentElement) {
+              parentElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            }            
+          }
+        },
+        [onClick, onToggle, toggle, expand]
+      );
 
   const handleClick = onClick || toggle ? _onClick : undefined;
 
