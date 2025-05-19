@@ -1,6 +1,6 @@
 import React from 'react'
 
-function onItemClick(number: number, cb: () => void) {
+function onItemClick(cb: () => void) {
     return cb
         ? (event: { preventDefault: () => void; }) => {
             event.preventDefault();
@@ -47,7 +47,7 @@ export const PaginationItem = ({
             href={url}
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
-            onClick={onItemClick(number, onClick)}
+            onClick={onItemClick(onClick)}
         >
             {isArrow ? label : label || number}
         </a>

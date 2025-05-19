@@ -95,7 +95,7 @@ export const Button = ({
       toggle: toggle,
       expand: expand,
     },
-    openClass
+    toggle ? openClass : ''
   );
 
   const icon = props.icon && (
@@ -119,16 +119,15 @@ export const Button = ({
   );
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const _onClick =
-    onClick || toggle
-      ? useCallback(
-          (event: React.MouseEventHandler<HTMLAnchorElement>) => {
-            if (onClick) onClick(event);
-            if (toggle) onToggle();
-          },
-          [onClick, onToggle, toggle]
-        )
-      : null;
+  const _onClick = useCallback(
+    (event: React.MouseEventHandler<HTMLAnchorElement>) => {
+      if (onClick) onClick(event);
+      if (toggle) onToggle();
+    },
+    [onClick, onToggle, toggle]
+  );
+
+  const handleClick = onClick || toggle ? _onClick : undefined;
 
   let elementByType: JSX.Element;
 
@@ -140,7 +139,7 @@ export const Button = ({
       elementByType = (
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        <a className={buttonClass + classes} href={url} {...target} onClick={_onClick}>
+        <a className={buttonClass + classes} href={url} {...target} onClick={handleClick}>
           {labelWithIcon}
         </a>
       );
@@ -149,7 +148,7 @@ export const Button = ({
       elementByType = (
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        <span className={buttonClass + classes} onClick={_onClick}>
+        <span className={buttonClass + classes} onClick={handleClick}>
           {labelWithIcon}
         </span>
       );
@@ -158,7 +157,7 @@ export const Button = ({
       elementByType = (
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        <button className={buttonClass + classes} onClick={_onClick}>
+        <button className={buttonClass + classes} onClick={handleClick}>
           {labelWithIcon}
         </button>
       );
