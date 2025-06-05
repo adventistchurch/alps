@@ -1,7 +1,6 @@
 {
   "name": "alps-library",
-  "version": "1.1.0",
-  "private": true,
+  "version": "1.1.1",
   "files": [
     "dist"
   ],
@@ -13,6 +12,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/node-logger": "^8.6.14",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -20,6 +20,7 @@
     "@types/node": "^16.18.80",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "axios": "^1.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup-plugin-delete": "^2.0.0",
@@ -58,16 +59,16 @@
     ]
   },
   "devDependencies": {
-    "@mdx-js/loader": "^3.1.0",
-    "@mdx-js/react": "^3.1.0",
     "@babel/preset-typescript": "^7.26.0",
     "@chromatic-com/storybook": "^3.2.6",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
     "@storybook/addon-docs": "^8.6.12",
     "@storybook/addon-essentials": "^8.6.6",
     "@storybook/addon-interactions": "^8.6.6",
     "@storybook/addon-onboarding": "^8.6.6",
-    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
     "@storybook/addon-themes": "^8.6.12",
+    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
     "@storybook/blocks": "^8.6.6",
     "@storybook/mdx2-csf": "^1.1.0",
     "@storybook/react": "^8.6.6",
@@ -82,7 +83,7 @@
     "sass-loader": "^16.0.5",
     "storybook": "^8.6.6",
     "style-loader": "^4.0.0",
-    "webpack": "^5.90.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "webpack": "^5.90.1"
   }
 }
