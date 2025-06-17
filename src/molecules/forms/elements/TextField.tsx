@@ -1,4 +1,4 @@
-import React, {useImperativeHandle, forwardRef} from 'react';
+import React, {useImperativeHandle, forwardRef, MouseEventHandler} from 'react';
 
 import {FormLabel} from './FormLabel';
 import {BaseInput} from './BaseInput';
@@ -26,9 +26,7 @@ export interface TextFieldProps {
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
-  onClick?: (
-    e: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement, MouseEvent>
-  ) => void;
+   onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
 }
 
 export interface TextFieldRef {
@@ -89,12 +87,12 @@ export const TextField = forwardRef<TextFieldRef, TextFieldProps>(
         {type === 'textarea' ? (
           <textarea
             required={props.required}
+            id={ props.id || props.name}
             name={props.name}
             rows={rows}
             placeholder={props.placeholder}
             value={value}
             onChange={handleChange}
-            onClick={onClick}
             onBlur={handleBlur}
           />
         ) : (

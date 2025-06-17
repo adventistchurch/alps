@@ -74,6 +74,8 @@ export const Form = ({
   fields = [],
   inline = false,
   labelPosition,
+  action,
+  method = 'post',
   onSubmit,
   title
 }: FormProps): JSX.Element => {
@@ -100,6 +102,8 @@ export const Form = ({
 
   return (
     <form
+      action={action}
+      method={method}
       className={
         formClass +
         ` ${darkMode ? getBaseClass(themeBackgroundClass, ['darker']) : null}`

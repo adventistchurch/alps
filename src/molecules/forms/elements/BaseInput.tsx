@@ -21,11 +21,9 @@ export interface BaseInputProps {
     | 'textarea';
   value?: string;
   required?: boolean;
+  onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => void;
-  onClick?: (
-    e: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement, MouseEvent>
   ) => void;
   onBlur?: (
     e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -39,6 +37,7 @@ export const BaseInput = ({
   value,
   hasFocus = false,
   name,
+  id,
   placeholder,
   required = false,
   onChange,
@@ -61,10 +60,12 @@ export const BaseInput = ({
       ref: inputFocusRef,
       type,
       name: name,
+      id: id || name,
       placeholder: placeholder,
       required: required,
       onChange: onChange,
-      onClick: onClick,
+      autocomplete: 'on',
+      onClick: isTextArea ? null : onClick,
       onBlur: onBlur
     },
     isTextArea ? value : null
