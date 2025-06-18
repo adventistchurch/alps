@@ -2,8 +2,8 @@ import React from "react";
 
 import renderItems from "../../../helpers/renderItems";
 import {fontSizesMap, fontTypesMap, getFontClass} from "../../../global/fonts";
-import {Checkbox} from "./Checkbox";
-import RadioButton from "./RadioButton";
+import {Checkbox, CheckboxProps} from "./Checkbox";
+import { RadioButton, RadioButtonProps } from "./RadioButton";
 
 const components = {
     checkbox: Checkbox,
@@ -16,9 +16,10 @@ export interface OptionGroupProps {
     title: string,
     titleFontSize?: keyof typeof fontSizesMap,
     titleFontType?: keyof typeof fontTypesMap,
-    options?: [],
+     options?: OptionItem[],
     type?: "checkbox" | "radio"
 }
+export type OptionItem = CheckboxProps | RadioButtonProps;
 
 export const OptionGroup = ({
                                 children,
