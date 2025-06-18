@@ -6,7 +6,7 @@ export interface ErrorMessageProps {
 
 export const ErrorMessage = ({text}: ErrorMessageProps): JSX.Element => {
     return (
-        <small className={"u-font--secondary--s u-clear-fix"} color="error">
+        <small className={"u-font--secondary--s u-clear-fix u-color--error"} color="error">
             {text}
         </small>
     )
