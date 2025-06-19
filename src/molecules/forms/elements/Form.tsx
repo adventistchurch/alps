@@ -80,7 +80,7 @@ export const Form = ({
   title
 }: FormProps): JSX.Element => {
   const formClass = useClasses(
-    'c-form',
+    'c-form u-spacing--half',
     {
       'c-form--inline': inline,
       [darkThemeClass]: darkMode
@@ -100,6 +100,19 @@ export const Form = ({
     [onSubmit]
   );
 
+  const _onReset = (e: React.FormEvent<HTMLFormElement>) => { 
+    const form = e.currentTarget;
+    // Find all file inputs and dispatch a synthetic change event
+    const fileInputs = form.querySelectorAll('input[type="file"]');
+    setTimeout(() => {
+      fileInputs.forEach((input) => {
+      // Create and dispatch a synthetic change event
+      const event = new Event('change', {bubbles: true});
+      input.dispatchEvent(event);
+    });
+    }, 100);
+  };
+
   return (
     <form
       action={action}
@@ -109,6 +122,7 @@ export const Form = ({
         ` ${darkMode ? getBaseClass(themeBackgroundClass, ['darker']) : null}`
       }
       onSubmit={_onSubmit}
+      onReset={_onReset}
     >
       {title ? (
         typeof title === 'string' ? (

@@ -5,6 +5,7 @@ import {ErrorMessage} from './ErrorMessage';
 export interface FormLabelProps {
   children?: React.ReactNode;
   className?: string;
+  labelClass?: string;
   error?: string;
   required?: boolean;
   htmlFor?: string;
@@ -12,6 +13,7 @@ export interface FormLabelProps {
   textOptional?: string;
   position?: 'top' | 'bottom';
   darkMode?: boolean;
+  faIcon?: string;
 }
 
 export const FormLabel = ({
@@ -23,7 +25,9 @@ export const FormLabel = ({
   text,
   textOptional,
   className = 'c-form-group',
-  darkMode = false
+  labelClass = '',
+  darkMode = false,
+  faIcon = ''
 }: FormLabelProps): JSX.Element => {
   const fieldInTop = darkMode || position === 'bottom';
 
@@ -32,9 +36,12 @@ export const FormLabel = ({
   return (
     <div className={className}>
       {fieldInTop && field}
-      <label htmlFor={htmlFor} className={'u-font--secondary--s'}>
-        {text}{' '} {required && 
-          <span className={'u-color--error'}>*</span>}
+      <label htmlFor={htmlFor} className={`u-font--secondary--s ${labelClass}`}>
+        {text}
+        {faIcon && (
+          <i className={`fa fa-${faIcon} u-space--quarter--left`}></i>
+        )}{' '}
+        {required && <span className={'u-color--error'}>*</span>}
         {textOptional && (
           <span className={'u-font--secondary--xs u-theme--color--lighter'}>
             {textOptional}
