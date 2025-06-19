@@ -17,18 +17,17 @@ export interface RadioButtonProps {
 }
 
 export const RadioButton = ({
-                                checked,
-                                error,
-                                id,
-                                label,
-                                labelOptional,
-                                labelClass,
-                                labelSpacing,
-                                name,
-                                value,
-                                ...props
-                            }: RadioButtonProps): JSX.Element => {
-
+    checked,
+    error,
+    id,
+    label,
+    labelOptional,
+    labelClass = "",
+    labelSpacing = "",
+    name,
+    value,
+    ...props
+}: RadioButtonProps): JSX.Element => {
     return (
         <FormLabel
             className={labelClass}
@@ -51,11 +50,3 @@ export const RadioButton = ({
         </FormLabel>
     )
 }
-
-RadioButton.propTypes = {}
-RadioButton.defaultProps = {
-    labelClass: null,
-    labelSpacing: null,
-}
-
-export default RadioButton
