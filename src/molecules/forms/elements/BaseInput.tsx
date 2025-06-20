@@ -78,7 +78,7 @@ export const BaseInput = ({
     {
       className: inputClass,
       defaultChecked: checked,
-      value: value,
+      defaultValue: value,
       ref: inputFocusRef,
       type,
       name: name,

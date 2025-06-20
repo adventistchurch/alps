@@ -110,9 +110,9 @@ export const TextField = forwardRef<TextFieldRef, TextFieldProps>(
           <BaseInput
             {...props}
             type={type}
-            //value={value}
+            value={value}
             onChange={handleChange}
-            // onClick={onClick}
+            onClick={onClick}
             onBlur={handleBlur}
           />
         )}
