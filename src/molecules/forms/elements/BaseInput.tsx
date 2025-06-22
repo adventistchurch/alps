@@ -1,12 +1,10 @@
-import React, {MouseEventHandler, useState} from 'react';
+import React, {useMemo} from 'react';
 
 import useClasses from '../../../helpers/useClasses';
-import useInputFocus from '../../../helpers/useInputFocus';
 
 export interface BaseInputProps {
   checked?: boolean;
   error?: string;
-  hasFocus?: boolean;
   id?: string;
   name?: string;
   placeholder?: string;
@@ -23,7 +21,10 @@ export interface BaseInputProps {
   value?: string;
   required?: boolean;
   accept?: string;
-  onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
+  rows?: number;
+  onClick?: (
+    e: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
@@ -36,13 +37,13 @@ export const BaseInput = ({
   checked,
   error,
   type = 'text',
-  value,
-  hasFocus = false,
+  value = '',
   name,
   id,
   placeholder,
   required = false,
   accept,
+  rows,
   onChange,
   onClick,
   onBlur
@@ -51,10 +52,6 @@ export const BaseInput = ({
     'has-error': !!error
   });
 
-  const [fileName, setFileName] = useState<string>('');
-
-  const inputFocusRef = useInputFocus(hasFocus);
-
   const isTextArea = type === 'textarea';
   const isFile = type === 'file';
 
@@ -62,40 +59,45 @@ export const BaseInput = ({
     display: 'none'
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    if (e.target instanceof HTMLInputElement && e.target.type === 'file') {
-      setFileName(e.target.files?.[0]?.name || '');
+  const fileName = useMemo(() => {
+    if (isFile && typeof value === 'string' && value) {
+      // Extract file name from the value (full path or file name)
+      const parts = value.split(/(\\|\/)/g);
+      return parts[parts.length - 1];
     }
+    return '';
+  }, [isFile, value]);
 
-    if (onChange) onChange(e);
-    return true;
+  const elementProps: React.InputHTMLAttributes<HTMLInputElement> &
+    React.TextareaHTMLAttributes<HTMLTextAreaElement> = {
+    className: inputClass,
+    type: isTextArea ? undefined : type,
+    rows: isTextArea ? rows : undefined,
+    name: name,
+    id: id || name,
+    placeholder: placeholder,
+    required: required,
+    accept: isFile ? accept : undefined,
+    onChange: onChange,
+    autoComplete: 'on',
+    onBlur: onBlur,
+    style: isFile ? fileStyles : undefined,
+    value: value
   };
+  // Only assign onClick if it's a valid input event handler
+  if (!isTextArea && typeof onClick === 'function') {
+    (elementProps as React.InputHTMLAttributes<HTMLInputElement>).onClick =
+      onClick as unknown as React.MouseEventHandler<HTMLInputElement>;
+  }
+  if ((type === 'checkbox' || type === 'radio') && checked !== undefined) {
+    (
+      elementProps as React.InputHTMLAttributes<HTMLInputElement>
+    ).defaultChecked = checked;
+  }
 
-  const element = React.createElement(
-    isTextArea ? 'textarea' : 'input',
-    {
-      className: inputClass,
-      defaultChecked: checked,
-      defaultValue: value,
-      ref: inputFocusRef,
-      type,
-      name: name,
-      id: id || name,
-      placeholder: placeholder,
-      required: required,
-      accept: isFile ? accept : undefined,
-      onChange: handleChange,
-      autocomplete: 'on',
-      onClick: isTextArea ? null : onClick,
-      onBlur: onBlur,
-      style: {
-        ...(isFile ? fileStyles : {})
-      }
-    },
-    isTextArea ? value : null
-  );
+  const element = isTextArea
+    ? React.createElement('textarea', elementProps)
+    : React.createElement('input', elementProps);
 
   return (
     <>

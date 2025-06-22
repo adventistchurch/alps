@@ -1,4 +1,4 @@
-import React, {MouseEventHandler} from "react";
+import React from "react";
 import {FormLabel} from "./FormLabel";
 import {BaseInput} from "./BaseInput";
 
@@ -13,7 +13,7 @@ export interface RadioButtonProps {
     name: string,
     placeholder?: string,
     value?: string,
-    onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
+    onClick?: (e: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
 export const RadioButton = ({
