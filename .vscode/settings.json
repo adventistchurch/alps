@@ -1,0 +1,30 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "files.autoSave": "onFocusChange",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/js/script.min.js": true
+  },
+  "files.watcherExclude": {
+    "**/js/script.min.js": true
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "MikeBovenlander.formate"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "svipas.prettier-plus"
+  }, // optional but recommended
+  // "[scss]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // }
+ 
+}

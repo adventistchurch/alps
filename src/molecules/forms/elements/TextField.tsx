@@ -1,4 +1,4 @@
-import React, {useImperativeHandle, forwardRef, MouseEventHandler} from 'react';
+import React from 'react';
 
 import {FormLabel} from './FormLabel';
 import {BaseInput} from './BaseInput';
@@ -30,93 +30,44 @@ export interface TextFieldProps {
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
-  onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
+  onClick?: (
+    e: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
+  onBlur?: (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
+  touched?: boolean;
 }
 
-export interface TextFieldRef {
-  isValid: () => boolean;
-}
+export const TextField = ({
+  label,
+  labelOptional,
+  labelClass,
+  labelTagClass,
+  faIcon,
+  labelSpacing,
+  touched = false,
+  ...props
+}: TextFieldProps): JSX.Element => {
+  const isValid =
+    !props.required || (!!props.value && props.value.trim() !== '');
+  const showRequiredError = !isValid && touched;
 
-export const TextField = forwardRef<TextFieldRef, TextFieldProps>(
-  (
-    {
-      label,
-      labelOptional,
-      labelClass,
-      labelTagClass,
-      faIcon,
-      labelSpacing,
-      type = 'text',
-      rows,
-      onChange,
-      onClick,
-      ...props
-    }: TextFieldProps,
-    ref
-  ): JSX.Element => {
-    const [value, setValue] = React.useState(props.value || '');
-    const [touched, setTouched] = React.useState(false);
-
-    const isValid = !props.required || (!!value && value.trim() !== '');
-
-    const showError = touched && !isValid;
-
-    React.useEffect(() => {
-      setValue(props.value || '');
-    }, [props.value]);
-
-    useImperativeHandle(ref, () => ({
-      isValid: () => isValid
-    }));
-
-    const handleChange = (
-      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-      setValue(e.target.value);
-      if (onChange) onChange(e);
-      return true;
-    };
-
-    const handleBlur = () => {
-      setTouched(true);
-    };
-
-    return (
-      <FormLabel
-        className={labelClass}
-        labelClass={`${labelTagClass} ${
-          type === 'file' ? 'u-space--quarter' : ''
-        }`}
-        error={showError ? 'Полето е задължително' : props.error}
-        htmlFor={props.name}
-        text={label}
-        textOptional={labelOptional}
-        faIcon={faIcon}
-        required={props.required}
-        // spacing={labelSpacing}
-      >
-        {type === 'textarea' ? (
-          <textarea
-            required={props.required}
-            id={props.id || props.name}
-            name={props.name}
-            rows={rows}
-            placeholder={props.placeholder}
-            // value={value}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-        ) : (
-          <BaseInput
-            {...props}
-            type={type}
-            value={value}
-            onChange={handleChange}
-            onClick={onClick}
-            onBlur={handleBlur}
-          />
-        )}
-      </FormLabel>
-    );
-  }
-);
+  return (
+    <FormLabel
+      className={labelClass}
+      labelClass={`${labelTagClass} ${
+        props.type === 'file' ? 'u-space--quarter' : ''
+      }`}
+      error={showRequiredError ? 'Полето е задължително' : props.error ?? ''}
+      htmlFor={props.name}
+      text={label}
+      textOptional={labelOptional}
+      faIcon={faIcon}
+      required={props.required}
+      // spacing={labelSpacing}
+    >
+      <BaseInput {...props} />
+    </FormLabel>
+  );
+};
