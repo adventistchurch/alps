@@ -30,7 +30,7 @@ export const OptionGroup = ({
                                 type = "checkbox"
                             }: OptionGroupProps): JSX.Element => {
     return (
-        <div className={"u-spacing--half"}>
+        <div>
             {title && (
                 <div className={getFontClass(titleFontSize, titleFontType)}>
                     {title}

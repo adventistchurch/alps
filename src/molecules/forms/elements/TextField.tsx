@@ -9,6 +9,8 @@ export interface TextFieldProps {
   label?: string;
   labelOptional?: string;
   labelClass?: string;
+  labelTagClass?: string;
+  faIcon?: string;
   labelSpacing?: string;
   name: string;
   placeholder?: string;
@@ -19,14 +21,16 @@ export interface TextFieldProps {
     | 'text'
     | 'number'
     | 'checkbox'
-    | 'textarea';
+    | 'textarea'
+    | 'file';
   value?: string;
   rows?: number;
   required?: boolean;
+  accept?: string;
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
-   onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
+  onClick?: (event: MouseEventHandler<HTMLAnchorElement>) => void;
 }
 
 export interface TextFieldRef {
@@ -39,6 +43,8 @@ export const TextField = forwardRef<TextFieldRef, TextFieldProps>(
       label,
       labelOptional,
       labelClass,
+      labelTagClass,
+      faIcon,
       labelSpacing,
       type = 'text',
       rows,
@@ -68,6 +74,7 @@ export const TextField = forwardRef<TextFieldRef, TextFieldProps>(
     ) => {
       setValue(e.target.value);
       if (onChange) onChange(e);
+      return true;
     };
 
     const handleBlur = () => {
@@ -77,21 +84,25 @@ export const TextField = forwardRef<TextFieldRef, TextFieldProps>(
     return (
       <FormLabel
         className={labelClass}
+        labelClass={`${labelTagClass} ${
+          type === 'file' ? 'u-space--quarter' : ''
+        }`}
         error={showError ? 'Полето е задължително' : props.error}
         htmlFor={props.name}
         text={label}
         textOptional={labelOptional}
+        faIcon={faIcon}
         required={props.required}
         // spacing={labelSpacing}
       >
         {type === 'textarea' ? (
           <textarea
             required={props.required}
-            id={ props.id || props.name}
+            id={props.id || props.name}
             name={props.name}
             rows={rows}
             placeholder={props.placeholder}
-            value={value}
+            // value={value}
             onChange={handleChange}
             onBlur={handleBlur}
           />
