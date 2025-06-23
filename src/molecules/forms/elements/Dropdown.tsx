@@ -5,6 +5,7 @@ import {FormLabel} from './FormLabel';
 export interface DropdownProps {
     allowNone?: boolean,
     defaultValue: string | number,
+    value: string | number,
     error?: string,
     hideNone?: boolean,
     id?: string,
@@ -21,6 +22,7 @@ export interface DropdownProps {
 export const Dropdown = ({
                              allowNone = true,
                              defaultValue,
+                             value,
                              error,
                              hideNone,
                              id,
@@ -42,7 +44,7 @@ export const Dropdown = ({
             textOptional={labelOptional}
             darkMode={darkMode}
         >
-            <select defaultValue={defaultValue} id={id} name={name}>
+            <select defaultValue={defaultValue} id={id || name} name={name} value={value}>
                 {!hideNone && (
                     <option
                         key={`${name}-option-none`}
