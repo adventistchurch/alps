@@ -16,7 +16,10 @@ export interface DropdownProps {
     options: {text: string, value: number | string}[],
     noneLabel?: React.ReactNode,
     noneValue?: any,
-    darkMode?: boolean
+    darkMode?: boolean,
+     onChange?: (
+    e: React.ChangeEvent<HTMLSelectElement>
+  ) => void;
 }
 
 export const Dropdown = ({
@@ -33,7 +36,8 @@ export const Dropdown = ({
                              noneLabel = "-",
                              noneValue,
                              options = [],
-                             darkMode = false
+                             darkMode = false,
+                             onChange
                          }: DropdownProps): JSX.Element => {
     return (
         <FormLabel
@@ -44,7 +48,7 @@ export const Dropdown = ({
             textOptional={labelOptional}
             darkMode={darkMode}
         >
-            <select defaultValue={defaultValue} id={id || name} name={name} value={value}>
+            <select defaultValue={defaultValue} id={id || name} name={name} value={value} onChange={onChange}>
                 {!hideNone && (
                     <option
                         key={`${name}-option-none`}
