@@ -4,7 +4,7 @@ import {FormLabel} from './FormLabel';
 
 export interface DropdownProps {
     allowNone?: boolean,
-    defaultValue: string | number,
+    defaultValue?: string | number,
     value: string | number,
     error?: string,
     hideNone?: boolean,
