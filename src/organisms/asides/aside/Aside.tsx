@@ -6,7 +6,7 @@ export interface AsideProps {
 
 export const Aside = ({children}: AsideProps): JSX.Element => {
     return (
-        <div className={"u-padding--right u-spacing--double"}>
+        <div className={"u-padding--right u-spacing"}>
             {children}
         </div>
     )

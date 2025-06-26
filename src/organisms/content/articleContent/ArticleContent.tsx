@@ -39,7 +39,7 @@ export const ArticleContent = ({
 
             {sidebar && (
                 <div
-                    className="c-sidebar u-padding--zero--sides l-grid-item l-grid-item--l--2-col l-grid-item--xl--2-col">
+                    className="c-sidebar u-spacing--double u-padding--zero--sides l-grid-item l-grid-item--l--2-col l-grid-item--xl--2-col">
                     {sidebar}
                 </div>
             )}
