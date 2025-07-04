@@ -61,7 +61,9 @@ const archivePage = {
   image:
     'u-padding--zero--sides l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col',
   content:
-    'u-spacing u-flex--justify-start l-grid-item--4-col l-grid-item--m--3-col l-grid-item--xl--2-col',
+    'u-spacing u-flex--justify-start',
+  contentWithoutImage:
+    'u-spacing u-flex--justify-start l-grid-item--6-col l-grid-item--m--4-col l-grid-item--xl--3-col',
   title: 'u-font--primary--m u-space--zero u-theme--color--darker',
   meta: 'u-theme--color--base'
 };

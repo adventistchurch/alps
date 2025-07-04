@@ -20,7 +20,7 @@ export interface ArticleContentProps {
 export const ArticleContent = ({
                                    children,
                                    sidebar,
-                                   hasDropcap = true,
+                                   hasDropcap = false,
                                    spacing = "double"
                                }: ArticleContentProps): JSX.Element => {
     return (
