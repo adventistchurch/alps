@@ -45,7 +45,7 @@ export const PageHeaderLong = ({title, kicker, subtitle, background, url}: PageH
                     }`}
                 >
                     <div
-                        className={`c-page-header__content c-page-header__long__content l-grid-wrap l-grid-wrap--5-of-7 u-shift--left--1-col--at-xxlarge ${background ? "u-border-left--white--at-medium" : ""}`}
+                        className={"c-page-header__content c-page-header__long__content l-grid-wrap l-grid-wrap--5-of-7 u-shift--left--1-col--at-xxlarge"}
                     >
                         {kicker && (
                             <span className="c-page-header__kicker o-kicker u-color--white">
