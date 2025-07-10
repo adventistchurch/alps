@@ -14,18 +14,20 @@ export interface ArticleContentProps {
     /**
      * Specify the type of your  spacing
      */
-    spacing?: keyof typeof spacingSizesMap
+    spacing?: keyof typeof spacingSizesMap,
+    pageClassName?: string
 }
 
 export const ArticleContent = ({
                                    children,
                                    sidebar,
                                    hasDropcap = true,
-                                   spacing = "double"
+                                   spacing = "double",
+                                   pageClassName=''
                                }: ArticleContentProps): JSX.Element => {
     return (
         <section
-            className={"u-padding--zero--sides u-spacing--double--until-large l-grid l-grid--7-col l-grid-wrap--6-of-7 u-shift--left--1-col--at-large"}>
+            className={`u-padding--zero--sides u-spacing--double--until-large l-grid l-grid--7-col l-grid-wrap--6-of-7 u-shift--left--1-col--at-large ${pageClassName}`}>
             <GridItem className="c-article" sizeAtL="3" sizeAtXL="3">
                 <Text
                     as="article"
