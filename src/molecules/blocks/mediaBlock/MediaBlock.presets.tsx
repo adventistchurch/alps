@@ -155,7 +155,7 @@ const relatedPost = {
   image:
     'u-padding--right l-grid-item l-grid-item--2-col l-grid-item--m--1-col l-grid-item--l--1-col',
   content:
-    'u-color--gray u-border--left u-spacing--half l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--1-col u-theme--border-color--darker--left',
+    'u-color--gray u-border--left u-spacing--half l-grid-item l-grid-item--4-col l-grid-item--m--3-col l-grid-item--l--1-col u-theme--border-color--darker--left flex-1',
   title: 'u-font--primary--s u-space--zero u-theme--color--dark',
   meta: 'u-font--secondary--xs u-theme--color--base'
 };
