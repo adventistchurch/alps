@@ -25,6 +25,10 @@ const config: StorybookConfig = {
 
   staticDirs: [
     '../.storybook/public',
+    // ALPS styles are served from the repository instead of the CDN, which the
+    // preview could not always reach. Keeping the folder structure means the
+    // "../images/..." references inside main.css keep resolving.
+    { from: '../src/styles', to: '/alps' },
   ],
 
   webpackFinal: async (config, { configType }) => {
