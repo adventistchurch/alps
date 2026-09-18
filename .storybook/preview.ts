@@ -2,6 +2,10 @@ import type { Preview } from "@storybook/react";
 import {primaryColorsThemes} from "./public/colors";
 import { withThemeByClassName } from '@storybook/addon-themes';
 
+// Storybook's own docs styling. It used to be a <link> to the .scss source,
+// which browsers cannot load, so none of it applied.
+import './storybook.scss';
+
 const preview: Preview = {
   parameters: {
     controls: {
